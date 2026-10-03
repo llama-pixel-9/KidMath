@@ -16,10 +16,10 @@ export function angleSumProcedural() {
   let seed = 661;
 
   const makePhr = [
-    (parts, opts) => `${parts} together make what? Pick it.`,
+    (parts, opts) => `${parts} together make what?`,
     (parts, opts) => `Pick what ${parts.toLowerCase()} add up to.`,
     (parts, opts) => `Joined with no gap, ${parts.toLowerCase()} form which turn?`,
-    (parts, opts) => `What do ${parts.toLowerCase()} combine into? Pick it.`,
+    (parts, opts) => `What do ${parts.toLowerCase()} combine into?`,
   ];
   const MAKE = [
     ["Two square corners side by side", "a straight line", ["a quarter turn", "a full turn", "a small tilt"], 90, 90],
@@ -39,7 +39,7 @@ export function angleSumProcedural() {
   }
 
   const totalPhr = [
-    (a, b) => `${a} quarter turn${a === 1 ? "" : "s"}, then ${b} more. How many quarter turns in all? Type it.`,
+    (a, b) => `${a} quarter turn${a === 1 ? "" : "s"}, then ${b} more. How many quarter turns in all?`,
     (a, b) => `A spinner turns ${a} quarter turn${a === 1 ? "" : "s"} and then ${b} more. Type the total number of quarter turns.`,
     (a, b) => `Add the turns: ${a} quarter turn${a === 1 ? "" : "s"} plus ${b} more makes how many quarter turns?`,
     (a, b) => `First ${a} quarter turn${a === 1 ? "" : "s"}, next ${b} more. What is the total count of quarter turns?`,
@@ -56,7 +56,7 @@ export function angleSumProcedural() {
   });
 
   const cornersPhr = [
-    (n) => `${n} square corner${n === 1 ? "" : "s"} plus 1 more square corner: how many square corners in all? Type it.`,
+    (n) => `${n} square corner${n === 1 ? "" : "s"} plus 1 more square corner: how many square corners in all?`,
     (n) => `Stack ${n} square corner${n === 1 ? "" : "s"} with 1 more. Type the total number of square corners.`,
     (n) => `Add 1 square corner to ${n}. How many square corners is that altogether?`,
     (n) => `${n} square corner${n === 1 ? "" : "s"} and then another one — type how many square corners that makes.`,
@@ -73,7 +73,7 @@ export function angleSumProcedural() {
   });
 
   const halvesPhr = [
-    (k) => `${k} half turn${k === 1 ? "" : "s"} and 1 more half turn: how many half turns in all? Type it.`,
+    (k) => `${k} half turn${k === 1 ? "" : "s"} and 1 more half turn: how many half turns in all?`,
     (k) => `A dial makes ${k} half turn${k === 1 ? "" : "s"}, then 1 more. Type the total half turns.`,
     (k) => `Combine ${k} half turn${k === 1 ? "" : "s"} with another. How many half turns is that?`,
     (k) => `After ${k} half turn${k === 1 ? "" : "s"} plus one more, what is the half-turn total?`,
@@ -91,16 +91,16 @@ export function angleSumProcedural() {
 
   const addPhr = {
     band2: [
-      (a, b) => `Two angles sit side by side, measuring ${a} and ${b} degrees. Their combined measure = ? Type it.`,
+      (a, b) => `Two angles sit side by side, measuring ${a} and ${b} degrees. What is their combined measure?`,
       (a, b) => `Angles of ${a} degrees and ${b} degrees share a ray. How many degrees do they span together?`,
       (a, b) => `Add the adjacent angles ${a} degrees and ${b} degrees. Type the total.`,
       (a, b) => `Side-by-side angles of ${a} and ${b} degrees make how many degrees in all?`,
     ],
     band3: [
-      (a, b) => `Compute the combined measure of adjacent angles ${a} and ${b} degrees.`,
+      (a, b) => `What is the combined measure of side-by-side angles of ${a} and ${b} degrees?`,
       (a, b) => `Exactly how many degrees do adjacent ${a}-degree and ${b}-degree angles span?`,
-      (a, b) => `Determine the total of angles ${a} degrees and ${b} degrees placed together.`,
-      (a, b) => `Together, ${a}-degree and ${b}-degree angles sweep how many degrees? Type it.`,
+      (a, b) => `Angles of ${a} degrees and ${b} degrees are placed together. How many degrees is that in all?`,
+      (a, b) => `Together, ${a}-degree and ${b}-degree angles sweep how many degrees?`,
     ],
   };
   const addData = {
@@ -141,9 +141,9 @@ export function angleSumProcedural() {
       (a, b, c) => `Sum the three measures ${a}, ${b}, ${c} degrees. Type it.`,
     ],
     band3: [
-      (a, b, c) => `Compute the total of three adjacent angles: ${a}, ${b}, and ${c} degrees.`,
+      (a, b, c) => `Three angles sit side by side: ${a}, ${b}, and ${c} degrees. What is their total in degrees?`,
       (a, b, c) => `Exactly how many degrees do ${a}, ${b}, and ${c} degrees make together?`,
-      (a, b, c) => `Determine the combined sweep of ${a}, ${b}, and ${c} degrees.`,
+      (a, b, c) => `How many degrees do ${a}, ${b}, and ${c} degrees sweep together?`,
       (a, b, c) => `Three angle pieces of ${a}, ${b}, ${c} degrees total how many degrees?`,
     ],
   };
@@ -174,7 +174,7 @@ export function angleSumProcedural() {
       (a, b) => `Identify the total of adjacent ${a}-degree and ${b}-degree angles.`,
       (a, b) => `Which value is the combined sweep of ${a} and ${b} degrees?`,
       (a, b) => `Precisely which choice equals ${a} degrees plus ${b} degrees?`,
-      (a, b) => `Determine the sum of the measures ${a} and ${b} degrees from the choices.`,
+      (a, b) => `Which choice is the sum of ${a} and ${b} degrees?`,
     ],
   };
   for (const band of ["band2", "band3"]) {
@@ -207,8 +207,8 @@ export function angleSumConceptual() {
       (nm, a, b, said) => `Check ${nm}'s total of ${said} degrees for angles ${a} and ${b}. Right or not?`,
     ],
     band3: [
-      (nm, a, b, said) => `${nm} certifies ${said} degrees as the combined measure of ${a} and ${b} degrees. Valid?`,
-      (nm, a, b, said) => `Audit the sum: ${a} plus ${b} degrees, recorded ${said} by ${nm}. Clean?`,
+      (nm, a, b, said) => `${nm} says ${a} and ${b} degrees together measure ${said} degrees. Is ${nm} right?`,
+      (nm, a, b, said) => `${nm} adds ${a} and ${b} degrees and writes ${said}. Is that right?`,
     ],
   };
   const sumSaidData = {
@@ -238,8 +238,8 @@ export function angleSumConceptual() {
       (nm, a, b, ok) => `${a} degrees plus ${b} degrees complete a right angle, says ${nm}. Is that right?`,
     ],
     band3: [
-      (nm, a, b, ok) => `${nm} asserts ${a} and ${b} degrees combine into a straight angle. Is the assertion right?`,
-      (nm, a, b, ok) => `Together, ${a} and ${b} degrees form a straight line, states ${nm}. Sound statement?`,
+      (nm, a, b, ok) => `${nm} says ${a} and ${b} degrees together make a straight angle. Is ${nm} right?`,
+      (nm, a, b, ok) => `Together, ${a} and ${b} degrees form a straight line, says ${nm}. Is that right?`,
     ],
   };
   const rightPairData = {
@@ -252,7 +252,7 @@ export function angleSumConceptual() {
       item("angleSum", "conceptual", `pairMakeJudge_band1`, "band1", {
         answer: ok ? "Yes" : "No",
         choices: ["Yes", "No"],
-        display: { ang: { kind: "authored" }, promptText: rightPairPhr.band1[i % 2](nameAt(i * 3 + 2)) + (i >= 12 ? " Picture the two corners." : i >= 6 ? " Try drawing it." : ""), truth: ok },
+        display: { ang: { kind: "authored" }, promptText: (i >= 12 ? "Picture the two corners. " : i >= 6 ? "Try drawing it. " : "") + rightPairPhr.band1[i % 2](nameAt(i * 3 + 2)), truth: ok },
       })
     );
   }
@@ -279,8 +279,8 @@ export function angleSumConceptual() {
       (nm) => `Order matters when adding two angle measures, argues ${nm}. Is that right?`,
     ],
     band3: [
-      (nm) => `${nm} states that angle measures add in any order without changing the total. Sound statement?`,
-      (nm) => `Rearranging three angle pieces changes their combined measure, asserts ${nm}. Is the assertion right?`,
+      (nm) => `${nm} says angle measures can be added in any order and the total stays the same. Is ${nm} right?`,
+      (nm) => `Moving three angle pieces around changes their total, says ${nm}. Is that right?`,
     ],
   };
   for (const band of ["band1", "band2", "band3"]) {
@@ -290,7 +290,7 @@ export function angleSumConceptual() {
         item("angleSum", "conceptual", `orderJudge_${band}`, band, {
           answer: ok ? "Yes" : "No",
           choices: ["Yes", "No"],
-          display: { ang: { kind: "authored" }, promptText: orderPhr[band][i % 2](nameAt(i * 3 + 3 + OFF[band])) + (i >= 8 ? " Adding is adding." : ""), truth: ok },
+          display: { ang: { kind: "authored" }, promptText: (i >= 8 ? "Adding is adding. " : "") + orderPhr[band][i % 2](nameAt(i * 3 + 3 + OFF[band])), truth: ok },
         })
       );
     }
@@ -307,7 +307,7 @@ export function missingProcedural() {
   const items = [];
 
   const missTurnPhr = [
-    (k) => `A full spin is missing some quarter turns: ${k} ${k === 1 ? "is" : "are"} done. How many quarter turns are missing? Type it.`,
+    (k) => `A full spin is missing some quarter turns: ${k} ${k === 1 ? "is" : "are"} done. How many quarter turns are missing?`,
     (k) => `To finish a full spin after ${k} quarter turn${k === 1 ? "" : "s"}, how many quarter turns are missing?`,
     (k) => `${k} of the 4 quarter turns in a spin ${k === 1 ? "is" : "are"} drawn. How many quarter turns are missing from it?`,
     (k) => `The spin diagram shows ${k} quarter turn${k === 1 ? "" : "s"} of 4. How many quarter turns does it still lack?`,
@@ -327,7 +327,7 @@ export function missingProcedural() {
     );
   }
   const linePhr = [
-    (k) => `A straight line holds 2 square corners. ${k} ${k === 1 ? "is" : "are"} drawn. How many square corners are missing? Type it.`,
+    (k) => `A straight line holds 2 square corners. ${k} ${k === 1 ? "is" : "are"} drawn. How many square corners are missing?`,
     (k) => `Two square corners make a straight line; ${k} ${k === 1 ? "is" : "are"} in place. How many square corners are missing now?`,
     (k) => `The line needs 2 square corners and shows ${k}. How many square corners does it still need?`,
     (k) => `Of the 2 square corners along a straight line, ${k} ${k === 1 ? "is" : "are"} filled. How many square corners are left to fill?`,
@@ -336,19 +336,19 @@ export function missingProcedural() {
     (k) => `To complete the straight line's 2 square corners, with ${k} done, how many square corners are missing?`,
     (k) => `The diagram fills ${k} of a straight line's 2 square corners. How many square corners are missing from the diagram?`,
   ];
-  const PLACES = [" The line is on grid paper.", " The line is on the whiteboard.", " The line is chalked on the playground.", " The line runs along a ruler.", " The line crosses a poster.", " The line sits on a worksheet."];
+  const PLACES = ["The line is on grid paper. ", "The line is on the whiteboard. ", "The line is chalked on the playground. ", "The line runs along a ruler. ", "The line crosses a poster. ", "The line sits on a worksheet. "];
   for (let i = 0; i < 14; i += 1) {
     const k = 1;
     items.push(
       item("missingAngle", "procedural", `missingCornerLine_band1`, "band1", {
         answer: 2 - k,
         answerType: "numberPad",
-        display: { ang: { kind: "missDeg", total: 180, a: 90 }, promptText: linePhr[i % 8](k) + (i >= 8 ? PLACES[i - 8] : "") },
+        display: { ang: { kind: "missDeg", total: 180, a: 90 }, promptText: (i >= 8 ? PLACES[i - 8] : "") + linePhr[i % 8](k) },
       })
     );
   }
   const fullHalfPhr = [
-    (k) => `A full turn is 2 half turns. ${k} ${k === 1 ? "is" : "are"} done. How many half turns are missing? Type it.`,
+    (k) => `A full turn is 2 half turns. ${k} ${k === 1 ? "is" : "are"} done. How many half turns are missing?`,
     (k) => `Of the 2 half turns in a full spin, ${k} ${k === 1 ? "is" : "are"} complete. How many half turns are still missing?`,
     (k) => `The spin needs 2 half turns and has ${k}. How many half turns are missing?`,
     (k) => `${k} half turn${k === 1 ? "" : "s"} of 2 ${k === 1 ? "is" : "are"} made. How many half turns remain missing?`,
@@ -357,28 +357,28 @@ export function missingProcedural() {
     (k) => `Just ${k} half turn${k === 1 ? "" : "s"} of the needed 2 ${k === 1 ? "is" : "are"} drawn. How many half turns are absent?`,
     (k) => `Count what's missing: ${k} of 2 half turns done. How many half turns to go?`,
   ];
-  const SPINNERS = [" It is a game spinner.", " It is a bottle cap.", " It is a merry-go-round.", " It is a steering wheel.", " It is a record on a turntable.", " It is a revolving door."];
+  const SPINNERS = ["It is a game spinner. ", "It is a bottle cap. ", "It is a merry-go-round. ", "It is a steering wheel. ", "It is a record on a turntable. ", "It is a revolving door. "];
   for (let i = 0; i < 14; i += 1) {
     items.push(
       item("missingAngle", "procedural", `missingHalf_band1`, "band1", {
         answer: 1,
         answerType: "numberPad",
-        display: { ang: { kind: "missDeg", total: 360, a: 180 }, promptText: fullHalfPhr[i % 8](1) + (i >= 8 ? SPINNERS[i - 8] : "") },
+        display: { ang: { kind: "missDeg", total: 360, a: 180 }, promptText: (i >= 8 ? SPINNERS[i - 8] : "") + fullHalfPhr[i % 8](1) },
       })
     );
   }
 
   const toPhr = {
     band2: [
-      (t, a, tn) => `Two angles form ${tn}. One measures ${a} degrees. The other = ? Type it.`,
+      (t, a, tn) => `Two angles form ${tn}. One measures ${a} degrees. What does the other measure?`,
       (t, a, tn) => `An angle of ${a} degrees needs a partner to complete ${tn}. How many degrees is the partner?`,
-      (t, a, tn) => `Together with ${a} degrees, which measure completes ${tn}? Type it.`,
+      (t, a, tn) => `Together with ${a} degrees, which measure completes ${tn}?`,
       (t, a, tn) => `${tn[0].toUpperCase() + tn.slice(1)} splits into ${a} degrees and one more angle. Type the other angle's degrees.`,
     ],
     band3: [
-      (t, a, tn) => `Compute the partner: ${a} degrees plus what makes ${tn}?`,
+      (t, a, tn) => `${a} degrees plus how many degrees makes ${tn}?`,
       (t, a, tn) => `Exactly how many degrees pair with ${a} degrees to form ${tn}?`,
-      (t, a, tn) => `Determine the missing measure when ${tn} is split into ${a} degrees and one other angle.`,
+      (t, a, tn) => `When ${tn} is split into ${a} degrees and one other angle, what does the other angle measure?`,
       (t, a, tn) => `${tn[0].toUpperCase() + tn.slice(1)} minus a ${a}-degree part leaves how many degrees?`,
     ],
   };
@@ -414,16 +414,16 @@ export function missingProcedural() {
 
   const threePhr = {
     band2: [
-      (a, b) => `Three angles make a straight angle. Two measure ${a} and ${b} degrees. The third = ? Type it.`,
+      (a, b) => `Three angles make a straight angle. Two measure ${a} and ${b} degrees. What does the third measure?`,
       (a, b) => `A straight angle splits into ${a} degrees, ${b} degrees, and one more piece. Type the third piece's degrees.`,
       (a, b) => `With ${a} and ${b} degrees placed along a straight angle, how many degrees complete it?`,
       (a, b) => `The three parts of a straight angle include ${a} and ${b} degrees. What is the remaining part?`,
     ],
     band3: [
-      (a, b) => `Compute the third angle when a full turn contains parts of ${a} and ${b} degrees.`,
+      (a, b) => `A full turn has parts of ${a} and ${b} degrees and a third part. How many degrees is the third part?`,
       (a, b) => `A full turn splits into ${a} degrees, ${b} degrees, and one more angle. Exactly how many degrees is it?`,
-      (a, b) => `Determine the missing piece of a full turn holding ${a} and ${b} degrees.`,
-      (a, b) => `Of a full turn, ${a} and ${b} degrees are used. The rest = ? Type it.`,
+      (a, b) => `A full turn holds ${a} and ${b} degrees and one missing piece. How many degrees is the missing piece?`,
+      (a, b) => `Of a full turn, ${a} and ${b} degrees are used. How many degrees are left?`,
     ],
   };
   const threeData = {
@@ -445,7 +445,7 @@ export function missingProcedural() {
 
   const missPickPhr = {
     band2: [
-      (t, a, tn) => `An angle of ${a} degrees needs which partner to complete ${tn}? Pick it.`,
+      (t, a, tn) => `An angle of ${a} degrees needs which partner to complete ${tn}?`,
       (t, a, tn) => `Pick the measure that joins ${a} degrees to make ${tn}.`,
       (t, a, tn) => `Which choice pairs with ${a} degrees to form ${tn}?`,
       (t, a, tn) => `Choose the missing measure: ${a} degrees plus what makes ${tn}?`,
@@ -454,7 +454,7 @@ export function missingProcedural() {
       (t, a, tn) => `Identify the partner of ${a} degrees in ${tn}.`,
       (t, a, tn) => `Which value completes ${tn} alongside ${a} degrees?`,
       (t, a, tn) => `Precisely which choice fills ${tn} after ${a} degrees?`,
-      (t, a, tn) => `Determine the measure pairing with ${a} degrees to total ${tn}.`,
+      (t, a, tn) => `Which measure goes with ${a} degrees to make ${tn}?`,
     ],
   };
   let seedMp = 691;
@@ -488,8 +488,8 @@ export function missingConceptual() {
       (nm, t, a, said) => `Check ${nm}'s missing measure: ${a} degrees plus ${said} makes ${t === 90 ? "a right angle" : "a straight angle"}. Right or not?`,
     ],
     band3: [
-      (nm, t, a, said) => `${nm} certifies that ${a} degrees and ${said} degrees complete ${t === 180 ? "a straight angle" : "a full turn"}. Valid?`,
-      (nm, t, a, said) => `Audit: ${a} degrees recorded with a ${said}-degree partner for ${t === 180 ? "a straight angle" : "a full turn"}, per ${nm}. Clean?`,
+      (nm, t, a, said) => `${nm} says ${a} degrees and ${said} degrees make ${t === 180 ? "a straight angle" : "a full turn"}. Is ${nm} right?`,
+      (nm, t, a, said) => `${nm} writes ${said} degrees as the partner of ${a} degrees to make ${t === 180 ? "a straight angle" : "a full turn"}. Is that right?`,
     ],
   };
   const missSaidData = {
@@ -528,8 +528,8 @@ export function missingConceptual() {
       (nm) => `Splitting a right angle changes its total, argues ${nm}. Is that right?`,
     ],
     band3: [
-      (nm) => `${nm} states that however a straight angle is cut in two, the parts sum to 180 degrees. Sound statement?`,
-      (nm) => `The pieces of a cut straight angle can total more than 180 degrees, asserts ${nm}. Is the assertion right?`,
+      (nm) => `${nm} says that however you cut a straight angle in two, the parts add to 180 degrees. Is ${nm} right?`,
+      (nm) => `The pieces of a cut straight angle can add to more than 180 degrees, says ${nm}. Is that right?`,
     ],
   };
   for (const band of ["band1", "band2", "band3"]) {
@@ -539,7 +539,7 @@ export function missingConceptual() {
         item("missingAngle", "conceptual", `splitWholeJudge_${band}`, band, {
           answer: ok ? "Yes" : "No",
           choices: ["Yes", "No"],
-          display: { ang: { kind: "authored" }, promptText: biggerPhr[band][i % 2](nameAt(i * 3 + 2 + OFF[band])) + (i >= 8 ? " The whole stays the whole." : ""), truth: ok },
+          display: { ang: { kind: "authored" }, promptText: (i >= 8 ? "The whole stays the whole. " : "") + biggerPhr[band][i % 2](nameAt(i * 3 + 2 + OFF[band])), truth: ok },
         })
       );
     }
@@ -556,7 +556,7 @@ export function missingConceptual() {
     ],
     band3: [
       (nm, a) => `${nm} offers ${a} degrees as one piece of a straight angle. Can it be?`,
-      (nm, a) => `A ${a}-degree part belongs inside a straight angle, states ${nm}. Sound statement?`,
+      (nm, a) => `A ${a}-degree part fits inside a straight angle, says ${nm}. Is that right?`,
     ],
   };
   const overData = {
@@ -568,7 +568,7 @@ export function missingConceptual() {
       item("missingAngle", "conceptual", `partWholeTrap_band1`, "band1", {
         answer: "No",
         choices: ["Yes", "No"],
-        display: { ang: { kind: "trapNo" }, promptText: overPhr.band1[i % 2](nameAt(i * 3 + 3)) + (i >= 8 ? " A part never beats its whole." : ""), truth: false },
+        display: { ang: { kind: "trapNo" }, promptText: (i >= 8 ? "A part never beats its whole. " : "") + overPhr.band1[i % 2](nameAt(i * 3 + 3)), truth: false },
       })
     );
   }

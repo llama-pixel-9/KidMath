@@ -142,7 +142,7 @@ export function lengthConvertConceptual() {
   });
   const gapReasonPhr = rotor([
     (nm, a, b) => `${nm}'s plant grew from ${a} cm to ${b} cm. Which number sentence finds the growth?`,
-    (nm, a, b) => `The vine stretched from ${a} cm to ${b} cm. Which sentence shows how much it grew? ${nm} picks one.`,
+    (nm, a, b) => `The vine stretched from ${a} cm to ${b} cm. Help ${nm} pick: which sentence shows how much it grew?`,
   ]);
   [[7, 12], [9, 15], [4, 9], [11, 18], [6, 14], [8, 16], [3, 11], [13, 20], [5, 13], [12, 17], [2, 10], [14, 19], [3, 8], [6, 15], [4, 12], [9, 20]].forEach(([a, b], i) => {
     const good = `${b} - ${a}`;
@@ -171,7 +171,7 @@ export function lengthConvertConceptual() {
   });
   const crossPhr = rotor([
     (nm, a, b) => `${nm} compares ${a} with ${b}. Which is longer?`,
-    (nm, a, b) => `Which stretch is longer, ${a} or ${b}? ${nm} converts to check.`,
+    (nm, a, b) => `${nm} converts to check. Which stretch is longer, ${a} or ${b}?`,
   ]);
   const crossLonger = (band, data) =>
     data.forEach(([a, av, b, bv], i) => {
@@ -195,7 +195,7 @@ export function lengthConvertConceptual() {
     (nm, from, to) => `To change ${from} into ${to}, what does ${nm} multiply by?`,
     (nm, from, to) => `${nm} converts ${from} to ${to}. Which factor is right?`,
   ]);
-  [["metres", "centimetres", 100], ["kilometres", "metres", 1000], ["centimetres", "millimetres", 10], ["metres", "centimetres", 100], ["kilometres", "metres", 1000], ["centimetres", "millimetres", 10], ["metres", "centimetres", 100], ["kilometres", "metres", 1000], ["centimetres", "millimetres", 10], ["metres", "centimetres", 100], ["kilometres", "metres", 1000], ["centimetres", "millimetres", 10], ["metres", "centimetres", 100], ["kilometres", "metres", 1000], ["centimetres", "millimetres", 10]].forEach(([from, to, factor], i) => {
+  [["meters", "centimeters", 100], ["kilometers", "meters", 1000], ["centimeters", "millimeters", 10], ["meters", "centimeters", 100], ["kilometers", "meters", 1000], ["centimeters", "millimeters", 10], ["meters", "centimeters", 100], ["kilometers", "meters", 1000], ["centimeters", "millimeters", 10], ["meters", "centimeters", 100], ["kilometers", "meters", 1000], ["centimeters", "millimeters", 10], ["meters", "centimeters", 100], ["kilometers", "meters", 1000], ["centimeters", "millimeters", 10]].forEach(([from, to, factor], i) => {
     items.push(
       item("lengthConvert", "conceptual", "factorPickMid", "band2", {
         answer: factor,
@@ -222,7 +222,7 @@ export function lengthConvertConceptual() {
   });
   const whichAmountPhr = rotor([
     (nm, total, to, from) => `${nm} needs ? ${from} to make ${total} ${to}. Which amount fits?`,
-    (nm, total, to, from) => `How many ${from} make ${total} ${to}? ${nm} picks the amount.`,
+    (nm, total, to, from) => `Help ${nm} pick the amount. How many ${from} make ${total} ${to}?`,
   ]);
   [[300, "m>cm"], [2000, "km>m"], [40, "cm>mm"], [700, "m>cm"], [5000, "km>m"], [80, "cm>mm"], [500, "m>cm"], [3000, "km>m"], [60, "cm>mm"], [900, "m>cm"], [7000, "km>m"], [30, "cm>mm"], [400, "m>cm"], [6000, "km>m"], [90, "cm>mm"], [1000, "m>cm"]].forEach(([total, pair], i) => {
     const [from, to] = pair.split(">");
@@ -333,7 +333,7 @@ export function massVolumeConceptual() {
   // Band 1 — heavier/lighter sense and container sense.
   const heavierPhr = rotor([
     (nm, a, b) => `${nm} lifts a ${a} kg bag and a ${b} kg bag. Which bag is heavier?`,
-    (nm, a, b) => `Two crates: ${a} kg and ${b} kg. Which crate is heavier? ${nm} checks the labels.`,
+    (nm, a, b) => `Two crates: ${a} kg and ${b} kg. ${nm} checks the labels. Which crate is heavier?`,
   ]);
   [[12, 9], [7, 15], [18, 11], [6, 13], [20, 17], [8, 16], [14, 5], [10, 19], [16, 12], [4, 9], [17, 14], [11, 20], [13, 8], [9, 18], [15, 10], [19, 16], [5, 12], [20, 7]].forEach(([a, b], i) => {
     items.push(
@@ -387,7 +387,7 @@ export function massVolumeConceptual() {
     );
   });
   const crossHeavyPhr = rotor([
-    (nm, a, b) => `Which is heavier, ${a} or ${b}? ${nm} converts to compare.`,
+    (nm, a, b) => `${nm} converts to compare. Which is heavier, ${a} or ${b}?`,
     (nm, a, b) => `${nm} weighs ${a} against ${b}. Which side is heavier?`,
   ]);
   [["2 kg", 2000, "1500 g", 1500], ["2500 g", 2500, "2 kg", 2000], ["3 kg", 3000, "2800 g", 2800], ["3300 g", 3300, "3 kg", 3000], ["1 kg", 1000, "900 g", 900], ["1200 g", 1200, "1 kg", 1000], ["5 kg", 5000, "4700 g", 4700], ["5400 g", 5400, "5 kg", 5000], ["4 kg", 4000, "3600 g", 3600], ["4800 g", 4800, "4 kg", 4000], ["7 kg", 7000, "6500 g", 6500], ["7700 g", 7700, "7 kg", 7000], ["6 kg", 6000, "5800 g", 5800], ["6200 g", 6200, "6 kg", 6000], ["8 kg", 8000, "7900 g", 7900], ["9100 g", 9100, "9 kg", 9000], ["9 kg", 9000, "8600 g", 8600], ["2 kg", 2000, "1999 g", 1999]].forEach(([a, av, b, bv], i) => {

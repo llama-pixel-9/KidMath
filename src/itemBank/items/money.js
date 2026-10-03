@@ -1662,7 +1662,7 @@ export const ITEMS = [
     structureType: "storyShop_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"back":8,"kind":"countBack","start":10},"promptText":"At the book sale, Lily pays 10 cents for a 8-cent sticker. How many cents come back as change?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"back":8,"kind":"countBack","start":10},"promptText":"At the book sale, Lily pays 10 cents for an 8-cent sticker. How many cents come back as change?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0167",
@@ -1902,7 +1902,7 @@ export const ITEMS = [
     structureType: "storyShop_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"back":81,"kind":"countBack","start":100},"promptText":"At the lemonade stand, Theo pays 100 cents for a 81-cent badge. How many cents come back as change?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"back":81,"kind":"countBack","start":100},"promptText":"At the lemonade stand, Theo pays 100 cents for an 81-cent badge. How many cents come back as change?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0191",
@@ -2622,7 +2622,7 @@ export const ITEMS = [
     structureType: "storyTwoCoinPay_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"back":11,"kind":"countBack","start":15},"promptText":"Omar pays with a dime and a nickel for a 11-cent treat. How many cents come back?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"back":11,"kind":"countBack","start":15},"promptText":"Omar pays with a dime and a nickel for an 11-cent treat. How many cents come back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0263",
@@ -2912,7 +2912,7 @@ export const ITEMS = [
     structureType: "storyTwoCoinPay_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"counting":{"back":8,"kind":"countBack","start":50},"promptText":"Luca pays with a quarter and a quarter for a 8-cent treat. How many cents come back?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"counting":{"back":8,"kind":"countBack","start":50},"promptText":"Luca pays with a quarter and a quarter for an 8-cent treat. How many cents come back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0292",
@@ -3582,7 +3582,7 @@ export const ITEMS = [
     structureType: "storySwap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":10,"bv":10,"kind":"eq"},"truth":true,"promptText":"Mina suggests swapping 2 nickels for 1 dime, value for value. Is the trade fair?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":10,"bv":10,"kind":"eq"},"truth":true,"promptText":"Mina wants to trade 2 nickels for 1 dime. Is the trade fair?"}},
   },
   {
     itemId: "money-app-b0821-0359",
@@ -3602,7 +3602,7 @@ export const ITEMS = [
     structureType: "storySwap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":15,"bv":15,"kind":"eq"},"truth":true,"promptText":"Nia suggests swapping 3 nickels for 1 dime and 1 nickel, value for value. Is the trade fair?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":15,"bv":15,"kind":"eq"},"truth":true,"promptText":"Nia wants to trade 3 nickels for 1 dime and 1 nickel. Is the trade fair?"}},
   },
   {
     itemId: "money-app-b0821-0361",
@@ -3612,7 +3612,7 @@ export const ITEMS = [
     structureType: "storySwap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":5,"bv":4,"kind":"eq"},"truth":false,"promptText":"At the trading post, Theo offers 1 nickel for a friend's 4 pennies. Is that a fair trade?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":5,"bv":4,"kind":"eq"},"truth":false,"promptText":"Theo wants to trade 1 nickel for 4 pennies. Is the trade fair?"}},
   },
   {
     itemId: "money-app-b0821-0362",
@@ -3622,7 +3622,7 @@ export const ITEMS = [
     structureType: "storySwap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":20,"bv":20,"kind":"eq"},"truth":true,"promptText":"Ava suggests swapping 4 nickels for 2 dimes, value for value. Is the trade fair?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":20,"bv":20,"kind":"eq"},"truth":true,"promptText":"At the trading post, Ava offers 4 nickels for a friend's 2 dimes. Is that a fair trade?"}},
   },
   {
     itemId: "money-app-b0821-0363",
@@ -3642,7 +3642,7 @@ export const ITEMS = [
     structureType: "storySwap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":10,"bv":10,"kind":"eq"},"truth":true,"promptText":"Ida suggests swapping 1 dime for 10 pennies, value for value. Is the trade fair?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":10,"bv":10,"kind":"eq"},"truth":true,"promptText":"Ida wants to trade 1 dime for 10 pennies. Is the trade fair?"}},
   },
   {
     itemId: "money-app-b0821-0365",
@@ -3652,7 +3652,7 @@ export const ITEMS = [
     structureType: "storySwap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":10,"bv":11,"kind":"eq"},"truth":false,"promptText":"At the trading post, Omar offers 2 nickels for a friend's 1 dime and 1 penny. Is that a fair trade?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":10,"bv":11,"kind":"eq"},"truth":false,"promptText":"Omar wants to trade 2 nickels for 1 dime and 1 penny. Is the trade fair?"}},
   },
   {
     itemId: "money-app-b0821-0366",
@@ -3662,7 +3662,7 @@ export const ITEMS = [
     structureType: "storySwap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":15,"bv":15,"kind":"eq"},"truth":true,"promptText":"June suggests swapping 3 nickels for 15 pennies, value for value. Is the trade fair?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":15,"bv":15,"kind":"eq"},"truth":true,"promptText":"June wants to trade 3 nickels for 15 pennies. Is the trade fair?"}},
   },
   {
     itemId: "money-app-b0821-0367",
@@ -3682,7 +3682,7 @@ export const ITEMS = [
     structureType: "storySwap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":20,"bv":20,"kind":"eq"},"truth":true,"promptText":"Ben suggests swapping 2 dimes for 20 pennies, value for value. Is the trade fair?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":20,"bv":20,"kind":"eq"},"truth":true,"promptText":"At the trading post, Ben offers 2 dimes for a friend's 20 pennies. Is that a fair trade?"}},
   },
   {
     itemId: "money-app-b0821-0369",
@@ -3702,7 +3702,7 @@ export const ITEMS = [
     structureType: "storySwap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":20,"bv":15,"kind":"eq"},"truth":false,"promptText":"Rosa suggests swapping 4 nickels for 1 dime and 1 nickel, value for value. Is the trade fair?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":20,"bv":15,"kind":"eq"},"truth":false,"promptText":"Rosa wants to trade 4 nickels for 1 dime and 1 nickel. Is the trade fair?"}},
   },
   {
     itemId: "money-app-b0821-0371",
@@ -3722,7 +3722,7 @@ export const ITEMS = [
     structureType: "storySwap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":20,"bv":19,"kind":"eq"},"truth":false,"promptText":"Amara suggests swapping 2 dimes for 19 pennies, value for value. Is the trade fair?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":20,"bv":19,"kind":"eq"},"truth":false,"promptText":"Amara wants to trade 2 dimes for 19 pennies. Is the trade fair?"}},
   },
   {
     itemId: "money-app-b0821-0373",
@@ -3742,7 +3742,7 @@ export const ITEMS = [
     structureType: "storySwap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":15,"bv":15,"kind":"eq"},"truth":true,"promptText":"Priya suggests swapping 1 dime and 5 pennies for 3 nickels, value for value. Is the trade fair?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":15,"bv":15,"kind":"eq"},"truth":true,"promptText":"Priya wants to trade 1 dime and 5 pennies for 3 nickels. Is the trade fair?"}},
   },
   {
     itemId: "money-app-b0821-0375",
@@ -3762,7 +3762,7 @@ export const ITEMS = [
     structureType: "storySwap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":25,"bv":20,"kind":"eq"},"truth":false,"promptText":"Mina suggests swapping 1 quarter for 2 dimes, value for value. Is the trade fair?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":25,"bv":20,"kind":"eq"},"truth":false,"promptText":"Mina wants to trade 1 quarter for 2 dimes. Is the trade fair?"}},
   },
   {
     itemId: "money-app-b0821-0377",
@@ -3782,7 +3782,7 @@ export const ITEMS = [
     structureType: "storySwap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":30,"bv":30,"kind":"eq"},"truth":true,"promptText":"Nia suggests swapping 1 quarter and 1 nickel for 3 dimes, value for value. Is the trade fair?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":30,"bv":30,"kind":"eq"},"truth":true,"promptText":"Nia wants to trade 1 quarter and 1 nickel for 3 dimes. Is the trade fair?"}},
   },
   {
     itemId: "money-app-b0821-0379",
@@ -3792,7 +3792,7 @@ export const ITEMS = [
     structureType: "storySwap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":50,"bv":45,"kind":"eq"},"truth":false,"promptText":"At the trading post, Theo offers 2 quarters for a friend's 9 nickels. Is that a fair trade?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":50,"bv":45,"kind":"eq"},"truth":false,"promptText":"Theo wants to trade 2 quarters for 9 nickels. Is the trade fair?"}},
   },
   {
     itemId: "money-app-b0821-0380",
@@ -3802,7 +3802,7 @@ export const ITEMS = [
     structureType: "storySwap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":25,"bv":25,"kind":"eq"},"truth":true,"promptText":"Ava suggests swapping 1 quarter for 2 dimes and 1 nickel, value for value. Is the trade fair?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":25,"bv":25,"kind":"eq"},"truth":true,"promptText":"Ava wants to trade 1 quarter for 2 dimes and 1 nickel. Is the trade fair?"}},
   },
   {
     itemId: "money-app-b0821-0381",
@@ -3822,7 +3822,7 @@ export const ITEMS = [
     structureType: "storySwap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":35,"bv":35,"kind":"eq"},"truth":true,"promptText":"Ida suggests swapping 1 quarter and 1 dime for 7 nickels, value for value. Is the trade fair?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":35,"bv":35,"kind":"eq"},"truth":true,"promptText":"Ida wants to trade 1 quarter and 1 dime for 7 nickels. Is the trade fair?"}},
   },
   {
     itemId: "money-app-b0821-0383",
@@ -3842,7 +3842,7 @@ export const ITEMS = [
     structureType: "storySwap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":75,"bv":75,"kind":"eq"},"truth":true,"promptText":"June suggests swapping 3 quarters for 15 nickels, value for value. Is the trade fair?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":75,"bv":75,"kind":"eq"},"truth":true,"promptText":"June wants to trade 3 quarters for 15 nickels. Is the trade fair?"}},
   },
   {
     itemId: "money-app-b0821-0385",
@@ -3862,7 +3862,7 @@ export const ITEMS = [
     structureType: "storySwap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":60,"bv":60,"kind":"eq"},"truth":true,"promptText":"Ben suggests swapping 2 quarters and 1 dime for 6 dimes, value for value. Is the trade fair?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":60,"bv":60,"kind":"eq"},"truth":true,"promptText":"Ben wants to trade 2 quarters and 1 dime for 6 dimes. Is the trade fair?"}},
   },
   {
     itemId: "money-app-b0821-0387",
@@ -3882,7 +3882,7 @@ export const ITEMS = [
     structureType: "storySwap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":40,"bv":40,"kind":"eq"},"truth":true,"promptText":"Rosa suggests swapping 1 quarter and 3 nickels for 4 dimes, value for value. Is the trade fair?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":40,"bv":40,"kind":"eq"},"truth":true,"promptText":"At the trading post, Rosa offers 1 quarter and 3 nickels for a friend's 4 dimes. Is that a fair trade?"}},
   },
   {
     itemId: "money-app-b0821-0389",
@@ -3902,7 +3902,7 @@ export const ITEMS = [
     structureType: "storySwap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":75,"bv":70,"kind":"eq"},"truth":false,"promptText":"Amara suggests swapping 3 quarters for 70 pennies, value for value. Is the trade fair?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":75,"bv":70,"kind":"eq"},"truth":false,"promptText":"Amara wants to trade 3 quarters for 70 pennies. Is the trade fair?"}},
   },
   {
     itemId: "money-app-b0821-0391",
@@ -3932,7 +3932,7 @@ export const ITEMS = [
     structureType: "storySwap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":100,"bv":90,"kind":"eq"},"truth":false,"promptText":"Nia suggests swapping $1 for 9 dimes, value for value. Is the trade fair?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":100,"bv":90,"kind":"eq"},"truth":false,"promptText":"Nia wants to trade $1 for 9 dimes. Is the trade fair?"}},
   },
   {
     itemId: "money-app-b0821-0394",
@@ -3952,7 +3952,7 @@ export const ITEMS = [
     structureType: "storySwap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":125,"bv":125,"kind":"eq"},"truth":true,"promptText":"Ava suggests swapping $1 and 1 quarter for 5 quarters, value for value. Is the trade fair?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":125,"bv":125,"kind":"eq"},"truth":true,"promptText":"Ava wants to trade $1 and 1 quarter for 5 quarters. Is the trade fair?"}},
   },
   {
     itemId: "money-app-b0821-0396",
@@ -3962,7 +3962,7 @@ export const ITEMS = [
     structureType: "storySwap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":100,"bv":100,"kind":"eq"},"truth":true,"promptText":"At the trading post, Kai offers $1 for a friend's 10 dimes. Is that a fair trade?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":100,"bv":50,"kind":"eq"},"truth":false,"promptText":"At the trading post, Kai offers $1 for a friend's 10 nickels. Is that a fair trade?"}},
   },
   {
     itemId: "money-app-b0821-0397",
@@ -3972,7 +3972,7 @@ export const ITEMS = [
     structureType: "storySwap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":200,"bv":190,"kind":"eq"},"truth":false,"promptText":"Ida suggests swapping $2 for 19 dimes, value for value. Is the trade fair?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":200,"bv":190,"kind":"eq"},"truth":false,"promptText":"Ida wants to trade $2 for 19 dimes. Is the trade fair?"}},
   },
   {
     itemId: "money-app-b0821-0398",
@@ -3992,7 +3992,7 @@ export const ITEMS = [
     structureType: "storySwap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":300,"bv":300,"kind":"eq"},"truth":true,"promptText":"June suggests swapping $3 for 12 quarters, value for value. Is the trade fair?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":300,"bv":300,"kind":"eq"},"truth":true,"promptText":"June wants to trade $3 for 12 quarters. Is the trade fair?"}},
   },
   {
     itemId: "money-app-b0821-0400",
@@ -4002,7 +4002,7 @@ export const ITEMS = [
     structureType: "storySwap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":150,"bv":150,"kind":"eq"},"truth":true,"promptText":"At the trading post, Zoe offers $1 and 2 quarters for a friend's 6 quarters. Is that a fair trade?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":150,"bv":300,"kind":"eq"},"truth":false,"promptText":"At the trading post, Zoe offers $1 and 2 quarters for a friend's 12 quarters. Is that a fair trade?"}},
   },
   {
     itemId: "money-app-b0821-0401",
@@ -4012,7 +4012,7 @@ export const ITEMS = [
     structureType: "storySwap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":210,"bv":200,"kind":"eq"},"truth":false,"promptText":"Ben suggests swapping $2 and 1 dime for 20 dimes, value for value. Is the trade fair?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":210,"bv":200,"kind":"eq"},"truth":false,"promptText":"Ben wants to trade $2 and 1 dime for 20 dimes. Is the trade fair?"}},
   },
   {
     itemId: "money-app-b0821-0402",
@@ -4032,7 +4032,7 @@ export const ITEMS = [
     structureType: "storySwap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":400,"bv":400,"kind":"eq"},"truth":true,"promptText":"Rosa suggests swapping $4 for 16 quarters, value for value. Is the trade fair?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":400,"bv":400,"kind":"eq"},"truth":true,"promptText":"Rosa wants to trade $4 for 16 quarters. Is the trade fair?"}},
   },
   {
     itemId: "money-app-b0821-0404",
@@ -4042,7 +4042,7 @@ export const ITEMS = [
     structureType: "storySwap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":105,"bv":105,"kind":"eq"},"truth":true,"promptText":"At the trading post, Finn offers $1 and 1 nickel for a friend's 21 nickels. Is that a fair trade?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":105,"bv":55,"kind":"eq"},"truth":false,"promptText":"At the trading post, Finn offers $1 and 1 nickel for a friend's 11 nickels. Is that a fair trade?"}},
   },
   {
     itemId: "money-app-b0821-0405",
@@ -4052,7 +4052,7 @@ export const ITEMS = [
     structureType: "storySwap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":300,"bv":290,"kind":"eq"},"truth":false,"promptText":"Amara suggests swapping $3 for 29 dimes, value for value. Is the trade fair?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":300,"bv":290,"kind":"eq"},"truth":false,"promptText":"Amara wants to trade $3 for 29 dimes. Is the trade fair?"}},
   },
   {
     itemId: "money-app-b0821-0406",
@@ -4072,7 +4072,7 @@ export const ITEMS = [
     structureType: "storySwap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":500,"bv":500,"kind":"eq"},"truth":true,"promptText":"Priya suggests swapping $5 for 20 quarters, value for value. Is the trade fair?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":500,"bv":500,"kind":"eq"},"truth":true,"promptText":"Priya wants to trade $5 for 20 quarters. Is the trade fair?"}},
   },
   {
     itemId: "money-app-b0821-0408",
@@ -4352,7 +4352,7 @@ export const ITEMS = [
     structureType: "storyNeedCoins_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"money":{"per":10,"kind":"trade","fromCents":80},"promptText":"June pays a 80-cent fare using only dimes. How many dimes is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"money":{"per":10,"kind":"trade","fromCents":80},"promptText":"June pays an 80-cent fare using only dimes. How many dimes is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0436",
@@ -4412,7 +4412,7 @@ export const ITEMS = [
     structureType: "storyNeedCoins_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"money":{"per":5,"kind":"trade","fromCents":85},"promptText":"Amara pays a 85-cent fare using only nickels. How many nickels is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"money":{"per":5,"kind":"trade","fromCents":85},"promptText":"Amara pays an 85-cent fare using only nickels. How many nickels is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0442",
@@ -4662,7 +4662,7 @@ export const ITEMS = [
     structureType: "storySpend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"back":11,"kind":"countBack","start":16},"promptText":"Kai takes 16 cents to the fair and buys a 11-cent badge. How many cents does Kai still have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"back":11,"kind":"countBack","start":16},"promptText":"Kai takes 16 cents to the fair and buys an 11-cent badge. How many cents does Kai still have?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0467",
@@ -4742,7 +4742,7 @@ export const ITEMS = [
     structureType: "storySpend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"back":8,"kind":"countBack","start":16},"promptText":"Finn takes 16 cents to the fair and buys a 8-cent badge. How many cents does Finn still have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"back":8,"kind":"countBack","start":16},"promptText":"Finn takes 16 cents to the fair and buys an 8-cent badge. How many cents does Finn still have?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0475",
@@ -5122,7 +5122,7 @@ export const ITEMS = [
     structureType: "storyTwoItems_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[8,9]},"promptText":"Luca buys a 8-cent bookmark and a 9-cent badge. How many cents does Luca spend in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[8,9]},"promptText":"Luca buys an 8-cent bookmark and a 9-cent badge. How many cents does Luca spend in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0513",
@@ -5142,7 +5142,7 @@ export const ITEMS = [
     structureType: "storyTwoItems_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[6,11]},"promptText":"Theo buys a 6-cent ribbon and a 11-cent sticker. How many cents does Theo spend in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[6,11]},"promptText":"Theo buys a 6-cent ribbon and an 11-cent sticker. How many cents does Theo spend in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0515",
@@ -5182,7 +5182,7 @@ export const ITEMS = [
     structureType: "storyTwoItems_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[8,5]},"promptText":"Omar buys a 8-cent ribbon and a 5-cent sticker. How many cents does Omar spend in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[8,5]},"promptText":"Omar buys an 8-cent ribbon and a 5-cent sticker. How many cents does Omar spend in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0519",
@@ -5242,7 +5242,7 @@ export const ITEMS = [
     structureType: "storyTwoItems_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[9,8]},"promptText":"Finn buys a 9-cent bookmark and a 8-cent badge. How many cents does Finn spend in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[9,8]},"promptText":"Finn buys a 9-cent bookmark and an 8-cent badge. How many cents does Finn spend in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0525",
@@ -5512,7 +5512,7 @@ export const ITEMS = [
     structureType: "storyTwoItems_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":330,"display":{"counting":{"kind":"sum","parts":[243,87]},"promptText":"Kai buys a 243-cent badge and a 87-cent ribbon. How many cents does Kai spend in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":330,"display":{"counting":{"kind":"sum","parts":[243,87]},"promptText":"Kai buys a 243-cent badge and an 87-cent ribbon. How many cents does Kai spend in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0552",
@@ -5612,7 +5612,7 @@ export const ITEMS = [
     structureType: "storyTwoItems_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":339,"display":{"counting":{"kind":"sum","parts":[255,84]},"promptText":"Diego buys a 255-cent sticker and a 84-cent bookmark. How many cents does Diego spend in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":339,"display":{"counting":{"kind":"sum","parts":[255,84]},"promptText":"Diego buys a 255-cent sticker and an 84-cent bookmark. How many cents does Diego spend in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0562",
@@ -5692,7 +5692,7 @@ export const ITEMS = [
     structureType: "storyFewest_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"kind":"fewest","cents":8},"promptText":"To pay a 8-cent fare with the fewest coins, how many coins does June hand over?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"kind":"fewest","cents":8},"promptText":"To pay an 8-cent fare with the fewest coins, how many coins does June hand over?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0570",
@@ -5732,7 +5732,7 @@ export const ITEMS = [
     structureType: "storyFewest_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"kind":"fewest","cents":18},"promptText":"To pay a 18-cent fare with the fewest coins, how many coins does Rosa hand over?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"kind":"fewest","cents":18},"promptText":"To pay an 18-cent fare with the fewest coins, how many coins does Rosa hand over?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0574",
@@ -5902,7 +5902,7 @@ export const ITEMS = [
     structureType: "storyFewest_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"money":{"kind":"fewest","cents":83},"promptText":"To pay a 83-cent fare with the fewest coins, how many coins does Ben hand over?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"money":{"kind":"fewest","cents":83},"promptText":"To pay an 83-cent fare with the fewest coins, how many coins does Ben hand over?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0591",
@@ -6132,7 +6132,7 @@ export const ITEMS = [
     structureType: "coinValueJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"coin":"penny","kind":"coinValue","said":1},"truth":true,"promptText":"Mina says one penny is worth 1 cents. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"coin":"penny","kind":"coinValue","said":1},"truth":true,"promptText":"Mina says one penny is worth 1 cent. Is Mina right?"}},
   },
   {
     itemId: "money-conc-b0821-0002",
@@ -6162,7 +6162,7 @@ export const ITEMS = [
     structureType: "coinValueJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"coin":"nickel","kind":"coinValue","said":1},"truth":false,"promptText":"Zoe trades a nickel as if it were 1 cents. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"coin":"nickel","kind":"coinValue","said":1},"truth":false,"promptText":"Zoe trades a nickel as if it were 1 cent. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0005",
@@ -6222,7 +6222,7 @@ export const ITEMS = [
     structureType: "coinValueJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"coin":"dime","kind":"coinValue","said":1},"truth":false,"promptText":"Omar trades a dime as if it were 1 cents. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"coin":"dime","kind":"coinValue","said":1},"truth":false,"promptText":"Omar trades a dime as if it were 1 cent. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0011",
@@ -6242,7 +6242,7 @@ export const ITEMS = [
     structureType: "coinValueJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"coin":"penny","kind":"coinValue","said":1},"truth":true,"promptText":"Finn trades a penny as if it were 1 cents. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"coin":"penny","kind":"coinValue","said":1},"truth":true,"promptText":"Finn trades a penny as if it were 1 cent. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0013",
@@ -6302,7 +6302,7 @@ export const ITEMS = [
     structureType: "coinValueJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"coin":"penny","kind":"coinValue","said":1},"truth":true,"promptText":"Lily trades a penny as if it were 1 cents. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"coin":"penny","kind":"coinValue","said":1},"truth":true,"promptText":"Lily trades a penny as if it were 1 cent. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0019",
@@ -6312,7 +6312,7 @@ export const ITEMS = [
     structureType: "countVsValueJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":3,"counts":{"dime":1,"penny":2}},"truth":false,"promptText":"Theo holds 1 dime and 2 pennies and says \"3 cents\" after counting the coins one by one. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":3,"counts":{"dime":1,"penny":2}},"truth":false,"promptText":"Theo counts 1 dime and 2 pennies as 3 cents, one cent for each coin. Is Theo right?"}},
   },
   {
     itemId: "money-conc-b0821-0020",
@@ -6322,7 +6322,7 @@ export const ITEMS = [
     structureType: "countVsValueJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":3,"counts":{"penny":1,"nickel":2}},"truth":false,"promptText":"Ida counts 2 nickels and 1 penny as 3 cents — one cent per coin. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":3,"counts":{"penny":1,"nickel":2}},"truth":false,"promptText":"Ida counts 2 nickels and 1 penny as 3 cents, one cent for each coin. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0021",
@@ -6332,7 +6332,7 @@ export const ITEMS = [
     structureType: "countVsValueJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":4,"counts":{"penny":4}},"truth":true,"promptText":"Zoe holds 4 pennies and says \"4 cents\" after counting the coins one by one. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":4,"counts":{"penny":4}},"truth":true,"promptText":"Zoe holds 4 pennies, counts them one by one, and says that makes 4 cents. Is Zoe right?"}},
   },
   {
     itemId: "money-conc-b0821-0022",
@@ -6342,7 +6342,7 @@ export const ITEMS = [
     structureType: "countVsValueJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":4,"counts":{"penny":3,"nickel":1}},"truth":false,"promptText":"Rosa counts 1 nickel and 3 pennies as 4 cents — one cent per coin. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":4,"counts":{"penny":3,"nickel":1}},"truth":false,"promptText":"Rosa holds 1 nickel and 3 pennies, counts them one by one, and says that makes 4 cents. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0023",
@@ -6352,7 +6352,7 @@ export const ITEMS = [
     structureType: "countVsValueJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":7,"counts":{"penny":7}},"truth":true,"promptText":"Diego holds 7 pennies and says \"7 cents\" after counting the coins one by one. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":7,"counts":{"penny":7}},"truth":true,"promptText":"Diego holds 7 pennies, counts them one by one, and says that makes 7 cents. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0024",
@@ -6362,7 +6362,7 @@ export const ITEMS = [
     structureType: "countVsValueJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":2,"counts":{"dime":1,"nickel":1}},"truth":false,"promptText":"Nora counts 1 dime and 1 nickel as 2 cents — one cent per coin. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":2,"counts":{"dime":1,"nickel":1}},"truth":false,"promptText":"Nora holds 1 dime and 1 nickel, counts them one by one, and says that makes 2 cents. Is Nora right?"}},
   },
   {
     itemId: "money-conc-b0821-0025",
@@ -6372,7 +6372,7 @@ export const ITEMS = [
     structureType: "countVsValueJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":2,"counts":{"penny":2}},"truth":true,"promptText":"Luca holds 2 pennies and says \"2 cents\" after counting the coins one by one. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":2,"counts":{"penny":2}},"truth":true,"promptText":"Luca counts 2 pennies as 2 cents, one cent for each coin. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0026",
@@ -6382,7 +6382,7 @@ export const ITEMS = [
     structureType: "countVsValueJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":3,"counts":{"nickel":3}},"truth":false,"promptText":"Ava counts 3 nickels as 3 cents — one cent per coin. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":3,"counts":{"nickel":3}},"truth":false,"promptText":"Ava counts 3 nickels as 3 cents, one cent for each coin. Is Ava right?"}},
   },
   {
     itemId: "money-conc-b0821-0027",
@@ -6392,7 +6392,7 @@ export const ITEMS = [
     structureType: "countVsValueJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":9,"counts":{"penny":9}},"truth":true,"promptText":"Omar holds 9 pennies and says \"9 cents\" after counting the coins one by one. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":9,"counts":{"penny":9}},"truth":true,"promptText":"Omar counts 9 pennies as 9 cents, one cent for each coin. Is Omar right?"}},
   },
   {
     itemId: "money-conc-b0821-0028",
@@ -6402,7 +6402,7 @@ export const ITEMS = [
     structureType: "countVsValueJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":6,"counts":{"dime":1,"penny":5}},"truth":false,"promptText":"Ben counts 1 dime and 5 pennies as 6 cents — one cent per coin. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":6,"counts":{"dime":1,"penny":5}},"truth":false,"promptText":"Ben counts 1 dime and 5 pennies as 6 cents, one cent for each coin. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0029",
@@ -6412,7 +6412,7 @@ export const ITEMS = [
     structureType: "countVsValueJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":6,"counts":{"penny":6}},"truth":true,"promptText":"Finn holds 6 pennies and says \"6 cents\" after counting the coins one by one. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":6,"counts":{"penny":6}},"truth":true,"promptText":"Finn holds 6 pennies, counts them one by one, and says that makes 6 cents. Is Finn right?"}},
   },
   {
     itemId: "money-conc-b0821-0030",
@@ -6422,7 +6422,7 @@ export const ITEMS = [
     structureType: "countVsValueJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":6,"counts":{"penny":4,"nickel":2}},"truth":false,"promptText":"Priya counts 2 nickels and 4 pennies as 6 cents — one cent per coin. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":6,"counts":{"penny":4,"nickel":2}},"truth":false,"promptText":"Priya holds 2 nickels and 4 pennies, counts them one by one, and says that makes 6 cents. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0031",
@@ -6432,7 +6432,7 @@ export const ITEMS = [
     structureType: "countVsValueJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":3,"counts":{"penny":3}},"truth":true,"promptText":"Sam holds 3 pennies and says \"3 cents\" after counting the coins one by one. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":3,"counts":{"penny":3}},"truth":true,"promptText":"Sam holds 3 pennies, counts them one by one, and says that makes 3 cents. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0032",
@@ -6442,7 +6442,7 @@ export const ITEMS = [
     structureType: "countVsValueJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":7,"counts":{"penny":6,"nickel":1}},"truth":false,"promptText":"Nia counts 1 nickel and 6 pennies as 7 cents — one cent per coin. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":7,"counts":{"penny":6,"nickel":1}},"truth":false,"promptText":"Nia holds 1 nickel and 6 pennies, counts them one by one, and says that makes 7 cents. Is Nia right?"}},
   },
   {
     itemId: "money-conc-b0821-0033",
@@ -6452,7 +6452,7 @@ export const ITEMS = [
     structureType: "countVsValueJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":8,"counts":{"penny":8}},"truth":true,"promptText":"Kai holds 8 pennies and says \"8 cents\" after counting the coins one by one. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":8,"counts":{"penny":8}},"truth":true,"promptText":"Kai counts 8 pennies as 8 cents, one cent for each coin. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0034",
@@ -6462,7 +6462,7 @@ export const ITEMS = [
     structureType: "countVsValueJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":9,"counts":{"dime":1,"penny":8}},"truth":false,"promptText":"June counts 1 dime and 8 pennies as 9 cents — one cent per coin. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"kind":"countVsValue","said":9,"counts":{"dime":1,"penny":8}},"truth":false,"promptText":"June counts 1 dime and 8 pennies as 9 cents, one cent for each coin. Is June right?"}},
   },
   {
     itemId: "money-conc-b0821-0035",
@@ -6642,7 +6642,7 @@ export const ITEMS = [
     structureType: "quarterValueJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"coin":"quarter","kind":"coinValue","said":20},"truth":false,"promptText":"Ava trades a quarter as if it were 20 cents. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"coin":"quarter","kind":"coinValue","said":20},"truth":false,"promptText":"Ava trades a quarter as if it were 20 cents. Is Ava right?"}},
   },
   {
     itemId: "money-conc-b0821-0053",
@@ -6652,7 +6652,7 @@ export const ITEMS = [
     structureType: "quarterValueJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"coin":"quarter","kind":"coinValue","said":25},"truth":true,"promptText":"Omar says one quarter is worth 25 cents. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"coin":"quarter","kind":"coinValue","said":25},"truth":true,"promptText":"Omar says one quarter is worth 25 cents. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0054",
@@ -6672,7 +6672,7 @@ export const ITEMS = [
     structureType: "quarterValueJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"coin":"quarter","kind":"coinValue","said":24},"truth":false,"promptText":"Finn says one quarter is worth 24 cents. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"coin":"quarter","kind":"coinValue","said":24},"truth":false,"promptText":"Finn says one quarter is worth 24 cents. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0056",
@@ -6702,7 +6702,7 @@ export const ITEMS = [
     structureType: "quarterValueJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"coin":"quarter","kind":"coinValue","said":5},"truth":false,"promptText":"Nia trades a quarter as if it were 5 cents. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"coin":"quarter","kind":"coinValue","said":5},"truth":false,"promptText":"Nia trades a quarter as if it were 5 cents. Is Nia right?"}},
   },
   {
     itemId: "money-conc-b0821-0059",
@@ -6712,7 +6712,7 @@ export const ITEMS = [
     structureType: "quarterValueJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"coin":"quarter","kind":"coinValue","said":25},"truth":true,"promptText":"Kai says one quarter is worth 25 cents. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"coin":"quarter","kind":"coinValue","said":25},"truth":true,"promptText":"Kai trades a quarter as if it were 25 cents. Is Kai right?"}},
   },
   {
     itemId: "money-conc-b0821-0060",
@@ -6742,7 +6742,7 @@ export const ITEMS = [
     structureType: "quarterValueJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"coin":"quarter","kind":"coinValue","said":26},"truth":false,"promptText":"Amara trades a quarter as if it were 26 cents. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"coin":"quarter","kind":"coinValue","said":26},"truth":false,"promptText":"Amara says one quarter is worth 26 cents. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0063",
@@ -6752,7 +6752,7 @@ export const ITEMS = [
     structureType: "quarterValueJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"coin":"quarter","kind":"coinValue","said":25},"truth":true,"promptText":"Leo says one quarter is worth 25 cents. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"coin":"quarter","kind":"coinValue","said":25},"truth":true,"promptText":"Leo says one quarter is worth 25 cents. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0064",
@@ -6762,7 +6762,7 @@ export const ITEMS = [
     structureType: "quarterValueJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"coin":"quarter","kind":"coinValue","said":10},"truth":false,"promptText":"Mina trades a quarter as if it were 10 cents. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"coin":"quarter","kind":"coinValue","said":10},"truth":false,"promptText":"Mina says one quarter is worth 10 cents. Is Mina right?"}},
   },
   {
     itemId: "money-conc-b0821-0065",
@@ -6772,7 +6772,7 @@ export const ITEMS = [
     structureType: "quarterValueJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"coin":"quarter","kind":"coinValue","said":25},"truth":true,"promptText":"Theo says one quarter is worth 25 cents. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"coin":"quarter","kind":"coinValue","said":25},"truth":true,"promptText":"Theo trades a quarter as if it were 25 cents. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0066",
@@ -6782,7 +6782,7 @@ export const ITEMS = [
     structureType: "quarterValueJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"coin":"quarter","kind":"coinValue","said":21},"truth":false,"promptText":"Ida trades a quarter as if it were 21 cents. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"coin":"quarter","kind":"coinValue","said":21},"truth":false,"promptText":"Ida trades a quarter as if it were 21 cents. Is Ida right?"}},
   },
   {
     itemId: "money-conc-b0821-0067",
@@ -6952,7 +6952,7 @@ export const ITEMS = [
     structureType: "orderInvariance",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":true,"promptText":"Omar counts a pile of mixed coins smallest first, then biggest first. Do the two counts give the same total?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":true,"promptText":"Omar counts a pile of mixed coins smallest first, then biggest first. Omar says the two counts give the same total. Is Omar right?"}},
   },
   {
     itemId: "money-conc-b0821-0084",
@@ -6962,7 +6962,7 @@ export const ITEMS = [
     structureType: "orderInvariance",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":true,"promptText":"Ben wonders: does counting coins in a different order change the total?  Ben says no. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":true,"promptText":"Ben says counting the same coins in a different order does not change the total. Do you agree?"}},
   },
   {
     itemId: "money-conc-b0821-0085",
@@ -6972,7 +6972,7 @@ export const ITEMS = [
     structureType: "orderInvariance",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":true,"promptText":"Finn counts a pile of mixed coins smallest first, then biggest first. Do the two counts give the same total?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":false,"promptText":"Finn counts a pile of mixed coins smallest first, then biggest first. Finn says the two counts give different totals. Is Finn right?"}},
   },
   {
     itemId: "money-conc-b0821-0086",
@@ -6982,7 +6982,7 @@ export const ITEMS = [
     structureType: "orderInvariance",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":true,"promptText":"Priya wonders: does counting coins in a different order change the total?  Priya says no. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":false,"promptText":"Priya says counting the same coins in a different order changes the total. Do you agree?"}},
   },
   {
     itemId: "money-conc-b0821-0087",
@@ -6992,7 +6992,7 @@ export const ITEMS = [
     structureType: "orderInvariance",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":true,"promptText":"Sam counts a pile of mixed coins smallest first, then biggest first. Do the two counts give the same total?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":true,"promptText":"Sam counts a pile of mixed coins smallest first, then biggest first. Sam says the two counts give the same total. Do you agree?"}},
   },
   {
     itemId: "money-conc-b0821-0088",
@@ -7002,7 +7002,7 @@ export const ITEMS = [
     structureType: "orderInvariance",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":true,"promptText":"Nia wonders: does counting coins in a different order change the total?  Nia says no. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":true,"promptText":"Nia says counting the same coins in a different order does not change the total. Is Nia right?"}},
   },
   {
     itemId: "money-conc-b0821-0089",
@@ -7012,7 +7012,7 @@ export const ITEMS = [
     structureType: "orderInvariance",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":true,"promptText":"Kai counts a pile of mixed coins smallest first, then biggest first. Do the two counts give the same total?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":false,"promptText":"Kai counts a pile of mixed coins smallest first, then biggest first. Kai says the two counts give different totals. Do you agree?"}},
   },
   {
     itemId: "money-conc-b0821-0090",
@@ -7022,7 +7022,7 @@ export const ITEMS = [
     structureType: "orderInvariance",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":true,"promptText":"June wonders: does counting coins in a different order change the total?  June says no. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":false,"promptText":"June says counting the same coins in a different order changes the total. Is June right?"}},
   },
   {
     itemId: "money-conc-b0821-0091",
@@ -7032,7 +7032,7 @@ export const ITEMS = [
     structureType: "orderInvariance",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":true,"promptText":"Lily counts a pile of mixed coins smallest first, then biggest first. Do the two counts give the same total?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":true,"promptText":"Lily counts a pile of mixed coins smallest first, then biggest first. Lily says the two counts give the same total. Is Lily right?"}},
   },
   {
     itemId: "money-conc-b0821-0092",
@@ -7042,7 +7042,7 @@ export const ITEMS = [
     structureType: "orderInvariance",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":true,"promptText":"Amara wonders: does counting coins in a different order change the total?  Amara says no. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":true,"promptText":"Amara says counting the same coins in a different order does not change the total. Do you agree?"}},
   },
   {
     itemId: "money-conc-b0821-0093",
@@ -7052,7 +7052,7 @@ export const ITEMS = [
     structureType: "orderInvariance",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":true,"promptText":"Leo counts a pile of mixed coins smallest first, then biggest first. Do the two counts give the same total?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":false,"promptText":"Leo counts a pile of mixed coins smallest first, then biggest first. Leo says the two counts give different totals. Is Leo right?"}},
   },
   {
     itemId: "money-conc-b0821-0094",
@@ -7062,7 +7062,7 @@ export const ITEMS = [
     structureType: "orderInvariance",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":true,"promptText":"Mina wonders: does counting coins in a different order change the total?  Mina says no. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":false,"promptText":"Mina says counting the same coins in a different order changes the total. Do you agree?"}},
   },
   {
     itemId: "money-conc-b0821-0095",
@@ -7072,7 +7072,7 @@ export const ITEMS = [
     structureType: "orderInvariance",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":true,"promptText":"Theo counts a pile of mixed coins smallest first, then biggest first. Do the two counts give the same total?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":true,"promptText":"Theo counts a pile of mixed coins smallest first, then biggest first. Theo says the two counts give the same total. Do you agree?"}},
   },
   {
     itemId: "money-conc-b0821-0096",
@@ -7082,7 +7082,7 @@ export const ITEMS = [
     structureType: "orderInvariance",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":true,"promptText":"Ida wonders: does counting coins in a different order change the total?  Ida says no. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":true,"promptText":"Ida says counting the same coins in a different order does not change the total. Is Ida right?"}},
   },
   {
     itemId: "money-conc-b0821-0097",
@@ -7092,7 +7092,7 @@ export const ITEMS = [
     structureType: "orderInvariance",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":true,"promptText":"Zoe counts a pile of mixed coins smallest first, then biggest first. Do the two counts give the same total?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":false,"promptText":"Zoe counts a pile of mixed coins smallest first, then biggest first. Zoe says the two counts give different totals. Do you agree?"}},
   },
   {
     itemId: "money-conc-b0821-0098",
@@ -7102,7 +7102,7 @@ export const ITEMS = [
     structureType: "orderInvariance",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":true,"promptText":"Rosa wonders: does counting coins in a different order change the total?  Rosa says no. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":false,"promptText":"Rosa says counting the same coins in a different order changes the total. Is Rosa right?"}},
   },
   {
     itemId: "money-conc-b0821-0099",
@@ -7112,7 +7112,7 @@ export const ITEMS = [
     structureType: "orderInvariance",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":true,"promptText":"Diego counts a pile of mixed coins smallest first, then biggest first. Do the two counts give the same total?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":true,"promptText":"Diego counts a pile of mixed coins smallest first, then biggest first. Diego says the two counts give the same total. Is Diego right?"}},
   },
   {
     itemId: "money-conc-b0821-0100",
@@ -7122,7 +7122,7 @@ export const ITEMS = [
     structureType: "orderInvariance",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":true,"promptText":"Nora wonders: does counting coins in a different order change the total?  Nora says no. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"orderInvariance"},"truth":true,"promptText":"Nora says counting the same coins in a different order does not change the total. Do you agree?"}},
   },
   {
     itemId: "money-conc-b0821-0101",
@@ -7222,7 +7222,7 @@ export const ITEMS = [
     structureType: "notationJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"notation","cents":350,"saidD":"3.50"},"truth":true,"promptText":"Zoe puts 350 cents into dollar form: $3.50. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"kind":"notation","cents":350,"saidD":"3.05"},"truth":false,"promptText":"Zoe puts 350 cents into dollar form: $3.05. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0111",
@@ -7282,7 +7282,7 @@ export const ITEMS = [
     structureType: "notationJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"kind":"notation","cents":210,"saidD":"2.10"},"truth":true,"promptText":"Omar puts 210 cents into dollar form: $2.10. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"kind":"notation","cents":210,"saidD":"2.01"},"truth":false,"promptText":"Omar puts 210 cents into dollar form: $2.01. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0117",
@@ -7322,7 +7322,7 @@ export const ITEMS = [
     structureType: "whichNotation",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"$1.45","choices":["$1.45","$1.55","$1.54","$2.45"],"display":{"money":{"kind":"notationPick","cents":145},"promptText":"Which dollar form shows 145 cents? June is labeling a price tag."}},
+    question: {"a":null,"b":null,"op":"count","answer":"$1.45","choices":["$1.45","$1.55","$1.54","$2.45"],"display":{"money":{"kind":"notationPick","cents":145},"promptText":"Which shows 145 cents written with a dollar sign?"}},
   },
   {
     itemId: "money-conc-b0821-0121",
@@ -7342,7 +7342,7 @@ export const ITEMS = [
     structureType: "whichNotation",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"$1.75","choices":["$1.75","$1.85","$1.57","$2.75"],"display":{"money":{"kind":"notationPick","cents":175},"promptText":"Which dollar form shows 175 cents? Amara is labeling a price tag."}},
+    question: {"a":null,"b":null,"op":"count","answer":"$1.75","choices":["$1.75","$1.85","$1.57","$2.75"],"display":{"money":{"kind":"notationPick","cents":175},"promptText":"How do you write 175 cents with a dollar sign?"}},
   },
   {
     itemId: "money-conc-b0821-0123",
@@ -7362,7 +7362,7 @@ export const ITEMS = [
     structureType: "whichNotation",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"$2.30","choices":["$3.30","$2.30","$2.03","$2.40"],"display":{"money":{"kind":"notationPick","cents":230},"promptText":"Which dollar form shows 230 cents? Mina is labeling a price tag."}},
+    question: {"a":null,"b":null,"op":"count","answer":"$2.30","choices":["$3.30","$2.30","$2.03","$2.40"],"display":{"money":{"kind":"notationPick","cents":230},"promptText":"Which shows 230 cents written with a dollar sign?"}},
   },
   {
     itemId: "money-conc-b0821-0125",
@@ -7382,7 +7382,7 @@ export const ITEMS = [
     structureType: "whichNotation",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"$2.80","choices":["$2.90","$3.80","$2.08","$2.80"],"display":{"money":{"kind":"notationPick","cents":280},"promptText":"Which dollar form shows 280 cents? Ida is labeling a price tag."}},
+    question: {"a":null,"b":null,"op":"count","answer":"$2.80","choices":["$2.90","$3.80","$2.08","$2.80"],"display":{"money":{"kind":"notationPick","cents":280},"promptText":"How do you write 280 cents with a dollar sign?"}},
   },
   {
     itemId: "money-conc-b0821-0127",
@@ -7402,7 +7402,7 @@ export const ITEMS = [
     structureType: "whichNotation",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"$3.50","choices":["$4.50","$3.05","$3.50","$3.60"],"display":{"money":{"kind":"notationPick","cents":350},"promptText":"Which dollar form shows 350 cents? Rosa is labeling a price tag."}},
+    question: {"a":null,"b":null,"op":"count","answer":"$3.50","choices":["$4.50","$3.05","$3.50","$3.60"],"display":{"money":{"kind":"notationPick","cents":350},"promptText":"Which shows 350 cents written with a dollar sign?"}},
   },
   {
     itemId: "money-conc-b0821-0129",
@@ -7422,7 +7422,7 @@ export const ITEMS = [
     structureType: "whichNotation",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"$1.20","choices":["$1.20","$2.20","$1.02","$1.30"],"display":{"money":{"kind":"notationPick","cents":120},"promptText":"Which dollar form shows 120 cents? Nora is labeling a price tag."}},
+    question: {"a":null,"b":null,"op":"count","answer":"$1.20","choices":["$1.20","$2.20","$1.02","$1.30"],"display":{"money":{"kind":"notationPick","cents":120},"promptText":"How do you write 120 cents with a dollar sign?"}},
   },
   {
     itemId: "money-conc-b0821-0131",
@@ -7442,7 +7442,7 @@ export const ITEMS = [
     structureType: "whichNotation",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"$2.40","choices":["$2.50","$3.40","$2.04","$2.40"],"display":{"money":{"kind":"notationPick","cents":240},"promptText":"Which dollar form shows 240 cents? Ava is labeling a price tag."}},
+    question: {"a":null,"b":null,"op":"count","answer":"$2.40","choices":["$2.50","$3.40","$2.04","$2.40"],"display":{"money":{"kind":"notationPick","cents":240},"promptText":"Which shows 240 cents written with a dollar sign?"}},
   },
   {
     itemId: "money-conc-b0821-0133",
@@ -7462,7 +7462,7 @@ export const ITEMS = [
     structureType: "whichNotation",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"$2.10","choices":["$2.01","$3.10","$2.20","$2.10"],"display":{"money":{"kind":"notationPick","cents":210},"promptText":"Which dollar form shows 210 cents? Ben is labeling a price tag."}},
+    question: {"a":null,"b":null,"op":"count","answer":"$2.10","choices":["$2.01","$3.10","$2.20","$2.10"],"display":{"money":{"kind":"notationPick","cents":210},"promptText":"How do you write 210 cents with a dollar sign?"}},
   },
   {
     itemId: "money-conc-b0821-0135",
@@ -7472,7 +7472,7 @@ export const ITEMS = [
     structureType: "compareNotation",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Jar A","choices":["Jar A","Jar B"],"display":{"money":{"a":130,"b":125,"kind":"compare"},"promptText":"June compares two jars: one holds 130 cents, the other $1 and 25 cents. Which jar holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Jar A","choices":["Jar A","Jar B"],"display":{"money":{"a":130,"b":125,"kind":"compare"},"promptText":"Jar A holds 130 cents. Jar B holds $1 and 25 cents. Which jar holds more money?"}},
   },
   {
     itemId: "money-conc-b0821-0136",
@@ -7482,7 +7482,7 @@ export const ITEMS = [
     structureType: "compareNotation",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Jar B","choices":["Jar A","Jar B"],"display":{"money":{"a":95,"b":110,"kind":"compare"},"promptText":"Jar A holds 95 cents. Jar B holds $1 and 10 cents. Lily wants the bigger one. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Jar B","choices":["Jar A","Jar B"],"display":{"money":{"a":95,"b":110,"kind":"compare"},"promptText":"Which jar holds more money: Jar A with 95 cents or Jar B with $1 and 10 cents?"}},
   },
   {
     itemId: "money-conc-b0821-0137",
@@ -7492,7 +7492,7 @@ export const ITEMS = [
     structureType: "compareNotation",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Jar A","choices":["Jar A","Jar B"],"display":{"money":{"a":145,"b":140,"kind":"compare"},"promptText":"Amara compares two jars: one holds 145 cents, the other $1 and 40 cents. Which jar holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Jar A","choices":["Jar A","Jar B"],"display":{"money":{"a":145,"b":140,"kind":"compare"},"promptText":"Amara has two jars. Jar A holds 145 cents and Jar B holds $1 and 40 cents. Which jar holds more money?"}},
   },
   {
     itemId: "money-conc-b0821-0138",
@@ -7502,7 +7502,7 @@ export const ITEMS = [
     structureType: "compareNotation",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Jar B","choices":["Jar A","Jar B"],"display":{"money":{"a":120,"b":130,"kind":"compare"},"promptText":"Jar A holds 120 cents. Jar B holds $1 and 30 cents. Leo wants the bigger one. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Jar B","choices":["Jar A","Jar B"],"display":{"money":{"a":120,"b":130,"kind":"compare"},"promptText":"Leo compares two jars. Jar A has 120 cents. Jar B has $1 and 30 cents. Which jar has more money?"}},
   },
   {
     itemId: "money-conc-b0821-0139",
@@ -7512,7 +7512,7 @@ export const ITEMS = [
     structureType: "compareNotation",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Jar A","choices":["Jar A","Jar B"],"display":{"money":{"a":180,"b":170,"kind":"compare"},"promptText":"Mina compares two jars: one holds 180 cents, the other $1 and 70 cents. Which jar holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Jar A","choices":["Jar A","Jar B"],"display":{"money":{"a":180,"b":170,"kind":"compare"},"promptText":"Jar A holds 180 cents. Jar B holds $1 and 70 cents. Which jar holds more money?"}},
   },
   {
     itemId: "money-conc-b0821-0140",
@@ -7522,7 +7522,7 @@ export const ITEMS = [
     structureType: "compareNotation",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Jar B","choices":["Jar A","Jar B"],"display":{"money":{"a":105,"b":115,"kind":"compare"},"promptText":"Jar A holds 105 cents. Jar B holds $1 and 15 cents. Theo wants the bigger one. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Jar B","choices":["Jar A","Jar B"],"display":{"money":{"a":105,"b":115,"kind":"compare"},"promptText":"Which jar holds more money: Jar A with 105 cents or Jar B with $1 and 15 cents?"}},
   },
   {
     itemId: "money-conc-b0821-0141",
@@ -7532,7 +7532,7 @@ export const ITEMS = [
     structureType: "compareNotation",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Jar A","choices":["Jar A","Jar B"],"display":{"money":{"a":160,"b":155,"kind":"compare"},"promptText":"Ida compares two jars: one holds 160 cents, the other $1 and 55 cents. Which jar holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Jar A","choices":["Jar A","Jar B"],"display":{"money":{"a":160,"b":155,"kind":"compare"},"promptText":"Ida has two jars. Jar A holds 160 cents and Jar B holds $1 and 55 cents. Which jar holds more money?"}},
   },
   {
     itemId: "money-conc-b0821-0142",
@@ -7542,7 +7542,7 @@ export const ITEMS = [
     structureType: "compareNotation",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Jar B","choices":["Jar A","Jar B"],"display":{"money":{"a":90,"b":105,"kind":"compare"},"promptText":"Jar A holds 90 cents. Jar B holds $1 and 5 cents. Zoe wants the bigger one. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Jar B","choices":["Jar A","Jar B"],"display":{"money":{"a":90,"b":105,"kind":"compare"},"promptText":"Zoe compares two jars. Jar A has 90 cents. Jar B has $1 and 5 cents. Which jar has more money?"}},
   },
   {
     itemId: "money-conc-b0821-0143",
@@ -7552,7 +7552,7 @@ export const ITEMS = [
     structureType: "compareNotation",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Jar B","choices":["Jar A","Jar B"],"display":{"money":{"a":175,"b":180,"kind":"compare"},"promptText":"Rosa compares two jars: one holds 175 cents, the other $1 and 80 cents. Which jar holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Jar B","choices":["Jar A","Jar B"],"display":{"money":{"a":175,"b":180,"kind":"compare"},"promptText":"Jar A holds 175 cents. Jar B holds $1 and 80 cents. Which jar holds more money?"}},
   },
   {
     itemId: "money-conc-b0821-0144",
@@ -7562,7 +7562,7 @@ export const ITEMS = [
     structureType: "compareNotation",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Jar B","choices":["Jar A","Jar B"],"display":{"money":{"a":110,"b":120,"kind":"compare"},"promptText":"Jar A holds 110 cents. Jar B holds $1 and 20 cents. Diego wants the bigger one. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Jar B","choices":["Jar A","Jar B"],"display":{"money":{"a":110,"b":120,"kind":"compare"},"promptText":"Which jar holds more money: Jar A with 110 cents or Jar B with $1 and 20 cents?"}},
   },
   {
     itemId: "money-conc-b0821-0145",
@@ -7572,7 +7572,7 @@ export const ITEMS = [
     structureType: "compareNotation",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Jar A","choices":["Jar A","Jar B"],"display":{"money":{"a":150,"b":145,"kind":"compare"},"promptText":"Nora compares two jars: one holds 150 cents, the other $1 and 45 cents. Which jar holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Jar A","choices":["Jar A","Jar B"],"display":{"money":{"a":150,"b":145,"kind":"compare"},"promptText":"Nora has two jars. Jar A holds 150 cents and Jar B holds $1 and 45 cents. Which jar holds more money?"}},
   },
   {
     itemId: "money-conc-b0821-0146",
@@ -7582,7 +7582,7 @@ export const ITEMS = [
     structureType: "compareNotation",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Jar B","choices":["Jar A","Jar B"],"display":{"money":{"a":85,"b":100,"kind":"compare"},"promptText":"Jar A holds 85 cents. Jar B holds $1 and 0 cents. Luca wants the bigger one. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Jar B","choices":["Jar A","Jar B"],"display":{"money":{"a":85,"b":100,"kind":"compare"},"promptText":"Luca compares two jars. Jar A has 85 cents. Jar B has $1. Which jar has more money?"}},
   },
   {
     itemId: "money-conc-b0821-0147",
@@ -7592,7 +7592,7 @@ export const ITEMS = [
     structureType: "compareNotation",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Jar A","choices":["Jar A","Jar B"],"display":{"money":{"a":195,"b":190,"kind":"compare"},"promptText":"Ava compares two jars: one holds 195 cents, the other $1 and 90 cents. Which jar holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Jar A","choices":["Jar A","Jar B"],"display":{"money":{"a":195,"b":190,"kind":"compare"},"promptText":"Jar A holds 195 cents. Jar B holds $1 and 90 cents. Which jar holds more money?"}},
   },
   {
     itemId: "money-conc-b0821-0148",
@@ -7602,7 +7602,7 @@ export const ITEMS = [
     structureType: "compareNotation",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Jar B","choices":["Jar A","Jar B"],"display":{"money":{"a":125,"b":135,"kind":"compare"},"promptText":"Jar A holds 125 cents. Jar B holds $1 and 35 cents. Omar wants the bigger one. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Jar B","choices":["Jar A","Jar B"],"display":{"money":{"a":125,"b":135,"kind":"compare"},"promptText":"Which jar holds more money: Jar A with 125 cents or Jar B with $1 and 35 cents?"}},
   },
   {
     itemId: "money-conc-b0821-0149",
@@ -7612,7 +7612,7 @@ export const ITEMS = [
     structureType: "compareNotation",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Jar B","choices":["Jar A","Jar B"],"display":{"money":{"a":140,"b":150,"kind":"compare"},"promptText":"Ben compares two jars: one holds 140 cents, the other $1 and 50 cents. Which jar holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Jar B","choices":["Jar A","Jar B"],"display":{"money":{"a":140,"b":150,"kind":"compare"},"promptText":"Ben has two jars. Jar A holds 140 cents and Jar B holds $1 and 50 cents. Which jar holds more money?"}},
   },
   {
     itemId: "money-conc-b0821-0150",
@@ -7622,7 +7622,7 @@ export const ITEMS = [
     structureType: "compareNotation",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Jar B","choices":["Jar A","Jar B"],"display":{"money":{"a":115,"b":125,"kind":"compare"},"promptText":"Jar A holds 115 cents. Jar B holds $1 and 25 cents. Finn wants the bigger one. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Jar B","choices":["Jar A","Jar B"],"display":{"money":{"a":115,"b":125,"kind":"compare"},"promptText":"Finn compares two jars. Jar A has 115 cents. Jar B has $1 and 25 cents. Which jar has more money?"}},
   },
   {
     itemId: "money-conc-b0821-0151",
@@ -7642,7 +7642,7 @@ export const ITEMS = [
     structureType: "changeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":10,"cost":4,"kind":"changeSaid","said":5},"truth":false,"promptText":"After paying 10 cents for a 4-cent sticker, Finn counts on 5 cents of change. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":10,"cost":4,"kind":"changeSaid","said":5},"truth":false,"promptText":"After paying 10 cents for a 4-cent sticker, Finn says the change is 5 cents. Is Finn right?"}},
   },
   {
     itemId: "money-conc-b0821-0153",
@@ -7652,7 +7652,7 @@ export const ITEMS = [
     structureType: "changeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":10,"cost":8,"kind":"changeSaid","said":2},"truth":true,"promptText":"Priya pays 10 cents for a 8-cent snack and expects 2 cents back. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":10,"cost":8,"kind":"changeSaid","said":2},"truth":true,"promptText":"Priya pays 10 cents for an 8-cent snack and expects 2 cents back. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0154",
@@ -7662,7 +7662,7 @@ export const ITEMS = [
     structureType: "changeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":10,"cost":2,"kind":"changeSaid","said":7},"truth":false,"promptText":"After paying 10 cents for a 2-cent sticker, Sam counts on 7 cents of change. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":10,"cost":2,"kind":"changeSaid","said":7},"truth":false,"promptText":"After paying 10 cents for a 2-cent sticker, Sam says the change is 7 cents. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0155",
@@ -7672,7 +7672,7 @@ export const ITEMS = [
     structureType: "changeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":15,"cost":12,"kind":"changeSaid","said":3},"truth":true,"promptText":"Nia pays 15 cents for a 12-cent snack and expects 3 cents back. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":15,"cost":12,"kind":"changeSaid","said":3},"truth":true,"promptText":"After paying 15 cents for a 12-cent sticker, Nia says the change is 3 cents. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0156",
@@ -7682,7 +7682,7 @@ export const ITEMS = [
     structureType: "changeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":15,"cost":8,"kind":"changeSaid","said":6},"truth":false,"promptText":"After paying 15 cents for a 8-cent sticker, Kai counts on 6 cents of change. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":15,"cost":8,"kind":"changeSaid","said":6},"truth":false,"promptText":"Kai pays 15 cents for an 8-cent snack and expects 6 cents back. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0157",
@@ -7692,7 +7692,7 @@ export const ITEMS = [
     structureType: "changeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":20,"cost":17,"kind":"changeSaid","said":3},"truth":true,"promptText":"June pays 20 cents for a 17-cent snack and expects 3 cents back. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":20,"cost":17,"kind":"changeSaid","said":3},"truth":true,"promptText":"After paying 20 cents for a 17-cent sticker, June says the change is 3 cents. Is June right?"}},
   },
   {
     itemId: "money-conc-b0821-0158",
@@ -7702,7 +7702,7 @@ export const ITEMS = [
     structureType: "changeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":20,"cost":13,"kind":"changeSaid","said":6},"truth":false,"promptText":"After paying 20 cents for a 13-cent sticker, Lily counts on 6 cents of change. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":20,"cost":13,"kind":"changeSaid","said":6},"truth":false,"promptText":"Lily pays 20 cents for a 13-cent snack and expects 6 cents back. Is Lily right?"}},
   },
   {
     itemId: "money-conc-b0821-0159",
@@ -7722,7 +7722,7 @@ export const ITEMS = [
     structureType: "changeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":15,"cost":11,"kind":"changeSaid","said":3},"truth":false,"promptText":"After paying 15 cents for a 11-cent sticker, Leo counts on 3 cents of change. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":15,"cost":11,"kind":"changeSaid","said":3},"truth":false,"promptText":"After paying 15 cents for an 11-cent sticker, Leo says the change is 3 cents. Is Leo right?"}},
   },
   {
     itemId: "money-conc-b0821-0161",
@@ -7732,7 +7732,7 @@ export const ITEMS = [
     structureType: "changeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":20,"cost":15,"kind":"changeSaid","said":5},"truth":true,"promptText":"Mina pays 20 cents for a 15-cent snack and expects 5 cents back. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":20,"cost":15,"kind":"changeSaid","said":5},"truth":true,"promptText":"Mina pays 20 cents for a 15-cent snack and expects 5 cents back. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0162",
@@ -7742,7 +7742,7 @@ export const ITEMS = [
     structureType: "changeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":10,"cost":3,"kind":"changeSaid","said":6},"truth":false,"promptText":"After paying 10 cents for a 3-cent sticker, Theo counts on 6 cents of change. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":10,"cost":3,"kind":"changeSaid","said":6},"truth":false,"promptText":"After paying 10 cents for a 3-cent sticker, Theo says the change is 6 cents. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0163",
@@ -7752,7 +7752,7 @@ export const ITEMS = [
     structureType: "changeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":15,"cost":6,"kind":"changeSaid","said":9},"truth":true,"promptText":"Ida pays 15 cents for a 6-cent snack and expects 9 cents back. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":15,"cost":6,"kind":"changeSaid","said":9},"truth":true,"promptText":"After paying 15 cents for a 6-cent sticker, Ida says the change is 9 cents. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0164",
@@ -7762,7 +7762,7 @@ export const ITEMS = [
     structureType: "changeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":20,"cost":9,"kind":"changeSaid","said":10},"truth":false,"promptText":"After paying 20 cents for a 9-cent sticker, Zoe counts on 10 cents of change. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":20,"cost":9,"kind":"changeSaid","said":10},"truth":false,"promptText":"Zoe pays 20 cents for a 9-cent snack and expects 10 cents back. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0165",
@@ -7772,7 +7772,7 @@ export const ITEMS = [
     structureType: "changeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":10,"cost":9,"kind":"changeSaid","said":1},"truth":true,"promptText":"Rosa pays 10 cents for a 9-cent snack and expects 1 cents back. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":10,"cost":9,"kind":"changeSaid","said":1},"truth":true,"promptText":"After paying 10 cents for a 9-cent sticker, Rosa says the change is 1 cent. Is Rosa right?"}},
   },
   {
     itemId: "money-conc-b0821-0166",
@@ -7782,7 +7782,7 @@ export const ITEMS = [
     structureType: "changeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":20,"cost":18,"kind":"changeSaid","said":1},"truth":false,"promptText":"After paying 20 cents for a 18-cent sticker, Diego counts on 1 cents of change. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":20,"cost":18,"kind":"changeSaid","said":1},"truth":false,"promptText":"Diego pays 20 cents for an 18-cent snack and expects 1 cent back. Is Diego right?"}},
   },
   {
     itemId: "money-conc-b0821-0167",
@@ -7802,7 +7802,7 @@ export const ITEMS = [
     structureType: "changeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":20,"cost":11,"kind":"changeSaid","said":8},"truth":false,"promptText":"After paying 20 cents for a 11-cent sticker, Luca counts on 8 cents of change. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":20,"cost":11,"kind":"changeSaid","said":8},"truth":false,"promptText":"After paying 20 cents for an 11-cent sticker, Luca says the change is 8 cents. Is Luca right?"}},
   },
   {
     itemId: "money-conc-b0821-0169",
@@ -7812,7 +7812,7 @@ export const ITEMS = [
     structureType: "changeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":25,"cost":18,"kind":"changeSaid","said":7},"truth":true,"promptText":"Ben pays 25 cents for a 18-cent snack and expects 7 cents back. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":25,"cost":18,"kind":"changeSaid","said":7},"truth":true,"promptText":"Ben pays 25 cents for an 18-cent snack and expects 7 cents back. Is Ben right?"}},
   },
   {
     itemId: "money-conc-b0821-0170",
@@ -7822,7 +7822,7 @@ export const ITEMS = [
     structureType: "changeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":25,"cost":12,"kind":"changeSaid","said":12},"truth":false,"promptText":"After paying 25 cents for a 12-cent sticker, Finn counts on 12 cents of change. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":25,"cost":12,"kind":"changeSaid","said":12},"truth":false,"promptText":"After paying 25 cents for a 12-cent sticker, Finn says the change is 12 cents. Is Finn right?"}},
   },
   {
     itemId: "money-conc-b0821-0171",
@@ -7832,7 +7832,7 @@ export const ITEMS = [
     structureType: "changeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":50,"cost":37,"kind":"changeSaid","said":13},"truth":true,"promptText":"Priya pays 50 cents for a 37-cent snack and expects 13 cents back. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":50,"cost":37,"kind":"changeSaid","said":13},"truth":true,"promptText":"Priya pays 50 cents for a 37-cent snack and expects 13 cents back. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0172",
@@ -7842,7 +7842,7 @@ export const ITEMS = [
     structureType: "changeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":50,"cost":24,"kind":"changeSaid","said":25},"truth":false,"promptText":"After paying 50 cents for a 24-cent sticker, Sam counts on 25 cents of change. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":50,"cost":24,"kind":"changeSaid","said":25},"truth":false,"promptText":"After paying 50 cents for a 24-cent sticker, Sam says the change is 25 cents. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0173",
@@ -7852,7 +7852,7 @@ export const ITEMS = [
     structureType: "changeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":25,"cost":21,"kind":"changeSaid","said":4},"truth":true,"promptText":"Nia pays 25 cents for a 21-cent snack and expects 4 cents back. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":25,"cost":21,"kind":"changeSaid","said":4},"truth":true,"promptText":"After paying 25 cents for a 21-cent sticker, Nia says the change is 4 cents. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0174",
@@ -7862,7 +7862,7 @@ export const ITEMS = [
     structureType: "changeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":50,"cost":43,"kind":"changeSaid","said":6},"truth":false,"promptText":"After paying 50 cents for a 43-cent sticker, Kai counts on 6 cents of change. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":50,"cost":43,"kind":"changeSaid","said":6},"truth":false,"promptText":"Kai pays 50 cents for a 43-cent snack and expects 6 cents back. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0175",
@@ -7872,7 +7872,7 @@ export const ITEMS = [
     structureType: "changeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":25,"cost":9,"kind":"changeSaid","said":16},"truth":true,"promptText":"June pays 25 cents for a 9-cent snack and expects 16 cents back. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":25,"cost":9,"kind":"changeSaid","said":16},"truth":true,"promptText":"After paying 25 cents for a 9-cent sticker, June says the change is 16 cents. Is June right?"}},
   },
   {
     itemId: "money-conc-b0821-0176",
@@ -7882,7 +7882,7 @@ export const ITEMS = [
     structureType: "changeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":50,"cost":16,"kind":"changeSaid","said":33},"truth":false,"promptText":"After paying 50 cents for a 16-cent sticker, Lily counts on 33 cents of change. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":50,"cost":16,"kind":"changeSaid","said":33},"truth":false,"promptText":"Lily pays 50 cents for a 16-cent snack and expects 33 cents back. Is Lily right?"}},
   },
   {
     itemId: "money-conc-b0821-0177",
@@ -7902,7 +7902,7 @@ export const ITEMS = [
     structureType: "changeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":50,"cost":31,"kind":"changeSaid","said":18},"truth":false,"promptText":"After paying 50 cents for a 31-cent sticker, Leo counts on 18 cents of change. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":50,"cost":31,"kind":"changeSaid","said":18},"truth":false,"promptText":"After paying 50 cents for a 31-cent sticker, Leo says the change is 18 cents. Is Leo right?"}},
   },
   {
     itemId: "money-conc-b0821-0179",
@@ -7912,7 +7912,7 @@ export const ITEMS = [
     structureType: "changeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":25,"cost":14,"kind":"changeSaid","said":11},"truth":true,"promptText":"Mina pays 25 cents for a 14-cent snack and expects 11 cents back. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":25,"cost":14,"kind":"changeSaid","said":11},"truth":true,"promptText":"Mina pays 25 cents for a 14-cent snack and expects 11 cents back. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0180",
@@ -7922,7 +7922,7 @@ export const ITEMS = [
     structureType: "changeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":50,"cost":48,"kind":"changeSaid","said":1},"truth":false,"promptText":"After paying 50 cents for a 48-cent sticker, Theo counts on 1 cents of change. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":50,"cost":48,"kind":"changeSaid","said":1},"truth":false,"promptText":"After paying 50 cents for a 48-cent sticker, Theo says the change is 1 cent. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0181",
@@ -7932,7 +7932,7 @@ export const ITEMS = [
     structureType: "changeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":25,"cost":19,"kind":"changeSaid","said":6},"truth":true,"promptText":"Ida pays 25 cents for a 19-cent snack and expects 6 cents back. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":25,"cost":19,"kind":"changeSaid","said":6},"truth":true,"promptText":"After paying 25 cents for a 19-cent sticker, Ida says the change is 6 cents. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0182",
@@ -7942,7 +7942,7 @@ export const ITEMS = [
     structureType: "changeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":50,"cost":22,"kind":"changeSaid","said":27},"truth":false,"promptText":"After paying 50 cents for a 22-cent sticker, Zoe counts on 27 cents of change. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":50,"cost":22,"kind":"changeSaid","said":27},"truth":false,"promptText":"Zoe pays 50 cents for a 22-cent snack and expects 27 cents back. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0183",
@@ -7952,7 +7952,7 @@ export const ITEMS = [
     structureType: "changeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":25,"cost":16,"kind":"changeSaid","said":9},"truth":true,"promptText":"Rosa pays 25 cents for a 16-cent snack and expects 9 cents back. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":25,"cost":16,"kind":"changeSaid","said":9},"truth":true,"promptText":"After paying 25 cents for a 16-cent sticker, Rosa says the change is 9 cents. Is Rosa right?"}},
   },
   {
     itemId: "money-conc-b0821-0184",
@@ -7962,7 +7962,7 @@ export const ITEMS = [
     structureType: "changeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":50,"cost":39,"kind":"changeSaid","said":10},"truth":false,"promptText":"After paying 50 cents for a 39-cent sticker, Diego counts on 10 cents of change. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":50,"cost":39,"kind":"changeSaid","said":10},"truth":false,"promptText":"Diego pays 50 cents for a 39-cent snack and expects 10 cents back. Is Diego right?"}},
   },
   {
     itemId: "money-conc-b0821-0185",
@@ -7972,7 +7972,7 @@ export const ITEMS = [
     structureType: "changeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":25,"cost":11,"kind":"changeSaid","said":14},"truth":true,"promptText":"Nora pays 25 cents for a 11-cent snack and expects 14 cents back. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":25,"cost":11,"kind":"changeSaid","said":14},"truth":true,"promptText":"Nora pays 25 cents for an 11-cent snack and expects 14 cents back. Is Nora right?"}},
   },
   {
     itemId: "money-conc-b0821-0186",
@@ -7982,7 +7982,7 @@ export const ITEMS = [
     structureType: "changeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":50,"cost":27,"kind":"changeSaid","said":22},"truth":false,"promptText":"After paying 50 cents for a 27-cent sticker, Luca counts on 22 cents of change. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":50,"cost":27,"kind":"changeSaid","said":22},"truth":false,"promptText":"After paying 50 cents for a 27-cent sticker, Luca says the change is 22 cents. Is Luca right?"}},
   },
   {
     itemId: "money-conc-b0821-0187",
@@ -8002,7 +8002,7 @@ export const ITEMS = [
     structureType: "changeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":100,"cost":43,"kind":"changeSaid","said":56},"truth":false,"promptText":"After paying 100 cents for a 43-cent sticker, Finn counts on 56 cents of change. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":100,"cost":43,"kind":"changeSaid","said":56},"truth":false,"promptText":"After paying 100 cents for a 43-cent sticker, Finn says the change is 56 cents. Is Finn right?"}},
   },
   {
     itemId: "money-conc-b0821-0189",
@@ -8012,7 +8012,7 @@ export const ITEMS = [
     structureType: "changeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":100,"cost":81,"kind":"changeSaid","said":19},"truth":true,"promptText":"Priya pays 100 cents for a 81-cent snack and expects 19 cents back. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":100,"cost":81,"kind":"changeSaid","said":19},"truth":true,"promptText":"Priya pays 100 cents for an 81-cent snack and expects 19 cents back. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0190",
@@ -8022,7 +8022,7 @@ export const ITEMS = [
     structureType: "changeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":200,"cost":145,"kind":"changeSaid","said":54},"truth":false,"promptText":"After paying 200 cents for a 145-cent sticker, Sam counts on 54 cents of change. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":200,"cost":145,"kind":"changeSaid","said":54},"truth":false,"promptText":"After paying 200 cents for a 145-cent sticker, Sam says the change is 54 cents. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0191",
@@ -8032,7 +8032,7 @@ export const ITEMS = [
     structureType: "changeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":100,"cost":29,"kind":"changeSaid","said":71},"truth":true,"promptText":"Nia pays 100 cents for a 29-cent snack and expects 71 cents back. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":100,"cost":29,"kind":"changeSaid","said":71},"truth":true,"promptText":"After paying 100 cents for a 29-cent sticker, Nia says the change is 71 cents. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0192",
@@ -8042,7 +8042,7 @@ export const ITEMS = [
     structureType: "changeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":200,"cost":168,"kind":"changeSaid","said":31},"truth":false,"promptText":"After paying 200 cents for a 168-cent sticker, Kai counts on 31 cents of change. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":200,"cost":168,"kind":"changeSaid","said":31},"truth":false,"promptText":"Kai pays 200 cents for a 168-cent snack and expects 31 cents back. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0193",
@@ -8052,7 +8052,7 @@ export const ITEMS = [
     structureType: "changeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":100,"cost":56,"kind":"changeSaid","said":44},"truth":true,"promptText":"June pays 100 cents for a 56-cent snack and expects 44 cents back. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":100,"cost":56,"kind":"changeSaid","said":44},"truth":true,"promptText":"After paying 100 cents for a 56-cent sticker, June says the change is 44 cents. Is June right?"}},
   },
   {
     itemId: "money-conc-b0821-0194",
@@ -8062,7 +8062,7 @@ export const ITEMS = [
     structureType: "changeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":200,"cost":123,"kind":"changeSaid","said":76},"truth":false,"promptText":"After paying 200 cents for a 123-cent sticker, Lily counts on 76 cents of change. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":200,"cost":123,"kind":"changeSaid","said":76},"truth":false,"promptText":"Lily pays 200 cents for a 123-cent snack and expects 76 cents back. Is Lily right?"}},
   },
   {
     itemId: "money-conc-b0821-0195",
@@ -8082,7 +8082,7 @@ export const ITEMS = [
     structureType: "changeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":200,"cost":187,"kind":"changeSaid","said":12},"truth":false,"promptText":"After paying 200 cents for a 187-cent sticker, Leo counts on 12 cents of change. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":200,"cost":187,"kind":"changeSaid","said":12},"truth":false,"promptText":"After paying 200 cents for a 187-cent sticker, Leo says the change is 12 cents. Is Leo right?"}},
   },
   {
     itemId: "money-conc-b0821-0197",
@@ -8092,7 +8092,7 @@ export const ITEMS = [
     structureType: "changeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":100,"cost":34,"kind":"changeSaid","said":66},"truth":true,"promptText":"Mina pays 100 cents for a 34-cent snack and expects 66 cents back. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":100,"cost":34,"kind":"changeSaid","said":66},"truth":true,"promptText":"Mina pays 100 cents for a 34-cent snack and expects 66 cents back. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0198",
@@ -8102,7 +8102,7 @@ export const ITEMS = [
     structureType: "changeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":200,"cost":154,"kind":"changeSaid","said":45},"truth":false,"promptText":"After paying 200 cents for a 154-cent sticker, Theo counts on 45 cents of change. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":200,"cost":154,"kind":"changeSaid","said":45},"truth":false,"promptText":"After paying 200 cents for a 154-cent sticker, Theo says the change is 45 cents. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0199",
@@ -8112,7 +8112,7 @@ export const ITEMS = [
     structureType: "changeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":100,"cost":78,"kind":"changeSaid","said":22},"truth":true,"promptText":"Ida pays 100 cents for a 78-cent snack and expects 22 cents back. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":100,"cost":78,"kind":"changeSaid","said":22},"truth":true,"promptText":"After paying 100 cents for a 78-cent sticker, Ida says the change is 22 cents. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0200",
@@ -8122,7 +8122,7 @@ export const ITEMS = [
     structureType: "changeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":200,"cost":109,"kind":"changeSaid","said":90},"truth":false,"promptText":"After paying 200 cents for a 109-cent sticker, Zoe counts on 90 cents of change. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":200,"cost":109,"kind":"changeSaid","said":90},"truth":false,"promptText":"Zoe pays 200 cents for a 109-cent snack and expects 90 cents back. Is that right?"}},
   },
   {
     itemId: "money-conc-b0821-0201",
@@ -8132,7 +8132,7 @@ export const ITEMS = [
     structureType: "changeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":100,"cost":12,"kind":"changeSaid","said":88},"truth":true,"promptText":"Rosa pays 100 cents for a 12-cent snack and expects 88 cents back. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":100,"cost":12,"kind":"changeSaid","said":88},"truth":true,"promptText":"After paying 100 cents for a 12-cent sticker, Rosa says the change is 88 cents. Is Rosa right?"}},
   },
   {
     itemId: "money-conc-b0821-0202",
@@ -8142,7 +8142,7 @@ export const ITEMS = [
     structureType: "changeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":200,"cost":176,"kind":"changeSaid","said":23},"truth":false,"promptText":"After paying 200 cents for a 176-cent sticker, Diego counts on 23 cents of change. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":200,"cost":176,"kind":"changeSaid","said":23},"truth":false,"promptText":"Diego pays 200 cents for a 176-cent snack and expects 23 cents back. Is Diego right?"}},
   },
   {
     itemId: "money-conc-b0821-0203",
@@ -8162,7 +8162,7 @@ export const ITEMS = [
     structureType: "changeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":200,"cost":132,"kind":"changeSaid","said":67},"truth":false,"promptText":"After paying 200 cents for a 132-cent sticker, Luca counts on 67 cents of change. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":200,"cost":132,"kind":"changeSaid","said":67},"truth":false,"promptText":"After paying 200 cents for a 132-cent sticker, Luca says the change is 67 cents. Is Luca right?"}},
   },
   {
     itemId: "money-conc-b0821-0205",
@@ -8192,7 +8192,7 @@ export const ITEMS = [
     structureType: "whichChange_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[1,3,6,2],"display":{"counting":{"back":8,"kind":"countBack","start":10},"promptText":"Sam hands over 10 cents for a 8-cent eraser. Which change is right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[1,3,6,2],"display":{"counting":{"back":8,"kind":"countBack","start":10},"promptText":"Sam hands over 10 cents for an 8-cent eraser. Which change is right?"}},
   },
   {
     itemId: "money-conc-b0821-0208",
@@ -8212,7 +8212,7 @@ export const ITEMS = [
     structureType: "whichChange_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[8,6,1,7],"display":{"counting":{"back":8,"kind":"countBack","start":15},"promptText":"Omar hands over 15 cents for a 8-cent eraser. Which change is right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[8,6,1,7],"display":{"counting":{"back":8,"kind":"countBack","start":15},"promptText":"Omar hands over 15 cents for an 8-cent eraser. Which change is right?"}},
   },
   {
     itemId: "money-conc-b0821-0210",
@@ -8252,7 +8252,7 @@ export const ITEMS = [
     structureType: "whichChange_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[3,5,7,4],"display":{"counting":{"back":11,"kind":"countBack","start":15},"promptText":"Theo hands over 15 cents for a 11-cent eraser. Which change is right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[3,5,7,4],"display":{"counting":{"back":11,"kind":"countBack","start":15},"promptText":"Theo hands over 15 cents for an 11-cent eraser. Which change is right?"}},
   },
   {
     itemId: "money-conc-b0821-0214",
@@ -8312,7 +8312,7 @@ export const ITEMS = [
     structureType: "whichChange_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[1,16,3,2],"display":{"counting":{"back":18,"kind":"countBack","start":20},"promptText":"Omar hands over 20 cents for a 18-cent eraser. Which change is right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[1,16,3,2],"display":{"counting":{"back":18,"kind":"countBack","start":20},"promptText":"Omar hands over 20 cents for an 18-cent eraser. Which change is right?"}},
   },
   {
     itemId: "money-conc-b0821-0220",
@@ -8332,7 +8332,7 @@ export const ITEMS = [
     structureType: "whichChange_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[7,6,11,8],"display":{"counting":{"back":18,"kind":"countBack","start":25},"promptText":"Omar hands over 25 cents for a 18-cent eraser. Which change is right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[7,6,11,8],"display":{"counting":{"back":18,"kind":"countBack","start":25},"promptText":"Omar hands over 25 cents for an 18-cent eraser. Which change is right?"}},
   },
   {
     itemId: "money-conc-b0821-0222",
@@ -8512,7 +8512,7 @@ export const ITEMS = [
     structureType: "whichChange_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"choices":[20,19,62,18],"display":{"counting":{"back":81,"kind":"countBack","start":100},"promptText":"Lily hands over 100 cents for a 81-cent eraser. Which change is right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":19,"choices":[20,19,62,18],"display":{"counting":{"back":81,"kind":"countBack","start":100},"promptText":"Lily hands over 100 cents for an 81-cent eraser. Which change is right?"}},
   },
   {
     itemId: "money-conc-b0821-0240",
@@ -8652,7 +8652,7 @@ export const ITEMS = [
     structureType: "anyChange_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":10,"cost":7,"kind":"anyChange"},"truth":true,"promptText":"Nora pays 10 cents for a 7-cent item. Should Nora get change back at all?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":10,"cost":7,"kind":"anyChange"},"truth":true,"promptText":"Nora pays 10 cents for a 7-cent toy. Should Nora get any change back?"}},
   },
   {
     itemId: "money-conc-b0821-0254",
@@ -8662,7 +8662,7 @@ export const ITEMS = [
     structureType: "anyChange_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":10,"cost":10,"kind":"anyChange"},"truth":false,"promptText":"The toy costs 10 cents and Luca pays 10 cents. Does any change come back?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":10,"cost":10,"kind":"anyChange"},"truth":false,"promptText":"The toy costs 10 cents and Luca pays 10 cents. Should Luca get any change back?"}},
   },
   {
     itemId: "money-conc-b0821-0255",
@@ -8672,7 +8672,7 @@ export const ITEMS = [
     structureType: "anyChange_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":15,"cost":12,"kind":"anyChange"},"truth":true,"promptText":"Ava pays 15 cents for a 12-cent item. Should Ava get change back at all?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":15,"cost":12,"kind":"anyChange"},"truth":true,"promptText":"Ava pays 15 cents for a 12-cent toy. Does any change come back?"}},
   },
   {
     itemId: "money-conc-b0821-0256",
@@ -8692,7 +8692,7 @@ export const ITEMS = [
     structureType: "anyChange_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":20,"cost":17,"kind":"anyChange"},"truth":true,"promptText":"Ben pays 20 cents for a 17-cent item. Should Ben get change back at all?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":20,"cost":17,"kind":"anyChange"},"truth":true,"promptText":"The toy costs 17 cents and Ben pays 20 cents. Does any change come back?"}},
   },
   {
     itemId: "money-conc-b0821-0258",
@@ -8702,7 +8702,7 @@ export const ITEMS = [
     structureType: "anyChange_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":20,"cost":20,"kind":"anyChange"},"truth":false,"promptText":"The toy costs 20 cents and Finn pays 20 cents. Does any change come back?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":20,"cost":20,"kind":"anyChange"},"truth":false,"promptText":"Finn pays 20 cents for a 20-cent toy. Does any change come back?"}},
   },
   {
     itemId: "money-conc-b0821-0259",
@@ -8712,7 +8712,7 @@ export const ITEMS = [
     structureType: "anyChange_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":10,"cost":6,"kind":"anyChange"},"truth":true,"promptText":"Priya pays 10 cents for a 6-cent item. Should Priya get change back at all?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":10,"cost":6,"kind":"anyChange"},"truth":true,"promptText":"The toy costs 6 cents and Priya pays 10 cents. Should Priya get any change back?"}},
   },
   {
     itemId: "money-conc-b0821-0260",
@@ -8722,7 +8722,7 @@ export const ITEMS = [
     structureType: "anyChange_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":15,"cost":15,"kind":"anyChange"},"truth":false,"promptText":"The toy costs 15 cents and Sam pays 15 cents. Does any change come back?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":15,"cost":15,"kind":"anyChange"},"truth":false,"promptText":"Sam pays 15 cents for a 15-cent toy. Should Sam get any change back?"}},
   },
   {
     itemId: "money-conc-b0821-0261",
@@ -8732,7 +8732,7 @@ export const ITEMS = [
     structureType: "anyChange_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":20,"cost":14,"kind":"anyChange"},"truth":true,"promptText":"Nia pays 20 cents for a 14-cent item. Should Nia get change back at all?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":20,"cost":14,"kind":"anyChange"},"truth":true,"promptText":"Nia pays 20 cents for a 14-cent toy. Should Nia get any change back?"}},
   },
   {
     itemId: "money-conc-b0821-0262",
@@ -8742,7 +8742,7 @@ export const ITEMS = [
     structureType: "anyChange_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":10,"cost":10,"kind":"anyChange"},"truth":false,"promptText":"The toy costs 10 cents and Kai pays 10 cents. Does any change come back?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":10,"cost":10,"kind":"anyChange"},"truth":false,"promptText":"The toy costs 10 cents and Kai pays 10 cents. Should Kai get any change back?"}},
   },
   {
     itemId: "money-conc-b0821-0263",
@@ -8752,7 +8752,7 @@ export const ITEMS = [
     structureType: "anyChange_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":15,"cost":9,"kind":"anyChange"},"truth":true,"promptText":"June pays 15 cents for a 9-cent item. Should June get change back at all?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":15,"cost":9,"kind":"anyChange"},"truth":true,"promptText":"June pays 15 cents for a 9-cent toy. Does any change come back?"}},
   },
   {
     itemId: "money-conc-b0821-0264",
@@ -8772,7 +8772,7 @@ export const ITEMS = [
     structureType: "anyChange_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":10,"cost":8,"kind":"anyChange"},"truth":true,"promptText":"Amara pays 10 cents for a 8-cent item. Should Amara get change back at all?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":10,"cost":8,"kind":"anyChange"},"truth":true,"promptText":"The toy costs 8 cents and Amara pays 10 cents. Does any change come back?"}},
   },
   {
     itemId: "money-conc-b0821-0266",
@@ -8782,7 +8782,7 @@ export const ITEMS = [
     structureType: "anyChange_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":15,"cost":15,"kind":"anyChange"},"truth":false,"promptText":"The toy costs 15 cents and Leo pays 15 cents. Does any change come back?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":15,"cost":15,"kind":"anyChange"},"truth":false,"promptText":"Leo pays 15 cents for a 15-cent toy. Does any change come back?"}},
   },
   {
     itemId: "money-conc-b0821-0267",
@@ -8792,7 +8792,7 @@ export const ITEMS = [
     structureType: "anyChange_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":20,"cost":16,"kind":"anyChange"},"truth":true,"promptText":"Mina pays 20 cents for a 16-cent item. Should Mina get change back at all?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":20,"cost":16,"kind":"anyChange"},"truth":true,"promptText":"The toy costs 16 cents and Mina pays 20 cents. Should Mina get any change back?"}},
   },
   {
     itemId: "money-conc-b0821-0268",
@@ -8802,7 +8802,7 @@ export const ITEMS = [
     structureType: "anyChange_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":10,"cost":10,"kind":"anyChange"},"truth":false,"promptText":"The toy costs 10 cents and Theo pays 10 cents. Does any change come back?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"pay":10,"cost":10,"kind":"anyChange"},"truth":false,"promptText":"Theo pays 10 cents for a 10-cent toy. Should Theo get any change back?"}},
   },
   {
     itemId: "money-conc-b0821-0269",
@@ -8812,7 +8812,7 @@ export const ITEMS = [
     structureType: "anyChange_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":15,"cost":13,"kind":"anyChange"},"truth":true,"promptText":"Ida pays 15 cents for a 13-cent item. Should Ida get change back at all?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":15,"cost":13,"kind":"anyChange"},"truth":true,"promptText":"Ida pays 15 cents for a 13-cent toy. Should Ida get any change back?"}},
   },
   {
     itemId: "money-conc-b0821-0270",
@@ -8822,7 +8822,7 @@ export const ITEMS = [
     structureType: "anyChange_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":20,"cost":19,"kind":"anyChange"},"truth":true,"promptText":"The toy costs 19 cents and Zoe pays 20 cents. Does any change come back?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":20,"cost":19,"kind":"anyChange"},"truth":true,"promptText":"Zoe pays 20 cents for a 19-cent toy. Does any change come back?"}},
   },
   {
     itemId: "money-conc-b0821-0271",
@@ -8832,7 +8832,7 @@ export const ITEMS = [
     structureType: "anyChange_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":25,"cost":18,"kind":"anyChange"},"truth":true,"promptText":"Nora pays 25 cents for a 18-cent item. Should Nora get change back at all?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":25,"cost":18,"kind":"anyChange"},"truth":true,"promptText":"Nora pays 25 cents for an 18-cent item. Should Nora get change back at all?"}},
   },
   {
     itemId: "money-conc-b0821-0272",
@@ -9052,7 +9052,7 @@ export const ITEMS = [
     structureType: "anyChange_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":100,"cost":81,"kind":"anyChange"},"truth":true,"promptText":"Ben pays 100 cents for a 81-cent item. Should Ben get change back at all?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"pay":100,"cost":81,"kind":"anyChange"},"truth":true,"promptText":"Ben pays 100 cents for an 81-cent item. Should Ben get change back at all?"}},
   },
   {
     itemId: "money-conc-b0821-0294",
@@ -9212,7 +9212,7 @@ export const ITEMS = [
     structureType: "eqJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":15,"bv":15,"kind":"eq"},"truth":true,"promptText":"Ida says 3 nickels and 1 dime and 1 nickel are worth the same. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":15,"bv":15,"kind":"eq"},"truth":true,"promptText":"Is Ida right that 3 nickels are worth the same as 1 dime and 1 nickel?"}},
   },
   {
     itemId: "money-conc-b0821-0310",
@@ -9272,7 +9272,7 @@ export const ITEMS = [
     structureType: "eqJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":15,"bv":15,"kind":"eq"},"truth":true,"promptText":"Ava says 1 dime and 1 nickel and 15 pennies are worth the same. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":15,"bv":15,"kind":"eq"},"truth":true,"promptText":"Are 1 dime and 1 nickel worth the same as 15 pennies?"}},
   },
   {
     itemId: "money-conc-b0821-0316",
@@ -9312,7 +9312,7 @@ export const ITEMS = [
     structureType: "eqJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":12,"bv":12,"kind":"eq"},"truth":true,"promptText":"Priya says 2 nickels and 2 pennies and 1 dime and 2 pennies are worth the same. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":12,"bv":12,"kind":"eq"},"truth":true,"promptText":"Is Priya right that 2 nickels and 2 pennies are worth the same as 1 dime and 2 pennies?"}},
   },
   {
     itemId: "money-conc-b0821-0320",
@@ -9432,7 +9432,7 @@ export const ITEMS = [
     structureType: "eqJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":35,"bv":35,"kind":"eq"},"truth":true,"promptText":"Nora says 1 quarter and 1 dime and 7 nickels are worth the same. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":35,"bv":35,"kind":"eq"},"truth":true,"promptText":"Is Nora right that 1 quarter and 1 dime are worth the same as 7 nickels?"}},
   },
   {
     itemId: "money-conc-b0821-0332",
@@ -9452,7 +9452,7 @@ export const ITEMS = [
     structureType: "eqJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":45,"bv":45,"kind":"eq"},"truth":true,"promptText":"Ava says 1 quarter and 2 dimes and 9 nickels are worth the same. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":45,"bv":15,"kind":"eq"},"truth":false,"promptText":"Are 1 quarter and 2 dimes worth the same as 3 nickels?"}},
   },
   {
     itemId: "money-conc-b0821-0334",
@@ -9472,7 +9472,7 @@ export const ITEMS = [
     structureType: "eqJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":30,"bv":30,"kind":"eq"},"truth":true,"promptText":"Ben says 1 quarter and 1 nickel and 6 nickels are worth the same. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":30,"bv":30,"kind":"eq"},"truth":true,"promptText":"Is Ben right that 1 quarter and 1 nickel are worth the same as 6 nickels?"}},
   },
   {
     itemId: "money-conc-b0821-0336",
@@ -9492,7 +9492,7 @@ export const ITEMS = [
     structureType: "eqJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":25,"bv":25,"kind":"eq"},"truth":true,"promptText":"Priya says 1 quarter and 2 dimes and 1 nickel are worth the same. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":25,"bv":21,"kind":"eq"},"truth":false,"promptText":"Is 1 quarter worth the same as 2 dimes and 1 penny?"}},
   },
   {
     itemId: "money-conc-b0821-0338",
@@ -9512,7 +9512,7 @@ export const ITEMS = [
     structureType: "eqJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":40,"bv":40,"kind":"eq"},"truth":true,"promptText":"Nia says 1 quarter and 3 nickels and 4 dimes are worth the same. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":40,"bv":40,"kind":"eq"},"truth":true,"promptText":"Is Nia right that 1 quarter and 3 nickels are worth the same as 4 dimes?"}},
   },
   {
     itemId: "money-conc-b0821-0340",
@@ -9572,7 +9572,7 @@ export const ITEMS = [
     structureType: "eqJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":200,"bv":200,"kind":"eq"},"truth":true,"promptText":"Ida says $2 and 8 quarters are worth the same. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":200,"bv":100,"kind":"eq"},"truth":false,"promptText":"Ida says $2 and 4 quarters are worth the same. Is Ida right?"}},
   },
   {
     itemId: "money-conc-b0821-0346",
@@ -9612,7 +9612,7 @@ export const ITEMS = [
     structureType: "eqJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":110,"bv":110,"kind":"eq"},"truth":true,"promptText":"Nora says $1 and 1 dime and 11 dimes are worth the same. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":110,"bv":110,"kind":"eq"},"truth":true,"promptText":"Is Nora right that $1 and 1 dime are worth the same as 11 dimes?"}},
   },
   {
     itemId: "money-conc-b0821-0350",
@@ -9632,7 +9632,7 @@ export const ITEMS = [
     structureType: "eqJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":150,"bv":150,"kind":"eq"},"truth":true,"promptText":"Ava says $1 and 2 quarters and 6 quarters are worth the same. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":150,"bv":100,"kind":"eq"},"truth":false,"promptText":"Are $1 and 2 quarters worth the same as 4 quarters?"}},
   },
   {
     itemId: "money-conc-b0821-0352",
@@ -9652,7 +9652,7 @@ export const ITEMS = [
     structureType: "eqJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":100,"bv":100,"kind":"eq"},"truth":true,"promptText":"Ben says $1 and 20 nickels are worth the same. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":100,"bv":50,"kind":"eq"},"truth":false,"promptText":"Ben says $1 and 10 nickels are worth the same. Is Ben right?"}},
   },
   {
     itemId: "money-conc-b0821-0354",
@@ -9672,7 +9672,7 @@ export const ITEMS = [
     structureType: "eqJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":105,"bv":105,"kind":"eq"},"truth":true,"promptText":"Priya says $1 and 1 nickel and 21 nickels are worth the same. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":105,"bv":105,"kind":"eq"},"truth":true,"promptText":"Is Priya right that $1 and 1 nickel are worth the same as 21 nickels?"}},
   },
   {
     itemId: "money-conc-b0821-0356",
@@ -9692,7 +9692,7 @@ export const ITEMS = [
     structureType: "eqJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":130,"bv":130,"kind":"eq"},"truth":true,"promptText":"Nia says $1 and 3 dimes and 13 dimes are worth the same. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":130,"bv":130,"kind":"eq"},"truth":true,"promptText":"Are $1 and 3 dimes worth the same as 13 dimes?"}},
   },
   {
     itemId: "money-conc-b0821-0358",
@@ -9712,7 +9712,7 @@ export const ITEMS = [
     structureType: "eqJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"money":{"av":250,"bv":250,"kind":"eq"},"truth":true,"promptText":"June says $2 and 2 quarters and 10 quarters are worth the same. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"money":{"av":250,"bv":150,"kind":"eq"},"truth":false,"promptText":"Is June right that $2 and 2 quarters are worth the same as 6 quarters?"}},
   },
   {
     itemId: "money-conc-b0821-0360",
@@ -10212,7 +10212,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[2,10,3,1],"display":{"money":{"per":5,"kind":"trade","fromCents":10},"promptText":"Zoe wants to swap 1 dime for only nickels. Which count of nickels matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[2,10,3,1],"display":{"money":{"per":5,"kind":"trade","fromCents":10},"promptText":"Zoe wants to trade 1 dime for nickels only. How many nickels will Zoe get?"}},
   },
   {
     itemId: "money-conc-b0821-0410",
@@ -10222,7 +10222,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[20,3,4,5],"display":{"money":{"per":5,"kind":"trade","fromCents":20},"promptText":"To trade 2 dimes into nickels alone, how many nickels does Finn need? Pick the right count."}},
+    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[20,3,4,5],"display":{"money":{"per":5,"kind":"trade","fromCents":20},"promptText":"Finn trades 2 dimes for nickels. How many nickels does Finn get?"}},
   },
   {
     itemId: "money-conc-b0821-0411",
@@ -10232,7 +10232,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[4,5,6],"display":{"money":{"per":1,"kind":"trade","fromCents":5},"promptText":"Leo wants to swap 1 nickel for only pennies. Which count of pennies matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[4,5,6],"display":{"money":{"per":1,"kind":"trade","fromCents":5},"promptText":"Leo wants to trade 1 nickel for pennies only. How many pennies will Leo get?"}},
   },
   {
     itemId: "money-conc-b0821-0412",
@@ -10242,7 +10242,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[9,11,10],"display":{"money":{"per":1,"kind":"trade","fromCents":10},"promptText":"To trade 1 dime into pennies alone, how many pennies does Luca need? Pick the right count."}},
+    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[9,11,10],"display":{"money":{"per":1,"kind":"trade","fromCents":10},"promptText":"Luca trades 1 dime for pennies. How many pennies does Luca get?"}},
   },
   {
     itemId: "money-conc-b0821-0413",
@@ -10252,7 +10252,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"choices":[15,14,16],"display":{"money":{"per":1,"kind":"trade","fromCents":15},"promptText":"Kai wants to swap 3 nickels for only pennies. Which count of pennies matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":15,"choices":[15,14,16],"display":{"money":{"per":1,"kind":"trade","fromCents":15},"promptText":"Kai wants to trade 3 nickels for pennies only. How many pennies will Kai get?"}},
   },
   {
     itemId: "money-conc-b0821-0414",
@@ -10262,7 +10262,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[9,10,11],"display":{"money":{"per":1,"kind":"trade","fromCents":10},"promptText":"To trade 2 nickels into pennies alone, how many pennies does Zoe need? Pick the right count."}},
+    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[9,10,11],"display":{"money":{"per":1,"kind":"trade","fromCents":10},"promptText":"Zoe trades 2 nickels for pennies. How many pennies does Zoe get?"}},
   },
   {
     itemId: "money-conc-b0821-0415",
@@ -10272,7 +10272,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[3,4,15,2],"display":{"money":{"per":5,"kind":"trade","fromCents":15},"promptText":"Finn wants to swap 1 dime and 1 nickel for only nickels. Which count of nickels matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[3,4,15,2],"display":{"money":{"per":5,"kind":"trade","fromCents":15},"promptText":"Finn has 1 dime and 1 nickel and wants only nickels. How many nickels will Finn have after trading?"}},
   },
   {
     itemId: "money-conc-b0821-0416",
@@ -10282,7 +10282,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[20,3,1,2],"display":{"money":{"per":10,"kind":"trade","fromCents":20},"promptText":"To trade 4 nickels into dimes alone, how many dimes does Leo need? Pick the right count."}},
+    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[20,3,1,2],"display":{"money":{"per":10,"kind":"trade","fromCents":20},"promptText":"Leo trades 4 nickels for dimes. How many dimes does Leo get?"}},
   },
   {
     itemId: "money-conc-b0821-0417",
@@ -10292,7 +10292,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"choices":[21,19,20],"display":{"money":{"per":1,"kind":"trade","fromCents":20},"promptText":"Luca wants to swap 2 dimes for only pennies. Which count of pennies matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":20,"choices":[21,19,20],"display":{"money":{"per":1,"kind":"trade","fromCents":20},"promptText":"Luca wants to trade 2 dimes for pennies only. How many pennies will Luca get?"}},
   },
   {
     itemId: "money-conc-b0821-0418",
@@ -10302,7 +10302,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"choices":[16,14,15],"display":{"money":{"per":1,"kind":"trade","fromCents":15},"promptText":"To trade 1 dime and 1 nickel into pennies alone, how many pennies does Kai need? Pick the right count."}},
+    question: {"a":null,"b":null,"op":"count","answer":15,"choices":[16,14,15],"display":{"money":{"per":1,"kind":"trade","fromCents":15},"promptText":"Kai trades 1 dime and 1 nickel for pennies. How many pennies does Kai get?"}},
   },
   {
     itemId: "money-conc-b0821-0419",
@@ -10312,7 +10312,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[1,3,2,10],"display":{"money":{"per":5,"kind":"trade","fromCents":10},"promptText":"Zoe wants to swap 10 pennies for only nickels. Which count of nickels matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[1,3,2,10],"display":{"money":{"per":5,"kind":"trade","fromCents":10},"promptText":"Zoe wants to trade 10 pennies for nickels only. How many nickels will Zoe get?"}},
   },
   {
     itemId: "money-conc-b0821-0420",
@@ -10322,7 +10322,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"choices":[2,10,1],"display":{"money":{"per":10,"kind":"trade","fromCents":10},"promptText":"To trade 2 nickels into dimes alone, how many dimes does Finn need? Pick the right count."}},
+    question: {"a":null,"b":null,"op":"count","answer":1,"choices":[2,10,1],"display":{"money":{"per":10,"kind":"trade","fromCents":10},"promptText":"Finn trades 2 nickels for dimes. How many dimes does Finn get?"}},
   },
   {
     itemId: "money-conc-b0821-0421",
@@ -10332,7 +10332,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[3,2,1,20],"display":{"money":{"per":10,"kind":"trade","fromCents":20},"promptText":"Leo wants to swap 20 pennies for only dimes. Which count of dimes matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[3,2,1,20],"display":{"money":{"per":10,"kind":"trade","fromCents":20},"promptText":"Leo wants to trade 20 pennies for dimes only. How many dimes will Leo get?"}},
   },
   {
     itemId: "money-conc-b0821-0422",
@@ -10342,7 +10342,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[15,3,2,4],"display":{"money":{"per":5,"kind":"trade","fromCents":15},"promptText":"To trade 15 pennies into nickels alone, how many nickels does Luca need? Pick the right count."}},
+    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[15,3,2,4],"display":{"money":{"per":5,"kind":"trade","fromCents":15},"promptText":"Luca trades 15 pennies for nickels. How many nickels does Luca get?"}},
   },
   {
     itemId: "money-conc-b0821-0423",
@@ -10352,7 +10352,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"choices":[19,21,20],"display":{"money":{"per":1,"kind":"trade","fromCents":20},"promptText":"Kai wants to swap 4 nickels for only pennies. Which count of pennies matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":20,"choices":[19,21,20],"display":{"money":{"per":1,"kind":"trade","fromCents":20},"promptText":"Kai wants to trade 4 nickels for pennies only. How many pennies will Kai get?"}},
   },
   {
     itemId: "money-conc-b0821-0424",
@@ -10362,7 +10362,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[20,2,3,1],"display":{"money":{"per":10,"kind":"trade","fromCents":20},"promptText":"To trade 1 dime and 2 nickels into dimes alone, how many dimes does Zoe need? Pick the right count."}},
+    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[20,2,3,1],"display":{"money":{"per":10,"kind":"trade","fromCents":20},"promptText":"Zoe trades 1 dime and 2 nickels for dimes only. How many dimes does Zoe have after the trade?"}},
   },
   {
     itemId: "money-conc-b0821-0425",
@@ -10372,7 +10372,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[6,25,5,4],"display":{"money":{"per":5,"kind":"trade","fromCents":25},"promptText":"Kai wants to swap 1 quarter for only nickels. Which count of nickels matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[6,25,5,4],"display":{"money":{"per":5,"kind":"trade","fromCents":25},"promptText":"Kai wants to trade 1 quarter for nickels only. How many nickels will Kai get?"}},
   },
   {
     itemId: "money-conc-b0821-0426",
@@ -10382,7 +10382,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[6,5,4,50],"display":{"money":{"per":10,"kind":"trade","fromCents":50},"promptText":"To trade 2 quarters into dimes alone, how many dimes does Zoe need? Pick the right count."}},
+    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[6,5,4,50],"display":{"money":{"per":10,"kind":"trade","fromCents":50},"promptText":"Zoe trades 2 quarters for dimes. How many dimes does Zoe get?"}},
   },
   {
     itemId: "money-conc-b0821-0427",
@@ -10392,7 +10392,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[50,9,11,10],"display":{"money":{"per":5,"kind":"trade","fromCents":50},"promptText":"Finn wants to swap 2 quarters for only nickels. Which count of nickels matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[50,9,11,10],"display":{"money":{"per":5,"kind":"trade","fromCents":50},"promptText":"Finn wants to trade 2 quarters for nickels only. How many nickels will Finn get?"}},
   },
   {
     itemId: "money-conc-b0821-0428",
@@ -10402,7 +10402,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[2,30,3,4],"display":{"money":{"per":10,"kind":"trade","fromCents":30},"promptText":"To trade 1 quarter and 1 nickel into dimes alone, how many dimes does Leo need? Pick the right count."}},
+    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[2,30,3,4],"display":{"money":{"per":10,"kind":"trade","fromCents":30},"promptText":"Leo trades 1 quarter and 1 nickel for dimes. How many dimes does Leo get?"}},
   },
   {
     itemId: "money-conc-b0821-0429",
@@ -10412,7 +10412,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"choices":[14,15,16,75],"display":{"money":{"per":5,"kind":"trade","fromCents":75},"promptText":"Luca wants to swap 3 quarters for only nickels. Which count of nickels matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":15,"choices":[14,15,16,75],"display":{"money":{"per":5,"kind":"trade","fromCents":75},"promptText":"Luca wants to trade 3 quarters for nickels only. How many nickels will Luca get?"}},
   },
   {
     itemId: "money-conc-b0821-0430",
@@ -10422,7 +10422,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[50,2,3,1],"display":{"money":{"per":25,"kind":"trade","fromCents":50},"promptText":"To trade 5 dimes into quarters alone, how many quarters does Kai need? Pick the right count."}},
+    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[50,2,3,1],"display":{"money":{"per":25,"kind":"trade","fromCents":50},"promptText":"Kai trades 5 dimes for quarters. How many quarters does Kai get?"}},
   },
   {
     itemId: "money-conc-b0821-0431",
@@ -10432,7 +10432,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"choices":[26,24,25],"display":{"money":{"per":1,"kind":"trade","fromCents":25},"promptText":"Zoe wants to swap 1 quarter for only pennies. Which count of pennies matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":25,"choices":[26,24,25],"display":{"money":{"per":1,"kind":"trade","fromCents":25},"promptText":"Zoe wants to trade 1 quarter for pennies only. How many pennies will Zoe get?"}},
   },
   {
     itemId: "money-conc-b0821-0432",
@@ -10442,7 +10442,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[3,50,1,2],"display":{"money":{"per":25,"kind":"trade","fromCents":50},"promptText":"To trade 10 nickels into quarters alone, how many quarters does Finn need? Pick the right count."}},
+    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[3,50,1,2],"display":{"money":{"per":25,"kind":"trade","fromCents":50},"promptText":"Finn trades 10 nickels for quarters. How many quarters does Finn get?"}},
   },
   {
     itemId: "money-conc-b0821-0433",
@@ -10452,7 +10452,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[10,11,100,9],"display":{"money":{"per":10,"kind":"trade","fromCents":100},"promptText":"Leo wants to swap 4 quarters for only dimes. Which count of dimes matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[10,11,100,9],"display":{"money":{"per":10,"kind":"trade","fromCents":100},"promptText":"Leo wants to trade 4 quarters for dimes only. How many dimes will Leo get?"}},
   },
   {
     itemId: "money-conc-b0821-0434",
@@ -10462,7 +10462,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[8,7,35,6],"display":{"money":{"per":5,"kind":"trade","fromCents":35},"promptText":"To trade 1 quarter and 1 dime into nickels alone, how many nickels does Luca need? Pick the right count."}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[8,7,35,6],"display":{"money":{"per":5,"kind":"trade","fromCents":35},"promptText":"Luca trades 1 quarter and 1 dime for nickels. How many nickels does Luca get?"}},
   },
   {
     itemId: "money-conc-b0821-0435",
@@ -10472,7 +10472,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[7,60,5,6],"display":{"money":{"per":10,"kind":"trade","fromCents":60},"promptText":"Kai wants to swap 2 quarters and 1 dime for only dimes. Which count of dimes matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[7,60,5,6],"display":{"money":{"per":10,"kind":"trade","fromCents":60},"promptText":"Kai has 2 quarters and 1 dime and wants only dimes. How many dimes will Kai have after trading?"}},
   },
   {
     itemId: "money-conc-b0821-0436",
@@ -10482,7 +10482,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"choices":[25,1,2],"display":{"money":{"per":25,"kind":"trade","fromCents":25},"promptText":"To trade 25 pennies into quarters alone, how many quarters does Zoe need? Pick the right count."}},
+    question: {"a":null,"b":null,"op":"count","answer":1,"choices":[25,1,2],"display":{"money":{"per":25,"kind":"trade","fromCents":25},"promptText":"Zoe trades 25 pennies for quarters. How many quarters does Zoe get?"}},
   },
   {
     itemId: "money-conc-b0821-0437",
@@ -10492,7 +10492,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[4,3,5,40],"display":{"money":{"per":10,"kind":"trade","fromCents":40},"promptText":"Finn wants to swap 8 nickels for only dimes. Which count of dimes matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[4,3,5,40],"display":{"money":{"per":10,"kind":"trade","fromCents":40},"promptText":"Finn wants to trade 8 nickels for dimes only. How many dimes will Finn get?"}},
   },
   {
     itemId: "money-conc-b0821-0438",
@@ -10502,7 +10502,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[4,5,40,3],"display":{"money":{"per":10,"kind":"trade","fromCents":40},"promptText":"To trade 1 quarter and 3 nickels into dimes alone, how many dimes does Leo need? Pick the right count."}},
+    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[4,5,40,3],"display":{"money":{"per":10,"kind":"trade","fromCents":40},"promptText":"Leo trades 1 quarter and 3 nickels for dimes. How many dimes does Leo get?"}},
   },
   {
     itemId: "money-conc-b0821-0439",
@@ -10512,7 +10512,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"choices":[20,19,21,100],"display":{"money":{"per":5,"kind":"trade","fromCents":100},"promptText":"Luca wants to swap 4 quarters for only nickels. Which count of nickels matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":20,"choices":[20,19,21,100],"display":{"money":{"per":5,"kind":"trade","fromCents":100},"promptText":"Luca wants to trade 4 quarters for nickels only. How many nickels will Luca get?"}},
   },
   {
     itemId: "money-conc-b0821-0440",
@@ -10522,7 +10522,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[2,1,50,3],"display":{"money":{"per":25,"kind":"trade","fromCents":50},"promptText":"To trade 50 pennies into quarters alone, how many quarters does Kai need? Pick the right count."}},
+    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[2,1,50,3],"display":{"money":{"per":25,"kind":"trade","fromCents":50},"promptText":"Kai trades 50 pennies for quarters. How many quarters does Kai get?"}},
   },
   {
     itemId: "money-conc-b0821-0441",
@@ -10532,7 +10532,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[3,5,4,100],"display":{"money":{"per":25,"kind":"trade","fromCents":100},"promptText":"Luca wants to swap $1 for only quarters. Which count of quarters matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[3,5,4,100],"display":{"money":{"per":25,"kind":"trade","fromCents":100},"promptText":"Luca wants to trade $1 for quarters only. How many quarters will Luca get?"}},
   },
   {
     itemId: "money-conc-b0821-0442",
@@ -10542,7 +10542,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[100,9,11,10],"display":{"money":{"per":10,"kind":"trade","fromCents":100},"promptText":"To trade $1 into dimes alone, how many dimes does Kai need? Pick the right count."}},
+    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[100,9,11,10],"display":{"money":{"per":10,"kind":"trade","fromCents":100},"promptText":"Kai trades $1 for dimes. How many dimes does Kai get?"}},
   },
   {
     itemId: "money-conc-b0821-0443",
@@ -10552,7 +10552,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[200,9,7,8],"display":{"money":{"per":25,"kind":"trade","fromCents":200},"promptText":"Zoe wants to swap $2 for only quarters. Which count of quarters matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[200,9,7,8],"display":{"money":{"per":25,"kind":"trade","fromCents":200},"promptText":"Zoe wants to trade $2 for quarters only. How many quarters will Zoe get?"}},
   },
   {
     itemId: "money-conc-b0821-0444",
@@ -10562,7 +10562,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[4,6,5,125],"display":{"money":{"per":25,"kind":"trade","fromCents":125},"promptText":"To trade $1 and 1 quarter into quarters alone, how many quarters does Finn need? Pick the right count."}},
+    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[4,6,5,125],"display":{"money":{"per":25,"kind":"trade","fromCents":125},"promptText":"Finn trades $1 and 1 quarter for quarters only. How many quarters does Finn have after the trade?"}},
   },
   {
     itemId: "money-conc-b0821-0445",
@@ -10572,7 +10572,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"choices":[20,100,21,19],"display":{"money":{"per":5,"kind":"trade","fromCents":100},"promptText":"Leo wants to swap $1 for only nickels. Which count of nickels matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":20,"choices":[20,100,21,19],"display":{"money":{"per":5,"kind":"trade","fromCents":100},"promptText":"Leo wants to trade $1 for nickels only. How many nickels will Leo get?"}},
   },
   {
     itemId: "money-conc-b0821-0446",
@@ -10582,7 +10582,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"choices":[19,21,20,200],"display":{"money":{"per":10,"kind":"trade","fromCents":200},"promptText":"To trade $2 into dimes alone, how many dimes does Luca need? Pick the right count."}},
+    question: {"a":null,"b":null,"op":"count","answer":20,"choices":[19,21,20,200],"display":{"money":{"per":10,"kind":"trade","fromCents":200},"promptText":"Luca trades $2 for dimes. How many dimes does Luca get?"}},
   },
   {
     itemId: "money-conc-b0821-0447",
@@ -10592,7 +10592,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"choices":[11,110,12,10],"display":{"money":{"per":10,"kind":"trade","fromCents":110},"promptText":"Kai wants to swap $1 and 1 dime for only dimes. Which count of dimes matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":11,"choices":[11,110,12,10],"display":{"money":{"per":10,"kind":"trade","fromCents":110},"promptText":"Kai has $1 and 1 dime and wants only dimes. How many dimes will Kai have after trading?"}},
   },
   {
     itemId: "money-conc-b0821-0448",
@@ -10602,7 +10602,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[11,13,300,12],"display":{"money":{"per":25,"kind":"trade","fromCents":300},"promptText":"To trade $3 into quarters alone, how many quarters does Zoe need? Pick the right count."}},
+    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[11,13,300,12],"display":{"money":{"per":25,"kind":"trade","fromCents":300},"promptText":"Zoe trades $3 for quarters. How many quarters does Zoe get?"}},
   },
   {
     itemId: "money-conc-b0821-0449",
@@ -10612,7 +10612,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[6,150,7,5],"display":{"money":{"per":25,"kind":"trade","fromCents":150},"promptText":"Finn wants to swap $1 and 2 quarters for only quarters. Which count of quarters matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[6,150,7,5],"display":{"money":{"per":25,"kind":"trade","fromCents":150},"promptText":"Finn has $1 and 2 quarters and wants only quarters. How many quarters will Finn have after trading?"}},
   },
   {
     itemId: "money-conc-b0821-0450",
@@ -10622,7 +10622,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":21,"choices":[210,22,20,21],"display":{"money":{"per":10,"kind":"trade","fromCents":210},"promptText":"To trade $2 and 1 dime into dimes alone, how many dimes does Leo need? Pick the right count."}},
+    question: {"a":null,"b":null,"op":"count","answer":21,"choices":[210,22,20,21],"display":{"money":{"per":10,"kind":"trade","fromCents":210},"promptText":"Leo trades $2 and 1 dime for dimes only. How many dimes does Leo have after the trade?"}},
   },
   {
     itemId: "money-conc-b0821-0451",
@@ -10632,7 +10632,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"choices":[400,15,17,16],"display":{"money":{"per":25,"kind":"trade","fromCents":400},"promptText":"Luca wants to swap $4 for only quarters. Which count of quarters matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":16,"choices":[400,15,17,16],"display":{"money":{"per":25,"kind":"trade","fromCents":400},"promptText":"Luca wants to trade $4 for quarters only. How many quarters will Luca get?"}},
   },
   {
     itemId: "money-conc-b0821-0452",
@@ -10642,7 +10642,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[130,14,13,12],"display":{"money":{"per":10,"kind":"trade","fromCents":130},"promptText":"To trade $1 and 3 dimes into dimes alone, how many dimes does Kai need? Pick the right count."}},
+    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[130,14,13,12],"display":{"money":{"per":10,"kind":"trade","fromCents":130},"promptText":"Kai trades $1 and 3 dimes for dimes only. How many dimes does Kai have after the trade?"}},
   },
   {
     itemId: "money-conc-b0821-0453",
@@ -10652,7 +10652,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"choices":[20,19,21,500],"display":{"money":{"per":25,"kind":"trade","fromCents":500},"promptText":"Zoe wants to swap $5 for only quarters. Which count of quarters matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":20,"choices":[20,19,21,500],"display":{"money":{"per":25,"kind":"trade","fromCents":500},"promptText":"Zoe wants to trade $5 for quarters only. How many quarters will Zoe get?"}},
   },
   {
     itemId: "money-conc-b0821-0454",
@@ -10662,7 +10662,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[9,10,11,250],"display":{"money":{"per":25,"kind":"trade","fromCents":250},"promptText":"To trade $2 and 2 quarters into quarters alone, how many quarters does Finn need? Pick the right count."}},
+    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[9,10,11,250],"display":{"money":{"per":25,"kind":"trade","fromCents":250},"promptText":"Finn trades $2 and 2 quarters for quarters only. How many quarters does Finn have after the trade?"}},
   },
   {
     itemId: "money-conc-b0821-0455",
@@ -10672,7 +10672,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[12,120,13,11],"display":{"money":{"per":10,"kind":"trade","fromCents":120},"promptText":"Leo wants to swap $1 and 2 dimes for only dimes. Which count of dimes matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[12,120,13,11],"display":{"money":{"per":10,"kind":"trade","fromCents":120},"promptText":"Leo has $1 and 2 dimes and wants only dimes. How many dimes will Leo have after trading?"}},
   },
   {
     itemId: "money-conc-b0821-0456",
@@ -10682,7 +10682,7 @@ export const ITEMS = [
     structureType: "pickTradeCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[12,14,325,13],"display":{"money":{"per":25,"kind":"trade","fromCents":325},"promptText":"To trade $3 and 1 quarter into quarters alone, how many quarters does Luca need? Pick the right count."}},
+    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[12,14,325,13],"display":{"money":{"per":25,"kind":"trade","fromCents":325},"promptText":"Luca trades $3 and 1 quarter for quarters only. How many quarters does Luca have after the trade?"}},
   },
   {
     itemId: "money-conc-b0821-0457",
@@ -11232,7 +11232,7 @@ export const ITEMS = [
     structureType: "whichBank_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":12,"b":9,"kind":"compare"},"promptText":"Ben checks two banks: one holds 12 cents, the other 9 cents. Which bank holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":12,"b":9,"kind":"compare"},"promptText":"Bank A holds 12 cents. Bank B holds 9 cents. Which bank holds more money?"}},
   },
   {
     itemId: "money-conc-b0821-0512",
@@ -11252,7 +11252,7 @@ export const ITEMS = [
     structureType: "whichBank_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":18,"b":11,"kind":"compare"},"promptText":"Priya checks two banks: one holds 18 cents, the other 11 cents. Which bank holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":18,"b":11,"kind":"compare"},"promptText":"Priya looks in two banks. Bank A holds 18 cents. Bank B holds 11 cents. Which bank holds more money?"}},
   },
   {
     itemId: "money-conc-b0821-0514",
@@ -11272,7 +11272,7 @@ export const ITEMS = [
     structureType: "whichBank_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":20,"b":17,"kind":"compare"},"promptText":"Nia checks two banks: one holds 20 cents, the other 17 cents. Which bank holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":20,"b":17,"kind":"compare"},"promptText":"Nia has two banks. Bank A has 20 cents and Bank B has 17 cents. Which bank has more money?"}},
   },
   {
     itemId: "money-conc-b0821-0516",
@@ -11292,7 +11292,7 @@ export const ITEMS = [
     structureType: "whichBank_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":14,"b":5,"kind":"compare"},"promptText":"June checks two banks: one holds 14 cents, the other 5 cents. Which bank holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":14,"b":5,"kind":"compare"},"promptText":"June checks two banks: Bank A with 14 cents and Bank B with 5 cents. Which bank has more money?"}},
   },
   {
     itemId: "money-conc-b0821-0518",
@@ -11312,7 +11312,7 @@ export const ITEMS = [
     structureType: "whichBank_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":16,"b":12,"kind":"compare"},"promptText":"Amara checks two banks: one holds 16 cents, the other 12 cents. Which bank holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":16,"b":12,"kind":"compare"},"promptText":"Which bank holds more money: Bank A with 16 cents or Bank B with 12 cents?"}},
   },
   {
     itemId: "money-conc-b0821-0520",
@@ -11332,7 +11332,7 @@ export const ITEMS = [
     structureType: "whichBank_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":17,"b":14,"kind":"compare"},"promptText":"Mina checks two banks: one holds 17 cents, the other 14 cents. Which bank holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":17,"b":14,"kind":"compare"},"promptText":"Bank A holds 17 cents. Bank B holds 14 cents. Which bank holds more money?"}},
   },
   {
     itemId: "money-conc-b0821-0522",
@@ -11352,7 +11352,7 @@ export const ITEMS = [
     structureType: "whichBank_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":13,"b":8,"kind":"compare"},"promptText":"Ida checks two banks: one holds 13 cents, the other 8 cents. Which bank holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":13,"b":8,"kind":"compare"},"promptText":"Ida looks in two banks. Bank A holds 13 cents. Bank B holds 8 cents. Which bank holds more money?"}},
   },
   {
     itemId: "money-conc-b0821-0524",
@@ -11372,7 +11372,7 @@ export const ITEMS = [
     structureType: "whichBank_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":15,"b":10,"kind":"compare"},"promptText":"Rosa checks two banks: one holds 15 cents, the other 10 cents. Which bank holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":15,"b":10,"kind":"compare"},"promptText":"Rosa has two banks. Bank A has 15 cents and Bank B has 10 cents. Which bank has more money?"}},
   },
   {
     itemId: "money-conc-b0821-0526",
@@ -11392,7 +11392,7 @@ export const ITEMS = [
     structureType: "whichBank_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":42,"b":39,"kind":"compare"},"promptText":"Ben checks two banks: one holds 42 cents, the other 39 cents. Which bank holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":42,"b":39,"kind":"compare"},"promptText":"Ben has two banks. Bank A has 42 cents and Bank B has 39 cents. Which bank has more money?"}},
   },
   {
     itemId: "money-conc-b0821-0528",
@@ -11412,7 +11412,7 @@ export const ITEMS = [
     structureType: "whichBank_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":68,"b":61,"kind":"compare"},"promptText":"Priya checks two banks: one holds 68 cents, the other 61 cents. Which bank holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":68,"b":61,"kind":"compare"},"promptText":"Priya checks two banks: Bank A with 68 cents and Bank B with 61 cents. Which bank has more money?"}},
   },
   {
     itemId: "money-conc-b0821-0530",
@@ -11432,7 +11432,7 @@ export const ITEMS = [
     structureType: "whichBank_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":90,"b":87,"kind":"compare"},"promptText":"Nia checks two banks: one holds 90 cents, the other 87 cents. Which bank holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":90,"b":87,"kind":"compare"},"promptText":"Which bank holds more money: Bank A with 90 cents or Bank B with 87 cents?"}},
   },
   {
     itemId: "money-conc-b0821-0532",
@@ -11452,7 +11452,7 @@ export const ITEMS = [
     structureType: "whichBank_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":64,"b":45,"kind":"compare"},"promptText":"June checks two banks: one holds 64 cents, the other 45 cents. Which bank holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":64,"b":45,"kind":"compare"},"promptText":"Bank A holds 64 cents. Bank B holds 45 cents. Which bank holds more money?"}},
   },
   {
     itemId: "money-conc-b0821-0534",
@@ -11472,7 +11472,7 @@ export const ITEMS = [
     structureType: "whichBank_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":76,"b":52,"kind":"compare"},"promptText":"Amara checks two banks: one holds 76 cents, the other 52 cents. Which bank holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":76,"b":52,"kind":"compare"},"promptText":"Amara looks in two banks. Bank A holds 76 cents. Bank B holds 52 cents. Which bank holds more money?"}},
   },
   {
     itemId: "money-conc-b0821-0536",
@@ -11492,7 +11492,7 @@ export const ITEMS = [
     structureType: "whichBank_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":87,"b":74,"kind":"compare"},"promptText":"Mina checks two banks: one holds 87 cents, the other 74 cents. Which bank holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":87,"b":74,"kind":"compare"},"promptText":"Mina has two banks. Bank A has 87 cents and Bank B has 74 cents. Which bank has more money?"}},
   },
   {
     itemId: "money-conc-b0821-0538",
@@ -11512,7 +11512,7 @@ export const ITEMS = [
     structureType: "whichBank_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":63,"b":38,"kind":"compare"},"promptText":"Ida checks two banks: one holds 63 cents, the other 38 cents. Which bank holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":63,"b":38,"kind":"compare"},"promptText":"Ida checks two banks: Bank A with 63 cents and Bank B with 38 cents. Which bank has more money?"}},
   },
   {
     itemId: "money-conc-b0821-0540",
@@ -11532,7 +11532,7 @@ export const ITEMS = [
     structureType: "whichBank_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":95,"b":60,"kind":"compare"},"promptText":"Rosa checks two banks: one holds 95 cents, the other 60 cents. Which bank holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":95,"b":60,"kind":"compare"},"promptText":"Which bank holds more money: Bank A with 95 cents or Bank B with 60 cents?"}},
   },
   {
     itemId: "money-conc-b0821-0542",
@@ -11552,7 +11552,7 @@ export const ITEMS = [
     structureType: "whichBank_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":142,"b":139,"kind":"compare"},"promptText":"Ben checks two banks: one holds 142 cents, the other 139 cents. Which bank holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":142,"b":139,"kind":"compare"},"promptText":"Which bank holds more money: Bank A with 142 cents or Bank B with 139 cents?"}},
   },
   {
     itemId: "money-conc-b0821-0544",
@@ -11572,7 +11572,7 @@ export const ITEMS = [
     structureType: "whichBank_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":268,"b":261,"kind":"compare"},"promptText":"Priya checks two banks: one holds 268 cents, the other 261 cents. Which bank holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":268,"b":261,"kind":"compare"},"promptText":"Bank A holds 268 cents. Bank B holds 261 cents. Which bank holds more money?"}},
   },
   {
     itemId: "money-conc-b0821-0546",
@@ -11592,7 +11592,7 @@ export const ITEMS = [
     structureType: "whichBank_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":390,"b":387,"kind":"compare"},"promptText":"Nia checks two banks: one holds 390 cents, the other 387 cents. Which bank holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":390,"b":387,"kind":"compare"},"promptText":"Nia looks in two banks. Bank A holds 390 cents. Bank B holds 387 cents. Which bank holds more money?"}},
   },
   {
     itemId: "money-conc-b0821-0548",
@@ -11612,7 +11612,7 @@ export const ITEMS = [
     structureType: "whichBank_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":264,"b":245,"kind":"compare"},"promptText":"June checks two banks: one holds 264 cents, the other 245 cents. Which bank holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":264,"b":245,"kind":"compare"},"promptText":"June has two banks. Bank A has 264 cents and Bank B has 245 cents. Which bank has more money?"}},
   },
   {
     itemId: "money-conc-b0821-0550",
@@ -11632,7 +11632,7 @@ export const ITEMS = [
     structureType: "whichBank_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":276,"b":252,"kind":"compare"},"promptText":"Amara checks two banks: one holds 276 cents, the other 252 cents. Which bank holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":276,"b":252,"kind":"compare"},"promptText":"Amara checks two banks: Bank A with 276 cents and Bank B with 252 cents. Which bank has more money?"}},
   },
   {
     itemId: "money-conc-b0821-0552",
@@ -11652,7 +11652,7 @@ export const ITEMS = [
     structureType: "whichBank_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":387,"b":374,"kind":"compare"},"promptText":"Mina checks two banks: one holds 387 cents, the other 374 cents. Which bank holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":387,"b":374,"kind":"compare"},"promptText":"Which bank holds more money: Bank A with 387 cents or Bank B with 374 cents?"}},
   },
   {
     itemId: "money-conc-b0821-0554",
@@ -11672,7 +11672,7 @@ export const ITEMS = [
     structureType: "whichBank_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":263,"b":238,"kind":"compare"},"promptText":"Ida checks two banks: one holds 263 cents, the other 238 cents. Which bank holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":263,"b":238,"kind":"compare"},"promptText":"Bank A holds 263 cents. Bank B holds 238 cents. Which bank holds more money?"}},
   },
   {
     itemId: "money-conc-b0821-0556",
@@ -11692,7 +11692,7 @@ export const ITEMS = [
     structureType: "whichBank_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":395,"b":360,"kind":"compare"},"promptText":"Rosa checks two banks: one holds 395 cents, the other 360 cents. Which bank holds more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Bank A","choices":["Bank A","Bank B"],"display":{"money":{"a":395,"b":360,"kind":"compare"},"promptText":"Rosa looks in two banks. Bank A holds 395 cents. Bank B holds 360 cents. Which bank holds more money?"}},
   },
   {
     itemId: "money-conc-b0821-0558",
@@ -11722,7 +11722,7 @@ export const ITEMS = [
     structureType: "leftOverPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[8,7,23,6],"display":{"counting":{"back":8,"kind":"countBack","start":15},"promptText":"Out of 15 cents, Diego pays 8 cents for a treat. How much money is left? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[8,7,23,6],"display":{"counting":{"back":8,"kind":"countBack","start":15},"promptText":"Diego has 15 cents and pays 8 cents for a treat. How many cents does Diego have left?"}},
   },
   {
     itemId: "money-conc-b0821-0561",
@@ -11742,7 +11742,7 @@ export const ITEMS = [
     structureType: "leftOverPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[7,17,6,8],"display":{"counting":{"back":5,"kind":"countBack","start":12},"promptText":"Out of 12 cents, Theo pays 5 cents for a treat. How much money is left? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[7,17,6,8],"display":{"counting":{"back":5,"kind":"countBack","start":12},"promptText":"Theo has 12 cents and pays 5 cents for a treat. How many cents does Theo have left?"}},
   },
   {
     itemId: "money-conc-b0821-0563",
@@ -11762,7 +11762,7 @@ export const ITEMS = [
     structureType: "leftOverPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[8,20,7,9],"display":{"counting":{"back":6,"kind":"countBack","start":14},"promptText":"Out of 14 cents, Lily pays 6 cents for a treat. How much money is left? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[8,20,7,9],"display":{"counting":{"back":6,"kind":"countBack","start":14},"promptText":"Lily has 14 cents and pays 6 cents for a treat. How many cents does Lily have left?"}},
   },
   {
     itemId: "money-conc-b0821-0565",
@@ -11782,7 +11782,7 @@ export const ITEMS = [
     structureType: "leftOverPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"choices":[17,16,15,24],"display":{"counting":{"back":4,"kind":"countBack","start":20},"promptText":"Out of 20 cents, Sam pays 4 cents for a treat. How much money is left? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":16,"choices":[17,16,15,24],"display":{"counting":{"back":4,"kind":"countBack","start":20},"promptText":"Sam has 20 cents and pays 4 cents for a treat. How many cents does Sam have left?"}},
   },
   {
     itemId: "money-conc-b0821-0567",
@@ -11802,7 +11802,7 @@ export const ITEMS = [
     structureType: "leftOverPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[29,6,4,5],"display":{"counting":{"back":12,"kind":"countBack","start":17},"promptText":"Out of 17 cents, Omar pays 12 cents for a treat. How much money is left? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[29,6,4,5],"display":{"counting":{"back":12,"kind":"countBack","start":17},"promptText":"Omar has 17 cents. A treat costs 12 cents. How many cents does Omar have left after buying the treat?"}},
   },
   {
     itemId: "money-conc-b0821-0569",
@@ -11822,7 +11822,7 @@ export const ITEMS = [
     structureType: "leftOverPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[9,7,8,14],"display":{"counting":{"back":3,"kind":"countBack","start":11},"promptText":"Out of 11 cents, Diego pays 3 cents for a treat. How much money is left? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[9,7,8,14],"display":{"counting":{"back":3,"kind":"countBack","start":11},"promptText":"Diego has 11 cents. A treat costs 3 cents. How many cents does Diego have left after buying the treat?"}},
   },
   {
     itemId: "money-conc-b0821-0571",
@@ -11842,7 +11842,7 @@ export const ITEMS = [
     structureType: "leftOverPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[2,3,1,38],"display":{"counting":{"back":18,"kind":"countBack","start":20},"promptText":"Out of 20 cents, Theo pays 18 cents for a treat. How much money is left? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[2,3,1,38],"display":{"counting":{"back":18,"kind":"countBack","start":20},"promptText":"Theo has 20 cents. A treat costs 18 cents. How many cents does Theo have left after buying the treat?"}},
   },
   {
     itemId: "money-conc-b0821-0573",
@@ -11862,7 +11862,7 @@ export const ITEMS = [
     structureType: "leftOverPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[32,5,3,4],"display":{"counting":{"back":14,"kind":"countBack","start":18},"promptText":"Out of 18 cents, Lily pays 14 cents for a treat. How much money is left? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[32,5,3,4],"display":{"counting":{"back":14,"kind":"countBack","start":18},"promptText":"Lily has 18 cents. A treat costs 14 cents. How many cents does Lily have left after buying the treat?"}},
   },
   {
     itemId: "money-conc-b0821-0575",
@@ -11882,7 +11882,7 @@ export const ITEMS = [
     structureType: "leftOverPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"choices":[26,28,123,27],"display":{"counting":{"back":48,"kind":"countBack","start":75},"promptText":"Out of 75 cents, Lily pays 48 cents for a treat. How much money is left? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":27,"choices":[26,28,123,27],"display":{"counting":{"back":48,"kind":"countBack","start":75},"promptText":"Lily has 75 cents and pays 48 cents for a treat. How many cents does Lily have left?"}},
   },
   {
     itemId: "money-conc-b0821-0577",
@@ -11902,7 +11902,7 @@ export const ITEMS = [
     structureType: "leftOverPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[18,67,16,17],"display":{"counting":{"back":25,"kind":"countBack","start":42},"promptText":"Out of 42 cents, Sam pays 25 cents for a treat. How much money is left? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[18,67,16,17],"display":{"counting":{"back":25,"kind":"countBack","start":42},"promptText":"Sam has 42 cents and pays 25 cents for a treat. How many cents does Sam have left?"}},
   },
   {
     itemId: "money-conc-b0821-0579",
@@ -11922,7 +11922,7 @@ export const ITEMS = [
     structureType: "leftOverPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"choices":[27,28,141,26],"display":{"counting":{"back":57,"kind":"countBack","start":84},"promptText":"Out of 84 cents, Omar pays 57 cents for a treat. How much money is left? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":27,"choices":[27,28,141,26],"display":{"counting":{"back":57,"kind":"countBack","start":84},"promptText":"Omar has 84 cents and pays 57 cents for a treat. How many cents does Omar have left?"}},
   },
   {
     itemId: "money-conc-b0821-0581",
@@ -11942,7 +11942,7 @@ export const ITEMS = [
     structureType: "leftOverPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"choices":[83,28,26,27],"display":{"counting":{"back":28,"kind":"countBack","start":55},"promptText":"Out of 55 cents, Diego pays 28 cents for a treat. How much money is left? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":27,"choices":[83,28,26,27],"display":{"counting":{"back":28,"kind":"countBack","start":55},"promptText":"Diego has 55 cents and pays 28 cents for a treat. How many cents does Diego have left?"}},
   },
   {
     itemId: "money-conc-b0821-0583",
@@ -11962,7 +11962,7 @@ export const ITEMS = [
     structureType: "leftOverPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"choices":[149,25,26,24],"display":{"counting":{"back":62,"kind":"countBack","start":87},"promptText":"Out of 87 cents, Theo pays 62 cents for a treat. How much money is left? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":25,"choices":[149,25,26,24],"display":{"counting":{"back":62,"kind":"countBack","start":87},"promptText":"Theo has 87 cents. A treat costs 62 cents. How many cents does Theo have left after buying the treat?"}},
   },
   {
     itemId: "money-conc-b0821-0585",
@@ -11982,7 +11982,7 @@ export const ITEMS = [
     structureType: "leftOverPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"choices":[26,95,27,28],"display":{"counting":{"back":34,"kind":"countBack","start":61},"promptText":"Out of 61 cents, Lily pays 34 cents for a treat. How much money is left? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":27,"choices":[26,95,27,28],"display":{"counting":{"back":34,"kind":"countBack","start":61},"promptText":"Lily has 61 cents. A treat costs 34 cents. How many cents does Lily have left after buying the treat?"}},
   },
   {
     itemId: "money-conc-b0821-0587",
@@ -12002,7 +12002,7 @@ export const ITEMS = [
     structureType: "leftOverPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"choices":[25,23,24,160],"display":{"counting":{"back":68,"kind":"countBack","start":92},"promptText":"Out of 92 cents, Sam pays 68 cents for a treat. How much money is left? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":24,"choices":[25,23,24,160],"display":{"counting":{"back":68,"kind":"countBack","start":92},"promptText":"Sam has 92 cents. A treat costs 68 cents. How many cents does Sam have left after buying the treat?"}},
   },
   {
     itemId: "money-conc-b0821-0589",
@@ -12022,7 +12022,7 @@ export const ITEMS = [
     structureType: "leftOverPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":23,"choices":[22,23,24,139],"display":{"counting":{"back":58,"kind":"countBack","start":81},"promptText":"Out of 81 cents, Omar pays 58 cents for a treat. How much money is left? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":23,"choices":[22,23,24,139],"display":{"counting":{"back":58,"kind":"countBack","start":81},"promptText":"Omar has 81 cents. A treat costs 58 cents. How many cents does Omar have left after buying the treat?"}},
   },
   {
     itemId: "money-conc-b0821-0591",
@@ -12042,7 +12042,7 @@ export const ITEMS = [
     structureType: "leftOverPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":82,"choices":[82,418,83,81],"display":{"counting":{"back":168,"kind":"countBack","start":250},"promptText":"Out of 250 cents, Omar pays 168 cents for a treat. How much money is left? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":82,"choices":[82,418,83,81],"display":{"counting":{"back":168,"kind":"countBack","start":250},"promptText":"Omar has 250 cents and pays 168 cents for a treat. How many cents does Omar have left?"}},
   },
   {
     itemId: "money-conc-b0821-0593",
@@ -12062,7 +12062,7 @@ export const ITEMS = [
     structureType: "leftOverPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":56,"choices":[314,55,56,57],"display":{"counting":{"back":129,"kind":"countBack","start":185},"promptText":"Out of 185 cents, Diego pays 129 cents for a treat. How much money is left? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":56,"choices":[314,55,56,57],"display":{"counting":{"back":129,"kind":"countBack","start":185},"promptText":"Diego has 185 cents and pays 129 cents for a treat. How many cents does Diego have left?"}},
   },
   {
     itemId: "money-conc-b0821-0595",
@@ -12082,7 +12082,7 @@ export const ITEMS = [
     structureType: "leftOverPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":77,"choices":[77,76,591,78],"display":{"counting":{"back":257,"kind":"countBack","start":334},"promptText":"Out of 334 cents, Theo pays 257 cents for a treat. How much money is left? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":77,"choices":[77,76,591,78],"display":{"counting":{"back":257,"kind":"countBack","start":334},"promptText":"Theo has 334 cents and pays 257 cents for a treat. How many cents does Theo have left?"}},
   },
   {
     itemId: "money-conc-b0821-0597",
@@ -12102,7 +12102,7 @@ export const ITEMS = [
     structureType: "leftOverPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":67,"choices":[383,66,67,68],"display":{"counting":{"back":158,"kind":"countBack","start":225},"promptText":"Out of 225 cents, Lily pays 158 cents for a treat. How much money is left? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":67,"choices":[383,66,67,68],"display":{"counting":{"back":158,"kind":"countBack","start":225},"promptText":"Lily has 225 cents and pays 158 cents for a treat. How many cents does Lily have left?"}},
   },
   {
     itemId: "money-conc-b0821-0599",
@@ -12122,7 +12122,7 @@ export const ITEMS = [
     structureType: "leftOverPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":125,"choices":[126,649,124,125],"display":{"counting":{"back":262,"kind":"countBack","start":387},"promptText":"Out of 387 cents, Sam pays 262 cents for a treat. How much money is left? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":125,"choices":[126,649,124,125],"display":{"counting":{"back":262,"kind":"countBack","start":387},"promptText":"Sam has 387 cents. A treat costs 262 cents. How many cents does Sam have left after buying the treat?"}},
   },
   {
     itemId: "money-conc-b0821-0601",
@@ -12142,7 +12142,7 @@ export const ITEMS = [
     structureType: "leftOverPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":77,"choices":[76,445,77,78],"display":{"counting":{"back":184,"kind":"countBack","start":261},"promptText":"Out of 261 cents, Omar pays 184 cents for a treat. How much money is left? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":77,"choices":[76,445,77,78],"display":{"counting":{"back":184,"kind":"countBack","start":261},"promptText":"Omar has 261 cents. A treat costs 184 cents. How many cents does Omar have left after buying the treat?"}},
   },
   {
     itemId: "money-conc-b0821-0603",
@@ -12162,7 +12162,7 @@ export const ITEMS = [
     structureType: "leftOverPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":74,"choices":[710,75,73,74],"display":{"counting":{"back":318,"kind":"countBack","start":392},"promptText":"Out of 392 cents, Diego pays 318 cents for a treat. How much money is left? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":74,"choices":[710,75,73,74],"display":{"counting":{"back":318,"kind":"countBack","start":392},"promptText":"Diego has 392 cents. A treat costs 318 cents. How many cents does Diego have left after buying the treat?"}},
   },
   {
     itemId: "money-conc-b0821-0605",
@@ -12182,7 +12182,7 @@ export const ITEMS = [
     structureType: "leftOverPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":173,"choices":[589,172,173,174],"display":{"counting":{"back":208,"kind":"countBack","start":381},"promptText":"Out of 381 cents, Theo pays 208 cents for a treat. How much money is left? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":173,"choices":[589,172,173,174],"display":{"counting":{"back":208,"kind":"countBack","start":381},"promptText":"Theo has 381 cents. A treat costs 208 cents. How many cents does Theo have left after buying the treat?"}},
   },
   {
     itemId: "money-proc-b0821-0001",
@@ -12192,7 +12192,7 @@ export const ITEMS = [
     structureType: "coinSumTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[10,1,1,1]},"promptText":"1 dime and 3 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[10,1,1,1]},"promptText":"1 dime and 3 pennies = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0002",
@@ -12202,7 +12202,7 @@ export const ITEMS = [
     structureType: "coinSumTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[5,5,1,1,1,1]},"promptText":"2 nickels and 4 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[5,5,1,1,1,1]},"promptText":"How many cents are 2 nickels and 4 pennies worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0003",
@@ -12212,7 +12212,7 @@ export const ITEMS = [
     structureType: "coinSumTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[10,5]},"promptText":"1 dime and 1 nickel = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[10,5]},"promptText":"1 dime and 1 nickel = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0004",
@@ -12222,7 +12222,7 @@ export const ITEMS = [
     structureType: "coinSumTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[5,1,1,1,1,1,1,1]},"promptText":"1 nickel and 7 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[5,1,1,1,1,1,1,1]},"promptText":"How many cents are 1 nickel and 7 pennies worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0005",
@@ -12232,7 +12232,7 @@ export const ITEMS = [
     structureType: "coinSumTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[10,1,1,1,1,1,1,1,1]},"promptText":"1 dime and 8 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[10,1,1,1,1,1,1,1,1]},"promptText":"How many cents are 1 dime and 8 pennies worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0006",
@@ -12242,7 +12242,7 @@ export const ITEMS = [
     structureType: "coinSumTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[5,5,5,1,1]},"promptText":"3 nickels and 2 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[5,5,5,1,1]},"promptText":"3 nickels and 2 pennies = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0007",
@@ -12252,7 +12252,7 @@ export const ITEMS = [
     structureType: "coinSumTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[10,5,1,1,1,1]},"promptText":"1 dime, 1 nickel and 4 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[10,5,1,1,1,1]},"promptText":"How many cents are 1 dime, 1 nickel and 4 pennies worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0008",
@@ -12262,7 +12262,7 @@ export const ITEMS = [
     structureType: "coinSumTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[5,5,1,1,1,1,1,1,1,1,1]},"promptText":"2 nickels and 9 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[5,5,1,1,1,1,1,1,1,1,1]},"promptText":"How many cents are 2 nickels and 9 pennies worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0009",
@@ -12272,7 +12272,7 @@ export const ITEMS = [
     structureType: "coinSumTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[10,1,1,1,1,1,1]},"promptText":"1 dime and 6 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[10,1,1,1,1,1,1]},"promptText":"1 dime and 6 pennies = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0010",
@@ -12282,7 +12282,7 @@ export const ITEMS = [
     structureType: "coinSumTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[5,1,1,1]},"promptText":"1 nickel and 3 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[5,1,1,1]},"promptText":"1 nickel and 3 pennies = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0011",
@@ -12292,7 +12292,7 @@ export const ITEMS = [
     structureType: "coinSumTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[5,5,5,1,1,1,1]},"promptText":"3 nickels and 4 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[5,5,5,1,1,1,1]},"promptText":"3 nickels and 4 pennies = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0012",
@@ -12302,7 +12302,7 @@ export const ITEMS = [
     structureType: "coinSumTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[10,1]},"promptText":"1 dime and 1 penny = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[10,1]},"promptText":"How many cents are 1 dime and 1 penny worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0013",
@@ -12312,7 +12312,7 @@ export const ITEMS = [
     structureType: "coinSumTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[5,5,1]},"promptText":"2 nickels and 1 penny = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[5,5,1]},"promptText":"2 nickels and 1 penny = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0014",
@@ -12322,7 +12322,7 @@ export const ITEMS = [
     structureType: "coinSumTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[10,5,1,1]},"promptText":"1 dime, 1 nickel and 2 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[10,5,1,1]},"promptText":"1 dime, 1 nickel and 2 pennies = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0015",
@@ -12332,7 +12332,7 @@ export const ITEMS = [
     structureType: "coinSumTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[5,1,1,1,1,1,1,1,1,1]},"promptText":"1 nickel and 9 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[5,1,1,1,1,1,1,1,1,1]},"promptText":"How many cents are 1 nickel and 9 pennies worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0016",
@@ -12342,7 +12342,7 @@ export const ITEMS = [
     structureType: "coinSumTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[5,5,1,1,1,1,1,1]},"promptText":"2 nickels and 6 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[5,5,1,1,1,1,1,1]},"promptText":"How many cents are 2 nickels and 6 pennies worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0017",
@@ -12352,7 +12352,7 @@ export const ITEMS = [
     structureType: "coinSumTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[10,1,1,1,1,1]},"promptText":"1 dime and 5 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[10,1,1,1,1,1]},"promptText":"How many cents are 1 dime and 5 pennies worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0018",
@@ -12362,7 +12362,7 @@ export const ITEMS = [
     structureType: "coinSumTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[5,5,5,1]},"promptText":"3 nickels and 1 penny = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[5,5,5,1]},"promptText":"How many cents are 3 nickels and 1 penny worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0019",
@@ -12372,7 +12372,7 @@ export const ITEMS = [
     structureType: "coinSumTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[5,1,1,1,1,1,1]},"promptText":"1 nickel and 6 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[5,1,1,1,1,1,1]},"promptText":"1 nickel and 6 pennies = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0020",
@@ -12382,7 +12382,7 @@ export const ITEMS = [
     structureType: "coinSumTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[10,1,1,1,1,1,1,1,1,1]},"promptText":"1 dime and 9 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[10,1,1,1,1,1,1,1,1,1]},"promptText":"1 dime and 9 pennies = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0021",
@@ -12392,7 +12392,7 @@ export const ITEMS = [
     structureType: "trayCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"coins":["penny","dime","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[10,1,1]},"promptText":"10 + 1 + 1 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"coins":["penny","dime","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[10,1,1]},"promptText":"How many cents are these coins worth?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0022",
@@ -12402,7 +12402,7 @@ export const ITEMS = [
     structureType: "trayCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"coins":["penny","penny","nickel","nickel","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[5,5,1,1,1]},"promptText":"5 + 5 + 1 + 1 + 1 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"coins":["penny","penny","nickel","nickel","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[5,5,1,1,1]},"promptText":"Count the coins. How many cents are there?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0023",
@@ -12412,7 +12412,7 @@ export const ITEMS = [
     structureType: "trayCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"coins":["nickel","dime","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[10,5,1]},"promptText":"10 + 5 + 1 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"coins":["nickel","dime","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[10,5,1]},"promptText":"Count the coins. How many cents are there?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0024",
@@ -12422,7 +12422,7 @@ export const ITEMS = [
     structureType: "trayCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"coins":["penny","penny","penny","nickel","penny","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[5,1,1,1,1,1]},"promptText":"5 + 1 + 1 + 1 + 1 + 1 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"coins":["penny","penny","penny","nickel","penny","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[5,1,1,1,1,1]},"promptText":"What is the total value of these coins in cents?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0025",
@@ -12432,7 +12432,7 @@ export const ITEMS = [
     structureType: "trayCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"coins":["penny","penny","penny","penny","penny","penny","dime","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[10,1,1,1,1,1,1,1]},"promptText":"10 + 1 + 1 + 1 + 1 + 1 + 1 + 1 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"coins":["penny","penny","penny","penny","penny","penny","dime","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[10,1,1,1,1,1,1,1]},"promptText":"Count the coins. How many cents are there?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0026",
@@ -12442,7 +12442,7 @@ export const ITEMS = [
     structureType: "trayCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"coins":["nickel","nickel"],"coinMode":"count","counting":{"kind":"sum","parts":[5,5]},"promptText":"5 + 5 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"coins":["nickel","nickel"],"coinMode":"count","counting":{"kind":"sum","parts":[5,5]},"promptText":"What is the total value of these coins in cents?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0027",
@@ -12452,7 +12452,7 @@ export const ITEMS = [
     structureType: "trayCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"coins":["penny","penny","penny","penny","penny","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[1,1,1,1,1,1]},"promptText":"1 + 1 + 1 + 1 + 1 + 1 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"coins":["penny","penny","penny","penny","penny","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[1,1,1,1,1,1]},"promptText":"How many cents are these coins worth?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0028",
@@ -12462,7 +12462,7 @@ export const ITEMS = [
     structureType: "trayCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"coins":["penny","nickel","penny","penny","dime"],"coinMode":"count","counting":{"kind":"sum","parts":[10,5,1,1,1]},"promptText":"10 + 5 + 1 + 1 + 1 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"coins":["penny","nickel","penny","penny","dime"],"coinMode":"count","counting":{"kind":"sum","parts":[10,5,1,1,1]},"promptText":"What is the total value of these coins in cents?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0029",
@@ -12472,7 +12472,7 @@ export const ITEMS = [
     structureType: "trayCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"coins":["nickel","nickel","nickel"],"coinMode":"count","counting":{"kind":"sum","parts":[5,5,5]},"promptText":"5 + 5 + 5 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"coins":["nickel","nickel","nickel"],"coinMode":"count","counting":{"kind":"sum","parts":[5,5,5]},"promptText":"What is the total value of these coins in cents?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0030",
@@ -12482,7 +12482,7 @@ export const ITEMS = [
     structureType: "trayCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"coins":["dime","penny","penny","penny","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[10,1,1,1,1]},"promptText":"10 + 1 + 1 + 1 + 1 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"coins":["dime","penny","penny","penny","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[10,1,1,1,1]},"promptText":"How many cents are these coins worth?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0031",
@@ -12492,7 +12492,7 @@ export const ITEMS = [
     structureType: "trayCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"coins":["penny","penny","penny","penny","penny","penny","penny","nickel","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[5,1,1,1,1,1,1,1,1]},"promptText":"5 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"coins":["penny","penny","penny","penny","penny","penny","penny","nickel","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[5,1,1,1,1,1,1,1,1]},"promptText":"How many cents are these coins worth?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0032",
@@ -12502,7 +12502,7 @@ export const ITEMS = [
     structureType: "trayCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"coins":["penny","penny","penny","penny","penny","penny","penny","penny","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[1,1,1,1,1,1,1,1,1]},"promptText":"1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"coins":["penny","penny","penny","penny","penny","penny","penny","penny","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[1,1,1,1,1,1,1,1,1]},"promptText":"Count the coins. How many cents are there?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0033",
@@ -12512,7 +12512,7 @@ export const ITEMS = [
     structureType: "trayCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"coins":["penny","penny","penny","nickel","nickel","penny","penny","penny","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[5,5,1,1,1,1,1,1,1]},"promptText":"5 + 5 + 1 + 1 + 1 + 1 + 1 + 1 + 1 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"coins":["penny","penny","penny","nickel","nickel","penny","penny","penny","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[5,5,1,1,1,1,1,1,1]},"promptText":"What is the total value of these coins in cents?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0034",
@@ -12522,7 +12522,7 @@ export const ITEMS = [
     structureType: "trayCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"coins":["penny","penny","dime","penny","penny","penny","nickel"],"coinMode":"count","counting":{"kind":"sum","parts":[10,5,1,1,1,1,1]},"promptText":"10 + 5 + 1 + 1 + 1 + 1 + 1 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"coins":["penny","penny","dime","penny","penny","penny","nickel"],"coinMode":"count","counting":{"kind":"sum","parts":[10,5,1,1,1,1,1]},"promptText":"How many cents are these coins worth?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0035",
@@ -12532,7 +12532,7 @@ export const ITEMS = [
     structureType: "trayCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"coins":["penny","nickel","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[5,1,1]},"promptText":"5 + 1 + 1 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"coins":["penny","nickel","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[5,1,1]},"promptText":"How many cents are these coins worth?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0036",
@@ -12542,7 +12542,7 @@ export const ITEMS = [
     structureType: "trayCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"coins":["dime"],"coinMode":"count","counting":{"kind":"sum","parts":[10]},"promptText":"10 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"coins":["dime"],"coinMode":"count","counting":{"kind":"sum","parts":[10]},"promptText":"How many cents is this coin worth?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0037",
@@ -12552,7 +12552,7 @@ export const ITEMS = [
     structureType: "trayCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"coins":["penny","nickel","penny","nickel","penny","penny","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[5,5,1,1,1,1,1]},"promptText":"5 + 5 + 1 + 1 + 1 + 1 + 1 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"coins":["penny","nickel","penny","nickel","penny","penny","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[5,5,1,1,1,1,1]},"promptText":"Count the coins. How many cents are there?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0038",
@@ -12562,7 +12562,7 @@ export const ITEMS = [
     structureType: "trayCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"coins":["penny","penny","penny","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[1,1,1,1]},"promptText":"1 + 1 + 1 + 1 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"coins":["penny","penny","penny","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[1,1,1,1]},"promptText":"How many cents are these coins worth?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0039",
@@ -12572,7 +12572,7 @@ export const ITEMS = [
     structureType: "trayCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"coins":["penny","nickel","penny","penny","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[5,1,1,1,1]},"promptText":"5 + 1 + 1 + 1 + 1 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"coins":["penny","nickel","penny","penny","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[5,1,1,1,1]},"promptText":"Count the coins. How many cents are there?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0040",
@@ -12582,7 +12582,7 @@ export const ITEMS = [
     structureType: "trayCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"coins":["penny","dime","penny","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[10,1,1,1]},"promptText":"10 + 1 + 1 + 1 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"coins":["penny","dime","penny","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[10,1,1,1]},"promptText":"Count the coins. How many cents are there?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0041",
@@ -12592,7 +12592,7 @@ export const ITEMS = [
     structureType: "singleCoinKind",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1]},"promptText":"1 penny = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1]},"promptText":"How many cents is a penny worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0042",
@@ -12602,7 +12602,7 @@ export const ITEMS = [
     structureType: "singleCoinKind",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"sum","parts":[5]},"promptText":"1 nickel = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"sum","parts":[5]},"promptText":"How many cents is 1 nickel worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0043",
@@ -12612,7 +12612,7 @@ export const ITEMS = [
     structureType: "singleCoinKind",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[10]},"promptText":"1 dime = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[10]},"promptText":"1 dime = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0044",
@@ -12622,7 +12622,7 @@ export const ITEMS = [
     structureType: "singleCoinKind",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"sum","parts":[1,1,1,1,1]},"promptText":"5 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"sum","parts":[1,1,1,1,1]},"promptText":"5 pennies = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0045",
@@ -12632,7 +12632,7 @@ export const ITEMS = [
     structureType: "singleCoinKind",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[5,5]},"promptText":"2 nickels = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[5,5]},"promptText":"2 nickels = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0046",
@@ -12642,7 +12642,7 @@ export const ITEMS = [
     structureType: "singleCoinKind",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[1,1,1,1,1,1,1,1]},"promptText":"8 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[1,1,1,1,1,1,1,1]},"promptText":"8 pennies = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0047",
@@ -12652,7 +12652,7 @@ export const ITEMS = [
     structureType: "singleCoinKind",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[5,5,5]},"promptText":"3 nickels = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[5,5,5]},"promptText":"How many cents are 3 nickels worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0048",
@@ -12662,7 +12662,7 @@ export const ITEMS = [
     structureType: "singleCoinKind",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"kind":"sum","parts":[1,1,1]},"promptText":"3 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"kind":"sum","parts":[1,1,1]},"promptText":"3 pennies = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0049",
@@ -12672,7 +12672,7 @@ export const ITEMS = [
     structureType: "singleCoinKind",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"sum","parts":[10,10]},"promptText":"2 dimes = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"sum","parts":[10,10]},"promptText":"How many cents are 2 dimes worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0050",
@@ -12682,7 +12682,7 @@ export const ITEMS = [
     structureType: "singleCoinKind",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"sum","parts":[1,1,1,1,1,1]},"promptText":"6 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"sum","parts":[1,1,1,1,1,1]},"promptText":"6 pennies = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0051",
@@ -12692,7 +12692,7 @@ export const ITEMS = [
     structureType: "singleCoinKind",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"sum","parts":[5,5,5,5]},"promptText":"4 nickels = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"sum","parts":[5,5,5,5]},"promptText":"4 nickels = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0052",
@@ -12702,7 +12702,7 @@ export const ITEMS = [
     structureType: "singleCoinKind",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"sum","parts":[1,1,1,1,1,1,1]},"promptText":"7 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"sum","parts":[1,1,1,1,1,1,1]},"promptText":"7 pennies = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0053",
@@ -12712,7 +12712,7 @@ export const ITEMS = [
     structureType: "coinSumMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"counting":{"kind":"sum","parts":[25,10,1,1,1]},"promptText":"1 quarter, 1 dime and 3 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"counting":{"kind":"sum","parts":[25,10,1,1,1]},"promptText":"1 quarter, 1 dime and 3 pennies = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0054",
@@ -12722,7 +12722,7 @@ export const ITEMS = [
     structureType: "coinSumMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"counting":{"kind":"sum","parts":[25,25,5]},"promptText":"2 quarters and 1 nickel = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"counting":{"kind":"sum","parts":[25,25,5]},"promptText":"How many cents are 2 quarters and 1 nickel worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0055",
@@ -12732,7 +12732,7 @@ export const ITEMS = [
     structureType: "coinSumMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"counting":{"kind":"sum","parts":[25,5,5,1,1,1,1]},"promptText":"1 quarter, 2 nickels and 4 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"counting":{"kind":"sum","parts":[25,5,5,1,1,1,1]},"promptText":"1 quarter, 2 nickels and 4 pennies = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0056",
@@ -12742,7 +12742,7 @@ export const ITEMS = [
     structureType: "coinSumMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"kind":"sum","parts":[25,10,10]},"promptText":"1 quarter and 2 dimes = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"kind":"sum","parts":[25,10,10]},"promptText":"How many cents are 1 quarter and 2 dimes worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0057",
@@ -12752,7 +12752,7 @@ export const ITEMS = [
     structureType: "coinSumMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"counting":{"kind":"sum","parts":[25,25,1,1,1,1,1,1,1]},"promptText":"2 quarters and 7 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"counting":{"kind":"sum","parts":[25,25,1,1,1,1,1,1,1]},"promptText":"2 quarters and 7 pennies = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0058",
@@ -12762,7 +12762,7 @@ export const ITEMS = [
     structureType: "coinSumMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"counting":{"kind":"sum","parts":[10,10,10,5,1,1]},"promptText":"3 dimes, 1 nickel and 2 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"counting":{"kind":"sum","parts":[10,10,10,5,1,1]},"promptText":"3 dimes, 1 nickel and 2 pennies = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0059",
@@ -12772,7 +12772,7 @@ export const ITEMS = [
     structureType: "coinSumMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":41,"display":{"counting":{"kind":"sum","parts":[25,10,5,1]},"promptText":"1 quarter, 1 dime, 1 nickel and 1 penny = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":41,"display":{"counting":{"kind":"sum","parts":[25,10,5,1]},"promptText":"How many cents are 1 quarter, 1 dime, 1 nickel and 1 penny worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0060",
@@ -12782,7 +12782,7 @@ export const ITEMS = [
     structureType: "coinSumMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"counting":{"kind":"sum","parts":[25,25,25]},"promptText":"3 quarters = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"counting":{"kind":"sum","parts":[25,25,25]},"promptText":"3 quarters = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0061",
@@ -12792,7 +12792,7 @@ export const ITEMS = [
     structureType: "coinSumMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"counting":{"kind":"sum","parts":[10,10,10,10,1,1,1,1,1,1]},"promptText":"4 dimes and 6 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"counting":{"kind":"sum","parts":[10,10,10,10,1,1,1,1,1,1]},"promptText":"How many cents are 4 dimes and 6 pennies worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0062",
@@ -12802,7 +12802,7 @@ export const ITEMS = [
     structureType: "coinSumMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":62,"display":{"counting":{"kind":"sum","parts":[25,25,10,1,1]},"promptText":"2 quarters, 1 dime and 2 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":62,"display":{"counting":{"kind":"sum","parts":[25,25,10,1,1]},"promptText":"How many cents are 2 quarters, 1 dime and 2 pennies worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0063",
@@ -12812,7 +12812,7 @@ export const ITEMS = [
     structureType: "coinSumMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"counting":{"kind":"sum","parts":[25,1,1,1,1,1,1,1,1,1]},"promptText":"1 quarter and 9 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"counting":{"kind":"sum","parts":[25,1,1,1,1,1,1,1,1,1]},"promptText":"1 quarter and 9 pennies = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0064",
@@ -12822,7 +12822,7 @@ export const ITEMS = [
     structureType: "coinSumMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"counting":{"kind":"sum","parts":[10,10,10,10,10,5]},"promptText":"5 dimes and 1 nickel = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"counting":{"kind":"sum","parts":[10,10,10,10,10,5]},"promptText":"How many cents are 5 dimes and 1 nickel worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0065",
@@ -12832,7 +12832,7 @@ export const ITEMS = [
     structureType: "coinSumMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"counting":{"kind":"sum","parts":[25,25,10,10,5]},"promptText":"2 quarters, 2 dimes and 1 nickel = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"counting":{"kind":"sum","parts":[25,25,10,10,5]},"promptText":"2 quarters, 2 dimes and 1 nickel = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0066",
@@ -12842,7 +12842,7 @@ export const ITEMS = [
     structureType: "coinSumMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"kind":"sum","parts":[25,5,5,5,5]},"promptText":"1 quarter and 4 nickels = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"kind":"sum","parts":[25,5,5,5,5]},"promptText":"How many cents are 1 quarter and 4 nickels worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0067",
@@ -12852,7 +12852,7 @@ export const ITEMS = [
     structureType: "coinSumMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":63,"display":{"counting":{"kind":"sum","parts":[10,10,10,10,10,10,1,1,1]},"promptText":"6 dimes and 3 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":63,"display":{"counting":{"kind":"sum","parts":[10,10,10,10,10,10,1,1,1]},"promptText":"6 dimes and 3 pennies = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0068",
@@ -12862,7 +12862,7 @@ export const ITEMS = [
     structureType: "coinSumMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":79,"display":{"counting":{"kind":"sum","parts":[25,25,25,1,1,1,1]},"promptText":"3 quarters and 4 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":79,"display":{"counting":{"kind":"sum","parts":[25,25,25,1,1,1,1]},"promptText":"How many cents are 3 quarters and 4 pennies worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0069",
@@ -12872,7 +12872,7 @@ export const ITEMS = [
     structureType: "coinSumMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"counting":{"kind":"sum","parts":[25,10,10,10,1]},"promptText":"1 quarter, 3 dimes and 1 penny = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"counting":{"kind":"sum","parts":[25,10,10,10,1]},"promptText":"1 quarter, 3 dimes and 1 penny = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0070",
@@ -12882,7 +12882,7 @@ export const ITEMS = [
     structureType: "coinSumMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":43,"display":{"counting":{"kind":"sum","parts":[10,10,5,5,5,1,1,1,1,1,1,1,1]},"promptText":"2 dimes, 3 nickels and 8 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":43,"display":{"counting":{"kind":"sum","parts":[10,10,5,5,5,1,1,1,1,1,1,1,1]},"promptText":"How many cents are 2 dimes, 3 nickels and 8 pennies worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0071",
@@ -12892,7 +12892,7 @@ export const ITEMS = [
     structureType: "trayCountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"coins":["quarter","dime","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[25,10,1]},"promptText":"25 + 10 + 1 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"coins":["quarter","dime","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[25,10,1]},"promptText":"How many cents are these coins worth?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0072",
@@ -12902,7 +12902,7 @@ export const ITEMS = [
     structureType: "trayCountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"coins":["nickel","quarter","nickel"],"coinMode":"count","counting":{"kind":"sum","parts":[25,5,5]},"promptText":"25 + 5 + 5 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"coins":["nickel","quarter","nickel"],"coinMode":"count","counting":{"kind":"sum","parts":[25,5,5]},"promptText":"Count the coins. How many cents are there?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0073",
@@ -12912,7 +12912,7 @@ export const ITEMS = [
     structureType: "trayCountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":53,"display":{"coins":["penny","quarter","penny","penny","quarter"],"coinMode":"count","counting":{"kind":"sum","parts":[25,25,1,1,1]},"promptText":"25 + 25 + 1 + 1 + 1 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":53,"display":{"coins":["penny","quarter","penny","penny","quarter"],"coinMode":"count","counting":{"kind":"sum","parts":[25,25,1,1,1]},"promptText":"How many cents are these coins worth?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0074",
@@ -12922,7 +12922,7 @@ export const ITEMS = [
     structureType: "trayCountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"coins":["dime","nickel","dime","quarter"],"coinMode":"count","counting":{"kind":"sum","parts":[25,10,10,5]},"promptText":"25 + 10 + 10 + 5 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"coins":["dime","nickel","dime","quarter"],"coinMode":"count","counting":{"kind":"sum","parts":[25,10,10,5]},"promptText":"What is the total value of these coins in cents?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0075",
@@ -12932,7 +12932,7 @@ export const ITEMS = [
     structureType: "trayCountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"coins":["penny","penny","dime","penny","dime","penny","dime"],"coinMode":"count","counting":{"kind":"sum","parts":[10,10,10,1,1,1,1]},"promptText":"10 + 10 + 10 + 1 + 1 + 1 + 1 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"coins":["penny","penny","dime","penny","dime","penny","dime"],"coinMode":"count","counting":{"kind":"sum","parts":[10,10,10,1,1,1,1]},"promptText":"What is the total value of these coins in cents?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0076",
@@ -12942,7 +12942,7 @@ export const ITEMS = [
     structureType: "trayCountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"coins":["quarter","dime","quarter"],"coinMode":"count","counting":{"kind":"sum","parts":[25,25,10]},"promptText":"25 + 25 + 10 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"coins":["quarter","dime","quarter"],"coinMode":"count","counting":{"kind":"sum","parts":[25,25,10]},"promptText":"What is the total value of these coins in cents?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0077",
@@ -12952,7 +12952,7 @@ export const ITEMS = [
     structureType: "trayCountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"coins":["quarter","penny","dime","penny","nickel"],"coinMode":"count","counting":{"kind":"sum","parts":[25,10,5,1,1]},"promptText":"25 + 10 + 5 + 1 + 1 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"coins":["quarter","penny","dime","penny","nickel"],"coinMode":"count","counting":{"kind":"sum","parts":[25,10,5,1,1]},"promptText":"Count the coins. How many cents are there?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0078",
@@ -12962,7 +12962,7 @@ export const ITEMS = [
     structureType: "trayCountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"coins":["nickel","nickel","dime","dime","dime","dime"],"coinMode":"count","counting":{"kind":"sum","parts":[10,10,10,10,5,5]},"promptText":"10 + 10 + 10 + 10 + 5 + 5 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"coins":["nickel","nickel","dime","dime","dime","dime"],"coinMode":"count","counting":{"kind":"sum","parts":[10,10,10,10,5,5]},"promptText":"How many cents are these coins worth?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0079",
@@ -12972,7 +12972,7 @@ export const ITEMS = [
     structureType: "trayCountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":59,"display":{"coins":["quarter","penny","penny","penny","quarter","nickel","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[25,25,5,1,1,1,1]},"promptText":"25 + 25 + 5 + 1 + 1 + 1 + 1 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":59,"display":{"coins":["quarter","penny","penny","penny","quarter","nickel","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[25,25,5,1,1,1,1]},"promptText":"How many cents are these coins worth?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0080",
@@ -12982,7 +12982,7 @@ export const ITEMS = [
     structureType: "trayCountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"coins":["penny","penny","penny","penny","quarter","penny","penny","penny","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[25,1,1,1,1,1,1,1,1]},"promptText":"25 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"coins":["penny","penny","penny","penny","quarter","penny","penny","penny","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[25,1,1,1,1,1,1,1,1]},"promptText":"Count the coins. How many cents are there?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0081",
@@ -12992,7 +12992,7 @@ export const ITEMS = [
     structureType: "trayCountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":52,"display":{"coins":["dime","dime","dime","penny","penny","dime","dime"],"coinMode":"count","counting":{"kind":"sum","parts":[10,10,10,10,10,1,1]},"promptText":"10 + 10 + 10 + 10 + 10 + 1 + 1 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":52,"display":{"coins":["dime","dime","dime","penny","penny","dime","dime"],"coinMode":"count","counting":{"kind":"sum","parts":[10,10,10,10,10,1,1]},"promptText":"Count the coins. How many cents are there?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0082",
@@ -13002,7 +13002,7 @@ export const ITEMS = [
     structureType: "trayCountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":85,"display":{"coins":["dime","quarter","quarter","quarter"],"coinMode":"count","counting":{"kind":"sum","parts":[25,25,25,10]},"promptText":"25 + 25 + 25 + 10 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":85,"display":{"coins":["dime","quarter","quarter","quarter"],"coinMode":"count","counting":{"kind":"sum","parts":[25,25,25,10]},"promptText":"How many cents are these coins worth?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0083",
@@ -13012,7 +13012,7 @@ export const ITEMS = [
     structureType: "trayCountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"coins":["penny","penny","dime","penny","quarter","penny","dime","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[25,10,10,1,1,1,1,1]},"promptText":"25 + 10 + 10 + 1 + 1 + 1 + 1 + 1 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"coins":["penny","penny","dime","penny","quarter","penny","dime","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[25,10,10,1,1,1,1,1]},"promptText":"How many cents are these coins worth?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0084",
@@ -13022,7 +13022,7 @@ export const ITEMS = [
     structureType: "trayCountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"coins":["nickel","dime","dime","nickel","nickel","nickel"],"coinMode":"count","counting":{"kind":"sum","parts":[10,10,5,5,5,5]},"promptText":"10 + 10 + 5 + 5 + 5 + 5 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"coins":["nickel","dime","dime","nickel","nickel","nickel"],"coinMode":"count","counting":{"kind":"sum","parts":[10,10,5,5,5,5]},"promptText":"Count the coins. How many cents are there?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0085",
@@ -13032,7 +13032,7 @@ export const ITEMS = [
     structureType: "trayCountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":71,"display":{"coins":["penny","dime","dime","quarter","quarter"],"coinMode":"count","counting":{"kind":"sum","parts":[25,25,10,10,1]},"promptText":"25 + 25 + 10 + 10 + 1 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":71,"display":{"coins":["penny","dime","dime","quarter","quarter"],"coinMode":"count","counting":{"kind":"sum","parts":[25,25,10,10,1]},"promptText":"What is the total value of these coins in cents?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0086",
@@ -13042,7 +13042,7 @@ export const ITEMS = [
     structureType: "trayCountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"coins":["penny","nickel","quarter","nickel","nickel","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[25,5,5,5,1,1]},"promptText":"25 + 5 + 5 + 5 + 1 + 1 = ? c"},"answerType":"coinTray"},
+    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"coins":["penny","nickel","quarter","nickel","nickel","penny"],"coinMode":"count","counting":{"kind":"sum","parts":[25,5,5,5,1,1]},"promptText":"What is the total value of these coins in cents?"},"answerType":"coinTray"},
   },
   {
     itemId: "money-proc-b0821-0087",
@@ -13052,7 +13052,7 @@ export const ITEMS = [
     structureType: "addOneCoin",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"n":35,"kind":"moreLess","delta":5},"promptText":"A pile is worth 35 cents. Add 1 nickel. Now it is worth ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"n":35,"kind":"moreLess","delta":5},"promptText":"A pile of coins is worth 35 cents. You add 1 nickel. How many cents is the pile worth now?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0088",
@@ -13062,7 +13062,7 @@ export const ITEMS = [
     structureType: "addOneCoin",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"counting":{"n":50,"kind":"moreLess","delta":5},"promptText":"A pile is worth 50 cents. Add 1 nickel. Now it is worth ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"counting":{"n":50,"kind":"moreLess","delta":5},"promptText":"You put 1 nickel on a pile of coins worth 50 cents. How many cents is the pile worth now?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0089",
@@ -13072,7 +13072,7 @@ export const ITEMS = [
     structureType: "addOneCoin",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"counting":{"n":30,"kind":"moreLess","delta":25},"promptText":"A pile is worth 30 cents. Add 1 quarter. Now it is worth ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"counting":{"n":30,"kind":"moreLess","delta":25},"promptText":"You put 1 quarter on a pile of coins worth 30 cents. How many cents is the pile worth now?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0090",
@@ -13082,7 +13082,7 @@ export const ITEMS = [
     structureType: "addOneCoin",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"n":35,"kind":"moreLess","delta":10},"promptText":"A pile is worth 35 cents. Add 1 dime. Now it is worth ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"n":35,"kind":"moreLess","delta":10},"promptText":"A pile of coins is worth 35 cents. You add 1 dime. How many cents is the pile worth now?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0091",
@@ -13092,7 +13092,7 @@ export const ITEMS = [
     structureType: "addOneCoin",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":47,"display":{"counting":{"n":42,"kind":"moreLess","delta":5},"promptText":"A pile is worth 42 cents. Add 1 nickel. Now it is worth ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":47,"display":{"counting":{"n":42,"kind":"moreLess","delta":5},"promptText":"A pile of coins is worth 42 cents. You add 1 nickel. How many cents is the pile worth now?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0092",
@@ -13102,7 +13102,7 @@ export const ITEMS = [
     structureType: "addOneCoin",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":63,"display":{"counting":{"n":53,"kind":"moreLess","delta":10},"promptText":"A pile is worth 53 cents. Add 1 dime. Now it is worth ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":63,"display":{"counting":{"n":53,"kind":"moreLess","delta":10},"promptText":"You put 1 dime on a pile of coins worth 53 cents. How many cents is the pile worth now?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0093",
@@ -13112,7 +13112,7 @@ export const ITEMS = [
     structureType: "addOneCoin",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":51,"display":{"counting":{"n":50,"kind":"moreLess","delta":1},"promptText":"A pile is worth 50 cents. Add 1 penny. Now it is worth ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":51,"display":{"counting":{"n":50,"kind":"moreLess","delta":1},"promptText":"You put 1 penny on a pile of coins worth 50 cents. How many cents is the pile worth now?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0094",
@@ -13122,7 +13122,7 @@ export const ITEMS = [
     structureType: "addOneCoin",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"counting":{"n":50,"kind":"moreLess","delta":25},"promptText":"A pile is worth 50 cents. Add 1 quarter. Now it is worth ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"counting":{"n":50,"kind":"moreLess","delta":25},"promptText":"A pile of coins is worth 50 cents. You add 1 quarter. How many cents is the pile worth now?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0095",
@@ -13132,7 +13132,7 @@ export const ITEMS = [
     structureType: "addOneCoin",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":85,"display":{"counting":{"n":75,"kind":"moreLess","delta":10},"promptText":"A pile is worth 75 cents. Add 1 dime. Now it is worth ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":85,"display":{"counting":{"n":75,"kind":"moreLess","delta":10},"promptText":"A pile of coins is worth 75 cents. You add 1 dime. How many cents is the pile worth now?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0096",
@@ -13142,7 +13142,7 @@ export const ITEMS = [
     structureType: "addOneCoin",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"counting":{"n":65,"kind":"moreLess","delta":5},"promptText":"A pile is worth 65 cents. Add 1 nickel. Now it is worth ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"counting":{"n":65,"kind":"moreLess","delta":5},"promptText":"You put 1 nickel on a pile of coins worth 65 cents. How many cents is the pile worth now?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0097",
@@ -13152,7 +13152,7 @@ export const ITEMS = [
     structureType: "addOneCoin",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"counting":{"n":35,"kind":"moreLess","delta":25},"promptText":"A pile is worth 35 cents. Add 1 quarter. Now it is worth ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"counting":{"n":35,"kind":"moreLess","delta":25},"promptText":"You put 1 quarter on a pile of coins worth 35 cents. How many cents is the pile worth now?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0098",
@@ -13162,7 +13162,7 @@ export const ITEMS = [
     structureType: "addOneCoin",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":41,"display":{"counting":{"n":31,"kind":"moreLess","delta":10},"promptText":"A pile is worth 31 cents. Add 1 dime. Now it is worth ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":41,"display":{"counting":{"n":31,"kind":"moreLess","delta":10},"promptText":"You put 1 dime on a pile of coins worth 31 cents. How many cents is the pile worth now?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0099",
@@ -13172,7 +13172,7 @@ export const ITEMS = [
     structureType: "addOneCoin",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":71,"display":{"counting":{"n":70,"kind":"moreLess","delta":1},"promptText":"A pile is worth 70 cents. Add 1 penny. Now it is worth ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":71,"display":{"counting":{"n":70,"kind":"moreLess","delta":1},"promptText":"A pile of coins is worth 70 cents. You add 1 penny. How many cents is the pile worth now?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0100",
@@ -13182,7 +13182,7 @@ export const ITEMS = [
     structureType: "addOneCoin",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"counting":{"n":65,"kind":"moreLess","delta":25},"promptText":"A pile is worth 65 cents. Add 1 quarter. Now it is worth ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"counting":{"n":65,"kind":"moreLess","delta":25},"promptText":"A pile of coins is worth 65 cents. You add 1 quarter. How many cents is the pile worth now?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0101",
@@ -13192,7 +13192,7 @@ export const ITEMS = [
     structureType: "addOneCoin",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":85,"display":{"counting":{"n":80,"kind":"moreLess","delta":5},"promptText":"A pile is worth 80 cents. Add 1 nickel. Now it is worth ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":85,"display":{"counting":{"n":80,"kind":"moreLess","delta":5},"promptText":"A pile of coins is worth 80 cents. You add 1 nickel. How many cents is the pile worth now?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0102",
@@ -13202,7 +13202,7 @@ export const ITEMS = [
     structureType: "addOneCoin",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"counting":{"n":55,"kind":"moreLess","delta":25},"promptText":"A pile is worth 55 cents. Add 1 quarter. Now it is worth ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"counting":{"n":55,"kind":"moreLess","delta":25},"promptText":"You put 1 quarter on a pile of coins worth 55 cents. How many cents is the pile worth now?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0103",
@@ -13212,7 +13212,7 @@ export const ITEMS = [
     structureType: "addOneCoin",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"counting":{"n":50,"kind":"moreLess","delta":10},"promptText":"A pile is worth 50 cents. Add 1 dime. Now it is worth ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"counting":{"n":50,"kind":"moreLess","delta":10},"promptText":"A pile of coins is worth 50 cents. You add 1 dime. How many cents is the pile worth now?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0104",
@@ -13402,7 +13402,7 @@ export const ITEMS = [
     structureType: "coinSumBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":145,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,25,10,10]},"promptText":"5 quarters and 2 dimes = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":145,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,25,10,10]},"promptText":"How many cents are 5 quarters and 2 dimes worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0123",
@@ -13412,7 +13412,7 @@ export const ITEMS = [
     structureType: "coinSumBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":119,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,5,5,5,1,1,1,1]},"promptText":"4 quarters, 3 nickels and 4 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":119,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,5,5,5,1,1,1,1]},"promptText":"4 quarters, 3 nickels and 4 pennies = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0124",
@@ -13422,7 +13422,7 @@ export const ITEMS = [
     structureType: "coinSumBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":158,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,25,25,1,1,1,1,1,1,1,1]},"promptText":"6 quarters and 8 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":158,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,25,25,1,1,1,1,1,1,1,1]},"promptText":"6 quarters and 8 pennies = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0125",
@@ -13432,7 +13432,7 @@ export const ITEMS = [
     structureType: "coinSumBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":160,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,25,10,10,10,5]},"promptText":"5 quarters, 3 dimes and 1 nickel = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":160,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,25,10,10,10,5]},"promptText":"How many cents are 5 quarters, 3 dimes and 1 nickel worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0126",
@@ -13442,7 +13442,7 @@ export const ITEMS = [
     structureType: "coinSumBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":185,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,25,25,25,10]},"promptText":"7 quarters and 1 dime = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":185,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,25,25,25,10]},"promptText":"7 quarters and 1 dime = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0127",
@@ -13452,7 +13452,7 @@ export const ITEMS = [
     structureType: "coinSumBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":142,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,10,10,10,10,1,1]},"promptText":"4 quarters, 4 dimes and 2 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":142,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,10,10,10,10,1,1]},"promptText":"How many cents are 4 quarters, 4 dimes and 2 pennies worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0128",
@@ -13462,7 +13462,7 @@ export const ITEMS = [
     structureType: "coinSumBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":210,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,25,25,25,25,5,5]},"promptText":"8 quarters and 2 nickels = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":210,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,25,25,25,25,5,5]},"promptText":"8 quarters and 2 nickels = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0129",
@@ -13472,7 +13472,7 @@ export const ITEMS = [
     structureType: "coinSumBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":176,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,25,25,10,10,1,1,1,1,1,1]},"promptText":"6 quarters, 2 dimes and 6 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":176,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,25,25,10,10,1,1,1,1,1,1]},"promptText":"6 quarters, 2 dimes and 6 pennies = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0130",
@@ -13482,7 +13482,7 @@ export const ITEMS = [
     structureType: "coinSumBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":146,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,25,5,5,5,5,1]},"promptText":"5 quarters, 4 nickels and 1 penny = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":146,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,25,5,5,5,5,1]},"promptText":"5 quarters, 4 nickels and 1 penny = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0131",
@@ -13492,7 +13492,7 @@ export const ITEMS = [
     structureType: "coinSumBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":228,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,25,25,25,25,25,1,1,1]},"promptText":"9 quarters and 3 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":228,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,25,25,25,25,25,1,1,1]},"promptText":"How many cents are 9 quarters and 3 pennies worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0132",
@@ -13502,7 +13502,7 @@ export const ITEMS = [
     structureType: "coinSumBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,25,25,25,10,10,5]},"promptText":"7 quarters, 2 dimes and 1 nickel = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,25,25,25,10,10,5]},"promptText":"7 quarters, 2 dimes and 1 nickel = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0133",
@@ -13512,7 +13512,7 @@ export const ITEMS = [
     structureType: "coinSumBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":150,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,10,10,10,10,10]},"promptText":"4 quarters and 5 dimes = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":150,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,10,10,10,10,10]},"promptText":"4 quarters and 5 dimes = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0134",
@@ -13522,7 +13522,7 @@ export const ITEMS = [
     structureType: "coinSumBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":219,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,25,25,25,25,10,1,1,1,1,1,1,1,1,1]},"promptText":"8 quarters, 1 dime and 9 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":219,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,25,25,25,25,10,1,1,1,1,1,1,1,1,1]},"promptText":"8 quarters, 1 dime and 9 pennies = __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0135",
@@ -13532,7 +13532,7 @@ export const ITEMS = [
     structureType: "coinSumBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":165,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,25,25,5,5,5]},"promptText":"6 quarters and 3 nickels = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":165,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,25,25,5,5,5]},"promptText":"How many cents are 6 quarters and 3 nickels worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0136",
@@ -13542,7 +13542,7 @@ export const ITEMS = [
     structureType: "coinSumBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":245,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,25,25,25,25,25,10,10]},"promptText":"9 quarters and 2 dimes = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":245,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,25,25,25,25,25,10,10]},"promptText":"How many cents are 9 quarters and 2 dimes worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0137",
@@ -13552,7 +13552,7 @@ export const ITEMS = [
     structureType: "coinSumBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":172,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,25,10,10,10,10,1,1,1,1,1,1,1]},"promptText":"5 quarters, 4 dimes and 7 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":172,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,25,10,10,10,10,1,1,1,1,1,1,1]},"promptText":"How many cents are 5 quarters, 4 dimes and 7 pennies worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0138",
@@ -13562,7 +13562,7 @@ export const ITEMS = [
     structureType: "coinSumBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":187,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,25,25,25,5,5,1,1]},"promptText":"7 quarters, 2 nickels and 2 pennies = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":187,"display":{"counting":{"kind":"sum","parts":[25,25,25,25,25,25,25,5,5,1,1]},"promptText":"How many cents are 7 quarters, 2 nickels and 2 pennies worth?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0139",
@@ -13572,7 +13572,7 @@ export const ITEMS = [
     structureType: "centsToDollar",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"counting":{"have":100,"kind":"gap","target":130},"promptText":"130 cents = $1 and ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"counting":{"have":100,"kind":"gap","target":130},"promptText":"130 cents = $1 and __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0140",
@@ -13582,7 +13582,7 @@ export const ITEMS = [
     structureType: "centsToDollar",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"counting":{"have":100,"kind":"gap","target":155},"promptText":"155 cents = $1 and ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"counting":{"have":100,"kind":"gap","target":155},"promptText":"155 cents is the same as $1 and __ cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0141",
@@ -13592,7 +13592,7 @@ export const ITEMS = [
     structureType: "centsToDollar",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"counting":{"have":100,"kind":"gap","target":180},"promptText":"180 cents = $1 and ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"counting":{"have":100,"kind":"gap","target":180},"promptText":"180 cents = $1 and __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0142",
@@ -13602,7 +13602,7 @@ export const ITEMS = [
     structureType: "centsToDollar",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":200,"kind":"gap","target":205},"promptText":"205 cents = $2 and ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":200,"kind":"gap","target":205},"promptText":"205 cents is the same as $2 and __ cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0143",
@@ -13612,7 +13612,7 @@ export const ITEMS = [
     structureType: "centsToDollar",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"have":200,"kind":"gap","target":245},"promptText":"245 cents = $2 and ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"have":200,"kind":"gap","target":245},"promptText":"245 cents = $2 and __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0144",
@@ -13622,7 +13622,7 @@ export const ITEMS = [
     structureType: "centsToDollar",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"counting":{"have":200,"kind":"gap","target":270},"promptText":"270 cents = $2 and ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"counting":{"have":200,"kind":"gap","target":270},"promptText":"270 cents is the same as $2 and __ cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0145",
@@ -13632,7 +13632,7 @@ export const ITEMS = [
     structureType: "centsToDollar",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"have":300,"kind":"gap","target":310},"promptText":"310 cents = $3 and ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"have":300,"kind":"gap","target":310},"promptText":"310 cents = $3 and __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0146",
@@ -13642,7 +13642,7 @@ export const ITEMS = [
     structureType: "centsToDollar",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":300,"kind":"gap","target":335},"promptText":"335 cents = $3 and ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":300,"kind":"gap","target":335},"promptText":"335 cents is the same as $3 and __ cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0147",
@@ -13652,7 +13652,7 @@ export const ITEMS = [
     structureType: "centsToDollar",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":65,"display":{"counting":{"have":300,"kind":"gap","target":365},"promptText":"365 cents = $3 and ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":65,"display":{"counting":{"have":300,"kind":"gap","target":365},"promptText":"365 cents = $3 and __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0148",
@@ -13662,7 +13662,7 @@ export const ITEMS = [
     structureType: "centsToDollar",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"have":200,"kind":"gap","target":220},"promptText":"220 cents = $2 and ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"have":200,"kind":"gap","target":220},"promptText":"220 cents is the same as $2 and __ cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0149",
@@ -13672,7 +13672,7 @@ export const ITEMS = [
     structureType: "centsToDollar",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":95,"display":{"counting":{"have":100,"kind":"gap","target":195},"promptText":"195 cents = $1 and ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":95,"display":{"counting":{"have":100,"kind":"gap","target":195},"promptText":"195 cents = $1 and __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0150",
@@ -13682,7 +13682,7 @@ export const ITEMS = [
     structureType: "centsToDollar",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":85,"display":{"counting":{"have":200,"kind":"gap","target":285},"promptText":"285 cents = $2 and ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":85,"display":{"counting":{"have":200,"kind":"gap","target":285},"promptText":"285 cents is the same as $2 and __ cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0151",
@@ -13692,7 +13692,7 @@ export const ITEMS = [
     structureType: "centsToDollar",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"have":100,"kind":"gap","target":140},"promptText":"140 cents = $1 and ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"have":100,"kind":"gap","target":140},"promptText":"140 cents = $1 and __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0152",
@@ -13702,7 +13702,7 @@ export const ITEMS = [
     structureType: "centsToDollar",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"counting":{"have":200,"kind":"gap","target":260},"promptText":"260 cents = $2 and ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"counting":{"have":200,"kind":"gap","target":260},"promptText":"260 cents is the same as $2 and __ cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0153",
@@ -13712,7 +13712,7 @@ export const ITEMS = [
     structureType: "centsToDollar",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"counting":{"have":300,"kind":"gap","target":375},"promptText":"375 cents = $3 and ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"counting":{"have":300,"kind":"gap","target":375},"promptText":"375 cents = $3 and __ cents"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0154",
@@ -13722,7 +13722,7 @@ export const ITEMS = [
     structureType: "centsToDollar",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"have":100,"kind":"gap","target":115},"promptText":"115 cents = $1 and ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"have":100,"kind":"gap","target":115},"promptText":"115 cents is the same as $1 and __ cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0155",
@@ -13732,7 +13732,7 @@ export const ITEMS = [
     structureType: "changeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"back":7,"kind":"countBack","start":10},"promptText":"Pay 10 cents for a 7-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"back":7,"kind":"countBack","start":10},"promptText":"You pay 10 cents for a 7-cent toy. How many cents do you get back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0156",
@@ -13742,7 +13742,7 @@ export const ITEMS = [
     structureType: "changeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"back":4,"kind":"countBack","start":10},"promptText":"Pay 10 cents for a 4-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"back":4,"kind":"countBack","start":10},"promptText":"A toy costs 4 cents. You pay 10 cents. How many cents of change do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0157",
@@ -13752,7 +13752,7 @@ export const ITEMS = [
     structureType: "changeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"back":8,"kind":"countBack","start":10},"promptText":"Pay 10 cents for a 8-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"back":8,"kind":"countBack","start":10},"promptText":"You hand over 10 cents for an 8-cent toy. How many cents of change should you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0158",
@@ -13762,7 +13762,7 @@ export const ITEMS = [
     structureType: "changeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"back":2,"kind":"countBack","start":10},"promptText":"Pay 10 cents for a 2-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"back":2,"kind":"countBack","start":10},"promptText":"You pay 10 cents for a 2-cent toy. How many cents do you get back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0159",
@@ -13772,7 +13772,7 @@ export const ITEMS = [
     structureType: "changeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"back":6,"kind":"countBack","start":10},"promptText":"Pay 10 cents for a 6-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"back":6,"kind":"countBack","start":10},"promptText":"A toy costs 6 cents. You pay 10 cents. How many cents of change do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0160",
@@ -13782,7 +13782,7 @@ export const ITEMS = [
     structureType: "changeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":3,"kind":"countBack","start":10},"promptText":"Pay 10 cents for a 3-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":3,"kind":"countBack","start":10},"promptText":"You hand over 10 cents for a 3-cent toy. How many cents of change should you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0161",
@@ -13792,7 +13792,7 @@ export const ITEMS = [
     structureType: "changeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"back":9,"kind":"countBack","start":10},"promptText":"Pay 10 cents for a 9-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"back":9,"kind":"countBack","start":10},"promptText":"You pay 10 cents for a 9-cent toy. How many cents do you get back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0162",
@@ -13802,7 +13802,7 @@ export const ITEMS = [
     structureType: "changeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":1,"kind":"countBack","start":10},"promptText":"Pay 10 cents for a 1-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":1,"kind":"countBack","start":10},"promptText":"A toy costs 1 cent. You pay 10 cents. How many cents of change do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0163",
@@ -13812,7 +13812,7 @@ export const ITEMS = [
     structureType: "changeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"back":12,"kind":"countBack","start":15},"promptText":"Pay 15 cents for a 12-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"back":12,"kind":"countBack","start":15},"promptText":"You hand over 15 cents for a 12-cent toy. How many cents of change should you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0164",
@@ -13822,7 +13822,7 @@ export const ITEMS = [
     structureType: "changeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":8,"kind":"countBack","start":15},"promptText":"Pay 15 cents for a 8-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":8,"kind":"countBack","start":15},"promptText":"You pay 15 cents for an 8-cent toy. How many cents do you get back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0165",
@@ -13832,7 +13832,7 @@ export const ITEMS = [
     structureType: "changeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"back":11,"kind":"countBack","start":15},"promptText":"Pay 15 cents for a 11-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"back":11,"kind":"countBack","start":15},"promptText":"A toy costs 11 cents. You pay 15 cents. How many cents of change do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0166",
@@ -13842,7 +13842,7 @@ export const ITEMS = [
     structureType: "changeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":6,"kind":"countBack","start":15},"promptText":"Pay 15 cents for a 6-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":6,"kind":"countBack","start":15},"promptText":"You hand over 15 cents for a 6-cent toy. How many cents of change should you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0167",
@@ -13852,7 +13852,7 @@ export const ITEMS = [
     structureType: "changeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"back":17,"kind":"countBack","start":20},"promptText":"Pay 20 cents for a 17-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"back":17,"kind":"countBack","start":20},"promptText":"You pay 20 cents for a 17-cent toy. How many cents do you get back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0168",
@@ -13862,7 +13862,7 @@ export const ITEMS = [
     structureType: "changeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":13,"kind":"countBack","start":20},"promptText":"Pay 20 cents for a 13-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":13,"kind":"countBack","start":20},"promptText":"A toy costs 13 cents. You pay 20 cents. How many cents of change do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0169",
@@ -13872,7 +13872,7 @@ export const ITEMS = [
     structureType: "changeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"back":15,"kind":"countBack","start":20},"promptText":"Pay 20 cents for a 15-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"back":15,"kind":"countBack","start":20},"promptText":"You hand over 20 cents for a 15-cent toy. How many cents of change should you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0170",
@@ -13882,7 +13882,7 @@ export const ITEMS = [
     structureType: "changeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"back":9,"kind":"countBack","start":20},"promptText":"Pay 20 cents for a 9-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"back":9,"kind":"countBack","start":20},"promptText":"You pay 20 cents for a 9-cent toy. How many cents do you get back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0171",
@@ -13892,7 +13892,7 @@ export const ITEMS = [
     structureType: "changeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"back":18,"kind":"countBack","start":20},"promptText":"Pay 20 cents for a 18-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"back":18,"kind":"countBack","start":20},"promptText":"A toy costs 18 cents. You pay 20 cents. How many cents of change do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0172",
@@ -13902,7 +13902,7 @@ export const ITEMS = [
     structureType: "changeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":11,"kind":"countBack","start":20},"promptText":"Pay 20 cents for a 11-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":11,"kind":"countBack","start":20},"promptText":"You hand over 20 cents for an 11-cent toy. How many cents of change should you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0173",
@@ -13912,7 +13912,7 @@ export const ITEMS = [
     structureType: "changeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"back":6,"kind":"countBack","start":20},"promptText":"Pay 20 cents for a 6-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"back":6,"kind":"countBack","start":20},"promptText":"You pay 20 cents for a 6-cent toy. How many cents do you get back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0174",
@@ -13922,7 +13922,7 @@ export const ITEMS = [
     structureType: "changeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"back":4,"kind":"countBack","start":15},"promptText":"Pay 15 cents for a 4-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"back":4,"kind":"countBack","start":15},"promptText":"A toy costs 4 cents. You pay 15 cents. How many cents of change do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0175",
@@ -13932,7 +13932,7 @@ export const ITEMS = [
     structureType: "changeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"back":14,"kind":"countBack","start":20},"promptText":"Pay 20 cents for a 14-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"back":14,"kind":"countBack","start":20},"promptText":"You hand over 20 cents for a 14-cent toy. How many cents of change should you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0176",
@@ -13942,7 +13942,7 @@ export const ITEMS = [
     structureType: "changeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"back":9,"kind":"countBack","start":15},"promptText":"Pay 15 cents for a 9-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"back":9,"kind":"countBack","start":15},"promptText":"You pay 15 cents for a 9-cent toy. How many cents do you get back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0177",
@@ -13952,7 +13952,7 @@ export const ITEMS = [
     structureType: "changeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"back":16,"kind":"countBack","start":20},"promptText":"Pay 20 cents for a 16-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"back":16,"kind":"countBack","start":20},"promptText":"A toy costs 16 cents. You pay 20 cents. How many cents of change do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0178",
@@ -13962,7 +13962,7 @@ export const ITEMS = [
     structureType: "changeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"back":5,"kind":"countBack","start":10},"promptText":"Pay 10 cents for a 5-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"back":5,"kind":"countBack","start":10},"promptText":"You hand over 10 cents for a 5-cent toy. How many cents of change should you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0179",
@@ -13972,7 +13972,7 @@ export const ITEMS = [
     structureType: "changeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"back":12,"kind":"countBack","start":20},"promptText":"Pay 20 cents for a 12-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"back":12,"kind":"countBack","start":20},"promptText":"You pay 20 cents for a 12-cent toy. How many cents do you get back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0180",
@@ -13982,7 +13982,7 @@ export const ITEMS = [
     structureType: "changeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"back":13,"kind":"countBack","start":15},"promptText":"Pay 15 cents for a 13-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"back":13,"kind":"countBack","start":15},"promptText":"A toy costs 13 cents. You pay 15 cents. How many cents of change do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0181",
@@ -13992,7 +13992,7 @@ export const ITEMS = [
     structureType: "saveUpTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":7,"kind":"gap","target":10},"promptText":"7 cents saved. ? more cents make 10 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":7,"kind":"gap","target":10},"promptText":"You have saved 7 cents. How many more cents do you need to have 10 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0182",
@@ -14002,7 +14002,7 @@ export const ITEMS = [
     structureType: "saveUpTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":4,"kind":"gap","target":10},"promptText":"4 cents saved. ? more cents make 10 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":4,"kind":"gap","target":10},"promptText":"You have 4 cents. How many more cents make 10 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0183",
@@ -14012,7 +14012,7 @@ export const ITEMS = [
     structureType: "saveUpTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":8,"kind":"gap","target":10},"promptText":"8 cents saved. ? more cents make 10 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":8,"kind":"gap","target":10},"promptText":"You want to save 10 cents. You have 8 cents so far. How many more cents do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0184",
@@ -14022,7 +14022,7 @@ export const ITEMS = [
     structureType: "saveUpTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":2,"kind":"gap","target":10},"promptText":"2 cents saved. ? more cents make 10 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":2,"kind":"gap","target":10},"promptText":"You have saved 2 cents. How many more cents do you need to have 10 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0185",
@@ -14032,7 +14032,7 @@ export const ITEMS = [
     structureType: "saveUpTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":12,"kind":"gap","target":15},"promptText":"12 cents saved. ? more cents make 15 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":12,"kind":"gap","target":15},"promptText":"You have 12 cents. How many more cents make 15 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0186",
@@ -14042,7 +14042,7 @@ export const ITEMS = [
     structureType: "saveUpTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":6,"kind":"gap","target":15},"promptText":"6 cents saved. ? more cents make 15 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":6,"kind":"gap","target":15},"promptText":"You want to save 15 cents. You have 6 cents so far. How many more cents do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0187",
@@ -14052,7 +14052,7 @@ export const ITEMS = [
     structureType: "saveUpTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":11,"kind":"gap","target":15},"promptText":"11 cents saved. ? more cents make 15 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":11,"kind":"gap","target":15},"promptText":"You have saved 11 cents. How many more cents do you need to have 15 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0188",
@@ -14062,7 +14062,7 @@ export const ITEMS = [
     structureType: "saveUpTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":13,"kind":"gap","target":20},"promptText":"13 cents saved. ? more cents make 20 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":13,"kind":"gap","target":20},"promptText":"You have 13 cents. How many more cents make 20 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0189",
@@ -14072,7 +14072,7 @@ export const ITEMS = [
     structureType: "saveUpTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":17,"kind":"gap","target":20},"promptText":"17 cents saved. ? more cents make 20 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":17,"kind":"gap","target":20},"promptText":"You want to save 20 cents. You have 17 cents so far. How many more cents do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0190",
@@ -14082,7 +14082,7 @@ export const ITEMS = [
     structureType: "saveUpTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":9,"kind":"gap","target":20},"promptText":"9 cents saved. ? more cents make 20 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":9,"kind":"gap","target":20},"promptText":"You have saved 9 cents. How many more cents do you need to have 20 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0191",
@@ -14092,7 +14092,7 @@ export const ITEMS = [
     structureType: "saveUpTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":15,"kind":"gap","target":20},"promptText":"15 cents saved. ? more cents make 20 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":15,"kind":"gap","target":20},"promptText":"You have 15 cents. How many more cents make 20 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0192",
@@ -14102,7 +14102,7 @@ export const ITEMS = [
     structureType: "saveUpTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":3,"kind":"gap","target":10},"promptText":"3 cents saved. ? more cents make 10 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":3,"kind":"gap","target":10},"promptText":"You want to save 10 cents. You have 3 cents so far. How many more cents do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0193",
@@ -14112,7 +14112,7 @@ export const ITEMS = [
     structureType: "saveUpTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":14,"kind":"gap","target":20},"promptText":"14 cents saved. ? more cents make 20 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":14,"kind":"gap","target":20},"promptText":"You have saved 14 cents. How many more cents do you need to have 20 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0194",
@@ -14122,7 +14122,7 @@ export const ITEMS = [
     structureType: "saveUpTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":8,"kind":"gap","target":15},"promptText":"8 cents saved. ? more cents make 15 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":8,"kind":"gap","target":15},"promptText":"You have 8 cents. How many more cents make 15 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0195",
@@ -14132,7 +14132,7 @@ export const ITEMS = [
     structureType: "saveUpTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":16,"kind":"gap","target":20},"promptText":"16 cents saved. ? more cents make 20 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":16,"kind":"gap","target":20},"promptText":"You want to save 20 cents. You have 16 cents so far. How many more cents do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0196",
@@ -14142,7 +14142,7 @@ export const ITEMS = [
     structureType: "saveUpTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":5,"kind":"gap","target":10},"promptText":"5 cents saved. ? more cents make 10 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":5,"kind":"gap","target":10},"promptText":"You have saved 5 cents. How many more cents do you need to have 10 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0197",
@@ -14152,7 +14152,7 @@ export const ITEMS = [
     structureType: "saveUpTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":18,"kind":"gap","target":20},"promptText":"18 cents saved. ? more cents make 20 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":18,"kind":"gap","target":20},"promptText":"You have 18 cents. How many more cents make 20 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0198",
@@ -14162,7 +14162,7 @@ export const ITEMS = [
     structureType: "saveUpTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":9,"kind":"gap","target":15},"promptText":"9 cents saved. ? more cents make 15 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":9,"kind":"gap","target":15},"promptText":"You want to save 15 cents. You have 9 cents so far. How many more cents do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0199",
@@ -14172,7 +14172,7 @@ export const ITEMS = [
     structureType: "saveUpTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":11,"kind":"gap","target":20},"promptText":"11 cents saved. ? more cents make 20 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":11,"kind":"gap","target":20},"promptText":"You have saved 11 cents. How many more cents do you need to have 20 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0200",
@@ -14182,7 +14182,7 @@ export const ITEMS = [
     structureType: "saveUpTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":6,"kind":"gap","target":10},"promptText":"6 cents saved. ? more cents make 10 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":6,"kind":"gap","target":10},"promptText":"You have 6 cents. How many more cents make 10 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0201",
@@ -14192,7 +14192,7 @@ export const ITEMS = [
     structureType: "saveUpTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":13,"kind":"gap","target":15},"promptText":"13 cents saved. ? more cents make 15 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":13,"kind":"gap","target":15},"promptText":"You want to save 15 cents. You have 13 cents so far. How many more cents do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0202",
@@ -14202,7 +14202,7 @@ export const ITEMS = [
     structureType: "saveUpTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":7,"kind":"gap","target":20},"promptText":"7 cents saved. ? more cents make 20 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":7,"kind":"gap","target":20},"promptText":"You have saved 7 cents. How many more cents do you need to have 20 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0203",
@@ -14212,7 +14212,7 @@ export const ITEMS = [
     structureType: "saveUpTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"have":14,"kind":"gap","target":15},"promptText":"14 cents saved. ? more cents make 15 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"have":14,"kind":"gap","target":15},"promptText":"You have 14 cents. How many more cents make 15 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0204",
@@ -14222,7 +14222,7 @@ export const ITEMS = [
     structureType: "saveUpTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":12,"kind":"gap","target":20},"promptText":"12 cents saved. ? more cents make 20 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":12,"kind":"gap","target":20},"promptText":"You want to save 20 cents. You have 12 cents so far. How many more cents do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0205",
@@ -14232,7 +14232,7 @@ export const ITEMS = [
     structureType: "saveUpTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":1,"kind":"gap","target":10},"promptText":"1 cents saved. ? more cents make 10 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":1,"kind":"gap","target":10},"promptText":"You have saved 1 cent. How many more cents do you need to have 10 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0206",
@@ -14242,7 +14242,7 @@ export const ITEMS = [
     structureType: "saveUpTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"have":19,"kind":"gap","target":20},"promptText":"19 cents saved. ? more cents make 20 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"have":19,"kind":"gap","target":20},"promptText":"You have 19 cents. How many more cents make 20 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0207",
@@ -14252,7 +14252,7 @@ export const ITEMS = [
     structureType: "changeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":18,"kind":"countBack","start":25},"promptText":"Pay 25 cents for a 18-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":18,"kind":"countBack","start":25},"promptText":"You pay 25 cents for an 18-cent toy. How many cents do you get back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0208",
@@ -14262,7 +14262,7 @@ export const ITEMS = [
     structureType: "changeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"back":12,"kind":"countBack","start":25},"promptText":"Pay 25 cents for a 12-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"back":12,"kind":"countBack","start":25},"promptText":"A toy costs 12 cents. You pay 25 cents. How many cents of change do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0209",
@@ -14272,7 +14272,7 @@ export const ITEMS = [
     structureType: "changeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"back":21,"kind":"countBack","start":25},"promptText":"Pay 25 cents for a 21-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"back":21,"kind":"countBack","start":25},"promptText":"You hand over 25 cents for a 21-cent toy. How many cents of change should you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0210",
@@ -14282,7 +14282,7 @@ export const ITEMS = [
     structureType: "changeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"back":9,"kind":"countBack","start":25},"promptText":"Pay 25 cents for a 9-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"back":9,"kind":"countBack","start":25},"promptText":"You pay 25 cents for a 9-cent toy. How many cents do you get back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0211",
@@ -14292,7 +14292,7 @@ export const ITEMS = [
     structureType: "changeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"back":37,"kind":"countBack","start":50},"promptText":"Pay 50 cents for a 37-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"back":37,"kind":"countBack","start":50},"promptText":"A toy costs 37 cents. You pay 50 cents. How many cents of change do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0212",
@@ -14302,7 +14302,7 @@ export const ITEMS = [
     structureType: "changeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"counting":{"back":24,"kind":"countBack","start":50},"promptText":"Pay 50 cents for a 24-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"counting":{"back":24,"kind":"countBack","start":50},"promptText":"You hand over 50 cents for a 24-cent toy. How many cents of change should you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0213",
@@ -14312,7 +14312,7 @@ export const ITEMS = [
     structureType: "changeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":43,"kind":"countBack","start":50},"promptText":"Pay 50 cents for a 43-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":43,"kind":"countBack","start":50},"promptText":"You pay 50 cents for a 43-cent toy. How many cents do you get back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0214",
@@ -14322,7 +14322,7 @@ export const ITEMS = [
     structureType: "changeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"counting":{"back":16,"kind":"countBack","start":50},"promptText":"Pay 50 cents for a 16-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"counting":{"back":16,"kind":"countBack","start":50},"promptText":"A toy costs 16 cents. You pay 50 cents. How many cents of change do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0215",
@@ -14332,7 +14332,7 @@ export const ITEMS = [
     structureType: "changeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"back":6,"kind":"countBack","start":25},"promptText":"Pay 25 cents for a 6-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"back":6,"kind":"countBack","start":25},"promptText":"You hand over 25 cents for a 6-cent toy. How many cents of change should you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0216",
@@ -14342,7 +14342,7 @@ export const ITEMS = [
     structureType: "changeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"back":31,"kind":"countBack","start":50},"promptText":"Pay 50 cents for a 31-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"back":31,"kind":"countBack","start":50},"promptText":"You pay 50 cents for a 31-cent toy. How many cents do you get back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0217",
@@ -14352,7 +14352,7 @@ export const ITEMS = [
     structureType: "changeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"back":14,"kind":"countBack","start":25},"promptText":"Pay 25 cents for a 14-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"back":14,"kind":"countBack","start":25},"promptText":"A toy costs 14 cents. You pay 25 cents. How many cents of change do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0218",
@@ -14362,7 +14362,7 @@ export const ITEMS = [
     structureType: "changeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"back":48,"kind":"countBack","start":50},"promptText":"Pay 50 cents for a 48-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"back":48,"kind":"countBack","start":50},"promptText":"You hand over 50 cents for a 48-cent toy. How many cents of change should you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0219",
@@ -14372,7 +14372,7 @@ export const ITEMS = [
     structureType: "changeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"back":19,"kind":"countBack","start":25},"promptText":"Pay 25 cents for a 19-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"back":19,"kind":"countBack","start":25},"promptText":"You pay 25 cents for a 19-cent toy. How many cents do you get back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0220",
@@ -14382,7 +14382,7 @@ export const ITEMS = [
     structureType: "changeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"counting":{"back":22,"kind":"countBack","start":50},"promptText":"Pay 50 cents for a 22-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"counting":{"back":22,"kind":"countBack","start":50},"promptText":"A toy costs 22 cents. You pay 50 cents. How many cents of change do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0221",
@@ -14392,7 +14392,7 @@ export const ITEMS = [
     structureType: "changeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"counting":{"back":3,"kind":"countBack","start":25},"promptText":"Pay 25 cents for a 3-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"counting":{"back":3,"kind":"countBack","start":25},"promptText":"You hand over 25 cents for a 3-cent toy. How many cents of change should you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0222",
@@ -14402,7 +14402,7 @@ export const ITEMS = [
     structureType: "changeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"back":39,"kind":"countBack","start":50},"promptText":"Pay 50 cents for a 39-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"back":39,"kind":"countBack","start":50},"promptText":"You pay 50 cents for a 39-cent toy. How many cents do you get back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0223",
@@ -14412,7 +14412,7 @@ export const ITEMS = [
     structureType: "changeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":16,"kind":"countBack","start":25},"promptText":"Pay 25 cents for a 16-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":16,"kind":"countBack","start":25},"promptText":"A toy costs 16 cents. You pay 25 cents. How many cents of change do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0224",
@@ -14422,7 +14422,7 @@ export const ITEMS = [
     structureType: "changeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"counting":{"back":27,"kind":"countBack","start":50},"promptText":"Pay 50 cents for a 27-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"counting":{"back":27,"kind":"countBack","start":50},"promptText":"You hand over 50 cents for a 27-cent toy. How many cents of change should you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0225",
@@ -14432,7 +14432,7 @@ export const ITEMS = [
     structureType: "changeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"back":11,"kind":"countBack","start":25},"promptText":"Pay 25 cents for a 11-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"back":11,"kind":"countBack","start":25},"promptText":"You pay 25 cents for an 11-cent toy. How many cents do you get back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0226",
@@ -14442,7 +14442,7 @@ export const ITEMS = [
     structureType: "changeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"back":45,"kind":"countBack","start":50},"promptText":"Pay 50 cents for a 45-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"back":45,"kind":"countBack","start":50},"promptText":"A toy costs 45 cents. You pay 50 cents. How many cents of change do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0227",
@@ -14452,7 +14452,7 @@ export const ITEMS = [
     structureType: "changeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"back":23,"kind":"countBack","start":25},"promptText":"Pay 25 cents for a 23-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"back":23,"kind":"countBack","start":25},"promptText":"You hand over 25 cents for a 23-cent toy. How many cents of change should you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0228",
@@ -14462,7 +14462,7 @@ export const ITEMS = [
     structureType: "changeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"counting":{"back":8,"kind":"countBack","start":50},"promptText":"Pay 50 cents for a 8-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"counting":{"back":8,"kind":"countBack","start":50},"promptText":"You pay 50 cents for an 8-cent toy. How many cents do you get back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0229",
@@ -14472,7 +14472,7 @@ export const ITEMS = [
     structureType: "changeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"back":7,"kind":"countBack","start":25},"promptText":"Pay 25 cents for a 7-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"back":7,"kind":"countBack","start":25},"promptText":"A toy costs 7 cents. You pay 25 cents. How many cents of change do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0230",
@@ -14482,7 +14482,7 @@ export const ITEMS = [
     structureType: "changeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"back":33,"kind":"countBack","start":50},"promptText":"Pay 50 cents for a 33-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"back":33,"kind":"countBack","start":50},"promptText":"You hand over 50 cents for a 33-cent toy. How many cents of change should you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0231",
@@ -14492,7 +14492,7 @@ export const ITEMS = [
     structureType: "changeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"back":19,"kind":"countBack","start":30},"promptText":"Pay 30 cents for a 19-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"back":19,"kind":"countBack","start":30},"promptText":"You pay 30 cents for a 19-cent toy. How many cents do you get back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0232",
@@ -14502,7 +14502,7 @@ export const ITEMS = [
     structureType: "changeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"back":26,"kind":"countBack","start":40},"promptText":"Pay 40 cents for a 26-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"back":26,"kind":"countBack","start":40},"promptText":"A toy costs 26 cents. You pay 40 cents. How many cents of change do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0233",
@@ -14512,7 +14512,7 @@ export const ITEMS = [
     structureType: "saveUpMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":18,"kind":"gap","target":25},"promptText":"18 cents saved. ? more cents make 25 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":18,"kind":"gap","target":25},"promptText":"You have saved 18 cents. How many more cents do you need to have 25 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0234",
@@ -14522,7 +14522,7 @@ export const ITEMS = [
     structureType: "saveUpMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":12,"kind":"gap","target":25},"promptText":"12 cents saved. ? more cents make 25 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":12,"kind":"gap","target":25},"promptText":"You have 12 cents. How many more cents make 25 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0235",
@@ -14532,7 +14532,7 @@ export const ITEMS = [
     structureType: "saveUpMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":37,"kind":"gap","target":50},"promptText":"37 cents saved. ? more cents make 50 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":37,"kind":"gap","target":50},"promptText":"You want to save 50 cents. You have 37 cents so far. How many more cents do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0236",
@@ -14542,7 +14542,7 @@ export const ITEMS = [
     structureType: "saveUpMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"counting":{"have":24,"kind":"gap","target":50},"promptText":"24 cents saved. ? more cents make 50 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"counting":{"have":24,"kind":"gap","target":50},"promptText":"You have saved 24 cents. How many more cents do you need to have 50 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0237",
@@ -14552,7 +14552,7 @@ export const ITEMS = [
     structureType: "saveUpMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":43,"kind":"gap","target":50},"promptText":"43 cents saved. ? more cents make 50 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":43,"kind":"gap","target":50},"promptText":"You have 43 cents. How many more cents make 50 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0238",
@@ -14562,7 +14562,7 @@ export const ITEMS = [
     structureType: "saveUpMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":16,"kind":"gap","target":25},"promptText":"16 cents saved. ? more cents make 25 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":16,"kind":"gap","target":25},"promptText":"You want to save 25 cents. You have 16 cents so far. How many more cents do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0239",
@@ -14572,7 +14572,7 @@ export const ITEMS = [
     structureType: "saveUpMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"have":31,"kind":"gap","target":50},"promptText":"31 cents saved. ? more cents make 50 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"have":31,"kind":"gap","target":50},"promptText":"You have saved 31 cents. How many more cents do you need to have 50 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0240",
@@ -14582,7 +14582,7 @@ export const ITEMS = [
     structureType: "saveUpMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"have":9,"kind":"gap","target":25},"promptText":"9 cents saved. ? more cents make 25 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"have":9,"kind":"gap","target":25},"promptText":"You have 9 cents. How many more cents make 25 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0241",
@@ -14592,7 +14592,7 @@ export const ITEMS = [
     structureType: "saveUpMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":48,"kind":"gap","target":50},"promptText":"48 cents saved. ? more cents make 50 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":48,"kind":"gap","target":50},"promptText":"You want to save 50 cents. You have 48 cents so far. How many more cents do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0242",
@@ -14602,7 +14602,7 @@ export const ITEMS = [
     structureType: "saveUpMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":21,"kind":"gap","target":25},"promptText":"21 cents saved. ? more cents make 25 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":21,"kind":"gap","target":25},"promptText":"You have saved 21 cents. How many more cents do you need to have 25 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0243",
@@ -14612,7 +14612,7 @@ export const ITEMS = [
     structureType: "saveUpMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"counting":{"have":22,"kind":"gap","target":50},"promptText":"22 cents saved. ? more cents make 50 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"counting":{"have":22,"kind":"gap","target":50},"promptText":"You have 22 cents. How many more cents make 50 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0244",
@@ -14622,7 +14622,7 @@ export const ITEMS = [
     structureType: "saveUpMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"have":6,"kind":"gap","target":25},"promptText":"6 cents saved. ? more cents make 25 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"have":6,"kind":"gap","target":25},"promptText":"You want to save 25 cents. You have 6 cents so far. How many more cents do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0245",
@@ -14632,7 +14632,7 @@ export const ITEMS = [
     structureType: "saveUpMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":39,"kind":"gap","target":50},"promptText":"39 cents saved. ? more cents make 50 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":39,"kind":"gap","target":50},"promptText":"You have saved 39 cents. How many more cents do you need to have 50 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0246",
@@ -14642,7 +14642,7 @@ export const ITEMS = [
     structureType: "saveUpMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":14,"kind":"gap","target":25},"promptText":"14 cents saved. ? more cents make 25 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":14,"kind":"gap","target":25},"promptText":"You have 14 cents. How many more cents make 25 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0247",
@@ -14652,7 +14652,7 @@ export const ITEMS = [
     structureType: "saveUpMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"counting":{"have":27,"kind":"gap","target":50},"promptText":"27 cents saved. ? more cents make 50 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"counting":{"have":27,"kind":"gap","target":50},"promptText":"You want to save 50 cents. You have 27 cents so far. How many more cents do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0248",
@@ -14662,7 +14662,7 @@ export const ITEMS = [
     structureType: "saveUpMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":19,"kind":"gap","target":25},"promptText":"19 cents saved. ? more cents make 25 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":19,"kind":"gap","target":25},"promptText":"You have saved 19 cents. How many more cents do you need to have 25 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0249",
@@ -14672,7 +14672,7 @@ export const ITEMS = [
     structureType: "saveUpMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":45,"kind":"gap","target":50},"promptText":"45 cents saved. ? more cents make 50 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":45,"kind":"gap","target":50},"promptText":"You have 45 cents. How many more cents make 50 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0250",
@@ -14682,7 +14682,7 @@ export const ITEMS = [
     structureType: "saveUpMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"have":11,"kind":"gap","target":25},"promptText":"11 cents saved. ? more cents make 25 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"have":11,"kind":"gap","target":25},"promptText":"You want to save 25 cents. You have 11 cents so far. How many more cents do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0251",
@@ -14692,7 +14692,7 @@ export const ITEMS = [
     structureType: "saveUpMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"have":33,"kind":"gap","target":50},"promptText":"33 cents saved. ? more cents make 50 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"have":33,"kind":"gap","target":50},"promptText":"You have saved 33 cents. How many more cents do you need to have 50 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0252",
@@ -14702,7 +14702,7 @@ export const ITEMS = [
     structureType: "saveUpMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":23,"kind":"gap","target":25},"promptText":"23 cents saved. ? more cents make 25 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":23,"kind":"gap","target":25},"promptText":"You have 23 cents. How many more cents make 25 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0253",
@@ -14712,7 +14712,7 @@ export const ITEMS = [
     structureType: "saveUpMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"counting":{"have":29,"kind":"gap","target":50},"promptText":"29 cents saved. ? more cents make 50 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"counting":{"have":29,"kind":"gap","target":50},"promptText":"You want to save 50 cents. You have 29 cents so far. How many more cents do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0254",
@@ -14722,7 +14722,7 @@ export const ITEMS = [
     structureType: "saveUpMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"have":7,"kind":"gap","target":25},"promptText":"7 cents saved. ? more cents make 25 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"have":7,"kind":"gap","target":25},"promptText":"You have saved 7 cents. How many more cents do you need to have 25 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0255",
@@ -14732,7 +14732,7 @@ export const ITEMS = [
     structureType: "saveUpMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":41,"kind":"gap","target":50},"promptText":"41 cents saved. ? more cents make 50 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":41,"kind":"gap","target":50},"promptText":"You have 41 cents. How many more cents make 50 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0256",
@@ -14742,7 +14742,7 @@ export const ITEMS = [
     structureType: "saveUpMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":17,"kind":"gap","target":25},"promptText":"17 cents saved. ? more cents make 25 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":17,"kind":"gap","target":25},"promptText":"You want to save 25 cents. You have 17 cents so far. How many more cents do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0257",
@@ -14752,7 +14752,7 @@ export const ITEMS = [
     structureType: "saveUpMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"have":36,"kind":"gap","target":50},"promptText":"36 cents saved. ? more cents make 50 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"have":36,"kind":"gap","target":50},"promptText":"You have saved 36 cents. How many more cents do you need to have 50 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0258",
@@ -14762,7 +14762,7 @@ export const ITEMS = [
     structureType: "saveUpMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"have":13,"kind":"gap","target":25},"promptText":"13 cents saved. ? more cents make 25 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"have":13,"kind":"gap","target":25},"promptText":"You have 13 cents. How many more cents make 25 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0259",
@@ -14772,7 +14772,7 @@ export const ITEMS = [
     structureType: "changeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"counting":{"back":67,"kind":"countBack","start":100},"promptText":"Pay 100 cents for a 67-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"counting":{"back":67,"kind":"countBack","start":100},"promptText":"You pay 100 cents for a 67-cent toy. How many cents do you get back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0260",
@@ -14782,7 +14782,7 @@ export const ITEMS = [
     structureType: "changeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"counting":{"back":43,"kind":"countBack","start":100},"promptText":"Pay 100 cents for a 43-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"counting":{"back":43,"kind":"countBack","start":100},"promptText":"A toy costs 43 cents. You pay 100 cents. How many cents of change do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0261",
@@ -14792,7 +14792,7 @@ export const ITEMS = [
     structureType: "changeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"back":81,"kind":"countBack","start":100},"promptText":"Pay 100 cents for a 81-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"back":81,"kind":"countBack","start":100},"promptText":"You hand over 100 cents for an 81-cent toy. How many cents of change should you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0262",
@@ -14802,7 +14802,7 @@ export const ITEMS = [
     structureType: "changeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":71,"display":{"counting":{"back":29,"kind":"countBack","start":100},"promptText":"Pay 100 cents for a 29-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":71,"display":{"counting":{"back":29,"kind":"countBack","start":100},"promptText":"You pay 100 cents for a 29-cent toy. How many cents do you get back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0263",
@@ -14812,7 +14812,7 @@ export const ITEMS = [
     structureType: "changeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"counting":{"back":56,"kind":"countBack","start":100},"promptText":"Pay 100 cents for a 56-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"counting":{"back":56,"kind":"countBack","start":100},"promptText":"A toy costs 56 cents. You pay 100 cents. How many cents of change do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0264",
@@ -14822,7 +14822,7 @@ export const ITEMS = [
     structureType: "changeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"back":92,"kind":"countBack","start":100},"promptText":"Pay 100 cents for a 92-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"back":92,"kind":"countBack","start":100},"promptText":"You hand over 100 cents for a 92-cent toy. How many cents of change should you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0265",
@@ -14832,7 +14832,7 @@ export const ITEMS = [
     structureType: "changeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":66,"display":{"counting":{"back":34,"kind":"countBack","start":100},"promptText":"Pay 100 cents for a 34-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":66,"display":{"counting":{"back":34,"kind":"countBack","start":100},"promptText":"You pay 100 cents for a 34-cent toy. How many cents do you get back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0266",
@@ -14842,7 +14842,7 @@ export const ITEMS = [
     structureType: "changeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"counting":{"back":78,"kind":"countBack","start":100},"promptText":"Pay 100 cents for a 78-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"counting":{"back":78,"kind":"countBack","start":100},"promptText":"A toy costs 78 cents. You pay 100 cents. How many cents of change do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0267",
@@ -14852,7 +14852,7 @@ export const ITEMS = [
     structureType: "changeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"counting":{"back":145,"kind":"countBack","start":200},"promptText":"Pay 200 cents for a 145-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"counting":{"back":145,"kind":"countBack","start":200},"promptText":"You hand over 200 cents for a 145-cent toy. How many cents of change should you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0268",
@@ -14862,7 +14862,7 @@ export const ITEMS = [
     structureType: "changeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"counting":{"back":168,"kind":"countBack","start":200},"promptText":"Pay 200 cents for a 168-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"counting":{"back":168,"kind":"countBack","start":200},"promptText":"You pay 200 cents for a 168-cent toy. How many cents do you get back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0269",
@@ -14872,7 +14872,7 @@ export const ITEMS = [
     structureType: "changeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":77,"display":{"counting":{"back":123,"kind":"countBack","start":200},"promptText":"Pay 200 cents for a 123-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":77,"display":{"counting":{"back":123,"kind":"countBack","start":200},"promptText":"A toy costs 123 cents. You pay 200 cents. How many cents of change do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0270",
@@ -14882,7 +14882,7 @@ export const ITEMS = [
     structureType: "changeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"back":187,"kind":"countBack","start":200},"promptText":"Pay 200 cents for a 187-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"back":187,"kind":"countBack","start":200},"promptText":"You hand over 200 cents for a 187-cent toy. How many cents of change should you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0271",
@@ -14892,7 +14892,7 @@ export const ITEMS = [
     structureType: "changeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"counting":{"back":12,"kind":"countBack","start":100},"promptText":"Pay 100 cents for a 12-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"counting":{"back":12,"kind":"countBack","start":100},"promptText":"You pay 100 cents for a 12-cent toy. How many cents do you get back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0272",
@@ -14902,7 +14902,7 @@ export const ITEMS = [
     structureType: "changeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"counting":{"back":154,"kind":"countBack","start":200},"promptText":"Pay 200 cents for a 154-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"counting":{"back":154,"kind":"countBack","start":200},"promptText":"A toy costs 154 cents. You pay 200 cents. How many cents of change do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0273",
@@ -14912,7 +14912,7 @@ export const ITEMS = [
     structureType: "changeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"back":88,"kind":"countBack","start":100},"promptText":"Pay 100 cents for a 88-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"back":88,"kind":"countBack","start":100},"promptText":"You hand over 100 cents for an 88-cent toy. How many cents of change should you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0274",
@@ -14922,7 +14922,7 @@ export const ITEMS = [
     structureType: "changeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"counting":{"back":109,"kind":"countBack","start":200},"promptText":"Pay 200 cents for a 109-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"counting":{"back":109,"kind":"countBack","start":200},"promptText":"You pay 200 cents for a 109-cent toy. How many cents do you get back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0275",
@@ -14932,7 +14932,7 @@ export const ITEMS = [
     structureType: "changeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"counting":{"back":61,"kind":"countBack","start":100},"promptText":"Pay 100 cents for a 61-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"counting":{"back":61,"kind":"countBack","start":100},"promptText":"A toy costs 61 cents. You pay 100 cents. How many cents of change do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0276",
@@ -14942,7 +14942,7 @@ export const ITEMS = [
     structureType: "changeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"back":176,"kind":"countBack","start":200},"promptText":"Pay 200 cents for a 176-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"back":176,"kind":"countBack","start":200},"promptText":"You hand over 200 cents for a 176-cent toy. How many cents of change should you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0277",
@@ -14952,7 +14952,7 @@ export const ITEMS = [
     structureType: "changeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":53,"display":{"counting":{"back":47,"kind":"countBack","start":100},"promptText":"Pay 100 cents for a 47-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":53,"display":{"counting":{"back":47,"kind":"countBack","start":100},"promptText":"You pay 100 cents for a 47-cent toy. How many cents do you get back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0278",
@@ -14962,7 +14962,7 @@ export const ITEMS = [
     structureType: "changeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":68,"display":{"counting":{"back":132,"kind":"countBack","start":200},"promptText":"Pay 200 cents for a 132-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":68,"display":{"counting":{"back":132,"kind":"countBack","start":200},"promptText":"A toy costs 132 cents. You pay 200 cents. How many cents of change do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0279",
@@ -14972,7 +14972,7 @@ export const ITEMS = [
     structureType: "changeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"back":95,"kind":"countBack","start":100},"promptText":"Pay 100 cents for a 95-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"back":95,"kind":"countBack","start":100},"promptText":"You hand over 100 cents for a 95-cent toy. How many cents of change should you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0280",
@@ -14982,7 +14982,7 @@ export const ITEMS = [
     structureType: "changeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":82,"display":{"counting":{"back":118,"kind":"countBack","start":200},"promptText":"Pay 200 cents for a 118-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":82,"display":{"counting":{"back":118,"kind":"countBack","start":200},"promptText":"You pay 200 cents for a 118-cent toy. How many cents do you get back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0281",
@@ -14992,7 +14992,7 @@ export const ITEMS = [
     structureType: "changeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"counting":{"back":73,"kind":"countBack","start":100},"promptText":"Pay 100 cents for a 73-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"counting":{"back":73,"kind":"countBack","start":100},"promptText":"A toy costs 73 cents. You pay 100 cents. How many cents of change do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0282",
@@ -15002,7 +15002,7 @@ export const ITEMS = [
     structureType: "changeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"counting":{"back":161,"kind":"countBack","start":200},"promptText":"Pay 200 cents for a 161-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"counting":{"back":161,"kind":"countBack","start":200},"promptText":"You hand over 200 cents for a 161-cent toy. How many cents of change should you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0283",
@@ -15012,7 +15012,7 @@ export const ITEMS = [
     structureType: "changeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":74,"display":{"counting":{"back":26,"kind":"countBack","start":100},"promptText":"Pay 100 cents for a 26-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":74,"display":{"counting":{"back":26,"kind":"countBack","start":100},"promptText":"You pay 100 cents for a 26-cent toy. How many cents do you get back?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0284",
@@ -15022,7 +15022,7 @@ export const ITEMS = [
     structureType: "changeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":61,"display":{"counting":{"back":139,"kind":"countBack","start":200},"promptText":"Pay 200 cents for a 139-cent toy. Change = ? cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":61,"display":{"counting":{"back":139,"kind":"countBack","start":200},"promptText":"A toy costs 139 cents. You pay 200 cents. How many cents of change do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0285",
@@ -15032,7 +15032,7 @@ export const ITEMS = [
     structureType: "saveUpBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"counting":{"have":67,"kind":"gap","target":100},"promptText":"67 cents saved. ? more cents make 100 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"counting":{"have":67,"kind":"gap","target":100},"promptText":"You have saved 67 cents. How many more cents do you need to have 100 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0286",
@@ -15042,7 +15042,7 @@ export const ITEMS = [
     structureType: "saveUpBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"counting":{"have":43,"kind":"gap","target":100},"promptText":"43 cents saved. ? more cents make 100 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"counting":{"have":43,"kind":"gap","target":100},"promptText":"You have 43 cents. How many more cents make 100 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0287",
@@ -15052,7 +15052,7 @@ export const ITEMS = [
     structureType: "saveUpBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"have":81,"kind":"gap","target":100},"promptText":"81 cents saved. ? more cents make 100 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"have":81,"kind":"gap","target":100},"promptText":"You want to save 100 cents. You have 81 cents so far. How many more cents do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0288",
@@ -15062,7 +15062,7 @@ export const ITEMS = [
     structureType: "saveUpBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":71,"display":{"counting":{"have":29,"kind":"gap","target":100},"promptText":"29 cents saved. ? more cents make 100 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":71,"display":{"counting":{"have":29,"kind":"gap","target":100},"promptText":"You have saved 29 cents. How many more cents do you need to have 100 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0289",
@@ -15072,7 +15072,7 @@ export const ITEMS = [
     structureType: "saveUpBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"counting":{"have":145,"kind":"gap","target":200},"promptText":"145 cents saved. ? more cents make 200 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"counting":{"have":145,"kind":"gap","target":200},"promptText":"You have 145 cents. How many more cents make 200 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0290",
@@ -15082,7 +15082,7 @@ export const ITEMS = [
     structureType: "saveUpBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"counting":{"have":168,"kind":"gap","target":200},"promptText":"168 cents saved. ? more cents make 200 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"counting":{"have":168,"kind":"gap","target":200},"promptText":"You want to save 200 cents. You have 168 cents so far. How many more cents do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0291",
@@ -15092,7 +15092,7 @@ export const ITEMS = [
     structureType: "saveUpBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":77,"display":{"counting":{"have":123,"kind":"gap","target":200},"promptText":"123 cents saved. ? more cents make 200 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":77,"display":{"counting":{"have":123,"kind":"gap","target":200},"promptText":"You have saved 123 cents. How many more cents do you need to have 200 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0292",
@@ -15102,7 +15102,7 @@ export const ITEMS = [
     structureType: "saveUpBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"counting":{"have":56,"kind":"gap","target":100},"promptText":"56 cents saved. ? more cents make 100 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"counting":{"have":56,"kind":"gap","target":100},"promptText":"You have 56 cents. How many more cents make 100 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0293",
@@ -15112,7 +15112,7 @@ export const ITEMS = [
     structureType: "saveUpBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":187,"kind":"gap","target":200},"promptText":"187 cents saved. ? more cents make 200 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":187,"kind":"gap","target":200},"promptText":"You want to save 200 cents. You have 187 cents so far. How many more cents do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0294",
@@ -15122,7 +15122,7 @@ export const ITEMS = [
     structureType: "saveUpBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":92,"kind":"gap","target":100},"promptText":"92 cents saved. ? more cents make 100 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":92,"kind":"gap","target":100},"promptText":"You have saved 92 cents. How many more cents do you need to have 100 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0295",
@@ -15132,7 +15132,7 @@ export const ITEMS = [
     structureType: "saveUpBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"counting":{"have":154,"kind":"gap","target":200},"promptText":"154 cents saved. ? more cents make 200 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"counting":{"have":154,"kind":"gap","target":200},"promptText":"You have 154 cents. How many more cents make 200 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0296",
@@ -15142,7 +15142,7 @@ export const ITEMS = [
     structureType: "saveUpBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":66,"display":{"counting":{"have":34,"kind":"gap","target":100},"promptText":"34 cents saved. ? more cents make 100 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":66,"display":{"counting":{"have":34,"kind":"gap","target":100},"promptText":"You want to save 100 cents. You have 34 cents so far. How many more cents do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0297",
@@ -15152,7 +15152,7 @@ export const ITEMS = [
     structureType: "saveUpBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"counting":{"have":109,"kind":"gap","target":200},"promptText":"109 cents saved. ? more cents make 200 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"counting":{"have":109,"kind":"gap","target":200},"promptText":"You have saved 109 cents. How many more cents do you need to have 200 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0298",
@@ -15162,7 +15162,7 @@ export const ITEMS = [
     structureType: "saveUpBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"counting":{"have":78,"kind":"gap","target":100},"promptText":"78 cents saved. ? more cents make 100 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"counting":{"have":78,"kind":"gap","target":100},"promptText":"You have 78 cents. How many more cents make 100 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0299",
@@ -15172,7 +15172,7 @@ export const ITEMS = [
     structureType: "saveUpBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"have":176,"kind":"gap","target":200},"promptText":"176 cents saved. ? more cents make 200 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"have":176,"kind":"gap","target":200},"promptText":"You want to save 200 cents. You have 176 cents so far. How many more cents do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0300",
@@ -15182,7 +15182,7 @@ export const ITEMS = [
     structureType: "saveUpBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"counting":{"have":12,"kind":"gap","target":100},"promptText":"12 cents saved. ? more cents make 100 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"counting":{"have":12,"kind":"gap","target":100},"promptText":"You have saved 12 cents. How many more cents do you need to have 100 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0301",
@@ -15192,7 +15192,7 @@ export const ITEMS = [
     structureType: "saveUpBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":68,"display":{"counting":{"have":132,"kind":"gap","target":200},"promptText":"132 cents saved. ? more cents make 200 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":68,"display":{"counting":{"have":132,"kind":"gap","target":200},"promptText":"You have 132 cents. How many more cents make 200 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0302",
@@ -15202,7 +15202,7 @@ export const ITEMS = [
     structureType: "saveUpBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"have":88,"kind":"gap","target":100},"promptText":"88 cents saved. ? more cents make 100 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"have":88,"kind":"gap","target":100},"promptText":"You want to save 100 cents. You have 88 cents so far. How many more cents do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0303",
@@ -15212,7 +15212,7 @@ export const ITEMS = [
     structureType: "saveUpBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":82,"display":{"counting":{"have":118,"kind":"gap","target":200},"promptText":"118 cents saved. ? more cents make 200 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":82,"display":{"counting":{"have":118,"kind":"gap","target":200},"promptText":"You have saved 118 cents. How many more cents do you need to have 200 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0304",
@@ -15222,7 +15222,7 @@ export const ITEMS = [
     structureType: "saveUpBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"counting":{"have":61,"kind":"gap","target":100},"promptText":"61 cents saved. ? more cents make 100 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"counting":{"have":61,"kind":"gap","target":100},"promptText":"You have 61 cents. How many more cents make 100 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0305",
@@ -15232,7 +15232,7 @@ export const ITEMS = [
     structureType: "saveUpBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"counting":{"have":161,"kind":"gap","target":200},"promptText":"161 cents saved. ? more cents make 200 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"counting":{"have":161,"kind":"gap","target":200},"promptText":"You want to save 200 cents. You have 161 cents so far. How many more cents do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0306",
@@ -15242,7 +15242,7 @@ export const ITEMS = [
     structureType: "saveUpBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":53,"display":{"counting":{"have":47,"kind":"gap","target":100},"promptText":"47 cents saved. ? more cents make 100 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":53,"display":{"counting":{"have":47,"kind":"gap","target":100},"promptText":"You have saved 47 cents. How many more cents do you need to have 100 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0307",
@@ -15252,7 +15252,7 @@ export const ITEMS = [
     structureType: "saveUpBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":61,"display":{"counting":{"have":139,"kind":"gap","target":200},"promptText":"139 cents saved. ? more cents make 200 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":61,"display":{"counting":{"have":139,"kind":"gap","target":200},"promptText":"You have 139 cents. How many more cents make 200 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0308",
@@ -15262,7 +15262,7 @@ export const ITEMS = [
     structureType: "saveUpBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":95,"kind":"gap","target":100},"promptText":"95 cents saved. ? more cents make 100 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":95,"kind":"gap","target":100},"promptText":"You want to save 100 cents. You have 95 cents so far. How many more cents do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0309",
@@ -15272,7 +15272,7 @@ export const ITEMS = [
     structureType: "saveUpBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":74,"display":{"counting":{"have":126,"kind":"gap","target":200},"promptText":"126 cents saved. ? more cents make 200 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":74,"display":{"counting":{"have":126,"kind":"gap","target":200},"promptText":"You have saved 126 cents. How many more cents do you need to have 200 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0310",
@@ -15282,7 +15282,7 @@ export const ITEMS = [
     structureType: "saveUpBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"counting":{"have":73,"kind":"gap","target":100},"promptText":"73 cents saved. ? more cents make 100 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"counting":{"have":73,"kind":"gap","target":100},"promptText":"You have 73 cents. How many more cents make 100 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0311",
@@ -15292,7 +15292,7 @@ export const ITEMS = [
     structureType: "tradeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"per":5,"kind":"trade","fromCents":10},"promptText":"1 dime = ? nickels"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"per":5,"kind":"trade","fromCents":10},"promptText":"1 dime = __ nickels"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0312",
@@ -15302,7 +15302,7 @@ export const ITEMS = [
     structureType: "tradeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"per":1,"kind":"trade","fromCents":10},"promptText":"1 dime = ? pennies"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"per":1,"kind":"trade","fromCents":10},"promptText":"How many pennies make 1 dime?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0313",
@@ -15312,7 +15312,7 @@ export const ITEMS = [
     structureType: "tradeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"per":1,"kind":"trade","fromCents":5},"promptText":"1 nickel = ? pennies"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"per":1,"kind":"trade","fromCents":5},"promptText":"1 nickel = __ pennies"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0314",
@@ -15322,7 +15322,7 @@ export const ITEMS = [
     structureType: "tradeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"per":5,"kind":"trade","fromCents":20},"promptText":"2 dimes = ? nickels"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"per":5,"kind":"trade","fromCents":20},"promptText":"How many nickels make 2 dimes?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0315",
@@ -15332,7 +15332,7 @@ export const ITEMS = [
     structureType: "tradeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"money":{"per":1,"kind":"trade","fromCents":20},"promptText":"2 dimes = ? pennies"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"money":{"per":1,"kind":"trade","fromCents":20},"promptText":"2 dimes = __ pennies"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0316",
@@ -15342,7 +15342,7 @@ export const ITEMS = [
     structureType: "tradeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"per":1,"kind":"trade","fromCents":10},"promptText":"2 nickels = ? pennies"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"per":1,"kind":"trade","fromCents":10},"promptText":"How many pennies make 2 nickels?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0317",
@@ -15352,7 +15352,7 @@ export const ITEMS = [
     structureType: "tradeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"per":1,"kind":"trade","fromCents":15},"promptText":"3 nickels = ? pennies"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"per":1,"kind":"trade","fromCents":15},"promptText":"3 nickels = __ pennies"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0318",
@@ -15362,7 +15362,7 @@ export const ITEMS = [
     structureType: "tradeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"per":1,"kind":"trade","fromCents":15},"promptText":"1 dime and 1 nickel = ? pennies"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"per":1,"kind":"trade","fromCents":15},"promptText":"1 dime and 1 nickel = __ pennies"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0319",
@@ -15372,7 +15372,7 @@ export const ITEMS = [
     structureType: "tradeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"per":5,"kind":"trade","fromCents":15},"promptText":"1 dime and 1 nickel = ? nickels"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"per":5,"kind":"trade","fromCents":15},"promptText":"How many nickels make 1 dime and 1 nickel?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0320",
@@ -15382,7 +15382,7 @@ export const ITEMS = [
     structureType: "tradeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"money":{"per":1,"kind":"trade","fromCents":20},"promptText":"4 nickels = ? pennies"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"money":{"per":1,"kind":"trade","fromCents":20},"promptText":"How many pennies make 4 nickels?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0321",
@@ -15392,7 +15392,7 @@ export const ITEMS = [
     structureType: "tradeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"per":10,"kind":"trade","fromCents":20},"promptText":"2 dimes = ? dimes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"per":10,"kind":"trade","fromCents":20},"promptText":"20 cents = __ dimes"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0322",
@@ -15402,7 +15402,7 @@ export const ITEMS = [
     structureType: "tradeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"per":10,"kind":"trade","fromCents":20},"promptText":"4 nickels = ? dimes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"per":10,"kind":"trade","fromCents":20},"promptText":"How many dimes make 4 nickels?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0323",
@@ -15412,7 +15412,7 @@ export const ITEMS = [
     structureType: "tradeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"money":{"per":10,"kind":"trade","fromCents":10},"promptText":"2 nickels = ? dimes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"money":{"per":10,"kind":"trade","fromCents":10},"promptText":"2 nickels = __ dimes"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0324",
@@ -15422,7 +15422,7 @@ export const ITEMS = [
     structureType: "tradeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"money":{"per":10,"kind":"trade","fromCents":10},"promptText":"10 pennies = ? dimes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"money":{"per":10,"kind":"trade","fromCents":10},"promptText":"How many dimes make 10 pennies?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0325",
@@ -15432,7 +15432,7 @@ export const ITEMS = [
     structureType: "tradeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"per":5,"kind":"trade","fromCents":10},"promptText":"10 pennies = ? nickels"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"per":5,"kind":"trade","fromCents":10},"promptText":"How many nickels make 10 pennies?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0326",
@@ -15442,7 +15442,7 @@ export const ITEMS = [
     structureType: "tradeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"money":{"per":5,"kind":"trade","fromCents":5},"promptText":"5 pennies = ? nickels"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"money":{"per":5,"kind":"trade","fromCents":5},"promptText":"5 pennies = __ nickels"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0327",
@@ -15452,7 +15452,7 @@ export const ITEMS = [
     structureType: "tradeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"per":5,"kind":"trade","fromCents":15},"promptText":"15 pennies = ? nickels"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"per":5,"kind":"trade","fromCents":15},"promptText":"How many nickels make 15 pennies?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0328",
@@ -15462,7 +15462,7 @@ export const ITEMS = [
     structureType: "tradeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"per":5,"kind":"trade","fromCents":20},"promptText":"20 pennies = ? nickels"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"per":5,"kind":"trade","fromCents":20},"promptText":"20 pennies = __ nickels"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0329",
@@ -15472,7 +15472,7 @@ export const ITEMS = [
     structureType: "tradeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"per":10,"kind":"trade","fromCents":20},"promptText":"20 pennies = ? dimes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"per":10,"kind":"trade","fromCents":20},"promptText":"20 pennies = __ dimes"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0330",
@@ -15482,7 +15482,7 @@ export const ITEMS = [
     structureType: "tradeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"money":{"per":1,"kind":"trade","fromCents":20},"promptText":"1 dime and 2 nickels = ? pennies"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"money":{"per":1,"kind":"trade","fromCents":20},"promptText":"How many pennies make 1 dime and 2 nickels?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0331",
@@ -15492,7 +15492,7 @@ export const ITEMS = [
     structureType: "tradeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"per":1,"kind":"trade","fromCents":15},"promptText":"2 nickels and 5 pennies = ? pennies"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"per":1,"kind":"trade","fromCents":15},"promptText":"2 nickels and 5 pennies = __ pennies"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0332",
@@ -15502,7 +15502,7 @@ export const ITEMS = [
     structureType: "tradeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"per":1,"kind":"trade","fromCents":15},"promptText":"1 dime and 5 pennies = ? pennies"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"per":1,"kind":"trade","fromCents":15},"promptText":"1 dime and 5 pennies = __ pennies"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0333",
@@ -15512,7 +15512,7 @@ export const ITEMS = [
     structureType: "tradeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"money":{"per":1,"kind":"trade","fromCents":20},"promptText":"1 dime and 10 pennies = ? pennies"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"money":{"per":1,"kind":"trade","fromCents":20},"promptText":"How many pennies make 1 dime and 10 pennies?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0334",
@@ -15522,7 +15522,7 @@ export const ITEMS = [
     structureType: "tradeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"money":{"per":1,"kind":"trade","fromCents":20},"promptText":"3 nickels and 5 pennies = ? pennies"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"money":{"per":1,"kind":"trade","fromCents":20},"promptText":"How many pennies make 3 nickels and 5 pennies?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0335",
@@ -15532,7 +15532,7 @@ export const ITEMS = [
     structureType: "tradeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"per":1,"kind":"trade","fromCents":10},"promptText":"1 nickel and 5 pennies = ? pennies"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"per":1,"kind":"trade","fromCents":10},"promptText":"1 nickel and 5 pennies = __ pennies"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0336",
@@ -15542,7 +15542,7 @@ export const ITEMS = [
     structureType: "coinsForAmountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"per":5,"kind":"trade","fromCents":10},"promptText":"? nickels make 10 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"per":5,"kind":"trade","fromCents":10},"promptText":"How many nickels make 10 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0337",
@@ -15552,7 +15552,7 @@ export const ITEMS = [
     structureType: "coinsForAmountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"per":5,"kind":"trade","fromCents":15},"promptText":"? nickels make 15 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"per":5,"kind":"trade","fromCents":15},"promptText":"__ nickels make 15 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0338",
@@ -15562,7 +15562,7 @@ export const ITEMS = [
     structureType: "coinsForAmountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"per":5,"kind":"trade","fromCents":20},"promptText":"? nickels make 20 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"per":5,"kind":"trade","fromCents":20},"promptText":"How many nickels do you need to make 20 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0339",
@@ -15572,7 +15572,7 @@ export const ITEMS = [
     structureType: "coinsForAmountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"per":1,"kind":"trade","fromCents":10},"promptText":"? pennies make 10 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"per":1,"kind":"trade","fromCents":10},"promptText":"__ pennies make 10 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0340",
@@ -15582,7 +15582,7 @@ export const ITEMS = [
     structureType: "coinsForAmountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"per":1,"kind":"trade","fromCents":6},"promptText":"? pennies make 6 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"per":1,"kind":"trade","fromCents":6},"promptText":"__ pennies make 6 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0341",
@@ -15592,7 +15592,7 @@ export const ITEMS = [
     structureType: "coinsForAmountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"per":10,"kind":"trade","fromCents":20},"promptText":"? dimes make 20 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"per":10,"kind":"trade","fromCents":20},"promptText":"How many dimes make 20 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0342",
@@ -15602,7 +15602,7 @@ export const ITEMS = [
     structureType: "coinsForAmountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"money":{"per":10,"kind":"trade","fromCents":10},"promptText":"? dimes make 10 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"money":{"per":10,"kind":"trade","fromCents":10},"promptText":"__ dimes make 10 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0343",
@@ -15612,7 +15612,7 @@ export const ITEMS = [
     structureType: "coinsForAmountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"money":{"per":1,"kind":"trade","fromCents":8},"promptText":"? pennies make 8 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"money":{"per":1,"kind":"trade","fromCents":8},"promptText":"__ pennies make 8 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0344",
@@ -15622,7 +15622,7 @@ export const ITEMS = [
     structureType: "coinsForAmountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"money":{"per":1,"kind":"trade","fromCents":20},"promptText":"? pennies make 20 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"money":{"per":1,"kind":"trade","fromCents":20},"promptText":"__ pennies make 20 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0345",
@@ -15632,7 +15632,7 @@ export const ITEMS = [
     structureType: "coinsForAmountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"money":{"per":1,"kind":"trade","fromCents":12},"promptText":"? pennies make 12 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"money":{"per":1,"kind":"trade","fromCents":12},"promptText":"__ pennies make 12 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0346",
@@ -15642,7 +15642,7 @@ export const ITEMS = [
     structureType: "coinsForAmountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"per":1,"kind":"trade","fromCents":5},"promptText":"? pennies make 5 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"per":1,"kind":"trade","fromCents":5},"promptText":"__ pennies make 5 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0347",
@@ -15652,7 +15652,7 @@ export const ITEMS = [
     structureType: "coinsForAmountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"per":1,"kind":"trade","fromCents":15},"promptText":"? pennies make 15 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"per":1,"kind":"trade","fromCents":15},"promptText":"__ pennies make 15 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0348",
@@ -15662,7 +15662,7 @@ export const ITEMS = [
     structureType: "coinsForAmountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"per":1,"kind":"trade","fromCents":4},"promptText":"? pennies make 4 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"per":1,"kind":"trade","fromCents":4},"promptText":"__ pennies make 4 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0349",
@@ -15672,7 +15672,7 @@ export const ITEMS = [
     structureType: "coinsForAmountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"money":{"per":1,"kind":"trade","fromCents":18},"promptText":"? pennies make 18 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"money":{"per":1,"kind":"trade","fromCents":18},"promptText":"__ pennies make 18 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0350",
@@ -15682,7 +15682,7 @@ export const ITEMS = [
     structureType: "coinsForAmountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"per":1,"kind":"trade","fromCents":3},"promptText":"? pennies make 3 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"per":1,"kind":"trade","fromCents":3},"promptText":"__ pennies make 3 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0351",
@@ -15692,7 +15692,7 @@ export const ITEMS = [
     structureType: "coinsForAmountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"money":{"per":1,"kind":"trade","fromCents":16},"promptText":"? pennies make 16 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"money":{"per":1,"kind":"trade","fromCents":16},"promptText":"__ pennies make 16 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0352",
@@ -15702,7 +15702,7 @@ export const ITEMS = [
     structureType: "coinsForAmountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"money":{"per":1,"kind":"trade","fromCents":14},"promptText":"? pennies make 14 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"money":{"per":1,"kind":"trade","fromCents":14},"promptText":"__ pennies make 14 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0353",
@@ -15712,7 +15712,7 @@ export const ITEMS = [
     structureType: "coinsForAmountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"money":{"per":1,"kind":"trade","fromCents":9},"promptText":"? pennies make 9 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"money":{"per":1,"kind":"trade","fromCents":9},"promptText":"__ pennies make 9 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0354",
@@ -15722,7 +15722,7 @@ export const ITEMS = [
     structureType: "coinsForAmountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"money":{"per":5,"kind":"trade","fromCents":5},"promptText":"? nickels make 5 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"money":{"per":5,"kind":"trade","fromCents":5},"promptText":"How many nickels make 5 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0355",
@@ -15732,7 +15732,7 @@ export const ITEMS = [
     structureType: "coinsForAmountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"money":{"per":1,"kind":"trade","fromCents":11},"promptText":"? pennies make 11 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"money":{"per":1,"kind":"trade","fromCents":11},"promptText":"__ pennies make 11 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0356",
@@ -15742,7 +15742,7 @@ export const ITEMS = [
     structureType: "coinsForAmountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"money":{"per":1,"kind":"trade","fromCents":17},"promptText":"? pennies make 17 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"money":{"per":1,"kind":"trade","fromCents":17},"promptText":"__ pennies make 17 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0357",
@@ -15752,7 +15752,7 @@ export const ITEMS = [
     structureType: "coinsForAmountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"per":1,"kind":"trade","fromCents":2},"promptText":"? pennies make 2 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"per":1,"kind":"trade","fromCents":2},"promptText":"__ pennies make 2 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0358",
@@ -15762,7 +15762,7 @@ export const ITEMS = [
     structureType: "coinsForAmountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"money":{"per":1,"kind":"trade","fromCents":13},"promptText":"? pennies make 13 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"money":{"per":1,"kind":"trade","fromCents":13},"promptText":"__ pennies make 13 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0359",
@@ -15772,7 +15772,7 @@ export const ITEMS = [
     structureType: "coinsForAmountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"money":{"per":1,"kind":"trade","fromCents":7},"promptText":"? pennies make 7 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"money":{"per":1,"kind":"trade","fromCents":7},"promptText":"__ pennies make 7 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0360",
@@ -15782,7 +15782,7 @@ export const ITEMS = [
     structureType: "coinsForAmountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"money":{"per":1,"kind":"trade","fromCents":19},"promptText":"? pennies make 19 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"money":{"per":1,"kind":"trade","fromCents":19},"promptText":"__ pennies make 19 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0361",
@@ -15792,7 +15792,7 @@ export const ITEMS = [
     structureType: "coinsForAmountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"money":{"per":1,"kind":"trade","fromCents":1},"promptText":"? pennies make 1 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"money":{"per":1,"kind":"trade","fromCents":1},"promptText":"__ pennies make 1 cent."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0362",
@@ -15802,7 +15802,7 @@ export const ITEMS = [
     structureType: "tradeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"per":5,"kind":"trade","fromCents":25},"promptText":"1 quarter = ? nickels"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"per":5,"kind":"trade","fromCents":25},"promptText":"How many nickels make 1 quarter?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0363",
@@ -15812,7 +15812,7 @@ export const ITEMS = [
     structureType: "tradeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"money":{"per":1,"kind":"trade","fromCents":25},"promptText":"1 quarter = ? pennies"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"money":{"per":1,"kind":"trade","fromCents":25},"promptText":"1 quarter = __ pennies"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0364",
@@ -15822,7 +15822,7 @@ export const ITEMS = [
     structureType: "tradeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"per":10,"kind":"trade","fromCents":50},"promptText":"2 quarters = ? dimes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"per":10,"kind":"trade","fromCents":50},"promptText":"How many dimes make 2 quarters?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0365",
@@ -15832,7 +15832,7 @@ export const ITEMS = [
     structureType: "tradeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"per":5,"kind":"trade","fromCents":50},"promptText":"2 quarters = ? nickels"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"per":5,"kind":"trade","fromCents":50},"promptText":"How many nickels make 2 quarters?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0366",
@@ -15842,7 +15842,7 @@ export const ITEMS = [
     structureType: "tradeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"per":10,"kind":"trade","fromCents":30},"promptText":"1 quarter and 1 nickel = ? dimes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"per":10,"kind":"trade","fromCents":30},"promptText":"1 quarter and 1 nickel = __ dimes"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0367",
@@ -15852,7 +15852,7 @@ export const ITEMS = [
     structureType: "tradeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"per":5,"kind":"trade","fromCents":30},"promptText":"1 quarter and 1 nickel = ? nickels"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"per":5,"kind":"trade","fromCents":30},"promptText":"How many nickels make 1 quarter and 1 nickel?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0368",
@@ -15862,7 +15862,7 @@ export const ITEMS = [
     structureType: "tradeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"per":5,"kind":"trade","fromCents":75},"promptText":"3 quarters = ? nickels"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"per":5,"kind":"trade","fromCents":75},"promptText":"3 quarters = __ nickels"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0369",
@@ -15872,7 +15872,7 @@ export const ITEMS = [
     structureType: "tradeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"money":{"per":1,"kind":"trade","fromCents":50},"promptText":"2 quarters = ? pennies"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"money":{"per":1,"kind":"trade","fromCents":50},"promptText":"2 quarters = __ pennies"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0370",
@@ -15882,7 +15882,7 @@ export const ITEMS = [
     structureType: "tradeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"money":{"per":5,"kind":"trade","fromCents":35},"promptText":"1 quarter and 2 nickels = ? nickels"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"money":{"per":5,"kind":"trade","fromCents":35},"promptText":"How many nickels make 1 quarter and 2 nickels?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0371",
@@ -15892,7 +15892,7 @@ export const ITEMS = [
     structureType: "tradeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"per":25,"kind":"trade","fromCents":50},"promptText":"5 dimes = ? quarters"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"per":25,"kind":"trade","fromCents":50},"promptText":"5 dimes = __ quarters"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0372",
@@ -15902,7 +15902,7 @@ export const ITEMS = [
     structureType: "tradeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"per":25,"kind":"trade","fromCents":50},"promptText":"10 nickels = ? quarters"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"per":25,"kind":"trade","fromCents":50},"promptText":"How many quarters make 10 nickels?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0373",
@@ -15912,7 +15912,7 @@ export const ITEMS = [
     structureType: "tradeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"money":{"per":25,"kind":"trade","fromCents":25},"promptText":"5 nickels = ? quarters"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"money":{"per":25,"kind":"trade","fromCents":25},"promptText":"5 nickels = __ quarters"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0374",
@@ -15922,7 +15922,7 @@ export const ITEMS = [
     structureType: "tradeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"money":{"per":25,"kind":"trade","fromCents":25},"promptText":"2 dimes and 1 nickel = ? quarters"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"money":{"per":25,"kind":"trade","fromCents":25},"promptText":"How many quarters make 2 dimes and 1 nickel?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0375",
@@ -15932,7 +15932,7 @@ export const ITEMS = [
     structureType: "tradeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"per":10,"kind":"trade","fromCents":100},"promptText":"4 quarters = ? dimes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"per":10,"kind":"trade","fromCents":100},"promptText":"4 quarters = __ dimes"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0376",
@@ -15942,7 +15942,7 @@ export const ITEMS = [
     structureType: "tradeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"money":{"per":5,"kind":"trade","fromCents":100},"promptText":"4 quarters = ? nickels"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"money":{"per":5,"kind":"trade","fromCents":100},"promptText":"How many nickels make 4 quarters?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0377",
@@ -15952,7 +15952,7 @@ export const ITEMS = [
     structureType: "tradeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"money":{"per":5,"kind":"trade","fromCents":35},"promptText":"1 quarter and 1 dime = ? nickels"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"money":{"per":5,"kind":"trade","fromCents":35},"promptText":"1 quarter and 1 dime = __ nickels"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0378",
@@ -15962,7 +15962,7 @@ export const ITEMS = [
     structureType: "tradeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"per":25,"kind":"trade","fromCents":75},"promptText":"3 quarters = ? quarters"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"per":25,"kind":"trade","fromCents":75},"promptText":"75 cents = __ quarters"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0379",
@@ -15972,7 +15972,7 @@ export const ITEMS = [
     structureType: "tradeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"money":{"per":25,"kind":"trade","fromCents":25},"promptText":"25 pennies = ? quarters"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"money":{"per":25,"kind":"trade","fromCents":25},"promptText":"25 pennies = __ quarters"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0380",
@@ -15982,7 +15982,7 @@ export const ITEMS = [
     structureType: "tradeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"per":10,"kind":"trade","fromCents":60},"promptText":"2 quarters and 1 dime = ? dimes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"per":10,"kind":"trade","fromCents":60},"promptText":"2 quarters and 1 dime = __ dimes"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0381",
@@ -15992,7 +15992,7 @@ export const ITEMS = [
     structureType: "tradeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"per":10,"kind":"trade","fromCents":40},"promptText":"1 quarter and 3 nickels = ? dimes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"per":10,"kind":"trade","fromCents":40},"promptText":"How many dimes make 1 quarter and 3 nickels?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0382",
@@ -16002,7 +16002,7 @@ export const ITEMS = [
     structureType: "tradeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"per":25,"kind":"trade","fromCents":50},"promptText":"50 pennies = ? quarters"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"per":25,"kind":"trade","fromCents":50},"promptText":"How many quarters make 50 pennies?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0383",
@@ -16012,7 +16012,7 @@ export const ITEMS = [
     structureType: "tradeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"money":{"per":5,"kind":"trade","fromCents":55},"promptText":"2 quarters and 1 nickel = ? nickels"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"money":{"per":5,"kind":"trade","fromCents":55},"promptText":"2 quarters and 1 nickel = __ nickels"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0384",
@@ -16022,7 +16022,7 @@ export const ITEMS = [
     structureType: "tradeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"money":{"per":5,"kind":"trade","fromCents":60},"promptText":"6 dimes = ? nickels"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"money":{"per":5,"kind":"trade","fromCents":60},"promptText":"6 dimes = __ nickels"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0385",
@@ -16032,7 +16032,7 @@ export const ITEMS = [
     structureType: "tradeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"money":{"per":5,"kind":"trade","fromCents":40},"promptText":"1 quarter and 1 dime and 1 nickel = ? nickels"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"money":{"per":5,"kind":"trade","fromCents":40},"promptText":"How many nickels make 1 quarter and 1 dime and 1 nickel?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0386",
@@ -16042,7 +16042,7 @@ export const ITEMS = [
     structureType: "tradeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"per":10,"kind":"trade","fromCents":40},"promptText":"8 nickels = ? dimes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"per":10,"kind":"trade","fromCents":40},"promptText":"How many dimes make 8 nickels?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0387",
@@ -16052,7 +16052,7 @@ export const ITEMS = [
     structureType: "tradeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"per":10,"kind":"trade","fromCents":30},"promptText":"30 pennies = ? dimes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"per":10,"kind":"trade","fromCents":30},"promptText":"30 pennies = __ dimes"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0388",
@@ -16062,7 +16062,7 @@ export const ITEMS = [
     structureType: "coinsForAmountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"per":5,"kind":"trade","fromCents":25},"promptText":"? nickels make 25 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"per":5,"kind":"trade","fromCents":25},"promptText":"How many nickels make 25 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0389",
@@ -16072,7 +16072,7 @@ export const ITEMS = [
     structureType: "coinsForAmountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"per":10,"kind":"trade","fromCents":50},"promptText":"? dimes make 50 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"per":10,"kind":"trade","fromCents":50},"promptText":"How many dimes make 50 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0390",
@@ -16082,7 +16082,7 @@ export const ITEMS = [
     structureType: "coinsForAmountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"per":25,"kind":"trade","fromCents":50},"promptText":"? quarters make 50 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"per":25,"kind":"trade","fromCents":50},"promptText":"How many quarters do you need to make 50 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0391",
@@ -16092,7 +16092,7 @@ export const ITEMS = [
     structureType: "coinsForAmountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"per":25,"kind":"trade","fromCents":75},"promptText":"? quarters make 75 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"per":25,"kind":"trade","fromCents":75},"promptText":"How many quarters make 75 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0392",
@@ -16102,7 +16102,7 @@ export const ITEMS = [
     structureType: "coinsForAmountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"per":25,"kind":"trade","fromCents":100},"promptText":"? quarters make 100 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"per":25,"kind":"trade","fromCents":100},"promptText":"__ quarters make 100 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0393",
@@ -16112,7 +16112,7 @@ export const ITEMS = [
     structureType: "coinsForAmountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"per":10,"kind":"trade","fromCents":30},"promptText":"? dimes make 30 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"per":10,"kind":"trade","fromCents":30},"promptText":"__ dimes make 30 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0394",
@@ -16122,7 +16122,7 @@ export const ITEMS = [
     structureType: "coinsForAmountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"money":{"per":5,"kind":"trade","fromCents":45},"promptText":"? nickels make 45 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"money":{"per":5,"kind":"trade","fromCents":45},"promptText":"__ nickels make 45 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0395",
@@ -16132,7 +16132,7 @@ export const ITEMS = [
     structureType: "coinsForAmountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"per":10,"kind":"trade","fromCents":60},"promptText":"? dimes make 60 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"per":10,"kind":"trade","fromCents":60},"promptText":"How many dimes do you need to make 60 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0396",
@@ -16142,7 +16142,7 @@ export const ITEMS = [
     structureType: "coinsForAmountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"money":{"per":5,"kind":"trade","fromCents":35},"promptText":"? nickels make 35 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"money":{"per":5,"kind":"trade","fromCents":35},"promptText":"How many nickels do you need to make 35 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0397",
@@ -16152,7 +16152,7 @@ export const ITEMS = [
     structureType: "coinsForAmountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"money":{"per":10,"kind":"trade","fromCents":80},"promptText":"? dimes make 80 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"money":{"per":10,"kind":"trade","fromCents":80},"promptText":"How many dimes make 80 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0398",
@@ -16162,7 +16162,7 @@ export const ITEMS = [
     structureType: "coinsForAmountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"money":{"per":5,"kind":"trade","fromCents":55},"promptText":"? nickels make 55 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"money":{"per":5,"kind":"trade","fromCents":55},"promptText":"How many nickels make 55 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0399",
@@ -16172,7 +16172,7 @@ export const ITEMS = [
     structureType: "coinsForAmountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"money":{"per":10,"kind":"trade","fromCents":90},"promptText":"? dimes make 90 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"money":{"per":10,"kind":"trade","fromCents":90},"promptText":"__ dimes make 90 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0400",
@@ -16182,7 +16182,7 @@ export const ITEMS = [
     structureType: "coinsForAmountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"money":{"per":5,"kind":"trade","fromCents":65},"promptText":"? nickels make 65 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"money":{"per":5,"kind":"trade","fromCents":65},"promptText":"__ nickels make 65 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0401",
@@ -16192,7 +16192,7 @@ export const ITEMS = [
     structureType: "coinsForAmountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"per":10,"kind":"trade","fromCents":40},"promptText":"? dimes make 40 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"per":10,"kind":"trade","fromCents":40},"promptText":"How many dimes do you need to make 40 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0402",
@@ -16202,7 +16202,7 @@ export const ITEMS = [
     structureType: "coinsForAmountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"money":{"per":10,"kind":"trade","fromCents":70},"promptText":"? dimes make 70 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"money":{"per":10,"kind":"trade","fromCents":70},"promptText":"How many dimes make 70 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0403",
@@ -16212,7 +16212,7 @@ export const ITEMS = [
     structureType: "coinsForAmountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"money":{"per":5,"kind":"trade","fromCents":85},"promptText":"? nickels make 85 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"money":{"per":5,"kind":"trade","fromCents":85},"promptText":"How many nickels do you need to make 85 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0404",
@@ -16222,7 +16222,7 @@ export const ITEMS = [
     structureType: "coinsForAmountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"money":{"per":5,"kind":"trade","fromCents":95},"promptText":"? nickels make 95 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"money":{"per":5,"kind":"trade","fromCents":95},"promptText":"How many nickels make 95 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0405",
@@ -16232,7 +16232,7 @@ export const ITEMS = [
     structureType: "coinsForAmountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"per":10,"kind":"trade","fromCents":100},"promptText":"? dimes make 100 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"per":10,"kind":"trade","fromCents":100},"promptText":"__ dimes make 100 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0406",
@@ -16242,7 +16242,7 @@ export const ITEMS = [
     structureType: "coinsForAmountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"per":5,"kind":"trade","fromCents":75},"promptText":"? nickels make 75 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"per":5,"kind":"trade","fromCents":75},"promptText":"__ nickels make 75 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0407",
@@ -16252,7 +16252,7 @@ export const ITEMS = [
     structureType: "coinsForAmountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"per":5,"kind":"trade","fromCents":50},"promptText":"? nickels make 50 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"per":5,"kind":"trade","fromCents":50},"promptText":"How many nickels do you need to make 50 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0408",
@@ -16262,7 +16262,7 @@ export const ITEMS = [
     structureType: "coinsForAmountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"money":{"per":1,"kind":"trade","fromCents":25},"promptText":"? pennies make 25 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"money":{"per":1,"kind":"trade","fromCents":25},"promptText":"__ pennies make 25 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0409",
@@ -16272,7 +16272,7 @@ export const ITEMS = [
     structureType: "coinsForAmountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"money":{"per":5,"kind":"trade","fromCents":60},"promptText":"? nickels make 60 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"money":{"per":5,"kind":"trade","fromCents":60},"promptText":"How many nickels make 60 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0410",
@@ -16282,7 +16282,7 @@ export const ITEMS = [
     structureType: "coinsForAmountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"money":{"per":5,"kind":"trade","fromCents":90},"promptText":"? nickels make 90 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"money":{"per":5,"kind":"trade","fromCents":90},"promptText":"__ nickels make 90 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0411",
@@ -16292,7 +16292,7 @@ export const ITEMS = [
     structureType: "coinsForAmountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"per":5,"kind":"trade","fromCents":30},"promptText":"? nickels make 30 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"per":5,"kind":"trade","fromCents":30},"promptText":"How many nickels do you need to make 30 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0412",
@@ -16302,7 +16302,7 @@ export const ITEMS = [
     structureType: "coinsForAmountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"money":{"per":5,"kind":"trade","fromCents":80},"promptText":"? nickels make 80 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"money":{"per":5,"kind":"trade","fromCents":80},"promptText":"How many nickels make 80 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0413",
@@ -16312,7 +16312,7 @@ export const ITEMS = [
     structureType: "coinsForAmountMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"money":{"per":5,"kind":"trade","fromCents":100},"promptText":"? nickels make 100 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"money":{"per":5,"kind":"trade","fromCents":100},"promptText":"__ nickels make 100 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0414",
@@ -16322,7 +16322,7 @@ export const ITEMS = [
     structureType: "tradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"per":25,"kind":"trade","fromCents":100},"promptText":"$1 = ? quarters"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"per":25,"kind":"trade","fromCents":100},"promptText":"$1 = __ quarters"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0415",
@@ -16342,7 +16342,7 @@ export const ITEMS = [
     structureType: "tradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"money":{"per":5,"kind":"trade","fromCents":100},"promptText":"$1 = ? nickels"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"money":{"per":5,"kind":"trade","fromCents":100},"promptText":"How many nickels make $1?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0417",
@@ -16352,7 +16352,7 @@ export const ITEMS = [
     structureType: "tradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"money":{"per":25,"kind":"trade","fromCents":200},"promptText":"$2 = ? quarters"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"money":{"per":25,"kind":"trade","fromCents":200},"promptText":"How many quarters make $2?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0418",
@@ -16362,7 +16362,7 @@ export const ITEMS = [
     structureType: "tradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"per":25,"kind":"trade","fromCents":125},"promptText":"$1 and 1 quarter = ? quarters"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"per":25,"kind":"trade","fromCents":125},"promptText":"$1 and 1 quarter = __ quarters"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0419",
@@ -16382,7 +16382,7 @@ export const ITEMS = [
     structureType: "tradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"money":{"per":10,"kind":"trade","fromCents":120},"promptText":"$1 and 2 dimes = ? dimes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"money":{"per":10,"kind":"trade","fromCents":120},"promptText":"$1 and 2 dimes = __ dimes"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0421",
@@ -16392,7 +16392,7 @@ export const ITEMS = [
     structureType: "tradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"money":{"per":25,"kind":"trade","fromCents":300},"promptText":"$3 = ? quarters"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"money":{"per":25,"kind":"trade","fromCents":300},"promptText":"$3 = __ quarters"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0422",
@@ -16402,7 +16402,7 @@ export const ITEMS = [
     structureType: "tradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"money":{"per":10,"kind":"trade","fromCents":110},"promptText":"$1 and 1 dime = ? dimes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"money":{"per":10,"kind":"trade","fromCents":110},"promptText":"$1 and 1 dime = __ dimes"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0423",
@@ -16412,7 +16412,7 @@ export const ITEMS = [
     structureType: "tradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"per":25,"kind":"trade","fromCents":250},"promptText":"$2 and 2 quarters = ? quarters"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"per":25,"kind":"trade","fromCents":250},"promptText":"$2 and 2 quarters = __ quarters"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0424",
@@ -16422,7 +16422,7 @@ export const ITEMS = [
     structureType: "tradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"money":{"per":5,"kind":"trade","fromCents":120},"promptText":"$1 and 4 nickels = ? nickels"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"money":{"per":5,"kind":"trade","fromCents":120},"promptText":"$1 and 4 nickels = __ nickels"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0425",
@@ -16442,7 +16442,7 @@ export const ITEMS = [
     structureType: "tradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"money":{"per":5,"kind":"trade","fromCents":105},"promptText":"$1 and 1 nickel = ? nickels"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"money":{"per":5,"kind":"trade","fromCents":105},"promptText":"$1 and 1 nickel = __ nickels"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0427",
@@ -16452,7 +16452,7 @@ export const ITEMS = [
     structureType: "tradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"money":{"per":10,"kind":"trade","fromCents":210},"promptText":"$2 and 1 dime = ? dimes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"money":{"per":10,"kind":"trade","fromCents":210},"promptText":"How many dimes make $2 and 1 dime?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0428",
@@ -16462,7 +16462,7 @@ export const ITEMS = [
     structureType: "tradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"money":{"per":25,"kind":"trade","fromCents":400},"promptText":"$4 = ? quarters"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"money":{"per":25,"kind":"trade","fromCents":400},"promptText":"How many quarters make $4?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0429",
@@ -16472,7 +16472,7 @@ export const ITEMS = [
     structureType: "tradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"money":{"per":10,"kind":"trade","fromCents":130},"promptText":"$1 and 3 dimes = ? dimes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"money":{"per":10,"kind":"trade","fromCents":130},"promptText":"How many dimes make $1 and 3 dimes?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0430",
@@ -16482,7 +16482,7 @@ export const ITEMS = [
     structureType: "tradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":43,"display":{"money":{"per":5,"kind":"trade","fromCents":215},"promptText":"$2 and 3 nickels = ? nickels"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":43,"display":{"money":{"per":5,"kind":"trade","fromCents":215},"promptText":"How many nickels make $2 and 3 nickels?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0431",
@@ -16492,7 +16492,7 @@ export const ITEMS = [
     structureType: "tradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"money":{"per":25,"kind":"trade","fromCents":500},"promptText":"$5 = ? quarters"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"money":{"per":25,"kind":"trade","fromCents":500},"promptText":"$5 = __ quarters"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0432",
@@ -16502,7 +16502,7 @@ export const ITEMS = [
     structureType: "tradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"per":25,"kind":"trade","fromCents":150},"promptText":"$1 and 2 quarters = ? quarters"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"per":25,"kind":"trade","fromCents":150},"promptText":"How many quarters make $1 and 2 quarters?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0433",
@@ -16522,7 +16522,7 @@ export const ITEMS = [
     structureType: "tradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"money":{"per":10,"kind":"trade","fromCents":240},"promptText":"$2 and 4 dimes = ? dimes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"money":{"per":10,"kind":"trade","fromCents":240},"promptText":"$2 and 4 dimes = __ dimes"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0435",
@@ -16532,7 +16532,7 @@ export const ITEMS = [
     structureType: "tradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"money":{"per":5,"kind":"trade","fromCents":140},"promptText":"$1 and 8 nickels = ? nickels"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"money":{"per":5,"kind":"trade","fromCents":140},"promptText":"$1 and 8 nickels = __ nickels"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0436",
@@ -16552,7 +16552,7 @@ export const ITEMS = [
     structureType: "tradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"money":{"per":25,"kind":"trade","fromCents":325},"promptText":"$3 and 1 quarter = ? quarters"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"money":{"per":25,"kind":"trade","fromCents":325},"promptText":"How many quarters make $3 and 1 quarter?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0438",
@@ -16562,7 +16562,7 @@ export const ITEMS = [
     structureType: "tradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"money":{"per":10,"kind":"trade","fromCents":220},"promptText":"$2 and 2 dimes = ? dimes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"money":{"per":10,"kind":"trade","fromCents":220},"promptText":"How many dimes make $2 and 2 dimes?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0439",
@@ -16572,7 +16572,7 @@ export const ITEMS = [
     structureType: "tradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"money":{"per":5,"kind":"trade","fromCents":145},"promptText":"$1 and 9 nickels = ? nickels"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"money":{"per":5,"kind":"trade","fromCents":145},"promptText":"How many nickels make $1 and 9 nickels?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0440",
@@ -16582,7 +16582,7 @@ export const ITEMS = [
     structureType: "coinsForAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"per":25,"kind":"trade","fromCents":125},"promptText":"? quarters make 125 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"per":25,"kind":"trade","fromCents":125},"promptText":"How many quarters make 125 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0441",
@@ -16592,7 +16592,7 @@ export const ITEMS = [
     structureType: "coinsForAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"per":25,"kind":"trade","fromCents":150},"promptText":"? quarters make 150 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"per":25,"kind":"trade","fromCents":150},"promptText":"__ quarters make 150 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0442",
@@ -16602,7 +16602,7 @@ export const ITEMS = [
     structureType: "coinsForAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"money":{"per":25,"kind":"trade","fromCents":200},"promptText":"? quarters make 200 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"money":{"per":25,"kind":"trade","fromCents":200},"promptText":"How many quarters do you need to make 200 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0443",
@@ -16612,7 +16612,7 @@ export const ITEMS = [
     structureType: "coinsForAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"money":{"per":10,"kind":"trade","fromCents":110},"promptText":"? dimes make 110 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"money":{"per":10,"kind":"trade","fromCents":110},"promptText":"How many dimes make 110 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0444",
@@ -16622,7 +16622,7 @@ export const ITEMS = [
     structureType: "coinsForAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"money":{"per":10,"kind":"trade","fromCents":130},"promptText":"? dimes make 130 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"money":{"per":10,"kind":"trade","fromCents":130},"promptText":"__ dimes make 130 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0445",
@@ -16632,7 +16632,7 @@ export const ITEMS = [
     structureType: "coinsForAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"money":{"per":25,"kind":"trade","fromCents":175},"promptText":"? quarters make 175 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"money":{"per":25,"kind":"trade","fromCents":175},"promptText":"How many quarters make 175 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0446",
@@ -16642,7 +16642,7 @@ export const ITEMS = [
     structureType: "coinsForAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"money":{"per":10,"kind":"trade","fromCents":160},"promptText":"? dimes make 160 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"money":{"per":10,"kind":"trade","fromCents":160},"promptText":"How many dimes do you need to make 160 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0447",
@@ -16652,7 +16652,7 @@ export const ITEMS = [
     structureType: "coinsForAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"money":{"per":25,"kind":"trade","fromCents":225},"promptText":"? quarters make 225 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"money":{"per":25,"kind":"trade","fromCents":225},"promptText":"__ quarters make 225 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0448",
@@ -16662,7 +16662,7 @@ export const ITEMS = [
     structureType: "coinsForAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"money":{"per":10,"kind":"trade","fromCents":140},"promptText":"? dimes make 140 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"money":{"per":10,"kind":"trade","fromCents":140},"promptText":"How many dimes make 140 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0449",
@@ -16672,7 +16672,7 @@ export const ITEMS = [
     structureType: "coinsForAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"per":25,"kind":"trade","fromCents":250},"promptText":"? quarters make 250 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"per":25,"kind":"trade","fromCents":250},"promptText":"How many quarters do you need to make 250 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0450",
@@ -16682,7 +16682,7 @@ export const ITEMS = [
     structureType: "coinsForAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"money":{"per":10,"kind":"trade","fromCents":190},"promptText":"? dimes make 190 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"money":{"per":10,"kind":"trade","fromCents":190},"promptText":"__ dimes make 190 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0451",
@@ -16692,7 +16692,7 @@ export const ITEMS = [
     structureType: "coinsForAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"money":{"per":25,"kind":"trade","fromCents":300},"promptText":"? quarters make 300 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"money":{"per":25,"kind":"trade","fromCents":300},"promptText":"How many quarters make 300 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0452",
@@ -16702,7 +16702,7 @@ export const ITEMS = [
     structureType: "coinsForAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"money":{"per":10,"kind":"trade","fromCents":210},"promptText":"? dimes make 210 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"money":{"per":10,"kind":"trade","fromCents":210},"promptText":"How many dimes do you need to make 210 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0453",
@@ -16712,7 +16712,7 @@ export const ITEMS = [
     structureType: "coinsForAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"money":{"per":25,"kind":"trade","fromCents":275},"promptText":"? quarters make 275 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"money":{"per":25,"kind":"trade","fromCents":275},"promptText":"__ quarters make 275 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0454",
@@ -16722,7 +16722,7 @@ export const ITEMS = [
     structureType: "coinsForAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"money":{"per":10,"kind":"trade","fromCents":230},"promptText":"? dimes make 230 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"money":{"per":10,"kind":"trade","fromCents":230},"promptText":"How many dimes make 230 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0455",
@@ -16732,7 +16732,7 @@ export const ITEMS = [
     structureType: "coinsForAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"money":{"per":25,"kind":"trade","fromCents":350},"promptText":"? quarters make 350 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"money":{"per":25,"kind":"trade","fromCents":350},"promptText":"How many quarters do you need to make 350 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0456",
@@ -16742,7 +16742,7 @@ export const ITEMS = [
     structureType: "coinsForAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"money":{"per":10,"kind":"trade","fromCents":180},"promptText":"? dimes make 180 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"money":{"per":10,"kind":"trade","fromCents":180},"promptText":"__ dimes make 180 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0457",
@@ -16752,7 +16752,7 @@ export const ITEMS = [
     structureType: "coinsForAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"money":{"per":25,"kind":"trade","fromCents":400},"promptText":"? quarters make 400 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"money":{"per":25,"kind":"trade","fromCents":400},"promptText":"How many quarters make 400 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0458",
@@ -16762,7 +16762,7 @@ export const ITEMS = [
     structureType: "coinsForAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"money":{"per":10,"kind":"trade","fromCents":260},"promptText":"? dimes make 260 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"money":{"per":10,"kind":"trade","fromCents":260},"promptText":"How many dimes do you need to make 260 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0459",
@@ -16772,7 +16772,7 @@ export const ITEMS = [
     structureType: "coinsForAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"money":{"per":25,"kind":"trade","fromCents":325},"promptText":"? quarters make 325 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"money":{"per":25,"kind":"trade","fromCents":325},"promptText":"__ quarters make 325 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0460",
@@ -16782,7 +16782,7 @@ export const ITEMS = [
     structureType: "coinsForAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"money":{"per":10,"kind":"trade","fromCents":170},"promptText":"? dimes make 170 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"money":{"per":10,"kind":"trade","fromCents":170},"promptText":"How many dimes make 170 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0461",
@@ -16792,7 +16792,7 @@ export const ITEMS = [
     structureType: "coinsForAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"per":25,"kind":"trade","fromCents":375},"promptText":"? quarters make 375 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"per":25,"kind":"trade","fromCents":375},"promptText":"How many quarters do you need to make 375 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0462",
@@ -16802,7 +16802,7 @@ export const ITEMS = [
     structureType: "coinsForAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"money":{"per":10,"kind":"trade","fromCents":220},"promptText":"? dimes make 220 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"money":{"per":10,"kind":"trade","fromCents":220},"promptText":"__ dimes make 220 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0463",
@@ -16812,7 +16812,7 @@ export const ITEMS = [
     structureType: "coinsForAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"money":{"per":25,"kind":"trade","fromCents":425},"promptText":"? quarters make 425 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"money":{"per":25,"kind":"trade","fromCents":425},"promptText":"How many quarters make 425 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0464",
@@ -16822,7 +16822,7 @@ export const ITEMS = [
     structureType: "coinsForAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"money":{"per":10,"kind":"trade","fromCents":240},"promptText":"? dimes make 240 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"money":{"per":10,"kind":"trade","fromCents":240},"promptText":"How many dimes do you need to make 240 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0465",
@@ -16832,7 +16832,7 @@ export const ITEMS = [
     structureType: "coinsForAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"money":{"per":25,"kind":"trade","fromCents":450},"promptText":"? quarters make 450 cents"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"money":{"per":25,"kind":"trade","fromCents":450},"promptText":"__ quarters make 450 cents."},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0466",
@@ -16842,7 +16842,7 @@ export const ITEMS = [
     structureType: "fewestTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"kind":"fewest","cents":7},"promptText":"Fewest coins for 7 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"kind":"fewest","cents":7},"promptText":"What is the fewest number of coins that make 7 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0467",
@@ -16852,7 +16852,7 @@ export const ITEMS = [
     structureType: "fewestTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"kind":"fewest","cents":12},"promptText":"Fewest coins for 12 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"kind":"fewest","cents":12},"promptText":"Make 12 cents with as few coins as you can. How many coins do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0468",
@@ -16862,7 +16862,7 @@ export const ITEMS = [
     structureType: "fewestTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"kind":"fewest","cents":16},"promptText":"Fewest coins for 16 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"kind":"fewest","cents":16},"promptText":"What is the smallest number of coins you can use to make 16 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0469",
@@ -16872,7 +16872,7 @@ export const ITEMS = [
     structureType: "fewestTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"kind":"fewest","cents":6},"promptText":"Fewest coins for 6 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"kind":"fewest","cents":6},"promptText":"What is the fewest number of coins that make 6 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0470",
@@ -16882,7 +16882,7 @@ export const ITEMS = [
     structureType: "fewestTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"kind":"fewest","cents":11},"promptText":"Fewest coins for 11 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"kind":"fewest","cents":11},"promptText":"Make 11 cents with as few coins as you can. How many coins do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0471",
@@ -16892,7 +16892,7 @@ export const ITEMS = [
     structureType: "fewestTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"kind":"fewest","cents":17},"promptText":"Fewest coins for 17 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"kind":"fewest","cents":17},"promptText":"What is the smallest number of coins you can use to make 17 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0472",
@@ -16902,7 +16902,7 @@ export const ITEMS = [
     structureType: "fewestTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"kind":"fewest","cents":13},"promptText":"Fewest coins for 13 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"kind":"fewest","cents":13},"promptText":"What is the fewest number of coins that make 13 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0473",
@@ -16912,7 +16912,7 @@ export const ITEMS = [
     structureType: "fewestTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"kind":"fewest","cents":8},"promptText":"Fewest coins for 8 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"kind":"fewest","cents":8},"promptText":"Make 8 cents with as few coins as you can. How many coins do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0474",
@@ -16922,7 +16922,7 @@ export const ITEMS = [
     structureType: "fewestTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"kind":"fewest","cents":19},"promptText":"Fewest coins for 19 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"kind":"fewest","cents":19},"promptText":"What is the smallest number of coins you can use to make 19 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0475",
@@ -16932,7 +16932,7 @@ export const ITEMS = [
     structureType: "fewestTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"kind":"fewest","cents":14},"promptText":"Fewest coins for 14 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"kind":"fewest","cents":14},"promptText":"What is the fewest number of coins that make 14 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0476",
@@ -16942,7 +16942,7 @@ export const ITEMS = [
     structureType: "fewestTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"kind":"fewest","cents":3},"promptText":"Fewest coins for 3 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"kind":"fewest","cents":3},"promptText":"What is the fewest number of coins that make 3 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0477",
@@ -16952,7 +16952,7 @@ export const ITEMS = [
     structureType: "fewestTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"kind":"fewest","cents":18},"promptText":"Fewest coins for 18 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"kind":"fewest","cents":18},"promptText":"What is the smallest number of coins you can use to make 18 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0478",
@@ -16962,7 +16962,7 @@ export const ITEMS = [
     structureType: "fewestTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"kind":"fewest","cents":9},"promptText":"Fewest coins for 9 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"kind":"fewest","cents":9},"promptText":"What is the fewest number of coins that make 9 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0479",
@@ -16972,7 +16972,7 @@ export const ITEMS = [
     structureType: "fewestTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"kind":"fewest","cents":2},"promptText":"Fewest coins for 2 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"kind":"fewest","cents":2},"promptText":"What is the fewest number of coins that make 2 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0480",
@@ -16982,7 +16982,7 @@ export const ITEMS = [
     structureType: "fewestTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"kind":"fewest","cents":15},"promptText":"Fewest coins for 15 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"kind":"fewest","cents":15},"promptText":"What is the smallest number of coins you can use to make 15 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0481",
@@ -16992,7 +16992,7 @@ export const ITEMS = [
     structureType: "fewestTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"kind":"fewest","cents":4},"promptText":"Fewest coins for 4 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"kind":"fewest","cents":4},"promptText":"What is the fewest number of coins that make 4 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0482",
@@ -17002,7 +17002,7 @@ export const ITEMS = [
     structureType: "fewestTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"kind":"fewest","cents":20},"promptText":"Fewest coins for 20 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"kind":"fewest","cents":20},"promptText":"Make 20 cents with as few coins as you can. How many coins do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0483",
@@ -17012,7 +17012,7 @@ export const ITEMS = [
     structureType: "fewestTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"money":{"kind":"fewest","cents":10},"promptText":"Fewest coins for 10 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"money":{"kind":"fewest","cents":10},"promptText":"What is the smallest number of coins you can use to make 10 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0484",
@@ -17022,7 +17022,7 @@ export const ITEMS = [
     structureType: "fewestTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"money":{"kind":"fewest","cents":5},"promptText":"Fewest coins for 5 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"money":{"kind":"fewest","cents":5},"promptText":"What is the fewest number of coins that make 5 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0485",
@@ -17032,7 +17032,7 @@ export const ITEMS = [
     structureType: "fewestTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"money":{"kind":"fewest","cents":1},"promptText":"Fewest coins for 1 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"money":{"kind":"fewest","cents":1},"promptText":"What is the fewest number of coins that make 1 cent?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0486",
@@ -17042,7 +17042,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[7,6]},"promptText":"7c toy + 6c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[7,6]},"promptText":"7¢ + 6¢ = __¢"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0487",
@@ -17052,7 +17052,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[8,9]},"promptText":"8c toy + 9c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[8,9]},"promptText":"One toy costs 8 cents. Another toy costs 9 cents. How many cents do the two toys cost in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0488",
@@ -17062,7 +17062,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[5,12]},"promptText":"5c toy + 12c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[5,12]},"promptText":"What is 5¢ + 12¢?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0489",
@@ -17072,7 +17072,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[6,11]},"promptText":"6c toy + 11c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[6,11]},"promptText":"6¢ + 11¢ = __¢"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0490",
@@ -17082,7 +17082,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[9,4]},"promptText":"9c toy + 4c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[9,4]},"promptText":"One toy costs 9 cents. Another toy costs 4 cents. How many cents do the two toys cost in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0491",
@@ -17092,7 +17092,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[12,7]},"promptText":"12c toy + 7c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[12,7]},"promptText":"What is 12¢ + 7¢?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0492",
@@ -17102,7 +17102,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[3,14]},"promptText":"3c toy + 14c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[3,14]},"promptText":"3¢ + 14¢ = __¢"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0493",
@@ -17112,7 +17112,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[8,5]},"promptText":"8c toy + 5c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[8,5]},"promptText":"One toy costs 8 cents. Another toy costs 5 cents. How many cents do the two toys cost in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0494",
@@ -17122,7 +17122,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[11,6]},"promptText":"11c toy + 6c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[11,6]},"promptText":"What is 11¢ + 6¢?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0495",
@@ -17132,7 +17132,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[4,13]},"promptText":"4c toy + 13c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[4,13]},"promptText":"4¢ + 13¢ = __¢"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0496",
@@ -17142,7 +17142,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[7,9]},"promptText":"7c toy + 9c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[7,9]},"promptText":"One toy costs 7 cents. Another toy costs 9 cents. How many cents do the two toys cost in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0497",
@@ -17152,7 +17152,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[15,3]},"promptText":"15c toy + 3c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[15,3]},"promptText":"What is 15¢ + 3¢?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0498",
@@ -17162,7 +17162,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[6,6]},"promptText":"6c toy + 6c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[6,6]},"promptText":"6¢ + 6¢ = __¢"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0499",
@@ -17172,7 +17172,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[9,8]},"promptText":"9c toy + 8c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[9,8]},"promptText":"One toy costs 9 cents. Another toy costs 8 cents. How many cents do the two toys cost in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0500",
@@ -17182,7 +17182,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[12,5]},"promptText":"12c toy + 5c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[12,5]},"promptText":"What is 12¢ + 5¢?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0501",
@@ -17192,7 +17192,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[2,16]},"promptText":"2c toy + 16c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[2,16]},"promptText":"2¢ + 16¢ = __¢"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0502",
@@ -17202,7 +17202,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[10,7]},"promptText":"10c toy + 7c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[10,7]},"promptText":"One toy costs 10 cents. Another toy costs 7 cents. How many cents do the two toys cost in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0503",
@@ -17212,7 +17212,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[5,9]},"promptText":"5c toy + 9c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[5,9]},"promptText":"What is 5¢ + 9¢?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0504",
@@ -17222,7 +17222,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[13,4]},"promptText":"13c toy + 4c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[13,4]},"promptText":"13¢ + 4¢ = __¢"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0505",
@@ -17232,7 +17232,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[8,8]},"promptText":"8c toy + 8c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[8,8]},"promptText":"One toy costs 8 cents. Another toy costs 8 cents. How many cents do the two toys cost in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0506",
@@ -17242,7 +17242,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[14,5]},"promptText":"14c toy + 5c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[14,5]},"promptText":"What is 14¢ + 5¢?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0507",
@@ -17252,7 +17252,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[7,11]},"promptText":"7c toy + 11c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[7,11]},"promptText":"7¢ + 11¢ = __¢"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0508",
@@ -17262,7 +17262,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[9,9]},"promptText":"9c toy + 9c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[9,9]},"promptText":"One toy costs 9 cents. Another toy costs 9 cents. How many cents do the two toys cost in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0509",
@@ -17272,7 +17272,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[6,13]},"promptText":"6c toy + 13c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[6,13]},"promptText":"What is 6¢ + 13¢?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0510",
@@ -17282,7 +17282,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[11,8]},"promptText":"11c toy + 8c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[11,8]},"promptText":"11¢ + 8¢ = __¢"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0511",
@@ -17292,7 +17292,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[4,15]},"promptText":"4c toy + 15c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[4,15]},"promptText":"One toy costs 4 cents. Another toy costs 15 cents. How many cents do the two toys cost in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0512",
@@ -17302,7 +17302,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[3,9]},"promptText":"3c toy + 9c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[3,9]},"promptText":"What is 3¢ + 9¢?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0513",
@@ -17312,7 +17312,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[5,7]},"promptText":"5c toy + 7c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[5,7]},"promptText":"5¢ + 7¢ = __¢"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0514",
@@ -17322,7 +17322,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[14,3]},"promptText":"14c toy + 3c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[14,3]},"promptText":"One toy costs 14 cents. Another toy costs 3 cents. How many cents do the two toys cost in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0515",
@@ -17332,7 +17332,7 @@ export const ITEMS = [
     structureType: "twoPriceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[17,2]},"promptText":"17c toy + 2c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[17,2]},"promptText":"What is 17¢ + 2¢?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0516",
@@ -17342,7 +17342,7 @@ export const ITEMS = [
     structureType: "fewestMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"kind":"fewest","cents":26},"promptText":"Fewest coins for 26 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"kind":"fewest","cents":26},"promptText":"What is the fewest number of coins that make 26 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0517",
@@ -17352,7 +17352,7 @@ export const ITEMS = [
     structureType: "fewestMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"kind":"fewest","cents":31},"promptText":"Fewest coins for 31 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"kind":"fewest","cents":31},"promptText":"Make 31 cents with as few coins as you can. How many coins do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0518",
@@ -17362,7 +17362,7 @@ export const ITEMS = [
     structureType: "fewestMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"kind":"fewest","cents":37},"promptText":"Fewest coins for 37 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"kind":"fewest","cents":37},"promptText":"What is the smallest number of coins you can use to make 37 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0519",
@@ -17372,7 +17372,7 @@ export const ITEMS = [
     structureType: "fewestMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"kind":"fewest","cents":42},"promptText":"Fewest coins for 42 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"kind":"fewest","cents":42},"promptText":"What is the fewest number of coins that make 42 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0520",
@@ -17382,7 +17382,7 @@ export const ITEMS = [
     structureType: "fewestMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"kind":"fewest","cents":48},"promptText":"Fewest coins for 48 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"kind":"fewest","cents":48},"promptText":"Make 48 cents with as few coins as you can. How many coins do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0521",
@@ -17392,7 +17392,7 @@ export const ITEMS = [
     structureType: "fewestMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"kind":"fewest","cents":53},"promptText":"Fewest coins for 53 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"kind":"fewest","cents":53},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the smallest number of coins you can use to make 53 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0522",
@@ -17402,7 +17402,7 @@ export const ITEMS = [
     structureType: "fewestMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"money":{"kind":"fewest","cents":59},"promptText":"Fewest coins for 59 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"money":{"kind":"fewest","cents":59},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 59 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0523",
@@ -17412,7 +17412,7 @@ export const ITEMS = [
     structureType: "fewestMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"money":{"kind":"fewest","cents":64},"promptText":"Fewest coins for 64 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"money":{"kind":"fewest","cents":64},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 64 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0524",
@@ -17422,7 +17422,7 @@ export const ITEMS = [
     structureType: "fewestMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"kind":"fewest","cents":67},"promptText":"Fewest coins for 67 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"kind":"fewest","cents":67},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the smallest number of coins you can use to make 67 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0525",
@@ -17432,7 +17432,7 @@ export const ITEMS = [
     structureType: "fewestMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"kind":"fewest","cents":72},"promptText":"Fewest coins for 72 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"kind":"fewest","cents":72},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 72 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0526",
@@ -17442,7 +17442,7 @@ export const ITEMS = [
     structureType: "fewestMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"kind":"fewest","cents":78},"promptText":"Fewest coins for 78 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"kind":"fewest","cents":78},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 78 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0527",
@@ -17452,7 +17452,7 @@ export const ITEMS = [
     structureType: "fewestMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"money":{"kind":"fewest","cents":83},"promptText":"Fewest coins for 83 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"money":{"kind":"fewest","cents":83},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the smallest number of coins you can use to make 83 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0528",
@@ -17462,7 +17462,7 @@ export const ITEMS = [
     structureType: "fewestMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"kind":"fewest","cents":87},"promptText":"Fewest coins for 87 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"kind":"fewest","cents":87},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 87 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0529",
@@ -17472,7 +17472,7 @@ export const ITEMS = [
     structureType: "fewestMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"kind":"fewest","cents":91},"promptText":"Fewest coins for 91 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"kind":"fewest","cents":91},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 91 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0530",
@@ -17482,7 +17482,7 @@ export const ITEMS = [
     structureType: "fewestMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"money":{"kind":"fewest","cents":94},"promptText":"Fewest coins for 94 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"money":{"kind":"fewest","cents":94},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the smallest number of coins you can use to make 94 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0531",
@@ -17492,7 +17492,7 @@ export const ITEMS = [
     structureType: "fewestMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"money":{"kind":"fewest","cents":99},"promptText":"Fewest coins for 99 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"money":{"kind":"fewest","cents":99},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 99 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0532",
@@ -17502,7 +17502,7 @@ export const ITEMS = [
     structureType: "fewestMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"kind":"fewest","cents":33},"promptText":"Fewest coins for 33 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"kind":"fewest","cents":33},"promptText":"Make 33 cents with as few coins as you can. How many coins do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0533",
@@ -17512,7 +17512,7 @@ export const ITEMS = [
     structureType: "fewestMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"kind":"fewest","cents":41},"promptText":"Fewest coins for 41 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"kind":"fewest","cents":41},"promptText":"What is the smallest number of coins you can use to make 41 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0534",
@@ -17522,7 +17522,7 @@ export const ITEMS = [
     structureType: "fewestMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"kind":"fewest","cents":57},"promptText":"Fewest coins for 57 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"kind":"fewest","cents":57},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 57 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0535",
@@ -17532,7 +17532,7 @@ export const ITEMS = [
     structureType: "fewestMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"kind":"fewest","cents":62},"promptText":"Fewest coins for 62 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"kind":"fewest","cents":62},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 62 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0536",
@@ -17542,7 +17542,7 @@ export const ITEMS = [
     structureType: "fewestMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"kind":"fewest","cents":76},"promptText":"Fewest coins for 76 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"kind":"fewest","cents":76},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the smallest number of coins you can use to make 76 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0537",
@@ -17552,7 +17552,7 @@ export const ITEMS = [
     structureType: "fewestMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"money":{"kind":"fewest","cents":88},"promptText":"Fewest coins for 88 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"money":{"kind":"fewest","cents":88},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 88 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0538",
@@ -17562,7 +17562,7 @@ export const ITEMS = [
     structureType: "fewestMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"kind":"fewest","cents":29},"promptText":"Fewest coins for 29 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"kind":"fewest","cents":29},"promptText":"Make 29 cents with as few coins as you can. How many coins do you need?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0539",
@@ -17572,7 +17572,7 @@ export const ITEMS = [
     structureType: "fewestMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"kind":"fewest","cents":46},"promptText":"Fewest coins for 46 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"kind":"fewest","cents":46},"promptText":"What is the smallest number of coins you can use to make 46 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0540",
@@ -17582,7 +17582,7 @@ export const ITEMS = [
     structureType: "fewestMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"money":{"kind":"fewest","cents":68},"promptText":"Fewest coins for 68 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"money":{"kind":"fewest","cents":68},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 68 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0541",
@@ -17592,7 +17592,7 @@ export const ITEMS = [
     structureType: "fewestMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"kind":"fewest","cents":82},"promptText":"Fewest coins for 82 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"kind":"fewest","cents":82},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 82 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0542",
@@ -17602,7 +17602,7 @@ export const ITEMS = [
     structureType: "twoPriceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"counting":{"kind":"sum","parts":[26,31]},"promptText":"26c toy + 31c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"counting":{"kind":"sum","parts":[26,31]},"promptText":"26¢ + 31¢ = __¢"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0543",
@@ -17612,7 +17612,7 @@ export const ITEMS = [
     structureType: "twoPriceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":79,"display":{"counting":{"kind":"sum","parts":[37,42]},"promptText":"37c toy + 42c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":79,"display":{"counting":{"kind":"sum","parts":[37,42]},"promptText":"One toy costs 37 cents. Another toy costs 42 cents. How many cents do the two toys cost in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0544",
@@ -17622,7 +17622,7 @@ export const ITEMS = [
     structureType: "twoPriceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":71,"display":{"counting":{"kind":"sum","parts":[48,23]},"promptText":"48c toy + 23c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":71,"display":{"counting":{"kind":"sum","parts":[48,23]},"promptText":"What is 48¢ + 23¢?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0545",
@@ -17632,7 +17632,7 @@ export const ITEMS = [
     structureType: "twoPriceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"counting":{"kind":"sum","parts":[53,19]},"promptText":"53c toy + 19c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"counting":{"kind":"sum","parts":[53,19]},"promptText":"53¢ + 19¢ = __¢"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0546",
@@ -17642,7 +17642,7 @@ export const ITEMS = [
     structureType: "twoPriceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":79,"display":{"counting":{"kind":"sum","parts":[34,45]},"promptText":"34c toy + 45c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":79,"display":{"counting":{"kind":"sum","parts":[34,45]},"promptText":"One toy costs 34 cents. Another toy costs 45 cents. How many cents do the two toys cost in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0547",
@@ -17652,7 +17652,7 @@ export const ITEMS = [
     structureType: "twoPriceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":93,"display":{"counting":{"kind":"sum","parts":[27,66]},"promptText":"27c toy + 66c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":93,"display":{"counting":{"kind":"sum","parts":[27,66]},"promptText":"What is 27¢ + 66¢?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0548",
@@ -17662,7 +17662,7 @@ export const ITEMS = [
     structureType: "twoPriceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"counting":{"kind":"sum","parts":[58,33]},"promptText":"58c toy + 33c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"counting":{"kind":"sum","parts":[58,33]},"promptText":"58¢ + 33¢ = __¢"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0549",
@@ -17672,7 +17672,7 @@ export const ITEMS = [
     structureType: "twoPriceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"counting":{"kind":"sum","parts":[41,39]},"promptText":"41c toy + 39c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"counting":{"kind":"sum","parts":[41,39]},"promptText":"One toy costs 41 cents. Another toy costs 39 cents. How many cents do the two toys cost in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0550",
@@ -17682,7 +17682,7 @@ export const ITEMS = [
     structureType: "twoPriceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":79,"display":{"counting":{"kind":"sum","parts":[62,17]},"promptText":"62c toy + 17c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":79,"display":{"counting":{"kind":"sum","parts":[62,17]},"promptText":"What is 62¢ + 17¢?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0551",
@@ -17692,7 +17692,7 @@ export const ITEMS = [
     structureType: "twoPriceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":83,"display":{"counting":{"kind":"sum","parts":[29,54]},"promptText":"29c toy + 54c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":83,"display":{"counting":{"kind":"sum","parts":[29,54]},"promptText":"29¢ + 54¢ = __¢"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0552",
@@ -17702,7 +17702,7 @@ export const ITEMS = [
     structureType: "twoPriceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"counting":{"kind":"sum","parts":[46,38]},"promptText":"46c toy + 38c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"counting":{"kind":"sum","parts":[46,38]},"promptText":"One toy costs 46 cents. Another toy costs 38 cents. How many cents do the two toys cost in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0553",
@@ -17712,7 +17712,7 @@ export const ITEMS = [
     structureType: "twoPriceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":79,"display":{"counting":{"kind":"sum","parts":[51,28]},"promptText":"51c toy + 28c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":79,"display":{"counting":{"kind":"sum","parts":[51,28]},"promptText":"What is 51¢ + 28¢?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0554",
@@ -17722,7 +17722,7 @@ export const ITEMS = [
     structureType: "twoPriceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":83,"display":{"counting":{"kind":"sum","parts":[36,47]},"promptText":"36c toy + 47c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":83,"display":{"counting":{"kind":"sum","parts":[36,47]},"promptText":"36¢ + 47¢ = __¢"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0555",
@@ -17732,7 +17732,7 @@ export const ITEMS = [
     structureType: "twoPriceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":87,"display":{"counting":{"kind":"sum","parts":[65,22]},"promptText":"65c toy + 22c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":87,"display":{"counting":{"kind":"sum","parts":[65,22]},"promptText":"One toy costs 65 cents. Another toy costs 22 cents. How many cents do the two toys cost in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0556",
@@ -17742,7 +17742,7 @@ export const ITEMS = [
     structureType: "twoPriceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":92,"display":{"counting":{"kind":"sum","parts":[43,49]},"promptText":"43c toy + 49c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":92,"display":{"counting":{"kind":"sum","parts":[43,49]},"promptText":"What is 43¢ + 49¢?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0557",
@@ -17752,7 +17752,7 @@ export const ITEMS = [
     structureType: "twoPriceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"counting":{"kind":"sum","parts":[57,31]},"promptText":"57c toy + 31c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"counting":{"kind":"sum","parts":[57,31]},"promptText":"57¢ + 31¢ = __¢"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0558",
@@ -17762,7 +17762,7 @@ export const ITEMS = [
     structureType: "twoPriceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":92,"display":{"counting":{"kind":"sum","parts":[24,68]},"promptText":"24c toy + 68c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":92,"display":{"counting":{"kind":"sum","parts":[24,68]},"promptText":"One toy costs 24 cents. Another toy costs 68 cents. How many cents do the two toys cost in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0559",
@@ -17772,7 +17772,7 @@ export const ITEMS = [
     structureType: "twoPriceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":83,"display":{"counting":{"kind":"sum","parts":[39,44]},"promptText":"39c toy + 44c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":83,"display":{"counting":{"kind":"sum","parts":[39,44]},"promptText":"What is 39¢ + 44¢?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0560",
@@ -17782,7 +17782,7 @@ export const ITEMS = [
     structureType: "twoPriceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":83,"display":{"counting":{"kind":"sum","parts":[56,27]},"promptText":"56c toy + 27c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":83,"display":{"counting":{"kind":"sum","parts":[56,27]},"promptText":"56¢ + 27¢ = __¢"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0561",
@@ -17792,7 +17792,7 @@ export const ITEMS = [
     structureType: "twoPriceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"counting":{"kind":"sum","parts":[32,59]},"promptText":"32c toy + 59c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"counting":{"kind":"sum","parts":[32,59]},"promptText":"One toy costs 32 cents. Another toy costs 59 cents. How many cents do the two toys cost in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0562",
@@ -17802,7 +17802,7 @@ export const ITEMS = [
     structureType: "twoPriceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"counting":{"kind":"sum","parts":[45,46]},"promptText":"45c toy + 46c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"counting":{"kind":"sum","parts":[45,46]},"promptText":"What is 45¢ + 46¢?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0563",
@@ -17812,7 +17812,7 @@ export const ITEMS = [
     structureType: "twoPriceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"counting":{"kind":"sum","parts":[63,18]},"promptText":"63c toy + 18c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"counting":{"kind":"sum","parts":[63,18]},"promptText":"63¢ + 18¢ = __¢"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0564",
@@ -17822,7 +17822,7 @@ export const ITEMS = [
     structureType: "twoPriceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":89,"display":{"counting":{"kind":"sum","parts":[28,61]},"promptText":"28c toy + 61c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":89,"display":{"counting":{"kind":"sum","parts":[28,61]},"promptText":"One toy costs 28 cents. Another toy costs 61 cents. How many cents do the two toys cost in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0565",
@@ -17832,7 +17832,7 @@ export const ITEMS = [
     structureType: "twoPriceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":86,"display":{"counting":{"kind":"sum","parts":[49,37]},"promptText":"49c toy + 37c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":86,"display":{"counting":{"kind":"sum","parts":[49,37]},"promptText":"What is 49¢ + 37¢?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0566",
@@ -17842,7 +17842,7 @@ export const ITEMS = [
     structureType: "twoPriceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"counting":{"kind":"sum","parts":[55,36]},"promptText":"55c toy + 36c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"counting":{"kind":"sum","parts":[55,36]},"promptText":"55¢ + 36¢ = __¢"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0567",
@@ -17852,7 +17852,7 @@ export const ITEMS = [
     structureType: "twoPriceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":95,"display":{"counting":{"kind":"sum","parts":[21,74]},"promptText":"21c toy + 74c toy = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":95,"display":{"counting":{"kind":"sum","parts":[21,74]},"promptText":"One toy costs 21 cents. Another toy costs 74 cents. How many cents do the two toys cost in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0568",
@@ -17862,7 +17862,7 @@ export const ITEMS = [
     structureType: "fewestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"kind":"fewest","cents":126},"promptText":"Fewest coins for 126 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"kind":"fewest","cents":126},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 126 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0569",
@@ -17872,7 +17872,7 @@ export const ITEMS = [
     structureType: "fewestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"money":{"kind":"fewest","cents":131},"promptText":"Fewest coins for 131 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"money":{"kind":"fewest","cents":131},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 131 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0570",
@@ -17882,7 +17882,7 @@ export const ITEMS = [
     structureType: "fewestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"kind":"fewest","cents":158},"promptText":"Fewest coins for 158 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"kind":"fewest","cents":158},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the smallest number of coins you can use to make 158 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0571",
@@ -17892,7 +17892,7 @@ export const ITEMS = [
     structureType: "fewestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"kind":"fewest","cents":167},"promptText":"Fewest coins for 167 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"kind":"fewest","cents":167},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 167 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0572",
@@ -17902,7 +17902,7 @@ export const ITEMS = [
     structureType: "fewestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"money":{"kind":"fewest","cents":189},"promptText":"Fewest coins for 189 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"money":{"kind":"fewest","cents":189},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 189 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0573",
@@ -17912,7 +17912,7 @@ export const ITEMS = [
     structureType: "fewestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"money":{"kind":"fewest","cents":204},"promptText":"Fewest coins for 204 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"money":{"kind":"fewest","cents":204},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the smallest number of coins you can use to make 204 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0574",
@@ -17922,7 +17922,7 @@ export const ITEMS = [
     structureType: "fewestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"money":{"kind":"fewest","cents":237},"promptText":"Fewest coins for 237 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"money":{"kind":"fewest","cents":237},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 237 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0575",
@@ -17932,7 +17932,7 @@ export const ITEMS = [
     structureType: "fewestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"kind":"fewest","cents":268},"promptText":"Fewest coins for 268 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"kind":"fewest","cents":268},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 268 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0576",
@@ -17942,7 +17942,7 @@ export const ITEMS = [
     structureType: "fewestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"money":{"kind":"fewest","cents":291},"promptText":"Fewest coins for 291 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"money":{"kind":"fewest","cents":291},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the smallest number of coins you can use to make 291 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0577",
@@ -17952,7 +17952,7 @@ export const ITEMS = [
     structureType: "fewestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"kind":"fewest","cents":312},"promptText":"Fewest coins for 312 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"kind":"fewest","cents":312},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 312 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0578",
@@ -17962,7 +17962,7 @@ export const ITEMS = [
     structureType: "fewestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"kind":"fewest","cents":345},"promptText":"Fewest coins for 345 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"kind":"fewest","cents":345},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 345 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0579",
@@ -17972,7 +17972,7 @@ export const ITEMS = [
     structureType: "fewestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"kind":"fewest","cents":178},"promptText":"Fewest coins for 178 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"kind":"fewest","cents":178},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the smallest number of coins you can use to make 178 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0580",
@@ -17982,7 +17982,7 @@ export const ITEMS = [
     structureType: "fewestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"money":{"kind":"fewest","cents":223},"promptText":"Fewest coins for 223 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"money":{"kind":"fewest","cents":223},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 223 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0581",
@@ -17992,7 +17992,7 @@ export const ITEMS = [
     structureType: "fewestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"money":{"kind":"fewest","cents":256},"promptText":"Fewest coins for 256 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"money":{"kind":"fewest","cents":256},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 256 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0582",
@@ -18002,7 +18002,7 @@ export const ITEMS = [
     structureType: "fewestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"money":{"kind":"fewest","cents":289},"promptText":"Fewest coins for 289 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"money":{"kind":"fewest","cents":289},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the smallest number of coins you can use to make 289 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0583",
@@ -18012,7 +18012,7 @@ export const ITEMS = [
     structureType: "fewestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"kind":"fewest","cents":143},"promptText":"Fewest coins for 143 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"kind":"fewest","cents":143},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 143 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0584",
@@ -18022,7 +18022,7 @@ export const ITEMS = [
     structureType: "fewestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"money":{"kind":"fewest","cents":199},"promptText":"Fewest coins for 199 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"money":{"kind":"fewest","cents":199},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 199 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0585",
@@ -18032,7 +18032,7 @@ export const ITEMS = [
     structureType: "fewestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"money":{"kind":"fewest","cents":274},"promptText":"Fewest coins for 274 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"money":{"kind":"fewest","cents":274},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the smallest number of coins you can use to make 274 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0586",
@@ -18042,7 +18042,7 @@ export const ITEMS = [
     structureType: "fewestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"kind":"fewest","cents":307},"promptText":"Fewest coins for 307 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"kind":"fewest","cents":307},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 307 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0587",
@@ -18052,7 +18052,7 @@ export const ITEMS = [
     structureType: "fewestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"kind":"fewest","cents":336},"promptText":"Fewest coins for 336 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"kind":"fewest","cents":336},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 336 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0588",
@@ -18062,7 +18062,7 @@ export const ITEMS = [
     structureType: "fewestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"money":{"kind":"fewest","cents":152},"promptText":"Fewest coins for 152 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"money":{"kind":"fewest","cents":152},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the smallest number of coins you can use to make 152 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0589",
@@ -18072,7 +18072,7 @@ export const ITEMS = [
     structureType: "fewestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"money":{"kind":"fewest","cents":217},"promptText":"Fewest coins for 217 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"money":{"kind":"fewest","cents":217},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 217 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0590",
@@ -18082,7 +18082,7 @@ export const ITEMS = [
     structureType: "fewestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"money":{"kind":"fewest","cents":248},"promptText":"Fewest coins for 248 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"money":{"kind":"fewest","cents":248},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 248 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0591",
@@ -18092,7 +18092,7 @@ export const ITEMS = [
     structureType: "fewestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"kind":"fewest","cents":283},"promptText":"Fewest coins for 283 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"kind":"fewest","cents":283},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the smallest number of coins you can use to make 283 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0592",
@@ -18102,7 +18102,7 @@ export const ITEMS = [
     structureType: "fewestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"money":{"kind":"fewest","cents":319},"promptText":"Fewest coins for 319 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"money":{"kind":"fewest","cents":319},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 319 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0593",
@@ -18112,7 +18112,7 @@ export const ITEMS = [
     structureType: "fewestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"money":{"kind":"fewest","cents":361},"promptText":"Fewest coins for 361 cents = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"money":{"kind":"fewest","cents":361},"promptText":"Use only pennies, nickels, dimes, and quarters. What is the fewest number of coins that make 361 cents?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0594",
@@ -18122,7 +18122,7 @@ export const ITEMS = [
     structureType: "twoPriceBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":257,"display":{"counting":{"kind":"sum","parts":[126,131]},"promptText":"126c item + 131c item = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":257,"display":{"counting":{"kind":"sum","parts":[126,131]},"promptText":"126¢ + 131¢ = __¢"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0595",
@@ -18132,7 +18132,7 @@ export const ITEMS = [
     structureType: "twoPriceBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":225,"display":{"counting":{"kind":"sum","parts":[158,67]},"promptText":"158c item + 67c item = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":225,"display":{"counting":{"kind":"sum","parts":[158,67]},"promptText":"One toy costs 158 cents. Another toy costs 67 cents. How many cents do the two toys cost in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0596",
@@ -18142,7 +18142,7 @@ export const ITEMS = [
     structureType: "twoPriceBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":293,"display":{"counting":{"kind":"sum","parts":[189,104]},"promptText":"189c item + 104c item = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":293,"display":{"counting":{"kind":"sum","parts":[189,104]},"promptText":"What is 189¢ + 104¢?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0597",
@@ -18152,7 +18152,7 @@ export const ITEMS = [
     structureType: "twoPriceBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":305,"display":{"counting":{"kind":"sum","parts":[137,168]},"promptText":"137c item + 168c item = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":305,"display":{"counting":{"kind":"sum","parts":[137,168]},"promptText":"137¢ + 168¢ = __¢"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0598",
@@ -18162,7 +18162,7 @@ export const ITEMS = [
     structureType: "twoPriceBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":314,"display":{"counting":{"kind":"sum","parts":[223,91]},"promptText":"223c item + 91c item = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":314,"display":{"counting":{"kind":"sum","parts":[223,91]},"promptText":"One toy costs 223 cents. Another toy costs 91 cents. How many cents do the two toys cost in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0599",
@@ -18172,7 +18172,7 @@ export const ITEMS = [
     structureType: "twoPriceBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":334,"display":{"counting":{"kind":"sum","parts":[156,178]},"promptText":"156c item + 178c item = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":334,"display":{"counting":{"kind":"sum","parts":[156,178]},"promptText":"What is 156¢ + 178¢?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0600",
@@ -18182,7 +18182,7 @@ export const ITEMS = [
     structureType: "twoPriceBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":328,"display":{"counting":{"kind":"sum","parts":[241,87]},"promptText":"241c item + 87c item = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":328,"display":{"counting":{"kind":"sum","parts":[241,87]},"promptText":"241¢ + 87¢ = __¢"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0601",
@@ -18192,7 +18192,7 @@ export const ITEMS = [
     structureType: "twoPriceBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":273,"display":{"counting":{"kind":"sum","parts":[119,154]},"promptText":"119c item + 154c item = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":273,"display":{"counting":{"kind":"sum","parts":[119,154]},"promptText":"One toy costs 119 cents. Another toy costs 154 cents. How many cents do the two toys cost in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0602",
@@ -18202,7 +18202,7 @@ export const ITEMS = [
     structureType: "twoPriceBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":335,"display":{"counting":{"kind":"sum","parts":[262,73]},"promptText":"262c item + 73c item = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":335,"display":{"counting":{"kind":"sum","parts":[262,73]},"promptText":"What is 262¢ + 73¢?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0603",
@@ -18212,7 +18212,7 @@ export const ITEMS = [
     structureType: "twoPriceBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":334,"display":{"counting":{"kind":"sum","parts":[148,186]},"promptText":"148c item + 186c item = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":334,"display":{"counting":{"kind":"sum","parts":[148,186]},"promptText":"148¢ + 186¢ = __¢"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0604",
@@ -18222,7 +18222,7 @@ export const ITEMS = [
     structureType: "twoPriceBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":313,"display":{"counting":{"kind":"sum","parts":[217,96]},"promptText":"217c item + 96c item = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":313,"display":{"counting":{"kind":"sum","parts":[217,96]},"promptText":"One toy costs 217 cents. Another toy costs 96 cents. How many cents do the two toys cost in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0605",
@@ -18232,7 +18232,7 @@ export const ITEMS = [
     structureType: "twoPriceBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":332,"display":{"counting":{"kind":"sum","parts":[173,159]},"promptText":"173c item + 159c item = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":332,"display":{"counting":{"kind":"sum","parts":[173,159]},"promptText":"What is 173¢ + 159¢?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0606",
@@ -18242,7 +18242,7 @@ export const ITEMS = [
     structureType: "twoPriceBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":352,"display":{"counting":{"kind":"sum","parts":[234,118]},"promptText":"234c item + 118c item = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":352,"display":{"counting":{"kind":"sum","parts":[234,118]},"promptText":"234¢ + 118¢ = __¢"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0607",
@@ -18252,7 +18252,7 @@ export const ITEMS = [
     structureType: "twoPriceBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":306,"display":{"counting":{"kind":"sum","parts":[161,145]},"promptText":"161c item + 145c item = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":306,"display":{"counting":{"kind":"sum","parts":[161,145]},"promptText":"One toy costs 161 cents. Another toy costs 145 cents. How many cents do the two toys cost in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0608",
@@ -18262,7 +18262,7 @@ export const ITEMS = [
     structureType: "twoPriceBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":335,"display":{"counting":{"kind":"sum","parts":[208,127]},"promptText":"208c item + 127c item = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":335,"display":{"counting":{"kind":"sum","parts":[208,127]},"promptText":"What is 208¢ + 127¢?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0609",
@@ -18272,7 +18272,7 @@ export const ITEMS = [
     structureType: "twoPriceBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":368,"display":{"counting":{"kind":"sum","parts":[176,192]},"promptText":"176c item + 192c item = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":368,"display":{"counting":{"kind":"sum","parts":[176,192]},"promptText":"176¢ + 192¢ = __¢"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0610",
@@ -18282,7 +18282,7 @@ export const ITEMS = [
     structureType: "twoPriceBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":337,"display":{"counting":{"kind":"sum","parts":[253,84]},"promptText":"253c item + 84c item = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":337,"display":{"counting":{"kind":"sum","parts":[253,84]},"promptText":"One toy costs 253 cents. Another toy costs 84 cents. How many cents do the two toys cost in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0611",
@@ -18292,7 +18292,7 @@ export const ITEMS = [
     structureType: "twoPriceBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":315,"display":{"counting":{"kind":"sum","parts":[139,176]},"promptText":"139c item + 176c item = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":315,"display":{"counting":{"kind":"sum","parts":[139,176]},"promptText":"What is 139¢ + 176¢?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0612",
@@ -18302,7 +18302,7 @@ export const ITEMS = [
     structureType: "twoPriceBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":335,"display":{"counting":{"kind":"sum","parts":[226,109]},"promptText":"226c item + 109c item = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":335,"display":{"counting":{"kind":"sum","parts":[226,109]},"promptText":"226¢ + 109¢ = __¢"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0613",
@@ -18312,7 +18312,7 @@ export const ITEMS = [
     structureType: "twoPriceBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":330,"display":{"counting":{"kind":"sum","parts":[187,143]},"promptText":"187c item + 143c item = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":330,"display":{"counting":{"kind":"sum","parts":[187,143]},"promptText":"One toy costs 187 cents. Another toy costs 143 cents. How many cents do the two toys cost in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0614",
@@ -18322,7 +18322,7 @@ export const ITEMS = [
     structureType: "twoPriceBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":346,"display":{"counting":{"kind":"sum","parts":[214,132]},"promptText":"214c item + 132c item = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":346,"display":{"counting":{"kind":"sum","parts":[214,132]},"promptText":"What is 214¢ + 132¢?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0615",
@@ -18332,7 +18332,7 @@ export const ITEMS = [
     structureType: "twoPriceBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":346,"display":{"counting":{"kind":"sum","parts":[165,181]},"promptText":"165c item + 181c item = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":346,"display":{"counting":{"kind":"sum","parts":[165,181]},"promptText":"165¢ + 181¢ = __¢"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0616",
@@ -18342,7 +18342,7 @@ export const ITEMS = [
     structureType: "twoPriceBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":343,"display":{"counting":{"kind":"sum","parts":[248,95]},"promptText":"248c item + 95c item = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":343,"display":{"counting":{"kind":"sum","parts":[248,95]},"promptText":"One toy costs 248 cents. Another toy costs 95 cents. How many cents do the two toys cost in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0617",
@@ -18352,7 +18352,7 @@ export const ITEMS = [
     structureType: "twoPriceBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":326,"display":{"counting":{"kind":"sum","parts":[129,197]},"promptText":"129c item + 197c item = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":326,"display":{"counting":{"kind":"sum","parts":[129,197]},"promptText":"What is 129¢ + 197¢?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0618",
@@ -18362,7 +18362,7 @@ export const ITEMS = [
     structureType: "twoPriceBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":356,"display":{"counting":{"kind":"sum","parts":[235,121]},"promptText":"235c item + 121c item = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":356,"display":{"counting":{"kind":"sum","parts":[235,121]},"promptText":"235¢ + 121¢ = __¢"},"answerType":"numberPad"},
   },
   {
     itemId: "money-proc-b0821-0619",
@@ -18372,6 +18372,6 @@ export const ITEMS = [
     structureType: "twoPriceBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":346,"display":{"counting":{"kind":"sum","parts":[182,164]},"promptText":"182c item + 164c item = ? c"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":346,"display":{"counting":{"kind":"sum","parts":[182,164]},"promptText":"One toy costs 182 cents. Another toy costs 164 cents. How many cents do the two toys cost in all?"},"answerType":"numberPad"},
   },
 ];

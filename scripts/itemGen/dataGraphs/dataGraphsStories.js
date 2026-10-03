@@ -121,7 +121,7 @@ export function buildStoryItems() {
       (nm, t, a, b) => `${nm} measures how far ${a} pulled ahead of ${b} in the ${t} vote. How many votes ahead?`,
     ],
     band3: [
-      (nm, t, a, b) => `In the scaled ${t} graph, ${nm} computes the lead of ${a} over ${b}. How many votes is the lead?`,
+      (nm, t, a, b) => `In the scaled ${t} graph, ${nm} finds how far ${a} is ahead of ${b}. How many votes is the lead?`,
       (nm, t, a, b) => `${nm}'s ${t} report needs the precise spread between ${a} and ${b}. How many votes wide is it?`,
       (nm, t, a, b) => `For the ${t} recap, ${nm} subtracts the ${b} bar from the ${a} bar. How many votes remain?`,
     ],
@@ -143,7 +143,7 @@ export function buildStoryItems() {
   /* compareBars app: team-up totals. */
   const TEAM_SKELETONS = [
     (nm, t, a, b) => `${nm} groups ${a} and ${b} together from the ${t} graph. How many votes do they hold combined?`,
-    (nm, t, a, b) => `If the ${t} survey merged ${a} with ${b}, how many votes would the pair have? ${nm} adds the bars.`,
+    (nm, t, a, b) => `${nm} adds the bars. If the ${t} survey merged ${a} with ${b}, how many votes would the pair have?`,
     (nm, t, a, b) => `${nm} adds the ${a} bar to the ${b} bar of the ${t} graph. What is their combined count?`,
   ];
   for (const band of [B1, B2, B3]) {
@@ -286,7 +286,7 @@ export function buildStoryItems() {
   const SHORTEST_BY_BAND = {
     band1: [
       (nm, t) => `${nm} looks for the ${t} choice with the FEWEST votes. Which one is it?`,
-      (nm, t) => `Which ${t} choice came in last? ${nm} finds the littlest bar.`,
+      (nm, t) => `${nm} finds the littlest bar. Which ${t} choice came in last?`,
       (nm, t) => `${nm} pats the smallest ${t} bar. Which choice does it belong to?`,
     ],
     band2: [
@@ -319,16 +319,16 @@ export function buildStoryItems() {
     band1: [
       (nm, t, a, b) => `The top two ${t} picks were ${a} and ${b}. ${nm} adds their votes. How many votes did the top two get together?`,
       (nm, t, a, b) => `${nm} teams the two ${t} leaders, ${a} and ${b}. What is their combined vote count?`,
-      (nm, t, a, b) => `Together, how many votes do the ${t} front-runners ${a} and ${b} hold? ${nm} adds them.`,
+      (nm, t, a, b) => `${nm} adds the votes of the ${t} front-runners ${a} and ${b}. How many votes do they hold together?`,
     ],
     band2: [
       (nm, t, a, b) => `${nm} sums the two strongest ${t} bars, ${a} and ${b}. What do they total?`,
-      (nm, t, a, b) => `The ${t} final round keeps only ${a} and ${b}. How many combined votes advance with them? ${nm} counts.`,
+      (nm, t, a, b) => `The ${t} final round keeps only ${a} and ${b}. ${nm} counts their votes. How many combined votes advance with them?`,
       (nm, t, a, b) => `${nm}'s ${t} headline needs the top-two total for ${a} and ${b}. What is it?`,
     ],
     band3: [
       (nm, t, a, b) => `From the scaled ${t} graph, ${nm} adds the exact ${a} and ${b} counts. What precise total results?`,
-      (nm, t, a, b) => `The ${t} summary pairs its two leaders, ${a} and ${b}. ${nm} computes their joint votes. How many votes is that?`,
+      (nm, t, a, b) => `The ${t} summary pairs its two leaders, ${a} and ${b}. ${nm} adds their votes. How many votes is that?`,
       (nm, t, a, b) => `${nm} verifies the ${t} top-two total of ${a} and ${b} for the record. What total goes on record?`,
     ],
   };

@@ -6132,7 +6132,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":3,"n":12,"kind":"isFactor"},"truth":true,"promptText":"Mina says 3 is a factor of 12. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":3,"n":12,"kind":"isFactor"},"truth":true,"promptText":"Is Mina right that 3 is a factor of 12?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0002",
@@ -6142,7 +6142,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":5,"n":12,"kind":"isFactor"},"truth":false,"promptText":"5 is a factor of 12, claims Theo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":5,"n":12,"kind":"isFactor"},"truth":false,"promptText":"Is Theo right that 5 is a factor of 12?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0003",
@@ -6152,7 +6152,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":4,"n":8,"kind":"isFactor"},"truth":true,"promptText":"Ida says 4 is a factor of 8. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":4,"n":8,"kind":"isFactor"},"truth":true,"promptText":"Ida puts 4 on the list of factors of 8. Does 4 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0004",
@@ -6162,7 +6162,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":3,"n":8,"kind":"isFactor"},"truth":false,"promptText":"3 is a factor of 8, claims Zoe. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":3,"n":8,"kind":"isFactor"},"truth":false,"promptText":"Zoe puts 3 on the list of factors of 8. Does 3 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0005",
@@ -6172,7 +6172,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":2,"n":6,"kind":"isFactor"},"truth":true,"promptText":"Rosa says 2 is a factor of 6. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":2,"n":6,"kind":"isFactor"},"truth":true,"promptText":"Is Rosa right that 2 is a factor of 6?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0006",
@@ -6182,7 +6182,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":4,"n":6,"kind":"isFactor"},"truth":false,"promptText":"4 is a factor of 6, claims Diego. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":4,"n":6,"kind":"isFactor"},"truth":false,"promptText":"Is Diego right that 4 is a factor of 6?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0007",
@@ -6202,7 +6202,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":3,"n":10,"kind":"isFactor"},"truth":false,"promptText":"3 is a factor of 10, claims Luca. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":3,"n":10,"kind":"isFactor"},"truth":false,"promptText":"Luca says 3 is a factor of 10. Is Luca right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0009",
@@ -6212,7 +6212,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":3,"n":9,"kind":"isFactor"},"truth":true,"promptText":"Ava says 3 is a factor of 9. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":3,"n":9,"kind":"isFactor"},"truth":true,"promptText":"Is Ava right that 3 is a factor of 9?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0010",
@@ -6222,7 +6222,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":2,"n":9,"kind":"isFactor"},"truth":false,"promptText":"2 is a factor of 9, claims Omar. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":2,"n":9,"kind":"isFactor"},"truth":false,"promptText":"Is Omar right that 2 is a factor of 9?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0011",
@@ -6232,7 +6232,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":6,"n":12,"kind":"isFactor"},"truth":true,"promptText":"Ben says 6 is a factor of 12. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":6,"n":12,"kind":"isFactor"},"truth":true,"promptText":"Ben puts 6 on the list of factors of 12. Does 6 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0012",
@@ -6242,7 +6242,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":7,"n":12,"kind":"isFactor"},"truth":false,"promptText":"7 is a factor of 12, claims Finn. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":7,"n":12,"kind":"isFactor"},"truth":false,"promptText":"Finn puts 7 on the list of factors of 12. Does 7 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0013",
@@ -6262,7 +6262,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":3,"n":4,"kind":"isFactor"},"truth":false,"promptText":"3 is a factor of 4, claims Sam. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":3,"n":4,"kind":"isFactor"},"truth":false,"promptText":"Sam says 3 is a factor of 4. Is Sam right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0015",
@@ -6272,7 +6272,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":2,"n":10,"kind":"isFactor"},"truth":true,"promptText":"Nia says 2 is a factor of 10. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":2,"n":10,"kind":"isFactor"},"truth":true,"promptText":"Nia puts 2 on the list of factors of 10. Does 2 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0016",
@@ -6282,7 +6282,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":4,"n":10,"kind":"isFactor"},"truth":false,"promptText":"4 is a factor of 10, claims Kai. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":4,"n":10,"kind":"isFactor"},"truth":false,"promptText":"Kai puts 4 on the list of factors of 10. Does 4 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0017",
@@ -6302,7 +6302,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":5,"n":8,"kind":"isFactor"},"truth":false,"promptText":"5 is a factor of 8, claims Lily. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":5,"n":8,"kind":"isFactor"},"truth":false,"promptText":"Lily says 5 is a factor of 8. Is Lily right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0019",
@@ -6312,7 +6312,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":7,"n":14,"kind":"isFactor"},"truth":true,"promptText":"Omar lists 7 among the factors of 14. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":7,"n":14,"kind":"isFactor"},"truth":true,"promptText":"Omar says 14 counters make equal groups of 7 with none left over. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0020",
@@ -6322,7 +6322,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":4,"n":14,"kind":"isFactor"},"truth":false,"promptText":"According to Ben, 14 divides evenly by 4. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":4,"n":14,"kind":"isFactor"},"truth":false,"promptText":"Ben says 14 counters make equal groups of 4 with none left over. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0021",
@@ -6332,7 +6332,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":5,"n":15,"kind":"isFactor"},"truth":true,"promptText":"Finn lists 5 among the factors of 15. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":5,"n":15,"kind":"isFactor"},"truth":true,"promptText":"Finn says 15 can be divided evenly by 5. Is Finn right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0022",
@@ -6342,7 +6342,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":4,"n":15,"kind":"isFactor"},"truth":false,"promptText":"According to Priya, 15 divides evenly by 4. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":4,"n":15,"kind":"isFactor"},"truth":false,"promptText":"Priya says 15 can be divided evenly by 4. Is Priya right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0023",
@@ -6352,7 +6352,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":8,"n":16,"kind":"isFactor"},"truth":true,"promptText":"Sam lists 8 among the factors of 16. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":8,"n":16,"kind":"isFactor"},"truth":true,"promptText":"Sam says 16 counters make equal groups of 8 with none left over. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0024",
@@ -6362,7 +6362,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":3,"n":16,"kind":"isFactor"},"truth":false,"promptText":"According to Nia, 16 divides evenly by 3. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":3,"n":16,"kind":"isFactor"},"truth":false,"promptText":"Nia says 16 counters make equal groups of 3 with none left over. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0025",
@@ -6372,7 +6372,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":6,"n":18,"kind":"isFactor"},"truth":true,"promptText":"Kai lists 6 among the factors of 18. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":6,"n":18,"kind":"isFactor"},"truth":true,"promptText":"Kai lists 6 among the factors of 18. Does 6 belong there?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0026",
@@ -6382,7 +6382,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":4,"n":18,"kind":"isFactor"},"truth":false,"promptText":"According to June, 18 divides evenly by 4. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":4,"n":18,"kind":"isFactor"},"truth":false,"promptText":"June lists 4 among the factors of 18. Does 4 belong there?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0027",
@@ -6392,7 +6392,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":4,"n":20,"kind":"isFactor"},"truth":true,"promptText":"Lily lists 4 among the factors of 20. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":4,"n":20,"kind":"isFactor"},"truth":true,"promptText":"Lily says 20 counters make equal groups of 4 with none left over. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0028",
@@ -6402,7 +6402,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":3,"n":20,"kind":"isFactor"},"truth":false,"promptText":"According to Amara, 20 divides evenly by 3. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":3,"n":20,"kind":"isFactor"},"truth":false,"promptText":"Amara says 20 counters make equal groups of 3 with none left over. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0029",
@@ -6412,7 +6412,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":8,"n":24,"kind":"isFactor"},"truth":true,"promptText":"Leo lists 8 among the factors of 24. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":8,"n":24,"kind":"isFactor"},"truth":true,"promptText":"Leo says 24 can be divided evenly by 8. Is Leo right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0030",
@@ -6422,7 +6422,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":5,"n":24,"kind":"isFactor"},"truth":false,"promptText":"According to Mina, 24 divides evenly by 5. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":5,"n":24,"kind":"isFactor"},"truth":false,"promptText":"Mina says 24 can be divided evenly by 5. Is Mina right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0031",
@@ -6432,7 +6432,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":5,"n":25,"kind":"isFactor"},"truth":true,"promptText":"Theo lists 5 among the factors of 25. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":5,"n":25,"kind":"isFactor"},"truth":true,"promptText":"Theo lists 5 among the factors of 25. Does 5 belong there?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0032",
@@ -6442,7 +6442,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":3,"n":25,"kind":"isFactor"},"truth":false,"promptText":"According to Ida, 25 divides evenly by 3. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":3,"n":25,"kind":"isFactor"},"truth":false,"promptText":"Ida lists 3 among the factors of 25. Does 3 belong there?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0033",
@@ -6452,7 +6452,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":7,"n":28,"kind":"isFactor"},"truth":true,"promptText":"Zoe lists 7 among the factors of 28. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":7,"n":28,"kind":"isFactor"},"truth":true,"promptText":"Zoe says 28 can be divided evenly by 7. Is Zoe right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0034",
@@ -6462,7 +6462,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":3,"n":28,"kind":"isFactor"},"truth":false,"promptText":"According to Rosa, 28 divides evenly by 3. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":3,"n":28,"kind":"isFactor"},"truth":false,"promptText":"Rosa says 28 can be divided evenly by 3. Is Rosa right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0035",
@@ -6472,7 +6472,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":6,"n":30,"kind":"isFactor"},"truth":true,"promptText":"Diego lists 6 among the factors of 30. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":6,"n":30,"kind":"isFactor"},"truth":true,"promptText":"Diego lists 6 among the factors of 30. Does 6 belong there?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0036",
@@ -6482,7 +6482,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":4,"n":30,"kind":"isFactor"},"truth":false,"promptText":"According to Nora, 30 divides evenly by 4. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":4,"n":30,"kind":"isFactor"},"truth":false,"promptText":"Nora lists 4 among the factors of 30. Does 4 belong there?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0037",
@@ -6492,7 +6492,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":8,"n":32,"kind":"isFactor"},"truth":true,"promptText":"Finn certifies 8 as a factor of 32. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":8,"n":32,"kind":"isFactor"},"truth":true,"promptText":"Is Finn right that 8 is a factor of 32?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0038",
@@ -6502,7 +6502,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":6,"n":32,"kind":"isFactor"},"truth":false,"promptText":"Auditing Priya's factor list for 32: it includes 6. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":6,"n":32,"kind":"isFactor"},"truth":false,"promptText":"Is Priya right that 6 is a factor of 32?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0039",
@@ -6512,7 +6512,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":9,"n":36,"kind":"isFactor"},"truth":true,"promptText":"Sam certifies 9 as a factor of 36. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":9,"n":36,"kind":"isFactor"},"truth":true,"promptText":"Sam is listing the factors of 36 and writes 9. Does 9 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0040",
@@ -6522,7 +6522,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":8,"n":36,"kind":"isFactor"},"truth":false,"promptText":"Auditing Nia's factor list for 36: it includes 8. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":8,"n":36,"kind":"isFactor"},"truth":false,"promptText":"Nia is listing the factors of 36 and writes 8. Does 8 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0041",
@@ -6532,7 +6532,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":8,"n":40,"kind":"isFactor"},"truth":true,"promptText":"Kai certifies 8 as a factor of 40. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":8,"n":40,"kind":"isFactor"},"truth":true,"promptText":"Is Kai right that 8 is a factor of 40?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0042",
@@ -6542,7 +6542,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":6,"n":40,"kind":"isFactor"},"truth":false,"promptText":"Auditing June's factor list for 40: it includes 6. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":6,"n":40,"kind":"isFactor"},"truth":false,"promptText":"Is June right that 6 is a factor of 40?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0043",
@@ -6552,7 +6552,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":7,"n":42,"kind":"isFactor"},"truth":true,"promptText":"Lily certifies 7 as a factor of 42. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":7,"n":42,"kind":"isFactor"},"truth":true,"promptText":"Lily is listing the factors of 42 and writes 7. Does 7 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0044",
@@ -6562,7 +6562,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":4,"n":42,"kind":"isFactor"},"truth":false,"promptText":"Auditing Amara's factor list for 42: it includes 4. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":4,"n":42,"kind":"isFactor"},"truth":false,"promptText":"Amara is listing the factors of 42 and writes 4. Does 4 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0045",
@@ -6572,7 +6572,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":9,"n":45,"kind":"isFactor"},"truth":true,"promptText":"Leo certifies 9 as a factor of 45. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":9,"n":45,"kind":"isFactor"},"truth":true,"promptText":"Is Leo right that 9 is a factor of 45?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0046",
@@ -6582,7 +6582,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":6,"n":45,"kind":"isFactor"},"truth":false,"promptText":"Auditing Mina's factor list for 45: it includes 6. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":6,"n":45,"kind":"isFactor"},"truth":false,"promptText":"Is Mina right that 6 is a factor of 45?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0047",
@@ -6592,7 +6592,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":6,"n":48,"kind":"isFactor"},"truth":true,"promptText":"Theo certifies 6 as a factor of 48. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":6,"n":48,"kind":"isFactor"},"truth":true,"promptText":"Theo is listing the factors of 48 and writes 6. Does 6 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0048",
@@ -6602,7 +6602,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":5,"n":48,"kind":"isFactor"},"truth":false,"promptText":"Auditing Ida's factor list for 48: it includes 5. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":5,"n":48,"kind":"isFactor"},"truth":false,"promptText":"Ida is listing the factors of 48 and writes 5. Does 5 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0049",
@@ -6612,7 +6612,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":25,"n":50,"kind":"isFactor"},"truth":true,"promptText":"Zoe certifies 25 as a factor of 50. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":25,"n":50,"kind":"isFactor"},"truth":true,"promptText":"Is Zoe right that 25 is a factor of 50?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0050",
@@ -6622,7 +6622,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":4,"n":50,"kind":"isFactor"},"truth":false,"promptText":"Auditing Rosa's factor list for 50: it includes 4. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":4,"n":50,"kind":"isFactor"},"truth":false,"promptText":"Is Rosa right that 4 is a factor of 50?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0051",
@@ -6632,7 +6632,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":27,"n":54,"kind":"isFactor"},"truth":true,"promptText":"Diego certifies 27 as a factor of 54. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":27,"n":54,"kind":"isFactor"},"truth":true,"promptText":"Diego is listing the factors of 54 and writes 27. Does 27 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0052",
@@ -6642,7 +6642,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":4,"n":54,"kind":"isFactor"},"truth":false,"promptText":"Auditing Nora's factor list for 54: it includes 4. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":4,"n":54,"kind":"isFactor"},"truth":false,"promptText":"Nora is listing the factors of 54 and writes 4. Does 4 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0053",
@@ -6652,7 +6652,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":12,"n":60,"kind":"isFactor"},"truth":true,"promptText":"Luca certifies 12 as a factor of 60. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":12,"n":60,"kind":"isFactor"},"truth":true,"promptText":"Is Luca right that 12 is a factor of 60?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0054",
@@ -6662,7 +6662,7 @@ export const ITEMS = [
     structureType: "isFactorJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":8,"n":60,"kind":"isFactor"},"truth":false,"promptText":"Auditing Ava's factor list for 60: it includes 8. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":8,"n":60,"kind":"isFactor"},"truth":false,"promptText":"Is Ava right that 8 is a factor of 60?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0055",
@@ -6672,7 +6672,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":3,"n":12,"kind":"isFactor"},"truth":true,"promptText":"Luca says 12 counters can make equal rows of 3 with none left over. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":3,"n":12,"kind":"isFactor"},"truth":true,"promptText":"Luca says equal rows of 3 will use up all 12 counters. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0056",
@@ -6682,7 +6682,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":5,"n":12,"kind":"isFactor"},"truth":false,"promptText":"Equal rows of 5 use up 12 counters exactly, claims Ava. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":5,"n":12,"kind":"isFactor"},"truth":false,"promptText":"Ava says equal rows of 5 will use up all 12 counters. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0057",
@@ -6692,7 +6692,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":4,"n":8,"kind":"isFactor"},"truth":true,"promptText":"Omar says 8 counters can make equal rows of 4 with none left over. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":4,"n":8,"kind":"isFactor"},"truth":true,"promptText":"Omar wants to put 8 counters in equal rows of 4. Can Omar do it with none left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0058",
@@ -6702,7 +6702,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":3,"n":8,"kind":"isFactor"},"truth":false,"promptText":"Equal rows of 3 use up 8 counters exactly, claims Ben. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":3,"n":8,"kind":"isFactor"},"truth":false,"promptText":"Ben wants to put 8 counters in equal rows of 3. Can Ben do it with none left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0059",
@@ -6712,7 +6712,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":2,"n":6,"kind":"isFactor"},"truth":true,"promptText":"Finn says 6 counters can make equal rows of 2 with none left over. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":2,"n":6,"kind":"isFactor"},"truth":true,"promptText":"Finn says equal rows of 2 will use up all 6 counters. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0060",
@@ -6722,7 +6722,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":4,"n":6,"kind":"isFactor"},"truth":false,"promptText":"Equal rows of 4 use up 6 counters exactly, claims Priya. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":4,"n":6,"kind":"isFactor"},"truth":false,"promptText":"Priya says equal rows of 4 will use up all 6 counters. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0061",
@@ -6742,7 +6742,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":4,"n":10,"kind":"isFactor"},"truth":false,"promptText":"Equal rows of 4 use up 10 counters exactly, claims Nia. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":4,"n":10,"kind":"isFactor"},"truth":false,"promptText":"Nia says 10 counters can make equal rows of 4 with none left over. Is Nia right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0063",
@@ -6752,7 +6752,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":3,"n":9,"kind":"isFactor"},"truth":true,"promptText":"Kai says 9 counters can make equal rows of 3 with none left over. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":3,"n":9,"kind":"isFactor"},"truth":true,"promptText":"Kai says equal rows of 3 will use up all 9 counters. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0064",
@@ -6762,7 +6762,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":2,"n":9,"kind":"isFactor"},"truth":false,"promptText":"Equal rows of 2 use up 9 counters exactly, claims June. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":2,"n":9,"kind":"isFactor"},"truth":false,"promptText":"June says equal rows of 2 will use up all 9 counters. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0065",
@@ -6772,7 +6772,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":4,"n":12,"kind":"isFactor"},"truth":true,"promptText":"Lily says 12 counters can make equal rows of 4 with none left over. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":4,"n":12,"kind":"isFactor"},"truth":true,"promptText":"Lily wants to put 12 counters in equal rows of 4. Can Lily do it with none left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0066",
@@ -6782,7 +6782,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":7,"n":12,"kind":"isFactor"},"truth":false,"promptText":"Equal rows of 7 use up 12 counters exactly, claims Amara. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":7,"n":12,"kind":"isFactor"},"truth":false,"promptText":"Amara wants to put 12 counters in equal rows of 7. Can Amara do it with none left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0067",
@@ -6802,7 +6802,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":3,"n":4,"kind":"isFactor"},"truth":false,"promptText":"Equal rows of 3 use up 4 counters exactly, claims Mina. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":3,"n":4,"kind":"isFactor"},"truth":false,"promptText":"Mina says 4 counters can make equal rows of 3 with none left over. Is Mina right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0069",
@@ -6812,7 +6812,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":2,"n":10,"kind":"isFactor"},"truth":true,"promptText":"Theo says 10 counters can make equal rows of 2 with none left over. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":2,"n":10,"kind":"isFactor"},"truth":true,"promptText":"Theo wants to put 10 counters in equal rows of 2. Can Theo do it with none left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0070",
@@ -6822,7 +6822,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":3,"n":10,"kind":"isFactor"},"truth":false,"promptText":"Equal rows of 3 use up 10 counters exactly, claims Ida. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":3,"n":10,"kind":"isFactor"},"truth":false,"promptText":"Ida wants to put 10 counters in equal rows of 3. Can Ida do it with none left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0071",
@@ -6842,7 +6842,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":5,"n":8,"kind":"isFactor"},"truth":false,"promptText":"Equal rows of 5 use up 8 counters exactly, claims Rosa. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":5,"n":8,"kind":"isFactor"},"truth":false,"promptText":"Rosa says 8 counters can make equal rows of 5 with none left over. Is Rosa right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0073",
@@ -6852,7 +6852,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":7,"n":14,"kind":"isFactor"},"truth":true,"promptText":"June arranges 14 chairs into equal rows of 7 and expects none left over. Will it work out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":7,"n":14,"kind":"isFactor"},"truth":true,"promptText":"June has 14 chairs to set up. Can June make equal rows of 7 with no chairs left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0074",
@@ -6862,7 +6862,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":4,"n":14,"kind":"isFactor"},"truth":false,"promptText":"Rows of 4 will exactly use 14 chairs, says Lily. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":4,"n":14,"kind":"isFactor"},"truth":false,"promptText":"Lily has 14 chairs to set up. Can Lily make equal rows of 4 with no chairs left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0075",
@@ -6872,7 +6872,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":3,"n":15,"kind":"isFactor"},"truth":true,"promptText":"Amara arranges 15 chairs into equal rows of 3 and expects none left over. Will it work out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":3,"n":15,"kind":"isFactor"},"truth":true,"promptText":"Amara says 15 chairs fit in equal rows of 3 with no chairs left over. Is Amara right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0076",
@@ -6882,7 +6882,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":6,"n":15,"kind":"isFactor"},"truth":false,"promptText":"Rows of 6 will exactly use 15 chairs, says Leo. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":6,"n":15,"kind":"isFactor"},"truth":false,"promptText":"Leo says 15 chairs fit in equal rows of 6 with no chairs left over. Is Leo right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0077",
@@ -6892,7 +6892,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":4,"n":16,"kind":"isFactor"},"truth":true,"promptText":"Mina arranges 16 chairs into equal rows of 4 and expects none left over. Will it work out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":4,"n":16,"kind":"isFactor"},"truth":true,"promptText":"Mina has 16 chairs to set up. Can Mina make equal rows of 4 with no chairs left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0078",
@@ -6902,7 +6902,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":5,"n":16,"kind":"isFactor"},"truth":false,"promptText":"Rows of 5 will exactly use 16 chairs, says Theo. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":5,"n":16,"kind":"isFactor"},"truth":false,"promptText":"Theo has 16 chairs to set up. Can Theo make equal rows of 5 with no chairs left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0079",
@@ -6912,7 +6912,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":6,"n":18,"kind":"isFactor"},"truth":true,"promptText":"Ida arranges 18 chairs into equal rows of 6 and expects none left over. Will it work out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":6,"n":18,"kind":"isFactor"},"truth":true,"promptText":"Ida wants to set up 18 chairs in equal rows of 6 with none left over. Will that work?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0080",
@@ -6922,7 +6922,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":5,"n":18,"kind":"isFactor"},"truth":false,"promptText":"Rows of 5 will exactly use 18 chairs, says Zoe. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":5,"n":18,"kind":"isFactor"},"truth":false,"promptText":"Zoe wants to set up 18 chairs in equal rows of 5 with none left over. Will that work?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0081",
@@ -6932,7 +6932,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":5,"n":20,"kind":"isFactor"},"truth":true,"promptText":"Rosa arranges 20 chairs into equal rows of 5 and expects none left over. Will it work out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":5,"n":20,"kind":"isFactor"},"truth":true,"promptText":"Rosa has 20 chairs to set up. Can Rosa make equal rows of 5 with no chairs left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0082",
@@ -6942,7 +6942,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":6,"n":20,"kind":"isFactor"},"truth":false,"promptText":"Rows of 6 will exactly use 20 chairs, says Diego. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":6,"n":20,"kind":"isFactor"},"truth":false,"promptText":"Diego has 20 chairs to set up. Can Diego make equal rows of 6 with no chairs left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0083",
@@ -6952,7 +6952,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":8,"n":24,"kind":"isFactor"},"truth":true,"promptText":"Nora arranges 24 chairs into equal rows of 8 and expects none left over. Will it work out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":8,"n":24,"kind":"isFactor"},"truth":true,"promptText":"Nora says 24 chairs fit in equal rows of 8 with no chairs left over. Is Nora right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0084",
@@ -6962,7 +6962,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":7,"n":24,"kind":"isFactor"},"truth":false,"promptText":"Rows of 7 will exactly use 24 chairs, says Luca. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":7,"n":24,"kind":"isFactor"},"truth":false,"promptText":"Luca says 24 chairs fit in equal rows of 7 with no chairs left over. Is Luca right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0085",
@@ -6972,7 +6972,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":5,"n":25,"kind":"isFactor"},"truth":true,"promptText":"Ava arranges 25 chairs into equal rows of 5 and expects none left over. Will it work out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":5,"n":25,"kind":"isFactor"},"truth":true,"promptText":"Ava wants to set up 25 chairs in equal rows of 5 with none left over. Will that work?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0086",
@@ -6982,7 +6982,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":4,"n":25,"kind":"isFactor"},"truth":false,"promptText":"Rows of 4 will exactly use 25 chairs, says Omar. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":4,"n":25,"kind":"isFactor"},"truth":false,"promptText":"Omar wants to set up 25 chairs in equal rows of 4 with none left over. Will that work?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0087",
@@ -6992,7 +6992,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":4,"n":28,"kind":"isFactor"},"truth":true,"promptText":"Ben arranges 28 chairs into equal rows of 4 and expects none left over. Will it work out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":4,"n":28,"kind":"isFactor"},"truth":true,"promptText":"Ben says 28 chairs fit in equal rows of 4 with no chairs left over. Is Ben right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0088",
@@ -7002,7 +7002,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":5,"n":28,"kind":"isFactor"},"truth":false,"promptText":"Rows of 5 will exactly use 28 chairs, says Finn. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":5,"n":28,"kind":"isFactor"},"truth":false,"promptText":"Finn says 28 chairs fit in equal rows of 5 with no chairs left over. Is Finn right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0089",
@@ -7012,7 +7012,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":6,"n":30,"kind":"isFactor"},"truth":true,"promptText":"Priya arranges 30 chairs into equal rows of 6 and expects none left over. Will it work out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":6,"n":30,"kind":"isFactor"},"truth":true,"promptText":"Priya wants to set up 30 chairs in equal rows of 6 with none left over. Will that work?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0090",
@@ -7022,7 +7022,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":7,"n":30,"kind":"isFactor"},"truth":false,"promptText":"Rows of 7 will exactly use 30 chairs, says Sam. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":7,"n":30,"kind":"isFactor"},"truth":false,"promptText":"Sam wants to set up 30 chairs in equal rows of 7 with none left over. Will that work?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0091",
@@ -7032,7 +7032,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":8,"n":32,"kind":"isFactor"},"truth":true,"promptText":"Amara plans equal rows of 8 from 32 tiles with zero remainder. Is the plan sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":8,"n":32,"kind":"isFactor"},"truth":true,"promptText":"Amara has 32 tiles. Can all 32 tiles go in equal rows of 8 with none left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0092",
@@ -7042,7 +7042,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":5,"n":32,"kind":"isFactor"},"truth":false,"promptText":"Splitting 32 tiles into rows of 5 leaves nothing over, asserts Leo. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":5,"n":32,"kind":"isFactor"},"truth":false,"promptText":"Leo has 32 tiles. Can all 32 tiles go in equal rows of 5 with none left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0093",
@@ -7052,7 +7052,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":9,"n":36,"kind":"isFactor"},"truth":true,"promptText":"Mina plans equal rows of 9 from 36 tiles with zero remainder. Is the plan sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":9,"n":36,"kind":"isFactor"},"truth":true,"promptText":"Is Mina right that 36 tiles make equal rows of 9 with none left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0094",
@@ -7062,7 +7062,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":7,"n":36,"kind":"isFactor"},"truth":false,"promptText":"Splitting 36 tiles into rows of 7 leaves nothing over, asserts Theo. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":7,"n":36,"kind":"isFactor"},"truth":false,"promptText":"Is Theo right that 36 tiles make equal rows of 7 with none left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0095",
@@ -7072,7 +7072,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":8,"n":40,"kind":"isFactor"},"truth":true,"promptText":"Ida plans equal rows of 8 from 40 tiles with zero remainder. Is the plan sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":8,"n":40,"kind":"isFactor"},"truth":true,"promptText":"Ida has 40 tiles. Can all 40 tiles go in equal rows of 8 with none left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0096",
@@ -7082,7 +7082,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":7,"n":40,"kind":"isFactor"},"truth":false,"promptText":"Splitting 40 tiles into rows of 7 leaves nothing over, asserts Zoe. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":7,"n":40,"kind":"isFactor"},"truth":false,"promptText":"Zoe has 40 tiles. Can all 40 tiles go in equal rows of 7 with none left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0097",
@@ -7092,7 +7092,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":6,"n":42,"kind":"isFactor"},"truth":true,"promptText":"Rosa plans equal rows of 6 from 42 tiles with zero remainder. Is the plan sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":6,"n":42,"kind":"isFactor"},"truth":true,"promptText":"Is Rosa right that 42 tiles make equal rows of 6 with none left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0098",
@@ -7102,7 +7102,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":8,"n":42,"kind":"isFactor"},"truth":false,"promptText":"Splitting 42 tiles into rows of 8 leaves nothing over, asserts Diego. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":8,"n":42,"kind":"isFactor"},"truth":false,"promptText":"Is Diego right that 42 tiles make equal rows of 8 with none left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0099",
@@ -7112,7 +7112,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":9,"n":45,"kind":"isFactor"},"truth":true,"promptText":"Nora plans equal rows of 9 from 45 tiles with zero remainder. Is the plan sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":9,"n":45,"kind":"isFactor"},"truth":true,"promptText":"Nora has 45 tiles. Can all 45 tiles go in equal rows of 9 with none left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0100",
@@ -7122,7 +7122,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":7,"n":45,"kind":"isFactor"},"truth":false,"promptText":"Splitting 45 tiles into rows of 7 leaves nothing over, asserts Luca. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":7,"n":45,"kind":"isFactor"},"truth":false,"promptText":"Luca has 45 tiles. Can all 45 tiles go in equal rows of 7 with none left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0101",
@@ -7132,7 +7132,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":8,"n":48,"kind":"isFactor"},"truth":true,"promptText":"Ava plans equal rows of 8 from 48 tiles with zero remainder. Is the plan sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":8,"n":48,"kind":"isFactor"},"truth":true,"promptText":"Is Ava right that 48 tiles make equal rows of 8 with none left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0102",
@@ -7142,7 +7142,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":9,"n":48,"kind":"isFactor"},"truth":false,"promptText":"Splitting 48 tiles into rows of 9 leaves nothing over, asserts Omar. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":9,"n":48,"kind":"isFactor"},"truth":false,"promptText":"Is Omar right that 48 tiles make equal rows of 9 with none left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0103",
@@ -7152,7 +7152,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":25,"n":50,"kind":"isFactor"},"truth":true,"promptText":"Ben plans equal rows of 25 from 50 tiles with zero remainder. Is the plan sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":25,"n":50,"kind":"isFactor"},"truth":true,"promptText":"Ben has 50 tiles. Can all 50 tiles go in equal rows of 25 with none left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0104",
@@ -7162,7 +7162,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":8,"n":50,"kind":"isFactor"},"truth":false,"promptText":"Splitting 50 tiles into rows of 8 leaves nothing over, asserts Finn. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":8,"n":50,"kind":"isFactor"},"truth":false,"promptText":"Finn has 50 tiles. Can all 50 tiles go in equal rows of 8 with none left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0105",
@@ -7172,7 +7172,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":9,"n":54,"kind":"isFactor"},"truth":true,"promptText":"Priya plans equal rows of 9 from 54 tiles with zero remainder. Is the plan sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":9,"n":54,"kind":"isFactor"},"truth":true,"promptText":"Is Priya right that 54 tiles make equal rows of 9 with none left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0106",
@@ -7182,7 +7182,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":8,"n":54,"kind":"isFactor"},"truth":false,"promptText":"Splitting 54 tiles into rows of 8 leaves nothing over, asserts Sam. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":8,"n":54,"kind":"isFactor"},"truth":false,"promptText":"Is Sam right that 54 tiles make equal rows of 8 with none left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0107",
@@ -7192,7 +7192,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":12,"n":60,"kind":"isFactor"},"truth":true,"promptText":"Nia plans equal rows of 12 from 60 tiles with zero remainder. Is the plan sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"k":12,"n":60,"kind":"isFactor"},"truth":true,"promptText":"Nia has 60 tiles. Can all 60 tiles go in equal rows of 12 with none left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0108",
@@ -7202,7 +7202,7 @@ export const ITEMS = [
     structureType: "rowsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":9,"n":60,"kind":"isFactor"},"truth":false,"promptText":"Splitting 60 tiles into rows of 9 leaves nothing over, asserts Kai. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"k":9,"n":60,"kind":"isFactor"},"truth":false,"promptText":"Kai has 60 tiles. Can all 60 tiles go in equal rows of 9 with none left over?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0109",
@@ -7542,7 +7542,7 @@ export const ITEMS = [
     structureType: "oneSelfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"The factor list of 36 must include 36 itself, argues Nora. Sound argument?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Nora is listing the factors of 36. Should 36 be on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0143",
@@ -7562,7 +7562,7 @@ export const ITEMS = [
     structureType: "oneSelfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"The factor list of 42 must include 42 itself, argues Ava. Sound argument?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Ava is listing the factors of 42. Should 42 be on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0145",
@@ -7582,7 +7582,7 @@ export const ITEMS = [
     structureType: "oneSelfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"The factor list of 48 must include 48 itself, argues Ben. Sound argument?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Is Ben right that 48 is a factor of 48?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0147",
@@ -7602,7 +7602,7 @@ export const ITEMS = [
     structureType: "oneSelfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"The factor list of 54 must include 54 itself, argues Priya. Sound argument?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Is Priya right that 54 is a factor of 54?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0149",
@@ -7622,7 +7622,7 @@ export const ITEMS = [
     structureType: "oneSelfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"The factor list of 44 must include 44 itself, argues Nia. Sound argument?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Nia is listing the factors of 44. Should 44 be on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0151",
@@ -7642,7 +7642,7 @@ export const ITEMS = [
     structureType: "oneSelfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"The factor list of 32 must include 32 itself, argues June. Sound argument?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"June is listing the factors of 32. Should 32 be on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0153",
@@ -7662,7 +7662,7 @@ export const ITEMS = [
     structureType: "oneSelfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"The factor list of 40 must include 40 itself, argues Amara. Sound argument?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Is Amara right that 40 is a factor of 40?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0155",
@@ -7682,7 +7682,7 @@ export const ITEMS = [
     structureType: "oneSelfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"The factor list of 45 must include 45 itself, argues Mina. Sound argument?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Is Mina right that 45 is a factor of 45?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0157",
@@ -7692,7 +7692,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":2,"k":8,"kind":"isMultiple"},"truth":true,"promptText":"Mina says 8 is a multiple of 2. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":2,"k":8,"kind":"isMultiple"},"truth":true,"promptText":"Is Mina right that 8 is a multiple of 2?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0158",
@@ -7702,7 +7702,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":2,"k":9,"kind":"isMultiple"},"truth":false,"promptText":"9 shows up when counting by 2, claims Theo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":2,"k":9,"kind":"isMultiple"},"truth":false,"promptText":"Is Theo right that 9 is a multiple of 2?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0159",
@@ -7712,7 +7712,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":3,"k":12,"kind":"isMultiple"},"truth":true,"promptText":"Ida says 12 is a multiple of 3. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":3,"k":12,"kind":"isMultiple"},"truth":true,"promptText":"Ida skip counts by 3s, starting at 3. Will Ida say 12?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0160",
@@ -7722,7 +7722,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":3,"k":10,"kind":"isMultiple"},"truth":false,"promptText":"10 shows up when counting by 3, claims Zoe. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":3,"k":10,"kind":"isMultiple"},"truth":false,"promptText":"Zoe skip counts by 3s, starting at 3. Will Zoe say 10?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0161",
@@ -7732,7 +7732,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":4,"k":16,"kind":"isMultiple"},"truth":true,"promptText":"Rosa says 16 is a multiple of 4. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":4,"k":16,"kind":"isMultiple"},"truth":true,"promptText":"Is Rosa right that 16 is a multiple of 4?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0162",
@@ -7742,7 +7742,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":4,"k":14,"kind":"isMultiple"},"truth":false,"promptText":"14 shows up when counting by 4, claims Diego. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":4,"k":14,"kind":"isMultiple"},"truth":false,"promptText":"Is Diego right that 14 is a multiple of 4?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0163",
@@ -7762,7 +7762,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":5,"k":12,"kind":"isMultiple"},"truth":false,"promptText":"12 shows up when counting by 5, claims Luca. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":5,"k":12,"kind":"isMultiple"},"truth":false,"promptText":"Luca says 12 is a multiple of 5. Is Luca right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0165",
@@ -7772,7 +7772,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":2,"k":6,"kind":"isMultiple"},"truth":true,"promptText":"Ava says 6 is a multiple of 2. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":2,"k":6,"kind":"isMultiple"},"truth":true,"promptText":"Is Ava right that 6 is a multiple of 2?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0166",
@@ -7782,7 +7782,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":2,"k":7,"kind":"isMultiple"},"truth":false,"promptText":"7 shows up when counting by 2, claims Omar. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":2,"k":7,"kind":"isMultiple"},"truth":false,"promptText":"Is Omar right that 7 is a multiple of 2?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0167",
@@ -7792,7 +7792,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":3,"k":9,"kind":"isMultiple"},"truth":true,"promptText":"Ben says 9 is a multiple of 3. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":3,"k":9,"kind":"isMultiple"},"truth":true,"promptText":"Ben skip counts by 3s, starting at 3. Will Ben say 9?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0168",
@@ -7802,7 +7802,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":3,"k":8,"kind":"isMultiple"},"truth":false,"promptText":"8 shows up when counting by 3, claims Finn. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":3,"k":8,"kind":"isMultiple"},"truth":false,"promptText":"Finn skip counts by 3s, starting at 3. Will Finn say 8?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0169",
@@ -7822,7 +7822,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":4,"k":10,"kind":"isMultiple"},"truth":false,"promptText":"10 shows up when counting by 4, claims Sam. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":4,"k":10,"kind":"isMultiple"},"truth":false,"promptText":"Sam says 10 is a multiple of 4. Is Sam right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0171",
@@ -7832,7 +7832,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":5,"k":10,"kind":"isMultiple"},"truth":true,"promptText":"Nia says 10 is a multiple of 5. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":5,"k":10,"kind":"isMultiple"},"truth":true,"promptText":"Nia skip counts by 5s, starting at 5. Will Nia say 10?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0172",
@@ -7842,7 +7842,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":5,"k":8,"kind":"isMultiple"},"truth":false,"promptText":"8 shows up when counting by 5, claims Kai. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":5,"k":8,"kind":"isMultiple"},"truth":false,"promptText":"Kai skip counts by 5s, starting at 5. Will Kai say 8?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0173",
@@ -7862,7 +7862,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":3,"k":16,"kind":"isMultiple"},"truth":false,"promptText":"16 shows up when counting by 3, claims Lily. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":3,"k":16,"kind":"isMultiple"},"truth":false,"promptText":"Lily says 16 is a multiple of 3. Is Lily right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0175",
@@ -7872,7 +7872,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":6,"k":24,"kind":"isMultiple"},"truth":true,"promptText":"Omar marks 24 on the count-by-6 list. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":6,"k":24,"kind":"isMultiple"},"truth":true,"promptText":"Omar counts by 6s, starting at 6. Will Omar land on 24?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0176",
@@ -7882,7 +7882,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":6,"k":26,"kind":"isMultiple"},"truth":false,"promptText":"According to Ben, 26 is one of the multiples of 6. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":6,"k":26,"kind":"isMultiple"},"truth":false,"promptText":"Ben counts by 6s, starting at 6. Will Ben land on 26?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0177",
@@ -7892,7 +7892,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":7,"k":28,"kind":"isMultiple"},"truth":true,"promptText":"Finn marks 28 on the count-by-7 list. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":7,"k":28,"kind":"isMultiple"},"truth":true,"promptText":"Finn says 28 is one of the multiples of 7. Is Finn right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0178",
@@ -7902,7 +7902,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":7,"k":30,"kind":"isMultiple"},"truth":false,"promptText":"According to Priya, 30 is one of the multiples of 7. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":7,"k":30,"kind":"isMultiple"},"truth":false,"promptText":"Priya says 30 is one of the multiples of 7. Is Priya right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0179",
@@ -7912,7 +7912,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":8,"k":32,"kind":"isMultiple"},"truth":true,"promptText":"Sam marks 32 on the count-by-8 list. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":8,"k":32,"kind":"isMultiple"},"truth":true,"promptText":"Sam counts by 8s, starting at 8. Will Sam land on 32?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0180",
@@ -7922,7 +7922,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":8,"k":36,"kind":"isMultiple"},"truth":false,"promptText":"According to Nia, 36 is one of the multiples of 8. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":8,"k":36,"kind":"isMultiple"},"truth":false,"promptText":"Nia counts by 8s, starting at 8. Will Nia land on 36?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0181",
@@ -7932,7 +7932,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":9,"k":36,"kind":"isMultiple"},"truth":true,"promptText":"Kai marks 36 on the count-by-9 list. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":9,"k":36,"kind":"isMultiple"},"truth":true,"promptText":"Kai writes 36 on a list of multiples of 9. Does 36 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0182",
@@ -7942,7 +7942,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":9,"k":39,"kind":"isMultiple"},"truth":false,"promptText":"According to June, 39 is one of the multiples of 9. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":9,"k":39,"kind":"isMultiple"},"truth":false,"promptText":"June writes 39 on a list of multiples of 9. Does 39 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0183",
@@ -7952,7 +7952,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":6,"k":30,"kind":"isMultiple"},"truth":true,"promptText":"Lily marks 30 on the count-by-6 list. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":6,"k":30,"kind":"isMultiple"},"truth":true,"promptText":"Lily counts by 6s, starting at 6. Will Lily land on 30?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0184",
@@ -7962,7 +7962,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":6,"k":33,"kind":"isMultiple"},"truth":false,"promptText":"According to Amara, 33 is one of the multiples of 6. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":6,"k":33,"kind":"isMultiple"},"truth":false,"promptText":"Amara counts by 6s, starting at 6. Will Amara land on 33?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0185",
@@ -7972,7 +7972,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":7,"k":35,"kind":"isMultiple"},"truth":true,"promptText":"Leo marks 35 on the count-by-7 list. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":7,"k":35,"kind":"isMultiple"},"truth":true,"promptText":"Leo says 35 is one of the multiples of 7. Is Leo right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0186",
@@ -7982,7 +7982,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":7,"k":38,"kind":"isMultiple"},"truth":false,"promptText":"According to Mina, 38 is one of the multiples of 7. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":7,"k":38,"kind":"isMultiple"},"truth":false,"promptText":"Mina says 38 is one of the multiples of 7. Is Mina right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0187",
@@ -7992,7 +7992,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":8,"k":40,"kind":"isMultiple"},"truth":true,"promptText":"Theo marks 40 on the count-by-8 list. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":8,"k":40,"kind":"isMultiple"},"truth":true,"promptText":"Theo writes 40 on a list of multiples of 8. Does 40 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0188",
@@ -8002,7 +8002,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":8,"k":42,"kind":"isMultiple"},"truth":false,"promptText":"According to Ida, 42 is one of the multiples of 8. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":8,"k":42,"kind":"isMultiple"},"truth":false,"promptText":"Ida writes 42 on a list of multiples of 8. Does 42 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0189",
@@ -8012,7 +8012,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":9,"k":45,"kind":"isMultiple"},"truth":true,"promptText":"Zoe marks 45 on the count-by-9 list. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":9,"k":45,"kind":"isMultiple"},"truth":true,"promptText":"Zoe says 45 is one of the multiples of 9. Is Zoe right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0190",
@@ -8022,7 +8022,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":9,"k":48,"kind":"isMultiple"},"truth":false,"promptText":"According to Rosa, 48 is one of the multiples of 9. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":9,"k":48,"kind":"isMultiple"},"truth":false,"promptText":"Rosa says 48 is one of the multiples of 9. Is Rosa right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0191",
@@ -8032,7 +8032,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":6,"k":42,"kind":"isMultiple"},"truth":true,"promptText":"Diego marks 42 on the count-by-6 list. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":6,"k":42,"kind":"isMultiple"},"truth":true,"promptText":"Diego writes 42 on a list of multiples of 6. Does 42 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0192",
@@ -8042,7 +8042,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":6,"k":44,"kind":"isMultiple"},"truth":false,"promptText":"According to Nora, 44 is one of the multiples of 6. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":6,"k":44,"kind":"isMultiple"},"truth":false,"promptText":"Nora writes 44 on a list of multiples of 6. Does 44 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0193",
@@ -8052,7 +8052,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":11,"k":55,"kind":"isMultiple"},"truth":true,"promptText":"Finn certifies 55 as a multiple of 11. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":11,"k":55,"kind":"isMultiple"},"truth":true,"promptText":"Is Finn right that 55 is a multiple of 11?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0194",
@@ -8062,7 +8062,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":11,"k":56,"kind":"isMultiple"},"truth":false,"promptText":"Auditing Priya's multiples-of-11 list: it includes 56. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":11,"k":56,"kind":"isMultiple"},"truth":false,"promptText":"Is Priya right that 56 is a multiple of 11?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0195",
@@ -8072,7 +8072,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":12,"k":60,"kind":"isMultiple"},"truth":true,"promptText":"Sam certifies 60 as a multiple of 12. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":12,"k":60,"kind":"isMultiple"},"truth":true,"promptText":"Sam is listing multiples of 12 and writes 60. Does 60 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0196",
@@ -8082,7 +8082,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":12,"k":64,"kind":"isMultiple"},"truth":false,"promptText":"Auditing Nia's multiples-of-12 list: it includes 64. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":12,"k":64,"kind":"isMultiple"},"truth":false,"promptText":"Nia is listing multiples of 12 and writes 64. Does 64 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0197",
@@ -8092,7 +8092,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":15,"k":75,"kind":"isMultiple"},"truth":true,"promptText":"Kai certifies 75 as a multiple of 15. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":15,"k":75,"kind":"isMultiple"},"truth":true,"promptText":"Is Kai right that 75 is a multiple of 15?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0198",
@@ -8102,7 +8102,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":15,"k":80,"kind":"isMultiple"},"truth":false,"promptText":"Auditing June's multiples-of-15 list: it includes 80. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":15,"k":80,"kind":"isMultiple"},"truth":false,"promptText":"Is June right that 80 is a multiple of 15?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0199",
@@ -8112,7 +8112,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":20,"k":80,"kind":"isMultiple"},"truth":true,"promptText":"Lily certifies 80 as a multiple of 20. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":20,"k":80,"kind":"isMultiple"},"truth":true,"promptText":"Lily is listing multiples of 20 and writes 80. Does 80 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0200",
@@ -8122,7 +8122,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":20,"k":90,"kind":"isMultiple"},"truth":false,"promptText":"Auditing Amara's multiples-of-20 list: it includes 90. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":20,"k":90,"kind":"isMultiple"},"truth":false,"promptText":"Amara is listing multiples of 20 and writes 90. Does 90 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0201",
@@ -8132,7 +8132,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":11,"k":66,"kind":"isMultiple"},"truth":true,"promptText":"Leo certifies 66 as a multiple of 11. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":11,"k":66,"kind":"isMultiple"},"truth":true,"promptText":"Is Leo right that 66 is a multiple of 11?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0202",
@@ -8142,7 +8142,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":11,"k":70,"kind":"isMultiple"},"truth":false,"promptText":"Auditing Mina's multiples-of-11 list: it includes 70. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":11,"k":70,"kind":"isMultiple"},"truth":false,"promptText":"Is Mina right that 70 is a multiple of 11?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0203",
@@ -8152,7 +8152,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":12,"k":72,"kind":"isMultiple"},"truth":true,"promptText":"Theo certifies 72 as a multiple of 12. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":12,"k":72,"kind":"isMultiple"},"truth":true,"promptText":"Theo is listing multiples of 12 and writes 72. Does 72 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0204",
@@ -8162,7 +8162,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":12,"k":78,"kind":"isMultiple"},"truth":false,"promptText":"Auditing Ida's multiples-of-12 list: it includes 78. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":12,"k":78,"kind":"isMultiple"},"truth":false,"promptText":"Ida is listing multiples of 12 and writes 78. Does 78 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0205",
@@ -8172,7 +8172,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":15,"k":90,"kind":"isMultiple"},"truth":true,"promptText":"Zoe certifies 90 as a multiple of 15. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":15,"k":90,"kind":"isMultiple"},"truth":true,"promptText":"Is Zoe right that 90 is a multiple of 15?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0206",
@@ -8182,7 +8182,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":15,"k":95,"kind":"isMultiple"},"truth":false,"promptText":"Auditing Rosa's multiples-of-15 list: it includes 95. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":15,"k":95,"kind":"isMultiple"},"truth":false,"promptText":"Is Rosa right that 95 is a multiple of 15?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0207",
@@ -8192,7 +8192,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":20,"k":100,"kind":"isMultiple"},"truth":true,"promptText":"Diego certifies 100 as a multiple of 20. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":20,"k":100,"kind":"isMultiple"},"truth":true,"promptText":"Diego is listing multiples of 20 and writes 100. Does 100 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0208",
@@ -8202,7 +8202,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":20,"k":110,"kind":"isMultiple"},"truth":false,"promptText":"Auditing Nora's multiples-of-20 list: it includes 110. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":20,"k":110,"kind":"isMultiple"},"truth":false,"promptText":"Nora is listing multiples of 20 and writes 110. Does 110 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0209",
@@ -8212,7 +8212,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":11,"k":77,"kind":"isMultiple"},"truth":true,"promptText":"Luca certifies 77 as a multiple of 11. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":11,"k":77,"kind":"isMultiple"},"truth":true,"promptText":"Is Luca right that 77 is a multiple of 11?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0210",
@@ -8222,7 +8222,7 @@ export const ITEMS = [
     structureType: "isMultipleJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":11,"k":84,"kind":"isMultiple"},"truth":false,"promptText":"Auditing Ava's multiples-of-11 list: it includes 84. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":11,"k":84,"kind":"isMultiple"},"truth":false,"promptText":"Is Ava right that 84 is a multiple of 11?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0211",
@@ -8232,7 +8232,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":2,"k":3,"kind":"nthSaid","said":6},"truth":true,"promptText":"Luca says the 3rd multiple of 2 is 6. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":2,"k":3,"kind":"nthSaid","said":6},"truth":true,"promptText":"Is Luca right that the 3rd multiple of 2 is 6?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0212",
@@ -8242,7 +8242,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":2,"k":4,"kind":"nthSaid","said":6},"truth":false,"promptText":"The 4th multiple of 2 equals 6, writes Ava. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":2,"k":4,"kind":"nthSaid","said":6},"truth":false,"promptText":"Is Ava right that the 4th multiple of 2 is 6?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0213",
@@ -8252,7 +8252,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":3,"k":3,"kind":"nthSaid","said":9},"truth":true,"promptText":"Omar says the 3rd multiple of 3 is 9. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":3,"k":3,"kind":"nthSaid","said":9},"truth":true,"promptText":"Omar writes 9 as the 3rd multiple of 3. Is that correct?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0214",
@@ -8262,7 +8262,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":3,"k":4,"kind":"nthSaid","said":9},"truth":false,"promptText":"The 4th multiple of 3 equals 9, writes Ben. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":3,"k":4,"kind":"nthSaid","said":9},"truth":false,"promptText":"Ben writes 9 as the 4th multiple of 3. Is that correct?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0215",
@@ -8272,7 +8272,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":4,"k":3,"kind":"nthSaid","said":12},"truth":true,"promptText":"Finn says the 3rd multiple of 4 is 12. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":4,"k":3,"kind":"nthSaid","said":12},"truth":true,"promptText":"Is Finn right that the 3rd multiple of 4 is 12?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0216",
@@ -8282,7 +8282,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":4,"k":4,"kind":"nthSaid","said":12},"truth":false,"promptText":"The 4th multiple of 4 equals 12, writes Priya. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":4,"k":4,"kind":"nthSaid","said":12},"truth":false,"promptText":"Is Priya right that the 4th multiple of 4 is 12?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0217",
@@ -8302,7 +8302,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":5,"k":2,"kind":"nthSaid","said":15},"truth":false,"promptText":"The 2nd multiple of 5 equals 15, writes Nia. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":5,"k":2,"kind":"nthSaid","said":15},"truth":false,"promptText":"Nia says the 2nd multiple of 5 is 15. Is Nia right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0219",
@@ -8312,7 +8312,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":2,"k":5,"kind":"nthSaid","said":10},"truth":true,"promptText":"Kai says the 5th multiple of 2 is 10. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":2,"k":5,"kind":"nthSaid","said":10},"truth":true,"promptText":"Is Kai right that the 5th multiple of 2 is 10?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0220",
@@ -8322,7 +8322,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":2,"k":6,"kind":"nthSaid","said":10},"truth":false,"promptText":"The 6th multiple of 2 equals 10, writes June. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":2,"k":6,"kind":"nthSaid","said":10},"truth":false,"promptText":"Is June right that the 6th multiple of 2 is 10?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0221",
@@ -8332,7 +8332,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":3,"k":5,"kind":"nthSaid","said":15},"truth":true,"promptText":"Lily says the 5th multiple of 3 is 15. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":3,"k":5,"kind":"nthSaid","said":15},"truth":true,"promptText":"Lily writes 15 as the 5th multiple of 3. Is that correct?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0222",
@@ -8342,7 +8342,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":3,"k":6,"kind":"nthSaid","said":15},"truth":false,"promptText":"The 6th multiple of 3 equals 15, writes Amara. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":3,"k":6,"kind":"nthSaid","said":15},"truth":false,"promptText":"Amara writes 15 as the 6th multiple of 3. Is that correct?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0223",
@@ -8362,7 +8362,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":4,"k":2,"kind":"nthSaid","said":16},"truth":false,"promptText":"The 2nd multiple of 4 equals 16, writes Mina. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":4,"k":2,"kind":"nthSaid","said":16},"truth":false,"promptText":"Mina says the 2nd multiple of 4 is 16. Is Mina right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0225",
@@ -8372,7 +8372,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":5,"k":4,"kind":"nthSaid","said":20},"truth":true,"promptText":"Theo says the 4th multiple of 5 is 20. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":5,"k":4,"kind":"nthSaid","said":20},"truth":true,"promptText":"Theo writes 20 as the 4th multiple of 5. Is that correct?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0226",
@@ -8382,7 +8382,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":5,"k":3,"kind":"nthSaid","said":20},"truth":false,"promptText":"The 3rd multiple of 5 equals 20, writes Ida. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":5,"k":3,"kind":"nthSaid","said":20},"truth":false,"promptText":"Ida writes 20 as the 3rd multiple of 5. Is that correct?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0227",
@@ -8402,7 +8402,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":2,"k":8,"kind":"nthSaid","said":14},"truth":false,"promptText":"The 8th multiple of 2 equals 14, writes Rosa. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":2,"k":8,"kind":"nthSaid","said":14},"truth":false,"promptText":"Rosa says the 8th multiple of 2 is 14. Is Rosa right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0229",
@@ -8412,7 +8412,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":6,"k":4,"kind":"nthSaid","said":24},"truth":true,"promptText":"June records 24 as the 4th multiple of 6. Does the record hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":6,"k":4,"kind":"nthSaid","said":24},"truth":true,"promptText":"Is June right that the 4th multiple of 6 is 24?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0230",
@@ -8422,7 +8422,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":6,"k":5,"kind":"nthSaid","said":24},"truth":false,"promptText":"Check Lily's claim: the 5th multiple of 6 is 24. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":6,"k":5,"kind":"nthSaid","said":24},"truth":false,"promptText":"Is Lily right that the 5th multiple of 6 is 24?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0231",
@@ -8432,7 +8432,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":7,"k":4,"kind":"nthSaid","said":28},"truth":true,"promptText":"Amara records 28 as the 4th multiple of 7. Does the record hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":7,"k":4,"kind":"nthSaid","said":28},"truth":true,"promptText":"Amara counts by 7s, starting at 7. Is 28 the 4th number in the count?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0232",
@@ -8442,7 +8442,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":7,"k":5,"kind":"nthSaid","said":28},"truth":false,"promptText":"Check Leo's claim: the 5th multiple of 7 is 28. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":7,"k":5,"kind":"nthSaid","said":28},"truth":false,"promptText":"Leo counts by 7s, starting at 7. Is 28 the 5th number in the count?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0233",
@@ -8452,7 +8452,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":8,"k":4,"kind":"nthSaid","said":32},"truth":true,"promptText":"Mina records 32 as the 4th multiple of 8. Does the record hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":8,"k":4,"kind":"nthSaid","said":32},"truth":true,"promptText":"Is Mina right that the 4th multiple of 8 is 32?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0234",
@@ -8462,7 +8462,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":8,"k":3,"kind":"nthSaid","said":32},"truth":false,"promptText":"Check Theo's claim: the 3rd multiple of 8 is 32. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":8,"k":3,"kind":"nthSaid","said":32},"truth":false,"promptText":"Is Theo right that the 3rd multiple of 8 is 32?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0235",
@@ -8472,7 +8472,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":9,"k":4,"kind":"nthSaid","said":36},"truth":true,"promptText":"Ida records 36 as the 4th multiple of 9. Does the record hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":9,"k":4,"kind":"nthSaid","said":36},"truth":true,"promptText":"Ida counts by 9s, starting at 9. Is 36 the 4th number in the count?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0236",
@@ -8482,7 +8482,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":9,"k":3,"kind":"nthSaid","said":36},"truth":false,"promptText":"Check Zoe's claim: the 3rd multiple of 9 is 36. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":9,"k":3,"kind":"nthSaid","said":36},"truth":false,"promptText":"Zoe counts by 9s, starting at 9. Is 36 the 3rd number in the count?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0237",
@@ -8492,7 +8492,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":6,"k":6,"kind":"nthSaid","said":36},"truth":true,"promptText":"Rosa records 36 as the 6th multiple of 6. Does the record hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":6,"k":6,"kind":"nthSaid","said":36},"truth":true,"promptText":"Is Rosa right that the 6th multiple of 6 is 36?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0238",
@@ -8502,7 +8502,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":6,"k":7,"kind":"nthSaid","said":36},"truth":false,"promptText":"Check Diego's claim: the 7th multiple of 6 is 36. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":6,"k":7,"kind":"nthSaid","said":36},"truth":false,"promptText":"Is Diego right that the 7th multiple of 6 is 36?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0239",
@@ -8512,7 +8512,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":7,"k":6,"kind":"nthSaid","said":42},"truth":true,"promptText":"Nora records 42 as the 6th multiple of 7. Does the record hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":7,"k":6,"kind":"nthSaid","said":42},"truth":true,"promptText":"Nora counts by 7s, starting at 7. Is 42 the 6th number in the count?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0240",
@@ -8522,7 +8522,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":7,"k":7,"kind":"nthSaid","said":42},"truth":false,"promptText":"Check Luca's claim: the 7th multiple of 7 is 42. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":7,"k":7,"kind":"nthSaid","said":42},"truth":false,"promptText":"Luca counts by 7s, starting at 7. Is 42 the 7th number in the count?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0241",
@@ -8532,7 +8532,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":8,"k":5,"kind":"nthSaid","said":40},"truth":true,"promptText":"Ava records 40 as the 5th multiple of 8. Does the record hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":8,"k":5,"kind":"nthSaid","said":40},"truth":true,"promptText":"Is Ava right that the 5th multiple of 8 is 40?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0242",
@@ -8542,7 +8542,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":8,"k":6,"kind":"nthSaid","said":40},"truth":false,"promptText":"Check Omar's claim: the 6th multiple of 8 is 40. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":8,"k":6,"kind":"nthSaid","said":40},"truth":false,"promptText":"Is Omar right that the 6th multiple of 8 is 40?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0243",
@@ -8552,7 +8552,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":9,"k":5,"kind":"nthSaid","said":45},"truth":true,"promptText":"Ben records 45 as the 5th multiple of 9. Does the record hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":9,"k":5,"kind":"nthSaid","said":45},"truth":true,"promptText":"Ben counts by 9s, starting at 9. Is 45 the 5th number in the count?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0244",
@@ -8562,7 +8562,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":9,"k":6,"kind":"nthSaid","said":45},"truth":false,"promptText":"Check Finn's claim: the 6th multiple of 9 is 45. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":9,"k":6,"kind":"nthSaid","said":45},"truth":false,"promptText":"Finn counts by 9s, starting at 9. Is 45 the 6th number in the count?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0245",
@@ -8572,7 +8572,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":6,"k":8,"kind":"nthSaid","said":48},"truth":true,"promptText":"Priya records 48 as the 8th multiple of 6. Does the record hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":6,"k":8,"kind":"nthSaid","said":48},"truth":true,"promptText":"Is Priya right that the 8th multiple of 6 is 48?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0246",
@@ -8582,7 +8582,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":6,"k":9,"kind":"nthSaid","said":48},"truth":false,"promptText":"Check Sam's claim: the 9th multiple of 6 is 48. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":6,"k":9,"kind":"nthSaid","said":48},"truth":false,"promptText":"Is Sam right that the 9th multiple of 6 is 48?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0247",
@@ -8592,7 +8592,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":11,"k":5,"kind":"nthSaid","said":55},"truth":true,"promptText":"Amara certifies the 5th multiple of 11 as 55. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":11,"k":5,"kind":"nthSaid","said":55},"truth":true,"promptText":"Amara counts by 11s, starting at 11. Is 55 the 5th number in the count?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0248",
@@ -8602,7 +8602,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":11,"k":6,"kind":"nthSaid","said":55},"truth":false,"promptText":"Audit: 6th multiple of 11, recorded 55 by Leo. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":11,"k":6,"kind":"nthSaid","said":55},"truth":false,"promptText":"Leo counts by 11s, starting at 11. Is 55 the 6th number in the count?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0249",
@@ -8612,7 +8612,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":12,"k":5,"kind":"nthSaid","said":60},"truth":true,"promptText":"Mina certifies the 5th multiple of 12 as 60. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":12,"k":5,"kind":"nthSaid","said":60},"truth":true,"promptText":"Is Mina right that the 5th multiple of 12 is 60?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0250",
@@ -8622,7 +8622,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":12,"k":6,"kind":"nthSaid","said":60},"truth":false,"promptText":"Audit: 6th multiple of 12, recorded 60 by Theo. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":12,"k":6,"kind":"nthSaid","said":60},"truth":false,"promptText":"Is Theo right that the 6th multiple of 12 is 60?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0251",
@@ -8632,7 +8632,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":15,"k":4,"kind":"nthSaid","said":60},"truth":true,"promptText":"Ida certifies the 4th multiple of 15 as 60. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":15,"k":4,"kind":"nthSaid","said":60},"truth":true,"promptText":"Ida counts by 15s, starting at 15. Is 60 the 4th number in the count?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0252",
@@ -8642,7 +8642,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":15,"k":5,"kind":"nthSaid","said":60},"truth":false,"promptText":"Audit: 5th multiple of 15, recorded 60 by Zoe. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":15,"k":5,"kind":"nthSaid","said":60},"truth":false,"promptText":"Zoe counts by 15s, starting at 15. Is 60 the 5th number in the count?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0253",
@@ -8652,7 +8652,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":20,"k":4,"kind":"nthSaid","said":80},"truth":true,"promptText":"Rosa certifies the 4th multiple of 20 as 80. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":20,"k":4,"kind":"nthSaid","said":80},"truth":true,"promptText":"Is Rosa right that the 4th multiple of 20 is 80?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0254",
@@ -8662,7 +8662,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":20,"k":5,"kind":"nthSaid","said":80},"truth":false,"promptText":"Audit: 5th multiple of 20, recorded 80 by Diego. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":20,"k":5,"kind":"nthSaid","said":80},"truth":false,"promptText":"Is Diego right that the 5th multiple of 20 is 80?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0255",
@@ -8672,7 +8672,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":11,"k":7,"kind":"nthSaid","said":77},"truth":true,"promptText":"Nora certifies the 7th multiple of 11 as 77. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":11,"k":7,"kind":"nthSaid","said":77},"truth":true,"promptText":"Nora counts by 11s, starting at 11. Is 77 the 7th number in the count?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0256",
@@ -8682,7 +8682,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":11,"k":8,"kind":"nthSaid","said":77},"truth":false,"promptText":"Audit: 8th multiple of 11, recorded 77 by Luca. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":11,"k":8,"kind":"nthSaid","said":77},"truth":false,"promptText":"Luca counts by 11s, starting at 11. Is 77 the 8th number in the count?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0257",
@@ -8692,7 +8692,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":12,"k":7,"kind":"nthSaid","said":84},"truth":true,"promptText":"Ava certifies the 7th multiple of 12 as 84. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":12,"k":7,"kind":"nthSaid","said":84},"truth":true,"promptText":"Is Ava right that the 7th multiple of 12 is 84?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0258",
@@ -8702,7 +8702,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":12,"k":8,"kind":"nthSaid","said":84},"truth":false,"promptText":"Audit: 8th multiple of 12, recorded 84 by Omar. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":12,"k":8,"kind":"nthSaid","said":84},"truth":false,"promptText":"Is Omar right that the 8th multiple of 12 is 84?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0259",
@@ -8712,7 +8712,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":15,"k":6,"kind":"nthSaid","said":90},"truth":true,"promptText":"Ben certifies the 6th multiple of 15 as 90. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":15,"k":6,"kind":"nthSaid","said":90},"truth":true,"promptText":"Ben counts by 15s, starting at 15. Is 90 the 6th number in the count?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0260",
@@ -8722,7 +8722,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":15,"k":7,"kind":"nthSaid","said":90},"truth":false,"promptText":"Audit: 7th multiple of 15, recorded 90 by Finn. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":15,"k":7,"kind":"nthSaid","said":90},"truth":false,"promptText":"Finn counts by 15s, starting at 15. Is 90 the 7th number in the count?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0261",
@@ -8732,7 +8732,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":20,"k":5,"kind":"nthSaid","said":100},"truth":true,"promptText":"Priya certifies the 5th multiple of 20 as 100. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":20,"k":5,"kind":"nthSaid","said":100},"truth":true,"promptText":"Is Priya right that the 5th multiple of 20 is 100?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0262",
@@ -8742,7 +8742,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":20,"k":6,"kind":"nthSaid","said":100},"truth":false,"promptText":"Audit: 6th multiple of 20, recorded 100 by Sam. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":20,"k":6,"kind":"nthSaid","said":100},"truth":false,"promptText":"Is Sam right that the 6th multiple of 20 is 100?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0263",
@@ -8752,7 +8752,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":11,"k":4,"kind":"nthSaid","said":44},"truth":true,"promptText":"Nia certifies the 4th multiple of 11 as 44. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"b":11,"k":4,"kind":"nthSaid","said":44},"truth":true,"promptText":"Nia counts by 11s, starting at 11. Is 44 the 4th number in the count?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0264",
@@ -8762,7 +8762,7 @@ export const ITEMS = [
     structureType: "nthSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":11,"k":3,"kind":"nthSaid","said":44},"truth":false,"promptText":"Audit: 3rd multiple of 11, recorded 44 by Kai. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"b":11,"k":3,"kind":"nthSaid","said":44},"truth":false,"promptText":"Kai counts by 11s, starting at 11. Is 44 the 3rd number in the count?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0265",
@@ -8782,7 +8782,7 @@ export const ITEMS = [
     structureType: "selfMultipleJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"The first multiple of 3 is 3, claims Kai. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Kai says the first multiple of 3 is 3. Is Kai right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0267",
@@ -8802,7 +8802,7 @@ export const ITEMS = [
     structureType: "selfMultipleJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"The first multiple of 5 is 5, claims Lily. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Is Lily right that the first multiple of 5 is 5?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0269",
@@ -8822,7 +8822,7 @@ export const ITEMS = [
     structureType: "selfMultipleJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"The first multiple of 3 is 3, claims Leo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Leo thinks the first multiple of 3 is 3. Is Leo right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0271",
@@ -8842,7 +8842,7 @@ export const ITEMS = [
     structureType: "selfMultipleJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"The first multiple of 5 is 5, claims Theo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Theo says 5 is the first multiple of 5. Is Theo right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0273",
@@ -8862,7 +8862,7 @@ export const ITEMS = [
     structureType: "selfMultipleJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"The first multiple of 3 is 3, claims Zoe. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Is Zoe right that the first multiple of 3 is 3?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0275",
@@ -8882,7 +8882,7 @@ export const ITEMS = [
     structureType: "selfMultipleJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"The first multiple of 5 is 5, claims Diego. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Diego thinks the first multiple of 5 is 5. Is Diego right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0277",
@@ -8902,7 +8902,7 @@ export const ITEMS = [
     structureType: "selfMultipleJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"The first multiple of 3 is 3, claims Luca. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Luca says 3 is the first multiple of 3. Is Luca right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0279",
@@ -8922,7 +8922,7 @@ export const ITEMS = [
     structureType: "selfMultipleJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"The first multiple of 5 is 5, claims Omar. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Is Omar right that 5 is the first multiple of 5?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0281",
@@ -8942,7 +8942,7 @@ export const ITEMS = [
     structureType: "selfMultipleJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Every number is its own first multiple, argues Rosa, so 7 makes the list. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Rosa says every number is its own first multiple. Is 7 the first multiple of 7?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0283",
@@ -8962,7 +8962,7 @@ export const ITEMS = [
     structureType: "selfMultipleJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Every number is its own first multiple, argues Nora, so 9 makes the list. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Nora says every number is its own first multiple. Is 9 the first multiple of 9?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0285",
@@ -8982,7 +8982,7 @@ export const ITEMS = [
     structureType: "selfMultipleJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Every number is its own first multiple, argues Ava, so 7 makes the list. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Is Ava right that 7 is the first multiple of 7?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0287",
@@ -9002,7 +9002,7 @@ export const ITEMS = [
     structureType: "selfMultipleJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Every number is its own first multiple, argues Ben, so 9 makes the list. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Is Ben right that 9 is the first multiple of 9?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0289",
@@ -9022,7 +9022,7 @@ export const ITEMS = [
     structureType: "selfMultipleJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Every number is its own first multiple, argues Priya, so 7 makes the list. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Priya says every number is its own first multiple. Is 7 the first multiple of 7?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0291",
@@ -9042,7 +9042,7 @@ export const ITEMS = [
     structureType: "selfMultipleJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Every number is its own first multiple, argues Nia, so 9 makes the list. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Nia says every number is its own first multiple. Is 9 the first multiple of 9?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0293",
@@ -9062,7 +9062,7 @@ export const ITEMS = [
     structureType: "selfMultipleJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Every number is its own first multiple, argues June, so 7 makes the list. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Is June right that 7 is the first multiple of 7?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0295",
@@ -9082,7 +9082,7 @@ export const ITEMS = [
     structureType: "selfMultipleJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Every number is its own first multiple, argues Amara, so 9 makes the list. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Is Amara right that 9 is the first multiple of 9?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0297",
@@ -9102,7 +9102,7 @@ export const ITEMS = [
     structureType: "selfMultipleJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"The multiples of 12 begin with 12, asserts Nora. Sound assertion?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Nora is listing the multiples of 12. Should the list start with 12?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0299",
@@ -9122,7 +9122,7 @@ export const ITEMS = [
     structureType: "selfMultipleJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"The multiples of 20 begin with 20, asserts Ava. Sound assertion?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Ava is listing the multiples of 20. Should the list start with 20?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0301",
@@ -9142,7 +9142,7 @@ export const ITEMS = [
     structureType: "selfMultipleJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"The multiples of 12 begin with 12, asserts Ben. Sound assertion?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Is Ben right that the first multiple of 12 is 12?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0303",
@@ -9162,7 +9162,7 @@ export const ITEMS = [
     structureType: "selfMultipleJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"The multiples of 20 begin with 20, asserts Priya. Sound assertion?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Is Priya right that the first multiple of 20 is 20?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0305",
@@ -9182,7 +9182,7 @@ export const ITEMS = [
     structureType: "selfMultipleJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"The multiples of 12 begin with 12, asserts Nia. Sound assertion?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Nia is listing the multiples of 12. Should the list start with 12?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0307",
@@ -9202,7 +9202,7 @@ export const ITEMS = [
     structureType: "selfMultipleJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"The multiples of 20 begin with 20, asserts June. Sound assertion?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"June is listing the multiples of 20. Should the list start with 20?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0309",
@@ -9222,7 +9222,7 @@ export const ITEMS = [
     structureType: "selfMultipleJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"The multiples of 12 begin with 12, asserts Amara. Sound assertion?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Is Amara right that the first multiple of 12 is 12?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0311",
@@ -9242,7 +9242,7 @@ export const ITEMS = [
     structureType: "selfMultipleJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"The multiples of 20 begin with 20, asserts Mina. Sound assertion?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Is Mina right that the first multiple of 20 is 20?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0313",
@@ -9252,7 +9252,7 @@ export const ITEMS = [
     structureType: "pairJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":3,"b":4,"n":12,"kind":"pairSaid"},"truth":true,"promptText":"Mina pairs 3 with 4 as a factor pair of 12. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":3,"b":4,"n":12,"kind":"pairSaid"},"truth":true,"promptText":"Is Mina right that 3 and 4 make a factor pair of 12?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0314",
@@ -9262,7 +9262,7 @@ export const ITEMS = [
     structureType: "pairJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":3,"b":5,"n":12,"kind":"pairSaid"},"truth":false,"promptText":"3 and 5 make a factor pair for 12, claims Theo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":3,"b":5,"n":12,"kind":"pairSaid"},"truth":false,"promptText":"Is Theo right that 3 and 5 make a factor pair of 12?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0315",
@@ -9272,7 +9272,7 @@ export const ITEMS = [
     structureType: "pairJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":2,"b":4,"n":8,"kind":"pairSaid"},"truth":true,"promptText":"Ida pairs 2 with 4 as a factor pair of 8. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":2,"b":4,"n":8,"kind":"pairSaid"},"truth":true,"promptText":"Ida pairs 2 with 4 as a factor pair of 8. Is that correct?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0316",
@@ -9282,7 +9282,7 @@ export const ITEMS = [
     structureType: "pairJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":2,"b":3,"n":8,"kind":"pairSaid"},"truth":false,"promptText":"2 and 3 make a factor pair for 8, claims Zoe. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":2,"b":3,"n":8,"kind":"pairSaid"},"truth":false,"promptText":"Zoe pairs 2 with 3 as a factor pair of 8. Is that correct?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0317",
@@ -9292,7 +9292,7 @@ export const ITEMS = [
     structureType: "pairJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":2,"b":3,"n":6,"kind":"pairSaid"},"truth":true,"promptText":"Rosa pairs 2 with 3 as a factor pair of 6. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":2,"b":3,"n":6,"kind":"pairSaid"},"truth":true,"promptText":"Is Rosa right that 2 and 3 make a factor pair of 6?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0318",
@@ -9302,7 +9302,7 @@ export const ITEMS = [
     structureType: "pairJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":2,"b":4,"n":6,"kind":"pairSaid"},"truth":false,"promptText":"2 and 4 make a factor pair for 6, claims Diego. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":2,"b":4,"n":6,"kind":"pairSaid"},"truth":false,"promptText":"Is Diego right that 2 and 4 make a factor pair of 6?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0319",
@@ -9312,7 +9312,7 @@ export const ITEMS = [
     structureType: "pairJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":2,"b":5,"n":10,"kind":"pairSaid"},"truth":true,"promptText":"Nora pairs 2 with 5 as a factor pair of 10. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":2,"b":5,"n":10,"kind":"pairSaid"},"truth":true,"promptText":"Nora says 2 and 5 are a factor pair of 10. Is Nora right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0320",
@@ -9322,7 +9322,7 @@ export const ITEMS = [
     structureType: "pairJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":3,"b":4,"n":10,"kind":"pairSaid"},"truth":false,"promptText":"3 and 4 make a factor pair for 10, claims Luca. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":3,"b":4,"n":10,"kind":"pairSaid"},"truth":false,"promptText":"Luca says 3 and 4 are a factor pair of 10. Is Luca right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0321",
@@ -9332,7 +9332,7 @@ export const ITEMS = [
     structureType: "pairJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":3,"b":3,"n":9,"kind":"pairSaid"},"truth":true,"promptText":"Ava pairs 3 with 3 as a factor pair of 9. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":3,"b":3,"n":9,"kind":"pairSaid"},"truth":true,"promptText":"Is Ava right that 3 and 3 make a factor pair of 9?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0322",
@@ -9342,7 +9342,7 @@ export const ITEMS = [
     structureType: "pairJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":2,"b":4,"n":9,"kind":"pairSaid"},"truth":false,"promptText":"2 and 4 make a factor pair for 9, claims Omar. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":2,"b":4,"n":9,"kind":"pairSaid"},"truth":false,"promptText":"Is Omar right that 2 and 4 make a factor pair of 9?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0323",
@@ -9352,7 +9352,7 @@ export const ITEMS = [
     structureType: "pairJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":2,"b":6,"n":12,"kind":"pairSaid"},"truth":true,"promptText":"Ben pairs 2 with 6 as a factor pair of 12. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":2,"b":6,"n":12,"kind":"pairSaid"},"truth":true,"promptText":"Ben pairs 2 with 6 as a factor pair of 12. Is that correct?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0324",
@@ -9362,7 +9362,7 @@ export const ITEMS = [
     structureType: "pairJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":4,"b":5,"n":12,"kind":"pairSaid"},"truth":false,"promptText":"4 and 5 make a factor pair for 12, claims Finn. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":4,"b":5,"n":12,"kind":"pairSaid"},"truth":false,"promptText":"Finn pairs 4 with 5 as a factor pair of 12. Is that correct?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0325",
@@ -9372,7 +9372,7 @@ export const ITEMS = [
     structureType: "pairJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":2,"b":2,"n":4,"kind":"pairSaid"},"truth":true,"promptText":"Priya pairs 2 with 2 as a factor pair of 4. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":2,"b":2,"n":4,"kind":"pairSaid"},"truth":true,"promptText":"Priya says 2 and 2 are a factor pair of 4. Is Priya right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0326",
@@ -9382,7 +9382,7 @@ export const ITEMS = [
     structureType: "pairJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":2,"b":5,"n":4,"kind":"pairSaid"},"truth":false,"promptText":"2 and 5 make a factor pair for 4, claims Sam. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":2,"b":5,"n":4,"kind":"pairSaid"},"truth":false,"promptText":"Sam says 2 and 5 are a factor pair of 4. Is Sam right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0327",
@@ -9392,7 +9392,7 @@ export const ITEMS = [
     structureType: "pairJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":1,"b":8,"n":8,"kind":"pairSaid"},"truth":true,"promptText":"Nia pairs 1 with 8 as a factor pair of 8. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":1,"b":8,"n":8,"kind":"pairSaid"},"truth":true,"promptText":"Nia pairs 1 with 8 as a factor pair of 8. Is that correct?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0328",
@@ -9402,7 +9402,7 @@ export const ITEMS = [
     structureType: "pairJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":3,"b":3,"n":8,"kind":"pairSaid"},"truth":false,"promptText":"3 and 3 make a factor pair for 8, claims Kai. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":3,"b":3,"n":8,"kind":"pairSaid"},"truth":false,"promptText":"Kai pairs 3 with 3 as a factor pair of 8. Is that correct?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0329",
@@ -9412,7 +9412,7 @@ export const ITEMS = [
     structureType: "pairJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":1,"b":6,"n":6,"kind":"pairSaid"},"truth":true,"promptText":"June pairs 1 with 6 as a factor pair of 6. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":1,"b":6,"n":6,"kind":"pairSaid"},"truth":true,"promptText":"June says 1 and 6 are a factor pair of 6. Is June right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0330",
@@ -9422,7 +9422,7 @@ export const ITEMS = [
     structureType: "pairJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":4,"b":4,"n":6,"kind":"pairSaid"},"truth":false,"promptText":"4 and 4 make a factor pair for 6, claims Lily. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":4,"b":4,"n":6,"kind":"pairSaid"},"truth":false,"promptText":"Lily says 4 and 4 are a factor pair of 6. Is Lily right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0331",
@@ -9432,7 +9432,7 @@ export const ITEMS = [
     structureType: "pairJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":2,"b":7,"n":14,"kind":"pairSaid"},"truth":true,"promptText":"Omar writes 2 x 7 in the factor-pair list for 14. Does it belong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":2,"b":7,"n":14,"kind":"pairSaid"},"truth":true,"promptText":"Omar lists 2 and 7 as one factor pair of 14. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0332",
@@ -9442,7 +9442,7 @@ export const ITEMS = [
     structureType: "pairJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":3,"b":5,"n":14,"kind":"pairSaid"},"truth":false,"promptText":"According to Ben, 3 and 5 multiply to 14. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":3,"b":5,"n":14,"kind":"pairSaid"},"truth":false,"promptText":"Ben lists 3 and 5 as one factor pair of 14. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0333",
@@ -9452,7 +9452,7 @@ export const ITEMS = [
     structureType: "pairJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":3,"b":5,"n":15,"kind":"pairSaid"},"truth":true,"promptText":"Finn writes 3 x 5 in the factor-pair list for 15. Does it belong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":3,"b":5,"n":15,"kind":"pairSaid"},"truth":true,"promptText":"Finn says 3 and 5 multiply to make 15. Is Finn right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0334",
@@ -9462,7 +9462,7 @@ export const ITEMS = [
     structureType: "pairJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":2,"b":8,"n":15,"kind":"pairSaid"},"truth":false,"promptText":"According to Priya, 2 and 8 multiply to 15. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":2,"b":8,"n":15,"kind":"pairSaid"},"truth":false,"promptText":"Priya says 2 and 8 multiply to make 15. Is Priya right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0335",
@@ -9472,7 +9472,7 @@ export const ITEMS = [
     structureType: "pairJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":2,"b":8,"n":16,"kind":"pairSaid"},"truth":true,"promptText":"Sam writes 2 x 8 in the factor-pair list for 16. Does it belong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":2,"b":8,"n":16,"kind":"pairSaid"},"truth":true,"promptText":"Sam lists 2 and 8 as one factor pair of 16. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0336",
@@ -9482,7 +9482,7 @@ export const ITEMS = [
     structureType: "pairJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":3,"b":6,"n":16,"kind":"pairSaid"},"truth":false,"promptText":"According to Nia, 3 and 6 multiply to 16. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":3,"b":6,"n":16,"kind":"pairSaid"},"truth":false,"promptText":"Nia lists 3 and 6 as one factor pair of 16. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0337",
@@ -9492,7 +9492,7 @@ export const ITEMS = [
     structureType: "pairJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":2,"b":9,"n":18,"kind":"pairSaid"},"truth":true,"promptText":"Kai writes 2 x 9 in the factor-pair list for 18. Does it belong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":2,"b":9,"n":18,"kind":"pairSaid"},"truth":true,"promptText":"Kai writes 2 x 9 in the list of factor pairs for 18. Does 2 x 9 belong there?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0338",
@@ -9502,7 +9502,7 @@ export const ITEMS = [
     structureType: "pairJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":4,"b":5,"n":18,"kind":"pairSaid"},"truth":false,"promptText":"According to June, 4 and 5 multiply to 18. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":4,"b":5,"n":18,"kind":"pairSaid"},"truth":false,"promptText":"June writes 4 x 5 in the list of factor pairs for 18. Does 4 x 5 belong there?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0339",
@@ -9512,7 +9512,7 @@ export const ITEMS = [
     structureType: "pairJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":4,"b":5,"n":20,"kind":"pairSaid"},"truth":true,"promptText":"Lily writes 4 x 5 in the factor-pair list for 20. Does it belong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":4,"b":5,"n":20,"kind":"pairSaid"},"truth":true,"promptText":"Lily lists 4 and 5 as one factor pair of 20. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0340",
@@ -9522,7 +9522,7 @@ export const ITEMS = [
     structureType: "pairJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":3,"b":7,"n":20,"kind":"pairSaid"},"truth":false,"promptText":"According to Amara, 3 and 7 multiply to 20. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":3,"b":7,"n":20,"kind":"pairSaid"},"truth":false,"promptText":"Amara lists 3 and 7 as one factor pair of 20. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0341",
@@ -9532,7 +9532,7 @@ export const ITEMS = [
     structureType: "pairJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":4,"b":6,"n":24,"kind":"pairSaid"},"truth":true,"promptText":"Leo writes 4 x 6 in the factor-pair list for 24. Does it belong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":4,"b":6,"n":24,"kind":"pairSaid"},"truth":true,"promptText":"Leo says 4 and 6 multiply to make 24. Is Leo right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0342",
@@ -9542,7 +9542,7 @@ export const ITEMS = [
     structureType: "pairJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":3,"b":9,"n":24,"kind":"pairSaid"},"truth":false,"promptText":"According to Mina, 3 and 9 multiply to 24. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":3,"b":9,"n":24,"kind":"pairSaid"},"truth":false,"promptText":"Mina says 3 and 9 multiply to make 24. Is Mina right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0343",
@@ -9552,7 +9552,7 @@ export const ITEMS = [
     structureType: "pairJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":5,"b":5,"n":25,"kind":"pairSaid"},"truth":true,"promptText":"Theo writes 5 x 5 in the factor-pair list for 25. Does it belong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":5,"b":5,"n":25,"kind":"pairSaid"},"truth":true,"promptText":"Theo writes 5 x 5 in the list of factor pairs for 25. Does 5 x 5 belong there?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0344",
@@ -9562,7 +9562,7 @@ export const ITEMS = [
     structureType: "pairJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":4,"b":6,"n":25,"kind":"pairSaid"},"truth":false,"promptText":"According to Ida, 4 and 6 multiply to 25. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":4,"b":6,"n":25,"kind":"pairSaid"},"truth":false,"promptText":"Ida writes 4 x 6 in the list of factor pairs for 25. Does 4 x 6 belong there?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0345",
@@ -9572,7 +9572,7 @@ export const ITEMS = [
     structureType: "pairJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":4,"b":7,"n":28,"kind":"pairSaid"},"truth":true,"promptText":"Zoe writes 4 x 7 in the factor-pair list for 28. Does it belong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":4,"b":7,"n":28,"kind":"pairSaid"},"truth":true,"promptText":"Zoe says 4 and 7 multiply to make 28. Is Zoe right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0346",
@@ -9582,7 +9582,7 @@ export const ITEMS = [
     structureType: "pairJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":5,"b":6,"n":28,"kind":"pairSaid"},"truth":false,"promptText":"According to Rosa, 5 and 6 multiply to 28. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":5,"b":6,"n":28,"kind":"pairSaid"},"truth":false,"promptText":"Rosa says 5 and 6 multiply to make 28. Is Rosa right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0347",
@@ -9592,7 +9592,7 @@ export const ITEMS = [
     structureType: "pairJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":5,"b":6,"n":30,"kind":"pairSaid"},"truth":true,"promptText":"Diego writes 5 x 6 in the factor-pair list for 30. Does it belong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":5,"b":6,"n":30,"kind":"pairSaid"},"truth":true,"promptText":"Diego writes 5 x 6 in the list of factor pairs for 30. Does 5 x 6 belong there?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0348",
@@ -9602,7 +9602,7 @@ export const ITEMS = [
     structureType: "pairJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":4,"b":8,"n":30,"kind":"pairSaid"},"truth":false,"promptText":"According to Nora, 4 and 8 multiply to 30. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":4,"b":8,"n":30,"kind":"pairSaid"},"truth":false,"promptText":"Nora writes 4 x 8 in the list of factor pairs for 30. Does 4 x 8 belong there?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0349",
@@ -9612,7 +9612,7 @@ export const ITEMS = [
     structureType: "pairJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":4,"b":8,"n":32,"kind":"pairSaid"},"truth":true,"promptText":"Finn certifies (4, 8) as a factor pair of 32. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":4,"b":8,"n":32,"kind":"pairSaid"},"truth":true,"promptText":"Is Finn right that 4 and 8 are a factor pair of 32?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0350",
@@ -9622,7 +9622,7 @@ export const ITEMS = [
     structureType: "pairJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":5,"b":6,"n":32,"kind":"pairSaid"},"truth":false,"promptText":"Audit Priya's pair (5, 6) for 32. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":5,"b":6,"n":32,"kind":"pairSaid"},"truth":false,"promptText":"Is Priya right that 5 and 6 are a factor pair of 32?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0351",
@@ -9632,7 +9632,7 @@ export const ITEMS = [
     structureType: "pairJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":4,"b":9,"n":36,"kind":"pairSaid"},"truth":true,"promptText":"Sam certifies (4, 9) as a factor pair of 36. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":4,"b":9,"n":36,"kind":"pairSaid"},"truth":true,"promptText":"Sam is listing the factor pairs of 36 and writes 4 x 9. Does 4 x 9 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0352",
@@ -9642,7 +9642,7 @@ export const ITEMS = [
     structureType: "pairJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":5,"b":7,"n":36,"kind":"pairSaid"},"truth":false,"promptText":"Audit Nia's pair (5, 7) for 36. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":5,"b":7,"n":36,"kind":"pairSaid"},"truth":false,"promptText":"Nia is listing the factor pairs of 36 and writes 5 x 7. Does 5 x 7 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0353",
@@ -9652,7 +9652,7 @@ export const ITEMS = [
     structureType: "pairJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":5,"b":8,"n":40,"kind":"pairSaid"},"truth":true,"promptText":"Kai certifies (5, 8) as a factor pair of 40. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":5,"b":8,"n":40,"kind":"pairSaid"},"truth":true,"promptText":"Is Kai right that 5 and 8 are a factor pair of 40?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0354",
@@ -9662,7 +9662,7 @@ export const ITEMS = [
     structureType: "pairJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":6,"b":7,"n":40,"kind":"pairSaid"},"truth":false,"promptText":"Audit June's pair (6, 7) for 40. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":6,"b":7,"n":40,"kind":"pairSaid"},"truth":false,"promptText":"Is June right that 6 and 7 are a factor pair of 40?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0355",
@@ -9672,7 +9672,7 @@ export const ITEMS = [
     structureType: "pairJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":6,"b":7,"n":42,"kind":"pairSaid"},"truth":true,"promptText":"Lily certifies (6, 7) as a factor pair of 42. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":6,"b":7,"n":42,"kind":"pairSaid"},"truth":true,"promptText":"Lily is listing the factor pairs of 42 and writes 6 x 7. Does 6 x 7 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0356",
@@ -9682,7 +9682,7 @@ export const ITEMS = [
     structureType: "pairJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":5,"b":9,"n":42,"kind":"pairSaid"},"truth":false,"promptText":"Audit Amara's pair (5, 9) for 42. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":5,"b":9,"n":42,"kind":"pairSaid"},"truth":false,"promptText":"Amara is listing the factor pairs of 42 and writes 5 x 9. Does 5 x 9 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0357",
@@ -9692,7 +9692,7 @@ export const ITEMS = [
     structureType: "pairJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":5,"b":9,"n":45,"kind":"pairSaid"},"truth":true,"promptText":"Leo certifies (5, 9) as a factor pair of 45. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":5,"b":9,"n":45,"kind":"pairSaid"},"truth":true,"promptText":"Is Leo right that 5 and 9 are a factor pair of 45?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0358",
@@ -9702,7 +9702,7 @@ export const ITEMS = [
     structureType: "pairJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":6,"b":8,"n":45,"kind":"pairSaid"},"truth":false,"promptText":"Audit Mina's pair (6, 8) for 45. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":6,"b":8,"n":45,"kind":"pairSaid"},"truth":false,"promptText":"Is Mina right that 6 and 8 are a factor pair of 45?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0359",
@@ -9712,7 +9712,7 @@ export const ITEMS = [
     structureType: "pairJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":6,"b":8,"n":48,"kind":"pairSaid"},"truth":true,"promptText":"Theo certifies (6, 8) as a factor pair of 48. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":6,"b":8,"n":48,"kind":"pairSaid"},"truth":true,"promptText":"Theo is listing the factor pairs of 48 and writes 6 x 8. Does 6 x 8 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0360",
@@ -9722,7 +9722,7 @@ export const ITEMS = [
     structureType: "pairJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":7,"b":7,"n":48,"kind":"pairSaid"},"truth":false,"promptText":"Audit Ida's pair (7, 7) for 48. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":7,"b":7,"n":48,"kind":"pairSaid"},"truth":false,"promptText":"Ida is listing the factor pairs of 48 and writes 7 x 7. Does 7 x 7 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0361",
@@ -9732,7 +9732,7 @@ export const ITEMS = [
     structureType: "pairJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":5,"b":10,"n":50,"kind":"pairSaid"},"truth":true,"promptText":"Zoe certifies (5, 10) as a factor pair of 50. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":5,"b":10,"n":50,"kind":"pairSaid"},"truth":true,"promptText":"Is Zoe right that 5 and 10 are a factor pair of 50?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0362",
@@ -9742,7 +9742,7 @@ export const ITEMS = [
     structureType: "pairJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":6,"b":9,"n":50,"kind":"pairSaid"},"truth":false,"promptText":"Audit Rosa's pair (6, 9) for 50. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":6,"b":9,"n":50,"kind":"pairSaid"},"truth":false,"promptText":"Is Rosa right that 6 and 9 are a factor pair of 50?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0363",
@@ -9752,7 +9752,7 @@ export const ITEMS = [
     structureType: "pairJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":6,"b":9,"n":54,"kind":"pairSaid"},"truth":true,"promptText":"Diego certifies (6, 9) as a factor pair of 54. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":6,"b":9,"n":54,"kind":"pairSaid"},"truth":true,"promptText":"Diego is listing the factor pairs of 54 and writes 6 x 9. Does 6 x 9 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0364",
@@ -9762,7 +9762,7 @@ export const ITEMS = [
     structureType: "pairJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":7,"b":8,"n":54,"kind":"pairSaid"},"truth":false,"promptText":"Audit Nora's pair (7, 8) for 54. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":7,"b":8,"n":54,"kind":"pairSaid"},"truth":false,"promptText":"Nora is listing the factor pairs of 54 and writes 7 x 8. Does 7 x 8 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0365",
@@ -9772,7 +9772,7 @@ export const ITEMS = [
     structureType: "pairJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":6,"b":10,"n":60,"kind":"pairSaid"},"truth":true,"promptText":"Luca certifies (6, 10) as a factor pair of 60. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"a":6,"b":10,"n":60,"kind":"pairSaid"},"truth":true,"promptText":"Is Luca right that 6 and 10 are a factor pair of 60?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0366",
@@ -9782,7 +9782,7 @@ export const ITEMS = [
     structureType: "pairJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":7,"b":9,"n":60,"kind":"pairSaid"},"truth":false,"promptText":"Audit Ava's pair (7, 9) for 60. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"a":7,"b":9,"n":60,"kind":"pairSaid"},"truth":false,"promptText":"Is Ava right that 7 and 9 are a factor pair of 60?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0367",
@@ -9972,7 +9972,7 @@ export const ITEMS = [
     structureType: "sumTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"June adds 6 + 8 = 14 and declares (6, 8) a factor pair of 14. Does the logic hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"June sees that 6 + 8 = 14. Does that make 6 and 8 a factor pair of 14?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0386",
@@ -9982,7 +9982,7 @@ export const ITEMS = [
     structureType: "sumTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Adding to 15 makes a factor pair, argues Lily, pointing at 7 and 8. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Is Lily right that 7 and 8 are a factor pair of 15 because 7 + 8 = 15?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0387",
@@ -9992,7 +9992,7 @@ export const ITEMS = [
     structureType: "sumTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Amara adds 9 + 7 = 16 and declares (9, 7) a factor pair of 16. Does the logic hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Amara says two numbers that add to 16 make a factor pair of 16. Are 9 and 7 a factor pair of 16?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0388",
@@ -10002,7 +10002,7 @@ export const ITEMS = [
     structureType: "sumTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Adding to 18 makes a factor pair, argues Leo, pointing at 8 and 10. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Leo sees that 8 + 10 = 18. Does that make 8 and 10 a factor pair of 18?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0389",
@@ -10012,7 +10012,7 @@ export const ITEMS = [
     structureType: "sumTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Mina adds 11 + 9 = 20 and declares (11, 9) a factor pair of 20. Does the logic hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Is Mina right that 11 and 9 are a factor pair of 20 because 11 + 9 = 20?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0390",
@@ -10022,7 +10022,7 @@ export const ITEMS = [
     structureType: "sumTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Adding to 24 makes a factor pair, argues Theo, pointing at 14 and 10. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Theo says two numbers that add to 24 make a factor pair of 24. Are 14 and 10 a factor pair of 24?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0391",
@@ -10032,7 +10032,7 @@ export const ITEMS = [
     structureType: "sumTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Ida adds 12 + 13 = 25 and declares (12, 13) a factor pair of 25. Does the logic hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Ida sees that 12 + 13 = 25. Does that make 12 and 13 a factor pair of 25?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0392",
@@ -10042,7 +10042,7 @@ export const ITEMS = [
     structureType: "sumTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Adding to 28 makes a factor pair, argues Zoe, pointing at 13 and 15. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Is Zoe right that 13 and 15 are a factor pair of 28 because 13 + 15 = 28?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0393",
@@ -10052,7 +10052,7 @@ export const ITEMS = [
     structureType: "sumTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Rosa adds 17 + 13 = 30 and declares (17, 13) a factor pair of 30. Does the logic hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Rosa says two numbers that add to 30 make a factor pair of 30. Are 17 and 13 a factor pair of 30?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0394",
@@ -10062,7 +10062,7 @@ export const ITEMS = [
     structureType: "sumTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Adding to 21 makes a factor pair, argues Diego, pointing at 10 and 11. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Diego sees that 10 + 11 = 21. Does that make 10 and 11 a factor pair of 21?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0395",
@@ -10072,7 +10072,7 @@ export const ITEMS = [
     structureType: "sumTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Nora adds 13 + 14 = 27 and declares (13, 14) a factor pair of 27. Does the logic hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Is Nora right that 13 and 14 are a factor pair of 27 because 13 + 14 = 27?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0396",
@@ -10082,7 +10082,7 @@ export const ITEMS = [
     structureType: "sumTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Adding to 22 makes a factor pair, argues Luca, pointing at 9 and 13. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Luca says two numbers that add to 22 make a factor pair of 22. Are 9 and 13 a factor pair of 22?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0397",
@@ -10092,7 +10092,7 @@ export const ITEMS = [
     structureType: "sumTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Ava adds 6 + 8 = 14 and declares (6, 8) a factor pair of 14. Does the logic hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Ava sees that 6 + 8 = 14. Does that make 6 and 8 a factor pair of 14?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0398",
@@ -10102,7 +10102,7 @@ export const ITEMS = [
     structureType: "sumTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Adding to 15 makes a factor pair, argues Omar, pointing at 7 and 8. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Is Omar right that 7 and 8 are a factor pair of 15 because 7 + 8 = 15?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0399",
@@ -10112,7 +10112,7 @@ export const ITEMS = [
     structureType: "sumTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Ben adds 9 + 7 = 16 and declares (9, 7) a factor pair of 16. Does the logic hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Ben says two numbers that add to 16 make a factor pair of 16. Are 9 and 7 a factor pair of 16?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0400",
@@ -10122,7 +10122,7 @@ export const ITEMS = [
     structureType: "sumTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Adding to 18 makes a factor pair, argues Finn, pointing at 8 and 10. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Finn sees that 8 + 10 = 18. Does that make 8 and 10 a factor pair of 18?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0401",
@@ -10132,7 +10132,7 @@ export const ITEMS = [
     structureType: "sumTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Priya adds 11 + 9 = 20 and declares (11, 9) a factor pair of 20. Does the logic hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Is Priya right that 11 and 9 are a factor pair of 20 because 11 + 9 = 20?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0402",
@@ -10142,7 +10142,7 @@ export const ITEMS = [
     structureType: "sumTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Adding to 24 makes a factor pair, argues Sam, pointing at 14 and 10. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Sam says two numbers that add to 24 make a factor pair of 24. Are 14 and 10 a factor pair of 24?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0403",
@@ -10152,7 +10152,7 @@ export const ITEMS = [
     structureType: "sumTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Amara's rule \"if they add to 32, they factor 32\" blesses (15, 17). Is the rule sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Amara sees that 15 + 17 = 32. Does that make 15 and 17 a factor pair of 32?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0404",
@@ -10162,7 +10162,7 @@ export const ITEMS = [
     structureType: "sumTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Because 17 + 19 = 36, Leo lists (17, 19) under 36's factor pairs. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Is Leo right that 17 and 19 are a factor pair of 36 because 17 + 19 = 36?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0405",
@@ -10172,7 +10172,7 @@ export const ITEMS = [
     structureType: "sumTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Mina's rule \"if they add to 40, they factor 40\" blesses (18, 22). Is the rule sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Mina says two numbers that add to 40 make a factor pair of 40. Are 18 and 22 a factor pair of 40?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0406",
@@ -10182,7 +10182,7 @@ export const ITEMS = [
     structureType: "sumTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Because 20 + 22 = 42, Theo lists (20, 22) under 42's factor pairs. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Theo sees that 20 + 22 = 42. Does that make 20 and 22 a factor pair of 42?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0407",
@@ -10192,7 +10192,7 @@ export const ITEMS = [
     structureType: "sumTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Ida's rule \"if they add to 45, they factor 45\" blesses (21, 24). Is the rule sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Is Ida right that 21 and 24 are a factor pair of 45 because 21 + 24 = 45?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0408",
@@ -10202,7 +10202,7 @@ export const ITEMS = [
     structureType: "sumTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Because 23 + 25 = 48, Zoe lists (23, 25) under 48's factor pairs. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Zoe says two numbers that add to 48 make a factor pair of 48. Are 23 and 25 a factor pair of 48?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0409",
@@ -10212,7 +10212,7 @@ export const ITEMS = [
     structureType: "sumTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Rosa's rule \"if they add to 50, they factor 50\" blesses (24, 26). Is the rule sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Rosa sees that 24 + 26 = 50. Does that make 24 and 26 a factor pair of 50?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0410",
@@ -10222,7 +10222,7 @@ export const ITEMS = [
     structureType: "sumTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Because 25 + 29 = 54, Diego lists (25, 29) under 54's factor pairs. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Is Diego right that 25 and 29 are a factor pair of 54 because 25 + 29 = 54?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0411",
@@ -10232,7 +10232,7 @@ export const ITEMS = [
     structureType: "sumTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Nora's rule \"if they add to 60, they factor 60\" blesses (28, 32). Is the rule sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Nora says two numbers that add to 60 make a factor pair of 60. Are 28 and 32 a factor pair of 60?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0412",
@@ -10242,7 +10242,7 @@ export const ITEMS = [
     structureType: "sumTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Because 21 + 23 = 44, Luca lists (21, 23) under 44's factor pairs. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Luca sees that 21 + 23 = 44. Does that make 21 and 23 a factor pair of 44?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0413",
@@ -10252,7 +10252,7 @@ export const ITEMS = [
     structureType: "sumTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Ava's rule \"if they add to 56, they factor 56\" blesses (27, 29). Is the rule sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Is Ava right that 27 and 29 are a factor pair of 56 because 27 + 29 = 56?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0414",
@@ -10262,7 +10262,7 @@ export const ITEMS = [
     structureType: "sumTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Because 15 + 17 = 32, Omar lists (15, 17) under 32's factor pairs. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Omar says two numbers that add to 32 make a factor pair of 32. Are 15 and 17 a factor pair of 32?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0415",
@@ -10272,7 +10272,7 @@ export const ITEMS = [
     structureType: "sumTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Ben's rule \"if they add to 36, they factor 36\" blesses (17, 19). Is the rule sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Ben sees that 17 + 19 = 36. Does that make 17 and 19 a factor pair of 36?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0416",
@@ -10282,7 +10282,7 @@ export const ITEMS = [
     structureType: "sumTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Because 18 + 22 = 40, Finn lists (18, 22) under 40's factor pairs. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Is Finn right that 18 and 22 are a factor pair of 40 because 18 + 22 = 40?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0417",
@@ -10292,7 +10292,7 @@ export const ITEMS = [
     structureType: "sumTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Priya's rule \"if they add to 42, they factor 42\" blesses (20, 22). Is the rule sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Priya says two numbers that add to 42 make a factor pair of 42. Are 20 and 22 a factor pair of 42?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0418",
@@ -10302,7 +10302,7 @@ export const ITEMS = [
     structureType: "sumTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Because 21 + 24 = 45, Sam lists (21, 24) under 45's factor pairs. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Sam sees that 21 + 24 = 45. Does that make 21 and 24 a factor pair of 45?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0419",
@@ -10312,7 +10312,7 @@ export const ITEMS = [
     structureType: "sumTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Nia's rule \"if they add to 48, they factor 48\" blesses (23, 25). Is the rule sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Is Nia right that 23 and 25 are a factor pair of 48 because 23 + 25 = 48?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0420",
@@ -10322,7 +10322,7 @@ export const ITEMS = [
     structureType: "sumTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Because 24 + 26 = 50, Kai lists (24, 26) under 50's factor pairs. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Kai says two numbers that add to 50 make a factor pair of 50. Are 24 and 26 a factor pair of 50?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0421",
@@ -10332,7 +10332,7 @@ export const ITEMS = [
     structureType: "swapJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Nia says 3 x 4 and 4 x 3 count as the SAME factor pair of 12. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Nia says 3 x 4 and 4 x 3 count as the same factor pair of 12. Is Nia right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0422",
@@ -10342,7 +10342,7 @@ export const ITEMS = [
     structureType: "swapJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Swapping the order, says Kai, does not make a new factor pair of 8: 2 x 4 is 4 x 2. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Kai says swapping 2 x 4 to 4 x 2 does not make a new factor pair of 8. Is Kai right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0423",
@@ -10352,7 +10352,7 @@ export const ITEMS = [
     structureType: "swapJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"June says 2 x 3 and 3 x 2 count as the SAME factor pair of 6. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"June says 2 x 3 and 3 x 2 count as the same factor pair of 6. Is June right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0424",
@@ -10362,7 +10362,7 @@ export const ITEMS = [
     structureType: "swapJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Swapping the order, says Lily, does not make a new factor pair of 10: 2 x 5 is 5 x 2. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Lily says swapping 2 x 5 to 5 x 2 does not make a new factor pair of 10. Is Lily right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0425",
@@ -10372,7 +10372,7 @@ export const ITEMS = [
     structureType: "swapJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Amara says 2 x 6 and 6 x 2 count as the SAME factor pair of 12. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Amara says 2 x 6 and 6 x 2 count as the same factor pair of 12. Is Amara right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0426",
@@ -10382,7 +10382,7 @@ export const ITEMS = [
     structureType: "swapJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Swapping the order, says Leo, does not make a new factor pair of 9: 1 x 9 is 9 x 1. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Leo says swapping 1 x 9 to 9 x 1 does not make a new factor pair of 9. Is Leo right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0427",
@@ -10392,7 +10392,7 @@ export const ITEMS = [
     structureType: "swapJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Mina says 1 x 4 and 4 x 1 count as the SAME factor pair of 4. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Mina says 1 x 4 and 4 x 1 count as the same factor pair of 4. Is Mina right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0428",
@@ -10402,7 +10402,7 @@ export const ITEMS = [
     structureType: "swapJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Swapping the order, says Theo, does not make a new factor pair of 10: 1 x 10 is 10 x 1. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Theo says swapping 1 x 10 to 10 x 1 does not make a new factor pair of 10. Is Theo right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0429",
@@ -10412,7 +10412,7 @@ export const ITEMS = [
     structureType: "swapJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Ida says 3 x 4 and 4 x 3 count as the SAME factor pair of 12. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Ida says 3 x 4 and 4 x 3 count as the same factor pair of 12. Is Ida right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0430",
@@ -10422,7 +10422,7 @@ export const ITEMS = [
     structureType: "swapJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Swapping the order, says Zoe, does not make a new factor pair of 8: 2 x 4 is 4 x 2. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Zoe says swapping 2 x 4 to 4 x 2 does not make a new factor pair of 8. Is Zoe right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0431",
@@ -10432,7 +10432,7 @@ export const ITEMS = [
     structureType: "swapJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Rosa says 2 x 3 and 3 x 2 count as the SAME factor pair of 6. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Rosa says 2 x 3 and 3 x 2 count as the same factor pair of 6. Is Rosa right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0432",
@@ -10442,7 +10442,7 @@ export const ITEMS = [
     structureType: "swapJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Swapping the order, says Diego, does not make a new factor pair of 10: 2 x 5 is 5 x 2. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Diego says swapping 2 x 5 to 5 x 2 does not make a new factor pair of 10. Is Diego right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0433",
@@ -10452,7 +10452,7 @@ export const ITEMS = [
     structureType: "swapJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Nora says 2 x 6 and 6 x 2 count as the SAME factor pair of 12. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Nora says 2 x 6 and 6 x 2 count as the same factor pair of 12. Is Nora right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0434",
@@ -10462,7 +10462,7 @@ export const ITEMS = [
     structureType: "swapJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Swapping the order, says Luca, does not make a new factor pair of 9: 1 x 9 is 9 x 1. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Luca says swapping 1 x 9 to 9 x 1 does not make a new factor pair of 9. Is Luca right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0435",
@@ -10472,7 +10472,7 @@ export const ITEMS = [
     structureType: "swapJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Ava says 1 x 4 and 4 x 1 count as the SAME factor pair of 4. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Ava says 1 x 4 and 4 x 1 count as the same factor pair of 4. Is Ava right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0436",
@@ -10482,7 +10482,7 @@ export const ITEMS = [
     structureType: "swapJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Swapping the order, says Omar, does not make a new factor pair of 10: 1 x 10 is 10 x 1. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Omar says swapping 1 x 10 to 10 x 1 does not make a new factor pair of 10. Is Omar right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0437",
@@ -10652,7 +10652,7 @@ export const ITEMS = [
     structureType: "swapJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Diego treats (4, 8) and (8, 4) as the same factor pair of 32. Sound treatment?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Is Diego right that 4 x 8 and 8 x 4 are the same factor pair of 32?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0454",
@@ -10662,7 +10662,7 @@ export const ITEMS = [
     structureType: "swapJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"In Nora's tally of 36's factor pairs, (4, 9) equals (9, 4). Should it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Is Nora right that 4 x 9 and 9 x 4 are the same factor pair of 36?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0455",
@@ -10672,7 +10672,7 @@ export const ITEMS = [
     structureType: "swapJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Luca treats (5, 8) and (8, 5) as the same factor pair of 40. Sound treatment?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Luca is counting the factor pairs of 40. Should 5 x 8 and 8 x 5 count as one pair?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0456",
@@ -10682,7 +10682,7 @@ export const ITEMS = [
     structureType: "swapJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"In Ava's tally of 42's factor pairs, (6, 7) equals (7, 6). Should it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Ava is counting the factor pairs of 42. Should 6 x 7 and 7 x 6 count as one pair?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0457",
@@ -10692,7 +10692,7 @@ export const ITEMS = [
     structureType: "swapJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Omar treats (5, 9) and (9, 5) as the same factor pair of 45. Sound treatment?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Is Omar right that 5 x 9 and 9 x 5 are the same factor pair of 45?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0458",
@@ -10702,7 +10702,7 @@ export const ITEMS = [
     structureType: "swapJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"In Ben's tally of 48's factor pairs, (6, 8) equals (8, 6). Should it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Is Ben right that 6 x 8 and 8 x 6 are the same factor pair of 48?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0459",
@@ -10712,7 +10712,7 @@ export const ITEMS = [
     structureType: "swapJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Finn treats (5, 10) and (10, 5) as the same factor pair of 50. Sound treatment?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Finn is counting the factor pairs of 50. Should 5 x 10 and 10 x 5 count as one pair?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0460",
@@ -10722,7 +10722,7 @@ export const ITEMS = [
     structureType: "swapJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"In Priya's tally of 54's factor pairs, (6, 9) equals (9, 6). Should it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Priya is counting the factor pairs of 54. Should 6 x 9 and 9 x 6 count as one pair?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0461",
@@ -10732,7 +10732,7 @@ export const ITEMS = [
     structureType: "swapJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Sam treats (6, 10) and (10, 6) as the same factor pair of 60. Sound treatment?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Is Sam right that 6 x 10 and 10 x 6 are the same factor pair of 60?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0462",
@@ -10742,7 +10742,7 @@ export const ITEMS = [
     structureType: "swapJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"In Nia's tally of 44's factor pairs, (4, 11) equals (11, 4). Should it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Is Nia right that 4 x 11 and 11 x 4 are the same factor pair of 44?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0463",
@@ -10752,7 +10752,7 @@ export const ITEMS = [
     structureType: "swapJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Kai treats (7, 8) and (8, 7) as the same factor pair of 56. Sound treatment?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Kai is counting the factor pairs of 56. Should 7 x 8 and 8 x 7 count as one pair?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0464",
@@ -10762,7 +10762,7 @@ export const ITEMS = [
     structureType: "swapJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"In June's tally of 48's factor pairs, (4, 12) equals (12, 4). Should it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"June is counting the factor pairs of 48. Should 4 x 12 and 12 x 4 count as one pair?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0465",
@@ -10772,7 +10772,7 @@ export const ITEMS = [
     structureType: "swapJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Lily treats (4, 8) and (8, 4) as the same factor pair of 32. Sound treatment?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Is Lily right that 4 x 8 and 8 x 4 are the same factor pair of 32?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0466",
@@ -10782,7 +10782,7 @@ export const ITEMS = [
     structureType: "swapJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"In Amara's tally of 36's factor pairs, (4, 9) equals (9, 4). Should it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Is Amara right that 4 x 9 and 9 x 4 are the same factor pair of 36?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0467",
@@ -10792,7 +10792,7 @@ export const ITEMS = [
     structureType: "swapJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Leo treats (5, 8) and (8, 5) as the same factor pair of 40. Sound treatment?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Leo is counting the factor pairs of 40. Should 5 x 8 and 8 x 5 count as one pair?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0468",
@@ -10802,7 +10802,7 @@ export const ITEMS = [
     structureType: "swapJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"In Mina's tally of 42's factor pairs, (6, 7) equals (7, 6). Should it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authoredYes"},"truth":true,"promptText":"Mina is counting the factor pairs of 42. Should 6 x 7 and 7 x 6 count as one pair?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0469",
@@ -10822,7 +10822,7 @@ export const ITEMS = [
     structureType: "primeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":9,"kind":"primeSaid"},"truth":false,"promptText":"9 is prime, claims Theo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":9,"kind":"primeSaid"},"truth":false,"promptText":"Theo calls 9 a prime number. Is Theo right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0471",
@@ -10832,7 +10832,7 @@ export const ITEMS = [
     structureType: "primeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":7,"kind":"primeSaid"},"truth":true,"promptText":"Ida calls 7 a prime number. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":7,"kind":"primeSaid"},"truth":true,"promptText":"Is Ida right that 7 is a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0472",
@@ -10842,7 +10842,7 @@ export const ITEMS = [
     structureType: "primeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":4,"kind":"primeSaid"},"truth":false,"promptText":"4 is prime, claims Zoe. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":4,"kind":"primeSaid"},"truth":false,"promptText":"Is Zoe right that 4 is a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0473",
@@ -10852,7 +10852,7 @@ export const ITEMS = [
     structureType: "primeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":3,"kind":"primeSaid"},"truth":true,"promptText":"Rosa calls 3 a prime number. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":3,"kind":"primeSaid"},"truth":true,"promptText":"Rosa says 3 is prime. Is that correct?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0474",
@@ -10862,7 +10862,7 @@ export const ITEMS = [
     structureType: "primeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":6,"kind":"primeSaid"},"truth":false,"promptText":"6 is prime, claims Diego. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":6,"kind":"primeSaid"},"truth":false,"promptText":"Diego says 6 is prime. Is that correct?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0475",
@@ -10872,7 +10872,7 @@ export const ITEMS = [
     structureType: "primeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":2,"kind":"primeSaid"},"truth":true,"promptText":"Nora calls 2 a prime number. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":2,"kind":"primeSaid"},"truth":true,"promptText":"Is Nora right that 2 is a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0476",
@@ -10882,7 +10882,7 @@ export const ITEMS = [
     structureType: "primeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":8,"kind":"primeSaid"},"truth":false,"promptText":"8 is prime, claims Luca. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":8,"kind":"primeSaid"},"truth":false,"promptText":"Is Luca right that 8 is a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0477",
@@ -10892,7 +10892,7 @@ export const ITEMS = [
     structureType: "primeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":11,"kind":"primeSaid"},"truth":true,"promptText":"Ava calls 11 a prime number. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":11,"kind":"primeSaid"},"truth":true,"promptText":"Ava says 11 is prime. Is that correct?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0478",
@@ -10902,7 +10902,7 @@ export const ITEMS = [
     structureType: "primeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":10,"kind":"primeSaid"},"truth":false,"promptText":"10 is prime, claims Omar. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":10,"kind":"primeSaid"},"truth":false,"promptText":"Omar says 10 is prime. Is that correct?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0479",
@@ -10922,7 +10922,7 @@ export const ITEMS = [
     structureType: "primeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":12,"kind":"primeSaid"},"truth":false,"promptText":"12 is prime, claims Finn. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":12,"kind":"primeSaid"},"truth":false,"promptText":"Finn calls 12 a prime number. Is Finn right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0481",
@@ -10932,7 +10932,7 @@ export const ITEMS = [
     structureType: "primeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":5,"kind":"primeSaid"},"truth":true,"promptText":"Priya calls 5 a prime number. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":5,"kind":"primeSaid"},"truth":true,"promptText":"Is Priya right that 5 is a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0482",
@@ -10942,7 +10942,7 @@ export const ITEMS = [
     structureType: "primeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":15,"kind":"primeSaid"},"truth":false,"promptText":"15 is prime, claims Sam. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":15,"kind":"primeSaid"},"truth":false,"promptText":"Is Sam right that 15 is a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0483",
@@ -10952,7 +10952,7 @@ export const ITEMS = [
     structureType: "primeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":7,"kind":"primeSaid"},"truth":true,"promptText":"Nia calls 7 a prime number. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":7,"kind":"primeSaid"},"truth":true,"promptText":"Nia says 7 is prime. Is that correct?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0484",
@@ -10962,7 +10962,7 @@ export const ITEMS = [
     structureType: "primeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":9,"kind":"primeSaid"},"truth":false,"promptText":"9 is prime, claims Kai. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":9,"kind":"primeSaid"},"truth":false,"promptText":"Kai says 9 is prime. Is that correct?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0485",
@@ -10982,7 +10982,7 @@ export const ITEMS = [
     structureType: "primeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":4,"kind":"primeSaid"},"truth":false,"promptText":"4 is prime, claims Lily. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":4,"kind":"primeSaid"},"truth":false,"promptText":"Lily calls 4 a prime number. Is Lily right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0487",
@@ -10992,7 +10992,7 @@ export const ITEMS = [
     structureType: "primeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":17,"kind":"primeSaid"},"truth":true,"promptText":"Omar sorts 17 into the prime bin. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":17,"kind":"primeSaid"},"truth":true,"promptText":"Omar says the only factors of 17 are 1 and 17. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0488",
@@ -11002,7 +11002,7 @@ export const ITEMS = [
     structureType: "primeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":15,"kind":"primeSaid"},"truth":false,"promptText":"According to Ben, 15 has exactly two factors. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":15,"kind":"primeSaid"},"truth":false,"promptText":"Ben says the only factors of 15 are 1 and 15. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0489",
@@ -11012,7 +11012,7 @@ export const ITEMS = [
     structureType: "primeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":19,"kind":"primeSaid"},"truth":true,"promptText":"Finn sorts 19 into the prime bin. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":19,"kind":"primeSaid"},"truth":true,"promptText":"Finn sorts 19 into the prime bin. Does 19 belong there?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0490",
@@ -11022,7 +11022,7 @@ export const ITEMS = [
     structureType: "primeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":21,"kind":"primeSaid"},"truth":false,"promptText":"According to Priya, 21 has exactly two factors. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":21,"kind":"primeSaid"},"truth":false,"promptText":"Priya sorts 21 into the prime bin. Does 21 belong there?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0491",
@@ -11032,7 +11032,7 @@ export const ITEMS = [
     structureType: "primeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":23,"kind":"primeSaid"},"truth":true,"promptText":"Sam sorts 23 into the prime bin. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":23,"kind":"primeSaid"},"truth":true,"promptText":"Sam says the only factors of 23 are 1 and 23. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0492",
@@ -11042,7 +11042,7 @@ export const ITEMS = [
     structureType: "primeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":25,"kind":"primeSaid"},"truth":false,"promptText":"According to Nia, 25 has exactly two factors. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":25,"kind":"primeSaid"},"truth":false,"promptText":"Nia says the only factors of 25 are 1 and 25. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0493",
@@ -11052,7 +11052,7 @@ export const ITEMS = [
     structureType: "primeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":29,"kind":"primeSaid"},"truth":true,"promptText":"Kai sorts 29 into the prime bin. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":29,"kind":"primeSaid"},"truth":true,"promptText":"Kai says 29 has exactly two factors. Is Kai right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0494",
@@ -11062,7 +11062,7 @@ export const ITEMS = [
     structureType: "primeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":27,"kind":"primeSaid"},"truth":false,"promptText":"According to June, 27 has exactly two factors. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":27,"kind":"primeSaid"},"truth":false,"promptText":"June says 27 has exactly two factors. Is June right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0495",
@@ -11072,7 +11072,7 @@ export const ITEMS = [
     structureType: "primeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":13,"kind":"primeSaid"},"truth":true,"promptText":"Lily sorts 13 into the prime bin. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":13,"kind":"primeSaid"},"truth":true,"promptText":"Lily says the only factors of 13 are 1 and 13. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0496",
@@ -11082,7 +11082,7 @@ export const ITEMS = [
     structureType: "primeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":14,"kind":"primeSaid"},"truth":false,"promptText":"According to Amara, 14 has exactly two factors. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":14,"kind":"primeSaid"},"truth":false,"promptText":"Amara says the only factors of 14 are 1 and 14. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0497",
@@ -11092,7 +11092,7 @@ export const ITEMS = [
     structureType: "primeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":11,"kind":"primeSaid"},"truth":true,"promptText":"Leo sorts 11 into the prime bin. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":11,"kind":"primeSaid"},"truth":true,"promptText":"Leo says 11 has exactly two factors. Is Leo right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0498",
@@ -11102,7 +11102,7 @@ export const ITEMS = [
     structureType: "primeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":16,"kind":"primeSaid"},"truth":false,"promptText":"According to Mina, 16 has exactly two factors. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":16,"kind":"primeSaid"},"truth":false,"promptText":"Mina says 16 has exactly two factors. Is Mina right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0499",
@@ -11112,7 +11112,7 @@ export const ITEMS = [
     structureType: "primeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":17,"kind":"primeSaid"},"truth":true,"promptText":"Theo sorts 17 into the prime bin. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":17,"kind":"primeSaid"},"truth":true,"promptText":"Theo sorts 17 into the prime bin. Does 17 belong there?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0500",
@@ -11122,7 +11122,7 @@ export const ITEMS = [
     structureType: "primeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":18,"kind":"primeSaid"},"truth":false,"promptText":"According to Ida, 18 has exactly two factors. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":18,"kind":"primeSaid"},"truth":false,"promptText":"Ida sorts 18 into the prime bin. Does 18 belong there?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0501",
@@ -11132,7 +11132,7 @@ export const ITEMS = [
     structureType: "primeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":19,"kind":"primeSaid"},"truth":true,"promptText":"Zoe sorts 19 into the prime bin. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":19,"kind":"primeSaid"},"truth":true,"promptText":"Zoe says 19 has exactly two factors. Is Zoe right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0502",
@@ -11142,7 +11142,7 @@ export const ITEMS = [
     structureType: "primeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":20,"kind":"primeSaid"},"truth":false,"promptText":"According to Rosa, 20 has exactly two factors. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":20,"kind":"primeSaid"},"truth":false,"promptText":"Rosa says 20 has exactly two factors. Is Rosa right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0503",
@@ -11152,7 +11152,7 @@ export const ITEMS = [
     structureType: "primeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":23,"kind":"primeSaid"},"truth":true,"promptText":"Diego sorts 23 into the prime bin. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":23,"kind":"primeSaid"},"truth":true,"promptText":"Diego sorts 23 into the prime bin. Does 23 belong there?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0504",
@@ -11162,7 +11162,7 @@ export const ITEMS = [
     structureType: "primeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":24,"kind":"primeSaid"},"truth":false,"promptText":"According to Nora, 24 has exactly two factors. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":24,"kind":"primeSaid"},"truth":false,"promptText":"Nora sorts 24 into the prime bin. Does 24 belong there?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0505",
@@ -11172,7 +11172,7 @@ export const ITEMS = [
     structureType: "primeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":31,"kind":"primeSaid"},"truth":true,"promptText":"Finn certifies 31 as prime. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":31,"kind":"primeSaid"},"truth":true,"promptText":"Is Finn right that 31 is a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0506",
@@ -11182,7 +11182,7 @@ export const ITEMS = [
     structureType: "primeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":33,"kind":"primeSaid"},"truth":false,"promptText":"Auditing Priya's prime list: it includes 33. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":33,"kind":"primeSaid"},"truth":false,"promptText":"Is Priya right that 33 is a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0507",
@@ -11192,7 +11192,7 @@ export const ITEMS = [
     structureType: "primeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":37,"kind":"primeSaid"},"truth":true,"promptText":"Sam certifies 37 as prime. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":37,"kind":"primeSaid"},"truth":true,"promptText":"Sam is making a list of prime numbers. Should 37 be on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0508",
@@ -11202,7 +11202,7 @@ export const ITEMS = [
     structureType: "primeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":35,"kind":"primeSaid"},"truth":false,"promptText":"Auditing Nia's prime list: it includes 35. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":35,"kind":"primeSaid"},"truth":false,"promptText":"Nia is making a list of prime numbers. Should 35 be on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0509",
@@ -11212,7 +11212,7 @@ export const ITEMS = [
     structureType: "primeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":41,"kind":"primeSaid"},"truth":true,"promptText":"Kai certifies 41 as prime. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":41,"kind":"primeSaid"},"truth":true,"promptText":"Is Kai right that 41 is a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0510",
@@ -11222,7 +11222,7 @@ export const ITEMS = [
     structureType: "primeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":39,"kind":"primeSaid"},"truth":false,"promptText":"Auditing June's prime list: it includes 39. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":39,"kind":"primeSaid"},"truth":false,"promptText":"Is June right that 39 is a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0511",
@@ -11232,7 +11232,7 @@ export const ITEMS = [
     structureType: "primeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":43,"kind":"primeSaid"},"truth":true,"promptText":"Lily certifies 43 as prime. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":43,"kind":"primeSaid"},"truth":true,"promptText":"Lily is making a list of prime numbers. Should 43 be on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0512",
@@ -11242,7 +11242,7 @@ export const ITEMS = [
     structureType: "primeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":45,"kind":"primeSaid"},"truth":false,"promptText":"Auditing Amara's prime list: it includes 45. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":45,"kind":"primeSaid"},"truth":false,"promptText":"Amara is making a list of prime numbers. Should 45 be on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0513",
@@ -11252,7 +11252,7 @@ export const ITEMS = [
     structureType: "primeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":47,"kind":"primeSaid"},"truth":true,"promptText":"Leo certifies 47 as prime. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":47,"kind":"primeSaid"},"truth":true,"promptText":"Is Leo right that 47 is a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0514",
@@ -11262,7 +11262,7 @@ export const ITEMS = [
     structureType: "primeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":49,"kind":"primeSaid"},"truth":false,"promptText":"Auditing Mina's prime list: it includes 49. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":49,"kind":"primeSaid"},"truth":false,"promptText":"Is Mina right that 49 is a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0515",
@@ -11272,7 +11272,7 @@ export const ITEMS = [
     structureType: "primeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":53,"kind":"primeSaid"},"truth":true,"promptText":"Theo certifies 53 as prime. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":53,"kind":"primeSaid"},"truth":true,"promptText":"Theo is making a list of prime numbers. Should 53 be on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0516",
@@ -11282,7 +11282,7 @@ export const ITEMS = [
     structureType: "primeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":51,"kind":"primeSaid"},"truth":false,"promptText":"Auditing Ida's prime list: it includes 51. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":51,"kind":"primeSaid"},"truth":false,"promptText":"Ida is making a list of prime numbers. Should 51 be on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0517",
@@ -11292,7 +11292,7 @@ export const ITEMS = [
     structureType: "primeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":59,"kind":"primeSaid"},"truth":true,"promptText":"Zoe certifies 59 as prime. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":59,"kind":"primeSaid"},"truth":true,"promptText":"Is Zoe right that 59 is a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0518",
@@ -11302,7 +11302,7 @@ export const ITEMS = [
     structureType: "primeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":55,"kind":"primeSaid"},"truth":false,"promptText":"Auditing Rosa's prime list: it includes 55. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":55,"kind":"primeSaid"},"truth":false,"promptText":"Is Rosa right that 55 is a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0519",
@@ -11312,7 +11312,7 @@ export const ITEMS = [
     structureType: "primeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":61,"kind":"primeSaid"},"truth":true,"promptText":"Diego certifies 61 as prime. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":61,"kind":"primeSaid"},"truth":true,"promptText":"Diego is making a list of prime numbers. Should 61 be on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0520",
@@ -11322,7 +11322,7 @@ export const ITEMS = [
     structureType: "primeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":57,"kind":"primeSaid"},"truth":false,"promptText":"Auditing Nora's prime list: it includes 57. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":57,"kind":"primeSaid"},"truth":false,"promptText":"Nora is making a list of prime numbers. Should 57 be on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0521",
@@ -11332,7 +11332,7 @@ export const ITEMS = [
     structureType: "primeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":31,"kind":"primeSaid"},"truth":true,"promptText":"Luca certifies 31 as prime. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"n":31,"kind":"primeSaid"},"truth":true,"promptText":"Is Luca right that 31 is a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0522",
@@ -11342,7 +11342,7 @@ export const ITEMS = [
     structureType: "primeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":49,"kind":"primeSaid"},"truth":false,"promptText":"Auditing Ava's prime list: it includes 49. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"n":49,"kind":"primeSaid"},"truth":false,"promptText":"Is Ava right that 49 is a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0523",
@@ -11432,7 +11432,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Kai says 2 is a prime number even though it is even. Is Kai right? Think about the factors of 2."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Is Kai right that 2 is a prime number even though it is even?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0532",
@@ -11442,7 +11442,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"June says every even number is composite, including 2. Is June right? Think about the factors of 2."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Is June right that every even number is composite, including 2?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0533",
@@ -11452,7 +11452,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Lily says 2 is a prime number even though it is even. Is Lily right? Think about the factors of 2."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Is Lily right that 2 is a prime number even though it is even?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0534",
@@ -11462,7 +11462,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Amara says every even number is composite, including 2. Is Amara right? Think about the factors of 2."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Is Amara right that every even number is composite, including 2?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0535",
@@ -11472,7 +11472,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Leo says 2 is a prime number even though it is even. Is Leo right? Think about the factors of 2."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Leo says 2 is a prime number even though it is even. Is 2 a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0536",
@@ -11482,7 +11482,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Mina says every even number is composite, including 2. Is Mina right? Think about the factors of 2."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Mina says every even number is composite. Is 2 composite?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0537",
@@ -11492,7 +11492,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Theo says 2 is a prime number even though it is even. Is Theo right? Think about the factors of 2."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Theo says 2 is a prime number even though it is even. Is 2 a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0538",
@@ -11502,7 +11502,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Ida says every even number is composite, including 2. Is Ida right? Think about the factors of 2."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Ida says every even number is composite. Is 2 composite?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0539",
@@ -11512,7 +11512,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"June claims 2 is the only even prime number. Is the claim right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"June says 2 is the only even prime number. Is June right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0540",
@@ -11522,7 +11522,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Evens can never be prime, argues Lily, so 2 is composite. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Lily says even numbers can never be prime, so 2 is composite. Is Lily right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0541",
@@ -11532,7 +11532,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Amara claims 2 is the only even prime number. Is the claim right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Amara says no even number except 2 is prime. Do you agree with Amara?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0542",
@@ -11542,7 +11542,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Evens can never be prime, argues Leo, so 2 is composite. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Leo thinks even numbers can never be prime, so 2 is composite. Do you agree with Leo?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0543",
@@ -11552,7 +11552,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Mina claims 2 is the only even prime number. Is the claim right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Mina thinks no even number except 2 is prime. Is Mina right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0544",
@@ -11562,7 +11562,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Evens can never be prime, argues Theo, so 2 is composite. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Theo thinks 2 is composite because even numbers can never be prime. Is Theo right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0545",
@@ -11572,7 +11572,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Ida claims 2 is the only even prime number. Is the claim right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Ida thinks 2 is the only even prime number. Do you agree with Ida?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0546",
@@ -11582,7 +11582,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Evens can never be prime, argues Zoe, so 2 is composite. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Zoe says 2 is composite because even numbers can never be prime. Do you agree with Zoe?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0547",
@@ -11592,7 +11592,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Rosa claims 2 is the only even prime number. Is the claim right? Think about the factors of 2."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Rosa says 2 is the only even prime number. Is Rosa right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0548",
@@ -11602,7 +11602,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Evens can never be prime, argues Diego, so 2 is composite. Is Diego right? Think about the factors of 2."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Diego says 2 is composite because it is an even number. Is Diego right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0549",
@@ -11612,7 +11612,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Nora claims 2 is the only even prime number. Is the claim right? Think about the factors of 2."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Nora says the number 2 is the only even prime. Do you agree with Nora?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0550",
@@ -11622,7 +11622,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Evens can never be prime, argues Luca, so 2 is composite. Is Luca right? Think about the factors of 2."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Luca thinks 2 must be composite because it is even. Do you agree with Luca?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0551",
@@ -11632,7 +11632,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Ava claims 2 is the only even prime number. Is the claim right? Think about the factors of 2."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Ava says no even number except 2 is prime. Is 2 the only even prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0552",
@@ -11642,7 +11642,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Evens can never be prime, argues Omar, so 2 is composite. Is Omar right? Think about the factors of 2."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Omar says even numbers can never be prime, so 2 is composite. Is 2 composite?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0553",
@@ -11652,7 +11652,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Ben claims 2 is the only even prime number. Is the claim right? Think about the factors of 2."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Ben says no even number except 2 is prime. Is 2 the only even prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0554",
@@ -11662,7 +11662,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Evens can never be prime, argues Finn, so 2 is composite. Is Finn right? Think about the factors of 2."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Finn says even numbers can never be prime, so 2 is composite. Is 2 composite?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0555",
@@ -11672,7 +11672,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Amara asserts that 2 belongs on the prime list as its only even member. Sound assertion?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"On a list of prime numbers, Amara keeps 2 as the only even one. Is Amara correct?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0556",
@@ -11682,7 +11682,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Leo strikes 2 from the primes for being even. Should it be struck?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"On a list of prime numbers, Leo crosses off 2 because it is even. Is Leo correct?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0557",
@@ -11692,7 +11692,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Mina asserts that 2 belongs on the prime list as its only even member. Sound assertion?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Mina thinks 2 is the only even prime number. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0558",
@@ -11702,7 +11702,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Theo strikes 2 from the primes for being even. Should it be struck?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Theo thinks 2 cannot be prime because every prime number is odd. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0559",
@@ -11712,7 +11712,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Ida asserts that 2 belongs on the prime list as its only even member. Sound assertion?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"On a list of prime numbers, Ida keeps 2 as the only even one. Is Ida correct?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0560",
@@ -11722,7 +11722,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Zoe strikes 2 from the primes for being even. Should it be struck?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"On a list of prime numbers, Zoe crosses off 2 because it is even. Is Zoe correct?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0561",
@@ -11732,7 +11732,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Rosa asserts that 2 belongs on the prime list as its only even member. Sound assertion?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Rosa says 2 is a prime number because its only factors are 1 and 2. Is Rosa right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0562",
@@ -11742,7 +11742,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Diego strikes 2 from the primes for being even. Should it be struck?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Diego says 2 is not a prime number because it is even. Is Diego right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0563",
@@ -11752,7 +11752,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Nora asserts that 2 belongs on the prime list as its only even member. Sound assertion? Think about the factors of 2."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Nora thinks 2 is not a composite number. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0564",
@@ -11762,7 +11762,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Luca strikes 2 from the primes for being even. Should it be struck? Think about the factors of 2."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Luca thinks 2 is a composite number because it is even. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0565",
@@ -11772,7 +11772,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Ava asserts that 2 belongs on the prime list as its only even member. Sound assertion? Think about the factors of 2."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Ava says 2 should not be crossed off a list of prime numbers. Is Ava right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0566",
@@ -11782,7 +11782,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Omar strikes 2 from the primes for being even. Should it be struck? Think about the factors of 2."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Omar says every prime number is odd. Is Omar right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0567",
@@ -11792,7 +11792,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Ben asserts that 2 belongs on the prime list as its only even member. Sound assertion? Think about the factors of 2."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Ben thinks 2 is the only even prime number. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0568",
@@ -11802,7 +11802,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Finn strikes 2 from the primes for being even. Should it be struck? Think about the factors of 2."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Finn thinks 2 cannot be prime because every prime number is odd. Is that true?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0569",
@@ -11812,7 +11812,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Priya asserts that 2 belongs on the prime list as its only even member. Sound assertion? Think about the factors of 2."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":true,"promptText":"Priya says 2 is a prime number because its only factors are 1 and 2. Is Priya right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0570",
@@ -11822,7 +11822,7 @@ export const ITEMS = [
     structureType: "evenPrimeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Sam strikes 2 from the primes for being even. Should it be struck? Think about the factors of 2."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"authored"},"truth":false,"promptText":"Sam says 2 is not a prime number because it is even. Is Sam right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0571",
@@ -11842,7 +11842,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"1 belongs on the prime list, claims Kai. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Kai says 1 belongs on the list of prime numbers. Is Kai right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0573",
@@ -11862,7 +11862,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"1 belongs on the prime list, claims Lily. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Lily thinks 1 should go on the list of prime numbers. Is Lily right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0575",
@@ -11882,7 +11882,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"1 belongs on the prime list, claims Leo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Leo says 1 belongs with the prime numbers. Is Leo right?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0577",
@@ -11892,7 +11892,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Mina says 1 is a prime number. Is Mina right? Count the factors of 1."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Is Mina right that 1 is a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0578",
@@ -11902,7 +11902,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"1 belongs on the prime list, claims Theo. Is that right? Count the factors of 1."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Theo puts 1 on a list of prime numbers. Does 1 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0579",
@@ -11912,7 +11912,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Ida says 1 is a prime number. Is Ida right? Count the factors of 1."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Is Ida right that 1 is a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0580",
@@ -11922,7 +11922,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"1 belongs on the prime list, claims Zoe. Is that right? Count the factors of 1."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Zoe puts 1 on a list of prime numbers. Does 1 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0581",
@@ -11932,7 +11932,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Rosa says 1 is a prime number. Is Rosa right? Count the factors of 1."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Rosa writes 1 in a list of prime numbers. Should 1 be on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0582",
@@ -11942,7 +11942,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"1 belongs on the prime list, claims Diego. Is that right? Count the factors of 1."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Is Diego right that 1 belongs on the list of prime numbers?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0583",
@@ -11952,7 +11952,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Nora says 1 is a prime number. Is Nora right? Primes need exactly two factors."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Nora writes 1 in a list of prime numbers. Should 1 be on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0584",
@@ -11962,7 +11962,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"1 belongs on the prime list, claims Luca. Is that right? Primes need exactly two factors."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Is Luca right that 1 belongs on the list of prime numbers?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0585",
@@ -11972,7 +11972,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Ava says 1 is a prime number. Is Ava right? Primes need exactly two factors."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Is Ava right that 1 is a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0586",
@@ -11982,7 +11982,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"1 belongs on the prime list, claims Omar. Is that right? Primes need exactly two factors."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Omar puts 1 on a list of prime numbers. Does 1 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0587",
@@ -11992,7 +11992,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Ben says 1 is a prime number. Is Ben right? Primes need exactly two factors."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Is Ben right that 1 is a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0588",
@@ -12002,7 +12002,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"1 belongs on the prime list, claims Finn. Is that right? Primes need exactly two factors."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Finn puts 1 on a list of prime numbers. Does 1 belong on the list?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0589",
@@ -12072,7 +12072,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Omar adds 1 to the prime list because it only divides by itself. Does 1 belong there? Count the factors of 1."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Omar adds 1 to the prime list because it only divides by itself. Does 1 belong there?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0596",
@@ -12082,7 +12082,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"According to Ben, 1 counts as prime. Is Ben right? Count the factors of 1."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Is Ben right that 1 counts as a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0597",
@@ -12092,7 +12092,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Finn adds 1 to the prime list because it only divides by itself. Does 1 belong there? Count the factors of 1."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Finn adds 1 to the prime list because it only divides by itself. Does 1 belong there?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0598",
@@ -12102,7 +12102,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"According to Priya, 1 counts as prime. Is Priya right? Count the factors of 1."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Is Priya right that 1 counts as a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0599",
@@ -12112,7 +12112,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Sam adds 1 to the prime list because it only divides by itself. Does 1 belong there? Count the factors of 1."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Sam adds 1 to the prime list because it only divides by itself. Does 1 belong there?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0600",
@@ -12122,7 +12122,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"According to Nia, 1 counts as prime. Is Nia right? Count the factors of 1."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Nia calls 1 a prime number. Is 1 really prime?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0601",
@@ -12132,7 +12132,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Kai adds 1 to the prime list because it only divides by itself. Does 1 belong there? Primes need exactly two factors."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Kai adds 1 to the prime list because it only divides by itself. Does 1 belong there?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0602",
@@ -12142,7 +12142,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"According to June, 1 counts as prime. Is June right? Primes need exactly two factors."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"June calls 1 a prime number. Is 1 really prime?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0603",
@@ -12152,7 +12152,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Lily adds 1 to the prime list because it only divides by itself. Does 1 belong there? Primes need exactly two factors."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Lily adds 1 to the prime list because it only divides by itself. Does 1 belong there?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0604",
@@ -12162,7 +12162,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"According to Amara, 1 counts as prime. Is Amara right? Primes need exactly two factors."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Is Amara right that 1 counts as a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0605",
@@ -12172,7 +12172,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Leo adds 1 to the prime list because it only divides by itself. Does 1 belong there? Primes need exactly two factors."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Leo adds 1 to the prime list because it only divides by itself. Does 1 belong there?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0606",
@@ -12182,7 +12182,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"According to Mina, 1 counts as prime. Is Mina right? Primes need exactly two factors."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Is Mina right that 1 counts as a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0607",
@@ -12192,7 +12192,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Diego defends 1 as prime since its only factor is 1. Is the defense sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Is Diego right that 1 is prime because its only factor is 1?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0608",
@@ -12202,7 +12202,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"On Nora's chart, 1 sits among the primes. Should it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Nora's chart of prime numbers shows 1. Should 1 be on the chart?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0609",
@@ -12212,7 +12212,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Luca defends 1 as prime since its only factor is 1. Is the defense sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Is Luca right that 1 is prime because its only factor is 1?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0610",
@@ -12222,7 +12222,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"On Ava's chart, 1 sits among the primes. Should it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Ava's chart of prime numbers shows 1. Should 1 be on the chart?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0611",
@@ -12232,7 +12232,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Omar defends 1 as prime since its only factor is 1. Is the defense sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Omar says 1 is prime because its only factor is 1. Is 1 a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0612",
@@ -12242,7 +12242,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"On Ben's chart, 1 sits among the primes. Should it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Ben puts 1 on a chart of prime numbers. Does 1 belong on the chart?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0613",
@@ -12252,7 +12252,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Finn defends 1 as prime since its only factor is 1. Is the defense sound? Count the factors of 1."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Finn says 1 is prime because its only factor is 1. Is 1 a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0614",
@@ -12262,7 +12262,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"On Priya's chart, 1 sits among the primes. Should it? Count the factors of 1."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Priya puts 1 on a chart of prime numbers. Does 1 belong on the chart?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0615",
@@ -12272,7 +12272,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Sam defends 1 as prime since its only factor is 1. Is the defense sound? Count the factors of 1."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Is Sam right that 1 is prime because its only factor is 1?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0616",
@@ -12282,7 +12282,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"On Nia's chart, 1 sits among the primes. Should it? Count the factors of 1."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Nia's chart of prime numbers shows 1. Should 1 be on the chart?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0617",
@@ -12292,7 +12292,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Kai defends 1 as prime since its only factor is 1. Is the defense sound? Count the factors of 1."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Is Kai right that 1 is prime because its only factor is 1?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0618",
@@ -12302,7 +12302,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"On June's chart, 1 sits among the primes. Should it? Count the factors of 1."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"June's chart of prime numbers shows 1. Should 1 be on the chart?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0619",
@@ -12312,7 +12312,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Lily defends 1 as prime since its only factor is 1. Is the defense sound? Primes need exactly two factors."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Lily says 1 is prime because its only factor is 1. Is 1 a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0620",
@@ -12322,7 +12322,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"On Amara's chart, 1 sits among the primes. Should it? Primes need exactly two factors."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Amara puts 1 on a chart of prime numbers. Does 1 belong on the chart?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0621",
@@ -12332,7 +12332,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Leo defends 1 as prime since its only factor is 1. Is the defense sound? Primes need exactly two factors."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Leo says 1 is prime because its only factor is 1. Is 1 a prime number?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0622",
@@ -12342,7 +12342,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"On Mina's chart, 1 sits among the primes. Should it? Primes need exactly two factors."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Mina puts 1 on a chart of prime numbers. Does 1 belong on the chart?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0623",
@@ -12352,7 +12352,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Theo defends 1 as prime since its only factor is 1. Is the defense sound? Primes need exactly two factors."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Is Theo right that 1 is prime because its only factor is 1?"}},
   },
   {
     itemId: "factorsMultiples-conc-b0821-0624",
@@ -12362,7 +12362,7 @@ export const ITEMS = [
     structureType: "oneNotPrime_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"On Ida's chart, 1 sits among the primes. Should it? Primes need exactly two factors."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"fm":{"kind":"trapNo"},"truth":false,"promptText":"Ida's chart of prime numbers shows 1. Should 1 be on the chart?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0001",
@@ -12372,7 +12372,7 @@ export const ITEMS = [
     structureType: "countFactors_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"fm":{"n":4,"kind":"factorCount"},"promptText":"How many factors does 4 have? Count every one."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"fm":{"n":4,"kind":"factorCount"},"promptText":"Count every factor of 4. How many factors does 4 have?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0002",
@@ -12392,7 +12392,7 @@ export const ITEMS = [
     structureType: "countFactors_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"fm":{"n":8,"kind":"factorCount"},"promptText":"How many factors does 8 have? Count every one."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"fm":{"n":8,"kind":"factorCount"},"promptText":"Count every factor of 8. How many factors does 8 have?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0004",
@@ -12412,7 +12412,7 @@ export const ITEMS = [
     structureType: "countFactors_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"fm":{"n":10,"kind":"factorCount"},"promptText":"How many factors does 10 have? Count every one."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"fm":{"n":10,"kind":"factorCount"},"promptText":"Count every factor of 10. How many factors does 10 have?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0006",
@@ -12492,7 +12492,7 @@ export const ITEMS = [
     structureType: "countFactors_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"fm":{"n":6,"kind":"factorCount"},"promptText":"How many factors does 6 have? Count every one."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"fm":{"n":6,"kind":"factorCount"},"promptText":"Count every factor of 6. How many factors does 6 have?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0014",
@@ -12512,7 +12512,7 @@ export const ITEMS = [
     structureType: "countFactors_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"fm":{"n":14,"kind":"factorCount"},"promptText":"How many factors belong to 14? Type the count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"fm":{"n":14,"kind":"factorCount"},"promptText":"How many different factors does 14 have?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0016",
@@ -12532,7 +12532,7 @@ export const ITEMS = [
     structureType: "countFactors_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"fm":{"n":16,"kind":"factorCount"},"promptText":"How many factors belong to 16? Type the count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"fm":{"n":16,"kind":"factorCount"},"promptText":"How many different factors does 16 have?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0018",
@@ -12552,7 +12552,7 @@ export const ITEMS = [
     structureType: "countFactors_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"fm":{"n":20,"kind":"factorCount"},"promptText":"How many factors belong to 20? Type the count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"fm":{"n":20,"kind":"factorCount"},"promptText":"How many different factors does 20 have?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0020",
@@ -12572,7 +12572,7 @@ export const ITEMS = [
     structureType: "countFactors_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"fm":{"n":25,"kind":"factorCount"},"promptText":"How many factors belong to 25? Type the count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"fm":{"n":25,"kind":"factorCount"},"promptText":"How many different factors does 25 have?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0022",
@@ -12592,7 +12592,7 @@ export const ITEMS = [
     structureType: "countFactors_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"fm":{"n":30,"kind":"factorCount"},"promptText":"How many factors belong to 30? Type the count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"fm":{"n":30,"kind":"factorCount"},"promptText":"How many different factors does 30 have?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0024",
@@ -12642,7 +12642,7 @@ export const ITEMS = [
     structureType: "countFactors_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"fm":{"n":30,"kind":"factorCount"},"promptText":"Determine the total number of factors of 30."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"fm":{"n":30,"kind":"factorCount"},"promptText":"How many factors does 30 have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0029",
@@ -12662,7 +12662,7 @@ export const ITEMS = [
     structureType: "countFactors_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"fm":{"n":36,"kind":"factorCount"},"promptText":"Determine the total number of factors of 36."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"fm":{"n":36,"kind":"factorCount"},"promptText":"How many factors does 36 have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0031",
@@ -12682,7 +12682,7 @@ export const ITEMS = [
     structureType: "countFactors_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"fm":{"n":42,"kind":"factorCount"},"promptText":"Determine the total number of factors of 42."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"fm":{"n":42,"kind":"factorCount"},"promptText":"How many factors does 42 have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0033",
@@ -12702,7 +12702,7 @@ export const ITEMS = [
     structureType: "countFactors_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"fm":{"n":48,"kind":"factorCount"},"promptText":"Determine the total number of factors of 48."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"fm":{"n":48,"kind":"factorCount"},"promptText":"How many factors does 48 have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0035",
@@ -12722,7 +12722,7 @@ export const ITEMS = [
     structureType: "countFactors_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"fm":{"n":54,"kind":"factorCount"},"promptText":"Determine the total number of factors of 54."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"fm":{"n":54,"kind":"factorCount"},"promptText":"How many factors does 54 have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0037",
@@ -12732,7 +12732,7 @@ export const ITEMS = [
     structureType: "countFactors_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"fm":{"n":60,"kind":"factorCount"},"promptText":"The factor list of 60 contains how many entries? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"fm":{"n":60,"kind":"factorCount"},"promptText":"How many numbers are on the factor list of 60?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0038",
@@ -12742,7 +12742,7 @@ export const ITEMS = [
     structureType: "countFactors_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"fm":{"n":44,"kind":"factorCount"},"promptText":"Count precisely: how many factors divide 44?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"fm":{"n":44,"kind":"factorCount"},"promptText":"How many factors does 44 have?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0039",
@@ -12752,7 +12752,7 @@ export const ITEMS = [
     structureType: "countFactors_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"fm":{"n":56,"kind":"factorCount"},"promptText":"The factor list of 56 contains how many entries? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"fm":{"n":56,"kind":"factorCount"},"promptText":"How many numbers are on the factor list of 56?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0040",
@@ -13152,7 +13152,7 @@ export const ITEMS = [
     structureType: "pickFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[7,11,5,3],"display":{"fm":{"n":12,"kind":"pickFactor"},"promptText":"Which of 7, 11, 5, 3 is a factor of 12? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[7,11,5,3],"display":{"fm":{"n":12,"kind":"pickFactor"},"promptText":"Which one is a factor of 12: 7, 11, 5, or 3?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0080",
@@ -13162,7 +13162,7 @@ export const ITEMS = [
     structureType: "pickFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[5,3,4,6],"display":{"fm":{"n":8,"kind":"pickFactor"},"promptText":"From 5, 3, 4, 6, pick the number that is a factor of 8. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[5,3,4,6],"display":{"fm":{"n":8,"kind":"pickFactor"},"promptText":"Which number is a factor of 8: 5, 3, 4, or 6?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0081",
@@ -13172,7 +13172,7 @@ export const ITEMS = [
     structureType: "pickFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[3,4,5,7],"display":{"fm":{"n":6,"kind":"pickFactor"},"promptText":"Which of 3, 4, 5, 7 is a factor of 6? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[3,4,5,7],"display":{"fm":{"n":6,"kind":"pickFactor"},"promptText":"Which one is a factor of 6: 3, 4, 5, or 7?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0082",
@@ -13182,7 +13182,7 @@ export const ITEMS = [
     structureType: "pickFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[3,4,5,6],"display":{"fm":{"n":10,"kind":"pickFactor"},"promptText":"From 3, 4, 5, 6, pick the number that is a factor of 10. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[3,4,5,6],"display":{"fm":{"n":10,"kind":"pickFactor"},"promptText":"Which number is a factor of 10: 3, 4, 5, or 6?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0083",
@@ -13192,7 +13192,7 @@ export const ITEMS = [
     structureType: "pickFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[5,2,3,4],"display":{"fm":{"n":9,"kind":"pickFactor"},"promptText":"Which of 5, 2, 3, 4 is a factor of 9? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[5,2,3,4],"display":{"fm":{"n":9,"kind":"pickFactor"},"promptText":"Which one is a factor of 9: 5, 2, 3, or 4?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0084",
@@ -13202,7 +13202,7 @@ export const ITEMS = [
     structureType: "pickFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[9,6,5,7],"display":{"fm":{"n":12,"kind":"pickFactor"},"promptText":"From 9, 6, 5, 7, pick the number that is a factor of 12. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[9,6,5,7],"display":{"fm":{"n":12,"kind":"pickFactor"},"promptText":"Which number is a factor of 12: 9, 6, 5, or 7?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0085",
@@ -13212,7 +13212,7 @@ export const ITEMS = [
     structureType: "pickFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[2,6,3,5],"display":{"fm":{"n":4,"kind":"pickFactor"},"promptText":"Which of 2, 6, 3, 5 is a factor of 4? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[2,6,3,5],"display":{"fm":{"n":4,"kind":"pickFactor"},"promptText":"Which one is a factor of 4: 2, 6, 3, or 5?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0086",
@@ -13222,7 +13222,7 @@ export const ITEMS = [
     structureType: "pickFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[7,3,2,5],"display":{"fm":{"n":8,"kind":"pickFactor"},"promptText":"From 7, 3, 2, 5, pick the number that is a factor of 8. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[7,3,2,5],"display":{"fm":{"n":8,"kind":"pickFactor"},"promptText":"Which number is a factor of 8: 7, 3, 2, or 5?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0087",
@@ -13232,7 +13232,7 @@ export const ITEMS = [
     structureType: "pickFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[3,4,7,2],"display":{"fm":{"n":10,"kind":"pickFactor"},"promptText":"Which of 3, 4, 7, 2 is a factor of 10? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[3,4,7,2],"display":{"fm":{"n":10,"kind":"pickFactor"},"promptText":"Which one is a factor of 10: 3, 4, 7, or 2?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0088",
@@ -13242,7 +13242,7 @@ export const ITEMS = [
     structureType: "pickFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[2,7,5,4],"display":{"fm":{"n":6,"kind":"pickFactor"},"promptText":"From 2, 7, 5, 4, pick the number that is a factor of 6. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[2,7,5,4],"display":{"fm":{"n":6,"kind":"pickFactor"},"promptText":"Which number is a factor of 6: 2, 7, 5, or 4?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0089",
@@ -13252,7 +13252,7 @@ export const ITEMS = [
     structureType: "pickFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[4,7,10,5],"display":{"fm":{"n":12,"kind":"pickFactor"},"promptText":"Which of 4, 7, 10, 5 is a factor of 12? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[4,7,10,5],"display":{"fm":{"n":12,"kind":"pickFactor"},"promptText":"Which one is a factor of 12: 4, 7, 10, or 5?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0090",
@@ -13262,7 +13262,7 @@ export const ITEMS = [
     structureType: "pickFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[9,4,5,2],"display":{"fm":{"n":9,"kind":"pickFactor"},"promptText":"From 9, 4, 5, 2, pick the number that is a factor of 9. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[9,4,5,2],"display":{"fm":{"n":9,"kind":"pickFactor"},"promptText":"Which number is a factor of 9: 9, 4, 5, or 2?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0091",
@@ -13272,7 +13272,7 @@ export const ITEMS = [
     structureType: "pickFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[3,10,4,6],"display":{"fm":{"n":10,"kind":"pickFactor"},"promptText":"Which of 3, 10, 4, 6 is a factor of 10? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[3,10,4,6],"display":{"fm":{"n":10,"kind":"pickFactor"},"promptText":"Which one is a factor of 10: 3, 10, 4, or 6?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0092",
@@ -13282,7 +13282,7 @@ export const ITEMS = [
     structureType: "pickFactor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[4,3,5,7],"display":{"fm":{"n":14,"kind":"pickFactor"},"promptText":"Select the factor of 14 from 4, 3, 5, 7. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[4,3,5,7],"display":{"fm":{"n":14,"kind":"pickFactor"},"promptText":"Which of these is a factor of 14: 4, 3, 5, or 7?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0093",
@@ -13302,7 +13302,7 @@ export const ITEMS = [
     structureType: "pickFactor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[8,5,3,6],"display":{"fm":{"n":16,"kind":"pickFactor"},"promptText":"Select the factor of 16 from 8, 5, 3, 6. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[8,5,3,6],"display":{"fm":{"n":16,"kind":"pickFactor"},"promptText":"Which of these is a factor of 16: 8, 5, 3, or 6?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0095",
@@ -13322,7 +13322,7 @@ export const ITEMS = [
     structureType: "pickFactor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[7,6,3,4],"display":{"fm":{"n":20,"kind":"pickFactor"},"promptText":"Select the factor of 20 from 7, 6, 3, 4. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[7,6,3,4],"display":{"fm":{"n":20,"kind":"pickFactor"},"promptText":"Which of these is a factor of 20: 7, 6, 3, or 4?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0097",
@@ -13342,7 +13342,7 @@ export const ITEMS = [
     structureType: "pickFactor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[5,3,4,2],"display":{"fm":{"n":25,"kind":"pickFactor"},"promptText":"Select the factor of 25 from 5, 3, 4, 2. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[5,3,4,2],"display":{"fm":{"n":25,"kind":"pickFactor"},"promptText":"Which of these is a factor of 25: 5, 3, 4, or 2?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0099",
@@ -13362,7 +13362,7 @@ export const ITEMS = [
     structureType: "pickFactor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[4,8,6,7],"display":{"fm":{"n":30,"kind":"pickFactor"},"promptText":"Select the factor of 30 from 4, 8, 6, 7. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[4,8,6,7],"display":{"fm":{"n":30,"kind":"pickFactor"},"promptText":"Which of these is a factor of 30: 4, 8, 6, or 7?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0101",
@@ -13382,7 +13382,7 @@ export const ITEMS = [
     structureType: "pickFactor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[2,4,5,9],"display":{"fm":{"n":27,"kind":"pickFactor"},"promptText":"Select the factor of 27 from 2, 4, 5, 9. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[2,4,5,9],"display":{"fm":{"n":27,"kind":"pickFactor"},"promptText":"Which of these is a factor of 27: 2, 4, 5, or 9?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0103",
@@ -13402,7 +13402,7 @@ export const ITEMS = [
     structureType: "pickFactor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[10,7,6,5],"display":{"fm":{"n":24,"kind":"pickFactor"},"promptText":"Select the factor of 24 from 10, 7, 6, 5. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[10,7,6,5],"display":{"fm":{"n":24,"kind":"pickFactor"},"promptText":"Which of these is a factor of 24: 10, 7, 6, or 5?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0105",
@@ -13412,7 +13412,7 @@ export const ITEMS = [
     structureType: "pickFactor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[8,3,6,5],"display":{"fm":{"n":32,"kind":"pickFactor"},"promptText":"Identify the factor of 32 within 8, 3, 6, 5. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[8,3,6,5],"display":{"fm":{"n":32,"kind":"pickFactor"},"promptText":"Look at 8, 3, 6, and 5. Which one is a factor of 32?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0106",
@@ -13432,7 +13432,7 @@ export const ITEMS = [
     structureType: "pickFactor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[7,6,8,3],"display":{"fm":{"n":40,"kind":"pickFactor"},"promptText":"Identify the factor of 40 within 7, 6, 8, 3. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[7,6,8,3],"display":{"fm":{"n":40,"kind":"pickFactor"},"promptText":"Look at 7, 6, 8, and 3. Which one is a factor of 40?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0108",
@@ -13452,7 +13452,7 @@ export const ITEMS = [
     structureType: "pickFactor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[6,2,4,9],"display":{"fm":{"n":45,"kind":"pickFactor"},"promptText":"Identify the factor of 45 within 6, 2, 4, 9. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[6,2,4,9],"display":{"fm":{"n":45,"kind":"pickFactor"},"promptText":"Look at 6, 2, 4, and 9. Which one is a factor of 45?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0110",
@@ -13472,7 +13472,7 @@ export const ITEMS = [
     structureType: "pickFactor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"choices":[6,4,3,25],"display":{"fm":{"n":50,"kind":"pickFactor"},"promptText":"Identify the factor of 50 within 6, 4, 3, 25. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":25,"choices":[6,4,3,25],"display":{"fm":{"n":50,"kind":"pickFactor"},"promptText":"Look at 6, 4, 3, and 25. Which one is a factor of 50?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0112",
@@ -13492,7 +13492,7 @@ export const ITEMS = [
     structureType: "pickFactor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[7,9,12,8],"display":{"fm":{"n":60,"kind":"pickFactor"},"promptText":"Identify the factor of 60 within 7, 9, 12, 8. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[7,9,12,8],"display":{"fm":{"n":60,"kind":"pickFactor"},"promptText":"Look at 7, 9, 12, and 8. Which one is a factor of 60?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0114",
@@ -13512,7 +13512,7 @@ export const ITEMS = [
     structureType: "pickFactor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[5,6,8,3],"display":{"fm":{"n":56,"kind":"pickFactor"},"promptText":"Identify the factor of 56 within 5, 6, 8, 3. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[5,6,8,3],"display":{"fm":{"n":56,"kind":"pickFactor"},"promptText":"Look at 5, 6, 8, and 3. Which one is a factor of 56?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0116",
@@ -13532,7 +13532,7 @@ export const ITEMS = [
     structureType: "pickFactor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[7,8,5,12],"display":{"fm":{"n":36,"kind":"pickFactor"},"promptText":"Identify the factor of 36 within 7, 8, 5, 12. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[7,8,5,12],"display":{"fm":{"n":36,"kind":"pickFactor"},"promptText":"Look at 7, 8, 5, and 12. Which one is a factor of 36?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0118",
@@ -13542,7 +13542,7 @@ export const ITEMS = [
     structureType: "pickNonFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[5,2,3,4],"display":{"fm":{"n":12,"kind":"pickNonFactor"},"promptText":"Which of 5, 2, 3, 4 is NOT a factor of 12? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[5,2,3,4],"display":{"fm":{"n":12,"kind":"pickNonFactor"},"promptText":"Which one is NOT a factor of 12: 5, 2, 3, or 4?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0119",
@@ -13552,7 +13552,7 @@ export const ITEMS = [
     structureType: "pickNonFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[1,4,2,3],"display":{"fm":{"n":8,"kind":"pickNonFactor"},"promptText":"From 1, 4, 2, 3, pick the number that is NOT a factor of 8. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[1,4,2,3],"display":{"fm":{"n":8,"kind":"pickNonFactor"},"promptText":"Which number is NOT a factor of 8: 1, 4, 2, or 3?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0120",
@@ -13562,7 +13562,7 @@ export const ITEMS = [
     structureType: "pickNonFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[2,4,1,3],"display":{"fm":{"n":6,"kind":"pickNonFactor"},"promptText":"Which of 2, 4, 1, 3 is NOT a factor of 6? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[2,4,1,3],"display":{"fm":{"n":6,"kind":"pickNonFactor"},"promptText":"Which one is NOT a factor of 6: 2, 4, 1, or 3?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0121",
@@ -13572,7 +13572,7 @@ export const ITEMS = [
     structureType: "pickNonFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[2,5,1,4],"display":{"fm":{"n":10,"kind":"pickNonFactor"},"promptText":"From 2, 5, 1, 4, pick the number that is NOT a factor of 10. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[2,5,1,4],"display":{"fm":{"n":10,"kind":"pickNonFactor"},"promptText":"Which number is NOT a factor of 10: 2, 5, 1, or 4?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0122",
@@ -13582,7 +13582,7 @@ export const ITEMS = [
     structureType: "pickNonFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[3,1,9,2],"display":{"fm":{"n":9,"kind":"pickNonFactor"},"promptText":"Which of 3, 1, 9, 2 is NOT a factor of 9? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[3,1,9,2],"display":{"fm":{"n":9,"kind":"pickNonFactor"},"promptText":"Which one is NOT a factor of 9: 3, 1, 9, or 2?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0123",
@@ -13592,7 +13592,7 @@ export const ITEMS = [
     structureType: "pickNonFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[7,4,3,6],"display":{"fm":{"n":12,"kind":"pickNonFactor"},"promptText":"From 7, 4, 3, 6, pick the number that is NOT a factor of 12. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[7,4,3,6],"display":{"fm":{"n":12,"kind":"pickNonFactor"},"promptText":"Which number is NOT a factor of 12: 7, 4, 3, or 6?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0124",
@@ -13602,7 +13602,7 @@ export const ITEMS = [
     structureType: "pickNonFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[1,3,2,4],"display":{"fm":{"n":4,"kind":"pickNonFactor"},"promptText":"Which of 1, 3, 2, 4 is NOT a factor of 4? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[1,3,2,4],"display":{"fm":{"n":4,"kind":"pickNonFactor"},"promptText":"Which one is NOT a factor of 4: 1, 3, 2, or 4?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0125",
@@ -13612,7 +13612,7 @@ export const ITEMS = [
     structureType: "pickNonFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[4,2,5,8],"display":{"fm":{"n":8,"kind":"pickNonFactor"},"promptText":"From 4, 2, 5, 8, pick the number that is NOT a factor of 8. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[4,2,5,8],"display":{"fm":{"n":8,"kind":"pickNonFactor"},"promptText":"Which number is NOT a factor of 8: 4, 2, 5, or 8?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0126",
@@ -13622,7 +13622,7 @@ export const ITEMS = [
     structureType: "pickNonFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[5,2,10,3],"display":{"fm":{"n":10,"kind":"pickNonFactor"},"promptText":"Which of 5, 2, 10, 3 is NOT a factor of 10? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[5,2,10,3],"display":{"fm":{"n":10,"kind":"pickNonFactor"},"promptText":"Which one is NOT a factor of 10: 5, 2, 10, or 3?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0127",
@@ -13632,7 +13632,7 @@ export const ITEMS = [
     structureType: "pickNonFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[6,3,5,2],"display":{"fm":{"n":6,"kind":"pickNonFactor"},"promptText":"From 6, 3, 5, 2, pick the number that is NOT a factor of 6. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[6,3,5,2],"display":{"fm":{"n":6,"kind":"pickNonFactor"},"promptText":"Which number is NOT a factor of 6: 6, 3, 5, or 2?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0128",
@@ -13642,7 +13642,7 @@ export const ITEMS = [
     structureType: "pickNonFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[12,9,6,2],"display":{"fm":{"n":12,"kind":"pickNonFactor"},"promptText":"Which of 12, 9, 6, 2 is NOT a factor of 12? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[12,9,6,2],"display":{"fm":{"n":12,"kind":"pickNonFactor"},"promptText":"Which one is NOT a factor of 12: 12, 9, 6, or 2?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0129",
@@ -13652,7 +13652,7 @@ export const ITEMS = [
     structureType: "pickNonFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[1,9,3,4],"display":{"fm":{"n":9,"kind":"pickNonFactor"},"promptText":"From 1, 9, 3, 4, pick the number that is NOT a factor of 9. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[1,9,3,4],"display":{"fm":{"n":9,"kind":"pickNonFactor"},"promptText":"Which number is NOT a factor of 9: 1, 9, 3, or 4?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0130",
@@ -13662,7 +13662,7 @@ export const ITEMS = [
     structureType: "pickNonFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[2,5,1,7],"display":{"fm":{"n":10,"kind":"pickNonFactor"},"promptText":"Which of 2, 5, 1, 7 is NOT a factor of 10? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[2,5,1,7],"display":{"fm":{"n":10,"kind":"pickNonFactor"},"promptText":"Which one is NOT a factor of 10: 2, 5, 1, or 7?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0131",
@@ -13672,7 +13672,7 @@ export const ITEMS = [
     structureType: "pickNonFactor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[2,7,4,14],"display":{"fm":{"n":14,"kind":"pickNonFactor"},"promptText":"Select the one of 2, 7, 4, 14 that is NOT a factor of 14. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[2,7,4,14],"display":{"fm":{"n":14,"kind":"pickNonFactor"},"promptText":"Which of these is NOT a factor of 14: 2, 7, 4, or 14?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0132",
@@ -13692,7 +13692,7 @@ export const ITEMS = [
     structureType: "pickNonFactor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[2,4,3,8],"display":{"fm":{"n":16,"kind":"pickNonFactor"},"promptText":"Select the one of 2, 4, 3, 8 that is NOT a factor of 16. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[2,4,3,8],"display":{"fm":{"n":16,"kind":"pickNonFactor"},"promptText":"Which of these is NOT a factor of 16: 2, 4, 3, or 8?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0134",
@@ -13712,7 +13712,7 @@ export const ITEMS = [
     structureType: "pickNonFactor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[3,4,10,5],"display":{"fm":{"n":20,"kind":"pickNonFactor"},"promptText":"Select the one of 3, 4, 10, 5 that is NOT a factor of 20. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[3,4,10,5],"display":{"fm":{"n":20,"kind":"pickNonFactor"},"promptText":"Which of these is NOT a factor of 20: 3, 4, 10, or 5?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0136",
@@ -13732,7 +13732,7 @@ export const ITEMS = [
     structureType: "pickNonFactor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[1,3,5,25],"display":{"fm":{"n":25,"kind":"pickNonFactor"},"promptText":"Select the one of 1, 3, 5, 25 that is NOT a factor of 25. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[1,3,5,25],"display":{"fm":{"n":25,"kind":"pickNonFactor"},"promptText":"Which of these is NOT a factor of 25: 1, 3, 5, or 25?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0138",
@@ -13752,7 +13752,7 @@ export const ITEMS = [
     structureType: "pickNonFactor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[10,4,5,6],"display":{"fm":{"n":30,"kind":"pickNonFactor"},"promptText":"Select the one of 10, 4, 5, 6 that is NOT a factor of 30. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[10,4,5,6],"display":{"fm":{"n":30,"kind":"pickNonFactor"},"promptText":"Which of these is NOT a factor of 30: 10, 4, 5, or 6?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0140",
@@ -13772,7 +13772,7 @@ export const ITEMS = [
     structureType: "pickNonFactor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[9,27,3,6],"display":{"fm":{"n":27,"kind":"pickNonFactor"},"promptText":"Select the one of 9, 27, 3, 6 that is NOT a factor of 27. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[9,27,3,6],"display":{"fm":{"n":27,"kind":"pickNonFactor"},"promptText":"Which of these is NOT a factor of 27: 9, 27, 3, or 6?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0142",
@@ -13792,7 +13792,7 @@ export const ITEMS = [
     structureType: "pickNonFactor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[3,12,8,7],"display":{"fm":{"n":24,"kind":"pickNonFactor"},"promptText":"Select the one of 3, 12, 8, 7 that is NOT a factor of 24. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[3,12,8,7],"display":{"fm":{"n":24,"kind":"pickNonFactor"},"promptText":"Which of these is NOT a factor of 24: 3, 12, 8, or 7?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0144",
@@ -13802,7 +13802,7 @@ export const ITEMS = [
     structureType: "pickNonFactor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[8,16,6,4],"display":{"fm":{"n":32,"kind":"pickNonFactor"},"promptText":"Identify which of 8, 16, 6, 4 is NOT a factor of 32. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[8,16,6,4],"display":{"fm":{"n":32,"kind":"pickNonFactor"},"promptText":"Look at 8, 16, 6, and 4. Which one is NOT a factor of 32?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0145",
@@ -13822,7 +13822,7 @@ export const ITEMS = [
     structureType: "pickNonFactor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[10,5,8,6],"display":{"fm":{"n":40,"kind":"pickNonFactor"},"promptText":"Identify which of 10, 5, 8, 6 is NOT a factor of 40. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[10,5,8,6],"display":{"fm":{"n":40,"kind":"pickNonFactor"},"promptText":"Look at 10, 5, 8, and 6. Which one is NOT a factor of 40?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0147",
@@ -13842,7 +13842,7 @@ export const ITEMS = [
     structureType: "pickNonFactor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[9,15,6,5],"display":{"fm":{"n":45,"kind":"pickNonFactor"},"promptText":"Identify which of 9, 15, 6, 5 is NOT a factor of 45. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[9,15,6,5],"display":{"fm":{"n":45,"kind":"pickNonFactor"},"promptText":"Look at 9, 15, 6, and 5. Which one is NOT a factor of 45?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0149",
@@ -13862,7 +13862,7 @@ export const ITEMS = [
     structureType: "pickNonFactor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[4,5,25,10],"display":{"fm":{"n":50,"kind":"pickNonFactor"},"promptText":"Identify which of 4, 5, 25, 10 is NOT a factor of 50. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[4,5,25,10],"display":{"fm":{"n":50,"kind":"pickNonFactor"},"promptText":"Look at 4, 5, 25, and 10. Which one is NOT a factor of 50?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0151",
@@ -13882,7 +13882,7 @@ export const ITEMS = [
     structureType: "pickNonFactor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[10,6,12,8],"display":{"fm":{"n":60,"kind":"pickNonFactor"},"promptText":"Identify which of 10, 6, 12, 8 is NOT a factor of 60. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[10,6,12,8],"display":{"fm":{"n":60,"kind":"pickNonFactor"},"promptText":"Look at 10, 6, 12, and 8. Which one is NOT a factor of 60?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0153",
@@ -13902,7 +13902,7 @@ export const ITEMS = [
     structureType: "pickNonFactor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[6,8,14,7],"display":{"fm":{"n":56,"kind":"pickNonFactor"},"promptText":"Identify which of 6, 8, 14, 7 is NOT a factor of 56. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[6,8,14,7],"display":{"fm":{"n":56,"kind":"pickNonFactor"},"promptText":"Look at 6, 8, 14, and 7. Which one is NOT a factor of 56?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0155",
@@ -13922,7 +13922,7 @@ export const ITEMS = [
     structureType: "pickNonFactor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[6,4,5,18],"display":{"fm":{"n":36,"kind":"pickNonFactor"},"promptText":"Identify which of 6, 4, 5, 18 is NOT a factor of 36. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[6,4,5,18],"display":{"fm":{"n":36,"kind":"pickNonFactor"},"promptText":"Look at 6, 4, 5, and 18. Which one is NOT a factor of 36?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0157",
@@ -13932,7 +13932,7 @@ export const ITEMS = [
     structureType: "nthMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"fm":{"b":2,"k":3,"kind":"nthMult"},"promptText":"The 3rd multiple of 2 = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"fm":{"b":2,"k":3,"kind":"nthMult"},"promptText":"What is the 3rd multiple of 2?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0158",
@@ -13952,7 +13952,7 @@ export const ITEMS = [
     structureType: "nthMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"fm":{"b":2,"k":5,"kind":"nthMult"},"promptText":"The 5th multiple of 2 = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"fm":{"b":2,"k":5,"kind":"nthMult"},"promptText":"What is the 5th multiple of 2?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0160",
@@ -13972,7 +13972,7 @@ export const ITEMS = [
     structureType: "nthMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"fm":{"b":3,"k":3,"kind":"nthMult"},"promptText":"The 3rd multiple of 3 = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"fm":{"b":3,"k":3,"kind":"nthMult"},"promptText":"What is the 3rd multiple of 3?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0162",
@@ -13992,7 +13992,7 @@ export const ITEMS = [
     structureType: "nthMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"fm":{"b":4,"k":2,"kind":"nthMult"},"promptText":"The 2nd multiple of 4 = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"fm":{"b":4,"k":2,"kind":"nthMult"},"promptText":"What is the 2nd multiple of 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0164",
@@ -14012,7 +14012,7 @@ export const ITEMS = [
     structureType: "nthMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"fm":{"b":5,"k":2,"kind":"nthMult"},"promptText":"The 2nd multiple of 5 = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"fm":{"b":5,"k":2,"kind":"nthMult"},"promptText":"What is the 2nd multiple of 5?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0166",
@@ -14032,7 +14032,7 @@ export const ITEMS = [
     structureType: "nthMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"fm":{"b":5,"k":4,"kind":"nthMult"},"promptText":"The 4th multiple of 5 = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"fm":{"b":5,"k":4,"kind":"nthMult"},"promptText":"What is the 4th multiple of 5?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0168",
@@ -14052,7 +14052,7 @@ export const ITEMS = [
     structureType: "nthMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"fm":{"b":4,"k":4,"kind":"nthMult"},"promptText":"The 4th multiple of 4 = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"fm":{"b":4,"k":4,"kind":"nthMult"},"promptText":"What is the 4th multiple of 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0170",
@@ -14102,7 +14102,7 @@ export const ITEMS = [
     structureType: "nthMultiple_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"fm":{"b":4,"k":7,"kind":"nthMult"},"promptText":"What number is the 7th multiple of 4? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"fm":{"b":4,"k":7,"kind":"nthMult"},"promptText":"What number is the 7th multiple of 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0175",
@@ -14122,7 +14122,7 @@ export const ITEMS = [
     structureType: "nthMultiple_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"fm":{"b":6,"k":5,"kind":"nthMult"},"promptText":"What number is the 5th multiple of 6? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"fm":{"b":6,"k":5,"kind":"nthMult"},"promptText":"What number is the 5th multiple of 6?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0177",
@@ -14142,7 +14142,7 @@ export const ITEMS = [
     structureType: "nthMultiple_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"fm":{"b":7,"k":4,"kind":"nthMult"},"promptText":"What number is the 4th multiple of 7? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"fm":{"b":7,"k":4,"kind":"nthMult"},"promptText":"What number is the 4th multiple of 7?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0179",
@@ -14162,7 +14162,7 @@ export const ITEMS = [
     structureType: "nthMultiple_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"fm":{"b":8,"k":4,"kind":"nthMult"},"promptText":"What number is the 4th multiple of 8? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"fm":{"b":8,"k":4,"kind":"nthMult"},"promptText":"What number is the 4th multiple of 8?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0181",
@@ -14182,7 +14182,7 @@ export const ITEMS = [
     structureType: "nthMultiple_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"fm":{"b":9,"k":4,"kind":"nthMult"},"promptText":"What number is the 4th multiple of 9? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"fm":{"b":9,"k":4,"kind":"nthMult"},"promptText":"What number is the 4th multiple of 9?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0183",
@@ -14202,7 +14202,7 @@ export const ITEMS = [
     structureType: "nthMultiple_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"fm":{"b":7,"k":5,"kind":"nthMult"},"promptText":"What number is the 5th multiple of 7? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"fm":{"b":7,"k":5,"kind":"nthMult"},"promptText":"What number is the 5th multiple of 7?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0185",
@@ -14222,7 +14222,7 @@ export const ITEMS = [
     structureType: "nthMultiple_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"fm":{"b":6,"k":7,"kind":"nthMult"},"promptText":"The 7th entry in the multiples of 6 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"fm":{"b":6,"k":7,"kind":"nthMult"},"promptText":"Count by 6s, starting at 6. What is the 7th number you say?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0187",
@@ -14242,7 +14242,7 @@ export const ITEMS = [
     structureType: "nthMultiple_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"fm":{"b":8,"k":6,"kind":"nthMult"},"promptText":"The 6th entry in the multiples of 8 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"fm":{"b":8,"k":6,"kind":"nthMult"},"promptText":"Count by 8s, starting at 8. What is the 6th number you say?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0189",
@@ -14252,7 +14252,7 @@ export const ITEMS = [
     structureType: "nthMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"fm":{"b":6,"k":8,"kind":"nthMult"},"promptText":"Compute the 8th multiple of 6 exactly."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"fm":{"b":6,"k":8,"kind":"nthMult"},"promptText":"What is the 8th multiple of 6?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0190",
@@ -14272,7 +14272,7 @@ export const ITEMS = [
     structureType: "nthMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":49,"display":{"fm":{"b":7,"k":7,"kind":"nthMult"},"promptText":"Compute the 7th multiple of 7 exactly."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":49,"display":{"fm":{"b":7,"k":7,"kind":"nthMult"},"promptText":"What is the 7th multiple of 7?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0192",
@@ -14292,7 +14292,7 @@ export const ITEMS = [
     structureType: "nthMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"fm":{"b":8,"k":6,"kind":"nthMult"},"promptText":"Compute the 6th multiple of 8 exactly."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"fm":{"b":8,"k":6,"kind":"nthMult"},"promptText":"What is the 6th multiple of 8?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0194",
@@ -14312,7 +14312,7 @@ export const ITEMS = [
     structureType: "nthMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":54,"display":{"fm":{"b":9,"k":6,"kind":"nthMult"},"promptText":"Compute the 6th multiple of 9 exactly."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":54,"display":{"fm":{"b":9,"k":6,"kind":"nthMult"},"promptText":"What is the 6th multiple of 9?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0196",
@@ -14332,7 +14332,7 @@ export const ITEMS = [
     structureType: "nthMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"fm":{"b":12,"k":4,"kind":"nthMult"},"promptText":"Compute the 4th multiple of 12 exactly."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"fm":{"b":12,"k":4,"kind":"nthMult"},"promptText":"What is the 4th multiple of 12?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0198",
@@ -14352,7 +14352,7 @@ export const ITEMS = [
     structureType: "nthMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"fm":{"b":11,"k":5,"kind":"nthMult"},"promptText":"Compute the 5th multiple of 11 exactly."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"fm":{"b":11,"k":5,"kind":"nthMult"},"promptText":"What is the 5th multiple of 11?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0200",
@@ -14372,7 +14372,7 @@ export const ITEMS = [
     structureType: "nthMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"fm":{"b":12,"k":3,"kind":"nthMult"},"promptText":"Compute the 3rd multiple of 12 exactly."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"fm":{"b":12,"k":3,"kind":"nthMult"},"promptText":"What is the 3rd multiple of 12?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0202",
@@ -14382,7 +14382,7 @@ export const ITEMS = [
     structureType: "nthMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":77,"display":{"fm":{"b":11,"k":7,"kind":"nthMult"},"promptText":"The multiples of 11 reach which value at position 7? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":77,"display":{"fm":{"b":11,"k":7,"kind":"nthMult"},"promptText":"What is the 7th multiple of 11?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0203",
@@ -14392,7 +14392,7 @@ export const ITEMS = [
     structureType: "nthMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"fm":{"b":12,"k":6,"kind":"nthMult"},"promptText":"Determine the 6th multiple of 12 and type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"fm":{"b":12,"k":6,"kind":"nthMult"},"promptText":"What number is the 6th multiple of 12?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0204",
@@ -14402,7 +14402,7 @@ export const ITEMS = [
     structureType: "nthMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"fm":{"b":15,"k":4,"kind":"nthMult"},"promptText":"The multiples of 15 reach which value at position 4? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"fm":{"b":15,"k":4,"kind":"nthMult"},"promptText":"What is the 4th multiple of 15?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0205",
@@ -14732,7 +14732,7 @@ export const ITEMS = [
     structureType: "nextMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"fm":{"b":2,"m":8,"kind":"nextMult"},"promptText":"Which multiple of 2 comes right after 8? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"fm":{"b":2,"m":8,"kind":"nextMult"},"promptText":"Which multiple of 2 comes right after 8?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0238",
@@ -14742,7 +14742,7 @@ export const ITEMS = [
     structureType: "nextMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"fm":{"b":2,"m":12,"kind":"nextMult"},"promptText":"Counting by 2, the number after 12 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"fm":{"b":2,"m":12,"kind":"nextMult"},"promptText":"When you count by 2s, what number comes after 12?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0239",
@@ -14752,7 +14752,7 @@ export const ITEMS = [
     structureType: "nextMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"fm":{"b":3,"m":9,"kind":"nextMult"},"promptText":"Which multiple of 3 comes right after 9? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"fm":{"b":3,"m":9,"kind":"nextMult"},"promptText":"Which multiple of 3 comes right after 9?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0240",
@@ -14762,7 +14762,7 @@ export const ITEMS = [
     structureType: "nextMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"fm":{"b":3,"m":12,"kind":"nextMult"},"promptText":"Counting by 3, the number after 12 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"fm":{"b":3,"m":12,"kind":"nextMult"},"promptText":"When you count by 3s, what number comes after 12?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0241",
@@ -14772,7 +14772,7 @@ export const ITEMS = [
     structureType: "nextMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"fm":{"b":4,"m":8,"kind":"nextMult"},"promptText":"Which multiple of 4 comes right after 8? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"fm":{"b":4,"m":8,"kind":"nextMult"},"promptText":"Which multiple of 4 comes right after 8?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0242",
@@ -14782,7 +14782,7 @@ export const ITEMS = [
     structureType: "nextMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"fm":{"b":4,"m":12,"kind":"nextMult"},"promptText":"Counting by 4, the number after 12 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"fm":{"b":4,"m":12,"kind":"nextMult"},"promptText":"When you count by 4s, what number comes after 12?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0243",
@@ -14792,7 +14792,7 @@ export const ITEMS = [
     structureType: "nextMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"fm":{"b":5,"m":10,"kind":"nextMult"},"promptText":"Which multiple of 5 comes right after 10? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"fm":{"b":5,"m":10,"kind":"nextMult"},"promptText":"Which multiple of 5 comes right after 10?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0244",
@@ -14802,7 +14802,7 @@ export const ITEMS = [
     structureType: "nextMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"fm":{"b":5,"m":15,"kind":"nextMult"},"promptText":"Counting by 5, the number after 15 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"fm":{"b":5,"m":15,"kind":"nextMult"},"promptText":"When you count by 5s, what number comes after 15?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0245",
@@ -14812,7 +14812,7 @@ export const ITEMS = [
     structureType: "nextMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"fm":{"b":2,"m":14,"kind":"nextMult"},"promptText":"Which multiple of 2 comes right after 14? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"fm":{"b":2,"m":14,"kind":"nextMult"},"promptText":"Which multiple of 2 comes right after 14?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0246",
@@ -14822,7 +14822,7 @@ export const ITEMS = [
     structureType: "nextMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"fm":{"b":3,"m":15,"kind":"nextMult"},"promptText":"Counting by 3, the number after 15 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"fm":{"b":3,"m":15,"kind":"nextMult"},"promptText":"When you count by 3s, what number comes after 15?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0247",
@@ -14832,7 +14832,7 @@ export const ITEMS = [
     structureType: "nextMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"fm":{"b":4,"m":16,"kind":"nextMult"},"promptText":"Which multiple of 4 comes right after 16? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"fm":{"b":4,"m":16,"kind":"nextMult"},"promptText":"Which multiple of 4 comes right after 16?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0248",
@@ -14842,7 +14842,7 @@ export const ITEMS = [
     structureType: "nextMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"fm":{"b":2,"m":16,"kind":"nextMult"},"promptText":"Counting by 2, the number after 16 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"fm":{"b":2,"m":16,"kind":"nextMult"},"promptText":"When you count by 2s, what number comes after 16?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0249",
@@ -14852,7 +14852,7 @@ export const ITEMS = [
     structureType: "nextMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"fm":{"b":3,"m":6,"kind":"nextMult"},"promptText":"Which multiple of 3 comes right after 6? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"fm":{"b":3,"m":6,"kind":"nextMult"},"promptText":"Which multiple of 3 comes right after 6?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0250",
@@ -14872,7 +14872,7 @@ export const ITEMS = [
     structureType: "nextMultiple_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"fm":{"b":6,"m":30,"kind":"nextMult"},"promptText":"The multiple of 6 just past 30 = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"fm":{"b":6,"m":30,"kind":"nextMult"},"promptText":"Which multiple of 6 comes just after 30?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0252",
@@ -14892,7 +14892,7 @@ export const ITEMS = [
     structureType: "nextMultiple_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"fm":{"b":7,"m":35,"kind":"nextMult"},"promptText":"The multiple of 7 just past 35 = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"fm":{"b":7,"m":35,"kind":"nextMult"},"promptText":"Which multiple of 7 comes just after 35?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0254",
@@ -14912,7 +14912,7 @@ export const ITEMS = [
     structureType: "nextMultiple_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"fm":{"b":8,"m":40,"kind":"nextMult"},"promptText":"The multiple of 8 just past 40 = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"fm":{"b":8,"m":40,"kind":"nextMult"},"promptText":"Which multiple of 8 comes just after 40?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0256",
@@ -14932,7 +14932,7 @@ export const ITEMS = [
     structureType: "nextMultiple_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":54,"display":{"fm":{"b":9,"m":45,"kind":"nextMult"},"promptText":"The multiple of 9 just past 45 = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":54,"display":{"fm":{"b":9,"m":45,"kind":"nextMult"},"promptText":"Which multiple of 9 comes just after 45?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0258",
@@ -14952,7 +14952,7 @@ export const ITEMS = [
     structureType: "nextMultiple_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":49,"display":{"fm":{"b":7,"m":42,"kind":"nextMult"},"promptText":"The multiple of 7 just past 42 = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":49,"display":{"fm":{"b":7,"m":42,"kind":"nextMult"},"promptText":"Which multiple of 7 comes just after 42?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0260",
@@ -14972,7 +14972,7 @@ export const ITEMS = [
     structureType: "nextMultiple_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"fm":{"b":9,"m":27,"kind":"nextMult"},"promptText":"The multiple of 9 just past 27 = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"fm":{"b":9,"m":27,"kind":"nextMult"},"promptText":"Which multiple of 9 comes just after 27?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0262",
@@ -14992,7 +14992,7 @@ export const ITEMS = [
     structureType: "nextMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":66,"display":{"fm":{"b":11,"m":55,"kind":"nextMult"},"promptText":"Compute the next multiple of 11 beyond 55."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":66,"display":{"fm":{"b":11,"m":55,"kind":"nextMult"},"promptText":"What is the next multiple of 11 after 55?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0264",
@@ -15012,7 +15012,7 @@ export const ITEMS = [
     structureType: "nextMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"fm":{"b":12,"m":60,"kind":"nextMult"},"promptText":"Compute the next multiple of 12 beyond 60."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"fm":{"b":12,"m":60,"kind":"nextMult"},"promptText":"What is the next multiple of 12 after 60?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0266",
@@ -15032,7 +15032,7 @@ export const ITEMS = [
     structureType: "nextMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"fm":{"b":15,"m":60,"kind":"nextMult"},"promptText":"Compute the next multiple of 15 beyond 60."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"fm":{"b":15,"m":60,"kind":"nextMult"},"promptText":"What is the next multiple of 15 after 60?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0268",
@@ -15052,7 +15052,7 @@ export const ITEMS = [
     structureType: "nextMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"fm":{"b":20,"m":80,"kind":"nextMult"},"promptText":"Compute the next multiple of 20 beyond 80."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"fm":{"b":20,"m":80,"kind":"nextMult"},"promptText":"What is the next multiple of 20 after 80?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0270",
@@ -15072,7 +15072,7 @@ export const ITEMS = [
     structureType: "nextMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"fm":{"b":11,"m":77,"kind":"nextMult"},"promptText":"Compute the next multiple of 11 beyond 77."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"fm":{"b":11,"m":77,"kind":"nextMult"},"promptText":"What is the next multiple of 11 after 77?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0272",
@@ -15092,7 +15092,7 @@ export const ITEMS = [
     structureType: "nextMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":105,"display":{"fm":{"b":15,"m":90,"kind":"nextMult"},"promptText":"Compute the next multiple of 15 beyond 90."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":105,"display":{"fm":{"b":15,"m":90,"kind":"nextMult"},"promptText":"What is the next multiple of 15 after 90?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0274",
@@ -15112,7 +15112,7 @@ export const ITEMS = [
     structureType: "nextMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"fm":{"b":11,"m":44,"kind":"nextMult"},"promptText":"Compute the next multiple of 11 beyond 44."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"fm":{"b":11,"m":44,"kind":"nextMult"},"promptText":"What is the next multiple of 11 after 44?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0276",
@@ -15122,7 +15122,7 @@ export const ITEMS = [
     structureType: "pickMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[8,7,9,5],"display":{"fm":{"b":2,"kind":"pickMultiple"},"promptText":"Which of 8, 7, 9, 5 is a multiple of 2? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[8,7,9,5],"display":{"fm":{"b":2,"kind":"pickMultiple"},"promptText":"Which one is a multiple of 2: 8, 7, 9, or 5?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0277",
@@ -15132,7 +15132,7 @@ export const ITEMS = [
     structureType: "pickMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[9,7,8,4],"display":{"fm":{"b":3,"kind":"pickMultiple"},"promptText":"From 9, 7, 8, 4, pick the multiple of 3. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[9,7,8,4],"display":{"fm":{"b":3,"kind":"pickMultiple"},"promptText":"Which number is a multiple of 3: 9, 7, 8, or 4?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0278",
@@ -15142,7 +15142,7 @@ export const ITEMS = [
     structureType: "pickMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[6,12,9,11],"display":{"fm":{"b":4,"kind":"pickMultiple"},"promptText":"Which of 6, 12, 9, 11 is a multiple of 4? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[6,12,9,11],"display":{"fm":{"b":4,"kind":"pickMultiple"},"promptText":"Which one is a multiple of 4: 6, 12, 9, or 11?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0279",
@@ -15152,7 +15152,7 @@ export const ITEMS = [
     structureType: "pickMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"choices":[9,7,12,15],"display":{"fm":{"b":5,"kind":"pickMultiple"},"promptText":"From 9, 7, 12, 15, pick the multiple of 5. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":15,"choices":[9,7,12,15],"display":{"fm":{"b":5,"kind":"pickMultiple"},"promptText":"Which number is a multiple of 5: 9, 7, 12, or 15?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0280",
@@ -15162,7 +15162,7 @@ export const ITEMS = [
     structureType: "pickMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"choices":[11,14,9,13],"display":{"fm":{"b":2,"kind":"pickMultiple"},"promptText":"Which of 11, 14, 9, 13 is a multiple of 2? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":14,"choices":[11,14,9,13],"display":{"fm":{"b":2,"kind":"pickMultiple"},"promptText":"Which one is a multiple of 2: 11, 14, 9, or 13?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0281",
@@ -15172,7 +15172,7 @@ export const ITEMS = [
     structureType: "pickMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[12,10,8,13],"display":{"fm":{"b":3,"kind":"pickMultiple"},"promptText":"From 12, 10, 8, 13, pick the multiple of 3. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[12,10,8,13],"display":{"fm":{"b":3,"kind":"pickMultiple"},"promptText":"Which number is a multiple of 3: 12, 10, 8, or 13?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0282",
@@ -15182,7 +15182,7 @@ export const ITEMS = [
     structureType: "pickMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"choices":[11,9,16,15],"display":{"fm":{"b":4,"kind":"pickMultiple"},"promptText":"Which of 11, 9, 16, 15 is a multiple of 4? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":16,"choices":[11,9,16,15],"display":{"fm":{"b":4,"kind":"pickMultiple"},"promptText":"Which one is a multiple of 4: 11, 9, 16, or 15?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0283",
@@ -15192,7 +15192,7 @@ export const ITEMS = [
     structureType: "pickMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"choices":[16,12,9,20],"display":{"fm":{"b":5,"kind":"pickMultiple"},"promptText":"From 16, 12, 9, 20, pick the multiple of 5. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":20,"choices":[16,12,9,20],"display":{"fm":{"b":5,"kind":"pickMultiple"},"promptText":"Which number is a multiple of 5: 16, 12, 9, or 20?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0284",
@@ -15202,7 +15202,7 @@ export const ITEMS = [
     structureType: "pickMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[11,9,7,10],"display":{"fm":{"b":2,"kind":"pickMultiple"},"promptText":"Which of 11, 9, 7, 10 is a multiple of 2? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[11,9,7,10],"display":{"fm":{"b":2,"kind":"pickMultiple"},"promptText":"Which one is a multiple of 2: 11, 9, 7, or 10?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0285",
@@ -15212,7 +15212,7 @@ export const ITEMS = [
     structureType: "pickMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"choices":[15,8,10,7],"display":{"fm":{"b":3,"kind":"pickMultiple"},"promptText":"From 15, 8, 10, 7, pick the multiple of 3. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":15,"choices":[15,8,10,7],"display":{"fm":{"b":3,"kind":"pickMultiple"},"promptText":"Which number is a multiple of 3: 15, 8, 10, or 7?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0286",
@@ -15222,7 +15222,7 @@ export const ITEMS = [
     structureType: "pickMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[9,3,5,8],"display":{"fm":{"b":4,"kind":"pickMultiple"},"promptText":"Which of 9, 3, 5, 8 is a multiple of 4? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[9,3,5,8],"display":{"fm":{"b":4,"kind":"pickMultiple"},"promptText":"Which one is a multiple of 4: 9, 3, 5, or 8?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0287",
@@ -15232,7 +15232,7 @@ export const ITEMS = [
     structureType: "pickMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[7,12,10,9],"display":{"fm":{"b":5,"kind":"pickMultiple"},"promptText":"From 7, 12, 10, 9, pick the multiple of 5. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[7,12,10,9],"display":{"fm":{"b":5,"kind":"pickMultiple"},"promptText":"Which number is a multiple of 5: 7, 12, 10, or 9?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0288",
@@ -15242,7 +15242,7 @@ export const ITEMS = [
     structureType: "pickMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"choices":[16,11,9,13],"display":{"fm":{"b":2,"kind":"pickMultiple"},"promptText":"Which of 16, 11, 9, 13 is a multiple of 2? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":16,"choices":[16,11,9,13],"display":{"fm":{"b":2,"kind":"pickMultiple"},"promptText":"Which one is a multiple of 2: 16, 11, 9, or 13?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0289",
@@ -15252,7 +15252,7 @@ export const ITEMS = [
     structureType: "pickMultiple_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"choices":[15,20,27,24],"display":{"fm":{"b":6,"kind":"pickMultiple"},"promptText":"Select the multiple of 6 from 15, 20, 27, 24. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":24,"choices":[15,20,27,24],"display":{"fm":{"b":6,"kind":"pickMultiple"},"promptText":"Which of these is a multiple of 6: 15, 20, 27, or 24?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0290",
@@ -15272,7 +15272,7 @@ export const ITEMS = [
     structureType: "pickMultiple_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"choices":[34,28,32,20],"display":{"fm":{"b":8,"kind":"pickMultiple"},"promptText":"Select the multiple of 8 from 34, 28, 32, 20. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":32,"choices":[34,28,32,20],"display":{"fm":{"b":8,"kind":"pickMultiple"},"promptText":"Which of these is a multiple of 8: 34, 28, 32, or 20?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0292",
@@ -15292,7 +15292,7 @@ export const ITEMS = [
     structureType: "pickMultiple_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"choices":[27,16,30,21],"display":{"fm":{"b":6,"kind":"pickMultiple"},"promptText":"Select the multiple of 6 from 27, 16, 30, 21. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":30,"choices":[27,16,30,21],"display":{"fm":{"b":6,"kind":"pickMultiple"},"promptText":"Which of these is a multiple of 6: 27, 16, 30, or 21?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0294",
@@ -15312,7 +15312,7 @@ export const ITEMS = [
     structureType: "pickMultiple_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"choices":[40,44,28,34],"display":{"fm":{"b":8,"kind":"pickMultiple"},"promptText":"Select the multiple of 8 from 40, 44, 28, 34. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":40,"choices":[40,44,28,34],"display":{"fm":{"b":8,"kind":"pickMultiple"},"promptText":"Which of these is a multiple of 8: 40, 44, 28, or 34?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0296",
@@ -15332,7 +15332,7 @@ export const ITEMS = [
     structureType: "pickMultiple_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":42,"choices":[32,42,26,39],"display":{"fm":{"b":6,"kind":"pickMultiple"},"promptText":"Select the multiple of 6 from 32, 42, 26, 39. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":42,"choices":[32,42,26,39],"display":{"fm":{"b":6,"kind":"pickMultiple"},"promptText":"Which of these is a multiple of 6: 32, 42, 26, or 39?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0298",
@@ -15352,7 +15352,7 @@ export const ITEMS = [
     structureType: "pickMultiple_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"choices":[52,36,48,42],"display":{"fm":{"b":8,"kind":"pickMultiple"},"promptText":"Select the multiple of 8 from 52, 36, 48, 42. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":48,"choices":[52,36,48,42],"display":{"fm":{"b":8,"kind":"pickMultiple"},"promptText":"Which of these is a multiple of 8: 52, 36, 48, or 42?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0300",
@@ -15372,7 +15372,7 @@ export const ITEMS = [
     structureType: "pickMultiple_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"choices":[36,32,40,26],"display":{"fm":{"b":6,"kind":"pickMultiple"},"promptText":"Select the multiple of 6 from 36, 32, 40, 26. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":36,"choices":[36,32,40,26],"display":{"fm":{"b":6,"kind":"pickMultiple"},"promptText":"Which of these is a multiple of 6: 36, 32, 40, or 26?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0302",
@@ -15382,7 +15382,7 @@ export const ITEMS = [
     structureType: "pickMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"choices":[45,52,55,35],"display":{"fm":{"b":11,"kind":"pickMultiple"},"promptText":"Identify the multiple of 11 within 45, 52, 55, 35. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":55,"choices":[45,52,55,35],"display":{"fm":{"b":11,"kind":"pickMultiple"},"promptText":"Look at 45, 52, 55, and 35. Which one is a multiple of 11?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0303",
@@ -15402,7 +15402,7 @@ export const ITEMS = [
     structureType: "pickMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"choices":[50,55,40,60],"display":{"fm":{"b":15,"kind":"pickMultiple"},"promptText":"Identify the multiple of 15 within 50, 55, 40, 60. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":60,"choices":[50,55,40,60],"display":{"fm":{"b":15,"kind":"pickMultiple"},"promptText":"Look at 50, 55, 40, and 60. Which one is a multiple of 15?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0305",
@@ -15422,7 +15422,7 @@ export const ITEMS = [
     structureType: "pickMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":66,"choices":[46,61,56,66],"display":{"fm":{"b":11,"kind":"pickMultiple"},"promptText":"Identify the multiple of 11 within 46, 61, 56, 66. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":66,"choices":[46,61,56,66],"display":{"fm":{"b":11,"kind":"pickMultiple"},"promptText":"Look at 46, 61, 56, and 66. Which one is a multiple of 11?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0307",
@@ -15442,7 +15442,7 @@ export const ITEMS = [
     structureType: "pickMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":75,"choices":[65,70,55,75],"display":{"fm":{"b":15,"kind":"pickMultiple"},"promptText":"Identify the multiple of 15 within 65, 70, 55, 75. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":75,"choices":[65,70,55,75],"display":{"fm":{"b":15,"kind":"pickMultiple"},"promptText":"Look at 65, 70, 55, and 75. Which one is a multiple of 15?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0309",
@@ -15462,7 +15462,7 @@ export const ITEMS = [
     structureType: "pickMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":77,"choices":[77,67,57,72],"display":{"fm":{"b":11,"kind":"pickMultiple"},"promptText":"Identify the multiple of 11 within 77, 67, 57, 72. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":77,"choices":[77,67,57,72],"display":{"fm":{"b":11,"kind":"pickMultiple"},"promptText":"Look at 77, 67, 57, and 72. Which one is a multiple of 11?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0311",
@@ -15482,7 +15482,7 @@ export const ITEMS = [
     structureType: "pickMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"choices":[80,70,90,85],"display":{"fm":{"b":15,"kind":"pickMultiple"},"promptText":"Identify the multiple of 15 within 80, 70, 90, 85. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":90,"choices":[80,70,90,85],"display":{"fm":{"b":15,"kind":"pickMultiple"},"promptText":"Look at 80, 70, 90, and 85. Which one is a multiple of 15?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0313",
@@ -15502,7 +15502,7 @@ export const ITEMS = [
     structureType: "pickMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":44,"choices":[42,34,44,24],"display":{"fm":{"b":11,"kind":"pickMultiple"},"promptText":"Identify the multiple of 11 within 42, 34, 44, 24. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":44,"choices":[42,34,44,24],"display":{"fm":{"b":11,"kind":"pickMultiple"},"promptText":"Look at 42, 34, 44, and 24. Which one is a multiple of 11?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0315",
@@ -15512,7 +15512,7 @@ export const ITEMS = [
     structureType: "pairComplete_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"fm":{"a":3,"n":12,"kind":"pairFor"},"promptText":"3 pairs with which number to make 12? Type its partner."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"fm":{"a":3,"n":12,"kind":"pairFor"},"promptText":"3 times what number makes 12?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0316",
@@ -15522,7 +15522,7 @@ export const ITEMS = [
     structureType: "pairComplete_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"fm":{"a":2,"n":12,"kind":"pairFor"},"promptText":"In a factor pair for 12, 2's partner = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"fm":{"a":2,"n":12,"kind":"pairFor"},"promptText":"In a factor pair of 12, what number goes with 2?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0317",
@@ -15532,7 +15532,7 @@ export const ITEMS = [
     structureType: "pairComplete_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"a":6,"n":12,"kind":"pairFor"},"promptText":"6 pairs with which number to make 12? Type its partner."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"a":6,"n":12,"kind":"pairFor"},"promptText":"6 times what number makes 12?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0318",
@@ -15542,7 +15542,7 @@ export const ITEMS = [
     structureType: "pairComplete_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"fm":{"a":2,"n":8,"kind":"pairFor"},"promptText":"In a factor pair for 8, 2's partner = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"fm":{"a":2,"n":8,"kind":"pairFor"},"promptText":"In a factor pair of 8, what number goes with 2?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0319",
@@ -15552,7 +15552,7 @@ export const ITEMS = [
     structureType: "pairComplete_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"a":4,"n":8,"kind":"pairFor"},"promptText":"4 pairs with which number to make 8? Type its partner."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"a":4,"n":8,"kind":"pairFor"},"promptText":"4 times what number makes 8?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0320",
@@ -15562,7 +15562,7 @@ export const ITEMS = [
     structureType: "pairComplete_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"fm":{"a":2,"n":6,"kind":"pairFor"},"promptText":"In a factor pair for 6, 2's partner = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"fm":{"a":2,"n":6,"kind":"pairFor"},"promptText":"In a factor pair of 6, what number goes with 2?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0321",
@@ -15572,7 +15572,7 @@ export const ITEMS = [
     structureType: "pairComplete_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"a":3,"n":6,"kind":"pairFor"},"promptText":"3 pairs with which number to make 6? Type its partner."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"a":3,"n":6,"kind":"pairFor"},"promptText":"3 times what number makes 6?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0322",
@@ -15582,7 +15582,7 @@ export const ITEMS = [
     structureType: "pairComplete_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"fm":{"a":2,"n":10,"kind":"pairFor"},"promptText":"In a factor pair for 10, 2's partner = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"fm":{"a":2,"n":10,"kind":"pairFor"},"promptText":"In a factor pair of 10, what number goes with 2?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0323",
@@ -15592,7 +15592,7 @@ export const ITEMS = [
     structureType: "pairComplete_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"a":5,"n":10,"kind":"pairFor"},"promptText":"5 pairs with which number to make 10? Type its partner."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"a":5,"n":10,"kind":"pairFor"},"promptText":"5 times what number makes 10?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0324",
@@ -15602,7 +15602,7 @@ export const ITEMS = [
     structureType: "pairComplete_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"fm":{"a":3,"n":9,"kind":"pairFor"},"promptText":"In a factor pair for 9, 3's partner = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"fm":{"a":3,"n":9,"kind":"pairFor"},"promptText":"In a factor pair of 9, what number goes with 3?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0325",
@@ -15612,7 +15612,7 @@ export const ITEMS = [
     structureType: "pairComplete_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"a":2,"n":4,"kind":"pairFor"},"promptText":"2 pairs with which number to make 4? Type its partner."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"a":2,"n":4,"kind":"pairFor"},"promptText":"2 times what number makes 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0326",
@@ -15622,7 +15622,7 @@ export const ITEMS = [
     structureType: "pairComplete_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"fm":{"a":4,"n":12,"kind":"pairFor"},"promptText":"In a factor pair for 12, 4's partner = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"fm":{"a":4,"n":12,"kind":"pairFor"},"promptText":"In a factor pair of 12, what number goes with 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0327",
@@ -15632,7 +15632,7 @@ export const ITEMS = [
     structureType: "pairComplete_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"fm":{"a":1,"n":8,"kind":"pairFor"},"promptText":"1 pairs with which number to make 8? Type its partner."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"fm":{"a":1,"n":8,"kind":"pairFor"},"promptText":"1 times what number makes 8?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0328",
@@ -15652,7 +15652,7 @@ export const ITEMS = [
     structureType: "pairComplete_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"fm":{"a":3,"n":15,"kind":"pairFor"},"promptText":"The factor pair of 15 containing 3 also contains which number? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"fm":{"a":3,"n":15,"kind":"pairFor"},"promptText":"3 is in a factor pair of 15. What is the other number in that pair?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0330",
@@ -15672,7 +15672,7 @@ export const ITEMS = [
     structureType: "pairComplete_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"fm":{"a":2,"n":18,"kind":"pairFor"},"promptText":"The factor pair of 18 containing 2 also contains which number? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"fm":{"a":2,"n":18,"kind":"pairFor"},"promptText":"2 is in a factor pair of 18. What is the other number in that pair?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0332",
@@ -15692,7 +15692,7 @@ export const ITEMS = [
     structureType: "pairComplete_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"fm":{"a":3,"n":24,"kind":"pairFor"},"promptText":"The factor pair of 24 containing 3 also contains which number? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"fm":{"a":3,"n":24,"kind":"pairFor"},"promptText":"3 is in a factor pair of 24. What is the other number in that pair?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0334",
@@ -15712,7 +15712,7 @@ export const ITEMS = [
     structureType: "pairComplete_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"fm":{"a":7,"n":28,"kind":"pairFor"},"promptText":"The factor pair of 28 containing 7 also contains which number? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"fm":{"a":7,"n":28,"kind":"pairFor"},"promptText":"7 is in a factor pair of 28. What is the other number in that pair?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0336",
@@ -15732,7 +15732,7 @@ export const ITEMS = [
     structureType: "pairComplete_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"fm":{"a":7,"n":21,"kind":"pairFor"},"promptText":"The factor pair of 21 containing 7 also contains which number? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"fm":{"a":7,"n":21,"kind":"pairFor"},"promptText":"7 is in a factor pair of 21. What is the other number in that pair?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0338",
@@ -15752,7 +15752,7 @@ export const ITEMS = [
     structureType: "pairComplete_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"a":11,"n":22,"kind":"pairFor"},"promptText":"The factor pair of 22 containing 11 also contains which number? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"a":11,"n":22,"kind":"pairFor"},"promptText":"11 is in a factor pair of 22. What is the other number in that pair?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0340",
@@ -15772,7 +15772,7 @@ export const ITEMS = [
     structureType: "pairComplete_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"fm":{"a":8,"n":32,"kind":"pairFor"},"promptText":"Determine 8's partner in the factor pair of 32."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"fm":{"a":8,"n":32,"kind":"pairFor"},"promptText":"Which number makes a factor pair of 32 with 8?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0342",
@@ -15782,7 +15782,7 @@ export const ITEMS = [
     structureType: "pairComplete_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"fm":{"a":4,"n":36,"kind":"pairFor"},"promptText":"Exactly which number pairs with 4 to produce 36? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"fm":{"a":4,"n":36,"kind":"pairFor"},"promptText":"4 × __ = 36. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0343",
@@ -15792,7 +15792,7 @@ export const ITEMS = [
     structureType: "pairComplete_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"fm":{"a":5,"n":40,"kind":"pairFor"},"promptText":"Determine 5's partner in the factor pair of 40."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"fm":{"a":5,"n":40,"kind":"pairFor"},"promptText":"Which number makes a factor pair of 40 with 5?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0344",
@@ -15802,7 +15802,7 @@ export const ITEMS = [
     structureType: "pairComplete_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"fm":{"a":7,"n":42,"kind":"pairFor"},"promptText":"Exactly which number pairs with 7 to produce 42? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"fm":{"a":7,"n":42,"kind":"pairFor"},"promptText":"Which number times 7 makes 42?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0345",
@@ -15812,7 +15812,7 @@ export const ITEMS = [
     structureType: "pairComplete_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"fm":{"a":5,"n":45,"kind":"pairFor"},"promptText":"Determine 5's partner in the factor pair of 45."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"fm":{"a":5,"n":45,"kind":"pairFor"},"promptText":"Which number makes a factor pair of 45 with 5?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0346",
@@ -15822,7 +15822,7 @@ export const ITEMS = [
     structureType: "pairComplete_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"fm":{"a":4,"n":48,"kind":"pairFor"},"promptText":"Exactly which number pairs with 4 to produce 48? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"fm":{"a":4,"n":48,"kind":"pairFor"},"promptText":"4 and what number make a factor pair of 48?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0347",
@@ -15832,7 +15832,7 @@ export const ITEMS = [
     structureType: "pairComplete_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"fm":{"a":2,"n":50,"kind":"pairFor"},"promptText":"Determine 2's partner in the factor pair of 50."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"fm":{"a":2,"n":50,"kind":"pairFor"},"promptText":"Which number makes a factor pair of 50 with 2?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0348",
@@ -15842,7 +15842,7 @@ export const ITEMS = [
     structureType: "pairComplete_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"fm":{"a":6,"n":54,"kind":"pairFor"},"promptText":"Exactly which number pairs with 6 to produce 54? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"fm":{"a":6,"n":54,"kind":"pairFor"},"promptText":"What number can you multiply by 6 to get 54?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0349",
@@ -15852,7 +15852,7 @@ export const ITEMS = [
     structureType: "pairComplete_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"fm":{"a":4,"n":60,"kind":"pairFor"},"promptText":"Determine 4's partner in the factor pair of 60."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"fm":{"a":4,"n":60,"kind":"pairFor"},"promptText":"Which number makes a factor pair of 60 with 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0350",
@@ -15862,7 +15862,7 @@ export const ITEMS = [
     structureType: "pairComplete_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"fm":{"a":11,"n":44,"kind":"pairFor"},"promptText":"Exactly which number pairs with 11 to produce 44? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"fm":{"a":11,"n":44,"kind":"pairFor"},"promptText":"11 × __ = 44. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0351",
@@ -15872,7 +15872,7 @@ export const ITEMS = [
     structureType: "pairComplete_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"fm":{"a":8,"n":56,"kind":"pairFor"},"promptText":"Determine 8's partner in the factor pair of 56."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"fm":{"a":8,"n":56,"kind":"pairFor"},"promptText":"Which number makes a factor pair of 56 with 8?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0352",
@@ -15882,7 +15882,7 @@ export const ITEMS = [
     structureType: "pairComplete_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"fm":{"a":3,"n":48,"kind":"pairFor"},"promptText":"Exactly which number pairs with 3 to produce 48? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"fm":{"a":3,"n":48,"kind":"pairFor"},"promptText":"Which number times 3 makes 48?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0353",
@@ -15892,7 +15892,7 @@ export const ITEMS = [
     structureType: "pairComplete_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"fm":{"a":3,"n":36,"kind":"pairFor"},"promptText":"Determine 3's partner in the factor pair of 36."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"fm":{"a":3,"n":36,"kind":"pairFor"},"promptText":"Which number makes a factor pair of 36 with 3?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0354",
@@ -16292,7 +16292,7 @@ export const ITEMS = [
     structureType: "pairPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3 x 4","choices":["4 x 5","2 x 5","3 x 5","3 x 4"],"display":{"fm":{"n":12,"kind":"pairPick"},"promptText":"Which pair multiplies to 12: 4 x 5, 2 x 5, 3 x 5, 3 x 4? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"3 x 4","choices":["4 x 5","2 x 5","3 x 5","3 x 4"],"display":{"fm":{"n":12,"kind":"pairPick"},"promptText":"Which pair multiplies to 12: 4 x 5, 2 x 5, 3 x 5, 3 x 4?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0394",
@@ -16302,7 +16302,7 @@ export const ITEMS = [
     structureType: "pairPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2 x 4","choices":["2 x 3","2 x 5","2 x 4","3 x 4"],"display":{"fm":{"n":8,"kind":"pairPick"},"promptText":"From 2 x 3, 2 x 5, 2 x 4, 3 x 4, pick the factor pair of 8. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"2 x 4","choices":["2 x 3","2 x 5","2 x 4","3 x 4"],"display":{"fm":{"n":8,"kind":"pairPick"},"promptText":"Which is a factor pair of 8: 2 x 3, 2 x 5, 2 x 4, or 3 x 4?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0395",
@@ -16312,7 +16312,7 @@ export const ITEMS = [
     structureType: "pairPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2 x 3","choices":["2 x 3","3 x 3","2 x 2","2 x 4"],"display":{"fm":{"n":6,"kind":"pairPick"},"promptText":"Which pair multiplies to 6: 2 x 3, 3 x 3, 2 x 2, 2 x 4? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2 x 3","choices":["2 x 3","3 x 3","2 x 2","2 x 4"],"display":{"fm":{"n":6,"kind":"pairPick"},"promptText":"Which pair multiplies to 6: 2 x 3, 3 x 3, 2 x 2, 2 x 4?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0396",
@@ -16322,7 +16322,7 @@ export const ITEMS = [
     structureType: "pairPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2 x 5","choices":["2 x 4","3 x 4","5 x 5","2 x 5"],"display":{"fm":{"n":10,"kind":"pairPick"},"promptText":"From 2 x 4, 3 x 4, 5 x 5, 2 x 5, pick the factor pair of 10. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"2 x 5","choices":["2 x 4","3 x 4","5 x 5","2 x 5"],"display":{"fm":{"n":10,"kind":"pairPick"},"promptText":"Which is a factor pair of 10: 2 x 4, 3 x 4, 5 x 5, or 2 x 5?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0397",
@@ -16332,7 +16332,7 @@ export const ITEMS = [
     structureType: "pairPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3 x 3","choices":["2 x 4","2 x 3","3 x 4","3 x 3"],"display":{"fm":{"n":9,"kind":"pairPick"},"promptText":"Which pair multiplies to 9: 2 x 4, 2 x 3, 3 x 4, 3 x 3? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"3 x 3","choices":["2 x 4","2 x 3","3 x 4","3 x 3"],"display":{"fm":{"n":9,"kind":"pairPick"},"promptText":"Which pair multiplies to 9: 2 x 4, 2 x 3, 3 x 4, 3 x 3?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0398",
@@ -16342,7 +16342,7 @@ export const ITEMS = [
     structureType: "pairPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2 x 6","choices":["4 x 4","3 x 5","2 x 6","2 x 5"],"display":{"fm":{"n":12,"kind":"pairPick"},"promptText":"From 4 x 4, 3 x 5, 2 x 6, 2 x 5, pick the factor pair of 12. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"2 x 6","choices":["4 x 4","3 x 5","2 x 6","2 x 5"],"display":{"fm":{"n":12,"kind":"pairPick"},"promptText":"Which is a factor pair of 12: 4 x 4, 3 x 5, 2 x 6, or 2 x 5?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0399",
@@ -16352,7 +16352,7 @@ export const ITEMS = [
     structureType: "pairPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2 x 2","choices":["2 x 2","2 x 3","3 x 3","1 x 3"],"display":{"fm":{"n":4,"kind":"pairPick"},"promptText":"Which pair multiplies to 4: 2 x 2, 2 x 3, 3 x 3, 1 x 3? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2 x 2","choices":["2 x 2","2 x 3","3 x 3","1 x 3"],"display":{"fm":{"n":4,"kind":"pairPick"},"promptText":"Which pair multiplies to 4: 2 x 2, 2 x 3, 3 x 3, 1 x 3?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0400",
@@ -16362,7 +16362,7 @@ export const ITEMS = [
     structureType: "pairPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1 x 10","choices":["2 x 6","2 x 4","1 x 10","3 x 3"],"display":{"fm":{"n":10,"kind":"pairPick"},"promptText":"From 2 x 6, 2 x 4, 1 x 10, 3 x 3, pick the factor pair of 10. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1 x 10","choices":["2 x 6","2 x 4","1 x 10","3 x 3"],"display":{"fm":{"n":10,"kind":"pairPick"},"promptText":"Which is a factor pair of 10: 2 x 6, 2 x 4, 1 x 10, or 3 x 3?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0401",
@@ -16372,7 +16372,7 @@ export const ITEMS = [
     structureType: "pairPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1 x 8","choices":["2 x 6","3 x 3","1 x 8","2 x 3"],"display":{"fm":{"n":8,"kind":"pairPick"},"promptText":"Which pair multiplies to 8: 2 x 6, 3 x 3, 1 x 8, 2 x 3? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1 x 8","choices":["2 x 6","3 x 3","1 x 8","2 x 3"],"display":{"fm":{"n":8,"kind":"pairPick"},"promptText":"Which pair multiplies to 8: 2 x 6, 3 x 3, 1 x 8, 2 x 3?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0402",
@@ -16382,7 +16382,7 @@ export const ITEMS = [
     structureType: "pairPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1 x 6","choices":["1 x 6","3 x 4","2 x 2","2 x 4"],"display":{"fm":{"n":6,"kind":"pairPick"},"promptText":"From 1 x 6, 3 x 4, 2 x 2, 2 x 4, pick the factor pair of 6. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1 x 6","choices":["1 x 6","3 x 4","2 x 2","2 x 4"],"display":{"fm":{"n":6,"kind":"pairPick"},"promptText":"Which is a factor pair of 6: 1 x 6, 3 x 4, 2 x 2, or 2 x 4?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0403",
@@ -16392,7 +16392,7 @@ export const ITEMS = [
     structureType: "pairPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1 x 12","choices":["5 x 5","2 x 5","3 x 5","1 x 12"],"display":{"fm":{"n":12,"kind":"pairPick"},"promptText":"Which pair multiplies to 12: 5 x 5, 2 x 5, 3 x 5, 1 x 12? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1 x 12","choices":["5 x 5","2 x 5","3 x 5","1 x 12"],"display":{"fm":{"n":12,"kind":"pairPick"},"promptText":"Which pair multiplies to 12: 5 x 5, 2 x 5, 3 x 5, 1 x 12?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0404",
@@ -16402,7 +16402,7 @@ export const ITEMS = [
     structureType: "pairPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1 x 9","choices":["2 x 5","1 x 9","2 x 4","4 x 4"],"display":{"fm":{"n":9,"kind":"pairPick"},"promptText":"From 2 x 5, 1 x 9, 2 x 4, 4 x 4, pick the factor pair of 9. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1 x 9","choices":["2 x 5","1 x 9","2 x 4","4 x 4"],"display":{"fm":{"n":9,"kind":"pairPick"},"promptText":"Which is a factor pair of 9: 2 x 5, 1 x 9, 2 x 4, or 4 x 4?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0405",
@@ -16412,7 +16412,7 @@ export const ITEMS = [
     structureType: "pairPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1 x 4","choices":["1 x 3","3 x 3","2 x 3","1 x 4"],"display":{"fm":{"n":4,"kind":"pairPick"},"promptText":"Which pair multiplies to 4: 1 x 3, 3 x 3, 2 x 3, 1 x 4? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1 x 4","choices":["1 x 3","3 x 3","2 x 3","1 x 4"],"display":{"fm":{"n":4,"kind":"pairPick"},"promptText":"Which pair multiplies to 4: 1 x 3, 3 x 3, 2 x 3, 1 x 4?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0406",
@@ -16422,7 +16422,7 @@ export const ITEMS = [
     structureType: "pairPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2 x 7","choices":["4 x 4","2 x 6","2 x 7","3 x 5"],"display":{"fm":{"n":14,"kind":"pairPick"},"promptText":"Select the factor pair of 14 from 4 x 4, 2 x 6, 2 x 7, 3 x 5. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"2 x 7","choices":["4 x 4","2 x 6","2 x 7","3 x 5"],"display":{"fm":{"n":14,"kind":"pairPick"},"promptText":"Which of these is a factor pair of 14: 4 x 4, 2 x 6, 2 x 7, or 3 x 5?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0407",
@@ -16442,7 +16442,7 @@ export const ITEMS = [
     structureType: "pairPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2 x 8","choices":["2 x 8","2 x 7","3 x 6","3 x 5"],"display":{"fm":{"n":16,"kind":"pairPick"},"promptText":"Select the factor pair of 16 from 2 x 8, 2 x 7, 3 x 6, 3 x 5. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"2 x 8","choices":["2 x 8","2 x 7","3 x 6","3 x 5"],"display":{"fm":{"n":16,"kind":"pairPick"},"promptText":"Which of these is a factor pair of 16: 2 x 8, 2 x 7, 3 x 6, or 3 x 5?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0409",
@@ -16462,7 +16462,7 @@ export const ITEMS = [
     structureType: "pairPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4 x 5","choices":["3 x 6","4 x 6","2 x 9","4 x 5"],"display":{"fm":{"n":20,"kind":"pairPick"},"promptText":"Select the factor pair of 20 from 3 x 6, 4 x 6, 2 x 9, 4 x 5. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"4 x 5","choices":["3 x 6","4 x 6","2 x 9","4 x 5"],"display":{"fm":{"n":20,"kind":"pairPick"},"promptText":"Which of these is a factor pair of 20: 3 x 6, 4 x 6, 2 x 9, or 4 x 5?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0411",
@@ -16482,7 +16482,7 @@ export const ITEMS = [
     structureType: "pairPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5 x 5","choices":["5 x 5","4 x 6","3 x 8","5 x 6"],"display":{"fm":{"n":25,"kind":"pairPick"},"promptText":"Select the factor pair of 25 from 5 x 5, 4 x 6, 3 x 8, 5 x 6. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5 x 5","choices":["5 x 5","4 x 6","3 x 8","5 x 6"],"display":{"fm":{"n":25,"kind":"pairPick"},"promptText":"Which of these is a factor pair of 25: 5 x 5, 4 x 6, 3 x 8, or 5 x 6?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0413",
@@ -16502,7 +16502,7 @@ export const ITEMS = [
     structureType: "pairPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5 x 6","choices":["3 x 9","5 x 6","4 x 7","5 x 5"],"display":{"fm":{"n":30,"kind":"pairPick"},"promptText":"Select the factor pair of 30 from 3 x 9, 5 x 6, 4 x 7, 5 x 5. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5 x 6","choices":["3 x 9","5 x 6","4 x 7","5 x 5"],"display":{"fm":{"n":30,"kind":"pairPick"},"promptText":"Which of these is a factor pair of 30: 3 x 9, 5 x 6, 4 x 7, or 5 x 5?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0415",
@@ -16522,7 +16522,7 @@ export const ITEMS = [
     structureType: "pairPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3 x 9","choices":["2 x 13","4 x 6","3 x 8","3 x 9"],"display":{"fm":{"n":27,"kind":"pairPick"},"promptText":"Select the factor pair of 27 from 2 x 13, 4 x 6, 3 x 8, 3 x 9. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3 x 9","choices":["2 x 13","4 x 6","3 x 8","3 x 9"],"display":{"fm":{"n":27,"kind":"pairPick"},"promptText":"Which of these is a factor pair of 27: 2 x 13, 4 x 6, 3 x 8, or 3 x 9?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0417",
@@ -16542,7 +16542,7 @@ export const ITEMS = [
     structureType: "pairPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3 x 8","choices":["4 x 5","3 x 8","2 x 11","6 x 6"],"display":{"fm":{"n":24,"kind":"pairPick"},"promptText":"Select the factor pair of 24 from 4 x 5, 3 x 8, 2 x 11, 6 x 6. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3 x 8","choices":["4 x 5","3 x 8","2 x 11","6 x 6"],"display":{"fm":{"n":24,"kind":"pairPick"},"promptText":"Which of these is a factor pair of 24: 4 x 5, 3 x 8, 2 x 11, or 6 x 6?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0419",
@@ -16552,7 +16552,7 @@ export const ITEMS = [
     structureType: "pairPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4 x 8","choices":["5 x 6","3 x 10","4 x 8","4 x 7"],"display":{"fm":{"n":32,"kind":"pairPick"},"promptText":"Identify the factor pair of 32 within 5 x 6, 3 x 10, 4 x 8, 4 x 7. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"4 x 8","choices":["5 x 6","3 x 10","4 x 8","4 x 7"],"display":{"fm":{"n":32,"kind":"pairPick"},"promptText":"Look at 5 x 6, 3 x 10, 4 x 8, and 4 x 7. Which one is a factor pair of 32?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0420",
@@ -16572,7 +16572,7 @@ export const ITEMS = [
     structureType: "pairPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5 x 8","choices":["5 x 7","6 x 6","5 x 8","4 x 9"],"display":{"fm":{"n":40,"kind":"pairPick"},"promptText":"Identify the factor pair of 40 within 5 x 7, 6 x 6, 5 x 8, 4 x 9. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5 x 8","choices":["5 x 7","6 x 6","5 x 8","4 x 9"],"display":{"fm":{"n":40,"kind":"pairPick"},"promptText":"Look at 5 x 7, 6 x 6, 5 x 8, and 4 x 9. Which one is a factor pair of 40?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0422",
@@ -16592,7 +16592,7 @@ export const ITEMS = [
     structureType: "pairPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5 x 9","choices":["6 x 7","5 x 8","4 x 11","5 x 9"],"display":{"fm":{"n":45,"kind":"pairPick"},"promptText":"Identify the factor pair of 45 within 6 x 7, 5 x 8, 4 x 11, 5 x 9. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5 x 9","choices":["6 x 7","5 x 8","4 x 11","5 x 9"],"display":{"fm":{"n":45,"kind":"pairPick"},"promptText":"Look at 6 x 7, 5 x 8, 4 x 11, and 5 x 9. Which one is a factor pair of 45?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0424",
@@ -16612,7 +16612,7 @@ export const ITEMS = [
     structureType: "pairPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5 x 10","choices":["6 x 8","4 x 12","5 x 10","5 x 9"],"display":{"fm":{"n":50,"kind":"pairPick"},"promptText":"Identify the factor pair of 50 within 6 x 8, 4 x 12, 5 x 10, 5 x 9. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5 x 10","choices":["6 x 8","4 x 12","5 x 10","5 x 9"],"display":{"fm":{"n":50,"kind":"pairPick"},"promptText":"Look at 6 x 8, 4 x 12, 5 x 10, and 5 x 9. Which one is a factor pair of 50?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0426",
@@ -16632,7 +16632,7 @@ export const ITEMS = [
     structureType: "pairPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"6 x 10","choices":["7 x 8","5 x 11","6 x 10","6 x 9"],"display":{"fm":{"n":60,"kind":"pairPick"},"promptText":"Identify the factor pair of 60 within 7 x 8, 5 x 11, 6 x 10, 6 x 9. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"6 x 10","choices":["7 x 8","5 x 11","6 x 10","6 x 9"],"display":{"fm":{"n":60,"kind":"pairPick"},"promptText":"Look at 7 x 8, 5 x 11, 6 x 10, and 6 x 9. Which one is a factor pair of 60?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0428",
@@ -16652,7 +16652,7 @@ export const ITEMS = [
     structureType: "pairPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7 x 8","choices":["7 x 8","6 x 9","7 x 7","5 x 11"],"display":{"fm":{"n":56,"kind":"pairPick"},"promptText":"Identify the factor pair of 56 within 7 x 8, 6 x 9, 7 x 7, 5 x 11. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"7 x 8","choices":["7 x 8","6 x 9","7 x 7","5 x 11"],"display":{"fm":{"n":56,"kind":"pairPick"},"promptText":"Look at 7 x 8, 6 x 9, 7 x 7, and 5 x 11. Which one is a factor pair of 56?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0430",
@@ -16672,7 +16672,7 @@ export const ITEMS = [
     structureType: "pairPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"6 x 6","choices":["4 x 8","6 x 6","5 x 7","6 x 5"],"display":{"fm":{"n":36,"kind":"pairPick"},"promptText":"Identify the factor pair of 36 within 4 x 8, 6 x 6, 5 x 7, 6 x 5. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"6 x 6","choices":["4 x 8","6 x 6","5 x 7","6 x 5"],"display":{"fm":{"n":36,"kind":"pairPick"},"promptText":"Look at 4 x 8, 6 x 6, 5 x 7, and 6 x 5. Which one is a factor pair of 36?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0432",
@@ -16682,7 +16682,7 @@ export const ITEMS = [
     structureType: "pairCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"n":4,"kind":"pairCount"},"promptText":"How many different factor pairs make 4? Count them."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"n":4,"kind":"pairCount"},"promptText":"How many different factor pairs make 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0433",
@@ -16702,7 +16702,7 @@ export const ITEMS = [
     structureType: "pairCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"n":8,"kind":"pairCount"},"promptText":"How many different factor pairs make 8? Count them."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"n":8,"kind":"pairCount"},"promptText":"How many different factor pairs make 8?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0435",
@@ -16722,7 +16722,7 @@ export const ITEMS = [
     structureType: "pairCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"n":10,"kind":"pairCount"},"promptText":"How many different factor pairs make 10? Count them."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"n":10,"kind":"pairCount"},"promptText":"How many different factor pairs make 10?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0437",
@@ -16802,7 +16802,7 @@ export const ITEMS = [
     structureType: "pairCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"n":6,"kind":"pairCount"},"promptText":"How many different factor pairs make 6? Count them."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"n":6,"kind":"pairCount"},"promptText":"How many different factor pairs make 6?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0445",
@@ -16822,7 +16822,7 @@ export const ITEMS = [
     structureType: "pairCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"n":15,"kind":"pairCount"},"promptText":"How many factor pairs does 15 have? Type the count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"n":15,"kind":"pairCount"},"promptText":"How many factor pairs does 15 have?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0447",
@@ -16842,7 +16842,7 @@ export const ITEMS = [
     structureType: "pairCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"fm":{"n":18,"kind":"pairCount"},"promptText":"How many factor pairs does 18 have? Type the count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"fm":{"n":18,"kind":"pairCount"},"promptText":"How many factor pairs does 18 have?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0449",
@@ -16862,7 +16862,7 @@ export const ITEMS = [
     structureType: "pairCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"fm":{"n":24,"kind":"pairCount"},"promptText":"How many factor pairs does 24 have? Type the count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"fm":{"n":24,"kind":"pairCount"},"promptText":"How many factor pairs does 24 have?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0451",
@@ -16882,7 +16882,7 @@ export const ITEMS = [
     structureType: "pairCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"fm":{"n":28,"kind":"pairCount"},"promptText":"How many factor pairs does 28 have? Type the count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"fm":{"n":28,"kind":"pairCount"},"promptText":"How many factor pairs does 28 have?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0453",
@@ -16902,7 +16902,7 @@ export const ITEMS = [
     structureType: "pairCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"n":21,"kind":"pairCount"},"promptText":"How many factor pairs does 21 have? Type the count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"n":21,"kind":"pairCount"},"promptText":"How many factor pairs does 21 have?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0455",
@@ -16922,7 +16922,7 @@ export const ITEMS = [
     structureType: "pairCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"n":22,"kind":"pairCount"},"promptText":"How many factor pairs does 22 have? Type the count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"n":22,"kind":"pairCount"},"promptText":"How many factor pairs does 22 have?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0457",
@@ -16952,7 +16952,7 @@ export const ITEMS = [
     structureType: "pairCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"fm":{"n":36,"kind":"pairCount"},"promptText":"Determine the total count of factor pairs of 36."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"fm":{"n":36,"kind":"pairCount"},"promptText":"How many factor pairs does 36 have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0460",
@@ -16972,7 +16972,7 @@ export const ITEMS = [
     structureType: "pairCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"fm":{"n":42,"kind":"pairCount"},"promptText":"Determine the total count of factor pairs of 42."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"fm":{"n":42,"kind":"pairCount"},"promptText":"How many factor pairs does 42 have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0462",
@@ -16992,7 +16992,7 @@ export const ITEMS = [
     structureType: "pairCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"fm":{"n":48,"kind":"pairCount"},"promptText":"Determine the total count of factor pairs of 48."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"fm":{"n":48,"kind":"pairCount"},"promptText":"How many factor pairs does 48 have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0464",
@@ -17012,7 +17012,7 @@ export const ITEMS = [
     structureType: "pairCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"fm":{"n":54,"kind":"pairCount"},"promptText":"Determine the total count of factor pairs of 54."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"fm":{"n":54,"kind":"pairCount"},"promptText":"How many factor pairs does 54 have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0466",
@@ -17032,7 +17032,7 @@ export const ITEMS = [
     structureType: "pairCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"fm":{"n":44,"kind":"pairCount"},"promptText":"Determine the total count of factor pairs of 44."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"fm":{"n":44,"kind":"pairCount"},"promptText":"How many factor pairs does 44 have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0468",
@@ -17052,7 +17052,7 @@ export const ITEMS = [
     structureType: "pairCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"fm":{"n":32,"kind":"pairCount"},"promptText":"The factor pairs of 32 come to how many pairs? Type the count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"fm":{"n":32,"kind":"pairCount"},"promptText":"How many factor pairs does 32 have altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0470",
@@ -17072,7 +17072,7 @@ export const ITEMS = [
     structureType: "primePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[9,4,6,5],"display":{"fm":{"kind":"primePick"},"promptText":"Which of these is a prime number: 9, 4, 6, 5? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[9,4,6,5],"display":{"fm":{"kind":"primePick"},"promptText":"Which of these is a prime number: 9, 4, 6, 5?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0472",
@@ -17082,7 +17082,7 @@ export const ITEMS = [
     structureType: "primePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[8,7,4,9],"display":{"fm":{"kind":"primePick"},"promptText":"Pick the prime number from 8, 7, 4, 9. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[8,7,4,9],"display":{"fm":{"kind":"primePick"},"promptText":"Which number is prime: 8, 7, 4, or 9?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0473",
@@ -17092,7 +17092,7 @@ export const ITEMS = [
     structureType: "primePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[8,6,4,3],"display":{"fm":{"kind":"primePick"},"promptText":"Which of these is a prime number: 8, 6, 4, 3? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[8,6,4,3],"display":{"fm":{"kind":"primePick"},"promptText":"Which of these is a prime number: 8, 6, 4, 3?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0474",
@@ -17102,7 +17102,7 @@ export const ITEMS = [
     structureType: "primePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[9,4,2,6],"display":{"fm":{"kind":"primePick"},"promptText":"Pick the prime number from 9, 4, 2, 6. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[9,4,2,6],"display":{"fm":{"kind":"primePick"},"promptText":"Which number is prime: 9, 4, 2, or 6?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0475",
@@ -17112,7 +17112,7 @@ export const ITEMS = [
     structureType: "primePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"choices":[4,12,11,8],"display":{"fm":{"kind":"primePick"},"promptText":"Which of these is a prime number: 4, 12, 11, 8? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":11,"choices":[4,12,11,8],"display":{"fm":{"kind":"primePick"},"promptText":"Which of these is a prime number: 4, 12, 11, 8?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0476",
@@ -17122,7 +17122,7 @@ export const ITEMS = [
     structureType: "primePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[13,9,12,6],"display":{"fm":{"kind":"primePick"},"promptText":"Pick the prime number from 13, 9, 12, 6. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[13,9,12,6],"display":{"fm":{"kind":"primePick"},"promptText":"Which number is prime: 13, 9, 12, or 6?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0477",
@@ -17132,7 +17132,7 @@ export const ITEMS = [
     structureType: "primePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[8,10,5,6],"display":{"fm":{"kind":"primePick"},"promptText":"Which of these is a prime number: 8, 10, 5, 6? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[8,10,5,6],"display":{"fm":{"kind":"primePick"},"promptText":"Which of these is a prime number: 8, 10, 5, 6?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0478",
@@ -17142,7 +17142,7 @@ export const ITEMS = [
     structureType: "primePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[6,12,10,7],"display":{"fm":{"kind":"primePick"},"promptText":"Pick the prime number from 6, 12, 10, 7. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[6,12,10,7],"display":{"fm":{"kind":"primePick"},"promptText":"Which number is prime: 6, 12, 10, or 7?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0479",
@@ -17152,7 +17152,7 @@ export const ITEMS = [
     structureType: "primePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[9,10,6,3],"display":{"fm":{"kind":"primePick"},"promptText":"Which of these is a prime number: 9, 10, 6, 3? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[9,10,6,3],"display":{"fm":{"kind":"primePick"},"promptText":"Which of these is a prime number: 9, 10, 6, 3?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0480",
@@ -17162,7 +17162,7 @@ export const ITEMS = [
     structureType: "primePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[2,8,9,10],"display":{"fm":{"kind":"primePick"},"promptText":"Pick the prime number from 2, 8, 9, 10. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[2,8,9,10],"display":{"fm":{"kind":"primePick"},"promptText":"Which number is prime: 2, 8, 9, or 10?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0481",
@@ -17172,7 +17172,7 @@ export const ITEMS = [
     structureType: "primePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"choices":[6,10,9,11],"display":{"fm":{"kind":"primePick"},"promptText":"Which of these is a prime number: 6, 10, 9, 11? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":11,"choices":[6,10,9,11],"display":{"fm":{"kind":"primePick"},"promptText":"Which of these is a prime number: 6, 10, 9, 11?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0482",
@@ -17182,7 +17182,7 @@ export const ITEMS = [
     structureType: "primePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[10,13,4,12],"display":{"fm":{"kind":"primePick"},"promptText":"Pick the prime number from 10, 13, 4, 12. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[10,13,4,12],"display":{"fm":{"kind":"primePick"},"promptText":"Which number is prime: 10, 13, 4, or 12?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0483",
@@ -17192,7 +17192,7 @@ export const ITEMS = [
     structureType: "primePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[9,15,4,17],"display":{"fm":{"kind":"primePick"},"promptText":"Which of these is a prime number: 9, 15, 4, 17? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[9,15,4,17],"display":{"fm":{"kind":"primePick"},"promptText":"Which of these is a prime number: 9, 15, 4, 17?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0484",
@@ -17202,7 +17202,7 @@ export const ITEMS = [
     structureType: "primePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[16,15,18,17],"display":{"fm":{"kind":"primePick"},"promptText":"Select the prime number: 16, 15, 18, 17. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[16,15,18,17],"display":{"fm":{"kind":"primePick"},"promptText":"Which of these is a prime number: 16, 15, 18, or 17?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0485",
@@ -17222,7 +17222,7 @@ export const ITEMS = [
     structureType: "primePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":23,"choices":[21,23,24,25],"display":{"fm":{"kind":"primePick"},"promptText":"Select the prime number: 21, 23, 24, 25. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":23,"choices":[21,23,24,25],"display":{"fm":{"kind":"primePick"},"promptText":"Which of these is a prime number: 21, 23, 24, or 25?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0487",
@@ -17242,7 +17242,7 @@ export const ITEMS = [
     structureType: "primePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[15,14,16,13],"display":{"fm":{"kind":"primePick"},"promptText":"Select the prime number: 15, 14, 16, 13. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[15,14,16,13],"display":{"fm":{"kind":"primePick"},"promptText":"Which of these is a prime number: 15, 14, 16, or 13?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0489",
@@ -17262,7 +17262,7 @@ export const ITEMS = [
     structureType: "primePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[27,17,21,14],"display":{"fm":{"kind":"primePick"},"promptText":"Select the prime number: 27, 17, 21, 14. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[27,17,21,14],"display":{"fm":{"kind":"primePick"},"promptText":"Which of these is a prime number: 27, 17, 21, or 14?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0491",
@@ -17282,7 +17282,7 @@ export const ITEMS = [
     structureType: "primePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":23,"choices":[26,28,20,23],"display":{"fm":{"kind":"primePick"},"promptText":"Select the prime number: 26, 28, 20, 23. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":23,"choices":[26,28,20,23],"display":{"fm":{"kind":"primePick"},"promptText":"Which of these is a prime number: 26, 28, 20, or 23?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0493",
@@ -17302,7 +17302,7 @@ export const ITEMS = [
     structureType: "primePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[18,13,20,12],"display":{"fm":{"kind":"primePick"},"promptText":"Select the prime number: 18, 13, 20, 12. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[18,13,20,12],"display":{"fm":{"kind":"primePick"},"promptText":"Which of these is a prime number: 18, 13, 20, or 12?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0495",
@@ -17322,7 +17322,7 @@ export const ITEMS = [
     structureType: "primePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":31,"choices":[30,28,27,31],"display":{"fm":{"kind":"primePick"},"promptText":"Select the prime number: 30, 28, 27, 31. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":31,"choices":[30,28,27,31],"display":{"fm":{"kind":"primePick"},"promptText":"Which of these is a prime number: 30, 28, 27, or 31?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0497",
@@ -17332,7 +17332,7 @@ export const ITEMS = [
     structureType: "primePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":31,"choices":[31,32,34,33],"display":{"fm":{"kind":"primePick"},"promptText":"Identify the prime number in 31, 32, 34, 33. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":31,"choices":[31,32,34,33],"display":{"fm":{"kind":"primePick"},"promptText":"Look at 31, 32, 34, and 33. Which one is a prime number?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0498",
@@ -17352,7 +17352,7 @@ export const ITEMS = [
     structureType: "primePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":41,"choices":[39,41,40,42],"display":{"fm":{"kind":"primePick"},"promptText":"Identify the prime number in 39, 41, 40, 42. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":41,"choices":[39,41,40,42],"display":{"fm":{"kind":"primePick"},"promptText":"Look at 39, 41, 40, and 42. Which one is a prime number?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0500",
@@ -17372,7 +17372,7 @@ export const ITEMS = [
     structureType: "primePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":47,"choices":[48,47,45,46],"display":{"fm":{"kind":"primePick"},"promptText":"Identify the prime number in 48, 47, 45, 46. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":47,"choices":[48,47,45,46],"display":{"fm":{"kind":"primePick"},"promptText":"Look at 48, 47, 45, and 46. Which one is a prime number?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0502",
@@ -17392,7 +17392,7 @@ export const ITEMS = [
     structureType: "primePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":59,"choices":[56,57,55,59],"display":{"fm":{"kind":"primePick"},"promptText":"Identify the prime number in 56, 57, 55, 59. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":59,"choices":[56,57,55,59],"display":{"fm":{"kind":"primePick"},"promptText":"Look at 56, 57, 55, and 59. Which one is a prime number?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0504",
@@ -17412,7 +17412,7 @@ export const ITEMS = [
     structureType: "primePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":37,"choices":[34,39,38,37],"display":{"fm":{"kind":"primePick"},"promptText":"Identify the prime number in 34, 39, 38, 37. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":37,"choices":[34,39,38,37],"display":{"fm":{"kind":"primePick"},"promptText":"Look at 34, 39, 38, and 37. Which one is a prime number?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0506",
@@ -17432,7 +17432,7 @@ export const ITEMS = [
     structureType: "primePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":43,"choices":[46,40,48,43],"display":{"fm":{"kind":"primePick"},"promptText":"Identify the prime number in 46, 40, 48, 43. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":43,"choices":[46,40,48,43],"display":{"fm":{"kind":"primePick"},"promptText":"Look at 46, 40, 48, and 43. Which one is a prime number?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0508",
@@ -17452,7 +17452,7 @@ export const ITEMS = [
     structureType: "primePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":53,"choices":[55,53,56,54],"display":{"fm":{"kind":"primePick"},"promptText":"Identify the prime number in 55, 53, 56, 54. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":53,"choices":[55,53,56,54],"display":{"fm":{"kind":"primePick"},"promptText":"Look at 55, 53, 56, and 54. Which one is a prime number?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0510",
@@ -17462,7 +17462,7 @@ export const ITEMS = [
     structureType: "classify_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"prime","choices":["prime","composite"],"display":{"fm":{"n":2,"kind":"classify"},"promptText":"Is 2 prime or composite? Pick the label."}},
+    question: {"a":null,"b":null,"op":"count","answer":"prime","choices":["prime","composite"],"display":{"fm":{"n":2,"kind":"classify"},"promptText":"Is 2 prime or composite?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0511",
@@ -17482,7 +17482,7 @@ export const ITEMS = [
     structureType: "classify_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"composite","choices":["prime","composite"],"display":{"fm":{"n":4,"kind":"classify"},"promptText":"Is 4 prime or composite? Pick the label."}},
+    question: {"a":null,"b":null,"op":"count","answer":"composite","choices":["prime","composite"],"display":{"fm":{"n":4,"kind":"classify"},"promptText":"Is 4 prime or composite?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0513",
@@ -17502,7 +17502,7 @@ export const ITEMS = [
     structureType: "classify_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"composite","choices":["prime","composite"],"display":{"fm":{"n":6,"kind":"classify"},"promptText":"Is 6 prime or composite? Pick the label."}},
+    question: {"a":null,"b":null,"op":"count","answer":"composite","choices":["prime","composite"],"display":{"fm":{"n":6,"kind":"classify"},"promptText":"Is 6 prime or composite?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0515",
@@ -17522,7 +17522,7 @@ export const ITEMS = [
     structureType: "classify_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"composite","choices":["prime","composite"],"display":{"fm":{"n":8,"kind":"classify"},"promptText":"Is 8 prime or composite? Pick the label."}},
+    question: {"a":null,"b":null,"op":"count","answer":"composite","choices":["prime","composite"],"display":{"fm":{"n":8,"kind":"classify"},"promptText":"Is 8 prime or composite?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0517",
@@ -17542,7 +17542,7 @@ export const ITEMS = [
     structureType: "classify_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"composite","choices":["prime","composite"],"display":{"fm":{"n":10,"kind":"classify"},"promptText":"Is 10 prime or composite? Pick the label."}},
+    question: {"a":null,"b":null,"op":"count","answer":"composite","choices":["prime","composite"],"display":{"fm":{"n":10,"kind":"classify"},"promptText":"Is 10 prime or composite?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0519",
@@ -17562,7 +17562,7 @@ export const ITEMS = [
     structureType: "classify_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"composite","choices":["prime","composite"],"display":{"fm":{"n":12,"kind":"classify"},"promptText":"Is 12 prime or composite? Pick the label."}},
+    question: {"a":null,"b":null,"op":"count","answer":"composite","choices":["prime","composite"],"display":{"fm":{"n":12,"kind":"classify"},"promptText":"Is 12 prime or composite?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0521",
@@ -17582,7 +17582,7 @@ export const ITEMS = [
     structureType: "classify_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"composite","choices":["prime","composite"],"display":{"fm":{"n":15,"kind":"classify"},"promptText":"Is 15 prime or composite? Pick the label."}},
+    question: {"a":null,"b":null,"op":"count","answer":"composite","choices":["prime","composite"],"display":{"fm":{"n":15,"kind":"classify"},"promptText":"Is 15 prime or composite?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0523",
@@ -17722,7 +17722,7 @@ export const ITEMS = [
     structureType: "classify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"prime","choices":["prime","composite"],"display":{"fm":{"n":31,"kind":"classify"},"promptText":"Classify 31 precisely: prime or composite?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"prime","choices":["prime","composite"],"display":{"fm":{"n":31,"kind":"classify"},"promptText":"Is 31 a prime number or a composite number?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0537",
@@ -17732,7 +17732,7 @@ export const ITEMS = [
     structureType: "classify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"composite","choices":["prime","composite"],"display":{"fm":{"n":33,"kind":"classify"},"promptText":"Determine whether 33 is prime or composite."}},
+    question: {"a":null,"b":null,"op":"count","answer":"composite","choices":["prime","composite"],"display":{"fm":{"n":33,"kind":"classify"},"promptText":"Is 33 prime or composite?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0538",
@@ -17742,7 +17742,7 @@ export const ITEMS = [
     structureType: "classify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"composite","choices":["prime","composite"],"display":{"fm":{"n":35,"kind":"classify"},"promptText":"Classify 35 precisely: prime or composite?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"composite","choices":["prime","composite"],"display":{"fm":{"n":35,"kind":"classify"},"promptText":"Is 35 a prime number or a composite number?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0539",
@@ -17752,7 +17752,7 @@ export const ITEMS = [
     structureType: "classify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"prime","choices":["prime","composite"],"display":{"fm":{"n":37,"kind":"classify"},"promptText":"Determine whether 37 is prime or composite."}},
+    question: {"a":null,"b":null,"op":"count","answer":"prime","choices":["prime","composite"],"display":{"fm":{"n":37,"kind":"classify"},"promptText":"Is 37 prime or composite?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0540",
@@ -17762,7 +17762,7 @@ export const ITEMS = [
     structureType: "classify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"composite","choices":["prime","composite"],"display":{"fm":{"n":39,"kind":"classify"},"promptText":"Classify 39 precisely: prime or composite?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"composite","choices":["prime","composite"],"display":{"fm":{"n":39,"kind":"classify"},"promptText":"Is 39 a prime number or a composite number?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0541",
@@ -17772,7 +17772,7 @@ export const ITEMS = [
     structureType: "classify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"prime","choices":["prime","composite"],"display":{"fm":{"n":41,"kind":"classify"},"promptText":"Determine whether 41 is prime or composite."}},
+    question: {"a":null,"b":null,"op":"count","answer":"prime","choices":["prime","composite"],"display":{"fm":{"n":41,"kind":"classify"},"promptText":"Is 41 prime or composite?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0542",
@@ -17782,7 +17782,7 @@ export const ITEMS = [
     structureType: "classify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"prime","choices":["prime","composite"],"display":{"fm":{"n":43,"kind":"classify"},"promptText":"Classify 43 precisely: prime or composite?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"prime","choices":["prime","composite"],"display":{"fm":{"n":43,"kind":"classify"},"promptText":"Is 43 a prime number or a composite number?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0543",
@@ -17792,7 +17792,7 @@ export const ITEMS = [
     structureType: "classify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"composite","choices":["prime","composite"],"display":{"fm":{"n":45,"kind":"classify"},"promptText":"Determine whether 45 is prime or composite."}},
+    question: {"a":null,"b":null,"op":"count","answer":"composite","choices":["prime","composite"],"display":{"fm":{"n":45,"kind":"classify"},"promptText":"Is 45 prime or composite?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0544",
@@ -17802,7 +17802,7 @@ export const ITEMS = [
     structureType: "classify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"prime","choices":["prime","composite"],"display":{"fm":{"n":47,"kind":"classify"},"promptText":"Classify 47 precisely: prime or composite?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"prime","choices":["prime","composite"],"display":{"fm":{"n":47,"kind":"classify"},"promptText":"Is 47 a prime number or a composite number?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0545",
@@ -17812,7 +17812,7 @@ export const ITEMS = [
     structureType: "classify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"composite","choices":["prime","composite"],"display":{"fm":{"n":49,"kind":"classify"},"promptText":"Determine whether 49 is prime or composite."}},
+    question: {"a":null,"b":null,"op":"count","answer":"composite","choices":["prime","composite"],"display":{"fm":{"n":49,"kind":"classify"},"promptText":"Is 49 prime or composite?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0546",
@@ -17822,7 +17822,7 @@ export const ITEMS = [
     structureType: "classify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"composite","choices":["prime","composite"],"display":{"fm":{"n":51,"kind":"classify"},"promptText":"Classify 51 precisely: prime or composite?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"composite","choices":["prime","composite"],"display":{"fm":{"n":51,"kind":"classify"},"promptText":"Is 51 a prime number or a composite number?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0547",
@@ -17832,7 +17832,7 @@ export const ITEMS = [
     structureType: "classify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"prime","choices":["prime","composite"],"display":{"fm":{"n":53,"kind":"classify"},"promptText":"Determine whether 53 is prime or composite."}},
+    question: {"a":null,"b":null,"op":"count","answer":"prime","choices":["prime","composite"],"display":{"fm":{"n":53,"kind":"classify"},"promptText":"Is 53 prime or composite?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0548",
@@ -17842,7 +17842,7 @@ export const ITEMS = [
     structureType: "classify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"composite","choices":["prime","composite"],"display":{"fm":{"n":57,"kind":"classify"},"promptText":"Classify 57 precisely: prime or composite?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"composite","choices":["prime","composite"],"display":{"fm":{"n":57,"kind":"classify"},"promptText":"Is 57 a prime number or a composite number?"}},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0549",
@@ -17852,7 +17852,7 @@ export const ITEMS = [
     structureType: "commonMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"fm":{"a":2,"b":3,"kind":"lcmOf"},"promptText":"What is the smallest number that is a multiple of both 2 and 3? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"fm":{"a":2,"b":3,"kind":"lcmOf"},"promptText":"What is the smallest number that is a multiple of both 2 and 3?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0550",
@@ -17872,7 +17872,7 @@ export const ITEMS = [
     structureType: "commonMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"fm":{"a":3,"b":4,"kind":"lcmOf"},"promptText":"What is the smallest number that is a multiple of both 3 and 4? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"fm":{"a":3,"b":4,"kind":"lcmOf"},"promptText":"What is the smallest number that is a multiple of both 3 and 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0552",
@@ -17892,7 +17892,7 @@ export const ITEMS = [
     structureType: "commonMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"fm":{"a":3,"b":5,"kind":"lcmOf"},"promptText":"What is the smallest number that is a multiple of both 3 and 5? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"fm":{"a":3,"b":5,"kind":"lcmOf"},"promptText":"What is the smallest number that is a multiple of both 3 and 5?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0554",
@@ -17912,7 +17912,7 @@ export const ITEMS = [
     structureType: "commonMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"fm":{"a":4,"b":6,"kind":"lcmOf"},"promptText":"What is the smallest number that is a multiple of both 4 and 6? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"fm":{"a":4,"b":6,"kind":"lcmOf"},"promptText":"What is the smallest number that is a multiple of both 4 and 6?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0556",
@@ -17932,7 +17932,7 @@ export const ITEMS = [
     structureType: "commonMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"fm":{"a":2,"b":3,"kind":"lcmOf"},"promptText":"The lowest shared multiple of 2 and 3 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"fm":{"a":2,"b":3,"kind":"lcmOf"},"promptText":"What is the lowest multiple that 2 and 3 share?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0558",
@@ -17952,7 +17952,7 @@ export const ITEMS = [
     structureType: "commonMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"fm":{"a":2,"b":5,"kind":"lcmOf"},"promptText":"The lowest shared multiple of 2 and 5 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"fm":{"a":2,"b":5,"kind":"lcmOf"},"promptText":"What is the lowest multiple that 2 and 5 share?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0560",
@@ -17972,7 +17972,7 @@ export const ITEMS = [
     structureType: "commonMultiple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"fm":{"a":2,"b":9,"kind":"lcmOf"},"promptText":"The lowest shared multiple of 2 and 9 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"fm":{"a":2,"b":9,"kind":"lcmOf"},"promptText":"What is the lowest multiple that 2 and 9 share?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0562",
@@ -17992,7 +17992,7 @@ export const ITEMS = [
     structureType: "commonMultiple_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"fm":{"a":6,"b":8,"kind":"lcmOf"},"promptText":"The smallest multiple shared by 6 and 8 = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"fm":{"a":6,"b":8,"kind":"lcmOf"},"promptText":"What is the smallest multiple shared by 6 and 8?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0564",
@@ -18012,7 +18012,7 @@ export const ITEMS = [
     structureType: "commonMultiple_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"fm":{"a":6,"b":9,"kind":"lcmOf"},"promptText":"The smallest multiple shared by 6 and 9 = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"fm":{"a":6,"b":9,"kind":"lcmOf"},"promptText":"What is the smallest multiple shared by 6 and 9?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0566",
@@ -18032,7 +18032,7 @@ export const ITEMS = [
     structureType: "commonMultiple_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"fm":{"a":6,"b":10,"kind":"lcmOf"},"promptText":"The smallest multiple shared by 6 and 10 = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"fm":{"a":6,"b":10,"kind":"lcmOf"},"promptText":"What is the smallest multiple shared by 6 and 10?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0568",
@@ -18052,7 +18052,7 @@ export const ITEMS = [
     structureType: "commonMultiple_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"fm":{"a":8,"b":10,"kind":"lcmOf"},"promptText":"The smallest multiple shared by 8 and 10 = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"fm":{"a":8,"b":10,"kind":"lcmOf"},"promptText":"What is the smallest multiple shared by 8 and 10?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0570",
@@ -18072,7 +18072,7 @@ export const ITEMS = [
     structureType: "commonMultiple_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"fm":{"a":6,"b":14,"kind":"lcmOf"},"promptText":"The smallest multiple shared by 6 and 14 = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"fm":{"a":6,"b":14,"kind":"lcmOf"},"promptText":"What is the smallest multiple shared by 6 and 14?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0572",
@@ -18092,7 +18092,7 @@ export const ITEMS = [
     structureType: "commonMultiple_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"fm":{"a":8,"b":14,"kind":"lcmOf"},"promptText":"The smallest multiple shared by 8 and 14 = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"fm":{"a":8,"b":14,"kind":"lcmOf"},"promptText":"What is the smallest multiple shared by 8 and 14?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0574",
@@ -18112,7 +18112,7 @@ export const ITEMS = [
     structureType: "commonMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"fm":{"a":12,"b":18,"kind":"lcmOf"},"promptText":"Compute the least common multiple of 12 and 18 exactly."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"fm":{"a":12,"b":18,"kind":"lcmOf"},"promptText":"What is the smallest number that is a multiple of both 12 and 18?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0576",
@@ -18122,7 +18122,7 @@ export const ITEMS = [
     structureType: "commonMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"fm":{"a":15,"b":20,"kind":"lcmOf"},"promptText":"Exactly which number is the LCM of 15 and 20? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"fm":{"a":15,"b":20,"kind":"lcmOf"},"promptText":"What is the smallest multiple that 15 and 20 share?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0577",
@@ -18132,7 +18132,7 @@ export const ITEMS = [
     structureType: "commonMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"fm":{"a":12,"b":16,"kind":"lcmOf"},"promptText":"Compute the least common multiple of 12 and 16 exactly."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"fm":{"a":12,"b":16,"kind":"lcmOf"},"promptText":"What is the smallest number that is a multiple of both 12 and 16?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0578",
@@ -18142,7 +18142,7 @@ export const ITEMS = [
     structureType: "commonMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"fm":{"a":14,"b":21,"kind":"lcmOf"},"promptText":"Exactly which number is the LCM of 14 and 21? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"fm":{"a":14,"b":21,"kind":"lcmOf"},"promptText":"What is the smallest multiple that 14 and 21 share?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0579",
@@ -18152,7 +18152,7 @@ export const ITEMS = [
     structureType: "commonMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"fm":{"a":16,"b":24,"kind":"lcmOf"},"promptText":"Compute the least common multiple of 16 and 24 exactly."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"fm":{"a":16,"b":24,"kind":"lcmOf"},"promptText":"What is the smallest number that is a multiple of both 16 and 24?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0580",
@@ -18162,7 +18162,7 @@ export const ITEMS = [
     structureType: "commonMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"fm":{"a":18,"b":24,"kind":"lcmOf"},"promptText":"Exactly which number is the LCM of 18 and 24? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"fm":{"a":18,"b":24,"kind":"lcmOf"},"promptText":"What is the smallest multiple that 18 and 24 share?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0581",
@@ -18172,7 +18172,7 @@ export const ITEMS = [
     structureType: "commonMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"fm":{"a":15,"b":25,"kind":"lcmOf"},"promptText":"Compute the least common multiple of 15 and 25 exactly."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"fm":{"a":15,"b":25,"kind":"lcmOf"},"promptText":"What is the smallest number that is a multiple of both 15 and 25?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0582",
@@ -18182,7 +18182,7 @@ export const ITEMS = [
     structureType: "commonMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"fm":{"a":20,"b":30,"kind":"lcmOf"},"promptText":"Exactly which number is the LCM of 20 and 30? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"fm":{"a":20,"b":30,"kind":"lcmOf"},"promptText":"What is the smallest multiple that 20 and 30 share?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0583",
@@ -18192,7 +18192,7 @@ export const ITEMS = [
     structureType: "commonMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"fm":{"a":12,"b":20,"kind":"lcmOf"},"promptText":"Compute the least common multiple of 12 and 20 exactly."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"fm":{"a":12,"b":20,"kind":"lcmOf"},"promptText":"What is the smallest number that is a multiple of both 12 and 20?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0584",
@@ -18202,7 +18202,7 @@ export const ITEMS = [
     structureType: "commonMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":54,"display":{"fm":{"a":18,"b":27,"kind":"lcmOf"},"promptText":"Exactly which number is the LCM of 18 and 27? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":54,"display":{"fm":{"a":18,"b":27,"kind":"lcmOf"},"promptText":"What is the smallest multiple that 18 and 27 share?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0585",
@@ -18212,7 +18212,7 @@ export const ITEMS = [
     structureType: "commonMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"fm":{"a":16,"b":20,"kind":"lcmOf"},"promptText":"Compute the least common multiple of 16 and 20 exactly."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"fm":{"a":16,"b":20,"kind":"lcmOf"},"promptText":"What is the smallest number that is a multiple of both 16 and 20?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0586",
@@ -18222,7 +18222,7 @@ export const ITEMS = [
     structureType: "commonMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"fm":{"a":21,"b":28,"kind":"lcmOf"},"promptText":"Exactly which number is the LCM of 21 and 28? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"fm":{"a":21,"b":28,"kind":"lcmOf"},"promptText":"What is the smallest multiple that 21 and 28 share?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0587",
@@ -18232,7 +18232,7 @@ export const ITEMS = [
     structureType: "commonMultiple_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"fm":{"a":24,"b":36,"kind":"lcmOf"},"promptText":"Compute the least common multiple of 24 and 36 exactly."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"fm":{"a":24,"b":36,"kind":"lcmOf"},"promptText":"What is the smallest number that is a multiple of both 24 and 36?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0588",
@@ -18242,7 +18242,7 @@ export const ITEMS = [
     structureType: "commonFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"a":4,"b":6,"kind":"gcfOf"},"promptText":"What is the greatest number that is a factor of both 4 and 6? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"a":4,"b":6,"kind":"gcfOf"},"promptText":"What is the greatest number that is a factor of both 4 and 6?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0589",
@@ -18262,7 +18262,7 @@ export const ITEMS = [
     structureType: "commonFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"fm":{"a":8,"b":12,"kind":"gcfOf"},"promptText":"What is the greatest number that is a factor of both 8 and 12? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"fm":{"a":8,"b":12,"kind":"gcfOf"},"promptText":"What is the greatest number that is a factor of both 8 and 12?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0591",
@@ -18282,7 +18282,7 @@ export const ITEMS = [
     structureType: "commonFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"a":10,"b":4,"kind":"gcfOf"},"promptText":"What is the greatest number that is a factor of both 10 and 4? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"a":10,"b":4,"kind":"gcfOf"},"promptText":"What is the greatest number that is a factor of both 10 and 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0593",
@@ -18302,7 +18302,7 @@ export const ITEMS = [
     structureType: "commonFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"fm":{"a":9,"b":12,"kind":"gcfOf"},"promptText":"What is the greatest number that is a factor of both 9 and 12? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"fm":{"a":9,"b":12,"kind":"gcfOf"},"promptText":"What is the greatest number that is a factor of both 9 and 12?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0595",
@@ -18322,7 +18322,7 @@ export const ITEMS = [
     structureType: "commonFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"a":6,"b":10,"kind":"gcfOf"},"promptText":"What is the greatest number that is a factor of both 6 and 10? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"a":6,"b":10,"kind":"gcfOf"},"promptText":"What is the greatest number that is a factor of both 6 and 10?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0597",
@@ -18342,7 +18342,7 @@ export const ITEMS = [
     structureType: "commonFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"a":12,"b":10,"kind":"gcfOf"},"promptText":"What is the greatest number that is a factor of both 12 and 10? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"fm":{"a":12,"b":10,"kind":"gcfOf"},"promptText":"What is the greatest number that is a factor of both 12 and 10?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0599",
@@ -18362,7 +18362,7 @@ export const ITEMS = [
     structureType: "commonFactor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"fm":{"a":9,"b":6,"kind":"gcfOf"},"promptText":"What is the greatest number that is a factor of both 9 and 6? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"fm":{"a":9,"b":6,"kind":"gcfOf"},"promptText":"What is the greatest number that is a factor of both 9 and 6?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0601",
@@ -18382,7 +18382,7 @@ export const ITEMS = [
     structureType: "commonFactor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"fm":{"a":14,"b":21,"kind":"gcfOf"},"promptText":"The largest factor shared by 14 and 21 = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"fm":{"a":14,"b":21,"kind":"gcfOf"},"promptText":"What is the largest factor shared by 14 and 21?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0603",
@@ -18402,7 +18402,7 @@ export const ITEMS = [
     structureType: "commonFactor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"fm":{"a":15,"b":20,"kind":"gcfOf"},"promptText":"The largest factor shared by 15 and 20 = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"fm":{"a":15,"b":20,"kind":"gcfOf"},"promptText":"What is the largest factor shared by 15 and 20?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0605",
@@ -18422,7 +18422,7 @@ export const ITEMS = [
     structureType: "commonFactor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"fm":{"a":20,"b":30,"kind":"gcfOf"},"promptText":"The largest factor shared by 20 and 30 = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"fm":{"a":20,"b":30,"kind":"gcfOf"},"promptText":"What is the largest factor shared by 20 and 30?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0607",
@@ -18442,7 +18442,7 @@ export const ITEMS = [
     structureType: "commonFactor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"fm":{"a":14,"b":28,"kind":"gcfOf"},"promptText":"The largest factor shared by 14 and 28 = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"fm":{"a":14,"b":28,"kind":"gcfOf"},"promptText":"What is the largest factor shared by 14 and 28?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0609",
@@ -18462,7 +18462,7 @@ export const ITEMS = [
     structureType: "commonFactor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"fm":{"a":16,"b":20,"kind":"gcfOf"},"promptText":"The largest factor shared by 16 and 20 = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"fm":{"a":16,"b":20,"kind":"gcfOf"},"promptText":"What is the largest factor shared by 16 and 20?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0611",
@@ -18482,7 +18482,7 @@ export const ITEMS = [
     structureType: "commonFactor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"fm":{"a":21,"b":28,"kind":"gcfOf"},"promptText":"The largest factor shared by 21 and 28 = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"fm":{"a":21,"b":28,"kind":"gcfOf"},"promptText":"What is the largest factor shared by 21 and 28?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0613",
@@ -18502,7 +18502,7 @@ export const ITEMS = [
     structureType: "commonFactor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"fm":{"a":24,"b":36,"kind":"gcfOf"},"promptText":"Compute the greatest common factor of 24 and 36 exactly."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"fm":{"a":24,"b":36,"kind":"gcfOf"},"promptText":"What is the biggest number that is a factor of both 24 and 36?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0615",
@@ -18512,7 +18512,7 @@ export const ITEMS = [
     structureType: "commonFactor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"fm":{"a":30,"b":45,"kind":"gcfOf"},"promptText":"Exactly which number is the GCF of 30 and 45? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"fm":{"a":30,"b":45,"kind":"gcfOf"},"promptText":"What is the greatest factor that 30 and 45 share?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0616",
@@ -18522,7 +18522,7 @@ export const ITEMS = [
     structureType: "commonFactor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"fm":{"a":32,"b":48,"kind":"gcfOf"},"promptText":"Compute the greatest common factor of 32 and 48 exactly."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"fm":{"a":32,"b":48,"kind":"gcfOf"},"promptText":"What is the biggest number that is a factor of both 32 and 48?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0617",
@@ -18532,7 +18532,7 @@ export const ITEMS = [
     structureType: "commonFactor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"fm":{"a":28,"b":42,"kind":"gcfOf"},"promptText":"Exactly which number is the GCF of 28 and 42? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"fm":{"a":28,"b":42,"kind":"gcfOf"},"promptText":"What is the greatest factor that 28 and 42 share?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0618",
@@ -18542,7 +18542,7 @@ export const ITEMS = [
     structureType: "commonFactor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"fm":{"a":36,"b":54,"kind":"gcfOf"},"promptText":"Compute the greatest common factor of 36 and 54 exactly."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"fm":{"a":36,"b":54,"kind":"gcfOf"},"promptText":"What is the biggest number that is a factor of both 36 and 54?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0619",
@@ -18552,7 +18552,7 @@ export const ITEMS = [
     structureType: "commonFactor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"fm":{"a":40,"b":60,"kind":"gcfOf"},"promptText":"Exactly which number is the GCF of 40 and 60? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"fm":{"a":40,"b":60,"kind":"gcfOf"},"promptText":"What is the greatest factor that 40 and 60 share?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0620",
@@ -18562,7 +18562,7 @@ export const ITEMS = [
     structureType: "commonFactor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"fm":{"a":24,"b":40,"kind":"gcfOf"},"promptText":"Compute the greatest common factor of 24 and 40 exactly."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"fm":{"a":24,"b":40,"kind":"gcfOf"},"promptText":"What is the biggest number that is a factor of both 24 and 40?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0621",
@@ -18572,7 +18572,7 @@ export const ITEMS = [
     structureType: "commonFactor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"fm":{"a":30,"b":50,"kind":"gcfOf"},"promptText":"Exactly which number is the GCF of 30 and 50? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"fm":{"a":30,"b":50,"kind":"gcfOf"},"promptText":"What is the greatest factor that 30 and 50 share?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0622",
@@ -18582,7 +18582,7 @@ export const ITEMS = [
     structureType: "commonFactor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"fm":{"a":32,"b":40,"kind":"gcfOf"},"promptText":"Compute the greatest common factor of 32 and 40 exactly."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"fm":{"a":32,"b":40,"kind":"gcfOf"},"promptText":"What is the biggest number that is a factor of both 32 and 40?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0623",
@@ -18592,7 +18592,7 @@ export const ITEMS = [
     structureType: "commonFactor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"fm":{"a":36,"b":48,"kind":"gcfOf"},"promptText":"Exactly which number is the GCF of 36 and 48? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"fm":{"a":36,"b":48,"kind":"gcfOf"},"promptText":"What is the greatest factor that 36 and 48 share?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0624",
@@ -18602,7 +18602,7 @@ export const ITEMS = [
     structureType: "commonFactor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"fm":{"a":42,"b":56,"kind":"gcfOf"},"promptText":"Compute the greatest common factor of 42 and 56 exactly."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"fm":{"a":42,"b":56,"kind":"gcfOf"},"promptText":"What is the biggest number that is a factor of both 42 and 56?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0625",
@@ -18612,7 +18612,7 @@ export const ITEMS = [
     structureType: "commonFactor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"fm":{"a":45,"b":60,"kind":"gcfOf"},"promptText":"Exactly which number is the GCF of 45 and 60? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"fm":{"a":45,"b":60,"kind":"gcfOf"},"promptText":"What is the greatest factor that 45 and 60 share?"},"answerType":"numberPad"},
   },
   {
     itemId: "factorsMultiples-proc-b0821-0626",
@@ -18622,6 +18622,6 @@ export const ITEMS = [
     structureType: "commonFactor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"fm":{"a":44,"b":55,"kind":"gcfOf"},"promptText":"Compute the greatest common factor of 44 and 55 exactly."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"fm":{"a":44,"b":55,"kind":"gcfOf"},"promptText":"What is the biggest number that is a factor of both 44 and 55?"},"answerType":"numberPad"},
   },
 ];

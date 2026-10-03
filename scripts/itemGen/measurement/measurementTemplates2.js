@@ -162,7 +162,7 @@ export function benchmarkConceptual() {
     );
   });
   const closerPhr = rotor([
-    (nm, obj, a, b) => `Is ${obj} closer to ${a} or to ${b}? ${nm} thinks about its real size.`,
+    (nm, obj, a, b) => `${nm} thinks about the real size of ${obj}. Is it closer to ${a} or to ${b}?`,
     (nm, obj, a, b) => `${nm} pictures ${obj}. Which is it closer to: ${a} or ${b}?`,
   ]);
   [["a juice box", "1 L", "10 L", "1 L"], ["a pencil", "20 cm", "2 m", "20 cm"], ["a cat", "4 kg", "4 g", "4 kg"], ["a bath", "2 L", "20 L", "20 L"], ["a door", "2 m", "2 cm", "2 m"], ["an apple", "2 g", "20 kg", "2 g"], ["a spoon", "15 cm", "15 m", "15 cm"], ["a fish tank", "20 L", "1 L", "20 L"], ["a stamp", "2 cm", "2 m", "2 cm"], ["a dog", "20 kg", "1 kg", "20 kg"], ["a straw", "20 cm", "20 mm", "20 cm"], ["a puddle", "2 L", "2 mL", "2 L"], ["a book", "1 kg", "20 kg", "1 kg"]].forEach(([obj, a, b, good], i) => {
@@ -234,7 +234,7 @@ export function benchmarkConceptual() {
   });
   const closestSumPhr = rotor([
     (nm, a, b) => `${nm} joins a ${a} cm board and a ${b} cm board. Which estimate is closest to the total?`,
-    (nm, a, b) => `Two planks, ${a} cm and ${b} cm, laid end to end — which total estimate is closest? ${nm} rounds to check.`,
+    (nm, a, b) => `${nm} rounds to check. Two planks, ${a} cm and ${b} cm, are laid end to end. Which total estimate is closest?`,
   ]);
   [[198, 305], [287, 412], [395, 209], [489, 316], [178, 224], [267, 338], [359, 445], [468, 129], [186, 219], [278, 327], [368, 439], [457, 148], [196, 411], [289, 217], [377, 328], [466, 239], [158, 343], [249, 456]].forEach(([a, b], i) => {
     const exact = a + b;
@@ -408,7 +408,7 @@ export function compareOrderConceptual() {
     );
   });
   const tallerPhr = rotor([
-    (nm, x, dx, y, dy) => `The ${x} is ${dx} cm tall and the ${y} is ${dy} cm tall. Which is shorter? ${nm} checks.`,
+    (nm, x, dx, y, dy) => `${nm} measures two plants. The ${x} is ${dx} cm tall and the ${y} is ${dy} cm tall. Which is shorter?`,
     (nm, x, dx, y, dy) => `${nm} measures the ${x} at ${dx} cm and the ${y} at ${dy} cm. Which one is shorter?`,
   ]);
   [["fern", 12, "cactus", 9], ["tulip", 7, "daisy", 15], ["sprout", 3, "sapling", 18], ["mushroom", 6, "sunflower", 20], ["herb", 8, "bush", 16], ["seedling", 4, "reed", 14], ["clover", 5, "lily", 13], ["moss", 2, "vine", 19], ["daffodil", 11, "rose", 17], ["weed", 9, "corn stalk", 20], ["basil", 10, "lavender", 6], ["mint", 13, "sage", 7], ["ivy", 15, "dandelion", 8], ["poppy", 14, "thistle", 5], ["orchid", 18, "pansy", 4], ["bamboo", 20, "buttercup", 3]].forEach(([x, dx, y, dy], i) => {
@@ -438,7 +438,7 @@ export function compareOrderConceptual() {
   });
   const middlePhr = rotor([
     (nm, a, b, c) => `${nm} orders ${a}, ${b}, and ${c} from shortest to longest. Which one lands in the MIDDLE?`,
-    (nm, a, b, c) => `Sorting ${a}, ${b}, and ${c} by size, which is the middle measure? ${nm} converts first.`,
+    (nm, a, b, c) => `${nm} converts first. Sorting ${a}, ${b}, and ${c} by size, which is the middle measure?`,
   ]);
   [["2 m", 200, "150 cm", 150, "3 m", 300], ["1 km", 1000, "800 m", 800, "1200 m", 1200], ["4 cm", 40, "35 mm", 35, "5 cm", 50], ["2 kg", 2000, "1500 g", 1500, "3 kg", 3000], ["3 L", 3000, "2500 mL", 2500, "4 L", 4000], ["5 m", 500, "450 cm", 450, "6 m", 600], ["2 km", 2000, "1700 m", 1700, "2300 m", 2300], ["7 cm", 70, "65 mm", 65, "8 cm", 80], ["4 kg", 4000, "3600 g", 3600, "5 kg", 5000], ["6 L", 6000, "5500 mL", 5500, "7 L", 7000], ["3 m", 300, "280 cm", 280, "330 cm", 330], ["8 cm", 80, "85 mm", 85, "7 cm", 70], ["5 kg", 5000, "5200 g", 5200, "4800 g", 4800], ["2 L", 2000, "2200 mL", 2200, "1800 mL", 1800], ["9 m", 900, "870 cm", 870, "9300 mm", 930], ["6 km", 6000, "5800 m", 5800, "6100 m", 6100]].forEach(([a, av, b, bv, c, cv], i) => {
     const arr = [[a, av], [b, bv], [c, cv]].sort((x, y) => x[1] - y[1]);
@@ -480,7 +480,7 @@ export function compareOrderConceptual() {
     );
   });
   const shortestPhr = rotor([
-    (nm, a, b, c) => `Which is the SHORTEST: ${a}, ${b}, or ${c}? ${nm} converts everything first.`,
+    (nm, a, b, c) => `${nm} converts everything first. Which is the SHORTEST: ${a}, ${b}, or ${c}?`,
     (nm, a, b, c) => `${nm} hunts for the smallest of ${a}, ${b}, and ${c}. Which is it?`,
   ]);
   [["2 m", 200, "180 cm", 180, "2100 mm", 210], ["3 km", 3000, "3200 m", 3200, "2900 m", 2900], ["5 cm", 50, "48 mm", 48, "52 mm", 52], ["2 kg", 2000, "2100 g", 2100, "1900 g", 1900], ["4 L", 4000, "3800 mL", 3800, "4200 mL", 4200], ["6 m", 600, "610 cm", 610, "5900 mm", 590], ["1 km", 1000, "990 m", 990, "1010 m", 1010], ["8 cm", 80, "83 mm", 83, "78 mm", 78], ["5 kg", 5000, "4900 g", 4900, "5100 g", 5100], ["7 L", 7000, "7100 mL", 7100, "6900 mL", 6900], ["9 m", 900, "890 cm", 890, "9100 mm", 910], ["4 km", 4000, "4100 m", 4100, "3900 m", 3900], ["3 cm", 30, "32 mm", 32, "28 mm", 28], ["6 kg", 6000, "6100 g", 6100, "5900 g", 5900], ["2 L", 2000, "1900 mL", 1900, "2100 mL", 2100], ["7 m", 700, "690 cm", 690, "7100 mm", 710]].forEach(([a, av, b, bv, c, cv], i) => {
@@ -615,7 +615,7 @@ export function multiStepConceptual() {
   });
   const cutPlanPhr = rotor([
     (nm, start, cut) => `${nm} snips ${cut} cm off a ${start} cm straw. Which sentence finds what is left?`,
-    (nm, start, cut) => `A ${start} cm straw loses ${cut} cm. Which number sentence shows the rest? ${nm} decides.`,
+    (nm, start, cut) => `A ${start} cm straw loses ${cut} cm. Help ${nm} decide: which number sentence shows the rest?`,
   ]);
   [[15, 8], [18, 9], [12, 5], [20, 11], [16, 7], [14, 6], [19, 12], [17, 8], [13, 4], [11, 2], [20, 14], [18, 13], [16, 9], [15, 4], [19, 6], [12, 7]].forEach(([start, cut], i) => {
     const good = `${start} - ${cut}`;
@@ -642,30 +642,34 @@ export function multiStepConceptual() {
       })
     );
   });
+  // Order never changes the length, so each phrasing carries its own key:
+  // "Does the answer change ...?" is No; "both give the same length. Is X
+  // right?" is Yes. (Both were keyed Yes until 2026-10-02.)
   const stepOrderPhr = rotor([
-    (nm, a, b, c) => `${nm} must join ${a} cm and ${b} cm of wire, then remove ${c} cm. Does the answer change if ${nm} removes the ${c} cm FIRST and joins after?`,
-    (nm, a, b, c) => `Join ${a} cm and ${b} cm, then cut ${c} cm — or cut first, join after. ${nm} says both give the same length. Is ${nm} right?`,
+    { truth: false, say: (nm, a, b, c) => `${nm} must join ${a} cm and ${b} cm of wire, then remove ${c} cm. Does the answer change if ${nm} removes the ${c} cm FIRST and joins after?` },
+    { truth: true, say: (nm, a, b, c) => `Join ${a} cm and ${b} cm, then cut ${c} cm — or cut first, join after. ${nm} says both give the same length. Is ${nm} right?` },
   ]);
   for (let i = 0; i < 16; i += 1) {
     const [a, b, c] = [[34, 27, 15], [45, 38, 20], [52, 29, 18], [63, 18, 25], [27, 46, 12], [38, 55, 30], [49, 24, 16], [56, 37, 40], [23, 68, 22], [64, 19, 35], [35, 48, 14], [47, 26, 28], [58, 33, 26], [29, 54, 32], [66, 25, 44], [37, 44, 24]][i];
+    const phr = stepOrderPhr();
     items.push(
       item("multiStepMeasure", "conceptual", "orderInvarianceMid", "band2", {
-        answer: "Yes",
+        answer: phr.truth ? "Yes" : "No",
         choices: ["Yes", "No"],
-        display: { measure: { kind: "claim" }, promptText: stepOrderPhr()(nameAt(i * 3 + 4), a, b, c), truth: true },
+        display: { measure: { kind: "claim" }, promptText: phr.say(nameAt(i * 3 + 4), a, b, c), truth: phr.truth },
       })
     );
   }
   const whichStepPhr = rotor([
-    (nm, m, cm) => `${nm} wants ${m} m ${cm} cm in centimetres. Which step comes FIRST?`,
-    (nm, m, cm) => `To write ${m} m ${cm} cm as centimetres, what does ${nm} do first?`,
+    (nm, m, cm) => `${nm} wants ${m} m ${cm} cm in centimeters. Which step comes FIRST?`,
+    (nm, m, cm) => `To write ${m} m ${cm} cm as centimeters, what does ${nm} do first?`,
   ]);
   [[1, 30], [2, 25], [1, 55], [3, 15], [2, 45], [1, 65], [3, 35], [2, 5], [1, 75], [4, 25], [2, 65], [3, 55], [1, 85], [4, 45], [2, 85], [3, 5], [1, 95], [4, 65]].forEach(([m, cm], i) => {
-    const good = `change ${m} m into centimetres`;
+    const good = `change ${m} m into centimeters`;
     items.push(
       item("multiStepMeasure", "conceptual", "firstStepPickMid", "band2", {
         answer: good,
-        choices: shuffled([good, `add ${m} and ${cm}`, `change ${cm} cm into metres`], (seed += 1)),
+        choices: shuffled([good, `add ${m} and ${cm}`, `change ${cm} cm into meters`], (seed += 1)),
         display: { measure: { kind: "pickLabel" }, promptText: whichStepPhr()(nameAt(i * 3 + 6), m, cm) },
       })
     );
@@ -674,7 +678,7 @@ export function multiStepConceptual() {
   // Band 3 — judged mixed-unit sums (the add-the-numbers slip).
   const mixedJudgePhr = rotor([
     (nm, m, cm, said) => `${nm} converts ${m} m ${cm} cm and writes ${said} cm. Is ${nm} right?`,
-    (nm, m, cm, said) => `Turning ${m} m ${cm} cm into centimetres, ${nm} gets ${said}. Is that right?`,
+    (nm, m, cm, said) => `Turning ${m} m ${cm} cm into centimeters, ${nm} gets ${said}. Is that right?`,
   ]);
   [[2, 40, 240, true], [3, 25, 28, false], [1, 80, 180, true], [4, 15, 19, false], [2, 55, 255, true], [5, 30, 35, false], [3, 70, 370, true], [1, 45, 46, false], [4, 90, 490, true], [2, 35, 37, false], [5, 60, 560, true], [3, 5, 8, false], [1, 95, 195, true], [4, 50, 54, false], [2, 85, 285, true], [5, 10, 15, false], [3, 65, 365, true], [1, 25, 26, false]].forEach(([m, cm, said, ok], i) => {
     items.push(
@@ -687,10 +691,13 @@ export function multiStepConceptual() {
   });
   const leftoverPickPhr = rotor([
     (nm, mTotal, used) => `From a ${mTotal} m roll, ${nm} uses ${used} cm. Which amount is left?`,
-    (nm, mTotal, used) => `${nm} cuts ${used} cm from a ${mTotal} m roll of ribbon. How much remains? Pick the amount.`,
+    (nm, mTotal, used) => `${nm} cuts ${used} cm from a ${mTotal} m roll of ribbon. How much remains?`,
   ]);
-  [[2, 40], [3, 125], [1, 45], [4, 215], [2, 155], [5, 130], [3, 370], [1, 65], [4, 490], [2, 105], [5, 265], [3, 210], [6, 145], [1, 30], [4, 385], [2, 60], [6, 415], [3, 90]].forEach(([mTotal, used], i) => {
+  // Every roll is longer than the cut (the 2026-10-02 sweep found 3 m − 370 cm
+  // and 4 m − 490 cm, negative leftovers; now 4 m and 5 m).
+  [[2, 40], [3, 125], [1, 45], [4, 215], [2, 155], [5, 130], [4, 370], [1, 65], [5, 490], [2, 105], [5, 265], [3, 210], [6, 145], [1, 30], [4, 385], [2, 60], [6, 415], [3, 90]].forEach(([mTotal, used], i) => {
     const right = mTotal * 100 - used;
+    if (right <= 0) throw new Error(`rollLeftoverBig: ${mTotal} m - ${used} cm leaves nothing`);
     items.push(
       item("multiStepMeasure", "conceptual", "rollLeftoverBig", "band3", {
         answer: `${right} cm`,

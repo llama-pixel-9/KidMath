@@ -6172,7 +6172,7 @@ export const ITEMS = [
     structureType: "canTradeJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ava holds 8 ones discs. Is there enough to trade ten of them for one tens disc?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ava holds 8 ones discs. Are there enough to trade 10 of them for 1 tens disc?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0159",
@@ -6182,7 +6182,7 @@ export const ITEMS = [
     structureType: "canTradeJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Omar has 17 ones discs. Can Omar trade 10 of them for a tens disc?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Omar holds 17 ones discs. Are there enough to trade 10 of them for 1 tens disc?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0160",
@@ -6192,7 +6192,7 @@ export const ITEMS = [
     structureType: "canTradeJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ben holds 6 ones discs. Is there enough to trade ten of them for one tens disc?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ben has 6 ones discs. Can Ben trade 10 of them for a tens disc?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0161",
@@ -6212,7 +6212,7 @@ export const ITEMS = [
     structureType: "canTradeJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Priya holds 9 ones discs. Is there enough to trade ten of them for one tens disc?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Priya holds 9 ones discs. Are there enough to trade 10 of them for 1 tens disc?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0163",
@@ -6222,7 +6222,7 @@ export const ITEMS = [
     structureType: "canTradeJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Sam has 20 ones discs. Can Sam trade 10 of them for a tens disc?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Sam holds 20 ones discs. Are there enough to trade 10 of them for 1 tens disc?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0164",
@@ -6232,7 +6232,7 @@ export const ITEMS = [
     structureType: "canTradeJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nia holds 3 ones discs. Is there enough to trade ten of them for one tens disc?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nia has 3 ones discs. Can Nia trade 10 of them for a tens disc?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0165",
@@ -6252,7 +6252,7 @@ export const ITEMS = [
     structureType: "canTradeJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"June holds 7 ones discs. Is there enough to trade ten of them for one tens disc?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"June holds 7 ones discs. Are there enough to trade 10 of them for 1 tens disc?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0167",
@@ -6262,7 +6262,7 @@ export const ITEMS = [
     structureType: "canTradeJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Lily has 16 ones discs. Can Lily trade 10 of them for a tens disc?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Lily holds 16 ones discs. Are there enough to trade 10 of them for 1 tens disc?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0168",
@@ -6272,7 +6272,7 @@ export const ITEMS = [
     structureType: "canTradeJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Amara holds 4 ones discs. Is there enough to trade ten of them for one tens disc?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Amara has 4 ones discs. Can Amara trade 10 of them for a tens disc?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0169",
@@ -6292,7 +6292,7 @@ export const ITEMS = [
     structureType: "canTradeJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Mina holds 5 ones discs. Is there enough to trade ten of them for one tens disc?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Mina holds 5 ones discs. Are there enough to trade 10 of them for 1 tens disc?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0171",
@@ -6302,7 +6302,7 @@ export const ITEMS = [
     structureType: "canTradeJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Theo has 10 ones discs. Can Theo trade 10 of them for a tens disc?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Theo holds 10 ones discs. Are there enough to trade 10 of them for 1 tens disc?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0172",
@@ -6312,7 +6312,7 @@ export const ITEMS = [
     structureType: "canTradeJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ida holds 2 ones discs. Is there enough to trade ten of them for one tens disc?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ida has 2 ones discs. Can Ida trade 10 of them for a tens disc?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0173",
@@ -6332,7 +6332,7 @@ export const ITEMS = [
     structureType: "canTradeJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa holds 18 ones discs. Is there enough to trade ten of them for one tens disc?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa holds 18 ones discs. Are there enough to trade 10 of them for 1 tens disc?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0175",
@@ -6362,7 +6362,7 @@ export const ITEMS = [
     structureType: "valueUnchangedJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ben trades 10 ones discs for 1 tens disc on a mat showing 18. Ben says the mat now shows 18. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"A mat shows 18. Ben swaps 10 ones discs for 1 tens disc and says it shows 18. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0178",
@@ -6372,7 +6372,7 @@ export const ITEMS = [
     structureType: "valueUnchangedJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"A mat shows 12. Finn swaps 10 ones discs for 1 tens disc and says it shows 2. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn trades 10 ones discs for 1 tens disc on a mat showing 12. Finn says the mat now shows 2. Is Finn right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0179",
@@ -6402,7 +6402,7 @@ export const ITEMS = [
     structureType: "valueUnchangedJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nia trades 10 ones discs for 1 tens disc on a mat showing 13. Nia says the mat now shows 13. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"A mat shows 13. Nia swaps 10 ones discs for 1 tens disc and says it shows 13. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0182",
@@ -6412,7 +6412,7 @@ export const ITEMS = [
     structureType: "valueUnchangedJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"A mat shows 19. Kai swaps 10 ones discs for 1 tens disc and says it shows 9. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Kai trades 10 ones discs for 1 tens disc on a mat showing 19. Kai says the mat now shows 9. Is Kai right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0183",
@@ -6442,7 +6442,7 @@ export const ITEMS = [
     structureType: "valueUnchangedJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Amara trades 10 ones discs for 1 tens disc on a mat showing 12. Amara says the mat now shows 12. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"A mat shows 12. Amara swaps 10 ones discs for 1 tens disc and says it shows 12. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0186",
@@ -6452,7 +6452,7 @@ export const ITEMS = [
     structureType: "valueUnchangedJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"A mat shows 18. Leo swaps 10 ones discs for 1 tens disc and says it shows 8. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Leo trades 10 ones discs for 1 tens disc on a mat showing 18. Leo says the mat now shows 8. Is Leo right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0187",
@@ -6482,7 +6482,7 @@ export const ITEMS = [
     structureType: "valueUnchangedJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ida trades 10 ones discs for 1 tens disc on a mat showing 19. Ida says the mat now shows 19. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"A mat shows 19. Ida swaps 10 ones discs for 1 tens disc and says it shows 19. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0190",
@@ -6492,7 +6492,7 @@ export const ITEMS = [
     structureType: "valueUnchangedJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"A mat shows 11. Zoe swaps 10 ones discs for 1 tens disc and says it shows 1. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe trades 10 ones discs for 1 tens disc on a mat showing 11. Zoe says the mat now shows 1. Is Zoe right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0191",
@@ -6692,7 +6692,7 @@ export const ITEMS = [
     structureType: "predictTradeJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"subPrompt":"Decide without adding.","promptText":"Before adding 41 + 27 with discs, Theo checks the ones. Will they need to trade ones for a ten?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"subPrompt":"Decide without adding.","promptText":"Theo will add 41 + 27 with discs. Will the ones column need a trade?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0211",
@@ -6702,7 +6702,7 @@ export const ITEMS = [
     structureType: "predictTradeJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"subPrompt":"Decide without adding.","promptText":"Ida will add 35 + 45 with discs. Will the ones column need a trade?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"subPrompt":"Decide without adding.","promptText":"Before adding 35 + 45 with discs, Ida checks the ones. Will Ida need to trade ones for a ten?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0212",
@@ -6712,7 +6712,7 @@ export const ITEMS = [
     structureType: "predictTradeJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"subPrompt":"Decide without adding.","promptText":"Before adding 52 + 16 with discs, Zoe checks the ones. Will they need to trade ones for a ten?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"subPrompt":"Decide without adding.","promptText":"Before adding 52 + 16 with discs, Zoe checks the ones. Will Zoe need to trade ones for a ten?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0213",
@@ -6732,7 +6732,7 @@ export const ITEMS = [
     structureType: "predictTradeJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"subPrompt":"Decide without adding.","promptText":"Before adding 63 + 24 with discs, Diego checks the ones. Will they need to trade ones for a ten?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"subPrompt":"Decide without adding.","promptText":"Diego will add 63 + 24 with discs. Will the ones column need a trade?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0215",
@@ -6742,7 +6742,7 @@ export const ITEMS = [
     structureType: "predictTradeJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"subPrompt":"Decide without adding.","promptText":"Nora will add 58 + 33 with discs. Will the ones column need a trade?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"subPrompt":"Decide without adding.","promptText":"Before adding 58 + 33 with discs, Nora checks the ones. Will Nora need to trade ones for a ten?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0216",
@@ -6752,7 +6752,7 @@ export const ITEMS = [
     structureType: "predictTradeJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"subPrompt":"Decide without adding.","promptText":"Before adding 72 + 15 with discs, Luca checks the ones. Will they need to trade ones for a ten?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"subPrompt":"Decide without adding.","promptText":"Before adding 72 + 15 with discs, Luca checks the ones. Will Luca need to trade ones for a ten?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0217",
@@ -6772,7 +6772,7 @@ export const ITEMS = [
     structureType: "predictTradeJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"subPrompt":"Decide without adding.","promptText":"Before adding 24 + 68 with discs, Omar checks the ones. Will they need to trade ones for a ten?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"subPrompt":"Decide without adding.","promptText":"Before adding 24 + 68 with discs, Omar checks the ones. Will Omar need to trade ones for a ten?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0219",
@@ -6792,7 +6792,7 @@ export const ITEMS = [
     structureType: "predictTradeJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"subPrompt":"Decide without adding.","promptText":"Before adding 67 + 18 with discs, Finn checks the ones. Will they need to trade ones for a ten?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"subPrompt":"Decide without adding.","promptText":"Finn will add 67 + 18 with discs. Will the ones column need a trade?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0221",
@@ -6802,7 +6802,7 @@ export const ITEMS = [
     structureType: "predictTradeJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"subPrompt":"Decide without adding.","promptText":"Priya will add 31 + 49 with discs. Will the ones column need a trade?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"subPrompt":"Decide without adding.","promptText":"Before adding 31 + 49 with discs, Priya checks the ones. Will Priya need to trade ones for a ten?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0222",
@@ -6812,7 +6812,7 @@ export const ITEMS = [
     structureType: "predictTradeJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"subPrompt":"Decide without adding.","promptText":"Before adding 46 + 42 with discs, Sam checks the ones. Will they need to trade ones for a ten?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"subPrompt":"Decide without adding.","promptText":"Before adding 46 + 42 with discs, Sam checks the ones. Will Sam need to trade ones for a ten?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0223",
@@ -6832,7 +6832,7 @@ export const ITEMS = [
     structureType: "predictTradeJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"subPrompt":"Decide without adding.","promptText":"Before adding 28 + 51 with discs, Kai checks the ones. Will they need to trade ones for a ten?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"subPrompt":"Decide without adding.","promptText":"Kai will add 28 + 51 with discs. Will the ones column need a trade?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0225",
@@ -6842,7 +6842,7 @@ export const ITEMS = [
     structureType: "predictTradeJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"subPrompt":"Decide without adding.","promptText":"June will add 64 + 27 with discs. Will the ones column need a trade?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"subPrompt":"Decide without adding.","promptText":"Before adding 64 + 27 with discs, June checks the ones. Will June need to trade ones for a ten?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0226",
@@ -6852,7 +6852,7 @@ export const ITEMS = [
     structureType: "predictTradeJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"subPrompt":"Decide without adding.","promptText":"Before adding 37 + 56 with discs, Lily checks the ones. Will they need to trade ones for a ten?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"subPrompt":"Decide without adding.","promptText":"Lily will add 37 + 56 with discs. Will the ones column need a trade?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0227",
@@ -6882,7 +6882,7 @@ export const ITEMS = [
     structureType: "valueUnchangedBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"A mat shows 52 with too many ones discs. Zoe trades 10 ones for 1 ten and says the mat shows 52. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Zoe regroups the ones on a mat showing 52 and reads it as 52. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0230",
@@ -6892,7 +6892,7 @@ export const ITEMS = [
     structureType: "valueUnchangedBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Rosa regroups the ones on a mat showing 68 and reads it as 58. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"A mat shows 68 with too many ones discs. Rosa trades 10 ones for 1 ten and says the mat shows 58. Is Rosa right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0231",
@@ -6922,7 +6922,7 @@ export const ITEMS = [
     structureType: "valueUnchangedBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"A mat shows 45 with too many ones discs. Luca trades 10 ones for 1 ten and says the mat shows 45. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Luca regroups the ones on a mat showing 45 and reads it as 45. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0234",
@@ -6932,7 +6932,7 @@ export const ITEMS = [
     structureType: "valueUnchangedBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ava regroups the ones on a mat showing 91 and reads it as 81. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"A mat shows 91 with too many ones discs. Ava trades 10 ones for 1 ten and says the mat shows 81. Is Ava right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0235",
@@ -6962,7 +6962,7 @@ export const ITEMS = [
     structureType: "valueUnchangedBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"A mat shows 78 with too many ones discs. Finn trades 10 ones for 1 ten and says the mat shows 78. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Finn regroups the ones on a mat showing 78 and reads it as 78. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0238",
@@ -6972,7 +6972,7 @@ export const ITEMS = [
     structureType: "valueUnchangedBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Priya regroups the ones on a mat showing 83 and reads it as 73. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"A mat shows 83 with too many ones discs. Priya trades 10 ones for 1 ten and says the mat shows 73. Is Priya right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0239",
@@ -7002,7 +7002,7 @@ export const ITEMS = [
     structureType: "valueUnchangedBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"A mat shows 54 with too many ones discs. Kai trades 10 ones for 1 ten and says the mat shows 54. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Kai regroups the ones on a mat showing 54 and reads it as 54. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0242",
@@ -7012,7 +7012,7 @@ export const ITEMS = [
     structureType: "valueUnchangedBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"June regroups the ones on a mat showing 66 and reads it as 56. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"A mat shows 66 with too many ones discs. June trades 10 ones for 1 ten and says the mat shows 56. Is June right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0243",
@@ -7222,7 +7222,7 @@ export const ITEMS = [
     structureType: "predictTradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"subPrompt":"Decide without adding.","promptText":"June will add 356 + 271 with discs. Will the tens column need a trade?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"subPrompt":"Decide without adding.","promptText":"June will add 356 + 231 with discs. Will the tens column need a trade?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0264",
@@ -7232,7 +7232,7 @@ export const ITEMS = [
     structureType: "predictTradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"subPrompt":"Decide without adding.","promptText":"Before adding 428 + 190 with discs, Lily checks the tens column. Will ten tens pile up there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"subPrompt":"Decide without adding.","promptText":"Before adding 428 + 150 with discs, Lily checks the tens column. Will ten tens pile up there?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0265",
@@ -7262,7 +7262,7 @@ export const ITEMS = [
     structureType: "predictTradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"subPrompt":"Decide without adding.","promptText":"Mina will add 382 + 445 with discs. Will the tens column need a trade?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"subPrompt":"Decide without adding.","promptText":"Mina will add 382 + 415 with discs. Will the tens column need a trade?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0268",
@@ -7292,7 +7292,7 @@ export const ITEMS = [
     structureType: "predictTradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"subPrompt":"Decide without adding.","promptText":"Before adding 524 + 293 with discs, Zoe checks the tens column. Will ten tens pile up there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"subPrompt":"Decide without adding.","promptText":"Before adding 524 + 253 with discs, Zoe checks the tens column. Will ten tens pile up there?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0271",
@@ -7302,7 +7302,7 @@ export const ITEMS = [
     structureType: "predictTradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"subPrompt":"Decide without adding.","promptText":"Rosa will add 167 + 351 with discs. Will the tens column need a trade?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"subPrompt":"Decide without adding.","promptText":"Rosa will add 167 + 321 with discs. Will the tens column need a trade?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0272",
@@ -7332,7 +7332,7 @@ export const ITEMS = [
     structureType: "predictTradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"subPrompt":"Decide without adding.","promptText":"Before adding 318 + 291 with discs, Luca checks the tens column. Will ten tens pile up there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"subPrompt":"Decide without adding.","promptText":"Before adding 318 + 271 with discs, Luca checks the tens column. Will ten tens pile up there?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0275",
@@ -7342,7 +7342,7 @@ export const ITEMS = [
     structureType: "predictTradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"subPrompt":"Decide without adding.","promptText":"Ava will add 456 + 273 with discs. Will the tens column need a trade?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"subPrompt":"Decide without adding.","promptText":"Ava will add 456 + 233 with discs. Will the tens column need a trade?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0276",
@@ -7372,7 +7372,7 @@ export const ITEMS = [
     structureType: "predictTradeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"subPrompt":"Decide without adding.","promptText":"Before adding 364 + 253 with discs, Finn checks the tens column. Will ten tens pile up there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"subPrompt":"Decide without adding.","promptText":"Before adding 364 + 223 with discs, Finn checks the tens column. Will ten tens pile up there?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0279",
@@ -7552,7 +7552,7 @@ export const ITEMS = [
     structureType: "tradeKeepsValueBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"After swapping 10 tens discs for 1 hundreds disc, Ben claims the mat showing 372 now shows a different number. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"After swapping 10 tens discs for 1 hundreds disc, Ben says the mat showing 372 now shows a different number. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0297",
@@ -7562,7 +7562,7 @@ export const ITEMS = [
     structureType: "tradeKeepsValueBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn trades 10 tens discs for 1 hundreds disc on a mat showing 561, then says the number changed. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Finn trades 10 tens discs for 1 hundreds disc on a mat showing 561, then says the number stayed the same. Is Finn right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0298",
@@ -7572,7 +7572,7 @@ export const ITEMS = [
     structureType: "tradeKeepsValueBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"After swapping 10 tens discs for 1 hundreds disc, Priya claims the mat showing 293 now shows a different number. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"After swapping 10 tens discs for 1 hundreds disc, Priya says the mat showing 293 now shows the same number. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0299",
@@ -7592,7 +7592,7 @@ export const ITEMS = [
     structureType: "tradeKeepsValueBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"After swapping 10 tens discs for 1 hundreds disc, Nia claims the mat showing 184 now shows a different number. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"After swapping 10 tens discs for 1 hundreds disc, Nia says the mat showing 184 now shows a different number. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0301",
@@ -7602,7 +7602,7 @@ export const ITEMS = [
     structureType: "tradeKeepsValueBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Kai trades 10 tens discs for 1 hundreds disc on a mat showing 736, then says the number changed. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Kai trades 10 tens discs for 1 hundreds disc on a mat showing 736, then says the number stayed the same. Is Kai right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0302",
@@ -7612,7 +7612,7 @@ export const ITEMS = [
     structureType: "tradeKeepsValueBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"After swapping 10 tens discs for 1 hundreds disc, June claims the mat showing 425 now shows a different number. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"After swapping 10 tens discs for 1 hundreds disc, June says the mat showing 425 now shows the same number. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0303",
@@ -7632,7 +7632,7 @@ export const ITEMS = [
     structureType: "tradeKeepsValueBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"After swapping 10 tens discs for 1 hundreds disc, Amara claims the mat showing 268 now shows a different number. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"After swapping 10 tens discs for 1 hundreds disc, Amara says the mat showing 268 now shows a different number. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0305",
@@ -7642,7 +7642,7 @@ export const ITEMS = [
     structureType: "tradeKeepsValueBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Leo trades 10 tens discs for 1 hundreds disc on a mat showing 843, then says the number changed. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Leo trades 10 tens discs for 1 hundreds disc on a mat showing 843, then says the number stayed the same. Is Leo right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0306",
@@ -7652,7 +7652,7 @@ export const ITEMS = [
     structureType: "tradeKeepsValueBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"After swapping 10 tens discs for 1 hundreds disc, Mina claims the mat showing 357 now shows a different number. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"After swapping 10 tens discs for 1 hundreds disc, Mina says the mat showing 357 now shows the same number. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0307",
@@ -7672,7 +7672,7 @@ export const ITEMS = [
     structureType: "tradeKeepsValueBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"After swapping 10 tens discs for 1 hundreds disc, Ida claims the mat showing 174 now shows a different number. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"After swapping 10 tens discs for 1 hundreds disc, Ida says the mat showing 174 now shows a different number. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0309",
@@ -7682,7 +7682,7 @@ export const ITEMS = [
     structureType: "tradeKeepsValueBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe trades 10 tens discs for 1 hundreds disc on a mat showing 926, then says the number changed. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Zoe trades 10 tens discs for 1 hundreds disc on a mat showing 926, then says the number stayed the same. Is Zoe right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0310",
@@ -7692,7 +7692,7 @@ export const ITEMS = [
     structureType: "tradeKeepsValueBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"After swapping 10 tens discs for 1 hundreds disc, Rosa claims the mat showing 481 now shows a different number. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"After swapping 10 tens discs for 1 hundreds disc, Rosa says the mat showing 481 now shows the same number. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0311",
@@ -7712,7 +7712,7 @@ export const ITEMS = [
     structureType: "tradeKeepsValueBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"After swapping 10 tens discs for 1 hundreds disc, Nora claims the mat showing 763 now shows a different number. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"After swapping 10 tens discs for 1 hundreds disc, Nora says the mat showing 763 now shows the same number. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0313",
@@ -11212,7 +11212,7 @@ export const ITEMS = [
     structureType: "tradeOnesDrill",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"n":11,"kind":"digit","place":1},"promptText":"11 ones discs = 1 tens disc + ? ones discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"n":11,"kind":"digit","place":1},"promptText":"11 ones discs = 1 tens disc + __ ones discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0195",
@@ -11222,7 +11222,7 @@ export const ITEMS = [
     structureType: "tradeOnesDrill",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"n":12,"kind":"digit","place":1},"promptText":"12 ones discs = 1 tens disc + ? ones discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"n":12,"kind":"digit","place":1},"promptText":"12 ones discs are the same as 1 tens disc and __ ones discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0196",
@@ -11232,7 +11232,7 @@ export const ITEMS = [
     structureType: "tradeOnesDrill",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"n":13,"kind":"digit","place":1},"promptText":"13 ones discs = 1 tens disc + ? ones discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"n":13,"kind":"digit","place":1},"promptText":"13 ones discs = 1 tens disc + __ ones discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0197",
@@ -11242,7 +11242,7 @@ export const ITEMS = [
     structureType: "tradeOnesDrill",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"n":14,"kind":"digit","place":1},"promptText":"14 ones discs = 1 tens disc + ? ones discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"n":14,"kind":"digit","place":1},"promptText":"14 ones discs are the same as 1 tens disc and __ ones discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0198",
@@ -11252,7 +11252,7 @@ export const ITEMS = [
     structureType: "tradeOnesDrill",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"n":15,"kind":"digit","place":1},"promptText":"15 ones discs = 1 tens disc + ? ones discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"n":15,"kind":"digit","place":1},"promptText":"15 ones discs = 1 tens disc + __ ones discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0199",
@@ -11262,7 +11262,7 @@ export const ITEMS = [
     structureType: "tradeOnesDrill",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"n":16,"kind":"digit","place":1},"promptText":"16 ones discs = 1 tens disc + ? ones discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"n":16,"kind":"digit","place":1},"promptText":"16 ones discs are the same as 1 tens disc and __ ones discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0200",
@@ -11272,7 +11272,7 @@ export const ITEMS = [
     structureType: "tradeOnesDrill",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"n":17,"kind":"digit","place":1},"promptText":"17 ones discs = 1 tens disc + ? ones discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"n":17,"kind":"digit","place":1},"promptText":"17 ones discs = 1 tens disc + __ ones discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0201",
@@ -11282,7 +11282,7 @@ export const ITEMS = [
     structureType: "tradeOnesDrill",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"n":18,"kind":"digit","place":1},"promptText":"18 ones discs = 1 tens disc + ? ones discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"n":18,"kind":"digit","place":1},"promptText":"18 ones discs are the same as 1 tens disc and __ ones discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0202",
@@ -11292,7 +11292,7 @@ export const ITEMS = [
     structureType: "tradeOnesDrill",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"n":19,"kind":"digit","place":1},"promptText":"19 ones discs = 1 tens disc + ? ones discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"n":19,"kind":"digit","place":1},"promptText":"19 ones discs = 1 tens disc + __ ones discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0203",
@@ -11302,7 +11302,7 @@ export const ITEMS = [
     structureType: "tensFromOnes",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"n":10,"kind":"digit","place":10},"promptText":"10 ones discs = ? tens discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"n":10,"kind":"digit","place":10},"promptText":"10 ones discs = __ tens discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0204",
@@ -11312,7 +11312,7 @@ export const ITEMS = [
     structureType: "tensFromOnes",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"n":20,"kind":"digit","place":10},"promptText":"20 ones discs = ? tens discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"n":20,"kind":"digit","place":10},"promptText":"20 ones discs = __ tens discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0205",
@@ -11322,7 +11322,7 @@ export const ITEMS = [
     structureType: "onesFromTens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"have":0,"kind":"gap","target":10},"promptText":"1 tens disc = ? ones discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"have":0,"kind":"gap","target":10},"promptText":"1 tens disc = __ ones discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0206",
@@ -11332,7 +11332,7 @@ export const ITEMS = [
     structureType: "onesFromTens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"have":0,"kind":"gap","target":20},"promptText":"2 tens discs = ? ones discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"have":0,"kind":"gap","target":20},"promptText":"2 tens discs = __ ones discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0207",
@@ -11412,7 +11412,7 @@ export const ITEMS = [
     structureType: "renameDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"have":20,"kind":"gap","target":34},"promptText":"34 = 2 tens discs + ? ones discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"have":20,"kind":"gap","target":34},"promptText":"34 = 2 tens discs + __ ones discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0215",
@@ -11422,7 +11422,7 @@ export const ITEMS = [
     structureType: "renameDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"have":30,"kind":"gap","target":47},"promptText":"47 = 3 tens discs + ? ones discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"have":30,"kind":"gap","target":47},"promptText":"47 is 3 tens discs and __ ones discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0216",
@@ -11432,7 +11432,7 @@ export const ITEMS = [
     structureType: "renameDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"have":40,"kind":"gap","target":52},"promptText":"52 = 4 tens discs + ? ones discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"have":40,"kind":"gap","target":52},"promptText":"52 = 4 tens discs + __ ones discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0217",
@@ -11442,7 +11442,7 @@ export const ITEMS = [
     structureType: "renameDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"have":50,"kind":"gap","target":68},"promptText":"68 = 5 tens discs + ? ones discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"have":50,"kind":"gap","target":68},"promptText":"68 is 5 tens discs and __ ones discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0218",
@@ -11452,7 +11452,7 @@ export const ITEMS = [
     structureType: "renameDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":60,"kind":"gap","target":73},"promptText":"73 = 6 tens discs + ? ones discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":60,"kind":"gap","target":73},"promptText":"73 = 6 tens discs + __ ones discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0219",
@@ -11462,7 +11462,7 @@ export const ITEMS = [
     structureType: "renameDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"have":70,"kind":"gap","target":86},"promptText":"86 = 7 tens discs + ? ones discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"have":70,"kind":"gap","target":86},"promptText":"86 is 7 tens discs and __ ones discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0220",
@@ -11472,7 +11472,7 @@ export const ITEMS = [
     structureType: "renameDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":80,"kind":"gap","target":91},"promptText":"91 = 8 tens discs + ? ones discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":80,"kind":"gap","target":91},"promptText":"91 = 8 tens discs + __ ones discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0221",
@@ -11482,7 +11482,7 @@ export const ITEMS = [
     structureType: "renameDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"have":30,"kind":"gap","target":45},"promptText":"45 = 3 tens discs + ? ones discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"have":30,"kind":"gap","target":45},"promptText":"45 is 3 tens discs and __ ones discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0222",
@@ -11492,7 +11492,7 @@ export const ITEMS = [
     structureType: "renameDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"have":40,"kind":"gap","target":57},"promptText":"57 = 4 tens discs + ? ones discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"have":40,"kind":"gap","target":57},"promptText":"57 = 4 tens discs + __ ones discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0223",
@@ -11502,7 +11502,7 @@ export const ITEMS = [
     structureType: "renameDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"have":50,"kind":"gap","target":62},"promptText":"62 = 5 tens discs + ? ones discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"have":50,"kind":"gap","target":62},"promptText":"62 is 5 tens discs and __ ones discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0224",
@@ -11512,7 +11512,7 @@ export const ITEMS = [
     structureType: "renameDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"have":60,"kind":"gap","target":78},"promptText":"78 = 6 tens discs + ? ones discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"have":60,"kind":"gap","target":78},"promptText":"78 = 6 tens discs + __ ones discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0225",
@@ -11522,7 +11522,7 @@ export const ITEMS = [
     structureType: "renameDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":70,"kind":"gap","target":83},"promptText":"83 = 7 tens discs + ? ones discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":70,"kind":"gap","target":83},"promptText":"83 is 7 tens discs and __ ones discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0226",
@@ -11532,7 +11532,7 @@ export const ITEMS = [
     structureType: "renameDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"have":80,"kind":"gap","target":96},"promptText":"96 = 8 tens discs + ? ones discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"have":80,"kind":"gap","target":96},"promptText":"96 = 8 tens discs + __ ones discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0227",
@@ -11542,7 +11542,7 @@ export const ITEMS = [
     structureType: "renameDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"have":20,"kind":"gap","target":39},"promptText":"39 = 2 tens discs + ? ones discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"have":20,"kind":"gap","target":39},"promptText":"39 is 2 tens discs and __ ones discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0228",
@@ -11552,7 +11552,7 @@ export const ITEMS = [
     structureType: "renameDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"have":40,"kind":"gap","target":54},"promptText":"54 = 4 tens discs + ? ones discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"have":40,"kind":"gap","target":54},"promptText":"54 = 4 tens discs + __ ones discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0229",
@@ -11562,7 +11562,7 @@ export const ITEMS = [
     structureType: "asTensDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"counting":{"have":0,"kind":"gap","target":34},"promptText":"340 = ? tens discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"counting":{"have":0,"kind":"gap","target":34},"promptText":"340 = __ tens discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0230",
@@ -11572,7 +11572,7 @@ export const ITEMS = [
     structureType: "asTensDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":52,"display":{"counting":{"have":0,"kind":"gap","target":52},"promptText":"520 = ? tens discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":52,"display":{"counting":{"have":0,"kind":"gap","target":52},"promptText":"520 is the same as __ tens discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0231",
@@ -11582,7 +11582,7 @@ export const ITEMS = [
     structureType: "asTensDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":78,"display":{"counting":{"have":0,"kind":"gap","target":78},"promptText":"780 = ? tens discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":78,"display":{"counting":{"have":0,"kind":"gap","target":78},"promptText":"780 = __ tens discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0232",
@@ -11592,7 +11592,7 @@ export const ITEMS = [
     structureType: "asTensDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"counting":{"have":0,"kind":"gap","target":21},"promptText":"210 = ? tens discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"counting":{"have":0,"kind":"gap","target":21},"promptText":"210 is the same as __ tens discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0233",
@@ -11602,7 +11602,7 @@ export const ITEMS = [
     structureType: "asTensDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"counting":{"have":0,"kind":"gap","target":46},"promptText":"460 = ? tens discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"counting":{"have":0,"kind":"gap","target":46},"promptText":"460 = __ tens discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0234",
@@ -11612,7 +11612,7 @@ export const ITEMS = [
     structureType: "asTensDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":93,"display":{"counting":{"have":0,"kind":"gap","target":93},"promptText":"930 = ? tens discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":93,"display":{"counting":{"have":0,"kind":"gap","target":93},"promptText":"930 is the same as __ tens discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0235",
@@ -11622,7 +11622,7 @@ export const ITEMS = [
     structureType: "asTensDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":65,"display":{"counting":{"have":0,"kind":"gap","target":65},"promptText":"650 = ? tens discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":65,"display":{"counting":{"have":0,"kind":"gap","target":65},"promptText":"650 = __ tens discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0236",
@@ -11632,7 +11632,7 @@ export const ITEMS = [
     structureType: "asTensDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":87,"display":{"counting":{"have":0,"kind":"gap","target":87},"promptText":"870 = ? tens discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":87,"display":{"counting":{"have":0,"kind":"gap","target":87},"promptText":"870 is the same as __ tens discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0237",
@@ -11642,7 +11642,7 @@ export const ITEMS = [
     structureType: "asTensDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"have":0,"kind":"gap","target":19},"promptText":"190 = ? tens discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"have":0,"kind":"gap","target":19},"promptText":"190 = __ tens discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0238",
@@ -11652,7 +11652,7 @@ export const ITEMS = [
     structureType: "asTensDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"have":0,"kind":"gap","target":24},"promptText":"240 = ? tens discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"have":0,"kind":"gap","target":24},"promptText":"240 is the same as __ tens discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0239",
@@ -11662,7 +11662,7 @@ export const ITEMS = [
     structureType: "asTensDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":59,"display":{"counting":{"have":0,"kind":"gap","target":59},"promptText":"590 = ? tens discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":59,"display":{"counting":{"have":0,"kind":"gap","target":59},"promptText":"590 = __ tens discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0240",
@@ -11672,7 +11672,7 @@ export const ITEMS = [
     structureType: "asTensDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"counting":{"have":0,"kind":"gap","target":72},"promptText":"720 = ? tens discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"counting":{"have":0,"kind":"gap","target":72},"promptText":"720 is the same as __ tens discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0241",
@@ -11682,7 +11682,7 @@ export const ITEMS = [
     structureType: "asTensDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"counting":{"have":0,"kind":"gap","target":81},"promptText":"810 = ? tens discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"counting":{"have":0,"kind":"gap","target":81},"promptText":"810 = __ tens discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0242",
@@ -11692,7 +11692,7 @@ export const ITEMS = [
     structureType: "asTensDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"counting":{"have":0,"kind":"gap","target":38},"promptText":"380 = ? tens discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"counting":{"have":0,"kind":"gap","target":38},"promptText":"380 is the same as __ tens discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0243",
@@ -11702,7 +11702,7 @@ export const ITEMS = [
     structureType: "asTensDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":96,"display":{"counting":{"have":0,"kind":"gap","target":96},"promptText":"960 = ? tens discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":96,"display":{"counting":{"have":0,"kind":"gap","target":96},"promptText":"960 = __ tens discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0244",
@@ -11862,7 +11862,7 @@ export const ITEMS = [
     structureType: "tradeTensDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"n":10,"kind":"digit","place":10},"promptText":"10 tens discs = ? hundreds discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"n":10,"kind":"digit","place":10},"promptText":"10 tens discs = __ hundreds discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0260",
@@ -11872,7 +11872,7 @@ export const ITEMS = [
     structureType: "tradeTensDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"n":20,"kind":"digit","place":10},"promptText":"20 tens discs = ? hundreds discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"n":20,"kind":"digit","place":10},"promptText":"20 tens discs trade for __ hundreds discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0261",
@@ -11882,7 +11882,7 @@ export const ITEMS = [
     structureType: "tradeTensDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"n":30,"kind":"digit","place":10},"promptText":"30 tens discs = ? hundreds discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"n":30,"kind":"digit","place":10},"promptText":"30 tens discs = __ hundreds discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0262",
@@ -11892,7 +11892,7 @@ export const ITEMS = [
     structureType: "tradeTensDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"n":40,"kind":"digit","place":10},"promptText":"40 tens discs = ? hundreds discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"n":40,"kind":"digit","place":10},"promptText":"40 tens discs trade for __ hundreds discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0263",
@@ -11902,7 +11902,7 @@ export const ITEMS = [
     structureType: "tradeTensDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"n":50,"kind":"digit","place":10},"promptText":"50 tens discs = ? hundreds discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"n":50,"kind":"digit","place":10},"promptText":"50 tens discs = __ hundreds discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0264",
@@ -11912,7 +11912,7 @@ export const ITEMS = [
     structureType: "tradeTensDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"n":60,"kind":"digit","place":10},"promptText":"60 tens discs = ? hundreds discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"n":60,"kind":"digit","place":10},"promptText":"60 tens discs trade for __ hundreds discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0265",
@@ -11922,7 +11922,7 @@ export const ITEMS = [
     structureType: "tradeTensDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"n":70,"kind":"digit","place":10},"promptText":"70 tens discs = ? hundreds discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"n":70,"kind":"digit","place":10},"promptText":"70 tens discs = __ hundreds discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0266",
@@ -11932,7 +11932,7 @@ export const ITEMS = [
     structureType: "tradeTensDrill",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"n":80,"kind":"digit","place":10},"promptText":"80 tens discs = ? hundreds discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"n":80,"kind":"digit","place":10},"promptText":"80 tens discs trade for __ hundreds discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0267",
@@ -11942,7 +11942,7 @@ export const ITEMS = [
     structureType: "renameHundredsDrill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"have":0,"kind":"gap","target":24},"promptText":"2400 = ? hundreds discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"have":0,"kind":"gap","target":24},"promptText":"2400 = __ hundreds discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0268",
@@ -11952,7 +11952,7 @@ export const ITEMS = [
     structureType: "renameHundredsDrill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":0,"kind":"gap","target":13},"promptText":"1300 = ? hundreds discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":0,"kind":"gap","target":13},"promptText":"1300 is the same as __ hundreds discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0269",
@@ -11962,7 +11962,7 @@ export const ITEMS = [
     structureType: "renameHundredsDrill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"counting":{"have":0,"kind":"gap","target":37},"promptText":"3700 = ? hundreds discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"counting":{"have":0,"kind":"gap","target":37},"promptText":"3700 = __ hundreds discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0270",
@@ -11972,7 +11972,7 @@ export const ITEMS = [
     structureType: "renameHundredsDrill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":52,"display":{"counting":{"have":0,"kind":"gap","target":52},"promptText":"5200 = ? hundreds discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":52,"display":{"counting":{"have":0,"kind":"gap","target":52},"promptText":"5200 is the same as __ hundreds discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0271",
@@ -11982,7 +11982,7 @@ export const ITEMS = [
     structureType: "renameHundredsDrill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"counting":{"have":0,"kind":"gap","target":46},"promptText":"4600 = ? hundreds discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"counting":{"have":0,"kind":"gap","target":46},"promptText":"4600 = __ hundreds discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0272",
@@ -11992,7 +11992,7 @@ export const ITEMS = [
     structureType: "renameHundredsDrill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":61,"display":{"counting":{"have":0,"kind":"gap","target":61},"promptText":"6100 = ? hundreds discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":61,"display":{"counting":{"have":0,"kind":"gap","target":61},"promptText":"6100 is the same as __ hundreds discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0273",
@@ -12002,7 +12002,7 @@ export const ITEMS = [
     structureType: "renameHundredsDrill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"counting":{"have":0,"kind":"gap","target":29},"promptText":"2900 = ? hundreds discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"counting":{"have":0,"kind":"gap","target":29},"promptText":"2900 = __ hundreds discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0274",
@@ -12012,7 +12012,7 @@ export const ITEMS = [
     structureType: "renameHundredsDrill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":78,"display":{"counting":{"have":0,"kind":"gap","target":78},"promptText":"7800 = ? hundreds discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":78,"display":{"counting":{"have":0,"kind":"gap","target":78},"promptText":"7800 is the same as __ hundreds discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0275",
@@ -12022,7 +12022,7 @@ export const ITEMS = [
     structureType: "renameHundredsDrill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"have":0,"kind":"gap","target":15},"promptText":"1500 = ? hundreds discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"have":0,"kind":"gap","target":15},"promptText":"1500 = __ hundreds discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0276",
@@ -12032,7 +12032,7 @@ export const ITEMS = [
     structureType: "renameHundredsDrill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"counting":{"have":0,"kind":"gap","target":32},"promptText":"3200 = ? hundreds discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"counting":{"have":0,"kind":"gap","target":32},"promptText":"3200 is the same as __ hundreds discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0277",
@@ -12042,7 +12042,7 @@ export const ITEMS = [
     structureType: "renameHundredsDrill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":59,"display":{"counting":{"have":0,"kind":"gap","target":59},"promptText":"5900 = ? hundreds discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":59,"display":{"counting":{"have":0,"kind":"gap","target":59},"promptText":"5900 = __ hundreds discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0278",
@@ -12052,7 +12052,7 @@ export const ITEMS = [
     structureType: "renameHundredsDrill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":41,"display":{"counting":{"have":0,"kind":"gap","target":41},"promptText":"4100 = ? hundreds discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":41,"display":{"counting":{"have":0,"kind":"gap","target":41},"promptText":"4100 is the same as __ hundreds discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0279",
@@ -12062,7 +12062,7 @@ export const ITEMS = [
     structureType: "renameHundredsDrill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":67,"display":{"counting":{"have":0,"kind":"gap","target":67},"promptText":"6700 = ? hundreds discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":67,"display":{"counting":{"have":0,"kind":"gap","target":67},"promptText":"6700 = __ hundreds discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0280",
@@ -12072,7 +12072,7 @@ export const ITEMS = [
     structureType: "renameHundredsDrill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":83,"display":{"counting":{"have":0,"kind":"gap","target":83},"promptText":"8300 = ? hundreds discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":83,"display":{"counting":{"have":0,"kind":"gap","target":83},"promptText":"8300 is the same as __ hundreds discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0281",
@@ -12082,7 +12082,7 @@ export const ITEMS = [
     structureType: "renameHundredsDrill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"counting":{"have":0,"kind":"gap","target":21},"promptText":"2100 = ? hundreds discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"counting":{"have":0,"kind":"gap","target":21},"promptText":"2100 = __ hundreds discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0282",
@@ -12392,7 +12392,7 @@ export const ITEMS = [
     structureType: "tradeHundredsDrill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"n":10,"kind":"digit","place":10},"promptText":"10 hundreds discs = ? thousands discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"n":10,"kind":"digit","place":10},"promptText":"10 hundreds discs = __ thousands discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0313",
@@ -12402,7 +12402,7 @@ export const ITEMS = [
     structureType: "tradeHundredsDrill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"n":20,"kind":"digit","place":10},"promptText":"20 hundreds discs = ? thousands discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"n":20,"kind":"digit","place":10},"promptText":"20 hundreds discs trade for __ thousands discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0314",
@@ -12412,7 +12412,7 @@ export const ITEMS = [
     structureType: "tradeHundredsDrill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"n":30,"kind":"digit","place":10},"promptText":"30 hundreds discs = ? thousands discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"n":30,"kind":"digit","place":10},"promptText":"30 hundreds discs = __ thousands discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0315",
@@ -12422,7 +12422,7 @@ export const ITEMS = [
     structureType: "tradeHundredsDrill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"n":40,"kind":"digit","place":10},"promptText":"40 hundreds discs = ? thousands discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"n":40,"kind":"digit","place":10},"promptText":"40 hundreds discs trade for __ thousands discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0316",
@@ -12432,7 +12432,7 @@ export const ITEMS = [
     structureType: "tradeHundredsDrill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"n":50,"kind":"digit","place":10},"promptText":"50 hundreds discs = ? thousands discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"n":50,"kind":"digit","place":10},"promptText":"50 hundreds discs = __ thousands discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0317",
@@ -12442,7 +12442,7 @@ export const ITEMS = [
     structureType: "tradeHundredsDrill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"n":60,"kind":"digit","place":10},"promptText":"60 hundreds discs = ? thousands discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"n":60,"kind":"digit","place":10},"promptText":"60 hundreds discs trade for __ thousands discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0318",
@@ -12452,7 +12452,7 @@ export const ITEMS = [
     structureType: "tradeHundredsDrill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"n":70,"kind":"digit","place":10},"promptText":"70 hundreds discs = ? thousands discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"n":70,"kind":"digit","place":10},"promptText":"70 hundreds discs = __ thousands discs"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0319",
@@ -12462,7 +12462,7 @@ export const ITEMS = [
     structureType: "tradeHundredsDrill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"n":80,"kind":"digit","place":10},"promptText":"80 hundreds discs = ? thousands discs"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"n":80,"kind":"digit","place":10},"promptText":"80 hundreds discs trade for __ thousands discs."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValueDiscs-proc-b0821-0320",

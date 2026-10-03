@@ -39,9 +39,13 @@ describe("speakableText", () => {
     expect(speakableText("3 × 4 = ?")).toBe("3 times 4 equals what");
     expect(speakableText("3 x 4 = ?")).toBe("3 times 4 equals what");
     expect(speakableText("12 / 3 = ?")).toBe("12 divided by 3 equals what");
-    expect(speakableText("Which fraction equals 3/4?")).toBe("Which fraction equals 3 over 4 what");
+    expect(speakableText("Which fraction equals 3/4?")).toBe("Which fraction equals 3 over 4?");
+    expect(speakableText("A hexagon has __ sides.")).toBe("A hexagon has blank sides.");
+    expect(speakableText("8 + 5 = 10 + __")).toBe("8 plus 5 equals 10 plus blank");
+    expect(speakableText("What number makes this true? 47 + 8 = 40 + ?")).toBe("What number makes this true? 47 plus 8 equals 40 plus what");
+    expect(speakableText("? + 8 = 12")).toBe("what plus 8 equals 12");
   });
   it("leaves plain sentences alone", () => {
-    expect(speakableText("Lily has 4 apples. How many apples does Lily have now?")).toBe("Lily has 4 apples. How many apples does Lily have now what");
+    expect(speakableText("Lily has 4 apples. How many apples does Lily have now?")).toBe("Lily has 4 apples. How many apples does Lily have now?");
   });
 });

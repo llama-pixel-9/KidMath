@@ -504,7 +504,7 @@ describe("decimals — answers recomputed from the rendered prompt", () => {
         const text = q.display.promptText;
         const nums = numbersIn(text);
         if (id === "tenthsFromModel") {
-          const shaded = Number(text.match(/and (\d+) are shaded/)[1]);
+          const shaded = Number(text.match(/and (\d+) (?:is|are) shaded/)[1]);
           expect(q.answer).toBe(Number((shaded / 10).toFixed(2)));
         } else if (id === "hundredthsFromGrid") {
           const shaded = Number(text.match(/has (\d+) of its 100/)[1]);
@@ -678,7 +678,9 @@ describe("patterns — sequences recomputed from the rendered terms", () => {
     for (const level of LEVELS) {
       for (const q of sample("patterns", level, 120)) {
         const id = varietyIdOf(q);
-        const seq = q.display.sequence;
+        // Only next-term questions draw the "What comes next?" card
+        // (`sequence`); the rest carry their terms as `terms` (sequenceCard.js).
+        const seq = q.display.sequence ?? q.display.terms;
         if (id === "arithmeticNext" || id === "subtractPattern") {
           const step = seq[1] - seq[0];
           for (let i = 2; i < seq.length; i += 1) expect(seq[i] - seq[i - 1]).toBe(step);
@@ -689,8 +691,8 @@ describe("patterns — sequences recomputed from the rendered terms", () => {
           expect(q.answer).toBe(known[0] - step);
           expect(q.answer).toBeGreaterThan(0);
         } else if (id === "missingTerm") {
-          const gap = seq.indexOf("?");
-          const known = seq.filter((v) => v !== "?");
+          const gap = seq.indexOf("__");
+          const known = seq.filter((v) => v !== "__");
           const step = (known[known.length - 1] - known[0]) / (seq.length - 1 - (gap < 1 ? 1 : 0));
           const rebuilt = seq.map((v, i) => (i === gap ? seq[0] + i * step : v));
           expect(q.answer).toBe(rebuilt[gap]);

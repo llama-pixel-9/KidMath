@@ -12,7 +12,7 @@ export const ITEMS = [
     structureType: "storyGrow_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":7,"kind":"gap","target":12},"promptText":"Sam's bean plant was 7 cm on Monday and 12 cm on Friday. How many centimetres did it grow?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":7,"kind":"gap","target":12},"promptText":"Sam's bean plant was 7 cm on Monday and 12 cm on Friday. How many centimeters did it grow?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0002",
@@ -22,7 +22,7 @@ export const ITEMS = [
     structureType: "storyGrow_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":9,"kind":"gap","target":15},"promptText":"The sunflower by Mina's window rose from 9 cm to 15 cm. How many centimetres taller is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":9,"kind":"gap","target":15},"promptText":"The sunflower by Mina's window rose from 9 cm to 15 cm. How many centimeters taller is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0003",
@@ -32,7 +32,7 @@ export const ITEMS = [
     structureType: "storyGrow_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":4,"kind":"gap","target":9},"promptText":"Luca's bean plant was 4 cm on Monday and 9 cm on Friday. How many centimetres did it grow?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":4,"kind":"gap","target":9},"promptText":"Luca's bean plant was 4 cm on Monday and 9 cm on Friday. How many centimeters did it grow?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0004",
@@ -42,7 +42,7 @@ export const ITEMS = [
     structureType: "storyGrow_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":11,"kind":"gap","target":18},"promptText":"The sunflower by Nia's window rose from 11 cm to 18 cm. How many centimetres taller is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":11,"kind":"gap","target":18},"promptText":"The sunflower by Nia's window rose from 11 cm to 18 cm. How many centimeters taller is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0005",
@@ -52,7 +52,7 @@ export const ITEMS = [
     structureType: "storyGrow_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":6,"kind":"gap","target":14},"promptText":"Theo's bean plant was 6 cm on Monday and 14 cm on Friday. How many centimetres did it grow?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":6,"kind":"gap","target":14},"promptText":"Theo's bean plant was 6 cm on Monday and 14 cm on Friday. How many centimeters did it grow?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0006",
@@ -62,7 +62,7 @@ export const ITEMS = [
     structureType: "storyGrow_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":8,"kind":"gap","target":16},"promptText":"The sunflower by Ava's window rose from 8 cm to 16 cm. How many centimetres taller is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":8,"kind":"gap","target":16},"promptText":"The sunflower by Ava's window rose from 8 cm to 16 cm. How many centimeters taller is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0007",
@@ -72,7 +72,7 @@ export const ITEMS = [
     structureType: "storyGrow_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":3,"kind":"gap","target":11},"promptText":"Kai's bean plant was 3 cm on Monday and 11 cm on Friday. How many centimetres did it grow?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":3,"kind":"gap","target":11},"promptText":"Kai's bean plant was 3 cm on Monday and 11 cm on Friday. How many centimeters did it grow?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0008",
@@ -82,7 +82,7 @@ export const ITEMS = [
     structureType: "storyGrow_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":13,"kind":"gap","target":20},"promptText":"The sunflower by Ida's window rose from 13 cm to 20 cm. How many centimetres taller is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":13,"kind":"gap","target":20},"promptText":"The sunflower by Ida's window rose from 13 cm to 20 cm. How many centimeters taller is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0009",
@@ -92,7 +92,7 @@ export const ITEMS = [
     structureType: "storyGrow_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":5,"kind":"gap","target":13},"promptText":"Omar's bean plant was 5 cm on Monday and 13 cm on Friday. How many centimetres did it grow?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":5,"kind":"gap","target":13},"promptText":"Omar's bean plant was 5 cm on Monday and 13 cm on Friday. How many centimeters did it grow?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0010",
@@ -102,7 +102,7 @@ export const ITEMS = [
     structureType: "storyGrow_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":12,"kind":"gap","target":17},"promptText":"The sunflower by June's window rose from 12 cm to 17 cm. How many centimetres taller is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":12,"kind":"gap","target":17},"promptText":"The sunflower by June's window rose from 12 cm to 17 cm. How many centimeters taller is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0011",
@@ -112,7 +112,7 @@ export const ITEMS = [
     structureType: "storyGrow_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":2,"kind":"gap","target":10},"promptText":"Zoe's bean plant was 2 cm on Monday and 10 cm on Friday. How many centimetres did it grow?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":2,"kind":"gap","target":10},"promptText":"Zoe's bean plant was 2 cm on Monday and 10 cm on Friday. How many centimeters did it grow?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0012",
@@ -122,7 +122,7 @@ export const ITEMS = [
     structureType: "storyGrow_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":14,"kind":"gap","target":19},"promptText":"The sunflower by Ben's window rose from 14 cm to 19 cm. How many centimetres taller is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":14,"kind":"gap","target":19},"promptText":"The sunflower by Ben's window rose from 14 cm to 19 cm. How many centimeters taller is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0013",
@@ -132,7 +132,7 @@ export const ITEMS = [
     structureType: "storyGrow_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":3,"kind":"gap","target":8},"promptText":"Lily's bean plant was 3 cm on Monday and 8 cm on Friday. How many centimetres did it grow?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":3,"kind":"gap","target":8},"promptText":"Lily's bean plant was 3 cm on Monday and 8 cm on Friday. How many centimeters did it grow?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0014",
@@ -142,7 +142,7 @@ export const ITEMS = [
     structureType: "storyGrow_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":6,"kind":"gap","target":15},"promptText":"The sunflower by Rosa's window rose from 6 cm to 15 cm. How many centimetres taller is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":6,"kind":"gap","target":15},"promptText":"The sunflower by Rosa's window rose from 6 cm to 15 cm. How many centimeters taller is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0015",
@@ -152,7 +152,7 @@ export const ITEMS = [
     structureType: "storyGrow_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":4,"kind":"gap","target":12},"promptText":"Finn's bean plant was 4 cm on Monday and 12 cm on Friday. How many centimetres did it grow?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":4,"kind":"gap","target":12},"promptText":"Finn's bean plant was 4 cm on Monday and 12 cm on Friday. How many centimeters did it grow?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0016",
@@ -162,7 +162,7 @@ export const ITEMS = [
     structureType: "storyGrow_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":9,"kind":"gap","target":20},"promptText":"The sunflower by Amara's window rose from 9 cm to 20 cm. How many centimetres taller is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":9,"kind":"gap","target":20},"promptText":"The sunflower by Amara's window rose from 9 cm to 20 cm. How many centimeters taller is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0017",
@@ -172,7 +172,7 @@ export const ITEMS = [
     structureType: "storyGrow_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":5,"kind":"gap","target":16},"promptText":"Diego's bean plant was 5 cm on Monday and 16 cm on Friday. How many centimetres did it grow?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":5,"kind":"gap","target":16},"promptText":"Diego's bean plant was 5 cm on Monday and 16 cm on Friday. How many centimeters did it grow?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0018",
@@ -182,7 +182,7 @@ export const ITEMS = [
     structureType: "storyGrow_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":27,"kind":"gap","target":62},"promptText":"The sunflower by Mina's window rose from 27 cm to 62 cm. How many centimetres taller is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":27,"kind":"gap","target":62},"promptText":"The sunflower by Mina's window rose from 27 cm to 62 cm. How many centimeters taller is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0019",
@@ -192,7 +192,7 @@ export const ITEMS = [
     structureType: "storyGrow_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"counting":{"have":34,"kind":"gap","target":71},"promptText":"Luca's bean plant was 34 cm on Monday and 71 cm on Friday. How many centimetres did it grow?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"counting":{"have":34,"kind":"gap","target":71},"promptText":"Luca's bean plant was 34 cm on Monday and 71 cm on Friday. How many centimeters did it grow?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0020",
@@ -202,7 +202,7 @@ export const ITEMS = [
     structureType: "storyGrow_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":43,"display":{"counting":{"have":45,"kind":"gap","target":88},"promptText":"The sunflower by Nia's window rose from 45 cm to 88 cm. How many centimetres taller is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":43,"display":{"counting":{"have":45,"kind":"gap","target":88},"promptText":"The sunflower by Nia's window rose from 45 cm to 88 cm. How many centimeters taller is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0021",
@@ -212,7 +212,7 @@ export const ITEMS = [
     structureType: "storyGrow_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"counting":{"have":23,"kind":"gap","target":56},"promptText":"Theo's bean plant was 23 cm on Monday and 56 cm on Friday. How many centimetres did it grow?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"counting":{"have":23,"kind":"gap","target":56},"promptText":"Theo's bean plant was 23 cm on Monday and 56 cm on Friday. How many centimeters did it grow?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0022",
@@ -222,7 +222,7 @@ export const ITEMS = [
     structureType: "storyGrow_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":41,"display":{"counting":{"have":38,"kind":"gap","target":79},"promptText":"The sunflower by Ava's window rose from 38 cm to 79 cm. How many centimetres taller is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":41,"display":{"counting":{"have":38,"kind":"gap","target":79},"promptText":"The sunflower by Ava's window rose from 38 cm to 79 cm. How many centimeters taller is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0023",
@@ -232,7 +232,7 @@ export const ITEMS = [
     structureType: "storyGrow_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":53,"display":{"counting":{"have":41,"kind":"gap","target":94},"promptText":"Kai's bean plant was 41 cm on Monday and 94 cm on Friday. How many centimetres did it grow?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":53,"display":{"counting":{"have":41,"kind":"gap","target":94},"promptText":"Kai's bean plant was 41 cm on Monday and 94 cm on Friday. How many centimeters did it grow?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0024",
@@ -242,7 +242,7 @@ export const ITEMS = [
     structureType: "storyGrow_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"counting":{"have":29,"kind":"gap","target":63},"promptText":"The sunflower by Ida's window rose from 29 cm to 63 cm. How many centimetres taller is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"counting":{"have":29,"kind":"gap","target":63},"promptText":"The sunflower by Ida's window rose from 29 cm to 63 cm. How many centimeters taller is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0025",
@@ -252,7 +252,7 @@ export const ITEMS = [
     structureType: "storyGrow_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"have":52,"kind":"gap","target":97},"promptText":"Omar's bean plant was 52 cm on Monday and 97 cm on Friday. How many centimetres did it grow?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"have":52,"kind":"gap","target":97},"promptText":"Omar's bean plant was 52 cm on Monday and 97 cm on Friday. How many centimeters did it grow?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0026",
@@ -262,7 +262,7 @@ export const ITEMS = [
     structureType: "storyGrow_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"counting":{"have":36,"kind":"gap","target":75},"promptText":"The sunflower by June's window rose from 36 cm to 75 cm. How many centimetres taller is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"counting":{"have":36,"kind":"gap","target":75},"promptText":"The sunflower by June's window rose from 36 cm to 75 cm. How many centimeters taller is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0027",
@@ -272,7 +272,7 @@ export const ITEMS = [
     structureType: "storyGrow_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"counting":{"have":24,"kind":"gap","target":58},"promptText":"Zoe's bean plant was 24 cm on Monday and 58 cm on Friday. How many centimetres did it grow?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"counting":{"have":24,"kind":"gap","target":58},"promptText":"Zoe's bean plant was 24 cm on Monday and 58 cm on Friday. How many centimeters did it grow?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0028",
@@ -282,7 +282,7 @@ export const ITEMS = [
     structureType: "storyGrow_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"counting":{"have":47,"kind":"gap","target":86},"promptText":"The sunflower by Ben's window rose from 47 cm to 86 cm. How many centimetres taller is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"counting":{"have":47,"kind":"gap","target":86},"promptText":"The sunflower by Ben's window rose from 47 cm to 86 cm. How many centimeters taller is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0029",
@@ -292,7 +292,7 @@ export const ITEMS = [
     structureType: "storyGrow_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"counting":{"have":31,"kind":"gap","target":69},"promptText":"Lily's bean plant was 31 cm on Monday and 69 cm on Friday. How many centimetres did it grow?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"counting":{"have":31,"kind":"gap","target":69},"promptText":"Lily's bean plant was 31 cm on Monday and 69 cm on Friday. How many centimeters did it grow?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0030",
@@ -302,7 +302,7 @@ export const ITEMS = [
     structureType: "storyGrow_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"counting":{"have":43,"kind":"gap","target":91},"promptText":"The sunflower by Rosa's window rose from 43 cm to 91 cm. How many centimetres taller is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"counting":{"have":43,"kind":"gap","target":91},"promptText":"The sunflower by Rosa's window rose from 43 cm to 91 cm. How many centimeters taller is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0031",
@@ -312,7 +312,7 @@ export const ITEMS = [
     structureType: "storyGrow_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"counting":{"have":26,"kind":"gap","target":54},"promptText":"Finn's bean plant was 26 cm on Monday and 54 cm on Friday. How many centimetres did it grow?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"counting":{"have":26,"kind":"gap","target":54},"promptText":"Finn's bean plant was 26 cm on Monday and 54 cm on Friday. How many centimeters did it grow?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0032",
@@ -322,7 +322,7 @@ export const ITEMS = [
     structureType: "storyGrow_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"counting":{"have":49,"kind":"gap","target":83},"promptText":"The sunflower by Amara's window rose from 49 cm to 83 cm. How many centimetres taller is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"counting":{"have":49,"kind":"gap","target":83},"promptText":"The sunflower by Amara's window rose from 49 cm to 83 cm. How many centimeters taller is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0033",
@@ -332,7 +332,7 @@ export const ITEMS = [
     structureType: "storyGrow_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"counting":{"have":33,"kind":"gap","target":77},"promptText":"Diego's bean plant was 33 cm on Monday and 77 cm on Friday. How many centimetres did it grow?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"counting":{"have":33,"kind":"gap","target":77},"promptText":"Diego's bean plant was 33 cm on Monday and 77 cm on Friday. How many centimeters did it grow?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0034",
@@ -342,7 +342,7 @@ export const ITEMS = [
     structureType: "storyGrow_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":43,"display":{"counting":{"have":39,"kind":"gap","target":82},"promptText":"The sunflower by Priya's window rose from 39 cm to 82 cm. How many centimetres taller is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":43,"display":{"counting":{"have":39,"kind":"gap","target":82},"promptText":"The sunflower by Priya's window rose from 39 cm to 82 cm. How many centimeters taller is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0035",
@@ -352,7 +352,7 @@ export const ITEMS = [
     structureType: "storyTrailMetres",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":2},"promptText":"The forest loop near Mina's camp is 2 km around. What is that in metres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":2},"promptText":"The forest loop near Mina's camp is 2 km around. What is that in meters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0036",
@@ -362,7 +362,7 @@ export const ITEMS = [
     structureType: "storyTrailMetres",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":3},"promptText":"Luca hikes a trail marked 3 km. How many metres is the trail?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":3},"promptText":"Luca hikes a trail marked 3 km. How many meters is the trail?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0037",
@@ -372,7 +372,7 @@ export const ITEMS = [
     structureType: "storyTrailMetres",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":5},"promptText":"The forest loop near Nia's camp is 5 km around. What is that in metres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":5},"promptText":"The forest loop near Nia's camp is 5 km around. What is that in meters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0038",
@@ -382,7 +382,7 @@ export const ITEMS = [
     structureType: "storyTrailMetres",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":4},"promptText":"Theo hikes a trail marked 4 km. How many metres is the trail?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":4},"promptText":"Theo hikes a trail marked 4 km. How many meters is the trail?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0039",
@@ -392,7 +392,7 @@ export const ITEMS = [
     structureType: "storyTrailMetres",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":7},"promptText":"The forest loop near Ava's camp is 7 km around. What is that in metres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":7},"promptText":"The forest loop near Ava's camp is 7 km around. What is that in meters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0040",
@@ -402,7 +402,7 @@ export const ITEMS = [
     structureType: "storyTrailMetres",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":6},"promptText":"Kai hikes a trail marked 6 km. How many metres is the trail?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":6},"promptText":"Kai hikes a trail marked 6 km. How many meters is the trail?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0041",
@@ -412,7 +412,7 @@ export const ITEMS = [
     structureType: "storyTrailMetres",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":8},"promptText":"The forest loop near Ida's camp is 8 km around. What is that in metres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":8},"promptText":"The forest loop near Ida's camp is 8 km around. What is that in meters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0042",
@@ -422,7 +422,7 @@ export const ITEMS = [
     structureType: "storyTrailMetres",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":9},"promptText":"Omar hikes a trail marked 9 km. How many metres is the trail?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":9},"promptText":"Omar hikes a trail marked 9 km. How many meters is the trail?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0043",
@@ -432,7 +432,7 @@ export const ITEMS = [
     structureType: "storyTrailMetres",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":1},"promptText":"The forest loop near June's camp is 1 km around. What is that in metres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":1},"promptText":"The forest loop near June's camp is 1 km around. What is that in meters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0044",
@@ -442,7 +442,7 @@ export const ITEMS = [
     structureType: "storyTrailMetres",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":10},"promptText":"Zoe hikes a trail marked 10 km. How many metres is the trail?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":10},"promptText":"Zoe hikes a trail marked 10 km. How many meters is the trail?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0045",
@@ -452,7 +452,7 @@ export const ITEMS = [
     structureType: "storyTrailMetres",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":12},"promptText":"The forest loop near Ben's camp is 12 km around. What is that in metres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":12},"promptText":"The forest loop near Ben's camp is 12 km around. What is that in meters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0046",
@@ -462,7 +462,7 @@ export const ITEMS = [
     structureType: "storyTrailMetres",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":11},"promptText":"Lily hikes a trail marked 11 km. How many metres is the trail?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":11},"promptText":"Lily hikes a trail marked 11 km. How many meters is the trail?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0047",
@@ -472,7 +472,7 @@ export const ITEMS = [
     structureType: "storyTrailMetres",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":15},"promptText":"The forest loop near Rosa's camp is 15 km around. What is that in metres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":15},"promptText":"The forest loop near Rosa's camp is 15 km around. What is that in meters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0048",
@@ -482,7 +482,7 @@ export const ITEMS = [
     structureType: "storyTrailMetres",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":13},"promptText":"Finn hikes a trail marked 13 km. How many metres is the trail?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":13},"promptText":"Finn hikes a trail marked 13 km. How many meters is the trail?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0049",
@@ -492,7 +492,7 @@ export const ITEMS = [
     structureType: "storyTrailMetres",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":14},"promptText":"The forest loop near Amara's camp is 14 km around. What is that in metres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":14},"promptText":"The forest loop near Amara's camp is 14 km around. What is that in meters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0050",
@@ -502,7 +502,7 @@ export const ITEMS = [
     structureType: "storyTrailMetres",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":16},"promptText":"Diego hikes a trail marked 16 km. How many metres is the trail?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":16},"promptText":"Diego hikes a trail marked 16 km. How many meters is the trail?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0051",
@@ -512,7 +512,7 @@ export const ITEMS = [
     structureType: "storyTrailMetres",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":18},"promptText":"The forest loop near Priya's camp is 18 km around. What is that in metres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18000,"display":{"measure":{"kind":"convert","pair":"km>m","amount":18},"promptText":"The forest loop near Priya's camp is 18 km around. What is that in meters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0052",
@@ -522,7 +522,7 @@ export const ITEMS = [
     structureType: "storyBannerCm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":234,"display":{"counting":{"kind":"sum","parts":[200,34]},"promptText":"Sam sews a banner 2 m 34 cm long. The shop measures in centimetres. How many centimetres long is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":234,"display":{"counting":{"kind":"sum","parts":[200,34]},"promptText":"Sam sews a banner 2 m 34 cm long. The shop measures in centimeters. How many centimeters long is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0053",
@@ -532,7 +532,7 @@ export const ITEMS = [
     structureType: "storyBannerCm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":312,"display":{"counting":{"kind":"sum","parts":[300,12]},"promptText":"A parade streamer of Mina's measures 3 m 12 cm. How many centimetres is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":312,"display":{"counting":{"kind":"sum","parts":[300,12]},"promptText":"A parade streamer of Mina's measures 3 m 12 cm. How many centimeters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0054",
@@ -542,7 +542,7 @@ export const ITEMS = [
     structureType: "storyBannerCm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":148,"display":{"counting":{"kind":"sum","parts":[100,48]},"promptText":"Luca sews a banner 1 m 48 cm long. The shop measures in centimetres. How many centimetres long is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":148,"display":{"counting":{"kind":"sum","parts":[100,48]},"promptText":"Luca sews a banner 1 m 48 cm long. The shop measures in centimeters. How many centimeters long is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0055",
@@ -552,7 +552,7 @@ export const ITEMS = [
     structureType: "storyBannerCm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":421,"display":{"counting":{"kind":"sum","parts":[400,21]},"promptText":"A parade streamer of Nia's measures 4 m 21 cm. How many centimetres is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":421,"display":{"counting":{"kind":"sum","parts":[400,21]},"promptText":"A parade streamer of Nia's measures 4 m 21 cm. How many centimeters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0056",
@@ -562,7 +562,7 @@ export const ITEMS = [
     structureType: "storyBannerCm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":255,"display":{"counting":{"kind":"sum","parts":[200,55]},"promptText":"Theo sews a banner 2 m 55 cm long. The shop measures in centimetres. How many centimetres long is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":255,"display":{"counting":{"kind":"sum","parts":[200,55]},"promptText":"Theo sews a banner 2 m 55 cm long. The shop measures in centimeters. How many centimeters long is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0057",
@@ -572,7 +572,7 @@ export const ITEMS = [
     structureType: "storyBannerCm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":513,"display":{"counting":{"kind":"sum","parts":[500,13]},"promptText":"A parade streamer of Ava's measures 5 m 13 cm. How many centimetres is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":513,"display":{"counting":{"kind":"sum","parts":[500,13]},"promptText":"A parade streamer of Ava's measures 5 m 13 cm. How many centimeters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0058",
@@ -582,7 +582,7 @@ export const ITEMS = [
     structureType: "storyBannerCm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":337,"display":{"counting":{"kind":"sum","parts":[300,37]},"promptText":"Kai sews a banner 3 m 37 cm long. The shop measures in centimetres. How many centimetres long is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":337,"display":{"counting":{"kind":"sum","parts":[300,37]},"promptText":"Kai sews a banner 3 m 37 cm long. The shop measures in centimeters. How many centimeters long is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0059",
@@ -592,7 +592,7 @@ export const ITEMS = [
     structureType: "storyBannerCm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":164,"display":{"counting":{"kind":"sum","parts":[100,64]},"promptText":"A parade streamer of Ida's measures 1 m 64 cm. How many centimetres is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":164,"display":{"counting":{"kind":"sum","parts":[100,64]},"promptText":"A parade streamer of Ida's measures 1 m 64 cm. How many centimeters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0060",
@@ -602,7 +602,7 @@ export const ITEMS = [
     structureType: "storyBannerCm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":449,"display":{"counting":{"kind":"sum","parts":[400,49]},"promptText":"Omar sews a banner 4 m 49 cm long. The shop measures in centimetres. How many centimetres long is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":449,"display":{"counting":{"kind":"sum","parts":[400,49]},"promptText":"Omar sews a banner 4 m 49 cm long. The shop measures in centimeters. How many centimeters long is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0061",
@@ -612,7 +612,7 @@ export const ITEMS = [
     structureType: "storyBannerCm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"counting":{"kind":"sum","parts":[200,70]},"promptText":"A parade streamer of June's measures 2 m 70 cm. How many centimetres is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"counting":{"kind":"sum","parts":[200,70]},"promptText":"A parade streamer of June's measures 2 m 70 cm. How many centimeters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0062",
@@ -622,7 +622,7 @@ export const ITEMS = [
     structureType: "storyBannerCm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":526,"display":{"counting":{"kind":"sum","parts":[500,26]},"promptText":"Zoe sews a banner 5 m 26 cm long. The shop measures in centimetres. How many centimetres long is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":526,"display":{"counting":{"kind":"sum","parts":[500,26]},"promptText":"Zoe sews a banner 5 m 26 cm long. The shop measures in centimeters. How many centimeters long is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0063",
@@ -632,7 +632,7 @@ export const ITEMS = [
     structureType: "storyBannerCm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":381,"display":{"counting":{"kind":"sum","parts":[300,81]},"promptText":"A parade streamer of Ben's measures 3 m 81 cm. How many centimetres is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":381,"display":{"counting":{"kind":"sum","parts":[300,81]},"promptText":"A parade streamer of Ben's measures 3 m 81 cm. How many centimeters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0064",
@@ -642,7 +642,7 @@ export const ITEMS = [
     structureType: "storyBannerCm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":614,"display":{"counting":{"kind":"sum","parts":[600,14]},"promptText":"Lily sews a banner 6 m 14 cm long. The shop measures in centimetres. How many centimetres long is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":614,"display":{"counting":{"kind":"sum","parts":[600,14]},"promptText":"Lily sews a banner 6 m 14 cm long. The shop measures in centimeters. How many centimeters long is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0065",
@@ -652,7 +652,7 @@ export const ITEMS = [
     structureType: "storyBannerCm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":193,"display":{"counting":{"kind":"sum","parts":[100,93]},"promptText":"A parade streamer of Rosa's measures 1 m 93 cm. How many centimetres is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":193,"display":{"counting":{"kind":"sum","parts":[100,93]},"promptText":"A parade streamer of Rosa's measures 1 m 93 cm. How many centimeters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0066",
@@ -662,7 +662,7 @@ export const ITEMS = [
     structureType: "storyBannerCm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":438,"display":{"counting":{"kind":"sum","parts":[400,38]},"promptText":"Finn sews a banner 4 m 38 cm long. The shop measures in centimetres. How many centimetres long is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":438,"display":{"counting":{"kind":"sum","parts":[400,38]},"promptText":"Finn sews a banner 4 m 38 cm long. The shop measures in centimeters. How many centimeters long is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0067",
@@ -672,7 +672,7 @@ export const ITEMS = [
     structureType: "storyBannerCm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":226,"display":{"counting":{"kind":"sum","parts":[200,26]},"promptText":"A parade streamer of Amara's measures 2 m 26 cm. How many centimetres is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":226,"display":{"counting":{"kind":"sum","parts":[200,26]},"promptText":"A parade streamer of Amara's measures 2 m 26 cm. How many centimeters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0068",
@@ -682,7 +682,7 @@ export const ITEMS = [
     structureType: "storyBannerCm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":641,"display":{"counting":{"kind":"sum","parts":[600,41]},"promptText":"Diego sews a banner 6 m 41 cm long. The shop measures in centimetres. How many centimetres long is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":641,"display":{"counting":{"kind":"sum","parts":[600,41]},"promptText":"Diego sews a banner 6 m 41 cm long. The shop measures in centimeters. How many centimeters long is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0069",
@@ -692,7 +692,7 @@ export const ITEMS = [
     structureType: "storyRaceKm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":2000},"promptText":"The charity walk Mina joins is 2000 m long. How many kilometres is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":2000},"promptText":"The charity walk Mina joins is 2000 m long. How many kilometers is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0070",
@@ -702,7 +702,7 @@ export const ITEMS = [
     structureType: "storyRaceKm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":3000},"promptText":"Luca's relay covers 3000 m in all. How many kilometres is the relay?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":3000},"promptText":"Luca's relay covers 3000 m in all. How many kilometers is the relay?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0071",
@@ -712,7 +712,7 @@ export const ITEMS = [
     structureType: "storyRaceKm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":5000},"promptText":"The charity walk Nia joins is 5000 m long. How many kilometres is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":5000},"promptText":"The charity walk Nia joins is 5000 m long. How many kilometers is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0072",
@@ -722,7 +722,7 @@ export const ITEMS = [
     structureType: "storyRaceKm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":4000},"promptText":"Theo's relay covers 4000 m in all. How many kilometres is the relay?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":4000},"promptText":"Theo's relay covers 4000 m in all. How many kilometers is the relay?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0073",
@@ -732,7 +732,7 @@ export const ITEMS = [
     structureType: "storyRaceKm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":7000},"promptText":"The charity walk Ava joins is 7000 m long. How many kilometres is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":7000},"promptText":"The charity walk Ava joins is 7000 m long. How many kilometers is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0074",
@@ -742,7 +742,7 @@ export const ITEMS = [
     structureType: "storyRaceKm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":6000},"promptText":"Kai's relay covers 6000 m in all. How many kilometres is the relay?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":6000},"promptText":"Kai's relay covers 6000 m in all. How many kilometers is the relay?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0075",
@@ -752,7 +752,7 @@ export const ITEMS = [
     structureType: "storyRaceKm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":8000},"promptText":"The charity walk Ida joins is 8000 m long. How many kilometres is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":8000},"promptText":"The charity walk Ida joins is 8000 m long. How many kilometers is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0076",
@@ -762,7 +762,7 @@ export const ITEMS = [
     structureType: "storyRaceKm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":9000},"promptText":"Omar's relay covers 9000 m in all. How many kilometres is the relay?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":9000},"promptText":"Omar's relay covers 9000 m in all. How many kilometers is the relay?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0077",
@@ -772,7 +772,7 @@ export const ITEMS = [
     structureType: "storyRaceKm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":1000},"promptText":"The charity walk June joins is 1000 m long. How many kilometres is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":1000},"promptText":"The charity walk June joins is 1000 m long. How many kilometers is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0078",
@@ -782,7 +782,7 @@ export const ITEMS = [
     structureType: "storyRaceKm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":10000},"promptText":"Zoe's relay covers 10000 m in all. How many kilometres is the relay?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":10000},"promptText":"Zoe's relay covers 10000 m in all. How many kilometers is the relay?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0079",
@@ -792,7 +792,7 @@ export const ITEMS = [
     structureType: "storyRaceKm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":12000},"promptText":"The charity walk Ben joins is 12000 m long. How many kilometres is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":12000},"promptText":"The charity walk Ben joins is 12000 m long. How many kilometers is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0080",
@@ -802,7 +802,7 @@ export const ITEMS = [
     structureType: "storyRaceKm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":11000},"promptText":"Lily's relay covers 11000 m in all. How many kilometres is the relay?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":11000},"promptText":"Lily's relay covers 11000 m in all. How many kilometers is the relay?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0081",
@@ -812,7 +812,7 @@ export const ITEMS = [
     structureType: "storyRaceKm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":15000},"promptText":"The charity walk Rosa joins is 15000 m long. How many kilometres is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":15000},"promptText":"The charity walk Rosa joins is 15000 m long. How many kilometers is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0082",
@@ -822,7 +822,7 @@ export const ITEMS = [
     structureType: "storyRaceKm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":13000},"promptText":"Finn's relay covers 13000 m in all. How many kilometres is the relay?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":13000},"promptText":"Finn's relay covers 13000 m in all. How many kilometers is the relay?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0083",
@@ -832,7 +832,7 @@ export const ITEMS = [
     structureType: "storyRaceKm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":14000},"promptText":"The charity walk Amara joins is 14000 m long. How many kilometres is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":14000},"promptText":"The charity walk Amara joins is 14000 m long. How many kilometers is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0084",
@@ -842,7 +842,7 @@ export const ITEMS = [
     structureType: "storyRaceKm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":16000},"promptText":"Diego's relay covers 16000 m in all. How many kilometres is the relay?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":16000},"promptText":"Diego's relay covers 16000 m in all. How many kilometers is the relay?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0085",
@@ -852,7 +852,7 @@ export const ITEMS = [
     structureType: "storyRaceKm",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":18000},"promptText":"The charity walk Priya joins is 18000 m long. How many kilometres is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"measure":{"kind":"convertUp","pair":"km>m","total":18000},"promptText":"The charity walk Priya joins is 18000 m long. How many kilometers is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0086",
@@ -862,7 +862,7 @@ export const ITEMS = [
     structureType: "storyStripJoin",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[7,6]},"promptText":"Luca glues a 7 cm strip of ribbon to a 6 cm strip for a card. How many centimetres of ribbon is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[7,6]},"promptText":"Luca glues a 7 cm strip of ribbon to a 6 cm strip for a card. How many centimeters of ribbon is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0087",
@@ -872,7 +872,7 @@ export const ITEMS = [
     structureType: "storyStripJoin",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[8,9]},"promptText":"For the art wall, Nia lines up 8 cm of yarn and then 9 cm more. How long is the yarn line in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[8,9]},"promptText":"For the art wall, Nia lines up 8 cm of yarn and then 9 cm more. How long is the yarn line in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0088",
@@ -882,7 +882,7 @@ export const ITEMS = [
     structureType: "storyStripJoin",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[5,12]},"promptText":"Theo glues a 5 cm strip of twine to a 12 cm strip for a card. How many centimetres of twine is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[5,12]},"promptText":"Theo glues a 5 cm strip of twine to a 12 cm strip for a card. How many centimeters of twine is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0089",
@@ -892,7 +892,7 @@ export const ITEMS = [
     structureType: "storyStripJoin",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[6,11]},"promptText":"For the art wall, Ava lines up 6 cm of border tape and then 11 cm more. How long is the border tape line in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[6,11]},"promptText":"For the art wall, Ava lines up 6 cm of border tape and then 11 cm more. How long is the border tape line in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0090",
@@ -902,7 +902,7 @@ export const ITEMS = [
     structureType: "storyStripJoin",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[9,4]},"promptText":"Kai glues a 9 cm strip of ribbon to a 4 cm strip for a card. How many centimetres of ribbon is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[9,4]},"promptText":"Kai glues a 9 cm strip of ribbon to a 4 cm strip for a card. How many centimeters of ribbon is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0091",
@@ -912,7 +912,7 @@ export const ITEMS = [
     structureType: "storyStripJoin",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[12,7]},"promptText":"For the art wall, Ida lines up 12 cm of yarn and then 7 cm more. How long is the yarn line in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[12,7]},"promptText":"For the art wall, Ida lines up 12 cm of yarn and then 7 cm more. How long is the yarn line in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0092",
@@ -922,7 +922,7 @@ export const ITEMS = [
     structureType: "storyStripJoin",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[3,14]},"promptText":"Omar glues a 3 cm strip of twine to a 14 cm strip for a card. How many centimetres of twine is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[3,14]},"promptText":"Omar glues a 3 cm strip of twine to a 14 cm strip for a card. How many centimeters of twine is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0093",
@@ -932,7 +932,7 @@ export const ITEMS = [
     structureType: "storyStripJoin",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[8,5]},"promptText":"For the art wall, June lines up 8 cm of border tape and then 5 cm more. How long is the border tape line in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[8,5]},"promptText":"For the art wall, June lines up 8 cm of border tape and then 5 cm more. How long is the border tape line in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0094",
@@ -942,7 +942,7 @@ export const ITEMS = [
     structureType: "storyStripJoin",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[11,6]},"promptText":"Zoe glues a 11 cm strip of ribbon to a 6 cm strip for a card. How many centimetres of ribbon is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[11,6]},"promptText":"Zoe glues an 11 cm strip of ribbon to a 6 cm strip for a card. How many centimeters of ribbon is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0095",
@@ -952,7 +952,7 @@ export const ITEMS = [
     structureType: "storyStripJoin",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[4,13]},"promptText":"For the art wall, Ben lines up 4 cm of yarn and then 13 cm more. How long is the yarn line in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[4,13]},"promptText":"For the art wall, Ben lines up 4 cm of yarn and then 13 cm more. How long is the yarn line in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0096",
@@ -962,7 +962,7 @@ export const ITEMS = [
     structureType: "storyStripJoin",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[7,9]},"promptText":"Lily glues a 7 cm strip of twine to a 9 cm strip for a card. How many centimetres of twine is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[7,9]},"promptText":"Lily glues a 7 cm strip of twine to a 9 cm strip for a card. How many centimeters of twine is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0097",
@@ -972,7 +972,7 @@ export const ITEMS = [
     structureType: "storyStripJoin",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[15,3]},"promptText":"For the art wall, Rosa lines up 15 cm of border tape and then 3 cm more. How long is the border tape line in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[15,3]},"promptText":"For the art wall, Rosa lines up 15 cm of border tape and then 3 cm more. How long is the border tape line in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0098",
@@ -982,7 +982,7 @@ export const ITEMS = [
     structureType: "storyStripJoin",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[6,8]},"promptText":"Finn glues a 6 cm strip of ribbon to a 8 cm strip for a card. How many centimetres of ribbon is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[6,8]},"promptText":"Finn glues a 6 cm strip of ribbon to an 8 cm strip for a card. How many centimeters of ribbon is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0099",
@@ -992,7 +992,7 @@ export const ITEMS = [
     structureType: "storyStripJoin",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[9,8]},"promptText":"For the art wall, Amara lines up 9 cm of yarn and then 8 cm more. How long is the yarn line in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[9,8]},"promptText":"For the art wall, Amara lines up 9 cm of yarn and then 8 cm more. How long is the yarn line in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0100",
@@ -1002,7 +1002,7 @@ export const ITEMS = [
     structureType: "storyStripJoin",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[12,5]},"promptText":"Diego glues a 12 cm strip of twine to a 5 cm strip for a card. How many centimetres of twine is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[12,5]},"promptText":"Diego glues a 12 cm strip of twine to a 5 cm strip for a card. How many centimeters of twine is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0101",
@@ -1012,7 +1012,7 @@ export const ITEMS = [
     structureType: "storyStripJoin",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[2,16]},"promptText":"For the art wall, Priya lines up 2 cm of border tape and then 16 cm more. How long is the border tape line in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[2,16]},"promptText":"For the art wall, Priya lines up 2 cm of border tape and then 16 cm more. How long is the border tape line in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0102",
@@ -1022,7 +1022,7 @@ export const ITEMS = [
     structureType: "storyStripJoin",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[10,7]},"promptText":"Leo glues a 10 cm strip of ribbon to a 7 cm strip for a card. How many centimetres of ribbon is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[10,7]},"promptText":"Leo glues a 10 cm strip of ribbon to a 7 cm strip for a card. How many centimeters of ribbon is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0103",
@@ -1042,7 +1042,7 @@ export const ITEMS = [
     structureType: "storySnip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":9,"kind":"countBack","start":18},"promptText":"Luca snips 9 cm off 18 cm of yarn. How many centimetres of yarn are left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":9,"kind":"countBack","start":18},"promptText":"Luca snips 9 cm off 18 cm of yarn. How many centimeters of yarn are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0105",
@@ -1062,7 +1062,7 @@ export const ITEMS = [
     structureType: "storySnip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":11,"kind":"countBack","start":20},"promptText":"Theo snips 11 cm off 20 cm of border tape. How many centimetres of border tape are left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":11,"kind":"countBack","start":20},"promptText":"Theo snips 11 cm off 20 cm of border tape. How many centimeters of border tape are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0107",
@@ -1082,7 +1082,7 @@ export const ITEMS = [
     structureType: "storySnip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"back":6,"kind":"countBack","start":14},"promptText":"Kai snips 6 cm off 14 cm of yarn. How many centimetres of yarn are left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"back":6,"kind":"countBack","start":14},"promptText":"Kai snips 6 cm off 14 cm of yarn. How many centimeters of yarn are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0109",
@@ -1102,7 +1102,7 @@ export const ITEMS = [
     structureType: "storySnip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":8,"kind":"countBack","start":17},"promptText":"Omar snips 8 cm off 17 cm of border tape. How many centimetres of border tape are left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":8,"kind":"countBack","start":17},"promptText":"Omar snips 8 cm off 17 cm of border tape. How many centimeters of border tape are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0111",
@@ -1122,7 +1122,7 @@ export const ITEMS = [
     structureType: "storySnip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":2,"kind":"countBack","start":11},"promptText":"Zoe snips 2 cm off 11 cm of yarn. How many centimetres of yarn are left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":2,"kind":"countBack","start":11},"promptText":"Zoe snips 2 cm off 11 cm of yarn. How many centimeters of yarn are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0113",
@@ -1142,7 +1142,7 @@ export const ITEMS = [
     structureType: "storySnip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"back":13,"kind":"countBack","start":18},"promptText":"Lily snips 13 cm off 18 cm of border tape. How many centimetres of border tape are left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"back":13,"kind":"countBack","start":18},"promptText":"Lily snips 13 cm off 18 cm of border tape. How many centimeters of border tape are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0115",
@@ -1162,7 +1162,7 @@ export const ITEMS = [
     structureType: "storySnip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"back":4,"kind":"countBack","start":15},"promptText":"Finn snips 4 cm off 15 cm of yarn. How many centimetres of yarn are left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"back":4,"kind":"countBack","start":15},"promptText":"Finn snips 4 cm off 15 cm of yarn. How many centimeters of yarn are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0117",
@@ -1182,7 +1182,7 @@ export const ITEMS = [
     structureType: "storySnip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"back":7,"kind":"countBack","start":12},"promptText":"Diego snips 7 cm off 12 cm of border tape. How many centimetres of border tape are left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"back":7,"kind":"countBack","start":12},"promptText":"Diego snips 7 cm off 12 cm of border tape. How many centimeters of border tape are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0119",
@@ -1202,7 +1202,7 @@ export const ITEMS = [
     structureType: "storyWallCm",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":300,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":3},"promptText":"Sam paints a wall 3 m wide. The tape measure reads centimetres. How many centimetres wide is the wall?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":300,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":3},"promptText":"Sam paints a wall 3 m wide. The tape measure reads centimeters. How many centimeters wide is the wall?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0121",
@@ -1212,7 +1212,7 @@ export const ITEMS = [
     structureType: "storyWallCm",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":500,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":5},"promptText":"A mural 5 m across gets a border from Mina. How many centimetres across is the mural?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":500,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":5},"promptText":"A mural 5 m across gets a border from Mina. How many centimeters across is the mural?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0122",
@@ -1222,7 +1222,7 @@ export const ITEMS = [
     structureType: "storyWallCm",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":2},"promptText":"Luca paints a wall 2 m wide. The tape measure reads centimetres. How many centimetres wide is the wall?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":2},"promptText":"Luca paints a wall 2 m wide. The tape measure reads centimeters. How many centimeters wide is the wall?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0123",
@@ -1232,7 +1232,7 @@ export const ITEMS = [
     structureType: "storyWallCm",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":700,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":7},"promptText":"A mural 7 m across gets a border from Nia. How many centimetres across is the mural?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":700,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":7},"promptText":"A mural 7 m across gets a border from Nia. How many centimeters across is the mural?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0124",
@@ -1242,7 +1242,7 @@ export const ITEMS = [
     structureType: "storyWallCm",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":400,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":4},"promptText":"Theo paints a wall 4 m wide. The tape measure reads centimetres. How many centimetres wide is the wall?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":400,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":4},"promptText":"Theo paints a wall 4 m wide. The tape measure reads centimeters. How many centimeters wide is the wall?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0125",
@@ -1252,7 +1252,7 @@ export const ITEMS = [
     structureType: "storyWallCm",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":600,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":6},"promptText":"A mural 6 m across gets a border from Ava. How many centimetres across is the mural?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":600,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":6},"promptText":"A mural 6 m across gets a border from Ava. How many centimeters across is the mural?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0126",
@@ -1262,7 +1262,7 @@ export const ITEMS = [
     structureType: "storyWallCm",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":900,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":9},"promptText":"Kai paints a wall 9 m wide. The tape measure reads centimetres. How many centimetres wide is the wall?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":900,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":9},"promptText":"Kai paints a wall 9 m wide. The tape measure reads centimeters. How many centimeters wide is the wall?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0127",
@@ -1272,7 +1272,7 @@ export const ITEMS = [
     structureType: "storyWallCm",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":800,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":8},"promptText":"A mural 8 m across gets a border from Ida. How many centimetres across is the mural?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":800,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":8},"promptText":"A mural 8 m across gets a border from Ida. How many centimeters across is the mural?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0128",
@@ -1282,7 +1282,7 @@ export const ITEMS = [
     structureType: "storyWallCm",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1000,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":10},"promptText":"Omar paints a wall 10 m wide. The tape measure reads centimetres. How many centimetres wide is the wall?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1000,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":10},"promptText":"Omar paints a wall 10 m wide. The tape measure reads centimeters. How many centimeters wide is the wall?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0129",
@@ -1292,7 +1292,7 @@ export const ITEMS = [
     structureType: "storyWallCm",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1200,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":12},"promptText":"A mural 12 m across gets a border from June. How many centimetres across is the mural?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1200,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":12},"promptText":"A mural 12 m across gets a border from June. How many centimeters across is the mural?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0130",
@@ -1302,7 +1302,7 @@ export const ITEMS = [
     structureType: "storyWallCm",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1100,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":11},"promptText":"Zoe paints a wall 11 m wide. The tape measure reads centimetres. How many centimetres wide is the wall?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1100,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":11},"promptText":"Zoe paints a wall 11 m wide. The tape measure reads centimeters. How many centimeters wide is the wall?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0131",
@@ -1312,7 +1312,7 @@ export const ITEMS = [
     structureType: "storyWallCm",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1300,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":13},"promptText":"A mural 13 m across gets a border from Ben. How many centimetres across is the mural?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1300,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":13},"promptText":"A mural 13 m across gets a border from Ben. How many centimeters across is the mural?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0132",
@@ -1322,7 +1322,7 @@ export const ITEMS = [
     structureType: "storyWallCm",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1500,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":15},"promptText":"Lily paints a wall 15 m wide. The tape measure reads centimetres. How many centimetres wide is the wall?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1500,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":15},"promptText":"Lily paints a wall 15 m wide. The tape measure reads centimeters. How many centimeters wide is the wall?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0133",
@@ -1332,7 +1332,7 @@ export const ITEMS = [
     structureType: "storyWallCm",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1400,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":14},"promptText":"A mural 14 m across gets a border from Rosa. How many centimetres across is the mural?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1400,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":14},"promptText":"A mural 14 m across gets a border from Rosa. How many centimeters across is the mural?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0134",
@@ -1342,7 +1342,7 @@ export const ITEMS = [
     structureType: "storyWallCm",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1600,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":16},"promptText":"Finn paints a wall 16 m wide. The tape measure reads centimetres. How many centimetres wide is the wall?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1600,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":16},"promptText":"Finn paints a wall 16 m wide. The tape measure reads centimeters. How many centimeters wide is the wall?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0135",
@@ -1352,7 +1352,7 @@ export const ITEMS = [
     structureType: "storyWallCm",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1700,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":17},"promptText":"A mural 17 m across gets a border from Amara. How many centimetres across is the mural?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1700,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":17},"promptText":"A mural 17 m across gets a border from Amara. How many centimeters across is the mural?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0136",
@@ -1362,7 +1362,7 @@ export const ITEMS = [
     structureType: "storyWallCm",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1800,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":18},"promptText":"Diego paints a wall 18 m wide. The tape measure reads centimetres. How many centimetres wide is the wall?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1800,"display":{"measure":{"kind":"convert","pair":"m>cm","amount":18},"promptText":"Diego paints a wall 18 m wide. The tape measure reads centimeters. How many centimeters wide is the wall?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0137",
@@ -1542,7 +1542,7 @@ export const ITEMS = [
     structureType: "storySoupML",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":2},"promptText":"A lemonade cooler of 2 L stands at Mina's stall. How many millilitres is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":2},"promptText":"A lemonade cooler of 2 L stands at Mina's stall. How many milliliters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0155",
@@ -1552,7 +1552,7 @@ export const ITEMS = [
     structureType: "storySoupML",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":3},"promptText":"Luca's soup pot holds 3 L. The ladle chart uses millilitres. How many millilitres does the pot hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":3},"promptText":"Luca's soup pot holds 3 L. The ladle chart uses milliliters. How many milliliters does the pot hold?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0156",
@@ -1562,7 +1562,7 @@ export const ITEMS = [
     structureType: "storySoupML",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":5},"promptText":"A lemonade cooler of 5 L stands at Nia's stall. How many millilitres is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":5},"promptText":"A lemonade cooler of 5 L stands at Nia's stall. How many milliliters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0157",
@@ -1572,7 +1572,7 @@ export const ITEMS = [
     structureType: "storySoupML",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":4},"promptText":"Theo's soup pot holds 4 L. The ladle chart uses millilitres. How many millilitres does the pot hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":4},"promptText":"Theo's soup pot holds 4 L. The ladle chart uses milliliters. How many milliliters does the pot hold?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0158",
@@ -1582,7 +1582,7 @@ export const ITEMS = [
     structureType: "storySoupML",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":7},"promptText":"A lemonade cooler of 7 L stands at Ava's stall. How many millilitres is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":7},"promptText":"A lemonade cooler of 7 L stands at Ava's stall. How many milliliters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0159",
@@ -1592,7 +1592,7 @@ export const ITEMS = [
     structureType: "storySoupML",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":6},"promptText":"Kai's soup pot holds 6 L. The ladle chart uses millilitres. How many millilitres does the pot hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":6},"promptText":"Kai's soup pot holds 6 L. The ladle chart uses milliliters. How many milliliters does the pot hold?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0160",
@@ -1602,7 +1602,7 @@ export const ITEMS = [
     structureType: "storySoupML",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":8},"promptText":"A lemonade cooler of 8 L stands at Ida's stall. How many millilitres is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":8},"promptText":"A lemonade cooler of 8 L stands at Ida's stall. How many milliliters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0161",
@@ -1612,7 +1612,7 @@ export const ITEMS = [
     structureType: "storySoupML",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":9},"promptText":"Omar's soup pot holds 9 L. The ladle chart uses millilitres. How many millilitres does the pot hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":9},"promptText":"Omar's soup pot holds 9 L. The ladle chart uses milliliters. How many milliliters does the pot hold?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0162",
@@ -1622,7 +1622,7 @@ export const ITEMS = [
     structureType: "storySoupML",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":1},"promptText":"A lemonade cooler of 1 L stands at June's stall. How many millilitres is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":1},"promptText":"A lemonade cooler of 1 L stands at June's stall. How many milliliters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0163",
@@ -1632,7 +1632,7 @@ export const ITEMS = [
     structureType: "storySoupML",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":10},"promptText":"Zoe's soup pot holds 10 L. The ladle chart uses millilitres. How many millilitres does the pot hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":10},"promptText":"Zoe's soup pot holds 10 L. The ladle chart uses milliliters. How many milliliters does the pot hold?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0164",
@@ -1642,7 +1642,7 @@ export const ITEMS = [
     structureType: "storySoupML",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":12},"promptText":"A lemonade cooler of 12 L stands at Ben's stall. How many millilitres is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":12},"promptText":"A lemonade cooler of 12 L stands at Ben's stall. How many milliliters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0165",
@@ -1652,7 +1652,7 @@ export const ITEMS = [
     structureType: "storySoupML",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":11},"promptText":"Lily's soup pot holds 11 L. The ladle chart uses millilitres. How many millilitres does the pot hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":11},"promptText":"Lily's soup pot holds 11 L. The ladle chart uses milliliters. How many milliliters does the pot hold?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0166",
@@ -1662,7 +1662,7 @@ export const ITEMS = [
     structureType: "storySoupML",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":15},"promptText":"A lemonade cooler of 15 L stands at Rosa's stall. How many millilitres is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":15},"promptText":"A lemonade cooler of 15 L stands at Rosa's stall. How many milliliters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0167",
@@ -1672,7 +1672,7 @@ export const ITEMS = [
     structureType: "storySoupML",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":13},"promptText":"Finn's soup pot holds 13 L. The ladle chart uses millilitres. How many millilitres does the pot hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":13},"promptText":"Finn's soup pot holds 13 L. The ladle chart uses milliliters. How many milliliters does the pot hold?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0168",
@@ -1682,7 +1682,7 @@ export const ITEMS = [
     structureType: "storySoupML",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":14},"promptText":"A lemonade cooler of 14 L stands at Amara's stall. How many millilitres is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":14},"promptText":"A lemonade cooler of 14 L stands at Amara's stall. How many milliliters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0169",
@@ -1692,7 +1692,7 @@ export const ITEMS = [
     structureType: "storySoupML",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":16},"promptText":"Diego's soup pot holds 16 L. The ladle chart uses millilitres. How many millilitres does the pot hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":16},"promptText":"Diego's soup pot holds 16 L. The ladle chart uses milliliters. How many milliliters does the pot hold?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0170",
@@ -1702,7 +1702,7 @@ export const ITEMS = [
     structureType: "storySoupML",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":18},"promptText":"A lemonade cooler of 18 L stands at Priya's stall. How many millilitres is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18000,"display":{"measure":{"kind":"convert","pair":"L>mL","amount":18},"promptText":"A lemonade cooler of 18 L stands at Priya's stall. How many milliliters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0171",
@@ -1882,7 +1882,7 @@ export const ITEMS = [
     structureType: "storyJuiceMix_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":630,"display":{"counting":{"kind":"sum","parts":[250,380]},"promptText":"Into the punch bowl Mina pours 250 mL and then 380 mL. What volume in millilitres is in the bowl?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":630,"display":{"counting":{"kind":"sum","parts":[250,380]},"promptText":"Into the punch bowl Mina pours 250 mL and then 380 mL. What volume in milliliters is in the bowl?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0189",
@@ -1892,7 +1892,7 @@ export const ITEMS = [
     structureType: "storyJuiceMix_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":615,"display":{"counting":{"kind":"sum","parts":[340,275]},"promptText":"Luca mixes 340 mL of mango juice with 275 mL of orange juice. How many millilitres of punch is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":615,"display":{"counting":{"kind":"sum","parts":[340,275]},"promptText":"Luca mixes 340 mL of mango juice with 275 mL of orange juice. How many milliliters of punch is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0190",
@@ -1902,7 +1902,7 @@ export const ITEMS = [
     structureType: "storyJuiceMix_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":610,"display":{"counting":{"kind":"sum","parts":[420,190]},"promptText":"Into the punch bowl Nia pours 420 mL and then 190 mL. What volume in millilitres is in the bowl?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":610,"display":{"counting":{"kind":"sum","parts":[420,190]},"promptText":"Into the punch bowl Nia pours 420 mL and then 190 mL. What volume in milliliters is in the bowl?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0191",
@@ -1912,7 +1912,7 @@ export const ITEMS = [
     structureType: "storyJuiceMix_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":640,"display":{"counting":{"kind":"sum","parts":[175,465]},"promptText":"Theo mixes 175 mL of mango juice with 465 mL of orange juice. How many millilitres of punch is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":640,"display":{"counting":{"kind":"sum","parts":[175,465]},"promptText":"Theo mixes 175 mL of mango juice with 465 mL of orange juice. How many milliliters of punch is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0192",
@@ -1922,7 +1922,7 @@ export const ITEMS = [
     structureType: "storyJuiceMix_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":615,"display":{"counting":{"kind":"sum","parts":[390,225]},"promptText":"Into the punch bowl Ava pours 390 mL and then 225 mL. What volume in millilitres is in the bowl?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":615,"display":{"counting":{"kind":"sum","parts":[390,225]},"promptText":"Into the punch bowl Ava pours 390 mL and then 225 mL. What volume in milliliters is in the bowl?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0193",
@@ -1932,7 +1932,7 @@ export const ITEMS = [
     structureType: "storyJuiceMix_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":635,"display":{"counting":{"kind":"sum","parts":[280,355]},"promptText":"Kai mixes 280 mL of mango juice with 355 mL of orange juice. How many millilitres of punch is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":635,"display":{"counting":{"kind":"sum","parts":[280,355]},"promptText":"Kai mixes 280 mL of mango juice with 355 mL of orange juice. How many milliliters of punch is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0194",
@@ -1942,7 +1942,7 @@ export const ITEMS = [
     structureType: "storyJuiceMix_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":605,"display":{"counting":{"kind":"sum","parts":[460,145]},"promptText":"Into the punch bowl Ida pours 460 mL and then 145 mL. What volume in millilitres is in the bowl?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":605,"display":{"counting":{"kind":"sum","parts":[460,145]},"promptText":"Into the punch bowl Ida pours 460 mL and then 145 mL. What volume in milliliters is in the bowl?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0195",
@@ -1952,7 +1952,7 @@ export const ITEMS = [
     structureType: "storyJuiceMix_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":705,"display":{"counting":{"kind":"sum","parts":[215,490]},"promptText":"Omar mixes 215 mL of mango juice with 490 mL of orange juice. How many millilitres of punch is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":705,"display":{"counting":{"kind":"sum","parts":[215,490]},"promptText":"Omar mixes 215 mL of mango juice with 490 mL of orange juice. How many milliliters of punch is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0196",
@@ -1962,7 +1962,7 @@ export const ITEMS = [
     structureType: "storyJuiceMix_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":595,"display":{"counting":{"kind":"sum","parts":[330,265]},"promptText":"Into the punch bowl June pours 330 mL and then 265 mL. What volume in millilitres is in the bowl?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":595,"display":{"counting":{"kind":"sum","parts":[330,265]},"promptText":"Into the punch bowl June pours 330 mL and then 265 mL. What volume in milliliters is in the bowl?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0197",
@@ -1972,7 +1972,7 @@ export const ITEMS = [
     structureType: "storyJuiceMix_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":625,"display":{"counting":{"kind":"sum","parts":[185,440]},"promptText":"Zoe mixes 185 mL of mango juice with 440 mL of orange juice. How many millilitres of punch is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":625,"display":{"counting":{"kind":"sum","parts":[185,440]},"promptText":"Zoe mixes 185 mL of mango juice with 440 mL of orange juice. How many milliliters of punch is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0198",
@@ -1982,7 +1982,7 @@ export const ITEMS = [
     structureType: "storyJuiceMix_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":615,"display":{"counting":{"kind":"sum","parts":[405,210]},"promptText":"Into the punch bowl Ben pours 405 mL and then 210 mL. What volume in millilitres is in the bowl?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":615,"display":{"counting":{"kind":"sum","parts":[405,210]},"promptText":"Into the punch bowl Ben pours 405 mL and then 210 mL. What volume in milliliters is in the bowl?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0199",
@@ -1992,7 +1992,7 @@ export const ITEMS = [
     structureType: "storyJuiceMix_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":665,"display":{"counting":{"kind":"sum","parts":[295,370]},"promptText":"Lily mixes 295 mL of mango juice with 370 mL of orange juice. How many millilitres of punch is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":665,"display":{"counting":{"kind":"sum","parts":[295,370]},"promptText":"Lily mixes 295 mL of mango juice with 370 mL of orange juice. How many milliliters of punch is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0200",
@@ -2002,7 +2002,7 @@ export const ITEMS = [
     structureType: "storyJuiceMix_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":605,"display":{"counting":{"kind":"sum","parts":[475,130]},"promptText":"Into the punch bowl Rosa pours 475 mL and then 130 mL. What volume in millilitres is in the bowl?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":605,"display":{"counting":{"kind":"sum","parts":[475,130]},"promptText":"Into the punch bowl Rosa pours 475 mL and then 130 mL. What volume in milliliters is in the bowl?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0201",
@@ -2012,7 +2012,7 @@ export const ITEMS = [
     structureType: "storyJuiceMix_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":610,"display":{"counting":{"kind":"sum","parts":[225,385]},"promptText":"Finn mixes 225 mL of mango juice with 385 mL of orange juice. How many millilitres of punch is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":610,"display":{"counting":{"kind":"sum","parts":[225,385]},"promptText":"Finn mixes 225 mL of mango juice with 385 mL of orange juice. How many milliliters of punch is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0202",
@@ -2022,7 +2022,7 @@ export const ITEMS = [
     structureType: "storyJuiceMix_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":625,"display":{"counting":{"kind":"sum","parts":[345,280]},"promptText":"Into the punch bowl Amara pours 345 mL and then 280 mL. What volume in millilitres is in the bowl?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":625,"display":{"counting":{"kind":"sum","parts":[345,280]},"promptText":"Into the punch bowl Amara pours 345 mL and then 280 mL. What volume in milliliters is in the bowl?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0203",
@@ -2032,7 +2032,7 @@ export const ITEMS = [
     structureType: "storyJuiceMix_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":645,"display":{"counting":{"kind":"sum","parts":[195,450]},"promptText":"Diego mixes 195 mL of mango juice with 450 mL of orange juice. How many millilitres of punch is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":645,"display":{"counting":{"kind":"sum","parts":[195,450]},"promptText":"Diego mixes 195 mL of mango juice with 450 mL of orange juice. How many milliliters of punch is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0204",
@@ -2042,7 +2042,7 @@ export const ITEMS = [
     structureType: "storyJuiceMix_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":655,"display":{"counting":{"kind":"sum","parts":[415,240]},"promptText":"Into the punch bowl Priya pours 415 mL and then 240 mL. What volume in millilitres is in the bowl?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":655,"display":{"counting":{"kind":"sum","parts":[415,240]},"promptText":"Into the punch bowl Priya pours 415 mL and then 240 mL. What volume in milliliters is in the bowl?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0205",
@@ -2222,7 +2222,7 @@ export const ITEMS = [
     structureType: "storyPourIn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[7,6]},"promptText":"Two watering cans, 7 L and 6 L, both go onto Mina's garden. How many litres of water is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[7,6]},"promptText":"Two watering cans, 7 L and 6 L, both go onto Mina's garden. How many liters of water is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0223",
@@ -2232,7 +2232,7 @@ export const ITEMS = [
     structureType: "storyPourIn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[8,9]},"promptText":"Luca empties a 8 L pail and a 9 L pail into the paddling pool. How many litres went in?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[8,9]},"promptText":"Luca empties an 8 L pail and a 9 L pail into the paddling pool. How many liters went in?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0224",
@@ -2242,7 +2242,7 @@ export const ITEMS = [
     structureType: "storyPourIn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[5,12]},"promptText":"Two watering cans, 5 L and 12 L, both go onto Nia's garden. How many litres of water is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[5,12]},"promptText":"Two watering cans, 5 L and 12 L, both go onto Nia's garden. How many liters of water is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0225",
@@ -2252,7 +2252,7 @@ export const ITEMS = [
     structureType: "storyPourIn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[6,11]},"promptText":"Theo empties a 6 L pail and a 11 L pail into the paddling pool. How many litres went in?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[6,11]},"promptText":"Theo empties a 6 L pail and an 11 L pail into the paddling pool. How many liters went in?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0226",
@@ -2262,7 +2262,7 @@ export const ITEMS = [
     structureType: "storyPourIn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[9,4]},"promptText":"Two watering cans, 9 L and 4 L, both go onto Ava's garden. How many litres of water is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[9,4]},"promptText":"Two watering cans, 9 L and 4 L, both go onto Ava's garden. How many liters of water is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0227",
@@ -2272,7 +2272,7 @@ export const ITEMS = [
     structureType: "storyPourIn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[12,7]},"promptText":"Kai empties a 12 L pail and a 7 L pail into the paddling pool. How many litres went in?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[12,7]},"promptText":"Kai empties a 12 L pail and a 7 L pail into the paddling pool. How many liters went in?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0228",
@@ -2282,7 +2282,7 @@ export const ITEMS = [
     structureType: "storyPourIn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[3,14]},"promptText":"Two watering cans, 3 L and 14 L, both go onto Ida's garden. How many litres of water is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[3,14]},"promptText":"Two watering cans, 3 L and 14 L, both go onto Ida's garden. How many liters of water is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0229",
@@ -2292,7 +2292,7 @@ export const ITEMS = [
     structureType: "storyPourIn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[8,5]},"promptText":"Omar empties a 8 L pail and a 5 L pail into the paddling pool. How many litres went in?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[8,5]},"promptText":"Omar empties an 8 L pail and a 5 L pail into the paddling pool. How many liters went in?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0230",
@@ -2302,7 +2302,7 @@ export const ITEMS = [
     structureType: "storyPourIn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[11,6]},"promptText":"Two watering cans, 11 L and 6 L, both go onto June's garden. How many litres of water is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[11,6]},"promptText":"Two watering cans, 11 L and 6 L, both go onto June's garden. How many liters of water is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0231",
@@ -2312,7 +2312,7 @@ export const ITEMS = [
     structureType: "storyPourIn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[4,13]},"promptText":"Zoe empties a 4 L pail and a 13 L pail into the paddling pool. How many litres went in?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[4,13]},"promptText":"Zoe empties a 4 L pail and a 13 L pail into the paddling pool. How many liters went in?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0232",
@@ -2322,7 +2322,7 @@ export const ITEMS = [
     structureType: "storyPourIn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[7,9]},"promptText":"Two watering cans, 7 L and 9 L, both go onto Ben's garden. How many litres of water is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[7,9]},"promptText":"Two watering cans, 7 L and 9 L, both go onto Ben's garden. How many liters of water is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0233",
@@ -2332,7 +2332,7 @@ export const ITEMS = [
     structureType: "storyPourIn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[15,3]},"promptText":"Lily empties a 15 L pail and a 3 L pail into the paddling pool. How many litres went in?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[15,3]},"promptText":"Lily empties a 15 L pail and a 3 L pail into the paddling pool. How many liters went in?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0234",
@@ -2342,7 +2342,7 @@ export const ITEMS = [
     structureType: "storyPourIn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[6,8]},"promptText":"Two watering cans, 6 L and 8 L, both go onto Rosa's garden. How many litres of water is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[6,8]},"promptText":"Two watering cans, 6 L and 8 L, both go onto Rosa's garden. How many liters of water is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0235",
@@ -2352,7 +2352,7 @@ export const ITEMS = [
     structureType: "storyPourIn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[9,8]},"promptText":"Finn empties a 9 L pail and a 8 L pail into the paddling pool. How many litres went in?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[9,8]},"promptText":"Finn empties a 9 L pail and an 8 L pail into the paddling pool. How many liters went in?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0236",
@@ -2362,7 +2362,7 @@ export const ITEMS = [
     structureType: "storyPourIn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[12,5]},"promptText":"Two watering cans, 12 L and 5 L, both go onto Amara's garden. How many litres of water is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[12,5]},"promptText":"Two watering cans, 12 L and 5 L, both go onto Amara's garden. How many liters of water is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0237",
@@ -2372,7 +2372,7 @@ export const ITEMS = [
     structureType: "storyPourIn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[2,16]},"promptText":"Diego empties a 2 L pail and a 16 L pail into the paddling pool. How many litres went in?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[2,16]},"promptText":"Diego empties a 2 L pail and a 16 L pail into the paddling pool. How many liters went in?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0238",
@@ -2382,7 +2382,7 @@ export const ITEMS = [
     structureType: "storyPourIn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[10,7]},"promptText":"Two watering cans, 10 L and 7 L, both go onto Priya's garden. How many litres of water is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[10,7]},"promptText":"Two watering cans, 10 L and 7 L, both go onto Priya's garden. How many liters of water is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0239",
@@ -2392,7 +2392,7 @@ export const ITEMS = [
     structureType: "storyPourOut",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":8,"kind":"countBack","start":15},"promptText":"A 15 L water cooler loses 8 L on sports day. How many litres are left for Sam's team?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":8,"kind":"countBack","start":15},"promptText":"A 15 L water cooler loses 8 L on sports day. How many liters are left for Sam's team?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0240",
@@ -2402,7 +2402,7 @@ export const ITEMS = [
     structureType: "storyPourOut",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":9,"kind":"countBack","start":18},"promptText":"Mina's fish tank held 18 L before 9 L splashed out. How many litres remain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":9,"kind":"countBack","start":18},"promptText":"Mina's fish tank held 18 L before 9 L splashed out. How many liters remain?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0241",
@@ -2412,7 +2412,7 @@ export const ITEMS = [
     structureType: "storyPourOut",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":5,"kind":"countBack","start":12},"promptText":"A 12 L water cooler loses 5 L on sports day. How many litres are left for Luca's team?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":5,"kind":"countBack","start":12},"promptText":"A 12 L water cooler loses 5 L on sports day. How many liters are left for Luca's team?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0242",
@@ -2422,7 +2422,7 @@ export const ITEMS = [
     structureType: "storyPourOut",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":11,"kind":"countBack","start":20},"promptText":"Nia's fish tank held 20 L before 11 L splashed out. How many litres remain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":11,"kind":"countBack","start":20},"promptText":"Nia's fish tank held 20 L before 11 L splashed out. How many liters remain?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0243",
@@ -2432,7 +2432,7 @@ export const ITEMS = [
     structureType: "storyPourOut",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":7,"kind":"countBack","start":16},"promptText":"A 16 L water cooler loses 7 L on sports day. How many litres are left for Theo's team?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":7,"kind":"countBack","start":16},"promptText":"A 16 L water cooler loses 7 L on sports day. How many liters are left for Theo's team?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0244",
@@ -2442,7 +2442,7 @@ export const ITEMS = [
     structureType: "storyPourOut",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"back":6,"kind":"countBack","start":14},"promptText":"Ava's fish tank held 14 L before 6 L splashed out. How many litres remain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"back":6,"kind":"countBack","start":14},"promptText":"Ava's fish tank held 14 L before 6 L splashed out. How many liters remain?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0245",
@@ -2452,7 +2452,7 @@ export const ITEMS = [
     structureType: "storyPourOut",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":12,"kind":"countBack","start":19},"promptText":"A 19 L water cooler loses 12 L on sports day. How many litres are left for Kai's team?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":12,"kind":"countBack","start":19},"promptText":"A 19 L water cooler loses 12 L on sports day. How many liters are left for Kai's team?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0246",
@@ -2462,7 +2462,7 @@ export const ITEMS = [
     structureType: "storyPourOut",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":8,"kind":"countBack","start":17},"promptText":"Ida's fish tank held 17 L before 8 L splashed out. How many litres remain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":8,"kind":"countBack","start":17},"promptText":"Ida's fish tank held 17 L before 8 L splashed out. How many liters remain?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0247",
@@ -2472,7 +2472,7 @@ export const ITEMS = [
     structureType: "storyPourOut",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":4,"kind":"countBack","start":13},"promptText":"A 13 L water cooler loses 4 L on sports day. How many litres are left for Omar's team?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":4,"kind":"countBack","start":13},"promptText":"A 13 L water cooler loses 4 L on sports day. How many liters are left for Omar's team?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0248",
@@ -2482,7 +2482,7 @@ export const ITEMS = [
     structureType: "storyPourOut",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":2,"kind":"countBack","start":11},"promptText":"June's fish tank held 11 L before 2 L splashed out. How many litres remain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":2,"kind":"countBack","start":11},"promptText":"June's fish tank held 11 L before 2 L splashed out. How many liters remain?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0249",
@@ -2492,7 +2492,7 @@ export const ITEMS = [
     structureType: "storyPourOut",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"back":14,"kind":"countBack","start":20},"promptText":"A 20 L water cooler loses 14 L on sports day. How many litres are left for Zoe's team?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"back":14,"kind":"countBack","start":20},"promptText":"A 20 L water cooler loses 14 L on sports day. How many liters are left for Zoe's team?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0250",
@@ -2502,7 +2502,7 @@ export const ITEMS = [
     structureType: "storyPourOut",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"back":13,"kind":"countBack","start":18},"promptText":"Ben's fish tank held 18 L before 13 L splashed out. How many litres remain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"back":13,"kind":"countBack","start":18},"promptText":"Ben's fish tank held 18 L before 13 L splashed out. How many liters remain?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0251",
@@ -2512,7 +2512,7 @@ export const ITEMS = [
     structureType: "storyPourOut",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":9,"kind":"countBack","start":16},"promptText":"A 16 L water cooler loses 9 L on sports day. How many litres are left for Lily's team?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":9,"kind":"countBack","start":16},"promptText":"A 16 L water cooler loses 9 L on sports day. How many liters are left for Lily's team?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0252",
@@ -2522,7 +2522,7 @@ export const ITEMS = [
     structureType: "storyPourOut",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"back":4,"kind":"countBack","start":15},"promptText":"Rosa's fish tank held 15 L before 4 L splashed out. How many litres remain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"back":4,"kind":"countBack","start":15},"promptText":"Rosa's fish tank held 15 L before 4 L splashed out. How many liters remain?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0253",
@@ -2532,7 +2532,7 @@ export const ITEMS = [
     structureType: "storyPourOut",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"back":6,"kind":"countBack","start":19},"promptText":"A 19 L water cooler loses 6 L on sports day. How many litres are left for Finn's team?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"back":6,"kind":"countBack","start":19},"promptText":"A 19 L water cooler loses 6 L on sports day. How many liters are left for Finn's team?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0254",
@@ -2542,7 +2542,7 @@ export const ITEMS = [
     structureType: "storyPourOut",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"back":7,"kind":"countBack","start":12},"promptText":"Amara's fish tank held 12 L before 7 L splashed out. How many litres remain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"back":7,"kind":"countBack","start":12},"promptText":"Amara's fish tank held 12 L before 7 L splashed out. How many liters remain?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0255",
@@ -2552,7 +2552,7 @@ export const ITEMS = [
     structureType: "storyPourOut",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":10,"kind":"countBack","start":17},"promptText":"A 17 L water cooler loses 10 L on sports day. How many litres are left for Diego's team?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":10,"kind":"countBack","start":17},"promptText":"A 17 L water cooler loses 10 L on sports day. How many liters are left for Diego's team?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0256",
@@ -2562,7 +2562,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":6,"kind":"gap","target":9},"promptText":"Sam guessed a leaf at 6 cm; the ruler says 9 cm. By how many centimetres was the guess off?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":6,"kind":"gap","target":9},"promptText":"Sam guessed a leaf at 6 cm; the ruler says 9 cm. By how many centimeters was the guess off?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0257",
@@ -2572,7 +2572,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":8,"kind":"gap","target":11},"promptText":"Before measuring a crayon, Mina guessed 8 cm. It is really 11 cm. How many centimetres off was the guess?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":8,"kind":"gap","target":11},"promptText":"Before measuring a crayon, Mina guessed 8 cm. It is really 11 cm. How many centimeters off was the guess?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0258",
@@ -2582,7 +2582,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":7,"kind":"gap","target":12},"promptText":"Luca guessed a feather at 12 cm; the ruler says 7 cm. By how many centimetres was the guess off?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":7,"kind":"gap","target":12},"promptText":"Luca guessed a feather at 12 cm; the ruler says 7 cm. By how many centimeters was the guess off?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0259",
@@ -2592,7 +2592,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":5,"kind":"gap","target":9},"promptText":"Before measuring a shell, Nia guessed 5 cm. It is really 9 cm. How many centimetres off was the guess?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":5,"kind":"gap","target":9},"promptText":"Before measuring a shell, Nia guessed 5 cm. It is really 9 cm. How many centimeters off was the guess?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0260",
@@ -2602,7 +2602,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":14,"kind":"gap","target":18},"promptText":"Theo guessed a twig at 14 cm; the ruler says 18 cm. By how many centimetres was the guess off?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":14,"kind":"gap","target":18},"promptText":"Theo guessed a twig at 14 cm; the ruler says 18 cm. By how many centimeters was the guess off?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0261",
@@ -2612,7 +2612,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":10,"kind":"gap","target":15},"promptText":"Before measuring a bookmark, Ava guessed 10 cm. It is really 15 cm. How many centimetres off was the guess?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":10,"kind":"gap","target":15},"promptText":"Before measuring a bookmark, Ava guessed 10 cm. It is really 15 cm. How many centimeters off was the guess?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0262",
@@ -2622,7 +2622,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":6,"kind":"gap","target":9},"promptText":"Kai guessed a toy car at 9 cm; the ruler says 6 cm. By how many centimetres was the guess off?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":6,"kind":"gap","target":9},"promptText":"Kai guessed a toy car at 9 cm; the ruler says 6 cm. By how many centimeters was the guess off?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0263",
@@ -2632,7 +2632,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":3,"kind":"gap","target":5},"promptText":"Before measuring an eraser, Ida guessed 3 cm. It is really 5 cm. How many centimetres off was the guess?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":3,"kind":"gap","target":5},"promptText":"Before measuring an eraser, Ida guessed 3 cm. It is really 5 cm. How many centimeters off was the guess?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0264",
@@ -2642,7 +2642,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":2,"kind":"gap","target":4},"promptText":"Omar guessed a sticker at 4 cm; the ruler says 2 cm. By how many centimetres was the guess off?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":2,"kind":"gap","target":4},"promptText":"Omar guessed a sticker at 4 cm; the ruler says 2 cm. By how many centimeters was the guess off?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0265",
@@ -2652,7 +2652,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":13,"kind":"gap","target":16},"promptText":"Before measuring a spoon, June guessed 13 cm. It is really 16 cm. How many centimetres off was the guess?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":13,"kind":"gap","target":16},"promptText":"Before measuring a spoon, June guessed 13 cm. It is really 16 cm. How many centimeters off was the guess?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0266",
@@ -2662,7 +2662,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":7,"kind":"gap","target":10},"promptText":"Zoe guessed a pinecone at 7 cm; the ruler says 10 cm. By how many centimetres was the guess off?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":7,"kind":"gap","target":10},"promptText":"Zoe guessed a pinecone at 7 cm; the ruler says 10 cm. By how many centimeters was the guess off?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0267",
@@ -2672,7 +2672,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":4,"kind":"gap","target":6},"promptText":"Before measuring a domino, Ben guessed 6 cm. It is really 4 cm. How many centimetres off was the guess?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":4,"kind":"gap","target":6},"promptText":"Before measuring a domino, Ben guessed 6 cm. It is really 4 cm. How many centimeters off was the guess?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0268",
@@ -2682,7 +2682,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":15,"kind":"gap","target":19},"promptText":"Lily guessed a wristband at 15 cm; the ruler says 19 cm. By how many centimetres was the guess off?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":15,"kind":"gap","target":19},"promptText":"Lily guessed a wristband at 15 cm; the ruler says 19 cm. By how many centimeters was the guess off?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0269",
@@ -2692,7 +2692,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":8,"kind":"gap","target":11},"promptText":"Before measuring a leaf stem, Rosa guessed 11 cm. It is really 8 cm. How many centimetres off was the guess?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":8,"kind":"gap","target":11},"promptText":"Before measuring a leaf stem, Rosa guessed 11 cm. It is really 8 cm. How many centimeters off was the guess?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0270",
@@ -2702,7 +2702,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"have":2,"kind":"gap","target":3},"promptText":"Finn guessed a bottle cap at 2 cm; the ruler says 3 cm. By how many centimetres was the guess off?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"have":2,"kind":"gap","target":3},"promptText":"Finn guessed a bottle cap at 2 cm; the ruler says 3 cm. By how many centimeters was the guess off?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0271",
@@ -2712,7 +2712,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":8,"kind":"gap","target":12},"promptText":"Before measuring a chalk stick, Amara guessed 8 cm. It is really 12 cm. How many centimetres off was the guess?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":8,"kind":"gap","target":12},"promptText":"Before measuring a chalk stick, Amara guessed 8 cm. It is really 12 cm. How many centimeters off was the guess?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0272",
@@ -2722,7 +2722,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":5,"kind":"gap","target":7},"promptText":"Diego guessed a clothespin at 5 cm; the ruler says 7 cm. By how many centimetres was the guess off?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":5,"kind":"gap","target":7},"promptText":"Diego guessed a clothespin at 5 cm; the ruler says 7 cm. By how many centimeters was the guess off?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0273",
@@ -2732,7 +2732,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"counting":{"have":70,"kind":"gap","target":92},"promptText":"Before measuring a scooter, Mina guessed 70 cm. It is really 92 cm. How many centimetres off was the guess?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"counting":{"have":70,"kind":"gap","target":92},"promptText":"Before measuring a scooter, Mina guessed 70 cm. It is really 92 cm. How many centimeters off was the guess?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0274",
@@ -2742,7 +2742,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"have":61,"kind":"gap","target":85},"promptText":"Luca guessed a bench at 85 cm; the ruler says 61 cm. By how many centimetres was the guess off?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"have":61,"kind":"gap","target":85},"promptText":"Luca guessed a bench at 85 cm; the ruler says 61 cm. By how many centimeters was the guess off?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0275",
@@ -2752,7 +2752,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"counting":{"have":45,"kind":"gap","target":68},"promptText":"Before measuring a doormat, Nia guessed 45 cm. It is really 68 cm. How many centimetres off was the guess?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"counting":{"have":45,"kind":"gap","target":68},"promptText":"Before measuring a doormat, Nia guessed 45 cm. It is really 68 cm. How many centimeters off was the guess?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0276",
@@ -2762,7 +2762,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"counting":{"have":60,"kind":"gap","target":83},"promptText":"Theo guessed a poster at 60 cm; the ruler says 83 cm. By how many centimetres was the guess off?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"counting":{"have":60,"kind":"gap","target":83},"promptText":"Theo guessed a poster at 60 cm; the ruler says 83 cm. By how many centimeters was the guess off?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0277",
@@ -2772,7 +2772,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"counting":{"have":52,"kind":"gap","target":75},"promptText":"Before measuring a shelf, Ava guessed 75 cm. It is really 52 cm. How many centimetres off was the guess?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"counting":{"have":52,"kind":"gap","target":75},"promptText":"Before measuring a shelf, Ava guessed 75 cm. It is really 52 cm. How many centimeters off was the guess?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0278",
@@ -2782,7 +2782,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"have":66,"kind":"gap","target":90},"promptText":"Kai guessed a bath towel at 90 cm; the ruler says 66 cm. By how many centimetres was the guess off?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"have":66,"kind":"gap","target":90},"promptText":"Kai guessed a bath towel at 90 cm; the ruler says 66 cm. By how many centimeters was the guess off?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0279",
@@ -2792,7 +2792,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"have":55,"kind":"gap","target":79},"promptText":"Before measuring a windowsill, Ida guessed 55 cm. It is really 79 cm. How many centimetres off was the guess?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"have":55,"kind":"gap","target":79},"promptText":"Before measuring a windowsill, Ida guessed 55 cm. It is really 79 cm. How many centimeters off was the guess?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0280",
@@ -2802,7 +2802,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"counting":{"have":65,"kind":"gap","target":88},"promptText":"Omar guessed a skateboard at 65 cm; the ruler says 88 cm. By how many centimetres was the guess off?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"counting":{"have":65,"kind":"gap","target":88},"promptText":"Omar guessed a skateboard at 65 cm; the ruler says 88 cm. By how many centimeters was the guess off?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0281",
@@ -2812,7 +2812,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"have":30,"kind":"gap","target":47},"promptText":"Before measuring a floor tile, June guessed 30 cm. It is really 47 cm. How many centimetres off was the guess?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"have":30,"kind":"gap","target":47},"promptText":"Before measuring a floor tile, June guessed 30 cm. It is really 47 cm. How many centimeters off was the guess?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0282",
@@ -2822,7 +2822,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"counting":{"have":72,"kind":"gap","target":95},"promptText":"Zoe guessed a curtain at 95 cm; the ruler says 72 cm. By how many centimetres was the guess off?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"counting":{"have":72,"kind":"gap","target":95},"promptText":"Zoe guessed a curtain at 95 cm; the ruler says 72 cm. By how many centimeters was the guess off?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0283",
@@ -2832,7 +2832,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"counting":{"have":58,"kind":"gap","target":80},"promptText":"Before measuring a table edge, Ben guessed 80 cm. It is really 58 cm. How many centimetres off was the guess?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"counting":{"have":58,"kind":"gap","target":80},"promptText":"Before measuring a table edge, Ben guessed 80 cm. It is really 58 cm. How many centimeters off was the guess?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0284",
@@ -2842,7 +2842,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"counting":{"have":50,"kind":"gap","target":73},"promptText":"Lily guessed a wagon at 50 cm; the ruler says 73 cm. By how many centimetres was the guess off?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"counting":{"have":50,"kind":"gap","target":73},"promptText":"Lily guessed a wagon at 50 cm; the ruler says 73 cm. By how many centimeters was the guess off?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0285",
@@ -2852,7 +2852,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"have":85,"kind":"gap","target":99},"promptText":"Before measuring a broom, Rosa guessed 85 cm. It is really 99 cm. How many centimetres off was the guess?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"have":85,"kind":"gap","target":99},"promptText":"Before measuring a broom, Rosa guessed 85 cm. It is really 99 cm. How many centimeters off was the guess?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0286",
@@ -2862,7 +2862,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"counting":{"have":40,"kind":"gap","target":62},"promptText":"Finn guessed a step stool at 40 cm; the ruler says 62 cm. By how many centimetres was the guess off?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"counting":{"have":40,"kind":"gap","target":62},"promptText":"Finn guessed a step stool at 40 cm; the ruler says 62 cm. By how many centimeters was the guess off?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0287",
@@ -2872,7 +2872,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"have":35,"kind":"gap","target":51},"promptText":"Before measuring a picture frame, Amara guessed 35 cm. It is really 51 cm. How many centimetres off was the guess?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"have":35,"kind":"gap","target":51},"promptText":"Before measuring a picture frame, Amara guessed 35 cm. It is really 51 cm. How many centimeters off was the guess?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0288",
@@ -2882,7 +2882,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"have":27,"kind":"gap","target":45},"promptText":"Diego guessed a laundry basket at 45 cm; the ruler says 27 cm. By how many centimetres was the guess off?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"have":27,"kind":"gap","target":45},"promptText":"Diego guessed a laundry basket at 45 cm; the ruler says 27 cm. By how many centimeters was the guess off?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0289",
@@ -2892,7 +2892,7 @@ export const ITEMS = [
     structureType: "storyGuessOff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"have":70,"kind":"gap","target":94},"promptText":"Before measuring a rug edge, Priya guessed 70 cm. It is really 94 cm. How many centimetres off was the guess?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"have":70,"kind":"gap","target":94},"promptText":"Before measuring a rug edge, Priya guessed 70 cm. It is really 94 cm. How many centimeters off was the guess?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0290",
@@ -2902,7 +2902,7 @@ export const ITEMS = [
     structureType: "storySensibleLabel",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1 L","choices":["1 L","1 mL"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For a milk carton, should Mina write 1 L or 1 mL? Pick the sensible label."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1 L","choices":["1 L","1 mL"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For a milk carton, should Mina write 1 L or 1 mL?"}},
   },
   {
     itemId: "measurement-app-b0821-0291",
@@ -2922,7 +2922,7 @@ export const ITEMS = [
     structureType: "storySensibleLabel",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2 m","choices":["2 m","2 mm"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For a sandbox, should Nia write 2 m or 2 mm? Pick the sensible label."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2 m","choices":["2 m","2 mm"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For a sandbox, should Nia write 2 m or 2 mm?"}},
   },
   {
     itemId: "measurement-app-b0821-0293",
@@ -2942,7 +2942,7 @@ export const ITEMS = [
     structureType: "storySensibleLabel",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1 kg","choices":["20 kg","1 kg"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For a pillow, should Ava write 1 kg or 20 kg? Pick the sensible label."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1 kg","choices":["20 kg","1 kg"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For a pillow, should Ava write 1 kg or 20 kg?"}},
   },
   {
     itemId: "measurement-app-b0821-0295",
@@ -2962,7 +2962,7 @@ export const ITEMS = [
     structureType: "storySensibleLabel",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"6 cm","choices":["6 m","6 cm"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For a house key, should Ida write 6 cm or 6 m? Pick the sensible label."}},
+    question: {"a":null,"b":null,"op":"count","answer":"6 cm","choices":["6 m","6 cm"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For a house key, should Ida write 6 cm or 6 m?"}},
   },
   {
     itemId: "measurement-app-b0821-0297",
@@ -2982,7 +2982,7 @@ export const ITEMS = [
     structureType: "storySensibleLabel",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2 g","choices":["2 g","2 kg"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For a teabag, should June write 2 g or 2 kg? Pick the sensible label."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2 g","choices":["2 g","2 kg"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For a teabag, should June write 2 g or 2 kg?"}},
   },
   {
     itemId: "measurement-app-b0821-0299",
@@ -3002,7 +3002,7 @@ export const ITEMS = [
     structureType: "storySensibleLabel",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1 m","choices":["1 m","1 km"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For a doormat, should Ben write 1 m or 1 km? Pick the sensible label."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1 m","choices":["1 m","1 km"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For a doormat, should Ben write 1 m or 1 km?"}},
   },
   {
     itemId: "measurement-app-b0821-0301",
@@ -3022,7 +3022,7 @@ export const ITEMS = [
     structureType: "storySensibleLabel",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4 cm","choices":["4 m","4 cm"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For a caterpillar, should Rosa write 4 cm or 4 m? Pick the sensible label."}},
+    question: {"a":null,"b":null,"op":"count","answer":"4 cm","choices":["4 m","4 cm"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For a caterpillar, should Rosa write 4 cm or 4 m?"}},
   },
   {
     itemId: "measurement-app-b0821-0303",
@@ -3042,7 +3042,7 @@ export const ITEMS = [
     structureType: "storySensibleLabel",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"12 cm","choices":["12 cm","12 m"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For a toy duck, should Amara write 12 cm or 12 m? Pick the sensible label."}},
+    question: {"a":null,"b":null,"op":"count","answer":"12 cm","choices":["12 cm","12 m"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For a toy duck, should Amara write 12 cm or 12 m?"}},
   },
   {
     itemId: "measurement-app-b0821-0305",
@@ -3062,7 +3062,7 @@ export const ITEMS = [
     structureType: "storySensibleLabel",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2 kg","choices":["2 g","2 kg"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For a bag of apples, should Priya write 2 kg or 2 g? Pick the sensible label."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2 kg","choices":["2 g","2 kg"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For a bag of apples, should Priya write 2 kg or 2 g?"}},
   },
   {
     itemId: "measurement-app-b0821-0307",
@@ -3072,7 +3072,7 @@ export const ITEMS = [
     structureType: "storyRoundWalk",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":120,"display":{"measure":{"n":123,"kind":"roundTen"},"promptText":"Sam walks 123 m to school. Rounded to the nearest ten, how many metres is the walk?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":120,"display":{"measure":{"n":123,"kind":"roundTen"},"promptText":"Sam walks 123 m to school. Rounded to the nearest ten, how many meters is the walk?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0308",
@@ -3082,7 +3082,7 @@ export const ITEMS = [
     structureType: "storyRoundWalk",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":150,"display":{"measure":{"n":148,"kind":"roundTen"},"promptText":"The path Mina bikes measures 148 m. How many metres is that, to the nearest ten?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":150,"display":{"measure":{"n":148,"kind":"roundTen"},"promptText":"The path Mina bikes measures 148 m. How many meters is that, to the nearest ten?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0309",
@@ -3092,7 +3092,7 @@ export const ITEMS = [
     structureType: "storyRoundWalk",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"measure":{"n":267,"kind":"roundTen"},"promptText":"Luca walks 267 m to school. Rounded to the nearest ten, how many metres is the walk?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"measure":{"n":267,"kind":"roundTen"},"promptText":"Luca walks 267 m to school. Rounded to the nearest ten, how many meters is the walk?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0310",
@@ -3102,7 +3102,7 @@ export const ITEMS = [
     structureType: "storyRoundWalk",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":380,"display":{"measure":{"n":382,"kind":"roundTen"},"promptText":"The path Nia bikes measures 382 m. How many metres is that, to the nearest ten?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":380,"display":{"measure":{"n":382,"kind":"roundTen"},"promptText":"The path Nia bikes measures 382 m. How many meters is that, to the nearest ten?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0311",
@@ -3112,7 +3112,7 @@ export const ITEMS = [
     structureType: "storyRoundWalk",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":240,"display":{"measure":{"n":235,"kind":"roundTen"},"promptText":"Theo walks 235 m to school. Rounded to the nearest ten, how many metres is the walk?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":240,"display":{"measure":{"n":235,"kind":"roundTen"},"promptText":"Theo walks 235 m to school. Rounded to the nearest ten, how many meters is the walk?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0312",
@@ -3122,7 +3122,7 @@ export const ITEMS = [
     structureType: "storyRoundWalk",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":470,"display":{"measure":{"n":471,"kind":"roundTen"},"promptText":"The path Ava bikes measures 471 m. How many metres is that, to the nearest ten?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":470,"display":{"measure":{"n":471,"kind":"roundTen"},"promptText":"The path Ava bikes measures 471 m. How many meters is that, to the nearest ten?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0313",
@@ -3132,7 +3132,7 @@ export const ITEMS = [
     structureType: "storyRoundWalk",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"measure":{"n":356,"kind":"roundTen"},"promptText":"Kai walks 356 m to school. Rounded to the nearest ten, how many metres is the walk?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"measure":{"n":356,"kind":"roundTen"},"promptText":"Kai walks 356 m to school. Rounded to the nearest ten, how many meters is the walk?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0314",
@@ -3142,7 +3142,7 @@ export const ITEMS = [
     structureType: "storyRoundWalk",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":190,"display":{"measure":{"n":194,"kind":"roundTen"},"promptText":"The path Ida bikes measures 194 m. How many metres is that, to the nearest ten?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":190,"display":{"measure":{"n":194,"kind":"roundTen"},"promptText":"The path Ida bikes measures 194 m. How many meters is that, to the nearest ten?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0315",
@@ -3152,7 +3152,7 @@ export const ITEMS = [
     structureType: "storyRoundWalk",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":310,"display":{"measure":{"n":312,"kind":"roundTen"},"promptText":"Omar walks 312 m to school. Rounded to the nearest ten, how many metres is the walk?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":310,"display":{"measure":{"n":312,"kind":"roundTen"},"promptText":"Omar walks 312 m to school. Rounded to the nearest ten, how many meters is the walk?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0316",
@@ -3162,7 +3162,7 @@ export const ITEMS = [
     structureType: "storyRoundWalk",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":440,"display":{"measure":{"n":439,"kind":"roundTen"},"promptText":"The path June bikes measures 439 m. How many metres is that, to the nearest ten?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":440,"display":{"measure":{"n":439,"kind":"roundTen"},"promptText":"The path June bikes measures 439 m. How many meters is that, to the nearest ten?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0317",
@@ -3172,7 +3172,7 @@ export const ITEMS = [
     structureType: "storyRoundWalk",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"measure":{"n":265,"kind":"roundTen"},"promptText":"Zoe walks 265 m to school. Rounded to the nearest ten, how many metres is the walk?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"measure":{"n":265,"kind":"roundTen"},"promptText":"Zoe walks 265 m to school. Rounded to the nearest ten, how many meters is the walk?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0318",
@@ -3182,7 +3182,7 @@ export const ITEMS = [
     structureType: "storyRoundWalk",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"measure":{"n":178,"kind":"roundTen"},"promptText":"The path Ben bikes measures 178 m. How many metres is that, to the nearest ten?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"measure":{"n":178,"kind":"roundTen"},"promptText":"The path Ben bikes measures 178 m. How many meters is that, to the nearest ten?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0319",
@@ -3192,7 +3192,7 @@ export const ITEMS = [
     structureType: "storyRoundWalk",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":340,"display":{"measure":{"n":341,"kind":"roundTen"},"promptText":"Lily walks 341 m to school. Rounded to the nearest ten, how many metres is the walk?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":340,"display":{"measure":{"n":341,"kind":"roundTen"},"promptText":"Lily walks 341 m to school. Rounded to the nearest ten, how many meters is the walk?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0320",
@@ -3202,7 +3202,7 @@ export const ITEMS = [
     structureType: "storyRoundWalk",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":460,"display":{"measure":{"n":456,"kind":"roundTen"},"promptText":"The path Rosa bikes measures 456 m. How many metres is that, to the nearest ten?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":460,"display":{"measure":{"n":456,"kind":"roundTen"},"promptText":"The path Rosa bikes measures 456 m. How many meters is that, to the nearest ten?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0321",
@@ -3212,7 +3212,7 @@ export const ITEMS = [
     structureType: "storyRoundWalk",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":230,"display":{"measure":{"n":227,"kind":"roundTen"},"promptText":"Finn walks 227 m to school. Rounded to the nearest ten, how many metres is the walk?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":230,"display":{"measure":{"n":227,"kind":"roundTen"},"promptText":"Finn walks 227 m to school. Rounded to the nearest ten, how many meters is the walk?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0322",
@@ -3222,7 +3222,7 @@ export const ITEMS = [
     structureType: "storyRoundWalk",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":390,"display":{"measure":{"n":389,"kind":"roundTen"},"promptText":"The path Amara bikes measures 389 m. How many metres is that, to the nearest ten?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":390,"display":{"measure":{"n":389,"kind":"roundTen"},"promptText":"The path Amara bikes measures 389 m. How many meters is that, to the nearest ten?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0323",
@@ -3232,7 +3232,7 @@ export const ITEMS = [
     structureType: "storyRoundWalk",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":160,"display":{"measure":{"n":163,"kind":"roundTen"},"promptText":"Diego walks 163 m to school. Rounded to the nearest ten, how many metres is the walk?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":160,"display":{"measure":{"n":163,"kind":"roundTen"},"promptText":"Diego walks 163 m to school. Rounded to the nearest ten, how many meters is the walk?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0324",
@@ -3242,7 +3242,7 @@ export const ITEMS = [
     structureType: "storyRoundPier",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":500,"display":{"measure":{"n":534,"kind":"roundHundred"},"promptText":"Mina reads that the pier is 534 m long. How many metres is that, to the nearest hundred?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":500,"display":{"measure":{"n":534,"kind":"roundHundred"},"promptText":"Mina reads that the pier is 534 m long. How many meters is that, to the nearest hundred?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0325",
@@ -3252,7 +3252,7 @@ export const ITEMS = [
     structureType: "storyRoundPier",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":800,"display":{"measure":{"n":781,"kind":"roundHundred"},"promptText":"The river walk in Luca's town runs 781 m. Rounded to the nearest hundred, how many metres is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":800,"display":{"measure":{"n":781,"kind":"roundHundred"},"promptText":"The river walk in Luca's town runs 781 m. Rounded to the nearest hundred, how many meters is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0326",
@@ -3262,7 +3262,7 @@ export const ITEMS = [
     structureType: "storyRoundPier",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":700,"display":{"measure":{"n":672,"kind":"roundHundred"},"promptText":"Nia reads that the pier is 672 m long. How many metres is that, to the nearest hundred?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":700,"display":{"measure":{"n":672,"kind":"roundHundred"},"promptText":"Nia reads that the pier is 672 m long. How many meters is that, to the nearest hundred?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0327",
@@ -3272,7 +3272,7 @@ export const ITEMS = [
     structureType: "storyRoundPier",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":800,"display":{"measure":{"n":828,"kind":"roundHundred"},"promptText":"The river walk in Theo's town runs 828 m. Rounded to the nearest hundred, how many metres is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":800,"display":{"measure":{"n":828,"kind":"roundHundred"},"promptText":"The river walk in Theo's town runs 828 m. Rounded to the nearest hundred, how many meters is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0328",
@@ -3282,7 +3282,7 @@ export const ITEMS = [
     structureType: "storyRoundPier",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":400,"display":{"measure":{"n":351,"kind":"roundHundred"},"promptText":"Ava reads that the pier is 351 m long. How many metres is that, to the nearest hundred?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":400,"display":{"measure":{"n":351,"kind":"roundHundred"},"promptText":"Ava reads that the pier is 351 m long. How many meters is that, to the nearest hundred?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0329",
@@ -3292,7 +3292,7 @@ export const ITEMS = [
     structureType: "storyRoundPier",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"measure":{"n":219,"kind":"roundHundred"},"promptText":"The river walk in Kai's town runs 219 m. Rounded to the nearest hundred, how many metres is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"measure":{"n":219,"kind":"roundHundred"},"promptText":"The river walk in Kai's town runs 219 m. Rounded to the nearest hundred, how many meters is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0330",
@@ -3302,7 +3302,7 @@ export const ITEMS = [
     structureType: "storyRoundPier",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":800,"display":{"measure":{"n":764,"kind":"roundHundred"},"promptText":"Ida reads that the pier is 764 m long. How many metres is that, to the nearest hundred?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":800,"display":{"measure":{"n":764,"kind":"roundHundred"},"promptText":"Ida reads that the pier is 764 m long. How many meters is that, to the nearest hundred?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0331",
@@ -3312,7 +3312,7 @@ export const ITEMS = [
     structureType: "storyRoundPier",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":900,"display":{"measure":{"n":947,"kind":"roundHundred"},"promptText":"The river walk in Omar's town runs 947 m. Rounded to the nearest hundred, how many metres is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":900,"display":{"measure":{"n":947,"kind":"roundHundred"},"promptText":"The river walk in Omar's town runs 947 m. Rounded to the nearest hundred, how many meters is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0332",
@@ -3322,7 +3322,7 @@ export const ITEMS = [
     structureType: "storyRoundPier",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"measure":{"n":128,"kind":"roundHundred"},"promptText":"June reads that the pier is 128 m long. How many metres is that, to the nearest hundred?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"measure":{"n":128,"kind":"roundHundred"},"promptText":"June reads that the pier is 128 m long. How many meters is that, to the nearest hundred?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0333",
@@ -3332,7 +3332,7 @@ export const ITEMS = [
     structureType: "storyRoundPier",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":500,"display":{"measure":{"n":493,"kind":"roundHundred"},"promptText":"The river walk in Zoe's town runs 493 m. Rounded to the nearest hundred, how many metres is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":500,"display":{"measure":{"n":493,"kind":"roundHundred"},"promptText":"The river walk in Zoe's town runs 493 m. Rounded to the nearest hundred, how many meters is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0334",
@@ -3342,7 +3342,7 @@ export const ITEMS = [
     structureType: "storyRoundPier",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":700,"display":{"measure":{"n":655,"kind":"roundHundred"},"promptText":"Ben reads that the pier is 655 m long. How many metres is that, to the nearest hundred?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":700,"display":{"measure":{"n":655,"kind":"roundHundred"},"promptText":"Ben reads that the pier is 655 m long. How many meters is that, to the nearest hundred?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0335",
@@ -3352,7 +3352,7 @@ export const ITEMS = [
     structureType: "storyRoundPier",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":900,"display":{"measure":{"n":882,"kind":"roundHundred"},"promptText":"The river walk in Lily's town runs 882 m. Rounded to the nearest hundred, how many metres is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":900,"display":{"measure":{"n":882,"kind":"roundHundred"},"promptText":"The river walk in Lily's town runs 882 m. Rounded to the nearest hundred, how many meters is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0336",
@@ -3362,7 +3362,7 @@ export const ITEMS = [
     structureType: "storyRoundPier",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":300,"display":{"measure":{"n":273,"kind":"roundHundred"},"promptText":"Rosa reads that the pier is 273 m long. How many metres is that, to the nearest hundred?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":300,"display":{"measure":{"n":273,"kind":"roundHundred"},"promptText":"Rosa reads that the pier is 273 m long. How many meters is that, to the nearest hundred?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0337",
@@ -3372,7 +3372,7 @@ export const ITEMS = [
     structureType: "storyRoundPier",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":500,"display":{"measure":{"n":536,"kind":"roundHundred"},"promptText":"The river walk in Finn's town runs 536 m. Rounded to the nearest hundred, how many metres is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":500,"display":{"measure":{"n":536,"kind":"roundHundred"},"promptText":"The river walk in Finn's town runs 536 m. Rounded to the nearest hundred, how many meters is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0338",
@@ -3382,7 +3382,7 @@ export const ITEMS = [
     structureType: "storyRoundPier",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":900,"display":{"measure":{"n":915,"kind":"roundHundred"},"promptText":"Amara reads that the pier is 915 m long. How many metres is that, to the nearest hundred?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":900,"display":{"measure":{"n":915,"kind":"roundHundred"},"promptText":"Amara reads that the pier is 915 m long. How many meters is that, to the nearest hundred?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0339",
@@ -3392,7 +3392,7 @@ export const ITEMS = [
     structureType: "storyRoundPier",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":400,"display":{"measure":{"n":442,"kind":"roundHundred"},"promptText":"The river walk in Diego's town runs 442 m. Rounded to the nearest hundred, how many metres is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":400,"display":{"measure":{"n":442,"kind":"roundHundred"},"promptText":"The river walk in Diego's town runs 442 m. Rounded to the nearest hundred, how many meters is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0340",
@@ -3402,7 +3402,7 @@ export const ITEMS = [
     structureType: "storyRoundPier",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"measure":{"n":187,"kind":"roundHundred"},"promptText":"Priya reads that the pier is 187 m long. How many metres is that, to the nearest hundred?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"measure":{"n":187,"kind":"roundHundred"},"promptText":"Priya reads that the pier is 187 m long. How many meters is that, to the nearest hundred?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0341",
@@ -3412,7 +3412,7 @@ export const ITEMS = [
     structureType: "storyEstimateOff",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":62,"display":{"counting":{"have":250,"kind":"gap","target":312},"promptText":"Sam estimated the gym at 250 m; it measures 312 m. How many metres off was Sam's estimate?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":62,"display":{"counting":{"have":250,"kind":"gap","target":312},"promptText":"Sam estimated the path around the pond at 250 m; it measures 312 m. How many meters off was Sam's estimate?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0342",
@@ -3422,7 +3422,7 @@ export const ITEMS = [
     structureType: "storyEstimateOff",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"counting":{"have":358,"kind":"gap","target":400},"promptText":"The banner hall is really 358 m long, but Mina guessed 400 m. By how many metres did the guess miss?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"counting":{"have":358,"kind":"gap","target":400},"promptText":"The fence around the ball field is really 358 m long, but Mina guessed 400 m. By how many meters did the guess miss?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0343",
@@ -3432,7 +3432,7 @@ export const ITEMS = [
     structureType: "storyEstimateOff",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":59,"display":{"counting":{"have":150,"kind":"gap","target":209},"promptText":"Luca estimated the gym at 150 m; it measures 209 m. How many metres off was Luca's estimate?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":59,"display":{"counting":{"have":150,"kind":"gap","target":209},"promptText":"Luca estimated the path around the pond at 150 m; it measures 209 m. How many meters off was Luca's estimate?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0344",
@@ -3442,7 +3442,7 @@ export const ITEMS = [
     structureType: "storyEstimateOff",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"counting":{"have":300,"kind":"gap","target":372},"promptText":"The banner hall is really 372 m long, but Nia guessed 300 m. By how many metres did the guess miss?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"counting":{"have":300,"kind":"gap","target":372},"promptText":"The fence around the ball field is really 372 m long, but Nia guessed 300 m. By how many meters did the guess miss?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0345",
@@ -3452,7 +3452,7 @@ export const ITEMS = [
     structureType: "storyEstimateOff",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":69,"display":{"counting":{"have":431,"kind":"gap","target":500},"promptText":"Theo estimated the gym at 500 m; it measures 431 m. How many metres off was Theo's estimate?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":69,"display":{"counting":{"have":431,"kind":"gap","target":500},"promptText":"Theo estimated the path around the pond at 500 m; it measures 431 m. How many meters off was Theo's estimate?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0346",
@@ -3462,7 +3462,7 @@ export const ITEMS = [
     structureType: "storyEstimateOff",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":86,"display":{"counting":{"have":200,"kind":"gap","target":286},"promptText":"The banner hall is really 286 m long, but Ava guessed 200 m. By how many metres did the guess miss?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":86,"display":{"counting":{"have":200,"kind":"gap","target":286},"promptText":"The fence around the ball field is really 286 m long, but Ava guessed 200 m. By how many meters did the guess miss?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0347",
@@ -3472,7 +3472,7 @@ export const ITEMS = [
     structureType: "storyEstimateOff",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":59,"display":{"counting":{"have":291,"kind":"gap","target":350},"promptText":"Kai estimated the gym at 350 m; it measures 291 m. How many metres off was Kai's estimate?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":59,"display":{"counting":{"have":291,"kind":"gap","target":350},"promptText":"Kai estimated the path around the pond at 350 m; it measures 291 m. How many meters off was Kai's estimate?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0348",
@@ -3482,7 +3482,7 @@ export const ITEMS = [
     structureType: "storyEstimateOff",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":77,"display":{"counting":{"have":450,"kind":"gap","target":527},"promptText":"The banner hall is really 527 m long, but Ida guessed 450 m. By how many metres did the guess miss?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":77,"display":{"counting":{"have":450,"kind":"gap","target":527},"promptText":"The fence around the ball field is really 527 m long, but Ida guessed 450 m. By how many meters did the guess miss?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0349",
@@ -3492,7 +3492,7 @@ export const ITEMS = [
     structureType: "storyEstimateOff",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":68,"display":{"counting":{"have":175,"kind":"gap","target":243},"promptText":"Omar estimated the gym at 175 m; it measures 243 m. How many metres off was Omar's estimate?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":68,"display":{"counting":{"have":175,"kind":"gap","target":243},"promptText":"Omar estimated the path around the pond at 175 m; it measures 243 m. How many meters off was Omar's estimate?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0350",
@@ -3502,7 +3502,7 @@ export const ITEMS = [
     structureType: "storyEstimateOff",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"counting":{"have":268,"kind":"gap","target":325},"promptText":"The banner hall is really 268 m long, but June guessed 325 m. By how many metres did the guess miss?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"counting":{"have":268,"kind":"gap","target":325},"promptText":"The fence around the ball field is really 268 m long, but June guessed 325 m. By how many meters did the guess miss?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0351",
@@ -3512,7 +3512,7 @@ export const ITEMS = [
     structureType: "storyEstimateOff",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":74,"display":{"counting":{"have":275,"kind":"gap","target":349},"promptText":"Zoe estimated the gym at 275 m; it measures 349 m. How many metres off was Zoe's estimate?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":74,"display":{"counting":{"have":275,"kind":"gap","target":349},"promptText":"Zoe estimated the path around the pond at 275 m; it measures 349 m. How many meters off was Zoe's estimate?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0352",
@@ -3522,7 +3522,7 @@ export const ITEMS = [
     structureType: "storyEstimateOff",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":59,"display":{"counting":{"have":366,"kind":"gap","target":425},"promptText":"The banner hall is really 366 m long, but Ben guessed 425 m. By how many metres did the guess miss?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":59,"display":{"counting":{"have":366,"kind":"gap","target":425},"promptText":"The fence around the ball field is really 366 m long, but Ben guessed 425 m. By how many meters did the guess miss?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0353",
@@ -3532,7 +3532,7 @@ export const ITEMS = [
     structureType: "storyEstimateOff",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":76,"display":{"counting":{"have":225,"kind":"gap","target":301},"promptText":"Lily estimated the gym at 225 m; it measures 301 m. How many metres off was Lily's estimate?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":76,"display":{"counting":{"have":225,"kind":"gap","target":301},"promptText":"Lily estimated the path around the pond at 225 m; it measures 301 m. How many meters off was Lily's estimate?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0354",
@@ -3542,7 +3542,7 @@ export const ITEMS = [
     structureType: "storyEstimateOff",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":73,"display":{"counting":{"have":375,"kind":"gap","target":448},"promptText":"The banner hall is really 448 m long, but Rosa guessed 375 m. By how many metres did the guess miss?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":73,"display":{"counting":{"have":375,"kind":"gap","target":448},"promptText":"The fence around the ball field is really 448 m long, but Rosa guessed 375 m. By how many meters did the guess miss?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0355",
@@ -3552,7 +3552,7 @@ export const ITEMS = [
     structureType: "storyEstimateOff",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":69,"display":{"counting":{"have":125,"kind":"gap","target":194},"promptText":"Finn estimated the gym at 125 m; it measures 194 m. How many metres off was Finn's estimate?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":69,"display":{"counting":{"have":125,"kind":"gap","target":194},"promptText":"Finn estimated the path around the pond at 125 m; it measures 194 m. How many meters off was Finn's estimate?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0356",
@@ -3562,7 +3562,7 @@ export const ITEMS = [
     structureType: "storyEstimateOff",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":79,"display":{"counting":{"have":396,"kind":"gap","target":475},"promptText":"The banner hall is really 396 m long, but Amara guessed 475 m. By how many metres did the guess miss?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":79,"display":{"counting":{"have":396,"kind":"gap","target":475},"promptText":"The fence around the ball field is really 396 m long, but Amara guessed 475 m. By how many meters did the guess miss?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0357",
@@ -3572,7 +3572,7 @@ export const ITEMS = [
     structureType: "storyEstimateOff",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"counting":{"have":260,"kind":"gap","target":335},"promptText":"Diego estimated the gym at 260 m; it measures 335 m. How many metres off was Diego's estimate?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"counting":{"have":260,"kind":"gap","target":335},"promptText":"Diego estimated the path around the pond at 260 m; it measures 335 m. How many meters off was Diego's estimate?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0358",
@@ -4092,7 +4092,7 @@ export const ITEMS = [
     structureType: "storyTowerDiff",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":8,"kind":"gap","target":15},"promptText":"Two sandcastles: Mina's at 15 cm and a friend's at 8 cm. What is the difference in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":8,"kind":"gap","target":15},"promptText":"Two sandcastles: Mina's at 15 cm and a friend's at 8 cm. What is the difference in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0410",
@@ -4102,7 +4102,7 @@ export const ITEMS = [
     structureType: "storyTowerDiff",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":9,"kind":"gap","target":18},"promptText":"Luca's block tower is 18 cm tall; a friend's is 9 cm. How many centimetres taller is the taller tower?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":9,"kind":"gap","target":18},"promptText":"Luca's block tower is 18 cm tall; a friend's is 9 cm. How many centimeters taller is the taller tower?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0411",
@@ -4112,7 +4112,7 @@ export const ITEMS = [
     structureType: "storyTowerDiff",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":5,"kind":"gap","target":12},"promptText":"Two sandcastles: Nia's at 12 cm and a friend's at 5 cm. What is the difference in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":5,"kind":"gap","target":12},"promptText":"Two sandcastles: Nia's at 12 cm and a friend's at 5 cm. What is the difference in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0412",
@@ -4122,7 +4122,7 @@ export const ITEMS = [
     structureType: "storyTowerDiff",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":11,"kind":"gap","target":20},"promptText":"Theo's block tower is 20 cm tall; a friend's is 11 cm. How many centimetres taller is the taller tower?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":11,"kind":"gap","target":20},"promptText":"Theo's block tower is 20 cm tall; a friend's is 11 cm. How many centimeters taller is the taller tower?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0413",
@@ -4132,7 +4132,7 @@ export const ITEMS = [
     structureType: "storyTowerDiff",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":7,"kind":"gap","target":16},"promptText":"Two sandcastles: Ava's at 16 cm and a friend's at 7 cm. What is the difference in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":7,"kind":"gap","target":16},"promptText":"Two sandcastles: Ava's at 16 cm and a friend's at 7 cm. What is the difference in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0414",
@@ -4142,7 +4142,7 @@ export const ITEMS = [
     structureType: "storyTowerDiff",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":6,"kind":"gap","target":14},"promptText":"Kai's block tower is 14 cm tall; a friend's is 6 cm. How many centimetres taller is the taller tower?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":6,"kind":"gap","target":14},"promptText":"Kai's block tower is 14 cm tall; a friend's is 6 cm. How many centimeters taller is the taller tower?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0415",
@@ -4152,7 +4152,7 @@ export const ITEMS = [
     structureType: "storyTowerDiff",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":12,"kind":"gap","target":19},"promptText":"Two sandcastles: Ida's at 19 cm and a friend's at 12 cm. What is the difference in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":12,"kind":"gap","target":19},"promptText":"Two sandcastles: Ida's at 19 cm and a friend's at 12 cm. What is the difference in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0416",
@@ -4162,7 +4162,7 @@ export const ITEMS = [
     structureType: "storyTowerDiff",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":8,"kind":"gap","target":17},"promptText":"Omar's block tower is 17 cm tall; a friend's is 8 cm. How many centimetres taller is the taller tower?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":8,"kind":"gap","target":17},"promptText":"Omar's block tower is 17 cm tall; a friend's is 8 cm. How many centimeters taller is the taller tower?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0417",
@@ -4172,7 +4172,7 @@ export const ITEMS = [
     structureType: "storyTowerDiff",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":4,"kind":"gap","target":13},"promptText":"Two sandcastles: June's at 13 cm and a friend's at 4 cm. What is the difference in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":4,"kind":"gap","target":13},"promptText":"Two sandcastles: June's at 13 cm and a friend's at 4 cm. What is the difference in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0418",
@@ -4182,7 +4182,7 @@ export const ITEMS = [
     structureType: "storyTowerDiff",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":2,"kind":"gap","target":11},"promptText":"Zoe's block tower is 11 cm tall; a friend's is 2 cm. How many centimetres taller is the taller tower?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":2,"kind":"gap","target":11},"promptText":"Zoe's block tower is 11 cm tall; a friend's is 2 cm. How many centimeters taller is the taller tower?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0419",
@@ -4192,7 +4192,7 @@ export const ITEMS = [
     structureType: "storyTowerDiff",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":14,"kind":"gap","target":20},"promptText":"Two sandcastles: Ben's at 20 cm and a friend's at 14 cm. What is the difference in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":14,"kind":"gap","target":20},"promptText":"Two sandcastles: Ben's at 20 cm and a friend's at 14 cm. What is the difference in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0420",
@@ -4202,7 +4202,7 @@ export const ITEMS = [
     structureType: "storyTowerDiff",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":13,"kind":"gap","target":18},"promptText":"Lily's block tower is 18 cm tall; a friend's is 13 cm. How many centimetres taller is the taller tower?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":13,"kind":"gap","target":18},"promptText":"Lily's block tower is 18 cm tall; a friend's is 13 cm. How many centimeters taller is the taller tower?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0421",
@@ -4212,7 +4212,7 @@ export const ITEMS = [
     structureType: "storyTowerDiff",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":9,"kind":"gap","target":16},"promptText":"Two sandcastles: Rosa's at 16 cm and a friend's at 9 cm. What is the difference in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":9,"kind":"gap","target":16},"promptText":"Two sandcastles: Rosa's at 16 cm and a friend's at 9 cm. What is the difference in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0422",
@@ -4222,7 +4222,7 @@ export const ITEMS = [
     structureType: "storyTowerDiff",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":4,"kind":"gap","target":15},"promptText":"Finn's block tower is 15 cm tall; a friend's is 4 cm. How many centimetres taller is the taller tower?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":4,"kind":"gap","target":15},"promptText":"Finn's block tower is 15 cm tall; a friend's is 4 cm. How many centimeters taller is the taller tower?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0423",
@@ -4232,7 +4232,7 @@ export const ITEMS = [
     structureType: "storyTowerDiff",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":6,"kind":"gap","target":19},"promptText":"Two sandcastles: Amara's at 19 cm and a friend's at 6 cm. What is the difference in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":6,"kind":"gap","target":19},"promptText":"Two sandcastles: Amara's at 19 cm and a friend's at 6 cm. What is the difference in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0424",
@@ -4242,7 +4242,7 @@ export const ITEMS = [
     structureType: "storyTowerDiff",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":7,"kind":"gap","target":12},"promptText":"Diego's block tower is 12 cm tall; a friend's is 7 cm. How many centimetres taller is the taller tower?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":7,"kind":"gap","target":12},"promptText":"Diego's block tower is 12 cm tall; a friend's is 7 cm. How many centimeters taller is the taller tower?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0425",
@@ -4252,7 +4252,7 @@ export const ITEMS = [
     structureType: "storyTowerDiff",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":10,"kind":"gap","target":17},"promptText":"Two sandcastles: Priya's at 17 cm and a friend's at 10 cm. What is the difference in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":10,"kind":"gap","target":17},"promptText":"Two sandcastles: Priya's at 17 cm and a friend's at 10 cm. What is the difference in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0426",
@@ -4432,7 +4432,7 @@ export const ITEMS = [
     structureType: "storyGapAfterConvert",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"counting":{"have":140,"kind":"gap","target":200},"promptText":"Mina unrolls 2 m of streamer next to a 140 cm one. What is the difference in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"counting":{"have":140,"kind":"gap","target":200},"promptText":"Mina unrolls 2 m of streamer next to a 140 cm one. What is the difference in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0444",
@@ -4442,7 +4442,7 @@ export const ITEMS = [
     structureType: "storyGapAfterConvert",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":65,"display":{"counting":{"have":235,"kind":"gap","target":300},"promptText":"Luca's kite string is 3 m; a friend's is 235 cm. How many centimetres longer is Luca's string?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":65,"display":{"counting":{"have":235,"kind":"gap","target":300},"promptText":"Luca's kite string is 3 m; a friend's is 235 cm. How many centimeters longer is Luca's string?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0445",
@@ -4452,7 +4452,7 @@ export const ITEMS = [
     structureType: "storyGapAfterConvert",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":82,"display":{"counting":{"have":318,"kind":"gap","target":400},"promptText":"Nia unrolls 4 m of streamer next to a 318 cm one. What is the difference in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":82,"display":{"counting":{"have":318,"kind":"gap","target":400},"promptText":"Nia unrolls 4 m of streamer next to a 318 cm one. What is the difference in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0446",
@@ -4462,7 +4462,7 @@ export const ITEMS = [
     structureType: "storyGapAfterConvert",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":135,"display":{"counting":{"have":65,"kind":"gap","target":200},"promptText":"Theo's kite string is 2 m; a friend's is 65 cm. How many centimetres longer is Theo's string?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":135,"display":{"counting":{"have":65,"kind":"gap","target":200},"promptText":"Theo's kite string is 2 m; a friend's is 65 cm. How many centimeters longer is Theo's string?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0447",
@@ -4472,7 +4472,7 @@ export const ITEMS = [
     structureType: "storyGapAfterConvert",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":73,"display":{"counting":{"have":427,"kind":"gap","target":500},"promptText":"Ava unrolls 5 m of streamer next to a 427 cm one. What is the difference in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":73,"display":{"counting":{"have":427,"kind":"gap","target":500},"promptText":"Ava unrolls 5 m of streamer next to a 427 cm one. What is the difference in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0448",
@@ -4482,7 +4482,7 @@ export const ITEMS = [
     structureType: "storyGapAfterConvert",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":111,"display":{"counting":{"have":189,"kind":"gap","target":300},"promptText":"Kai's kite string is 3 m; a friend's is 189 cm. How many centimetres longer is Kai's string?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":111,"display":{"counting":{"have":189,"kind":"gap","target":300},"promptText":"Kai's kite string is 3 m; a friend's is 189 cm. How many centimeters longer is Kai's string?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0449",
@@ -4492,7 +4492,7 @@ export const ITEMS = [
     structureType: "storyGapAfterConvert",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"counting":{"have":512,"kind":"gap","target":600},"promptText":"Ida unrolls 6 m of streamer next to a 512 cm one. What is the difference in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"counting":{"have":512,"kind":"gap","target":600},"promptText":"Ida unrolls 6 m of streamer next to a 512 cm one. What is the difference in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0450",
@@ -4502,7 +4502,7 @@ export const ITEMS = [
     structureType: "storyGapAfterConvert",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":124,"display":{"counting":{"have":276,"kind":"gap","target":400},"promptText":"Omar's kite string is 4 m; a friend's is 276 cm. How many centimetres longer is Omar's string?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":124,"display":{"counting":{"have":276,"kind":"gap","target":400},"promptText":"Omar's kite string is 4 m; a friend's is 276 cm. How many centimeters longer is Omar's string?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0451",
@@ -4512,7 +4512,7 @@ export const ITEMS = [
     structureType: "storyGapAfterConvert",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":67,"display":{"counting":{"have":633,"kind":"gap","target":700},"promptText":"June unrolls 7 m of streamer next to a 633 cm one. What is the difference in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":67,"display":{"counting":{"have":633,"kind":"gap","target":700},"promptText":"June unrolls 7 m of streamer next to a 633 cm one. What is the difference in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0452",
@@ -4522,7 +4522,7 @@ export const ITEMS = [
     structureType: "storyGapAfterConvert",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":152,"display":{"counting":{"have":348,"kind":"gap","target":500},"promptText":"Zoe's kite string is 5 m; a friend's is 348 cm. How many centimetres longer is Zoe's string?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":152,"display":{"counting":{"have":348,"kind":"gap","target":500},"promptText":"Zoe's kite string is 5 m; a friend's is 348 cm. How many centimeters longer is Zoe's string?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0453",
@@ -4532,7 +4532,7 @@ export const ITEMS = [
     structureType: "storyGapAfterConvert",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"counting":{"have":173,"kind":"gap","target":200},"promptText":"Ben unrolls 2 m of streamer next to a 173 cm one. What is the difference in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"counting":{"have":173,"kind":"gap","target":200},"promptText":"Ben unrolls 2 m of streamer next to a 173 cm one. What is the difference in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0454",
@@ -4542,7 +4542,7 @@ export const ITEMS = [
     structureType: "storyGapAfterConvert",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":51,"display":{"counting":{"have":749,"kind":"gap","target":800},"promptText":"Lily's kite string is 8 m; a friend's is 749 cm. How many centimetres longer is Lily's string?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":51,"display":{"counting":{"have":749,"kind":"gap","target":800},"promptText":"Lily's kite string is 8 m; a friend's is 749 cm. How many centimeters longer is Lily's string?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0455",
@@ -4552,7 +4552,7 @@ export const ITEMS = [
     structureType: "storyGapAfterConvert",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":135,"display":{"counting":{"have":465,"kind":"gap","target":600},"promptText":"Rosa unrolls 6 m of streamer next to a 465 cm one. What is the difference in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":135,"display":{"counting":{"have":465,"kind":"gap","target":600},"promptText":"Rosa unrolls 6 m of streamer next to a 465 cm one. What is the difference in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0456",
@@ -4562,7 +4562,7 @@ export const ITEMS = [
     structureType: "storyGapAfterConvert",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":208,"display":{"counting":{"have":92,"kind":"gap","target":300},"promptText":"Finn's kite string is 3 m; a friend's is 92 cm. How many centimetres longer is Finn's string?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":208,"display":{"counting":{"have":92,"kind":"gap","target":300},"promptText":"Finn's kite string is 3 m; a friend's is 92 cm. How many centimeters longer is Finn's string?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0457",
@@ -4572,7 +4572,7 @@ export const ITEMS = [
     structureType: "storyGapAfterConvert",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"counting":{"have":856,"kind":"gap","target":900},"promptText":"Amara unrolls 9 m of streamer next to a 856 cm one. What is the difference in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"counting":{"have":856,"kind":"gap","target":900},"promptText":"Amara unrolls 9 m of streamer next to an 856 cm one. What is the difference in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0458",
@@ -4582,7 +4582,7 @@ export const ITEMS = [
     structureType: "storyGapAfterConvert",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":119,"display":{"counting":{"have":581,"kind":"gap","target":700},"promptText":"Diego's kite string is 7 m; a friend's is 581 cm. How many centimetres longer is Diego's string?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":119,"display":{"counting":{"have":581,"kind":"gap","target":700},"promptText":"Diego's kite string is 7 m; a friend's is 581 cm. How many centimeters longer is Diego's string?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0459",
@@ -4592,7 +4592,7 @@ export const ITEMS = [
     structureType: "storyGapAfterConvert",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":193,"display":{"counting":{"have":207,"kind":"gap","target":400},"promptText":"Priya unrolls 4 m of streamer next to a 207 cm one. What is the difference in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":193,"display":{"counting":{"have":207,"kind":"gap","target":400},"promptText":"Priya unrolls 4 m of streamer next to a 207 cm one. What is the difference in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0460",
@@ -4602,7 +4602,7 @@ export const ITEMS = [
     structureType: "storyFence_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[5,7,4]},"promptText":"Sam builds a garden edge from strips of 5 cm, 7 cm, and 4 cm. How long is the edge in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[5,7,4]},"promptText":"Sam builds a garden edge from strips of 5 cm, 7 cm, and 4 cm. How long is the edge in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0461",
@@ -4622,7 +4622,7 @@ export const ITEMS = [
     structureType: "storyFence_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[4,9,2]},"promptText":"Luca builds a garden edge from strips of 4 cm, 9 cm, and 2 cm. How long is the edge in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[4,9,2]},"promptText":"Luca builds a garden edge from strips of 4 cm, 9 cm, and 2 cm. How long is the edge in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0463",
@@ -4642,7 +4642,7 @@ export const ITEMS = [
     structureType: "storyFence_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[3,8,6]},"promptText":"Theo builds a garden edge from strips of 3 cm, 8 cm, and 6 cm. How long is the edge in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[3,8,6]},"promptText":"Theo builds a garden edge from strips of 3 cm, 8 cm, and 6 cm. How long is the edge in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0465",
@@ -4662,7 +4662,7 @@ export const ITEMS = [
     structureType: "storyFence_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[5,4,9]},"promptText":"Kai builds a garden edge from strips of 5 cm, 4 cm, and 9 cm. How long is the edge in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[5,4,9]},"promptText":"Kai builds a garden edge from strips of 5 cm, 4 cm, and 9 cm. How long is the edge in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0467",
@@ -4682,7 +4682,7 @@ export const ITEMS = [
     structureType: "storyFence_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[2,6,10]},"promptText":"Omar builds a garden edge from strips of 2 cm, 6 cm, and 10 cm. How long is the edge in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[2,6,10]},"promptText":"Omar builds a garden edge from strips of 2 cm, 6 cm, and 10 cm. How long is the edge in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0469",
@@ -4702,7 +4702,7 @@ export const ITEMS = [
     structureType: "storyFence_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[6,5,8]},"promptText":"Zoe builds a garden edge from strips of 6 cm, 5 cm, and 8 cm. How long is the edge in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[6,5,8]},"promptText":"Zoe builds a garden edge from strips of 6 cm, 5 cm, and 8 cm. How long is the edge in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0471",
@@ -4722,7 +4722,7 @@ export const ITEMS = [
     structureType: "storyFence_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[9,6,2]},"promptText":"Lily builds a garden edge from strips of 9 cm, 6 cm, and 2 cm. How long is the edge in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[9,6,2]},"promptText":"Lily builds a garden edge from strips of 9 cm, 6 cm, and 2 cm. How long is the edge in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0473",
@@ -4742,7 +4742,7 @@ export const ITEMS = [
     structureType: "storyFence_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[3,10,6]},"promptText":"Finn builds a garden edge from strips of 3 cm, 10 cm, and 6 cm. How long is the edge in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[3,10,6]},"promptText":"Finn builds a garden edge from strips of 3 cm, 10 cm, and 6 cm. How long is the edge in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0475",
@@ -4762,7 +4762,7 @@ export const ITEMS = [
     structureType: "storyFence_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[6,9,3]},"promptText":"Diego builds a garden edge from strips of 6 cm, 9 cm, and 3 cm. How long is the edge in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[6,9,3]},"promptText":"Diego builds a garden edge from strips of 6 cm, 9 cm, and 3 cm. How long is the edge in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0477",
@@ -4782,7 +4782,7 @@ export const ITEMS = [
     structureType: "storyFence_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":95,"display":{"counting":{"kind":"sum","parts":[45,38,12]},"promptText":"Luca builds a garden edge from strips of 45 cm, 38 cm, and 12 cm. How long is the edge in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":95,"display":{"counting":{"kind":"sum","parts":[45,38,12]},"promptText":"Luca builds a garden edge from strips of 45 cm, 38 cm, and 12 cm. How long is the edge in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0479",
@@ -4802,7 +4802,7 @@ export const ITEMS = [
     structureType: "storyFence_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":95,"display":{"counting":{"kind":"sum","parts":[63,18,14]},"promptText":"Theo builds a garden edge from strips of 63 cm, 18 cm, and 14 cm. How long is the edge in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":95,"display":{"counting":{"kind":"sum","parts":[63,18,14]},"promptText":"Theo builds a garden edge from strips of 63 cm, 18 cm, and 14 cm. How long is the edge in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0481",
@@ -4822,7 +4822,7 @@ export const ITEMS = [
     structureType: "storyFence_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":108,"display":{"counting":{"kind":"sum","parts":[38,55,15]},"promptText":"Kai builds a garden edge from strips of 38 cm, 55 cm, and 15 cm. How long is the edge in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":108,"display":{"counting":{"kind":"sum","parts":[38,55,15]},"promptText":"Kai builds a garden edge from strips of 38 cm, 55 cm, and 15 cm. How long is the edge in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0483",
@@ -4842,7 +4842,7 @@ export const ITEMS = [
     structureType: "storyFence_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":118,"display":{"counting":{"kind":"sum","parts":[56,37,25]},"promptText":"Omar builds a garden edge from strips of 56 cm, 37 cm, and 25 cm. How long is the edge in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":118,"display":{"counting":{"kind":"sum","parts":[56,37,25]},"promptText":"Omar builds a garden edge from strips of 56 cm, 37 cm, and 25 cm. How long is the edge in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0485",
@@ -4862,7 +4862,7 @@ export const ITEMS = [
     structureType: "storyFence_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":105,"display":{"counting":{"kind":"sum","parts":[64,19,22]},"promptText":"Zoe builds a garden edge from strips of 64 cm, 19 cm, and 22 cm. How long is the edge in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":105,"display":{"counting":{"kind":"sum","parts":[64,19,22]},"promptText":"Zoe builds a garden edge from strips of 64 cm, 19 cm, and 22 cm. How long is the edge in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0487",
@@ -4882,7 +4882,7 @@ export const ITEMS = [
     structureType: "storyFence_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":97,"display":{"counting":{"kind":"sum","parts":[47,26,24]},"promptText":"Lily builds a garden edge from strips of 47 cm, 26 cm, and 24 cm. How long is the edge in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":97,"display":{"counting":{"kind":"sum","parts":[47,26,24]},"promptText":"Lily builds a garden edge from strips of 47 cm, 26 cm, and 24 cm. How long is the edge in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0489",
@@ -4902,7 +4902,7 @@ export const ITEMS = [
     structureType: "storyFence_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":103,"display":{"counting":{"kind":"sum","parts":[29,54,20]},"promptText":"Finn builds a garden edge from strips of 29 cm, 54 cm, and 20 cm. How long is the edge in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":103,"display":{"counting":{"kind":"sum","parts":[29,54,20]},"promptText":"Finn builds a garden edge from strips of 29 cm, 54 cm, and 20 cm. How long is the edge in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0491",
@@ -4922,7 +4922,7 @@ export const ITEMS = [
     structureType: "storyFence_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":107,"display":{"counting":{"kind":"sum","parts":[37,44,26]},"promptText":"Diego builds a garden edge from strips of 37 cm, 44 cm, and 26 cm. How long is the edge in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":107,"display":{"counting":{"kind":"sum","parts":[37,44,26]},"promptText":"Diego builds a garden edge from strips of 37 cm, 44 cm, and 26 cm. How long is the edge in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0493",
@@ -4942,7 +4942,7 @@ export const ITEMS = [
     structureType: "storyRecipeMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"counting":{"have":320,"kind":"gap","target":500},"promptText":"A recipe of Sam's needs 500 mL of water, and the measuring cup already holds 320 mL. How many more millilitres must Sam add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"counting":{"have":320,"kind":"gap","target":500},"promptText":"A recipe of Sam's needs 500 mL of water, and the measuring cup already holds 320 mL. How many more milliliters must Sam add?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0495",
@@ -4952,7 +4952,7 @@ export const ITEMS = [
     structureType: "storyRecipeMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":215,"display":{"counting":{"have":185,"kind":"gap","target":400},"promptText":"Mina needs 400 mL of broth but has poured only 185 mL. How many millilitres are still needed?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":215,"display":{"counting":{"have":185,"kind":"gap","target":400},"promptText":"Mina needs 400 mL of broth but has poured only 185 mL. How many milliliters are still needed?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0496",
@@ -4962,7 +4962,7 @@ export const ITEMS = [
     structureType: "storyRecipeMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":163,"display":{"counting":{"have":437,"kind":"gap","target":600},"promptText":"A recipe of Luca's needs 600 mL of water, and the measuring cup already holds 437 mL. How many more millilitres must Luca add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":163,"display":{"counting":{"have":437,"kind":"gap","target":600},"promptText":"A recipe of Luca's needs 600 mL of water, and the measuring cup already holds 437 mL. How many more milliliters must Luca add?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0497",
@@ -4972,7 +4972,7 @@ export const ITEMS = [
     structureType: "storyRecipeMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":231,"display":{"counting":{"have":519,"kind":"gap","target":750},"promptText":"Nia needs 750 mL of broth but has poured only 519 mL. How many millilitres are still needed?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":231,"display":{"counting":{"have":519,"kind":"gap","target":750},"promptText":"Nia needs 750 mL of broth but has poured only 519 mL. How many milliliters are still needed?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0498",
@@ -4982,7 +4982,7 @@ export const ITEMS = [
     structureType: "storyRecipeMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":182,"display":{"counting":{"have":168,"kind":"gap","target":350},"promptText":"A recipe of Theo's needs 350 mL of water, and the measuring cup already holds 168 mL. How many more millilitres must Theo add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":182,"display":{"counting":{"have":168,"kind":"gap","target":350},"promptText":"A recipe of Theo's needs 350 mL of water, and the measuring cup already holds 168 mL. How many more milliliters must Theo add?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0499",
@@ -4992,7 +4992,7 @@ export const ITEMS = [
     structureType: "storyRecipeMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":158,"display":{"counting":{"have":642,"kind":"gap","target":800},"promptText":"Ava needs 800 mL of broth but has poured only 642 mL. How many millilitres are still needed?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":158,"display":{"counting":{"have":642,"kind":"gap","target":800},"promptText":"Ava needs 800 mL of broth but has poured only 642 mL. How many milliliters are still needed?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0500",
@@ -5002,7 +5002,7 @@ export const ITEMS = [
     structureType: "storyRecipeMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":177,"display":{"counting":{"have":273,"kind":"gap","target":450},"promptText":"A recipe of Kai's needs 450 mL of water, and the measuring cup already holds 273 mL. How many more millilitres must Kai add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":177,"display":{"counting":{"have":273,"kind":"gap","target":450},"promptText":"A recipe of Kai's needs 450 mL of water, and the measuring cup already holds 273 mL. How many more milliliters must Kai add?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0501",
@@ -5012,7 +5012,7 @@ export const ITEMS = [
     structureType: "storyRecipeMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":144,"display":{"counting":{"have":756,"kind":"gap","target":900},"promptText":"Ida needs 900 mL of broth but has poured only 756 mL. How many millilitres are still needed?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":144,"display":{"counting":{"have":756,"kind":"gap","target":900},"promptText":"Ida needs 900 mL of broth but has poured only 756 mL. How many milliliters are still needed?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0502",
@@ -5022,7 +5022,7 @@ export const ITEMS = [
     structureType: "storyRecipeMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":166,"display":{"counting":{"have":384,"kind":"gap","target":550},"promptText":"A recipe of Omar's needs 550 mL of water, and the measuring cup already holds 384 mL. How many more millilitres must Omar add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":166,"display":{"counting":{"have":384,"kind":"gap","target":550},"promptText":"A recipe of Omar's needs 550 mL of water, and the measuring cup already holds 384 mL. How many more milliliters must Omar add?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0503",
@@ -5032,7 +5032,7 @@ export const ITEMS = [
     structureType: "storyRecipeMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":235,"display":{"counting":{"have":465,"kind":"gap","target":700},"promptText":"June needs 700 mL of broth but has poured only 465 mL. How many millilitres are still needed?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":235,"display":{"counting":{"have":465,"kind":"gap","target":700},"promptText":"June needs 700 mL of broth but has poured only 465 mL. How many milliliters are still needed?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0504",
@@ -5042,7 +5042,7 @@ export const ITEMS = [
     structureType: "storyRecipeMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":122,"display":{"counting":{"have":528,"kind":"gap","target":650},"promptText":"A recipe of Zoe's needs 650 mL of water, and the measuring cup already holds 528 mL. How many more millilitres must Zoe add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":122,"display":{"counting":{"have":528,"kind":"gap","target":650},"promptText":"A recipe of Zoe's needs 650 mL of water, and the measuring cup already holds 528 mL. How many more milliliters must Zoe add?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0505",
@@ -5052,7 +5052,7 @@ export const ITEMS = [
     structureType: "storyRecipeMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":159,"display":{"counting":{"have":691,"kind":"gap","target":850},"promptText":"Ben needs 850 mL of broth but has poured only 691 mL. How many millilitres are still needed?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":159,"display":{"counting":{"have":691,"kind":"gap","target":850},"promptText":"Ben needs 850 mL of broth but has poured only 691 mL. How many milliliters are still needed?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0506",
@@ -5062,7 +5062,7 @@ export const ITEMS = [
     structureType: "storyRecipeMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":158,"display":{"counting":{"have":142,"kind":"gap","target":300},"promptText":"A recipe of Lily's needs 300 mL of water, and the measuring cup already holds 142 mL. How many more millilitres must Lily add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":158,"display":{"counting":{"have":142,"kind":"gap","target":300},"promptText":"A recipe of Lily's needs 300 mL of water, and the measuring cup already holds 142 mL. How many more milliliters must Lily add?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0507",
@@ -5072,7 +5072,7 @@ export const ITEMS = [
     structureType: "storyRecipeMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":143,"display":{"counting":{"have":807,"kind":"gap","target":950},"promptText":"Rosa needs 950 mL of broth but has poured only 807 mL. How many millilitres are still needed?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":143,"display":{"counting":{"have":807,"kind":"gap","target":950},"promptText":"Rosa needs 950 mL of broth but has poured only 807 mL. How many milliliters are still needed?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0508",
@@ -5082,7 +5082,7 @@ export const ITEMS = [
     structureType: "storyRecipeMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":134,"display":{"counting":{"have":116,"kind":"gap","target":250},"promptText":"A recipe of Finn's needs 250 mL of water, and the measuring cup already holds 116 mL. How many more millilitres must Finn add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":134,"display":{"counting":{"have":116,"kind":"gap","target":250},"promptText":"A recipe of Finn's needs 250 mL of water, and the measuring cup already holds 116 mL. How many more milliliters must Finn add?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0509",
@@ -5092,7 +5092,7 @@ export const ITEMS = [
     structureType: "storyRecipeMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":142,"display":{"counting":{"have":733,"kind":"gap","target":875},"promptText":"Amara needs 875 mL of broth but has poured only 733 mL. How many millilitres are still needed?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":142,"display":{"counting":{"have":733,"kind":"gap","target":875},"promptText":"Amara needs 875 mL of broth but has poured only 733 mL. How many milliliters are still needed?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0510",
@@ -5102,7 +5102,7 @@ export const ITEMS = [
     structureType: "storyRecipeMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":176,"display":{"counting":{"have":449,"kind":"gap","target":625},"promptText":"A recipe of Diego's needs 625 mL of water, and the measuring cup already holds 449 mL. How many more millilitres must Diego add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":176,"display":{"counting":{"have":449,"kind":"gap","target":625},"promptText":"A recipe of Diego's needs 625 mL of water, and the measuring cup already holds 449 mL. How many more milliliters must Diego add?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0511",
@@ -5122,7 +5122,7 @@ export const ITEMS = [
     structureType: "storyJoinTrim_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":63,"display":{"measure":{"a":45,"b":38,"cut":20,"kind":"joinTrim"},"promptText":"Luca ties a 45 cm cord to a 38 cm cord, then trims 20 cm off the end. How long is the cord now in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":63,"display":{"measure":{"a":45,"b":38,"cut":20,"kind":"joinTrim"},"promptText":"Luca ties a 45 cm cord to a 38 cm cord, then trims 20 cm off the end. How long is the cord now in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0513",
@@ -5142,7 +5142,7 @@ export const ITEMS = [
     structureType: "storyJoinTrim_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"measure":{"a":63,"b":18,"cut":25,"kind":"joinTrim"},"promptText":"Theo ties a 63 cm cord to a 18 cm cord, then trims 25 cm off the end. How long is the cord now in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"measure":{"a":63,"b":18,"cut":25,"kind":"joinTrim"},"promptText":"Theo ties a 63 cm cord to an 18 cm cord, then trims 25 cm off the end. How long is the cord now in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0515",
@@ -5162,7 +5162,7 @@ export const ITEMS = [
     structureType: "storyJoinTrim_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":63,"display":{"measure":{"a":38,"b":55,"cut":30,"kind":"joinTrim"},"promptText":"Kai ties a 38 cm cord to a 55 cm cord, then trims 30 cm off the end. How long is the cord now in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":63,"display":{"measure":{"a":38,"b":55,"cut":30,"kind":"joinTrim"},"promptText":"Kai ties a 38 cm cord to a 55 cm cord, then trims 30 cm off the end. How long is the cord now in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0517",
@@ -5182,7 +5182,7 @@ export const ITEMS = [
     structureType: "storyJoinTrim_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":53,"display":{"measure":{"a":56,"b":37,"cut":40,"kind":"joinTrim"},"promptText":"Omar ties a 56 cm cord to a 37 cm cord, then trims 40 cm off the end. How long is the cord now in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":53,"display":{"measure":{"a":56,"b":37,"cut":40,"kind":"joinTrim"},"promptText":"Omar ties a 56 cm cord to a 37 cm cord, then trims 40 cm off the end. How long is the cord now in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0519",
@@ -5202,7 +5202,7 @@ export const ITEMS = [
     structureType: "storyJoinTrim_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"measure":{"a":64,"b":19,"cut":35,"kind":"joinTrim"},"promptText":"Zoe ties a 64 cm cord to a 19 cm cord, then trims 35 cm off the end. How long is the cord now in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"measure":{"a":64,"b":19,"cut":35,"kind":"joinTrim"},"promptText":"Zoe ties a 64 cm cord to a 19 cm cord, then trims 35 cm off the end. How long is the cord now in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0521",
@@ -5222,7 +5222,7 @@ export const ITEMS = [
     structureType: "storyJoinTrim_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"measure":{"a":47,"b":26,"cut":28,"kind":"joinTrim"},"promptText":"Lily ties a 47 cm cord to a 26 cm cord, then trims 28 cm off the end. How long is the cord now in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"measure":{"a":47,"b":26,"cut":28,"kind":"joinTrim"},"promptText":"Lily ties a 47 cm cord to a 26 cm cord, then trims 28 cm off the end. How long is the cord now in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0523",
@@ -5242,7 +5242,7 @@ export const ITEMS = [
     structureType: "storyJoinTrim_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":51,"display":{"measure":{"a":29,"b":54,"cut":32,"kind":"joinTrim"},"promptText":"Finn ties a 29 cm cord to a 54 cm cord, then trims 32 cm off the end. How long is the cord now in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":51,"display":{"measure":{"a":29,"b":54,"cut":32,"kind":"joinTrim"},"promptText":"Finn ties a 29 cm cord to a 54 cm cord, then trims 32 cm off the end. How long is the cord now in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0525",
@@ -5262,7 +5262,7 @@ export const ITEMS = [
     structureType: "storyJoinTrim_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"measure":{"a":37,"b":44,"cut":24,"kind":"joinTrim"},"promptText":"Diego ties a 37 cm cord to a 44 cm cord, then trims 24 cm off the end. How long is the cord now in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"measure":{"a":37,"b":44,"cut":24,"kind":"joinTrim"},"promptText":"Diego ties a 37 cm cord to a 44 cm cord, then trims 24 cm off the end. How long is the cord now in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0527",
@@ -5452,7 +5452,7 @@ export const ITEMS = [
     structureType: "storyTwoHops",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[6,7]},"promptText":"First 6 m to the sandbox, then 7 m to the bench — how many metres does Mina travel?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[6,7]},"promptText":"First 6 m to the sandbox, then 7 m to the bench — how many meters does Mina travel?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0546",
@@ -5462,7 +5462,7 @@ export const ITEMS = [
     structureType: "storyTwoHops",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[9,8]},"promptText":"Luca hops 9 m to the swing, then 8 m to the slide. How many metres did Luca hop in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[9,8]},"promptText":"Luca hops 9 m to the swing, then 8 m to the slide. How many meters did Luca hop in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0547",
@@ -5472,7 +5472,7 @@ export const ITEMS = [
     structureType: "storyTwoHops",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[4,12]},"promptText":"First 4 m to the sandbox, then 12 m to the bench — how many metres does Nia travel?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[4,12]},"promptText":"First 4 m to the sandbox, then 12 m to the bench — how many meters does Nia travel?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0548",
@@ -5482,7 +5482,7 @@ export const ITEMS = [
     structureType: "storyTwoHops",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[11,5]},"promptText":"Theo hops 11 m to the swing, then 5 m to the slide. How many metres did Theo hop in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[11,5]},"promptText":"Theo hops 11 m to the swing, then 5 m to the slide. How many meters did Theo hop in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0549",
@@ -5492,7 +5492,7 @@ export const ITEMS = [
     structureType: "storyTwoHops",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[8,6]},"promptText":"First 8 m to the sandbox, then 6 m to the bench — how many metres does Ava travel?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[8,6]},"promptText":"First 8 m to the sandbox, then 6 m to the bench — how many meters does Ava travel?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0550",
@@ -5502,7 +5502,7 @@ export const ITEMS = [
     structureType: "storyTwoHops",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"sum","parts":[13,7]},"promptText":"Kai hops 13 m to the swing, then 7 m to the slide. How many metres did Kai hop in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"sum","parts":[13,7]},"promptText":"Kai hops 13 m to the swing, then 7 m to the slide. How many meters did Kai hop in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0551",
@@ -5512,7 +5512,7 @@ export const ITEMS = [
     structureType: "storyTwoHops",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[5,14]},"promptText":"First 5 m to the sandbox, then 14 m to the bench — how many metres does Ida travel?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[5,14]},"promptText":"First 5 m to the sandbox, then 14 m to the bench — how many meters does Ida travel?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0552",
@@ -5522,7 +5522,7 @@ export const ITEMS = [
     structureType: "storyTwoHops",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[10,9]},"promptText":"Omar hops 10 m to the swing, then 9 m to the slide. How many metres did Omar hop in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[10,9]},"promptText":"Omar hops 10 m to the swing, then 9 m to the slide. How many meters did Omar hop in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0553",
@@ -5532,7 +5532,7 @@ export const ITEMS = [
     structureType: "storyTwoHops",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[3,15]},"promptText":"First 3 m to the sandbox, then 15 m to the bench — how many metres does June travel?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[3,15]},"promptText":"First 3 m to the sandbox, then 15 m to the bench — how many meters does June travel?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0554",
@@ -5542,7 +5542,7 @@ export const ITEMS = [
     structureType: "storyTwoHops",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[12,6]},"promptText":"Zoe hops 12 m to the swing, then 6 m to the slide. How many metres did Zoe hop in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[12,6]},"promptText":"Zoe hops 12 m to the swing, then 6 m to the slide. How many meters did Zoe hop in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0555",
@@ -5552,7 +5552,7 @@ export const ITEMS = [
     structureType: "storyTwoHops",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[7,8]},"promptText":"First 7 m to the sandbox, then 8 m to the bench — how many metres does Ben travel?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[7,8]},"promptText":"First 7 m to the sandbox, then 8 m to the bench — how many meters does Ben travel?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0556",
@@ -5562,7 +5562,7 @@ export const ITEMS = [
     structureType: "storyTwoHops",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[14,4]},"promptText":"Lily hops 14 m to the swing, then 4 m to the slide. How many metres did Lily hop in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[14,4]},"promptText":"Lily hops 14 m to the swing, then 4 m to the slide. How many meters did Lily hop in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0557",
@@ -5572,7 +5572,7 @@ export const ITEMS = [
     structureType: "storyTwoHops",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[9,10]},"promptText":"First 9 m to the sandbox, then 10 m to the bench — how many metres does Rosa travel?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[9,10]},"promptText":"First 9 m to the sandbox, then 10 m to the bench — how many meters does Rosa travel?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0558",
@@ -5582,7 +5582,7 @@ export const ITEMS = [
     structureType: "storyTwoHops",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[6,13]},"promptText":"Finn hops 6 m to the swing, then 13 m to the slide. How many metres did Finn hop in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[6,13]},"promptText":"Finn hops 6 m to the swing, then 13 m to the slide. How many meters did Finn hop in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0559",
@@ -5592,7 +5592,7 @@ export const ITEMS = [
     structureType: "storyTwoHops",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"sum","parts":[15,5]},"promptText":"First 15 m to the sandbox, then 5 m to the bench — how many metres does Amara travel?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"sum","parts":[15,5]},"promptText":"First 15 m to the sandbox, then 5 m to the bench — how many meters does Amara travel?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0560",
@@ -5602,7 +5602,7 @@ export const ITEMS = [
     structureType: "storyTwoHops",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[8,11]},"promptText":"Diego hops 8 m to the swing, then 11 m to the slide. How many metres did Diego hop in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[8,11]},"promptText":"Diego hops 8 m to the swing, then 11 m to the slide. How many meters did Diego hop in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0561",
@@ -5612,7 +5612,7 @@ export const ITEMS = [
     structureType: "storyTwoHops",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"sum","parts":[4,16]},"promptText":"First 4 m to the sandbox, then 16 m to the bench — how many metres does Priya travel?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"sum","parts":[4,16]},"promptText":"First 4 m to the sandbox, then 16 m to the bench — how many meters does Priya travel?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0562",
@@ -5622,7 +5622,7 @@ export const ITEMS = [
     structureType: "storyPourTwice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"measure":{"a":18,"b":-5,"cut":6,"kind":"joinTrim"},"promptText":"Sam pours a 18 L jug into two bowls: 5 L and 6 L. How many litres stay in the jug?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"measure":{"a":18,"b":-5,"cut":6,"kind":"joinTrim"},"promptText":"Sam pours an 18 L jug into two bowls: 5 L and 6 L. How many liters stay in the jug?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0563",
@@ -5632,7 +5632,7 @@ export const ITEMS = [
     structureType: "storyPourTwice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"measure":{"a":20,"b":-7,"cut":4,"kind":"joinTrim"},"promptText":"Out of 20 L of lemonade, Mina serves 7 L and then 4 L. How many litres are left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"measure":{"a":20,"b":-7,"cut":4,"kind":"joinTrim"},"promptText":"Out of 20 L of lemonade, Mina serves 7 L and then 4 L. How many liters are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0564",
@@ -5642,7 +5642,7 @@ export const ITEMS = [
     structureType: "storyPourTwice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"measure":{"a":15,"b":-3,"cut":8,"kind":"joinTrim"},"promptText":"Luca pours a 15 L jug into two bowls: 3 L and 8 L. How many litres stay in the jug?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"measure":{"a":15,"b":-3,"cut":8,"kind":"joinTrim"},"promptText":"Luca pours a 15 L jug into two bowls: 3 L and 8 L. How many liters stay in the jug?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0565",
@@ -5652,7 +5652,7 @@ export const ITEMS = [
     structureType: "storyPourTwice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"measure":{"a":19,"b":-6,"cut":5,"kind":"joinTrim"},"promptText":"Out of 19 L of lemonade, Nia serves 6 L and then 5 L. How many litres are left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"measure":{"a":19,"b":-6,"cut":5,"kind":"joinTrim"},"promptText":"Out of 19 L of lemonade, Nia serves 6 L and then 5 L. How many liters are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0566",
@@ -5662,7 +5662,7 @@ export const ITEMS = [
     structureType: "storyPourTwice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"measure":{"a":16,"b":-4,"cut":7,"kind":"joinTrim"},"promptText":"Theo pours a 16 L jug into two bowls: 4 L and 7 L. How many litres stay in the jug?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"measure":{"a":16,"b":-4,"cut":7,"kind":"joinTrim"},"promptText":"Theo pours a 16 L jug into two bowls: 4 L and 7 L. How many liters stay in the jug?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0567",
@@ -5672,7 +5672,7 @@ export const ITEMS = [
     structureType: "storyPourTwice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"measure":{"a":20,"b":-9,"cut":3,"kind":"joinTrim"},"promptText":"Out of 20 L of lemonade, Ava serves 9 L and then 3 L. How many litres are left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"measure":{"a":20,"b":-9,"cut":3,"kind":"joinTrim"},"promptText":"Out of 20 L of lemonade, Ava serves 9 L and then 3 L. How many liters are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0568",
@@ -5682,7 +5682,7 @@ export const ITEMS = [
     structureType: "storyPourTwice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"measure":{"a":17,"b":-5,"cut":4,"kind":"joinTrim"},"promptText":"Kai pours a 17 L jug into two bowls: 5 L and 4 L. How many litres stay in the jug?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"measure":{"a":17,"b":-5,"cut":4,"kind":"joinTrim"},"promptText":"Kai pours a 17 L jug into two bowls: 5 L and 4 L. How many liters stay in the jug?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0569",
@@ -5692,7 +5692,7 @@ export const ITEMS = [
     structureType: "storyPourTwice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"measure":{"a":14,"b":-2,"cut":6,"kind":"joinTrim"},"promptText":"Out of 14 L of lemonade, Ida serves 2 L and then 6 L. How many litres are left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"measure":{"a":14,"b":-2,"cut":6,"kind":"joinTrim"},"promptText":"Out of 14 L of lemonade, Ida serves 2 L and then 6 L. How many liters are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0570",
@@ -5702,7 +5702,7 @@ export const ITEMS = [
     structureType: "storyPourTwice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"measure":{"a":20,"b":-8,"cut":7,"kind":"joinTrim"},"promptText":"Omar pours a 20 L jug into two bowls: 8 L and 7 L. How many litres stay in the jug?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"measure":{"a":20,"b":-8,"cut":7,"kind":"joinTrim"},"promptText":"Omar pours a 20 L jug into two bowls: 8 L and 7 L. How many liters stay in the jug?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0571",
@@ -5712,7 +5712,7 @@ export const ITEMS = [
     structureType: "storyPourTwice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"measure":{"a":18,"b":-4,"cut":9,"kind":"joinTrim"},"promptText":"Out of 18 L of lemonade, June serves 4 L and then 9 L. How many litres are left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"measure":{"a":18,"b":-4,"cut":9,"kind":"joinTrim"},"promptText":"Out of 18 L of lemonade, June serves 4 L and then 9 L. How many liters are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0572",
@@ -5722,7 +5722,7 @@ export const ITEMS = [
     structureType: "storyPourTwice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"measure":{"a":16,"b":-6,"cut":3,"kind":"joinTrim"},"promptText":"Zoe pours a 16 L jug into two bowls: 6 L and 3 L. How many litres stay in the jug?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"measure":{"a":16,"b":-6,"cut":3,"kind":"joinTrim"},"promptText":"Zoe pours a 16 L jug into two bowls: 6 L and 3 L. How many liters stay in the jug?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0573",
@@ -5732,7 +5732,7 @@ export const ITEMS = [
     structureType: "storyPourTwice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"measure":{"a":19,"b":-7,"cut":8,"kind":"joinTrim"},"promptText":"Out of 19 L of lemonade, Ben serves 7 L and then 8 L. How many litres are left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"measure":{"a":19,"b":-7,"cut":8,"kind":"joinTrim"},"promptText":"Out of 19 L of lemonade, Ben serves 7 L and then 8 L. How many liters are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0574",
@@ -5742,7 +5742,7 @@ export const ITEMS = [
     structureType: "storyPourTwice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"measure":{"a":15,"b":-5,"cut":2,"kind":"joinTrim"},"promptText":"Lily pours a 15 L jug into two bowls: 5 L and 2 L. How many litres stay in the jug?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"measure":{"a":15,"b":-5,"cut":2,"kind":"joinTrim"},"promptText":"Lily pours a 15 L jug into two bowls: 5 L and 2 L. How many liters stay in the jug?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0575",
@@ -5752,7 +5752,7 @@ export const ITEMS = [
     structureType: "storyPourTwice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"measure":{"a":20,"b":-3,"cut":11,"kind":"joinTrim"},"promptText":"Out of 20 L of lemonade, Rosa serves 3 L and then 11 L. How many litres are left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"measure":{"a":20,"b":-3,"cut":11,"kind":"joinTrim"},"promptText":"Out of 20 L of lemonade, Rosa serves 3 L and then 11 L. How many liters are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0576",
@@ -5762,7 +5762,7 @@ export const ITEMS = [
     structureType: "storyPourTwice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"measure":{"a":17,"b":-8,"cut":6,"kind":"joinTrim"},"promptText":"Finn pours a 17 L jug into two bowls: 8 L and 6 L. How many litres stay in the jug?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"measure":{"a":17,"b":-8,"cut":6,"kind":"joinTrim"},"promptText":"Finn pours a 17 L jug into two bowls: 8 L and 6 L. How many liters stay in the jug?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0577",
@@ -5772,7 +5772,7 @@ export const ITEMS = [
     structureType: "storyPourTwice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"measure":{"a":18,"b":-9,"cut":2,"kind":"joinTrim"},"promptText":"Out of 18 L of lemonade, Amara serves 9 L and then 2 L. How many litres are left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"measure":{"a":18,"b":-9,"cut":2,"kind":"joinTrim"},"promptText":"Out of 18 L of lemonade, Amara serves 9 L and then 2 L. How many liters are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0578",
@@ -5782,7 +5782,7 @@ export const ITEMS = [
     structureType: "storyPourTwice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"measure":{"a":14,"b":-4,"cut":5,"kind":"joinTrim"},"promptText":"Diego pours a 14 L jug into two bowls: 4 L and 5 L. How many litres stay in the jug?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"measure":{"a":14,"b":-4,"cut":5,"kind":"joinTrim"},"promptText":"Diego pours a 14 L jug into two bowls: 4 L and 5 L. How many liters stay in the jug?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0579",
@@ -5812,7 +5812,7 @@ export const ITEMS = [
     structureType: "storyShellLonger",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the 18 cm one","choices":["the 11 cm one","the 18 cm one"],"display":{"measure":{"a":18,"b":11,"kind":"cmp","pickLarger":true},"promptText":"Luca finds a 18 cm shell and a 11 cm shell. Which shell is the longer one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the 18 cm one","choices":["the 11 cm one","the 18 cm one"],"display":{"measure":{"a":18,"b":11,"kind":"cmp","pickLarger":true},"promptText":"Luca finds an 18 cm shell and an 11 cm shell. Which shell is the longer one?"}},
   },
   {
     itemId: "measurement-app-b0821-0582",
@@ -5912,7 +5912,7 @@ export const ITEMS = [
     structureType: "storyShellLonger",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the 13 cm one","choices":["the 13 cm one","the 8 cm one"],"display":{"measure":{"a":13,"b":8,"kind":"cmp","pickLarger":true},"promptText":"Lily finds a 13 cm shell and a 8 cm shell. Which shell is the longer one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the 13 cm one","choices":["the 13 cm one","the 8 cm one"],"display":{"measure":{"a":13,"b":8,"kind":"cmp","pickLarger":true},"promptText":"Lily finds a 13 cm shell and an 8 cm shell. Which shell is the longer one?"}},
   },
   {
     itemId: "measurement-app-b0821-0592",
@@ -6142,7 +6142,7 @@ export const ITEMS = [
     structureType: "storyMelonDiff",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":465,"display":{"counting":{"have":2660,"kind":"gap","target":3125},"promptText":"Two melons weigh in at 3125 g and 2660 g. What is the difference in grams? Mina does the subtraction."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":465,"display":{"counting":{"have":2660,"kind":"gap","target":3125},"promptText":"Two melons weigh 3125 g and 2660 g. How many grams heavier is the bigger melon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0615",
@@ -6162,7 +6162,7 @@ export const ITEMS = [
     structureType: "storyMelonDiff",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":465,"display":{"counting":{"have":3750,"kind":"gap","target":4215},"promptText":"Two melons weigh in at 4215 g and 3750 g. What is the difference in grams? Nia does the subtraction."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":465,"display":{"counting":{"have":3750,"kind":"gap","target":4215},"promptText":"One melon weighs 4215 g. Another melon weighs 3750 g. What is the difference in grams?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0617",
@@ -6182,7 +6182,7 @@ export const ITEMS = [
     structureType: "storyMelonDiff",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":465,"display":{"counting":{"have":4665,"kind":"gap","target":5130},"promptText":"Two melons weigh in at 5130 g and 4665 g. What is the difference in grams? Ava does the subtraction."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":465,"display":{"counting":{"have":4665,"kind":"gap","target":5130},"promptText":"Ava weighs two melons. One is 5130 g and the other is 4665 g. How many more grams does the heavier melon weigh?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0619",
@@ -6202,7 +6202,7 @@ export const ITEMS = [
     structureType: "storyMelonDiff",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":535,"display":{"counting":{"have":1645,"kind":"gap","target":2180},"promptText":"Two melons weigh in at 1645 g and 2180 g. What is the difference in grams? Ida does the subtraction."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":535,"display":{"counting":{"have":1645,"kind":"gap","target":2180},"promptText":"Two melons weigh 1645 g and 2180 g. How many grams heavier is the bigger melon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0621",
@@ -6222,7 +6222,7 @@ export const ITEMS = [
     structureType: "storyMelonDiff",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":535,"display":{"counting":{"have":2705,"kind":"gap","target":3240},"promptText":"Two melons weigh in at 2705 g and 3240 g. What is the difference in grams? June does the subtraction."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":535,"display":{"counting":{"have":2705,"kind":"gap","target":3240},"promptText":"One melon weighs 2705 g. Another melon weighs 3240 g. What is the difference in grams?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0623",
@@ -6242,7 +6242,7 @@ export const ITEMS = [
     structureType: "storyMelonDiff",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":465,"display":{"counting":{"have":3345,"kind":"gap","target":3810},"promptText":"Two melons weigh in at 3810 g and 3345 g. What is the difference in grams? Ben does the subtraction."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":465,"display":{"counting":{"have":3345,"kind":"gap","target":3810},"promptText":"Ben weighs two melons. One is 3810 g and the other is 3345 g. How many more grams does the heavier melon weigh?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0625",
@@ -6262,7 +6262,7 @@ export const ITEMS = [
     structureType: "storyMelonDiff",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":535,"display":{"counting":{"have":1930,"kind":"gap","target":2465},"promptText":"Two melons weigh in at 1930 g and 2465 g. What is the difference in grams? Rosa does the subtraction."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":535,"display":{"counting":{"have":1930,"kind":"gap","target":2465},"promptText":"Two melons weigh 1930 g and 2465 g. How many grams heavier is the bigger melon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0627",
@@ -6282,7 +6282,7 @@ export const ITEMS = [
     structureType: "storyMelonDiff",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":535,"display":{"counting":{"have":2260,"kind":"gap","target":2795},"promptText":"Two melons weigh in at 2260 g and 2795 g. What is the difference in grams? Amara does the subtraction."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":535,"display":{"counting":{"have":2260,"kind":"gap","target":2795},"promptText":"One melon weighs 2260 g. Another melon weighs 2795 g. What is the difference in grams?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0629",
@@ -6302,7 +6302,7 @@ export const ITEMS = [
     structureType: "storyQuiltRow",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":73,"display":{"counting":{"kind":"sum","parts":[24,31,18]},"promptText":"Three patches — 24 cm, 31 cm, and 18 cm wide — join side by side on Mina's quilt. How wide is the row in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":73,"display":{"counting":{"kind":"sum","parts":[24,31,18]},"promptText":"Three patches — 24 cm, 31 cm, and 18 cm wide — join side by side on Mina's quilt. How wide is the row in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0631",
@@ -6312,7 +6312,7 @@ export const ITEMS = [
     structureType: "storyQuiltRow",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"counting":{"kind":"sum","parts":[35,22,27]},"promptText":"Luca sews quilt strips of 35 cm, 22 cm, and 27 cm into one row. How many centimetres long is the row?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"counting":{"kind":"sum","parts":[35,22,27]},"promptText":"Luca sews quilt strips of 35 cm, 22 cm, and 27 cm into one row. How many centimeters long is the row?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0632",
@@ -6322,7 +6322,7 @@ export const ITEMS = [
     structureType: "storyQuiltRow",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":94,"display":{"counting":{"kind":"sum","parts":[42,19,33]},"promptText":"Three patches — 42 cm, 19 cm, and 33 cm wide — join side by side on Nia's quilt. How wide is the row in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":94,"display":{"counting":{"kind":"sum","parts":[42,19,33]},"promptText":"Three patches — 42 cm, 19 cm, and 33 cm wide — join side by side on Nia's quilt. How wide is the row in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0633",
@@ -6332,7 +6332,7 @@ export const ITEMS = [
     structureType: "storyQuiltRow",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":85,"display":{"counting":{"kind":"sum","parts":[28,36,21]},"promptText":"Theo sews quilt strips of 28 cm, 36 cm, and 21 cm into one row. How many centimetres long is the row?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":85,"display":{"counting":{"kind":"sum","parts":[28,36,21]},"promptText":"Theo sews quilt strips of 28 cm, 36 cm, and 21 cm into one row. How many centimeters long is the row?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0634",
@@ -6342,7 +6342,7 @@ export const ITEMS = [
     structureType: "storyQuiltRow",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"counting":{"kind":"sum","parts":[45,17,29]},"promptText":"Three patches — 45 cm, 17 cm, and 29 cm wide — join side by side on Ava's quilt. How wide is the row in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"counting":{"kind":"sum","parts":[45,17,29]},"promptText":"Three patches — 45 cm, 17 cm, and 29 cm wide — join side by side on Ava's quilt. How wide is the row in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0635",
@@ -6352,7 +6352,7 @@ export const ITEMS = [
     structureType: "storyQuiltRow",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":86,"display":{"counting":{"kind":"sum","parts":[31,40,15]},"promptText":"Kai sews quilt strips of 31 cm, 40 cm, and 15 cm into one row. How many centimetres long is the row?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":86,"display":{"counting":{"kind":"sum","parts":[31,40,15]},"promptText":"Kai sews quilt strips of 31 cm, 40 cm, and 15 cm into one row. How many centimeters long is the row?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0636",
@@ -6362,7 +6362,7 @@ export const ITEMS = [
     structureType: "storyQuiltRow",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":87,"display":{"counting":{"kind":"sum","parts":[26,38,23]},"promptText":"Three patches — 26 cm, 38 cm, and 23 cm wide — join side by side on Ida's quilt. How wide is the row in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":87,"display":{"counting":{"kind":"sum","parts":[26,38,23]},"promptText":"Three patches — 26 cm, 38 cm, and 23 cm wide — join side by side on Ida's quilt. How wide is the row in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0637",
@@ -6372,7 +6372,7 @@ export const ITEMS = [
     structureType: "storyQuiltRow",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":86,"display":{"counting":{"kind":"sum","parts":[49,21,16]},"promptText":"Omar sews quilt strips of 49 cm, 21 cm, and 16 cm into one row. How many centimetres long is the row?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":86,"display":{"counting":{"kind":"sum","parts":[49,21,16]},"promptText":"Omar sews quilt strips of 49 cm, 21 cm, and 16 cm into one row. How many centimeters long is the row?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0638",
@@ -6382,7 +6382,7 @@ export const ITEMS = [
     structureType: "storyQuiltRow",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":95,"display":{"counting":{"kind":"sum","parts":[33,25,37]},"promptText":"Three patches — 33 cm, 25 cm, and 37 cm wide — join side by side on June's quilt. How wide is the row in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":95,"display":{"counting":{"kind":"sum","parts":[33,25,37]},"promptText":"Three patches — 33 cm, 25 cm, and 37 cm wide — join side by side on June's quilt. How wide is the row in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0639",
@@ -6392,7 +6392,7 @@ export const ITEMS = [
     structureType: "storyQuiltRow",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"counting":{"kind":"sum","parts":[18,44,26]},"promptText":"Zoe sews quilt strips of 18 cm, 44 cm, and 26 cm into one row. How many centimetres long is the row?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"counting":{"kind":"sum","parts":[18,44,26]},"promptText":"Zoe sews quilt strips of 18 cm, 44 cm, and 26 cm into one row. How many centimeters long is the row?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0640",
@@ -6402,7 +6402,7 @@ export const ITEMS = [
     structureType: "storyQuiltRow",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":87,"display":{"counting":{"kind":"sum","parts":[39,28,20]},"promptText":"Three patches — 39 cm, 28 cm, and 20 cm wide — join side by side on Ben's quilt. How wide is the row in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":87,"display":{"counting":{"kind":"sum","parts":[39,28,20]},"promptText":"Three patches — 39 cm, 28 cm, and 20 cm wide — join side by side on Ben's quilt. How wide is the row in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0641",
@@ -6412,7 +6412,7 @@ export const ITEMS = [
     structureType: "storyQuiltRow",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":89,"display":{"counting":{"kind":"sum","parts":[22,35,32]},"promptText":"Lily sews quilt strips of 22 cm, 35 cm, and 32 cm into one row. How many centimetres long is the row?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":89,"display":{"counting":{"kind":"sum","parts":[22,35,32]},"promptText":"Lily sews quilt strips of 22 cm, 35 cm, and 32 cm into one row. How many centimeters long is the row?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0642",
@@ -6422,7 +6422,7 @@ export const ITEMS = [
     structureType: "storyQuiltRow",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":87,"display":{"counting":{"kind":"sum","parts":[47,16,24]},"promptText":"Three patches — 47 cm, 16 cm, and 24 cm wide — join side by side on Rosa's quilt. How wide is the row in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":87,"display":{"counting":{"kind":"sum","parts":[47,16,24]},"promptText":"Three patches — 47 cm, 16 cm, and 24 cm wide — join side by side on Rosa's quilt. How wide is the row in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0643",
@@ -6432,7 +6432,7 @@ export const ITEMS = [
     structureType: "storyQuiltRow",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":89,"display":{"counting":{"kind":"sum","parts":[29,41,19]},"promptText":"Finn sews quilt strips of 29 cm, 41 cm, and 19 cm into one row. How many centimetres long is the row?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":89,"display":{"counting":{"kind":"sum","parts":[29,41,19]},"promptText":"Finn sews quilt strips of 29 cm, 41 cm, and 19 cm into one row. How many centimeters long is the row?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0644",
@@ -6442,7 +6442,7 @@ export const ITEMS = [
     structureType: "storyQuiltRow",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":89,"display":{"counting":{"kind":"sum","parts":[36,23,30]},"promptText":"Three patches — 36 cm, 23 cm, and 30 cm wide — join side by side on Amara's quilt. How wide is the row in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":89,"display":{"counting":{"kind":"sum","parts":[36,23,30]},"promptText":"Three patches — 36 cm, 23 cm, and 30 cm wide — join side by side on Amara's quilt. How wide is the row in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0645",
@@ -6452,7 +6452,7 @@ export const ITEMS = [
     structureType: "storyQuiltRow",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"counting":{"kind":"sum","parts":[43,27,14]},"promptText":"Diego sews quilt strips of 43 cm, 27 cm, and 14 cm into one row. How many centimetres long is the row?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"counting":{"kind":"sum","parts":[43,27,14]},"promptText":"Diego sews quilt strips of 43 cm, 27 cm, and 14 cm into one row. How many centimeters long is the row?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0646",
@@ -6462,7 +6462,7 @@ export const ITEMS = [
     structureType: "storyQuiltRow",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":95,"display":{"counting":{"kind":"sum","parts":[25,39,31]},"promptText":"Three patches — 25 cm, 39 cm, and 31 cm wide — join side by side on Priya's quilt. How wide is the row in centimetres?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":95,"display":{"counting":{"kind":"sum","parts":[25,39,31]},"promptText":"Three patches — 25 cm, 39 cm, and 31 cm wide — join side by side on Priya's quilt. How wide is the row in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0647",
@@ -6472,7 +6472,7 @@ export const ITEMS = [
     structureType: "storyTankFill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2340,"display":{"counting":{"kind":"sum","parts":[2000,340]},"promptText":"Sam tops up an aquarium with 2 L and then 340 mL of water. How many millilitres went in altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2340,"display":{"counting":{"kind":"sum","parts":[2000,340]},"promptText":"Sam tops up an aquarium with 2 L and then 340 mL of water. How many milliliters went in altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0648",
@@ -6482,7 +6482,7 @@ export const ITEMS = [
     structureType: "storyTankFill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3125,"display":{"counting":{"kind":"sum","parts":[3000,125]},"promptText":"The camp cooler gets 3 L of water plus 125 mL more from Mina. How many millilitres is that in total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3125,"display":{"counting":{"kind":"sum","parts":[3000,125]},"promptText":"The camp cooler gets 3 L of water plus 125 mL more from Mina. How many milliliters is that in total?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0649",
@@ -6492,7 +6492,7 @@ export const ITEMS = [
     structureType: "storyTankFill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1480,"display":{"counting":{"kind":"sum","parts":[1000,480]},"promptText":"Luca tops up an aquarium with 1 L and then 480 mL of water. How many millilitres went in altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1480,"display":{"counting":{"kind":"sum","parts":[1000,480]},"promptText":"Luca tops up an aquarium with 1 L and then 480 mL of water. How many milliliters went in altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0650",
@@ -6502,7 +6502,7 @@ export const ITEMS = [
     structureType: "storyTankFill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4215,"display":{"counting":{"kind":"sum","parts":[4000,215]},"promptText":"The camp cooler gets 4 L of water plus 215 mL more from Nia. How many millilitres is that in total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4215,"display":{"counting":{"kind":"sum","parts":[4000,215]},"promptText":"The camp cooler gets 4 L of water plus 215 mL more from Nia. How many milliliters is that in total?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0651",
@@ -6512,7 +6512,7 @@ export const ITEMS = [
     structureType: "storyTankFill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2555,"display":{"counting":{"kind":"sum","parts":[2000,555]},"promptText":"Theo tops up an aquarium with 2 L and then 555 mL of water. How many millilitres went in altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2555,"display":{"counting":{"kind":"sum","parts":[2000,555]},"promptText":"Theo tops up an aquarium with 2 L and then 555 mL of water. How many milliliters went in altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0652",
@@ -6522,7 +6522,7 @@ export const ITEMS = [
     structureType: "storyTankFill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5130,"display":{"counting":{"kind":"sum","parts":[5000,130]},"promptText":"The camp cooler gets 5 L of water plus 130 mL more from Ava. How many millilitres is that in total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5130,"display":{"counting":{"kind":"sum","parts":[5000,130]},"promptText":"The camp cooler gets 5 L of water plus 130 mL more from Ava. How many milliliters is that in total?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0653",
@@ -6532,7 +6532,7 @@ export const ITEMS = [
     structureType: "storyTankFill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3370,"display":{"counting":{"kind":"sum","parts":[3000,370]},"promptText":"Kai tops up an aquarium with 3 L and then 370 mL of water. How many millilitres went in altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3370,"display":{"counting":{"kind":"sum","parts":[3000,370]},"promptText":"Kai tops up an aquarium with 3 L and then 370 mL of water. How many milliliters went in altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0654",
@@ -6542,7 +6542,7 @@ export const ITEMS = [
     structureType: "storyTankFill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1645,"display":{"counting":{"kind":"sum","parts":[1000,645]},"promptText":"The camp cooler gets 1 L of water plus 645 mL more from Ida. How many millilitres is that in total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1645,"display":{"counting":{"kind":"sum","parts":[1000,645]},"promptText":"The camp cooler gets 1 L of water plus 645 mL more from Ida. How many milliliters is that in total?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0655",
@@ -6552,7 +6552,7 @@ export const ITEMS = [
     structureType: "storyTankFill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4490,"display":{"counting":{"kind":"sum","parts":[4000,490]},"promptText":"Omar tops up an aquarium with 4 L and then 490 mL of water. How many millilitres went in altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4490,"display":{"counting":{"kind":"sum","parts":[4000,490]},"promptText":"Omar tops up an aquarium with 4 L and then 490 mL of water. How many milliliters went in altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0656",
@@ -6562,7 +6562,7 @@ export const ITEMS = [
     structureType: "storyTankFill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2705,"display":{"counting":{"kind":"sum","parts":[2000,705]},"promptText":"The camp cooler gets 2 L of water plus 705 mL more from June. How many millilitres is that in total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2705,"display":{"counting":{"kind":"sum","parts":[2000,705]},"promptText":"The camp cooler gets 2 L of water plus 705 mL more from June. How many milliliters is that in total?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0657",
@@ -6572,7 +6572,7 @@ export const ITEMS = [
     structureType: "storyTankFill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5265,"display":{"counting":{"kind":"sum","parts":[5000,265]},"promptText":"Zoe tops up an aquarium with 5 L and then 265 mL of water. How many millilitres went in altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5265,"display":{"counting":{"kind":"sum","parts":[5000,265]},"promptText":"Zoe tops up an aquarium with 5 L and then 265 mL of water. How many milliliters went in altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0658",
@@ -6582,7 +6582,7 @@ export const ITEMS = [
     structureType: "storyTankFill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3810,"display":{"counting":{"kind":"sum","parts":[3000,810]},"promptText":"The camp cooler gets 3 L of water plus 810 mL more from Ben. How many millilitres is that in total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3810,"display":{"counting":{"kind":"sum","parts":[3000,810]},"promptText":"The camp cooler gets 3 L of water plus 810 mL more from Ben. How many milliliters is that in total?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0659",
@@ -6592,7 +6592,7 @@ export const ITEMS = [
     structureType: "storyTankFill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6145,"display":{"counting":{"kind":"sum","parts":[6000,145]},"promptText":"Lily tops up an aquarium with 6 L and then 145 mL of water. How many millilitres went in altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6145,"display":{"counting":{"kind":"sum","parts":[6000,145]},"promptText":"Lily tops up an aquarium with 6 L and then 145 mL of water. How many milliliters went in altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0660",
@@ -6602,7 +6602,7 @@ export const ITEMS = [
     structureType: "storyTankFill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1930,"display":{"counting":{"kind":"sum","parts":[1000,930]},"promptText":"The camp cooler gets 1 L of water plus 930 mL more from Rosa. How many millilitres is that in total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1930,"display":{"counting":{"kind":"sum","parts":[1000,930]},"promptText":"The camp cooler gets 1 L of water plus 930 mL more from Rosa. How many milliliters is that in total?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0661",
@@ -6612,7 +6612,7 @@ export const ITEMS = [
     structureType: "storyTankFill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4385,"display":{"counting":{"kind":"sum","parts":[4000,385]},"promptText":"Finn tops up an aquarium with 4 L and then 385 mL of water. How many millilitres went in altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4385,"display":{"counting":{"kind":"sum","parts":[4000,385]},"promptText":"Finn tops up an aquarium with 4 L and then 385 mL of water. How many milliliters went in altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0662",
@@ -6622,7 +6622,7 @@ export const ITEMS = [
     structureType: "storyTankFill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2260,"display":{"counting":{"kind":"sum","parts":[2000,260]},"promptText":"The camp cooler gets 2 L of water plus 260 mL more from Amara. How many millilitres is that in total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2260,"display":{"counting":{"kind":"sum","parts":[2000,260]},"promptText":"The camp cooler gets 2 L of water plus 260 mL more from Amara. How many milliliters is that in total?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0663",
@@ -6632,7 +6632,7 @@ export const ITEMS = [
     structureType: "storyTankFill",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6415,"display":{"counting":{"kind":"sum","parts":[6000,415]},"promptText":"Diego tops up an aquarium with 6 L and then 415 mL of water. How many millilitres went in altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6415,"display":{"counting":{"kind":"sum","parts":[6000,415]},"promptText":"Diego tops up an aquarium with 6 L and then 415 mL of water. How many milliliters went in altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0664",
@@ -6642,7 +6642,7 @@ export const ITEMS = [
     structureType: "storyUnitChoice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"metres","choices":["metres","millimetres"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Sam plans to measure the classroom floor. Should Sam record it in metres or millimetres?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"meters","choices":["meters","millimeters"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Sam plans to measure the classroom floor. Should Sam record it in meters or millimeters?"}},
   },
   {
     itemId: "measurement-app-b0821-0665",
@@ -6652,7 +6652,7 @@ export const ITEMS = [
     structureType: "storyUnitChoice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"millimetres","choices":["metres","millimetres"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For a beetle's back, which unit should Mina write down: millimetres or metres?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"millimeters","choices":["meters","millimeters"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For a beetle's back, which unit should Mina write down: millimeters or meters?"}},
   },
   {
     itemId: "measurement-app-b0821-0666",
@@ -6662,7 +6662,7 @@ export const ITEMS = [
     structureType: "storyUnitChoice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"kilometres","choices":["centimetres","kilometres"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Luca plans to measure the walk to school. Should Luca record it in kilometres or centimetres?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"kilometers","choices":["centimeters","kilometers"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Luca plans to measure the walk to school. Should Luca record it in kilometers or centimeters?"}},
   },
   {
     itemId: "measurement-app-b0821-0667",
@@ -6672,7 +6672,7 @@ export const ITEMS = [
     structureType: "storyUnitChoice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"centimetres","choices":["centimetres","kilometres"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For a lunchbox, which unit should Nia write down: centimetres or kilometres?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"centimeters","choices":["centimeters","kilometers"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For a lunchbox, which unit should Nia write down: centimeters or kilometers?"}},
   },
   {
     itemId: "measurement-app-b0821-0668",
@@ -6682,7 +6682,7 @@ export const ITEMS = [
     structureType: "storyUnitChoice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"litres","choices":["millilitres","litres"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Theo plans to measure a full watering can. Should Theo record it in litres or millilitres?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"liters","choices":["milliliters","liters"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Theo plans to measure a full watering can. Should Theo record it in liters or milliliters?"}},
   },
   {
     itemId: "measurement-app-b0821-0669",
@@ -6692,7 +6692,7 @@ export const ITEMS = [
     structureType: "storyUnitChoice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"millilitres","choices":["millilitres","litres"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For a spoon of syrup, which unit should Ava write down: millilitres or litres?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"milliliters","choices":["milliliters","liters"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For a spoon of syrup, which unit should Ava write down: milliliters or liters?"}},
   },
   {
     itemId: "measurement-app-b0821-0670",
@@ -6722,7 +6722,7 @@ export const ITEMS = [
     structureType: "storyUnitChoice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"metres","choices":["metres","millimetres"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Omar plans to measure the school hallway. Should Omar record it in metres or millimetres?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"meters","choices":["meters","millimeters"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Omar plans to measure the school hallway. Should Omar record it in meters or millimeters?"}},
   },
   {
     itemId: "measurement-app-b0821-0673",
@@ -6732,7 +6732,7 @@ export const ITEMS = [
     structureType: "storyUnitChoice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"millimetres","choices":["millimetres","kilometres"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For an eyelash, which unit should June write down: millimetres or kilometres?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"millimeters","choices":["millimeters","kilometers"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For an eyelash, which unit should June write down: millimeters or kilometers?"}},
   },
   {
     itemId: "measurement-app-b0821-0674",
@@ -6742,7 +6742,7 @@ export const ITEMS = [
     structureType: "storyUnitChoice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"kilometres","choices":["centimetres","kilometres"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Zoe plans to measure a bike trail. Should Zoe record it in kilometres or centimetres?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"kilometers","choices":["centimeters","kilometers"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Zoe plans to measure a bike trail. Should Zoe record it in kilometers or centimeters?"}},
   },
   {
     itemId: "measurement-app-b0821-0675",
@@ -6752,7 +6752,7 @@ export const ITEMS = [
     structureType: "storyUnitChoice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"centimetres","choices":["metres","centimetres"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For a postcard, which unit should Ben write down: centimetres or metres?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"centimeters","choices":["meters","centimeters"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For a postcard, which unit should Ben write down: centimeters or meters?"}},
   },
   {
     itemId: "measurement-app-b0821-0676",
@@ -6762,7 +6762,7 @@ export const ITEMS = [
     structureType: "storyUnitChoice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"litres","choices":["millilitres","litres"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Lily plans to measure a bathtub of water. Should Lily record it in litres or millilitres?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"liters","choices":["milliliters","liters"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Lily plans to measure a bathtub of water. Should Lily record it in liters or milliliters?"}},
   },
   {
     itemId: "measurement-app-b0821-0677",
@@ -6772,7 +6772,7 @@ export const ITEMS = [
     structureType: "storyUnitChoice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"millilitres","choices":["millilitres","litres"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For a single tear drop, which unit should Rosa write down: millilitres or litres?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"milliliters","choices":["milliliters","liters"],"display":{"measure":{"kind":"pickLabel"},"promptText":"For a single tear drop, which unit should Rosa write down: milliliters or liters?"}},
   },
   {
     itemId: "measurement-app-b0821-0678",
@@ -6802,7 +6802,7 @@ export const ITEMS = [
     structureType: "storyUnitChoice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"metres","choices":["metres","kilometres"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Diego plans to measure a jump rope. Should Diego record it in metres or kilometres?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"meters","choices":["meters","kilometers"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Diego plans to measure a jump rope. Should Diego record it in meters or kilometers?"}},
   },
   {
     itemId: "measurement-app-b0821-0681",
@@ -6812,7 +6812,7 @@ export const ITEMS = [
     structureType: "storyGuessJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Mina eyeballs the flag pole and says \"6 m\". Does the guess make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Before measuring, Mina guesses the flag pole at 6 m. Does the guess make sense?"}},
   },
   {
     itemId: "measurement-app-b0821-0682",
@@ -6822,7 +6822,7 @@ export const ITEMS = [
     structureType: "storyGuessJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Before measuring, Luca guesses the flag pole at 6 cm. Is that a sensible guess?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Luca looks at the flag pole and guesses 6 cm. Does the guess make sense?"}},
   },
   {
     itemId: "measurement-app-b0821-0683",
@@ -6832,7 +6832,7 @@ export const ITEMS = [
     structureType: "storyGuessJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Nia eyeballs the school gate and says \"3 m\". Does the guess make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Before measuring, Nia guesses the school gate at 3 m. Is that a sensible guess?"}},
   },
   {
     itemId: "measurement-app-b0821-0684",
@@ -6842,7 +6842,7 @@ export const ITEMS = [
     structureType: "storyGuessJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Before measuring, Theo guesses the school gate at 3 km. Is that a sensible guess?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Theo looks at the school gate and guesses 3 km. Is that a sensible guess?"}},
   },
   {
     itemId: "measurement-app-b0821-0685",
@@ -6852,7 +6852,7 @@ export const ITEMS = [
     structureType: "storyGuessJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Ava eyeballs the water fountain and says \"1 m\". Does the guess make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Ava looks at the water fountain and guesses 1 m. Is that a sensible guess?"}},
   },
   {
     itemId: "measurement-app-b0821-0686",
@@ -6872,7 +6872,7 @@ export const ITEMS = [
     structureType: "storyGuessJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Ida eyeballs the library shelf and says \"2 m\". Does the guess make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Ida looks at the library shelf and guesses 2 m. Does the guess make sense?"}},
   },
   {
     itemId: "measurement-app-b0821-0688",
@@ -6882,7 +6882,7 @@ export const ITEMS = [
     structureType: "storyGuessJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Before measuring, Omar guesses the library shelf at 2 mm. Is that a sensible guess?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Before measuring, Omar guesses the library shelf at 2 mm. Does the guess make sense?"}},
   },
   {
     itemId: "measurement-app-b0821-0689",
@@ -6892,7 +6892,7 @@ export const ITEMS = [
     structureType: "storyGuessJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"June eyeballs the gym rope and says \"5 m\". Does the guess make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Before measuring, June guesses the gym rope at 5 m. Does the guess make sense?"}},
   },
   {
     itemId: "measurement-app-b0821-0690",
@@ -6902,7 +6902,7 @@ export const ITEMS = [
     structureType: "storyGuessJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Before measuring, Zoe guesses the gym rope at 5 km. Is that a sensible guess?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Zoe looks at the gym rope and guesses 5 km. Does the guess make sense?"}},
   },
   {
     itemId: "measurement-app-b0821-0691",
@@ -6912,7 +6912,7 @@ export const ITEMS = [
     structureType: "storyGuessJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Ben eyeballs the picnic bench and says \"2 m\". Does the guess make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Before measuring, Ben guesses the picnic bench at 2 m. Is that a sensible guess?"}},
   },
   {
     itemId: "measurement-app-b0821-0692",
@@ -6922,7 +6922,7 @@ export const ITEMS = [
     structureType: "storyGuessJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Before measuring, Lily guesses the picnic bench at 40 m. Is that a sensible guess?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Lily looks at the picnic bench and guesses 40 m. Is that a sensible guess?"}},
   },
   {
     itemId: "measurement-app-b0821-0693",
@@ -6932,7 +6932,7 @@ export const ITEMS = [
     structureType: "storyGuessJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Rosa eyeballs the basketball hoop and says \"3 m\". Does the guess make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Rosa looks at the basketball hoop and guesses 3 m. Is that a sensible guess?"}},
   },
   {
     itemId: "measurement-app-b0821-0694",
@@ -6952,7 +6952,7 @@ export const ITEMS = [
     structureType: "storyGuessJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Amara eyeballs the slide ladder and says \"2 m\". Does the guess make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Amara looks at the slide ladder and guesses 2 m. Does the guess make sense?"}},
   },
   {
     itemId: "measurement-app-b0821-0696",
@@ -6962,7 +6962,7 @@ export const ITEMS = [
     structureType: "storyGuessJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Before measuring, Diego guesses the slide ladder at 200 m. Is that a sensible guess?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Before measuring, Diego guesses the slide ladder at 200 m. Does the guess make sense?"}},
   },
   {
     itemId: "measurement-app-b0821-0697",
@@ -6972,7 +6972,7 @@ export const ITEMS = [
     structureType: "storyGuessJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Priya eyeballs the sandbox edge and says \"3 m\". Does the guess make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Before measuring, Priya guesses the sandbox edge at 3 m. Does the guess make sense?"}},
   },
   {
     itemId: "measurement-app-b0821-0698",
@@ -7492,7 +7492,7 @@ export const ITEMS = [
     structureType: "storyRibbonLeft",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"measure":{"a":200,"b":34,"cut":150,"kind":"joinTrim"},"promptText":"From a spool of 2 m 34 cm, Mina cuts 150 cm for a wreath. What length in centimetres is left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"measure":{"a":200,"b":34,"cut":150,"kind":"joinTrim"},"promptText":"From a spool of 2 m 34 cm, Mina cuts 150 cm for a wreath. What length in centimeters is left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0750",
@@ -7502,7 +7502,7 @@ export const ITEMS = [
     structureType: "storyRibbonLeft",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"measure":{"a":300,"b":12,"cut":240,"kind":"joinTrim"},"promptText":"Luca starts with 3 m 12 cm of ribbon and uses 240 cm on a bow. How many centimetres of ribbon remain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"measure":{"a":300,"b":12,"cut":240,"kind":"joinTrim"},"promptText":"Luca starts with 3 m 12 cm of ribbon and uses 240 cm on a bow. How many centimeters of ribbon remain?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0751",
@@ -7512,7 +7512,7 @@ export const ITEMS = [
     structureType: "storyRibbonLeft",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":83,"display":{"measure":{"a":100,"b":48,"cut":65,"kind":"joinTrim"},"promptText":"From a spool of 1 m 48 cm, Nia cuts 65 cm for a wreath. What length in centimetres is left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":83,"display":{"measure":{"a":100,"b":48,"cut":65,"kind":"joinTrim"},"promptText":"From a spool of 1 m 48 cm, Nia cuts 65 cm for a wreath. What length in centimeters is left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0752",
@@ -7522,7 +7522,7 @@ export const ITEMS = [
     structureType: "storyRibbonLeft",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":111,"display":{"measure":{"a":400,"b":21,"cut":310,"kind":"joinTrim"},"promptText":"Theo starts with 4 m 21 cm of ribbon and uses 310 cm on a bow. How many centimetres of ribbon remain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":111,"display":{"measure":{"a":400,"b":21,"cut":310,"kind":"joinTrim"},"promptText":"Theo starts with 4 m 21 cm of ribbon and uses 310 cm on a bow. How many centimeters of ribbon remain?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0753",
@@ -7532,7 +7532,7 @@ export const ITEMS = [
     structureType: "storyRibbonLeft",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"measure":{"a":200,"b":55,"cut":180,"kind":"joinTrim"},"promptText":"From a spool of 2 m 55 cm, Ava cuts 180 cm for a wreath. What length in centimetres is left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"measure":{"a":200,"b":55,"cut":180,"kind":"joinTrim"},"promptText":"From a spool of 2 m 55 cm, Ava cuts 180 cm for a wreath. What length in centimeters is left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0754",
@@ -7542,7 +7542,7 @@ export const ITEMS = [
     structureType: "storyRibbonLeft",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"measure":{"a":500,"b":13,"cut":425,"kind":"joinTrim"},"promptText":"Kai starts with 5 m 13 cm of ribbon and uses 425 cm on a bow. How many centimetres of ribbon remain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"measure":{"a":500,"b":13,"cut":425,"kind":"joinTrim"},"promptText":"Kai starts with 5 m 13 cm of ribbon and uses 425 cm on a bow. How many centimeters of ribbon remain?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0755",
@@ -7552,7 +7552,7 @@ export const ITEMS = [
     structureType: "storyRibbonLeft",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"measure":{"a":300,"b":37,"cut":265,"kind":"joinTrim"},"promptText":"From a spool of 3 m 37 cm, Ida cuts 265 cm for a wreath. What length in centimetres is left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"measure":{"a":300,"b":37,"cut":265,"kind":"joinTrim"},"promptText":"From a spool of 3 m 37 cm, Ida cuts 265 cm for a wreath. What length in centimeters is left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0756",
@@ -7562,7 +7562,7 @@ export const ITEMS = [
     structureType: "storyRibbonLeft",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"measure":{"a":100,"b":64,"cut":92,"kind":"joinTrim"},"promptText":"Omar starts with 1 m 64 cm of ribbon and uses 92 cm on a bow. How many centimetres of ribbon remain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"measure":{"a":100,"b":64,"cut":92,"kind":"joinTrim"},"promptText":"Omar starts with 1 m 64 cm of ribbon and uses 92 cm on a bow. How many centimeters of ribbon remain?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0757",
@@ -7572,7 +7572,7 @@ export const ITEMS = [
     structureType: "storyRibbonLeft",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":94,"display":{"measure":{"a":400,"b":49,"cut":355,"kind":"joinTrim"},"promptText":"From a spool of 4 m 49 cm, June cuts 355 cm for a wreath. What length in centimetres is left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":94,"display":{"measure":{"a":400,"b":49,"cut":355,"kind":"joinTrim"},"promptText":"From a spool of 4 m 49 cm, June cuts 355 cm for a wreath. What length in centimeters is left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0758",
@@ -7582,7 +7582,7 @@ export const ITEMS = [
     structureType: "storyRibbonLeft",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":125,"display":{"measure":{"a":200,"b":70,"cut":145,"kind":"joinTrim"},"promptText":"Zoe starts with 2 m 70 cm of ribbon and uses 145 cm on a bow. How many centimetres of ribbon remain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":125,"display":{"measure":{"a":200,"b":70,"cut":145,"kind":"joinTrim"},"promptText":"Zoe starts with 2 m 70 cm of ribbon and uses 145 cm on a bow. How many centimeters of ribbon remain?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0759",
@@ -7592,7 +7592,7 @@ export const ITEMS = [
     structureType: "storyRibbonLeft",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"measure":{"a":500,"b":26,"cut":480,"kind":"joinTrim"},"promptText":"From a spool of 5 m 26 cm, Ben cuts 480 cm for a wreath. What length in centimetres is left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"measure":{"a":500,"b":26,"cut":480,"kind":"joinTrim"},"promptText":"From a spool of 5 m 26 cm, Ben cuts 480 cm for a wreath. What length in centimeters is left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0760",
@@ -7602,7 +7602,7 @@ export const ITEMS = [
     structureType: "storyRibbonLeft",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":166,"display":{"measure":{"a":300,"b":81,"cut":215,"kind":"joinTrim"},"promptText":"Lily starts with 3 m 81 cm of ribbon and uses 215 cm on a bow. How many centimetres of ribbon remain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":166,"display":{"measure":{"a":300,"b":81,"cut":215,"kind":"joinTrim"},"promptText":"Lily starts with 3 m 81 cm of ribbon and uses 215 cm on a bow. How many centimeters of ribbon remain?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0761",
@@ -7612,7 +7612,7 @@ export const ITEMS = [
     structureType: "storyRibbonLeft",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"measure":{"a":600,"b":14,"cut":530,"kind":"joinTrim"},"promptText":"From a spool of 6 m 14 cm, Rosa cuts 530 cm for a wreath. What length in centimetres is left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"measure":{"a":600,"b":14,"cut":530,"kind":"joinTrim"},"promptText":"From a spool of 6 m 14 cm, Rosa cuts 530 cm for a wreath. What length in centimeters is left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0762",
@@ -7622,7 +7622,7 @@ export const ITEMS = [
     structureType: "storyRibbonLeft",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":115,"display":{"measure":{"a":100,"b":93,"cut":78,"kind":"joinTrim"},"promptText":"Finn starts with 1 m 93 cm of ribbon and uses 78 cm on a bow. How many centimetres of ribbon remain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":115,"display":{"measure":{"a":100,"b":93,"cut":78,"kind":"joinTrim"},"promptText":"Finn starts with 1 m 93 cm of ribbon and uses 78 cm on a bow. How many centimeters of ribbon remain?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0763",
@@ -7632,7 +7632,7 @@ export const ITEMS = [
     structureType: "storyRibbonLeft",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"measure":{"a":400,"b":38,"cut":390,"kind":"joinTrim"},"promptText":"From a spool of 4 m 38 cm, Amara cuts 390 cm for a wreath. What length in centimetres is left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"measure":{"a":400,"b":38,"cut":390,"kind":"joinTrim"},"promptText":"From a spool of 4 m 38 cm, Amara cuts 390 cm for a wreath. What length in centimeters is left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0764",
@@ -7642,7 +7642,7 @@ export const ITEMS = [
     structureType: "storyRibbonLeft",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":61,"display":{"measure":{"a":200,"b":26,"cut":165,"kind":"joinTrim"},"promptText":"Diego starts with 2 m 26 cm of ribbon and uses 165 cm on a bow. How many centimetres of ribbon remain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":61,"display":{"measure":{"a":200,"b":26,"cut":165,"kind":"joinTrim"},"promptText":"Diego starts with 2 m 26 cm of ribbon and uses 165 cm on a bow. How many centimeters of ribbon remain?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-app-b0821-0765",
@@ -7652,7 +7652,7 @@ export const ITEMS = [
     structureType: "storyRibbonLeft",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":136,"display":{"measure":{"a":600,"b":41,"cut":505,"kind":"joinTrim"},"promptText":"From a spool of 6 m 41 cm, Priya cuts 505 cm for a wreath. What length in centimetres is left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":136,"display":{"measure":{"a":600,"b":41,"cut":505,"kind":"joinTrim"},"promptText":"From a spool of 6 m 41 cm, Priya cuts 505 cm for a wreath. What length in centimeters is left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-conc-b0821-0001",
@@ -7682,7 +7682,7 @@ export const ITEMS = [
     structureType: "whichLongerTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the 18 cm one","choices":["the 11 cm one","the 18 cm one"],"display":{"measure":{"a":18,"b":11,"kind":"cmp","pickLarger":true},"promptText":"Ida holds a 18 cm straw and a 11 cm straw. Which straw is longer?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the 18 cm one","choices":["the 11 cm one","the 18 cm one"],"display":{"measure":{"a":18,"b":11,"kind":"cmp","pickLarger":true},"promptText":"Ida holds an 18 cm straw and an 11 cm straw. Which straw is longer?"}},
   },
   {
     itemId: "measurement-conc-b0821-0004",
@@ -7782,7 +7782,7 @@ export const ITEMS = [
     structureType: "whichLongerTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the 13 cm one","choices":["the 13 cm one","the 8 cm one"],"display":{"measure":{"a":13,"b":8,"kind":"cmp","pickLarger":true},"promptText":"Priya holds a 13 cm straw and a 8 cm straw. Which straw is longer?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the 13 cm one","choices":["the 13 cm one","the 8 cm one"],"display":{"measure":{"a":13,"b":8,"kind":"cmp","pickLarger":true},"promptText":"Priya holds a 13 cm straw and an 8 cm straw. Which straw is longer?"}},
   },
   {
     itemId: "measurement-conc-b0821-0014",
@@ -7852,7 +7852,7 @@ export const ITEMS = [
     structureType: "unitScaleJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Kai guesses a new crayon measures about 9 m. Is that a sensible guess?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Kai guesses a new crayon measures about 9 m. Is Kai right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0021",
@@ -7862,7 +7862,7 @@ export const ITEMS = [
     structureType: "unitScaleJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"June says a ladybird is about 6 mm long. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"June says a ladybird is about 6 mm long. Does that make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0022",
@@ -7872,7 +7872,7 @@ export const ITEMS = [
     structureType: "unitScaleJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Lily guesses a ladybird measures about 6 m. Is that a sensible guess?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Lily guesses a ladybird measures about 6 m. Does that make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0023",
@@ -7882,7 +7882,7 @@ export const ITEMS = [
     structureType: "unitScaleJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Amara says a jump rope is about 2 m long. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Amara guesses a jump rope measures about 2 m. Does that make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0024",
@@ -7892,7 +7892,7 @@ export const ITEMS = [
     structureType: "unitScaleJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Leo guesses a jump rope measures about 2 mm. Is that a sensible guess?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Leo says a jump rope is about 2 mm long. Does that make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0025",
@@ -7902,7 +7902,7 @@ export const ITEMS = [
     structureType: "unitScaleJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Mina says a shoe is about 20 cm long. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Mina guesses a shoe measures about 20 cm. Is Mina right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0026",
@@ -7912,7 +7912,7 @@ export const ITEMS = [
     structureType: "unitScaleJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Theo guesses a shoe measures about 20 m. Is that a sensible guess?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Theo says a shoe is about 20 m long. Is Theo right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0027",
@@ -7932,7 +7932,7 @@ export const ITEMS = [
     structureType: "unitScaleJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Zoe guesses a bed measures about 2 cm. Is that a sensible guess?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Zoe guesses a bed measures about 2 cm. Is Zoe right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0029",
@@ -7942,7 +7942,7 @@ export const ITEMS = [
     structureType: "unitScaleJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Rosa says an eraser is about 4 cm long. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Rosa says an eraser is about 4 cm long. Does that make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0030",
@@ -7952,7 +7952,7 @@ export const ITEMS = [
     structureType: "unitScaleJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Diego guesses an eraser measures about 4 km. Is that a sensible guess?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Diego guesses an eraser measures about 4 km. Does that make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0031",
@@ -7962,7 +7962,7 @@ export const ITEMS = [
     structureType: "unitScaleJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Nora says a garden slide is about 3 m long. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Nora guesses a garden slide measures about 3 m. Does that make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0032",
@@ -7972,7 +7972,7 @@ export const ITEMS = [
     structureType: "unitScaleJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Luca guesses a garden slide measures about 3 mm. Is that a sensible guess?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Luca says a garden slide is about 3 mm long. Does that make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0033",
@@ -7982,7 +7982,7 @@ export const ITEMS = [
     structureType: "unitScaleJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Ava says a postage stamp is about 2 cm long. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Ava guesses a postage stamp measures about 2 cm. Is Ava right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0034",
@@ -7992,7 +7992,7 @@ export const ITEMS = [
     structureType: "unitScaleJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Omar guesses a postage stamp measures about 2 km. Is that a sensible guess?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Omar says a postage stamp is about 2 km long. Is Omar right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0035",
@@ -8002,7 +8002,7 @@ export const ITEMS = [
     structureType: "unitScaleJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Ben says a lunch tray is about 14 cm long. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Ben guesses a lunch tray measures about 14 cm. Is Ben right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0036",
@@ -8012,7 +8012,7 @@ export const ITEMS = [
     structureType: "unitScaleJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Finn guesses a toothbrush measures about 17 cm. Is that a sensible guess?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Finn says a toothbrush is about 17 cm long. Is Finn right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0037",
@@ -8032,7 +8032,7 @@ export const ITEMS = [
     structureType: "growthSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"15 - 9","choices":["15 - 9","9 - 15","15 + 9"],"display":{"measure":{"a":9,"b":15,"kind":"growth"},"promptText":"The vine stretched from 9 cm to 15 cm. Which sentence shows how much it grew? Omar picks one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"15 - 9","choices":["15 - 9","9 - 15","15 + 9"],"display":{"measure":{"a":9,"b":15,"kind":"growth"},"promptText":"A vine grew from 9 cm to 15 cm. Which one shows how to find how much the vine grew?"}},
   },
   {
     itemId: "measurement-conc-b0821-0039",
@@ -8052,7 +8052,7 @@ export const ITEMS = [
     structureType: "growthSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"18 - 11","choices":["11 - 18","18 + 11","18 - 11"],"display":{"measure":{"a":11,"b":18,"kind":"growth"},"promptText":"The vine stretched from 11 cm to 18 cm. Which sentence shows how much it grew? Finn picks one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"18 - 11","choices":["11 - 18","18 + 11","18 - 11"],"display":{"measure":{"a":11,"b":18,"kind":"growth"},"promptText":"A vine was 11 cm long. Now it is 18 cm long. Which one finds how many centimeters the vine grew?"}},
   },
   {
     itemId: "measurement-conc-b0821-0041",
@@ -8072,7 +8072,7 @@ export const ITEMS = [
     structureType: "growthSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"16 - 8","choices":["16 + 8","16 - 8","8 - 16"],"display":{"measure":{"a":8,"b":16,"kind":"growth"},"promptText":"The vine stretched from 8 cm to 16 cm. Which sentence shows how much it grew? Sam picks one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"16 - 8","choices":["16 + 8","16 - 8","8 - 16"],"display":{"measure":{"a":8,"b":16,"kind":"growth"},"promptText":"A vine grew from 8 cm to 16 cm. Which one shows how to find how much the vine grew?"}},
   },
   {
     itemId: "measurement-conc-b0821-0043",
@@ -8092,7 +8092,7 @@ export const ITEMS = [
     structureType: "growthSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"20 - 13","choices":["20 + 13","20 - 13","13 - 20"],"display":{"measure":{"a":13,"b":20,"kind":"growth"},"promptText":"The vine stretched from 13 cm to 20 cm. Which sentence shows how much it grew? Kai picks one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"20 - 13","choices":["20 + 13","20 - 13","13 - 20"],"display":{"measure":{"a":13,"b":20,"kind":"growth"},"promptText":"A vine was 13 cm long. Now it is 20 cm long. Which one finds how many centimeters the vine grew?"}},
   },
   {
     itemId: "measurement-conc-b0821-0045",
@@ -8112,7 +8112,7 @@ export const ITEMS = [
     structureType: "growthSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"17 - 12","choices":["17 + 12","12 - 17","17 - 12"],"display":{"measure":{"a":12,"b":17,"kind":"growth"},"promptText":"The vine stretched from 12 cm to 17 cm. Which sentence shows how much it grew? Lily picks one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"17 - 12","choices":["17 + 12","12 - 17","17 - 12"],"display":{"measure":{"a":12,"b":17,"kind":"growth"},"promptText":"A vine grew from 12 cm to 17 cm. Which one shows how to find how much the vine grew?"}},
   },
   {
     itemId: "measurement-conc-b0821-0047",
@@ -8132,7 +8132,7 @@ export const ITEMS = [
     structureType: "growthSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"19 - 14","choices":["14 - 19","19 + 14","19 - 14"],"display":{"measure":{"a":14,"b":19,"kind":"growth"},"promptText":"The vine stretched from 14 cm to 19 cm. Which sentence shows how much it grew? Leo picks one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"19 - 14","choices":["14 - 19","19 + 14","19 - 14"],"display":{"measure":{"a":14,"b":19,"kind":"growth"},"promptText":"A vine was 14 cm long. Now it is 19 cm long. Which one finds how many centimeters the vine grew?"}},
   },
   {
     itemId: "measurement-conc-b0821-0049",
@@ -8152,7 +8152,7 @@ export const ITEMS = [
     structureType: "growthSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"15 - 6","choices":["15 + 6","15 - 6","6 - 15"],"display":{"measure":{"a":6,"b":15,"kind":"growth"},"promptText":"The vine stretched from 6 cm to 15 cm. Which sentence shows how much it grew? Theo picks one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"15 - 6","choices":["15 + 6","15 - 6","6 - 15"],"display":{"measure":{"a":6,"b":15,"kind":"growth"},"promptText":"A vine grew from 6 cm to 15 cm. Which one shows how to find how much the vine grew?"}},
   },
   {
     itemId: "measurement-conc-b0821-0051",
@@ -8172,7 +8172,7 @@ export const ITEMS = [
     structureType: "growthSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"20 - 9","choices":["20 - 9","20 + 9","9 - 20"],"display":{"measure":{"a":9,"b":20,"kind":"growth"},"promptText":"The vine stretched from 9 cm to 20 cm. Which sentence shows how much it grew? Zoe picks one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"20 - 9","choices":["20 - 9","20 + 9","9 - 20"],"display":{"measure":{"a":9,"b":20,"kind":"growth"},"promptText":"A vine was 9 cm long. Now it is 20 cm long. Which one finds how many centimeters the vine grew?"}},
   },
   {
     itemId: "measurement-conc-b0821-0053",
@@ -8192,7 +8192,7 @@ export const ITEMS = [
     structureType: "convJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"On the worksheet Ava answers 3 m is 30 cm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"On a worksheet, Ava writes that 3 m is 30 cm. Is Ava right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0055",
@@ -8202,7 +8202,7 @@ export const ITEMS = [
     structureType: "convJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Omar writes: 2 km is 2000 m. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Omar writes: 2 km is 2000 m. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0056",
@@ -8212,7 +8212,7 @@ export const ITEMS = [
     structureType: "convJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"On the worksheet Ben answers 2 km is 200 m. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"On a worksheet, Ben writes that 2 km is 200 m. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0057",
@@ -8222,7 +8222,7 @@ export const ITEMS = [
     structureType: "convJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Finn writes: 5 cm is 50 mm. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"On a worksheet, Finn writes that 5 cm is 50 mm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0058",
@@ -8232,7 +8232,7 @@ export const ITEMS = [
     structureType: "convJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"On the worksheet Priya answers 5 cm is 500 mm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Priya writes: 5 cm is 500 mm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0059",
@@ -8242,7 +8242,7 @@ export const ITEMS = [
     structureType: "convJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Sam writes: 7 m is 700 cm. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"On a worksheet, Sam writes that 7 m is 700 cm. Is Sam right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0060",
@@ -8252,7 +8252,7 @@ export const ITEMS = [
     structureType: "convJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"On the worksheet Nia answers 7 m is 70 cm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Nia writes: 7 m is 70 cm. Is Nia right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0061",
@@ -8272,7 +8272,7 @@ export const ITEMS = [
     structureType: "convJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"On the worksheet June answers 4 km is 400 m. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"On a worksheet, June writes that 4 km is 400 m. Is June right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0063",
@@ -8282,7 +8282,7 @@ export const ITEMS = [
     structureType: "convJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Lily writes: 9 cm is 90 mm. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Lily writes: 9 cm is 90 mm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0064",
@@ -8292,7 +8292,7 @@ export const ITEMS = [
     structureType: "convJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"On the worksheet Amara answers 9 cm is 9 mm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"On a worksheet, Amara writes that 9 cm is 9 mm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0065",
@@ -8302,7 +8302,7 @@ export const ITEMS = [
     structureType: "convJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Leo writes: 6 m is 600 cm. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"On a worksheet, Leo writes that 6 m is 600 cm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0066",
@@ -8312,7 +8312,7 @@ export const ITEMS = [
     structureType: "convJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"On the worksheet Mina answers 6 m is 6000 cm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Mina writes: 6 m is 6000 cm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0067",
@@ -8322,7 +8322,7 @@ export const ITEMS = [
     structureType: "convJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Theo writes: 8 km is 8000 m. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"On a worksheet, Theo writes that 8 km is 8000 m. Is Theo right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0068",
@@ -8332,7 +8332,7 @@ export const ITEMS = [
     structureType: "convJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"On the worksheet Ida answers 8 km is 800 m. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Ida writes: 8 km is 800 m. Is Ida right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0069",
@@ -8352,7 +8352,7 @@ export const ITEMS = [
     structureType: "convJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"On the worksheet Rosa answers 1 m is 1000 cm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"On a worksheet, Rosa writes that 1 m is 1000 cm. Is Rosa right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0071",
@@ -8372,7 +8372,7 @@ export const ITEMS = [
     structureType: "crossLonger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"300 cm","choices":["2 m","300 cm"],"display":{"measure":{"a":300,"b":200,"kind":"cmp"},"promptText":"Which stretch is longer, 300 cm or 2 m? Ida converts to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":"300 cm","choices":["2 m","300 cm"],"display":{"measure":{"a":300,"b":200,"kind":"cmp"},"promptText":"Which is longer, 300 cm or 2 m?"}},
   },
   {
     itemId: "measurement-conc-b0821-0073",
@@ -8392,7 +8392,7 @@ export const ITEMS = [
     structureType: "crossLonger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1500 m","choices":["1500 m","1 km"],"display":{"measure":{"a":1500,"b":1000,"kind":"cmp"},"promptText":"Which stretch is longer, 1500 m or 1 km? Rosa converts to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1500 m","choices":["1500 m","1 km"],"display":{"measure":{"a":1500,"b":1000,"kind":"cmp"},"promptText":"Which length is longer: 1500 m or 1 km?"}},
   },
   {
     itemId: "measurement-conc-b0821-0075",
@@ -8412,7 +8412,7 @@ export const ITEMS = [
     structureType: "crossLonger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"55 mm","choices":["5 cm","55 mm"],"display":{"measure":{"a":55,"b":50,"kind":"cmp"},"promptText":"Which stretch is longer, 55 mm or 5 cm? Nora converts to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":"55 mm","choices":["5 cm","55 mm"],"display":{"measure":{"a":55,"b":50,"kind":"cmp"},"promptText":"Which is longer, 55 mm or 5 cm?"}},
   },
   {
     itemId: "measurement-conc-b0821-0077",
@@ -8432,7 +8432,7 @@ export const ITEMS = [
     structureType: "crossLonger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"420 cm","choices":["420 cm","4 m"],"display":{"measure":{"a":420,"b":400,"kind":"cmp"},"promptText":"Which stretch is longer, 420 cm or 4 m? Ava converts to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":"420 cm","choices":["420 cm","4 m"],"display":{"measure":{"a":420,"b":400,"kind":"cmp"},"promptText":"Which length is longer: 420 cm or 4 m?"}},
   },
   {
     itemId: "measurement-conc-b0821-0079",
@@ -8452,7 +8452,7 @@ export const ITEMS = [
     structureType: "crossLonger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2500 m","choices":["2 km","2500 m"],"display":{"measure":{"a":2500,"b":2000,"kind":"cmp"},"promptText":"Which stretch is longer, 2500 m or 2 km? Ben converts to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2500 m","choices":["2 km","2500 m"],"display":{"measure":{"a":2500,"b":2000,"kind":"cmp"},"promptText":"Which is longer, 2500 m or 2 km?"}},
   },
   {
     itemId: "measurement-conc-b0821-0081",
@@ -8472,7 +8472,7 @@ export const ITEMS = [
     structureType: "crossLonger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"85 mm","choices":["8 cm","85 mm"],"display":{"measure":{"a":85,"b":80,"kind":"cmp"},"promptText":"Which stretch is longer, 85 mm or 8 cm? Priya converts to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":"85 mm","choices":["8 cm","85 mm"],"display":{"measure":{"a":85,"b":80,"kind":"cmp"},"promptText":"Which length is longer: 85 mm or 8 cm?"}},
   },
   {
     itemId: "measurement-conc-b0821-0083",
@@ -8492,7 +8492,7 @@ export const ITEMS = [
     structureType: "crossLonger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"620 cm","choices":["6 m","620 cm"],"display":{"measure":{"a":620,"b":600,"kind":"cmp"},"promptText":"Which stretch is longer, 620 cm or 6 m? Nia converts to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":"620 cm","choices":["6 m","620 cm"],"display":{"measure":{"a":620,"b":600,"kind":"cmp"},"promptText":"Which is longer, 620 cm or 6 m?"}},
   },
   {
     itemId: "measurement-conc-b0821-0085",
@@ -8512,7 +8512,7 @@ export const ITEMS = [
     structureType: "crossLonger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"95 mm","choices":["9 cm","95 mm"],"display":{"measure":{"a":95,"b":90,"kind":"cmp"},"promptText":"Which stretch is longer, 95 mm or 9 cm? June converts to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":"95 mm","choices":["9 cm","95 mm"],"display":{"measure":{"a":95,"b":90,"kind":"cmp"},"promptText":"Which length is longer: 95 mm or 9 cm?"}},
   },
   {
     itemId: "measurement-conc-b0821-0087",
@@ -8532,7 +8532,7 @@ export const ITEMS = [
     structureType: "crossLonger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1100 m","choices":["1 km","1100 m"],"display":{"measure":{"a":1100,"b":1000,"kind":"cmp"},"promptText":"Which stretch is longer, 1100 m or 1 km? Amara converts to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1100 m","choices":["1 km","1100 m"],"display":{"measure":{"a":1100,"b":1000,"kind":"cmp"},"promptText":"Which is longer, 1100 m or 1 km?"}},
   },
   {
     itemId: "measurement-conc-b0821-0089",
@@ -8542,7 +8542,7 @@ export const ITEMS = [
     structureType: "factorPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":100,"choices":[1000,100,10],"display":{"measure":{"kind":"factorPick","factor":100},"promptText":"To change metres into centimetres, what does Zoe multiply by?"}},
+    question: {"a":null,"b":null,"op":"count","answer":100,"choices":[1000,100,10],"display":{"measure":{"kind":"factorPick","factor":100},"promptText":"To change meters into centimeters, what does Zoe multiply by?"}},
   },
   {
     itemId: "measurement-conc-b0821-0090",
@@ -8552,7 +8552,7 @@ export const ITEMS = [
     structureType: "factorPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1000,"choices":[1000,100,10],"display":{"measure":{"kind":"factorPick","factor":1000},"promptText":"Rosa converts kilometres to metres. Which factor is right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":1000,"choices":[1000,100,10],"display":{"measure":{"kind":"factorPick","factor":1000},"promptText":"To change kilometers into meters, what number does Rosa multiply by?"}},
   },
   {
     itemId: "measurement-conc-b0821-0091",
@@ -8562,7 +8562,7 @@ export const ITEMS = [
     structureType: "factorPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[100,1000,10],"display":{"measure":{"kind":"factorPick","factor":10},"promptText":"To change centimetres into millimetres, what does Diego multiply by?"}},
+    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[100,1000,10],"display":{"measure":{"kind":"factorPick","factor":10},"promptText":"To change centimeters into millimeters, what does Diego multiply by?"}},
   },
   {
     itemId: "measurement-conc-b0821-0092",
@@ -8572,7 +8572,7 @@ export const ITEMS = [
     structureType: "factorPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":100,"choices":[100,1000,10],"display":{"measure":{"kind":"factorPick","factor":100},"promptText":"Nora converts metres to centimetres. Which factor is right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":100,"choices":[100,1000,10],"display":{"measure":{"kind":"factorPick","factor":100},"promptText":"Nora changes meters into centimeters. What number does Nora multiply by?"}},
   },
   {
     itemId: "measurement-conc-b0821-0093",
@@ -8582,7 +8582,7 @@ export const ITEMS = [
     structureType: "factorPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1000,"choices":[1000,100,10],"display":{"measure":{"kind":"factorPick","factor":1000},"promptText":"To change kilometres into metres, what does Luca multiply by?"}},
+    question: {"a":null,"b":null,"op":"count","answer":1000,"choices":[1000,100,10],"display":{"measure":{"kind":"factorPick","factor":1000},"promptText":"To change kilometers into meters, what does Luca multiply by?"}},
   },
   {
     itemId: "measurement-conc-b0821-0094",
@@ -8592,7 +8592,7 @@ export const ITEMS = [
     structureType: "factorPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[1000,10,100],"display":{"measure":{"kind":"factorPick","factor":10},"promptText":"Ava converts centimetres to millimetres. Which factor is right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[1000,10,100],"display":{"measure":{"kind":"factorPick","factor":10},"promptText":"To change centimeters into millimeters, what number does Ava multiply by?"}},
   },
   {
     itemId: "measurement-conc-b0821-0095",
@@ -8602,7 +8602,7 @@ export const ITEMS = [
     structureType: "factorPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":100,"choices":[1000,100,10],"display":{"measure":{"kind":"factorPick","factor":100},"promptText":"To change metres into centimetres, what does Omar multiply by?"}},
+    question: {"a":null,"b":null,"op":"count","answer":100,"choices":[1000,100,10],"display":{"measure":{"kind":"factorPick","factor":100},"promptText":"To change meters into centimeters, what does Omar multiply by?"}},
   },
   {
     itemId: "measurement-conc-b0821-0096",
@@ -8612,7 +8612,7 @@ export const ITEMS = [
     structureType: "factorPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1000,"choices":[1000,10,100],"display":{"measure":{"kind":"factorPick","factor":1000},"promptText":"Ben converts kilometres to metres. Which factor is right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":1000,"choices":[1000,10,100],"display":{"measure":{"kind":"factorPick","factor":1000},"promptText":"Ben changes kilometers into meters. What number does Ben multiply by?"}},
   },
   {
     itemId: "measurement-conc-b0821-0097",
@@ -8622,7 +8622,7 @@ export const ITEMS = [
     structureType: "factorPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[1000,100,10],"display":{"measure":{"kind":"factorPick","factor":10},"promptText":"To change centimetres into millimetres, what does Finn multiply by?"}},
+    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[1000,100,10],"display":{"measure":{"kind":"factorPick","factor":10},"promptText":"To change centimeters into millimeters, what does Finn multiply by?"}},
   },
   {
     itemId: "measurement-conc-b0821-0098",
@@ -8632,7 +8632,7 @@ export const ITEMS = [
     structureType: "factorPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":100,"choices":[10,1000,100],"display":{"measure":{"kind":"factorPick","factor":100},"promptText":"Priya converts metres to centimetres. Which factor is right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":100,"choices":[10,1000,100],"display":{"measure":{"kind":"factorPick","factor":100},"promptText":"To change meters into centimeters, what number does Priya multiply by?"}},
   },
   {
     itemId: "measurement-conc-b0821-0099",
@@ -8642,7 +8642,7 @@ export const ITEMS = [
     structureType: "factorPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1000,"choices":[100,1000,10],"display":{"measure":{"kind":"factorPick","factor":1000},"promptText":"To change kilometres into metres, what does Sam multiply by?"}},
+    question: {"a":null,"b":null,"op":"count","answer":1000,"choices":[100,1000,10],"display":{"measure":{"kind":"factorPick","factor":1000},"promptText":"To change kilometers into meters, what does Sam multiply by?"}},
   },
   {
     itemId: "measurement-conc-b0821-0100",
@@ -8652,7 +8652,7 @@ export const ITEMS = [
     structureType: "factorPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[100,1000,10],"display":{"measure":{"kind":"factorPick","factor":10},"promptText":"Nia converts centimetres to millimetres. Which factor is right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[100,1000,10],"display":{"measure":{"kind":"factorPick","factor":10},"promptText":"Nia changes centimeters into millimeters. What number does Nia multiply by?"}},
   },
   {
     itemId: "measurement-conc-b0821-0101",
@@ -8662,7 +8662,7 @@ export const ITEMS = [
     structureType: "factorPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":100,"choices":[10,1000,100],"display":{"measure":{"kind":"factorPick","factor":100},"promptText":"To change metres into centimetres, what does Kai multiply by?"}},
+    question: {"a":null,"b":null,"op":"count","answer":100,"choices":[10,1000,100],"display":{"measure":{"kind":"factorPick","factor":100},"promptText":"To change meters into centimeters, what does Kai multiply by?"}},
   },
   {
     itemId: "measurement-conc-b0821-0102",
@@ -8672,7 +8672,7 @@ export const ITEMS = [
     structureType: "factorPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1000,"choices":[10,1000,100],"display":{"measure":{"kind":"factorPick","factor":1000},"promptText":"June converts kilometres to metres. Which factor is right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":1000,"choices":[10,1000,100],"display":{"measure":{"kind":"factorPick","factor":1000},"promptText":"To change kilometers into meters, what number does June multiply by?"}},
   },
   {
     itemId: "measurement-conc-b0821-0103",
@@ -8682,7 +8682,7 @@ export const ITEMS = [
     structureType: "factorPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[10,100,1000],"display":{"measure":{"kind":"factorPick","factor":10},"promptText":"To change centimetres into millimetres, what does Lily multiply by?"}},
+    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[10,100,1000],"display":{"measure":{"kind":"factorPick","factor":10},"promptText":"To change centimeters into millimeters, what does Lily multiply by?"}},
   },
   {
     itemId: "measurement-conc-b0821-0104",
@@ -8702,7 +8702,7 @@ export const ITEMS = [
     structureType: "factorSlipJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"m>cm","said":50,"amount":5},"promptText":"Converting 5 m to cm, June gets 50. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"m>cm","said":50,"amount":5},"promptText":"Converting 5 m to cm, June gets 50 cm. Is June right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0106",
@@ -8712,7 +8712,7 @@ export const ITEMS = [
     structureType: "factorSlipJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"convertSaid","pair":"km>m","said":2000,"amount":2},"promptText":"Lily converts 2 km and writes 2000 m. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"convertSaid","pair":"km>m","said":2000,"amount":2},"promptText":"Lily converts 2 km and writes 2000 m. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0107",
@@ -8722,7 +8722,7 @@ export const ITEMS = [
     structureType: "factorSlipJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"km>m","said":400,"amount":4},"promptText":"Converting 4 km to m, Amara gets 400. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"km>m","said":400,"amount":4},"promptText":"Converting 4 km to m, Amara gets 400 m. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0108",
@@ -8732,7 +8732,7 @@ export const ITEMS = [
     structureType: "factorSlipJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"convertSaid","pair":"cm>mm","said":60,"amount":6},"promptText":"Leo converts 6 cm and writes 60 mm. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"convertSaid","pair":"cm>mm","said":60,"amount":6},"promptText":"Converting 6 cm to mm, Leo gets 60 mm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0109",
@@ -8742,7 +8742,7 @@ export const ITEMS = [
     structureType: "factorSlipJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"cm>mm","said":800,"amount":8},"promptText":"Converting 8 cm to mm, Mina gets 800. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"cm>mm","said":800,"amount":8},"promptText":"Mina converts 8 cm and writes 800 mm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0110",
@@ -8752,7 +8752,7 @@ export const ITEMS = [
     structureType: "factorSlipJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"convertSaid","pair":"m>cm","said":700,"amount":7},"promptText":"Theo converts 7 m and writes 700 cm. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"convertSaid","pair":"m>cm","said":700,"amount":7},"promptText":"Converting 7 m to cm, Theo gets 700 cm. Is Theo right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0111",
@@ -8762,7 +8762,7 @@ export const ITEMS = [
     structureType: "factorSlipJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"m>cm","said":90,"amount":9},"promptText":"Converting 9 m to cm, Ida gets 90. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"m>cm","said":90,"amount":9},"promptText":"Ida converts 9 m and writes 90 cm. Is Ida right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0112",
@@ -8782,7 +8782,7 @@ export const ITEMS = [
     structureType: "factorSlipJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"km>m","said":600,"amount":6},"promptText":"Converting 6 km to m, Rosa gets 600. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"km>m","said":600,"amount":6},"promptText":"Converting 6 km to m, Rosa gets 600 m. Is Rosa right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0114",
@@ -8792,7 +8792,7 @@ export const ITEMS = [
     structureType: "factorSlipJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"convertSaid","pair":"cm>mm","said":50,"amount":5},"promptText":"Diego converts 5 cm and writes 50 mm. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"convertSaid","pair":"cm>mm","said":50,"amount":5},"promptText":"Diego converts 5 cm and writes 50 mm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0115",
@@ -8802,7 +8802,7 @@ export const ITEMS = [
     structureType: "factorSlipJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"cm>mm","said":7,"amount":7},"promptText":"Converting 7 cm to mm, Nora gets 7. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"cm>mm","said":7,"amount":7},"promptText":"Converting 7 cm to mm, Nora gets 7 mm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0116",
@@ -8812,7 +8812,7 @@ export const ITEMS = [
     structureType: "factorSlipJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"convertSaid","pair":"m>cm","said":400,"amount":4},"promptText":"Luca converts 4 m and writes 400 cm. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"convertSaid","pair":"m>cm","said":400,"amount":4},"promptText":"Converting 4 m to cm, Luca gets 400 cm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0117",
@@ -8822,7 +8822,7 @@ export const ITEMS = [
     structureType: "factorSlipJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"m>cm","said":2000,"amount":2},"promptText":"Converting 2 m to cm, Ava gets 2000. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"m>cm","said":2000,"amount":2},"promptText":"Ava converts 2 m and writes 2000 cm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0118",
@@ -8832,7 +8832,7 @@ export const ITEMS = [
     structureType: "factorSlipJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"convertSaid","pair":"km>m","said":8000,"amount":8},"promptText":"Omar converts 8 km and writes 8000 m. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"convertSaid","pair":"km>m","said":8000,"amount":8},"promptText":"Converting 8 km to m, Omar gets 8000 m. Is Omar right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0119",
@@ -8842,7 +8842,7 @@ export const ITEMS = [
     structureType: "factorSlipJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"km>m","said":90000,"amount":9},"promptText":"Converting 9 km to m, Ben gets 90000. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"km>m","said":90000,"amount":9},"promptText":"Ben converts 9 km and writes 90000 m. Is Ben right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0120",
@@ -8862,7 +8862,7 @@ export const ITEMS = [
     structureType: "factorSlipJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"cm>mm","said":3,"amount":3},"promptText":"Converting 3 cm to mm, Priya gets 3. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"cm>mm","said":3,"amount":3},"promptText":"Converting 3 cm to mm, Priya gets 3 mm. Is Priya right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0122",
@@ -8872,7 +8872,7 @@ export const ITEMS = [
     structureType: "whichAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[30,3,4,300],"display":{"measure":{"kind":"convertUp","pair":"m>cm","total":300},"promptText":"Omar needs ? m to make 300 cm. Which amount fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[30,3,4,300],"display":{"measure":{"kind":"convertUp","pair":"m>cm","total":300},"promptText":"Omar needs 300 cm of rope. How many meters of rope is that?"}},
   },
   {
     itemId: "measurement-conc-b0821-0123",
@@ -8882,7 +8882,7 @@ export const ITEMS = [
     structureType: "whichAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[2000,3,2,20],"display":{"measure":{"kind":"convertUp","pair":"km>m","total":2000},"promptText":"How many km make 2000 m? Ben picks the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[2000,3,2,20],"display":{"measure":{"kind":"convertUp","pair":"km>m","total":2000},"promptText":"2000 m is the same as how many kilometers?"}},
   },
   {
     itemId: "measurement-conc-b0821-0124",
@@ -8892,7 +8892,7 @@ export const ITEMS = [
     structureType: "whichAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[40,4,5],"display":{"measure":{"kind":"convertUp","pair":"cm>mm","total":40},"promptText":"Finn needs ? cm to make 40 mm. Which amount fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[40,4,5],"display":{"measure":{"kind":"convertUp","pair":"cm>mm","total":40},"promptText":"Finn needs a piece of tape 40 mm long. How many centimeters long is the tape?"}},
   },
   {
     itemId: "measurement-conc-b0821-0125",
@@ -8902,7 +8902,7 @@ export const ITEMS = [
     structureType: "whichAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[70,700,7,8],"display":{"measure":{"kind":"convertUp","pair":"m>cm","total":700},"promptText":"How many m make 700 cm? Priya picks the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[70,700,7,8],"display":{"measure":{"kind":"convertUp","pair":"m>cm","total":700},"promptText":"700 cm is the same as how many meters?"}},
   },
   {
     itemId: "measurement-conc-b0821-0126",
@@ -8912,7 +8912,7 @@ export const ITEMS = [
     structureType: "whichAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[5000,6,5,50],"display":{"measure":{"kind":"convertUp","pair":"km>m","total":5000},"promptText":"Sam needs ? km to make 5000 m. Which amount fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[5000,6,5,50],"display":{"measure":{"kind":"convertUp","pair":"km>m","total":5000},"promptText":"Sam needs to walk 5000 m. How many kilometers is that?"}},
   },
   {
     itemId: "measurement-conc-b0821-0127",
@@ -8922,7 +8922,7 @@ export const ITEMS = [
     structureType: "whichAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[8,9,80],"display":{"measure":{"kind":"convertUp","pair":"cm>mm","total":80},"promptText":"How many cm make 80 mm? Nia picks the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[8,9,80],"display":{"measure":{"kind":"convertUp","pair":"cm>mm","total":80},"promptText":"80 mm is the same as how many centimeters?"}},
   },
   {
     itemId: "measurement-conc-b0821-0128",
@@ -8932,7 +8932,7 @@ export const ITEMS = [
     structureType: "whichAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[5,500,6,50],"display":{"measure":{"kind":"convertUp","pair":"m>cm","total":500},"promptText":"Kai needs ? m to make 500 cm. Which amount fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[5,500,6,50],"display":{"measure":{"kind":"convertUp","pair":"m>cm","total":500},"promptText":"Kai needs 500 cm of rope. How many meters of rope is that?"}},
   },
   {
     itemId: "measurement-conc-b0821-0129",
@@ -8942,7 +8942,7 @@ export const ITEMS = [
     structureType: "whichAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[4,3000,30,3],"display":{"measure":{"kind":"convertUp","pair":"km>m","total":3000},"promptText":"How many km make 3000 m? June picks the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[4,3000,30,3],"display":{"measure":{"kind":"convertUp","pair":"km>m","total":3000},"promptText":"3000 m is the same as how many kilometers?"}},
   },
   {
     itemId: "measurement-conc-b0821-0130",
@@ -8952,7 +8952,7 @@ export const ITEMS = [
     structureType: "whichAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[7,6,60],"display":{"measure":{"kind":"convertUp","pair":"cm>mm","total":60},"promptText":"Lily needs ? cm to make 60 mm. Which amount fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[7,6,60],"display":{"measure":{"kind":"convertUp","pair":"cm>mm","total":60},"promptText":"Lily needs a piece of tape 60 mm long. How many centimeters long is the tape?"}},
   },
   {
     itemId: "measurement-conc-b0821-0131",
@@ -8962,7 +8962,7 @@ export const ITEMS = [
     structureType: "whichAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[90,9,900,10],"display":{"measure":{"kind":"convertUp","pair":"m>cm","total":900},"promptText":"How many m make 900 cm? Amara picks the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[90,9,900,10],"display":{"measure":{"kind":"convertUp","pair":"m>cm","total":900},"promptText":"900 cm is the same as how many meters?"}},
   },
   {
     itemId: "measurement-conc-b0821-0132",
@@ -8972,7 +8972,7 @@ export const ITEMS = [
     structureType: "whichAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[8,7000,70,7],"display":{"measure":{"kind":"convertUp","pair":"km>m","total":7000},"promptText":"Leo needs ? km to make 7000 m. Which amount fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[8,7000,70,7],"display":{"measure":{"kind":"convertUp","pair":"km>m","total":7000},"promptText":"Leo needs to walk 7000 m. How many kilometers is that?"}},
   },
   {
     itemId: "measurement-conc-b0821-0133",
@@ -8982,7 +8982,7 @@ export const ITEMS = [
     structureType: "whichAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[3,4,30],"display":{"measure":{"kind":"convertUp","pair":"cm>mm","total":30},"promptText":"How many cm make 30 mm? Mina picks the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[3,4,30],"display":{"measure":{"kind":"convertUp","pair":"cm>mm","total":30},"promptText":"30 mm is the same as how many centimeters?"}},
   },
   {
     itemId: "measurement-conc-b0821-0134",
@@ -8992,7 +8992,7 @@ export const ITEMS = [
     structureType: "whichAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[5,400,40,4],"display":{"measure":{"kind":"convertUp","pair":"m>cm","total":400},"promptText":"Theo needs ? m to make 400 cm. Which amount fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[5,400,40,4],"display":{"measure":{"kind":"convertUp","pair":"m>cm","total":400},"promptText":"Theo needs 400 cm of rope. How many meters of rope is that?"}},
   },
   {
     itemId: "measurement-conc-b0821-0135",
@@ -9002,7 +9002,7 @@ export const ITEMS = [
     structureType: "whichAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[6,6000,60,7],"display":{"measure":{"kind":"convertUp","pair":"km>m","total":6000},"promptText":"How many km make 6000 m? Ida picks the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[6,6000,60,7],"display":{"measure":{"kind":"convertUp","pair":"km>m","total":6000},"promptText":"6000 m is the same as how many kilometers?"}},
   },
   {
     itemId: "measurement-conc-b0821-0136",
@@ -9012,7 +9012,7 @@ export const ITEMS = [
     structureType: "whichAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[90,10,9],"display":{"measure":{"kind":"convertUp","pair":"cm>mm","total":90},"promptText":"Zoe needs ? cm to make 90 mm. Which amount fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[90,10,9],"display":{"measure":{"kind":"convertUp","pair":"cm>mm","total":90},"promptText":"Zoe needs a piece of tape 90 mm long. How many centimeters long is the tape?"}},
   },
   {
     itemId: "measurement-conc-b0821-0137",
@@ -9022,7 +9022,7 @@ export const ITEMS = [
     structureType: "whichAmountBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[10,1000,100,11],"display":{"measure":{"kind":"convertUp","pair":"m>cm","total":1000},"promptText":"How many m make 1000 cm? Rosa picks the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[10,1000,100,11],"display":{"measure":{"kind":"convertUp","pair":"m>cm","total":1000},"promptText":"1000 cm is the same as how many meters?"}},
   },
   {
     itemId: "measurement-conc-b0821-0138",
@@ -9032,7 +9032,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Ben works a two-step conversion and writes: 1 m is 1000 mm. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Ben writes 1 m = 1000 mm. Is Ben right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0139",
@@ -9042,7 +9042,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"After converting twice, Finn claims 2 m is 2000 mm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Finn says 2 m is the same as 2000 mm. Is Finn right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0140",
@@ -9052,7 +9052,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Priya works a two-step conversion and writes: 3 m is 300 mm. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Priya says 3 m is the same as 300 mm. Is Priya right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0141",
@@ -9062,7 +9062,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"After converting twice, Sam claims 4 m is 4000 mm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Sam writes 4 m = 4000 mm. Is Sam right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0142",
@@ -9072,7 +9072,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Nia works a two-step conversion and writes: 5 m is 500 mm. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Nia writes 5 m = 500 mm. Is Nia right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0143",
@@ -9082,7 +9082,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"After converting twice, Kai claims 6 m is 6000 mm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Kai says 6 m is the same as 6000 mm. Is Kai right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0144",
@@ -9092,7 +9092,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"June works a two-step conversion and writes: 7 m is 70 mm. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"June says 7 m is the same as 70 mm. Is June right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0145",
@@ -9102,7 +9102,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"After converting twice, Lily claims 8 m is 8000 mm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Lily writes 8 m = 8000 mm. Is Lily right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0146",
@@ -9112,7 +9112,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Amara works a two-step conversion and writes: 9 m is 900 mm. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Amara writes 9 m = 900 mm. Is Amara right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0147",
@@ -9122,7 +9122,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"After converting twice, Leo claims 2 m is 200 mm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Leo says 2 m is the same as 200 mm. Is Leo right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0148",
@@ -9132,7 +9132,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Mina works a two-step conversion and writes: 1 km is 100000 cm. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Mina says 1 km is the same as 100000 cm. Is Mina right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0149",
@@ -9142,7 +9142,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"After converting twice, Theo claims 3 m is 3000 mm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Theo writes 3 m = 3000 mm. Is Theo right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0150",
@@ -9152,7 +9152,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Ida works a two-step conversion and writes: 1 km is 1000 cm. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Ida writes 1 km = 1000 cm. Is Ida right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0151",
@@ -9162,7 +9162,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"After converting twice, Zoe claims 5 m is 5000 mm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Zoe says 5 m is the same as 5000 mm. Is Zoe right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0152",
@@ -9172,7 +9172,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Rosa works a two-step conversion and writes: 2 km is 200000 cm. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Rosa writes 2 km = 200000 cm. Is Rosa right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0153",
@@ -9182,7 +9182,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"After converting twice, Diego claims 7 m is 7000 mm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Diego says 7 m is the same as 7000 mm. Is Diego right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0154",
@@ -9192,7 +9192,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Nora works a two-step conversion and writes: 4 m is 400 mm. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Nora says 4 m is the same as 400 mm. Is Nora right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0155",
@@ -9212,7 +9212,7 @@ export const ITEMS = [
     structureType: "whichHeavierTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the 15 kg one","choices":["the 15 kg one","the 7 kg one"],"display":{"measure":{"a":7,"b":15,"kind":"cmp","pickLarger":true},"promptText":"Two crates: 7 kg and 15 kg. Which crate is heavier? Theo checks the labels."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the 15 kg one","choices":["the 15 kg one","the 7 kg one"],"display":{"measure":{"a":7,"b":15,"kind":"cmp","pickLarger":true},"promptText":"One crate weighs 7 kg and another crate weighs 15 kg. Which crate is heavier?"}},
   },
   {
     itemId: "measurement-conc-b0821-0157",
@@ -9222,7 +9222,7 @@ export const ITEMS = [
     structureType: "whichHeavierTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the 18 kg one","choices":["the 18 kg one","the 11 kg one"],"display":{"measure":{"a":18,"b":11,"kind":"cmp","pickLarger":true},"promptText":"Ida lifts a 18 kg bag and a 11 kg bag. Which bag is heavier?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the 18 kg one","choices":["the 18 kg one","the 11 kg one"],"display":{"measure":{"a":18,"b":11,"kind":"cmp","pickLarger":true},"promptText":"Ida lifts an 18 kg bag and an 11 kg bag. Which bag is heavier?"}},
   },
   {
     itemId: "measurement-conc-b0821-0158",
@@ -9232,7 +9232,7 @@ export const ITEMS = [
     structureType: "whichHeavierTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the 13 kg one","choices":["the 6 kg one","the 13 kg one"],"display":{"measure":{"a":6,"b":13,"kind":"cmp","pickLarger":true},"promptText":"Two crates: 6 kg and 13 kg. Which crate is heavier? Zoe checks the labels."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the 13 kg one","choices":["the 6 kg one","the 13 kg one"],"display":{"measure":{"a":6,"b":13,"kind":"cmp","pickLarger":true},"promptText":"Zoe has two crates. One weighs 6 kg and the other weighs 13 kg. Which crate is heavier?"}},
   },
   {
     itemId: "measurement-conc-b0821-0159",
@@ -9252,7 +9252,7 @@ export const ITEMS = [
     structureType: "whichHeavierTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the 16 kg one","choices":["the 8 kg one","the 16 kg one"],"display":{"measure":{"a":8,"b":16,"kind":"cmp","pickLarger":true},"promptText":"Two crates: 8 kg and 16 kg. Which crate is heavier? Diego checks the labels."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the 16 kg one","choices":["the 8 kg one","the 16 kg one"],"display":{"measure":{"a":8,"b":16,"kind":"cmp","pickLarger":true},"promptText":"Two crates weigh 8 kg and 16 kg. Which crate is heavier?"}},
   },
   {
     itemId: "measurement-conc-b0821-0161",
@@ -9272,7 +9272,7 @@ export const ITEMS = [
     structureType: "whichHeavierTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the 19 kg one","choices":["the 10 kg one","the 19 kg one"],"display":{"measure":{"a":10,"b":19,"kind":"cmp","pickLarger":true},"promptText":"Two crates: 10 kg and 19 kg. Which crate is heavier? Luca checks the labels."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the 19 kg one","choices":["the 10 kg one","the 19 kg one"],"display":{"measure":{"a":10,"b":19,"kind":"cmp","pickLarger":true},"promptText":"One crate weighs 10 kg and another crate weighs 19 kg. Which crate is heavier?"}},
   },
   {
     itemId: "measurement-conc-b0821-0163",
@@ -9292,7 +9292,7 @@ export const ITEMS = [
     structureType: "whichHeavierTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the 9 kg one","choices":["the 9 kg one","the 4 kg one"],"display":{"measure":{"a":4,"b":9,"kind":"cmp","pickLarger":true},"promptText":"Two crates: 4 kg and 9 kg. Which crate is heavier? Omar checks the labels."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the 9 kg one","choices":["the 9 kg one","the 4 kg one"],"display":{"measure":{"a":4,"b":9,"kind":"cmp","pickLarger":true},"promptText":"Omar has two crates. One weighs 4 kg and the other weighs 9 kg. Which crate is heavier?"}},
   },
   {
     itemId: "measurement-conc-b0821-0165",
@@ -9312,7 +9312,7 @@ export const ITEMS = [
     structureType: "whichHeavierTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the 20 kg one","choices":["the 20 kg one","the 11 kg one"],"display":{"measure":{"a":11,"b":20,"kind":"cmp","pickLarger":true},"promptText":"Two crates: 11 kg and 20 kg. Which crate is heavier? Finn checks the labels."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the 20 kg one","choices":["the 20 kg one","the 11 kg one"],"display":{"measure":{"a":11,"b":20,"kind":"cmp","pickLarger":true},"promptText":"Two crates weigh 11 kg and 20 kg. Which crate is heavier?"}},
   },
   {
     itemId: "measurement-conc-b0821-0167",
@@ -9322,7 +9322,7 @@ export const ITEMS = [
     structureType: "whichHeavierTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the 13 kg one","choices":["the 8 kg one","the 13 kg one"],"display":{"measure":{"a":13,"b":8,"kind":"cmp","pickLarger":true},"promptText":"Priya lifts a 13 kg bag and a 8 kg bag. Which bag is heavier?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the 13 kg one","choices":["the 8 kg one","the 13 kg one"],"display":{"measure":{"a":13,"b":8,"kind":"cmp","pickLarger":true},"promptText":"Priya lifts a 13 kg bag and an 8 kg bag. Which bag is heavier?"}},
   },
   {
     itemId: "measurement-conc-b0821-0168",
@@ -9332,7 +9332,7 @@ export const ITEMS = [
     structureType: "whichHeavierTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the 18 kg one","choices":["the 9 kg one","the 18 kg one"],"display":{"measure":{"a":9,"b":18,"kind":"cmp","pickLarger":true},"promptText":"Two crates: 9 kg and 18 kg. Which crate is heavier? Sam checks the labels."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the 18 kg one","choices":["the 9 kg one","the 18 kg one"],"display":{"measure":{"a":9,"b":18,"kind":"cmp","pickLarger":true},"promptText":"One crate weighs 9 kg and another crate weighs 18 kg. Which crate is heavier?"}},
   },
   {
     itemId: "measurement-conc-b0821-0169",
@@ -9352,7 +9352,7 @@ export const ITEMS = [
     structureType: "whichHeavierTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the 19 kg one","choices":["the 19 kg one","the 16 kg one"],"display":{"measure":{"a":19,"b":16,"kind":"cmp","pickLarger":true},"promptText":"Two crates: 19 kg and 16 kg. Which crate is heavier? Kai checks the labels."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the 19 kg one","choices":["the 19 kg one","the 16 kg one"],"display":{"measure":{"a":19,"b":16,"kind":"cmp","pickLarger":true},"promptText":"Kai has two crates. One weighs 19 kg and the other weighs 16 kg. Which crate is heavier?"}},
   },
   {
     itemId: "measurement-conc-b0821-0171",
@@ -9372,7 +9372,7 @@ export const ITEMS = [
     structureType: "whichHeavierTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the 20 kg one","choices":["the 7 kg one","the 20 kg one"],"display":{"measure":{"a":20,"b":7,"kind":"cmp","pickLarger":true},"promptText":"Two crates: 20 kg and 7 kg. Which crate is heavier? Lily checks the labels."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the 20 kg one","choices":["the 7 kg one","the 20 kg one"],"display":{"measure":{"a":20,"b":7,"kind":"cmp","pickLarger":true},"promptText":"Two crates weigh 20 kg and 7 kg. Which crate is heavier?"}},
   },
   {
     itemId: "measurement-conc-b0821-0173",
@@ -9392,7 +9392,7 @@ export const ITEMS = [
     structureType: "massSenseJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Kai guesses a teaspoon is about 5 L. Does that guess make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Kai guesses a teaspoon holds about 5 L. Is Kai right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0175",
@@ -9402,7 +9402,7 @@ export const ITEMS = [
     structureType: "massSenseJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"June says a watering can holds about 5 L. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"June says a watering can holds about 5 L. Does that make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0176",
@@ -9412,7 +9412,7 @@ export const ITEMS = [
     structureType: "massSenseJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Lily guesses a watering can is about 5 mL. Does that guess make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Lily guesses a watering can holds about 5 mL. Does that make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0177",
@@ -9422,7 +9422,7 @@ export const ITEMS = [
     structureType: "massSenseJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Amara says a grape holds about 5 g. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Amara guesses a grape weighs about 5 g. Does that make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0178",
@@ -9432,7 +9432,7 @@ export const ITEMS = [
     structureType: "massSenseJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Leo guesses a grape is about 5 kg. Does that guess make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Leo says a grape weighs about 5 kg. Does that make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0179",
@@ -9442,7 +9442,7 @@ export const ITEMS = [
     structureType: "massSenseJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Mina says a big dog holds about 20 kg. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Mina guesses a medium-sized dog weighs about 20 kg. Is Mina right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0180",
@@ -9452,7 +9452,7 @@ export const ITEMS = [
     structureType: "massSenseJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Theo guesses a big dog is about 20 g. Does that guess make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Theo says a big dog weighs about 20 g. Is Theo right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0181",
@@ -9462,7 +9462,7 @@ export const ITEMS = [
     structureType: "massSenseJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Ida says a bag of rice holds about 2 kg. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Ida says a bag of rice weighs about 2 kg. Is Ida right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0182",
@@ -9472,7 +9472,7 @@ export const ITEMS = [
     structureType: "massSenseJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Zoe guesses a bag of rice is about 2 g. Does that guess make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Zoe guesses a bag of rice weighs about 2 g. Is Zoe right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0183",
@@ -9482,7 +9482,7 @@ export const ITEMS = [
     structureType: "massSenseJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Rosa says a fish tank holds about 20 L. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Rosa says a bucket holds about 10 L. Does that make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0184",
@@ -9492,7 +9492,7 @@ export const ITEMS = [
     structureType: "massSenseJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Diego guesses a fish tank is about 20 mL. Does that guess make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Diego guesses a fish tank holds about 20 mL. Does that make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0185",
@@ -9502,7 +9502,7 @@ export const ITEMS = [
     structureType: "massSenseJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Nora says a feather holds about 1 g. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Nora guesses a paperclip weighs about 1 g. Does that make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0186",
@@ -9512,7 +9512,7 @@ export const ITEMS = [
     structureType: "massSenseJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Luca guesses a feather is about 1 kg. Does that guess make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Luca says a feather weighs about 1 kg. Does that make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0187",
@@ -9532,7 +9532,7 @@ export const ITEMS = [
     structureType: "massSenseJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Omar guesses a kitten is about 2 kg. Does that guess make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Omar guesses a pet cat weighs about 4 kg. Does that make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0189",
@@ -9552,7 +9552,7 @@ export const ITEMS = [
     structureType: "massSenseJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Finn guesses a coin is about 5 g. Does that guess make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Finn says a coin weighs about 5 g. Does that make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0191",
@@ -9562,7 +9562,7 @@ export const ITEMS = [
     structureType: "whichHoldsMoreTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the 8 L one","choices":["the 8 L one","the 5 L one"],"display":{"measure":{"a":8,"b":5,"kind":"cmp","pickLarger":true},"promptText":"Ava fills a 8 L bucket and a 5 L bucket. Which bucket holds more water?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the 8 L one","choices":["the 8 L one","the 5 L one"],"display":{"measure":{"a":8,"b":5,"kind":"cmp","pickLarger":true},"promptText":"Ava fills an 8 L bucket and a 5 L bucket. Which bucket holds more water?"}},
   },
   {
     itemId: "measurement-conc-b0821-0192",
@@ -9662,7 +9662,7 @@ export const ITEMS = [
     structureType: "whichHoldsMoreTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the 18 L one","choices":["the 12 L one","the 18 L one"],"display":{"measure":{"a":18,"b":12,"kind":"cmp","pickLarger":true},"promptText":"Amara fills a 18 L bucket and a 12 L bucket. Which bucket holds more water?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the 18 L one","choices":["the 12 L one","the 18 L one"],"display":{"measure":{"a":18,"b":12,"kind":"cmp","pickLarger":true},"promptText":"Amara fills an 18 L bucket and a 12 L bucket. Which bucket holds more water?"}},
   },
   {
     itemId: "measurement-conc-b0821-0202",
@@ -9702,7 +9702,7 @@ export const ITEMS = [
     structureType: "whichHoldsMoreTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the 14 L one","choices":["the 14 L one","the 8 L one"],"display":{"measure":{"a":14,"b":8,"kind":"cmp","pickLarger":true},"promptText":"Ida fills a 14 L bucket and a 8 L bucket. Which bucket holds more water?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the 14 L one","choices":["the 14 L one","the 8 L one"],"display":{"measure":{"a":14,"b":8,"kind":"cmp","pickLarger":true},"promptText":"Ida fills a 14 L bucket and an 8 L bucket. Which bucket holds more water?"}},
   },
   {
     itemId: "measurement-conc-b0821-0206",
@@ -9732,7 +9732,7 @@ export const ITEMS = [
     structureType: "convJudgeMassMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Ava tells the class: 2 kg is 200 g. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Ava tells the class: 2 kg is 200 g. Is Ava right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0209",
@@ -9742,7 +9742,7 @@ export const ITEMS = [
     structureType: "convJudgeMassMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Omar writes: 3 L is 3000 mL. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Omar writes: 3 L is 3000 mL. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0210",
@@ -9762,7 +9762,7 @@ export const ITEMS = [
     structureType: "convJudgeMassMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Finn writes: 5 kg is 5000 g. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Finn tells the class: 5 kg is 5000 g. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0212",
@@ -9772,7 +9772,7 @@ export const ITEMS = [
     structureType: "convJudgeMassMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Priya tells the class: 5 kg is 500 g. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Priya writes: 5 kg is 500 g. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0213",
@@ -9782,7 +9782,7 @@ export const ITEMS = [
     structureType: "convJudgeMassMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Sam writes: 1 L is 1000 mL. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Sam tells the class: 1 L is 1000 mL. Is Sam right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0214",
@@ -9792,7 +9792,7 @@ export const ITEMS = [
     structureType: "convJudgeMassMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Nia tells the class: 1 L is 100 mL. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Nia writes: 1 L is 100 mL. Is Nia right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0215",
@@ -9812,7 +9812,7 @@ export const ITEMS = [
     structureType: "convJudgeMassMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"June tells the class: 7 kg is 70 g. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"June tells the class: 7 kg is 70 g. Is June right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0217",
@@ -9822,7 +9822,7 @@ export const ITEMS = [
     structureType: "convJudgeMassMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Lily writes: 4 L is 4000 mL. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Lily writes: 4 L is 4000 mL. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0218",
@@ -9842,7 +9842,7 @@ export const ITEMS = [
     structureType: "convJudgeMassMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Leo writes: 6 kg is 6000 g. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Leo tells the class: 6 kg is 6000 g. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0220",
@@ -9852,7 +9852,7 @@ export const ITEMS = [
     structureType: "convJudgeMassMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Mina tells the class: 6 kg is 60000 g. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Mina writes: 6 kg is 60000 g. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0221",
@@ -9862,7 +9862,7 @@ export const ITEMS = [
     structureType: "convJudgeMassMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Theo writes: 9 L is 9000 mL. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Theo tells the class: 9 L is 9000 mL. Is Theo right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0222",
@@ -9872,7 +9872,7 @@ export const ITEMS = [
     structureType: "convJudgeMassMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Ida tells the class: 9 L is 900 mL. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Ida writes: 9 L is 900 mL. Is Ida right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0223",
@@ -9892,7 +9892,7 @@ export const ITEMS = [
     structureType: "convJudgeMassMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Rosa tells the class: 10 L is 1000 mL. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Rosa tells the class: 10 L is 1000 mL. Is Rosa right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0225",
@@ -9902,7 +9902,7 @@ export const ITEMS = [
     structureType: "crossHeavierMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2 kg","choices":["2 kg","1500 g"],"display":{"measure":{"a":2000,"b":1500,"kind":"cmp"},"promptText":"Which is heavier, 2 kg or 1500 g? Theo converts to compare."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2 kg","choices":["2 kg","1500 g"],"display":{"measure":{"a":2000,"b":1500,"kind":"cmp"},"promptText":"Which is heavier, 2 kg or 1500 g?"}},
   },
   {
     itemId: "measurement-conc-b0821-0226",
@@ -9922,7 +9922,7 @@ export const ITEMS = [
     structureType: "crossHeavierMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3 kg","choices":["2800 g","3 kg"],"display":{"measure":{"a":3000,"b":2800,"kind":"cmp"},"promptText":"Which is heavier, 3 kg or 2800 g? Zoe converts to compare."}},
+    question: {"a":null,"b":null,"op":"count","answer":"3 kg","choices":["2800 g","3 kg"],"display":{"measure":{"a":3000,"b":2800,"kind":"cmp"},"promptText":"Which weighs more: 3 kg or 2800 g?"}},
   },
   {
     itemId: "measurement-conc-b0821-0228",
@@ -9942,7 +9942,7 @@ export const ITEMS = [
     structureType: "crossHeavierMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1 kg","choices":["1 kg","900 g"],"display":{"measure":{"a":1000,"b":900,"kind":"cmp"},"promptText":"Which is heavier, 1 kg or 900 g? Diego converts to compare."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1 kg","choices":["1 kg","900 g"],"display":{"measure":{"a":1000,"b":900,"kind":"cmp"},"promptText":"Which is heavier, 1 kg or 900 g?"}},
   },
   {
     itemId: "measurement-conc-b0821-0230",
@@ -9962,7 +9962,7 @@ export const ITEMS = [
     structureType: "crossHeavierMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5 kg","choices":["4700 g","5 kg"],"display":{"measure":{"a":5000,"b":4700,"kind":"cmp"},"promptText":"Which is heavier, 5 kg or 4700 g? Luca converts to compare."}},
+    question: {"a":null,"b":null,"op":"count","answer":"5 kg","choices":["4700 g","5 kg"],"display":{"measure":{"a":5000,"b":4700,"kind":"cmp"},"promptText":"Which weighs more: 5 kg or 4700 g?"}},
   },
   {
     itemId: "measurement-conc-b0821-0232",
@@ -9982,7 +9982,7 @@ export const ITEMS = [
     structureType: "crossHeavierMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4 kg","choices":["3600 g","4 kg"],"display":{"measure":{"a":4000,"b":3600,"kind":"cmp"},"promptText":"Which is heavier, 4 kg or 3600 g? Omar converts to compare."}},
+    question: {"a":null,"b":null,"op":"count","answer":"4 kg","choices":["3600 g","4 kg"],"display":{"measure":{"a":4000,"b":3600,"kind":"cmp"},"promptText":"Which is heavier, 4 kg or 3600 g?"}},
   },
   {
     itemId: "measurement-conc-b0821-0234",
@@ -10002,7 +10002,7 @@ export const ITEMS = [
     structureType: "crossHeavierMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7 kg","choices":["6500 g","7 kg"],"display":{"measure":{"a":7000,"b":6500,"kind":"cmp"},"promptText":"Which is heavier, 7 kg or 6500 g? Finn converts to compare."}},
+    question: {"a":null,"b":null,"op":"count","answer":"7 kg","choices":["6500 g","7 kg"],"display":{"measure":{"a":7000,"b":6500,"kind":"cmp"},"promptText":"Which weighs more: 7 kg or 6500 g?"}},
   },
   {
     itemId: "measurement-conc-b0821-0236",
@@ -10022,7 +10022,7 @@ export const ITEMS = [
     structureType: "crossHeavierMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"6 kg","choices":["5800 g","6 kg"],"display":{"measure":{"a":6000,"b":5800,"kind":"cmp"},"promptText":"Which is heavier, 6 kg or 5800 g? Sam converts to compare."}},
+    question: {"a":null,"b":null,"op":"count","answer":"6 kg","choices":["5800 g","6 kg"],"display":{"measure":{"a":6000,"b":5800,"kind":"cmp"},"promptText":"Which is heavier, 6 kg or 5800 g?"}},
   },
   {
     itemId: "measurement-conc-b0821-0238",
@@ -10042,7 +10042,7 @@ export const ITEMS = [
     structureType: "crossHeavierMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"8 kg","choices":["7900 g","8 kg"],"display":{"measure":{"a":8000,"b":7900,"kind":"cmp"},"promptText":"Which is heavier, 8 kg or 7900 g? Kai converts to compare."}},
+    question: {"a":null,"b":null,"op":"count","answer":"8 kg","choices":["7900 g","8 kg"],"display":{"measure":{"a":8000,"b":7900,"kind":"cmp"},"promptText":"Which weighs more: 8 kg or 7900 g?"}},
   },
   {
     itemId: "measurement-conc-b0821-0240",
@@ -10062,7 +10062,7 @@ export const ITEMS = [
     structureType: "crossHeavierMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"9 kg","choices":["8600 g","9 kg"],"display":{"measure":{"a":9000,"b":8600,"kind":"cmp"},"promptText":"Which is heavier, 9 kg or 8600 g? Lily converts to compare."}},
+    question: {"a":null,"b":null,"op":"count","answer":"9 kg","choices":["8600 g","9 kg"],"display":{"measure":{"a":9000,"b":8600,"kind":"cmp"},"promptText":"Which is heavier, 9 kg or 8600 g?"}},
   },
   {
     itemId: "measurement-conc-b0821-0242",
@@ -10082,7 +10082,7 @@ export const ITEMS = [
     structureType: "lessJudgeMassMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":1500,"b":2000,"kind":"cmpSaid","saidLarger":false},"promptText":"Lily says 1500 g is LESS than 2 kg. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":1500,"b":2000,"kind":"cmpSaid","saidLarger":false},"promptText":"Lily says 1500 g is less than 2 kg. Is Lily right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0244",
@@ -10092,7 +10092,7 @@ export const ITEMS = [
     structureType: "lessJudgeMassMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":2500,"b":2000,"kind":"cmpSaid","saidLarger":false},"promptText":"Amara ranks 2500 g below 2 kg. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":2500,"b":2000,"kind":"cmpSaid","saidLarger":false},"promptText":"Amara says 2 kg is more than 2500 g. Is Amara right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0245",
@@ -10102,7 +10102,7 @@ export const ITEMS = [
     structureType: "lessJudgeMassMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":800,"b":1000,"kind":"cmpSaid","saidLarger":false},"promptText":"Leo says 800 mL is LESS than 1 L. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":800,"b":1000,"kind":"cmpSaid","saidLarger":false},"promptText":"Leo says 800 mL is less than 1 L. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0246",
@@ -10112,7 +10112,7 @@ export const ITEMS = [
     structureType: "lessJudgeMassMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":1300,"b":1000,"kind":"cmpSaid","saidLarger":false},"promptText":"Mina ranks 1300 mL below 1 L. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":1300,"b":1000,"kind":"cmpSaid","saidLarger":false},"promptText":"Mina says 1 L is more than 1300 mL. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0247",
@@ -10122,7 +10122,7 @@ export const ITEMS = [
     structureType: "lessJudgeMassMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":2700,"b":3000,"kind":"cmpSaid","saidLarger":false},"promptText":"Theo says 2700 g is LESS than 3 kg. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":2700,"b":3000,"kind":"cmpSaid","saidLarger":false},"promptText":"Theo says 3 kg is more than 2700 g. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0248",
@@ -10132,7 +10132,7 @@ export const ITEMS = [
     structureType: "lessJudgeMassMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":3300,"b":3000,"kind":"cmpSaid","saidLarger":false},"promptText":"Ida ranks 3300 g below 3 kg. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":3300,"b":3000,"kind":"cmpSaid","saidLarger":false},"promptText":"Ida says 3300 g is less than 3 kg. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0249",
@@ -10142,7 +10142,7 @@ export const ITEMS = [
     structureType: "lessJudgeMassMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":3600,"b":4000,"kind":"cmpSaid","saidLarger":false},"promptText":"Zoe says 3600 mL is LESS than 4 L. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":3600,"b":4000,"kind":"cmpSaid","saidLarger":false},"promptText":"Zoe says 4 L is more than 3600 mL. Is Zoe right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0250",
@@ -10152,7 +10152,7 @@ export const ITEMS = [
     structureType: "lessJudgeMassMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":4500,"b":4000,"kind":"cmpSaid","saidLarger":false},"promptText":"Rosa ranks 4500 mL below 4 L. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":4500,"b":4000,"kind":"cmpSaid","saidLarger":false},"promptText":"Rosa says 4500 mL is less than 4 L. Is Rosa right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0251",
@@ -10162,7 +10162,7 @@ export const ITEMS = [
     structureType: "lessJudgeMassMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":4400,"b":5000,"kind":"cmpSaid","saidLarger":false},"promptText":"Diego says 4400 g is LESS than 5 kg. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":4400,"b":5000,"kind":"cmpSaid","saidLarger":false},"promptText":"Diego says 4400 g is less than 5 kg. Is Diego right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0252",
@@ -10172,7 +10172,7 @@ export const ITEMS = [
     structureType: "lessJudgeMassMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":5600,"b":5000,"kind":"cmpSaid","saidLarger":false},"promptText":"Nora ranks 5600 g below 5 kg. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":5600,"b":5000,"kind":"cmpSaid","saidLarger":false},"promptText":"Nora says 5 kg is more than 5600 g. Is Nora right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0253",
@@ -10182,7 +10182,7 @@ export const ITEMS = [
     structureType: "lessJudgeMassMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":5500,"b":6000,"kind":"cmpSaid","saidLarger":false},"promptText":"Luca says 5500 mL is LESS than 6 L. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":5500,"b":6000,"kind":"cmpSaid","saidLarger":false},"promptText":"Luca says 5500 mL is less than 6 L. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0254",
@@ -10192,7 +10192,7 @@ export const ITEMS = [
     structureType: "lessJudgeMassMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":6300,"b":6000,"kind":"cmpSaid","saidLarger":false},"promptText":"Ava ranks 6300 mL below 6 L. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":6300,"b":6000,"kind":"cmpSaid","saidLarger":false},"promptText":"Ava says 6 L is more than 6300 mL. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0255",
@@ -10202,7 +10202,7 @@ export const ITEMS = [
     structureType: "lessJudgeMassMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":6800,"b":7000,"kind":"cmpSaid","saidLarger":false},"promptText":"Omar says 6800 g is LESS than 7 kg. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":6800,"b":7000,"kind":"cmpSaid","saidLarger":false},"promptText":"Omar says 7 kg is more than 6800 g. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0256",
@@ -10212,7 +10212,7 @@ export const ITEMS = [
     structureType: "lessJudgeMassMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":7400,"b":7000,"kind":"cmpSaid","saidLarger":false},"promptText":"Ben ranks 7400 g below 7 kg. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":7400,"b":7000,"kind":"cmpSaid","saidLarger":false},"promptText":"Ben says 7400 g is less than 7 kg. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0257",
@@ -10222,7 +10222,7 @@ export const ITEMS = [
     structureType: "lessJudgeMassMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":7500,"b":8000,"kind":"cmpSaid","saidLarger":false},"promptText":"Finn says 7500 mL is LESS than 8 L. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":7500,"b":8000,"kind":"cmpSaid","saidLarger":false},"promptText":"Finn says 8 L is more than 7500 mL. Is Finn right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0258",
@@ -10242,7 +10242,7 @@ export const ITEMS = [
     structureType: "factorSlipMassJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"kg>g","said":300,"amount":3},"promptText":"Turning 3 kg into g, June gets 300. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"kg>g","said":300,"amount":3},"promptText":"Turning 3 kg into g, June gets 300 g. Is June right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0260",
@@ -10252,7 +10252,7 @@ export const ITEMS = [
     structureType: "factorSlipMassJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"convertSaid","pair":"L>mL","said":4000,"amount":4},"promptText":"Lily converts 4 L and writes 4000 mL. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"convertSaid","pair":"L>mL","said":4000,"amount":4},"promptText":"Lily converts 4 L and writes 4000 mL. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0261",
@@ -10262,7 +10262,7 @@ export const ITEMS = [
     structureType: "factorSlipMassJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"L>mL","said":500,"amount":5},"promptText":"Turning 5 L into mL, Amara gets 500. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"L>mL","said":500,"amount":5},"promptText":"Turning 5 L into mL, Amara gets 500 mL. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0262",
@@ -10272,7 +10272,7 @@ export const ITEMS = [
     structureType: "factorSlipMassJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"convertSaid","pair":"kg>g","said":6000,"amount":6},"promptText":"Leo converts 6 kg and writes 6000 g. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"convertSaid","pair":"kg>g","said":6000,"amount":6},"promptText":"Turning 6 kg into g, Leo gets 6000 g. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0263",
@@ -10282,7 +10282,7 @@ export const ITEMS = [
     structureType: "factorSlipMassJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"kg>g","said":700,"amount":7},"promptText":"Turning 7 kg into g, Mina gets 700. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"kg>g","said":700,"amount":7},"promptText":"Mina converts 7 kg and writes 700 g. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0264",
@@ -10292,7 +10292,7 @@ export const ITEMS = [
     structureType: "factorSlipMassJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"convertSaid","pair":"L>mL","said":8000,"amount":8},"promptText":"Theo converts 8 L and writes 8000 mL. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"convertSaid","pair":"L>mL","said":8000,"amount":8},"promptText":"Turning 8 L into mL, Theo gets 8000 mL. Is Theo right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0265",
@@ -10302,7 +10302,7 @@ export const ITEMS = [
     structureType: "factorSlipMassJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"L>mL","said":90,"amount":9},"promptText":"Turning 9 L into mL, Ida gets 90. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"L>mL","said":90,"amount":9},"promptText":"Ida converts 9 L and writes 90 mL. Is Ida right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0266",
@@ -10322,7 +10322,7 @@ export const ITEMS = [
     structureType: "factorSlipMassJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"kg>g","said":20000,"amount":2},"promptText":"Turning 2 kg into g, Rosa gets 20000. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"kg>g","said":20000,"amount":2},"promptText":"Turning 2 kg into g, Rosa gets 20000 g. Is Rosa right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0268",
@@ -10332,7 +10332,7 @@ export const ITEMS = [
     structureType: "factorSlipMassJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"convertSaid","pair":"L>mL","said":5000,"amount":5},"promptText":"Diego converts 5 L and writes 5000 mL. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"convertSaid","pair":"L>mL","said":5000,"amount":5},"promptText":"Diego converts 5 L and writes 5000 mL. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0269",
@@ -10342,7 +10342,7 @@ export const ITEMS = [
     structureType: "factorSlipMassJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"L>mL","said":60000,"amount":6},"promptText":"Turning 6 L into mL, Nora gets 60000. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"L>mL","said":60000,"amount":6},"promptText":"Turning 6 L into mL, Nora gets 60000 mL. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0270",
@@ -10352,7 +10352,7 @@ export const ITEMS = [
     structureType: "factorSlipMassJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"convertSaid","pair":"kg>g","said":7000,"amount":7},"promptText":"Luca converts 7 kg and writes 7000 g. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"convertSaid","pair":"kg>g","said":7000,"amount":7},"promptText":"Turning 7 kg into g, Luca gets 7000 g. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0271",
@@ -10362,7 +10362,7 @@ export const ITEMS = [
     structureType: "factorSlipMassJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"kg>g","said":40,"amount":4},"promptText":"Turning 4 kg into g, Ava gets 40. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"kg>g","said":40,"amount":4},"promptText":"Ava converts 4 kg and writes 40 g. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0272",
@@ -10372,7 +10372,7 @@ export const ITEMS = [
     structureType: "factorSlipMassJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"convertSaid","pair":"L>mL","said":9000,"amount":9},"promptText":"Omar converts 9 L and writes 9000 mL. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"convertSaid","pair":"L>mL","said":9000,"amount":9},"promptText":"Turning 9 L into mL, Omar gets 9000 mL. Is Omar right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0273",
@@ -10382,7 +10382,7 @@ export const ITEMS = [
     structureType: "factorSlipMassJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"L>mL","said":10,"amount":1},"promptText":"Turning 1 L into mL, Ben gets 10. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"L>mL","said":10,"amount":1},"promptText":"Ben converts 1 L and writes 10 mL. Is Ben right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0274",
@@ -10402,7 +10402,7 @@ export const ITEMS = [
     structureType: "factorSlipMassJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"kg>g","said":80,"amount":8},"promptText":"Turning 8 kg into g, Priya gets 80. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"convertSaid","pair":"kg>g","said":80,"amount":8},"promptText":"Turning 8 kg into g, Priya gets 80 g. Is Priya right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0276",
@@ -10432,7 +10432,7 @@ export const ITEMS = [
     structureType: "enoughVolumeJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"enough","need":800,"haveSmall":1000},"promptText":"A recipe needs 800 mL of milk. Finn's carton holds 1 L. Is there enough milk?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"enough","need":800,"haveSmall":1000},"promptText":"Finn must pour 800 mL, and the 1 L bottle is full. Does the bottle hold enough?"}},
   },
   {
     itemId: "measurement-conc-b0821-0279",
@@ -10442,7 +10442,7 @@ export const ITEMS = [
     structureType: "enoughVolumeJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"enough","need":1200,"haveSmall":1000},"promptText":"Priya must pour 1200 mL, and the 1 L bottle is full. Does the bottle hold enough?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"enough","need":1200,"haveSmall":1000},"promptText":"A recipe needs 1200 mL of milk. Priya's carton holds 1 L. Is there enough milk?"}},
   },
   {
     itemId: "measurement-conc-b0821-0280",
@@ -10472,7 +10472,7 @@ export const ITEMS = [
     structureType: "enoughVolumeJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"enough","need":3700,"haveSmall":4000},"promptText":"A recipe needs 3700 mL of milk. Kai's carton holds 4 L. Is there enough milk?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"enough","need":3700,"haveSmall":4000},"promptText":"Kai must pour 3700 mL, and the 4 L bottle is full. Does the bottle hold enough?"}},
   },
   {
     itemId: "measurement-conc-b0821-0283",
@@ -10482,7 +10482,7 @@ export const ITEMS = [
     structureType: "enoughVolumeJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"enough","need":4600,"haveSmall":4000},"promptText":"June must pour 4600 mL, and the 4 L bottle is full. Does the bottle hold enough?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"enough","need":4600,"haveSmall":4000},"promptText":"A recipe needs 4600 mL of milk. June's carton holds 4 L. Is there enough milk?"}},
   },
   {
     itemId: "measurement-conc-b0821-0284",
@@ -10512,7 +10512,7 @@ export const ITEMS = [
     structureType: "enoughVolumeJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"enough","need":4800,"haveSmall":5000},"promptText":"A recipe needs 4800 mL of milk. Leo's carton holds 5 L. Is there enough milk?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"enough","need":4800,"haveSmall":5000},"promptText":"Leo must pour 4800 mL, and the 5 L bottle is full. Does the bottle hold enough?"}},
   },
   {
     itemId: "measurement-conc-b0821-0287",
@@ -10522,7 +10522,7 @@ export const ITEMS = [
     structureType: "enoughVolumeJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"enough","need":5300,"haveSmall":5000},"promptText":"Mina must pour 5300 mL, and the 5 L bottle is full. Does the bottle hold enough?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"enough","need":5300,"haveSmall":5000},"promptText":"A recipe needs 5300 mL of milk. Mina's carton holds 5 L. Is there enough milk?"}},
   },
   {
     itemId: "measurement-conc-b0821-0288",
@@ -10552,7 +10552,7 @@ export const ITEMS = [
     structureType: "enoughVolumeJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"enough","need":5600,"haveSmall":6000},"promptText":"A recipe needs 5600 mL of milk. Zoe's carton holds 6 L. Is there enough milk?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"enough","need":5600,"haveSmall":6000},"promptText":"Zoe must pour 5600 mL, and the 6 L bottle is full. Does the bottle hold enough?"}},
   },
   {
     itemId: "measurement-conc-b0821-0291",
@@ -10562,7 +10562,7 @@ export const ITEMS = [
     structureType: "enoughVolumeJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"enough","need":6800,"haveSmall":6000},"promptText":"Rosa must pour 6800 mL, and the 6 L bottle is full. Does the bottle hold enough?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"enough","need":6800,"haveSmall":6000},"promptText":"A recipe needs 6800 mL of milk. Rosa's carton holds 6 L. Is there enough milk?"}},
   },
   {
     itemId: "measurement-conc-b0821-0292",
@@ -10752,7 +10752,7 @@ export const ITEMS = [
     structureType: "estimateJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Theo writes \"5 m\" next to a goldfish. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Theo writes \"5 m\" next to a goldfish. Does that estimate make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0311",
@@ -10762,7 +10762,7 @@ export const ITEMS = [
     structureType: "estimateJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Ida estimates a park bench at 2 m. Does that estimate make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Ida estimates a park bench at 2 m. Is that a good estimate?"}},
   },
   {
     itemId: "measurement-conc-b0821-0312",
@@ -10772,7 +10772,7 @@ export const ITEMS = [
     structureType: "estimateJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Zoe writes \"2 mm\" next to a park bench. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Zoe writes \"2 mm\" next to a park bench. Is that a good estimate?"}},
   },
   {
     itemId: "measurement-conc-b0821-0313",
@@ -10782,7 +10782,7 @@ export const ITEMS = [
     structureType: "estimateJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Rosa estimates a housefly at 8 mm. Does that estimate make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Rosa writes \"8 mm\" next to a housefly. Is that a good estimate?"}},
   },
   {
     itemId: "measurement-conc-b0821-0314",
@@ -10792,7 +10792,7 @@ export const ITEMS = [
     structureType: "estimateJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Diego writes \"8 m\" next to a housefly. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Diego estimates a housefly at 8 m. Is that a good estimate?"}},
   },
   {
     itemId: "measurement-conc-b0821-0315",
@@ -10802,7 +10802,7 @@ export const ITEMS = [
     structureType: "estimateJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Nora estimates a kite string at 10 m. Does that estimate make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Nora writes \"12 m\" for the length of a school bus. Does that estimate make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0316",
@@ -10812,7 +10812,7 @@ export const ITEMS = [
     structureType: "estimateJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Luca writes \"10 mm\" next to a kite string. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Luca estimates a kite string at 10 mm. Does that estimate make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0317",
@@ -10822,7 +10822,7 @@ export const ITEMS = [
     structureType: "estimateJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Ava estimates a juice glass at 1 cm. Does that estimate make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Ava writes \"1 cm\" next to a juice glass. Does that estimate make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0318",
@@ -10832,7 +10832,7 @@ export const ITEMS = [
     structureType: "estimateJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Omar writes \"12 m\" next to a hallway. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Omar estimates the length of a car at 4 m. Does that estimate make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0319",
@@ -10842,7 +10842,7 @@ export const ITEMS = [
     structureType: "estimateJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Ben estimates a crumb at 2 mm. Does that estimate make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Ben estimates a crumb at 2 mm. Is that a good estimate?"}},
   },
   {
     itemId: "measurement-conc-b0821-0320",
@@ -10852,7 +10852,7 @@ export const ITEMS = [
     structureType: "estimateJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Finn writes \"2 km\" next to a crumb. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Finn writes \"2 km\" next to a crumb. Is that a good estimate?"}},
   },
   {
     itemId: "measurement-conc-b0821-0321",
@@ -10862,7 +10862,7 @@ export const ITEMS = [
     structureType: "estimateJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Priya estimates a bicycle at 1 m. Does that estimate make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Priya writes \"2 m\" for the height of a classroom door. Is that a good estimate?"}},
   },
   {
     itemId: "measurement-conc-b0821-0322",
@@ -10872,7 +10872,7 @@ export const ITEMS = [
     structureType: "estimateJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Sam writes \"1 km\" next to a bicycle. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Sam estimates a bicycle at 1 km. Is that a good estimate?"}},
   },
   {
     itemId: "measurement-conc-b0821-0323",
@@ -10882,7 +10882,7 @@ export const ITEMS = [
     structureType: "estimateJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Nia estimates a snail at 4 cm. Does that estimate make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Nia writes \"4 cm\" next to a snail. Does that estimate make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0324",
@@ -10892,7 +10892,7 @@ export const ITEMS = [
     structureType: "estimateJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Kai writes \"4 m\" next to a snail. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Kai estimates a snail at 4 m. Does that estimate make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0325",
@@ -10902,7 +10902,7 @@ export const ITEMS = [
     structureType: "estimateJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"June estimates a football pitch at 10 cm. Does that estimate make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"June writes \"10 cm\" for the length of a soccer field. Does that estimate make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0326",
@@ -10912,7 +10912,7 @@ export const ITEMS = [
     structureType: "estimateJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Lily writes \"1 m\" next to a shoelace. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Lily estimates a new crayon at 9 cm. Does that estimate make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0327",
@@ -11082,7 +11082,7 @@ export const ITEMS = [
     structureType: "closerToPickTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1 L","choices":["1 L","10 L"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Is a juice box closer to 1 L or to 10 L? Ava thinks about its real size."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1 L","choices":["1 L","10 L"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Does a juice box hold closer to 1 L or to 10 L?"}},
   },
   {
     itemId: "measurement-conc-b0821-0344",
@@ -11102,7 +11102,7 @@ export const ITEMS = [
     structureType: "closerToPickTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4 kg","choices":["4 g","4 kg"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Is a cat closer to 4 kg or to 4 g? Ben thinks about its real size."}},
+    question: {"a":null,"b":null,"op":"count","answer":"4 kg","choices":["4 g","4 kg"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Does a cat weigh closer to 4 kg or to 4 g?"}},
   },
   {
     itemId: "measurement-conc-b0821-0346",
@@ -11122,7 +11122,7 @@ export const ITEMS = [
     structureType: "closerToPickTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2 m","choices":["2 cm","2 m"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Is a door closer to 2 m or to 2 cm? Priya thinks about its real size."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2 m","choices":["2 cm","2 m"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Is a door closer to 2 m tall or to 2 cm tall?"}},
   },
   {
     itemId: "measurement-conc-b0821-0348",
@@ -11142,7 +11142,7 @@ export const ITEMS = [
     structureType: "closerToPickTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"15 cm","choices":["15 cm","15 m"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Is a spoon closer to 15 cm or to 15 m? Nia thinks about its real size."}},
+    question: {"a":null,"b":null,"op":"count","answer":"15 cm","choices":["15 cm","15 m"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Is a spoon closer to 15 cm long or to 15 m long?"}},
   },
   {
     itemId: "measurement-conc-b0821-0350",
@@ -11162,7 +11162,7 @@ export const ITEMS = [
     structureType: "closerToPickTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2 cm","choices":["2 cm","2 m"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Is a stamp closer to 2 cm or to 2 m? June thinks about its real size."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2 cm","choices":["2 cm","2 m"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Is a stamp closer to 2 cm wide or to 2 m wide?"}},
   },
   {
     itemId: "measurement-conc-b0821-0352",
@@ -11182,7 +11182,7 @@ export const ITEMS = [
     structureType: "closerToPickTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"20 cm","choices":["20 mm","20 cm"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Is a straw closer to 20 cm or to 20 mm? Amara thinks about its real size."}},
+    question: {"a":null,"b":null,"op":"count","answer":"20 cm","choices":["20 mm","20 cm"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Is a straw closer to 20 cm long or to 20 mm long?"}},
   },
   {
     itemId: "measurement-conc-b0821-0354",
@@ -11202,7 +11202,7 @@ export const ITEMS = [
     structureType: "closerToPickTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1 kg","choices":["1 kg","20 kg"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Is a book closer to 1 kg or to 20 kg? Mina thinks about its real size."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1 kg","choices":["1 kg","20 kg"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Does a book weigh closer to 1 kg or to 20 kg?"}},
   },
   {
     itemId: "measurement-conc-b0821-0356",
@@ -11212,7 +11212,7 @@ export const ITEMS = [
     structureType: "estimateJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Lily estimates a ruler at 15 cm. Does that estimate make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Lily estimates the width of her little finger at 1 cm. Is that a good estimate?"}},
   },
   {
     itemId: "measurement-conc-b0821-0357",
@@ -11222,7 +11222,7 @@ export const ITEMS = [
     structureType: "estimateJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Amara writes \"15 km\" next to a ruler. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Amara writes \"15 km\" next to a ruler. Is that a good estimate?"}},
   },
   {
     itemId: "measurement-conc-b0821-0358",
@@ -11232,7 +11232,7 @@ export const ITEMS = [
     structureType: "estimateJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Leo estimates a milk jug at 2 L. Does that estimate make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Leo writes \"10 L\" for a full bucket of water. Is that a good estimate?"}},
   },
   {
     itemId: "measurement-conc-b0821-0359",
@@ -11242,7 +11242,7 @@ export const ITEMS = [
     structureType: "estimateJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Mina writes \"2 mL\" next to a milk jug. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Mina estimates a milk jug at 2 mL. Is that a good estimate?"}},
   },
   {
     itemId: "measurement-conc-b0821-0360",
@@ -11432,7 +11432,7 @@ export const ITEMS = [
     structureType: "estimateOrExactMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Theo is cutting a shelf to fit a gap. Does Theo need an EXACT measure, or is an estimate enough? Theo says an estimate is enough. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Theo is ordering a glass top to fit a table. Theo says an estimate is enough. Is Theo right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0379",
@@ -11452,7 +11452,7 @@ export const ITEMS = [
     structureType: "estimateOrExactMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Zoe is measuring medicine for a baby. Does Zoe need an EXACT measure, or is an estimate enough? Zoe says an estimate is enough. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Zoe is measuring a gap in a fence to buy a gate that fits it. Zoe says an estimate is enough. Is Zoe right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0381",
@@ -11462,7 +11462,7 @@ export const ITEMS = [
     structureType: "estimateOrExactMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"While packing a suitcase under a weight limit, Rosa decides a rough estimate will do. Is that the right call?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"While timing a race to see if a runner set a new school record, Rosa decides a rough estimate will do. Is that the right call?"}},
   },
   {
     itemId: "measurement-conc-b0821-0382",
@@ -11472,7 +11472,7 @@ export const ITEMS = [
     structureType: "estimateOrExactMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Diego is deciding if a couch fits through a door. Does Diego need an EXACT measure, or is an estimate enough? Diego says an estimate is enough. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Diego is measuring the space between two cabinets for a new dishwasher. Diego says an estimate is enough. Is Diego right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0383",
@@ -11492,7 +11492,7 @@ export const ITEMS = [
     structureType: "estimateOrExactMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Luca is mixing juice for a picnic. Does Luca need an EXACT measure, or is an estimate enough? Luca says an estimate is enough. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Luca is guessing how many liters of lemonade a picnic needs. Luca says an estimate is enough. Is Luca right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0385",
@@ -11512,7 +11512,7 @@ export const ITEMS = [
     structureType: "estimateOrExactMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Omar is judging how heavy a pumpkin feels. Does Omar need an EXACT measure, or is an estimate enough? Omar says an estimate is enough. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Omar is judging how heavy a pumpkin feels. Omar says an estimate is enough. Is Omar right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0387",
@@ -11532,7 +11532,7 @@ export const ITEMS = [
     structureType: "estimateOrExactMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Finn is choosing a box for mailing a mug. Does Finn need an EXACT measure, or is an estimate enough? Finn says an estimate is enough. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Just for fun, Finn guesses how much water is in a puddle. Finn says an estimate is enough. Is Finn right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0389",
@@ -11542,7 +11542,7 @@ export const ITEMS = [
     structureType: "estimateOrExactMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"While marking a race finish line at exactly 100 m, Priya decides a rough estimate will do. Is that the right call?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Priya is marking the finish line for an official 100 m race at a track meet. Priya says a rough estimate is good enough. Is Priya right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0390",
@@ -11552,7 +11552,7 @@ export const ITEMS = [
     structureType: "estimateOrExactMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Sam is filling a watering can for flowers. Does Sam need an EXACT measure, or is an estimate enough? Sam says an estimate is enough. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"While filling a watering can for flowers, Sam decides a rough estimate will do. Is that the right call?"}},
   },
   {
     itemId: "measurement-conc-b0821-0391",
@@ -11562,7 +11562,7 @@ export const ITEMS = [
     structureType: "estimateOrExactMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"While weighing flour for a bakery order, Nia decides a rough estimate will do. Is that the right call?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"While measuring the gap for a new fridge in the kitchen, Nia decides a rough estimate will do. Is that the right call?"}},
   },
   {
     itemId: "measurement-conc-b0821-0392",
@@ -11572,7 +11572,7 @@ export const ITEMS = [
     structureType: "estimateOrExactMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Kai is guessing the length of a slug. Does Kai need an EXACT measure, or is an estimate enough? Kai says an estimate is enough. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"While guessing the length of a slug, Kai decides a rough estimate will do. Is that the right call?"}},
   },
   {
     itemId: "measurement-conc-b0821-0393",
@@ -11582,7 +11582,7 @@ export const ITEMS = [
     structureType: "estimateOrExactMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"While lining up a picture frame on a nail, June decides a rough estimate will do. Is that the right call?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"While measuring a doorway for a new door, June decides a rough estimate will do. Is that the right call?"}},
   },
   {
     itemId: "measurement-conc-b0821-0394",
@@ -11592,7 +11592,7 @@ export const ITEMS = [
     structureType: "estimateJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Kai estimates a hallway at 9 m. Does that estimate make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Kai estimates a school bus at 12 m. Does that estimate make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0395",
@@ -11602,7 +11602,7 @@ export const ITEMS = [
     structureType: "estimateJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"June writes \"9 km\" next to a hallway. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"June writes \"9 km\" next to a hallway. Does that estimate make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0396",
@@ -11612,7 +11612,7 @@ export const ITEMS = [
     structureType: "estimateJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Lily estimates a cherry at 5 g. Does that estimate make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Lily estimates a cherry at 5 g. Is that a sensible estimate?"}},
   },
   {
     itemId: "measurement-conc-b0821-0397",
@@ -11632,7 +11632,7 @@ export const ITEMS = [
     structureType: "estimateJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Leo estimates a teapot at 1 L. Does that estimate make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Leo writes \"1 L\" next to a teapot. Is that a sensible estimate?"}},
   },
   {
     itemId: "measurement-conc-b0821-0399",
@@ -11642,7 +11642,7 @@ export const ITEMS = [
     structureType: "estimateJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Mina writes \"100 L\" next to a teapot. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Mina estimates a teapot at 100 L. Is that a sensible estimate?"}},
   },
   {
     itemId: "measurement-conc-b0821-0400",
@@ -11652,7 +11652,7 @@ export const ITEMS = [
     structureType: "estimateJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Theo estimates a whiteboard at 2 m. Does that estimate make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Theo writes \"2 m\" for the length of a bed. Does that estimate make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0401",
@@ -11662,7 +11662,7 @@ export const ITEMS = [
     structureType: "estimateJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Ida writes \"2 cm\" next to a whiteboard. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Ida estimates a whiteboard at 2 cm. Does that estimate make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0402",
@@ -11672,7 +11672,7 @@ export const ITEMS = [
     structureType: "estimateJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Zoe estimates a ladder at 3 m. Does that estimate make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Zoe estimates a giraffe's height at 5 m. Does that estimate make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0403",
@@ -11682,7 +11682,7 @@ export const ITEMS = [
     structureType: "estimateJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Rosa writes \"30 m\" next to a ladder. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Rosa writes \"30 m\" for the height of a giraffe. Does that estimate make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0404",
@@ -11692,7 +11692,7 @@ export const ITEMS = [
     structureType: "estimateJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Diego estimates a soup spoonful at 10 mL. Does that estimate make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Diego estimates a soup spoonful at 10 mL. Is that a sensible estimate?"}},
   },
   {
     itemId: "measurement-conc-b0821-0405",
@@ -11712,7 +11712,7 @@ export const ITEMS = [
     structureType: "estimateJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Luca estimates a watermelon at 5 kg. Does that estimate make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Luca writes \"5 kg\" next to a watermelon. Is that a sensible estimate?"}},
   },
   {
     itemId: "measurement-conc-b0821-0407",
@@ -11722,7 +11722,7 @@ export const ITEMS = [
     structureType: "estimateJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Ava writes \"50 kg\" next to a watermelon. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Ava estimates a watermelon at 50 kg. Is that a sensible estimate?"}},
   },
   {
     itemId: "measurement-conc-b0821-0408",
@@ -11732,7 +11732,7 @@ export const ITEMS = [
     structureType: "estimateJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Omar estimates a classroom at 9 m. Does that estimate make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Omar writes \"9 m\" next to a classroom. Does that estimate make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0409",
@@ -11742,7 +11742,7 @@ export const ITEMS = [
     structureType: "estimateJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Ben writes \"90 m\" next to a classroom. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Ben estimates a classroom at 90 m. Does that estimate make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0410",
@@ -11752,7 +11752,7 @@ export const ITEMS = [
     structureType: "estimateJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Finn estimates a candle at 15 cm. Does that estimate make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Finn estimates a paper clip at 3 cm. Does that estimate make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0411",
@@ -11762,7 +11762,7 @@ export const ITEMS = [
     structureType: "estimateJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Priya writes \"15 km\" next to a candle. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Priya writes \"15 km\" next to a candle. Does that estimate make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0412",
@@ -11962,7 +11962,7 @@ export const ITEMS = [
     structureType: "closestSumBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":700,"choices":[900,700,600,800],"display":{"measure":{"a":287,"b":412,"kind":"closestSum"},"promptText":"Two planks, 287 cm and 412 cm, laid end to end — which total estimate is closest? Omar rounds to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":700,"choices":[900,700,600,800],"display":{"measure":{"a":287,"b":412,"kind":"closestSum"},"promptText":"Two planks are 287 cm and 412 cm long. Which estimate is closest to their total length?"}},
   },
   {
     itemId: "measurement-conc-b0821-0432",
@@ -11982,7 +11982,7 @@ export const ITEMS = [
     structureType: "closestSumBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":800,"choices":[800,700,1000,900],"display":{"measure":{"a":489,"b":316,"kind":"closestSum"},"promptText":"Two planks, 489 cm and 316 cm, laid end to end — which total estimate is closest? Finn rounds to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":800,"choices":[800,700,1000,900],"display":{"measure":{"a":489,"b":316,"kind":"closestSum"},"promptText":"Finn lays a 489 cm plank and a 316 cm plank end to end. Which estimate is closest to the total length?"}},
   },
   {
     itemId: "measurement-conc-b0821-0434",
@@ -12002,7 +12002,7 @@ export const ITEMS = [
     structureType: "closestSumBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":600,"choices":[800,500,700,600],"display":{"measure":{"a":267,"b":338,"kind":"closestSum"},"promptText":"Two planks, 267 cm and 338 cm, laid end to end — which total estimate is closest? Sam rounds to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":600,"choices":[800,500,700,600],"display":{"measure":{"a":267,"b":338,"kind":"closestSum"},"promptText":"A 267 cm plank and a 338 cm plank are laid end to end. About how many centimeters long are they together?"}},
   },
   {
     itemId: "measurement-conc-b0821-0436",
@@ -12022,7 +12022,7 @@ export const ITEMS = [
     structureType: "closestSumBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":600,"choices":[500,800,700,600],"display":{"measure":{"a":468,"b":129,"kind":"closestSum"},"promptText":"Two planks, 468 cm and 129 cm, laid end to end — which total estimate is closest? Kai rounds to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":600,"choices":[500,800,700,600],"display":{"measure":{"a":468,"b":129,"kind":"closestSum"},"promptText":"Two planks are 468 cm and 129 cm long. Which estimate is closest to their total length?"}},
   },
   {
     itemId: "measurement-conc-b0821-0438",
@@ -12042,7 +12042,7 @@ export const ITEMS = [
     structureType: "closestSumBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":600,"choices":[700,800,500,600],"display":{"measure":{"a":278,"b":327,"kind":"closestSum"},"promptText":"Two planks, 278 cm and 327 cm, laid end to end — which total estimate is closest? Lily rounds to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":600,"choices":[700,800,500,600],"display":{"measure":{"a":278,"b":327,"kind":"closestSum"},"promptText":"Lily lays a 278 cm plank and a 327 cm plank end to end. Which estimate is closest to the total length?"}},
   },
   {
     itemId: "measurement-conc-b0821-0440",
@@ -12062,7 +12062,7 @@ export const ITEMS = [
     structureType: "closestSumBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":600,"choices":[800,500,700,600],"display":{"measure":{"a":457,"b":148,"kind":"closestSum"},"promptText":"Two planks, 457 cm and 148 cm, laid end to end — which total estimate is closest? Leo rounds to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":600,"choices":[800,500,700,600],"display":{"measure":{"a":457,"b":148,"kind":"closestSum"},"promptText":"A 457 cm plank and a 148 cm plank are laid end to end. About how many centimeters long are they together?"}},
   },
   {
     itemId: "measurement-conc-b0821-0442",
@@ -12082,7 +12082,7 @@ export const ITEMS = [
     structureType: "closestSumBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":500,"choices":[400,700,600,500],"display":{"measure":{"a":289,"b":217,"kind":"closestSum"},"promptText":"Two planks, 289 cm and 217 cm, laid end to end — which total estimate is closest? Theo rounds to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":500,"choices":[400,700,600,500],"display":{"measure":{"a":289,"b":217,"kind":"closestSum"},"promptText":"Two planks are 289 cm and 217 cm long. Which estimate is closest to their total length?"}},
   },
   {
     itemId: "measurement-conc-b0821-0444",
@@ -12102,7 +12102,7 @@ export const ITEMS = [
     structureType: "closestSumBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":700,"choices":[900,700,800,600],"display":{"measure":{"a":466,"b":239,"kind":"closestSum"},"promptText":"Two planks, 466 cm and 239 cm, laid end to end — which total estimate is closest? Zoe rounds to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":700,"choices":[900,700,800,600],"display":{"measure":{"a":466,"b":239,"kind":"closestSum"},"promptText":"Zoe lays a 466 cm plank and a 239 cm plank end to end. Which estimate is closest to the total length?"}},
   },
   {
     itemId: "measurement-conc-b0821-0446",
@@ -12122,7 +12122,7 @@ export const ITEMS = [
     structureType: "closestSumBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":700,"choices":[800,700,600,900],"display":{"measure":{"a":249,"b":456,"kind":"closestSum"},"promptText":"Two planks, 249 cm and 456 cm, laid end to end — which total estimate is closest? Diego rounds to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":700,"choices":[800,700,600,900],"display":{"measure":{"a":249,"b":456,"kind":"closestSum"},"promptText":"A 249 cm plank and a 456 cm plank are laid end to end. About how many centimeters long are they together?"}},
   },
   {
     itemId: "measurement-conc-b0821-0448",
@@ -12142,7 +12142,7 @@ export const ITEMS = [
     structureType: "estimateJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Zoe writes \"100 km\" next to a stadium field. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Zoe writes \"100 km\" next to a stadium field. Does that estimate make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0450",
@@ -12152,7 +12152,7 @@ export const ITEMS = [
     structureType: "estimateJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Rosa estimates an elephant at 3000 kg. Does that estimate make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Rosa estimates an elephant at 3000 kg. Is that a sensible estimate?"}},
   },
   {
     itemId: "measurement-conc-b0821-0451",
@@ -12172,7 +12172,7 @@ export const ITEMS = [
     structureType: "estimateJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Nora estimates a swimming pool at 50000 L. Does that estimate make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Nora writes \"200 L\" for how much a full bathtub holds. Is that a sensible estimate?"}},
   },
   {
     itemId: "measurement-conc-b0821-0453",
@@ -12182,7 +12182,7 @@ export const ITEMS = [
     structureType: "estimateJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Luca writes \"50 L\" next to a swimming pool. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Luca estimates a swimming pool at 50 L. Is that a sensible estimate?"}},
   },
   {
     itemId: "measurement-conc-b0821-0454",
@@ -12192,7 +12192,7 @@ export const ITEMS = [
     structureType: "estimateJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Ava estimates a skyscraper at 300 m. Does that estimate make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Ava writes \"300 m\" next to a skyscraper. Does that estimate make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0455",
@@ -12202,7 +12202,7 @@ export const ITEMS = [
     structureType: "estimateJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Omar writes \"300 cm\" next to a skyscraper. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Omar estimates a skyscraper at 300 cm. Does that estimate make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0456",
@@ -12222,7 +12222,7 @@ export const ITEMS = [
     structureType: "estimateJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Finn writes \"5 g\" next to a bowling ball. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Finn writes \"5 g\" next to a bowling ball. Does that estimate make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0458",
@@ -12232,7 +12232,7 @@ export const ITEMS = [
     structureType: "estimateJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Priya estimates a rain barrel at 200 L. Does that estimate make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Priya estimates a rain barrel at 200 L. Is that a sensible estimate?"}},
   },
   {
     itemId: "measurement-conc-b0821-0459",
@@ -12252,7 +12252,7 @@ export const ITEMS = [
     structureType: "estimateJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Nia estimates a city block at 100 m. Does that estimate make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Nia writes \"100 m\" next to a city block. Is that a sensible estimate?"}},
   },
   {
     itemId: "measurement-conc-b0821-0461",
@@ -12262,7 +12262,7 @@ export const ITEMS = [
     structureType: "estimateJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Kai writes \"1 m\" next to a city block. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Kai estimates a city block at 1 m. Is that a sensible estimate?"}},
   },
   {
     itemId: "measurement-conc-b0821-0462",
@@ -12272,7 +12272,7 @@ export const ITEMS = [
     structureType: "estimateJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"June estimates a whale at 30000 kg. Does that estimate make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"June writes \"1500 kg\" next to a car. Does that estimate make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0463",
@@ -12282,7 +12282,7 @@ export const ITEMS = [
     structureType: "estimateJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Lily writes \"30 kg\" next to a whale. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Lily estimates a whale at 30 kg. Does that estimate make sense?"}},
   },
   {
     itemId: "measurement-conc-b0821-0464",
@@ -12402,7 +12402,7 @@ export const ITEMS = [
     structureType: "transitiveTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the hose","choices":["the leash","the hose","the shoelace... wait"],"display":{"measure":{"kind":"pickLabel"},"promptText":"The hose beats the leash in length, and the leash beats the shoelace... wait. Finn lines them up. Which one is longest?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the hose","choices":["the leash","the hose","the shoelace"],"display":{"measure":{"kind":"pickLabel"},"promptText":"The hose is longer than the leash. The leash is longer than the shoelace. Which one is the longest?"}},
   },
   {
     itemId: "measurement-conc-b0821-0476",
@@ -12462,7 +12462,7 @@ export const ITEMS = [
     structureType: "cmpJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":7,"b":15,"kind":"cmpSaid","saidLarger":true},"promptText":"Kai claims the 7 cm side beats the 15 cm side. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":7,"b":15,"kind":"cmpSaid","saidLarger":true},"promptText":"Kai says 7 cm is longer than 15 cm. Is Kai right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0482",
@@ -12482,7 +12482,7 @@ export const ITEMS = [
     structureType: "cmpJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":6,"b":13,"kind":"cmpSaid","saidLarger":true},"promptText":"Lily claims the 6 m side beats the 13 m side. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":6,"b":13,"kind":"cmpSaid","saidLarger":true},"promptText":"Lily says 6 m is longer than 13 m. Is Lily right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0484",
@@ -12502,7 +12502,7 @@ export const ITEMS = [
     structureType: "cmpJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":8,"b":16,"kind":"cmpSaid","saidLarger":true},"promptText":"Leo claims the 8 g side beats the 16 g side. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":8,"b":16,"kind":"cmpSaid","saidLarger":true},"promptText":"Leo says 8 g is heavier than 16 g. Is Leo right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0486",
@@ -12522,7 +12522,7 @@ export const ITEMS = [
     structureType: "cmpJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":10,"b":19,"kind":"cmpSaid","saidLarger":true},"promptText":"Theo claims the 10 kg side beats the 19 kg side. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":10,"b":19,"kind":"cmpSaid","saidLarger":true},"promptText":"Theo says 10 kg is heavier than 19 kg. Is Theo right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0488",
@@ -12542,7 +12542,7 @@ export const ITEMS = [
     structureType: "cmpJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":4,"b":9,"kind":"cmpSaid","saidLarger":true},"promptText":"Zoe claims the 4 L side beats the 9 L side. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":4,"b":9,"kind":"cmpSaid","saidLarger":true},"promptText":"Zoe says 4 L is more than 9 L. Is Zoe right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0490",
@@ -12562,7 +12562,7 @@ export const ITEMS = [
     structureType: "cmpJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":11,"b":20,"kind":"cmpSaid","saidLarger":true},"promptText":"Diego claims the 11 mL side beats the 20 mL side. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":11,"b":20,"kind":"cmpSaid","saidLarger":true},"promptText":"Diego says 11 mL is more than 20 mL. Is Diego right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0492",
@@ -12582,7 +12582,7 @@ export const ITEMS = [
     structureType: "cmpJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":9,"b":18,"kind":"cmpSaid","saidLarger":true},"promptText":"Luca claims the 9 mm side beats the 18 mm side. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":9,"b":18,"kind":"cmpSaid","saidLarger":true},"promptText":"Luca says 9 mm is longer than 18 mm. Is Luca right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0494",
@@ -12602,7 +12602,7 @@ export const ITEMS = [
     structureType: "cmpJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":16,"b":19,"kind":"cmpSaid","saidLarger":true},"promptText":"Omar claims the 16 m side beats the 19 m side. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":16,"b":19,"kind":"cmpSaid","saidLarger":true},"promptText":"Omar says 16 m is longer than 19 m. Is Omar right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0496",
@@ -12622,7 +12622,7 @@ export const ITEMS = [
     structureType: "cmpJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":7,"b":20,"kind":"cmpSaid","saidLarger":true},"promptText":"Finn claims the 7 L side beats the 20 L side. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":7,"b":20,"kind":"cmpSaid","saidLarger":true},"promptText":"Finn says 7 L is more than 20 L. Is Finn right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0498",
@@ -12632,7 +12632,7 @@ export const ITEMS = [
     structureType: "whichShorterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the cactus","choices":["the cactus","the fern"],"display":{"measure":{"a":12,"b":9,"kind":"cmp","pickLarger":false},"promptText":"The fern is 12 cm tall and the cactus is 9 cm tall. Which is shorter? Ava checks."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the cactus","choices":["the cactus","the fern"],"display":{"measure":{"a":12,"b":9,"kind":"cmp","pickLarger":false},"promptText":"The fern is 12 cm tall and the cactus is 9 cm tall. Which plant is shorter?"}},
   },
   {
     itemId: "measurement-conc-b0821-0499",
@@ -12652,7 +12652,7 @@ export const ITEMS = [
     structureType: "whichShorterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the sprout","choices":["the sprout","the sapling"],"display":{"measure":{"a":3,"b":18,"kind":"cmp","pickLarger":false},"promptText":"The sprout is 3 cm tall and the sapling is 18 cm tall. Which is shorter? Ben checks."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the sprout","choices":["the sprout","the sapling"],"display":{"measure":{"a":3,"b":18,"kind":"cmp","pickLarger":false},"promptText":"The sprout is 3 cm tall and the sapling is 18 cm tall. Which one is shorter, the sprout or the sapling?"}},
   },
   {
     itemId: "measurement-conc-b0821-0501",
@@ -12672,7 +12672,7 @@ export const ITEMS = [
     structureType: "whichShorterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the herb","choices":["the bush","the herb"],"display":{"measure":{"a":8,"b":16,"kind":"cmp","pickLarger":false},"promptText":"The herb is 8 cm tall and the bush is 16 cm tall. Which is shorter? Priya checks."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the herb","choices":["the bush","the herb"],"display":{"measure":{"a":8,"b":16,"kind":"cmp","pickLarger":false},"promptText":"The herb is 8 cm tall and the bush is 16 cm tall. Which plant is shorter?"}},
   },
   {
     itemId: "measurement-conc-b0821-0503",
@@ -12692,7 +12692,7 @@ export const ITEMS = [
     structureType: "whichShorterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the clover","choices":["the lily","the clover"],"display":{"measure":{"a":5,"b":13,"kind":"cmp","pickLarger":false},"promptText":"The clover is 5 cm tall and the lily is 13 cm tall. Which is shorter? Nia checks."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the clover","choices":["the lily","the clover"],"display":{"measure":{"a":5,"b":13,"kind":"cmp","pickLarger":false},"promptText":"The clover is 5 cm tall and the lily is 13 cm tall. Which one is shorter, the clover or the lily?"}},
   },
   {
     itemId: "measurement-conc-b0821-0505",
@@ -12712,7 +12712,7 @@ export const ITEMS = [
     structureType: "whichShorterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the daffodil","choices":["the rose","the daffodil"],"display":{"measure":{"a":11,"b":17,"kind":"cmp","pickLarger":false},"promptText":"The daffodil is 11 cm tall and the rose is 17 cm tall. Which is shorter? June checks."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the daffodil","choices":["the rose","the daffodil"],"display":{"measure":{"a":11,"b":17,"kind":"cmp","pickLarger":false},"promptText":"The daffodil is 11 cm tall and the rose is 17 cm tall. Which plant is shorter?"}},
   },
   {
     itemId: "measurement-conc-b0821-0507",
@@ -12732,7 +12732,7 @@ export const ITEMS = [
     structureType: "whichShorterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the lavender","choices":["the lavender","the basil"],"display":{"measure":{"a":10,"b":6,"kind":"cmp","pickLarger":false},"promptText":"The basil is 10 cm tall and the lavender is 6 cm tall. Which is shorter? Amara checks."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the lavender","choices":["the lavender","the basil"],"display":{"measure":{"a":10,"b":6,"kind":"cmp","pickLarger":false},"promptText":"The basil is 10 cm tall and the lavender is 6 cm tall. Which one is shorter, the basil or the lavender?"}},
   },
   {
     itemId: "measurement-conc-b0821-0509",
@@ -12752,7 +12752,7 @@ export const ITEMS = [
     structureType: "whichShorterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the dandelion","choices":["the dandelion","the ivy"],"display":{"measure":{"a":15,"b":8,"kind":"cmp","pickLarger":false},"promptText":"The ivy is 15 cm tall and the dandelion is 8 cm tall. Which is shorter? Mina checks."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the dandelion","choices":["the dandelion","the ivy"],"display":{"measure":{"a":15,"b":8,"kind":"cmp","pickLarger":false},"promptText":"The ivy is 15 cm tall and the dandelion is 8 cm tall. Which plant is shorter?"}},
   },
   {
     itemId: "measurement-conc-b0821-0511",
@@ -12772,7 +12772,7 @@ export const ITEMS = [
     structureType: "whichShorterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the pansy","choices":["the pansy","the orchid"],"display":{"measure":{"a":18,"b":4,"kind":"cmp","pickLarger":false},"promptText":"The orchid is 18 cm tall and the pansy is 4 cm tall. Which is shorter? Ida checks."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the pansy","choices":["the pansy","the orchid"],"display":{"measure":{"a":18,"b":4,"kind":"cmp","pickLarger":false},"promptText":"The orchid is 18 cm tall and the pansy is 4 cm tall. Which one is shorter, the orchid or the pansy?"}},
   },
   {
     itemId: "measurement-conc-b0821-0513",
@@ -12792,7 +12792,7 @@ export const ITEMS = [
     structureType: "bigNumberTrapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":300,"b":200,"kind":"cmpSaid","saidLarger":true},"promptText":"Luca says 300 cm must be more than 2 m because its number is bigger. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":300,"b":200,"kind":"cmpSaid","saidLarger":true},"promptText":"Luca says 300 cm is longer than 2 m. Is Luca right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0515",
@@ -12802,7 +12802,7 @@ export const ITEMS = [
     structureType: "bigNumberTrapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":150,"b":200,"kind":"cmpSaid","saidLarger":true},"promptText":"Since the number is bigger, Ava claims 150 cm beats 2 m. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":150,"b":200,"kind":"cmpSaid","saidLarger":true},"promptText":"Ava says 2 m is shorter than 150 cm. Is Ava right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0516",
@@ -12812,7 +12812,7 @@ export const ITEMS = [
     structureType: "bigNumberTrapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":1800,"b":1000,"kind":"cmpSaid","saidLarger":true},"promptText":"Omar says 1800 m must be more than 1 km because its number is bigger. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":1800,"b":1000,"kind":"cmpSaid","saidLarger":true},"promptText":"Omar says 1800 m is longer than 1 km. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0517",
@@ -12822,7 +12822,7 @@ export const ITEMS = [
     structureType: "bigNumberTrapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":900,"b":1000,"kind":"cmpSaid","saidLarger":true},"promptText":"Since the number is bigger, Ben claims 900 m beats 1 km. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":900,"b":1000,"kind":"cmpSaid","saidLarger":true},"promptText":"Ben says 1 km is shorter than 900 m. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0518",
@@ -12832,7 +12832,7 @@ export const ITEMS = [
     structureType: "bigNumberTrapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":45,"b":50,"kind":"cmpSaid","saidLarger":true},"promptText":"Finn says 45 mm must be more than 5 cm because its number is bigger. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":45,"b":50,"kind":"cmpSaid","saidLarger":true},"promptText":"Finn says 45 mm is longer than 5 cm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0519",
@@ -12842,7 +12842,7 @@ export const ITEMS = [
     structureType: "bigNumberTrapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":65,"b":60,"kind":"cmpSaid","saidLarger":true},"promptText":"Since the number is bigger, Priya claims 65 mm beats 6 cm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":65,"b":60,"kind":"cmpSaid","saidLarger":true},"promptText":"Priya says 6 cm is shorter than 65 mm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0520",
@@ -12852,7 +12852,7 @@ export const ITEMS = [
     structureType: "bigNumberTrapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":2500,"b":2000,"kind":"cmpSaid","saidLarger":true},"promptText":"Sam says 2500 g must be more than 2 kg because its number is bigger. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":2500,"b":2000,"kind":"cmpSaid","saidLarger":true},"promptText":"Sam says 2 kg is lighter than 2500 g. Is Sam right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0521",
@@ -12862,7 +12862,7 @@ export const ITEMS = [
     structureType: "bigNumberTrapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":1500,"b":2000,"kind":"cmpSaid","saidLarger":true},"promptText":"Since the number is bigger, Nia claims 1500 g beats 2 kg. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":1500,"b":2000,"kind":"cmpSaid","saidLarger":true},"promptText":"Nia says 1500 g is heavier than 2 kg. Is Nia right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0522",
@@ -12872,7 +12872,7 @@ export const ITEMS = [
     structureType: "bigNumberTrapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":3400,"b":3000,"kind":"cmpSaid","saidLarger":true},"promptText":"Kai says 3400 mL must be more than 3 L because its number is bigger. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":3400,"b":3000,"kind":"cmpSaid","saidLarger":true},"promptText":"Kai says 3400 mL is more than 3 L. Is Kai right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0523",
@@ -12882,7 +12882,7 @@ export const ITEMS = [
     structureType: "bigNumberTrapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":2600,"b":3000,"kind":"cmpSaid","saidLarger":true},"promptText":"Since the number is bigger, June claims 2600 mL beats 3 L. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":2600,"b":3000,"kind":"cmpSaid","saidLarger":true},"promptText":"June says 3 L is less than 2600 mL. Is June right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0524",
@@ -12892,7 +12892,7 @@ export const ITEMS = [
     structureType: "bigNumberTrapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":420,"b":400,"kind":"cmpSaid","saidLarger":true},"promptText":"Lily says 420 cm must be more than 4 m because its number is bigger. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":420,"b":400,"kind":"cmpSaid","saidLarger":true},"promptText":"Lily says 420 cm is longer than 4 m. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0525",
@@ -12902,7 +12902,7 @@ export const ITEMS = [
     structureType: "bigNumberTrapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":380,"b":400,"kind":"cmpSaid","saidLarger":true},"promptText":"Since the number is bigger, Amara claims 380 cm beats 4 m. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":380,"b":400,"kind":"cmpSaid","saidLarger":true},"promptText":"Amara says 4 m is shorter than 380 cm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0526",
@@ -12912,7 +12912,7 @@ export const ITEMS = [
     structureType: "bigNumberTrapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":5600,"b":5000,"kind":"cmpSaid","saidLarger":true},"promptText":"Leo says 5600 g must be more than 5 kg because its number is bigger. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":5600,"b":5000,"kind":"cmpSaid","saidLarger":true},"promptText":"Leo says 5 kg is lighter than 5600 g. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0527",
@@ -12922,7 +12922,7 @@ export const ITEMS = [
     structureType: "bigNumberTrapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":4300,"b":5000,"kind":"cmpSaid","saidLarger":true},"promptText":"Since the number is bigger, Mina claims 4300 g beats 5 kg. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":4300,"b":5000,"kind":"cmpSaid","saidLarger":true},"promptText":"Mina says 4300 g is heavier than 5 kg. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0528",
@@ -12932,7 +12932,7 @@ export const ITEMS = [
     structureType: "bigNumberTrapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":6500,"b":6000,"kind":"cmpSaid","saidLarger":true},"promptText":"Theo says 6500 mL must be more than 6 L because its number is bigger. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":6500,"b":6000,"kind":"cmpSaid","saidLarger":true},"promptText":"Theo says 6 L is less than 6500 mL. Is Theo right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0529",
@@ -12942,7 +12942,7 @@ export const ITEMS = [
     structureType: "bigNumberTrapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":5500,"b":6000,"kind":"cmpSaid","saidLarger":true},"promptText":"Since the number is bigger, Ida claims 5500 mL beats 6 L. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":5500,"b":6000,"kind":"cmpSaid","saidLarger":true},"promptText":"Ida says 5500 mL is more than 6 L. Is Ida right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0530",
@@ -12952,7 +12952,7 @@ export const ITEMS = [
     structureType: "bigNumberTrapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":95,"b":90,"kind":"cmpSaid","saidLarger":true},"promptText":"Zoe says 95 mm must be more than 9 cm because its number is bigger. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":95,"b":90,"kind":"cmpSaid","saidLarger":true},"promptText":"Zoe says 95 mm is longer than 9 cm. Is Zoe right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0531",
@@ -12962,7 +12962,7 @@ export const ITEMS = [
     structureType: "bigNumberTrapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":82,"b":90,"kind":"cmpSaid","saidLarger":true},"promptText":"Since the number is bigger, Rosa claims 82 mm beats 9 cm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":82,"b":90,"kind":"cmpSaid","saidLarger":true},"promptText":"Rosa says 9 cm is shorter than 82 mm. Is Rosa right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0532",
@@ -12972,7 +12972,7 @@ export const ITEMS = [
     structureType: "middleMeasureMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2 m","choices":["150 cm","3 m","2 m"],"display":{"measure":{"kind":"cmp3mid","values":[200,150,300]},"promptText":"Theo orders 2 m, 150 cm, and 3 m from shortest to longest. Which one lands in the MIDDLE?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"2 m","choices":["150 cm","3 m","2 m"],"display":{"measure":{"kind":"cmp3mid","values":[200,150,300]},"promptText":"Theo orders 2 m, 150 cm, and 3 m from shortest to longest. Which one is in the middle?"}},
   },
   {
     itemId: "measurement-conc-b0821-0533",
@@ -12982,7 +12982,7 @@ export const ITEMS = [
     structureType: "middleMeasureMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1 km","choices":["800 m","1200 m","1 km"],"display":{"measure":{"kind":"cmp3mid","values":[1000,800,1200]},"promptText":"Sorting 1 km, 800 m, and 1200 m by size, which is the middle measure? Ida converts first."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1 km","choices":["800 m","1200 m","1 km"],"display":{"measure":{"kind":"cmp3mid","values":[1000,800,1200]},"promptText":"Put 1 km, 800 m, and 1200 m in order from shortest to longest. Which one is in the middle?"}},
   },
   {
     itemId: "measurement-conc-b0821-0534",
@@ -12992,7 +12992,7 @@ export const ITEMS = [
     structureType: "middleMeasureMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4 cm","choices":["4 cm","5 cm","35 mm"],"display":{"measure":{"kind":"cmp3mid","values":[40,35,50]},"promptText":"Zoe orders 4 cm, 35 mm, and 5 cm from shortest to longest. Which one lands in the MIDDLE?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"4 cm","choices":["4 cm","5 cm","35 mm"],"display":{"measure":{"kind":"cmp3mid","values":[40,35,50]},"promptText":"Zoe orders 4 cm, 35 mm, and 5 cm from shortest to longest. Which one is in the middle?"}},
   },
   {
     itemId: "measurement-conc-b0821-0535",
@@ -13002,7 +13002,7 @@ export const ITEMS = [
     structureType: "middleMeasureMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2 kg","choices":["2 kg","3 kg","1500 g"],"display":{"measure":{"kind":"cmp3mid","values":[2000,1500,3000]},"promptText":"Sorting 2 kg, 1500 g, and 3 kg by size, which is the middle measure? Rosa converts first."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2 kg","choices":["2 kg","3 kg","1500 g"],"display":{"measure":{"kind":"cmp3mid","values":[2000,1500,3000]},"promptText":"Which one is in the middle when you order 2 kg, 1500 g, and 3 kg from lightest to heaviest?"}},
   },
   {
     itemId: "measurement-conc-b0821-0536",
@@ -13012,7 +13012,7 @@ export const ITEMS = [
     structureType: "middleMeasureMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3 L","choices":["3 L","2500 mL","4 L"],"display":{"measure":{"kind":"cmp3mid","values":[3000,2500,4000]},"promptText":"Diego orders 3 L, 2500 mL, and 4 L from shortest to longest. Which one lands in the MIDDLE?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3 L","choices":["3 L","2500 mL","4 L"],"display":{"measure":{"kind":"cmp3mid","values":[3000,2500,4000]},"promptText":"Diego orders 3 L, 2500 mL, and 4 L from least to most. Which amount is in the middle?"}},
   },
   {
     itemId: "measurement-conc-b0821-0537",
@@ -13022,7 +13022,7 @@ export const ITEMS = [
     structureType: "middleMeasureMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5 m","choices":["5 m","6 m","450 cm"],"display":{"measure":{"kind":"cmp3mid","values":[500,450,600]},"promptText":"Sorting 5 m, 450 cm, and 6 m by size, which is the middle measure? Nora converts first."}},
+    question: {"a":null,"b":null,"op":"count","answer":"5 m","choices":["5 m","6 m","450 cm"],"display":{"measure":{"kind":"cmp3mid","values":[500,450,600]},"promptText":"Which one is in the middle when you order 5 m, 450 cm, and 6 m from shortest to longest?"}},
   },
   {
     itemId: "measurement-conc-b0821-0538",
@@ -13032,7 +13032,7 @@ export const ITEMS = [
     structureType: "middleMeasureMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2 km","choices":["1700 m","2300 m","2 km"],"display":{"measure":{"kind":"cmp3mid","values":[2000,1700,2300]},"promptText":"Luca orders 2 km, 1700 m, and 2300 m from shortest to longest. Which one lands in the MIDDLE?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"2 km","choices":["1700 m","2300 m","2 km"],"display":{"measure":{"kind":"cmp3mid","values":[2000,1700,2300]},"promptText":"Luca orders 2 km, 1700 m, and 2300 m from shortest to longest. Which one is in the middle?"}},
   },
   {
     itemId: "measurement-conc-b0821-0539",
@@ -13042,7 +13042,7 @@ export const ITEMS = [
     structureType: "middleMeasureMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7 cm","choices":["65 mm","7 cm","8 cm"],"display":{"measure":{"kind":"cmp3mid","values":[70,65,80]},"promptText":"Sorting 7 cm, 65 mm, and 8 cm by size, which is the middle measure? Ava converts first."}},
+    question: {"a":null,"b":null,"op":"count","answer":"7 cm","choices":["65 mm","7 cm","8 cm"],"display":{"measure":{"kind":"cmp3mid","values":[70,65,80]},"promptText":"Put 7 cm, 65 mm, and 8 cm in order from shortest to longest. Which one is in the middle?"}},
   },
   {
     itemId: "measurement-conc-b0821-0540",
@@ -13052,7 +13052,7 @@ export const ITEMS = [
     structureType: "middleMeasureMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4 kg","choices":["3600 g","4 kg","5 kg"],"display":{"measure":{"kind":"cmp3mid","values":[4000,3600,5000]},"promptText":"Omar orders 4 kg, 3600 g, and 5 kg from shortest to longest. Which one lands in the MIDDLE?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"4 kg","choices":["3600 g","4 kg","5 kg"],"display":{"measure":{"kind":"cmp3mid","values":[4000,3600,5000]},"promptText":"Omar orders 4 kg, 3600 g, and 5 kg from lightest to heaviest. Which one is in the middle?"}},
   },
   {
     itemId: "measurement-conc-b0821-0541",
@@ -13062,7 +13062,7 @@ export const ITEMS = [
     structureType: "middleMeasureMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"6 L","choices":["5500 mL","7 L","6 L"],"display":{"measure":{"kind":"cmp3mid","values":[6000,5500,7000]},"promptText":"Sorting 6 L, 5500 mL, and 7 L by size, which is the middle measure? Ben converts first."}},
+    question: {"a":null,"b":null,"op":"count","answer":"6 L","choices":["5500 mL","7 L","6 L"],"display":{"measure":{"kind":"cmp3mid","values":[6000,5500,7000]},"promptText":"Put 6 L, 5500 mL, and 7 L in order from least to most. Which amount is in the middle?"}},
   },
   {
     itemId: "measurement-conc-b0821-0542",
@@ -13072,7 +13072,7 @@ export const ITEMS = [
     structureType: "middleMeasureMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3 m","choices":["3 m","330 cm","280 cm"],"display":{"measure":{"kind":"cmp3mid","values":[300,280,330]},"promptText":"Finn orders 3 m, 280 cm, and 330 cm from shortest to longest. Which one lands in the MIDDLE?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3 m","choices":["3 m","330 cm","280 cm"],"display":{"measure":{"kind":"cmp3mid","values":[300,280,330]},"promptText":"Finn orders 3 m, 280 cm, and 330 cm from shortest to longest. Which one is in the middle?"}},
   },
   {
     itemId: "measurement-conc-b0821-0543",
@@ -13082,7 +13082,7 @@ export const ITEMS = [
     structureType: "middleMeasureMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"8 cm","choices":["8 cm","7 cm","85 mm"],"display":{"measure":{"kind":"cmp3mid","values":[80,85,70]},"promptText":"Sorting 8 cm, 85 mm, and 7 cm by size, which is the middle measure? Priya converts first."}},
+    question: {"a":null,"b":null,"op":"count","answer":"8 cm","choices":["8 cm","7 cm","85 mm"],"display":{"measure":{"kind":"cmp3mid","values":[80,85,70]},"promptText":"Which one is in the middle when you order 8 cm, 85 mm, and 7 cm from shortest to longest?"}},
   },
   {
     itemId: "measurement-conc-b0821-0544",
@@ -13092,7 +13092,7 @@ export const ITEMS = [
     structureType: "middleMeasureMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5 kg","choices":["5200 g","4800 g","5 kg"],"display":{"measure":{"kind":"cmp3mid","values":[5000,5200,4800]},"promptText":"Sam orders 5 kg, 5200 g, and 4800 g from shortest to longest. Which one lands in the MIDDLE?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5 kg","choices":["5200 g","4800 g","5 kg"],"display":{"measure":{"kind":"cmp3mid","values":[5000,5200,4800]},"promptText":"Sam orders 5 kg, 5200 g, and 4800 g from lightest to heaviest. Which one is in the middle?"}},
   },
   {
     itemId: "measurement-conc-b0821-0545",
@@ -13102,7 +13102,7 @@ export const ITEMS = [
     structureType: "middleMeasureMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2 L","choices":["1800 mL","2 L","2200 mL"],"display":{"measure":{"kind":"cmp3mid","values":[2000,2200,1800]},"promptText":"Sorting 2 L, 2200 mL, and 1800 mL by size, which is the middle measure? Nia converts first."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2 L","choices":["1800 mL","2 L","2200 mL"],"display":{"measure":{"kind":"cmp3mid","values":[2000,2200,1800]},"promptText":"Which one is in the middle when you order 2 L, 2200 mL, and 1800 mL from least to most?"}},
   },
   {
     itemId: "measurement-conc-b0821-0546",
@@ -13112,7 +13112,7 @@ export const ITEMS = [
     structureType: "middleMeasureMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"9 m","choices":["9 m","870 cm","9300 mm"],"display":{"measure":{"kind":"cmp3mid","values":[900,870,930]},"promptText":"Kai orders 9 m, 870 cm, and 9300 mm from shortest to longest. Which one lands in the MIDDLE?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"9 m","choices":["9 m","870 cm","9300 mm"],"display":{"measure":{"kind":"cmp3mid","values":[900,870,930]},"promptText":"Kai orders 9 m, 870 cm, and 9300 mm from shortest to longest. Which one is in the middle?"}},
   },
   {
     itemId: "measurement-conc-b0821-0547",
@@ -13122,7 +13122,7 @@ export const ITEMS = [
     structureType: "middleMeasureMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"6 km","choices":["5800 m","6100 m","6 km"],"display":{"measure":{"kind":"cmp3mid","values":[6000,5800,6100]},"promptText":"Sorting 6 km, 5800 m, and 6100 m by size, which is the middle measure? June converts first."}},
+    question: {"a":null,"b":null,"op":"count","answer":"6 km","choices":["5800 m","6100 m","6 km"],"display":{"measure":{"kind":"cmp3mid","values":[6000,5800,6100]},"promptText":"Put 6 km, 5800 m, and 6100 m in order from shortest to longest. Which one is in the middle?"}},
   },
   {
     itemId: "measurement-conc-b0821-0548",
@@ -13132,7 +13132,7 @@ export const ITEMS = [
     structureType: "lessJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":150,"b":200,"kind":"cmpSaid","saidLarger":false},"promptText":"Omar says 150 cm is LESS than 2 m. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":150,"b":200,"kind":"cmpSaid","saidLarger":false},"promptText":"Omar says 150 cm is less than 2 m. Is Omar right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0549",
@@ -13142,7 +13142,7 @@ export const ITEMS = [
     structureType: "lessJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":300,"b":200,"kind":"cmpSaid","saidLarger":false},"promptText":"Ben ranks 300 cm below 2 m. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":300,"b":200,"kind":"cmpSaid","saidLarger":false},"promptText":"Ben says 2 m is more than 300 cm. Is Ben right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0550",
@@ -13152,7 +13152,7 @@ export const ITEMS = [
     structureType: "lessJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":900,"b":1000,"kind":"cmpSaid","saidLarger":false},"promptText":"Finn says 900 m is LESS than 1 km. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":900,"b":1000,"kind":"cmpSaid","saidLarger":false},"promptText":"Finn says 900 m is less than 1 km. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0551",
@@ -13162,7 +13162,7 @@ export const ITEMS = [
     structureType: "lessJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":1800,"b":1000,"kind":"cmpSaid","saidLarger":false},"promptText":"Priya ranks 1800 m below 1 km. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":1800,"b":1000,"kind":"cmpSaid","saidLarger":false},"promptText":"Priya says 1 km is more than 1800 m. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0552",
@@ -13172,7 +13172,7 @@ export const ITEMS = [
     structureType: "lessJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":45,"b":50,"kind":"cmpSaid","saidLarger":false},"promptText":"Sam says 45 mm is LESS than 5 cm. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":45,"b":50,"kind":"cmpSaid","saidLarger":false},"promptText":"Sam says 5 cm is more than 45 mm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0553",
@@ -13182,7 +13182,7 @@ export const ITEMS = [
     structureType: "lessJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":65,"b":60,"kind":"cmpSaid","saidLarger":false},"promptText":"Nia ranks 65 mm below 6 cm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":65,"b":60,"kind":"cmpSaid","saidLarger":false},"promptText":"Nia says 65 mm is less than 6 cm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0554",
@@ -13192,7 +13192,7 @@ export const ITEMS = [
     structureType: "lessJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":1500,"b":2000,"kind":"cmpSaid","saidLarger":false},"promptText":"Kai says 1500 g is LESS than 2 kg. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":1500,"b":2000,"kind":"cmpSaid","saidLarger":false},"promptText":"Kai says 2 kg is more than 1500 g. Is Kai right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0555",
@@ -13202,7 +13202,7 @@ export const ITEMS = [
     structureType: "lessJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":2500,"b":2000,"kind":"cmpSaid","saidLarger":false},"promptText":"June ranks 2500 g below 2 kg. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":2500,"b":2000,"kind":"cmpSaid","saidLarger":false},"promptText":"June says 2500 g is less than 2 kg. Is June right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0556",
@@ -13212,7 +13212,7 @@ export const ITEMS = [
     structureType: "lessJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":2600,"b":3000,"kind":"cmpSaid","saidLarger":false},"promptText":"Lily says 2600 mL is LESS than 3 L. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":2600,"b":3000,"kind":"cmpSaid","saidLarger":false},"promptText":"Lily says 2600 mL is less than 3 L. Is Lily right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0557",
@@ -13222,7 +13222,7 @@ export const ITEMS = [
     structureType: "lessJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":3400,"b":3000,"kind":"cmpSaid","saidLarger":false},"promptText":"Amara ranks 3400 mL below 3 L. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":3400,"b":3000,"kind":"cmpSaid","saidLarger":false},"promptText":"Amara says 3 L is more than 3400 mL. Is Amara right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0558",
@@ -13232,7 +13232,7 @@ export const ITEMS = [
     structureType: "lessJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":380,"b":400,"kind":"cmpSaid","saidLarger":false},"promptText":"Leo says 380 cm is LESS than 4 m. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":380,"b":400,"kind":"cmpSaid","saidLarger":false},"promptText":"Leo says 380 cm is less than 4 m. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0559",
@@ -13242,7 +13242,7 @@ export const ITEMS = [
     structureType: "lessJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":420,"b":400,"kind":"cmpSaid","saidLarger":false},"promptText":"Mina ranks 420 cm below 4 m. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":420,"b":400,"kind":"cmpSaid","saidLarger":false},"promptText":"Mina says 4 m is more than 420 cm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0560",
@@ -13252,7 +13252,7 @@ export const ITEMS = [
     structureType: "lessJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":4300,"b":5000,"kind":"cmpSaid","saidLarger":false},"promptText":"Theo says 4300 g is LESS than 5 kg. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":4300,"b":5000,"kind":"cmpSaid","saidLarger":false},"promptText":"Theo says 5 kg is more than 4300 g. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0561",
@@ -13262,7 +13262,7 @@ export const ITEMS = [
     structureType: "lessJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":5600,"b":5000,"kind":"cmpSaid","saidLarger":false},"promptText":"Ida ranks 5600 g below 5 kg. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":5600,"b":5000,"kind":"cmpSaid","saidLarger":false},"promptText":"Ida says 5600 g is less than 5 kg. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0562",
@@ -13272,7 +13272,7 @@ export const ITEMS = [
     structureType: "lessJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":5500,"b":6000,"kind":"cmpSaid","saidLarger":false},"promptText":"Zoe says 5500 mL is LESS than 6 L. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":5500,"b":6000,"kind":"cmpSaid","saidLarger":false},"promptText":"Zoe says 6 L is more than 5500 mL. Is Zoe right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0563",
@@ -13282,7 +13282,7 @@ export const ITEMS = [
     structureType: "lessJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":6500,"b":6000,"kind":"cmpSaid","saidLarger":false},"promptText":"Rosa ranks 6500 mL below 6 L. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":6500,"b":6000,"kind":"cmpSaid","saidLarger":false},"promptText":"Rosa says 6500 mL is less than 6 L. Is Rosa right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0564",
@@ -13292,7 +13292,7 @@ export const ITEMS = [
     structureType: "lessJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":82,"b":90,"kind":"cmpSaid","saidLarger":false},"promptText":"Diego says 82 mm is LESS than 9 cm. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":82,"b":90,"kind":"cmpSaid","saidLarger":false},"promptText":"Diego says 82 mm is less than 9 cm. Is Diego right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0565",
@@ -13312,7 +13312,7 @@ export const ITEMS = [
     structureType: "equalTrapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":300,"b":330,"kind":"eqSaid"},"promptText":"June calls 3 m and 330 cm equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":300,"b":330,"kind":"eqSaid"},"promptText":"June says 3 m is equal to 330 cm. Is June right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0567",
@@ -13322,7 +13322,7 @@ export const ITEMS = [
     structureType: "equalTrapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":1000,"b":1000,"kind":"eqSaid"},"promptText":"Lily says 1 km and 1000 m are exactly the same length. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":1000,"b":1000,"kind":"eqSaid"},"promptText":"Lily says 1 km and 1000 m are exactly the same length. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0568",
@@ -13332,7 +13332,7 @@ export const ITEMS = [
     structureType: "equalTrapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":2000,"b":2100,"kind":"eqSaid"},"promptText":"Amara calls 2 km and 2100 m equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":2000,"b":2100,"kind":"eqSaid"},"promptText":"Amara says 2 km is equal to 2100 m. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0569",
@@ -13342,7 +13342,7 @@ export const ITEMS = [
     structureType: "equalTrapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":50,"b":50,"kind":"eqSaid"},"promptText":"Leo says 5 cm and 50 mm are exactly the same length. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":50,"b":50,"kind":"eqSaid"},"promptText":"Leo says 5 cm is equal to 50 mm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0570",
@@ -13352,7 +13352,7 @@ export const ITEMS = [
     structureType: "equalTrapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":60,"b":66,"kind":"eqSaid"},"promptText":"Mina calls 6 cm and 66 mm equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":60,"b":66,"kind":"eqSaid"},"promptText":"Mina says 6 cm and 66 mm are exactly the same length. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0571",
@@ -13362,7 +13362,7 @@ export const ITEMS = [
     structureType: "equalTrapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":4000,"b":4000,"kind":"eqSaid"},"promptText":"Theo says 4 kg and 4000 g are exactly the same length. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":4000,"b":4000,"kind":"eqSaid"},"promptText":"Theo says 4 kg is equal to 4000 g. Is Theo right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0572",
@@ -13372,7 +13372,7 @@ export const ITEMS = [
     structureType: "equalTrapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":5000,"b":5500,"kind":"eqSaid"},"promptText":"Ida calls 5 kg and 5500 g equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":5000,"b":5500,"kind":"eqSaid"},"promptText":"Ida says 5 kg and 5500 g weigh exactly the same. Is Ida right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0573",
@@ -13382,7 +13382,7 @@ export const ITEMS = [
     structureType: "equalTrapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":7000,"b":7000,"kind":"eqSaid"},"promptText":"Zoe says 7 L and 7000 mL are exactly the same length. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":7000,"b":7000,"kind":"eqSaid"},"promptText":"Zoe says 7 L and 7000 mL are exactly the same amount. Is Zoe right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0574",
@@ -13392,7 +13392,7 @@ export const ITEMS = [
     structureType: "equalTrapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":8000,"b":8800,"kind":"eqSaid"},"promptText":"Rosa calls 8 L and 8800 mL equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":8000,"b":8800,"kind":"eqSaid"},"promptText":"Rosa says 8 L is equal to 8800 mL. Is Rosa right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0575",
@@ -13402,7 +13402,7 @@ export const ITEMS = [
     structureType: "equalTrapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":900,"b":900,"kind":"eqSaid"},"promptText":"Diego says 9 m and 900 cm are exactly the same length. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":900,"b":900,"kind":"eqSaid"},"promptText":"Diego says 9 m and 900 cm are exactly the same length. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0576",
@@ -13412,7 +13412,7 @@ export const ITEMS = [
     structureType: "equalTrapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":100,"b":110,"kind":"eqSaid"},"promptText":"Nora calls 1 m and 110 cm equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":100,"b":110,"kind":"eqSaid"},"promptText":"Nora says 1 m is equal to 110 cm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0577",
@@ -13422,7 +13422,7 @@ export const ITEMS = [
     structureType: "equalTrapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":3000,"b":3000,"kind":"eqSaid"},"promptText":"Luca says 3 kg and 3000 g are exactly the same length. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":3000,"b":3000,"kind":"eqSaid"},"promptText":"Luca says 3 kg is equal to 3000 g. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0578",
@@ -13432,7 +13432,7 @@ export const ITEMS = [
     structureType: "equalTrapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":6000,"b":6600,"kind":"eqSaid"},"promptText":"Ava calls 6 kg and 6600 g equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":6000,"b":6600,"kind":"eqSaid"},"promptText":"Ava says 6 kg and 6600 g weigh exactly the same. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0579",
@@ -13442,7 +13442,7 @@ export const ITEMS = [
     structureType: "equalTrapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":2000,"b":2000,"kind":"eqSaid"},"promptText":"Omar says 2 L and 2000 mL are exactly the same length. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":2000,"b":2000,"kind":"eqSaid"},"promptText":"Omar says 2 L is equal to 2000 mL. Is Omar right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0580",
@@ -13452,7 +13452,7 @@ export const ITEMS = [
     structureType: "equalTrapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":4000,"b":4400,"kind":"eqSaid"},"promptText":"Ben calls 4 L and 4400 mL equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":4000,"b":4400,"kind":"eqSaid"},"promptText":"Ben says 4 L and 4400 mL are exactly the same amount. Is Ben right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0581",
@@ -13472,7 +13472,7 @@ export const ITEMS = [
     structureType: "equalTrapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":7000,"b":7700,"kind":"eqSaid"},"promptText":"Priya calls 7 km and 7700 m equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":7000,"b":7700,"kind":"eqSaid"},"promptText":"Priya says 7 km is equal to 7700 m. Is Priya right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0583",
@@ -13482,7 +13482,7 @@ export const ITEMS = [
     structureType: "pickShortestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"180 cm","choices":["2 m","2100 mm","180 cm"],"display":{"measure":{"kind":"cmp3min","values":[200,180,210]},"promptText":"Which is the SHORTEST: 2 m, 180 cm, or 2100 mm? Omar converts everything first."}},
+    question: {"a":null,"b":null,"op":"count","answer":"180 cm","choices":["2 m","2100 mm","180 cm"],"display":{"measure":{"kind":"cmp3min","values":[200,180,210]},"promptText":"Which is the shortest: 2 m, 180 cm, or 2100 mm?"}},
   },
   {
     itemId: "measurement-conc-b0821-0584",
@@ -13492,7 +13492,7 @@ export const ITEMS = [
     structureType: "pickShortestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2900 m","choices":["3200 m","2900 m","3 km"],"display":{"measure":{"kind":"cmp3min","values":[3000,3200,2900]},"promptText":"Ben hunts for the smallest of 3 km, 3200 m, and 2900 m. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"2900 m","choices":["3200 m","2900 m","3 km"],"display":{"measure":{"kind":"cmp3min","values":[3000,3200,2900]},"promptText":"Which length is the shortest: 3 km, 3200 m, or 2900 m?"}},
   },
   {
     itemId: "measurement-conc-b0821-0585",
@@ -13502,7 +13502,7 @@ export const ITEMS = [
     structureType: "pickShortestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"48 mm","choices":["5 cm","48 mm","52 mm"],"display":{"measure":{"kind":"cmp3min","values":[50,48,52]},"promptText":"Which is the SHORTEST: 5 cm, 48 mm, or 52 mm? Finn converts everything first."}},
+    question: {"a":null,"b":null,"op":"count","answer":"48 mm","choices":["5 cm","48 mm","52 mm"],"display":{"measure":{"kind":"cmp3min","values":[50,48,52]},"promptText":"Which is the shortest: 5 cm, 48 mm, or 52 mm?"}},
   },
   {
     itemId: "measurement-conc-b0821-0586",
@@ -13512,7 +13512,7 @@ export const ITEMS = [
     structureType: "pickShortestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1900 g","choices":["2100 g","1900 g","2 kg"],"display":{"measure":{"kind":"cmp3min","values":[2000,2100,1900]},"promptText":"Priya hunts for the smallest of 2 kg, 2100 g, and 1900 g. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1900 g","choices":["2100 g","1900 g","2 kg"],"display":{"measure":{"kind":"cmp3min","values":[2000,2100,1900]},"promptText":"Which weighs the least: 2 kg, 2100 g, or 1900 g?"}},
   },
   {
     itemId: "measurement-conc-b0821-0587",
@@ -13522,7 +13522,7 @@ export const ITEMS = [
     structureType: "pickShortestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3800 mL","choices":["3800 mL","4 L","4200 mL"],"display":{"measure":{"kind":"cmp3min","values":[4000,3800,4200]},"promptText":"Which is the SHORTEST: 4 L, 3800 mL, or 4200 mL? Sam converts everything first."}},
+    question: {"a":null,"b":null,"op":"count","answer":"3800 mL","choices":["3800 mL","4 L","4200 mL"],"display":{"measure":{"kind":"cmp3min","values":[4000,3800,4200]},"promptText":"Which amount is the least: 4 L, 3800 mL, or 4200 mL?"}},
   },
   {
     itemId: "measurement-conc-b0821-0588",
@@ -13532,7 +13532,7 @@ export const ITEMS = [
     structureType: "pickShortestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5900 mm","choices":["610 cm","6 m","5900 mm"],"display":{"measure":{"kind":"cmp3min","values":[600,610,590]},"promptText":"Nia hunts for the smallest of 6 m, 610 cm, and 5900 mm. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5900 mm","choices":["610 cm","6 m","5900 mm"],"display":{"measure":{"kind":"cmp3min","values":[600,610,590]},"promptText":"Which length is the shortest: 6 m, 610 cm, or 5900 mm?"}},
   },
   {
     itemId: "measurement-conc-b0821-0589",
@@ -13542,7 +13542,7 @@ export const ITEMS = [
     structureType: "pickShortestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"990 m","choices":["1 km","990 m","1010 m"],"display":{"measure":{"kind":"cmp3min","values":[1000,990,1010]},"promptText":"Which is the SHORTEST: 1 km, 990 m, or 1010 m? Kai converts everything first."}},
+    question: {"a":null,"b":null,"op":"count","answer":"990 m","choices":["1 km","990 m","1010 m"],"display":{"measure":{"kind":"cmp3min","values":[1000,990,1010]},"promptText":"Which is the shortest: 1 km, 990 m, or 1010 m?"}},
   },
   {
     itemId: "measurement-conc-b0821-0590",
@@ -13552,7 +13552,7 @@ export const ITEMS = [
     structureType: "pickShortestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"78 mm","choices":["78 mm","83 mm","8 cm"],"display":{"measure":{"kind":"cmp3min","values":[80,83,78]},"promptText":"June hunts for the smallest of 8 cm, 83 mm, and 78 mm. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"78 mm","choices":["78 mm","83 mm","8 cm"],"display":{"measure":{"kind":"cmp3min","values":[80,83,78]},"promptText":"Which length is the shortest: 8 cm, 83 mm, or 78 mm?"}},
   },
   {
     itemId: "measurement-conc-b0821-0591",
@@ -13562,7 +13562,7 @@ export const ITEMS = [
     structureType: "pickShortestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4900 g","choices":["5 kg","4900 g","5100 g"],"display":{"measure":{"kind":"cmp3min","values":[5000,4900,5100]},"promptText":"Which is the SHORTEST: 5 kg, 4900 g, or 5100 g? Lily converts everything first."}},
+    question: {"a":null,"b":null,"op":"count","answer":"4900 g","choices":["5 kg","4900 g","5100 g"],"display":{"measure":{"kind":"cmp3min","values":[5000,4900,5100]},"promptText":"Which is the lightest: 5 kg, 4900 g, or 5100 g?"}},
   },
   {
     itemId: "measurement-conc-b0821-0592",
@@ -13572,7 +13572,7 @@ export const ITEMS = [
     structureType: "pickShortestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"6900 mL","choices":["6900 mL","7 L","7100 mL"],"display":{"measure":{"kind":"cmp3min","values":[7000,7100,6900]},"promptText":"Amara hunts for the smallest of 7 L, 7100 mL, and 6900 mL. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"6900 mL","choices":["6900 mL","7 L","7100 mL"],"display":{"measure":{"kind":"cmp3min","values":[7000,7100,6900]},"promptText":"Which is the smallest amount: 7 L, 7100 mL, or 6900 mL?"}},
   },
   {
     itemId: "measurement-conc-b0821-0593",
@@ -13582,7 +13582,7 @@ export const ITEMS = [
     structureType: "pickShortestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"890 cm","choices":["890 cm","9 m","9100 mm"],"display":{"measure":{"kind":"cmp3min","values":[900,890,910]},"promptText":"Which is the SHORTEST: 9 m, 890 cm, or 9100 mm? Leo converts everything first."}},
+    question: {"a":null,"b":null,"op":"count","answer":"890 cm","choices":["890 cm","9 m","9100 mm"],"display":{"measure":{"kind":"cmp3min","values":[900,890,910]},"promptText":"Which is the shortest: 9 m, 890 cm, or 9100 mm?"}},
   },
   {
     itemId: "measurement-conc-b0821-0594",
@@ -13592,7 +13592,7 @@ export const ITEMS = [
     structureType: "pickShortestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3900 m","choices":["3900 m","4100 m","4 km"],"display":{"measure":{"kind":"cmp3min","values":[4000,4100,3900]},"promptText":"Mina hunts for the smallest of 4 km, 4100 m, and 3900 m. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3900 m","choices":["3900 m","4100 m","4 km"],"display":{"measure":{"kind":"cmp3min","values":[4000,4100,3900]},"promptText":"Which length is the shortest: 4 km, 4100 m, or 3900 m?"}},
   },
   {
     itemId: "measurement-conc-b0821-0595",
@@ -13602,7 +13602,7 @@ export const ITEMS = [
     structureType: "pickShortestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"28 mm","choices":["3 cm","32 mm","28 mm"],"display":{"measure":{"kind":"cmp3min","values":[30,32,28]},"promptText":"Which is the SHORTEST: 3 cm, 32 mm, or 28 mm? Theo converts everything first."}},
+    question: {"a":null,"b":null,"op":"count","answer":"28 mm","choices":["3 cm","32 mm","28 mm"],"display":{"measure":{"kind":"cmp3min","values":[30,32,28]},"promptText":"Which is the shortest: 3 cm, 32 mm, or 28 mm?"}},
   },
   {
     itemId: "measurement-conc-b0821-0596",
@@ -13612,7 +13612,7 @@ export const ITEMS = [
     structureType: "pickShortestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5900 g","choices":["5900 g","6 kg","6100 g"],"display":{"measure":{"kind":"cmp3min","values":[6000,6100,5900]},"promptText":"Ida hunts for the smallest of 6 kg, 6100 g, and 5900 g. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5900 g","choices":["5900 g","6 kg","6100 g"],"display":{"measure":{"kind":"cmp3min","values":[6000,6100,5900]},"promptText":"Which weighs the least: 6 kg, 6100 g, or 5900 g?"}},
   },
   {
     itemId: "measurement-conc-b0821-0597",
@@ -13622,7 +13622,7 @@ export const ITEMS = [
     structureType: "pickShortestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1900 mL","choices":["2 L","1900 mL","2100 mL"],"display":{"measure":{"kind":"cmp3min","values":[2000,1900,2100]},"promptText":"Which is the SHORTEST: 2 L, 1900 mL, or 2100 mL? Zoe converts everything first."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1900 mL","choices":["2 L","1900 mL","2100 mL"],"display":{"measure":{"kind":"cmp3min","values":[2000,1900,2100]},"promptText":"Which amount is the least: 2 L, 1900 mL, or 2100 mL?"}},
   },
   {
     itemId: "measurement-conc-b0821-0598",
@@ -13632,7 +13632,7 @@ export const ITEMS = [
     structureType: "pickShortestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"690 cm","choices":["7 m","7100 mm","690 cm"],"display":{"measure":{"kind":"cmp3min","values":[700,690,710]},"promptText":"Rosa hunts for the smallest of 7 m, 690 cm, and 7100 mm. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"690 cm","choices":["7 m","7100 mm","690 cm"],"display":{"measure":{"kind":"cmp3min","values":[700,690,710]},"promptText":"Which length is the shortest: 7 m, 690 cm, or 7100 mm?"}},
   },
   {
     itemId: "measurement-conc-b0821-0599",
@@ -13672,7 +13672,7 @@ export const ITEMS = [
     structureType: "longestSaidBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"maxSaid","said":"2 kg","labels":["2 kg","2100 g","1900 g"],"values":[2000,2100,1900]},"promptText":"Leo lines up 2 kg, 2100 g, 1900 g and crowns 2 kg the longest. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"maxSaid","said":"2 kg","labels":["2 kg","2100 g","1900 g"],"values":[2000,2100,1900]},"promptText":"Leo compares 2 kg, 2100 g, and 1900 g. Leo says 2 kg is the heaviest. Is Leo right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0603",
@@ -13682,7 +13682,7 @@ export const ITEMS = [
     structureType: "longestSaidBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"maxSaid","said":"4200 mL","labels":["4 L","3800 mL","4200 mL"],"values":[4000,3800,4200]},"promptText":"Of 4 L, 3800 mL, and 4200 mL, Mina calls 4200 mL the longest. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"maxSaid","said":"4200 mL","labels":["4 L","3800 mL","4200 mL"],"values":[4000,3800,4200]},"promptText":"Of 4 L, 3800 mL, and 4200 mL, Mina says 4200 mL is the greatest amount. Is Mina right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0604",
@@ -13722,7 +13722,7 @@ export const ITEMS = [
     structureType: "longestSaidBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"maxSaid","said":"4900 g","labels":["5 kg","4900 g","5100 g"],"values":[5000,4900,5100]},"promptText":"Of 5 kg, 4900 g, and 5100 g, Rosa calls 4900 g the longest. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"maxSaid","said":"4900 g","labels":["5 kg","4900 g","5100 g"],"values":[5000,4900,5100]},"promptText":"Of 5 kg, 4900 g, and 5100 g, Rosa says 4900 g is the heaviest. Is Rosa right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0608",
@@ -13732,7 +13732,7 @@ export const ITEMS = [
     structureType: "longestSaidBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"maxSaid","said":"7100 mL","labels":["7 L","7100 mL","6900 mL"],"values":[7000,7100,6900]},"promptText":"Diego lines up 7 L, 7100 mL, 6900 mL and crowns 7100 mL the longest. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"maxSaid","said":"7100 mL","labels":["7 L","7100 mL","6900 mL"],"values":[7000,7100,6900]},"promptText":"Diego compares 7 L, 7100 mL, and 6900 mL. Diego says 7100 mL is the most. Is Diego right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0609",
@@ -13772,7 +13772,7 @@ export const ITEMS = [
     structureType: "longestSaidBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"maxSaid","said":"6100 g","labels":["6 kg","6100 g","5900 g"],"values":[6000,6100,5900]},"promptText":"Omar lines up 6 kg, 6100 g, 5900 g and crowns 6100 g the longest. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"maxSaid","said":"6100 g","labels":["6 kg","6100 g","5900 g"],"values":[6000,6100,5900]},"promptText":"Omar compares 6 kg, 6100 g, and 5900 g. Omar says 6100 g is the heaviest. Is Omar right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0613",
@@ -13782,7 +13782,7 @@ export const ITEMS = [
     structureType: "longestSaidBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"maxSaid","said":"1900 mL","labels":["2 L","1900 mL","2100 mL"],"values":[2000,1900,2100]},"promptText":"Of 2 L, 1900 mL, and 2100 mL, Ben calls 1900 mL the longest. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"maxSaid","said":"1900 mL","labels":["2 L","1900 mL","2100 mL"],"values":[2000,1900,2100]},"promptText":"Of 2 L, 1900 mL, and 2100 mL, Ben says 1900 mL is the greatest amount. Is Ben right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0614",
@@ -13802,7 +13802,7 @@ export const ITEMS = [
     structureType: "longestSaidBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"maxSaid","said":"9 kg","labels":["9 kg","9200 g","8700 g"],"values":[9000,9200,8700]},"promptText":"Of 9 kg, 9200 g, and 8700 g, Priya calls 9 kg the longest. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"maxSaid","said":"9 kg","labels":["9 kg","9200 g","8700 g"],"values":[9000,9200,8700]},"promptText":"Of 9 kg, 9200 g, and 8700 g, Priya says 9 kg is the heaviest. Is Priya right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0616",
@@ -13822,7 +13822,7 @@ export const ITEMS = [
     structureType: "joinPlanTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"8 + 9","choices":["8 - 9","8 + 9","9 - 8"],"display":{"measure":{"a":8,"b":9,"op":"+","kind":"plan"},"promptText":"To find the length of a 8 cm piece joined with a 9 cm piece, which sentence should Theo use?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"8 + 9","choices":["8 - 9","8 + 9","9 - 8"],"display":{"measure":{"a":8,"b":9,"op":"+","kind":"plan"},"promptText":"To find the length of an 8 cm piece joined with a 9 cm piece, which sentence should Theo use?"}},
   },
   {
     itemId: "measurement-conc-b0821-0618",
@@ -13842,7 +13842,7 @@ export const ITEMS = [
     structureType: "joinPlanTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"6 + 11","choices":["11 - 6","6 - 11","6 + 11"],"display":{"measure":{"a":6,"b":11,"op":"+","kind":"plan"},"promptText":"To find the length of a 6 cm piece joined with a 11 cm piece, which sentence should Zoe use?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"6 + 11","choices":["11 - 6","6 - 11","6 + 11"],"display":{"measure":{"a":6,"b":11,"op":"+","kind":"plan"},"promptText":"To find the length of a 6 cm piece joined with an 11 cm piece, which sentence should Zoe use?"}},
   },
   {
     itemId: "measurement-conc-b0821-0620",
@@ -13882,7 +13882,7 @@ export const ITEMS = [
     structureType: "joinPlanTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"8 + 5","choices":["5 - 8","8 - 5","8 + 5"],"display":{"measure":{"a":8,"b":5,"op":"+","kind":"plan"},"promptText":"To find the length of a 8 cm piece joined with a 5 cm piece, which sentence should Luca use?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"8 + 5","choices":["5 - 8","8 - 5","8 + 5"],"display":{"measure":{"a":8,"b":5,"op":"+","kind":"plan"},"promptText":"To find the length of an 8 cm piece joined with a 5 cm piece, which sentence should Luca use?"}},
   },
   {
     itemId: "measurement-conc-b0821-0624",
@@ -13892,7 +13892,7 @@ export const ITEMS = [
     structureType: "joinPlanTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"11 + 6","choices":["11 - 6","11 + 6","6 - 11"],"display":{"measure":{"a":11,"b":6,"op":"+","kind":"plan"},"promptText":"Ava tapes a 11 cm strip to a 6 cm strip. Which number sentence finds the new length?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"11 + 6","choices":["11 - 6","11 + 6","6 - 11"],"display":{"measure":{"a":11,"b":6,"op":"+","kind":"plan"},"promptText":"Ava tapes an 11 cm strip to a 6 cm strip. Which sentence finds the new length?"}},
   },
   {
     itemId: "measurement-conc-b0821-0625",
@@ -13932,7 +13932,7 @@ export const ITEMS = [
     structureType: "joinPlanTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"6 + 8","choices":["8 - 6","6 - 8","6 + 8"],"display":{"measure":{"a":6,"b":8,"op":"+","kind":"plan"},"promptText":"Priya tapes a 6 cm strip to a 8 cm strip. Which number sentence finds the new length?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"6 + 8","choices":["8 - 6","6 - 8","6 + 8"],"display":{"measure":{"a":6,"b":8,"op":"+","kind":"plan"},"promptText":"Priya tapes a 6 cm strip to an 8 cm strip. Which sentence finds the new length?"}},
   },
   {
     itemId: "measurement-conc-b0821-0629",
@@ -13942,7 +13942,7 @@ export const ITEMS = [
     structureType: "joinPlanTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"9 + 8","choices":["8 - 9","9 - 8","9 + 8"],"display":{"measure":{"a":9,"b":8,"op":"+","kind":"plan"},"promptText":"To find the length of a 9 cm piece joined with a 8 cm piece, which sentence should Sam use?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"9 + 8","choices":["8 - 9","9 - 8","9 + 8"],"display":{"measure":{"a":9,"b":8,"op":"+","kind":"plan"},"promptText":"To find the length of a 9 cm piece joined with an 8 cm piece, which sentence should Sam use?"}},
   },
   {
     itemId: "measurement-conc-b0821-0630",
@@ -13982,7 +13982,7 @@ export const ITEMS = [
     structureType: "joinJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":8,"b":9,"kind":"joinSaid","said":16},"promptText":"After taping 8 cm to 9 cm, Kai measures 16 cm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":8,"b":9,"kind":"joinSaid","said":16},"promptText":"After taping 8 cm to 9 cm, Kai measures 16 cm. Is Kai right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0634",
@@ -13992,7 +13992,7 @@ export const ITEMS = [
     structureType: "joinJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":5,"b":12,"kind":"joinSaid","said":17},"promptText":"June joins 5 cm and 12 cm of ribbon and says the total is 17 cm. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":5,"b":12,"kind":"joinSaid","said":17},"promptText":"June joins 5 cm and 12 cm of ribbon and says the total is 17 cm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0635",
@@ -14012,7 +14012,7 @@ export const ITEMS = [
     structureType: "joinJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":9,"b":4,"kind":"joinSaid","said":13},"promptText":"Amara joins 9 cm and 4 cm of ribbon and says the total is 13 cm. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":9,"b":4,"kind":"joinSaid","said":13},"promptText":"After taping 9 cm to 4 cm, Amara measures 13 cm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0637",
@@ -14022,7 +14022,7 @@ export const ITEMS = [
     structureType: "joinJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":12,"b":7,"kind":"joinSaid","said":18},"promptText":"After taping 12 cm to 7 cm, Leo measures 18 cm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":12,"b":7,"kind":"joinSaid","said":18},"promptText":"Leo joins 12 cm and 7 cm of ribbon and says the total is 18 cm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0638",
@@ -14032,7 +14032,7 @@ export const ITEMS = [
     structureType: "joinJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":3,"b":14,"kind":"joinSaid","said":17},"promptText":"Mina joins 3 cm and 14 cm of ribbon and says the total is 17 cm. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":3,"b":14,"kind":"joinSaid","said":17},"promptText":"After taping 3 cm to 14 cm, Mina measures 17 cm. Is Mina right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0639",
@@ -14042,7 +14042,7 @@ export const ITEMS = [
     structureType: "joinJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":8,"b":5,"kind":"joinSaid","said":14},"promptText":"After taping 8 cm to 5 cm, Theo measures 14 cm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":8,"b":5,"kind":"joinSaid","said":14},"promptText":"Theo joins 8 cm and 5 cm of ribbon and says the total is 14 cm. Is Theo right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0640",
@@ -14062,7 +14062,7 @@ export const ITEMS = [
     structureType: "joinJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":4,"b":13,"kind":"joinSaid","said":16},"promptText":"After taping 4 cm to 13 cm, Zoe measures 16 cm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":4,"b":13,"kind":"joinSaid","said":16},"promptText":"After taping 4 cm to 13 cm, Zoe measures 16 cm. Is Zoe right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0642",
@@ -14072,7 +14072,7 @@ export const ITEMS = [
     structureType: "joinJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":7,"b":9,"kind":"joinSaid","said":16},"promptText":"Rosa joins 7 cm and 9 cm of ribbon and says the total is 16 cm. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":7,"b":9,"kind":"joinSaid","said":16},"promptText":"Rosa joins 7 cm and 9 cm of ribbon and says the total is 16 cm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0643",
@@ -14092,7 +14092,7 @@ export const ITEMS = [
     structureType: "joinJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":6,"b":8,"kind":"joinSaid","said":14},"promptText":"Nora joins 6 cm and 8 cm of ribbon and says the total is 14 cm. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":6,"b":8,"kind":"joinSaid","said":14},"promptText":"After taping 6 cm to 8 cm, Nora measures 14 cm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0645",
@@ -14102,7 +14102,7 @@ export const ITEMS = [
     structureType: "joinJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":9,"b":8,"kind":"joinSaid","said":18},"promptText":"After taping 9 cm to 8 cm, Luca measures 18 cm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":9,"b":8,"kind":"joinSaid","said":18},"promptText":"Luca joins 9 cm and 8 cm of ribbon and says the total is 18 cm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0646",
@@ -14112,7 +14112,7 @@ export const ITEMS = [
     structureType: "joinJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":12,"b":5,"kind":"joinSaid","said":17},"promptText":"Ava joins 12 cm and 5 cm of ribbon and says the total is 17 cm. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":12,"b":5,"kind":"joinSaid","said":17},"promptText":"After taping 12 cm to 5 cm, Ava measures 17 cm. Is Ava right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0647",
@@ -14122,7 +14122,7 @@ export const ITEMS = [
     structureType: "joinJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":2,"b":16,"kind":"joinSaid","said":17},"promptText":"After taping 2 cm to 16 cm, Omar measures 17 cm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":2,"b":16,"kind":"joinSaid","said":17},"promptText":"Omar joins 2 cm and 16 cm of ribbon and says the total is 17 cm. Is Omar right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0648",
@@ -14142,7 +14142,7 @@ export const ITEMS = [
     structureType: "joinJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":5,"b":9,"kind":"joinSaid","said":15},"promptText":"After taping 5 cm to 9 cm, Finn measures 15 cm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":5,"b":9,"kind":"joinSaid","said":15},"promptText":"After taping 5 cm to 9 cm, Finn measures 15 cm. Is Finn right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0650",
@@ -14162,7 +14162,7 @@ export const ITEMS = [
     structureType: "cutPlanTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"18 - 9","choices":["9 - 18","18 - 9","18 + 9"],"display":{"measure":{"a":18,"b":9,"op":"-","kind":"plan"},"promptText":"A 18 cm straw loses 9 cm. Which number sentence shows the rest? Omar decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"18 - 9","choices":["9 - 18","18 - 9","18 + 9"],"display":{"measure":{"a":18,"b":9,"op":"-","kind":"plan"},"promptText":"A straw is 18 cm long. Omar cuts off 9 cm. Which one shows how to find how much straw is left?"}},
   },
   {
     itemId: "measurement-conc-b0821-0652",
@@ -14182,7 +14182,7 @@ export const ITEMS = [
     structureType: "cutPlanTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"20 - 11","choices":["11 - 20","20 - 11","20 + 11"],"display":{"measure":{"a":20,"b":11,"op":"-","kind":"plan"},"promptText":"A 20 cm straw loses 11 cm. Which number sentence shows the rest? Finn decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"20 - 11","choices":["11 - 20","20 - 11","20 + 11"],"display":{"measure":{"a":20,"b":11,"op":"-","kind":"plan"},"promptText":"Finn cuts 11 cm off a 20 cm straw. Which one finds how many centimeters of straw are left?"}},
   },
   {
     itemId: "measurement-conc-b0821-0654",
@@ -14202,7 +14202,7 @@ export const ITEMS = [
     structureType: "cutPlanTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"14 - 6","choices":["14 - 6","6 - 14","14 + 6"],"display":{"measure":{"a":14,"b":6,"op":"-","kind":"plan"},"promptText":"A 14 cm straw loses 6 cm. Which number sentence shows the rest? Sam decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"14 - 6","choices":["14 - 6","6 - 14","14 + 6"],"display":{"measure":{"a":14,"b":6,"op":"-","kind":"plan"},"promptText":"A straw is 14 cm long. Sam cuts off 6 cm. Which one shows how to find how much straw is left?"}},
   },
   {
     itemId: "measurement-conc-b0821-0656",
@@ -14222,7 +14222,7 @@ export const ITEMS = [
     structureType: "cutPlanTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"17 - 8","choices":["17 + 8","8 - 17","17 - 8"],"display":{"measure":{"a":17,"b":8,"op":"-","kind":"plan"},"promptText":"A 17 cm straw loses 8 cm. Which number sentence shows the rest? Kai decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"17 - 8","choices":["17 + 8","8 - 17","17 - 8"],"display":{"measure":{"a":17,"b":8,"op":"-","kind":"plan"},"promptText":"Kai cuts 8 cm off a 17 cm straw. Which one finds how many centimeters of straw are left?"}},
   },
   {
     itemId: "measurement-conc-b0821-0658",
@@ -14242,7 +14242,7 @@ export const ITEMS = [
     structureType: "cutPlanTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"11 - 2","choices":["11 - 2","2 - 11","11 + 2"],"display":{"measure":{"a":11,"b":2,"op":"-","kind":"plan"},"promptText":"A 11 cm straw loses 2 cm. Which number sentence shows the rest? Lily decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"11 - 2","choices":["11 - 2","2 - 11","11 + 2"],"display":{"measure":{"a":11,"b":2,"op":"-","kind":"plan"},"promptText":"A straw is 11 cm long. Lily cuts off 2 cm. Which one shows how to find how much straw is left?"}},
   },
   {
     itemId: "measurement-conc-b0821-0660",
@@ -14262,7 +14262,7 @@ export const ITEMS = [
     structureType: "cutPlanTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"18 - 13","choices":["18 - 13","13 - 18","18 + 13"],"display":{"measure":{"a":18,"b":13,"op":"-","kind":"plan"},"promptText":"A 18 cm straw loses 13 cm. Which number sentence shows the rest? Leo decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"18 - 13","choices":["18 - 13","13 - 18","18 + 13"],"display":{"measure":{"a":18,"b":13,"op":"-","kind":"plan"},"promptText":"Leo cuts 13 cm off an 18 cm straw. Which one finds how many centimeters of straw are left?"}},
   },
   {
     itemId: "measurement-conc-b0821-0662",
@@ -14282,7 +14282,7 @@ export const ITEMS = [
     structureType: "cutPlanTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"15 - 4","choices":["15 + 4","15 - 4","4 - 15"],"display":{"measure":{"a":15,"b":4,"op":"-","kind":"plan"},"promptText":"A 15 cm straw loses 4 cm. Which number sentence shows the rest? Theo decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"15 - 4","choices":["15 + 4","15 - 4","4 - 15"],"display":{"measure":{"a":15,"b":4,"op":"-","kind":"plan"},"promptText":"A straw is 15 cm long. Theo cuts off 4 cm. Which one shows how to find how much straw is left?"}},
   },
   {
     itemId: "measurement-conc-b0821-0664",
@@ -14302,7 +14302,7 @@ export const ITEMS = [
     structureType: "cutPlanTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"12 - 7","choices":["12 + 7","7 - 12","12 - 7"],"display":{"measure":{"a":12,"b":7,"op":"-","kind":"plan"},"promptText":"A 12 cm straw loses 7 cm. Which number sentence shows the rest? Zoe decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"12 - 7","choices":["12 + 7","7 - 12","12 - 7"],"display":{"measure":{"a":12,"b":7,"op":"-","kind":"plan"},"promptText":"Zoe cuts 7 cm off a 12 cm straw. Which one finds how many centimeters of straw are left?"}},
   },
   {
     itemId: "measurement-conc-b0821-0666",
@@ -14312,7 +14312,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":34,"b":27,"c":15,"kind":"twoStepSaid","said":46},"promptText":"Luca joins boards of 34 cm and 27 cm, then cuts off 15 cm, and reports 46 cm. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":34,"b":27,"c":15,"kind":"twoStepSaid","said":46},"promptText":"Luca joins boards of 34 cm and 27 cm, then cuts off 15 cm, and says 46 cm is left. Is Luca right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0667",
@@ -14322,7 +14322,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":45,"b":38,"c":20,"kind":"twoStepSaid","said":60},"promptText":"After adding 45 cm and 38 cm of fabric and trimming 20 cm, Ava counts 60 cm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":45,"b":38,"c":20,"kind":"twoStepSaid","said":60},"promptText":"After adding 45 cm and 38 cm of fabric and trimming 20 cm, Ava counts 60 cm. Is Ava right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0668",
@@ -14332,7 +14332,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":52,"b":29,"c":18,"kind":"twoStepSaid","said":63},"promptText":"Omar joins boards of 52 cm and 29 cm, then cuts off 18 cm, and reports 63 cm. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":52,"b":29,"c":18,"kind":"twoStepSaid","said":63},"promptText":"Omar joins boards of 52 cm and 29 cm, then cuts off 18 cm, and says 63 cm is left. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0669",
@@ -14352,7 +14352,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":27,"b":46,"c":12,"kind":"twoStepSaid","said":61},"promptText":"Finn joins boards of 27 cm and 46 cm, then cuts off 12 cm, and reports 61 cm. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":27,"b":46,"c":12,"kind":"twoStepSaid","said":61},"promptText":"After adding 27 cm and 46 cm of fabric and trimming 12 cm, Finn counts 61 cm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0671",
@@ -14362,7 +14362,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":38,"b":55,"c":30,"kind":"twoStepSaid","said":60},"promptText":"After adding 38 cm and 55 cm of fabric and trimming 30 cm, Priya counts 60 cm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":38,"b":55,"c":30,"kind":"twoStepSaid","said":60},"promptText":"Priya joins boards of 38 cm and 55 cm, then cuts off 30 cm, and says 60 cm is left. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0672",
@@ -14372,7 +14372,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":49,"b":24,"c":16,"kind":"twoStepSaid","said":57},"promptText":"Sam joins boards of 49 cm and 24 cm, then cuts off 16 cm, and reports 57 cm. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":49,"b":24,"c":16,"kind":"twoStepSaid","said":57},"promptText":"After adding 49 cm and 24 cm of fabric and trimming 16 cm, Sam counts 57 cm. Is Sam right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0673",
@@ -14382,7 +14382,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":56,"b":37,"c":40,"kind":"twoStepSaid","said":50},"promptText":"After adding 56 cm and 37 cm of fabric and trimming 40 cm, Nia counts 50 cm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":56,"b":37,"c":40,"kind":"twoStepSaid","said":50},"promptText":"Nia joins boards of 56 cm and 37 cm, then cuts off 40 cm, and says 50 cm is left. Is Nia right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0674",
@@ -14392,7 +14392,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":23,"b":68,"c":22,"kind":"twoStepSaid","said":69},"promptText":"Kai joins boards of 23 cm and 68 cm, then cuts off 22 cm, and reports 69 cm. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":23,"b":68,"c":22,"kind":"twoStepSaid","said":69},"promptText":"Kai joins boards of 23 cm and 68 cm, then cuts off 22 cm, and says 69 cm is left. Is Kai right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0675",
@@ -14402,7 +14402,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":64,"b":19,"c":35,"kind":"twoStepSaid","said":45},"promptText":"After adding 64 cm and 19 cm of fabric and trimming 35 cm, June counts 45 cm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":64,"b":19,"c":35,"kind":"twoStepSaid","said":45},"promptText":"After adding 64 cm and 19 cm of fabric and trimming 35 cm, June counts 45 cm. Is June right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0676",
@@ -14412,7 +14412,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":35,"b":48,"c":14,"kind":"twoStepSaid","said":69},"promptText":"Lily joins boards of 35 cm and 48 cm, then cuts off 14 cm, and reports 69 cm. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":35,"b":48,"c":14,"kind":"twoStepSaid","said":69},"promptText":"Lily joins boards of 35 cm and 48 cm, then cuts off 14 cm, and says 69 cm is left. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0677",
@@ -14432,7 +14432,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":58,"b":33,"c":26,"kind":"twoStepSaid","said":65},"promptText":"Leo joins boards of 58 cm and 33 cm, then cuts off 26 cm, and reports 65 cm. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":58,"b":33,"c":26,"kind":"twoStepSaid","said":65},"promptText":"After adding 58 cm and 33 cm of fabric and trimming 26 cm, Leo counts 65 cm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0679",
@@ -14442,7 +14442,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":29,"b":54,"c":32,"kind":"twoStepSaid","said":48},"promptText":"After adding 29 cm and 54 cm of fabric and trimming 32 cm, Mina counts 48 cm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":29,"b":54,"c":32,"kind":"twoStepSaid","said":48},"promptText":"Mina joins boards of 29 cm and 54 cm, then cuts off 32 cm, and says 48 cm is left. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0680",
@@ -14452,7 +14452,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":66,"b":25,"c":44,"kind":"twoStepSaid","said":47},"promptText":"Theo joins boards of 66 cm and 25 cm, then cuts off 44 cm, and reports 47 cm. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":66,"b":25,"c":44,"kind":"twoStepSaid","said":47},"promptText":"After adding 66 cm and 25 cm of fabric and trimming 44 cm, Theo counts 47 cm. Is Theo right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0681",
@@ -14462,7 +14462,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":37,"b":44,"c":24,"kind":"twoStepSaid","said":54},"promptText":"After adding 37 cm and 44 cm of fabric and trimming 24 cm, Ida counts 54 cm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":37,"b":44,"c":24,"kind":"twoStepSaid","said":54},"promptText":"Ida joins boards of 37 cm and 44 cm, then cuts off 24 cm, and says 54 cm is left. Is Ida right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0682",
@@ -14472,7 +14472,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":48,"b":35,"c":36,"kind":"twoStepSaid","said":47},"promptText":"Zoe joins boards of 48 cm and 35 cm, then cuts off 36 cm, and reports 47 cm. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"a":48,"b":35,"c":36,"kind":"twoStepSaid","said":47},"promptText":"Zoe joins boards of 48 cm and 35 cm, then cuts off 36 cm, and says 47 cm is left. Is Zoe right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0683",
@@ -14482,7 +14482,7 @@ export const ITEMS = [
     structureType: "twoStepJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":59,"b":22,"c":34,"kind":"twoStepSaid","said":44},"promptText":"After adding 59 cm and 22 cm of fabric and trimming 34 cm, Rosa counts 44 cm. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"a":59,"b":22,"c":34,"kind":"twoStepSaid","said":44},"promptText":"After adding 59 cm and 22 cm of fabric and trimming 34 cm, Rosa counts 44 cm. Is Rosa right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0684",
@@ -14492,7 +14492,7 @@ export const ITEMS = [
     structureType: "orderInvarianceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Theo must join 34 cm and 27 cm of wire, then remove 15 cm. Does the answer change if Theo removes the 15 cm FIRST and joins after?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Join 34 cm and 27 cm of wire, then cut off 15 cm, or cut first and join after. Theo says the two ways give different lengths. Is Theo right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0685",
@@ -14502,7 +14502,7 @@ export const ITEMS = [
     structureType: "orderInvarianceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Join 45 cm and 38 cm, then cut 20 cm — or cut first, join after. Ida says both give the same length. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Ida joins 45 cm and 38 cm of wire, then cuts off 20 cm. Ida says cutting off the 20 cm first would give the same length. Is Ida right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0686",
@@ -14512,7 +14512,7 @@ export const ITEMS = [
     structureType: "orderInvarianceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Zoe must join 52 cm and 29 cm of wire, then remove 18 cm. Does the answer change if Zoe removes the 18 cm FIRST and joins after?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Join 52 cm and 29 cm of wire, then cut off 18 cm, or cut first and join after. Zoe says the two ways give different lengths. Do you agree with Zoe?"}},
   },
   {
     itemId: "measurement-conc-b0821-0687",
@@ -14522,7 +14522,7 @@ export const ITEMS = [
     structureType: "orderInvarianceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Join 63 cm and 18 cm, then cut 25 cm — or cut first, join after. Rosa says both give the same length. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Rosa joins 63 cm and 18 cm of wire, then cuts off 25 cm. Rosa says cutting off the 25 cm first would give the same length. Do you agree with Rosa?"}},
   },
   {
     itemId: "measurement-conc-b0821-0688",
@@ -14532,7 +14532,7 @@ export const ITEMS = [
     structureType: "orderInvarianceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Diego must join 27 cm and 46 cm of wire, then remove 12 cm. Does the answer change if Diego removes the 12 cm FIRST and joins after?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Diego joins 27 cm and 46 cm of wire, then cuts off 12 cm. Diego says cutting off the 12 cm first would give a different length. Do you agree with Diego?"}},
   },
   {
     itemId: "measurement-conc-b0821-0689",
@@ -14542,7 +14542,7 @@ export const ITEMS = [
     structureType: "orderInvarianceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Join 38 cm and 55 cm, then cut 30 cm — or cut first, join after. Nora says both give the same length. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Join 38 cm and 55 cm of wire, then cut off 30 cm, or cut first and join after. Nora says the two ways give the same length. Do you agree with Nora?"}},
   },
   {
     itemId: "measurement-conc-b0821-0690",
@@ -14552,7 +14552,7 @@ export const ITEMS = [
     structureType: "orderInvarianceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Luca must join 49 cm and 24 cm of wire, then remove 16 cm. Does the answer change if Luca removes the 16 cm FIRST and joins after?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Luca joins 49 cm and 24 cm of wire, then cuts off 16 cm. Luca says cutting off the 16 cm first would give a different length. Is Luca right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0691",
@@ -14562,7 +14562,7 @@ export const ITEMS = [
     structureType: "orderInvarianceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Join 56 cm and 37 cm, then cut 40 cm — or cut first, join after. Ava says both give the same length. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Join 56 cm and 37 cm of wire, then cut off 40 cm, or cut first and join after. Ava says the two ways give the same length. Is Ava right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0692",
@@ -14572,7 +14572,7 @@ export const ITEMS = [
     structureType: "orderInvarianceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Omar must join 23 cm and 68 cm of wire, then remove 22 cm. Does the answer change if Omar removes the 22 cm FIRST and joins after?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Join 23 cm and 68 cm of wire, then cut off 22 cm, or cut first and join after. Omar says the two ways give different lengths. Is Omar right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0693",
@@ -14582,7 +14582,7 @@ export const ITEMS = [
     structureType: "orderInvarianceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Join 64 cm and 19 cm, then cut 35 cm — or cut first, join after. Ben says both give the same length. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Ben joins 64 cm and 19 cm of wire, then cuts off 35 cm. Ben says cutting off the 35 cm first would give the same length. Is Ben right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0694",
@@ -14592,7 +14592,7 @@ export const ITEMS = [
     structureType: "orderInvarianceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Finn must join 35 cm and 48 cm of wire, then remove 14 cm. Does the answer change if Finn removes the 14 cm FIRST and joins after?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Join 35 cm and 48 cm of wire, then cut off 14 cm, or cut first and join after. Finn says the two ways give different lengths. Do you agree with Finn?"}},
   },
   {
     itemId: "measurement-conc-b0821-0695",
@@ -14602,7 +14602,7 @@ export const ITEMS = [
     structureType: "orderInvarianceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Join 47 cm and 26 cm, then cut 28 cm — or cut first, join after. Priya says both give the same length. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Priya joins 47 cm and 26 cm of wire, then cuts off 28 cm. Priya says cutting off the 28 cm first would give the same length. Do you agree with Priya?"}},
   },
   {
     itemId: "measurement-conc-b0821-0696",
@@ -14612,7 +14612,7 @@ export const ITEMS = [
     structureType: "orderInvarianceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Sam must join 58 cm and 33 cm of wire, then remove 26 cm. Does the answer change if Sam removes the 26 cm FIRST and joins after?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Sam joins 58 cm and 33 cm of wire, then cuts off 26 cm. Sam says cutting off the 26 cm first would give a different length. Do you agree with Sam?"}},
   },
   {
     itemId: "measurement-conc-b0821-0697",
@@ -14622,7 +14622,7 @@ export const ITEMS = [
     structureType: "orderInvarianceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Join 29 cm and 54 cm, then cut 32 cm — or cut first, join after. Nia says both give the same length. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Join 29 cm and 54 cm of wire, then cut off 32 cm, or cut first and join after. Nia says the two ways give the same length. Do you agree with Nia?"}},
   },
   {
     itemId: "measurement-conc-b0821-0698",
@@ -14632,7 +14632,7 @@ export const ITEMS = [
     structureType: "orderInvarianceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Kai must join 66 cm and 25 cm of wire, then remove 44 cm. Does the answer change if Kai removes the 44 cm FIRST and joins after?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"kind":"claim"},"promptText":"Kai joins 66 cm and 25 cm of wire, then cuts off 44 cm. Kai says cutting off the 44 cm first would give a different length. Is Kai right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0699",
@@ -14642,7 +14642,7 @@ export const ITEMS = [
     structureType: "orderInvarianceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Join 37 cm and 44 cm, then cut 24 cm — or cut first, join after. June says both give the same length. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"kind":"claim"},"promptText":"Join 37 cm and 44 cm of wire, then cut off 24 cm, or cut first and join after. June says the two ways give the same length. Is June right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0700",
@@ -14652,7 +14652,7 @@ export const ITEMS = [
     structureType: "firstStepPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"change 1 m into centimetres","choices":["change 1 m into centimetres","change 30 cm into metres","add 1 and 30"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Kai wants 1 m 30 cm in centimetres. Which step comes FIRST?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"change 1 m into centimeters","choices":["change 1 m into centimeters","change 30 cm into meters","add 1 and 30"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Kai wants 1 m 30 cm in centimeters. Which step comes first?"}},
   },
   {
     itemId: "measurement-conc-b0821-0701",
@@ -14662,7 +14662,7 @@ export const ITEMS = [
     structureType: "firstStepPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"change 2 m into centimetres","choices":["change 2 m into centimetres","change 25 cm into metres","add 2 and 25"],"display":{"measure":{"kind":"pickLabel"},"promptText":"To write 2 m 25 cm as centimetres, what does June do first?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"change 2 m into centimeters","choices":["change 2 m into centimeters","change 25 cm into meters","add 2 and 25"],"display":{"measure":{"kind":"pickLabel"},"promptText":"To write 2 m 25 cm as centimeters, what does June do first?"}},
   },
   {
     itemId: "measurement-conc-b0821-0702",
@@ -14672,7 +14672,7 @@ export const ITEMS = [
     structureType: "firstStepPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"change 1 m into centimetres","choices":["add 1 and 55","change 55 cm into metres","change 1 m into centimetres"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Lily wants 1 m 55 cm in centimetres. Which step comes FIRST?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"change 1 m into centimeters","choices":["add 1 and 55","change 55 cm into meters","change 1 m into centimeters"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Lily wants 1 m 55 cm in centimeters. Which step comes first?"}},
   },
   {
     itemId: "measurement-conc-b0821-0703",
@@ -14682,7 +14682,7 @@ export const ITEMS = [
     structureType: "firstStepPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"change 3 m into centimetres","choices":["change 15 cm into metres","change 3 m into centimetres","add 3 and 15"],"display":{"measure":{"kind":"pickLabel"},"promptText":"To write 3 m 15 cm as centimetres, what does Amara do first?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"change 3 m into centimeters","choices":["change 15 cm into meters","change 3 m into centimeters","add 3 and 15"],"display":{"measure":{"kind":"pickLabel"},"promptText":"To write 3 m 15 cm as centimeters, what does Amara do first?"}},
   },
   {
     itemId: "measurement-conc-b0821-0704",
@@ -14692,7 +14692,7 @@ export const ITEMS = [
     structureType: "firstStepPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"change 2 m into centimetres","choices":["change 2 m into centimetres","add 2 and 45","change 45 cm into metres"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Leo wants 2 m 45 cm in centimetres. Which step comes FIRST?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"change 2 m into centimeters","choices":["change 2 m into centimeters","add 2 and 45","change 45 cm into meters"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Leo wants 2 m 45 cm in centimeters. Which step comes first?"}},
   },
   {
     itemId: "measurement-conc-b0821-0705",
@@ -14702,7 +14702,7 @@ export const ITEMS = [
     structureType: "firstStepPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"change 1 m into centimetres","choices":["add 1 and 65","change 65 cm into metres","change 1 m into centimetres"],"display":{"measure":{"kind":"pickLabel"},"promptText":"To write 1 m 65 cm as centimetres, what does Mina do first?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"change 1 m into centimeters","choices":["add 1 and 65","change 65 cm into meters","change 1 m into centimeters"],"display":{"measure":{"kind":"pickLabel"},"promptText":"To write 1 m 65 cm as centimeters, what does Mina do first?"}},
   },
   {
     itemId: "measurement-conc-b0821-0706",
@@ -14712,7 +14712,7 @@ export const ITEMS = [
     structureType: "firstStepPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"change 3 m into centimetres","choices":["change 3 m into centimetres","change 35 cm into metres","add 3 and 35"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Theo wants 3 m 35 cm in centimetres. Which step comes FIRST?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"change 3 m into centimeters","choices":["change 3 m into centimeters","change 35 cm into meters","add 3 and 35"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Theo wants 3 m 35 cm in centimeters. Which step comes first?"}},
   },
   {
     itemId: "measurement-conc-b0821-0707",
@@ -14722,7 +14722,7 @@ export const ITEMS = [
     structureType: "firstStepPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"change 2 m into centimetres","choices":["add 2 and 5","change 5 cm into metres","change 2 m into centimetres"],"display":{"measure":{"kind":"pickLabel"},"promptText":"To write 2 m 5 cm as centimetres, what does Ida do first?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"change 2 m into centimeters","choices":["add 2 and 5","change 5 cm into meters","change 2 m into centimeters"],"display":{"measure":{"kind":"pickLabel"},"promptText":"To write 2 m 5 cm as centimeters, what does Ida do first?"}},
   },
   {
     itemId: "measurement-conc-b0821-0708",
@@ -14732,7 +14732,7 @@ export const ITEMS = [
     structureType: "firstStepPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"change 1 m into centimetres","choices":["change 1 m into centimetres","add 1 and 75","change 75 cm into metres"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Zoe wants 1 m 75 cm in centimetres. Which step comes FIRST?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"change 1 m into centimeters","choices":["change 1 m into centimeters","add 1 and 75","change 75 cm into meters"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Zoe wants 1 m 75 cm in centimeters. Which step comes first?"}},
   },
   {
     itemId: "measurement-conc-b0821-0709",
@@ -14742,7 +14742,7 @@ export const ITEMS = [
     structureType: "firstStepPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"change 4 m into centimetres","choices":["add 4 and 25","change 25 cm into metres","change 4 m into centimetres"],"display":{"measure":{"kind":"pickLabel"},"promptText":"To write 4 m 25 cm as centimetres, what does Rosa do first?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"change 4 m into centimeters","choices":["add 4 and 25","change 25 cm into meters","change 4 m into centimeters"],"display":{"measure":{"kind":"pickLabel"},"promptText":"To write 4 m 25 cm as centimeters, what does Rosa do first?"}},
   },
   {
     itemId: "measurement-conc-b0821-0710",
@@ -14752,7 +14752,7 @@ export const ITEMS = [
     structureType: "firstStepPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"change 2 m into centimetres","choices":["add 2 and 65","change 2 m into centimetres","change 65 cm into metres"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Diego wants 2 m 65 cm in centimetres. Which step comes FIRST?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"change 2 m into centimeters","choices":["add 2 and 65","change 2 m into centimeters","change 65 cm into meters"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Diego wants 2 m 65 cm in centimeters. Which step comes first?"}},
   },
   {
     itemId: "measurement-conc-b0821-0711",
@@ -14762,7 +14762,7 @@ export const ITEMS = [
     structureType: "firstStepPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"change 3 m into centimetres","choices":["add 3 and 55","change 3 m into centimetres","change 55 cm into metres"],"display":{"measure":{"kind":"pickLabel"},"promptText":"To write 3 m 55 cm as centimetres, what does Nora do first?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"change 3 m into centimeters","choices":["add 3 and 55","change 3 m into centimeters","change 55 cm into meters"],"display":{"measure":{"kind":"pickLabel"},"promptText":"To write 3 m 55 cm as centimeters, what does Nora do first?"}},
   },
   {
     itemId: "measurement-conc-b0821-0712",
@@ -14772,7 +14772,7 @@ export const ITEMS = [
     structureType: "firstStepPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"change 1 m into centimetres","choices":["change 1 m into centimetres","add 1 and 85","change 85 cm into metres"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Luca wants 1 m 85 cm in centimetres. Which step comes FIRST?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"change 1 m into centimeters","choices":["change 1 m into centimeters","add 1 and 85","change 85 cm into meters"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Luca wants 1 m 85 cm in centimeters. Which step comes first?"}},
   },
   {
     itemId: "measurement-conc-b0821-0713",
@@ -14782,7 +14782,7 @@ export const ITEMS = [
     structureType: "firstStepPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"change 4 m into centimetres","choices":["change 45 cm into metres","add 4 and 45","change 4 m into centimetres"],"display":{"measure":{"kind":"pickLabel"},"promptText":"To write 4 m 45 cm as centimetres, what does Ava do first?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"change 4 m into centimeters","choices":["change 45 cm into meters","add 4 and 45","change 4 m into centimeters"],"display":{"measure":{"kind":"pickLabel"},"promptText":"To write 4 m 45 cm as centimeters, what does Ava do first?"}},
   },
   {
     itemId: "measurement-conc-b0821-0714",
@@ -14792,7 +14792,7 @@ export const ITEMS = [
     structureType: "firstStepPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"change 2 m into centimetres","choices":["change 2 m into centimetres","add 2 and 85","change 85 cm into metres"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Omar wants 2 m 85 cm in centimetres. Which step comes FIRST?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"change 2 m into centimeters","choices":["change 2 m into centimeters","add 2 and 85","change 85 cm into meters"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Omar wants 2 m 85 cm in centimeters. Which step comes first?"}},
   },
   {
     itemId: "measurement-conc-b0821-0715",
@@ -14802,7 +14802,7 @@ export const ITEMS = [
     structureType: "firstStepPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"change 3 m into centimetres","choices":["change 5 cm into metres","change 3 m into centimetres","add 3 and 5"],"display":{"measure":{"kind":"pickLabel"},"promptText":"To write 3 m 5 cm as centimetres, what does Ben do first?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"change 3 m into centimeters","choices":["change 5 cm into meters","change 3 m into centimeters","add 3 and 5"],"display":{"measure":{"kind":"pickLabel"},"promptText":"To write 3 m 5 cm as centimeters, what does Ben do first?"}},
   },
   {
     itemId: "measurement-conc-b0821-0716",
@@ -14812,7 +14812,7 @@ export const ITEMS = [
     structureType: "firstStepPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"change 1 m into centimetres","choices":["add 1 and 95","change 1 m into centimetres","change 95 cm into metres"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Finn wants 1 m 95 cm in centimetres. Which step comes FIRST?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"change 1 m into centimeters","choices":["add 1 and 95","change 1 m into centimeters","change 95 cm into meters"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Finn wants 1 m 95 cm in centimeters. Which step comes first?"}},
   },
   {
     itemId: "measurement-conc-b0821-0717",
@@ -14822,7 +14822,7 @@ export const ITEMS = [
     structureType: "firstStepPickMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"change 4 m into centimetres","choices":["change 65 cm into metres","add 4 and 65","change 4 m into centimetres"],"display":{"measure":{"kind":"pickLabel"},"promptText":"To write 4 m 65 cm as centimetres, what does Priya do first?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"change 4 m into centimeters","choices":["change 65 cm into meters","add 4 and 65","change 4 m into centimeters"],"display":{"measure":{"kind":"pickLabel"},"promptText":"To write 4 m 65 cm as centimeters, what does Priya do first?"}},
   },
   {
     itemId: "measurement-conc-b0821-0718",
@@ -14842,7 +14842,7 @@ export const ITEMS = [
     structureType: "mixedSlipJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"m":3,"cm":25,"kind":"mixedSaid","said":28},"promptText":"Turning 3 m 25 cm into centimetres, Kai gets 28. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"m":3,"cm":25,"kind":"mixedSaid","said":28},"promptText":"Turning 3 m 25 cm into centimeters, Kai gets 28 cm. Is Kai right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0720",
@@ -14852,7 +14852,7 @@ export const ITEMS = [
     structureType: "mixedSlipJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"m":1,"cm":80,"kind":"mixedSaid","said":180},"promptText":"June converts 1 m 80 cm and writes 180 cm. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"m":1,"cm":80,"kind":"mixedSaid","said":180},"promptText":"June converts 1 m 80 cm and writes 180 cm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0721",
@@ -14862,7 +14862,7 @@ export const ITEMS = [
     structureType: "mixedSlipJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"m":4,"cm":15,"kind":"mixedSaid","said":19},"promptText":"Turning 4 m 15 cm into centimetres, Lily gets 19. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"m":4,"cm":15,"kind":"mixedSaid","said":19},"promptText":"Turning 4 m 15 cm into centimeters, Lily gets 19 cm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0722",
@@ -14872,7 +14872,7 @@ export const ITEMS = [
     structureType: "mixedSlipJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"m":2,"cm":55,"kind":"mixedSaid","said":255},"promptText":"Amara converts 2 m 55 cm and writes 255 cm. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"m":2,"cm":55,"kind":"mixedSaid","said":255},"promptText":"Turning 2 m 55 cm into centimeters, Amara gets 255 cm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0723",
@@ -14882,7 +14882,7 @@ export const ITEMS = [
     structureType: "mixedSlipJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"m":5,"cm":30,"kind":"mixedSaid","said":35},"promptText":"Turning 5 m 30 cm into centimetres, Leo gets 35. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"m":5,"cm":30,"kind":"mixedSaid","said":35},"promptText":"Leo converts 5 m 30 cm and writes 35 cm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0724",
@@ -14892,7 +14892,7 @@ export const ITEMS = [
     structureType: "mixedSlipJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"m":3,"cm":70,"kind":"mixedSaid","said":370},"promptText":"Mina converts 3 m 70 cm and writes 370 cm. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"m":3,"cm":70,"kind":"mixedSaid","said":370},"promptText":"Turning 3 m 70 cm into centimeters, Mina gets 370 cm. Is Mina right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0725",
@@ -14902,7 +14902,7 @@ export const ITEMS = [
     structureType: "mixedSlipJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"m":1,"cm":45,"kind":"mixedSaid","said":46},"promptText":"Turning 1 m 45 cm into centimetres, Theo gets 46. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"m":1,"cm":45,"kind":"mixedSaid","said":46},"promptText":"Theo converts 1 m 45 cm and writes 46 cm. Is Theo right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0726",
@@ -14922,7 +14922,7 @@ export const ITEMS = [
     structureType: "mixedSlipJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"m":2,"cm":35,"kind":"mixedSaid","said":37},"promptText":"Turning 2 m 35 cm into centimetres, Zoe gets 37. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"m":2,"cm":35,"kind":"mixedSaid","said":37},"promptText":"Turning 2 m 35 cm into centimeters, Zoe gets 37 cm. Is Zoe right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0728",
@@ -14932,7 +14932,7 @@ export const ITEMS = [
     structureType: "mixedSlipJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"m":5,"cm":60,"kind":"mixedSaid","said":560},"promptText":"Rosa converts 5 m 60 cm and writes 560 cm. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"m":5,"cm":60,"kind":"mixedSaid","said":560},"promptText":"Rosa converts 5 m 60 cm and writes 560 cm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0729",
@@ -14942,7 +14942,7 @@ export const ITEMS = [
     structureType: "mixedSlipJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"m":3,"cm":5,"kind":"mixedSaid","said":8},"promptText":"Turning 3 m 5 cm into centimetres, Diego gets 8. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"m":3,"cm":5,"kind":"mixedSaid","said":8},"promptText":"Turning 3 m 5 cm into centimeters, Diego gets 8 cm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0730",
@@ -14952,7 +14952,7 @@ export const ITEMS = [
     structureType: "mixedSlipJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"m":1,"cm":95,"kind":"mixedSaid","said":195},"promptText":"Nora converts 1 m 95 cm and writes 195 cm. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"m":1,"cm":95,"kind":"mixedSaid","said":195},"promptText":"Turning 1 m 95 cm into centimeters, Nora gets 195 cm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0731",
@@ -14962,7 +14962,7 @@ export const ITEMS = [
     structureType: "mixedSlipJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"m":4,"cm":50,"kind":"mixedSaid","said":54},"promptText":"Turning 4 m 50 cm into centimetres, Luca gets 54. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"m":4,"cm":50,"kind":"mixedSaid","said":54},"promptText":"Luca converts 4 m 50 cm and writes 54 cm. Is that right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0732",
@@ -14972,7 +14972,7 @@ export const ITEMS = [
     structureType: "mixedSlipJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"m":2,"cm":85,"kind":"mixedSaid","said":285},"promptText":"Ava converts 2 m 85 cm and writes 285 cm. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"m":2,"cm":85,"kind":"mixedSaid","said":285},"promptText":"Turning 2 m 85 cm into centimeters, Ava gets 285 cm. Is Ava right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0733",
@@ -14982,7 +14982,7 @@ export const ITEMS = [
     structureType: "mixedSlipJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"m":5,"cm":10,"kind":"mixedSaid","said":15},"promptText":"Turning 5 m 10 cm into centimetres, Omar gets 15. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"m":5,"cm":10,"kind":"mixedSaid","said":15},"promptText":"Omar converts 5 m 10 cm and writes 15 cm. Is Omar right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0734",
@@ -15002,7 +15002,7 @@ export const ITEMS = [
     structureType: "mixedSlipJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"m":1,"cm":25,"kind":"mixedSaid","said":26},"promptText":"Turning 1 m 25 cm into centimetres, Finn gets 26. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"m":1,"cm":25,"kind":"mixedSaid","said":26},"promptText":"Turning 1 m 25 cm into centimeters, Finn gets 26 cm. Is Finn right?"}},
   },
   {
     itemId: "measurement-conc-b0821-0736",
@@ -15022,7 +15022,7 @@ export const ITEMS = [
     structureType: "rollLeftoverBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"175 cm","choices":["122 cm","175 cm","275 cm","425 cm"],"display":{"measure":{"kind":"rollLeft","used":125,"mTotal":3},"promptText":"Omar cuts 125 cm from a 3 m roll of ribbon. How much remains? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":"175 cm","choices":["122 cm","175 cm","275 cm","425 cm"],"display":{"measure":{"kind":"rollLeft","used":125,"mTotal":3},"promptText":"Omar cuts 125 cm from a 3 m roll of ribbon. How much ribbon is left?"}},
   },
   {
     itemId: "measurement-conc-b0821-0738",
@@ -15042,7 +15042,7 @@ export const ITEMS = [
     structureType: "rollLeftoverBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"185 cm","choices":["285 cm","185 cm","211 cm","615 cm"],"display":{"measure":{"kind":"rollLeft","used":215,"mTotal":4},"promptText":"Finn cuts 215 cm from a 4 m roll of ribbon. How much remains? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":"185 cm","choices":["285 cm","185 cm","211 cm","615 cm"],"display":{"measure":{"kind":"rollLeft","used":215,"mTotal":4},"promptText":"Finn cuts 215 cm from a 4 m roll of ribbon. How much ribbon is left on the roll?"}},
   },
   {
     itemId: "measurement-conc-b0821-0740",
@@ -15062,7 +15062,7 @@ export const ITEMS = [
     structureType: "rollLeftoverBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"370 cm","choices":["125 cm","630 cm","470 cm","370 cm"],"display":{"measure":{"kind":"rollLeft","used":130,"mTotal":5},"promptText":"Sam cuts 130 cm from a 5 m roll of ribbon. How much remains? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":"370 cm","choices":["125 cm","630 cm","470 cm","370 cm"],"display":{"measure":{"kind":"rollLeft","used":130,"mTotal":5},"promptText":"Sam cuts 130 cm from a 5 m roll of ribbon. How much ribbon is left?"}},
   },
   {
     itemId: "measurement-conc-b0821-0742",
@@ -15072,7 +15072,7 @@ export const ITEMS = [
     structureType: "rollLeftoverBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"-70 cm","choices":["-70 cm","367 cm","670 cm","30 cm"],"display":{"measure":{"kind":"rollLeft","used":370,"mTotal":3},"promptText":"From a 3 m roll, Nia uses 370 cm. Which amount is left?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"30 cm","choices":["30 cm","366 cm","770 cm","130 cm"],"display":{"measure":{"kind":"rollLeft","used":370,"mTotal":4},"promptText":"From a 4 m roll of ribbon, Nia uses 370 cm. How much ribbon is left?"}},
   },
   {
     itemId: "measurement-conc-b0821-0743",
@@ -15082,7 +15082,7 @@ export const ITEMS = [
     structureType: "rollLeftoverBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"35 cm","choices":["135 cm","165 cm","35 cm","64 cm"],"display":{"measure":{"kind":"rollLeft","used":65,"mTotal":1},"promptText":"Kai cuts 65 cm from a 1 m roll of ribbon. How much remains? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":"35 cm","choices":["135 cm","165 cm","35 cm","64 cm"],"display":{"measure":{"kind":"rollLeft","used":65,"mTotal":1},"promptText":"Kai cuts 65 cm from a 1 m roll of ribbon. How much ribbon is left?"}},
   },
   {
     itemId: "measurement-conc-b0821-0744",
@@ -15092,7 +15092,7 @@ export const ITEMS = [
     structureType: "rollLeftoverBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"-90 cm","choices":["-90 cm","486 cm","890 cm","10 cm"],"display":{"measure":{"kind":"rollLeft","used":490,"mTotal":4},"promptText":"From a 4 m roll, June uses 490 cm. Which amount is left?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"10 cm","choices":["10 cm","485 cm","990 cm","110 cm"],"display":{"measure":{"kind":"rollLeft","used":490,"mTotal":5},"promptText":"From a 5 m roll of ribbon, June uses 490 cm. How much ribbon is left?"}},
   },
   {
     itemId: "measurement-conc-b0821-0745",
@@ -15102,7 +15102,7 @@ export const ITEMS = [
     structureType: "rollLeftoverBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"95 cm","choices":["103 cm","195 cm","305 cm","95 cm"],"display":{"measure":{"kind":"rollLeft","used":105,"mTotal":2},"promptText":"Lily cuts 105 cm from a 2 m roll of ribbon. How much remains? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":"95 cm","choices":["103 cm","195 cm","305 cm","95 cm"],"display":{"measure":{"kind":"rollLeft","used":105,"mTotal":2},"promptText":"Lily cuts 105 cm from a 2 m roll of ribbon. How much ribbon is left?"}},
   },
   {
     itemId: "measurement-conc-b0821-0746",
@@ -15122,7 +15122,7 @@ export const ITEMS = [
     structureType: "rollLeftoverBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"90 cm","choices":["90 cm","190 cm","510 cm","207 cm"],"display":{"measure":{"kind":"rollLeft","used":210,"mTotal":3},"promptText":"Leo cuts 210 cm from a 3 m roll of ribbon. How much remains? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":"90 cm","choices":["90 cm","190 cm","510 cm","207 cm"],"display":{"measure":{"kind":"rollLeft","used":210,"mTotal":3},"promptText":"Leo cuts 210 cm from a 3 m roll of ribbon. How much ribbon is left on the roll?"}},
   },
   {
     itemId: "measurement-conc-b0821-0748",
@@ -15142,7 +15142,7 @@ export const ITEMS = [
     structureType: "rollLeftoverBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"70 cm","choices":["170 cm","29 cm","130 cm","70 cm"],"display":{"measure":{"kind":"rollLeft","used":30,"mTotal":1},"promptText":"Theo cuts 30 cm from a 1 m roll of ribbon. How much remains? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":"70 cm","choices":["170 cm","29 cm","130 cm","70 cm"],"display":{"measure":{"kind":"rollLeft","used":30,"mTotal":1},"promptText":"Theo cuts 30 cm from a 1 m roll of ribbon. How much ribbon is left?"}},
   },
   {
     itemId: "measurement-conc-b0821-0750",
@@ -15162,7 +15162,7 @@ export const ITEMS = [
     structureType: "rollLeftoverBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"140 cm","choices":["140 cm","58 cm","240 cm","260 cm"],"display":{"measure":{"kind":"rollLeft","used":60,"mTotal":2},"promptText":"Zoe cuts 60 cm from a 2 m roll of ribbon. How much remains? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":"140 cm","choices":["140 cm","58 cm","240 cm","260 cm"],"display":{"measure":{"kind":"rollLeft","used":60,"mTotal":2},"promptText":"Zoe cuts 60 cm from a 2 m roll of ribbon. How much ribbon is left on the roll?"}},
   },
   {
     itemId: "measurement-conc-b0821-0752",
@@ -15182,7 +15182,7 @@ export const ITEMS = [
     structureType: "rollLeftoverBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"210 cm","choices":["390 cm","87 cm","310 cm","210 cm"],"display":{"measure":{"kind":"rollLeft","used":90,"mTotal":3},"promptText":"Diego cuts 90 cm from a 3 m roll of ribbon. How much remains? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":"210 cm","choices":["390 cm","87 cm","310 cm","210 cm"],"display":{"measure":{"kind":"rollLeft","used":90,"mTotal":3},"promptText":"Diego cuts 90 cm from a 3 m roll of ribbon. How much ribbon is left?"}},
   },
   {
     itemId: "measurement-conc-b0821-0754",
@@ -15192,7 +15192,7 @@ export const ITEMS = [
     structureType: "halfJugJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"L":2,"kind":"halfLeft","pour":700},"promptText":"A 2 L jug is full. Ida pours out 700 mL. Does MORE than half the jug remain?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"L":2,"kind":"halfLeft","pour":700},"promptText":"A 2 L jug is full. Ida pours out 700 mL. Is more than half the jug left?"}},
   },
   {
     itemId: "measurement-conc-b0821-0755",
@@ -15212,7 +15212,7 @@ export const ITEMS = [
     structureType: "halfJugJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"L":3,"kind":"halfLeft","pour":1800},"promptText":"A 3 L jug is full. Rosa pours out 1800 mL. Does MORE than half the jug remain?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"L":3,"kind":"halfLeft","pour":1800},"promptText":"A 3 L jug is full. Rosa pours out 1800 mL. Is more than half the jug left?"}},
   },
   {
     itemId: "measurement-conc-b0821-0757",
@@ -15232,7 +15232,7 @@ export const ITEMS = [
     structureType: "halfJugJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"L":4,"kind":"halfLeft","pour":1500},"promptText":"A 4 L jug is full. Nora pours out 1500 mL. Does MORE than half the jug remain?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"L":4,"kind":"halfLeft","pour":1500},"promptText":"A 4 L jug is full. Nora pours out 1500 mL. Is more than half the jug left?"}},
   },
   {
     itemId: "measurement-conc-b0821-0759",
@@ -15252,7 +15252,7 @@ export const ITEMS = [
     structureType: "halfJugJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"L":3,"kind":"halfLeft","pour":900},"promptText":"A 3 L jug is full. Ava pours out 900 mL. Does MORE than half the jug remain?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"L":3,"kind":"halfLeft","pour":900},"promptText":"A 3 L jug is full. Ava pours out 900 mL. Is more than half the jug left?"}},
   },
   {
     itemId: "measurement-conc-b0821-0761",
@@ -15272,7 +15272,7 @@ export const ITEMS = [
     structureType: "halfJugJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"L":4,"kind":"halfLeft","pour":2500},"promptText":"A 4 L jug is full. Ben pours out 2500 mL. Does MORE than half the jug remain?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"L":4,"kind":"halfLeft","pour":2500},"promptText":"A 4 L jug is full. Ben pours out 2500 mL. Is more than half the jug left?"}},
   },
   {
     itemId: "measurement-conc-b0821-0763",
@@ -15292,7 +15292,7 @@ export const ITEMS = [
     structureType: "halfJugJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"L":3,"kind":"halfLeft","pour":2000},"promptText":"A 3 L jug is full. Priya pours out 2000 mL. Does MORE than half the jug remain?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"measure":{"L":3,"kind":"halfLeft","pour":2000},"promptText":"A 3 L jug is full. Priya pours out 2000 mL. Is more than half the jug left?"}},
   },
   {
     itemId: "measurement-conc-b0821-0765",
@@ -15312,7 +15312,7 @@ export const ITEMS = [
     structureType: "halfJugJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"L":4,"kind":"halfLeft","pour":1200},"promptText":"A 4 L jug is full. Nia pours out 1200 mL. Does MORE than half the jug remain?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"L":4,"kind":"halfLeft","pour":1200},"promptText":"A 4 L jug is full. Nia pours out 1200 mL. Is more than half the jug left?"}},
   },
   {
     itemId: "measurement-conc-b0821-0767",
@@ -15332,7 +15332,7 @@ export const ITEMS = [
     structureType: "halfJugJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"L":3,"kind":"halfLeft","pour":1400},"promptText":"A 3 L jug is full. June pours out 1400 mL. Does MORE than half the jug remain?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"measure":{"L":3,"kind":"halfLeft","pour":1400},"promptText":"A 3 L jug is full. June pours out 1400 mL. Is more than half the jug left?"}},
   },
   {
     itemId: "measurement-conc-b0821-0769",
@@ -15352,7 +15352,7 @@ export const ITEMS = [
     structureType: "longerByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":7,"kind":"gap","target":12},"promptText":"A 12 cm ribbon and a 7 cm ribbon. The first is longer by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":7,"kind":"gap","target":12},"promptText":"A red ribbon is 12 cm long. A blue ribbon is 7 cm long. How much longer is the red ribbon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0002",
@@ -15362,7 +15362,7 @@ export const ITEMS = [
     structureType: "longerByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":9,"kind":"gap","target":15},"promptText":"A 15 cm ribbon and a 9 cm ribbon. The first is longer by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":9,"kind":"gap","target":15},"promptText":"Two ribbons are 15 cm and 9 cm long. How many centimeters longer is the 15 cm ribbon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0003",
@@ -15372,7 +15372,7 @@ export const ITEMS = [
     structureType: "longerByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":4,"kind":"gap","target":9},"promptText":"A 9 cm ribbon and a 4 cm ribbon. The first is longer by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":4,"kind":"gap","target":9},"promptText":"A red ribbon is 9 cm long. A blue ribbon is 4 cm long. How much longer is the red ribbon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0004",
@@ -15382,7 +15382,7 @@ export const ITEMS = [
     structureType: "longerByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":11,"kind":"gap","target":18},"promptText":"A 18 cm ribbon and a 11 cm ribbon. The first is longer by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":11,"kind":"gap","target":18},"promptText":"Two ribbons are 18 cm and 11 cm long. How many centimeters longer is the 18 cm ribbon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0005",
@@ -15392,7 +15392,7 @@ export const ITEMS = [
     structureType: "longerByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":6,"kind":"gap","target":14},"promptText":"A 14 cm ribbon and a 6 cm ribbon. The first is longer by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":6,"kind":"gap","target":14},"promptText":"A red ribbon is 14 cm long. A blue ribbon is 6 cm long. How much longer is the red ribbon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0006",
@@ -15402,7 +15402,7 @@ export const ITEMS = [
     structureType: "longerByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":8,"kind":"gap","target":16},"promptText":"A 16 cm ribbon and a 8 cm ribbon. The first is longer by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":8,"kind":"gap","target":16},"promptText":"Two ribbons are 16 cm and 8 cm long. How many centimeters longer is the 16 cm ribbon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0007",
@@ -15412,7 +15412,7 @@ export const ITEMS = [
     structureType: "longerByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":3,"kind":"gap","target":11},"promptText":"A 11 cm ribbon and a 3 cm ribbon. The first is longer by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":3,"kind":"gap","target":11},"promptText":"A red ribbon is 11 cm long. A blue ribbon is 3 cm long. How much longer is the red ribbon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0008",
@@ -15422,7 +15422,7 @@ export const ITEMS = [
     structureType: "longerByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":13,"kind":"gap","target":20},"promptText":"A 20 cm ribbon and a 13 cm ribbon. The first is longer by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":13,"kind":"gap","target":20},"promptText":"Two ribbons are 20 cm and 13 cm long. How many centimeters longer is the 20 cm ribbon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0009",
@@ -15432,7 +15432,7 @@ export const ITEMS = [
     structureType: "longerByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":5,"kind":"gap","target":13},"promptText":"A 13 cm ribbon and a 5 cm ribbon. The first is longer by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":5,"kind":"gap","target":13},"promptText":"A red ribbon is 13 cm long. A blue ribbon is 5 cm long. How much longer is the red ribbon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0010",
@@ -15442,7 +15442,7 @@ export const ITEMS = [
     structureType: "longerByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":12,"kind":"gap","target":17},"promptText":"A 17 cm ribbon and a 12 cm ribbon. The first is longer by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":12,"kind":"gap","target":17},"promptText":"Two ribbons are 17 cm and 12 cm long. How many centimeters longer is the 17 cm ribbon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0011",
@@ -15452,7 +15452,7 @@ export const ITEMS = [
     structureType: "longerByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":2,"kind":"gap","target":10},"promptText":"A 10 cm ribbon and a 2 cm ribbon. The first is longer by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":2,"kind":"gap","target":10},"promptText":"A red ribbon is 10 cm long. A blue ribbon is 2 cm long. How much longer is the red ribbon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0012",
@@ -15462,7 +15462,7 @@ export const ITEMS = [
     structureType: "longerByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":14,"kind":"gap","target":19},"promptText":"A 19 cm ribbon and a 14 cm ribbon. The first is longer by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":14,"kind":"gap","target":19},"promptText":"Two ribbons are 19 cm and 14 cm long. How many centimeters longer is the 19 cm ribbon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0013",
@@ -15472,7 +15472,7 @@ export const ITEMS = [
     structureType: "longerByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":3,"kind":"gap","target":8},"promptText":"A 8 cm ribbon and a 3 cm ribbon. The first is longer by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":3,"kind":"gap","target":8},"promptText":"A red ribbon is 8 cm long. A blue ribbon is 3 cm long. How much longer is the red ribbon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0014",
@@ -15482,7 +15482,7 @@ export const ITEMS = [
     structureType: "longerByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":6,"kind":"gap","target":15},"promptText":"A 15 cm ribbon and a 6 cm ribbon. The first is longer by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":6,"kind":"gap","target":15},"promptText":"Two ribbons are 15 cm and 6 cm long. How many centimeters longer is the 15 cm ribbon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0015",
@@ -15492,7 +15492,7 @@ export const ITEMS = [
     structureType: "longerByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":4,"kind":"gap","target":12},"promptText":"A 12 cm ribbon and a 4 cm ribbon. The first is longer by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":4,"kind":"gap","target":12},"promptText":"A red ribbon is 12 cm long. A blue ribbon is 4 cm long. How much longer is the red ribbon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0016",
@@ -15502,7 +15502,7 @@ export const ITEMS = [
     structureType: "longerByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":9,"kind":"gap","target":20},"promptText":"A 20 cm ribbon and a 9 cm ribbon. The first is longer by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":9,"kind":"gap","target":20},"promptText":"Two ribbons are 20 cm and 9 cm long. How many centimeters longer is the 20 cm ribbon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0017",
@@ -15512,7 +15512,7 @@ export const ITEMS = [
     structureType: "longerByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":11,"kind":"gap","target":16},"promptText":"A 16 cm ribbon and a 11 cm ribbon. The first is longer by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":11,"kind":"gap","target":16},"promptText":"A red ribbon is 16 cm long. A blue ribbon is 11 cm long. How much longer is the red ribbon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0018",
@@ -15522,7 +15522,7 @@ export const ITEMS = [
     structureType: "longerByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":8,"kind":"gap","target":14},"promptText":"A 14 cm ribbon and a 8 cm ribbon. The first is longer by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":8,"kind":"gap","target":14},"promptText":"Two ribbons are 14 cm and 8 cm long. How many centimeters longer is the 14 cm ribbon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0019",
@@ -15532,7 +15532,7 @@ export const ITEMS = [
     structureType: "longerByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":5,"kind":"gap","target":18},"promptText":"A 18 cm ribbon and a 5 cm ribbon. The first is longer by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":5,"kind":"gap","target":18},"promptText":"A red ribbon is 18 cm long. A blue ribbon is 5 cm long. How much longer is the red ribbon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0020",
@@ -15542,7 +15542,7 @@ export const ITEMS = [
     structureType: "longerByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":7,"kind":"gap","target":11},"promptText":"A 11 cm ribbon and a 7 cm ribbon. The first is longer by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":7,"kind":"gap","target":11},"promptText":"Two ribbons are 11 cm and 7 cm long. How many centimeters longer is the 11 cm ribbon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0021",
@@ -15552,7 +15552,7 @@ export const ITEMS = [
     structureType: "longerByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":9,"kind":"gap","target":13},"promptText":"A 13 cm ribbon and a 9 cm ribbon. The first is longer by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":9,"kind":"gap","target":13},"promptText":"A red ribbon is 13 cm long. A blue ribbon is 9 cm long. How much longer is the red ribbon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0022",
@@ -15562,7 +15562,7 @@ export const ITEMS = [
     structureType: "longerByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":4,"kind":"gap","target":17},"promptText":"A 17 cm ribbon and a 4 cm ribbon. The first is longer by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":4,"kind":"gap","target":17},"promptText":"Two ribbons are 17 cm and 4 cm long. How many centimeters longer is the 17 cm ribbon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0023",
@@ -15572,7 +15572,7 @@ export const ITEMS = [
     structureType: "longerByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":8,"kind":"gap","target":19},"promptText":"A 19 cm ribbon and a 8 cm ribbon. The first is longer by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":8,"kind":"gap","target":19},"promptText":"A red ribbon is 19 cm long. A blue ribbon is 8 cm long. How much longer is the red ribbon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0024",
@@ -15582,7 +15582,7 @@ export const ITEMS = [
     structureType: "longerByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":6,"kind":"gap","target":10},"promptText":"A 10 cm ribbon and a 6 cm ribbon. The first is longer by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":6,"kind":"gap","target":10},"promptText":"Two ribbons are 10 cm and 6 cm long. How many centimeters longer is the 10 cm ribbon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0025",
@@ -15592,7 +15592,7 @@ export const ITEMS = [
     structureType: "longerByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":16,"kind":"gap","target":20},"promptText":"A 20 cm ribbon and a 16 cm ribbon. The first is longer by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":16,"kind":"gap","target":20},"promptText":"A red ribbon is 20 cm long. A blue ribbon is 16 cm long. How much longer is the red ribbon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0026",
@@ -15602,7 +15602,7 @@ export const ITEMS = [
     structureType: "longerByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":2,"kind":"gap","target":15},"promptText":"A 15 cm ribbon and a 2 cm ribbon. The first is longer by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":2,"kind":"gap","target":15},"promptText":"Two ribbons are 15 cm and 2 cm long. How many centimeters longer is the 15 cm ribbon?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0027",
@@ -15612,7 +15612,7 @@ export const ITEMS = [
     structureType: "iterateTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[3,3,3,3]},"promptText":"4 paperclips, each 3 cm long, laid end to end = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[3,3,3,3]},"promptText":"4 paperclips, each 3 cm long, are laid end to end. How many centimeters long is the row of paperclips?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0028",
@@ -15622,7 +15622,7 @@ export const ITEMS = [
     structureType: "iterateTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[2,2,2,2,2]},"promptText":"5 paperclips, each 2 cm long, laid end to end = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[2,2,2,2,2]},"promptText":"Lay 5 paperclips end to end. Each paperclip is 2 cm long. How long is the row in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0029",
@@ -15632,7 +15632,7 @@ export const ITEMS = [
     structureType: "iterateTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[5,5,5]},"promptText":"3 paperclips, each 5 cm long, laid end to end = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[5,5,5]},"promptText":"3 paperclips, each 5 cm long, are laid end to end. How many centimeters long is the row of paperclips?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0030",
@@ -15642,7 +15642,7 @@ export const ITEMS = [
     structureType: "iterateTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[3,3,3,3,3,3]},"promptText":"6 paperclips, each 3 cm long, laid end to end = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[3,3,3,3,3,3]},"promptText":"Lay 6 paperclips end to end. Each paperclip is 3 cm long. How long is the row in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0031",
@@ -15652,7 +15652,7 @@ export const ITEMS = [
     structureType: "iterateTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[8,8]},"promptText":"2 paperclips, each 8 cm long, laid end to end = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[8,8]},"promptText":"2 crayons, each 8 cm long, are laid end to end. How many centimeters long is the row of crayons?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0032",
@@ -15662,7 +15662,7 @@ export const ITEMS = [
     structureType: "iterateTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[4,4,4,4]},"promptText":"4 paperclips, each 4 cm long, laid end to end = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[4,4,4,4]},"promptText":"Lay 4 paperclips end to end. Each paperclip is 4 cm long. How long is the row in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0033",
@@ -15672,7 +15672,7 @@ export const ITEMS = [
     structureType: "iterateTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[3,3,3,3,3]},"promptText":"5 paperclips, each 3 cm long, laid end to end = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[3,3,3,3,3]},"promptText":"5 paperclips, each 3 cm long, are laid end to end. How many centimeters long is the row of paperclips?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0034",
@@ -15682,7 +15682,7 @@ export const ITEMS = [
     structureType: "iterateTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[6,6,6]},"promptText":"3 paperclips, each 6 cm long, laid end to end = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[6,6,6]},"promptText":"Lay 3 erasers end to end. Each eraser is 6 cm long. How long is the row in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0035",
@@ -15692,7 +15692,7 @@ export const ITEMS = [
     structureType: "iterateTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[2,2,2,2,2,2]},"promptText":"6 paperclips, each 2 cm long, laid end to end = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[2,2,2,2,2,2]},"promptText":"6 paperclips, each 2 cm long, are laid end to end. How many centimeters long is the row of paperclips?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0036",
@@ -15702,7 +15702,7 @@ export const ITEMS = [
     structureType: "iterateTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[9,9]},"promptText":"2 paperclips, each 9 cm long, laid end to end = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[9,9]},"promptText":"Lay 2 crayons end to end. Each crayon is 9 cm long. How long is the row in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0037",
@@ -15712,7 +15712,7 @@ export const ITEMS = [
     structureType: "iterateTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"sum","parts":[5,5,5,5]},"promptText":"4 paperclips, each 5 cm long, laid end to end = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"sum","parts":[5,5,5,5]},"promptText":"4 paperclips, each 5 cm long, are laid end to end. How many centimeters long is the row of paperclips?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0038",
@@ -15722,7 +15722,7 @@ export const ITEMS = [
     structureType: "iterateTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[4,4,4]},"promptText":"3 paperclips, each 4 cm long, laid end to end = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[4,4,4]},"promptText":"Lay 3 paperclips end to end. Each paperclip is 4 cm long. How long is the row in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0039",
@@ -15732,7 +15732,7 @@ export const ITEMS = [
     structureType: "iterateTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[7,7]},"promptText":"2 paperclips, each 7 cm long, laid end to end = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[7,7]},"promptText":"2 toy cars, each 7 cm long, are laid end to end. How many centimeters long is the row of toy cars?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0040",
@@ -15742,7 +15742,7 @@ export const ITEMS = [
     structureType: "iterateTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"sum","parts":[4,4,4,4,4]},"promptText":"5 paperclips, each 4 cm long, laid end to end = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"sum","parts":[4,4,4,4,4]},"promptText":"Lay 5 paperclips end to end. Each paperclip is 4 cm long. How long is the row in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0041",
@@ -15752,7 +15752,7 @@ export const ITEMS = [
     structureType: "iterateTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"sum","parts":[1,1,1,1,1,1]},"promptText":"6 paperclips, each 1 cm long, laid end to end = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"sum","parts":[1,1,1,1,1,1]},"promptText":"6 cubes, each 1 cm long, are laid end to end. How many centimeters long is the row of cubes?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0042",
@@ -15762,7 +15762,7 @@ export const ITEMS = [
     structureType: "iterateTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"kind":"sum","parts":[3,3,3]},"promptText":"3 paperclips, each 3 cm long, laid end to end = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"kind":"sum","parts":[3,3,3]},"promptText":"Lay 3 paperclips end to end. Each paperclip is 3 cm long. How long is the row in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0043",
@@ -15772,7 +15772,7 @@ export const ITEMS = [
     structureType: "iterateTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[6,6]},"promptText":"2 paperclips, each 6 cm long, laid end to end = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[6,6]},"promptText":"2 erasers, each 6 cm long, are laid end to end. How many centimeters long is the row of erasers?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0044",
@@ -15782,7 +15782,7 @@ export const ITEMS = [
     structureType: "iterateTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[2,2,2,2]},"promptText":"4 paperclips, each 2 cm long, laid end to end = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[2,2,2,2]},"promptText":"Lay 4 paperclips end to end. Each paperclip is 2 cm long. How long is the row in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0045",
@@ -15792,7 +15792,7 @@ export const ITEMS = [
     structureType: "iterateTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"sum","parts":[10,10]},"promptText":"2 paperclips, each 10 cm long, laid end to end = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"sum","parts":[10,10]},"promptText":"2 blocks, each 10 cm long, are laid end to end. How many centimeters long is the row of blocks?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0046",
@@ -15802,7 +15802,7 @@ export const ITEMS = [
     structureType: "iterateTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"sum","parts":[2,2,2]},"promptText":"3 paperclips, each 2 cm long, laid end to end = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"sum","parts":[2,2,2]},"promptText":"Lay 3 paperclips end to end. Each paperclip is 2 cm long. How long is the row in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0047",
@@ -15812,7 +15812,7 @@ export const ITEMS = [
     structureType: "iterateTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"sum","parts":[1,1,1,1,1]},"promptText":"5 paperclips, each 1 cm long, laid end to end = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"sum","parts":[1,1,1,1,1]},"promptText":"5 cubes, each 1 cm long, are laid end to end. How many centimeters long is the row of cubes?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0048",
@@ -15822,7 +15822,7 @@ export const ITEMS = [
     structureType: "iterateTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[5,5]},"promptText":"2 paperclips, each 5 cm long, laid end to end = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[5,5]},"promptText":"Lay 2 paperclips end to end. Each paperclip is 5 cm long. How long is the row in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0049",
@@ -15832,7 +15832,7 @@ export const ITEMS = [
     structureType: "iterateTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[2,2,2,2,2,2,2]},"promptText":"7 paperclips, each 2 cm long, laid end to end = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[2,2,2,2,2,2,2]},"promptText":"7 paperclips, each 2 cm long, are laid end to end. How many centimeters long is the row of paperclips?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0050",
@@ -15842,7 +15842,7 @@ export const ITEMS = [
     structureType: "iterateTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[2,2,2,2,2,2,2,2]},"promptText":"8 paperclips, each 2 cm long, laid end to end = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[2,2,2,2,2,2,2,2]},"promptText":"Lay 8 paperclips end to end. Each paperclip is 2 cm long. How long is the row in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0051",
@@ -15852,7 +15852,7 @@ export const ITEMS = [
     structureType: "iterateTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[2,2,2,2,2,2,2,2,2]},"promptText":"9 paperclips, each 2 cm long, laid end to end = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[2,2,2,2,2,2,2,2,2]},"promptText":"9 paperclips, each 2 cm long, are laid end to end. How many centimeters long is the row of paperclips?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0052",
@@ -15862,7 +15862,7 @@ export const ITEMS = [
     structureType: "iterateTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"sum","parts":[2,2,2,2,2,2,2,2,2,2]},"promptText":"10 paperclips, each 2 cm long, laid end to end = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"sum","parts":[2,2,2,2,2,2,2,2,2,2]},"promptText":"Lay 10 paperclips end to end. Each paperclip is 2 cm long. How long is the row in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0053",
@@ -16912,7 +16912,7 @@ export const ITEMS = [
     structureType: "heavierByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":7,"kind":"gap","target":12},"promptText":"A 12 kg box and a 7 kg box. The first is heavier by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":7,"kind":"gap","target":12},"promptText":"A red box weighs 12 kg. A blue box weighs 7 kg. How much heavier is the red box?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0158",
@@ -16922,7 +16922,7 @@ export const ITEMS = [
     structureType: "heavierByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":9,"kind":"gap","target":15},"promptText":"A 15 kg box and a 9 kg box. The first is heavier by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":9,"kind":"gap","target":15},"promptText":"Two boxes weigh 15 kg and 9 kg. How many kilograms heavier is the 15 kg box?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0159",
@@ -16932,7 +16932,7 @@ export const ITEMS = [
     structureType: "heavierByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":4,"kind":"gap","target":9},"promptText":"A 9 kg box and a 4 kg box. The first is heavier by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":4,"kind":"gap","target":9},"promptText":"A red box weighs 9 kg. A blue box weighs 4 kg. How much heavier is the red box?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0160",
@@ -16942,7 +16942,7 @@ export const ITEMS = [
     structureType: "heavierByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":11,"kind":"gap","target":18},"promptText":"A 18 kg box and a 11 kg box. The first is heavier by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":11,"kind":"gap","target":18},"promptText":"Two boxes weigh 18 kg and 11 kg. How many kilograms heavier is the 18 kg box?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0161",
@@ -16952,7 +16952,7 @@ export const ITEMS = [
     structureType: "heavierByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":6,"kind":"gap","target":14},"promptText":"A 14 kg box and a 6 kg box. The first is heavier by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":6,"kind":"gap","target":14},"promptText":"A red box weighs 14 kg. A blue box weighs 6 kg. How much heavier is the red box?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0162",
@@ -16962,7 +16962,7 @@ export const ITEMS = [
     structureType: "heavierByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":8,"kind":"gap","target":16},"promptText":"A 16 kg box and a 8 kg box. The first is heavier by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":8,"kind":"gap","target":16},"promptText":"Two boxes weigh 16 kg and 8 kg. How many kilograms heavier is the 16 kg box?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0163",
@@ -16972,7 +16972,7 @@ export const ITEMS = [
     structureType: "heavierByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":3,"kind":"gap","target":11},"promptText":"A 11 kg box and a 3 kg box. The first is heavier by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":3,"kind":"gap","target":11},"promptText":"A red box weighs 11 kg. A blue box weighs 3 kg. How much heavier is the red box?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0164",
@@ -16982,7 +16982,7 @@ export const ITEMS = [
     structureType: "heavierByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":13,"kind":"gap","target":20},"promptText":"A 20 kg box and a 13 kg box. The first is heavier by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":13,"kind":"gap","target":20},"promptText":"Two boxes weigh 20 kg and 13 kg. How many kilograms heavier is the 20 kg box?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0165",
@@ -16992,7 +16992,7 @@ export const ITEMS = [
     structureType: "heavierByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":5,"kind":"gap","target":13},"promptText":"A 13 kg box and a 5 kg box. The first is heavier by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":5,"kind":"gap","target":13},"promptText":"A red box weighs 13 kg. A blue box weighs 5 kg. How much heavier is the red box?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0166",
@@ -17002,7 +17002,7 @@ export const ITEMS = [
     structureType: "heavierByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":12,"kind":"gap","target":17},"promptText":"A 17 kg box and a 12 kg box. The first is heavier by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":12,"kind":"gap","target":17},"promptText":"Two boxes weigh 17 kg and 12 kg. How many kilograms heavier is the 17 kg box?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0167",
@@ -17012,7 +17012,7 @@ export const ITEMS = [
     structureType: "heavierByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":2,"kind":"gap","target":10},"promptText":"A 10 kg box and a 2 kg box. The first is heavier by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":2,"kind":"gap","target":10},"promptText":"A red box weighs 10 kg. A blue box weighs 2 kg. How much heavier is the red box?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0168",
@@ -17022,7 +17022,7 @@ export const ITEMS = [
     structureType: "heavierByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":14,"kind":"gap","target":19},"promptText":"A 19 kg box and a 14 kg box. The first is heavier by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":14,"kind":"gap","target":19},"promptText":"Two boxes weigh 19 kg and 14 kg. How many kilograms heavier is the 19 kg box?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0169",
@@ -17032,7 +17032,7 @@ export const ITEMS = [
     structureType: "heavierByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":3,"kind":"gap","target":8},"promptText":"A 8 kg box and a 3 kg box. The first is heavier by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":3,"kind":"gap","target":8},"promptText":"A red box weighs 8 kg. A blue box weighs 3 kg. How much heavier is the red box?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0170",
@@ -17042,7 +17042,7 @@ export const ITEMS = [
     structureType: "heavierByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":6,"kind":"gap","target":15},"promptText":"A 15 kg box and a 6 kg box. The first is heavier by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":6,"kind":"gap","target":15},"promptText":"Two boxes weigh 15 kg and 6 kg. How many kilograms heavier is the 15 kg box?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0171",
@@ -17052,7 +17052,7 @@ export const ITEMS = [
     structureType: "heavierByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":4,"kind":"gap","target":12},"promptText":"A 12 kg box and a 4 kg box. The first is heavier by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":4,"kind":"gap","target":12},"promptText":"A red box weighs 12 kg. A blue box weighs 4 kg. How much heavier is the red box?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0172",
@@ -17062,7 +17062,7 @@ export const ITEMS = [
     structureType: "heavierByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":9,"kind":"gap","target":20},"promptText":"A 20 kg box and a 9 kg box. The first is heavier by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":9,"kind":"gap","target":20},"promptText":"Two boxes weigh 20 kg and 9 kg. How many kilograms heavier is the 20 kg box?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0173",
@@ -17072,7 +17072,7 @@ export const ITEMS = [
     structureType: "heavierByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":11,"kind":"gap","target":16},"promptText":"A 16 kg box and a 11 kg box. The first is heavier by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":11,"kind":"gap","target":16},"promptText":"A red box weighs 16 kg. A blue box weighs 11 kg. How much heavier is the red box?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0174",
@@ -17082,7 +17082,7 @@ export const ITEMS = [
     structureType: "heavierByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":8,"kind":"gap","target":14},"promptText":"A 14 kg box and a 8 kg box. The first is heavier by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":8,"kind":"gap","target":14},"promptText":"Two boxes weigh 14 kg and 8 kg. How many kilograms heavier is the 14 kg box?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0175",
@@ -17092,7 +17092,7 @@ export const ITEMS = [
     structureType: "heavierByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":5,"kind":"gap","target":18},"promptText":"A 18 kg box and a 5 kg box. The first is heavier by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":5,"kind":"gap","target":18},"promptText":"A red box weighs 18 kg. A blue box weighs 5 kg. How much heavier is the red box?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0176",
@@ -17102,7 +17102,7 @@ export const ITEMS = [
     structureType: "heavierByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":7,"kind":"gap","target":11},"promptText":"A 11 kg box and a 7 kg box. The first is heavier by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":7,"kind":"gap","target":11},"promptText":"Two boxes weigh 11 kg and 7 kg. How many kilograms heavier is the 11 kg box?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0177",
@@ -17112,7 +17112,7 @@ export const ITEMS = [
     structureType: "heavierByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":9,"kind":"gap","target":13},"promptText":"A 13 kg box and a 9 kg box. The first is heavier by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":9,"kind":"gap","target":13},"promptText":"A red box weighs 13 kg. A blue box weighs 9 kg. How much heavier is the red box?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0178",
@@ -17122,7 +17122,7 @@ export const ITEMS = [
     structureType: "heavierByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":4,"kind":"gap","target":17},"promptText":"A 17 kg box and a 4 kg box. The first is heavier by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":4,"kind":"gap","target":17},"promptText":"Two boxes weigh 17 kg and 4 kg. How many kilograms heavier is the 17 kg box?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0179",
@@ -17132,7 +17132,7 @@ export const ITEMS = [
     structureType: "heavierByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":8,"kind":"gap","target":19},"promptText":"A 19 kg box and a 8 kg box. The first is heavier by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":8,"kind":"gap","target":19},"promptText":"A red box weighs 19 kg. A blue box weighs 8 kg. How much heavier is the red box?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0180",
@@ -17142,7 +17142,7 @@ export const ITEMS = [
     structureType: "heavierByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":6,"kind":"gap","target":10},"promptText":"A 10 kg box and a 6 kg box. The first is heavier by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":6,"kind":"gap","target":10},"promptText":"Two boxes weigh 10 kg and 6 kg. How many kilograms heavier is the 10 kg box?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0181",
@@ -17152,7 +17152,7 @@ export const ITEMS = [
     structureType: "heavierByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":16,"kind":"gap","target":20},"promptText":"A 20 kg box and a 16 kg box. The first is heavier by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":16,"kind":"gap","target":20},"promptText":"A red box weighs 20 kg. A blue box weighs 16 kg. How much heavier is the red box?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0182",
@@ -17162,7 +17162,7 @@ export const ITEMS = [
     structureType: "heavierByTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":2,"kind":"gap","target":15},"promptText":"A 15 kg box and a 2 kg box. The first is heavier by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":2,"kind":"gap","target":15},"promptText":"Two boxes weigh 15 kg and 2 kg. How many kilograms heavier is the 15 kg box?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0183",
@@ -17172,7 +17172,7 @@ export const ITEMS = [
     structureType: "pourTogether",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[8,7]},"promptText":"Pour 8 L and 7 L into one tub. The tub holds ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[8,7]},"promptText":"Pour 8 L of water and 7 L of water into one tub. How many liters of water are in the tub?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0184",
@@ -17182,7 +17182,7 @@ export const ITEMS = [
     structureType: "pourTogether",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[12,5]},"promptText":"Pour 12 L and 5 L into one tub. The tub holds ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[12,5]},"promptText":"A tub has 12 L of water. Then 5 L more is poured in. How many liters of water are in the tub now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0185",
@@ -17192,7 +17192,7 @@ export const ITEMS = [
     structureType: "pourTogether",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[6,9]},"promptText":"Pour 6 L and 9 L into one tub. The tub holds ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[6,9]},"promptText":"Pour 6 L of water and 9 L of water into one tub. How many liters of water are in the tub?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0186",
@@ -17202,7 +17202,7 @@ export const ITEMS = [
     structureType: "pourTogether",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[14,3]},"promptText":"Pour 14 L and 3 L into one tub. The tub holds ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[14,3]},"promptText":"A tub has 14 L of water. Then 3 L more is poured in. How many liters of water are in the tub now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0187",
@@ -17212,7 +17212,7 @@ export const ITEMS = [
     structureType: "pourTogether",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[10,8]},"promptText":"Pour 10 L and 8 L into one tub. The tub holds ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[10,8]},"promptText":"Pour 10 L of water and 8 L of water into one tub. How many liters of water are in the tub?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0188",
@@ -17222,7 +17222,7 @@ export const ITEMS = [
     structureType: "pourTogether",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[7,11]},"promptText":"Pour 7 L and 11 L into one tub. The tub holds ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[7,11]},"promptText":"A tub has 7 L of water. Then 11 L more is poured in. How many liters of water are in the tub now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0189",
@@ -17232,7 +17232,7 @@ export const ITEMS = [
     structureType: "pourTogether",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[15,4]},"promptText":"Pour 15 L and 4 L into one tub. The tub holds ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[15,4]},"promptText":"Pour 15 L of water and 4 L of water into one tub. How many liters of water are in the tub?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0190",
@@ -17242,7 +17242,7 @@ export const ITEMS = [
     structureType: "pourTogether",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[9,6]},"promptText":"Pour 9 L and 6 L into one tub. The tub holds ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[9,6]},"promptText":"A tub has 9 L of water. Then 6 L more is poured in. How many liters of water are in the tub now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0191",
@@ -17252,7 +17252,7 @@ export const ITEMS = [
     structureType: "pourTogether",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[13,2]},"promptText":"Pour 13 L and 2 L into one tub. The tub holds ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[13,2]},"promptText":"Pour 13 L of water and 2 L of water into one tub. How many liters of water are in the tub?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0192",
@@ -17262,7 +17262,7 @@ export const ITEMS = [
     structureType: "pourTogether",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[5,12]},"promptText":"Pour 5 L and 12 L into one tub. The tub holds ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[5,12]},"promptText":"A tub has 5 L of water. Then 12 L more is poured in. How many liters of water are in the tub now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0193",
@@ -17272,7 +17272,7 @@ export const ITEMS = [
     structureType: "pourTogether",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"sum","parts":[11,9]},"promptText":"Pour 11 L and 9 L into one tub. The tub holds ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"sum","parts":[11,9]},"promptText":"Pour 11 L of water and 9 L of water into one tub. How many liters of water are in the tub?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0194",
@@ -17282,7 +17282,7 @@ export const ITEMS = [
     structureType: "pourTogether",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[16,3]},"promptText":"Pour 16 L and 3 L into one tub. The tub holds ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[16,3]},"promptText":"A tub has 16 L of water. Then 3 L more is poured in. How many liters of water are in the tub now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0195",
@@ -17292,7 +17292,7 @@ export const ITEMS = [
     structureType: "pourTogether",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[4,13]},"promptText":"Pour 4 L and 13 L into one tub. The tub holds ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[4,13]},"promptText":"Pour 4 L of water and 13 L of water into one tub. How many liters of water are in the tub?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0196",
@@ -17302,7 +17302,7 @@ export const ITEMS = [
     structureType: "pourTogether",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[10,5]},"promptText":"Pour 10 L and 5 L into one tub. The tub holds ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[10,5]},"promptText":"A tub has 10 L of water. Then 5 L more is poured in. How many liters of water are in the tub now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0197",
@@ -17312,7 +17312,7 @@ export const ITEMS = [
     structureType: "pourTogether",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[8,9]},"promptText":"Pour 8 L and 9 L into one tub. The tub holds ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[8,9]},"promptText":"Pour 8 L of water and 9 L of water into one tub. How many liters of water are in the tub?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0198",
@@ -17322,7 +17322,7 @@ export const ITEMS = [
     structureType: "pourTogether",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[17,2]},"promptText":"Pour 17 L and 2 L into one tub. The tub holds ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[17,2]},"promptText":"A tub has 17 L of water. Then 2 L more is poured in. How many liters of water are in the tub now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0199",
@@ -17332,7 +17332,7 @@ export const ITEMS = [
     structureType: "pourTogether",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[6,12]},"promptText":"Pour 6 L and 12 L into one tub. The tub holds ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[6,12]},"promptText":"Pour 6 L of water and 12 L of water into one tub. How many liters of water are in the tub?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0200",
@@ -17342,7 +17342,7 @@ export const ITEMS = [
     structureType: "pourTogether",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[14,5]},"promptText":"Pour 14 L and 5 L into one tub. The tub holds ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[14,5]},"promptText":"A tub has 14 L of water. Then 5 L more is poured in. How many liters of water are in the tub now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0201",
@@ -17352,7 +17352,7 @@ export const ITEMS = [
     structureType: "pourTogether",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[9,10]},"promptText":"Pour 9 L and 10 L into one tub. The tub holds ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[9,10]},"promptText":"Pour 9 L of water and 10 L of water into one tub. How many liters of water are in the tub?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0202",
@@ -17362,7 +17362,7 @@ export const ITEMS = [
     structureType: "pourTogether",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[12,6]},"promptText":"Pour 12 L and 6 L into one tub. The tub holds ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[12,6]},"promptText":"A tub has 12 L of water. Then 6 L more is poured in. How many liters of water are in the tub now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0203",
@@ -17372,7 +17372,7 @@ export const ITEMS = [
     structureType: "pourTogether",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[3,15]},"promptText":"Pour 3 L and 15 L into one tub. The tub holds ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[3,15]},"promptText":"Pour 3 L of water and 15 L of water into one tub. How many liters of water are in the tub?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0204",
@@ -17382,7 +17382,7 @@ export const ITEMS = [
     structureType: "pourTogether",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[11,4]},"promptText":"Pour 11 L and 4 L into one tub. The tub holds ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[11,4]},"promptText":"A tub has 11 L of water. Then 4 L more is poured in. How many liters of water are in the tub now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0205",
@@ -17392,7 +17392,7 @@ export const ITEMS = [
     structureType: "pourTogether",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"sum","parts":[16,4]},"promptText":"Pour 16 L and 4 L into one tub. The tub holds ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"sum","parts":[16,4]},"promptText":"Pour 16 L of water and 4 L of water into one tub. How many liters of water are in the tub?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0206",
@@ -17402,7 +17402,7 @@ export const ITEMS = [
     structureType: "pourTogether",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[7,8]},"promptText":"Pour 7 L and 8 L into one tub. The tub holds ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[7,8]},"promptText":"A tub has 7 L of water. Then 8 L more is poured in. How many liters of water are in the tub now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0207",
@@ -17412,7 +17412,7 @@ export const ITEMS = [
     structureType: "pourTogether",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[13,6]},"promptText":"Pour 13 L and 6 L into one tub. The tub holds ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[13,6]},"promptText":"Pour 13 L of water and 6 L of water into one tub. How many liters of water are in the tub?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0208",
@@ -17422,7 +17422,7 @@ export const ITEMS = [
     structureType: "pourTogether",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[5,14]},"promptText":"Pour 5 L and 14 L into one tub. The tub holds ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[5,14]},"promptText":"A tub has 5 L of water. Then 14 L more is poured in. How many liters of water are in the tub now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0209",
@@ -18962,7 +18962,7 @@ export const ITEMS = [
     structureType: "benchmarkPickTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"150 L","choices":["150 mL","150 kg","150 g","150 L"],"display":{"measure":{"kind":"pickLabel"},"promptText":"About how long is a bathtub?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"150 L","choices":["150 mL","150 cm","150 g","150 L"],"display":{"measure":{"kind":"pickLabel"},"promptText":"About how much water does a bathtub hold?"}},
   },
   {
     itemId: "measurement-proc-b0821-0363",
@@ -18972,7 +18972,7 @@ export const ITEMS = [
     structureType: "benchmarkPickTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"150 L","choices":["150 mL","150 L","150 kg","150 g"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Which measure fits a bathtub best?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"150 L","choices":["150 mL","150 L","150 cm","150 g"],"display":{"measure":{"kind":"pickLabel"},"promptText":"Which is the best estimate for how much water a bathtub holds?"}},
   },
   {
     itemId: "measurement-proc-b0821-0364",
@@ -18982,7 +18982,7 @@ export const ITEMS = [
     structureType: "betweenEstimateMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"between","after":5,"before":3},"promptText":"A rope is a bit longer than 3 m and a bit shorter than 5 m. A whole-number estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"between","after":5,"before":3},"promptText":"A rope is longer than 3 m but shorter than 5 m. Its length is a whole number of meters. How many meters long is the rope?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0365",
@@ -18992,7 +18992,7 @@ export const ITEMS = [
     structureType: "betweenEstimateMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"between","after":8,"before":6},"promptText":"The tank holds more than 6 L but less than 8 L. The whole number between = ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"between","after":8,"before":6},"promptText":"A tank holds more than 6 L but less than 8 L. It holds a whole number of liters. How many liters does the tank hold?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0366",
@@ -19002,7 +19002,7 @@ export const ITEMS = [
     structureType: "betweenEstimateMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"between","after":11,"before":9},"promptText":"A rope is a bit longer than 9 m and a bit shorter than 11 m. A whole-number estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"between","after":11,"before":9},"promptText":"A rope is more than 9 m long and less than 11 m long. Its length is a whole number of meters. How long is the rope in meters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0367",
@@ -19012,7 +19012,7 @@ export const ITEMS = [
     structureType: "betweenEstimateMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"between","after":14,"before":12},"promptText":"The tank holds more than 12 L but less than 14 L. The whole number between = ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"between","after":14,"before":12},"promptText":"A tank holds more than 12 L but less than 14 L. It holds a whole number of liters. How many liters does the tank hold?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0368",
@@ -19022,7 +19022,7 @@ export const ITEMS = [
     structureType: "betweenEstimateMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"between","after":6,"before":4},"promptText":"A rope is a bit longer than 4 m and a bit shorter than 6 m. A whole-number estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"between","after":6,"before":4},"promptText":"A rope is longer than 4 m but shorter than 6 m. Its length is a whole number of meters. How many meters long is the rope?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0369",
@@ -19032,7 +19032,7 @@ export const ITEMS = [
     structureType: "betweenEstimateMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"between","after":9,"before":7},"promptText":"The tank holds more than 7 L but less than 9 L. The whole number between = ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"between","after":9,"before":7},"promptText":"A tank holds more than 7 L but less than 9 L. It holds a whole number of liters. How many liters does the tank hold?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0370",
@@ -19042,7 +19042,7 @@ export const ITEMS = [
     structureType: "betweenEstimateMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"between","after":12,"before":10},"promptText":"A rope is a bit longer than 10 m and a bit shorter than 12 m. A whole-number estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"between","after":12,"before":10},"promptText":"A rope is more than 10 m long and less than 12 m long. Its length is a whole number of meters. How long is the rope in meters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0371",
@@ -19052,7 +19052,7 @@ export const ITEMS = [
     structureType: "betweenEstimateMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"between","after":17,"before":15},"promptText":"The tank holds more than 15 L but less than 17 L. The whole number between = ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"between","after":17,"before":15},"promptText":"A tank holds more than 15 L but less than 17 L. It holds a whole number of liters. How many liters does the tank hold?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0372",
@@ -19062,7 +19062,7 @@ export const ITEMS = [
     structureType: "betweenEstimateMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"between","after":7,"before":5},"promptText":"A rope is a bit longer than 5 m and a bit shorter than 7 m. A whole-number estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"between","after":7,"before":5},"promptText":"A rope is longer than 5 m but shorter than 7 m. Its length is a whole number of meters. How many meters long is the rope?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0373",
@@ -19072,7 +19072,7 @@ export const ITEMS = [
     structureType: "betweenEstimateMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"kind":"between","after":10,"before":8},"promptText":"The tank holds more than 8 L but less than 10 L. The whole number between = ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"kind":"between","after":10,"before":8},"promptText":"A tank holds more than 8 L but less than 10 L. It holds a whole number of liters. How many liters does the tank hold?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0374",
@@ -19082,7 +19082,7 @@ export const ITEMS = [
     structureType: "betweenEstimateMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"between","after":15,"before":13},"promptText":"A rope is a bit longer than 13 m and a bit shorter than 15 m. A whole-number estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"between","after":15,"before":13},"promptText":"A rope is more than 13 m long and less than 15 m long. Its length is a whole number of meters. How long is the rope in meters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0375",
@@ -19092,7 +19092,7 @@ export const ITEMS = [
     structureType: "betweenEstimateMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"between","after":18,"before":16},"promptText":"The tank holds more than 16 L but less than 18 L. The whole number between = ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"between","after":18,"before":16},"promptText":"A tank holds more than 16 L but less than 18 L. It holds a whole number of liters. How many liters does the tank hold?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0376",
@@ -19102,7 +19102,7 @@ export const ITEMS = [
     structureType: "betweenEstimateMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"kind":"between","after":4,"before":2},"promptText":"A rope is a bit longer than 2 m and a bit shorter than 4 m. A whole-number estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"kind":"between","after":4,"before":2},"promptText":"A rope is longer than 2 m but shorter than 4 m. Its length is a whole number of meters. How many meters long is the rope?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0377",
@@ -19112,7 +19112,7 @@ export const ITEMS = [
     structureType: "betweenEstimateMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"between","after":13,"before":11},"promptText":"The tank holds more than 11 L but less than 13 L. The whole number between = ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"between","after":13,"before":11},"promptText":"A tank holds more than 11 L but less than 13 L. It holds a whole number of liters. How many liters does the tank hold?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0378",
@@ -19122,7 +19122,7 @@ export const ITEMS = [
     structureType: "betweenEstimateMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"between","after":16,"before":14},"promptText":"A rope is a bit longer than 14 m and a bit shorter than 16 m. A whole-number estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"between","after":16,"before":14},"promptText":"A rope is more than 14 m long and less than 16 m long. Its length is a whole number of meters. How long is the rope in meters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0379",
@@ -19132,7 +19132,7 @@ export const ITEMS = [
     structureType: "betweenEstimateMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"between","after":19,"before":17},"promptText":"The tank holds more than 17 L but less than 19 L. The whole number between = ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"between","after":19,"before":17},"promptText":"A tank holds more than 17 L but less than 19 L. It holds a whole number of liters. How many liters does the tank hold?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0380",
@@ -19142,7 +19142,7 @@ export const ITEMS = [
     structureType: "betweenEstimateMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"between","after":20,"before":18},"promptText":"A rope is a bit longer than 18 m and a bit shorter than 20 m. A whole-number estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"between","after":20,"before":18},"promptText":"A rope is longer than 18 m but shorter than 20 m. Its length is a whole number of meters. How many meters long is the rope?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0381",
@@ -19152,7 +19152,7 @@ export const ITEMS = [
     structureType: "betweenEstimateMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"between","after":21,"before":19},"promptText":"The tank holds more than 19 L but less than 21 L. The whole number between = ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"between","after":21,"before":19},"promptText":"A tank holds more than 19 L but less than 21 L. It holds a whole number of liters. How many liters does the tank hold?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0382",
@@ -19162,7 +19162,7 @@ export const ITEMS = [
     structureType: "betweenEstimateMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"counting":{"kind":"between","after":22,"before":20},"promptText":"A rope is a bit longer than 20 m and a bit shorter than 22 m. A whole-number estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"counting":{"kind":"between","after":22,"before":20},"promptText":"A rope is more than 20 m long and less than 22 m long. Its length is a whole number of meters. How long is the rope in meters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0383",
@@ -19172,7 +19172,7 @@ export const ITEMS = [
     structureType: "betweenEstimateMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"counting":{"kind":"between","after":24,"before":22},"promptText":"The tank holds more than 22 L but less than 24 L. The whole number between = ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"counting":{"kind":"between","after":24,"before":22},"promptText":"A tank holds more than 22 L but less than 24 L. It holds a whole number of liters. How many liters does the tank hold?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0384",
@@ -19182,7 +19182,7 @@ export const ITEMS = [
     structureType: "betweenEstimateMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"kind":"between","after":26,"before":24},"promptText":"A rope is a bit longer than 24 m and a bit shorter than 26 m. A whole-number estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"kind":"between","after":26,"before":24},"promptText":"A rope is longer than 24 m but shorter than 26 m. Its length is a whole number of meters. How many meters long is the rope?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0385",
@@ -19192,7 +19192,7 @@ export const ITEMS = [
     structureType: "betweenEstimateMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"counting":{"kind":"between","after":28,"before":26},"promptText":"The tank holds more than 26 L but less than 28 L. The whole number between = ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"counting":{"kind":"between","after":28,"before":26},"promptText":"A tank holds more than 26 L but less than 28 L. It holds a whole number of liters. How many liters does the tank hold?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0386",
@@ -19202,7 +19202,7 @@ export const ITEMS = [
     structureType: "betweenEstimateMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"counting":{"kind":"between","after":30,"before":28},"promptText":"A rope is a bit longer than 28 m and a bit shorter than 30 m. A whole-number estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"counting":{"kind":"between","after":30,"before":28},"promptText":"A rope is more than 28 m long and less than 30 m long. Its length is a whole number of meters. How long is the rope in meters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0387",
@@ -19212,7 +19212,7 @@ export const ITEMS = [
     structureType: "betweenEstimateMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"counting":{"kind":"between","after":32,"before":30},"promptText":"The tank holds more than 30 L but less than 32 L. The whole number between = ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"counting":{"kind":"between","after":32,"before":30},"promptText":"A tank holds more than 30 L but less than 32 L. It holds a whole number of liters. How many liters does the tank hold?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0388",
@@ -19222,7 +19222,7 @@ export const ITEMS = [
     structureType: "betweenEstimateMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"counting":{"kind":"between","after":34,"before":32},"promptText":"A rope is a bit longer than 32 m and a bit shorter than 34 m. A whole-number estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"counting":{"kind":"between","after":34,"before":32},"promptText":"A rope is longer than 32 m but shorter than 34 m. Its length is a whole number of meters. How many meters long is the rope?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0389",
@@ -19232,7 +19232,7 @@ export const ITEMS = [
     structureType: "betweenEstimateMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"kind":"between","after":36,"before":34},"promptText":"The tank holds more than 34 L but less than 36 L. The whole number between = ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"kind":"between","after":36,"before":34},"promptText":"A tank holds more than 34 L but less than 36 L. It holds a whole number of liters. How many liters does the tank hold?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0390",
@@ -19242,7 +19242,7 @@ export const ITEMS = [
     structureType: "roundTenMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"measure":{"n":23,"kind":"roundTen"},"promptText":"A stick measures 23 cm. To the nearest ten, that is ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"measure":{"n":23,"kind":"roundTen"},"promptText":"A stick is 23 cm long. How long is the stick to the nearest ten centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0391",
@@ -19252,7 +19252,7 @@ export const ITEMS = [
     structureType: "roundTenMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"measure":{"n":48,"kind":"roundTen"},"promptText":"A stick measures 48 cm. To the nearest ten, that is ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"measure":{"n":48,"kind":"roundTen"},"promptText":"A stick measures 48 cm. Rounded to the nearest ten, how many centimeters long is the stick?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0392",
@@ -19262,7 +19262,7 @@ export const ITEMS = [
     structureType: "roundTenMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"measure":{"n":67,"kind":"roundTen"},"promptText":"A stick measures 67 cm. To the nearest ten, that is ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"measure":{"n":67,"kind":"roundTen"},"promptText":"A stick is 67 cm long. How long is the stick to the nearest ten centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0393",
@@ -19272,7 +19272,7 @@ export const ITEMS = [
     structureType: "roundTenMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"measure":{"n":82,"kind":"roundTen"},"promptText":"A stick measures 82 cm. To the nearest ten, that is ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"measure":{"n":82,"kind":"roundTen"},"promptText":"A stick measures 82 cm. Rounded to the nearest ten, how many centimeters long is the stick?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0394",
@@ -19282,7 +19282,7 @@ export const ITEMS = [
     structureType: "roundTenMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"measure":{"n":35,"kind":"roundTen"},"promptText":"A stick measures 35 cm. To the nearest ten, that is ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"measure":{"n":35,"kind":"roundTen"},"promptText":"A stick is 35 cm long. How long is the stick to the nearest ten centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0395",
@@ -19292,7 +19292,7 @@ export const ITEMS = [
     structureType: "roundTenMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"measure":{"n":71,"kind":"roundTen"},"promptText":"A stick measures 71 cm. To the nearest ten, that is ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"measure":{"n":71,"kind":"roundTen"},"promptText":"A stick measures 71 cm. Rounded to the nearest ten, how many centimeters long is the stick?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0396",
@@ -19302,7 +19302,7 @@ export const ITEMS = [
     structureType: "roundTenMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"measure":{"n":56,"kind":"roundTen"},"promptText":"A stick measures 56 cm. To the nearest ten, that is ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"measure":{"n":56,"kind":"roundTen"},"promptText":"A stick is 56 cm long. How long is the stick to the nearest ten centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0397",
@@ -19312,7 +19312,7 @@ export const ITEMS = [
     structureType: "roundTenMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"measure":{"n":94,"kind":"roundTen"},"promptText":"A stick measures 94 cm. To the nearest ten, that is ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"measure":{"n":94,"kind":"roundTen"},"promptText":"A stick measures 94 cm. Rounded to the nearest ten, how many centimeters long is the stick?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0398",
@@ -19322,7 +19322,7 @@ export const ITEMS = [
     structureType: "roundTenMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"measure":{"n":12,"kind":"roundTen"},"promptText":"A stick measures 12 cm. To the nearest ten, that is ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"measure":{"n":12,"kind":"roundTen"},"promptText":"A stick is 12 cm long. How long is the stick to the nearest ten centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0399",
@@ -19332,7 +19332,7 @@ export const ITEMS = [
     structureType: "roundTenMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"measure":{"n":39,"kind":"roundTen"},"promptText":"A stick measures 39 cm. To the nearest ten, that is ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"measure":{"n":39,"kind":"roundTen"},"promptText":"A stick measures 39 cm. Rounded to the nearest ten, how many centimeters long is the stick?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0400",
@@ -19342,7 +19342,7 @@ export const ITEMS = [
     structureType: "roundTenMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"measure":{"n":65,"kind":"roundTen"},"promptText":"A stick measures 65 cm. To the nearest ten, that is ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"measure":{"n":65,"kind":"roundTen"},"promptText":"A stick is 65 cm long. How long is the stick to the nearest ten centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0401",
@@ -19352,7 +19352,7 @@ export const ITEMS = [
     structureType: "roundTenMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"measure":{"n":88,"kind":"roundTen"},"promptText":"A stick measures 88 cm. To the nearest ten, that is ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"measure":{"n":88,"kind":"roundTen"},"promptText":"A stick measures 88 cm. Rounded to the nearest ten, how many centimeters long is the stick?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0402",
@@ -19362,7 +19362,7 @@ export const ITEMS = [
     structureType: "roundTenMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"measure":{"n":27,"kind":"roundTen"},"promptText":"A stick measures 27 cm. To the nearest ten, that is ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"measure":{"n":27,"kind":"roundTen"},"promptText":"A stick is 27 cm long. How long is the stick to the nearest ten centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0403",
@@ -19372,7 +19372,7 @@ export const ITEMS = [
     structureType: "roundTenMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"measure":{"n":53,"kind":"roundTen"},"promptText":"A stick measures 53 cm. To the nearest ten, that is ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"measure":{"n":53,"kind":"roundTen"},"promptText":"A stick measures 53 cm. Rounded to the nearest ten, how many centimeters long is the stick?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0404",
@@ -19382,7 +19382,7 @@ export const ITEMS = [
     structureType: "roundTenMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"measure":{"n":76,"kind":"roundTen"},"promptText":"A stick measures 76 cm. To the nearest ten, that is ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"measure":{"n":76,"kind":"roundTen"},"promptText":"A stick is 76 cm long. How long is the stick to the nearest ten centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0405",
@@ -19392,7 +19392,7 @@ export const ITEMS = [
     structureType: "roundTenMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"measure":{"n":91,"kind":"roundTen"},"promptText":"A stick measures 91 cm. To the nearest ten, that is ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"measure":{"n":91,"kind":"roundTen"},"promptText":"A stick measures 91 cm. Rounded to the nearest ten, how many centimeters long is the stick?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0406",
@@ -19402,7 +19402,7 @@ export const ITEMS = [
     structureType: "roundTenMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"measure":{"n":44,"kind":"roundTen"},"promptText":"A stick measures 44 cm. To the nearest ten, that is ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"measure":{"n":44,"kind":"roundTen"},"promptText":"A stick is 44 cm long. How long is the stick to the nearest ten centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0407",
@@ -19412,7 +19412,7 @@ export const ITEMS = [
     structureType: "roundTenMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"measure":{"n":62,"kind":"roundTen"},"promptText":"A stick measures 62 cm. To the nearest ten, that is ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"measure":{"n":62,"kind":"roundTen"},"promptText":"A stick measures 62 cm. Rounded to the nearest ten, how many centimeters long is the stick?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0408",
@@ -19422,7 +19422,7 @@ export const ITEMS = [
     structureType: "roundTenMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"measure":{"n":18,"kind":"roundTen"},"promptText":"A stick measures 18 cm. To the nearest ten, that is ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"measure":{"n":18,"kind":"roundTen"},"promptText":"A stick is 18 cm long. How long is the stick to the nearest ten centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0409",
@@ -19432,7 +19432,7 @@ export const ITEMS = [
     structureType: "roundTenMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"measure":{"n":85,"kind":"roundTen"},"promptText":"A stick measures 85 cm. To the nearest ten, that is ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"measure":{"n":85,"kind":"roundTen"},"promptText":"A stick measures 85 cm. Rounded to the nearest ten, how many centimeters long is the stick?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0410",
@@ -19442,7 +19442,7 @@ export const ITEMS = [
     structureType: "roundTenMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"measure":{"n":31,"kind":"roundTen"},"promptText":"A stick measures 31 cm. To the nearest ten, that is ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"measure":{"n":31,"kind":"roundTen"},"promptText":"A stick is 31 cm long. How long is the stick to the nearest ten centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0411",
@@ -19452,7 +19452,7 @@ export const ITEMS = [
     structureType: "roundTenMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"measure":{"n":59,"kind":"roundTen"},"promptText":"A stick measures 59 cm. To the nearest ten, that is ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"measure":{"n":59,"kind":"roundTen"},"promptText":"A stick measures 59 cm. Rounded to the nearest ten, how many centimeters long is the stick?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0412",
@@ -19462,7 +19462,7 @@ export const ITEMS = [
     structureType: "roundTenMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"measure":{"n":73,"kind":"roundTen"},"promptText":"A stick measures 73 cm. To the nearest ten, that is ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"measure":{"n":73,"kind":"roundTen"},"promptText":"A stick is 73 cm long. How long is the stick to the nearest ten centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0413",
@@ -19472,7 +19472,7 @@ export const ITEMS = [
     structureType: "roundTenMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"measure":{"n":97,"kind":"roundTen"},"promptText":"A stick measures 97 cm. To the nearest ten, that is ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"measure":{"n":97,"kind":"roundTen"},"promptText":"A stick measures 97 cm. Rounded to the nearest ten, how many centimeters long is the stick?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0414",
@@ -19482,7 +19482,7 @@ export const ITEMS = [
     structureType: "roundTenMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"measure":{"n":46,"kind":"roundTen"},"promptText":"A stick measures 46 cm. To the nearest ten, that is ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"measure":{"n":46,"kind":"roundTen"},"promptText":"A stick is 46 cm long. How long is the stick to the nearest ten centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0415",
@@ -19492,7 +19492,7 @@ export const ITEMS = [
     structureType: "roundTenMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"measure":{"n":64,"kind":"roundTen"},"promptText":"A stick measures 64 cm. To the nearest ten, that is ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"measure":{"n":64,"kind":"roundTen"},"promptText":"A stick measures 64 cm. Rounded to the nearest ten, how many centimeters long is the stick?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0416",
@@ -19502,7 +19502,7 @@ export const ITEMS = [
     structureType: "roundHundredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"measure":{"n":234,"kind":"roundHundred"},"promptText":"A trail measures 234 m. To the nearest hundred, that is ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"measure":{"n":234,"kind":"roundHundred"},"promptText":"A trail is 234 m long. How long is the trail to the nearest hundred meters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0417",
@@ -19512,7 +19512,7 @@ export const ITEMS = [
     structureType: "roundHundredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":500,"display":{"measure":{"n":481,"kind":"roundHundred"},"promptText":"A trail measures 481 m. To the nearest hundred, that is ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":500,"display":{"measure":{"n":481,"kind":"roundHundred"},"promptText":"A trail measures 481 m. Rounded to the nearest hundred, how many meters long is the trail?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0418",
@@ -19522,7 +19522,7 @@ export const ITEMS = [
     structureType: "roundHundredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":700,"display":{"measure":{"n":672,"kind":"roundHundred"},"promptText":"A trail measures 672 m. To the nearest hundred, that is ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":700,"display":{"measure":{"n":672,"kind":"roundHundred"},"promptText":"A trail is 672 m long. How long is the trail to the nearest hundred meters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0419",
@@ -19532,7 +19532,7 @@ export const ITEMS = [
     structureType: "roundHundredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":800,"display":{"measure":{"n":828,"kind":"roundHundred"},"promptText":"A trail measures 828 m. To the nearest hundred, that is ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":800,"display":{"measure":{"n":828,"kind":"roundHundred"},"promptText":"A trail measures 828 m. Rounded to the nearest hundred, how many meters long is the trail?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0420",
@@ -19542,7 +19542,7 @@ export const ITEMS = [
     structureType: "roundHundredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":400,"display":{"measure":{"n":351,"kind":"roundHundred"},"promptText":"A trail measures 351 m. To the nearest hundred, that is ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":400,"display":{"measure":{"n":351,"kind":"roundHundred"},"promptText":"A trail is 351 m long. How long is the trail to the nearest hundred meters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0421",
@@ -19552,7 +19552,7 @@ export const ITEMS = [
     structureType: "roundHundredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":700,"display":{"measure":{"n":719,"kind":"roundHundred"},"promptText":"A trail measures 719 m. To the nearest hundred, that is ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":700,"display":{"measure":{"n":719,"kind":"roundHundred"},"promptText":"A trail measures 719 m. Rounded to the nearest hundred, how many meters long is the trail?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0422",
@@ -19562,7 +19562,7 @@ export const ITEMS = [
     structureType: "roundHundredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":600,"display":{"measure":{"n":564,"kind":"roundHundred"},"promptText":"A trail measures 564 m. To the nearest hundred, that is ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":600,"display":{"measure":{"n":564,"kind":"roundHundred"},"promptText":"A trail is 564 m long. How long is the trail to the nearest hundred meters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0423",
@@ -19572,7 +19572,7 @@ export const ITEMS = [
     structureType: "roundHundredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":900,"display":{"measure":{"n":947,"kind":"roundHundred"},"promptText":"A trail measures 947 m. To the nearest hundred, that is ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":900,"display":{"measure":{"n":947,"kind":"roundHundred"},"promptText":"A trail measures 947 m. Rounded to the nearest hundred, how many meters long is the trail?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0424",
@@ -19582,7 +19582,7 @@ export const ITEMS = [
     structureType: "roundHundredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"measure":{"n":128,"kind":"roundHundred"},"promptText":"A trail measures 128 m. To the nearest hundred, that is ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"measure":{"n":128,"kind":"roundHundred"},"promptText":"A trail is 128 m long. How long is the trail to the nearest hundred meters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0425",
@@ -19592,7 +19592,7 @@ export const ITEMS = [
     structureType: "roundHundredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":400,"display":{"measure":{"n":393,"kind":"roundHundred"},"promptText":"A trail measures 393 m. To the nearest hundred, that is ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":400,"display":{"measure":{"n":393,"kind":"roundHundred"},"promptText":"A trail measures 393 m. Rounded to the nearest hundred, how many meters long is the trail?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0426",
@@ -19602,7 +19602,7 @@ export const ITEMS = [
     structureType: "roundHundredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":700,"display":{"measure":{"n":655,"kind":"roundHundred"},"promptText":"A trail measures 655 m. To the nearest hundred, that is ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":700,"display":{"measure":{"n":655,"kind":"roundHundred"},"promptText":"A trail is 655 m long. How long is the trail to the nearest hundred meters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0427",
@@ -19612,7 +19612,7 @@ export const ITEMS = [
     structureType: "roundHundredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":900,"display":{"measure":{"n":882,"kind":"roundHundred"},"promptText":"A trail measures 882 m. To the nearest hundred, that is ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":900,"display":{"measure":{"n":882,"kind":"roundHundred"},"promptText":"A trail measures 882 m. Rounded to the nearest hundred, how many meters long is the trail?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0428",
@@ -19622,7 +19622,7 @@ export const ITEMS = [
     structureType: "roundHundredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":300,"display":{"measure":{"n":273,"kind":"roundHundred"},"promptText":"A trail measures 273 m. To the nearest hundred, that is ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":300,"display":{"measure":{"n":273,"kind":"roundHundred"},"promptText":"A trail is 273 m long. How long is the trail to the nearest hundred meters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0429",
@@ -19632,7 +19632,7 @@ export const ITEMS = [
     structureType: "roundHundredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":500,"display":{"measure":{"n":536,"kind":"roundHundred"},"promptText":"A trail measures 536 m. To the nearest hundred, that is ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":500,"display":{"measure":{"n":536,"kind":"roundHundred"},"promptText":"A trail measures 536 m. Rounded to the nearest hundred, how many meters long is the trail?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0430",
@@ -19642,7 +19642,7 @@ export const ITEMS = [
     structureType: "roundHundredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":800,"display":{"measure":{"n":764,"kind":"roundHundred"},"promptText":"A trail measures 764 m. To the nearest hundred, that is ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":800,"display":{"measure":{"n":764,"kind":"roundHundred"},"promptText":"A trail is 764 m long. How long is the trail to the nearest hundred meters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0431",
@@ -19652,7 +19652,7 @@ export const ITEMS = [
     structureType: "roundHundredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":900,"display":{"measure":{"n":915,"kind":"roundHundred"},"promptText":"A trail measures 915 m. To the nearest hundred, that is ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":900,"display":{"measure":{"n":915,"kind":"roundHundred"},"promptText":"A trail measures 915 m. Rounded to the nearest hundred, how many meters long is the trail?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0432",
@@ -19662,7 +19662,7 @@ export const ITEMS = [
     structureType: "roundHundredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":400,"display":{"measure":{"n":442,"kind":"roundHundred"},"promptText":"A trail measures 442 m. To the nearest hundred, that is ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":400,"display":{"measure":{"n":442,"kind":"roundHundred"},"promptText":"A trail is 442 m long. How long is the trail to the nearest hundred meters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0433",
@@ -19672,7 +19672,7 @@ export const ITEMS = [
     structureType: "roundHundredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":600,"display":{"measure":{"n":621,"kind":"roundHundred"},"promptText":"A trail measures 621 m. To the nearest hundred, that is ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":600,"display":{"measure":{"n":621,"kind":"roundHundred"},"promptText":"A trail measures 621 m. Rounded to the nearest hundred, how many meters long is the trail?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0434",
@@ -19682,7 +19682,7 @@ export const ITEMS = [
     structureType: "roundHundredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"measure":{"n":187,"kind":"roundHundred"},"promptText":"A trail measures 187 m. To the nearest hundred, that is ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"measure":{"n":187,"kind":"roundHundred"},"promptText":"A trail is 187 m long. How long is the trail to the nearest hundred meters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0435",
@@ -19692,7 +19692,7 @@ export const ITEMS = [
     structureType: "roundHundredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":900,"display":{"measure":{"n":858,"kind":"roundHundred"},"promptText":"A trail measures 858 m. To the nearest hundred, that is ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":900,"display":{"measure":{"n":858,"kind":"roundHundred"},"promptText":"A trail measures 858 m. Rounded to the nearest hundred, how many meters long is the trail?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0436",
@@ -19702,7 +19702,7 @@ export const ITEMS = [
     structureType: "roundHundredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":300,"display":{"measure":{"n":316,"kind":"roundHundred"},"promptText":"A trail measures 316 m. To the nearest hundred, that is ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":300,"display":{"measure":{"n":316,"kind":"roundHundred"},"promptText":"A trail is 316 m long. How long is the trail to the nearest hundred meters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0437",
@@ -19712,7 +19712,7 @@ export const ITEMS = [
     structureType: "roundHundredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":600,"display":{"measure":{"n":592,"kind":"roundHundred"},"promptText":"A trail measures 592 m. To the nearest hundred, that is ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":600,"display":{"measure":{"n":592,"kind":"roundHundred"},"promptText":"A trail measures 592 m. Rounded to the nearest hundred, how many meters long is the trail?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0438",
@@ -19722,7 +19722,7 @@ export const ITEMS = [
     structureType: "roundHundredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":700,"display":{"measure":{"n":731,"kind":"roundHundred"},"promptText":"A trail measures 731 m. To the nearest hundred, that is ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":700,"display":{"measure":{"n":731,"kind":"roundHundred"},"promptText":"A trail is 731 m long. How long is the trail to the nearest hundred meters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0439",
@@ -19732,7 +19732,7 @@ export const ITEMS = [
     structureType: "roundHundredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1000,"display":{"measure":{"n":976,"kind":"roundHundred"},"promptText":"A trail measures 976 m. To the nearest hundred, that is ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1000,"display":{"measure":{"n":976,"kind":"roundHundred"},"promptText":"A trail measures 976 m. Rounded to the nearest hundred, how many meters long is the trail?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0440",
@@ -19742,7 +19742,7 @@ export const ITEMS = [
     structureType: "roundHundredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":500,"display":{"measure":{"n":468,"kind":"roundHundred"},"promptText":"A trail measures 468 m. To the nearest hundred, that is ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":500,"display":{"measure":{"n":468,"kind":"roundHundred"},"promptText":"A trail is 468 m long. How long is the trail to the nearest hundred meters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0441",
@@ -19752,7 +19752,7 @@ export const ITEMS = [
     structureType: "roundHundredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":600,"display":{"measure":{"n":649,"kind":"roundHundred"},"promptText":"A trail measures 649 m. To the nearest hundred, that is ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":600,"display":{"measure":{"n":649,"kind":"roundHundred"},"promptText":"A trail measures 649 m. Rounded to the nearest hundred, how many meters long is the trail?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0442",
@@ -19762,7 +19762,7 @@ export const ITEMS = [
     structureType: "midEstimateBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"counting":{"kind":"between","after":210,"before":190},"promptText":"A path is between 190 m and 210 m long. The halfway estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"counting":{"kind":"between","after":210,"before":190},"promptText":"A path is between 190 m and 210 m long. For a good estimate, use the length halfway between. How many meters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0443",
@@ -19772,7 +19772,7 @@ export const ITEMS = [
     structureType: "midEstimateBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":295,"display":{"counting":{"kind":"between","after":310,"before":280},"promptText":"A path is between 280 m and 310 m long. The halfway estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":295,"display":{"counting":{"kind":"between","after":310,"before":280},"promptText":"What length is halfway between 280 m and 310 m?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0444",
@@ -19782,7 +19782,7 @@ export const ITEMS = [
     structureType: "midEstimateBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":405,"display":{"counting":{"kind":"between","after":420,"before":390},"promptText":"A path is between 390 m and 420 m long. The halfway estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":405,"display":{"counting":{"kind":"between","after":420,"before":390},"promptText":"A path is between 390 m and 420 m long. For a good estimate, use the length halfway between. How many meters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0445",
@@ -19792,7 +19792,7 @@ export const ITEMS = [
     structureType: "midEstimateBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":500,"display":{"counting":{"kind":"between","after":520,"before":480},"promptText":"A path is between 480 m and 520 m long. The halfway estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":500,"display":{"counting":{"kind":"between","after":520,"before":480},"promptText":"What length is halfway between 480 m and 520 m?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0446",
@@ -19802,7 +19802,7 @@ export const ITEMS = [
     structureType: "midEstimateBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"counting":{"kind":"between","after":230,"before":170},"promptText":"A path is between 170 m and 230 m long. The halfway estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"counting":{"kind":"between","after":230,"before":170},"promptText":"A path is between 170 m and 230 m long. For a good estimate, use the length halfway between. How many meters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0447",
@@ -19812,7 +19812,7 @@ export const ITEMS = [
     structureType: "midEstimateBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":295,"display":{"counting":{"kind":"between","after":320,"before":270},"promptText":"A path is between 270 m and 320 m long. The halfway estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":295,"display":{"counting":{"kind":"between","after":320,"before":270},"promptText":"What length is halfway between 270 m and 320 m?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0448",
@@ -19822,7 +19822,7 @@ export const ITEMS = [
     structureType: "midEstimateBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":395,"display":{"counting":{"kind":"between","after":410,"before":380},"promptText":"A path is between 380 m and 410 m long. The halfway estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":395,"display":{"counting":{"kind":"between","after":410,"before":380},"promptText":"A path is between 380 m and 410 m long. For a good estimate, use the length halfway between. How many meters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0449",
@@ -19832,7 +19832,7 @@ export const ITEMS = [
     structureType: "midEstimateBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":505,"display":{"counting":{"kind":"between","after":540,"before":470},"promptText":"A path is between 470 m and 540 m long. The halfway estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":505,"display":{"counting":{"kind":"between","after":540,"before":470},"promptText":"What length is halfway between 470 m and 540 m?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0450",
@@ -19842,7 +19842,7 @@ export const ITEMS = [
     structureType: "midEstimateBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"counting":{"kind":"between","after":220,"before":180},"promptText":"A path is between 180 m and 220 m long. The halfway estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"counting":{"kind":"between","after":220,"before":180},"promptText":"A path is between 180 m and 220 m long. For a good estimate, use the length halfway between. How many meters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0451",
@@ -19852,7 +19852,7 @@ export const ITEMS = [
     structureType: "midEstimateBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":310,"display":{"counting":{"kind":"between","after":330,"before":290},"promptText":"A path is between 290 m and 330 m long. The halfway estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":310,"display":{"counting":{"kind":"between","after":330,"before":290},"promptText":"What length is halfway between 290 m and 330 m?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0452",
@@ -19862,7 +19862,7 @@ export const ITEMS = [
     structureType: "midEstimateBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":400,"display":{"counting":{"kind":"between","after":430,"before":370},"promptText":"A path is between 370 m and 430 m long. The halfway estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":400,"display":{"counting":{"kind":"between","after":430,"before":370},"promptText":"A path is between 370 m and 430 m long. For a good estimate, use the length halfway between. How many meters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0453",
@@ -19872,7 +19872,7 @@ export const ITEMS = [
     structureType: "midEstimateBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":495,"display":{"counting":{"kind":"between","after":530,"before":460},"promptText":"A path is between 460 m and 530 m long. The halfway estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":495,"display":{"counting":{"kind":"between","after":530,"before":460},"promptText":"What length is halfway between 460 m and 530 m?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0454",
@@ -19882,7 +19882,7 @@ export const ITEMS = [
     structureType: "midEstimateBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"counting":{"kind":"between","after":240,"before":160},"promptText":"A path is between 160 m and 240 m long. The halfway estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"counting":{"kind":"between","after":240,"before":160},"promptText":"A path is between 160 m and 240 m long. For a good estimate, use the length halfway between. How many meters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0455",
@@ -19892,7 +19892,7 @@ export const ITEMS = [
     structureType: "midEstimateBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":300,"display":{"counting":{"kind":"between","after":340,"before":260},"promptText":"A path is between 260 m and 340 m long. The halfway estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":300,"display":{"counting":{"kind":"between","after":340,"before":260},"promptText":"What length is halfway between 260 m and 340 m?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0456",
@@ -19902,7 +19902,7 @@ export const ITEMS = [
     structureType: "midEstimateBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":400,"display":{"counting":{"kind":"between","after":440,"before":360},"promptText":"A path is between 360 m and 440 m long. The halfway estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":400,"display":{"counting":{"kind":"between","after":440,"before":360},"promptText":"A path is between 360 m and 440 m long. For a good estimate, use the length halfway between. How many meters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0457",
@@ -19912,7 +19912,7 @@ export const ITEMS = [
     structureType: "midEstimateBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":500,"display":{"counting":{"kind":"between","after":510,"before":490},"promptText":"A path is between 490 m and 510 m long. The halfway estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":500,"display":{"counting":{"kind":"between","after":510,"before":490},"promptText":"What length is halfway between 490 m and 510 m?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0458",
@@ -19922,7 +19922,7 @@ export const ITEMS = [
     structureType: "midEstimateBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"counting":{"kind":"between","after":260,"before":140},"promptText":"A path is between 140 m and 260 m long. The halfway estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"counting":{"kind":"between","after":260,"before":140},"promptText":"A path is between 140 m and 260 m long. For a good estimate, use the length halfway between. How many meters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0459",
@@ -19932,7 +19932,7 @@ export const ITEMS = [
     structureType: "midEstimateBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":300,"display":{"counting":{"kind":"between","after":360,"before":240},"promptText":"A path is between 240 m and 360 m long. The halfway estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":300,"display":{"counting":{"kind":"between","after":360,"before":240},"promptText":"What length is halfway between 240 m and 360 m?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0460",
@@ -19942,7 +19942,7 @@ export const ITEMS = [
     structureType: "midEstimateBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":400,"display":{"counting":{"kind":"between","after":460,"before":340},"promptText":"A path is between 340 m and 460 m long. The halfway estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":400,"display":{"counting":{"kind":"between","after":460,"before":340},"promptText":"A path is between 340 m and 460 m long. For a good estimate, use the length halfway between. How many meters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0461",
@@ -19952,7 +19952,7 @@ export const ITEMS = [
     structureType: "midEstimateBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":500,"display":{"counting":{"kind":"between","after":560,"before":440},"promptText":"A path is between 440 m and 560 m long. The halfway estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":500,"display":{"counting":{"kind":"between","after":560,"before":440},"promptText":"What length is halfway between 440 m and 560 m?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0462",
@@ -19962,7 +19962,7 @@ export const ITEMS = [
     structureType: "midEstimateBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"counting":{"kind":"between","after":250,"before":150},"promptText":"A path is between 150 m and 250 m long. The halfway estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"counting":{"kind":"between","after":250,"before":150},"promptText":"A path is between 150 m and 250 m long. For a good estimate, use the length halfway between. How many meters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0463",
@@ -19972,7 +19972,7 @@ export const ITEMS = [
     structureType: "midEstimateBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":300,"display":{"counting":{"kind":"between","after":350,"before":250},"promptText":"A path is between 250 m and 350 m long. The halfway estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":300,"display":{"counting":{"kind":"between","after":350,"before":250},"promptText":"What length is halfway between 250 m and 350 m?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0464",
@@ -19982,7 +19982,7 @@ export const ITEMS = [
     structureType: "midEstimateBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":400,"display":{"counting":{"kind":"between","after":450,"before":350},"promptText":"A path is between 350 m and 450 m long. The halfway estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":400,"display":{"counting":{"kind":"between","after":450,"before":350},"promptText":"A path is between 350 m and 450 m long. For a good estimate, use the length halfway between. How many meters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0465",
@@ -19992,7 +19992,7 @@ export const ITEMS = [
     structureType: "midEstimateBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":500,"display":{"counting":{"kind":"between","after":550,"before":450},"promptText":"A path is between 450 m and 550 m long. The halfway estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":500,"display":{"counting":{"kind":"between","after":550,"before":450},"promptText":"What length is halfway between 450 m and 550 m?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0466",
@@ -20002,7 +20002,7 @@ export const ITEMS = [
     structureType: "midEstimateBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"counting":{"kind":"between","after":270,"before":130},"promptText":"A path is between 130 m and 270 m long. The halfway estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"counting":{"kind":"between","after":270,"before":130},"promptText":"A path is between 130 m and 270 m long. For a good estimate, use the length halfway between. How many meters is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0467",
@@ -20012,7 +20012,7 @@ export const ITEMS = [
     structureType: "midEstimateBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":300,"display":{"counting":{"kind":"between","after":370,"before":230},"promptText":"A path is between 230 m and 370 m long. The halfway estimate = ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":300,"display":{"counting":{"kind":"between","after":370,"before":230},"promptText":"What length is halfway between 230 m and 370 m?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0468",
@@ -20282,7 +20282,7 @@ export const ITEMS = [
     structureType: "differenceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":8,"kind":"gap","target":15},"promptText":"15 cm is more than 8 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":8,"kind":"gap","target":15},"promptText":"How much longer is 15 cm than 8 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0495",
@@ -20292,7 +20292,7 @@ export const ITEMS = [
     structureType: "differenceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":9,"kind":"gap","target":18},"promptText":"18 m is more than 9 m by ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":9,"kind":"gap","target":18},"promptText":"18 m is how many meters longer than 9 m?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0496",
@@ -20302,7 +20302,7 @@ export const ITEMS = [
     structureType: "differenceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":5,"kind":"gap","target":12},"promptText":"12 g is more than 5 g by ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":5,"kind":"gap","target":12},"promptText":"How much heavier is 12 g than 5 g?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0497",
@@ -20312,7 +20312,7 @@ export const ITEMS = [
     structureType: "differenceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":11,"kind":"gap","target":20},"promptText":"20 L is more than 11 L by ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":11,"kind":"gap","target":20},"promptText":"20 L is how many liters more than 11 L?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0498",
@@ -20322,7 +20322,7 @@ export const ITEMS = [
     structureType: "differenceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":7,"kind":"gap","target":16},"promptText":"16 kg is more than 7 kg by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":7,"kind":"gap","target":16},"promptText":"How much heavier is 16 kg than 7 kg?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0499",
@@ -20332,7 +20332,7 @@ export const ITEMS = [
     structureType: "differenceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":6,"kind":"gap","target":14},"promptText":"14 mm is more than 6 mm by ? mm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":6,"kind":"gap","target":14},"promptText":"14 mm is how many millimeters longer than 6 mm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0500",
@@ -20342,7 +20342,7 @@ export const ITEMS = [
     structureType: "differenceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":12,"kind":"gap","target":19},"promptText":"19 cm is more than 12 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":12,"kind":"gap","target":19},"promptText":"How much longer is 19 cm than 12 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0501",
@@ -20352,7 +20352,7 @@ export const ITEMS = [
     structureType: "differenceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":8,"kind":"gap","target":17},"promptText":"17 m is more than 8 m by ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":8,"kind":"gap","target":17},"promptText":"17 m is how many meters longer than 8 m?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0502",
@@ -20362,7 +20362,7 @@ export const ITEMS = [
     structureType: "differenceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":4,"kind":"gap","target":13},"promptText":"13 g is more than 4 g by ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":4,"kind":"gap","target":13},"promptText":"How much heavier is 13 g than 4 g?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0503",
@@ -20372,7 +20372,7 @@ export const ITEMS = [
     structureType: "differenceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":2,"kind":"gap","target":11},"promptText":"11 L is more than 2 L by ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":2,"kind":"gap","target":11},"promptText":"11 L is how many liters more than 2 L?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0504",
@@ -20382,7 +20382,7 @@ export const ITEMS = [
     structureType: "differenceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":14,"kind":"gap","target":20},"promptText":"20 kg is more than 14 kg by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":14,"kind":"gap","target":20},"promptText":"How much heavier is 20 kg than 14 kg?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0505",
@@ -20392,7 +20392,7 @@ export const ITEMS = [
     structureType: "differenceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":13,"kind":"gap","target":18},"promptText":"18 mm is more than 13 mm by ? mm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":13,"kind":"gap","target":18},"promptText":"18 mm is how many millimeters longer than 13 mm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0506",
@@ -20402,7 +20402,7 @@ export const ITEMS = [
     structureType: "differenceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":9,"kind":"gap","target":16},"promptText":"16 cm is more than 9 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":9,"kind":"gap","target":16},"promptText":"How much longer is 16 cm than 9 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0507",
@@ -20412,7 +20412,7 @@ export const ITEMS = [
     structureType: "differenceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":4,"kind":"gap","target":15},"promptText":"15 m is more than 4 m by ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":4,"kind":"gap","target":15},"promptText":"15 m is how many meters longer than 4 m?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0508",
@@ -20422,7 +20422,7 @@ export const ITEMS = [
     structureType: "differenceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":6,"kind":"gap","target":19},"promptText":"19 g is more than 6 g by ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":6,"kind":"gap","target":19},"promptText":"How much heavier is 19 g than 6 g?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0509",
@@ -20432,7 +20432,7 @@ export const ITEMS = [
     structureType: "differenceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":7,"kind":"gap","target":12},"promptText":"12 L is more than 7 L by ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":7,"kind":"gap","target":12},"promptText":"12 L is how many liters more than 7 L?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0510",
@@ -20442,7 +20442,7 @@ export const ITEMS = [
     structureType: "differenceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":10,"kind":"gap","target":17},"promptText":"17 kg is more than 10 kg by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":10,"kind":"gap","target":17},"promptText":"How much heavier is 17 kg than 10 kg?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0511",
@@ -20452,7 +20452,7 @@ export const ITEMS = [
     structureType: "differenceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":9,"kind":"gap","target":14},"promptText":"14 mm is more than 9 mm by ? mm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":9,"kind":"gap","target":14},"promptText":"14 mm is how many millimeters longer than 9 mm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0512",
@@ -20462,7 +20462,7 @@ export const ITEMS = [
     structureType: "differenceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"have":5,"kind":"gap","target":20},"promptText":"20 cm is more than 5 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"have":5,"kind":"gap","target":20},"promptText":"How much longer is 20 cm than 5 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0513",
@@ -20472,7 +20472,7 @@ export const ITEMS = [
     structureType: "differenceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":6,"kind":"gap","target":13},"promptText":"13 m is more than 6 m by ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":6,"kind":"gap","target":13},"promptText":"13 m is how many meters longer than 6 m?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0514",
@@ -20482,7 +20482,7 @@ export const ITEMS = [
     structureType: "differenceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":7,"kind":"gap","target":18},"promptText":"18 g is more than 7 g by ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":7,"kind":"gap","target":18},"promptText":"How much heavier is 18 g than 7 g?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0515",
@@ -20492,7 +20492,7 @@ export const ITEMS = [
     structureType: "differenceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":3,"kind":"gap","target":16},"promptText":"16 L is more than 3 L by ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":3,"kind":"gap","target":16},"promptText":"16 L is how many liters more than 3 L?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0516",
@@ -20502,7 +20502,7 @@ export const ITEMS = [
     structureType: "differenceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":10,"kind":"gap","target":19},"promptText":"19 kg is more than 10 kg by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":10,"kind":"gap","target":19},"promptText":"How much heavier is 19 kg than 10 kg?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0517",
@@ -20512,7 +20512,7 @@ export const ITEMS = [
     structureType: "differenceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":12,"kind":"gap","target":15},"promptText":"15 mm is more than 12 mm by ? mm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":12,"kind":"gap","target":15},"promptText":"15 mm is how many millimeters longer than 12 mm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0518",
@@ -20522,7 +20522,7 @@ export const ITEMS = [
     structureType: "differenceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"have":8,"kind":"gap","target":20},"promptText":"20 m is more than 8 m by ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"have":8,"kind":"gap","target":20},"promptText":"How much longer is 20 m than 8 m?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0519",
@@ -20532,7 +20532,7 @@ export const ITEMS = [
     structureType: "differenceTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":6,"kind":"gap","target":17},"promptText":"17 cm is more than 6 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":6,"kind":"gap","target":17},"promptText":"17 cm is how many centimeters longer than 6 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0520",
@@ -20802,7 +20802,7 @@ export const ITEMS = [
     structureType: "differenceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"counting":{"have":47,"kind":"gap","target":84},"promptText":"84 cm is more than 47 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"counting":{"have":47,"kind":"gap","target":84},"promptText":"How much longer is 84 cm than 47 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0547",
@@ -20812,7 +20812,7 @@ export const ITEMS = [
     structureType: "differenceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"counting":{"have":35,"kind":"gap","target":72},"promptText":"72 cm is more than 35 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"counting":{"have":35,"kind":"gap","target":72},"promptText":"72 cm is how many centimeters longer than 35 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0548",
@@ -20822,7 +20822,7 @@ export const ITEMS = [
     structureType: "differenceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"counting":{"have":58,"kind":"gap","target":91},"promptText":"91 m is more than 58 m by ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"counting":{"have":58,"kind":"gap","target":91},"promptText":"How much longer is 91 m than 58 m?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0549",
@@ -20832,7 +20832,7 @@ export const ITEMS = [
     structureType: "differenceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"counting":{"have":26,"kind":"gap","target":63},"promptText":"63 m is more than 26 m by ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"counting":{"have":26,"kind":"gap","target":63},"promptText":"63 m is how many meters longer than 26 m?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0550",
@@ -20842,7 +20842,7 @@ export const ITEMS = [
     structureType: "differenceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"counting":{"have":49,"kind":"gap","target":95},"promptText":"95 g is more than 49 g by ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"counting":{"have":49,"kind":"gap","target":95},"promptText":"How much heavier is 95 g than 49 g?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0551",
@@ -20852,7 +20852,7 @@ export const ITEMS = [
     structureType: "differenceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"have":37,"kind":"gap","target":82},"promptText":"82 g is more than 37 g by ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"have":37,"kind":"gap","target":82},"promptText":"82 g is how many grams heavier than 37 g?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0552",
@@ -20862,7 +20862,7 @@ export const ITEMS = [
     structureType: "differenceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"counting":{"have":44,"kind":"gap","target":77},"promptText":"77 kg is more than 44 kg by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"counting":{"have":44,"kind":"gap","target":77},"promptText":"How much heavier is 77 kg than 44 kg?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0553",
@@ -20872,7 +20872,7 @@ export const ITEMS = [
     structureType: "differenceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"have":23,"kind":"gap","target":68},"promptText":"68 kg is more than 23 kg by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"have":23,"kind":"gap","target":68},"promptText":"68 kg is how many kilograms heavier than 23 kg?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0554",
@@ -20882,7 +20882,7 @@ export const ITEMS = [
     structureType: "differenceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":51,"kind":"gap","target":86},"promptText":"86 L is more than 51 L by ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":51,"kind":"gap","target":86},"promptText":"How much more is 86 L than 51 L?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0555",
@@ -20892,7 +20892,7 @@ export const ITEMS = [
     structureType: "differenceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":39,"kind":"gap","target":74},"promptText":"74 L is more than 39 L by ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":39,"kind":"gap","target":74},"promptText":"74 L is how many liters more than 39 L?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0556",
@@ -20902,7 +20902,7 @@ export const ITEMS = [
     structureType: "differenceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"counting":{"have":66,"kind":"gap","target":93},"promptText":"93 mL is more than 66 mL by ? mL"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"counting":{"have":66,"kind":"gap","target":93},"promptText":"How much more is 93 mL than 66 mL?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0557",
@@ -20912,7 +20912,7 @@ export const ITEMS = [
     structureType: "differenceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":53,"display":{"counting":{"have":28,"kind":"gap","target":81},"promptText":"81 mL is more than 28 mL by ? mL"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":53,"display":{"counting":{"have":28,"kind":"gap","target":81},"promptText":"81 mL is how many milliliters more than 28 mL?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0558",
@@ -20922,7 +20922,7 @@ export const ITEMS = [
     structureType: "differenceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"counting":{"have":42,"kind":"gap","target":79},"promptText":"79 mm is more than 42 mm by ? mm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"counting":{"have":42,"kind":"gap","target":79},"promptText":"How much longer is 79 mm than 42 mm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0559",
@@ -20932,7 +20932,7 @@ export const ITEMS = [
     structureType: "differenceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"counting":{"have":34,"kind":"gap","target":67},"promptText":"67 mm is more than 34 mm by ? mm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"counting":{"have":34,"kind":"gap","target":67},"promptText":"67 mm is how many millimeters longer than 34 mm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0560",
@@ -20942,7 +20942,7 @@ export const ITEMS = [
     structureType: "differenceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"counting":{"have":55,"kind":"gap","target":88},"promptText":"88 cm is more than 55 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"counting":{"have":55,"kind":"gap","target":88},"promptText":"How much longer is 88 cm than 55 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0561",
@@ -20952,7 +20952,7 @@ export const ITEMS = [
     structureType: "differenceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":61,"kind":"gap","target":96},"promptText":"96 m is more than 61 m by ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":61,"kind":"gap","target":96},"promptText":"96 m is how many meters longer than 61 m?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0562",
@@ -20962,7 +20962,7 @@ export const ITEMS = [
     structureType: "differenceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"counting":{"have":46,"kind":"gap","target":73},"promptText":"73 g is more than 46 g by ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"counting":{"have":46,"kind":"gap","target":73},"promptText":"How much heavier is 73 g than 46 g?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0563",
@@ -20972,7 +20972,7 @@ export const ITEMS = [
     structureType: "differenceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":53,"display":{"counting":{"have":32,"kind":"gap","target":85},"promptText":"85 L is more than 32 L by ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":53,"display":{"counting":{"have":32,"kind":"gap","target":85},"promptText":"85 L is how many liters more than 32 L?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0564",
@@ -20982,7 +20982,7 @@ export const ITEMS = [
     structureType: "differenceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":57,"kind":"gap","target":92},"promptText":"92 kg is more than 57 kg by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":57,"kind":"gap","target":92},"promptText":"How much heavier is 92 kg than 57 kg?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0565",
@@ -20992,7 +20992,7 @@ export const ITEMS = [
     structureType: "differenceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":29,"kind":"gap","target":64},"promptText":"64 mm is more than 29 mm by ? mm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":29,"kind":"gap","target":64},"promptText":"64 mm is how many millimeters longer than 29 mm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0566",
@@ -21002,7 +21002,7 @@ export const ITEMS = [
     structureType: "differenceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"counting":{"have":43,"kind":"gap","target":87},"promptText":"87 cm is more than 43 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"counting":{"have":43,"kind":"gap","target":87},"promptText":"How much longer is 87 cm than 43 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0567",
@@ -21012,7 +21012,7 @@ export const ITEMS = [
     structureType: "differenceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"have":31,"kind":"gap","target":76},"promptText":"76 m is more than 31 m by ? m"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"have":31,"kind":"gap","target":76},"promptText":"76 m is how many meters longer than 31 m?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0568",
@@ -21022,7 +21022,7 @@ export const ITEMS = [
     structureType: "differenceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":69,"kind":"gap","target":94},"promptText":"94 g is more than 69 g by ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":69,"kind":"gap","target":94},"promptText":"How much heavier is 94 g than 69 g?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0569",
@@ -21032,7 +21032,7 @@ export const ITEMS = [
     structureType: "differenceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":48,"kind":"gap","target":83},"promptText":"83 L is more than 48 L by ? L"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":48,"kind":"gap","target":83},"promptText":"83 L is how many liters more than 48 L?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0570",
@@ -21042,7 +21042,7 @@ export const ITEMS = [
     structureType: "differenceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":36,"kind":"gap","target":71},"promptText":"71 mL is more than 36 mL by ? mL"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":36,"kind":"gap","target":71},"promptText":"How much more is 71 mL than 36 mL?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0571",
@@ -21052,7 +21052,7 @@ export const ITEMS = [
     structureType: "differenceMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"counting":{"have":52,"kind":"gap","target":89},"promptText":"89 kg is more than 52 kg by ? kg"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"counting":{"have":52,"kind":"gap","target":89},"promptText":"89 kg is how many kilograms heavier than 52 kg?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0572",
@@ -21122,7 +21122,7 @@ export const ITEMS = [
     structureType: "pickLongestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2100 g","choices":["2100 g","2 kg","1900 g"],"display":{"measure":{"kind":"cmp3","values":[2000,1900,2100]},"promptText":"Which is the longest: 2 kg, 1900 g, or 2100 g?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"2100 g","choices":["2100 g","2 kg","1900 g"],"display":{"measure":{"kind":"cmp3","values":[2000,1900,2100]},"promptText":"Which is the heaviest: 2 kg, 1900 g, or 2100 g?"}},
   },
   {
     itemId: "measurement-proc-b0821-0579",
@@ -21132,7 +21132,7 @@ export const ITEMS = [
     structureType: "pickLongestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3200 mL","choices":["2900 mL","3 L","3200 mL"],"display":{"measure":{"kind":"cmp3","values":[3000,3200,2900]},"promptText":"Of 3 L, 3200 mL, and 2900 mL, pick the longest."}},
+    question: {"a":null,"b":null,"op":"count","answer":"3200 mL","choices":["2900 mL","3 L","3200 mL"],"display":{"measure":{"kind":"cmp3","values":[3000,3200,2900]},"promptText":"Of 3 L, 3200 mL, and 2900 mL, which amount is the greatest?"}},
   },
   {
     itemId: "measurement-proc-b0821-0580",
@@ -21172,7 +21172,7 @@ export const ITEMS = [
     structureType: "pickLongestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4100 g","choices":["4 kg","3900 g","4100 g"],"display":{"measure":{"kind":"cmp3","values":[4000,4100,3900]},"promptText":"Of 4 kg, 4100 g, and 3900 g, pick the longest."}},
+    question: {"a":null,"b":null,"op":"count","answer":"4100 g","choices":["4 kg","3900 g","4100 g"],"display":{"measure":{"kind":"cmp3","values":[4000,4100,3900]},"promptText":"Of 4 kg, 4100 g, and 3900 g, which is the heaviest?"}},
   },
   {
     itemId: "measurement-proc-b0821-0584",
@@ -21182,7 +21182,7 @@ export const ITEMS = [
     structureType: "pickLongestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5300 mL","choices":["5300 mL","4800 mL","5 L"],"display":{"measure":{"kind":"cmp3","values":[5000,5300,4800]},"promptText":"Which is the longest: 5 L, 5300 mL, or 4800 mL?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5300 mL","choices":["5300 mL","4800 mL","5 L"],"display":{"measure":{"kind":"cmp3","values":[5000,5300,4800]},"promptText":"Which amount is the greatest: 5 L, 5300 mL, or 4800 mL?"}},
   },
   {
     itemId: "measurement-proc-b0821-0585",
@@ -21212,7 +21212,7 @@ export const ITEMS = [
     structureType: "pickLongestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7200 g","choices":["7200 g","7 kg","6800 g"],"display":{"measure":{"kind":"cmp3","values":[7000,6800,7200]},"promptText":"Of 7 kg, 6800 g, and 7200 g, pick the longest."}},
+    question: {"a":null,"b":null,"op":"count","answer":"7200 g","choices":["7200 g","7 kg","6800 g"],"display":{"measure":{"kind":"cmp3","values":[7000,6800,7200]},"promptText":"Of 7 kg, 6800 g, and 7200 g, which is the heaviest?"}},
   },
   {
     itemId: "measurement-proc-b0821-0588",
@@ -21222,7 +21222,7 @@ export const ITEMS = [
     structureType: "pickLongestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"8100 mL","choices":["8100 mL","7900 mL","8 L"],"display":{"measure":{"kind":"cmp3","values":[8000,8100,7900]},"promptText":"Which is the longest: 8 L, 8100 mL, or 7900 mL?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"8100 mL","choices":["8100 mL","7900 mL","8 L"],"display":{"measure":{"kind":"cmp3","values":[8000,8100,7900]},"promptText":"Which amount is the greatest: 8 L, 8100 mL, or 7900 mL?"}},
   },
   {
     itemId: "measurement-proc-b0821-0589",
@@ -21272,7 +21272,7 @@ export const ITEMS = [
     structureType: "pickLongestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5100 g","choices":["5 kg","4900 g","5100 g"],"display":{"measure":{"kind":"cmp3","values":[5000,5100,4900]},"promptText":"Of 5 kg, 5100 g, and 4900 g, pick the longest."}},
+    question: {"a":null,"b":null,"op":"count","answer":"5100 g","choices":["5 kg","4900 g","5100 g"],"display":{"measure":{"kind":"cmp3","values":[5000,5100,4900]},"promptText":"Of 5 kg, 5100 g, and 4900 g, which is the heaviest?"}},
   },
   {
     itemId: "measurement-proc-b0821-0594",
@@ -21292,7 +21292,7 @@ export const ITEMS = [
     structureType: "pickLongestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7300 mL","choices":["7 L","7300 mL","6800 mL"],"display":{"measure":{"kind":"cmp3","values":[7000,7300,6800]},"promptText":"Of 7 L, 7300 mL, and 6800 mL, pick the longest."}},
+    question: {"a":null,"b":null,"op":"count","answer":"7300 mL","choices":["7 L","7300 mL","6800 mL"],"display":{"measure":{"kind":"cmp3","values":[7000,7300,6800]},"promptText":"Of 7 L, 7300 mL, and 6800 mL, which amount is the greatest?"}},
   },
   {
     itemId: "measurement-proc-b0821-0596",
@@ -21312,7 +21312,7 @@ export const ITEMS = [
     structureType: "pickLongestBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"9200 g","choices":["9 kg","8700 g","9200 g"],"display":{"measure":{"kind":"cmp3","values":[9000,9200,8700]},"promptText":"Of 9 kg, 9200 g, and 8700 g, pick the longest."}},
+    question: {"a":null,"b":null,"op":"count","answer":"9200 g","choices":["9 kg","8700 g","9200 g"],"display":{"measure":{"kind":"cmp3","values":[9000,9200,8700]},"promptText":"Of 9 kg, 9200 g, and 8700 g, which is the heaviest?"}},
   },
   {
     itemId: "measurement-proc-b0821-0598",
@@ -21322,7 +21322,7 @@ export const ITEMS = [
     structureType: "diffAfterConvertBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"counting":{"have":250,"kind":"gap","target":300},"promptText":"3 m is longer than 250 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"counting":{"have":250,"kind":"gap","target":300},"promptText":"How many centimeters longer is 3 m than 250 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0599",
@@ -21332,7 +21332,7 @@ export const ITEMS = [
     structureType: "diffAfterConvertBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"counting":{"have":320,"kind":"gap","target":400},"promptText":"4 m is longer than 320 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"counting":{"have":320,"kind":"gap","target":400},"promptText":"4 m is how many centimeters longer than 320 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0600",
@@ -21342,7 +21342,7 @@ export const ITEMS = [
     structureType: "diffAfterConvertBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"counting":{"have":140,"kind":"gap","target":200},"promptText":"2 m is longer than 140 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"counting":{"have":140,"kind":"gap","target":200},"promptText":"How many centimeters longer is 2 m than 140 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0601",
@@ -21352,7 +21352,7 @@ export const ITEMS = [
     structureType: "diffAfterConvertBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"counting":{"have":430,"kind":"gap","target":500},"promptText":"5 m is longer than 430 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"counting":{"have":430,"kind":"gap","target":500},"promptText":"5 m is how many centimeters longer than 430 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0602",
@@ -21362,7 +21362,7 @@ export const ITEMS = [
     structureType: "diffAfterConvertBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":120,"display":{"counting":{"have":180,"kind":"gap","target":300},"promptText":"3 m is longer than 180 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":120,"display":{"counting":{"have":180,"kind":"gap","target":300},"promptText":"How many centimeters longer is 3 m than 180 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0603",
@@ -21372,7 +21372,7 @@ export const ITEMS = [
     structureType: "diffAfterConvertBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"counting":{"have":510,"kind":"gap","target":600},"promptText":"6 m is longer than 510 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"counting":{"have":510,"kind":"gap","target":600},"promptText":"6 m is how many centimeters longer than 510 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0604",
@@ -21382,7 +21382,7 @@ export const ITEMS = [
     structureType: "diffAfterConvertBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":140,"display":{"counting":{"have":260,"kind":"gap","target":400},"promptText":"4 m is longer than 260 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":140,"display":{"counting":{"have":260,"kind":"gap","target":400},"promptText":"How many centimeters longer is 4 m than 260 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0605",
@@ -21392,7 +21392,7 @@ export const ITEMS = [
     structureType: "diffAfterConvertBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"counting":{"have":620,"kind":"gap","target":700},"promptText":"7 m is longer than 620 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"counting":{"have":620,"kind":"gap","target":700},"promptText":"7 m is how many centimeters longer than 620 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0606",
@@ -21402,7 +21402,7 @@ export const ITEMS = [
     structureType: "diffAfterConvertBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":160,"display":{"counting":{"have":340,"kind":"gap","target":500},"promptText":"5 m is longer than 340 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":160,"display":{"counting":{"have":340,"kind":"gap","target":500},"promptText":"How many centimeters longer is 5 m than 340 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0607",
@@ -21412,7 +21412,7 @@ export const ITEMS = [
     structureType: "diffAfterConvertBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":140,"display":{"counting":{"have":60,"kind":"gap","target":200},"promptText":"2 m is longer than 60 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":140,"display":{"counting":{"have":60,"kind":"gap","target":200},"promptText":"2 m is how many centimeters longer than 60 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0608",
@@ -21422,7 +21422,7 @@ export const ITEMS = [
     structureType: "diffAfterConvertBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"counting":{"have":710,"kind":"gap","target":800},"promptText":"8 m is longer than 710 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"counting":{"have":710,"kind":"gap","target":800},"promptText":"How many centimeters longer is 8 m than 710 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0609",
@@ -21432,7 +21432,7 @@ export const ITEMS = [
     structureType: "diffAfterConvertBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":150,"display":{"counting":{"have":450,"kind":"gap","target":600},"promptText":"6 m is longer than 450 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":150,"display":{"counting":{"have":450,"kind":"gap","target":600},"promptText":"6 m is how many centimeters longer than 450 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0610",
@@ -21442,7 +21442,7 @@ export const ITEMS = [
     structureType: "diffAfterConvertBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":210,"display":{"counting":{"have":90,"kind":"gap","target":300},"promptText":"3 m is longer than 90 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":210,"display":{"counting":{"have":90,"kind":"gap","target":300},"promptText":"How many centimeters longer is 3 m than 90 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0611",
@@ -21452,7 +21452,7 @@ export const ITEMS = [
     structureType: "diffAfterConvertBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"counting":{"have":840,"kind":"gap","target":900},"promptText":"9 m is longer than 840 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"counting":{"have":840,"kind":"gap","target":900},"promptText":"9 m is how many centimeters longer than 840 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0612",
@@ -21462,7 +21462,7 @@ export const ITEMS = [
     structureType: "diffAfterConvertBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":170,"display":{"counting":{"have":530,"kind":"gap","target":700},"promptText":"7 m is longer than 530 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":170,"display":{"counting":{"have":530,"kind":"gap","target":700},"promptText":"How many centimeters longer is 7 m than 530 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0613",
@@ -21472,7 +21472,7 @@ export const ITEMS = [
     structureType: "diffAfterConvertBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":230,"display":{"counting":{"have":170,"kind":"gap","target":400},"promptText":"4 m is longer than 170 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":230,"display":{"counting":{"have":170,"kind":"gap","target":400},"promptText":"4 m is how many centimeters longer than 170 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0614",
@@ -21482,7 +21482,7 @@ export const ITEMS = [
     structureType: "diffAfterConvertBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":160,"display":{"counting":{"have":640,"kind":"gap","target":800},"promptText":"8 m is longer than 640 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":160,"display":{"counting":{"have":640,"kind":"gap","target":800},"promptText":"How many centimeters longer is 8 m than 640 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0615",
@@ -21492,7 +21492,7 @@ export const ITEMS = [
     structureType: "diffAfterConvertBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":220,"display":{"counting":{"have":280,"kind":"gap","target":500},"promptText":"5 m is longer than 280 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":220,"display":{"counting":{"have":280,"kind":"gap","target":500},"promptText":"5 m is how many centimeters longer than 280 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0616",
@@ -21502,7 +21502,7 @@ export const ITEMS = [
     structureType: "diffAfterConvertBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":140,"display":{"counting":{"have":760,"kind":"gap","target":900},"promptText":"9 m is longer than 760 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":140,"display":{"counting":{"have":760,"kind":"gap","target":900},"promptText":"How many centimeters longer is 9 m than 760 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0617",
@@ -21512,7 +21512,7 @@ export const ITEMS = [
     structureType: "diffAfterConvertBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":220,"display":{"counting":{"have":380,"kind":"gap","target":600},"promptText":"6 m is longer than 380 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":220,"display":{"counting":{"have":380,"kind":"gap","target":600},"promptText":"6 m is how many centimeters longer than 380 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0618",
@@ -21522,7 +21522,7 @@ export const ITEMS = [
     structureType: "diffAfterConvertBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"counting":{"have":110,"kind":"gap","target":200},"promptText":"2 m is longer than 110 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"counting":{"have":110,"kind":"gap","target":200},"promptText":"How many centimeters longer is 2 m than 110 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0619",
@@ -21532,7 +21532,7 @@ export const ITEMS = [
     structureType: "diffAfterConvertBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":240,"display":{"counting":{"have":460,"kind":"gap","target":700},"promptText":"7 m is longer than 460 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":240,"display":{"counting":{"have":460,"kind":"gap","target":700},"promptText":"7 m is how many centimeters longer than 460 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0620",
@@ -21542,7 +21542,7 @@ export const ITEMS = [
     structureType: "diffAfterConvertBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"counting":{"have":220,"kind":"gap","target":300},"promptText":"3 m is longer than 220 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"counting":{"have":220,"kind":"gap","target":300},"promptText":"How many centimeters longer is 3 m than 220 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0621",
@@ -21552,7 +21552,7 @@ export const ITEMS = [
     structureType: "diffAfterConvertBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":250,"display":{"counting":{"have":550,"kind":"gap","target":800},"promptText":"8 m is longer than 550 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":250,"display":{"counting":{"have":550,"kind":"gap","target":800},"promptText":"8 m is how many centimeters longer than 550 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0622",
@@ -21562,7 +21562,7 @@ export const ITEMS = [
     structureType: "diffAfterConvertBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":370,"display":{"counting":{"have":30,"kind":"gap","target":400},"promptText":"4 m is longer than 30 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":370,"display":{"counting":{"have":30,"kind":"gap","target":400},"promptText":"How many centimeters longer is 4 m than 30 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0623",
@@ -21572,7 +21572,7 @@ export const ITEMS = [
     structureType: "diffAfterConvertBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":220,"display":{"counting":{"have":680,"kind":"gap","target":900},"promptText":"9 m is longer than 680 cm by ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":220,"display":{"counting":{"have":680,"kind":"gap","target":900},"promptText":"9 m is how many centimeters longer than 680 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0624",
@@ -21582,7 +21582,7 @@ export const ITEMS = [
     structureType: "joinLengthsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[7,6]},"promptText":"A 7 cm strip taped to a 6 cm strip = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[7,6]},"promptText":"A 7 cm strip and a 6 cm strip are taped end to end. How many centimeters long are the two strips together?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0625",
@@ -21592,7 +21592,7 @@ export const ITEMS = [
     structureType: "joinLengthsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[8,9]},"promptText":"A 8 cm strip taped to a 9 cm strip = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[8,9]},"promptText":"Tape an 8 cm strip to the end of a 9 cm strip. How long is the new strip in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0626",
@@ -21602,7 +21602,7 @@ export const ITEMS = [
     structureType: "joinLengthsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[5,12]},"promptText":"A 5 cm strip taped to a 12 cm strip = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[5,12]},"promptText":"A 5 cm strip and a 12 cm strip are taped end to end. How many centimeters long are the two strips together?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0627",
@@ -21612,7 +21612,7 @@ export const ITEMS = [
     structureType: "joinLengthsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[6,11]},"promptText":"A 6 cm strip taped to a 11 cm strip = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[6,11]},"promptText":"Tape a 6 cm strip to the end of an 11 cm strip. How long is the new strip in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0628",
@@ -21622,7 +21622,7 @@ export const ITEMS = [
     structureType: "joinLengthsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[9,4]},"promptText":"A 9 cm strip taped to a 4 cm strip = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[9,4]},"promptText":"A 9 cm strip and a 4 cm strip are taped end to end. How many centimeters long are the two strips together?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0629",
@@ -21632,7 +21632,7 @@ export const ITEMS = [
     structureType: "joinLengthsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[12,7]},"promptText":"A 12 cm strip taped to a 7 cm strip = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[12,7]},"promptText":"Tape a 12 cm strip to the end of a 7 cm strip. How long is the new strip in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0630",
@@ -21642,7 +21642,7 @@ export const ITEMS = [
     structureType: "joinLengthsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[3,14]},"promptText":"A 3 cm strip taped to a 14 cm strip = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[3,14]},"promptText":"A 3 cm strip and a 14 cm strip are taped end to end. How many centimeters long are the two strips together?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0631",
@@ -21652,7 +21652,7 @@ export const ITEMS = [
     structureType: "joinLengthsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[8,5]},"promptText":"A 8 cm strip taped to a 5 cm strip = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[8,5]},"promptText":"Tape an 8 cm strip to the end of a 5 cm strip. How long is the new strip in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0632",
@@ -21662,7 +21662,7 @@ export const ITEMS = [
     structureType: "joinLengthsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[11,6]},"promptText":"A 11 cm strip taped to a 6 cm strip = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[11,6]},"promptText":"An 11 cm strip and a 6 cm strip are taped end to end. How many centimeters long are the two strips together?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0633",
@@ -21672,7 +21672,7 @@ export const ITEMS = [
     structureType: "joinLengthsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[4,13]},"promptText":"A 4 cm strip taped to a 13 cm strip = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[4,13]},"promptText":"Tape a 4 cm strip to the end of a 13 cm strip. How long is the new strip in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0634",
@@ -21682,7 +21682,7 @@ export const ITEMS = [
     structureType: "joinLengthsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[7,9]},"promptText":"A 7 cm strip taped to a 9 cm strip = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[7,9]},"promptText":"A 7 cm strip and a 9 cm strip are taped end to end. How many centimeters long are the two strips together?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0635",
@@ -21692,7 +21692,7 @@ export const ITEMS = [
     structureType: "joinLengthsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[15,3]},"promptText":"A 15 cm strip taped to a 3 cm strip = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[15,3]},"promptText":"Tape a 15 cm strip to the end of a 3 cm strip. How long is the new strip in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0636",
@@ -21702,7 +21702,7 @@ export const ITEMS = [
     structureType: "joinLengthsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[6,8]},"promptText":"A 6 cm strip taped to a 8 cm strip = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[6,8]},"promptText":"A 6 cm strip and an 8 cm strip are taped end to end. How many centimeters long are the two strips together?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0637",
@@ -21712,7 +21712,7 @@ export const ITEMS = [
     structureType: "joinLengthsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[9,8]},"promptText":"A 9 cm strip taped to a 8 cm strip = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[9,8]},"promptText":"Tape a 9 cm strip to the end of an 8 cm strip. How long is the new strip in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0638",
@@ -21722,7 +21722,7 @@ export const ITEMS = [
     structureType: "joinLengthsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[12,5]},"promptText":"A 12 cm strip taped to a 5 cm strip = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[12,5]},"promptText":"A 12 cm strip and a 5 cm strip are taped end to end. How many centimeters long are the two strips together?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0639",
@@ -21732,7 +21732,7 @@ export const ITEMS = [
     structureType: "joinLengthsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[2,16]},"promptText":"A 2 cm strip taped to a 16 cm strip = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[2,16]},"promptText":"Tape a 2 cm strip to the end of a 16 cm strip. How long is the new strip in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0640",
@@ -21742,7 +21742,7 @@ export const ITEMS = [
     structureType: "joinLengthsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[10,7]},"promptText":"A 10 cm strip taped to a 7 cm strip = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[10,7]},"promptText":"A 10 cm strip and a 7 cm strip are taped end to end. How many centimeters long are the two strips together?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0641",
@@ -21752,7 +21752,7 @@ export const ITEMS = [
     structureType: "joinLengthsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[5,9]},"promptText":"A 5 cm strip taped to a 9 cm strip = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[5,9]},"promptText":"Tape a 5 cm strip to the end of a 9 cm strip. How long is the new strip in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0642",
@@ -21762,7 +21762,7 @@ export const ITEMS = [
     structureType: "joinLengthsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[13,4]},"promptText":"A 13 cm strip taped to a 4 cm strip = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[13,4]},"promptText":"A 13 cm strip and a 4 cm strip are taped end to end. How many centimeters long are the two strips together?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0643",
@@ -21772,7 +21772,7 @@ export const ITEMS = [
     structureType: "joinLengthsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[8,8]},"promptText":"A 8 cm strip taped to a 8 cm strip = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[8,8]},"promptText":"Tape an 8 cm strip to the end of another 8 cm strip. How long is the new strip in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0644",
@@ -21782,7 +21782,7 @@ export const ITEMS = [
     structureType: "joinLengthsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[14,5]},"promptText":"A 14 cm strip taped to a 5 cm strip = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[14,5]},"promptText":"A 14 cm strip and a 5 cm strip are taped end to end. How many centimeters long are the two strips together?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0645",
@@ -21792,7 +21792,7 @@ export const ITEMS = [
     structureType: "joinLengthsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[7,11]},"promptText":"A 7 cm strip taped to a 11 cm strip = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[7,11]},"promptText":"Tape a 7 cm strip to the end of an 11 cm strip. How long is the new strip in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0646",
@@ -21802,7 +21802,7 @@ export const ITEMS = [
     structureType: "joinLengthsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[9,9]},"promptText":"A 9 cm strip taped to a 9 cm strip = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[9,9]},"promptText":"Two 9 cm strips are taped end to end. How many centimeters long are the two strips together?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0647",
@@ -21812,7 +21812,7 @@ export const ITEMS = [
     structureType: "joinLengthsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[6,13]},"promptText":"A 6 cm strip taped to a 13 cm strip = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[6,13]},"promptText":"Tape a 6 cm strip to the end of a 13 cm strip. How long is the new strip in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0648",
@@ -21822,7 +21822,7 @@ export const ITEMS = [
     structureType: "joinLengthsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[11,8]},"promptText":"A 11 cm strip taped to a 8 cm strip = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[11,8]},"promptText":"An 11 cm strip and an 8 cm strip are taped end to end. How many centimeters long are the two strips together?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0649",
@@ -21832,7 +21832,7 @@ export const ITEMS = [
     structureType: "joinLengthsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[4,15]},"promptText":"A 4 cm strip taped to a 15 cm strip = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[4,15]},"promptText":"Tape a 4 cm strip to the end of a 15 cm strip. How long is the new strip in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0650",
@@ -21842,7 +21842,7 @@ export const ITEMS = [
     structureType: "cutLengthTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":8,"kind":"countBack","start":15},"promptText":"Cut 8 cm off a 15 cm string. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":8,"kind":"countBack","start":15},"promptText":"Cut 8 cm off a 15 cm string. How many centimeters of string are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0651",
@@ -21852,7 +21852,7 @@ export const ITEMS = [
     structureType: "cutLengthTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":9,"kind":"countBack","start":18},"promptText":"Cut 9 cm off a 18 cm string. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":9,"kind":"countBack","start":18},"promptText":"A string is 18 cm long. Cut off 9 cm. How many centimeters long is the string now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0652",
@@ -21862,7 +21862,7 @@ export const ITEMS = [
     structureType: "cutLengthTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":5,"kind":"countBack","start":12},"promptText":"Cut 5 cm off a 12 cm string. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":5,"kind":"countBack","start":12},"promptText":"Cut 5 cm off a 12 cm string. How many centimeters of string are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0653",
@@ -21872,7 +21872,7 @@ export const ITEMS = [
     structureType: "cutLengthTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":11,"kind":"countBack","start":20},"promptText":"Cut 11 cm off a 20 cm string. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":11,"kind":"countBack","start":20},"promptText":"A string is 20 cm long. Cut off 11 cm. How many centimeters long is the string now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0654",
@@ -21882,7 +21882,7 @@ export const ITEMS = [
     structureType: "cutLengthTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":7,"kind":"countBack","start":16},"promptText":"Cut 7 cm off a 16 cm string. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":7,"kind":"countBack","start":16},"promptText":"Cut 7 cm off a 16 cm string. How many centimeters of string are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0655",
@@ -21892,7 +21892,7 @@ export const ITEMS = [
     structureType: "cutLengthTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"back":6,"kind":"countBack","start":14},"promptText":"Cut 6 cm off a 14 cm string. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"back":6,"kind":"countBack","start":14},"promptText":"A string is 14 cm long. Cut off 6 cm. How many centimeters long is the string now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0656",
@@ -21902,7 +21902,7 @@ export const ITEMS = [
     structureType: "cutLengthTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":12,"kind":"countBack","start":19},"promptText":"Cut 12 cm off a 19 cm string. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":12,"kind":"countBack","start":19},"promptText":"Cut 12 cm off a 19 cm string. How many centimeters of string are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0657",
@@ -21912,7 +21912,7 @@ export const ITEMS = [
     structureType: "cutLengthTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":8,"kind":"countBack","start":17},"promptText":"Cut 8 cm off a 17 cm string. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":8,"kind":"countBack","start":17},"promptText":"A string is 17 cm long. Cut off 8 cm. How many centimeters long is the string now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0658",
@@ -21922,7 +21922,7 @@ export const ITEMS = [
     structureType: "cutLengthTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":4,"kind":"countBack","start":13},"promptText":"Cut 4 cm off a 13 cm string. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":4,"kind":"countBack","start":13},"promptText":"Cut 4 cm off a 13 cm string. How many centimeters of string are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0659",
@@ -21932,7 +21932,7 @@ export const ITEMS = [
     structureType: "cutLengthTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":2,"kind":"countBack","start":11},"promptText":"Cut 2 cm off a 11 cm string. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":2,"kind":"countBack","start":11},"promptText":"A string is 11 cm long. Cut off 2 cm. How many centimeters long is the string now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0660",
@@ -21942,7 +21942,7 @@ export const ITEMS = [
     structureType: "cutLengthTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"back":14,"kind":"countBack","start":20},"promptText":"Cut 14 cm off a 20 cm string. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"back":14,"kind":"countBack","start":20},"promptText":"Cut 14 cm off a 20 cm string. How many centimeters of string are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0661",
@@ -21952,7 +21952,7 @@ export const ITEMS = [
     structureType: "cutLengthTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"back":13,"kind":"countBack","start":18},"promptText":"Cut 13 cm off a 18 cm string. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"back":13,"kind":"countBack","start":18},"promptText":"A string is 18 cm long. Cut off 13 cm. How many centimeters long is the string now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0662",
@@ -21962,7 +21962,7 @@ export const ITEMS = [
     structureType: "cutLengthTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":9,"kind":"countBack","start":16},"promptText":"Cut 9 cm off a 16 cm string. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":9,"kind":"countBack","start":16},"promptText":"Cut 9 cm off a 16 cm string. How many centimeters of string are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0663",
@@ -21972,7 +21972,7 @@ export const ITEMS = [
     structureType: "cutLengthTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"back":4,"kind":"countBack","start":15},"promptText":"Cut 4 cm off a 15 cm string. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"back":4,"kind":"countBack","start":15},"promptText":"A string is 15 cm long. Cut off 4 cm. How many centimeters long is the string now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0664",
@@ -21982,7 +21982,7 @@ export const ITEMS = [
     structureType: "cutLengthTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"back":6,"kind":"countBack","start":19},"promptText":"Cut 6 cm off a 19 cm string. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"back":6,"kind":"countBack","start":19},"promptText":"Cut 6 cm off a 19 cm string. How many centimeters of string are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0665",
@@ -21992,7 +21992,7 @@ export const ITEMS = [
     structureType: "cutLengthTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"back":7,"kind":"countBack","start":12},"promptText":"Cut 7 cm off a 12 cm string. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"back":7,"kind":"countBack","start":12},"promptText":"A string is 12 cm long. Cut off 7 cm. How many centimeters long is the string now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0666",
@@ -22002,7 +22002,7 @@ export const ITEMS = [
     structureType: "cutLengthTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":10,"kind":"countBack","start":17},"promptText":"Cut 10 cm off a 17 cm string. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":10,"kind":"countBack","start":17},"promptText":"Cut 10 cm off a 17 cm string. How many centimeters of string are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0667",
@@ -22012,7 +22012,7 @@ export const ITEMS = [
     structureType: "cutLengthTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"back":9,"kind":"countBack","start":14},"promptText":"Cut 9 cm off a 14 cm string. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"back":9,"kind":"countBack","start":14},"promptText":"A string is 14 cm long. Cut off 9 cm. How many centimeters long is the string now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0668",
@@ -22022,7 +22022,7 @@ export const ITEMS = [
     structureType: "cutLengthTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"back":5,"kind":"countBack","start":20},"promptText":"Cut 5 cm off a 20 cm string. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"back":5,"kind":"countBack","start":20},"promptText":"Cut 5 cm off a 20 cm string. How many centimeters of string are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0669",
@@ -22032,7 +22032,7 @@ export const ITEMS = [
     structureType: "cutLengthTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":6,"kind":"countBack","start":13},"promptText":"Cut 6 cm off a 13 cm string. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"back":6,"kind":"countBack","start":13},"promptText":"A string is 13 cm long. Cut off 6 cm. How many centimeters long is the string now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0670",
@@ -22042,7 +22042,7 @@ export const ITEMS = [
     structureType: "cutLengthTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"back":7,"kind":"countBack","start":18},"promptText":"Cut 7 cm off a 18 cm string. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"back":7,"kind":"countBack","start":18},"promptText":"Cut 7 cm off an 18 cm string. How many centimeters of string are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0671",
@@ -22052,7 +22052,7 @@ export const ITEMS = [
     structureType: "cutLengthTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"back":3,"kind":"countBack","start":16},"promptText":"Cut 3 cm off a 16 cm string. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"back":3,"kind":"countBack","start":16},"promptText":"A string is 16 cm long. Cut off 3 cm. How many centimeters long is the string now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0672",
@@ -22062,7 +22062,7 @@ export const ITEMS = [
     structureType: "cutLengthTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":10,"kind":"countBack","start":19},"promptText":"Cut 10 cm off a 19 cm string. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"back":10,"kind":"countBack","start":19},"promptText":"Cut 10 cm off a 19 cm string. How many centimeters of string are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0673",
@@ -22072,7 +22072,7 @@ export const ITEMS = [
     structureType: "cutLengthTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"back":12,"kind":"countBack","start":15},"promptText":"Cut 12 cm off a 15 cm string. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"back":12,"kind":"countBack","start":15},"promptText":"A string is 15 cm long. Cut off 12 cm. How many centimeters long is the string now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0674",
@@ -22082,7 +22082,7 @@ export const ITEMS = [
     structureType: "cutLengthTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"back":8,"kind":"countBack","start":20},"promptText":"Cut 8 cm off a 20 cm string. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"back":8,"kind":"countBack","start":20},"promptText":"Cut 8 cm off a 20 cm string. How many centimeters of string are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0675",
@@ -22092,7 +22092,7 @@ export const ITEMS = [
     structureType: "cutLengthTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"back":6,"kind":"countBack","start":17},"promptText":"Cut 6 cm off a 17 cm string. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"back":6,"kind":"countBack","start":17},"promptText":"A string is 17 cm long. Cut off 6 cm. How many centimeters long is the string now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0676",
@@ -22102,7 +22102,7 @@ export const ITEMS = [
     structureType: "joinLengthsMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":61,"display":{"counting":{"kind":"sum","parts":[34,27]},"promptText":"A 34 cm board joined to a 27 cm board = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":61,"display":{"counting":{"kind":"sum","parts":[34,27]},"promptText":"A 34 cm board and a 27 cm board are joined end to end. How many centimeters long are the two boards together?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0677",
@@ -22112,7 +22112,7 @@ export const ITEMS = [
     structureType: "joinLengthsMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":83,"display":{"counting":{"kind":"sum","parts":[45,38]},"promptText":"A 45 cm board joined to a 38 cm board = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":83,"display":{"counting":{"kind":"sum","parts":[45,38]},"promptText":"Two boards are 45 cm and 38 cm long. They are joined end to end. How long are they together in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0678",
@@ -22122,7 +22122,7 @@ export const ITEMS = [
     structureType: "joinLengthsMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"counting":{"kind":"sum","parts":[52,29]},"promptText":"A 52 cm board joined to a 29 cm board = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"counting":{"kind":"sum","parts":[52,29]},"promptText":"A 52 cm board and a 29 cm board are joined end to end. How many centimeters long are the two boards together?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0679",
@@ -22132,7 +22132,7 @@ export const ITEMS = [
     structureType: "joinLengthsMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"counting":{"kind":"sum","parts":[63,18]},"promptText":"A 63 cm board joined to a 18 cm board = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"counting":{"kind":"sum","parts":[63,18]},"promptText":"Two boards are 63 cm and 18 cm long. They are joined end to end. How long are they together in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0680",
@@ -22142,7 +22142,7 @@ export const ITEMS = [
     structureType: "joinLengthsMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":73,"display":{"counting":{"kind":"sum","parts":[27,46]},"promptText":"A 27 cm board joined to a 46 cm board = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":73,"display":{"counting":{"kind":"sum","parts":[27,46]},"promptText":"A 27 cm board and a 46 cm board are joined end to end. How many centimeters long are the two boards together?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0681",
@@ -22152,7 +22152,7 @@ export const ITEMS = [
     structureType: "joinLengthsMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":93,"display":{"counting":{"kind":"sum","parts":[38,55]},"promptText":"A 38 cm board joined to a 55 cm board = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":93,"display":{"counting":{"kind":"sum","parts":[38,55]},"promptText":"Two boards are 38 cm and 55 cm long. They are joined end to end. How long are they together in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0682",
@@ -22162,7 +22162,7 @@ export const ITEMS = [
     structureType: "joinLengthsMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":73,"display":{"counting":{"kind":"sum","parts":[49,24]},"promptText":"A 49 cm board joined to a 24 cm board = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":73,"display":{"counting":{"kind":"sum","parts":[49,24]},"promptText":"A 49 cm board and a 24 cm board are joined end to end. How many centimeters long are the two boards together?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0683",
@@ -22172,7 +22172,7 @@ export const ITEMS = [
     structureType: "joinLengthsMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":93,"display":{"counting":{"kind":"sum","parts":[56,37]},"promptText":"A 56 cm board joined to a 37 cm board = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":93,"display":{"counting":{"kind":"sum","parts":[56,37]},"promptText":"Two boards are 56 cm and 37 cm long. They are joined end to end. How long are they together in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0684",
@@ -22182,7 +22182,7 @@ export const ITEMS = [
     structureType: "joinLengthsMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"counting":{"kind":"sum","parts":[23,68]},"promptText":"A 23 cm board joined to a 68 cm board = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"counting":{"kind":"sum","parts":[23,68]},"promptText":"A 23 cm board and a 68 cm board are joined end to end. How many centimeters long are the two boards together?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0685",
@@ -22192,7 +22192,7 @@ export const ITEMS = [
     structureType: "joinLengthsMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":83,"display":{"counting":{"kind":"sum","parts":[64,19]},"promptText":"A 64 cm board joined to a 19 cm board = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":83,"display":{"counting":{"kind":"sum","parts":[64,19]},"promptText":"Two boards are 64 cm and 19 cm long. They are joined end to end. How long are they together in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0686",
@@ -22202,7 +22202,7 @@ export const ITEMS = [
     structureType: "joinLengthsMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":83,"display":{"counting":{"kind":"sum","parts":[35,48]},"promptText":"A 35 cm board joined to a 48 cm board = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":83,"display":{"counting":{"kind":"sum","parts":[35,48]},"promptText":"A 35 cm board and a 48 cm board are joined end to end. How many centimeters long are the two boards together?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0687",
@@ -22212,7 +22212,7 @@ export const ITEMS = [
     structureType: "joinLengthsMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":73,"display":{"counting":{"kind":"sum","parts":[47,26]},"promptText":"A 47 cm board joined to a 26 cm board = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":73,"display":{"counting":{"kind":"sum","parts":[47,26]},"promptText":"Two boards are 47 cm and 26 cm long. They are joined end to end. How long are they together in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0688",
@@ -22222,7 +22222,7 @@ export const ITEMS = [
     structureType: "joinLengthsMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"counting":{"kind":"sum","parts":[58,33]},"promptText":"A 58 cm board joined to a 33 cm board = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"counting":{"kind":"sum","parts":[58,33]},"promptText":"A 58 cm board and a 33 cm board are joined end to end. How many centimeters long are the two boards together?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0689",
@@ -22232,7 +22232,7 @@ export const ITEMS = [
     structureType: "joinLengthsMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":83,"display":{"counting":{"kind":"sum","parts":[29,54]},"promptText":"A 29 cm board joined to a 54 cm board = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":83,"display":{"counting":{"kind":"sum","parts":[29,54]},"promptText":"Two boards are 29 cm and 54 cm long. They are joined end to end. How long are they together in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0690",
@@ -22242,7 +22242,7 @@ export const ITEMS = [
     structureType: "joinLengthsMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"counting":{"kind":"sum","parts":[66,25]},"promptText":"A 66 cm board joined to a 25 cm board = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"counting":{"kind":"sum","parts":[66,25]},"promptText":"A 66 cm board and a 25 cm board are joined end to end. How many centimeters long are the two boards together?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0691",
@@ -22252,7 +22252,7 @@ export const ITEMS = [
     structureType: "joinLengthsMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"counting":{"kind":"sum","parts":[37,44]},"promptText":"A 37 cm board joined to a 44 cm board = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"counting":{"kind":"sum","parts":[37,44]},"promptText":"Two boards are 37 cm and 44 cm long. They are joined end to end. How long are they together in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0692",
@@ -22262,7 +22262,7 @@ export const ITEMS = [
     structureType: "joinLengthsMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":83,"display":{"counting":{"kind":"sum","parts":[48,35]},"promptText":"A 48 cm board joined to a 35 cm board = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":83,"display":{"counting":{"kind":"sum","parts":[48,35]},"promptText":"A 48 cm board and a 35 cm board are joined end to end. How many centimeters long are the two boards together?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0693",
@@ -22272,7 +22272,7 @@ export const ITEMS = [
     structureType: "joinLengthsMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"counting":{"kind":"sum","parts":[59,22]},"promptText":"A 59 cm board joined to a 22 cm board = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"counting":{"kind":"sum","parts":[59,22]},"promptText":"Two boards are 59 cm and 22 cm long. They are joined end to end. How long are they together in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0694",
@@ -22282,7 +22282,7 @@ export const ITEMS = [
     structureType: "joinLengthsMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":82,"display":{"counting":{"kind":"sum","parts":[25,57]},"promptText":"A 25 cm board joined to a 57 cm board = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":82,"display":{"counting":{"kind":"sum","parts":[25,57]},"promptText":"A 25 cm board and a 57 cm board are joined end to end. How many centimeters long are the two boards together?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0695",
@@ -22292,7 +22292,7 @@ export const ITEMS = [
     structureType: "joinLengthsMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"counting":{"kind":"sum","parts":[67,14]},"promptText":"A 67 cm board joined to a 14 cm board = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"counting":{"kind":"sum","parts":[67,14]},"promptText":"Two boards are 67 cm and 14 cm long. They are joined end to end. How long are they together in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0696",
@@ -22302,7 +22302,7 @@ export const ITEMS = [
     structureType: "joinLengthsMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"counting":{"kind":"sum","parts":[36,45]},"promptText":"A 36 cm board joined to a 45 cm board = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"counting":{"kind":"sum","parts":[36,45]},"promptText":"A 36 cm board and a 45 cm board are joined end to end. How many centimeters long are the two boards together?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0697",
@@ -22312,7 +22312,7 @@ export const ITEMS = [
     structureType: "joinLengthsMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":71,"display":{"counting":{"kind":"sum","parts":[43,28]},"promptText":"A 43 cm board joined to a 28 cm board = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":71,"display":{"counting":{"kind":"sum","parts":[43,28]},"promptText":"Two boards are 43 cm and 28 cm long. They are joined end to end. How long are they together in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0698",
@@ -22322,7 +22322,7 @@ export const ITEMS = [
     structureType: "joinLengthsMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":93,"display":{"counting":{"kind":"sum","parts":[54,39]},"promptText":"A 54 cm board joined to a 39 cm board = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":93,"display":{"counting":{"kind":"sum","parts":[54,39]},"promptText":"A 54 cm board and a 39 cm board are joined end to end. How many centimeters long are the two boards together?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0699",
@@ -22332,7 +22332,7 @@ export const ITEMS = [
     structureType: "joinLengthsMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"counting":{"kind":"sum","parts":[28,63]},"promptText":"A 28 cm board joined to a 63 cm board = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"counting":{"kind":"sum","parts":[28,63]},"promptText":"Two boards are 28 cm and 63 cm long. They are joined end to end. How long are they together in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0700",
@@ -22342,7 +22342,7 @@ export const ITEMS = [
     structureType: "joinLengthsMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"counting":{"kind":"sum","parts":[65,16]},"promptText":"A 65 cm board joined to a 16 cm board = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"counting":{"kind":"sum","parts":[65,16]},"promptText":"A 65 cm board and a 16 cm board are joined end to end. How many centimeters long are the two boards together?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0701",
@@ -22352,7 +22352,7 @@ export const ITEMS = [
     structureType: "joinLengthsMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"counting":{"kind":"sum","parts":[39,42]},"promptText":"A 39 cm board joined to a 42 cm board = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"counting":{"kind":"sum","parts":[39,42]},"promptText":"Two boards are 39 cm and 42 cm long. They are joined end to end. How long are they together in centimeters?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0702",
@@ -22362,7 +22362,7 @@ export const ITEMS = [
     structureType: "usedFromRollMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":53,"display":{"counting":{"back":37,"kind":"countBack","start":90},"promptText":"A 90 cm roll of tape loses 37 cm. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":53,"display":{"counting":{"back":37,"kind":"countBack","start":90},"promptText":"A roll has 90 cm of tape. Then 37 cm of tape is used. How many centimeters of tape are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0703",
@@ -22372,7 +22372,7 @@ export const ITEMS = [
     structureType: "usedFromRollMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"counting":{"back":24,"kind":"countBack","start":80},"promptText":"A 80 cm roll of tape loses 24 cm. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"counting":{"back":24,"kind":"countBack","start":80},"promptText":"Use 24 cm of tape from an 80 cm roll. How many centimeters of tape are left on the roll?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0704",
@@ -22382,7 +22382,7 @@ export const ITEMS = [
     structureType: "usedFromRollMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"counting":{"back":43,"kind":"countBack","start":100},"promptText":"A 100 cm roll of tape loses 43 cm. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"counting":{"back":43,"kind":"countBack","start":100},"promptText":"A roll has 100 cm of tape. Then 43 cm of tape is used. How many centimeters of tape are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0705",
@@ -22392,7 +22392,7 @@ export const ITEMS = [
     structureType: "usedFromRollMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":59,"display":{"counting":{"back":16,"kind":"countBack","start":75},"promptText":"A 75 cm roll of tape loses 16 cm. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":59,"display":{"counting":{"back":16,"kind":"countBack","start":75},"promptText":"Use 16 cm of tape from a 75 cm roll. How many centimeters of tape are left on the roll?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0706",
@@ -22402,7 +22402,7 @@ export const ITEMS = [
     structureType: "usedFromRollMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":64,"display":{"counting":{"back":31,"kind":"countBack","start":95},"promptText":"A 95 cm roll of tape loses 31 cm. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":64,"display":{"counting":{"back":31,"kind":"countBack","start":95},"promptText":"A roll has 95 cm of tape. Then 31 cm of tape is used. How many centimeters of tape are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0707",
@@ -22412,7 +22412,7 @@ export const ITEMS = [
     structureType: "usedFromRollMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"counting":{"back":48,"kind":"countBack","start":85},"promptText":"A 85 cm roll of tape loses 48 cm. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"counting":{"back":48,"kind":"countBack","start":85},"promptText":"Use 48 cm of tape from an 85 cm roll. How many centimeters of tape are left on the roll?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0708",
@@ -22422,7 +22422,7 @@ export const ITEMS = [
     structureType: "usedFromRollMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"counting":{"back":22,"kind":"countBack","start":70},"promptText":"A 70 cm roll of tape loses 22 cm. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"counting":{"back":22,"kind":"countBack","start":70},"promptText":"A roll has 70 cm of tape. Then 22 cm of tape is used. How many centimeters of tape are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0709",
@@ -22432,7 +22432,7 @@ export const ITEMS = [
     structureType: "usedFromRollMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"counting":{"back":56,"kind":"countBack","start":100},"promptText":"A 100 cm roll of tape loses 56 cm. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"counting":{"back":56,"kind":"countBack","start":100},"promptText":"Use 56 cm of tape from a 100 cm roll. How many centimeters of tape are left on the roll?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0710",
@@ -22442,7 +22442,7 @@ export const ITEMS = [
     structureType: "usedFromRollMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":76,"display":{"counting":{"back":14,"kind":"countBack","start":90},"promptText":"A 90 cm roll of tape loses 14 cm. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":76,"display":{"counting":{"back":14,"kind":"countBack","start":90},"promptText":"A roll has 90 cm of tape. Then 14 cm of tape is used. How many centimeters of tape are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0711",
@@ -22452,7 +22452,7 @@ export const ITEMS = [
     structureType: "usedFromRollMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":41,"display":{"counting":{"back":39,"kind":"countBack","start":80},"promptText":"A 80 cm roll of tape loses 39 cm. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":41,"display":{"counting":{"back":39,"kind":"countBack","start":80},"promptText":"Use 39 cm of tape from an 80 cm roll. How many centimeters of tape are left on the roll?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0712",
@@ -22462,7 +22462,7 @@ export const ITEMS = [
     structureType: "usedFromRollMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":68,"display":{"counting":{"back":27,"kind":"countBack","start":95},"promptText":"A 95 cm roll of tape loses 27 cm. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":68,"display":{"counting":{"back":27,"kind":"countBack","start":95},"promptText":"A roll has 95 cm of tape. Then 27 cm of tape is used. How many centimeters of tape are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0713",
@@ -22472,7 +22472,7 @@ export const ITEMS = [
     structureType: "usedFromRollMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"counting":{"back":33,"kind":"countBack","start":75},"promptText":"A 75 cm roll of tape loses 33 cm. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"counting":{"back":33,"kind":"countBack","start":75},"promptText":"Use 33 cm of tape from a 75 cm roll. How many centimeters of tape are left on the roll?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0714",
@@ -22482,7 +22482,7 @@ export const ITEMS = [
     structureType: "usedFromRollMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":66,"display":{"counting":{"back":19,"kind":"countBack","start":85},"promptText":"A 85 cm roll of tape loses 19 cm. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":66,"display":{"counting":{"back":19,"kind":"countBack","start":85},"promptText":"A roll has 85 cm of tape. Then 19 cm of tape is used. How many centimeters of tape are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0715",
@@ -22492,7 +22492,7 @@ export const ITEMS = [
     structureType: "usedFromRollMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"counting":{"back":62,"kind":"countBack","start":100},"promptText":"A 100 cm roll of tape loses 62 cm. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"counting":{"back":62,"kind":"countBack","start":100},"promptText":"Use 62 cm of tape from a 100 cm roll. How many centimeters of tape are left on the roll?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0716",
@@ -22502,7 +22502,7 @@ export const ITEMS = [
     structureType: "usedFromRollMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"back":45,"kind":"countBack","start":70},"promptText":"A 70 cm roll of tape loses 45 cm. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"back":45,"kind":"countBack","start":70},"promptText":"A roll has 70 cm of tape. Then 45 cm of tape is used. How many centimeters of tape are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0717",
@@ -22512,7 +22512,7 @@ export const ITEMS = [
     structureType: "usedFromRollMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"counting":{"back":53,"kind":"countBack","start":90},"promptText":"A 90 cm roll of tape loses 53 cm. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"counting":{"back":53,"kind":"countBack","start":90},"promptText":"Use 53 cm of tape from a 90 cm roll. How many centimeters of tape are left on the roll?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0718",
@@ -22522,7 +22522,7 @@ export const ITEMS = [
     structureType: "usedFromRollMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":63,"display":{"counting":{"back":17,"kind":"countBack","start":80},"promptText":"A 80 cm roll of tape loses 17 cm. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":63,"display":{"counting":{"back":17,"kind":"countBack","start":80},"promptText":"A roll has 80 cm of tape. Then 17 cm of tape is used. How many centimeters of tape are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0719",
@@ -22532,7 +22532,7 @@ export const ITEMS = [
     structureType: "usedFromRollMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":51,"display":{"counting":{"back":44,"kind":"countBack","start":95},"promptText":"A 95 cm roll of tape loses 44 cm. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":51,"display":{"counting":{"back":44,"kind":"countBack","start":95},"promptText":"Use 44 cm of tape from a 95 cm roll. How many centimeters of tape are left on the roll?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0720",
@@ -22542,7 +22542,7 @@ export const ITEMS = [
     structureType: "usedFromRollMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":47,"display":{"counting":{"back":28,"kind":"countBack","start":75},"promptText":"A 75 cm roll of tape loses 28 cm. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":47,"display":{"counting":{"back":28,"kind":"countBack","start":75},"promptText":"A roll has 75 cm of tape. Then 28 cm of tape is used. How many centimeters of tape are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0721",
@@ -22552,7 +22552,7 @@ export const ITEMS = [
     structureType: "usedFromRollMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":49,"display":{"counting":{"back":36,"kind":"countBack","start":85},"promptText":"A 85 cm roll of tape loses 36 cm. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":49,"display":{"counting":{"back":36,"kind":"countBack","start":85},"promptText":"Use 36 cm of tape from an 85 cm roll. How many centimeters of tape are left on the roll?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0722",
@@ -22562,7 +22562,7 @@ export const ITEMS = [
     structureType: "usedFromRollMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"counting":{"back":71,"kind":"countBack","start":100},"promptText":"A 100 cm roll of tape loses 71 cm. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"counting":{"back":71,"kind":"countBack","start":100},"promptText":"A roll has 100 cm of tape. Then 71 cm of tape is used. How many centimeters of tape are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0723",
@@ -22572,7 +22572,7 @@ export const ITEMS = [
     structureType: "usedFromRollMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"counting":{"back":13,"kind":"countBack","start":70},"promptText":"A 70 cm roll of tape loses 13 cm. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"counting":{"back":13,"kind":"countBack","start":70},"promptText":"Use 13 cm of tape from a 70 cm roll. How many centimeters of tape are left on the roll?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0724",
@@ -22582,7 +22582,7 @@ export const ITEMS = [
     structureType: "usedFromRollMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"back":66,"kind":"countBack","start":90},"promptText":"A 90 cm roll of tape loses 66 cm. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"back":66,"kind":"countBack","start":90},"promptText":"A roll has 90 cm of tape. Then 66 cm of tape is used. How many centimeters of tape are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0725",
@@ -22592,7 +22592,7 @@ export const ITEMS = [
     structureType: "usedFromRollMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"counting":{"back":47,"kind":"countBack","start":80},"promptText":"A 80 cm roll of tape loses 47 cm. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"counting":{"back":47,"kind":"countBack","start":80},"promptText":"Use 47 cm of tape from an 80 cm roll. How many centimeters of tape are left on the roll?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0726",
@@ -22602,7 +22602,7 @@ export const ITEMS = [
     structureType: "usedFromRollMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"counting":{"back":58,"kind":"countBack","start":95},"promptText":"A 95 cm roll of tape loses 58 cm. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"counting":{"back":58,"kind":"countBack","start":95},"promptText":"A roll has 95 cm of tape. Then 58 cm of tape is used. How many centimeters of tape are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0727",
@@ -22612,7 +22612,7 @@ export const ITEMS = [
     structureType: "usedFromRollMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"counting":{"back":41,"kind":"countBack","start":75},"promptText":"A 75 cm roll of tape loses 41 cm. ? cm remain"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"counting":{"back":41,"kind":"countBack","start":75},"promptText":"Use 41 cm of tape from a 75 cm roll. How many centimeters of tape are left on the roll?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0728",
@@ -22622,7 +22622,7 @@ export const ITEMS = [
     structureType: "convertThenAddBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":175,"display":{"counting":{"kind":"sum","parts":[100,30,45]},"promptText":"1 m 30 cm of rope plus 45 cm more = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":175,"display":{"counting":{"kind":"sum","parts":[100,30,45]},"promptText":"A rope is 1 m 30 cm long. Then 45 cm more rope is tied on. How many centimeters long is the rope now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0729",
@@ -22632,7 +22632,7 @@ export const ITEMS = [
     structureType: "convertThenAddBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":263,"display":{"counting":{"kind":"sum","parts":[200,25,38]},"promptText":"2 m 25 cm of rope plus 38 cm more = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":263,"display":{"counting":{"kind":"sum","parts":[200,25,38]},"promptText":"Tie 38 cm of rope onto a rope that is 2 m 25 cm long. How many centimeters long is the rope now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0730",
@@ -22642,7 +22642,7 @@ export const ITEMS = [
     structureType: "convertThenAddBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":182,"display":{"counting":{"kind":"sum","parts":[100,55,27]},"promptText":"1 m 55 cm of rope plus 27 cm more = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":182,"display":{"counting":{"kind":"sum","parts":[100,55,27]},"promptText":"A rope is 1 m 55 cm long. Then 27 cm more rope is tied on. How many centimeters long is the rope now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0731",
@@ -22652,7 +22652,7 @@ export const ITEMS = [
     structureType: "convertThenAddBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":364,"display":{"counting":{"kind":"sum","parts":[300,15,49]},"promptText":"3 m 15 cm of rope plus 49 cm more = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":364,"display":{"counting":{"kind":"sum","parts":[300,15,49]},"promptText":"Tie 49 cm of rope onto a rope that is 3 m 15 cm long. How many centimeters long is the rope now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0732",
@@ -22662,7 +22662,7 @@ export const ITEMS = [
     structureType: "convertThenAddBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":281,"display":{"counting":{"kind":"sum","parts":[200,45,36]},"promptText":"2 m 45 cm of rope plus 36 cm more = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":281,"display":{"counting":{"kind":"sum","parts":[200,45,36]},"promptText":"A rope is 2 m 45 cm long. Then 36 cm more rope is tied on. How many centimeters long is the rope now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0733",
@@ -22672,7 +22672,7 @@ export const ITEMS = [
     structureType: "convertThenAddBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":183,"display":{"counting":{"kind":"sum","parts":[100,65,18]},"promptText":"1 m 65 cm of rope plus 18 cm more = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":183,"display":{"counting":{"kind":"sum","parts":[100,65,18]},"promptText":"Tie 18 cm of rope onto a rope that is 1 m 65 cm long. How many centimeters long is the rope now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0734",
@@ -22682,7 +22682,7 @@ export const ITEMS = [
     structureType: "convertThenAddBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":387,"display":{"counting":{"kind":"sum","parts":[300,35,52]},"promptText":"3 m 35 cm of rope plus 52 cm more = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":387,"display":{"counting":{"kind":"sum","parts":[300,35,52]},"promptText":"A rope is 3 m 35 cm long. Then 52 cm more rope is tied on. How many centimeters long is the rope now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0735",
@@ -22692,7 +22692,7 @@ export const ITEMS = [
     structureType: "convertThenAddBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":272,"display":{"counting":{"kind":"sum","parts":[200,5,67]},"promptText":"2 m 5 cm of rope plus 67 cm more = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":272,"display":{"counting":{"kind":"sum","parts":[200,5,67]},"promptText":"Tie 67 cm of rope onto a rope that is 2 m 5 cm long. How many centimeters long is the rope now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0736",
@@ -22702,7 +22702,7 @@ export const ITEMS = [
     structureType: "convertThenAddBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":216,"display":{"counting":{"kind":"sum","parts":[100,75,41]},"promptText":"1 m 75 cm of rope plus 41 cm more = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":216,"display":{"counting":{"kind":"sum","parts":[100,75,41]},"promptText":"A rope is 1 m 75 cm long. Then 41 cm more rope is tied on. How many centimeters long is the rope now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0737",
@@ -22712,7 +22712,7 @@ export const ITEMS = [
     structureType: "convertThenAddBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":458,"display":{"counting":{"kind":"sum","parts":[400,25,33]},"promptText":"4 m 25 cm of rope plus 33 cm more = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":458,"display":{"counting":{"kind":"sum","parts":[400,25,33]},"promptText":"Tie 33 cm of rope onto a rope that is 4 m 25 cm long. How many centimeters long is the rope now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0738",
@@ -22722,7 +22722,7 @@ export const ITEMS = [
     structureType: "convertThenAddBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":289,"display":{"counting":{"kind":"sum","parts":[200,65,24]},"promptText":"2 m 65 cm of rope plus 24 cm more = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":289,"display":{"counting":{"kind":"sum","parts":[200,65,24]},"promptText":"A rope is 2 m 65 cm long. Then 24 cm more rope is tied on. How many centimeters long is the rope now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0739",
@@ -22732,7 +22732,7 @@ export const ITEMS = [
     structureType: "convertThenAddBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":371,"display":{"counting":{"kind":"sum","parts":[300,55,16]},"promptText":"3 m 55 cm of rope plus 16 cm more = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":371,"display":{"counting":{"kind":"sum","parts":[300,55,16]},"promptText":"Tie 16 cm of rope onto a rope that is 3 m 55 cm long. How many centimeters long is the rope now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0740",
@@ -22742,7 +22742,7 @@ export const ITEMS = [
     structureType: "convertThenAddBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":214,"display":{"counting":{"kind":"sum","parts":[100,85,29]},"promptText":"1 m 85 cm of rope plus 29 cm more = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":214,"display":{"counting":{"kind":"sum","parts":[100,85,29]},"promptText":"A rope is 1 m 85 cm long. Then 29 cm more rope is tied on. How many centimeters long is the rope now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0741",
@@ -22752,7 +22752,7 @@ export const ITEMS = [
     structureType: "convertThenAddBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":457,"display":{"counting":{"kind":"sum","parts":[400,45,12]},"promptText":"4 m 45 cm of rope plus 12 cm more = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":457,"display":{"counting":{"kind":"sum","parts":[400,45,12]},"promptText":"Tie 12 cm of rope onto a rope that is 4 m 45 cm long. How many centimeters long is the rope now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0742",
@@ -22762,7 +22762,7 @@ export const ITEMS = [
     structureType: "convertThenAddBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":328,"display":{"counting":{"kind":"sum","parts":[200,85,43]},"promptText":"2 m 85 cm of rope plus 43 cm more = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":328,"display":{"counting":{"kind":"sum","parts":[200,85,43]},"promptText":"A rope is 2 m 85 cm long. Then 43 cm more rope is tied on. How many centimeters long is the rope now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0743",
@@ -22772,7 +22772,7 @@ export const ITEMS = [
     structureType: "convertThenAddBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":383,"display":{"counting":{"kind":"sum","parts":[300,5,78]},"promptText":"3 m 5 cm of rope plus 78 cm more = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":383,"display":{"counting":{"kind":"sum","parts":[300,5,78]},"promptText":"Tie 78 cm of rope onto a rope that is 3 m 5 cm long. How many centimeters long is the rope now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0744",
@@ -22782,7 +22782,7 @@ export const ITEMS = [
     structureType: "convertThenAddBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":217,"display":{"counting":{"kind":"sum","parts":[100,95,22]},"promptText":"1 m 95 cm of rope plus 22 cm more = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":217,"display":{"counting":{"kind":"sum","parts":[100,95,22]},"promptText":"A rope is 1 m 95 cm long. Then 22 cm more rope is tied on. How many centimeters long is the rope now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0745",
@@ -22792,7 +22792,7 @@ export const ITEMS = [
     structureType: "convertThenAddBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":496,"display":{"counting":{"kind":"sum","parts":[400,65,31]},"promptText":"4 m 65 cm of rope plus 31 cm more = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":496,"display":{"counting":{"kind":"sum","parts":[400,65,31]},"promptText":"Tie 31 cm of rope onto a rope that is 4 m 65 cm long. How many centimeters long is the rope now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0746",
@@ -22802,7 +22802,7 @@ export const ITEMS = [
     structureType: "convertThenAddBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":294,"display":{"counting":{"kind":"sum","parts":[200,35,59]},"promptText":"2 m 35 cm of rope plus 59 cm more = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":294,"display":{"counting":{"kind":"sum","parts":[200,35,59]},"promptText":"A rope is 2 m 35 cm long. Then 59 cm more rope is tied on. How many centimeters long is the rope now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0747",
@@ -22812,7 +22812,7 @@ export const ITEMS = [
     structureType: "convertThenAddBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":389,"display":{"counting":{"kind":"sum","parts":[300,75,14]},"promptText":"3 m 75 cm of rope plus 14 cm more = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":389,"display":{"counting":{"kind":"sum","parts":[300,75,14]},"promptText":"Tie 14 cm of rope onto a rope that is 3 m 75 cm long. How many centimeters long is the rope now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0748",
@@ -22822,7 +22822,7 @@ export const ITEMS = [
     structureType: "convertThenAddBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":541,"display":{"counting":{"kind":"sum","parts":[500,15,26]},"promptText":"5 m 15 cm of rope plus 26 cm more = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":541,"display":{"counting":{"kind":"sum","parts":[500,15,26]},"promptText":"A rope is 5 m 15 cm long. Then 26 cm more rope is tied on. How many centimeters long is the rope now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0749",
@@ -22832,7 +22832,7 @@ export const ITEMS = [
     structureType: "convertThenAddBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":208,"display":{"counting":{"kind":"sum","parts":[100,45,63]},"promptText":"1 m 45 cm of rope plus 63 cm more = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":208,"display":{"counting":{"kind":"sum","parts":[100,45,63]},"promptText":"Tie 63 cm of rope onto a rope that is 1 m 45 cm long. How many centimeters long is the rope now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0750",
@@ -22842,7 +22842,7 @@ export const ITEMS = [
     structureType: "convertThenAddBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":552,"display":{"counting":{"kind":"sum","parts":[500,35,17]},"promptText":"5 m 35 cm of rope plus 17 cm more = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":552,"display":{"counting":{"kind":"sum","parts":[500,35,17]},"promptText":"A rope is 5 m 35 cm long. Then 17 cm more rope is tied on. How many centimeters long is the rope now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0751",
@@ -22852,7 +22852,7 @@ export const ITEMS = [
     structureType: "convertThenAddBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":303,"display":{"counting":{"kind":"sum","parts":[200,55,48]},"promptText":"2 m 55 cm of rope plus 48 cm more = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":303,"display":{"counting":{"kind":"sum","parts":[200,55,48]},"promptText":"Tie 48 cm of rope onto a rope that is 2 m 55 cm long. How many centimeters long is the rope now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0752",
@@ -22862,7 +22862,7 @@ export const ITEMS = [
     structureType: "convertThenAddBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":489,"display":{"counting":{"kind":"sum","parts":[400,5,84]},"promptText":"4 m 5 cm of rope plus 84 cm more = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":489,"display":{"counting":{"kind":"sum","parts":[400,5,84]},"promptText":"A rope is 4 m 5 cm long. Then 84 cm more rope is tied on. How many centimeters long is the rope now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0753",
@@ -22872,7 +22872,7 @@ export const ITEMS = [
     structureType: "convertThenAddBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":391,"display":{"counting":{"kind":"sum","parts":[300,25,66]},"promptText":"3 m 25 cm of rope plus 66 cm more = ? cm"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":391,"display":{"counting":{"kind":"sum","parts":[300,25,66]},"promptText":"Tie 66 cm of rope onto a rope that is 3 m 25 cm long. How many centimeters long is the rope now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0754",
@@ -22882,7 +22882,7 @@ export const ITEMS = [
     structureType: "convertThenAddMassBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1750,"display":{"counting":{"kind":"sum","parts":[1000,300,450]},"promptText":"1 kg 300 g of sand plus 450 g more = ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1750,"display":{"counting":{"kind":"sum","parts":[1000,300,450]},"promptText":"A bag has 1 kg 300 g of sand. Then 450 g more sand is added. How many grams of sand are in the bag now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0755",
@@ -22892,7 +22892,7 @@ export const ITEMS = [
     structureType: "convertThenAddMassBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2630,"display":{"counting":{"kind":"sum","parts":[2000,250,380]},"promptText":"2 kg 250 g of sand plus 380 g more = ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2630,"display":{"counting":{"kind":"sum","parts":[2000,250,380]},"promptText":"Add 380 g of sand to a bag that has 2 kg 250 g of sand. How many grams of sand are in the bag now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0756",
@@ -22902,7 +22902,7 @@ export const ITEMS = [
     structureType: "convertThenAddMassBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1820,"display":{"counting":{"kind":"sum","parts":[1000,550,270]},"promptText":"1 kg 550 g of sand plus 270 g more = ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1820,"display":{"counting":{"kind":"sum","parts":[1000,550,270]},"promptText":"A bag has 1 kg 550 g of sand. Then 270 g more sand is added. How many grams of sand are in the bag now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0757",
@@ -22912,7 +22912,7 @@ export const ITEMS = [
     structureType: "convertThenAddMassBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3640,"display":{"counting":{"kind":"sum","parts":[3000,150,490]},"promptText":"3 kg 150 g of sand plus 490 g more = ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3640,"display":{"counting":{"kind":"sum","parts":[3000,150,490]},"promptText":"Add 490 g of sand to a bag that has 3 kg 150 g of sand. How many grams of sand are in the bag now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0758",
@@ -22922,7 +22922,7 @@ export const ITEMS = [
     structureType: "convertThenAddMassBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2810,"display":{"counting":{"kind":"sum","parts":[2000,450,360]},"promptText":"2 kg 450 g of sand plus 360 g more = ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2810,"display":{"counting":{"kind":"sum","parts":[2000,450,360]},"promptText":"A bag has 2 kg 450 g of sand. Then 360 g more sand is added. How many grams of sand are in the bag now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0759",
@@ -22932,7 +22932,7 @@ export const ITEMS = [
     structureType: "convertThenAddMassBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1830,"display":{"counting":{"kind":"sum","parts":[1000,650,180]},"promptText":"1 kg 650 g of sand plus 180 g more = ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1830,"display":{"counting":{"kind":"sum","parts":[1000,650,180]},"promptText":"Add 180 g of sand to a bag that has 1 kg 650 g of sand. How many grams of sand are in the bag now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0760",
@@ -22942,7 +22942,7 @@ export const ITEMS = [
     structureType: "convertThenAddMassBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3870,"display":{"counting":{"kind":"sum","parts":[3000,350,520]},"promptText":"3 kg 350 g of sand plus 520 g more = ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3870,"display":{"counting":{"kind":"sum","parts":[3000,350,520]},"promptText":"A bag has 3 kg 350 g of sand. Then 520 g more sand is added. How many grams of sand are in the bag now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0761",
@@ -22952,7 +22952,7 @@ export const ITEMS = [
     structureType: "convertThenAddMassBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2720,"display":{"counting":{"kind":"sum","parts":[2000,50,670]},"promptText":"2 kg 50 g of sand plus 670 g more = ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2720,"display":{"counting":{"kind":"sum","parts":[2000,50,670]},"promptText":"Add 670 g of sand to a bag that has 2 kg 50 g of sand. How many grams of sand are in the bag now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0762",
@@ -22962,7 +22962,7 @@ export const ITEMS = [
     structureType: "convertThenAddMassBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2160,"display":{"counting":{"kind":"sum","parts":[1000,750,410]},"promptText":"1 kg 750 g of sand plus 410 g more = ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2160,"display":{"counting":{"kind":"sum","parts":[1000,750,410]},"promptText":"A bag has 1 kg 750 g of sand. Then 410 g more sand is added. How many grams of sand are in the bag now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0763",
@@ -22972,7 +22972,7 @@ export const ITEMS = [
     structureType: "convertThenAddMassBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4580,"display":{"counting":{"kind":"sum","parts":[4000,250,330]},"promptText":"4 kg 250 g of sand plus 330 g more = ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4580,"display":{"counting":{"kind":"sum","parts":[4000,250,330]},"promptText":"Add 330 g of sand to a bag that has 4 kg 250 g of sand. How many grams of sand are in the bag now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0764",
@@ -22982,7 +22982,7 @@ export const ITEMS = [
     structureType: "convertThenAddMassBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2890,"display":{"counting":{"kind":"sum","parts":[2000,650,240]},"promptText":"2 kg 650 g of sand plus 240 g more = ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2890,"display":{"counting":{"kind":"sum","parts":[2000,650,240]},"promptText":"A bag has 2 kg 650 g of sand. Then 240 g more sand is added. How many grams of sand are in the bag now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0765",
@@ -22992,7 +22992,7 @@ export const ITEMS = [
     structureType: "convertThenAddMassBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3710,"display":{"counting":{"kind":"sum","parts":[3000,550,160]},"promptText":"3 kg 550 g of sand plus 160 g more = ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3710,"display":{"counting":{"kind":"sum","parts":[3000,550,160]},"promptText":"Add 160 g of sand to a bag that has 3 kg 550 g of sand. How many grams of sand are in the bag now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0766",
@@ -23002,7 +23002,7 @@ export const ITEMS = [
     structureType: "convertThenAddMassBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2140,"display":{"counting":{"kind":"sum","parts":[1000,850,290]},"promptText":"1 kg 850 g of sand plus 290 g more = ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2140,"display":{"counting":{"kind":"sum","parts":[1000,850,290]},"promptText":"A bag has 1 kg 850 g of sand. Then 290 g more sand is added. How many grams of sand are in the bag now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0767",
@@ -23012,7 +23012,7 @@ export const ITEMS = [
     structureType: "convertThenAddMassBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4570,"display":{"counting":{"kind":"sum","parts":[4000,450,120]},"promptText":"4 kg 450 g of sand plus 120 g more = ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4570,"display":{"counting":{"kind":"sum","parts":[4000,450,120]},"promptText":"Add 120 g of sand to a bag that has 4 kg 450 g of sand. How many grams of sand are in the bag now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0768",
@@ -23022,7 +23022,7 @@ export const ITEMS = [
     structureType: "convertThenAddMassBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3280,"display":{"counting":{"kind":"sum","parts":[2000,850,430]},"promptText":"2 kg 850 g of sand plus 430 g more = ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3280,"display":{"counting":{"kind":"sum","parts":[2000,850,430]},"promptText":"A bag has 2 kg 850 g of sand. Then 430 g more sand is added. How many grams of sand are in the bag now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0769",
@@ -23032,7 +23032,7 @@ export const ITEMS = [
     structureType: "convertThenAddMassBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3830,"display":{"counting":{"kind":"sum","parts":[3000,50,780]},"promptText":"3 kg 50 g of sand plus 780 g more = ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3830,"display":{"counting":{"kind":"sum","parts":[3000,50,780]},"promptText":"Add 780 g of sand to a bag that has 3 kg 50 g of sand. How many grams of sand are in the bag now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0770",
@@ -23042,7 +23042,7 @@ export const ITEMS = [
     structureType: "convertThenAddMassBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2170,"display":{"counting":{"kind":"sum","parts":[1000,950,220]},"promptText":"1 kg 950 g of sand plus 220 g more = ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2170,"display":{"counting":{"kind":"sum","parts":[1000,950,220]},"promptText":"A bag has 1 kg 950 g of sand. Then 220 g more sand is added. How many grams of sand are in the bag now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0771",
@@ -23052,7 +23052,7 @@ export const ITEMS = [
     structureType: "convertThenAddMassBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4960,"display":{"counting":{"kind":"sum","parts":[4000,650,310]},"promptText":"4 kg 650 g of sand plus 310 g more = ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4960,"display":{"counting":{"kind":"sum","parts":[4000,650,310]},"promptText":"Add 310 g of sand to a bag that has 4 kg 650 g of sand. How many grams of sand are in the bag now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0772",
@@ -23062,7 +23062,7 @@ export const ITEMS = [
     structureType: "convertThenAddMassBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2940,"display":{"counting":{"kind":"sum","parts":[2000,350,590]},"promptText":"2 kg 350 g of sand plus 590 g more = ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2940,"display":{"counting":{"kind":"sum","parts":[2000,350,590]},"promptText":"A bag has 2 kg 350 g of sand. Then 590 g more sand is added. How many grams of sand are in the bag now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0773",
@@ -23072,7 +23072,7 @@ export const ITEMS = [
     structureType: "convertThenAddMassBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3890,"display":{"counting":{"kind":"sum","parts":[3000,750,140]},"promptText":"3 kg 750 g of sand plus 140 g more = ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3890,"display":{"counting":{"kind":"sum","parts":[3000,750,140]},"promptText":"Add 140 g of sand to a bag that has 3 kg 750 g of sand. How many grams of sand are in the bag now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0774",
@@ -23082,7 +23082,7 @@ export const ITEMS = [
     structureType: "convertThenAddMassBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5410,"display":{"counting":{"kind":"sum","parts":[5000,150,260]},"promptText":"5 kg 150 g of sand plus 260 g more = ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5410,"display":{"counting":{"kind":"sum","parts":[5000,150,260]},"promptText":"A bag has 5 kg 150 g of sand. Then 260 g more sand is added. How many grams of sand are in the bag now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0775",
@@ -23092,7 +23092,7 @@ export const ITEMS = [
     structureType: "convertThenAddMassBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2080,"display":{"counting":{"kind":"sum","parts":[1000,450,630]},"promptText":"1 kg 450 g of sand plus 630 g more = ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2080,"display":{"counting":{"kind":"sum","parts":[1000,450,630]},"promptText":"Add 630 g of sand to a bag that has 1 kg 450 g of sand. How many grams of sand are in the bag now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0776",
@@ -23102,7 +23102,7 @@ export const ITEMS = [
     structureType: "convertThenAddMassBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5520,"display":{"counting":{"kind":"sum","parts":[5000,350,170]},"promptText":"5 kg 350 g of sand plus 170 g more = ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5520,"display":{"counting":{"kind":"sum","parts":[5000,350,170]},"promptText":"A bag has 5 kg 350 g of sand. Then 170 g more sand is added. How many grams of sand are in the bag now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0777",
@@ -23112,7 +23112,7 @@ export const ITEMS = [
     structureType: "convertThenAddMassBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3030,"display":{"counting":{"kind":"sum","parts":[2000,550,480]},"promptText":"2 kg 550 g of sand plus 480 g more = ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3030,"display":{"counting":{"kind":"sum","parts":[2000,550,480]},"promptText":"Add 480 g of sand to a bag that has 2 kg 550 g of sand. How many grams of sand are in the bag now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0778",
@@ -23122,7 +23122,7 @@ export const ITEMS = [
     structureType: "convertThenAddMassBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4890,"display":{"counting":{"kind":"sum","parts":[4000,50,840]},"promptText":"4 kg 50 g of sand plus 840 g more = ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4890,"display":{"counting":{"kind":"sum","parts":[4000,50,840]},"promptText":"A bag has 4 kg 50 g of sand. Then 840 g more sand is added. How many grams of sand are in the bag now?"},"answerType":"numberPad"},
   },
   {
     itemId: "measurement-proc-b0821-0779",
@@ -23132,6 +23132,6 @@ export const ITEMS = [
     structureType: "convertThenAddMassBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3910,"display":{"counting":{"kind":"sum","parts":[3000,250,660]},"promptText":"3 kg 250 g of sand plus 660 g more = ? g"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3910,"display":{"counting":{"kind":"sum","parts":[3000,250,660]},"promptText":"Add 660 g of sand to a bag that has 3 kg 250 g of sand. How many grams of sand are in the bag now?"},"answerType":"numberPad"},
   },
 ];

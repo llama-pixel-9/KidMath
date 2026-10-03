@@ -36,10 +36,11 @@ const SUBSKILLS = [
  */
 const SHAPES = [
   { key: "triangleEquilateral", name: "triangle", sides: 3, vertices: 3, symmetry: 3, parallelPairs: 0, rightAngles: 0, tier: 1 },
-  // The kit draws the right triangle with two equal legs, so the FIGURE has one
-  // line of symmetry even though a general right triangle has none. Figure
-  // items must answer for what is drawn.
-  { key: "triangleRight", name: "right triangle", sides: 3, vertices: 3, symmetry: 1, parallelPairs: 0, rightAngles: 1, tier: 2 },
+  // The kit draws the right triangle with unequal legs (shapeData.js; its
+  // SHAPE_META says 0), so the FIGURE has no line of symmetry. Figure items
+  // answer for what is drawn: four shipped items keyed 1 off this table were
+  // fixed 2026-10-02.
+  { key: "triangleRight", name: "right triangle", sides: 3, vertices: 3, symmetry: 0, parallelPairs: 0, rightAngles: 1, tier: 2 },
   { key: "triangleScalene", name: "scalene triangle", sides: 3, vertices: 3, symmetry: 0, parallelPairs: 0, rightAngles: 0, tier: 3 },
   { key: "square", name: "square", sides: 4, vertices: 4, symmetry: 4, parallelPairs: 2, rightAngles: 4, tier: 1 },
   { key: "rectangle", name: "rectangle", sides: 4, vertices: 4, symmetry: 2, parallelPairs: 2, rightAngles: 4, tier: 1 },

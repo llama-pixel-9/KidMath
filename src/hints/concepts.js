@@ -5,6 +5,8 @@
  *   idea     what the concept IS, two or three short sentences a child reads
  *   example  a fully worked example with different numbers from the live
  *            question: the problem, the steps, the answer
+ *   alt      a second worked example, shown when the first one is the live
+ *            question itself (same numbers, same answer); see hintFor
  *
  * `hintFor` (index.js) pairs an entry with steps built from the live
  * question's own numbers (steps.js). Keep every sentence short; a kid reads
@@ -50,11 +52,13 @@ export const CONCEPTS = {
       title: "Make a ten first",
       idea: "Ten is a friendly number. Break one addend so the other becomes 10, then add what is left. 10 plus something is easy to see.",
       example: ex("8 + 5", ["8 needs 2 more to make 10.", "Take 2 from the 5. That leaves 3.", "10 + 3 = 13."], "13"),
+      alt: ex("9 + 6", ["9 needs 1 more to make 10.", "Take 1 from the 6. That leaves 5.", "10 + 5 = 15."], "15"),
     },
     composeDecompose: {
       title: "Put the parts together",
       idea: "Adding means joining two parts into one whole. You can count all of them, or start at the bigger number and count on the smaller one.",
       example: ex("6 + 3", ["Start at the bigger number, 6.", "Count on 3 more: 7, 8, 9.", "The whole is 9."], "9"),
+      alt: ex("4 + 3", ["Start at the bigger number, 4.", "Count on 3 more: 5, 6, 7.", "The whole is 7."], "7"),
     },
     unknownAddend: {
       title: "Find the missing part",
@@ -72,11 +76,13 @@ export const CONCEPTS = {
       title: "Break it to get to ten",
       idea: "Break the number you are taking away into two easier pieces. First subtract down to 10, then subtract the rest.",
       example: ex("15 − 7", ["15 − 5 gets you to 10.", "You still need to take away 2 more (because 5 + 2 = 7).", "10 − 2 = 8."], "8"),
+      alt: ex("12 − 5", ["12 − 2 gets you to 10.", "You still need to take away 3 more (because 2 + 3 = 5).", "10 − 3 = 7."], "7"),
     },
     unknownSubtrahend: {
       title: "How many were taken?",
       idea: "You know how many you started with and how many are left. The amount taken away is the gap between them. Count up from what is left to the start.",
       example: ex("10 − ? = 4", ["Start at 4, what is left.", "Count up to 10: 5, 6, 7, 8, 9, 10. That is 6 hops.", "So 6 were taken away, because 10 − 6 = 4."], "6"),
+      alt: ex("9 − __ = 5", ["Start at 5, what is left.", "Count up to 9: 6, 7, 8, 9. That is 4 hops.", "So 4 were taken away, because 9 − 4 = 5."], "4"),
     },
   },
   multiplication: {
@@ -84,16 +90,19 @@ export const CONCEPTS = {
       title: "Groups of the same size",
       idea: "Multiplying counts equal groups fast. 4 × 3 means 4 groups with 3 in each. You can skip count by the group size, once for each group.",
       example: ex("4 × 3", ["4 groups, 3 in each.", "Skip count by 3, four times: 3, 6, 9, 12.", "So 4 × 3 = 12."], "12"),
+      alt: ex("3 × 6", ["3 groups, 6 in each.", "Skip count by 6, three times: 6, 12, 18.", "So 3 × 6 = 18."], "18"),
     },
     arrayReasoning: {
       title: "Rows and columns",
       idea: "An array is dots in neat rows. Rows × dots-in-each-row tells you the total. Turn it sideways and the answer is the same.",
       example: ex("3 rows of 5", ["Draw 3 rows with 5 dots in each.", "Count by 5s down the rows: 5, 10, 15.", "3 × 5 = 15."], "15"),
+      alt: ex("4 rows of 3", ["Draw 4 rows with 3 dots in each.", "Count by 3s down the rows: 3, 6, 9, 12.", "4 × 3 = 12."], "12"),
     },
     factFluency: {
       title: "Use a fact you know",
       idea: "Hard facts hide next to easy ones. If you know 5 × 6, then 6 × 6 is just one more group of 6. Doubles and tens are good anchors.",
       example: ex("7 × 6", ["Start from an easy one: 5 × 6 = 30.", "You need 2 more groups of 6, which is 12.", "30 + 12 = 42."], "42"),
+      alt: ex("6 × 8", ["Start from an easy one: 5 × 8 = 40.", "You need 1 more group of 8.", "40 + 8 = 48."], "48"),
     },
   },
   division: {
@@ -101,21 +110,25 @@ export const CONCEPTS = {
       title: "Share it out equally",
       idea: "Dividing shares a total into equal groups. Deal one at a time into each group until they are all gone, then count what each group got.",
       example: ex("12 ÷ 3", ["Make 3 groups.", "Deal out the 12 one by one: each group gets 4.", "12 ÷ 3 = 4."], "4"),
+      alt: ex("15 ÷ 5", ["Make 5 groups.", "Deal out the 15 one by one: each group gets 3.", "15 ÷ 5 = 3."], "3"),
     },
     inverseFact: {
       title: "Think multiplication",
       idea: "Division is multiplication backwards. 20 ÷ 4 asks: 4 times what makes 20? Use the times fact you already know.",
       example: ex("20 ÷ 4", ["Ask: 4 × ? = 20.", "4 × 5 = 20.", "So 20 ÷ 4 = 5."], "5"),
+      alt: ex("24 ÷ 6", ["Ask: 6 × ? = 24.", "6 × 4 = 24.", "So 24 ÷ 6 = 4."], "4"),
     },
     unknownQuotient: {
       title: "How many groups?",
       idea: "Sometimes you know the group size and want the number of groups. Skip count by the group size until you hit the total. Count the hops.",
       example: ex("18 ÷ 6", ["Skip count by 6 until you reach 18: 6, 12, 18.", "That took 3 hops.", "So 18 ÷ 6 = 3."], "3"),
+      alt: ex("20 ÷ 5", ["Skip count by 5 until you reach 20: 5, 10, 15, 20.", "That took 4 hops.", "So 20 ÷ 5 = 4."], "4"),
     },
     remainders: {
       title: "What is left over",
       idea: "Sometimes sharing does not come out even. Share as much as you can equally. Whatever is left is the remainder.",
       example: ex("14 ÷ 4", ["4 × 3 = 12 fits inside 14.", "14 − 12 = 2 left over.", "14 ÷ 4 = 3 remainder 2."], "3 R 2"),
+      alt: ex("17 ÷ 5", ["5 × 3 = 15 fits inside 17.", "17 − 15 = 2 left over.", "17 ÷ 5 = 3 remainder 2."], "3 R 2"),
     },
   },
   comparing: {
@@ -157,16 +170,19 @@ export const CONCEPTS = {
       title: "Find the jump size",
       idea: "In skip counting, every jump is the same size. Subtract two neighbors to find the jump, then keep jumping.",
       example: ex("5, 10, 15, ?", ["10 − 5 = 5, so the jump is 5.", "15 + 5 = 20."], "20"),
+      alt: ex("3, 6, 9, __", ["6 − 3 = 3, so the jump is 3.", "9 + 3 = 12."], "12"),
     },
     stepInference: {
       title: "What is the step?",
       idea: "If a middle number is missing, the step is still the same. Look at any two numbers next to each other to find it, then fill the gap.",
       example: ex("4, ?, 12, 16", ["16 − 12 = 4, so the step is 4.", "4 + 4 = 8. Check: 8 + 4 = 12."], "8"),
+      alt: ex("5, __, 15, 20", ["20 − 15 = 5, so the step is 5.", "5 + 5 = 10. Check: 10 + 5 = 15."], "10"),
     },
     groupsToProduct: {
       title: "Count groups in jumps",
       idea: "Groups of the same size can be counted in jumps. Say the group size once for each group and stop on the last group.",
       example: ex("4 bikes, 2 wheels each", ["Jump by 2, four times: 2, 4, 6, 8.", "8 wheels in all."], "8"),
+      alt: ex("3 tricycles, 3 wheels each", ["Jump by 3, three times: 3, 6, 9.", "9 wheels in all."], "9"),
     },
   },
   placeValue: {
@@ -174,6 +190,7 @@ export const CONCEPTS = {
       title: "Tens and ones",
       idea: "Two-digit numbers are made of tens and ones. 34 is 3 tens and 4 ones. The place a digit sits in tells its value.",
       example: ex("What number is 5 tens and 2 ones?", ["5 tens is 50.", "2 ones is 2.", "50 + 2 = 52."], "52"),
+      alt: ex("What number is 3 tens and 8 ones?", ["3 tens is 30.", "8 ones is 8.", "30 + 8 = 38."], "38"),
     },
     expandedForm: {
       title: "Stretch the number out",
@@ -196,11 +213,13 @@ export const CONCEPTS = {
       title: "Parts of a whole",
       idea: "A fraction names equal parts. The bottom number says how many equal parts make the whole. The top number says how many you have.",
       example: ex("A pizza is cut into 8 equal slices. You eat 3.", ["8 equal parts, so the bottom is 8.", "You have 3, so the top is 3.", "You ate 3/8."], "3/8"),
+      alt: ex("A cake is cut into 6 equal pieces. You eat 1.", ["6 equal parts, so the bottom is 6.", "You have 1, so the top is 1.", "You ate 1/6."], "1/6"),
     },
     fractionAsNumber: {
       title: "Fractions live on the number line",
       idea: "A fraction is a number between whole numbers. Cut the space from 0 to 1 into equal parts and count hops from 0.",
       example: ex("Where is 3/4 on a number line?", ["Cut 0 to 1 into 4 equal parts.", "Hop 3 parts from 0.", "That spot is 3/4, just before 1."], "3 hops of 1/4"),
+      alt: ex("Where is 2/3 on a number line?", ["Cut 0 to 1 into 3 equal parts.", "Hop 2 parts from 0.", "That spot is 2/3."], "2 hops of 1/3"),
     },
     equivalence: {
       title: "Same amount, different name",
@@ -211,16 +230,19 @@ export const CONCEPTS = {
       title: "Which fraction is bigger?",
       idea: "Same bottom: the bigger top wins. Same top: the smaller bottom wins, because bigger pieces. Or compare each fraction to 1/2.",
       example: ex("Compare 3/8 and 5/8", ["Same bottom, so the pieces are the same size.", "5 pieces is more than 3 pieces.", "3/8 < 5/8."], "5/8 is bigger"),
+      alt: ex("Compare 2/6 and 5/6", ["Same bottom, so the pieces are the same size.", "5 pieces is more than 2 pieces.", "2/6 < 5/6."], "5/6 is bigger"),
     },
     addLikeDenominators: {
       title: "Add pieces of the same size",
       idea: "When the bottoms match, the pieces are the same size. Add the tops and keep the bottom the same.",
       example: ex("2/6 + 3/6", ["Bottoms match, so keep 6.", "Add the tops: 2 + 3 = 5.", "2/6 + 3/6 = 5/6."], "5/6"),
+      alt: ex("1/5 + 3/5", ["Bottoms match, so keep 5.", "Add the tops: 1 + 3 = 4.", "1/5 + 3/5 = 4/5."], "4/5"),
     },
     fractionOfSet: {
       title: "A fraction of a group",
       idea: "To find a fraction of a group, split the group into equal parts (the bottom number), then take that many parts (the top number).",
       example: ex("1/3 of 12 apples", ["Split 12 into 3 equal groups: 4 in each.", "Take 1 group.", "1/3 of 12 is 4."], "4"),
+      alt: ex("1/4 of 20 marbles", ["Split 20 into 4 equal groups: 5 in each.", "Take 1 group.", "1/4 of 20 is 5."], "5"),
     },
   },
   decimals: {
@@ -233,11 +255,13 @@ export const CONCEPTS = {
       title: "Compare place by place",
       idea: "Line up the decimal points. Compare the whole numbers first, then tenths, then hundredths. Adding a zero on the end does not change the value.",
       example: ex("Which is bigger, 0.5 or 0.45?", ["Write 0.5 as 0.50.", "Compare tenths: 5 and 4. 5 is more.", "0.5 is bigger."], "0.5"),
+      alt: ex("Which is bigger, 0.6 or 0.58?", ["Write 0.6 as 0.60.", "Compare tenths: 6 and 5. 6 is more.", "0.6 is bigger."], "0.6"),
     },
     fractionToDecimal: {
       title: "Fractions to decimals",
       idea: "Tenths and hundredths have decimal names. 3/10 is 0.3. 25/100 is 0.25. If the bottom is 10 or 100, just read the top into those places.",
       example: ex("Write 7/10 as a decimal", ["The bottom is 10, so it is tenths.", "7 tenths is 0.7."], "0.7"),
+      alt: ex("Write 3/10 as a decimal", ["The bottom is 10, so it is tenths.", "3 tenths is 0.3."], "0.3"),
     },
     decimalAsNumber: {
       title: "Decimals on the number line",
@@ -255,6 +279,7 @@ export const CONCEPTS = {
       title: "Find the missing part",
       idea: "Cover the missing part. Start at the part you know and count up to the whole. The hops are the missing part.",
       example: ex("? + 6 = 10", ["Start at 6.", "Count up to 10: 7, 8, 9, 10. That is 4.", "The missing part is 4."], "4"),
+      alt: ex("__ + 3 = 8", ["Start at 3.", "Count up to 8: 4, 5, 6, 7, 8. That is 5.", "The missing part is 5."], "5"),
     },
     decompose: {
       title: "Break a number apart",
@@ -267,16 +292,19 @@ export const CONCEPTS = {
       title: "Draw the bar",
       idea: "A bar model is a picture of the problem. One long bar is the whole. Cut it into the parts. Whatever piece is missing is what you find.",
       example: ex("Mia has 8 stickers and 5 more. How many?", ["Draw a bar with a piece for 8 and a piece for 5.", "The whole bar is both together: 8 + 5.", "13 stickers."], "13"),
+      alt: ex("Leo has 9 shells and finds 6 more. How many?", ["Draw a bar with a piece for 9 and a piece for 6.", "The whole bar is both together: 9 + 6.", "15 shells."], "15"),
     },
     comparison: {
       title: "Two bars, side by side",
       idea: "Draw one bar for each amount, lined up on the left. The extra bit sticking out is the difference. Longer bar = more.",
       example: ex("Sam has 12, Ana has 4 fewer. How many does Ana have?", ["Draw Sam's bar for 12.", "Ana's bar is shorter by 4.", "12 − 4 = 8."], "8"),
+      alt: ex("Kim has 15, Raj has 6 fewer. How many does Raj have?", ["Draw Kim's bar for 15.", "Raj's bar is shorter by 6.", "15 − 6 = 9."], "9"),
     },
     multiplicative: {
       title: "Times as many",
       idea: "'3 times as many' means 3 equal bars next to 1 bar. Find one unit first, then count the units you need.",
       example: ex("A rope is 3 times as long as a 4 m stick. How long?", ["One unit is 4 m.", "3 units: 4 + 4 + 4.", "12 m."], "12"),
+      alt: ex("A ribbon is 4 times as long as a 5 cm ribbon. How long?", ["One unit is 5 cm.", "4 units: 5 + 5 + 5 + 5.", "20 cm."], "20"),
     },
     fractionBar: {
       title: "Fractions in a bar",
@@ -294,6 +322,7 @@ export const CONCEPTS = {
       title: "Ten of these is one of those",
       idea: "Ten ones discs can be traded for one tens disc. Ten tens for one hundreds. Trading does not change the number, only how it looks.",
       example: ex("You have 13 ones discs. Trade.", ["10 ones become 1 ten.", "3 ones stay.", "1 ten and 3 ones is 13."], "1 ten 3 ones"),
+      alt: ex("You have 16 ones discs. Trade.", ["10 ones become 1 ten.", "6 ones stay.", "1 ten and 6 ones is 16."], "1 ten 6 ones"),
     },
     discOperations: {
       title: "Add or take away discs",
@@ -311,11 +340,13 @@ export const CONCEPTS = {
       title: "Multiples are skip counts",
       idea: "Multiples of a number are its skip counts: 6, 12, 18, 24. The 4th multiple is 4 times the number.",
       example: ex("What is the 5th multiple of 7?", ["5 × 7.", "35."], "35"),
+      alt: ex("What is the 4th multiple of 6?", ["4 × 6.", "24."], "24"),
     },
     factorPairs: {
       title: "Pairs that multiply to it",
       idea: "A factor pair is two numbers that multiply to make the target. Start with 1 × the number and work up. Stop when the pairs start repeating.",
       example: ex("Factor pairs of 12", ["1 × 12, 2 × 6, 3 × 4.", "4 × 3 repeats, so stop.", "Three pairs."], "1×12, 2×6, 3×4"),
+      alt: ex("Factor pairs of 18", ["1 × 18, 2 × 9, 3 × 6.", "6 × 3 repeats, so stop.", "Three pairs."], "1×18, 2×9, 3×6"),
     },
     primesAndCommon: {
       title: "Prime or composite?",
@@ -328,16 +359,19 @@ export const CONCEPTS = {
       title: "Area covers the inside",
       idea: "Area is how many unit squares fit inside. For a rectangle, multiply the length by the width.",
       example: ex("A 4 by 6 rectangle", ["Length × width: 4 × 6.", "24 square units."], "24"),
+      alt: ex("A 3 by 7 rectangle", ["Length × width: 3 × 7.", "21 square units."], "21"),
     },
     perimeter: {
       title: "Perimeter goes around",
       idea: "Perimeter is the walk all the way around the edge. Add every side. A rectangle has two lengths and two widths.",
       example: ex("A 3 by 5 rectangle", ["Sides: 3 + 5 + 3 + 5.", "16 units around."], "16"),
+      alt: ex("A 4 by 7 rectangle", ["Sides: 4 + 7 + 4 + 7.", "22 units around."], "22"),
     },
     compositeFigures: {
       title: "Cut it into rectangles",
       idea: "An L-shape is just rectangles stuck together. Cut it into rectangles, find each area, and add.",
       example: ex("An L made of a 2×3 and a 4×1", ["2 × 3 = 6.", "4 × 1 = 4.", "6 + 4 = 10 square units."], "10"),
+      alt: ex("An L made of a 3×2 and a 1×5", ["3 × 2 = 6.", "1 × 5 = 5.", "6 + 5 = 11 square units."], "11"),
     },
     measureReasoning: {
       title: "Same area, different shape",
@@ -360,6 +394,7 @@ export const CONCEPTS = {
       title: "Different coins, same value",
       idea: "Coins can trade for each other. 5 pennies = 1 nickel. 2 nickels = 1 dime. 10 dimes = 1 dollar. Compare by total cents, not by how many coins.",
       example: ex("Which is worth more: 3 nickels or 1 dime?", ["3 nickels: 5, 10, 15 cents.", "1 dime: 10 cents.", "3 nickels."], "3 nickels"),
+      alt: ex("Which is worth more: 2 dimes or 1 quarter?", ["2 dimes: 10, 20 cents.", "1 quarter: 25 cents.", "1 quarter."], "1 quarter"),
     },
     moneyReasoning: {
       title: "Think in cents",
@@ -382,6 +417,7 @@ export const CONCEPTS = {
       title: "Multiply the same each time",
       idea: "Some patterns multiply. Divide one number by the one before it to find the multiplier, then multiply again.",
       example: ex("2, 6, 18, ?", ["6 ÷ 2 = 3, so the rule is ×3.", "18 × 3 = 54."], "54"),
+      alt: ex("3, 6, 12, __", ["6 ÷ 3 = 2, so the rule is ×2.", "12 × 2 = 24."], "24"),
     },
     missingTerm: {
       title: "Fill the gap",
@@ -399,11 +435,13 @@ export const CONCEPTS = {
       title: "Bigger unit, smaller number",
       idea: "1 m = 100 cm. 1 km = 1000 m. 1 ft = 12 in. Going to a smaller unit, multiply. Going to a bigger unit, divide.",
       example: ex("3 m in cm", ["1 m = 100 cm.", "3 × 100 = 300 cm."], "300 cm"),
+      alt: ex("5 m in cm", ["1 m = 100 cm.", "5 × 100 = 500 cm."], "500 cm"),
     },
     massVolumeConvert: {
       title: "Grams, kilograms, liters",
       idea: "1 kg = 1000 g. 1 L = 1000 mL. Multiply by 1000 to go smaller, divide by 1000 to go bigger.",
       example: ex("2 L in mL", ["1 L = 1000 mL.", "2 × 1000 = 2000 mL."], "2000 mL"),
+      alt: ex("3 kg in g", ["1 kg = 1000 g.", "3 × 1000 = 3000 g."], "3000 g"),
     },
     benchmarkEstimate: {
       title: "Use something you know",
@@ -414,6 +452,7 @@ export const CONCEPTS = {
       title: "Same units before comparing",
       idea: "You can only compare measurements in the same unit. Convert first, then compare the numbers.",
       example: ex("Which is longer: 150 cm or 2 m?", ["2 m = 200 cm.", "200 > 150.", "2 m is longer."], "2 m"),
+      alt: ex("Which is longer: 250 cm or 3 m?", ["3 m = 300 cm.", "300 > 250.", "3 m is longer."], "3 m"),
     },
     multiStepMeasure: {
       title: "One step at a time",
@@ -458,6 +497,7 @@ export const CONCEPTS = {
       title: "Each picture counts for more",
       idea: "Check the key first. If one picture means 2, count the pictures and multiply by 2. Half a picture is half the key.",
       example: ex("Key: ⭐ = 2. Row shows ⭐⭐⭐", ["3 pictures.", "3 × 2 = 6."], "6"),
+      alt: ex("Key: ⭐ = 5. Row shows ⭐⭐⭐⭐", ["4 pictures.", "4 × 5 = 20."], "20"),
     },
     dataAnalysis: {
       title: "Use the whole graph",
@@ -485,6 +525,7 @@ export const CONCEPTS = {
       title: "Find the missing angle",
       idea: "If you know what the angles must add to, subtract the ones you know. What is left is the missing angle.",
       example: ex("A triangle has angles 60° and 70°.", ["Triangle angles add to 180°.", "60 + 70 = 130.", "180 − 130 = 50°."], "50°"),
+      alt: ex("A triangle has angles 30° and 80°.", ["Triangle angles add to 180°.", "30 + 80 = 110.", "180 − 110 = 70°."], "70°"),
     },
   },
   linesShapes: {
@@ -519,21 +560,25 @@ export const CONCEPTS = {
       title: "Match the bottoms first",
       idea: "You can only add pieces of the same size. Rename the fractions with a common bottom, then add or subtract the tops.",
       example: ex("1/2 + 1/4", ["1/2 = 2/4.", "2/4 + 1/4 = 3/4."], "3/4"),
+      alt: ex("1/3 + 1/6", ["1/3 = 2/6.", "2/6 + 1/6 = 3/6, which is 1/2."], "1/2"),
     },
     multiplyFractions: {
       title: "Multiply tops, multiply bottoms",
       idea: "To multiply fractions, multiply the tops together and the bottoms together. 'Of' means multiply: 1/2 of 3/4 is 1/2 × 3/4.",
       example: ex("2/3 × 3/5", ["Tops: 2 × 3 = 6.", "Bottoms: 3 × 5 = 15.", "6/15, which is 2/5."], "2/5"),
+      alt: ex("1/2 × 3/4", ["Tops: 1 × 3 = 3.", "Bottoms: 2 × 4 = 8.", "3/8."], "3/8"),
     },
     divideUnitFractions: {
       title: "How many pieces fit?",
       idea: "3 ÷ 1/4 asks how many quarters fit in 3. Each whole holds 4 quarters, so multiply: 3 × 4.",
       example: ex("2 ÷ 1/3", ["Each whole has 3 thirds.", "2 wholes have 2 × 3 = 6 thirds.", "6."], "6"),
+      alt: ex("4 ÷ 1/2", ["Each whole has 2 halves.", "4 wholes have 4 × 2 = 8 halves.", "8."], "8"),
     },
     fractionOfWhole: {
       title: "A fraction of a number",
       idea: "Divide by the bottom to find one part, then multiply by the top to take that many parts.",
       example: ex("3/4 of 12", ["12 ÷ 4 = 3, one part.", "3 parts: 3 × 3 = 9.", "9."], "9"),
+      alt: ex("2/3 of 15", ["15 ÷ 3 = 5, one part.", "2 parts: 2 × 5 = 10.", "10."], "10"),
     },
   },
   decimalOps: {
@@ -568,16 +613,19 @@ export const CONCEPTS = {
       title: "Length × width × height",
       idea: "For a box, multiply the three sides. The order does not matter, so multiply the easy pair first.",
       example: ex("5 by 3 by 3", ["3 × 3 = 9.", "9 × 5 = 45.", "45 cubic units."], "45"),
+      alt: ex("4 by 2 by 3", ["2 × 3 = 6.", "6 × 4 = 24.", "24 cubic units."], "24"),
     },
     plotAndRead: {
       title: "Over, then up",
       idea: "A point is (x, y). Start at 0. Go right x steps, then up y steps. Right first, then up.",
       example: ex("Plot (3, 4)", ["Go right 3.", "Go up 4.", "Mark the point."], "(3, 4)"),
+      alt: ex("Plot (5, 2)", ["Go right 5.", "Go up 2.", "Mark the point."], "(5, 2)"),
     },
     compositeAndDistance: {
       title: "Break it into boxes",
       idea: "Odd-shaped solids are boxes stuck together. Find each box's volume and add. On a grid, distance along a line is the difference of the coordinates.",
       example: ex("Two boxes: 2×2×3 and 1×2×3", ["2 × 2 × 3 = 12.", "1 × 2 × 3 = 6.", "12 + 6 = 18."], "18"),
+      alt: ex("Two boxes: 3×2×2 and 1×1×4", ["3 × 2 × 2 = 12.", "1 × 1 × 4 = 4.", "12 + 4 = 16."], "16"),
     },
   },
   // Each Math Facts item carries its own strategy line (src/facts/factItems.js);

@@ -3,10 +3,11 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { modeRegistry, MODE_IDS } from "../modes/index.js";
 import { CONCEPTS } from "../hints/concepts.js";
-import { hintFor } from "../hints/index.js";
+import { hintFor, exampleIsLiveQuestion } from "../hints/index.js";
 import { PICTURE_KINDS, hintContainsAnswer, usableHintFields, validateHint } from "../hints/hintSchema.js";
 import HintPane from "../components/HintPane.jsx";
 import { getBankItems } from "../itemBank.js";
+import { promptShowsAnswer } from "../hints/steps.js";
 
 describe("hint content", () => {
   it("has an entry for every declared mode × subskill", () => {
@@ -63,6 +64,33 @@ describe("hintFor", () => {
       const h = hintFor(q);
       expect(h.steps.length, it.itemId).toBeGreaterThanOrEqual(2);
     }
+  });
+
+  it("no shipped item's number-built steps state its key (unless the prompt shows it)", () => {
+    const leaks = [];
+    for (const it of getBankItems()) {
+      const q = { ...it.question, mode: it.modeId, metadata: { modeId: it.modeId, subskill: it.subskill, itemFamily: it.itemFamily } };
+      if (q.hint?.steps) continue; // a per-item hint is held to this by the harness
+      const steps = hintFor(q).steps;
+      if (hintContainsAnswer({ steps }, q.answer) && !promptShowsAnswer(q)) leaks.push(`${it.itemId}: ${steps.join(" | ")}`);
+    }
+    expect(leaks.slice(0, 5)).toEqual([]);
+  });
+
+  it("no shipped item's worked example is the item itself", () => {
+    const same = [];
+    for (const it of getBankItems()) {
+      const q = { ...it.question, mode: it.modeId, metadata: { modeId: it.modeId, subskill: it.subskill, itemFamily: it.itemFamily } };
+      if (q.hint?.example) continue;
+      if (exampleIsLiveQuestion(hintFor(q).example, q)) same.push(`${it.itemId}: ${hintFor(q).example.problem}`);
+    }
+    expect(same.slice(0, 5)).toEqual([]);
+  });
+
+  it("swaps in the entry's second example when the first is the live question", () => {
+    const q = { mode: "addition", a: 8, b: 5, op: "+", answer: 13, display: { promptText: "What is 8 + 5?" }, metadata: { modeId: "addition", subskill: "makeTen" } };
+    expect(hintFor(q).example.problem).not.toBe("8 + 5");
+    expect(hintFor({ ...q, a: 7, b: 6, display: { promptText: "What is 7 + 6?" } }).example.problem).toBe("8 + 5");
   });
 
   it("the live-question steps do not hand over the answer", () => {

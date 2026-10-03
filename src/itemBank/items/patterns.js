@@ -3102,7 +3102,7 @@ export const ITEMS = [
     structureType: "storyDouble_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"pattern":{"kind":"geo","start":3,"factor":2},"sequence":[3,6],"promptText":"Every day the paper cranes double. Nia counts 3, 6. What is the next count of paper cranes?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"pattern":{"kind":"geo","start":3,"factor":2},"terms":[3,6],"promptText":"Every day the paper cranes double. Nia counts 3, 6. What is the next count of paper cranes?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0311",
@@ -3112,7 +3112,7 @@ export const ITEMS = [
     structureType: "storyDouble_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"pattern":{"kind":"geo","start":4,"factor":2},"sequence":[4,8],"promptText":"Theo watches the lily pads in the pond double each day: 4, 8. How many lily pads come next?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"pattern":{"kind":"geo","start":4,"factor":2},"terms":[4,8],"promptText":"Theo watches the lily pads in the pond double each day: 4, 8. How many lily pads will there be the next day?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0312",
@@ -3122,7 +3122,7 @@ export const ITEMS = [
     structureType: "storyDouble_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"pattern":{"kind":"geo","start":5,"factor":2},"sequence":[5,10],"promptText":"Every day the bubbles double. Ava counts 5, 10. What is the next count of bubbles?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"pattern":{"kind":"geo","start":5,"factor":2},"terms":[5,10],"promptText":"Every day the bubbles double. Ava counts 5, 10. What is the next count of bubbles?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0313",
@@ -3132,7 +3132,7 @@ export const ITEMS = [
     structureType: "storyDouble_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"pattern":{"kind":"geo","start":2,"factor":2},"sequence":[2,4],"promptText":"Kai watches the sprouts in the garden box double each day: 2, 4. How many sprouts come next?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"pattern":{"kind":"geo","start":2,"factor":2},"terms":[2,4],"promptText":"Kai watches the sprouts in the garden box double each day: 2, 4. How many sprouts will there be the next day?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0314",
@@ -3142,7 +3142,7 @@ export const ITEMS = [
     structureType: "storyDouble_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"pattern":{"kind":"geo","start":1,"factor":2},"sequence":[1,2],"promptText":"Every day the paper cranes double. Ida counts 1, 2. What is the next count of paper cranes?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"pattern":{"kind":"geo","start":1,"factor":2},"terms":[1,2],"promptText":"Every day the paper cranes double. Ida counts 1, 2. What is the next count of paper cranes?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0315",
@@ -3172,7 +3172,7 @@ export const ITEMS = [
     structureType: "storyDouble_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"pattern":{"kind":"geo","start":3,"factor":2},"sequence":[3,6],"promptText":"Zoe watches the sprouts in the garden box double each day: 3, 6. How many sprouts come next?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"pattern":{"kind":"geo","start":3,"factor":2},"terms":[3,6],"promptText":"Zoe watches the sprouts in the garden box double each day: 3, 6. How many sprouts will there be the next day?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0318",
@@ -3192,7 +3192,7 @@ export const ITEMS = [
     structureType: "storyDouble_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"pattern":{"kind":"geo","start":6,"factor":2},"sequence":[6,12],"promptText":"Lily watches the lily pads in the pond double each day: 6, 12. How many lily pads come next?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"pattern":{"kind":"geo","start":6,"factor":2},"terms":[6,12],"promptText":"Lily watches the lily pads in the pond double each day: 6, 12. How many lily pads will there be the next day?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0320",
@@ -3202,7 +3202,7 @@ export const ITEMS = [
     structureType: "storyDouble_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"pattern":{"kind":"geo","start":7,"factor":2},"sequence":[7,14],"promptText":"Every day the bubbles double. Rosa counts 7, 14. What is the next count of bubbles?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"pattern":{"kind":"geo","start":7,"factor":2},"terms":[7,14],"promptText":"Every day the bubbles double. Rosa counts 7, 14. What is the next count of bubbles?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0321",
@@ -3212,7 +3212,7 @@ export const ITEMS = [
     structureType: "storyDouble_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"pattern":{"kind":"geo","start":8,"factor":2},"sequence":[8,16],"promptText":"Finn watches the sprouts in the garden box double each day: 8, 16. How many sprouts come next?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"pattern":{"kind":"geo","start":8,"factor":2},"terms":[8,16],"promptText":"Finn watches the sprouts in the garden box double each day: 8, 16. How many sprouts will there be the next day?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0322",
@@ -3222,7 +3222,7 @@ export const ITEMS = [
     structureType: "storyDouble_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"pattern":{"kind":"geo","start":9,"factor":2},"sequence":[9,18],"promptText":"Every day the paper cranes double. Amara counts 9, 18. What is the next count of paper cranes?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"pattern":{"kind":"geo","start":9,"factor":2},"terms":[9,18],"promptText":"Every day the paper cranes double. Amara counts 9, 18. What is the next count of paper cranes?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0323",
@@ -3232,7 +3232,7 @@ export const ITEMS = [
     structureType: "storyDouble_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"pattern":{"kind":"geo","start":10,"factor":2},"sequence":[10,20],"promptText":"Diego watches the lily pads in the pond double each day: 10, 20. How many lily pads come next?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"pattern":{"kind":"geo","start":10,"factor":2},"terms":[10,20],"promptText":"Diego watches the lily pads in the pond double each day: 10, 20. How many lily pads will there be the next day?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0324",
@@ -3582,7 +3582,7 @@ export const ITEMS = [
     structureType: "storyTriple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"pattern":{"kind":"geoApply","start":1,"times":2,"factor":3},"promptText":"Mina counts 1 lily pads now. Each week the number triples. What is the count of lily pads after 2 weeks?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"pattern":{"kind":"geoApply","start":1,"times":2,"factor":3},"promptText":"Mina counts 1 lily pad now. Each week the number triples. What is the count of lily pads after 2 weeks?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0359",
@@ -3602,7 +3602,7 @@ export const ITEMS = [
     structureType: "storyTriple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"pattern":{"kind":"geoApply","start":1,"times":1,"factor":3},"promptText":"Nia counts 1 sprouts now. Each week the number triples. What is the count of sprouts after 1 weeks?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"pattern":{"kind":"geoApply","start":1,"times":1,"factor":3},"promptText":"Nia counts 1 sprout now. Each week the number triples. What is the count of sprouts after 1 week?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0361",
@@ -3612,7 +3612,7 @@ export const ITEMS = [
     structureType: "storyTriple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"pattern":{"kind":"geoApply","start":2,"times":1,"factor":3},"promptText":"The paper cranes in Theo's mobile triple every week. This week there are 2. How many paper cranes after 1 weeks of tripling?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"pattern":{"kind":"geoApply","start":2,"times":1,"factor":3},"promptText":"The paper cranes in Theo's mobile triple every week. This week there are 2. How many paper cranes after 1 week of tripling?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0362",
@@ -3622,7 +3622,7 @@ export const ITEMS = [
     structureType: "storyTriple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"pattern":{"kind":"geoApply","start":3,"times":1,"factor":3},"promptText":"Ava counts 3 lily pads now. Each week the number triples. What is the count of lily pads after 1 weeks?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"pattern":{"kind":"geoApply","start":3,"times":1,"factor":3},"promptText":"Ava counts 3 lily pads now. Each week the number triples. What is the count of lily pads after 1 week?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0363",
@@ -3632,7 +3632,7 @@ export const ITEMS = [
     structureType: "storyTriple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"pattern":{"kind":"geoApply","start":4,"times":1,"factor":3},"promptText":"The bubbles in Kai's tub triple every week. This week there are 4. How many bubbles after 1 weeks of tripling?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"pattern":{"kind":"geoApply","start":4,"times":1,"factor":3},"promptText":"The bubbles in Kai's tub triple every week. This week there are 4. How many bubbles after 1 week of tripling?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0364",
@@ -3642,7 +3642,7 @@ export const ITEMS = [
     structureType: "storyTriple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"pattern":{"kind":"geoApply","start":5,"times":1,"factor":3},"promptText":"Ida counts 5 sprouts now. Each week the number triples. What is the count of sprouts after 1 weeks?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"pattern":{"kind":"geoApply","start":5,"times":1,"factor":3},"promptText":"Ida counts 5 sprouts now. Each week the number triples. What is the count of sprouts after 1 week?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0365",
@@ -3652,7 +3652,7 @@ export const ITEMS = [
     structureType: "storyTriple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"pattern":{"kind":"geoApply","start":6,"times":1,"factor":3},"promptText":"The paper cranes in Omar's mobile triple every week. This week there are 6. How many paper cranes after 1 weeks of tripling?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"pattern":{"kind":"geoApply","start":6,"times":1,"factor":3},"promptText":"The paper cranes in Omar's mobile triple every week. This week there are 6. How many paper cranes after 1 week of tripling?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0366",
@@ -3672,7 +3672,7 @@ export const ITEMS = [
     structureType: "storyTriple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"pattern":{"kind":"geoApply","start":1,"times":3,"factor":3},"promptText":"The bubbles in Zoe's tub triple every week. This week there are 1. How many bubbles after 3 weeks of tripling?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"pattern":{"kind":"geoApply","start":1,"times":3,"factor":3},"promptText":"The bubbles in Zoe's tub triple every week. This week there is 1. How many bubbles after 3 weeks of tripling?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0368",
@@ -3692,7 +3692,7 @@ export const ITEMS = [
     structureType: "storyTriple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"pattern":{"kind":"geoApply","start":7,"times":1,"factor":3},"promptText":"The lily pads in Lily's pond triple every week. This week there are 7. How many lily pads after 1 weeks of tripling?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"pattern":{"kind":"geoApply","start":7,"times":1,"factor":3},"promptText":"The lily pads in Lily's pond triple every week. This week there are 7. How many lily pads after 1 week of tripling?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0370",
@@ -3702,7 +3702,7 @@ export const ITEMS = [
     structureType: "storyTriple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"pattern":{"kind":"geoApply","start":8,"times":1,"factor":3},"promptText":"Rosa counts 8 bubbles now. Each week the number triples. What is the count of bubbles after 1 weeks?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"pattern":{"kind":"geoApply","start":8,"times":1,"factor":3},"promptText":"Rosa counts 8 bubbles now. Each week the number triples. What is the count of bubbles after 1 week?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0371",
@@ -3712,7 +3712,7 @@ export const ITEMS = [
     structureType: "storyTriple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"pattern":{"kind":"geoApply","start":9,"times":1,"factor":3},"promptText":"The sprouts in Finn's garden box triple every week. This week there are 9. How many sprouts after 1 weeks of tripling?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"pattern":{"kind":"geoApply","start":9,"times":1,"factor":3},"promptText":"The sprouts in Finn's garden box triple every week. This week there are 9. How many sprouts after 1 week of tripling?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0372",
@@ -3722,7 +3722,7 @@ export const ITEMS = [
     structureType: "storyTriple_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"pattern":{"kind":"geoApply","start":10,"times":1,"factor":3},"promptText":"Amara counts 10 paper cranes now. Each week the number triples. What is the count of paper cranes after 1 weeks?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"pattern":{"kind":"geoApply","start":10,"times":1,"factor":3},"promptText":"Amara counts 10 paper cranes now. Each week the number triples. What is the count of paper cranes after 1 week?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0373",
@@ -6642,7 +6642,7 @@ export const ITEMS = [
     structureType: "storyProject_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"pattern":{"kind":"applyRule","step":2,"term":3,"start":2},"promptText":"The rule for Mina's bean plant is 2 leaves on day 1, then 2 more each day. What is the count of leaves on day 3?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"pattern":{"kind":"applyRule","step":2,"term":3,"start":2},"promptText":"Mina's bean plant has 2 leaves on day 1. It grows 2 more leaves each day. How many leaves does the plant have on day 3?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0665",
@@ -6652,7 +6652,7 @@ export const ITEMS = [
     structureType: "storyProject_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"pattern":{"kind":"applyRule","step":2,"term":4,"start":3},"promptText":"Luca's brick path follows a rule: start with 3 bricks and add 2 each day. How many bricks on day 4?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"pattern":{"kind":"applyRule","step":2,"term":4,"start":3},"promptText":"On day 1, Luca's brick path has 3 bricks. Luca adds 2 bricks each day after that. How many bricks are in the path on day 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0666",
@@ -6662,7 +6662,7 @@ export const ITEMS = [
     structureType: "storyProject_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"pattern":{"kind":"applyRule","step":3,"term":3,"start":1},"promptText":"The rule for Nia's puzzle is 1 pieces placed on day 1, then 3 more each day. What is the count of pieces placed on day 3?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"pattern":{"kind":"applyRule","step":3,"term":3,"start":1},"promptText":"Nia puts 1 puzzle piece in place on day 1. Each day after that, Nia puts in 3 more. How many pieces are in place on day 3?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0667",
@@ -6672,7 +6672,7 @@ export const ITEMS = [
     structureType: "storyProject_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"pattern":{"kind":"applyRule","step":3,"term":4,"start":2},"promptText":"Theo's scarf follows a rule: start with 2 rows knitted and add 3 each day. How many rows knitted on day 4?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"pattern":{"kind":"applyRule","step":3,"term":4,"start":2},"promptText":"Theo's scarf has 2 rows on day 1. Theo knits 3 more rows each day. How many rows does the scarf have on day 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0668",
@@ -6682,7 +6682,7 @@ export const ITEMS = [
     structureType: "storyProject_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"pattern":{"kind":"applyRule","step":2,"term":3,"start":4},"promptText":"The rule for Ava's bean plant is 4 leaves on day 1, then 2 more each day. What is the count of leaves on day 3?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"pattern":{"kind":"applyRule","step":2,"term":3,"start":4},"promptText":"Ava's bean plant has 4 leaves on day 1. It grows 2 more leaves each day. How many leaves does the plant have on day 3?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0669",
@@ -6692,7 +6692,7 @@ export const ITEMS = [
     structureType: "storyProject_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"pattern":{"kind":"applyRule","step":4,"term":4,"start":1},"promptText":"Kai's brick path follows a rule: start with 1 bricks and add 4 each day. How many bricks on day 4?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"pattern":{"kind":"applyRule","step":4,"term":4,"start":1},"promptText":"On day 1, Kai's brick path has 1 brick. Kai adds 4 bricks each day after that. How many bricks are in the path on day 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0670",
@@ -6702,7 +6702,7 @@ export const ITEMS = [
     structureType: "storyProject_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"pattern":{"kind":"applyRule","step":4,"term":3,"start":3},"promptText":"The rule for Ida's puzzle is 3 pieces placed on day 1, then 4 more each day. What is the count of pieces placed on day 3?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"pattern":{"kind":"applyRule","step":4,"term":3,"start":3},"promptText":"Ida puts 3 puzzle pieces in place on day 1. Each day after that, Ida puts in 4 more. How many pieces are in place on day 3?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0671",
@@ -6712,7 +6712,7 @@ export const ITEMS = [
     structureType: "storyProject_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"pattern":{"kind":"applyRule","step":5,"term":3,"start":2},"promptText":"Omar's scarf follows a rule: start with 2 rows knitted and add 5 each day. How many rows knitted on day 3?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"pattern":{"kind":"applyRule","step":5,"term":3,"start":2},"promptText":"Omar's scarf has 2 rows on day 1. Omar knits 5 more rows each day. How many rows does the scarf have on day 3?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0672",
@@ -6722,7 +6722,7 @@ export const ITEMS = [
     structureType: "storyProject_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"pattern":{"kind":"applyRule","step":2,"term":4,"start":5},"promptText":"The rule for June's bean plant is 5 leaves on day 1, then 2 more each day. What is the count of leaves on day 4?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"pattern":{"kind":"applyRule","step":2,"term":4,"start":5},"promptText":"June's bean plant has 5 leaves on day 1. It grows 2 more leaves each day. How many leaves does the plant have on day 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0673",
@@ -6732,7 +6732,7 @@ export const ITEMS = [
     structureType: "storyProject_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"pattern":{"kind":"applyRule","step":3,"term":4,"start":4},"promptText":"Zoe's brick path follows a rule: start with 4 bricks and add 3 each day. How many bricks on day 4?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"pattern":{"kind":"applyRule","step":3,"term":4,"start":4},"promptText":"On day 1, Zoe's brick path has 4 bricks. Zoe adds 3 bricks each day after that. How many bricks are in the path on day 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0674",
@@ -6742,7 +6742,7 @@ export const ITEMS = [
     structureType: "storyProject_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"pattern":{"kind":"applyRule","step":5,"term":3,"start":1},"promptText":"The rule for Ben's puzzle is 1 pieces placed on day 1, then 5 more each day. What is the count of pieces placed on day 3?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"pattern":{"kind":"applyRule","step":5,"term":3,"start":1},"promptText":"Ben puts 1 puzzle piece in place on day 1. Each day after that, Ben puts in 5 more. How many pieces are in place on day 3?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0675",
@@ -6752,7 +6752,7 @@ export const ITEMS = [
     structureType: "storyProject_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"pattern":{"kind":"applyRule","step":2,"term":3,"start":6},"promptText":"Lily's scarf follows a rule: start with 6 rows knitted and add 2 each day. How many rows knitted on day 3?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"pattern":{"kind":"applyRule","step":2,"term":3,"start":6},"promptText":"Lily's scarf has 6 rows on day 1. Lily knits 2 more rows each day. How many rows does the scarf have on day 3?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0676",
@@ -6762,7 +6762,7 @@ export const ITEMS = [
     structureType: "storyProject_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"pattern":{"kind":"applyRule","step":3,"term":3,"start":5},"promptText":"The rule for Rosa's bean plant is 5 leaves on day 1, then 3 more each day. What is the count of leaves on day 3?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"pattern":{"kind":"applyRule","step":3,"term":3,"start":5},"promptText":"Rosa's bean plant has 5 leaves on day 1. It grows 3 more leaves each day. How many leaves does the plant have on day 3?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0677",
@@ -6772,7 +6772,7 @@ export const ITEMS = [
     structureType: "storyProject_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"pattern":{"kind":"applyRule","step":5,"term":4,"start":3},"promptText":"Finn's brick path follows a rule: start with 3 bricks and add 5 each day. How many bricks on day 4?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"pattern":{"kind":"applyRule","step":5,"term":4,"start":3},"promptText":"On day 1, Finn's brick path has 3 bricks. Finn adds 5 bricks each day after that. How many bricks are in the path on day 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0678",
@@ -6782,7 +6782,7 @@ export const ITEMS = [
     structureType: "storyProject_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"pattern":{"kind":"applyRule","step":2,"term":4,"start":7},"promptText":"The rule for Amara's puzzle is 7 pieces placed on day 1, then 2 more each day. What is the count of pieces placed on day 4?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"pattern":{"kind":"applyRule","step":2,"term":4,"start":7},"promptText":"Amara puts 7 puzzle pieces in place on day 1. Each day after that, Amara puts in 2 more. How many pieces are in place on day 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0679",
@@ -6792,7 +6792,7 @@ export const ITEMS = [
     structureType: "storyProject_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"pattern":{"kind":"applyRule","step":4,"term":4,"start":2},"promptText":"Diego's scarf follows a rule: start with 2 rows knitted and add 4 each day. How many rows knitted on day 4?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"pattern":{"kind":"applyRule","step":4,"term":4,"start":2},"promptText":"Diego's scarf has 2 rows on day 1. Diego knits 4 more rows each day. How many rows does the scarf have on day 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0680",
@@ -6802,7 +6802,7 @@ export const ITEMS = [
     structureType: "storyProject_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"pattern":{"kind":"applyRule","step":3,"term":4,"start":6},"promptText":"The rule for Priya's bean plant is 6 leaves on day 1, then 3 more each day. What is the count of leaves on day 4?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"pattern":{"kind":"applyRule","step":3,"term":4,"start":6},"promptText":"Priya's bean plant has 6 leaves on day 1. It grows 3 more leaves each day. How many leaves does the plant have on day 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0681",
@@ -7152,7 +7152,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"pattern":{"kind":"slip","step":2,"start":2,"badIdx":1},"sequence":[2,5,6,8],"promptText":"Luca logged the leaves on the bean plant as 2, 5, 6, 8, but one entry breaks the even pattern. Which entry is wrong?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"pattern":{"kind":"slip","step":2,"start":2,"badIdx":1},"terms":[2,5,6,8,10],"promptText":"The bean plant gets the same number of new leaves each day. Luca counted the leaves at the end of each day: 2, 5, 6, 8, 10. Which number is wrong?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0716",
@@ -7162,7 +7162,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"pattern":{"kind":"slip","step":2,"start":3,"badIdx":2},"sequence":[3,5,6,9],"promptText":"The log for Nia's brick path reads 3, 5, 6, 9 bricks. One number does not follow the rule. Which number is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"pattern":{"kind":"slip","step":2,"start":3,"badIdx":2},"terms":[3,5,6,9,11],"promptText":"The brick path gets the same number of new bricks each day. Nia counted the bricks each evening: 3, 5, 6, 9, 11. Which number does not fit the pattern?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0717",
@@ -7172,7 +7172,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"pattern":{"kind":"slip","step":3,"start":1,"badIdx":1},"sequence":[1,5,7,10],"promptText":"Theo logged the pieces placed on the puzzle as 1, 5, 7, 10, but one entry breaks the even pattern. Which entry is wrong?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"pattern":{"kind":"slip","step":3,"start":1,"badIdx":1},"terms":[1,5,7,10],"promptText":"Theo places the same number of puzzle pieces each day. Theo counted the pieces placed: 1, 5, 7, 10. Which number is wrong?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0718",
@@ -7182,7 +7182,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"pattern":{"kind":"slip","step":3,"start":2,"badIdx":2},"sequence":[2,5,7,11],"promptText":"The log for Ava's scarf reads 2, 5, 7, 11 rows knitted. One number does not follow the rule. Which number is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"pattern":{"kind":"slip","step":3,"start":2,"badIdx":2},"terms":[2,5,7,11],"promptText":"Ava knits the same number of rows on the scarf each day. Ava kept a list: 2, 5, 7, 11 rows knitted. Which number does not follow the pattern?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0719",
@@ -7192,7 +7192,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"pattern":{"kind":"slip","step":2,"start":4,"badIdx":3},"sequence":[4,6,8,11],"promptText":"Kai logged the leaves on the bean plant as 4, 6, 8, 11, but one entry breaks the even pattern. Which entry is wrong?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"pattern":{"kind":"slip","step":2,"start":4,"badIdx":3},"terms":[4,6,8,11],"promptText":"The bean plant gets the same number of new leaves each day. Kai counted the leaves: 4, 6, 8, 11. Which number is wrong?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0720",
@@ -7202,7 +7202,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"pattern":{"kind":"slip","step":4,"start":1,"badIdx":1},"sequence":[1,4,9,13],"promptText":"The log for Ida's brick path reads 1, 4, 9, 13 bricks. One number does not follow the rule. Which number is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"pattern":{"kind":"slip","step":4,"start":1,"badIdx":1},"terms":[1,4,9,13],"promptText":"The brick path gets the same number of new bricks each day. Ida kept a list: 1, 4, 9, 13 bricks. Which number does not follow the pattern?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0721",
@@ -7212,7 +7212,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"pattern":{"kind":"slip","step":4,"start":3,"badIdx":2},"sequence":[3,7,12,15],"promptText":"Omar logged the pieces placed on the puzzle as 3, 7, 12, 15, but one entry breaks the even pattern. Which entry is wrong?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"pattern":{"kind":"slip","step":4,"start":3,"badIdx":2},"terms":[3,7,12,15],"promptText":"Omar places the same number of puzzle pieces each day. Omar counted the pieces placed: 3, 7, 12, 15. Which number is wrong?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0722",
@@ -7222,7 +7222,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"pattern":{"kind":"slip","step":5,"start":2,"badIdx":1},"sequence":[2,6,12,17],"promptText":"The log for June's scarf reads 2, 6, 12, 17 rows knitted. One number does not follow the rule. Which number is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"pattern":{"kind":"slip","step":5,"start":2,"badIdx":1},"terms":[2,6,12,17],"promptText":"June knits the same number of rows on the scarf each day. June kept a list: 2, 6, 12, 17 rows knitted. Which number does not follow the pattern?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0723",
@@ -7232,7 +7232,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"pattern":{"kind":"slip","step":2,"start":5,"badIdx":3},"sequence":[5,7,9,12],"promptText":"Zoe logged the leaves on the bean plant as 5, 7, 9, 12, but one entry breaks the even pattern. Which entry is wrong?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"pattern":{"kind":"slip","step":2,"start":5,"badIdx":3},"terms":[5,7,9,12],"promptText":"The bean plant gets the same number of new leaves each day. Zoe counted the leaves: 5, 7, 9, 12. Which number is wrong?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0724",
@@ -7242,7 +7242,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"pattern":{"kind":"slip","step":3,"start":4,"badIdx":2},"sequence":[4,7,9,13],"promptText":"The log for Ben's brick path reads 4, 7, 9, 13 bricks. One number does not follow the rule. Which number is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"pattern":{"kind":"slip","step":3,"start":4,"badIdx":2},"terms":[4,7,9,13],"promptText":"The brick path gets the same number of new bricks each day. Ben kept a list: 4, 7, 9, 13 bricks. Which number does not follow the pattern?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0725",
@@ -7252,7 +7252,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"pattern":{"kind":"slip","step":5,"start":1,"badIdx":2},"sequence":[1,6,12,16],"promptText":"Lily logged the pieces placed on the puzzle as 1, 6, 12, 16, but one entry breaks the even pattern. Which entry is wrong?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"pattern":{"kind":"slip","step":5,"start":1,"badIdx":2},"terms":[1,6,12,16],"promptText":"Lily places the same number of puzzle pieces each day. Lily counted the pieces placed: 1, 6, 12, 16. Which number is wrong?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0726",
@@ -7262,7 +7262,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"pattern":{"kind":"slip","step":2,"start":6,"badIdx":1},"sequence":[6,7,10,12],"promptText":"The log for Rosa's scarf reads 6, 7, 10, 12 rows knitted. One number does not follow the rule. Which number is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"pattern":{"kind":"slip","step":2,"start":6,"badIdx":1},"terms":[6,7,10,12],"promptText":"Rosa knits the same number of rows on the scarf each day. Rosa kept a list: 6, 7, 10, 12 rows knitted. Which number does not follow the pattern?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0727",
@@ -7272,7 +7272,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"pattern":{"kind":"slip","step":3,"start":5,"badIdx":3},"sequence":[5,8,11,15],"promptText":"Finn logged the leaves on the bean plant as 5, 8, 11, 15, but one entry breaks the even pattern. Which entry is wrong?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"pattern":{"kind":"slip","step":3,"start":5,"badIdx":3},"terms":[5,8,11,15],"promptText":"The bean plant gets the same number of new leaves each day. Finn counted the leaves: 5, 8, 11, 15. Which number is wrong?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0728",
@@ -7282,7 +7282,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"pattern":{"kind":"slip","step":5,"start":3,"badIdx":1},"sequence":[3,7,13,18],"promptText":"The log for Amara's brick path reads 3, 7, 13, 18 bricks. One number does not follow the rule. Which number is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"pattern":{"kind":"slip","step":5,"start":3,"badIdx":1},"terms":[3,7,13,18],"promptText":"The brick path gets the same number of new bricks each day. Amara kept a list: 3, 7, 13, 18 bricks. Which number does not follow the pattern?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0729",
@@ -7292,7 +7292,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"pattern":{"kind":"slip","step":2,"start":7,"badIdx":2},"sequence":[7,9,12,13],"promptText":"Diego logged the pieces placed on the puzzle as 7, 9, 12, 13, but one entry breaks the even pattern. Which entry is wrong?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"pattern":{"kind":"slip","step":2,"start":7,"badIdx":2},"terms":[7,9,12,13],"promptText":"Diego places the same number of puzzle pieces each day. Diego counted the pieces placed: 7, 9, 12, 13. Which number is wrong?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0730",
@@ -7302,7 +7302,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"pattern":{"kind":"slip","step":4,"start":2,"badIdx":3},"sequence":[2,6,10,13],"promptText":"The log for Priya's scarf reads 2, 6, 10, 13 rows knitted. One number does not follow the rule. Which number is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"pattern":{"kind":"slip","step":4,"start":2,"badIdx":3},"terms":[2,6,10,13],"promptText":"Priya knits the same number of rows on the scarf each day. Priya kept a list: 2, 6, 10, 13 rows knitted. Which number does not follow the pattern?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0731",
@@ -7312,7 +7312,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"pattern":{"kind":"slip","step":3,"start":6,"badIdx":2},"sequence":[6,9,13,15],"promptText":"Leo logged the leaves on the bean plant as 6, 9, 13, 15, but one entry breaks the even pattern. Which entry is wrong?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"pattern":{"kind":"slip","step":3,"start":6,"badIdx":2},"terms":[6,9,13,15],"promptText":"The bean plant gets the same number of new leaves each day. Leo counted the leaves: 6, 9, 13, 15. Which number is wrong?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0732",
@@ -7322,7 +7322,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"pattern":{"kind":"slip","step":6,"start":12,"badIdx":1},"sequence":[12,19,24,30],"promptText":"Sam logged the leaves on the bean plant as 12, 19, 24, 30, but one entry breaks the even pattern. Which entry is wrong?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"pattern":{"kind":"slip","step":6,"start":12,"badIdx":1},"terms":[12,19,24,30],"promptText":"The bean plant gets the same number of new leaves each day. Sam counted the leaves: 12, 19, 24, 30. Which number is wrong?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0733",
@@ -7332,7 +7332,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"pattern":{"kind":"slip","step":7,"start":25,"badIdx":2},"sequence":[25,32,38,46],"promptText":"The log for Mina's brick path reads 25, 32, 38, 46 bricks. One number does not follow the rule. Which number is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"pattern":{"kind":"slip","step":7,"start":25,"badIdx":2},"terms":[25,32,38,46],"promptText":"The brick path gets the same number of new bricks each day. Mina kept a list: 25, 32, 38, 46 bricks. Which number does not follow the pattern?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0734",
@@ -7342,7 +7342,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"pattern":{"kind":"slip","step":8,"start":31,"badIdx":3},"sequence":[31,39,47,56],"promptText":"Luca logged the pieces placed on the puzzle as 31, 39, 47, 56, but one entry breaks the even pattern. Which entry is wrong?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"pattern":{"kind":"slip","step":8,"start":31,"badIdx":3},"terms":[31,39,47,56],"promptText":"Luca places the same number of puzzle pieces each day. Luca counted the pieces placed: 31, 39, 47, 56. Which number is wrong?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0735",
@@ -7352,7 +7352,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"pattern":{"kind":"slip","step":9,"start":14,"badIdx":1},"sequence":[14,22,32,41],"promptText":"The log for Nia's scarf reads 14, 22, 32, 41 rows knitted. One number does not follow the rule. Which number is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"pattern":{"kind":"slip","step":9,"start":14,"badIdx":1},"terms":[14,22,32,41],"promptText":"Nia knits the same number of rows on the scarf each day. Nia kept a list: 14, 22, 32, 41 rows knitted. Which number does not follow the pattern?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0736",
@@ -7362,7 +7362,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"pattern":{"kind":"slip","step":6,"start":42,"badIdx":2},"sequence":[42,48,55,60],"promptText":"Theo logged the leaves on the bean plant as 42, 48, 55, 60, but one entry breaks the even pattern. Which entry is wrong?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"pattern":{"kind":"slip","step":6,"start":42,"badIdx":2},"terms":[42,48,55,60],"promptText":"The bean plant gets the same number of new leaves each day. Theo counted the leaves: 42, 48, 55, 60. Which number is wrong?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0737",
@@ -7372,7 +7372,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":43,"display":{"pattern":{"kind":"slip","step":7,"start":23,"badIdx":3},"sequence":[23,30,37,43],"promptText":"The log for Ava's brick path reads 23, 30, 37, 43 bricks. One number does not follow the rule. Which number is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":43,"display":{"pattern":{"kind":"slip","step":7,"start":23,"badIdx":3},"terms":[23,30,37,43],"promptText":"The brick path gets the same number of new bricks each day. Ava kept a list: 23, 30, 37, 43 bricks. Which number does not follow the pattern?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0738",
@@ -7382,7 +7382,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"pattern":{"kind":"slip","step":8,"start":35,"badIdx":1},"sequence":[35,44,51,59],"promptText":"Kai logged the pieces placed on the puzzle as 35, 44, 51, 59, but one entry breaks the even pattern. Which entry is wrong?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"pattern":{"kind":"slip","step":8,"start":35,"badIdx":1},"terms":[35,44,51,59],"promptText":"Kai places the same number of puzzle pieces each day. Kai counted the pieces placed: 35, 44, 51, 59. Which number is wrong?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0739",
@@ -7392,7 +7392,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"pattern":{"kind":"slip","step":9,"start":16,"badIdx":2},"sequence":[16,25,33,43],"promptText":"The log for Ida's scarf reads 16, 25, 33, 43 rows knitted. One number does not follow the rule. Which number is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"pattern":{"kind":"slip","step":9,"start":16,"badIdx":2},"terms":[16,25,33,43],"promptText":"Ida knits the same number of rows on the scarf each day. Ida kept a list: 16, 25, 33, 43 rows knitted. Which number does not follow the pattern?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0740",
@@ -7402,7 +7402,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"pattern":{"kind":"slip","step":6,"start":51,"badIdx":3},"sequence":[51,57,63,70],"promptText":"Omar logged the leaves on the bean plant as 51, 57, 63, 70, but one entry breaks the even pattern. Which entry is wrong?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"pattern":{"kind":"slip","step":6,"start":51,"badIdx":3},"terms":[51,57,63,70],"promptText":"The bean plant gets the same number of new leaves each day. Omar counted the leaves: 51, 57, 63, 70. Which number is wrong?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0741",
@@ -7412,7 +7412,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"pattern":{"kind":"slip","step":4,"start":27,"badIdx":1},"sequence":[27,30,35,39],"promptText":"The log for June's brick path reads 27, 30, 35, 39 bricks. One number does not follow the rule. Which number is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"pattern":{"kind":"slip","step":4,"start":27,"badIdx":1},"terms":[27,30,35,39],"promptText":"The brick path gets the same number of new bricks each day. June kept a list: 27, 30, 35, 39 bricks. Which number does not follow the pattern?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0742",
@@ -7422,7 +7422,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"pattern":{"kind":"slip","step":5,"start":33,"badIdx":2},"sequence":[33,38,44,48],"promptText":"Zoe logged the pieces placed on the puzzle as 33, 38, 44, 48, but one entry breaks the even pattern. Which entry is wrong?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"pattern":{"kind":"slip","step":5,"start":33,"badIdx":2},"terms":[33,38,44,48],"promptText":"Zoe places the same number of puzzle pieces each day. Zoe counted the pieces placed: 33, 38, 44, 48. Which number is wrong?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0743",
@@ -7432,7 +7432,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":65,"display":{"pattern":{"kind":"slip","step":7,"start":45,"badIdx":3},"sequence":[45,52,59,65],"promptText":"The log for Ben's scarf reads 45, 52, 59, 65 rows knitted. One number does not follow the rule. Which number is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":65,"display":{"pattern":{"kind":"slip","step":7,"start":45,"badIdx":3},"terms":[45,52,59,65],"promptText":"Ben knits the same number of rows on the scarf each day. Ben kept a list: 45, 52, 59, 65 rows knitted. Which number does not follow the pattern?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0744",
@@ -7442,7 +7442,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"pattern":{"kind":"slip","step":8,"start":18,"badIdx":1},"sequence":[18,27,34,42],"promptText":"Lily logged the leaves on the bean plant as 18, 27, 34, 42, but one entry breaks the even pattern. Which entry is wrong?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"pattern":{"kind":"slip","step":8,"start":18,"badIdx":1},"terms":[18,27,34,42],"promptText":"The bean plant gets the same number of new leaves each day. Lily counted the leaves: 18, 27, 34, 42. Which number is wrong?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0745",
@@ -7452,7 +7452,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":67,"display":{"pattern":{"kind":"slip","step":3,"start":62,"badIdx":2},"sequence":[62,65,67,71],"promptText":"The log for Rosa's brick path reads 62, 65, 67, 71 bricks. One number does not follow the rule. Which number is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":67,"display":{"pattern":{"kind":"slip","step":3,"start":62,"badIdx":2},"terms":[62,65,67,71],"promptText":"The brick path gets the same number of new bricks each day. Rosa kept a list: 62, 65, 67, 71 bricks. Which number does not follow the pattern?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0746",
@@ -7462,7 +7462,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"pattern":{"kind":"slip","step":9,"start":29,"badIdx":3},"sequence":[29,38,47,57],"promptText":"Finn logged the pieces placed on the puzzle as 29, 38, 47, 57, but one entry breaks the even pattern. Which entry is wrong?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"pattern":{"kind":"slip","step":9,"start":29,"badIdx":3},"terms":[29,38,47,57],"promptText":"Finn places the same number of puzzle pieces each day. Finn counted the pieces placed: 29, 38, 47, 57. Which number is wrong?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0747",
@@ -7472,7 +7472,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"pattern":{"kind":"slip","step":6,"start":37,"badIdx":1},"sequence":[37,42,49,55],"promptText":"The log for Amara's scarf reads 37, 42, 49, 55 rows knitted. One number does not follow the rule. Which number is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"pattern":{"kind":"slip","step":6,"start":37,"badIdx":1},"terms":[37,42,49,55],"promptText":"Amara knits the same number of rows on the scarf each day. Amara kept a list: 37, 42, 49, 55 rows knitted. Which number does not follow the pattern?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0748",
@@ -7482,7 +7482,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"pattern":{"kind":"slip","step":5,"start":44,"badIdx":2},"sequence":[44,49,55,59],"promptText":"Diego logged the leaves on the bean plant as 44, 49, 55, 59, but one entry breaks the even pattern. Which entry is wrong?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"pattern":{"kind":"slip","step":5,"start":44,"badIdx":2},"terms":[44,49,55,59],"promptText":"The bean plant gets the same number of new leaves each day. Diego counted the leaves: 44, 49, 55, 59. Which number is wrong?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0749",
@@ -7492,7 +7492,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":124,"display":{"pattern":{"kind":"slip","step":11,"start":112,"badIdx":1},"sequence":[112,124,134,145],"promptText":"The log for Mina's bean plant reads 112, 124, 134, 145 leaves. One number does not follow the rule. Which number is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":124,"display":{"pattern":{"kind":"slip","step":11,"start":112,"badIdx":1},"terms":[112,124,134,145],"promptText":"The bean plant gets the same number of new leaves each day. Mina kept a list: 112, 124, 134, 145 leaves. Which number does not follow the pattern?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0750",
@@ -7502,7 +7502,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":258,"display":{"pattern":{"kind":"slip","step":12,"start":235,"badIdx":2},"sequence":[235,247,258,271],"promptText":"Luca logged the bricks on the brick path as 235, 247, 258, 271, but one entry breaks the even pattern. Which entry is wrong?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":258,"display":{"pattern":{"kind":"slip","step":12,"start":235,"badIdx":2},"terms":[235,247,258,271],"promptText":"The brick path gets the same number of new bricks each day. Luca counted the bricks: 235, 247, 258, 271. Which number is wrong?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0751",
@@ -7512,7 +7512,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":387,"display":{"pattern":{"kind":"slip","step":15,"start":341,"badIdx":3},"sequence":[341,356,371,387],"promptText":"The log for Nia's puzzle reads 341, 356, 371, 387 pieces placed. One number does not follow the rule. Which number is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":387,"display":{"pattern":{"kind":"slip","step":15,"start":341,"badIdx":3},"terms":[341,356,371,387],"promptText":"Nia places the same number of puzzle pieces each day. Nia kept a list: 341, 356, 371, 387 pieces placed. Which number does not follow the pattern?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0752",
@@ -7522,7 +7522,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":148,"display":{"pattern":{"kind":"slip","step":25,"start":124,"badIdx":1},"sequence":[124,148,174,199],"promptText":"Theo logged the rows knitted on the scarf as 124, 148, 174, 199, but one entry breaks the even pattern. Which entry is wrong?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":148,"display":{"pattern":{"kind":"slip","step":25,"start":124,"badIdx":1},"terms":[124,148,174,199],"promptText":"Theo knits the same number of rows on the scarf each day. Theo counted the rows: 124, 148, 174, 199. Which number is wrong?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0753",
@@ -7532,7 +7532,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":475,"display":{"pattern":{"kind":"slip","step":11,"start":452,"badIdx":2},"sequence":[452,463,475,485],"promptText":"The log for Ava's bean plant reads 452, 463, 475, 485 leaves. One number does not follow the rule. Which number is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":475,"display":{"pattern":{"kind":"slip","step":11,"start":452,"badIdx":2},"terms":[452,463,475,485],"promptText":"The bean plant gets the same number of new leaves each day. Ava kept a list: 452, 463, 475, 485 leaves. Which number does not follow the pattern?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0754",
@@ -7542,7 +7542,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":264,"display":{"pattern":{"kind":"slip","step":14,"start":223,"badIdx":3},"sequence":[223,237,251,264],"promptText":"Kai logged the bricks on the brick path as 223, 237, 251, 264, but one entry breaks the even pattern. Which entry is wrong?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":264,"display":{"pattern":{"kind":"slip","step":14,"start":223,"badIdx":3},"terms":[223,237,251,264],"promptText":"The brick path gets the same number of new bricks each day. Kai counted the bricks: 223, 237, 251, 264. Which number is wrong?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0755",
@@ -7552,7 +7552,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":357,"display":{"pattern":{"kind":"slip","step":21,"start":335,"badIdx":1},"sequence":[335,357,377,398],"promptText":"The log for Ida's puzzle reads 335, 357, 377, 398 pieces placed. One number does not follow the rule. Which number is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":357,"display":{"pattern":{"kind":"slip","step":21,"start":335,"badIdx":1},"terms":[335,357,377,398],"promptText":"Ida places the same number of puzzle pieces each day. Ida kept a list: 335, 357, 377, 398 pieces placed. Which number does not follow the pattern?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0756",
@@ -7562,7 +7562,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":169,"display":{"pattern":{"kind":"slip","step":12,"start":146,"badIdx":2},"sequence":[146,158,169,182],"promptText":"Omar logged the rows knitted on the scarf as 146, 158, 169, 182, but one entry breaks the even pattern. Which entry is wrong?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":169,"display":{"pattern":{"kind":"slip","step":12,"start":146,"badIdx":2},"terms":[146,158,169,182],"promptText":"Omar knits the same number of rows on the scarf each day. Omar counted the rows: 146, 158, 169, 182. Which number is wrong?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0757",
@@ -7572,7 +7572,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":558,"display":{"pattern":{"kind":"slip","step":13,"start":518,"badIdx":3},"sequence":[518,531,544,558],"promptText":"The log for June's bean plant reads 518, 531, 544, 558 leaves. One number does not follow the rule. Which number is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":558,"display":{"pattern":{"kind":"slip","step":13,"start":518,"badIdx":3},"terms":[518,531,544,558],"promptText":"The bean plant gets the same number of new leaves each day. June kept a list: 518, 531, 544, 558 leaves. Which number does not follow the pattern?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0758",
@@ -7582,7 +7582,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":262,"display":{"pattern":{"kind":"slip","step":16,"start":247,"badIdx":1},"sequence":[247,262,279,295],"promptText":"Zoe logged the bricks on the brick path as 247, 262, 279, 295, but one entry breaks the even pattern. Which entry is wrong?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":262,"display":{"pattern":{"kind":"slip","step":16,"start":247,"badIdx":1},"terms":[247,262,279,295],"promptText":"The brick path gets the same number of new bricks each day. Zoe counted the bricks: 247, 262, 279, 295. Which number is wrong?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0759",
@@ -7592,7 +7592,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":378,"display":{"pattern":{"kind":"slip","step":22,"start":333,"badIdx":2},"sequence":[333,355,378,399],"promptText":"The log for Ben's puzzle reads 333, 355, 378, 399 pieces placed. One number does not follow the rule. Which number is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":378,"display":{"pattern":{"kind":"slip","step":22,"start":333,"badIdx":2},"terms":[333,355,378,399],"promptText":"Ben places the same number of puzzle pieces each day. Ben kept a list: 333, 355, 378, 399 pieces placed. Which number does not follow the pattern?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0760",
@@ -7602,7 +7602,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":468,"display":{"pattern":{"kind":"slip","step":18,"start":415,"badIdx":3},"sequence":[415,433,451,468],"promptText":"Lily logged the rows knitted on the scarf as 415, 433, 451, 468, but one entry breaks the even pattern. Which entry is wrong?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":468,"display":{"pattern":{"kind":"slip","step":18,"start":415,"badIdx":3},"terms":[415,433,451,468],"promptText":"Lily knits the same number of rows on the scarf each day. Lily counted the rows: 415, 433, 451, 468. Which number is wrong?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0761",
@@ -7612,7 +7612,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":153,"display":{"pattern":{"kind":"slip","step":24,"start":128,"badIdx":1},"sequence":[128,153,176,200],"promptText":"The log for Rosa's bean plant reads 128, 153, 176, 200 leaves. One number does not follow the rule. Which number is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":153,"display":{"pattern":{"kind":"slip","step":24,"start":128,"badIdx":1},"terms":[128,153,176,200],"promptText":"The bean plant gets the same number of new leaves each day. Rosa kept a list: 128, 153, 176, 200 leaves. Which number does not follow the pattern?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0762",
@@ -7622,7 +7622,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":651,"display":{"pattern":{"kind":"slip","step":15,"start":622,"badIdx":2},"sequence":[622,637,651,667],"promptText":"Finn logged the bricks on the brick path as 622, 637, 651, 667, but one entry breaks the even pattern. Which entry is wrong?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":651,"display":{"pattern":{"kind":"slip","step":15,"start":622,"badIdx":2},"terms":[622,637,651,667],"promptText":"The brick path gets the same number of new bricks each day. Finn counted the bricks: 622, 637, 651, 667. Which number is wrong?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0763",
@@ -7632,7 +7632,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":341,"display":{"pattern":{"kind":"slip","step":17,"start":289,"badIdx":3},"sequence":[289,306,323,341],"promptText":"The log for Amara's puzzle reads 289, 306, 323, 341 pieces placed. One number does not follow the rule. Which number is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":341,"display":{"pattern":{"kind":"slip","step":17,"start":289,"badIdx":3},"terms":[289,306,323,341],"promptText":"Amara places the same number of puzzle pieces each day. Amara kept a list: 289, 306, 323, 341 pieces placed. Which number does not follow the pattern?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0764",
@@ -7642,7 +7642,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":339,"display":{"pattern":{"kind":"slip","step":23,"start":317,"badIdx":1},"sequence":[317,339,363,386],"promptText":"Diego logged the rows knitted on the scarf as 317, 339, 363, 386, but one entry breaks the even pattern. Which entry is wrong?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":339,"display":{"pattern":{"kind":"slip","step":23,"start":317,"badIdx":1},"terms":[317,339,363,386],"promptText":"Diego knits the same number of rows on the scarf each day. Diego counted the rows: 317, 339, 363, 386. Which number is wrong?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-app-b0821-0765",
@@ -7652,7 +7652,7 @@ export const ITEMS = [
     structureType: "storyWrongEntry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":473,"display":{"pattern":{"kind":"slip","step":19,"start":434,"badIdx":2},"sequence":[434,453,473,491],"promptText":"The log for Priya's bean plant reads 434, 453, 473, 491 leaves. One number does not follow the rule. Which number is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":473,"display":{"pattern":{"kind":"slip","step":19,"start":434,"badIdx":2},"terms":[434,453,473,491],"promptText":"The bean plant gets the same number of new leaves each day. Priya kept a list: 434, 453, 473, 491 leaves. Which number does not follow the pattern?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0001",
@@ -7662,7 +7662,7 @@ export const ITEMS = [
     structureType: "coreIdentify_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"circle, square","choices":["square, circle","circle, square","circle, square, circle","circle"],"display":{"pattern":{"core":["circle","square"],"kind":"core"},"sequence":["circle","square","circle","square","circle","square"],"promptText":"Lily made this pattern: circle, square, circle, square, circle, square. Which part repeats?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"circle, square","choices":["square, circle","circle, square","circle, square, circle","circle"],"display":{"pattern":{"core":["circle","square"],"kind":"core"},"terms":["circle","square","circle","square","circle","square"],"promptText":"Lily made this pattern: circle, square, circle, square, circle, square. Which part repeats from the start?"}},
   },
   {
     itemId: "patterns-conc-b0821-0002",
@@ -7672,7 +7672,7 @@ export const ITEMS = [
     structureType: "coreIdentify_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"red, blue","choices":["red, blue","red","blue, red","red, blue, red"],"display":{"pattern":{"core":["red","blue"],"kind":"core"},"sequence":["red","blue","red","blue","red","blue"],"promptText":"Diego's pattern goes red, blue, red, blue, red, blue. Which chunk starts over each time?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"red, blue","choices":["red, blue","red","blue, red","red, blue, red"],"display":{"pattern":{"core":["red","blue"],"kind":"core"},"terms":["red","blue","red","blue","red","blue"],"promptText":"Diego's pattern goes red, blue, red, blue, red, blue. From the start, which chunk keeps repeating?"}},
   },
   {
     itemId: "patterns-conc-b0821-0003",
@@ -7682,7 +7682,7 @@ export const ITEMS = [
     structureType: "coreIdentify_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"star, moon","choices":["star","star, moon","moon, star","star, moon, star"],"display":{"pattern":{"core":["star","moon"],"kind":"core"},"sequence":["star","moon","star","moon","star","moon"],"promptText":"Sam made this pattern: star, moon, star, moon, star, moon. Which part repeats?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"star, moon","choices":["star","star, moon","moon, star","star, moon, star"],"display":{"pattern":{"core":["star","moon"],"kind":"core"},"terms":["star","moon","star","moon","star","moon"],"promptText":"Sam made this pattern: star, moon, star, moon, star, moon. Which part repeats from the start?"}},
   },
   {
     itemId: "patterns-conc-b0821-0004",
@@ -7692,7 +7692,7 @@ export const ITEMS = [
     structureType: "coreIdentify_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"up, down","choices":["down, up","up, down, up","up","up, down"],"display":{"pattern":{"core":["up","down"],"kind":"core"},"sequence":["up","down","up","down","up","down"],"promptText":"Theo's pattern goes up, down, up, down, up, down. Which chunk starts over each time?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"up, down","choices":["down, up","up, down, up","up","up, down"],"display":{"pattern":{"core":["up","down"],"kind":"core"},"terms":["up","down","up","down","up","down"],"promptText":"Theo's pattern goes up, down, up, down, up, down. From the start, which chunk keeps repeating?"}},
   },
   {
     itemId: "patterns-conc-b0821-0005",
@@ -7702,7 +7702,7 @@ export const ITEMS = [
     structureType: "coreIdentify_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"sun, cloud","choices":["sun","sun, cloud","sun, cloud, sun","cloud, sun"],"display":{"pattern":{"core":["sun","cloud"],"kind":"core"},"sequence":["sun","cloud","sun","cloud","sun","cloud"],"promptText":"Omar made this pattern: sun, cloud, sun, cloud, sun, cloud. Which part repeats?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"sun, cloud","choices":["sun","sun, cloud","sun, cloud, sun","cloud, sun"],"display":{"pattern":{"core":["sun","cloud"],"kind":"core"},"terms":["sun","cloud","sun","cloud","sun","cloud"],"promptText":"Omar made this pattern: sun, cloud, sun, cloud, sun, cloud. Which part repeats from the start?"}},
   },
   {
     itemId: "patterns-conc-b0821-0006",
@@ -7712,7 +7712,7 @@ export const ITEMS = [
     structureType: "coreIdentify_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"heart, diamond","choices":["heart","heart, diamond","diamond, heart","heart, diamond, heart"],"display":{"pattern":{"core":["heart","diamond"],"kind":"core"},"sequence":["heart","diamond","heart","diamond","heart","diamond"],"promptText":"Lily's pattern goes heart, diamond, heart, diamond, heart, diamond. Which chunk starts over each time?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"heart, diamond","choices":["heart","heart, diamond","diamond, heart","heart, diamond, heart"],"display":{"pattern":{"core":["heart","diamond"],"kind":"core"},"terms":["heart","diamond","heart","diamond","heart","diamond"],"promptText":"Lily's pattern goes heart, diamond, heart, diamond, heart, diamond. From the start, which chunk keeps repeating?"}},
   },
   {
     itemId: "patterns-conc-b0821-0007",
@@ -7722,7 +7722,7 @@ export const ITEMS = [
     structureType: "coreIdentify_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"red, red, blue","choices":["red, red","red, red, blue","blue, red, red","red, red, blue, red"],"display":{"pattern":{"core":["red","red","blue"],"kind":"core"},"sequence":["red","red","blue","red","red","blue","red","red","blue"],"promptText":"Diego made this pattern: red, red, blue, red, red, blue, red, red, blue. Which part repeats?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"red, red, blue","choices":["red, red","red, red, blue","blue, red, red","red, red, blue, red"],"display":{"pattern":{"core":["red","red","blue"],"kind":"core"},"terms":["red","red","blue","red","red","blue","red","red","blue"],"promptText":"Diego made this pattern: red, red, blue, red, red, blue, red, red, blue. Which part repeats from the start?"}},
   },
   {
     itemId: "patterns-conc-b0821-0008",
@@ -7732,7 +7732,7 @@ export const ITEMS = [
     structureType: "coreIdentify_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"circle, circle, square","choices":["square, circle, circle","circle, circle","circle, circle, square, circle","circle, circle, square"],"display":{"pattern":{"core":["circle","circle","square"],"kind":"core"},"sequence":["circle","circle","square","circle","circle","square","circle","circle","square"],"promptText":"Sam's pattern goes circle, circle, square, circle, circle, square, circle, circle, square. Which chunk starts over each time?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"circle, circle, square","choices":["square, circle, circle","circle, circle","circle, circle, square, circle","circle, circle, square"],"display":{"pattern":{"core":["circle","circle","square"],"kind":"core"},"terms":["circle","circle","square","circle","circle","square","circle","circle","square"],"promptText":"Sam's pattern goes circle, circle, square, circle, circle, square, circle, circle, square. From the start, which chunk keeps repeating?"}},
   },
   {
     itemId: "patterns-conc-b0821-0009",
@@ -7742,7 +7742,7 @@ export const ITEMS = [
     structureType: "coreIdentify_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"circle, square, triangle","choices":["circle, square","circle, square, triangle","triangle, square, circle","circle, square, triangle, circle"],"display":{"pattern":{"core":["circle","square","triangle"],"kind":"core"},"sequence":["circle","square","triangle","circle","square","triangle","circle","square","triangle"],"promptText":"Sam made this pattern: circle, square, triangle, circle, square, triangle, circle, square, triangle. Which part repeats?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"circle, square, triangle","choices":["circle, square","circle, square, triangle","triangle, square, circle","circle, square, triangle, circle"],"display":{"pattern":{"core":["circle","square","triangle"],"kind":"core"},"terms":["circle","square","triangle","circle","square","triangle","circle","square","triangle"],"promptText":"Sam made this pattern: circle, square, triangle, circle, square, triangle, circle, square, triangle. Which part repeats from the start?"}},
   },
   {
     itemId: "patterns-conc-b0821-0010",
@@ -7752,7 +7752,7 @@ export const ITEMS = [
     structureType: "coreIdentify_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"red, blue, green","choices":["red, blue, green","red, blue, green, red","red, blue","green, blue, red"],"display":{"pattern":{"core":["red","blue","green"],"kind":"core"},"sequence":["red","blue","green","red","blue","green","red","blue","green"],"promptText":"Theo's pattern goes red, blue, green, red, blue, green, red, blue, green. Which chunk starts over each time?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"red, blue, green","choices":["red, blue, green","red, blue, green, red","red, blue","green, blue, red"],"display":{"pattern":{"core":["red","blue","green"],"kind":"core"},"terms":["red","blue","green","red","blue","green","red","blue","green"],"promptText":"Theo's pattern goes red, blue, green, red, blue, green, red, blue, green. From the start, which chunk keeps repeating?"}},
   },
   {
     itemId: "patterns-conc-b0821-0011",
@@ -7762,7 +7762,7 @@ export const ITEMS = [
     structureType: "coreIdentify_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"star, moon, sun","choices":["star, moon, sun","sun, moon, star","star, moon","star, moon, sun, star"],"display":{"pattern":{"core":["star","moon","sun"],"kind":"core"},"sequence":["star","moon","sun","star","moon","sun","star","moon","sun"],"promptText":"Omar made this pattern: star, moon, sun, star, moon, sun, star, moon, sun. Which part repeats?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"star, moon, sun","choices":["star, moon, sun","sun, moon, star","star, moon","star, moon, sun, star"],"display":{"pattern":{"core":["star","moon","sun"],"kind":"core"},"terms":["star","moon","sun","star","moon","sun","star","moon","sun"],"promptText":"Omar made this pattern: star, moon, sun, star, moon, sun, star, moon, sun. Which part repeats from the start?"}},
   },
   {
     itemId: "patterns-conc-b0821-0012",
@@ -7772,7 +7772,7 @@ export const ITEMS = [
     structureType: "coreIdentify_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"circle, square, triangle, heart","choices":["circle, square, triangle, heart, circle","circle, square, triangle","circle, square, triangle, heart","heart, triangle, square, circle"],"display":{"pattern":{"core":["circle","square","triangle","heart"],"kind":"core"},"sequence":["circle","square","triangle","heart","circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"Lily's pattern goes circle, square, triangle, heart, circle, square, triangle, heart, circle, square, triangle, heart. Which chunk starts over each time?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"circle, square, triangle, heart","choices":["circle, square, triangle, heart, circle","circle, square, triangle","circle, square, triangle, heart","heart, triangle, square, circle"],"display":{"pattern":{"core":["circle","square","triangle","heart"],"kind":"core"},"terms":["circle","square","triangle","heart","circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"Lily's pattern goes circle, square, triangle, heart, circle, square, triangle, heart, circle, square, triangle, heart. From the start, which chunk keeps repeating?"}},
   },
   {
     itemId: "patterns-conc-b0821-0013",
@@ -7782,7 +7782,7 @@ export const ITEMS = [
     structureType: "coreIdentify_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"red, blue, green, red","choices":["red, blue, green","red, blue, green, red, red","red, blue, green, red","red, green, blue, red"],"display":{"pattern":{"core":["red","blue","green","red"],"kind":"core"},"sequence":["red","blue","green","red","red","blue","green","red","red","blue","green","red"],"promptText":"Diego made this pattern: red, blue, green, red, red, blue, green, red, red, blue, green, red. Which part repeats?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"red, blue, green, red","choices":["red, blue, green","red, blue, green, red, red","red, blue, green, red","red, green, blue, red"],"display":{"pattern":{"core":["red","blue","green","red"],"kind":"core"},"terms":["red","blue","green","red","red","blue","green","red","red","blue","green","red"],"promptText":"Diego made this pattern: red, blue, green, red, red, blue, green, red, red, blue, green, red. Which part repeats from the start?"}},
   },
   {
     itemId: "patterns-conc-b0821-0014",
@@ -7792,7 +7792,7 @@ export const ITEMS = [
     structureType: "coreIdentify_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"circle, square","choices":["square, circle","circle","circle, square, circle","circle, square"],"display":{"pattern":{"core":["circle","square"],"kind":"core"},"sequence":["circle","square","circle","square","circle","square"],"promptText":"Sam's pattern goes circle, square, circle, square, circle, square. Which chunk starts over each time?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"circle, square","choices":["square, circle","circle","circle, square, circle","circle, square"],"display":{"pattern":{"core":["circle","square"],"kind":"core"},"terms":["circle","square","circle","square","circle","square"],"promptText":"Sam's pattern goes circle, square, circle, square, circle, square. From the start, which chunk keeps repeating?"}},
   },
   {
     itemId: "patterns-conc-b0821-0015",
@@ -7802,7 +7802,7 @@ export const ITEMS = [
     structureType: "coreIdentify_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"red, blue","choices":["red","blue, red","red, blue, red","red, blue"],"display":{"pattern":{"core":["red","blue"],"kind":"core"},"sequence":["red","blue","red","blue","red","blue"],"promptText":"Theo made this pattern: red, blue, red, blue, red, blue. Which part repeats?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"red, blue","choices":["red","blue, red","red, blue, red","red, blue"],"display":{"pattern":{"core":["red","blue"],"kind":"core"},"terms":["red","blue","red","blue","red","blue"],"promptText":"Theo made this pattern: red, blue, red, blue, red, blue. Which part repeats from the start?"}},
   },
   {
     itemId: "patterns-conc-b0821-0016",
@@ -7812,7 +7812,7 @@ export const ITEMS = [
     structureType: "coreIdentify_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"star, moon","choices":["star","moon, star","star, moon","star, moon, star"],"display":{"pattern":{"core":["star","moon"],"kind":"core"},"sequence":["star","moon","star","moon","star","moon"],"promptText":"Omar's pattern goes star, moon, star, moon, star, moon. Which chunk starts over each time?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"star, moon","choices":["star","moon, star","star, moon","star, moon, star"],"display":{"pattern":{"core":["star","moon"],"kind":"core"},"terms":["star","moon","star","moon","star","moon"],"promptText":"Omar's pattern goes star, moon, star, moon, star, moon. From the start, which chunk keeps repeating?"}},
   },
   {
     itemId: "patterns-conc-b0821-0017",
@@ -7822,7 +7822,7 @@ export const ITEMS = [
     structureType: "coreIdentify_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"red, red, blue, blue","choices":["red, red, blue, blue, red","red, red, blue, blue","red, red, blue","blue, blue, red, red"],"display":{"pattern":{"core":["red","red","blue","blue"],"kind":"core"},"sequence":["red","red","blue","blue","red","red","blue","blue","red","red","blue","blue"],"promptText":"Lily made this pattern: red, red, blue, blue, red, red, blue, blue, red, red, blue, blue. Which part repeats?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"red, red, blue, blue","choices":["red, red, blue, blue, red","red, red, blue, blue","red, red, blue","blue, blue, red, red"],"display":{"pattern":{"core":["red","red","blue","blue"],"kind":"core"},"terms":["red","red","blue","blue","red","red","blue","blue","red","red","blue","blue"],"promptText":"Lily made this pattern: red, red, blue, blue, red, red, blue, blue, red, red, blue, blue. Which part repeats from the start?"}},
   },
   {
     itemId: "patterns-conc-b0821-0018",
@@ -7832,7 +7832,7 @@ export const ITEMS = [
     structureType: "coreIdentify_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"star, star, moon, moon","choices":["star, star, moon, moon","star, star, moon, moon, star","moon, moon, star, star","star, star, moon"],"display":{"pattern":{"core":["star","star","moon","moon"],"kind":"core"},"sequence":["star","star","moon","moon","star","star","moon","moon","star","star","moon","moon"],"promptText":"Diego's pattern goes star, star, moon, moon, star, star, moon, moon, star, star, moon, moon. Which chunk starts over each time?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"star, star, moon, moon","choices":["star, star, moon, moon","star, star, moon, moon, star","moon, moon, star, star","star, star, moon"],"display":{"pattern":{"core":["star","star","moon","moon"],"kind":"core"},"terms":["star","star","moon","moon","star","star","moon","moon","star","star","moon","moon"],"promptText":"Diego's pattern goes star, star, moon, moon, star, star, moon, moon, star, star, moon, moon. From the start, which chunk keeps repeating?"}},
   },
   {
     itemId: "patterns-conc-b0821-0019",
@@ -7842,7 +7842,7 @@ export const ITEMS = [
     structureType: "coreIdentify_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"red, red, blue","choices":["red, red","blue, red, red","red, red, blue","red, red, blue, red"],"display":{"pattern":{"core":["red","red","blue"],"kind":"core"},"sequence":["red","red","blue","red","red","blue","red","red","blue"],"promptText":"Sam made this pattern: red, red, blue, red, red, blue, red, red, blue. Which part repeats?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"red, red, blue","choices":["red, red","blue, red, red","red, red, blue","red, red, blue, red"],"display":{"pattern":{"core":["red","red","blue"],"kind":"core"},"terms":["red","red","blue","red","red","blue","red","red","blue"],"promptText":"Sam made this pattern: red, red, blue, red, red, blue, red, red, blue. Which part repeats from the start?"}},
   },
   {
     itemId: "patterns-conc-b0821-0020",
@@ -7852,7 +7852,7 @@ export const ITEMS = [
     structureType: "coreIdentify_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"circle, circle, square","choices":["circle, circle","circle, circle, square, circle","square, circle, circle","circle, circle, square"],"display":{"pattern":{"core":["circle","circle","square"],"kind":"core"},"sequence":["circle","circle","square","circle","circle","square","circle","circle","square"],"promptText":"Theo's pattern goes circle, circle, square, circle, circle, square, circle, circle, square. Which chunk starts over each time?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"circle, circle, square","choices":["circle, circle","circle, circle, square, circle","square, circle, circle","circle, circle, square"],"display":{"pattern":{"core":["circle","circle","square"],"kind":"core"},"terms":["circle","circle","square","circle","circle","square","circle","circle","square"],"promptText":"Theo's pattern goes circle, circle, square, circle, circle, square, circle, circle, square. From the start, which chunk keeps repeating?"}},
   },
   {
     itemId: "patterns-conc-b0821-0021",
@@ -7862,7 +7862,7 @@ export const ITEMS = [
     structureType: "coreIdentify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"circle, square, triangle, heart","choices":["circle, square, triangle","circle, square, triangle, heart, circle","heart, triangle, square, circle","circle, square, triangle, heart"],"display":{"pattern":{"core":["circle","square","triangle","heart"],"kind":"core"},"sequence":["circle","square","triangle","heart","circle","square","triangle","heart","circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"Lily made this pattern: circle, square, triangle, heart, circle, square, triangle, heart, circle, square, triangle, heart, circle, square, triangle, heart. Which part repeats?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"circle, square, triangle, heart","choices":["circle, square, triangle","circle, square, triangle, heart, circle","heart, triangle, square, circle","circle, square, triangle, heart"],"display":{"pattern":{"core":["circle","square","triangle","heart"],"kind":"core"},"terms":["circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"Lily made this pattern: circle, square, triangle, heart, circle, square, triangle, heart, and so on. Which part repeats from the start?"}},
   },
   {
     itemId: "patterns-conc-b0821-0022",
@@ -7872,7 +7872,7 @@ export const ITEMS = [
     structureType: "coreIdentify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"red, blue, green, red","choices":["red, blue, green","red, green, blue, red","red, blue, green, red, red","red, blue, green, red"],"display":{"pattern":{"core":["red","blue","green","red"],"kind":"core"},"sequence":["red","blue","green","red","red","blue","green","red","red","blue","green","red","red","blue","green","red"],"promptText":"Diego's pattern goes red, blue, green, red, red, blue, green, red, red, blue, green, red, red, blue, green, red. Which chunk starts over each time?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"red, blue, green, red","choices":["red, blue, green","red, green, blue, red","red, blue, green, red, red","red, blue, green, red"],"display":{"pattern":{"core":["red","blue","green","red"],"kind":"core"},"terms":["red","blue","green","red","red","blue","green","red"],"promptText":"Diego's pattern goes red, blue, green, red, red, blue, green, red, and so on. From the start, which chunk keeps repeating?"}},
   },
   {
     itemId: "patterns-conc-b0821-0023",
@@ -7882,7 +7882,7 @@ export const ITEMS = [
     structureType: "coreIdentify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"red, red, blue, blue","choices":["red, red, blue, blue, red","red, red, blue, blue","blue, blue, red, red","red, red, blue"],"display":{"pattern":{"core":["red","red","blue","blue"],"kind":"core"},"sequence":["red","red","blue","blue","red","red","blue","blue","red","red","blue","blue","red","red","blue","blue"],"promptText":"Sam made this pattern: red, red, blue, blue, red, red, blue, blue, red, red, blue, blue, red, red, blue, blue. Which part repeats?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"red, red, blue, blue","choices":["red, red, blue, blue, red","red, red, blue, blue","blue, blue, red, red","red, red, blue"],"display":{"pattern":{"core":["red","red","blue","blue"],"kind":"core"},"terms":["red","red","blue","blue","red","red","blue","blue"],"promptText":"Sam made this pattern: red, red, blue, blue, red, red, blue, blue, and so on. Which part repeats from the start?"}},
   },
   {
     itemId: "patterns-conc-b0821-0024",
@@ -7892,7 +7892,7 @@ export const ITEMS = [
     structureType: "coreIdentify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"star, star, moon, moon","choices":["star, star, moon, moon","moon, moon, star, star","star, star, moon, moon, star","star, star, moon"],"display":{"pattern":{"core":["star","star","moon","moon"],"kind":"core"},"sequence":["star","star","moon","moon","star","star","moon","moon","star","star","moon","moon","star","star","moon","moon"],"promptText":"Theo's pattern goes star, star, moon, moon, star, star, moon, moon, star, star, moon, moon, star, star, moon, moon. Which chunk starts over each time?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"star, star, moon, moon","choices":["star, star, moon, moon","moon, moon, star, star","star, star, moon, moon, star","star, star, moon"],"display":{"pattern":{"core":["star","star","moon","moon"],"kind":"core"},"terms":["star","star","moon","moon","star","star","moon","moon"],"promptText":"Theo's pattern goes star, star, moon, moon, star, star, moon, moon, and so on. From the start, which chunk keeps repeating?"}},
   },
   {
     itemId: "patterns-conc-b0821-0025",
@@ -7902,7 +7902,7 @@ export const ITEMS = [
     structureType: "coreIdentify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"circle, square, triangle","choices":["triangle, square, circle","circle, square, triangle, circle","circle, square","circle, square, triangle"],"display":{"pattern":{"core":["circle","square","triangle"],"kind":"core"},"sequence":["circle","square","triangle","circle","square","triangle","circle","square","triangle","circle","square","triangle"],"promptText":"Omar made this pattern: circle, square, triangle, circle, square, triangle, circle, square, triangle, circle, square, triangle. Which part repeats?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"circle, square, triangle","choices":["triangle, square, circle","circle, square, triangle, circle","circle, square","circle, square, triangle"],"display":{"pattern":{"core":["circle","square","triangle"],"kind":"core"},"terms":["circle","square","triangle","circle","square","triangle","circle","square","triangle","circle","square","triangle"],"promptText":"Omar made this pattern: circle, square, triangle, circle, square, triangle, circle, square, triangle, circle, square, triangle. Which part repeats from the start?"}},
   },
   {
     itemId: "patterns-conc-b0821-0026",
@@ -7912,7 +7912,7 @@ export const ITEMS = [
     structureType: "coreIdentify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"red, blue, green","choices":["red, blue","green, blue, red","red, blue, green","red, blue, green, red"],"display":{"pattern":{"core":["red","blue","green"],"kind":"core"},"sequence":["red","blue","green","red","blue","green","red","blue","green","red","blue","green"],"promptText":"Lily's pattern goes red, blue, green, red, blue, green, red, blue, green, red, blue, green. Which chunk starts over each time?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"red, blue, green","choices":["red, blue","green, blue, red","red, blue, green","red, blue, green, red"],"display":{"pattern":{"core":["red","blue","green"],"kind":"core"},"terms":["red","blue","green","red","blue","green","red","blue","green","red","blue","green"],"promptText":"Lily's pattern goes red, blue, green, red, blue, green, red, blue, green, red, blue, green. From the start, which chunk keeps repeating?"}},
   },
   {
     itemId: "patterns-conc-b0821-0027",
@@ -7922,7 +7922,7 @@ export const ITEMS = [
     structureType: "coreIdentify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"star, moon, sun","choices":["star, moon, sun","star, moon, sun, star","sun, moon, star","star, moon"],"display":{"pattern":{"core":["star","moon","sun"],"kind":"core"},"sequence":["star","moon","sun","star","moon","sun","star","moon","sun","star","moon","sun"],"promptText":"Diego made this pattern: star, moon, sun, star, moon, sun, star, moon, sun, star, moon, sun. Which part repeats?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"star, moon, sun","choices":["star, moon, sun","star, moon, sun, star","sun, moon, star","star, moon"],"display":{"pattern":{"core":["star","moon","sun"],"kind":"core"},"terms":["star","moon","sun","star","moon","sun","star","moon","sun","star","moon","sun"],"promptText":"Diego made this pattern: star, moon, sun, star, moon, sun, star, moon, sun, star, moon, sun. Which part repeats from the start?"}},
   },
   {
     itemId: "patterns-conc-b0821-0028",
@@ -7932,7 +7932,7 @@ export const ITEMS = [
     structureType: "coreIdentify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"red, red, blue","choices":["red, red, blue, red","red, red, blue","blue, red, red","red, red"],"display":{"pattern":{"core":["red","red","blue"],"kind":"core"},"sequence":["red","red","blue","red","red","blue","red","red","blue","red","red","blue"],"promptText":"Sam's pattern goes red, red, blue, red, red, blue, red, red, blue, red, red, blue. Which chunk starts over each time?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"red, red, blue","choices":["red, red, blue, red","red, red, blue","blue, red, red","red, red"],"display":{"pattern":{"core":["red","red","blue"],"kind":"core"},"terms":["red","red","blue","red","red","blue","red","red","blue","red","red","blue"],"promptText":"Sam's pattern goes red, red, blue, red, red, blue, red, red, blue, red, red, blue. From the start, which chunk keeps repeating?"}},
   },
   {
     itemId: "patterns-conc-b0821-0029",
@@ -7942,7 +7942,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":4,"core":["circle","square"],"kind":"repeat","said":"circle"},"sequence":["circle","square","circle","square"],"promptText":"Nora continues the pattern circle, square, circle, square with circle. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":4,"core":["circle","square"],"kind":"repeat","said":"circle"},"terms":["circle","square","circle","square"],"promptText":"Nora continues the pattern circle, square, circle, square with circle. Is Nora right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0030",
@@ -7952,7 +7952,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":5,"core":["circle","square"],"kind":"repeat","said":"circle"},"sequence":["circle","square","circle","square","circle"],"promptText":"The pattern goes circle, square, circle, square, circle. Luca says circle comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":5,"core":["circle","square"],"kind":"repeat","said":"circle"},"terms":["circle","square","circle","square","circle"],"promptText":"The pattern goes circle, square, circle, square, circle. Luca says circle comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0031",
@@ -7962,7 +7962,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":6,"core":["circle","square"],"kind":"repeat","said":"circle"},"sequence":["circle","square","circle","square","circle","square"],"promptText":"Ava continues the pattern circle, square, circle, square, circle, square with circle. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":6,"core":["circle","square"],"kind":"repeat","said":"circle"},"terms":["circle","square","circle","square","circle","square"],"promptText":"Ava continues the pattern circle, square, circle, square, circle, square with circle. Is Ava right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0032",
@@ -7972,7 +7972,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":7,"core":["circle","square"],"kind":"repeat","said":"circle"},"sequence":["circle","square","circle","square","circle","square","circle"],"promptText":"The pattern goes circle, square, circle, square, circle, square, circle. Omar says circle comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":7,"core":["circle","square"],"kind":"repeat","said":"circle"},"terms":["circle","square","circle","square","circle","square","circle"],"promptText":"The pattern goes circle, square, circle, square, circle, square, circle. Omar says circle comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0033",
@@ -7982,7 +7982,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":4,"core":["red","blue"],"kind":"repeat","said":"blue"},"sequence":["red","blue","red","blue"],"promptText":"Theo continues the pattern red, blue, red, blue with blue. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":4,"core":["red","blue"],"kind":"repeat","said":"blue"},"terms":["red","blue","red","blue"],"promptText":"Theo continues the pattern red, blue, red, blue with blue. Is Theo right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0034",
@@ -7992,7 +7992,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":5,"core":["red","blue"],"kind":"repeat","said":"blue"},"sequence":["red","blue","red","blue","red"],"promptText":"The pattern goes red, blue, red, blue, red. Ida says blue comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":5,"core":["red","blue"],"kind":"repeat","said":"blue"},"terms":["red","blue","red","blue","red"],"promptText":"The pattern goes red, blue, red, blue, red. Ida says blue comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0035",
@@ -8002,7 +8002,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":6,"core":["red","blue"],"kind":"repeat","said":"blue"},"sequence":["red","blue","red","blue","red","blue"],"promptText":"Zoe continues the pattern red, blue, red, blue, red, blue with blue. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":6,"core":["red","blue"],"kind":"repeat","said":"blue"},"terms":["red","blue","red","blue","red","blue"],"promptText":"Zoe continues the pattern red, blue, red, blue, red, blue with blue. Is Zoe right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0036",
@@ -8012,7 +8012,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":7,"core":["red","blue"],"kind":"repeat","said":"blue"},"sequence":["red","blue","red","blue","red","blue","red"],"promptText":"The pattern goes red, blue, red, blue, red, blue, red. Rosa says blue comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":7,"core":["red","blue"],"kind":"repeat","said":"blue"},"terms":["red","blue","red","blue","red","blue","red"],"promptText":"The pattern goes red, blue, red, blue, red, blue, red. Rosa says blue comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0037",
@@ -8022,7 +8022,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":4,"core":["star","moon"],"kind":"repeat","said":"star"},"sequence":["star","moon","star","moon"],"promptText":"June continues the pattern star, moon, star, moon with star. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":4,"core":["star","moon"],"kind":"repeat","said":"star"},"terms":["star","moon","star","moon"],"promptText":"June continues the pattern star, moon, star, moon with star. Is June right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0038",
@@ -8032,7 +8032,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":5,"core":["star","moon"],"kind":"repeat","said":"star"},"sequence":["star","moon","star","moon","star"],"promptText":"The pattern goes star, moon, star, moon, star. Lily says star comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":5,"core":["star","moon"],"kind":"repeat","said":"star"},"terms":["star","moon","star","moon","star"],"promptText":"The pattern goes star, moon, star, moon, star. Lily says star comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0039",
@@ -8042,7 +8042,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":6,"core":["star","moon"],"kind":"repeat","said":"star"},"sequence":["star","moon","star","moon","star","moon"],"promptText":"Amara continues the pattern star, moon, star, moon, star, moon with star. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":6,"core":["star","moon"],"kind":"repeat","said":"star"},"terms":["star","moon","star","moon","star","moon"],"promptText":"Amara continues the pattern star, moon, star, moon, star, moon with star. Is Amara right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0040",
@@ -8052,7 +8052,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":7,"core":["star","moon"],"kind":"repeat","said":"star"},"sequence":["star","moon","star","moon","star","moon","star"],"promptText":"The pattern goes star, moon, star, moon, star, moon, star. Leo says star comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":7,"core":["star","moon"],"kind":"repeat","said":"star"},"terms":["star","moon","star","moon","star","moon","star"],"promptText":"The pattern goes star, moon, star, moon, star, moon, star. Leo says star comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0041",
@@ -8062,7 +8062,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":4,"core":["up","down"],"kind":"repeat","said":"down"},"sequence":["up","down","up","down"],"promptText":"Finn continues the pattern up, down, up, down with down. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":4,"core":["up","down"],"kind":"repeat","said":"down"},"terms":["up","down","up","down"],"promptText":"Finn continues the pattern up, down, up, down with down. Is Finn right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0042",
@@ -8072,7 +8072,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":5,"core":["up","down"],"kind":"repeat","said":"down"},"sequence":["up","down","up","down","up"],"promptText":"The pattern goes up, down, up, down, up. Priya says down comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":5,"core":["up","down"],"kind":"repeat","said":"down"},"terms":["up","down","up","down","up"],"promptText":"The pattern goes up, down, up, down, up. Priya says down comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0043",
@@ -8082,7 +8082,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":6,"core":["up","down"],"kind":"repeat","said":"down"},"sequence":["up","down","up","down","up","down"],"promptText":"Sam continues the pattern up, down, up, down, up, down with down. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":6,"core":["up","down"],"kind":"repeat","said":"down"},"terms":["up","down","up","down","up","down"],"promptText":"Sam continues the pattern up, down, up, down, up, down with down. Is Sam right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0044",
@@ -8092,7 +8092,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":7,"core":["up","down"],"kind":"repeat","said":"down"},"sequence":["up","down","up","down","up","down","up"],"promptText":"The pattern goes up, down, up, down, up, down, up. Nia says down comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":7,"core":["up","down"],"kind":"repeat","said":"down"},"terms":["up","down","up","down","up","down","up"],"promptText":"The pattern goes up, down, up, down, up, down, up. Nia says down comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0045",
@@ -8102,7 +8102,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":4,"core":["sun","cloud"],"kind":"repeat","said":"sun"},"sequence":["sun","cloud","sun","cloud"],"promptText":"Nora continues the pattern sun, cloud, sun, cloud with sun. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":4,"core":["sun","cloud"],"kind":"repeat","said":"sun"},"terms":["sun","cloud","sun","cloud"],"promptText":"Nora continues the pattern sun, cloud, sun, cloud with sun. Is Nora right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0046",
@@ -8112,7 +8112,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":5,"core":["sun","cloud"],"kind":"repeat","said":"sun"},"sequence":["sun","cloud","sun","cloud","sun"],"promptText":"The pattern goes sun, cloud, sun, cloud, sun. Luca says sun comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":5,"core":["sun","cloud"],"kind":"repeat","said":"sun"},"terms":["sun","cloud","sun","cloud","sun"],"promptText":"The pattern goes sun, cloud, sun, cloud, sun. Luca says sun comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0047",
@@ -8122,7 +8122,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":6,"core":["sun","cloud"],"kind":"repeat","said":"sun"},"sequence":["sun","cloud","sun","cloud","sun","cloud"],"promptText":"Ava continues the pattern sun, cloud, sun, cloud, sun, cloud with sun. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":6,"core":["sun","cloud"],"kind":"repeat","said":"sun"},"terms":["sun","cloud","sun","cloud","sun","cloud"],"promptText":"Ava continues the pattern sun, cloud, sun, cloud, sun, cloud with sun. Is Ava right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0048",
@@ -8132,7 +8132,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":7,"core":["sun","cloud"],"kind":"repeat","said":"sun"},"sequence":["sun","cloud","sun","cloud","sun","cloud","sun"],"promptText":"The pattern goes sun, cloud, sun, cloud, sun, cloud, sun. Omar says sun comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":7,"core":["sun","cloud"],"kind":"repeat","said":"sun"},"terms":["sun","cloud","sun","cloud","sun","cloud","sun"],"promptText":"The pattern goes sun, cloud, sun, cloud, sun, cloud, sun. Omar says sun comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0049",
@@ -8142,7 +8142,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":4,"core":["heart","diamond"],"kind":"repeat","said":"diamond"},"sequence":["heart","diamond","heart","diamond"],"promptText":"Theo continues the pattern heart, diamond, heart, diamond with diamond. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":4,"core":["heart","diamond"],"kind":"repeat","said":"diamond"},"terms":["heart","diamond","heart","diamond"],"promptText":"Theo continues the pattern heart, diamond, heart, diamond with diamond. Is Theo right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0050",
@@ -8152,7 +8152,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":5,"core":["heart","diamond"],"kind":"repeat","said":"diamond"},"sequence":["heart","diamond","heart","diamond","heart"],"promptText":"The pattern goes heart, diamond, heart, diamond, heart. Ida says diamond comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":5,"core":["heart","diamond"],"kind":"repeat","said":"diamond"},"terms":["heart","diamond","heart","diamond","heart"],"promptText":"The pattern goes heart, diamond, heart, diamond, heart. Ida says diamond comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0051",
@@ -8162,7 +8162,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":6,"core":["heart","diamond"],"kind":"repeat","said":"diamond"},"sequence":["heart","diamond","heart","diamond","heart","diamond"],"promptText":"Zoe continues the pattern heart, diamond, heart, diamond, heart, diamond with diamond. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":6,"core":["heart","diamond"],"kind":"repeat","said":"diamond"},"terms":["heart","diamond","heart","diamond","heart","diamond"],"promptText":"Zoe continues the pattern heart, diamond, heart, diamond, heart, diamond with diamond. Is Zoe right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0052",
@@ -8172,7 +8172,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":7,"core":["heart","diamond"],"kind":"repeat","said":"diamond"},"sequence":["heart","diamond","heart","diamond","heart","diamond","heart"],"promptText":"The pattern goes heart, diamond, heart, diamond, heart, diamond, heart. Rosa says diamond comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":7,"core":["heart","diamond"],"kind":"repeat","said":"diamond"},"terms":["heart","diamond","heart","diamond","heart","diamond","heart"],"promptText":"The pattern goes heart, diamond, heart, diamond, heart, diamond, heart. Rosa says diamond comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0053",
@@ -8182,7 +8182,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":6,"core":["circle","square","triangle"],"kind":"repeat","said":"circle"},"sequence":["circle","square","triangle","circle","square","triangle"],"promptText":"Nora continues the pattern circle, square, triangle, circle, square, triangle with circle. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":6,"core":["circle","square","triangle"],"kind":"repeat","said":"circle"},"terms":["circle","square","triangle","circle","square","triangle"],"promptText":"Nora continues the pattern circle, square, triangle, circle, square, triangle with circle. Is Nora right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0054",
@@ -8192,7 +8192,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":7,"core":["circle","square","triangle"],"kind":"repeat","said":"circle"},"sequence":["circle","square","triangle","circle","square","triangle","circle"],"promptText":"The pattern goes circle, square, triangle, circle, square, triangle, circle. Luca says circle comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":7,"core":["circle","square","triangle"],"kind":"repeat","said":"circle"},"terms":["circle","square","triangle","circle","square","triangle","circle"],"promptText":"The pattern goes circle, square, triangle, circle, square, triangle, circle. Luca says circle comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0055",
@@ -8202,7 +8202,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":8,"core":["circle","square","triangle"],"kind":"repeat","said":"triangle"},"sequence":["circle","square","triangle","circle","square","triangle","circle","square"],"promptText":"Ava continues the pattern circle, square, triangle, circle, square, triangle, circle, square with triangle. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":8,"core":["circle","square","triangle"],"kind":"repeat","said":"triangle"},"terms":["circle","square","triangle","circle","square","triangle","circle","square"],"promptText":"Ava continues the pattern circle, square, triangle, circle, square, triangle, circle, square with triangle. Is Ava right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0056",
@@ -8212,7 +8212,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":9,"core":["circle","square","triangle"],"kind":"repeat","said":"square"},"sequence":["circle","square","triangle","circle","square","triangle","circle","square","triangle"],"promptText":"The pattern goes circle, square, triangle, circle, square, triangle, circle, square, triangle. Omar says square comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":9,"core":["circle","square","triangle"],"kind":"repeat","said":"square"},"terms":["circle","square","triangle","circle","square","triangle","circle","square","triangle"],"promptText":"The pattern goes circle, square, triangle, circle, square, triangle, circle, square, triangle. Omar says square comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0057",
@@ -8222,7 +8222,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":10,"core":["circle","square","triangle"],"kind":"repeat","said":"square"},"sequence":["circle","square","triangle","circle","square","triangle","circle","square","triangle","circle"],"promptText":"Ben continues the pattern circle, square, triangle, circle, square, triangle, circle, square, triangle, circle with square. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":10,"core":["circle","square","triangle"],"kind":"repeat","said":"square"},"terms":["circle","square","triangle","circle","square","triangle","circle","square","triangle","circle"],"promptText":"Ben continues the pattern circle, square, triangle, circle, square, triangle, circle, square, triangle, circle with square. Is Ben right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0058",
@@ -8232,7 +8232,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":11,"core":["circle","square","triangle"],"kind":"repeat","said":"circle"},"sequence":["circle","square","triangle","circle","square","triangle","circle","square","triangle","circle","square"],"promptText":"The pattern goes circle, square, triangle, circle, square, triangle, circle, square, triangle, circle, square. Finn says circle comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":11,"core":["circle","square","triangle"],"kind":"repeat","said":"circle"},"terms":["circle","square","triangle","circle","square","triangle","circle","square","triangle","circle","square"],"promptText":"The pattern goes circle, square, triangle, circle, square, triangle, circle, square, triangle, circle, square. Finn says circle comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0059",
@@ -8242,7 +8242,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":6,"core":["red","blue","green"],"kind":"repeat","said":"blue"},"sequence":["red","blue","green","red","blue","green"],"promptText":"Theo continues the pattern red, blue, green, red, blue, green with blue. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":6,"core":["red","blue","green"],"kind":"repeat","said":"blue"},"terms":["red","blue","green","red","blue","green"],"promptText":"Theo continues the pattern red, blue, green, red, blue, green with blue. Is Theo right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0060",
@@ -8252,7 +8252,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":7,"core":["red","blue","green"],"kind":"repeat","said":"blue"},"sequence":["red","blue","green","red","blue","green","red"],"promptText":"The pattern goes red, blue, green, red, blue, green, red. Ida says blue comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":7,"core":["red","blue","green"],"kind":"repeat","said":"blue"},"terms":["red","blue","green","red","blue","green","red"],"promptText":"The pattern goes red, blue, green, red, blue, green, red. Ida says blue comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0061",
@@ -8262,7 +8262,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":8,"core":["red","blue","green"],"kind":"repeat","said":"red"},"sequence":["red","blue","green","red","blue","green","red","blue"],"promptText":"Zoe continues the pattern red, blue, green, red, blue, green, red, blue with red. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":8,"core":["red","blue","green"],"kind":"repeat","said":"red"},"terms":["red","blue","green","red","blue","green","red","blue"],"promptText":"Zoe continues the pattern red, blue, green, red, blue, green, red, blue with red. Is Zoe right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0062",
@@ -8272,7 +8272,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":9,"core":["red","blue","green"],"kind":"repeat","said":"red"},"sequence":["red","blue","green","red","blue","green","red","blue","green"],"promptText":"The pattern goes red, blue, green, red, blue, green, red, blue, green. Rosa says red comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":9,"core":["red","blue","green"],"kind":"repeat","said":"red"},"terms":["red","blue","green","red","blue","green","red","blue","green"],"promptText":"The pattern goes red, blue, green, red, blue, green, red, blue, green. Rosa says red comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0063",
@@ -8282,7 +8282,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":10,"core":["red","blue","green"],"kind":"repeat","said":"red"},"sequence":["red","blue","green","red","blue","green","red","blue","green","red"],"promptText":"Diego continues the pattern red, blue, green, red, blue, green, red, blue, green, red with red. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":10,"core":["red","blue","green"],"kind":"repeat","said":"red"},"terms":["red","blue","green","red","blue","green","red","blue","green","red"],"promptText":"Diego continues the pattern red, blue, green, red, blue, green, red, blue, green, red with red. Is Diego right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0064",
@@ -8292,7 +8292,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":11,"core":["red","blue","green"],"kind":"repeat","said":"green"},"sequence":["red","blue","green","red","blue","green","red","blue","green","red","blue"],"promptText":"The pattern goes red, blue, green, red, blue, green, red, blue, green, red, blue. Nora says green comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":11,"core":["red","blue","green"],"kind":"repeat","said":"green"},"terms":["red","blue","green","red","blue","green","red","blue","green","red","blue"],"promptText":"The pattern goes red, blue, green, red, blue, green, red, blue, green, red, blue. Nora says green comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0065",
@@ -8302,7 +8302,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":6,"core":["star","moon","sun"],"kind":"repeat","said":"star"},"sequence":["star","moon","sun","star","moon","sun"],"promptText":"June continues the pattern star, moon, sun, star, moon, sun with star. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":6,"core":["star","moon","sun"],"kind":"repeat","said":"star"},"terms":["star","moon","sun","star","moon","sun"],"promptText":"June continues the pattern star, moon, sun, star, moon, sun with star. Is June right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0066",
@@ -8312,7 +8312,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":7,"core":["star","moon","sun"],"kind":"repeat","said":"star"},"sequence":["star","moon","sun","star","moon","sun","star"],"promptText":"The pattern goes star, moon, sun, star, moon, sun, star. Lily says star comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":7,"core":["star","moon","sun"],"kind":"repeat","said":"star"},"terms":["star","moon","sun","star","moon","sun","star"],"promptText":"The pattern goes star, moon, sun, star, moon, sun, star. Lily says star comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0067",
@@ -8322,7 +8322,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":8,"core":["star","moon","sun"],"kind":"repeat","said":"sun"},"sequence":["star","moon","sun","star","moon","sun","star","moon"],"promptText":"Amara continues the pattern star, moon, sun, star, moon, sun, star, moon with sun. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":8,"core":["star","moon","sun"],"kind":"repeat","said":"sun"},"terms":["star","moon","sun","star","moon","sun","star","moon"],"promptText":"Amara continues the pattern star, moon, sun, star, moon, sun, star, moon with sun. Is Amara right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0068",
@@ -8332,7 +8332,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":9,"core":["star","moon","sun"],"kind":"repeat","said":"moon"},"sequence":["star","moon","sun","star","moon","sun","star","moon","sun"],"promptText":"The pattern goes star, moon, sun, star, moon, sun, star, moon, sun. Leo says moon comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":9,"core":["star","moon","sun"],"kind":"repeat","said":"moon"},"terms":["star","moon","sun","star","moon","sun","star","moon","sun"],"promptText":"The pattern goes star, moon, sun, star, moon, sun, star, moon, sun. Leo says moon comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0069",
@@ -8342,7 +8342,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":10,"core":["star","moon","sun"],"kind":"repeat","said":"moon"},"sequence":["star","moon","sun","star","moon","sun","star","moon","sun","star"],"promptText":"Mina continues the pattern star, moon, sun, star, moon, sun, star, moon, sun, star with moon. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":10,"core":["star","moon","sun"],"kind":"repeat","said":"moon"},"terms":["star","moon","sun","star","moon","sun","star","moon","sun","star"],"promptText":"Mina continues the pattern star, moon, sun, star, moon, sun, star, moon, sun, star with moon. Is Mina right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0070",
@@ -8352,7 +8352,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":11,"core":["star","moon","sun"],"kind":"repeat","said":"star"},"sequence":["star","moon","sun","star","moon","sun","star","moon","sun","star","moon"],"promptText":"The pattern goes star, moon, sun, star, moon, sun, star, moon, sun, star, moon. Theo says star comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":11,"core":["star","moon","sun"],"kind":"repeat","said":"star"},"terms":["star","moon","sun","star","moon","sun","star","moon","sun","star","moon"],"promptText":"The pattern goes star, moon, sun, star, moon, sun, star, moon, sun, star, moon. Theo says star comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0071",
@@ -8362,7 +8362,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":8,"core":["circle","square","triangle","heart"],"kind":"repeat","said":"circle"},"sequence":["circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"Nora continues the pattern circle, square, triangle, heart, circle, square, triangle, heart with circle. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":8,"core":["circle","square","triangle","heart"],"kind":"repeat","said":"circle"},"terms":["circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"Nora continues the pattern circle, square, triangle, heart, circle, square, triangle, heart with circle. Is Nora right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0072",
@@ -8372,7 +8372,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":9,"core":["circle","square","triangle","heart"],"kind":"repeat","said":"circle"},"sequence":["circle","square","triangle","heart","circle","square","triangle","heart","circle"],"promptText":"The pattern goes circle, square, triangle, heart, circle, square, triangle, heart, circle. Luca says circle comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":9,"core":["circle","square","triangle","heart"],"kind":"repeat","said":"circle"},"terms":["circle","square","triangle","heart","circle","square","triangle","heart","circle"],"promptText":"The pattern goes circle, square, triangle, heart, circle, square, triangle, heart, circle. Luca says circle comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0073",
@@ -8382,7 +8382,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":10,"core":["circle","square","triangle","heart"],"kind":"repeat","said":"triangle"},"sequence":["circle","square","triangle","heart","circle","square","triangle","heart","circle","square"],"promptText":"Ava continues the pattern circle, square, triangle, heart, circle, square, triangle, heart, circle, square with triangle. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":10,"core":["circle","square","triangle","heart"],"kind":"repeat","said":"triangle"},"terms":["circle","square","triangle","heart","circle","square","triangle","heart","circle","square"],"promptText":"Ava continues the pattern circle, square, triangle, heart, circle, square, triangle, heart, circle, square with triangle. Is Ava right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0074",
@@ -8392,7 +8392,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":11,"core":["circle","square","triangle","heart"],"kind":"repeat","said":"circle"},"sequence":["circle","square","triangle","heart","circle","square","triangle","heart","circle","square","triangle"],"promptText":"The pattern goes circle, square, triangle, heart, circle, square, triangle, heart, circle, square, triangle. Omar says circle comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":11,"core":["circle","square","triangle","heart"],"kind":"repeat","said":"circle"},"terms":["circle","square","triangle","heart","circle","square","triangle","heart","circle","square","triangle"],"promptText":"The pattern goes circle, square, triangle, heart, circle, square, triangle, heart, circle, square, triangle. Omar says circle comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0075",
@@ -8402,7 +8402,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":12,"core":["circle","square","triangle","heart"],"kind":"repeat","said":"circle"},"sequence":["circle","square","triangle","heart","circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"Ben continues the pattern circle, square, triangle, heart, circle, square, triangle, heart, circle, square, triangle, heart with circle. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":12,"core":["circle","square","triangle","heart"],"kind":"repeat","said":"circle"},"terms":["circle","square","triangle","heart","circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"Ben continues the pattern circle, square, triangle, heart, circle, square, triangle, heart, circle, square, triangle, heart with circle. Is Ben right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0076",
@@ -8412,7 +8412,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":13,"core":["circle","square","triangle","heart"],"kind":"repeat","said":"circle"},"sequence":["circle","square","triangle","heart","circle","square","triangle","heart","circle","square","triangle","heart","circle"],"promptText":"The pattern goes circle, square, triangle, heart, circle, square, triangle, heart, circle, square, triangle, heart, circle. Finn says circle comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":13,"core":["circle","square","triangle","heart"],"kind":"repeat","said":"circle"},"terms":["circle","square","triangle","heart","circle","square","triangle","heart","circle","square","triangle","heart","circle"],"promptText":"The pattern goes circle, square, triangle, heart, circle, square, triangle, heart, circle, square, triangle, heart, circle. Finn says circle comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0077",
@@ -8422,7 +8422,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":8,"core":["red","blue","green","red"],"kind":"repeat","said":"blue"},"sequence":["red","blue","green","red","red","blue","green","red"],"promptText":"Theo continues the pattern red, blue, green, red, red, blue, green, red with blue. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":8,"core":["red","blue","green","red"],"kind":"repeat","said":"blue"},"terms":["red","blue","green","red","red","blue","green","red"],"promptText":"Theo's pattern repeats red, blue, green, red over and over: red, blue, green, red, red, blue, green, red. Theo says blue comes next. Is Theo right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0078",
@@ -8432,7 +8432,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":9,"core":["red","blue","green","red"],"kind":"repeat","said":"blue"},"sequence":["red","blue","green","red","red","blue","green","red","red"],"promptText":"The pattern goes red, blue, green, red, red, blue, green, red, red. Ida says blue comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":9,"core":["red","blue","green","red"],"kind":"repeat","said":"blue"},"terms":["red","blue","green","red","red","blue","green","red","red"],"promptText":"The part red, blue, green, red repeats over and over: red, blue, green, red, red, blue, green, red, red. Ida says blue comes next. Is Ida right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0079",
@@ -8442,7 +8442,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":10,"core":["red","blue","green","red"],"kind":"repeat","said":"red"},"sequence":["red","blue","green","red","red","blue","green","red","red","blue"],"promptText":"Zoe continues the pattern red, blue, green, red, red, blue, green, red, red, blue with red. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":10,"core":["red","blue","green","red"],"kind":"repeat","said":"red"},"terms":["red","blue","green","red","red","blue","green","red","red","blue"],"promptText":"The part red, blue, green, red repeats over and over: red, blue, green, red, red, blue, green, red, red, blue. Zoe says red comes next. Is Zoe right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0080",
@@ -8452,7 +8452,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":11,"core":["red","blue","green","red"],"kind":"repeat","said":"red"},"sequence":["red","blue","green","red","red","blue","green","red","red","blue","green"],"promptText":"The pattern goes red, blue, green, red, red, blue, green, red, red, blue, green. Rosa says red comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":11,"core":["red","blue","green","red"],"kind":"repeat","said":"red"},"terms":["red","blue","green","red","red","blue","green","red","red","blue","green"],"promptText":"Rosa's pattern repeats red, blue, green, red over and over: red, blue, green, red, red, blue, green, red, red, blue, green. Rosa says red comes next. Is Rosa right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0081",
@@ -8462,7 +8462,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":12,"core":["red","blue","green","red"],"kind":"repeat","said":"blue"},"sequence":["red","blue","green","red","red","blue","green","red","red","blue","green","red"],"promptText":"Diego continues the pattern red, blue, green, red, red, blue, green, red, red, blue, green, red with blue. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":12,"core":["red","blue","green","red"],"kind":"repeat","said":"blue"},"terms":["red","blue","green","red","red","blue","green","red","red","blue","green","red"],"promptText":"Diego's pattern repeats red, blue, green, red over and over: red, blue, green, red, red, blue, green, red, red, blue, green, red. Diego says blue comes next. Is Diego right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0082",
@@ -8472,7 +8472,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":13,"core":["red","blue","green","red"],"kind":"repeat","said":"blue"},"sequence":["red","blue","green","red","red","blue","green","red","red","blue","green","red","red"],"promptText":"The pattern goes red, blue, green, red, red, blue, green, red, red, blue, green, red, red. Nora says blue comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":13,"core":["red","blue","green","red"],"kind":"repeat","said":"blue"},"terms":["red","blue","green","red","red","blue","green","red","red","blue","green","red","red"],"promptText":"The part red, blue, green, red repeats over and over: red, blue, green, red, red, blue, green, red, red, blue, green, red, red. Nora says blue comes next. Is Nora right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0083",
@@ -8482,7 +8482,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":8,"core":["red","red","blue","blue"],"kind":"repeat","said":"red"},"sequence":["red","red","blue","blue","red","red","blue","blue"],"promptText":"June continues the pattern red, red, blue, blue, red, red, blue, blue with red. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":8,"core":["red","red","blue","blue"],"kind":"repeat","said":"red"},"terms":["red","red","blue","blue","red","red","blue","blue"],"promptText":"June continues the pattern red, red, blue, blue, red, red, blue, blue with red. Is June right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0084",
@@ -8492,7 +8492,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":9,"core":["red","red","blue","blue"],"kind":"repeat","said":"blue"},"sequence":["red","red","blue","blue","red","red","blue","blue","red"],"promptText":"The pattern goes red, red, blue, blue, red, red, blue, blue, red. Lily says blue comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":9,"core":["red","red","blue","blue"],"kind":"repeat","said":"blue"},"terms":["red","red","blue","blue","red","red","blue","blue","red"],"promptText":"The pattern goes red, red, blue, blue, red, red, blue, blue, red. Lily says blue comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0085",
@@ -8502,7 +8502,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":10,"core":["red","red","blue","blue"],"kind":"repeat","said":"blue"},"sequence":["red","red","blue","blue","red","red","blue","blue","red","red"],"promptText":"Amara continues the pattern red, red, blue, blue, red, red, blue, blue, red, red with blue. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":10,"core":["red","red","blue","blue"],"kind":"repeat","said":"blue"},"terms":["red","red","blue","blue","red","red","blue","blue","red","red"],"promptText":"Amara continues the pattern red, red, blue, blue, red, red, blue, blue, red, red with blue. Is Amara right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0086",
@@ -8512,7 +8512,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":11,"core":["red","red","blue","blue"],"kind":"repeat","said":"red"},"sequence":["red","red","blue","blue","red","red","blue","blue","red","red","blue"],"promptText":"The pattern goes red, red, blue, blue, red, red, blue, blue, red, red, blue. Leo says red comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":11,"core":["red","red","blue","blue"],"kind":"repeat","said":"red"},"terms":["red","red","blue","blue","red","red","blue","blue","red","red","blue"],"promptText":"The pattern goes red, red, blue, blue, red, red, blue, blue, red, red, blue. Leo says red comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0087",
@@ -8522,7 +8522,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":12,"core":["red","red","blue","blue"],"kind":"repeat","said":"red"},"sequence":["red","red","blue","blue","red","red","blue","blue","red","red","blue","blue"],"promptText":"Mina continues the pattern red, red, blue, blue, red, red, blue, blue, red, red, blue, blue with red. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":12,"core":["red","red","blue","blue"],"kind":"repeat","said":"red"},"terms":["red","red","blue","blue","red","red","blue","blue","red","red","blue","blue"],"promptText":"Mina continues the pattern red, red, blue, blue, red, red, blue, blue, red, red, blue, blue with red. Is Mina right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0088",
@@ -8532,7 +8532,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":13,"core":["red","red","blue","blue"],"kind":"repeat","said":"blue"},"sequence":["red","red","blue","blue","red","red","blue","blue","red","red","blue","blue","red"],"promptText":"The pattern goes red, red, blue, blue, red, red, blue, blue, red, red, blue, blue, red. Theo says blue comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":13,"core":["red","red","blue","blue"],"kind":"repeat","said":"blue"},"terms":["red","red","blue","blue","red","red","blue","blue","red","red","blue","blue","red"],"promptText":"The pattern goes red, red, blue, blue, red, red, blue, blue, red, red, blue, blue, red. Theo says blue comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0089",
@@ -8542,7 +8542,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":8,"core":["star","star","moon","moon"],"kind":"repeat","said":"moon"},"sequence":["star","star","moon","moon","star","star","moon","moon"],"promptText":"Finn continues the pattern star, star, moon, moon, star, star, moon, moon with moon. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":8,"core":["star","star","moon","moon"],"kind":"repeat","said":"moon"},"terms":["star","star","moon","moon","star","star","moon","moon"],"promptText":"Finn continues the pattern star, star, moon, moon, star, star, moon, moon with moon. Is Finn right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0090",
@@ -8552,7 +8552,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":9,"core":["star","star","moon","moon"],"kind":"repeat","said":"star"},"sequence":["star","star","moon","moon","star","star","moon","moon","star"],"promptText":"The pattern goes star, star, moon, moon, star, star, moon, moon, star. Priya says star comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":9,"core":["star","star","moon","moon"],"kind":"repeat","said":"star"},"terms":["star","star","moon","moon","star","star","moon","moon","star"],"promptText":"The pattern goes star, star, moon, moon, star, star, moon, moon, star. Priya says star comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0091",
@@ -8562,7 +8562,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":10,"core":["star","star","moon","moon"],"kind":"repeat","said":"star"},"sequence":["star","star","moon","moon","star","star","moon","moon","star","star"],"promptText":"Sam continues the pattern star, star, moon, moon, star, star, moon, moon, star, star with star. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":10,"core":["star","star","moon","moon"],"kind":"repeat","said":"star"},"terms":["star","star","moon","moon","star","star","moon","moon","star","star"],"promptText":"Sam continues the pattern star, star, moon, moon, star, star, moon, moon, star, star with star. Is Sam right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0092",
@@ -8572,7 +8572,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":11,"core":["star","star","moon","moon"],"kind":"repeat","said":"moon"},"sequence":["star","star","moon","moon","star","star","moon","moon","star","star","moon"],"promptText":"The pattern goes star, star, moon, moon, star, star, moon, moon, star, star, moon. Nia says moon comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":11,"core":["star","star","moon","moon"],"kind":"repeat","said":"moon"},"terms":["star","star","moon","moon","star","star","moon","moon","star","star","moon"],"promptText":"The pattern goes star, star, moon, moon, star, star, moon, moon, star, star, moon. Nia says moon comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0093",
@@ -8582,7 +8582,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":12,"core":["star","star","moon","moon"],"kind":"repeat","said":"moon"},"sequence":["star","star","moon","moon","star","star","moon","moon","star","star","moon","moon"],"promptText":"Kai continues the pattern star, star, moon, moon, star, star, moon, moon, star, star, moon, moon with moon. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"len":12,"core":["star","star","moon","moon"],"kind":"repeat","said":"moon"},"terms":["star","star","moon","moon","star","star","moon","moon","star","star","moon","moon"],"promptText":"Kai continues the pattern star, star, moon, moon, star, star, moon, moon, star, star, moon, moon with moon. Is Kai right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0094",
@@ -8592,7 +8592,7 @@ export const ITEMS = [
     structureType: "judgeExtend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":13,"core":["star","star","moon","moon"],"kind":"repeat","said":"star"},"sequence":["star","star","moon","moon","star","star","moon","moon","star","star","moon","moon","star"],"promptText":"The pattern goes star, star, moon, moon, star, star, moon, moon, star, star, moon, moon, star. June says star comes next. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"len":13,"core":["star","star","moon","moon"],"kind":"repeat","said":"star"},"terms":["star","star","moon","moon","star","star","moon","moon","star","star","moon","moon","star"],"promptText":"The pattern goes star, star, moon, moon, star, star, moon, moon, star, star, moon, moon, star. June says star comes next. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0095",
@@ -8602,7 +8602,7 @@ export const ITEMS = [
     structureType: "willBeAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":5,"core":["circle","square"],"kind":"repeatPos","target":"circle"},"sequence":["circle","square","circle","square"],"promptText":"Nora looks at the pattern circle, square, circle, square, … Will shape number 5 be circle?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":5,"core":["circle","square"],"kind":"repeatPos","target":"circle"},"terms":["circle","square","circle","square"],"promptText":"Nora looks at the pattern circle, square, circle, square, and so on. Will the 5th shape be a circle?"}},
   },
   {
     itemId: "patterns-conc-b0821-0096",
@@ -8612,7 +8612,7 @@ export const ITEMS = [
     structureType: "willBeAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":6,"core":["circle","square"],"kind":"repeatPos","target":"circle"},"sequence":["circle","square","circle","square"],"promptText":"The pattern circle, square, circle, square keeps going. Luca guesses that position 6 holds circle. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":6,"core":["circle","square"],"kind":"repeatPos","target":"circle"},"terms":["circle","square","circle","square"],"promptText":"The pattern circle, square, circle, square keeps going. Luca guesses that the 6th shape will be a circle. Is Luca right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0097",
@@ -8622,7 +8622,7 @@ export const ITEMS = [
     structureType: "willBeAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":7,"core":["circle","square"],"kind":"repeatPos","target":"circle"},"sequence":["circle","square","circle","square"],"promptText":"Ava looks at the pattern circle, square, circle, square, … Will shape number 7 be circle?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":7,"core":["circle","square"],"kind":"repeatPos","target":"circle"},"terms":["circle","square","circle","square"],"promptText":"The pattern circle, square, circle, square keeps going. Ava guesses that the 7th shape will be a circle. Is Ava right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0098",
@@ -8632,7 +8632,7 @@ export const ITEMS = [
     structureType: "willBeAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":5,"core":["red","blue"],"kind":"repeatPos","target":"blue"},"sequence":["red","blue","red","blue"],"promptText":"The pattern red, blue, red, blue keeps going. Kai guesses that position 5 holds blue. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":5,"core":["red","blue"],"kind":"repeatPos","target":"blue"},"terms":["red","blue","red","blue"],"promptText":"Kai looks at the pattern red, blue, red, blue, and so on. Will the 5th color be blue?"}},
   },
   {
     itemId: "patterns-conc-b0821-0099",
@@ -8642,7 +8642,7 @@ export const ITEMS = [
     structureType: "willBeAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":6,"core":["red","blue"],"kind":"repeatPos","target":"blue"},"sequence":["red","blue","red","blue"],"promptText":"June looks at the pattern red, blue, red, blue, … Will shape number 6 be blue?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":6,"core":["red","blue"],"kind":"repeatPos","target":"blue"},"terms":["red","blue","red","blue"],"promptText":"June looks at the pattern red, blue, red, blue, and so on. Will the 6th color be blue?"}},
   },
   {
     itemId: "patterns-conc-b0821-0100",
@@ -8652,7 +8652,7 @@ export const ITEMS = [
     structureType: "willBeAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":7,"core":["red","blue"],"kind":"repeatPos","target":"blue"},"sequence":["red","blue","red","blue"],"promptText":"The pattern red, blue, red, blue keeps going. Lily guesses that position 7 holds blue. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":7,"core":["red","blue"],"kind":"repeatPos","target":"blue"},"terms":["red","blue","red","blue"],"promptText":"The pattern red, blue, red, blue keeps going. Lily guesses that the 7th color will be blue. Is Lily right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0101",
@@ -8662,7 +8662,7 @@ export const ITEMS = [
     structureType: "willBeAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":5,"core":["star","moon"],"kind":"repeatPos","target":"star"},"sequence":["star","moon","star","moon"],"promptText":"Rosa looks at the pattern star, moon, star, moon, … Will shape number 5 be star?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":5,"core":["star","moon"],"kind":"repeatPos","target":"star"},"terms":["star","moon","star","moon"],"promptText":"The pattern star, moon, star, moon keeps going. Rosa guesses that the 5th shape will be a star. Is Rosa right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0102",
@@ -8672,7 +8672,7 @@ export const ITEMS = [
     structureType: "willBeAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":6,"core":["star","moon"],"kind":"repeatPos","target":"star"},"sequence":["star","moon","star","moon"],"promptText":"The pattern star, moon, star, moon keeps going. Diego guesses that position 6 holds star. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":6,"core":["star","moon"],"kind":"repeatPos","target":"star"},"terms":["star","moon","star","moon"],"promptText":"Diego looks at the pattern star, moon, star, moon, and so on. Will the 6th shape be a star?"}},
   },
   {
     itemId: "patterns-conc-b0821-0103",
@@ -8682,7 +8682,7 @@ export const ITEMS = [
     structureType: "willBeAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":7,"core":["star","moon"],"kind":"repeatPos","target":"star"},"sequence":["star","moon","star","moon"],"promptText":"Nora looks at the pattern star, moon, star, moon, … Will shape number 7 be star?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":7,"core":["star","moon"],"kind":"repeatPos","target":"star"},"terms":["star","moon","star","moon"],"promptText":"Nora looks at the pattern star, moon, star, moon, and so on. Will the 7th shape be a star?"}},
   },
   {
     itemId: "patterns-conc-b0821-0104",
@@ -8692,7 +8692,7 @@ export const ITEMS = [
     structureType: "willBeAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":5,"core":["up","down"],"kind":"repeatPos","target":"down"},"sequence":["up","down","up","down"],"promptText":"The pattern up, down, up, down keeps going. Sam guesses that position 5 holds down. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":5,"core":["up","down"],"kind":"repeatPos","target":"down"},"terms":["up","down","up","down"],"promptText":"The pattern up, down, up, down keeps going. Sam guesses that the 5th one will be down. Is Sam right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0105",
@@ -8702,7 +8702,7 @@ export const ITEMS = [
     structureType: "willBeAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":6,"core":["up","down"],"kind":"repeatPos","target":"down"},"sequence":["up","down","up","down"],"promptText":"Nia looks at the pattern up, down, up, down, … Will shape number 6 be down?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":6,"core":["up","down"],"kind":"repeatPos","target":"down"},"terms":["up","down","up","down"],"promptText":"The pattern up, down, up, down keeps going. Nia guesses that the 6th one will be down. Is Nia right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0106",
@@ -8712,7 +8712,7 @@ export const ITEMS = [
     structureType: "willBeAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":7,"core":["up","down"],"kind":"repeatPos","target":"down"},"sequence":["up","down","up","down"],"promptText":"The pattern up, down, up, down keeps going. Kai guesses that position 7 holds down. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":7,"core":["up","down"],"kind":"repeatPos","target":"down"},"terms":["up","down","up","down"],"promptText":"Kai looks at the pattern up, down, up, down, and so on. Will the 7th one be down?"}},
   },
   {
     itemId: "patterns-conc-b0821-0107",
@@ -8722,7 +8722,7 @@ export const ITEMS = [
     structureType: "willBeAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":5,"core":["sun","cloud"],"kind":"repeatPos","target":"sun"},"sequence":["sun","cloud","sun","cloud"],"promptText":"Ida looks at the pattern sun, cloud, sun, cloud, … Will shape number 5 be sun?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":5,"core":["sun","cloud"],"kind":"repeatPos","target":"sun"},"terms":["sun","cloud","sun","cloud"],"promptText":"Ida looks at the pattern sun, cloud, sun, cloud, and so on. Will the 5th shape be a sun?"}},
   },
   {
     itemId: "patterns-conc-b0821-0108",
@@ -8732,7 +8732,7 @@ export const ITEMS = [
     structureType: "willBeAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":6,"core":["sun","cloud"],"kind":"repeatPos","target":"sun"},"sequence":["sun","cloud","sun","cloud"],"promptText":"The pattern sun, cloud, sun, cloud keeps going. Zoe guesses that position 6 holds sun. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":6,"core":["sun","cloud"],"kind":"repeatPos","target":"sun"},"terms":["sun","cloud","sun","cloud"],"promptText":"The pattern sun, cloud, sun, cloud keeps going. Zoe guesses that the 6th shape will be a sun. Is Zoe right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0109",
@@ -8742,7 +8742,7 @@ export const ITEMS = [
     structureType: "willBeAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":7,"core":["sun","cloud"],"kind":"repeatPos","target":"sun"},"sequence":["sun","cloud","sun","cloud"],"promptText":"Rosa looks at the pattern sun, cloud, sun, cloud, … Will shape number 7 be sun?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":7,"core":["sun","cloud"],"kind":"repeatPos","target":"sun"},"terms":["sun","cloud","sun","cloud"],"promptText":"The pattern sun, cloud, sun, cloud keeps going. Rosa guesses that the 7th shape will be a sun. Is Rosa right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0110",
@@ -8752,7 +8752,7 @@ export const ITEMS = [
     structureType: "willBeAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":5,"core":["heart","diamond"],"kind":"repeatPos","target":"diamond"},"sequence":["heart","diamond","heart","diamond"],"promptText":"The pattern heart, diamond, heart, diamond keeps going. Finn guesses that position 5 holds diamond. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":5,"core":["heart","diamond"],"kind":"repeatPos","target":"diamond"},"terms":["heart","diamond","heart","diamond"],"promptText":"Finn looks at the pattern heart, diamond, heart, diamond, and so on. Will the 5th shape be a diamond?"}},
   },
   {
     itemId: "patterns-conc-b0821-0111",
@@ -8762,7 +8762,7 @@ export const ITEMS = [
     structureType: "willBeAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":6,"core":["heart","diamond"],"kind":"repeatPos","target":"diamond"},"sequence":["heart","diamond","heart","diamond"],"promptText":"Priya looks at the pattern heart, diamond, heart, diamond, … Will shape number 6 be diamond?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":6,"core":["heart","diamond"],"kind":"repeatPos","target":"diamond"},"terms":["heart","diamond","heart","diamond"],"promptText":"Priya looks at the pattern heart, diamond, heart, diamond, and so on. Will the 6th shape be a diamond?"}},
   },
   {
     itemId: "patterns-conc-b0821-0112",
@@ -8772,7 +8772,7 @@ export const ITEMS = [
     structureType: "willBeAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":7,"core":["heart","diamond"],"kind":"repeatPos","target":"diamond"},"sequence":["heart","diamond","heart","diamond"],"promptText":"The pattern heart, diamond, heart, diamond keeps going. Sam guesses that position 7 holds diamond. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":7,"core":["heart","diamond"],"kind":"repeatPos","target":"diamond"},"terms":["heart","diamond","heart","diamond"],"promptText":"The pattern heart, diamond, heart, diamond keeps going. Sam guesses that the 7th shape will be a diamond. Is Sam right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0113",
@@ -8782,7 +8782,7 @@ export const ITEMS = [
     structureType: "willBeAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":7,"core":["circle","square","triangle"],"kind":"repeatPos","target":"circle"},"sequence":["circle","square","triangle","circle","square","triangle"],"promptText":"Nora looks at the pattern circle, square, triangle, circle, square, triangle, … Will shape number 7 be circle?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":7,"core":["circle","square","triangle"],"kind":"repeatPos","target":"circle"},"terms":["circle","square","triangle","circle","square","triangle"],"promptText":"Nora looks at the pattern circle, square, triangle, circle, square, triangle, and so on. Will the 7th shape be a circle?"}},
   },
   {
     itemId: "patterns-conc-b0821-0114",
@@ -8792,7 +8792,7 @@ export const ITEMS = [
     structureType: "willBeAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":9,"core":["circle","square","triangle"],"kind":"repeatPos","target":"circle"},"sequence":["circle","square","triangle","circle","square","triangle"],"promptText":"The pattern circle, square, triangle, circle, square, triangle keeps going. Luca guesses that position 9 holds circle. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":9,"core":["circle","square","triangle"],"kind":"repeatPos","target":"circle"},"terms":["circle","square","triangle","circle","square","triangle"],"promptText":"The pattern circle, square, triangle, circle, square, triangle keeps going. Luca guesses that the 9th shape will be a circle. Is Luca right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0115",
@@ -8802,7 +8802,7 @@ export const ITEMS = [
     structureType: "willBeAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":10,"core":["circle","square","triangle"],"kind":"repeatPos","target":"circle"},"sequence":["circle","square","triangle","circle","square","triangle"],"promptText":"Ava looks at the pattern circle, square, triangle, circle, square, triangle, … Will shape number 10 be circle?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":10,"core":["circle","square","triangle"],"kind":"repeatPos","target":"circle"},"terms":["circle","square","triangle","circle","square","triangle"],"promptText":"The pattern circle, square, triangle, circle, square, triangle keeps going. Ava guesses that the 10th shape will be a circle. Is Ava right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0116",
@@ -8812,7 +8812,7 @@ export const ITEMS = [
     structureType: "willBeAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":12,"core":["circle","square","triangle"],"kind":"repeatPos","target":"circle"},"sequence":["circle","square","triangle","circle","square","triangle"],"promptText":"The pattern circle, square, triangle, circle, square, triangle keeps going. Omar guesses that position 12 holds circle. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":12,"core":["circle","square","triangle"],"kind":"repeatPos","target":"circle"},"terms":["circle","square","triangle","circle","square","triangle"],"promptText":"Omar looks at the pattern circle, square, triangle, circle, square, triangle, and so on. Will the 12th shape be a circle?"}},
   },
   {
     itemId: "patterns-conc-b0821-0117",
@@ -8822,7 +8822,7 @@ export const ITEMS = [
     structureType: "willBeAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":13,"core":["circle","square","triangle"],"kind":"repeatPos","target":"circle"},"sequence":["circle","square","triangle","circle","square","triangle"],"promptText":"Ben looks at the pattern circle, square, triangle, circle, square, triangle, … Will shape number 13 be circle?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":13,"core":["circle","square","triangle"],"kind":"repeatPos","target":"circle"},"terms":["circle","square","triangle","circle","square","triangle"],"promptText":"Ben looks at the pattern circle, square, triangle, circle, square, triangle, and so on. Will the 13th shape be a circle?"}},
   },
   {
     itemId: "patterns-conc-b0821-0118",
@@ -8832,7 +8832,7 @@ export const ITEMS = [
     structureType: "willBeAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":14,"core":["circle","square","triangle"],"kind":"repeatPos","target":"circle"},"sequence":["circle","square","triangle","circle","square","triangle"],"promptText":"The pattern circle, square, triangle, circle, square, triangle keeps going. Finn guesses that position 14 holds circle. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":14,"core":["circle","square","triangle"],"kind":"repeatPos","target":"circle"},"terms":["circle","square","triangle","circle","square","triangle"],"promptText":"The pattern circle, square, triangle, circle, square, triangle keeps going. Finn guesses that the 14th shape will be a circle. Is Finn right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0119",
@@ -8842,7 +8842,7 @@ export const ITEMS = [
     structureType: "willBeAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":15,"core":["circle","square","triangle"],"kind":"repeatPos","target":"triangle"},"sequence":["circle","square","triangle","circle","square","triangle"],"promptText":"Priya looks at the pattern circle, square, triangle, circle, square, triangle, … Will shape number 15 be triangle?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":15,"core":["circle","square","triangle"],"kind":"repeatPos","target":"triangle"},"terms":["circle","square","triangle","circle","square","triangle"],"promptText":"The pattern circle, square, triangle, circle, square, triangle keeps going. Priya guesses that the 15th shape will be a triangle. Is Priya right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0120",
@@ -8852,7 +8852,7 @@ export const ITEMS = [
     structureType: "willBeAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":7,"core":["red","blue","green"],"kind":"repeatPos","target":"blue"},"sequence":["red","blue","green","red","blue","green"],"promptText":"The pattern red, blue, green, red, blue, green keeps going. Kai guesses that position 7 holds blue. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":7,"core":["red","blue","green"],"kind":"repeatPos","target":"blue"},"terms":["red","blue","green","red","blue","green"],"promptText":"Kai looks at the pattern red, blue, green, red, blue, green, and so on. Will the 7th color be blue?"}},
   },
   {
     itemId: "patterns-conc-b0821-0121",
@@ -8862,7 +8862,7 @@ export const ITEMS = [
     structureType: "willBeAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":9,"core":["red","blue","green"],"kind":"repeatPos","target":"green"},"sequence":["red","blue","green","red","blue","green"],"promptText":"June looks at the pattern red, blue, green, red, blue, green, … Will shape number 9 be green?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":9,"core":["red","blue","green"],"kind":"repeatPos","target":"green"},"terms":["red","blue","green","red","blue","green"],"promptText":"June looks at the pattern red, blue, green, red, blue, green, and so on. Will the 9th color be green?"}},
   },
   {
     itemId: "patterns-conc-b0821-0122",
@@ -8872,7 +8872,7 @@ export const ITEMS = [
     structureType: "willBeAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":10,"core":["red","blue","green"],"kind":"repeatPos","target":"blue"},"sequence":["red","blue","green","red","blue","green"],"promptText":"The pattern red, blue, green, red, blue, green keeps going. Lily guesses that position 10 holds blue. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":10,"core":["red","blue","green"],"kind":"repeatPos","target":"blue"},"terms":["red","blue","green","red","blue","green"],"promptText":"The pattern red, blue, green, red, blue, green keeps going. Lily guesses that the 10th color will be blue. Is Lily right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0123",
@@ -8882,7 +8882,7 @@ export const ITEMS = [
     structureType: "willBeAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":12,"core":["red","blue","green"],"kind":"repeatPos","target":"green"},"sequence":["red","blue","green","red","blue","green"],"promptText":"Amara looks at the pattern red, blue, green, red, blue, green, … Will shape number 12 be green?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":12,"core":["red","blue","green"],"kind":"repeatPos","target":"green"},"terms":["red","blue","green","red","blue","green"],"promptText":"The pattern red, blue, green, red, blue, green keeps going. Amara guesses that the 12th color will be green. Is Amara right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0124",
@@ -8892,7 +8892,7 @@ export const ITEMS = [
     structureType: "willBeAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":13,"core":["red","blue","green"],"kind":"repeatPos","target":"blue"},"sequence":["red","blue","green","red","blue","green"],"promptText":"The pattern red, blue, green, red, blue, green keeps going. Leo guesses that position 13 holds blue. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":13,"core":["red","blue","green"],"kind":"repeatPos","target":"blue"},"terms":["red","blue","green","red","blue","green"],"promptText":"Leo looks at the pattern red, blue, green, red, blue, green, and so on. Will the 13th color be blue?"}},
   },
   {
     itemId: "patterns-conc-b0821-0125",
@@ -8902,7 +8902,7 @@ export const ITEMS = [
     structureType: "willBeAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":14,"core":["red","blue","green"],"kind":"repeatPos","target":"blue"},"sequence":["red","blue","green","red","blue","green"],"promptText":"Mina looks at the pattern red, blue, green, red, blue, green, … Will shape number 14 be blue?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":14,"core":["red","blue","green"],"kind":"repeatPos","target":"blue"},"terms":["red","blue","green","red","blue","green"],"promptText":"Mina looks at the pattern red, blue, green, red, blue, green, and so on. Will the 14th color be blue?"}},
   },
   {
     itemId: "patterns-conc-b0821-0126",
@@ -8912,7 +8912,7 @@ export const ITEMS = [
     structureType: "willBeAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":15,"core":["red","blue","green"],"kind":"repeatPos","target":"red"},"sequence":["red","blue","green","red","blue","green"],"promptText":"The pattern red, blue, green, red, blue, green keeps going. Theo guesses that position 15 holds red. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":15,"core":["red","blue","green"],"kind":"repeatPos","target":"red"},"terms":["red","blue","green","red","blue","green"],"promptText":"The pattern red, blue, green, red, blue, green keeps going. Theo guesses that the 15th color will be red. Is Theo right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0127",
@@ -8922,7 +8922,7 @@ export const ITEMS = [
     structureType: "willBeAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":7,"core":["star","moon","sun"],"kind":"repeatPos","target":"star"},"sequence":["star","moon","sun","star","moon","sun"],"promptText":"Rosa looks at the pattern star, moon, sun, star, moon, sun, … Will shape number 7 be star?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":7,"core":["star","moon","sun"],"kind":"repeatPos","target":"star"},"terms":["star","moon","sun","star","moon","sun"],"promptText":"The pattern star, moon, sun, star, moon, sun keeps going. Rosa guesses that the 7th shape will be a star. Is Rosa right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0128",
@@ -8932,7 +8932,7 @@ export const ITEMS = [
     structureType: "willBeAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":9,"core":["star","moon","sun"],"kind":"repeatPos","target":"star"},"sequence":["star","moon","sun","star","moon","sun"],"promptText":"The pattern star, moon, sun, star, moon, sun keeps going. Diego guesses that position 9 holds star. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":9,"core":["star","moon","sun"],"kind":"repeatPos","target":"star"},"terms":["star","moon","sun","star","moon","sun"],"promptText":"Diego looks at the pattern star, moon, sun, star, moon, sun, and so on. Will the 9th shape be a star?"}},
   },
   {
     itemId: "patterns-conc-b0821-0129",
@@ -8942,7 +8942,7 @@ export const ITEMS = [
     structureType: "willBeAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":10,"core":["star","moon","sun"],"kind":"repeatPos","target":"star"},"sequence":["star","moon","sun","star","moon","sun"],"promptText":"Nora looks at the pattern star, moon, sun, star, moon, sun, … Will shape number 10 be star?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":10,"core":["star","moon","sun"],"kind":"repeatPos","target":"star"},"terms":["star","moon","sun","star","moon","sun"],"promptText":"Nora looks at the pattern star, moon, sun, star, moon, sun, and so on. Will the 10th shape be a star?"}},
   },
   {
     itemId: "patterns-conc-b0821-0130",
@@ -8952,7 +8952,7 @@ export const ITEMS = [
     structureType: "willBeAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":12,"core":["star","moon","sun"],"kind":"repeatPos","target":"star"},"sequence":["star","moon","sun","star","moon","sun"],"promptText":"The pattern star, moon, sun, star, moon, sun keeps going. Luca guesses that position 12 holds star. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":12,"core":["star","moon","sun"],"kind":"repeatPos","target":"star"},"terms":["star","moon","sun","star","moon","sun"],"promptText":"The pattern star, moon, sun, star, moon, sun keeps going. Luca guesses that the 12th shape will be a star. Is Luca right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0131",
@@ -8962,7 +8962,7 @@ export const ITEMS = [
     structureType: "willBeAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":13,"core":["star","moon","sun"],"kind":"repeatPos","target":"star"},"sequence":["star","moon","sun","star","moon","sun"],"promptText":"Ava looks at the pattern star, moon, sun, star, moon, sun, … Will shape number 13 be star?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":13,"core":["star","moon","sun"],"kind":"repeatPos","target":"star"},"terms":["star","moon","sun","star","moon","sun"],"promptText":"The pattern star, moon, sun, star, moon, sun keeps going. Ava guesses that the 13th shape will be a star. Is Ava right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0132",
@@ -8972,7 +8972,7 @@ export const ITEMS = [
     structureType: "willBeAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":14,"core":["star","moon","sun"],"kind":"repeatPos","target":"star"},"sequence":["star","moon","sun","star","moon","sun"],"promptText":"The pattern star, moon, sun, star, moon, sun keeps going. Omar guesses that position 14 holds star. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":14,"core":["star","moon","sun"],"kind":"repeatPos","target":"star"},"terms":["star","moon","sun","star","moon","sun"],"promptText":"Omar looks at the pattern star, moon, sun, star, moon, sun, and so on. Will the 14th shape be a star?"}},
   },
   {
     itemId: "patterns-conc-b0821-0133",
@@ -8982,7 +8982,7 @@ export const ITEMS = [
     structureType: "willBeAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":15,"core":["star","moon","sun"],"kind":"repeatPos","target":"sun"},"sequence":["star","moon","sun","star","moon","sun"],"promptText":"Ben looks at the pattern star, moon, sun, star, moon, sun, … Will shape number 15 be sun?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":15,"core":["star","moon","sun"],"kind":"repeatPos","target":"sun"},"terms":["star","moon","sun","star","moon","sun"],"promptText":"Ben looks at the pattern star, moon, sun, star, moon, sun, and so on. Will the 15th shape be a sun?"}},
   },
   {
     itemId: "patterns-conc-b0821-0134",
@@ -8992,7 +8992,7 @@ export const ITEMS = [
     structureType: "willBeAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":13,"core":["circle","square","triangle","heart"],"kind":"repeatPos","target":"circle"},"sequence":["circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"The pattern circle, square, triangle, heart, circle, square, triangle, heart keeps going. Nora guesses that position 13 holds circle. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":13,"core":["circle","square","triangle","heart"],"kind":"repeatPos","target":"circle"},"terms":["circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"The pattern circle, square, triangle, heart, circle, square, triangle, heart keeps going. Nora guesses that the 13th shape will be a circle. Is Nora right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0135",
@@ -9002,7 +9002,7 @@ export const ITEMS = [
     structureType: "willBeAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":15,"core":["circle","square","triangle","heart"],"kind":"repeatPos","target":"circle"},"sequence":["circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"Luca looks at the pattern circle, square, triangle, heart, circle, square, triangle, heart, … Will shape number 15 be circle?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":15,"core":["circle","square","triangle","heart"],"kind":"repeatPos","target":"circle"},"terms":["circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"Luca looks at the pattern circle, square, triangle, heart, circle, square, triangle, heart, and so on. Will the 15th shape be a circle?"}},
   },
   {
     itemId: "patterns-conc-b0821-0136",
@@ -9012,7 +9012,7 @@ export const ITEMS = [
     structureType: "willBeAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":18,"core":["circle","square","triangle","heart"],"kind":"repeatPos","target":"square"},"sequence":["circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"The pattern circle, square, triangle, heart, circle, square, triangle, heart keeps going. Ava guesses that position 18 holds square. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":18,"core":["circle","square","triangle","heart"],"kind":"repeatPos","target":"square"},"terms":["circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"Ava looks at the pattern circle, square, triangle, heart, circle, square, triangle, heart, and so on. Will the 18th shape be a square?"}},
   },
   {
     itemId: "patterns-conc-b0821-0137",
@@ -9022,7 +9022,7 @@ export const ITEMS = [
     structureType: "willBeAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":21,"core":["circle","square","triangle","heart"],"kind":"repeatPos","target":"square"},"sequence":["circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"Omar looks at the pattern circle, square, triangle, heart, circle, square, triangle, heart, … Will shape number 21 be square?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":21,"core":["circle","square","triangle","heart"],"kind":"repeatPos","target":"square"},"terms":["circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"The pattern circle, square, triangle, heart, circle, square, triangle, heart keeps going. Omar guesses that the 21st shape will be a square. Is Omar right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0138",
@@ -9032,7 +9032,7 @@ export const ITEMS = [
     structureType: "willBeAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":23,"core":["circle","square","triangle","heart"],"kind":"repeatPos","target":"triangle"},"sequence":["circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"The pattern circle, square, triangle, heart, circle, square, triangle, heart keeps going. Ben guesses that position 23 holds triangle. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":23,"core":["circle","square","triangle","heart"],"kind":"repeatPos","target":"triangle"},"terms":["circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"The pattern circle, square, triangle, heart, circle, square, triangle, heart keeps going. Ben guesses that the 23rd shape will be a triangle. Is Ben right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0139",
@@ -9042,7 +9042,7 @@ export const ITEMS = [
     structureType: "willBeAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":13,"core":["red","blue","green","red"],"kind":"repeatPos","target":"blue"},"sequence":["red","blue","green","red","red","blue","green","red"],"promptText":"Kai looks at the pattern red, blue, green, red, red, blue, green, red, … Will shape number 13 be blue?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":13,"core":["red","blue","green","red"],"kind":"repeatPos","target":"blue"},"terms":["red","blue","green","red","red","blue","green","red"],"promptText":"Kai looks at the pattern red, blue, green, red, red, blue, green, red, and so on. Will the 13th color be blue?"}},
   },
   {
     itemId: "patterns-conc-b0821-0140",
@@ -9052,7 +9052,7 @@ export const ITEMS = [
     structureType: "willBeAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":15,"core":["red","blue","green","red"],"kind":"repeatPos","target":"green"},"sequence":["red","blue","green","red","red","blue","green","red"],"promptText":"The pattern red, blue, green, red, red, blue, green, red keeps going. June guesses that position 15 holds green. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":15,"core":["red","blue","green","red"],"kind":"repeatPos","target":"green"},"terms":["red","blue","green","red","red","blue","green","red"],"promptText":"June looks at the pattern red, blue, green, red, red, blue, green, red, and so on. Will the 15th color be green?"}},
   },
   {
     itemId: "patterns-conc-b0821-0141",
@@ -9062,7 +9062,7 @@ export const ITEMS = [
     structureType: "willBeAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":18,"core":["red","blue","green","red"],"kind":"repeatPos","target":"red"},"sequence":["red","blue","green","red","red","blue","green","red"],"promptText":"Lily looks at the pattern red, blue, green, red, red, blue, green, red, … Will shape number 18 be red?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":18,"core":["red","blue","green","red"],"kind":"repeatPos","target":"red"},"terms":["red","blue","green","red","red","blue","green","red"],"promptText":"The pattern red, blue, green, red, red, blue, green, red keeps going. Lily guesses that the 18th color will be red. Is Lily right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0142",
@@ -9072,7 +9072,7 @@ export const ITEMS = [
     structureType: "willBeAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":21,"core":["red","blue","green","red"],"kind":"repeatPos","target":"red"},"sequence":["red","blue","green","red","red","blue","green","red"],"promptText":"The pattern red, blue, green, red, red, blue, green, red keeps going. Amara guesses that position 21 holds red. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":21,"core":["red","blue","green","red"],"kind":"repeatPos","target":"red"},"terms":["red","blue","green","red","red","blue","green","red"],"promptText":"The pattern red, blue, green, red, red, blue, green, red keeps going. Amara guesses that the 21st color will be red. Is Amara right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0143",
@@ -9082,7 +9082,7 @@ export const ITEMS = [
     structureType: "willBeAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":23,"core":["red","blue","green","red"],"kind":"repeatPos","target":"red"},"sequence":["red","blue","green","red","red","blue","green","red"],"promptText":"Leo looks at the pattern red, blue, green, red, red, blue, green, red, … Will shape number 23 be red?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":23,"core":["red","blue","green","red"],"kind":"repeatPos","target":"red"},"terms":["red","blue","green","red","red","blue","green","red"],"promptText":"Leo looks at the pattern red, blue, green, red, red, blue, green, red, and so on. Will the 23rd color be red?"}},
   },
   {
     itemId: "patterns-conc-b0821-0144",
@@ -9092,7 +9092,7 @@ export const ITEMS = [
     structureType: "willBeAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":13,"core":["red","red","blue","blue"],"kind":"repeatPos","target":"red"},"sequence":["red","red","blue","blue","red","red","blue","blue"],"promptText":"The pattern red, red, blue, blue, red, red, blue, blue keeps going. Rosa guesses that position 13 holds red. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":13,"core":["red","red","blue","blue"],"kind":"repeatPos","target":"red"},"terms":["red","red","blue","blue","red","red","blue","blue"],"promptText":"Rosa looks at the pattern red, red, blue, blue, red, red, blue, blue, and so on. Will the 13th color be red?"}},
   },
   {
     itemId: "patterns-conc-b0821-0145",
@@ -9102,7 +9102,7 @@ export const ITEMS = [
     structureType: "willBeAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":15,"core":["red","red","blue","blue"],"kind":"repeatPos","target":"red"},"sequence":["red","red","blue","blue","red","red","blue","blue"],"promptText":"Diego looks at the pattern red, red, blue, blue, red, red, blue, blue, … Will shape number 15 be red?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":15,"core":["red","red","blue","blue"],"kind":"repeatPos","target":"red"},"terms":["red","red","blue","blue","red","red","blue","blue"],"promptText":"The pattern red, red, blue, blue, red, red, blue, blue keeps going. Diego guesses that the 15th color will be red. Is Diego right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0146",
@@ -9112,7 +9112,7 @@ export const ITEMS = [
     structureType: "willBeAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":18,"core":["red","red","blue","blue"],"kind":"repeatPos","target":"red"},"sequence":["red","red","blue","blue","red","red","blue","blue"],"promptText":"The pattern red, red, blue, blue, red, red, blue, blue keeps going. Nora guesses that position 18 holds red. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":18,"core":["red","red","blue","blue"],"kind":"repeatPos","target":"red"},"terms":["red","red","blue","blue","red","red","blue","blue"],"promptText":"The pattern red, red, blue, blue, red, red, blue, blue keeps going. Nora guesses that the 18th color will be red. Is Nora right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0147",
@@ -9122,7 +9122,7 @@ export const ITEMS = [
     structureType: "willBeAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":21,"core":["red","red","blue","blue"],"kind":"repeatPos","target":"blue"},"sequence":["red","red","blue","blue","red","red","blue","blue"],"promptText":"Luca looks at the pattern red, red, blue, blue, red, red, blue, blue, … Will shape number 21 be blue?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":21,"core":["red","red","blue","blue"],"kind":"repeatPos","target":"blue"},"terms":["red","red","blue","blue","red","red","blue","blue"],"promptText":"Luca looks at the pattern red, red, blue, blue, red, red, blue, blue, and so on. Will the 21st color be blue?"}},
   },
   {
     itemId: "patterns-conc-b0821-0148",
@@ -9132,7 +9132,7 @@ export const ITEMS = [
     structureType: "willBeAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":23,"core":["red","red","blue","blue"],"kind":"repeatPos","target":"blue"},"sequence":["red","red","blue","blue","red","red","blue","blue"],"promptText":"The pattern red, red, blue, blue, red, red, blue, blue keeps going. Ava guesses that position 23 holds blue. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":23,"core":["red","red","blue","blue"],"kind":"repeatPos","target":"blue"},"terms":["red","red","blue","blue","red","red","blue","blue"],"promptText":"Ava looks at the pattern red, red, blue, blue, red, red, blue, blue, and so on. Will the 23rd color be blue?"}},
   },
   {
     itemId: "patterns-conc-b0821-0149",
@@ -9142,7 +9142,7 @@ export const ITEMS = [
     structureType: "willBeAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":13,"core":["star","star","moon","moon"],"kind":"repeatPos","target":"moon"},"sequence":["star","star","moon","moon","star","star","moon","moon"],"promptText":"Sam looks at the pattern star, star, moon, moon, star, star, moon, moon, … Will shape number 13 be moon?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":13,"core":["star","star","moon","moon"],"kind":"repeatPos","target":"moon"},"terms":["star","star","moon","moon","star","star","moon","moon"],"promptText":"The pattern star, star, moon, moon, star, star, moon, moon keeps going. Sam guesses that the 13th shape will be a moon. Is Sam right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0150",
@@ -9152,7 +9152,7 @@ export const ITEMS = [
     structureType: "willBeAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":15,"core":["star","star","moon","moon"],"kind":"repeatPos","target":"moon"},"sequence":["star","star","moon","moon","star","star","moon","moon"],"promptText":"The pattern star, star, moon, moon, star, star, moon, moon keeps going. Nia guesses that position 15 holds moon. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":15,"core":["star","star","moon","moon"],"kind":"repeatPos","target":"moon"},"terms":["star","star","moon","moon","star","star","moon","moon"],"promptText":"The pattern star, star, moon, moon, star, star, moon, moon keeps going. Nia guesses that the 15th shape will be a moon. Is Nia right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0151",
@@ -9162,7 +9162,7 @@ export const ITEMS = [
     structureType: "willBeAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":18,"core":["star","star","moon","moon"],"kind":"repeatPos","target":"moon"},"sequence":["star","star","moon","moon","star","star","moon","moon"],"promptText":"Kai looks at the pattern star, star, moon, moon, star, star, moon, moon, … Will shape number 18 be moon?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":18,"core":["star","star","moon","moon"],"kind":"repeatPos","target":"moon"},"terms":["star","star","moon","moon","star","star","moon","moon"],"promptText":"Kai looks at the pattern star, star, moon, moon, star, star, moon, moon, and so on. Will the 18th shape be a moon?"}},
   },
   {
     itemId: "patterns-conc-b0821-0152",
@@ -9172,7 +9172,7 @@ export const ITEMS = [
     structureType: "willBeAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":21,"core":["star","star","moon","moon"],"kind":"repeatPos","target":"star"},"sequence":["star","star","moon","moon","star","star","moon","moon"],"promptText":"The pattern star, star, moon, moon, star, star, moon, moon keeps going. June guesses that position 21 holds star. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"pos":21,"core":["star","star","moon","moon"],"kind":"repeatPos","target":"star"},"terms":["star","star","moon","moon","star","star","moon","moon"],"promptText":"June looks at the pattern star, star, moon, moon, star, star, moon, moon, and so on. Will the 21st shape be a star?"}},
   },
   {
     itemId: "patterns-conc-b0821-0153",
@@ -9182,7 +9182,7 @@ export const ITEMS = [
     structureType: "willBeAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":23,"core":["star","star","moon","moon"],"kind":"repeatPos","target":"star"},"sequence":["star","star","moon","moon","star","star","moon","moon"],"promptText":"Lily looks at the pattern star, star, moon, moon, star, star, moon, moon, … Will shape number 23 be star?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"pos":23,"core":["star","star","moon","moon"],"kind":"repeatPos","target":"star"},"terms":["star","star","moon","moon","star","star","moon","moon"],"promptText":"The pattern star, star, moon, moon, star, star, moon, moon keeps going. Lily guesses that the 23rd shape will be a star. Is Lily right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0154",
@@ -9732,7 +9732,7 @@ export const ITEMS = [
     structureType: "judgeNext_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":8,"step":2,"start":2},"sequence":[2,4,6],"promptText":"Amara continues the pattern 2, 4, 6 with 8. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":8,"step":2,"start":2},"terms":[2,4,6],"promptText":"Amara continues the pattern 2, 4, 6 with 8. Is Amara right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0209",
@@ -9742,7 +9742,7 @@ export const ITEMS = [
     structureType: "judgeNext_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":11,"step":3,"start":3},"sequence":[3,6,9],"promptText":"After 3, 6, 9, Leo writes 11. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":11,"step":3,"start":3},"terms":[3,6,9],"promptText":"After 3, 6, 9, Leo writes 11. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0210",
@@ -9752,7 +9752,7 @@ export const ITEMS = [
     structureType: "judgeNext_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":13,"step":4,"start":1},"sequence":[1,5,9],"promptText":"Mina continues the pattern 1, 5, 9 with 13. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":13,"step":4,"start":1},"terms":[1,5,9],"promptText":"After 1, 5, 9, Mina writes 13. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0211",
@@ -9762,7 +9762,7 @@ export const ITEMS = [
     structureType: "judgeNext_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":9,"step":2,"start":4},"sequence":[4,6,8],"promptText":"After 4, 6, 8, Theo writes 9. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":9,"step":2,"start":4},"terms":[4,6,8],"promptText":"Theo continues the pattern 4, 6, 8 with 9. Is Theo right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0212",
@@ -9772,7 +9772,7 @@ export const ITEMS = [
     structureType: "judgeNext_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":17,"step":5,"start":2},"sequence":[2,7,12],"promptText":"Ida continues the pattern 2, 7, 12 with 17. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":17,"step":5,"start":2},"terms":[2,7,12],"promptText":"Ida continues the pattern 2, 7, 12 with 17. Is Ida right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0213",
@@ -9782,7 +9782,7 @@ export const ITEMS = [
     structureType: "judgeNext_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":13,"step":3,"start":5},"sequence":[5,8,11],"promptText":"After 5, 8, 11, Zoe writes 13. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":13,"step":3,"start":5},"terms":[5,8,11],"promptText":"After 5, 8, 11, Zoe writes 13. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0214",
@@ -9792,7 +9792,7 @@ export const ITEMS = [
     structureType: "judgeNext_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":7,"step":2,"start":1},"sequence":[1,3,5],"promptText":"Rosa continues the pattern 1, 3, 5 with 7. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":7,"step":2,"start":1},"terms":[1,3,5],"promptText":"After 1, 3, 5, Rosa writes 7. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0215",
@@ -9802,7 +9802,7 @@ export const ITEMS = [
     structureType: "judgeNext_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":11,"step":2,"start":6},"sequence":[6,8,10],"promptText":"After 6, 8, 10, Diego writes 11. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":11,"step":2,"start":6},"terms":[6,8,10],"promptText":"Diego continues the pattern 6, 8, 10 with 11. Is Diego right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0216",
@@ -9812,7 +9812,7 @@ export const ITEMS = [
     structureType: "judgeNext_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":15,"step":4,"start":3},"sequence":[3,7,11],"promptText":"Nora continues the pattern 3, 7, 11 with 15. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":15,"step":4,"start":3},"terms":[3,7,11],"promptText":"Nora continues the pattern 3, 7, 11 with 15. Is Nora right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0217",
@@ -9822,7 +9822,7 @@ export const ITEMS = [
     structureType: "judgeNext_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":10,"step":3,"start":2},"sequence":[2,5,8],"promptText":"After 2, 5, 8, Luca writes 10. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":10,"step":3,"start":2},"terms":[2,5,8],"promptText":"After 2, 5, 8, Luca writes 10. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0218",
@@ -9832,7 +9832,7 @@ export const ITEMS = [
     structureType: "judgeNext_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":16,"step":4,"start":4},"sequence":[4,8,12],"promptText":"Ava continues the pattern 4, 8, 12 with 16. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":16,"step":4,"start":4},"terms":[4,8,12],"promptText":"After 4, 8, 12, Ava writes 16. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0219",
@@ -9842,7 +9842,7 @@ export const ITEMS = [
     structureType: "judgeNext_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":12,"step":2,"start":7},"sequence":[7,9,11],"promptText":"After 7, 9, 11, Omar writes 12. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":12,"step":2,"start":7},"terms":[7,9,11],"promptText":"Omar continues the pattern 7, 9, 11 with 12. Is Omar right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0220",
@@ -9852,7 +9852,7 @@ export const ITEMS = [
     structureType: "judgeNext_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":11,"step":2,"start":5},"sequence":[5,7,9],"promptText":"Ben continues the pattern 5, 7, 9 with 11. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":11,"step":2,"start":5},"terms":[5,7,9],"promptText":"Ben continues the pattern 5, 7, 9 with 11. Is Ben right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0221",
@@ -9862,7 +9862,7 @@ export const ITEMS = [
     structureType: "judgeNext_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":15,"step":5,"start":1},"sequence":[1,6,11],"promptText":"After 1, 6, 11, Finn writes 15. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":15,"step":5,"start":1},"terms":[1,6,11],"promptText":"After 1, 6, 11, Finn writes 15. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0222",
@@ -9872,7 +9872,7 @@ export const ITEMS = [
     structureType: "judgeNext_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":13,"step":3,"start":4},"sequence":[4,7,10],"promptText":"Priya continues the pattern 4, 7, 10 with 13. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":13,"step":3,"start":4},"terms":[4,7,10],"promptText":"After 4, 7, 10, Priya writes 13. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0223",
@@ -9882,7 +9882,7 @@ export const ITEMS = [
     structureType: "judgeNext_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":13,"step":2,"start":8},"sequence":[8,10,12],"promptText":"After 8, 10, 12, Sam writes 13. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":13,"step":2,"start":8},"terms":[8,10,12],"promptText":"Sam continues the pattern 8, 10, 12 with 13. Is Sam right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0224",
@@ -9892,7 +9892,7 @@ export const ITEMS = [
     structureType: "judgeNext_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":15,"step":3,"start":6},"sequence":[6,9,12],"promptText":"Nia continues the pattern 6, 9, 12 with 15. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":15,"step":3,"start":6},"terms":[6,9,12],"promptText":"Nia continues the pattern 6, 9, 12 with 15. Is Nia right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0225",
@@ -9902,7 +9902,7 @@ export const ITEMS = [
     structureType: "judgeNext_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":13,"step":4,"start":2},"sequence":[2,6,10],"promptText":"After 2, 6, 10, Kai writes 13. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":13,"step":4,"start":2},"terms":[2,6,10],"promptText":"After 2, 6, 10, Kai writes 13. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0226",
@@ -9912,7 +9912,7 @@ export const ITEMS = [
     structureType: "judgeNext_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":30,"step":6,"start":12},"sequence":[12,18,24],"promptText":"Amara continues the pattern 12, 18, 24 with 30. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":31,"step":6,"start":12},"terms":[12,18,24],"promptText":"Amara continues the pattern 12, 18, 24 with 31. Is Amara right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0227",
@@ -9922,7 +9922,7 @@ export const ITEMS = [
     structureType: "judgeNext_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":45,"step":7,"start":25},"sequence":[25,32,39],"promptText":"After 25, 32, 39, Leo writes 45. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":46,"step":7,"start":25},"terms":[25,32,39],"promptText":"After 25, 32, 39, Leo writes 46. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0228",
@@ -9932,7 +9932,7 @@ export const ITEMS = [
     structureType: "judgeNext_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":55,"step":8,"start":31},"sequence":[31,39,47],"promptText":"Mina continues the pattern 31, 39, 47 with 55. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":54,"step":8,"start":31},"terms":[31,39,47],"promptText":"After 31, 39, 47, Mina writes 54. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0229",
@@ -9942,7 +9942,7 @@ export const ITEMS = [
     structureType: "judgeNext_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":40,"step":9,"start":14},"sequence":[14,23,32],"promptText":"After 14, 23, 32, Theo writes 40. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":41,"step":9,"start":14},"terms":[14,23,32],"promptText":"Theo continues the pattern 14, 23, 32 with 41. Is Theo right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0230",
@@ -9952,7 +9952,7 @@ export const ITEMS = [
     structureType: "judgeNext_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":60,"step":6,"start":42},"sequence":[42,48,54],"promptText":"Ida continues the pattern 42, 48, 54 with 60. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":60,"step":6,"start":42},"terms":[42,48,54],"promptText":"Ida continues the pattern 42, 48, 54 with 60. Is Ida right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0231",
@@ -9962,7 +9962,7 @@ export const ITEMS = [
     structureType: "judgeNext_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":43,"step":7,"start":23},"sequence":[23,30,37],"promptText":"After 23, 30, 37, Zoe writes 43. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":43,"step":7,"start":23},"terms":[23,30,37],"promptText":"After 23, 30, 37, Zoe writes 43. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0232",
@@ -9972,7 +9972,7 @@ export const ITEMS = [
     structureType: "judgeNext_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":59,"step":8,"start":35},"sequence":[35,43,51],"promptText":"Rosa continues the pattern 35, 43, 51 with 59. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":59,"step":8,"start":35},"terms":[35,43,51],"promptText":"After 35, 43, 51, Rosa writes 59. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0233",
@@ -9982,7 +9982,7 @@ export const ITEMS = [
     structureType: "judgeNext_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":27,"step":4,"start":16},"sequence":[16,20,24],"promptText":"After 16, 20, 24, Diego writes 27. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":27,"step":4,"start":16},"terms":[16,20,24],"promptText":"Diego continues the pattern 16, 20, 24 with 27. Is Diego right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0234",
@@ -9992,7 +9992,7 @@ export const ITEMS = [
     structureType: "judgeNext_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":66,"step":5,"start":51},"sequence":[51,56,61],"promptText":"Nora continues the pattern 51, 56, 61 with 66. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":66,"step":5,"start":51},"terms":[51,56,61],"promptText":"Nora continues the pattern 51, 56, 61 with 66. Is Nora right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0235",
@@ -10002,7 +10002,7 @@ export const ITEMS = [
     structureType: "judgeNext_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":44,"step":6,"start":27},"sequence":[27,33,39],"promptText":"After 27, 33, 39, Luca writes 44. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":44,"step":6,"start":27},"terms":[27,33,39],"promptText":"After 27, 33, 39, Luca writes 44. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0236",
@@ -10012,7 +10012,7 @@ export const ITEMS = [
     structureType: "judgeNext_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":54,"step":7,"start":33},"sequence":[33,40,47],"promptText":"Ava continues the pattern 33, 40, 47 with 54. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":54,"step":7,"start":33},"terms":[33,40,47],"promptText":"After 33, 40, 47, Ava writes 54. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0237",
@@ -10022,7 +10022,7 @@ export const ITEMS = [
     structureType: "judgeNext_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":53,"step":3,"start":45},"sequence":[45,48,51],"promptText":"After 45, 48, 51, Omar writes 53. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":53,"step":3,"start":45},"terms":[45,48,51],"promptText":"Omar continues the pattern 45, 48, 51 with 53. Is Omar right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0238",
@@ -10032,7 +10032,7 @@ export const ITEMS = [
     structureType: "judgeNext_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":42,"step":8,"start":18},"sequence":[18,26,34],"promptText":"Ben continues the pattern 18, 26, 34 with 42. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":42,"step":8,"start":18},"terms":[18,26,34],"promptText":"Ben continues the pattern 18, 26, 34 with 42. Is Ben right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0239",
@@ -10042,7 +10042,7 @@ export const ITEMS = [
     structureType: "judgeNext_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":88,"step":9,"start":62},"sequence":[62,71,80],"promptText":"After 62, 71, 80, Finn writes 88. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":88,"step":9,"start":62},"terms":[62,71,80],"promptText":"After 62, 71, 80, Finn writes 88. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0240",
@@ -10052,7 +10052,7 @@ export const ITEMS = [
     structureType: "judgeNext_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":41,"step":4,"start":29},"sequence":[29,33,37],"promptText":"Priya continues the pattern 29, 33, 37 with 41. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":41,"step":4,"start":29},"terms":[29,33,37],"promptText":"After 29, 33, 37, Priya writes 41. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0241",
@@ -10062,7 +10062,7 @@ export const ITEMS = [
     structureType: "judgeNext_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":51,"step":5,"start":37},"sequence":[37,42,47],"promptText":"After 37, 42, 47, Sam writes 51. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":51,"step":5,"start":37},"terms":[37,42,47],"promptText":"Sam continues the pattern 37, 42, 47 with 51. Is Sam right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0242",
@@ -10072,7 +10072,7 @@ export const ITEMS = [
     structureType: "judgeNext_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":62,"step":6,"start":44},"sequence":[44,50,56],"promptText":"Nia continues the pattern 44, 50, 56 with 62. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":62,"step":6,"start":44},"terms":[44,50,56],"promptText":"Nia continues the pattern 44, 50, 56 with 62. Is Nia right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0243",
@@ -10082,7 +10082,7 @@ export const ITEMS = [
     structureType: "judgeNext_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":76,"step":7,"start":56},"sequence":[56,63,70],"promptText":"After 56, 63, 70, Kai writes 76. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":76,"step":7,"start":56},"terms":[56,63,70],"promptText":"After 56, 63, 70, Kai writes 76. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0244",
@@ -10092,7 +10092,7 @@ export const ITEMS = [
     structureType: "judgeNext_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":145,"step":11,"start":112},"sequence":[112,123,134],"promptText":"Amara continues the pattern 112, 123, 134 with 145. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":145,"step":11,"start":112},"terms":[112,123,134],"promptText":"Amara continues the pattern 112, 123, 134 with 145. Is Amara right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0245",
@@ -10102,7 +10102,7 @@ export const ITEMS = [
     structureType: "judgeNext_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":270,"step":12,"start":235},"sequence":[235,247,259],"promptText":"After 235, 247, 259, Leo writes 270. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":270,"step":12,"start":235},"terms":[235,247,259],"promptText":"After 235, 247, 259, Leo writes 270. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0246",
@@ -10112,7 +10112,7 @@ export const ITEMS = [
     structureType: "judgeNext_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":386,"step":15,"start":341},"sequence":[341,356,371],"promptText":"Mina continues the pattern 341, 356, 371 with 386. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":386,"step":15,"start":341},"terms":[341,356,371],"promptText":"After 341, 356, 371, Mina writes 386. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0247",
@@ -10122,7 +10122,7 @@ export const ITEMS = [
     structureType: "judgeNext_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":198,"step":25,"start":124},"sequence":[124,149,174],"promptText":"After 124, 149, 174, Theo writes 198. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":198,"step":25,"start":124},"terms":[124,149,174],"promptText":"Theo continues the pattern 124, 149, 174 with 198. Is Theo right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0248",
@@ -10132,7 +10132,7 @@ export const ITEMS = [
     structureType: "judgeNext_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":485,"step":11,"start":452},"sequence":[452,463,474],"promptText":"Ida continues the pattern 452, 463, 474 with 485. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":485,"step":11,"start":452},"terms":[452,463,474],"promptText":"Ida continues the pattern 452, 463, 474 with 485. Is Ida right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0249",
@@ -10142,7 +10142,7 @@ export const ITEMS = [
     structureType: "judgeNext_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":264,"step":14,"start":223},"sequence":[223,237,251],"promptText":"After 223, 237, 251, Zoe writes 264. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":264,"step":14,"start":223},"terms":[223,237,251],"promptText":"After 223, 237, 251, Zoe writes 264. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0250",
@@ -10152,7 +10152,7 @@ export const ITEMS = [
     structureType: "judgeNext_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":398,"step":21,"start":335},"sequence":[335,356,377],"promptText":"Rosa continues the pattern 335, 356, 377 with 398. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":398,"step":21,"start":335},"terms":[335,356,377],"promptText":"After 335, 356, 377, Rosa writes 398. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0251",
@@ -10162,7 +10162,7 @@ export const ITEMS = [
     structureType: "judgeNext_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":181,"step":12,"start":146},"sequence":[146,158,170],"promptText":"After 146, 158, 170, Diego writes 181. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":181,"step":12,"start":146},"terms":[146,158,170],"promptText":"Diego continues the pattern 146, 158, 170 with 181. Is Diego right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0252",
@@ -10172,7 +10172,7 @@ export const ITEMS = [
     structureType: "judgeNext_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":557,"step":13,"start":518},"sequence":[518,531,544],"promptText":"Nora continues the pattern 518, 531, 544 with 557. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":557,"step":13,"start":518},"terms":[518,531,544],"promptText":"Nora continues the pattern 518, 531, 544 with 557. Is Nora right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0253",
@@ -10182,7 +10182,7 @@ export const ITEMS = [
     structureType: "judgeNext_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":294,"step":16,"start":247},"sequence":[247,263,279],"promptText":"After 247, 263, 279, Luca writes 294. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":294,"step":16,"start":247},"terms":[247,263,279],"promptText":"After 247, 263, 279, Luca writes 294. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0254",
@@ -10192,7 +10192,7 @@ export const ITEMS = [
     structureType: "judgeNext_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":399,"step":22,"start":333},"sequence":[333,355,377],"promptText":"Ava continues the pattern 333, 355, 377 with 399. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":399,"step":22,"start":333},"terms":[333,355,377],"promptText":"After 333, 355, 377, Ava writes 399. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0255",
@@ -10202,7 +10202,7 @@ export const ITEMS = [
     structureType: "judgeNext_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":468,"step":18,"start":415},"sequence":[415,433,451],"promptText":"After 415, 433, 451, Omar writes 468. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":468,"step":18,"start":415},"terms":[415,433,451],"promptText":"Omar continues the pattern 415, 433, 451 with 468. Is Omar right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0256",
@@ -10212,7 +10212,7 @@ export const ITEMS = [
     structureType: "judgeNext_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":200,"step":24,"start":128},"sequence":[128,152,176],"promptText":"Ben continues the pattern 128, 152, 176 with 200. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":200,"step":24,"start":128},"terms":[128,152,176],"promptText":"Ben continues the pattern 128, 152, 176 with 200. Is Ben right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0257",
@@ -10222,7 +10222,7 @@ export const ITEMS = [
     structureType: "judgeNext_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":666,"step":15,"start":622},"sequence":[622,637,652],"promptText":"After 622, 637, 652, Finn writes 666. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":666,"step":15,"start":622},"terms":[622,637,652],"promptText":"After 622, 637, 652, Finn writes 666. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0258",
@@ -10232,7 +10232,7 @@ export const ITEMS = [
     structureType: "judgeNext_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":340,"step":17,"start":289},"sequence":[289,306,323],"promptText":"Priya continues the pattern 289, 306, 323 with 340. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":340,"step":17,"start":289},"terms":[289,306,323],"promptText":"After 289, 306, 323, Priya writes 340. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0259",
@@ -10242,7 +10242,7 @@ export const ITEMS = [
     structureType: "judgeNext_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":385,"step":23,"start":317},"sequence":[317,340,363],"promptText":"After 317, 340, 363, Sam writes 385. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":385,"step":23,"start":317},"terms":[317,340,363],"promptText":"Sam continues the pattern 317, 340, 363 with 385. Is Sam right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0260",
@@ -10252,7 +10252,7 @@ export const ITEMS = [
     structureType: "judgeNext_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":491,"step":19,"start":434},"sequence":[434,453,472],"promptText":"Nia continues the pattern 434, 453, 472 with 491. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"arith","said":491,"step":19,"start":434},"terms":[434,453,472],"promptText":"Nia continues the pattern 434, 453, 472 with 491. Is Nia right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0261",
@@ -10262,7 +10262,7 @@ export const ITEMS = [
     structureType: "judgeNext_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":564,"step":13,"start":526},"sequence":[526,539,552],"promptText":"After 526, 539, 552, Kai writes 564. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"arith","said":564,"step":13,"start":526},"terms":[526,539,552],"promptText":"After 526, 539, 552, Kai writes 564. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0262",
@@ -10752,7 +10752,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["add 1","add 2","multiply by 3","multiply by 2"],"display":{"pattern":{"kind":"geoRule","start":1,"factor":2},"sequence":[1,2,4],"promptText":"Lily wonders how the pattern 1, 2, 4 grows. Which rule fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["add 1","add 2","multiply by 3","multiply by 2"],"display":{"pattern":{"kind":"geoRule","start":1,"factor":2},"terms":[1,2,4],"promptText":"Lily wonders how the pattern 1, 2, 4 grows. Which rule fits?"}},
   },
   {
     itemId: "patterns-conc-b0821-0311",
@@ -10762,7 +10762,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["add 2","add 3","multiply by 3","multiply by 2"],"display":{"pattern":{"kind":"geoRule","start":2,"factor":2},"sequence":[2,4,8],"promptText":"Look at 2, 4, 8 with Diego. Which rule makes this pattern?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["add 2","add 3","multiply by 3","multiply by 2"],"display":{"pattern":{"kind":"geoRule","start":2,"factor":2},"terms":[2,4,8],"promptText":"Look at 2, 4, 8 with Diego. Which rule makes this pattern?"}},
   },
   {
     itemId: "patterns-conc-b0821-0312",
@@ -10772,7 +10772,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["add 2","multiply by 2","multiply by 3","add 3"],"display":{"pattern":{"kind":"geoRule","start":3,"factor":2},"sequence":[3,6,12],"promptText":"Sam wonders how the pattern 3, 6, 12 grows. Which rule fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["add 2","multiply by 2","multiply by 3","add 3"],"display":{"pattern":{"kind":"geoRule","start":3,"factor":2},"terms":[3,6,12],"promptText":"Sam wonders how the pattern 3, 6, 12 grows. Which rule fits?"}},
   },
   {
     itemId: "patterns-conc-b0821-0313",
@@ -10782,7 +10782,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["multiply by 2","multiply by 3","add 2","add 4"],"display":{"pattern":{"kind":"geoRule","start":4,"factor":2},"sequence":[4,8,16],"promptText":"Look at 4, 8, 16 with Theo. Which rule makes this pattern?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["multiply by 2","multiply by 3","add 2","add 4"],"display":{"pattern":{"kind":"geoRule","start":4,"factor":2},"terms":[4,8,16],"promptText":"Look at 4, 8, 16 with Theo. Which rule makes this pattern?"}},
   },
   {
     itemId: "patterns-conc-b0821-0314",
@@ -10792,7 +10792,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["multiply by 3","add 2","add 5","multiply by 2"],"display":{"pattern":{"kind":"geoRule","start":5,"factor":2},"sequence":[5,10,20],"promptText":"Omar wonders how the pattern 5, 10, 20 grows. Which rule fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["multiply by 3","add 2","add 5","multiply by 2"],"display":{"pattern":{"kind":"geoRule","start":5,"factor":2},"terms":[5,10,20],"promptText":"Omar wonders how the pattern 5, 10, 20 grows. Which rule fits?"}},
   },
   {
     itemId: "patterns-conc-b0821-0315",
@@ -10802,7 +10802,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 3","choices":["add 2","multiply by 4","multiply by 3","add 3"],"display":{"pattern":{"kind":"geoRule","start":1,"factor":3},"sequence":[1,3,9],"promptText":"Look at 1, 3, 9 with Lily. Which rule makes this pattern?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 3","choices":["add 2","multiply by 4","multiply by 3","add 3"],"display":{"pattern":{"kind":"geoRule","start":1,"factor":3},"terms":[1,3,9],"promptText":"Look at 1, 3, 9 with Lily. Which rule makes this pattern?"}},
   },
   {
     itemId: "patterns-conc-b0821-0316",
@@ -10812,7 +10812,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 3","choices":["multiply by 3","add 3","multiply by 4","add 4"],"display":{"pattern":{"kind":"geoRule","start":2,"factor":3},"sequence":[2,6,18],"promptText":"Diego wonders how the pattern 2, 6, 18 grows. Which rule fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 3","choices":["multiply by 3","add 3","multiply by 4","add 4"],"display":{"pattern":{"kind":"geoRule","start":2,"factor":3},"terms":[2,6,18],"promptText":"Diego wonders how the pattern 2, 6, 18 grows. Which rule fits?"}},
   },
   {
     itemId: "patterns-conc-b0821-0317",
@@ -10822,7 +10822,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 4","choices":["add 4","multiply by 4","multiply by 5","add 3"],"display":{"pattern":{"kind":"geoRule","start":1,"factor":4},"sequence":[1,4,16],"promptText":"Look at 1, 4, 16 with Sam. Which rule makes this pattern?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 4","choices":["add 4","multiply by 4","multiply by 5","add 3"],"display":{"pattern":{"kind":"geoRule","start":1,"factor":4},"terms":[1,4,16],"promptText":"Look at 1, 4, 16 with Sam. Which rule makes this pattern?"}},
   },
   {
     itemId: "patterns-conc-b0821-0318",
@@ -10832,7 +10832,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["multiply by 3","add 2","multiply by 2","add 14"],"display":{"pattern":{"kind":"geoRule","start":14,"factor":2},"sequence":[14,28,56],"promptText":"Sam wonders how the pattern 14, 28, 56 grows. Which rule fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["multiply by 3","add 2","multiply by 2","add 14"],"display":{"pattern":{"kind":"geoRule","start":14,"factor":2},"terms":[14,28,56],"promptText":"Sam wonders how the pattern 14, 28, 56 grows. Which rule fits?"}},
   },
   {
     itemId: "patterns-conc-b0821-0319",
@@ -10842,7 +10842,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["multiply by 2","add 16","multiply by 3","add 2"],"display":{"pattern":{"kind":"geoRule","start":16,"factor":2},"sequence":[16,32,64],"promptText":"Look at 16, 32, 64 with Theo. Which rule makes this pattern?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["multiply by 2","add 16","multiply by 3","add 2"],"display":{"pattern":{"kind":"geoRule","start":16,"factor":2},"terms":[16,32,64],"promptText":"Look at 16, 32, 64 with Theo. Which rule makes this pattern?"}},
   },
   {
     itemId: "patterns-conc-b0821-0320",
@@ -10852,7 +10852,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["add 17","multiply by 3","multiply by 2","add 2"],"display":{"pattern":{"kind":"geoRule","start":17,"factor":2},"sequence":[17,34,68],"promptText":"Omar wonders how the pattern 17, 34, 68 grows. Which rule fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["add 17","multiply by 3","multiply by 2","add 2"],"display":{"pattern":{"kind":"geoRule","start":17,"factor":2},"terms":[17,34,68],"promptText":"Omar wonders how the pattern 17, 34, 68 grows. Which rule fits?"}},
   },
   {
     itemId: "patterns-conc-b0821-0321",
@@ -10862,7 +10862,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 3","choices":["add 8","add 3","multiply by 4","multiply by 3"],"display":{"pattern":{"kind":"geoRule","start":4,"factor":3},"sequence":[4,12,36],"promptText":"Look at 4, 12, 36 with Lily. Which rule makes this pattern?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 3","choices":["add 8","add 3","multiply by 4","multiply by 3"],"display":{"pattern":{"kind":"geoRule","start":4,"factor":3},"terms":[4,12,36],"promptText":"Look at 4, 12, 36 with Lily. Which rule makes this pattern?"}},
   },
   {
     itemId: "patterns-conc-b0821-0322",
@@ -10872,7 +10872,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["multiply by 2","add 2","add 6","multiply by 3"],"display":{"pattern":{"kind":"geoRule","start":6,"factor":2},"sequence":[6,12,24],"promptText":"Diego wonders how the pattern 6, 12, 24 grows. Which rule fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["multiply by 2","add 2","add 6","multiply by 3"],"display":{"pattern":{"kind":"geoRule","start":6,"factor":2},"terms":[6,12,24],"promptText":"Diego wonders how the pattern 6, 12, 24 grows. Which rule fits?"}},
   },
   {
     itemId: "patterns-conc-b0821-0323",
@@ -10882,7 +10882,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 3","choices":["multiply by 4","add 3","add 6","multiply by 3"],"display":{"pattern":{"kind":"geoRule","start":3,"factor":3},"sequence":[3,9,27],"promptText":"Look at 3, 9, 27 with Sam. Which rule makes this pattern?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 3","choices":["multiply by 4","add 3","add 6","multiply by 3"],"display":{"pattern":{"kind":"geoRule","start":3,"factor":3},"terms":[3,9,27],"promptText":"Look at 3, 9, 27 with Sam. Which rule makes this pattern?"}},
   },
   {
     itemId: "patterns-conc-b0821-0324",
@@ -10892,7 +10892,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["add 7","add 2","multiply by 3","multiply by 2"],"display":{"pattern":{"kind":"geoRule","start":7,"factor":2},"sequence":[7,14,28],"promptText":"Theo wonders how the pattern 7, 14, 28 grows. Which rule fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["add 7","add 2","multiply by 3","multiply by 2"],"display":{"pattern":{"kind":"geoRule","start":7,"factor":2},"terms":[7,14,28],"promptText":"Theo wonders how the pattern 7, 14, 28 grows. Which rule fits?"}},
   },
   {
     itemId: "patterns-conc-b0821-0325",
@@ -10902,7 +10902,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 3","choices":["multiply by 3","add 3","add 10","multiply by 4"],"display":{"pattern":{"kind":"geoRule","start":5,"factor":3},"sequence":[5,15,45],"promptText":"Look at 5, 15, 45 with Omar. Which rule makes this pattern?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 3","choices":["multiply by 3","add 3","add 10","multiply by 4"],"display":{"pattern":{"kind":"geoRule","start":5,"factor":3},"terms":[5,15,45],"promptText":"Look at 5, 15, 45 with Omar. Which rule makes this pattern?"}},
   },
   {
     itemId: "patterns-conc-b0821-0326",
@@ -10912,7 +10912,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["multiply by 3","add 2","multiply by 2","add 8"],"display":{"pattern":{"kind":"geoRule","start":8,"factor":2},"sequence":[8,16,32],"promptText":"Lily wonders how the pattern 8, 16, 32 grows. Which rule fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["multiply by 3","add 2","multiply by 2","add 8"],"display":{"pattern":{"kind":"geoRule","start":8,"factor":2},"terms":[8,16,32],"promptText":"Lily wonders how the pattern 8, 16, 32 grows. Which rule fits?"}},
   },
   {
     itemId: "patterns-conc-b0821-0327",
@@ -10922,7 +10922,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 4","choices":["add 4","add 6","multiply by 4","multiply by 5"],"display":{"pattern":{"kind":"geoRule","start":2,"factor":4},"sequence":[2,8,32],"promptText":"Look at 2, 8, 32 with Diego. Which rule makes this pattern?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 4","choices":["add 4","add 6","multiply by 4","multiply by 5"],"display":{"pattern":{"kind":"geoRule","start":2,"factor":4},"terms":[2,8,32],"promptText":"Look at 2, 8, 32 with Diego. Which rule makes this pattern?"}},
   },
   {
     itemId: "patterns-conc-b0821-0328",
@@ -10932,7 +10932,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["add 9","add 2","multiply by 2","multiply by 3"],"display":{"pattern":{"kind":"geoRule","start":9,"factor":2},"sequence":[9,18,36],"promptText":"Sam wonders how the pattern 9, 18, 36 grows. Which rule fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["add 9","add 2","multiply by 2","multiply by 3"],"display":{"pattern":{"kind":"geoRule","start":9,"factor":2},"terms":[9,18,36],"promptText":"Sam wonders how the pattern 9, 18, 36 grows. Which rule fits?"}},
   },
   {
     itemId: "patterns-conc-b0821-0329",
@@ -10942,7 +10942,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 4","choices":["add 4","add 9","multiply by 4","multiply by 5"],"display":{"pattern":{"kind":"geoRule","start":3,"factor":4},"sequence":[3,12,48],"promptText":"Look at 3, 12, 48 with Theo. Which rule makes this pattern?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 4","choices":["add 4","add 9","multiply by 4","multiply by 5"],"display":{"pattern":{"kind":"geoRule","start":3,"factor":4},"terms":[3,12,48],"promptText":"Look at 3, 12, 48 with Theo. Which rule makes this pattern?"}},
   },
   {
     itemId: "patterns-conc-b0821-0330",
@@ -10952,7 +10952,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["add 11","add 2","multiply by 3","multiply by 2"],"display":{"pattern":{"kind":"geoRule","start":11,"factor":2},"sequence":[11,22,44],"promptText":"Omar wonders how the pattern 11, 22, 44 grows. Which rule fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["add 11","add 2","multiply by 3","multiply by 2"],"display":{"pattern":{"kind":"geoRule","start":11,"factor":2},"terms":[11,22,44],"promptText":"Omar wonders how the pattern 11, 22, 44 grows. Which rule fits?"}},
   },
   {
     itemId: "patterns-conc-b0821-0331",
@@ -10962,7 +10962,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 3","choices":["multiply by 3","add 12","multiply by 4","add 3"],"display":{"pattern":{"kind":"geoRule","start":6,"factor":3},"sequence":[6,18,54],"promptText":"Look at 6, 18, 54 with Lily. Which rule makes this pattern?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 3","choices":["multiply by 3","add 12","multiply by 4","add 3"],"display":{"pattern":{"kind":"geoRule","start":6,"factor":3},"terms":[6,18,54],"promptText":"Look at 6, 18, 54 with Lily. Which rule makes this pattern?"}},
   },
   {
     itemId: "patterns-conc-b0821-0332",
@@ -10972,7 +10972,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["multiply by 3","add 12","add 2","multiply by 2"],"display":{"pattern":{"kind":"geoRule","start":12,"factor":2},"sequence":[12,24,48],"promptText":"Diego wonders how the pattern 12, 24, 48 grows. Which rule fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["multiply by 3","add 12","add 2","multiply by 2"],"display":{"pattern":{"kind":"geoRule","start":12,"factor":2},"terms":[12,24,48],"promptText":"Diego wonders how the pattern 12, 24, 48 grows. Which rule fits?"}},
   },
   {
     itemId: "patterns-conc-b0821-0333",
@@ -10982,7 +10982,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 4","choices":["add 4","add 12","multiply by 5","multiply by 4"],"display":{"pattern":{"kind":"geoRule","start":4,"factor":4},"sequence":[4,16,64],"promptText":"Look at 4, 16, 64 with Sam. Which rule makes this pattern?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 4","choices":["add 4","add 12","multiply by 5","multiply by 4"],"display":{"pattern":{"kind":"geoRule","start":4,"factor":4},"terms":[4,16,64],"promptText":"Look at 4, 16, 64 with Sam. Which rule makes this pattern?"}},
   },
   {
     itemId: "patterns-conc-b0821-0334",
@@ -10992,7 +10992,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["multiply by 2","multiply by 3","add 2","add 13"],"display":{"pattern":{"kind":"geoRule","start":13,"factor":2},"sequence":[13,26,52],"promptText":"Theo wonders how the pattern 13, 26, 52 grows. Which rule fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["multiply by 2","multiply by 3","add 2","add 13"],"display":{"pattern":{"kind":"geoRule","start":13,"factor":2},"terms":[13,26,52],"promptText":"Theo wonders how the pattern 13, 26, 52 grows. Which rule fits?"}},
   },
   {
     itemId: "patterns-conc-b0821-0335",
@@ -11002,7 +11002,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 3","choices":["add 3","multiply by 4","multiply by 3","add 14"],"display":{"pattern":{"kind":"geoRule","start":7,"factor":3},"sequence":[7,21,63],"promptText":"Look at 7, 21, 63 with Omar. Which rule makes this pattern?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 3","choices":["add 3","multiply by 4","multiply by 3","add 14"],"display":{"pattern":{"kind":"geoRule","start":7,"factor":3},"terms":[7,21,63],"promptText":"Look at 7, 21, 63 with Omar. Which rule makes this pattern?"}},
   },
   {
     itemId: "patterns-conc-b0821-0336",
@@ -11012,7 +11012,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 5","choices":["add 16","multiply by 6","multiply by 5","add 5"],"display":{"pattern":{"kind":"geoRule","start":4,"factor":5},"sequence":[4,20,100],"promptText":"Leo wonders how the pattern 4, 20, 100 grows. Which rule fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 5","choices":["add 16","multiply by 6","multiply by 5","add 5"],"display":{"pattern":{"kind":"geoRule","start":4,"factor":5},"terms":[4,20,100],"promptText":"Leo wonders how the pattern 4, 20, 100 grows. Which rule fits?"}},
   },
   {
     itemId: "patterns-conc-b0821-0337",
@@ -11022,7 +11022,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 5","choices":["multiply by 6","add 12","add 5","multiply by 5"],"display":{"pattern":{"kind":"geoRule","start":3,"factor":5},"sequence":[3,15,75],"promptText":"Look at 3, 15, 75 with Luca. Which rule makes this pattern?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 5","choices":["multiply by 6","add 12","add 5","multiply by 5"],"display":{"pattern":{"kind":"geoRule","start":3,"factor":5},"terms":[3,15,75],"promptText":"Look at 3, 15, 75 with Luca. Which rule makes this pattern?"}},
   },
   {
     itemId: "patterns-conc-b0821-0338",
@@ -11032,7 +11032,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 3","choices":["multiply by 3","add 24","add 3","multiply by 4"],"display":{"pattern":{"kind":"geoRule","start":12,"factor":3},"sequence":[12,36,108],"promptText":"Kai wonders how the pattern 12, 36, 108 grows. Which rule fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 3","choices":["multiply by 3","add 24","add 3","multiply by 4"],"display":{"pattern":{"kind":"geoRule","start":12,"factor":3},"terms":[12,36,108],"promptText":"Kai wonders how the pattern 12, 36, 108 grows. Which rule fits?"}},
   },
   {
     itemId: "patterns-conc-b0821-0339",
@@ -11042,7 +11042,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["add 15","add 2","multiply by 2","multiply by 3"],"display":{"pattern":{"kind":"geoRule","start":15,"factor":2},"sequence":[15,30,60],"promptText":"Look at 15, 30, 60 with Zoe. Which rule makes this pattern?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["add 15","add 2","multiply by 2","multiply by 3"],"display":{"pattern":{"kind":"geoRule","start":15,"factor":2},"terms":[15,30,60],"promptText":"Look at 15, 30, 60 with Zoe. Which rule makes this pattern?"}},
   },
   {
     itemId: "patterns-conc-b0821-0340",
@@ -11052,7 +11052,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 5","choices":["multiply by 5","add 8","add 5","multiply by 6"],"display":{"pattern":{"kind":"geoRule","start":2,"factor":5},"sequence":[2,10,50],"promptText":"Finn wonders how the pattern 2, 10, 50 grows. Which rule fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 5","choices":["multiply by 5","add 8","add 5","multiply by 6"],"display":{"pattern":{"kind":"geoRule","start":2,"factor":5},"terms":[2,10,50],"promptText":"Finn wonders how the pattern 2, 10, 50 grows. Which rule fits?"}},
   },
   {
     itemId: "patterns-conc-b0821-0341",
@@ -11062,7 +11062,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 3","choices":["multiply by 4","add 22","multiply by 3","add 3"],"display":{"pattern":{"kind":"geoRule","start":11,"factor":3},"sequence":[11,33,99],"promptText":"Look at 11, 33, 99 with Leo. Which rule makes this pattern?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 3","choices":["multiply by 4","add 22","multiply by 3","add 3"],"display":{"pattern":{"kind":"geoRule","start":11,"factor":3},"terms":[11,33,99],"promptText":"Look at 11, 33, 99 with Leo. Which rule makes this pattern?"}},
   },
   {
     itemId: "patterns-conc-b0821-0342",
@@ -11072,7 +11072,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["multiply by 2","add 2","multiply by 3","add 21"],"display":{"pattern":{"kind":"geoRule","start":21,"factor":2},"sequence":[21,42,84],"promptText":"Luca wonders how the pattern 21, 42, 84 grows. Which rule fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["multiply by 2","add 2","multiply by 3","add 21"],"display":{"pattern":{"kind":"geoRule","start":21,"factor":2},"terms":[21,42,84],"promptText":"Luca wonders how the pattern 21, 42, 84 grows. Which rule fits?"}},
   },
   {
     itemId: "patterns-conc-b0821-0343",
@@ -11082,7 +11082,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 5","choices":["multiply by 5","add 5","multiply by 6","add 24"],"display":{"pattern":{"kind":"geoRule","start":6,"factor":5},"sequence":[6,30,150],"promptText":"Look at 6, 30, 150 with Kai. Which rule makes this pattern?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 5","choices":["multiply by 5","add 5","multiply by 6","add 24"],"display":{"pattern":{"kind":"geoRule","start":6,"factor":5},"terms":[6,30,150],"promptText":"Look at 6, 30, 150 with Kai. Which rule makes this pattern?"}},
   },
   {
     itemId: "patterns-conc-b0821-0344",
@@ -11092,7 +11092,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 3","choices":["multiply by 4","add 26","add 3","multiply by 3"],"display":{"pattern":{"kind":"geoRule","start":13,"factor":3},"sequence":[13,39,117],"promptText":"Zoe wonders how the pattern 13, 39, 117 grows. Which rule fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 3","choices":["multiply by 4","add 26","add 3","multiply by 3"],"display":{"pattern":{"kind":"geoRule","start":13,"factor":3},"terms":[13,39,117],"promptText":"Zoe wonders how the pattern 13, 39, 117 grows. Which rule fits?"}},
   },
   {
     itemId: "patterns-conc-b0821-0345",
@@ -11102,7 +11102,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["add 2","multiply by 3","add 25","multiply by 2"],"display":{"pattern":{"kind":"geoRule","start":25,"factor":2},"sequence":[25,50,100],"promptText":"Look at 25, 50, 100 with Finn. Which rule makes this pattern?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["add 2","multiply by 3","add 25","multiply by 2"],"display":{"pattern":{"kind":"geoRule","start":25,"factor":2},"terms":[25,50,100],"promptText":"Look at 25, 50, 100 with Finn. Which rule makes this pattern?"}},
   },
   {
     itemId: "patterns-conc-b0821-0346",
@@ -11112,7 +11112,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 5","choices":["add 28","multiply by 5","add 5","multiply by 6"],"display":{"pattern":{"kind":"geoRule","start":7,"factor":5},"sequence":[7,35,175],"promptText":"Leo wonders how the pattern 7, 35, 175 grows. Which rule fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 5","choices":["add 28","multiply by 5","add 5","multiply by 6"],"display":{"pattern":{"kind":"geoRule","start":7,"factor":5},"terms":[7,35,175],"promptText":"Leo wonders how the pattern 7, 35, 175 grows. Which rule fits?"}},
   },
   {
     itemId: "patterns-conc-b0821-0347",
@@ -11122,7 +11122,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 3","choices":["add 3","add 28","multiply by 3","multiply by 4"],"display":{"pattern":{"kind":"geoRule","start":14,"factor":3},"sequence":[14,42,126],"promptText":"Look at 14, 42, 126 with Luca. Which rule makes this pattern?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 3","choices":["add 3","add 28","multiply by 3","multiply by 4"],"display":{"pattern":{"kind":"geoRule","start":14,"factor":3},"terms":[14,42,126],"promptText":"Look at 14, 42, 126 with Luca. Which rule makes this pattern?"}},
   },
   {
     itemId: "patterns-conc-b0821-0348",
@@ -11132,7 +11132,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["add 31","add 2","multiply by 3","multiply by 2"],"display":{"pattern":{"kind":"geoRule","start":31,"factor":2},"sequence":[31,62,124],"promptText":"Kai wonders how the pattern 31, 62, 124 grows. Which rule fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["add 31","add 2","multiply by 3","multiply by 2"],"display":{"pattern":{"kind":"geoRule","start":31,"factor":2},"terms":[31,62,124],"promptText":"Kai wonders how the pattern 31, 62, 124 grows. Which rule fits?"}},
   },
   {
     itemId: "patterns-conc-b0821-0349",
@@ -11142,7 +11142,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 5","choices":["multiply by 6","add 32","multiply by 5","add 5"],"display":{"pattern":{"kind":"geoRule","start":8,"factor":5},"sequence":[8,40,200],"promptText":"Look at 8, 40, 200 with Zoe. Which rule makes this pattern?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 5","choices":["multiply by 6","add 32","multiply by 5","add 5"],"display":{"pattern":{"kind":"geoRule","start":8,"factor":5},"terms":[8,40,200],"promptText":"Look at 8, 40, 200 with Zoe. Which rule makes this pattern?"}},
   },
   {
     itemId: "patterns-conc-b0821-0350",
@@ -11152,7 +11152,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 3","choices":["multiply by 3","add 3","multiply by 4","add 32"],"display":{"pattern":{"kind":"geoRule","start":16,"factor":3},"sequence":[16,48,144],"promptText":"Finn wonders how the pattern 16, 48, 144 grows. Which rule fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 3","choices":["multiply by 3","add 3","multiply by 4","add 32"],"display":{"pattern":{"kind":"geoRule","start":16,"factor":3},"terms":[16,48,144],"promptText":"Finn wonders how the pattern 16, 48, 144 grows. Which rule fits?"}},
   },
   {
     itemId: "patterns-conc-b0821-0351",
@@ -11162,7 +11162,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["multiply by 2","add 2","multiply by 3","add 35"],"display":{"pattern":{"kind":"geoRule","start":35,"factor":2},"sequence":[35,70,140],"promptText":"Look at 35, 70, 140 with Leo. Which rule makes this pattern?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 2","choices":["multiply by 2","add 2","multiply by 3","add 35"],"display":{"pattern":{"kind":"geoRule","start":35,"factor":2},"terms":[35,70,140],"promptText":"Look at 35, 70, 140 with Leo. Which rule makes this pattern?"}},
   },
   {
     itemId: "patterns-conc-b0821-0352",
@@ -11172,7 +11172,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 5","choices":["add 5","add 36","multiply by 6","multiply by 5"],"display":{"pattern":{"kind":"geoRule","start":9,"factor":5},"sequence":[9,45,225],"promptText":"Luca wonders how the pattern 9, 45, 225 grows. Which rule fits?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 5","choices":["add 5","add 36","multiply by 6","multiply by 5"],"display":{"pattern":{"kind":"geoRule","start":9,"factor":5},"terms":[9,45,225],"promptText":"Luca wonders how the pattern 9, 45, 225 grows. Which rule fits?"}},
   },
   {
     itemId: "patterns-conc-b0821-0353",
@@ -11182,7 +11182,7 @@ export const ITEMS = [
     structureType: "geoRulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"multiply by 3","choices":["add 36","multiply by 3","multiply by 4","add 3"],"display":{"pattern":{"kind":"geoRule","start":18,"factor":3},"sequence":[18,54,162],"promptText":"Look at 18, 54, 162 with Kai. Which rule makes this pattern?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"multiply by 3","choices":["add 36","multiply by 3","multiply by 4","add 3"],"display":{"pattern":{"kind":"geoRule","start":18,"factor":3},"terms":[18,54,162],"promptText":"Look at 18, 54, 162 with Kai. Which rule makes this pattern?"}},
   },
   {
     itemId: "patterns-conc-b0821-0354",
@@ -11192,7 +11192,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"sequence":[2,4,8],"promptText":"Amara says the pattern 2, 4, 8 just adds the same number each time. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"terms":[2,4,8],"promptText":"Amara says the pattern 2, 4, 8 just adds the same number each time. Is Amara right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0355",
@@ -11202,7 +11202,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"sequence":[3,7,11],"promptText":"Looking at 3, 7, 11, Leo claims each jump is the same size. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"terms":[3,7,11],"promptText":"Looking at 3, 7, 11, Leo claims each jump is the same size. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0356",
@@ -11212,7 +11212,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"sequence":[1,3,9],"promptText":"Mina says the pattern 1, 3, 9 just adds the same number each time. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"terms":[1,3,9],"promptText":"Looking at 1, 3, 9, Mina claims each jump is the same size. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0357",
@@ -11222,7 +11222,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"sequence":[2,7,12],"promptText":"Looking at 2, 7, 12, Theo claims each jump is the same size. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"terms":[2,7,12],"promptText":"Theo says the pattern 2, 7, 12 just adds the same number each time. Is Theo right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0358",
@@ -11232,7 +11232,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"sequence":[4,8,16],"promptText":"Ida says the pattern 4, 8, 16 just adds the same number each time. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"terms":[4,8,16],"promptText":"Ida says the pattern 4, 8, 16 just adds the same number each time. Is Ida right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0359",
@@ -11242,7 +11242,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"sequence":[1,7,13],"promptText":"Looking at 1, 7, 13, Zoe claims each jump is the same size. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"terms":[1,7,13],"promptText":"Looking at 1, 7, 13, Zoe claims each jump is the same size. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0360",
@@ -11252,7 +11252,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"sequence":[3,6,12],"promptText":"Rosa says the pattern 3, 6, 12 just adds the same number each time. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"terms":[3,6,12],"promptText":"Looking at 3, 6, 12, Rosa claims each jump is the same size. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0361",
@@ -11262,7 +11262,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"sequence":[5,8,11],"promptText":"Looking at 5, 8, 11, Diego claims each jump is the same size. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"terms":[5,8,11],"promptText":"Diego says the pattern 5, 8, 11 just adds the same number each time. Is Diego right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0362",
@@ -11272,7 +11272,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"sequence":[2,6,18],"promptText":"Nora says the pattern 2, 6, 18 just adds the same number each time. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"terms":[2,6,18],"promptText":"Nora says the pattern 2, 6, 18 just adds the same number each time. Is Nora right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0363",
@@ -11282,7 +11282,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"sequence":[4,8,12],"promptText":"Looking at 4, 8, 12, Luca claims each jump is the same size. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"terms":[4,8,12],"promptText":"Looking at 4, 8, 12, Luca claims each jump is the same size. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0364",
@@ -11292,7 +11292,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"sequence":[1,2,4],"promptText":"Ava says the pattern 1, 2, 4 just adds the same number each time. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"terms":[1,2,4],"promptText":"Looking at 1, 2, 4, Ava claims each jump is the same size. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0365",
@@ -11302,7 +11302,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"sequence":[6,8,10],"promptText":"Looking at 6, 8, 10, Omar claims each jump is the same size. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"terms":[6,8,10],"promptText":"Omar says the pattern 6, 8, 10 just adds the same number each time. Is Omar right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0366",
@@ -11312,7 +11312,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"sequence":[1,4,16],"promptText":"Ben says the pattern 1, 4, 16 just adds the same number each time. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"terms":[1,4,16],"promptText":"Ben says the pattern 1, 4, 16 just adds the same number each time. Is Ben right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0367",
@@ -11322,7 +11322,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"sequence":[3,8,13],"promptText":"Looking at 3, 8, 13, Finn claims each jump is the same size. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"terms":[3,8,13],"promptText":"Looking at 3, 8, 13, Finn claims each jump is the same size. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0368",
@@ -11332,7 +11332,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"sequence":[5,10,20],"promptText":"Priya says the pattern 5, 10, 20 just adds the same number each time. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"terms":[5,10,20],"promptText":"Looking at 5, 10, 20, Priya claims each jump is the same size. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0369",
@@ -11342,7 +11342,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"sequence":[2,8,14],"promptText":"Looking at 2, 8, 14, Sam claims each jump is the same size. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"terms":[2,8,14],"promptText":"Sam says the pattern 2, 8, 14 just adds the same number each time. Is Sam right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0370",
@@ -11352,7 +11352,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"sequence":[4,7,10],"promptText":"Nia says the pattern 4, 7, 10 just adds the same number each time. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"terms":[4,7,10],"promptText":"Nia says the pattern 4, 7, 10 just adds the same number each time. Is Nia right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0371",
@@ -11362,7 +11362,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"sequence":[7,9,11],"promptText":"Looking at 7, 9, 11, Kai claims each jump is the same size. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"terms":[7,9,11],"promptText":"Looking at 7, 9, 11, Kai claims each jump is the same size. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0372",
@@ -11372,7 +11372,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"sequence":[3,6,12],"promptText":"Amara says the pattern 3, 6, 12 just adds the same number each time. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"terms":[3,6,12],"promptText":"Amara says the pattern 3, 6, 12 just adds the same number each time. Is Amara right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0373",
@@ -11382,7 +11382,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"sequence":[12,19,26],"promptText":"Looking at 12, 19, 26, Leo claims each jump is the same size. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"terms":[12,19,26],"promptText":"Looking at 12, 19, 26, Leo claims each jump is the same size. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0374",
@@ -11392,7 +11392,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"sequence":[5,10,20],"promptText":"Mina says the pattern 5, 10, 20 just adds the same number each time. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"terms":[5,10,20],"promptText":"Looking at 5, 10, 20, Mina claims each jump is the same size. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0375",
@@ -11402,7 +11402,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"sequence":[21,29,37],"promptText":"Looking at 21, 29, 37, Theo claims each jump is the same size. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"terms":[21,29,37],"promptText":"Theo says the pattern 21, 29, 37 just adds the same number each time. Is Theo right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0376",
@@ -11412,7 +11412,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"sequence":[2,6,18],"promptText":"Ida says the pattern 2, 6, 18 just adds the same number each time. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"terms":[2,6,18],"promptText":"Ida says the pattern 2, 6, 18 just adds the same number each time. Is Ida right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0377",
@@ -11422,7 +11422,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"sequence":[14,23,32],"promptText":"Looking at 14, 23, 32, Zoe claims each jump is the same size. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"terms":[14,23,32],"promptText":"Looking at 14, 23, 32, Zoe claims each jump is the same size. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0378",
@@ -11432,7 +11432,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"sequence":[4,12,36],"promptText":"Rosa says the pattern 4, 12, 36 just adds the same number each time. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"terms":[4,12,36],"promptText":"Looking at 4, 12, 36, Rosa claims each jump is the same size. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0379",
@@ -11442,7 +11442,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"sequence":[33,39,45],"promptText":"Looking at 33, 39, 45, Diego claims each jump is the same size. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"terms":[33,39,45],"promptText":"Diego says the pattern 33, 39, 45 just adds the same number each time. Is Diego right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0380",
@@ -11452,7 +11452,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"sequence":[6,12,24],"promptText":"Nora says the pattern 6, 12, 24 just adds the same number each time. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"terms":[6,12,24],"promptText":"Nora says the pattern 6, 12, 24 just adds the same number each time. Is Nora right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0381",
@@ -11462,7 +11462,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"sequence":[16,23,30],"promptText":"Looking at 16, 23, 30, Luca claims each jump is the same size. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"terms":[16,23,30],"promptText":"Looking at 16, 23, 30, Luca claims each jump is the same size. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0382",
@@ -11472,7 +11472,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"sequence":[3,9,27],"promptText":"Ava says the pattern 3, 9, 27 just adds the same number each time. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"terms":[3,9,27],"promptText":"Looking at 3, 9, 27, Ava claims each jump is the same size. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0383",
@@ -11482,7 +11482,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"sequence":[42,50,58],"promptText":"Looking at 42, 50, 58, Omar claims each jump is the same size. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"terms":[42,50,58],"promptText":"Omar says the pattern 42, 50, 58 just adds the same number each time. Is Omar right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0384",
@@ -11492,7 +11492,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"sequence":[7,14,28],"promptText":"Ben says the pattern 7, 14, 28 just adds the same number each time. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"terms":[7,14,28],"promptText":"Ben says the pattern 7, 14, 28 just adds the same number each time. Is Ben right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0385",
@@ -11502,7 +11502,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"sequence":[27,36,45],"promptText":"Looking at 27, 36, 45, Finn claims each jump is the same size. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"terms":[27,36,45],"promptText":"Looking at 27, 36, 45, Finn claims each jump is the same size. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0386",
@@ -11512,7 +11512,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"sequence":[5,15,45],"promptText":"Priya says the pattern 5, 15, 45 just adds the same number each time. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"terms":[5,15,45],"promptText":"Looking at 5, 15, 45, Priya claims each jump is the same size. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0387",
@@ -11522,7 +11522,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"sequence":[19,25,31],"promptText":"Looking at 19, 25, 31, Sam claims each jump is the same size. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"terms":[19,25,31],"promptText":"Sam says the pattern 19, 25, 31 just adds the same number each time. Is Sam right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0388",
@@ -11532,7 +11532,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"sequence":[8,16,32],"promptText":"Nia says the pattern 8, 16, 32 just adds the same number each time. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"terms":[8,16,32],"promptText":"Nia says the pattern 8, 16, 32 just adds the same number each time. Is Nia right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0389",
@@ -11542,7 +11542,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"sequence":[35,42,49],"promptText":"Looking at 35, 42, 49, Kai claims each jump is the same size. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"terms":[35,42,49],"promptText":"Looking at 35, 42, 49, Kai claims each jump is the same size. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0390",
@@ -11552,7 +11552,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"sequence":[4,20,100],"promptText":"Amara says the pattern 4, 20, 100 just adds the same number each time. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"terms":[4,20,100],"promptText":"Amara says the pattern 4, 20, 100 just adds the same number each time. Is Amara right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0391",
@@ -11562,7 +11562,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"sequence":[112,137,162],"promptText":"Looking at 112, 137, 162, Leo claims each jump is the same size. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"terms":[112,137,162],"promptText":"Looking at 112, 137, 162, Leo claims each jump is the same size. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0392",
@@ -11572,7 +11572,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"sequence":[12,36,108],"promptText":"Mina says the pattern 12, 36, 108 just adds the same number each time. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"terms":[12,36,108],"promptText":"Looking at 12, 36, 108, Mina claims each jump is the same size. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0393",
@@ -11582,7 +11582,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"sequence":[221,234,247],"promptText":"Looking at 221, 234, 247, Theo claims each jump is the same size. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"terms":[221,234,247],"promptText":"Theo says the pattern 221, 234, 247 just adds the same number each time. Is Theo right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0394",
@@ -11592,7 +11592,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"sequence":[15,30,60],"promptText":"Ida says the pattern 15, 30, 60 just adds the same number each time. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"terms":[15,30,60],"promptText":"Ida says the pattern 15, 30, 60 just adds the same number each time. Is Ida right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0395",
@@ -11602,7 +11602,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"sequence":[313,340,367],"promptText":"Looking at 313, 340, 367, Zoe claims each jump is the same size. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"terms":[313,340,367],"promptText":"Looking at 313, 340, 367, Zoe claims each jump is the same size. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0396",
@@ -11612,7 +11612,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"sequence":[2,10,50],"promptText":"Rosa says the pattern 2, 10, 50 just adds the same number each time. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"terms":[2,10,50],"promptText":"Looking at 2, 10, 50, Rosa claims each jump is the same size. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0397",
@@ -11622,7 +11622,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"sequence":[126,142,158],"promptText":"Looking at 126, 142, 158, Diego claims each jump is the same size. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"terms":[126,142,158],"promptText":"Diego says the pattern 126, 142, 158 just adds the same number each time. Is Diego right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0398",
@@ -11632,7 +11632,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"sequence":[11,33,99],"promptText":"Nora says the pattern 11, 33, 99 just adds the same number each time. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"terms":[11,33,99],"promptText":"Nora says the pattern 11, 33, 99 just adds the same number each time. Is Nora right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0399",
@@ -11642,7 +11642,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"sequence":[412,426,440],"promptText":"Looking at 412, 426, 440, Luca claims each jump is the same size. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"terms":[412,426,440],"promptText":"Looking at 412, 426, 440, Luca claims each jump is the same size. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0400",
@@ -11652,7 +11652,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"sequence":[21,42,84],"promptText":"Ava says the pattern 21, 42, 84 just adds the same number each time. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"terms":[21,42,84],"promptText":"Looking at 21, 42, 84, Ava claims each jump is the same size. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0401",
@@ -11662,7 +11662,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"sequence":[227,255,283],"promptText":"Looking at 227, 255, 283, Omar claims each jump is the same size. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"terms":[227,255,283],"promptText":"Omar says the pattern 227, 255, 283 just adds the same number each time. Is Omar right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0402",
@@ -11672,7 +11672,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"sequence":[6,30,150],"promptText":"Ben says the pattern 6, 30, 150 just adds the same number each time. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"terms":[6,30,150],"promptText":"Ben says the pattern 6, 30, 150 just adds the same number each time. Is Ben right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0403",
@@ -11682,7 +11682,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"sequence":[119,134,149],"promptText":"Looking at 119, 134, 149, Finn claims each jump is the same size. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"terms":[119,134,149],"promptText":"Looking at 119, 134, 149, Finn claims each jump is the same size. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0404",
@@ -11692,7 +11692,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"sequence":[13,39,117],"promptText":"Priya says the pattern 13, 39, 117 just adds the same number each time. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"terms":[13,39,117],"promptText":"Looking at 13, 39, 117, Priya claims each jump is the same size. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0405",
@@ -11702,7 +11702,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"sequence":[335,362,389],"promptText":"Looking at 335, 362, 389, Sam claims each jump is the same size. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"terms":[335,362,389],"promptText":"Sam says the pattern 335, 362, 389 just adds the same number each time. Is Sam right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0406",
@@ -11712,7 +11712,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"sequence":[25,50,100],"promptText":"Nia says the pattern 25, 50, 100 just adds the same number each time. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"addOrMult","additive":false},"terms":[25,50,100],"promptText":"Nia says the pattern 25, 50, 100 just adds the same number each time. Is Nia right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0407",
@@ -11722,7 +11722,7 @@ export const ITEMS = [
     structureType: "addOrMultJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"sequence":[224,253,282],"promptText":"Looking at 224, 253, 282, Kai claims each jump is the same size. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"addOrMult","additive":true},"terms":[224,253,282],"promptText":"Looking at 224, 253, 282, Kai claims each jump is the same size. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0408",
@@ -11752,7 +11752,7 @@ export const ITEMS = [
     structureType: "doubleJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"s":8,"kind":"doubleSaid","said":16},"promptText":"Mina says doubling 8 gives 16. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"s":8,"kind":"doubleSaid","said":16},"promptText":"Mina doubles 8 and writes 16. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0411",
@@ -11762,7 +11762,7 @@ export const ITEMS = [
     structureType: "doubleJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"s":9,"kind":"doubleSaid","said":17},"promptText":"Theo doubles 9 and writes 17. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"s":9,"kind":"doubleSaid","said":17},"promptText":"Theo says doubling 9 gives 17. Is Theo right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0412",
@@ -11792,7 +11792,7 @@ export const ITEMS = [
     structureType: "doubleJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"s":3,"kind":"doubleSaid","said":6},"promptText":"Rosa says doubling 3 gives 6. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"s":3,"kind":"doubleSaid","said":6},"promptText":"Rosa doubles 3 and writes 6. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0415",
@@ -11802,7 +11802,7 @@ export const ITEMS = [
     structureType: "doubleJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"s":10,"kind":"doubleSaid","said":19},"promptText":"Diego doubles 10 and writes 19. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"s":10,"kind":"doubleSaid","said":19},"promptText":"Diego says doubling 10 gives 19. Is Diego right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0416",
@@ -12352,7 +12352,7 @@ export const ITEMS = [
     structureType: "whichFills_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[5,6,4,3],"display":{"counting":{"kind":"between","after":6,"before":2},"sequence":[2,"?",6,8],"promptText":"Luca sees the pattern 2, ?, 6, 8. Which number fills the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[5,6,4,3],"display":{"counting":{"kind":"between","after":6,"before":2},"terms":[2,"__",6,8],"promptText":"Luca sees the pattern 2, __, 6, 8. Which number fills the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0471",
@@ -12362,7 +12362,7 @@ export const ITEMS = [
     structureType: "whichFills_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[8,6,9,7],"display":{"counting":{"kind":"between","after":9,"before":5},"sequence":[3,5,"?",9],"promptText":"One number of Kai's pattern is hidden: 3, 5, ?, 9. Which number belongs in the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[8,6,9,7],"display":{"counting":{"kind":"between","after":9,"before":5},"terms":[3,5,"__",9],"promptText":"One number of Kai's pattern is hidden: 3, 5, __, 9. Which number belongs in the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0472",
@@ -12372,7 +12372,7 @@ export const ITEMS = [
     structureType: "whichFills_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[4,3,5,7],"display":{"counting":{"kind":"between","after":7,"before":1},"sequence":[1,"?",7,10],"promptText":"Zoe sees the pattern 1, ?, 7, 10. Which number fills the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[4,3,5,7],"display":{"counting":{"kind":"between","after":7,"before":1},"terms":[1,"__",7,10],"promptText":"Zoe sees the pattern 1, __, 7, 10. Which number fills the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0473",
@@ -12382,7 +12382,7 @@ export const ITEMS = [
     structureType: "whichFills_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[11,7,9,8],"display":{"counting":{"kind":"between","after":11,"before":5},"sequence":[2,5,"?",11],"promptText":"One number of Finn's pattern is hidden: 2, 5, ?, 11. Which number belongs in the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[11,7,9,8],"display":{"counting":{"kind":"between","after":11,"before":5},"terms":[2,5,"__",11],"promptText":"One number of Finn's pattern is hidden: 2, 5, __, 11. Which number belongs in the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0474",
@@ -12392,7 +12392,7 @@ export const ITEMS = [
     structureType: "whichFills_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[7,5,8,6],"display":{"counting":{"kind":"between","after":8,"before":4},"sequence":[4,"?",8,10],"promptText":"Leo sees the pattern 4, ?, 8, 10. Which number fills the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[7,5,8,6],"display":{"counting":{"kind":"between","after":8,"before":4},"terms":[4,"__",8,10],"promptText":"Leo sees the pattern 4, __, 8, 10. Which number fills the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0475",
@@ -12402,7 +12402,7 @@ export const ITEMS = [
     structureType: "whichFills_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[9,8,10,13],"display":{"counting":{"kind":"between","after":13,"before":5},"sequence":[1,5,"?",13],"promptText":"One number of Luca's pattern is hidden: 1, 5, ?, 13. Which number belongs in the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[9,8,10,13],"display":{"counting":{"kind":"between","after":13,"before":5},"terms":[1,5,"__",13],"promptText":"One number of Luca's pattern is hidden: 1, 5, __, 13. Which number belongs in the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0476",
@@ -12412,7 +12412,7 @@ export const ITEMS = [
     structureType: "whichFills_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[11,6,7,8],"display":{"counting":{"kind":"between","after":11,"before":3},"sequence":[3,"?",11,15],"promptText":"Kai sees the pattern 3, ?, 11, 15. Which number fills the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[11,6,7,8],"display":{"counting":{"kind":"between","after":11,"before":3},"terms":[3,"__",11,15],"promptText":"Kai sees the pattern 3, __, 11, 15. Which number fills the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0477",
@@ -12422,7 +12422,7 @@ export const ITEMS = [
     structureType: "whichFills_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[6,8,7,12],"display":{"counting":{"kind":"between","after":12,"before":2},"sequence":[2,"?",12,17],"promptText":"One number of Zoe's pattern is hidden: 2, ?, 12, 17. Which number belongs in the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[6,8,7,12],"display":{"counting":{"kind":"between","after":12,"before":2},"terms":[2,"__",12,17],"promptText":"One number of Zoe's pattern is hidden: 2, __, 12, 17. Which number belongs in the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0478",
@@ -12432,7 +12432,7 @@ export const ITEMS = [
     structureType: "whichFills_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[10,8,9,11],"display":{"counting":{"kind":"between","after":11,"before":7},"sequence":[5,7,"?",11],"promptText":"Finn sees the pattern 5, 7, ?, 11. Which number fills the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[10,8,9,11],"display":{"counting":{"kind":"between","after":11,"before":7},"terms":[5,7,"__",11],"promptText":"Finn sees the pattern 5, 7, __, 11. Which number fills the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0479",
@@ -12442,7 +12442,7 @@ export const ITEMS = [
     structureType: "whichFills_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[6,8,7,10],"display":{"counting":{"kind":"between","after":10,"before":4},"sequence":[4,"?",10,13],"promptText":"One number of Leo's pattern is hidden: 4, ?, 10, 13. Which number belongs in the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[6,8,7,10],"display":{"counting":{"kind":"between","after":10,"before":4},"terms":[4,"__",10,13],"promptText":"One number of Leo's pattern is hidden: 4, __, 10, 13. Which number belongs in the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0480",
@@ -12452,7 +12452,7 @@ export const ITEMS = [
     structureType: "whichFills_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[7,5,11,6],"display":{"counting":{"kind":"between","after":11,"before":1},"sequence":[1,"?",11,16],"promptText":"Luca sees the pattern 1, ?, 11, 16. Which number fills the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[7,5,11,6],"display":{"counting":{"kind":"between","after":11,"before":1},"terms":[1,"__",11,16],"promptText":"Luca sees the pattern 1, __, 11, 16. Which number fills the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0481",
@@ -12462,7 +12462,7 @@ export const ITEMS = [
     structureType: "whichFills_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[8,9,10,7],"display":{"counting":{"kind":"between","after":10,"before":6},"sequence":[6,"?",10,12],"promptText":"One number of Kai's pattern is hidden: 6, ?, 10, 12. Which number belongs in the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[8,9,10,7],"display":{"counting":{"kind":"between","after":10,"before":6},"terms":[6,"__",10,12],"promptText":"One number of Kai's pattern is hidden: 6, __, 10, 12. Which number belongs in the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0482",
@@ -12472,7 +12472,7 @@ export const ITEMS = [
     structureType: "whichFills_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"choices":[14,12,10,11],"display":{"counting":{"kind":"between","after":14,"before":8},"sequence":[5,8,"?",14],"promptText":"Zoe sees the pattern 5, 8, ?, 14. Which number fills the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":11,"choices":[14,12,10,11],"display":{"counting":{"kind":"between","after":14,"before":8},"terms":[5,8,"__",14],"promptText":"Zoe sees the pattern 5, 8, __, 14. Which number fills the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0483",
@@ -12482,7 +12482,7 @@ export const ITEMS = [
     structureType: "whichFills_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[12,14,18,13],"display":{"counting":{"kind":"between","after":18,"before":8},"sequence":[3,8,"?",18],"promptText":"One number of Finn's pattern is hidden: 3, 8, ?, 18. Which number belongs in the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[12,14,18,13],"display":{"counting":{"kind":"between","after":18,"before":8},"terms":[3,8,"__",18],"promptText":"One number of Finn's pattern is hidden: 3, 8, __, 18. Which number belongs in the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0484",
@@ -12492,7 +12492,7 @@ export const ITEMS = [
     structureType: "whichFills_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"choices":[11,13,10,12],"display":{"counting":{"kind":"between","after":13,"before":9},"sequence":[7,9,"?",13],"promptText":"Leo sees the pattern 7, 9, ?, 13. Which number fills the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":11,"choices":[11,13,10,12],"display":{"counting":{"kind":"between","after":13,"before":9},"terms":[7,9,"__",13],"promptText":"Leo sees the pattern 7, 9, __, 13. Which number fills the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0485",
@@ -12502,7 +12502,7 @@ export const ITEMS = [
     structureType: "whichFills_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[5,10,6,7],"display":{"counting":{"kind":"between","after":10,"before":2},"sequence":[2,"?",10,14],"promptText":"One number of Luca's pattern is hidden: 2, ?, 10, 14. Which number belongs in the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[5,10,6,7],"display":{"counting":{"kind":"between","after":10,"before":2},"terms":[2,"__",10,14],"promptText":"One number of Luca's pattern is hidden: 2, __, 10, 14. Which number belongs in the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0486",
@@ -12512,7 +12512,7 @@ export const ITEMS = [
     structureType: "whichFills_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[10,12,9,8],"display":{"counting":{"kind":"between","after":12,"before":6},"sequence":[6,"?",12,15],"promptText":"Kai sees the pattern 6, ?, 12, 15. Which number fills the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[10,12,9,8],"display":{"counting":{"kind":"between","after":12,"before":6},"terms":[6,"__",12,15],"promptText":"Kai sees the pattern 6, __, 12, 15. Which number fills the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0487",
@@ -12522,7 +12522,7 @@ export const ITEMS = [
     structureType: "whichFills_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[16,13,11,12],"display":{"counting":{"kind":"between","after":16,"before":8},"sequence":[4,8,"?",16],"promptText":"One number of Zoe's pattern is hidden: 4, 8, ?, 16. Which number belongs in the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[16,13,11,12],"display":{"counting":{"kind":"between","after":16,"before":8},"terms":[4,8,"__",16],"promptText":"One number of Zoe's pattern is hidden: 4, 8, __, 16. Which number belongs in the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0488",
@@ -12532,7 +12532,7 @@ export const ITEMS = [
     structureType: "whichFills_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"choices":[18,19,17,24],"display":{"counting":{"kind":"between","after":24,"before":12},"sequence":[12,"?",24,30],"promptText":"Sam sees the pattern 12, ?, 24, 30. Which number fills the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":18,"choices":[18,19,17,24],"display":{"counting":{"kind":"between","after":24,"before":12},"terms":[12,"__",24,30],"promptText":"Sam sees the pattern 12, __, 24, 30. Which number fills the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0489",
@@ -12542,7 +12542,7 @@ export const ITEMS = [
     structureType: "whichFills_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":39,"choices":[40,38,39,46],"display":{"counting":{"kind":"between","after":46,"before":32},"sequence":[25,32,"?",46],"promptText":"One number of Theo's pattern is hidden: 25, 32, ?, 46. Which number belongs in the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":39,"choices":[40,38,39,46],"display":{"counting":{"kind":"between","after":46,"before":32},"terms":[25,32,"__",46],"promptText":"One number of Theo's pattern is hidden: 25, 32, __, 46. Which number belongs in the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0490",
@@ -12552,7 +12552,7 @@ export const ITEMS = [
     structureType: "whichFills_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":39,"choices":[39,40,38,47],"display":{"counting":{"kind":"between","after":47,"before":31},"sequence":[31,"?",47,55],"promptText":"Omar sees the pattern 31, ?, 47, 55. Which number fills the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":39,"choices":[39,40,38,47],"display":{"counting":{"kind":"between","after":47,"before":31},"terms":[31,"__",47,55],"promptText":"Omar sees the pattern 31, __, 47, 55. Which number fills the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0491",
@@ -12562,7 +12562,7 @@ export const ITEMS = [
     structureType: "whichFills_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"choices":[41,33,32,31],"display":{"counting":{"kind":"between","after":41,"before":23},"sequence":[14,23,"?",41],"promptText":"One number of Lily's pattern is hidden: 14, 23, ?, 41. Which number belongs in the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":32,"choices":[41,33,32,31],"display":{"counting":{"kind":"between","after":41,"before":23},"terms":[14,23,"__",41],"promptText":"One number of Lily's pattern is hidden: 14, 23, __, 41. Which number belongs in the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0492",
@@ -12572,7 +12572,7 @@ export const ITEMS = [
     structureType: "whichFills_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"choices":[48,47,54,49],"display":{"counting":{"kind":"between","after":54,"before":42},"sequence":[42,"?",54,60],"promptText":"Diego sees the pattern 42, ?, 54, 60. Which number fills the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":48,"choices":[48,47,54,49],"display":{"counting":{"kind":"between","after":54,"before":42},"terms":[42,"__",54,60],"promptText":"Diego sees the pattern 42, __, 54, 60. Which number fills the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0493",
@@ -12582,7 +12582,7 @@ export const ITEMS = [
     structureType: "whichFills_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":37,"choices":[37,36,44,38],"display":{"counting":{"kind":"between","after":44,"before":30},"sequence":[23,30,"?",44],"promptText":"One number of Sam's pattern is hidden: 23, 30, ?, 44. Which number belongs in the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":37,"choices":[37,36,44,38],"display":{"counting":{"kind":"between","after":44,"before":30},"terms":[23,30,"__",44],"promptText":"One number of Sam's pattern is hidden: 23, 30, __, 44. Which number belongs in the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0494",
@@ -12592,7 +12592,7 @@ export const ITEMS = [
     structureType: "whichFills_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":43,"choices":[51,44,42,43],"display":{"counting":{"kind":"between","after":51,"before":35},"sequence":[35,"?",51,59],"promptText":"Theo sees the pattern 35, ?, 51, 59. Which number fills the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":43,"choices":[51,44,42,43],"display":{"counting":{"kind":"between","after":51,"before":35},"terms":[35,"__",51,59],"promptText":"Theo sees the pattern 35, __, 51, 59. Which number fills the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0495",
@@ -12602,7 +12602,7 @@ export const ITEMS = [
     structureType: "whichFills_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"choices":[24,34,26,25],"display":{"counting":{"kind":"between","after":34,"before":16},"sequence":[16,"?",34,43],"promptText":"One number of Omar's pattern is hidden: 16, ?, 34, 43. Which number belongs in the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":25,"choices":[24,34,26,25],"display":{"counting":{"kind":"between","after":34,"before":16},"terms":[16,"__",34,43],"promptText":"One number of Omar's pattern is hidden: 16, __, 34, 43. Which number belongs in the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0496",
@@ -12612,7 +12612,7 @@ export const ITEMS = [
     structureType: "whichFills_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":63,"choices":[64,63,62,69],"display":{"counting":{"kind":"between","after":69,"before":57},"sequence":[51,57,"?",69],"promptText":"Lily sees the pattern 51, 57, ?, 69. Which number fills the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":63,"choices":[64,63,62,69],"display":{"counting":{"kind":"between","after":69,"before":57},"terms":[51,57,"__",69],"promptText":"Lily sees the pattern 51, 57, __, 69. Which number fills the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0497",
@@ -12622,7 +12622,7 @@ export const ITEMS = [
     structureType: "whichFills_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":31,"choices":[30,32,31,35],"display":{"counting":{"kind":"between","after":35,"before":27},"sequence":[27,"?",35,39],"promptText":"One number of Diego's pattern is hidden: 27, ?, 35, 39. Which number belongs in the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":31,"choices":[30,32,31,35],"display":{"counting":{"kind":"between","after":35,"before":27},"terms":[27,"__",35,39],"promptText":"One number of Diego's pattern is hidden: 27, __, 35, 39. Which number belongs in the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0498",
@@ -12632,7 +12632,7 @@ export const ITEMS = [
     structureType: "whichFills_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":43,"choices":[44,42,48,43],"display":{"counting":{"kind":"between","after":48,"before":38},"sequence":[33,38,"?",48],"promptText":"Sam sees the pattern 33, 38, ?, 48. Which number fills the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":43,"choices":[44,42,48,43],"display":{"counting":{"kind":"between","after":48,"before":38},"terms":[33,38,"__",48],"promptText":"Sam sees the pattern 33, 38, __, 48. Which number fills the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0499",
@@ -12642,7 +12642,7 @@ export const ITEMS = [
     structureType: "whichFills_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":52,"choices":[59,53,52,51],"display":{"counting":{"kind":"between","after":59,"before":45},"sequence":[45,"?",59,66],"promptText":"One number of Theo's pattern is hidden: 45, ?, 59, 66. Which number belongs in the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":52,"choices":[59,53,52,51],"display":{"counting":{"kind":"between","after":59,"before":45},"terms":[45,"__",59,66],"promptText":"One number of Theo's pattern is hidden: 45, __, 59, 66. Which number belongs in the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0500",
@@ -12652,7 +12652,7 @@ export const ITEMS = [
     structureType: "whichFills_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"choices":[34,33,42,35],"display":{"counting":{"kind":"between","after":42,"before":26},"sequence":[18,26,"?",42],"promptText":"Omar sees the pattern 18, 26, ?, 42. Which number fills the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":34,"choices":[34,33,42,35],"display":{"counting":{"kind":"between","after":42,"before":26},"terms":[18,26,"__",42],"promptText":"Omar sees the pattern 18, 26, __, 42. Which number fills the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0501",
@@ -12662,7 +12662,7 @@ export const ITEMS = [
     structureType: "whichFills_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":65,"choices":[65,64,68,66],"display":{"counting":{"kind":"between","after":68,"before":62},"sequence":[62,"?",68,71],"promptText":"One number of Lily's pattern is hidden: 62, ?, 68, 71. Which number belongs in the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":65,"choices":[65,64,68,66],"display":{"counting":{"kind":"between","after":68,"before":62},"terms":[62,"__",68,71],"promptText":"One number of Lily's pattern is hidden: 62, __, 68, 71. Which number belongs in the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0502",
@@ -12672,7 +12672,7 @@ export const ITEMS = [
     structureType: "whichFills_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":47,"choices":[46,48,56,47],"display":{"counting":{"kind":"between","after":56,"before":38},"sequence":[29,38,"?",56],"promptText":"Diego sees the pattern 29, 38, ?, 56. Which number fills the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":47,"choices":[46,48,56,47],"display":{"counting":{"kind":"between","after":56,"before":38},"terms":[29,38,"__",56],"promptText":"Diego sees the pattern 29, 38, __, 56. Which number fills the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0503",
@@ -12682,7 +12682,7 @@ export const ITEMS = [
     structureType: "whichFills_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":43,"choices":[44,43,49,42],"display":{"counting":{"kind":"between","after":49,"before":37},"sequence":[37,"?",49,55],"promptText":"One number of Sam's pattern is hidden: 37, ?, 49, 55. Which number belongs in the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":43,"choices":[44,43,49,42],"display":{"counting":{"kind":"between","after":49,"before":37},"terms":[37,"__",49,55],"promptText":"One number of Sam's pattern is hidden: 37, __, 49, 55. Which number belongs in the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0504",
@@ -12692,7 +12692,7 @@ export const ITEMS = [
     structureType: "whichFills_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":54,"choices":[55,53,59,54],"display":{"counting":{"kind":"between","after":59,"before":49},"sequence":[44,49,"?",59],"promptText":"Theo sees the pattern 44, 49, ?, 59. Which number fills the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":54,"choices":[55,53,59,54],"display":{"counting":{"kind":"between","after":59,"before":49},"terms":[44,49,"__",59],"promptText":"Theo sees the pattern 44, 49, __, 59. Which number fills the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0505",
@@ -12702,7 +12702,7 @@ export const ITEMS = [
     structureType: "whichFills_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"choices":[64,61,60,59],"display":{"counting":{"kind":"between","after":64,"before":56},"sequence":[56,"?",64,68],"promptText":"One number of Omar's pattern is hidden: 56, ?, 64, 68. Which number belongs in the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":60,"choices":[64,61,60,59],"display":{"counting":{"kind":"between","after":64,"before":56},"terms":[56,"__",64,68],"promptText":"One number of Omar's pattern is hidden: 56, __, 64, 68. Which number belongs in the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0506",
@@ -12712,7 +12712,7 @@ export const ITEMS = [
     structureType: "whichFills_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":123,"choices":[124,134,123,122],"display":{"counting":{"kind":"between","after":134,"before":112},"sequence":[112,"?",134,145],"promptText":"Leo sees the pattern 112, ?, 134, 145. Which number fills the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":123,"choices":[124,134,123,122],"display":{"counting":{"kind":"between","after":134,"before":112},"terms":[112,"__",134,145],"promptText":"Leo sees the pattern 112, __, 134, 145. Which number fills the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0507",
@@ -12722,7 +12722,7 @@ export const ITEMS = [
     structureType: "whichFills_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":259,"choices":[259,271,258,260],"display":{"counting":{"kind":"between","after":271,"before":247},"sequence":[235,247,"?",271],"promptText":"One number of Luca's pattern is hidden: 235, 247, ?, 271. Which number belongs in the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":259,"choices":[259,271,258,260],"display":{"counting":{"kind":"between","after":271,"before":247},"terms":[235,247,"__",271],"promptText":"One number of Luca's pattern is hidden: 235, 247, __, 271. Which number belongs in the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0508",
@@ -12732,7 +12732,7 @@ export const ITEMS = [
     structureType: "whichFills_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":356,"choices":[355,357,371,356],"display":{"counting":{"kind":"between","after":371,"before":341},"sequence":[341,"?",371,386],"promptText":"Kai sees the pattern 341, ?, 371, 386. Which number fills the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":356,"choices":[355,357,371,356],"display":{"counting":{"kind":"between","after":371,"before":341},"terms":[341,"__",371,386],"promptText":"Kai sees the pattern 341, __, 371, 386. Which number fills the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0509",
@@ -12742,7 +12742,7 @@ export const ITEMS = [
     structureType: "whichFills_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":174,"choices":[199,175,173,174],"display":{"counting":{"kind":"between","after":199,"before":149},"sequence":[124,149,"?",199],"promptText":"One number of Zoe's pattern is hidden: 124, 149, ?, 199. Which number belongs in the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":174,"choices":[199,175,173,174],"display":{"counting":{"kind":"between","after":199,"before":149},"terms":[124,149,"__",199],"promptText":"One number of Zoe's pattern is hidden: 124, 149, __, 199. Which number belongs in the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0510",
@@ -12752,7 +12752,7 @@ export const ITEMS = [
     structureType: "whichFills_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":463,"choices":[463,474,464,462],"display":{"counting":{"kind":"between","after":474,"before":452},"sequence":[452,"?",474,485],"promptText":"Finn sees the pattern 452, ?, 474, 485. Which number fills the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":463,"choices":[463,474,464,462],"display":{"counting":{"kind":"between","after":474,"before":452},"terms":[452,"__",474,485],"promptText":"Finn sees the pattern 452, __, 474, 485. Which number fills the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0511",
@@ -12762,7 +12762,7 @@ export const ITEMS = [
     structureType: "whichFills_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":251,"choices":[265,251,250,252],"display":{"counting":{"kind":"between","after":265,"before":237},"sequence":[223,237,"?",265],"promptText":"One number of Leo's pattern is hidden: 223, 237, ?, 265. Which number belongs in the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":251,"choices":[265,251,250,252],"display":{"counting":{"kind":"between","after":265,"before":237},"terms":[223,237,"__",265],"promptText":"One number of Leo's pattern is hidden: 223, 237, __, 265. Which number belongs in the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0512",
@@ -12772,7 +12772,7 @@ export const ITEMS = [
     structureType: "whichFills_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":356,"choices":[356,357,355,377],"display":{"counting":{"kind":"between","after":377,"before":335},"sequence":[335,"?",377,398],"promptText":"Luca sees the pattern 335, ?, 377, 398. Which number fills the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":356,"choices":[356,357,355,377],"display":{"counting":{"kind":"between","after":377,"before":335},"terms":[335,"__",377,398],"promptText":"Luca sees the pattern 335, __, 377, 398. Which number fills the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0513",
@@ -12782,7 +12782,7 @@ export const ITEMS = [
     structureType: "whichFills_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":170,"choices":[169,171,182,170],"display":{"counting":{"kind":"between","after":182,"before":158},"sequence":[146,158,"?",182],"promptText":"One number of Kai's pattern is hidden: 146, 158, ?, 182. Which number belongs in the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":170,"choices":[169,171,182,170],"display":{"counting":{"kind":"between","after":182,"before":158},"terms":[146,158,"__",182],"promptText":"One number of Kai's pattern is hidden: 146, 158, __, 182. Which number belongs in the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0514",
@@ -12792,7 +12792,7 @@ export const ITEMS = [
     structureType: "whichFills_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":531,"choices":[530,544,532,531],"display":{"counting":{"kind":"between","after":544,"before":518},"sequence":[518,"?",544,557],"promptText":"Zoe sees the pattern 518, ?, 544, 557. Which number fills the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":531,"choices":[530,544,532,531],"display":{"counting":{"kind":"between","after":544,"before":518},"terms":[518,"__",544,557],"promptText":"Zoe sees the pattern 518, __, 544, 557. Which number fills the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0515",
@@ -12802,7 +12802,7 @@ export const ITEMS = [
     structureType: "whichFills_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":279,"choices":[279,278,280,295],"display":{"counting":{"kind":"between","after":295,"before":263},"sequence":[247,263,"?",295],"promptText":"One number of Finn's pattern is hidden: 247, 263, ?, 295. Which number belongs in the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":279,"choices":[279,278,280,295],"display":{"counting":{"kind":"between","after":295,"before":263},"terms":[247,263,"__",295],"promptText":"One number of Finn's pattern is hidden: 247, 263, __, 295. Which number belongs in the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0516",
@@ -12812,7 +12812,7 @@ export const ITEMS = [
     structureType: "whichFills_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":355,"choices":[355,354,377,356],"display":{"counting":{"kind":"between","after":377,"before":333},"sequence":[333,"?",377,399],"promptText":"Leo sees the pattern 333, ?, 377, 399. Which number fills the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":355,"choices":[355,354,377,356],"display":{"counting":{"kind":"between","after":377,"before":333},"terms":[333,"__",377,399],"promptText":"Leo sees the pattern 333, __, 377, 399. Which number fills the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0517",
@@ -12822,7 +12822,7 @@ export const ITEMS = [
     structureType: "whichFills_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":451,"choices":[451,452,450,469],"display":{"counting":{"kind":"between","after":469,"before":433},"sequence":[415,433,"?",469],"promptText":"One number of Luca's pattern is hidden: 415, 433, ?, 469. Which number belongs in the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":451,"choices":[451,452,450,469],"display":{"counting":{"kind":"between","after":469,"before":433},"terms":[415,433,"__",469],"promptText":"One number of Luca's pattern is hidden: 415, 433, __, 469. Which number belongs in the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0518",
@@ -12832,7 +12832,7 @@ export const ITEMS = [
     structureType: "whichFills_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":152,"choices":[176,153,151,152],"display":{"counting":{"kind":"between","after":176,"before":128},"sequence":[128,"?",176,200],"promptText":"Kai sees the pattern 128, ?, 176, 200. Which number fills the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":152,"choices":[176,153,151,152],"display":{"counting":{"kind":"between","after":176,"before":128},"terms":[128,"__",176,200],"promptText":"Kai sees the pattern 128, __, 176, 200. Which number fills the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0519",
@@ -12842,7 +12842,7 @@ export const ITEMS = [
     structureType: "whichFills_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":652,"choices":[653,652,651,667],"display":{"counting":{"kind":"between","after":667,"before":637},"sequence":[622,637,"?",667],"promptText":"One number of Zoe's pattern is hidden: 622, 637, ?, 667. Which number belongs in the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":652,"choices":[653,652,651,667],"display":{"counting":{"kind":"between","after":667,"before":637},"terms":[622,637,"__",667],"promptText":"One number of Zoe's pattern is hidden: 622, 637, __, 667. Which number belongs in the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0520",
@@ -12852,7 +12852,7 @@ export const ITEMS = [
     structureType: "whichFills_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":306,"choices":[306,307,323,305],"display":{"counting":{"kind":"between","after":323,"before":289},"sequence":[289,"?",323,340],"promptText":"Finn sees the pattern 289, ?, 323, 340. Which number fills the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":306,"choices":[306,307,323,305],"display":{"counting":{"kind":"between","after":323,"before":289},"terms":[289,"__",323,340],"promptText":"Finn sees the pattern 289, __, 323, 340. Which number fills the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0521",
@@ -12862,7 +12862,7 @@ export const ITEMS = [
     structureType: "whichFills_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":363,"choices":[364,363,386,362],"display":{"counting":{"kind":"between","after":386,"before":340},"sequence":[317,340,"?",386],"promptText":"One number of Leo's pattern is hidden: 317, 340, ?, 386. Which number belongs in the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":363,"choices":[364,363,386,362],"display":{"counting":{"kind":"between","after":386,"before":340},"terms":[317,340,"__",386],"promptText":"One number of Leo's pattern is hidden: 317, 340, __, 386. Which number belongs in the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0522",
@@ -12872,7 +12872,7 @@ export const ITEMS = [
     structureType: "whichFills_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":453,"choices":[453,452,472,454],"display":{"counting":{"kind":"between","after":472,"before":434},"sequence":[434,"?",472,491],"promptText":"Luca sees the pattern 434, ?, 472, 491. Which number fills the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":453,"choices":[453,452,472,454],"display":{"counting":{"kind":"between","after":472,"before":434},"terms":[434,"__",472,491],"promptText":"Luca sees the pattern 434, __, 472, 491. Which number fills the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0523",
@@ -12882,7 +12882,7 @@ export const ITEMS = [
     structureType: "whichFills_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":552,"choices":[552,565,551,553],"display":{"counting":{"kind":"between","after":565,"before":539},"sequence":[526,539,"?",565],"promptText":"One number of Kai's pattern is hidden: 526, 539, ?, 565. Which number belongs in the gap?"}},
+    question: {"a":null,"b":null,"op":"count","answer":552,"choices":[552,565,551,553],"display":{"counting":{"kind":"between","after":565,"before":539},"terms":[526,539,"__",565],"promptText":"One number of Kai's pattern is hidden: 526, 539, __, 565. Which number belongs in the gap?"}},
   },
   {
     itemId: "patterns-conc-b0821-0524",
@@ -12892,7 +12892,7 @@ export const ITEMS = [
     structureType: "judgeFill_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":4,"step":2,"start":2},"sequence":[2,"?",6,8],"promptText":"Amara fills the gap in 2, ?, 6, 8 with 4. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":4,"step":2,"start":2},"terms":[2,"__",6,8],"promptText":"Amara fills the gap in 2, __, 6, 8 with 4. Is Amara right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0525",
@@ -12902,7 +12902,7 @@ export const ITEMS = [
     structureType: "judgeFill_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":6,"step":2,"start":3},"sequence":[3,5,"?",9],"promptText":"The pattern reads 3, 5, ?, 9. Leo writes 6 in the gap. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":6,"step":2,"start":3},"terms":[3,5,"__",9],"promptText":"The pattern reads 3, 5, __, 9. Leo writes 6 in the gap. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0526",
@@ -12912,7 +12912,7 @@ export const ITEMS = [
     structureType: "judgeFill_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":4,"step":3,"start":1},"sequence":[1,"?",7,10],"promptText":"Mina fills the gap in 1, ?, 7, 10 with 4. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":4,"step":3,"start":1},"terms":[1,"__",7,10],"promptText":"The pattern reads 1, __, 7, 10. Mina writes 4 in the gap. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0527",
@@ -12922,7 +12922,7 @@ export const ITEMS = [
     structureType: "judgeFill_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":7,"step":3,"start":2},"sequence":[2,5,"?",11],"promptText":"The pattern reads 2, 5, ?, 11. Theo writes 7 in the gap. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":7,"step":3,"start":2},"terms":[2,5,"__",11],"promptText":"Theo fills the gap in 2, 5, __, 11 with 7. Is Theo right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0528",
@@ -12932,7 +12932,7 @@ export const ITEMS = [
     structureType: "judgeFill_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":6,"step":2,"start":4},"sequence":[4,"?",8,10],"promptText":"Ida fills the gap in 4, ?, 8, 10 with 6. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":6,"step":2,"start":4},"terms":[4,"__",8,10],"promptText":"Ida fills the gap in 4, __, 8, 10 with 6. Is Ida right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0529",
@@ -12942,7 +12942,7 @@ export const ITEMS = [
     structureType: "judgeFill_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":8,"step":4,"start":1},"sequence":[1,5,"?",13],"promptText":"The pattern reads 1, 5, ?, 13. Zoe writes 8 in the gap. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":8,"step":4,"start":1},"terms":[1,5,"__",13],"promptText":"The pattern reads 1, 5, __, 13. Zoe writes 8 in the gap. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0530",
@@ -12952,7 +12952,7 @@ export const ITEMS = [
     structureType: "judgeFill_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":7,"step":4,"start":3},"sequence":[3,"?",11,15],"promptText":"Rosa fills the gap in 3, ?, 11, 15 with 7. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":7,"step":4,"start":3},"terms":[3,"__",11,15],"promptText":"The pattern reads 3, __, 11, 15. Rosa writes 7 in the gap. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0531",
@@ -12962,7 +12962,7 @@ export const ITEMS = [
     structureType: "judgeFill_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":1,"kind":"fill","said":6,"step":5,"start":2},"sequence":[2,"?",12,17],"promptText":"The pattern reads 2, ?, 12, 17. Diego writes 6 in the gap. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":1,"kind":"fill","said":6,"step":5,"start":2},"terms":[2,"__",12,17],"promptText":"Diego fills the gap in 2, __, 12, 17 with 6. Is Diego right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0532",
@@ -12972,7 +12972,7 @@ export const ITEMS = [
     structureType: "judgeFill_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":2,"kind":"fill","said":9,"step":2,"start":5},"sequence":[5,7,"?",11],"promptText":"Nora fills the gap in 5, 7, ?, 11 with 9. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":2,"kind":"fill","said":9,"step":2,"start":5},"terms":[5,7,"__",11],"promptText":"Nora fills the gap in 5, 7, __, 11 with 9. Is Nora right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0533",
@@ -12982,7 +12982,7 @@ export const ITEMS = [
     structureType: "judgeFill_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":1,"kind":"fill","said":6,"step":3,"start":4},"sequence":[4,"?",10,13],"promptText":"The pattern reads 4, ?, 10, 13. Luca writes 6 in the gap. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":1,"kind":"fill","said":6,"step":3,"start":4},"terms":[4,"__",10,13],"promptText":"The pattern reads 4, __, 10, 13. Luca writes 6 in the gap. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0534",
@@ -12992,7 +12992,7 @@ export const ITEMS = [
     structureType: "judgeFill_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":6,"step":5,"start":1},"sequence":[1,"?",11,16],"promptText":"Ava fills the gap in 1, ?, 11, 16 with 6. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":6,"step":5,"start":1},"terms":[1,"__",11,16],"promptText":"The pattern reads 1, __, 11, 16. Ava writes 6 in the gap. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0535",
@@ -13002,7 +13002,7 @@ export const ITEMS = [
     structureType: "judgeFill_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":1,"kind":"fill","said":7,"step":2,"start":6},"sequence":[6,"?",10,12],"promptText":"The pattern reads 6, ?, 10, 12. Omar writes 7 in the gap. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":1,"kind":"fill","said":7,"step":2,"start":6},"terms":[6,"__",10,12],"promptText":"Omar fills the gap in 6, __, 10, 12 with 7. Is Omar right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0536",
@@ -13012,7 +13012,7 @@ export const ITEMS = [
     structureType: "judgeFill_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":2,"kind":"fill","said":11,"step":3,"start":5},"sequence":[5,8,"?",14],"promptText":"Ben fills the gap in 5, 8, ?, 14 with 11. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":2,"kind":"fill","said":11,"step":3,"start":5},"terms":[5,8,"__",14],"promptText":"Ben fills the gap in 5, 8, __, 14 with 11. Is Ben right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0537",
@@ -13022,7 +13022,7 @@ export const ITEMS = [
     structureType: "judgeFill_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":12,"step":5,"start":3},"sequence":[3,8,"?",18],"promptText":"The pattern reads 3, 8, ?, 18. Finn writes 12 in the gap. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":12,"step":5,"start":3},"terms":[3,8,"__",18],"promptText":"The pattern reads 3, 8, __, 18. Finn writes 12 in the gap. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0538",
@@ -13032,7 +13032,7 @@ export const ITEMS = [
     structureType: "judgeFill_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":2,"kind":"fill","said":11,"step":2,"start":7},"sequence":[7,9,"?",13],"promptText":"Priya fills the gap in 7, 9, ?, 13 with 11. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":2,"kind":"fill","said":11,"step":2,"start":7},"terms":[7,9,"__",13],"promptText":"The pattern reads 7, 9, __, 13. Priya writes 11 in the gap. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0539",
@@ -13042,7 +13042,7 @@ export const ITEMS = [
     structureType: "judgeFill_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":1,"kind":"fill","said":5,"step":4,"start":2},"sequence":[2,"?",10,14],"promptText":"The pattern reads 2, ?, 10, 14. Sam writes 5 in the gap. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":1,"kind":"fill","said":5,"step":4,"start":2},"terms":[2,"__",10,14],"promptText":"Sam fills the gap in 2, __, 10, 14 with 5. Is Sam right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0540",
@@ -13052,7 +13052,7 @@ export const ITEMS = [
     structureType: "judgeFill_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":9,"step":3,"start":6},"sequence":[6,"?",12,15],"promptText":"Nia fills the gap in 6, ?, 12, 15 with 9. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":9,"step":3,"start":6},"terms":[6,"__",12,15],"promptText":"Nia fills the gap in 6, __, 12, 15 with 9. Is Nia right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0541",
@@ -13062,7 +13062,7 @@ export const ITEMS = [
     structureType: "judgeFill_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":11,"step":4,"start":4},"sequence":[4,8,"?",16],"promptText":"The pattern reads 4, 8, ?, 16. Kai writes 11 in the gap. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":11,"step":4,"start":4},"terms":[4,8,"__",16],"promptText":"The pattern reads 4, 8, __, 16. Kai writes 11 in the gap. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0542",
@@ -13072,7 +13072,7 @@ export const ITEMS = [
     structureType: "judgeFill_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":18,"step":6,"start":12},"sequence":[12,"?",24,30],"promptText":"Amara fills the gap in 12, ?, 24, 30 with 18. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":18,"step":6,"start":12},"terms":[12,"__",24,30],"promptText":"Amara fills the gap in 12, __, 24, 30 with 18. Is Amara right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0543",
@@ -13082,7 +13082,7 @@ export const ITEMS = [
     structureType: "judgeFill_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":38,"step":7,"start":25},"sequence":[25,32,"?",46],"promptText":"The pattern reads 25, 32, ?, 46. Leo writes 38 in the gap. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":38,"step":7,"start":25},"terms":[25,32,"__",46],"promptText":"The pattern reads 25, 32, __, 46. Leo writes 38 in the gap. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0544",
@@ -13092,7 +13092,7 @@ export const ITEMS = [
     structureType: "judgeFill_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":39,"step":8,"start":31},"sequence":[31,"?",47,55],"promptText":"Mina fills the gap in 31, ?, 47, 55 with 39. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":39,"step":8,"start":31},"terms":[31,"__",47,55],"promptText":"The pattern reads 31, __, 47, 55. Mina writes 39 in the gap. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0545",
@@ -13102,7 +13102,7 @@ export const ITEMS = [
     structureType: "judgeFill_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":31,"step":9,"start":14},"sequence":[14,23,"?",41],"promptText":"The pattern reads 14, 23, ?, 41. Theo writes 31 in the gap. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":31,"step":9,"start":14},"terms":[14,23,"__",41],"promptText":"Theo fills the gap in 14, 23, __, 41 with 31. Is Theo right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0546",
@@ -13112,7 +13112,7 @@ export const ITEMS = [
     structureType: "judgeFill_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":48,"step":6,"start":42},"sequence":[42,"?",54,60],"promptText":"Ida fills the gap in 42, ?, 54, 60 with 48. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":48,"step":6,"start":42},"terms":[42,"__",54,60],"promptText":"Ida fills the gap in 42, __, 54, 60 with 48. Is Ida right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0547",
@@ -13122,7 +13122,7 @@ export const ITEMS = [
     structureType: "judgeFill_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":36,"step":7,"start":23},"sequence":[23,30,"?",44],"promptText":"The pattern reads 23, 30, ?, 44. Zoe writes 36 in the gap. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":36,"step":7,"start":23},"terms":[23,30,"__",44],"promptText":"The pattern reads 23, 30, __, 44. Zoe writes 36 in the gap. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0548",
@@ -13132,7 +13132,7 @@ export const ITEMS = [
     structureType: "judgeFill_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":43,"step":8,"start":35},"sequence":[35,"?",51,59],"promptText":"Rosa fills the gap in 35, ?, 51, 59 with 43. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":43,"step":8,"start":35},"terms":[35,"__",51,59],"promptText":"The pattern reads 35, __, 51, 59. Rosa writes 43 in the gap. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0549",
@@ -13142,7 +13142,7 @@ export const ITEMS = [
     structureType: "judgeFill_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":1,"kind":"fill","said":24,"step":9,"start":16},"sequence":[16,"?",34,43],"promptText":"The pattern reads 16, ?, 34, 43. Diego writes 24 in the gap. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":1,"kind":"fill","said":24,"step":9,"start":16},"terms":[16,"__",34,43],"promptText":"Diego fills the gap in 16, __, 34, 43 with 24. Is Diego right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0550",
@@ -13152,7 +13152,7 @@ export const ITEMS = [
     structureType: "judgeFill_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":2,"kind":"fill","said":63,"step":6,"start":51},"sequence":[51,57,"?",69],"promptText":"Nora fills the gap in 51, 57, ?, 69 with 63. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":2,"kind":"fill","said":63,"step":6,"start":51},"terms":[51,57,"__",69],"promptText":"Nora fills the gap in 51, 57, __, 69 with 63. Is Nora right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0551",
@@ -13162,7 +13162,7 @@ export const ITEMS = [
     structureType: "judgeFill_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":1,"kind":"fill","said":30,"step":4,"start":27},"sequence":[27,"?",35,39],"promptText":"The pattern reads 27, ?, 35, 39. Luca writes 30 in the gap. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":1,"kind":"fill","said":30,"step":4,"start":27},"terms":[27,"__",35,39],"promptText":"The pattern reads 27, __, 35, 39. Luca writes 30 in the gap. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0552",
@@ -13172,7 +13172,7 @@ export const ITEMS = [
     structureType: "judgeFill_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":2,"kind":"fill","said":43,"step":5,"start":33},"sequence":[33,38,"?",48],"promptText":"Ava fills the gap in 33, 38, ?, 48 with 43. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":2,"kind":"fill","said":43,"step":5,"start":33},"terms":[33,38,"__",48],"promptText":"The pattern reads 33, 38, __, 48. Ava writes 43 in the gap. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0553",
@@ -13182,7 +13182,7 @@ export const ITEMS = [
     structureType: "judgeFill_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":1,"kind":"fill","said":51,"step":7,"start":45},"sequence":[45,"?",59,66],"promptText":"The pattern reads 45, ?, 59, 66. Omar writes 51 in the gap. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":1,"kind":"fill","said":51,"step":7,"start":45},"terms":[45,"__",59,66],"promptText":"Omar fills the gap in 45, __, 59, 66 with 51. Is Omar right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0554",
@@ -13192,7 +13192,7 @@ export const ITEMS = [
     structureType: "judgeFill_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":2,"kind":"fill","said":34,"step":8,"start":18},"sequence":[18,26,"?",42],"promptText":"Ben fills the gap in 18, 26, ?, 42 with 34. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":2,"kind":"fill","said":34,"step":8,"start":18},"terms":[18,26,"__",42],"promptText":"Ben fills the gap in 18, 26, __, 42 with 34. Is Ben right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0555",
@@ -13202,7 +13202,7 @@ export const ITEMS = [
     structureType: "judgeFill_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":1,"kind":"fill","said":64,"step":3,"start":62},"sequence":[62,"?",68,71],"promptText":"The pattern reads 62, ?, 68, 71. Finn writes 64 in the gap. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":1,"kind":"fill","said":64,"step":3,"start":62},"terms":[62,"__",68,71],"promptText":"The pattern reads 62, __, 68, 71. Finn writes 64 in the gap. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0556",
@@ -13212,7 +13212,7 @@ export const ITEMS = [
     structureType: "judgeFill_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":2,"kind":"fill","said":47,"step":9,"start":29},"sequence":[29,38,"?",56],"promptText":"Priya fills the gap in 29, 38, ?, 56 with 47. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":2,"kind":"fill","said":47,"step":9,"start":29},"terms":[29,38,"__",56],"promptText":"The pattern reads 29, 38, __, 56. Priya writes 47 in the gap. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0557",
@@ -13222,7 +13222,7 @@ export const ITEMS = [
     structureType: "judgeFill_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":1,"kind":"fill","said":42,"step":6,"start":37},"sequence":[37,"?",49,55],"promptText":"The pattern reads 37, ?, 49, 55. Sam writes 42 in the gap. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":1,"kind":"fill","said":42,"step":6,"start":37},"terms":[37,"__",49,55],"promptText":"Sam fills the gap in 37, __, 49, 55 with 42. Is Sam right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0558",
@@ -13232,7 +13232,7 @@ export const ITEMS = [
     structureType: "judgeFill_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":2,"kind":"fill","said":54,"step":5,"start":44},"sequence":[44,49,"?",59],"promptText":"Nia fills the gap in 44, 49, ?, 59 with 54. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":2,"kind":"fill","said":54,"step":5,"start":44},"terms":[44,49,"__",59],"promptText":"Nia fills the gap in 44, 49, __, 59 with 54. Is Nia right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0559",
@@ -13242,7 +13242,7 @@ export const ITEMS = [
     structureType: "judgeFill_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":1,"kind":"fill","said":59,"step":4,"start":56},"sequence":[56,"?",64,68],"promptText":"The pattern reads 56, ?, 64, 68. Kai writes 59 in the gap. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":1,"kind":"fill","said":59,"step":4,"start":56},"terms":[56,"__",64,68],"promptText":"The pattern reads 56, __, 64, 68. Kai writes 59 in the gap. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0560",
@@ -13252,7 +13252,7 @@ export const ITEMS = [
     structureType: "judgeFill_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":123,"step":11,"start":112},"sequence":[112,"?",134,145],"promptText":"Amara fills the gap in 112, ?, 134, 145 with 123. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":123,"step":11,"start":112},"terms":[112,"__",134,145],"promptText":"Amara fills the gap in 112, __, 134, 145 with 123. Is Amara right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0561",
@@ -13262,7 +13262,7 @@ export const ITEMS = [
     structureType: "judgeFill_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":258,"step":12,"start":235},"sequence":[235,247,"?",271],"promptText":"The pattern reads 235, 247, ?, 271. Leo writes 258 in the gap. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":258,"step":12,"start":235},"terms":[235,247,"__",271],"promptText":"The pattern reads 235, 247, __, 271. Leo writes 258 in the gap. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0562",
@@ -13272,7 +13272,7 @@ export const ITEMS = [
     structureType: "judgeFill_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":356,"step":15,"start":341},"sequence":[341,"?",371,386],"promptText":"Mina fills the gap in 341, ?, 371, 386 with 356. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":2,"kind":"fill","said":371,"step":15,"start":341},"terms":[341,356,"__",386],"promptText":"The pattern reads 341, 356, __, 386. Mina writes 371 in the gap. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0563",
@@ -13282,7 +13282,7 @@ export const ITEMS = [
     structureType: "judgeFill_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":173,"step":25,"start":124},"sequence":[124,149,"?",199],"promptText":"The pattern reads 124, 149, ?, 199. Theo writes 173 in the gap. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":1,"kind":"fill","said":148,"step":25,"start":124},"terms":[124,"__",174,199],"promptText":"Theo fills the gap in 124, __, 174, 199 with 148. Is Theo right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0564",
@@ -13292,7 +13292,7 @@ export const ITEMS = [
     structureType: "judgeFill_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":463,"step":11,"start":452},"sequence":[452,"?",474,485],"promptText":"Ida fills the gap in 452, ?, 474, 485 with 463. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":2,"kind":"fill","said":474,"step":11,"start":452},"terms":[452,463,"__",485],"promptText":"Ida fills the gap in 452, 463, __, 485 with 474. Is Ida right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0565",
@@ -13302,7 +13302,7 @@ export const ITEMS = [
     structureType: "judgeFill_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":250,"step":14,"start":223},"sequence":[223,237,"?",265],"promptText":"The pattern reads 223, 237, ?, 265. Zoe writes 250 in the gap. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":1,"kind":"fill","said":236,"step":14,"start":223},"terms":[223,"__",251,265],"promptText":"The pattern reads 223, __, 251, 265. Zoe writes 236 in the gap. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0566",
@@ -13312,7 +13312,7 @@ export const ITEMS = [
     structureType: "judgeFill_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":356,"step":21,"start":335},"sequence":[335,"?",377,398],"promptText":"Rosa fills the gap in 335, ?, 377, 398 with 356. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":356,"step":21,"start":335},"terms":[335,"__",377,398],"promptText":"The pattern reads 335, __, 377, 398. Rosa writes 356 in the gap. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0567",
@@ -13322,7 +13322,7 @@ export const ITEMS = [
     structureType: "judgeFill_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":169,"step":12,"start":146},"sequence":[146,158,"?",182],"promptText":"The pattern reads 146, 158, ?, 182. Diego writes 169 in the gap. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":169,"step":12,"start":146},"terms":[146,158,"__",182],"promptText":"Diego fills the gap in 146, 158, __, 182 with 169. Is Diego right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0568",
@@ -13332,7 +13332,7 @@ export const ITEMS = [
     structureType: "judgeFill_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":531,"step":13,"start":518},"sequence":[518,"?",544,557],"promptText":"Nora fills the gap in 518, ?, 544, 557 with 531. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":531,"step":13,"start":518},"terms":[518,"__",544,557],"promptText":"Nora fills the gap in 518, __, 544, 557 with 531. Is Nora right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0569",
@@ -13342,7 +13342,7 @@ export const ITEMS = [
     structureType: "judgeFill_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":278,"step":16,"start":247},"sequence":[247,263,"?",295],"promptText":"The pattern reads 247, 263, ?, 295. Luca writes 278 in the gap. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":278,"step":16,"start":247},"terms":[247,263,"__",295],"promptText":"The pattern reads 247, 263, __, 295. Luca writes 278 in the gap. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0570",
@@ -13352,7 +13352,7 @@ export const ITEMS = [
     structureType: "judgeFill_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":355,"step":22,"start":333},"sequence":[333,"?",377,399],"promptText":"Ava fills the gap in 333, ?, 377, 399 with 355. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":2,"kind":"fill","said":377,"step":22,"start":333},"terms":[333,355,"__",399],"promptText":"The pattern reads 333, 355, __, 399. Ava writes 377 in the gap. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0571",
@@ -13362,7 +13362,7 @@ export const ITEMS = [
     structureType: "judgeFill_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":450,"step":18,"start":415},"sequence":[415,433,"?",469],"promptText":"The pattern reads 415, 433, ?, 469. Omar writes 450 in the gap. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":1,"kind":"fill","said":432,"step":18,"start":415},"terms":[415,"__",451,469],"promptText":"Omar fills the gap in 415, __, 451, 469 with 432. Is Omar right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0572",
@@ -13372,7 +13372,7 @@ export const ITEMS = [
     structureType: "judgeFill_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":152,"step":24,"start":128},"sequence":[128,"?",176,200],"promptText":"Ben fills the gap in 128, ?, 176, 200 with 152. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":2,"kind":"fill","said":176,"step":24,"start":128},"terms":[128,152,"__",200],"promptText":"Ben fills the gap in 128, 152, __, 200 with 176. Is Ben right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0573",
@@ -13382,7 +13382,7 @@ export const ITEMS = [
     structureType: "judgeFill_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":651,"step":15,"start":622},"sequence":[622,637,"?",667],"promptText":"The pattern reads 622, 637, ?, 667. Finn writes 651 in the gap. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":1,"kind":"fill","said":636,"step":15,"start":622},"terms":[622,"__",652,667],"promptText":"The pattern reads 622, __, 652, 667. Finn writes 636 in the gap. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0574",
@@ -13392,7 +13392,7 @@ export const ITEMS = [
     structureType: "judgeFill_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":306,"step":17,"start":289},"sequence":[289,"?",323,340],"promptText":"Priya fills the gap in 289, ?, 323, 340 with 306. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":306,"step":17,"start":289},"terms":[289,"__",323,340],"promptText":"The pattern reads 289, __, 323, 340. Priya writes 306 in the gap. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0575",
@@ -13402,7 +13402,7 @@ export const ITEMS = [
     structureType: "judgeFill_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":362,"step":23,"start":317},"sequence":[317,340,"?",386],"promptText":"The pattern reads 317, 340, ?, 386. Sam writes 362 in the gap. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":362,"step":23,"start":317},"terms":[317,340,"__",386],"promptText":"Sam fills the gap in 317, 340, __, 386 with 362. Is Sam right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0576",
@@ -13412,7 +13412,7 @@ export const ITEMS = [
     structureType: "judgeFill_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":453,"step":19,"start":434},"sequence":[434,"?",472,491],"promptText":"Nia fills the gap in 434, ?, 472, 491 with 453. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"g":1,"kind":"fill","said":453,"step":19,"start":434},"terms":[434,"__",472,491],"promptText":"Nia fills the gap in 434, __, 472, 491 with 453. Is Nia right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0577",
@@ -13422,7 +13422,7 @@ export const ITEMS = [
     structureType: "judgeFill_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":551,"step":13,"start":526},"sequence":[526,539,"?",565],"promptText":"The pattern reads 526, 539, ?, 565. Kai writes 551 in the gap. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"g":2,"kind":"fill","said":551,"step":13,"start":526},"terms":[526,539,"__",565],"promptText":"The pattern reads 526, 539, __, 565. Kai writes 551 in the gap. Is that right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0578",
@@ -13432,7 +13432,7 @@ export const ITEMS = [
     structureType: "twoGaps_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"between","after":6,"before":2},"sequence":[2,"?",6,"?",10],"promptText":"Two numbers of Amara's pattern are hidden: 2, ?, 6, ?, 10. Which number fills the FIRST gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"between","after":6,"before":2},"terms":[2,"__",6,"__",10],"promptText":"Two numbers of Amara's pattern are hidden: 2, __, 6, __, 10. Which number fills the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0579",
@@ -13442,7 +13442,7 @@ export const ITEMS = [
     structureType: "twoGaps_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"between","after":7,"before":1},"sequence":[1,"?",7,"?",13],"promptText":"Leo's pattern lost two numbers: 1, ?, 7, ?, 13. What belongs in the first gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"between","after":7,"before":1},"terms":[1,"__",7,"__",13],"promptText":"Leo's pattern lost two numbers: 1, __, 7, __, 13. What number belongs in the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0580",
@@ -13452,7 +13452,7 @@ export const ITEMS = [
     structureType: "twoGaps_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"between","after":7,"before":3},"sequence":[3,"?",7,"?",11],"promptText":"Two numbers of Mina's pattern are hidden: 3, ?, 7, ?, 11. Which number fills the FIRST gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"between","after":7,"before":3},"terms":[3,"__",7,"__",11],"promptText":"Two numbers of Mina's pattern are hidden: 3, __, 7, __, 11. Which number fills the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0581",
@@ -13462,7 +13462,7 @@ export const ITEMS = [
     structureType: "twoGaps_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"between","after":10,"before":2},"sequence":[2,"?",10,"?",18],"promptText":"Theo's pattern lost two numbers: 2, ?, 10, ?, 18. What belongs in the first gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"between","after":10,"before":2},"terms":[2,"__",10,"__",18],"promptText":"Theo's pattern lost two numbers: 2, __, 10, __, 18. What number belongs in the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0582",
@@ -13472,7 +13472,7 @@ export const ITEMS = [
     structureType: "twoGaps_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"kind":"between","after":5,"before":1},"sequence":[1,"?",5,"?",9],"promptText":"Two numbers of Ida's pattern are hidden: 1, ?, 5, ?, 9. Which number fills the FIRST gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"kind":"between","after":5,"before":1},"terms":[1,"__",5,"__",9],"promptText":"Two numbers of Ida's pattern are hidden: 1, __, 5, __, 9. Which number fills the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0583",
@@ -13482,7 +13482,7 @@ export const ITEMS = [
     structureType: "twoGaps_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"between","after":8,"before":4},"sequence":[4,"?",8,"?",12],"promptText":"Zoe's pattern lost two numbers: 4, ?, 8, ?, 12. What belongs in the first gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"between","after":8,"before":4},"terms":[4,"__",8,"__",12],"promptText":"Zoe's pattern lost two numbers: 4, __, 8, __, 12. What number belongs in the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0584",
@@ -13492,7 +13492,7 @@ export const ITEMS = [
     structureType: "twoGaps_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"between","after":9,"before":3},"sequence":[3,"?",9,"?",15],"promptText":"Two numbers of Rosa's pattern are hidden: 3, ?, 9, ?, 15. Which number fills the FIRST gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"between","after":9,"before":3},"terms":[3,"__",9,"__",15],"promptText":"Two numbers of Rosa's pattern are hidden: 3, __, 9, __, 15. Which number fills the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0585",
@@ -13502,7 +13502,7 @@ export const ITEMS = [
     structureType: "twoGaps_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"between","after":9,"before":1},"sequence":[1,"?",9,"?",17],"promptText":"Diego's pattern lost two numbers: 1, ?, 9, ?, 17. What belongs in the first gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"between","after":9,"before":1},"terms":[1,"__",9,"__",17],"promptText":"Diego's pattern lost two numbers: 1, __, 9, __, 17. What number belongs in the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0586",
@@ -13512,7 +13512,7 @@ export const ITEMS = [
     structureType: "twoGaps_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"between","after":9,"before":5},"sequence":[5,"?",9,"?",13],"promptText":"Two numbers of Nora's pattern are hidden: 5, ?, 9, ?, 13. Which number fills the FIRST gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"between","after":9,"before":5},"terms":[5,"__",9,"__",13],"promptText":"Two numbers of Nora's pattern are hidden: 5, __, 9, __, 13. Which number fills the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0587",
@@ -13522,7 +13522,7 @@ export const ITEMS = [
     structureType: "twoGaps_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"between","after":8,"before":2},"sequence":[2,"?",8,"?",14],"promptText":"Luca's pattern lost two numbers: 2, ?, 8, ?, 14. What belongs in the first gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"between","after":8,"before":2},"terms":[2,"__",8,"__",14],"promptText":"Luca's pattern lost two numbers: 2, __, 8, __, 14. What number belongs in the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0588",
@@ -13532,7 +13532,7 @@ export const ITEMS = [
     structureType: "twoGaps_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"between","after":10,"before":6},"sequence":[6,"?",10,"?",14],"promptText":"Two numbers of Ava's pattern are hidden: 6, ?, 10, ?, 14. Which number fills the FIRST gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"between","after":10,"before":6},"terms":[6,"__",10,"__",14],"promptText":"Two numbers of Ava's pattern are hidden: 6, __, 10, __, 14. Which number fills the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0589",
@@ -13542,7 +13542,7 @@ export const ITEMS = [
     structureType: "twoGaps_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"between","after":10,"before":4},"sequence":[4,"?",10,"?",16],"promptText":"Omar's pattern lost two numbers: 4, ?, 10, ?, 16. What belongs in the first gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"between","after":10,"before":4},"terms":[4,"__",10,"__",16],"promptText":"Omar's pattern lost two numbers: 4, __, 10, __, 16. What number belongs in the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0590",
@@ -13552,7 +13552,7 @@ export const ITEMS = [
     structureType: "twoGaps_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"kind":"between","after":11,"before":7},"sequence":[7,"?",11,"?",15],"promptText":"Two numbers of Ben's pattern are hidden: 7, ?, 11, ?, 15. Which number fills the FIRST gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"kind":"between","after":11,"before":7},"terms":[7,"__",11,"__",15],"promptText":"Two numbers of Ben's pattern are hidden: 7, __, 11, __, 15. Which number fills the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0591",
@@ -13562,7 +13562,7 @@ export const ITEMS = [
     structureType: "twoGaps_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"between","after":13,"before":9},"sequence":[9,"?",13,"?",17],"promptText":"Finn's pattern lost two numbers: 9, ?, 13, ?, 17. What belongs in the first gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"between","after":13,"before":9},"terms":[9,"__",13,"__",17],"promptText":"Finn's pattern lost two numbers: 9, __, 13, __, 17. What number belongs in the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0592",
@@ -13572,7 +13572,7 @@ export const ITEMS = [
     structureType: "twoGaps_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"between","after":12,"before":8},"sequence":[8,"?",12,"?",16],"promptText":"Two numbers of Priya's pattern are hidden: 8, ?, 12, ?, 16. Which number fills the FIRST gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"between","after":12,"before":8},"terms":[8,"__",12,"__",16],"promptText":"Two numbers of Priya's pattern are hidden: 8, __, 12, __, 16. Which number fills the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0593",
@@ -13582,7 +13582,7 @@ export const ITEMS = [
     structureType: "twoGaps_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"between","after":11,"before":5},"sequence":[5,"?",11,"?",17],"promptText":"Sam's pattern lost two numbers: 5, ?, 11, ?, 17. What belongs in the first gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"between","after":11,"before":5},"terms":[5,"__",11,"__",17],"promptText":"Sam's pattern lost two numbers: 5, __, 11, __, 17. What number belongs in the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0594",
@@ -13592,7 +13592,7 @@ export const ITEMS = [
     structureType: "twoGaps_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"between","after":24,"before":12},"sequence":[12,"?",24,"?",36],"promptText":"Two numbers of Amara's pattern are hidden: 12, ?, 24, ?, 36. Which number fills the FIRST gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"between","after":24,"before":12},"terms":[12,"__",24,"__",36],"promptText":"Two numbers of Amara's pattern are hidden: 12, __, 24, __, 36. Which number fills the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0595",
@@ -13602,7 +13602,7 @@ export const ITEMS = [
     structureType: "twoGaps_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"counting":{"kind":"between","after":39,"before":25},"sequence":[25,"?",39,"?",53],"promptText":"Leo's pattern lost two numbers: 25, ?, 39, ?, 53. What belongs in the first gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"counting":{"kind":"between","after":39,"before":25},"terms":[25,"__",39,"__",53],"promptText":"Leo's pattern lost two numbers: 25, __, 39, __, 53. What number belongs in the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0596",
@@ -13612,7 +13612,7 @@ export const ITEMS = [
     structureType: "twoGaps_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"counting":{"kind":"between","after":47,"before":31},"sequence":[31,"?",47,"?",63],"promptText":"Two numbers of Mina's pattern are hidden: 31, ?, 47, ?, 63. Which number fills the FIRST gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"counting":{"kind":"between","after":47,"before":31},"terms":[31,"__",47,"__",63],"promptText":"Two numbers of Mina's pattern are hidden: 31, __, 47, __, 63. Which number fills the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0597",
@@ -13622,7 +13622,7 @@ export const ITEMS = [
     structureType: "twoGaps_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"counting":{"kind":"between","after":32,"before":14},"sequence":[14,"?",32,"?",50],"promptText":"Theo's pattern lost two numbers: 14, ?, 32, ?, 50. What belongs in the first gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"counting":{"kind":"between","after":32,"before":14},"terms":[14,"__",32,"__",50],"promptText":"Theo's pattern lost two numbers: 14, __, 32, __, 50. What number belongs in the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0598",
@@ -13632,7 +13632,7 @@ export const ITEMS = [
     structureType: "twoGaps_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"counting":{"kind":"between","after":54,"before":42},"sequence":[42,"?",54,"?",66],"promptText":"Two numbers of Ida's pattern are hidden: 42, ?, 54, ?, 66. Which number fills the FIRST gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"counting":{"kind":"between","after":54,"before":42},"terms":[42,"__",54,"__",66],"promptText":"Two numbers of Ida's pattern are hidden: 42, __, 54, __, 66. Which number fills the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0599",
@@ -13642,7 +13642,7 @@ export const ITEMS = [
     structureType: "twoGaps_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"counting":{"kind":"between","after":37,"before":23},"sequence":[23,"?",37,"?",51],"promptText":"Zoe's pattern lost two numbers: 23, ?, 37, ?, 51. What belongs in the first gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"counting":{"kind":"between","after":37,"before":23},"terms":[23,"__",37,"__",51],"promptText":"Zoe's pattern lost two numbers: 23, __, 37, __, 51. What number belongs in the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0600",
@@ -13652,7 +13652,7 @@ export const ITEMS = [
     structureType: "twoGaps_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":43,"display":{"counting":{"kind":"between","after":51,"before":35},"sequence":[35,"?",51,"?",67],"promptText":"Two numbers of Rosa's pattern are hidden: 35, ?, 51, ?, 67. Which number fills the FIRST gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":43,"display":{"counting":{"kind":"between","after":51,"before":35},"terms":[35,"__",51,"__",67],"promptText":"Two numbers of Rosa's pattern are hidden: 35, __, 51, __, 67. Which number fills the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0601",
@@ -13662,7 +13662,7 @@ export const ITEMS = [
     structureType: "twoGaps_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"between","after":24,"before":16},"sequence":[16,"?",24,"?",32],"promptText":"Diego's pattern lost two numbers: 16, ?, 24, ?, 32. What belongs in the first gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"between","after":24,"before":16},"terms":[16,"__",24,"__",32],"promptText":"Diego's pattern lost two numbers: 16, __, 24, __, 32. What number belongs in the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0602",
@@ -13672,7 +13672,7 @@ export const ITEMS = [
     structureType: "twoGaps_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"counting":{"kind":"between","after":61,"before":51},"sequence":[51,"?",61,"?",71],"promptText":"Two numbers of Nora's pattern are hidden: 51, ?, 61, ?, 71. Which number fills the FIRST gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"counting":{"kind":"between","after":61,"before":51},"terms":[51,"__",61,"__",71],"promptText":"Two numbers of Nora's pattern are hidden: 51, __, 61, __, 71. Which number fills the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0603",
@@ -13682,7 +13682,7 @@ export const ITEMS = [
     structureType: "twoGaps_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"counting":{"kind":"between","after":39,"before":27},"sequence":[27,"?",39,"?",51],"promptText":"Luca's pattern lost two numbers: 27, ?, 39, ?, 51. What belongs in the first gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"counting":{"kind":"between","after":39,"before":27},"terms":[27,"__",39,"__",51],"promptText":"Luca's pattern lost two numbers: 27, __, 39, __, 51. What number belongs in the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0604",
@@ -13692,7 +13692,7 @@ export const ITEMS = [
     structureType: "twoGaps_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"kind":"between","after":47,"before":33},"sequence":[33,"?",47,"?",61],"promptText":"Two numbers of Ava's pattern are hidden: 33, ?, 47, ?, 61. Which number fills the FIRST gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"kind":"between","after":47,"before":33},"terms":[33,"__",47,"__",61],"promptText":"Two numbers of Ava's pattern are hidden: 33, __, 47, __, 61. Which number fills the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0605",
@@ -13702,7 +13702,7 @@ export const ITEMS = [
     structureType: "twoGaps_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"counting":{"kind":"between","after":51,"before":45},"sequence":[45,"?",51,"?",57],"promptText":"Omar's pattern lost two numbers: 45, ?, 51, ?, 57. What belongs in the first gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"counting":{"kind":"between","after":51,"before":45},"terms":[45,"__",51,"__",57],"promptText":"Omar's pattern lost two numbers: 45, __, 51, __, 57. What number belongs in the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0606",
@@ -13712,7 +13712,7 @@ export const ITEMS = [
     structureType: "twoGaps_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"counting":{"kind":"between","after":34,"before":18},"sequence":[18,"?",34,"?",50],"promptText":"Two numbers of Ben's pattern are hidden: 18, ?, 34, ?, 50. Which number fills the FIRST gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"counting":{"kind":"between","after":34,"before":18},"terms":[18,"__",34,"__",50],"promptText":"Two numbers of Ben's pattern are hidden: 18, __, 34, __, 50. Which number fills the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0607",
@@ -13722,7 +13722,7 @@ export const ITEMS = [
     structureType: "twoGaps_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":71,"display":{"counting":{"kind":"between","after":80,"before":62},"sequence":[62,"?",80,"?",98],"promptText":"Finn's pattern lost two numbers: 62, ?, 80, ?, 98. What belongs in the first gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":71,"display":{"counting":{"kind":"between","after":80,"before":62},"terms":[62,"__",80,"__",98],"promptText":"Finn's pattern lost two numbers: 62, __, 80, __, 98. What number belongs in the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0608",
@@ -13732,7 +13732,7 @@ export const ITEMS = [
     structureType: "twoGaps_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"counting":{"kind":"between","after":37,"before":29},"sequence":[29,"?",37,"?",45],"promptText":"Two numbers of Priya's pattern are hidden: 29, ?, 37, ?, 45. Which number fills the FIRST gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"counting":{"kind":"between","after":37,"before":29},"terms":[29,"__",37,"__",45],"promptText":"Two numbers of Priya's pattern are hidden: 29, __, 37, __, 45. Which number fills the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0609",
@@ -13742,7 +13742,7 @@ export const ITEMS = [
     structureType: "twoGaps_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"counting":{"kind":"between","after":47,"before":37},"sequence":[37,"?",47,"?",57],"promptText":"Sam's pattern lost two numbers: 37, ?, 47, ?, 57. What belongs in the first gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"counting":{"kind":"between","after":47,"before":37},"terms":[37,"__",47,"__",57],"promptText":"Sam's pattern lost two numbers: 37, __, 47, __, 57. What number belongs in the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0610",
@@ -13752,7 +13752,7 @@ export const ITEMS = [
     structureType: "twoGaps_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":123,"display":{"counting":{"kind":"between","after":134,"before":112},"sequence":[112,"?",134,"?",156],"promptText":"Two numbers of Amara's pattern are hidden: 112, ?, 134, ?, 156. Which number fills the FIRST gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":123,"display":{"counting":{"kind":"between","after":134,"before":112},"terms":[112,"__",134,"__",156],"promptText":"Two numbers of Amara's pattern are hidden: 112, __, 134, __, 156. Which number fills the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0611",
@@ -13762,7 +13762,7 @@ export const ITEMS = [
     structureType: "twoGaps_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":247,"display":{"counting":{"kind":"between","after":259,"before":235},"sequence":[235,"?",259,"?",283],"promptText":"Leo's pattern lost two numbers: 235, ?, 259, ?, 283. What belongs in the first gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":247,"display":{"counting":{"kind":"between","after":259,"before":235},"terms":[235,"__",259,"__",283],"promptText":"Leo's pattern lost two numbers: 235, __, 259, __, 283. What number belongs in the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0612",
@@ -13772,7 +13772,7 @@ export const ITEMS = [
     structureType: "twoGaps_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":356,"display":{"counting":{"kind":"between","after":371,"before":341},"sequence":[341,"?",371,"?",401],"promptText":"Two numbers of Mina's pattern are hidden: 341, ?, 371, ?, 401. Which number fills the FIRST gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":356,"display":{"counting":{"kind":"between","after":371,"before":341},"terms":[341,"__",371,"__",401],"promptText":"Two numbers of Mina's pattern are hidden: 341, __, 371, __, 401. Which number fills the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0613",
@@ -13782,7 +13782,7 @@ export const ITEMS = [
     structureType: "twoGaps_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":149,"display":{"counting":{"kind":"between","after":174,"before":124},"sequence":[124,"?",174,"?",224],"promptText":"Theo's pattern lost two numbers: 124, ?, 174, ?, 224. What belongs in the first gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":149,"display":{"counting":{"kind":"between","after":174,"before":124},"terms":[124,"__",174,"__",224],"promptText":"Theo's pattern lost two numbers: 124, __, 174, __, 224. What number belongs in the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0614",
@@ -13792,7 +13792,7 @@ export const ITEMS = [
     structureType: "twoGaps_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":463,"display":{"counting":{"kind":"between","after":474,"before":452},"sequence":[452,"?",474,"?",496],"promptText":"Two numbers of Ida's pattern are hidden: 452, ?, 474, ?, 496. Which number fills the FIRST gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":463,"display":{"counting":{"kind":"between","after":474,"before":452},"terms":[452,"__",474,"__",496],"promptText":"Two numbers of Ida's pattern are hidden: 452, __, 474, __, 496. Which number fills the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0615",
@@ -13802,7 +13802,7 @@ export const ITEMS = [
     structureType: "twoGaps_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":237,"display":{"counting":{"kind":"between","after":251,"before":223},"sequence":[223,"?",251,"?",279],"promptText":"Zoe's pattern lost two numbers: 223, ?, 251, ?, 279. What belongs in the first gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":237,"display":{"counting":{"kind":"between","after":251,"before":223},"terms":[223,"__",251,"__",279],"promptText":"Zoe's pattern lost two numbers: 223, __, 251, __, 279. What number belongs in the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0616",
@@ -13812,7 +13812,7 @@ export const ITEMS = [
     structureType: "twoGaps_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":356,"display":{"counting":{"kind":"between","after":377,"before":335},"sequence":[335,"?",377,"?",419],"promptText":"Two numbers of Rosa's pattern are hidden: 335, ?, 377, ?, 419. Which number fills the FIRST gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":356,"display":{"counting":{"kind":"between","after":377,"before":335},"terms":[335,"__",377,"__",419],"promptText":"Two numbers of Rosa's pattern are hidden: 335, __, 377, __, 419. Which number fills the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0617",
@@ -13822,7 +13822,7 @@ export const ITEMS = [
     structureType: "twoGaps_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":158,"display":{"counting":{"kind":"between","after":170,"before":146},"sequence":[146,"?",170,"?",194],"promptText":"Diego's pattern lost two numbers: 146, ?, 170, ?, 194. What belongs in the first gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":158,"display":{"counting":{"kind":"between","after":170,"before":146},"terms":[146,"__",170,"__",194],"promptText":"Diego's pattern lost two numbers: 146, __, 170, __, 194. What number belongs in the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0618",
@@ -13832,7 +13832,7 @@ export const ITEMS = [
     structureType: "twoGaps_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":531,"display":{"counting":{"kind":"between","after":544,"before":518},"sequence":[518,"?",544,"?",570],"promptText":"Two numbers of Nora's pattern are hidden: 518, ?, 544, ?, 570. Which number fills the FIRST gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":531,"display":{"counting":{"kind":"between","after":544,"before":518},"terms":[518,"__",544,"__",570],"promptText":"Two numbers of Nora's pattern are hidden: 518, __, 544, __, 570. Which number fills the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0619",
@@ -13842,7 +13842,7 @@ export const ITEMS = [
     structureType: "twoGaps_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":263,"display":{"counting":{"kind":"between","after":279,"before":247},"sequence":[247,"?",279,"?",311],"promptText":"Luca's pattern lost two numbers: 247, ?, 279, ?, 311. What belongs in the first gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":263,"display":{"counting":{"kind":"between","after":279,"before":247},"terms":[247,"__",279,"__",311],"promptText":"Luca's pattern lost two numbers: 247, __, 279, __, 311. What number belongs in the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0620",
@@ -13852,7 +13852,7 @@ export const ITEMS = [
     structureType: "twoGaps_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":355,"display":{"counting":{"kind":"between","after":377,"before":333},"sequence":[333,"?",377,"?",421],"promptText":"Two numbers of Ava's pattern are hidden: 333, ?, 377, ?, 421. Which number fills the FIRST gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":355,"display":{"counting":{"kind":"between","after":377,"before":333},"terms":[333,"__",377,"__",421],"promptText":"Two numbers of Ava's pattern are hidden: 333, __, 377, __, 421. Which number fills the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0621",
@@ -13862,7 +13862,7 @@ export const ITEMS = [
     structureType: "twoGaps_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":433,"display":{"counting":{"kind":"between","after":451,"before":415},"sequence":[415,"?",451,"?",487],"promptText":"Omar's pattern lost two numbers: 415, ?, 451, ?, 487. What belongs in the first gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":433,"display":{"counting":{"kind":"between","after":451,"before":415},"terms":[415,"__",451,"__",487],"promptText":"Omar's pattern lost two numbers: 415, __, 451, __, 487. What number belongs in the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0622",
@@ -13872,7 +13872,7 @@ export const ITEMS = [
     structureType: "twoGaps_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":152,"display":{"counting":{"kind":"between","after":176,"before":128},"sequence":[128,"?",176,"?",224],"promptText":"Two numbers of Ben's pattern are hidden: 128, ?, 176, ?, 224. Which number fills the FIRST gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":152,"display":{"counting":{"kind":"between","after":176,"before":128},"terms":[128,"__",176,"__",224],"promptText":"Two numbers of Ben's pattern are hidden: 128, __, 176, __, 224. Which number fills the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0623",
@@ -13882,7 +13882,7 @@ export const ITEMS = [
     structureType: "twoGaps_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":637,"display":{"counting":{"kind":"between","after":652,"before":622},"sequence":[622,"?",652,"?",682],"promptText":"Finn's pattern lost two numbers: 622, ?, 652, ?, 682. What belongs in the first gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":637,"display":{"counting":{"kind":"between","after":652,"before":622},"terms":[622,"__",652,"__",682],"promptText":"Finn's pattern lost two numbers: 622, __, 652, __, 682. What number belongs in the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0624",
@@ -13892,7 +13892,7 @@ export const ITEMS = [
     structureType: "twoGaps_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":306,"display":{"counting":{"kind":"between","after":323,"before":289},"sequence":[289,"?",323,"?",357],"promptText":"Two numbers of Priya's pattern are hidden: 289, ?, 323, ?, 357. Which number fills the FIRST gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":306,"display":{"counting":{"kind":"between","after":323,"before":289},"terms":[289,"__",323,"__",357],"promptText":"Two numbers of Priya's pattern are hidden: 289, __, 323, __, 357. Which number fills the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0625",
@@ -13902,7 +13902,7 @@ export const ITEMS = [
     structureType: "twoGaps_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":340,"display":{"counting":{"kind":"between","after":363,"before":317},"sequence":[317,"?",363,"?",409],"promptText":"Sam's pattern lost two numbers: 317, ?, 363, ?, 409. What belongs in the first gap?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":340,"display":{"counting":{"kind":"between","after":363,"before":317},"terms":[317,"__",363,"__",409],"promptText":"Sam's pattern lost two numbers: 317, __, 363, __, 409. What number belongs in the first gap?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-conc-b0821-0626",
@@ -13912,7 +13912,7 @@ export const ITEMS = [
     structureType: "rulePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 2","choices":["add 3","subtract 2","multiply by 2","add 2"],"display":{"pattern":{"kind":"rule","step":2,"start":2},"counting":null,"sequence":[2,4,6,8],"promptText":"Lily studies the pattern 2, 4, 6, 8. What is the rule?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 2","choices":["add 3","subtract 2","multiply by 2","add 2"],"display":{"pattern":{"kind":"rule","step":2,"start":2},"counting":null,"terms":[2,4,6,8],"promptText":"Lily studies the pattern 2, 4, 6, 8. Which rule gets you from each number to the one after it?"}},
   },
   {
     itemId: "patterns-conc-b0821-0627",
@@ -13922,7 +13922,7 @@ export const ITEMS = [
     structureType: "rulePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 3","choices":["add 3","add 4","multiply by 3","subtract 3"],"display":{"pattern":{"kind":"rule","step":3,"start":3},"counting":null,"sequence":[3,6,9,12],"promptText":"Which rule makes the pattern 3, 6, 9, 12? Diego wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 3","choices":["add 3","add 4","multiply by 3","subtract 3"],"display":{"pattern":{"kind":"rule","step":3,"start":3},"counting":null,"terms":[3,6,9,12],"promptText":"Diego's pattern is 3, 6, 9, 12. What do you do to each number to get the one after it?"}},
   },
   {
     itemId: "patterns-conc-b0821-0628",
@@ -13932,7 +13932,7 @@ export const ITEMS = [
     structureType: "rulePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 4","choices":["multiply by 4","add 5","subtract 4","add 4"],"display":{"pattern":{"kind":"rule","step":4,"start":1},"counting":null,"sequence":[1,5,9,13],"promptText":"Sam studies the pattern 1, 5, 9, 13. What is the rule?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 4","choices":["multiply by 4","add 5","subtract 4","add 4"],"display":{"pattern":{"kind":"rule","step":4,"start":1},"counting":null,"terms":[1,5,9,13],"promptText":"Sam studies the pattern 1, 5, 9, 13. What is the rule?"}},
   },
   {
     itemId: "patterns-conc-b0821-0629",
@@ -13942,7 +13942,7 @@ export const ITEMS = [
     structureType: "rulePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 2","choices":["subtract 2","add 3","multiply by 2","add 2"],"display":{"pattern":{"kind":"rule","step":2,"start":4},"counting":null,"sequence":[4,6,8,10],"promptText":"Which rule makes the pattern 4, 6, 8, 10? Theo wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 2","choices":["subtract 2","add 3","multiply by 2","add 2"],"display":{"pattern":{"kind":"rule","step":2,"start":4},"counting":null,"terms":[4,6,8,10],"promptText":"Which rule makes Theo's pattern 4, 6, 8, 10?"}},
   },
   {
     itemId: "patterns-conc-b0821-0630",
@@ -13952,7 +13952,7 @@ export const ITEMS = [
     structureType: "rulePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 5","choices":["add 5","multiply by 5","subtract 5","add 6"],"display":{"pattern":{"kind":"rule","step":5,"start":2},"counting":null,"sequence":[2,7,12,17],"promptText":"Omar studies the pattern 2, 7, 12, 17. What is the rule?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 5","choices":["add 5","multiply by 5","subtract 5","add 6"],"display":{"pattern":{"kind":"rule","step":5,"start":2},"counting":null,"terms":[2,7,12,17],"promptText":"Omar studies the pattern 2, 7, 12, 17. What is the rule?"}},
   },
   {
     itemId: "patterns-conc-b0821-0631",
@@ -13962,7 +13962,7 @@ export const ITEMS = [
     structureType: "rulePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 3","choices":["subtract 3","multiply by 3","add 3","add 4"],"display":{"pattern":{"kind":"rule","step":3,"start":5},"counting":null,"sequence":[5,8,11,14],"promptText":"Which rule makes the pattern 5, 8, 11, 14? Lily wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 3","choices":["subtract 3","multiply by 3","add 3","add 4"],"display":{"pattern":{"kind":"rule","step":3,"start":5},"counting":null,"terms":[5,8,11,14],"promptText":"Which rule makes Lily's pattern 5, 8, 11, 14?"}},
   },
   {
     itemId: "patterns-conc-b0821-0632",
@@ -13972,7 +13972,7 @@ export const ITEMS = [
     structureType: "rulePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 2","choices":["add 3","multiply by 2","add 2","subtract 2"],"display":{"pattern":{"kind":"rule","step":2,"start":1},"counting":null,"sequence":[1,3,5,7],"promptText":"Diego studies the pattern 1, 3, 5, 7. What is the rule?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 2","choices":["add 3","multiply by 2","add 2","subtract 2"],"display":{"pattern":{"kind":"rule","step":2,"start":1},"counting":null,"terms":[1,3,5,7],"promptText":"Diego studies the pattern 1, 3, 5, 7. What is the rule?"}},
   },
   {
     itemId: "patterns-conc-b0821-0633",
@@ -13982,7 +13982,7 @@ export const ITEMS = [
     structureType: "rulePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 2","choices":["multiply by 2","add 3","subtract 2","add 2"],"display":{"pattern":{"kind":"rule","step":2,"start":6},"counting":null,"sequence":[6,8,10,12],"promptText":"Which rule makes the pattern 6, 8, 10, 12? Sam wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 2","choices":["multiply by 2","add 3","subtract 2","add 2"],"display":{"pattern":{"kind":"rule","step":2,"start":6},"counting":null,"terms":[6,8,10,12],"promptText":"Which rule makes Sam's pattern 6, 8, 10, 12?"}},
   },
   {
     itemId: "patterns-conc-b0821-0634",
@@ -13992,7 +13992,7 @@ export const ITEMS = [
     structureType: "rulePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 4","choices":["add 4","add 5","subtract 4","multiply by 4"],"display":{"pattern":{"kind":"rule","step":4,"start":3},"counting":null,"sequence":[3,7,11,15],"promptText":"Theo studies the pattern 3, 7, 11, 15. What is the rule?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 4","choices":["add 4","add 5","subtract 4","multiply by 4"],"display":{"pattern":{"kind":"rule","step":4,"start":3},"counting":null,"terms":[3,7,11,15],"promptText":"Theo studies the pattern 3, 7, 11, 15. What is the rule?"}},
   },
   {
     itemId: "patterns-conc-b0821-0635",
@@ -14002,7 +14002,7 @@ export const ITEMS = [
     structureType: "rulePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 3","choices":["add 4","subtract 3","add 3","multiply by 3"],"display":{"pattern":{"kind":"rule","step":3,"start":2},"counting":null,"sequence":[2,5,8,11],"promptText":"Which rule makes the pattern 2, 5, 8, 11? Omar wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 3","choices":["add 4","subtract 3","add 3","multiply by 3"],"display":{"pattern":{"kind":"rule","step":3,"start":2},"counting":null,"terms":[2,5,8,11],"promptText":"Which rule makes Omar's pattern 2, 5, 8, 11?"}},
   },
   {
     itemId: "patterns-conc-b0821-0636",
@@ -14012,7 +14012,7 @@ export const ITEMS = [
     structureType: "rulePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 4","choices":["add 4","add 5","subtract 4","multiply by 4"],"display":{"pattern":{"kind":"rule","step":4,"start":4},"counting":null,"sequence":[4,8,12,16],"promptText":"Lily studies the pattern 4, 8, 12, 16. What is the rule?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 4","choices":["add 4","add 5","subtract 4","multiply by 4"],"display":{"pattern":{"kind":"rule","step":4,"start":4},"counting":null,"terms":[4,8,12,16],"promptText":"Lily studies the pattern 4, 8, 12, 16. Which rule gets you from each number to the one after it?"}},
   },
   {
     itemId: "patterns-conc-b0821-0637",
@@ -14022,7 +14022,7 @@ export const ITEMS = [
     structureType: "rulePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 2","choices":["multiply by 2","add 3","add 2","subtract 2"],"display":{"pattern":{"kind":"rule","step":2,"start":7},"counting":null,"sequence":[7,9,11,13],"promptText":"Which rule makes the pattern 7, 9, 11, 13? Diego wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 2","choices":["multiply by 2","add 3","add 2","subtract 2"],"display":{"pattern":{"kind":"rule","step":2,"start":7},"counting":null,"terms":[7,9,11,13],"promptText":"Which rule makes Diego's pattern 7, 9, 11, 13?"}},
   },
   {
     itemId: "patterns-conc-b0821-0638",
@@ -14032,7 +14032,7 @@ export const ITEMS = [
     structureType: "rulePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 2","choices":["add 2","subtract 2","multiply by 2","add 3"],"display":{"pattern":{"kind":"rule","step":2,"start":5},"counting":null,"sequence":[5,7,9,11],"promptText":"Sam studies the pattern 5, 7, 9, 11. What is the rule?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 2","choices":["add 2","subtract 2","multiply by 2","add 3"],"display":{"pattern":{"kind":"rule","step":2,"start":5},"counting":null,"terms":[5,7,9,11],"promptText":"Sam studies the pattern 5, 7, 9, 11. What is the rule?"}},
   },
   {
     itemId: "patterns-conc-b0821-0639",
@@ -14042,7 +14042,7 @@ export const ITEMS = [
     structureType: "rulePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 5","choices":["add 5","subtract 5","multiply by 5","add 6"],"display":{"pattern":{"kind":"rule","step":5,"start":1},"counting":null,"sequence":[1,6,11,16],"promptText":"Which rule makes the pattern 1, 6, 11, 16? Theo wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 5","choices":["add 5","subtract 5","multiply by 5","add 6"],"display":{"pattern":{"kind":"rule","step":5,"start":1},"counting":null,"terms":[1,6,11,16],"promptText":"Which rule makes Theo's pattern 1, 6, 11, 16?"}},
   },
   {
     itemId: "patterns-conc-b0821-0640",
@@ -14052,7 +14052,7 @@ export const ITEMS = [
     structureType: "rulePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 3","choices":["multiply by 3","add 4","subtract 3","add 3"],"display":{"pattern":{"kind":"rule","step":3,"start":4},"counting":null,"sequence":[4,7,10,13],"promptText":"Omar studies the pattern 4, 7, 10, 13. What is the rule?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 3","choices":["multiply by 3","add 4","subtract 3","add 3"],"display":{"pattern":{"kind":"rule","step":3,"start":4},"counting":null,"terms":[4,7,10,13],"promptText":"Omar studies the pattern 4, 7, 10, 13. What is the rule?"}},
   },
   {
     itemId: "patterns-conc-b0821-0641",
@@ -14062,7 +14062,7 @@ export const ITEMS = [
     structureType: "rulePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 2","choices":["subtract 2","multiply by 2","add 3","add 2"],"display":{"pattern":{"kind":"rule","step":2,"start":8},"counting":null,"sequence":[8,10,12,14],"promptText":"Which rule makes the pattern 8, 10, 12, 14? Lily wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 2","choices":["subtract 2","multiply by 2","add 3","add 2"],"display":{"pattern":{"kind":"rule","step":2,"start":8},"counting":null,"terms":[8,10,12,14],"promptText":"Which rule makes Lily's pattern 8, 10, 12, 14?"}},
   },
   {
     itemId: "patterns-conc-b0821-0642",
@@ -14072,7 +14072,7 @@ export const ITEMS = [
     structureType: "rulePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 3","choices":["add 4","add 3","subtract 3","multiply by 3"],"display":{"pattern":{"kind":"rule","step":3,"start":6},"counting":null,"sequence":[6,9,12,15],"promptText":"Diego studies the pattern 6, 9, 12, 15. What is the rule?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 3","choices":["add 4","add 3","subtract 3","multiply by 3"],"display":{"pattern":{"kind":"rule","step":3,"start":6},"counting":null,"terms":[6,9,12,15],"promptText":"Diego studies the pattern 6, 9, 12, 15. What is the rule?"}},
   },
   {
     itemId: "patterns-conc-b0821-0643",
@@ -14082,7 +14082,7 @@ export const ITEMS = [
     structureType: "rulePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 4","choices":["subtract 4","add 5","add 4","multiply by 4"],"display":{"pattern":{"kind":"rule","step":4,"start":2},"counting":null,"sequence":[2,6,10,14],"promptText":"Which rule makes the pattern 2, 6, 10, 14? Sam wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 4","choices":["subtract 4","add 5","add 4","multiply by 4"],"display":{"pattern":{"kind":"rule","step":4,"start":2},"counting":null,"terms":[2,6,10,14],"promptText":"Which rule makes Sam's pattern 2, 6, 10, 14?"}},
   },
   {
     itemId: "patterns-conc-b0821-0644",
@@ -14092,7 +14092,7 @@ export const ITEMS = [
     structureType: "rulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 6","choices":["add 7","subtract 6","multiply by 6","add 6"],"display":{"pattern":{"kind":"rule","step":6,"start":12},"counting":null,"sequence":[12,18,24,30],"promptText":"Zoe studies the pattern 12, 18, 24, 30. What is the rule?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 6","choices":["add 7","subtract 6","multiply by 6","add 6"],"display":{"pattern":{"kind":"rule","step":6,"start":12},"counting":null,"terms":[12,18,24,30],"promptText":"Zoe studies the pattern 12, 18, 24, 30. What is the rule?"}},
   },
   {
     itemId: "patterns-conc-b0821-0645",
@@ -14102,7 +14102,7 @@ export const ITEMS = [
     structureType: "rulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 7","choices":["multiply by 7","add 8","add 7","subtract 7"],"display":{"pattern":{"kind":"rule","step":7,"start":25},"counting":null,"sequence":[25,32,39,46],"promptText":"Which rule makes the pattern 25, 32, 39, 46? Finn wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 7","choices":["multiply by 7","add 8","add 7","subtract 7"],"display":{"pattern":{"kind":"rule","step":7,"start":25},"counting":null,"terms":[25,32,39,46],"promptText":"Which rule makes Finn's pattern 25, 32, 39, 46?"}},
   },
   {
     itemId: "patterns-conc-b0821-0646",
@@ -14112,7 +14112,7 @@ export const ITEMS = [
     structureType: "rulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 8","choices":["add 8","subtract 8","multiply by 8","add 9"],"display":{"pattern":{"kind":"rule","step":8,"start":31},"counting":null,"sequence":[31,39,47,55],"promptText":"Leo studies the pattern 31, 39, 47, 55. What is the rule?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 8","choices":["add 8","subtract 8","multiply by 8","add 9"],"display":{"pattern":{"kind":"rule","step":8,"start":31},"counting":null,"terms":[31,39,47,55],"promptText":"Leo studies the pattern 31, 39, 47, 55. What is the rule?"}},
   },
   {
     itemId: "patterns-conc-b0821-0647",
@@ -14122,7 +14122,7 @@ export const ITEMS = [
     structureType: "rulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 9","choices":["add 9","subtract 9","multiply by 9","add 10"],"display":{"pattern":{"kind":"rule","step":9,"start":14},"counting":null,"sequence":[14,23,32,41],"promptText":"Which rule makes the pattern 14, 23, 32, 41? Luca wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 9","choices":["add 9","subtract 9","multiply by 9","add 10"],"display":{"pattern":{"kind":"rule","step":9,"start":14},"counting":null,"terms":[14,23,32,41],"promptText":"Which rule makes Luca's pattern 14, 23, 32, 41?"}},
   },
   {
     itemId: "patterns-conc-b0821-0648",
@@ -14132,7 +14132,7 @@ export const ITEMS = [
     structureType: "rulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 6","choices":["subtract 6","add 7","multiply by 6","add 6"],"display":{"pattern":{"kind":"rule","step":6,"start":42},"counting":null,"sequence":[42,48,54,60],"promptText":"Kai studies the pattern 42, 48, 54, 60. What is the rule?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 6","choices":["subtract 6","add 7","multiply by 6","add 6"],"display":{"pattern":{"kind":"rule","step":6,"start":42},"counting":null,"terms":[42,48,54,60],"promptText":"Kai studies the pattern 42, 48, 54, 60. What is the rule?"}},
   },
   {
     itemId: "patterns-conc-b0821-0649",
@@ -14142,7 +14142,7 @@ export const ITEMS = [
     structureType: "rulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 7","choices":["add 8","add 7","multiply by 7","subtract 7"],"display":{"pattern":{"kind":"rule","step":7,"start":23},"counting":null,"sequence":[23,30,37,44],"promptText":"Which rule makes the pattern 23, 30, 37, 44? Zoe wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 7","choices":["add 8","add 7","multiply by 7","subtract 7"],"display":{"pattern":{"kind":"rule","step":7,"start":23},"counting":null,"terms":[23,30,37,44],"promptText":"Which rule makes Zoe's pattern 23, 30, 37, 44?"}},
   },
   {
     itemId: "patterns-conc-b0821-0650",
@@ -14152,7 +14152,7 @@ export const ITEMS = [
     structureType: "rulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 8","choices":["add 9","subtract 8","multiply by 8","add 8"],"display":{"pattern":{"kind":"rule","step":8,"start":35},"counting":null,"sequence":[35,43,51,59],"promptText":"Finn studies the pattern 35, 43, 51, 59. What is the rule?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 8","choices":["add 9","subtract 8","multiply by 8","add 8"],"display":{"pattern":{"kind":"rule","step":8,"start":35},"counting":null,"terms":[35,43,51,59],"promptText":"Finn studies the pattern 35, 43, 51, 59. What is the rule?"}},
   },
   {
     itemId: "patterns-conc-b0821-0651",
@@ -14162,7 +14162,7 @@ export const ITEMS = [
     structureType: "rulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 4","choices":["multiply by 4","add 5","add 4","subtract 4"],"display":{"pattern":{"kind":"rule","step":4,"start":16},"counting":null,"sequence":[16,20,24,28],"promptText":"Which rule makes the pattern 16, 20, 24, 28? Leo wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 4","choices":["multiply by 4","add 5","add 4","subtract 4"],"display":{"pattern":{"kind":"rule","step":4,"start":16},"counting":null,"terms":[16,20,24,28],"promptText":"Which rule makes Leo's pattern 16, 20, 24, 28?"}},
   },
   {
     itemId: "patterns-conc-b0821-0652",
@@ -14172,7 +14172,7 @@ export const ITEMS = [
     structureType: "rulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 5","choices":["add 6","multiply by 5","add 5","subtract 5"],"display":{"pattern":{"kind":"rule","step":5,"start":51},"counting":null,"sequence":[51,56,61,66],"promptText":"Luca studies the pattern 51, 56, 61, 66. What is the rule?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 5","choices":["add 6","multiply by 5","add 5","subtract 5"],"display":{"pattern":{"kind":"rule","step":5,"start":51},"counting":null,"terms":[51,56,61,66],"promptText":"Luca studies the pattern 51, 56, 61, 66. What is the rule?"}},
   },
   {
     itemId: "patterns-conc-b0821-0653",
@@ -14182,7 +14182,7 @@ export const ITEMS = [
     structureType: "rulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 6","choices":["add 6","multiply by 6","subtract 6","add 7"],"display":{"pattern":{"kind":"rule","step":6,"start":27},"counting":null,"sequence":[27,33,39,45],"promptText":"Which rule makes the pattern 27, 33, 39, 45? Kai wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 6","choices":["add 6","multiply by 6","subtract 6","add 7"],"display":{"pattern":{"kind":"rule","step":6,"start":27},"counting":null,"terms":[27,33,39,45],"promptText":"Which rule makes Kai's pattern 27, 33, 39, 45?"}},
   },
   {
     itemId: "patterns-conc-b0821-0654",
@@ -14192,7 +14192,7 @@ export const ITEMS = [
     structureType: "rulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 7","choices":["subtract 7","add 8","multiply by 7","add 7"],"display":{"pattern":{"kind":"rule","step":7,"start":33},"counting":null,"sequence":[33,40,47,54],"promptText":"Zoe studies the pattern 33, 40, 47, 54. What is the rule?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 7","choices":["subtract 7","add 8","multiply by 7","add 7"],"display":{"pattern":{"kind":"rule","step":7,"start":33},"counting":null,"terms":[33,40,47,54],"promptText":"Zoe studies the pattern 33, 40, 47, 54. What is the rule?"}},
   },
   {
     itemId: "patterns-conc-b0821-0655",
@@ -14202,7 +14202,7 @@ export const ITEMS = [
     structureType: "rulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 3","choices":["multiply by 3","add 4","subtract 3","add 3"],"display":{"pattern":{"kind":"rule","step":3,"start":45},"counting":null,"sequence":[45,48,51,54],"promptText":"Which rule makes the pattern 45, 48, 51, 54? Finn wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 3","choices":["multiply by 3","add 4","subtract 3","add 3"],"display":{"pattern":{"kind":"rule","step":3,"start":45},"counting":null,"terms":[45,48,51,54],"promptText":"Which rule makes Finn's pattern 45, 48, 51, 54?"}},
   },
   {
     itemId: "patterns-conc-b0821-0656",
@@ -14212,7 +14212,7 @@ export const ITEMS = [
     structureType: "rulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 8","choices":["add 8","multiply by 8","add 9","subtract 8"],"display":{"pattern":{"kind":"rule","step":8,"start":18},"counting":null,"sequence":[18,26,34,42],"promptText":"Leo studies the pattern 18, 26, 34, 42. What is the rule?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 8","choices":["add 8","multiply by 8","add 9","subtract 8"],"display":{"pattern":{"kind":"rule","step":8,"start":18},"counting":null,"terms":[18,26,34,42],"promptText":"Leo studies the pattern 18, 26, 34, 42. What is the rule?"}},
   },
   {
     itemId: "patterns-conc-b0821-0657",
@@ -14222,7 +14222,7 @@ export const ITEMS = [
     structureType: "rulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 9","choices":["multiply by 9","add 9","subtract 9","add 10"],"display":{"pattern":{"kind":"rule","step":9,"start":62},"counting":null,"sequence":[62,71,80,89],"promptText":"Which rule makes the pattern 62, 71, 80, 89? Luca wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 9","choices":["multiply by 9","add 9","subtract 9","add 10"],"display":{"pattern":{"kind":"rule","step":9,"start":62},"counting":null,"terms":[62,71,80,89],"promptText":"Which rule makes Luca's pattern 62, 71, 80, 89?"}},
   },
   {
     itemId: "patterns-conc-b0821-0658",
@@ -14232,7 +14232,7 @@ export const ITEMS = [
     structureType: "rulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 4","choices":["add 4","add 5","subtract 4","multiply by 4"],"display":{"pattern":{"kind":"rule","step":4,"start":29},"counting":null,"sequence":[29,33,37,41],"promptText":"Kai studies the pattern 29, 33, 37, 41. What is the rule?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 4","choices":["add 4","add 5","subtract 4","multiply by 4"],"display":{"pattern":{"kind":"rule","step":4,"start":29},"counting":null,"terms":[29,33,37,41],"promptText":"Kai studies the pattern 29, 33, 37, 41. What is the rule?"}},
   },
   {
     itemId: "patterns-conc-b0821-0659",
@@ -14242,7 +14242,7 @@ export const ITEMS = [
     structureType: "rulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 5","choices":["subtract 5","add 6","multiply by 5","add 5"],"display":{"pattern":{"kind":"rule","step":5,"start":37},"counting":null,"sequence":[37,42,47,52],"promptText":"Which rule makes the pattern 37, 42, 47, 52? Zoe wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 5","choices":["subtract 5","add 6","multiply by 5","add 5"],"display":{"pattern":{"kind":"rule","step":5,"start":37},"counting":null,"terms":[37,42,47,52],"promptText":"Which rule makes Zoe's pattern 37, 42, 47, 52?"}},
   },
   {
     itemId: "patterns-conc-b0821-0660",
@@ -14252,7 +14252,7 @@ export const ITEMS = [
     structureType: "rulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 6","choices":["subtract 6","multiply by 6","add 7","add 6"],"display":{"pattern":{"kind":"rule","step":6,"start":44},"counting":null,"sequence":[44,50,56,62],"promptText":"Finn studies the pattern 44, 50, 56, 62. What is the rule?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 6","choices":["subtract 6","multiply by 6","add 7","add 6"],"display":{"pattern":{"kind":"rule","step":6,"start":44},"counting":null,"terms":[44,50,56,62],"promptText":"Finn studies the pattern 44, 50, 56, 62. What is the rule?"}},
   },
   {
     itemId: "patterns-conc-b0821-0661",
@@ -14262,7 +14262,7 @@ export const ITEMS = [
     structureType: "rulePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 7","choices":["add 7","subtract 7","add 8","multiply by 7"],"display":{"pattern":{"kind":"rule","step":7,"start":56},"counting":null,"sequence":[56,63,70,77],"promptText":"Which rule makes the pattern 56, 63, 70, 77? Leo wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 7","choices":["add 7","subtract 7","add 8","multiply by 7"],"display":{"pattern":{"kind":"rule","step":7,"start":56},"counting":null,"terms":[56,63,70,77],"promptText":"Which rule makes Leo's pattern 56, 63, 70, 77?"}},
   },
   {
     itemId: "patterns-conc-b0821-0662",
@@ -14272,7 +14272,7 @@ export const ITEMS = [
     structureType: "rulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 11","choices":["add 11","subtract 11","multiply by 11","add 12"],"display":{"pattern":{"kind":"rule","step":11,"start":112},"counting":null,"sequence":[112,123,134,145],"promptText":"Omar studies the pattern 112, 123, 134, 145. What is the rule?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 11","choices":["add 11","subtract 11","multiply by 11","add 12"],"display":{"pattern":{"kind":"rule","step":11,"start":112},"counting":null,"terms":[112,123,134,145],"promptText":"Omar studies the pattern 112, 123, 134, 145. What is the rule?"}},
   },
   {
     itemId: "patterns-conc-b0821-0663",
@@ -14282,7 +14282,7 @@ export const ITEMS = [
     structureType: "rulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 12","choices":["add 12","add 13","subtract 12","multiply by 12"],"display":{"pattern":{"kind":"rule","step":12,"start":235},"counting":null,"sequence":[235,247,259,271],"promptText":"Which rule makes the pattern 235, 247, 259, 271? Lily wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 12","choices":["add 12","add 13","subtract 12","multiply by 12"],"display":{"pattern":{"kind":"rule","step":12,"start":235},"counting":null,"terms":[235,247,259,271],"promptText":"Which rule makes Lily's pattern 235, 247, 259, 271?"}},
   },
   {
     itemId: "patterns-conc-b0821-0664",
@@ -14292,7 +14292,7 @@ export const ITEMS = [
     structureType: "rulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 15","choices":["multiply by 15","add 16","subtract 15","add 15"],"display":{"pattern":{"kind":"rule","step":15,"start":341},"counting":null,"sequence":[341,356,371,386],"promptText":"Diego studies the pattern 341, 356, 371, 386. What is the rule?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 15","choices":["multiply by 15","add 16","subtract 15","add 15"],"display":{"pattern":{"kind":"rule","step":15,"start":341},"counting":null,"terms":[341,356,371,386],"promptText":"Diego studies the pattern 341, 356, 371, 386. What is the rule?"}},
   },
   {
     itemId: "patterns-conc-b0821-0665",
@@ -14302,7 +14302,7 @@ export const ITEMS = [
     structureType: "rulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 25","choices":["add 26","add 25","subtract 25","multiply by 25"],"display":{"pattern":{"kind":"rule","step":25,"start":124},"counting":null,"sequence":[124,149,174,199],"promptText":"Which rule makes the pattern 124, 149, 174, 199? Sam wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 25","choices":["add 26","add 25","subtract 25","multiply by 25"],"display":{"pattern":{"kind":"rule","step":25,"start":124},"counting":null,"terms":[124,149,174,199],"promptText":"Which rule makes Sam's pattern 124, 149, 174, 199?"}},
   },
   {
     itemId: "patterns-conc-b0821-0666",
@@ -14312,7 +14312,7 @@ export const ITEMS = [
     structureType: "rulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 11","choices":["add 11","add 12","multiply by 11","subtract 11"],"display":{"pattern":{"kind":"rule","step":11,"start":452},"counting":null,"sequence":[452,463,474,485],"promptText":"Theo studies the pattern 452, 463, 474, 485. What is the rule?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 11","choices":["add 11","add 12","multiply by 11","subtract 11"],"display":{"pattern":{"kind":"rule","step":11,"start":452},"counting":null,"terms":[452,463,474,485],"promptText":"Theo studies the pattern 452, 463, 474, 485. What is the rule?"}},
   },
   {
     itemId: "patterns-conc-b0821-0667",
@@ -14322,7 +14322,7 @@ export const ITEMS = [
     structureType: "rulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 14","choices":["add 15","add 14","multiply by 14","subtract 14"],"display":{"pattern":{"kind":"rule","step":14,"start":223},"counting":null,"sequence":[223,237,251,265],"promptText":"Which rule makes the pattern 223, 237, 251, 265? Omar wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 14","choices":["add 15","add 14","multiply by 14","subtract 14"],"display":{"pattern":{"kind":"rule","step":14,"start":223},"counting":null,"terms":[223,237,251,265],"promptText":"Which rule makes Omar's pattern 223, 237, 251, 265?"}},
   },
   {
     itemId: "patterns-conc-b0821-0668",
@@ -14332,7 +14332,7 @@ export const ITEMS = [
     structureType: "rulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 21","choices":["add 21","subtract 21","multiply by 21","add 22"],"display":{"pattern":{"kind":"rule","step":21,"start":335},"counting":null,"sequence":[335,356,377,398],"promptText":"Lily studies the pattern 335, 356, 377, 398. What is the rule?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 21","choices":["add 21","subtract 21","multiply by 21","add 22"],"display":{"pattern":{"kind":"rule","step":21,"start":335},"counting":null,"terms":[335,356,377,398],"promptText":"Lily studies the pattern 335, 356, 377, 398. What is the rule?"}},
   },
   {
     itemId: "patterns-conc-b0821-0669",
@@ -14342,7 +14342,7 @@ export const ITEMS = [
     structureType: "rulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 12","choices":["add 12","multiply by 12","subtract 12","add 13"],"display":{"pattern":{"kind":"rule","step":12,"start":146},"counting":null,"sequence":[146,158,170,182],"promptText":"Which rule makes the pattern 146, 158, 170, 182? Diego wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 12","choices":["add 12","multiply by 12","subtract 12","add 13"],"display":{"pattern":{"kind":"rule","step":12,"start":146},"counting":null,"terms":[146,158,170,182],"promptText":"Which rule makes Diego's pattern 146, 158, 170, 182?"}},
   },
   {
     itemId: "patterns-conc-b0821-0670",
@@ -14352,7 +14352,7 @@ export const ITEMS = [
     structureType: "rulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 13","choices":["add 14","add 13","subtract 13","multiply by 13"],"display":{"pattern":{"kind":"rule","step":13,"start":518},"counting":null,"sequence":[518,531,544,557],"promptText":"Sam studies the pattern 518, 531, 544, 557. What is the rule?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 13","choices":["add 14","add 13","subtract 13","multiply by 13"],"display":{"pattern":{"kind":"rule","step":13,"start":518},"counting":null,"terms":[518,531,544,557],"promptText":"Sam studies the pattern 518, 531, 544, 557. What is the rule?"}},
   },
   {
     itemId: "patterns-conc-b0821-0671",
@@ -14362,7 +14362,7 @@ export const ITEMS = [
     structureType: "rulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 16","choices":["add 16","multiply by 16","subtract 16","add 17"],"display":{"pattern":{"kind":"rule","step":16,"start":247},"counting":null,"sequence":[247,263,279,295],"promptText":"Which rule makes the pattern 247, 263, 279, 295? Theo wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 16","choices":["add 16","multiply by 16","subtract 16","add 17"],"display":{"pattern":{"kind":"rule","step":16,"start":247},"counting":null,"terms":[247,263,279,295],"promptText":"Which rule makes Theo's pattern 247, 263, 279, 295?"}},
   },
   {
     itemId: "patterns-conc-b0821-0672",
@@ -14372,7 +14372,7 @@ export const ITEMS = [
     structureType: "rulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 22","choices":["subtract 22","multiply by 22","add 23","add 22"],"display":{"pattern":{"kind":"rule","step":22,"start":333},"counting":null,"sequence":[333,355,377,399],"promptText":"Omar studies the pattern 333, 355, 377, 399. What is the rule?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 22","choices":["subtract 22","multiply by 22","add 23","add 22"],"display":{"pattern":{"kind":"rule","step":22,"start":333},"counting":null,"terms":[333,355,377,399],"promptText":"Omar studies the pattern 333, 355, 377, 399. What is the rule?"}},
   },
   {
     itemId: "patterns-conc-b0821-0673",
@@ -14382,7 +14382,7 @@ export const ITEMS = [
     structureType: "rulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 18","choices":["add 19","add 18","subtract 18","multiply by 18"],"display":{"pattern":{"kind":"rule","step":18,"start":415},"counting":null,"sequence":[415,433,451,469],"promptText":"Which rule makes the pattern 415, 433, 451, 469? Lily wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 18","choices":["add 19","add 18","subtract 18","multiply by 18"],"display":{"pattern":{"kind":"rule","step":18,"start":415},"counting":null,"terms":[415,433,451,469],"promptText":"Which rule makes Lily's pattern 415, 433, 451, 469?"}},
   },
   {
     itemId: "patterns-conc-b0821-0674",
@@ -14392,7 +14392,7 @@ export const ITEMS = [
     structureType: "rulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 24","choices":["add 25","subtract 24","add 24","multiply by 24"],"display":{"pattern":{"kind":"rule","step":24,"start":128},"counting":null,"sequence":[128,152,176,200],"promptText":"Diego studies the pattern 128, 152, 176, 200. What is the rule?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 24","choices":["add 25","subtract 24","add 24","multiply by 24"],"display":{"pattern":{"kind":"rule","step":24,"start":128},"counting":null,"terms":[128,152,176,200],"promptText":"Diego studies the pattern 128, 152, 176, 200. What is the rule?"}},
   },
   {
     itemId: "patterns-conc-b0821-0675",
@@ -14402,7 +14402,7 @@ export const ITEMS = [
     structureType: "rulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 15","choices":["multiply by 15","add 16","subtract 15","add 15"],"display":{"pattern":{"kind":"rule","step":15,"start":622},"counting":null,"sequence":[622,637,652,667],"promptText":"Which rule makes the pattern 622, 637, 652, 667? Sam wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 15","choices":["multiply by 15","add 16","subtract 15","add 15"],"display":{"pattern":{"kind":"rule","step":15,"start":622},"counting":null,"terms":[622,637,652,667],"promptText":"Which rule makes Sam's pattern 622, 637, 652, 667?"}},
   },
   {
     itemId: "patterns-conc-b0821-0676",
@@ -14412,7 +14412,7 @@ export const ITEMS = [
     structureType: "rulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 17","choices":["add 17","multiply by 17","add 18","subtract 17"],"display":{"pattern":{"kind":"rule","step":17,"start":289},"counting":null,"sequence":[289,306,323,340],"promptText":"Theo studies the pattern 289, 306, 323, 340. What is the rule?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 17","choices":["add 17","multiply by 17","add 18","subtract 17"],"display":{"pattern":{"kind":"rule","step":17,"start":289},"counting":null,"terms":[289,306,323,340],"promptText":"Theo studies the pattern 289, 306, 323, 340. What is the rule?"}},
   },
   {
     itemId: "patterns-conc-b0821-0677",
@@ -14422,7 +14422,7 @@ export const ITEMS = [
     structureType: "rulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 23","choices":["add 24","subtract 23","add 23","multiply by 23"],"display":{"pattern":{"kind":"rule","step":23,"start":317},"counting":null,"sequence":[317,340,363,386],"promptText":"Which rule makes the pattern 317, 340, 363, 386? Omar wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 23","choices":["add 24","subtract 23","add 23","multiply by 23"],"display":{"pattern":{"kind":"rule","step":23,"start":317},"counting":null,"terms":[317,340,363,386],"promptText":"Which rule makes Omar's pattern 317, 340, 363, 386?"}},
   },
   {
     itemId: "patterns-conc-b0821-0678",
@@ -14432,7 +14432,7 @@ export const ITEMS = [
     structureType: "rulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 19","choices":["add 20","subtract 19","add 19","multiply by 19"],"display":{"pattern":{"kind":"rule","step":19,"start":434},"counting":null,"sequence":[434,453,472,491],"promptText":"Lily studies the pattern 434, 453, 472, 491. What is the rule?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 19","choices":["add 20","subtract 19","add 19","multiply by 19"],"display":{"pattern":{"kind":"rule","step":19,"start":434},"counting":null,"terms":[434,453,472,491],"promptText":"Lily studies the pattern 434, 453, 472, 491. What is the rule?"}},
   },
   {
     itemId: "patterns-conc-b0821-0679",
@@ -14442,7 +14442,7 @@ export const ITEMS = [
     structureType: "rulePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"add 13","choices":["add 13","add 14","subtract 13","multiply by 13"],"display":{"pattern":{"kind":"rule","step":13,"start":526},"counting":null,"sequence":[526,539,552,565],"promptText":"Which rule makes the pattern 526, 539, 552, 565? Diego wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"add 13","choices":["add 13","add 14","subtract 13","multiply by 13"],"display":{"pattern":{"kind":"rule","step":13,"start":526},"counting":null,"terms":[526,539,552,565],"promptText":"Which rule makes Diego's pattern 526, 539, 552, 565?"}},
   },
   {
     itemId: "patterns-conc-b0821-0680",
@@ -14452,7 +14452,7 @@ export const ITEMS = [
     structureType: "findError_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[5,2,8,6],"display":{"pattern":{"kind":"slip","step":2,"start":2,"badIdx":1},"sequence":[2,5,6,8,10],"promptText":"Kai wrote 2, 5, 6, 8, 10, but one number breaks the pattern. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[5,2,8,6],"display":{"pattern":{"kind":"slip","step":2,"start":2,"badIdx":1},"terms":[2,5,6,8,10],"promptText":"Kai meant to add the same number each time and wrote 2, 5, 6, 8, 10. Which number is wrong?"}},
   },
   {
     itemId: "patterns-conc-b0821-0681",
@@ -14462,7 +14462,7 @@ export const ITEMS = [
     structureType: "findError_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[9,5,6,3],"display":{"pattern":{"kind":"slip","step":2,"start":3,"badIdx":2},"sequence":[3,5,6,9,11],"promptText":"One number in Zoe's pattern 3, 5, 6, 9, 11 does not fit. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[9,5,6,3],"display":{"pattern":{"kind":"slip","step":2,"start":3,"badIdx":2},"terms":[3,5,6,9,11],"promptText":"Zoe's pattern should go up by the same amount each time: 3, 5, 6, 9, 11. Which number does not fit?"}},
   },
   {
     itemId: "patterns-conc-b0821-0682",
@@ -14472,7 +14472,7 @@ export const ITEMS = [
     structureType: "findError_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[7,10,1,5],"display":{"pattern":{"kind":"slip","step":3,"start":1,"badIdx":1},"sequence":[1,5,7,10,13],"promptText":"Finn wrote 1, 5, 7, 10, 13, but one number breaks the pattern. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[7,10,1,5],"display":{"pattern":{"kind":"slip","step":3,"start":1,"badIdx":1},"terms":[1,5,7,10,13],"promptText":"Finn meant to add the same number each time and wrote 1, 5, 7, 10, 13. Which number is wrong?"}},
   },
   {
     itemId: "patterns-conc-b0821-0683",
@@ -14482,7 +14482,7 @@ export const ITEMS = [
     structureType: "findError_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[7,5,11,2],"display":{"pattern":{"kind":"slip","step":3,"start":2,"badIdx":2},"sequence":[2,5,7,11,14],"promptText":"One number in Leo's pattern 2, 5, 7, 11, 14 does not fit. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[7,5,11,2],"display":{"pattern":{"kind":"slip","step":3,"start":2,"badIdx":2},"terms":[2,5,7,11,14],"promptText":"Leo's pattern should go up by the same amount each time: 2, 5, 7, 11, 14. Which number does not fit?"}},
   },
   {
     itemId: "patterns-conc-b0821-0684",
@@ -14492,7 +14492,7 @@ export const ITEMS = [
     structureType: "findError_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"choices":[11,6,8,4],"display":{"pattern":{"kind":"slip","step":2,"start":4,"badIdx":3},"sequence":[4,6,8,11,12],"promptText":"Luca wrote 4, 6, 8, 11, 12, but one number breaks the pattern. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":11,"choices":[11,6,8,4],"display":{"pattern":{"kind":"slip","step":2,"start":4,"badIdx":3},"terms":[4,6,8,11,12],"promptText":"Luca meant to add the same number each time and wrote 4, 6, 8, 11, 12. Which number is wrong?"}},
   },
   {
     itemId: "patterns-conc-b0821-0685",
@@ -14502,7 +14502,7 @@ export const ITEMS = [
     structureType: "findError_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[4,13,9,1],"display":{"pattern":{"kind":"slip","step":4,"start":1,"badIdx":1},"sequence":[1,4,9,13,17],"promptText":"One number in Kai's pattern 1, 4, 9, 13, 17 does not fit. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[4,13,9,1],"display":{"pattern":{"kind":"slip","step":4,"start":1,"badIdx":1},"terms":[1,4,9,13,17],"promptText":"Kai's pattern should go up by the same amount each time: 1, 4, 9, 13, 17. Which number does not fit?"}},
   },
   {
     itemId: "patterns-conc-b0821-0686",
@@ -14512,7 +14512,7 @@ export const ITEMS = [
     structureType: "findError_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[3,12,15,7],"display":{"pattern":{"kind":"slip","step":4,"start":3,"badIdx":2},"sequence":[3,7,12,15,19],"promptText":"Zoe wrote 3, 7, 12, 15, 19, but one number breaks the pattern. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[3,12,15,7],"display":{"pattern":{"kind":"slip","step":4,"start":3,"badIdx":2},"terms":[3,7,12,15,19],"promptText":"Zoe meant to add the same number each time and wrote 3, 7, 12, 15, 19. Which number is wrong?"}},
   },
   {
     itemId: "patterns-conc-b0821-0687",
@@ -14522,7 +14522,7 @@ export const ITEMS = [
     structureType: "findError_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[9,10,15,13],"display":{"pattern":{"kind":"slip","step":2,"start":9,"badIdx":1},"sequence":[9,10,13,15,17],"promptText":"One number in Finn's pattern 9, 10, 13, 15, 17 does not fit. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[9,10,15,13],"display":{"pattern":{"kind":"slip","step":2,"start":9,"badIdx":1},"terms":[9,10,13,15,17],"promptText":"Finn's pattern should go up by the same amount each time: 9, 10, 13, 15, 17. Which number does not fit?"}},
   },
   {
     itemId: "patterns-conc-b0821-0688",
@@ -14532,7 +14532,7 @@ export const ITEMS = [
     structureType: "findError_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[5,7,12,9],"display":{"pattern":{"kind":"slip","step":2,"start":5,"badIdx":3},"sequence":[5,7,9,12,13],"promptText":"Leo wrote 5, 7, 9, 12, 13, but one number breaks the pattern. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[5,7,12,9],"display":{"pattern":{"kind":"slip","step":2,"start":5,"badIdx":3},"terms":[5,7,9,12,13],"promptText":"Leo meant to add the same number each time and wrote 5, 7, 9, 12, 13. Which number is wrong?"}},
   },
   {
     itemId: "patterns-conc-b0821-0689",
@@ -14542,7 +14542,7 @@ export const ITEMS = [
     structureType: "findError_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[13,7,9,4],"display":{"pattern":{"kind":"slip","step":3,"start":4,"badIdx":2},"sequence":[4,7,9,13,16],"promptText":"One number in Luca's pattern 4, 7, 9, 13, 16 does not fit. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[13,7,9,4],"display":{"pattern":{"kind":"slip","step":3,"start":4,"badIdx":2},"terms":[4,7,9,13,16],"promptText":"Luca's pattern should go up by the same amount each time: 4, 7, 9, 13, 16. Which number does not fit?"}},
   },
   {
     itemId: "patterns-conc-b0821-0690",
@@ -14552,7 +14552,7 @@ export const ITEMS = [
     structureType: "findError_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"choices":[10,16,15,12],"display":{"pattern":{"kind":"slip","step":2,"start":10,"badIdx":2},"sequence":[10,12,15,16,18],"promptText":"Kai wrote 10, 12, 15, 16, 18, but one number breaks the pattern. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":15,"choices":[10,16,15,12],"display":{"pattern":{"kind":"slip","step":2,"start":10,"badIdx":2},"terms":[10,12,15,16,18],"promptText":"Kai meant to add the same number each time and wrote 10, 12, 15, 16, 18. Which number is wrong?"}},
   },
   {
     itemId: "patterns-conc-b0821-0691",
@@ -14562,7 +14562,7 @@ export const ITEMS = [
     structureType: "findError_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[12,6,7,10],"display":{"pattern":{"kind":"slip","step":2,"start":6,"badIdx":1},"sequence":[6,7,10,12,14],"promptText":"One number in Zoe's pattern 6, 7, 10, 12, 14 does not fit. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[12,6,7,10],"display":{"pattern":{"kind":"slip","step":2,"start":6,"badIdx":1},"terms":[6,7,10,12,14],"promptText":"Zoe's pattern should go up by the same amount each time: 6, 7, 10, 12, 14. Which number does not fit?"}},
   },
   {
     itemId: "patterns-conc-b0821-0692",
@@ -14572,7 +14572,7 @@ export const ITEMS = [
     structureType: "findError_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"choices":[15,8,11,5],"display":{"pattern":{"kind":"slip","step":3,"start":5,"badIdx":3},"sequence":[5,8,11,15,17],"promptText":"Finn wrote 5, 8, 11, 15, 17, but one number breaks the pattern. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":15,"choices":[15,8,11,5],"display":{"pattern":{"kind":"slip","step":3,"start":5,"badIdx":3},"terms":[5,8,11,15,17],"promptText":"Finn meant to add the same number each time and wrote 5, 8, 11, 15, 17. Which number is wrong?"}},
   },
   {
     itemId: "patterns-conc-b0821-0693",
@@ -14582,7 +14582,7 @@ export const ITEMS = [
     structureType: "findError_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[14,17,8,10],"display":{"pattern":{"kind":"slip","step":3,"start":8,"badIdx":1},"sequence":[8,10,14,17,20],"promptText":"One number in Leo's pattern 8, 10, 14, 17, 20 does not fit. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[14,17,8,10],"display":{"pattern":{"kind":"slip","step":3,"start":8,"badIdx":1},"terms":[8,10,14,17,20],"promptText":"Leo's pattern should go up by the same amount each time: 8, 10, 14, 17, 20. Which number does not fit?"}},
   },
   {
     itemId: "patterns-conc-b0821-0694",
@@ -14592,7 +14592,7 @@ export const ITEMS = [
     structureType: "findError_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[9,12,13,7],"display":{"pattern":{"kind":"slip","step":2,"start":7,"badIdx":2},"sequence":[7,9,12,13,15],"promptText":"Luca wrote 7, 9, 12, 13, 15, but one number breaks the pattern. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[9,12,13,7],"display":{"pattern":{"kind":"slip","step":2,"start":7,"badIdx":2},"terms":[7,9,12,13,15],"promptText":"Luca meant to add the same number each time and wrote 7, 9, 12, 13, 15. Which number is wrong?"}},
   },
   {
     itemId: "patterns-conc-b0821-0695",
@@ -14602,7 +14602,7 @@ export const ITEMS = [
     structureType: "findError_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[6,10,2,13],"display":{"pattern":{"kind":"slip","step":4,"start":2,"badIdx":3},"sequence":[2,6,10,13,18],"promptText":"One number in Kai's pattern 2, 6, 10, 13, 18 does not fit. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[6,10,2,13],"display":{"pattern":{"kind":"slip","step":4,"start":2,"badIdx":3},"terms":[2,6,10,13,18],"promptText":"Kai's pattern should go up by the same amount each time: 2, 6, 10, 13, 18. Which number does not fit?"}},
   },
   {
     itemId: "patterns-conc-b0821-0696",
@@ -14612,7 +14612,7 @@ export const ITEMS = [
     structureType: "findError_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[15,6,9,13],"display":{"pattern":{"kind":"slip","step":3,"start":6,"badIdx":2},"sequence":[6,9,13,15,18],"promptText":"Zoe wrote 6, 9, 13, 15, 18, but one number breaks the pattern. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[15,6,9,13],"display":{"pattern":{"kind":"slip","step":3,"start":6,"badIdx":2},"terms":[6,9,13,15,18],"promptText":"Zoe meant to add the same number each time and wrote 6, 9, 13, 15, 18. Which number is wrong?"}},
   },
   {
     itemId: "patterns-conc-b0821-0697",
@@ -14622,7 +14622,7 @@ export const ITEMS = [
     structureType: "findError_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[12,4,7,16],"display":{"pattern":{"kind":"slip","step":4,"start":4,"badIdx":1},"sequence":[4,7,12,16,20],"promptText":"One number in Finn's pattern 4, 7, 12, 16, 20 does not fit. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[12,4,7,16],"display":{"pattern":{"kind":"slip","step":4,"start":4,"badIdx":1},"terms":[4,7,12,16,20],"promptText":"Finn's pattern should go up by the same amount each time: 4, 7, 12, 16, 20. Which number does not fit?"}},
   },
   {
     itemId: "patterns-conc-b0821-0698",
@@ -14632,7 +14632,7 @@ export const ITEMS = [
     structureType: "findError_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"choices":[24,30,19,12],"display":{"pattern":{"kind":"slip","step":6,"start":12,"badIdx":1},"sequence":[12,19,24,30,36],"promptText":"Theo wrote 12, 19, 24, 30, 36, but one number breaks the pattern. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":19,"choices":[24,30,19,12],"display":{"pattern":{"kind":"slip","step":6,"start":12,"badIdx":1},"terms":[12,19,24,30,36],"promptText":"Theo meant to add the same number each time and wrote 12, 19, 24, 30, 36. Which number is wrong?"}},
   },
   {
     itemId: "patterns-conc-b0821-0699",
@@ -14642,7 +14642,7 @@ export const ITEMS = [
     structureType: "findError_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"choices":[25,46,32,38],"display":{"pattern":{"kind":"slip","step":7,"start":25,"badIdx":2},"sequence":[25,32,38,46,53],"promptText":"One number in Omar's pattern 25, 32, 38, 46, 53 does not fit. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":38,"choices":[25,46,32,38],"display":{"pattern":{"kind":"slip","step":7,"start":25,"badIdx":2},"terms":[25,32,38,46,53],"promptText":"Omar's pattern should go up by the same amount each time: 25, 32, 38, 46, 53. Which number does not fit?"}},
   },
   {
     itemId: "patterns-conc-b0821-0700",
@@ -14652,7 +14652,7 @@ export const ITEMS = [
     structureType: "findError_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":56,"choices":[39,47,56,31],"display":{"pattern":{"kind":"slip","step":8,"start":31,"badIdx":3},"sequence":[31,39,47,56,63],"promptText":"Lily wrote 31, 39, 47, 56, 63, but one number breaks the pattern. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":56,"choices":[39,47,56,31],"display":{"pattern":{"kind":"slip","step":8,"start":31,"badIdx":3},"terms":[31,39,47,56,63],"promptText":"Lily meant to add the same number each time and wrote 31, 39, 47, 56, 63. Which number is wrong?"}},
   },
   {
     itemId: "patterns-conc-b0821-0701",
@@ -14662,7 +14662,7 @@ export const ITEMS = [
     structureType: "findError_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":22,"choices":[41,32,14,22],"display":{"pattern":{"kind":"slip","step":9,"start":14,"badIdx":1},"sequence":[14,22,32,41,50],"promptText":"One number in Diego's pattern 14, 22, 32, 41, 50 does not fit. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":22,"choices":[41,32,14,22],"display":{"pattern":{"kind":"slip","step":9,"start":14,"badIdx":1},"terms":[14,22,32,41,50],"promptText":"Diego's pattern should go up by the same amount each time: 14, 22, 32, 41, 50. Which number does not fit?"}},
   },
   {
     itemId: "patterns-conc-b0821-0702",
@@ -14672,7 +14672,7 @@ export const ITEMS = [
     structureType: "findError_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"choices":[42,48,60,55],"display":{"pattern":{"kind":"slip","step":6,"start":42,"badIdx":2},"sequence":[42,48,55,60,66],"promptText":"Sam wrote 42, 48, 55, 60, 66, but one number breaks the pattern. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":55,"choices":[42,48,60,55],"display":{"pattern":{"kind":"slip","step":6,"start":42,"badIdx":2},"terms":[42,48,55,60,66],"promptText":"Sam meant to add the same number each time and wrote 42, 48, 55, 60, 66. Which number is wrong?"}},
   },
   {
     itemId: "patterns-conc-b0821-0703",
@@ -14682,7 +14682,7 @@ export const ITEMS = [
     structureType: "findError_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":43,"choices":[23,37,43,30],"display":{"pattern":{"kind":"slip","step":7,"start":23,"badIdx":3},"sequence":[23,30,37,43,51],"promptText":"One number in Theo's pattern 23, 30, 37, 43, 51 does not fit. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":43,"choices":[23,37,43,30],"display":{"pattern":{"kind":"slip","step":7,"start":23,"badIdx":3},"terms":[23,30,37,43,51],"promptText":"Theo's pattern should go up by the same amount each time: 23, 30, 37, 43, 51. Which number does not fit?"}},
   },
   {
     itemId: "patterns-conc-b0821-0704",
@@ -14692,7 +14692,7 @@ export const ITEMS = [
     structureType: "findError_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":44,"choices":[35,59,44,51],"display":{"pattern":{"kind":"slip","step":8,"start":35,"badIdx":1},"sequence":[35,44,51,59,67],"promptText":"Omar wrote 35, 44, 51, 59, 67, but one number breaks the pattern. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":44,"choices":[35,59,44,51],"display":{"pattern":{"kind":"slip","step":8,"start":35,"badIdx":1},"terms":[35,44,51,59,67],"promptText":"Omar meant to add the same number each time and wrote 35, 44, 51, 59, 67. Which number is wrong?"}},
   },
   {
     itemId: "patterns-conc-b0821-0705",
@@ -14702,7 +14702,7 @@ export const ITEMS = [
     structureType: "findError_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":33,"choices":[43,33,16,25],"display":{"pattern":{"kind":"slip","step":9,"start":16,"badIdx":2},"sequence":[16,25,33,43,52],"promptText":"One number in Lily's pattern 16, 25, 33, 43, 52 does not fit. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":33,"choices":[43,33,16,25],"display":{"pattern":{"kind":"slip","step":9,"start":16,"badIdx":2},"terms":[16,25,33,43,52],"promptText":"Lily's pattern should go up by the same amount each time: 16, 25, 33, 43, 52. Which number does not fit?"}},
   },
   {
     itemId: "patterns-conc-b0821-0706",
@@ -14712,7 +14712,7 @@ export const ITEMS = [
     structureType: "findError_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":70,"choices":[70,63,51,57],"display":{"pattern":{"kind":"slip","step":6,"start":51,"badIdx":3},"sequence":[51,57,63,70,75],"promptText":"Diego wrote 51, 57, 63, 70, 75, but one number breaks the pattern. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":70,"choices":[70,63,51,57],"display":{"pattern":{"kind":"slip","step":6,"start":51,"badIdx":3},"terms":[51,57,63,70,75],"promptText":"Diego meant to add the same number each time and wrote 51, 57, 63, 70, 75. Which number is wrong?"}},
   },
   {
     itemId: "patterns-conc-b0821-0707",
@@ -14722,7 +14722,7 @@ export const ITEMS = [
     structureType: "findError_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"choices":[30,39,35,27],"display":{"pattern":{"kind":"slip","step":4,"start":27,"badIdx":1},"sequence":[27,30,35,39,43],"promptText":"One number in Sam's pattern 27, 30, 35, 39, 43 does not fit. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":30,"choices":[30,39,35,27],"display":{"pattern":{"kind":"slip","step":4,"start":27,"badIdx":1},"terms":[27,30,35,39,43],"promptText":"Sam's pattern should go up by the same amount each time: 27, 30, 35, 39, 43. Which number does not fit?"}},
   },
   {
     itemId: "patterns-conc-b0821-0708",
@@ -14732,7 +14732,7 @@ export const ITEMS = [
     structureType: "findError_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":44,"choices":[38,33,48,44],"display":{"pattern":{"kind":"slip","step":5,"start":33,"badIdx":2},"sequence":[33,38,44,48,53],"promptText":"Theo wrote 33, 38, 44, 48, 53, but one number breaks the pattern. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":44,"choices":[38,33,48,44],"display":{"pattern":{"kind":"slip","step":5,"start":33,"badIdx":2},"terms":[33,38,44,48,53],"promptText":"Theo meant to add the same number each time and wrote 33, 38, 44, 48, 53. Which number is wrong?"}},
   },
   {
     itemId: "patterns-conc-b0821-0709",
@@ -14742,7 +14742,7 @@ export const ITEMS = [
     structureType: "findError_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":65,"choices":[59,65,45,52],"display":{"pattern":{"kind":"slip","step":7,"start":45,"badIdx":3},"sequence":[45,52,59,65,73],"promptText":"One number in Omar's pattern 45, 52, 59, 65, 73 does not fit. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":65,"choices":[59,65,45,52],"display":{"pattern":{"kind":"slip","step":7,"start":45,"badIdx":3},"terms":[45,52,59,65,73],"promptText":"Omar's pattern should go up by the same amount each time: 45, 52, 59, 65, 73. Which number does not fit?"}},
   },
   {
     itemId: "patterns-conc-b0821-0710",
@@ -14752,7 +14752,7 @@ export const ITEMS = [
     structureType: "findError_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"choices":[18,27,42,34],"display":{"pattern":{"kind":"slip","step":8,"start":18,"badIdx":1},"sequence":[18,27,34,42,50],"promptText":"Lily wrote 18, 27, 34, 42, 50, but one number breaks the pattern. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":27,"choices":[18,27,42,34],"display":{"pattern":{"kind":"slip","step":8,"start":18,"badIdx":1},"terms":[18,27,34,42,50],"promptText":"Lily meant to add the same number each time and wrote 18, 27, 34, 42, 50. Which number is wrong?"}},
   },
   {
     itemId: "patterns-conc-b0821-0711",
@@ -14762,7 +14762,7 @@ export const ITEMS = [
     structureType: "findError_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":67,"choices":[71,65,67,62],"display":{"pattern":{"kind":"slip","step":3,"start":62,"badIdx":2},"sequence":[62,65,67,71,74],"promptText":"One number in Diego's pattern 62, 65, 67, 71, 74 does not fit. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":67,"choices":[71,65,67,62],"display":{"pattern":{"kind":"slip","step":3,"start":62,"badIdx":2},"terms":[62,65,67,71,74],"promptText":"Diego's pattern should go up by the same amount each time: 62, 65, 67, 71, 74. Which number does not fit?"}},
   },
   {
     itemId: "patterns-conc-b0821-0712",
@@ -14772,7 +14772,7 @@ export const ITEMS = [
     structureType: "findError_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":57,"choices":[47,38,57,29],"display":{"pattern":{"kind":"slip","step":9,"start":29,"badIdx":3},"sequence":[29,38,47,57,65],"promptText":"Sam wrote 29, 38, 47, 57, 65, but one number breaks the pattern. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":57,"choices":[47,38,57,29],"display":{"pattern":{"kind":"slip","step":9,"start":29,"badIdx":3},"terms":[29,38,47,57,65],"promptText":"Sam meant to add the same number each time and wrote 29, 38, 47, 57, 65. Which number is wrong?"}},
   },
   {
     itemId: "patterns-conc-b0821-0713",
@@ -14782,7 +14782,7 @@ export const ITEMS = [
     structureType: "findError_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":42,"choices":[55,49,37,42],"display":{"pattern":{"kind":"slip","step":6,"start":37,"badIdx":1},"sequence":[37,42,49,55,61],"promptText":"One number in Theo's pattern 37, 42, 49, 55, 61 does not fit. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":42,"choices":[55,49,37,42],"display":{"pattern":{"kind":"slip","step":6,"start":37,"badIdx":1},"terms":[37,42,49,55,61],"promptText":"Theo's pattern should go up by the same amount each time: 37, 42, 49, 55, 61. Which number does not fit?"}},
   },
   {
     itemId: "patterns-conc-b0821-0714",
@@ -14792,7 +14792,7 @@ export const ITEMS = [
     structureType: "findError_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"choices":[55,49,44,59],"display":{"pattern":{"kind":"slip","step":5,"start":44,"badIdx":2},"sequence":[44,49,55,59,64],"promptText":"Omar wrote 44, 49, 55, 59, 64, but one number breaks the pattern. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":55,"choices":[55,49,44,59],"display":{"pattern":{"kind":"slip","step":5,"start":44,"badIdx":2},"terms":[44,49,55,59,64],"promptText":"Omar meant to add the same number each time and wrote 44, 49, 55, 59, 64. Which number is wrong?"}},
   },
   {
     itemId: "patterns-conc-b0821-0715",
@@ -14802,7 +14802,7 @@ export const ITEMS = [
     structureType: "findError_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":67,"choices":[64,67,56,60],"display":{"pattern":{"kind":"slip","step":4,"start":56,"badIdx":3},"sequence":[56,60,64,67,72],"promptText":"One number in Lily's pattern 56, 60, 64, 67, 72 does not fit. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":67,"choices":[64,67,56,60],"display":{"pattern":{"kind":"slip","step":4,"start":56,"badIdx":3},"terms":[56,60,64,67,72],"promptText":"Lily's pattern should go up by the same amount each time: 56, 60, 64, 67, 72. Which number does not fit?"}},
   },
   {
     itemId: "patterns-conc-b0821-0716",
@@ -14812,7 +14812,7 @@ export const ITEMS = [
     structureType: "findError_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":124,"choices":[124,112,134,145],"display":{"pattern":{"kind":"slip","step":11,"start":112,"badIdx":1},"sequence":[112,124,134,145,156],"promptText":"Luca wrote 112, 124, 134, 145, 156, but one number breaks the pattern. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":124,"choices":[124,112,134,145],"display":{"pattern":{"kind":"slip","step":11,"start":112,"badIdx":1},"terms":[112,124,134,145,156],"promptText":"Luca meant to add the same number each time and wrote 112, 124, 134, 145, 156. Which number is wrong?"}},
   },
   {
     itemId: "patterns-conc-b0821-0717",
@@ -14822,7 +14822,7 @@ export const ITEMS = [
     structureType: "findError_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":258,"choices":[271,235,258,247],"display":{"pattern":{"kind":"slip","step":12,"start":235,"badIdx":2},"sequence":[235,247,258,271,283],"promptText":"One number in Kai's pattern 235, 247, 258, 271, 283 does not fit. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":258,"choices":[271,235,258,247],"display":{"pattern":{"kind":"slip","step":12,"start":235,"badIdx":2},"terms":[235,247,258,271,283],"promptText":"Kai's pattern should go up by the same amount each time: 235, 247, 258, 271, 283. Which number does not fit?"}},
   },
   {
     itemId: "patterns-conc-b0821-0718",
@@ -14832,7 +14832,7 @@ export const ITEMS = [
     structureType: "findError_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":387,"choices":[356,387,371,341],"display":{"pattern":{"kind":"slip","step":15,"start":341,"badIdx":3},"sequence":[341,356,371,387,401],"promptText":"Zoe wrote 341, 356, 371, 387, 401, but one number breaks the pattern. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":387,"choices":[356,387,371,341],"display":{"pattern":{"kind":"slip","step":15,"start":341,"badIdx":3},"terms":[341,356,371,387,401],"promptText":"Zoe meant to add the same number each time and wrote 341, 356, 371, 387, 401. Which number is wrong?"}},
   },
   {
     itemId: "patterns-conc-b0821-0719",
@@ -14842,7 +14842,7 @@ export const ITEMS = [
     structureType: "findError_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":148,"choices":[199,124,148,174],"display":{"pattern":{"kind":"slip","step":25,"start":124,"badIdx":1},"sequence":[124,148,174,199,224],"promptText":"One number in Finn's pattern 124, 148, 174, 199, 224 does not fit. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":148,"choices":[199,124,148,174],"display":{"pattern":{"kind":"slip","step":25,"start":124,"badIdx":1},"terms":[124,148,174,199,224],"promptText":"Finn's pattern should go up by the same amount each time: 124, 148, 174, 199, 224. Which number does not fit?"}},
   },
   {
     itemId: "patterns-conc-b0821-0720",
@@ -14852,7 +14852,7 @@ export const ITEMS = [
     structureType: "findError_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":475,"choices":[463,485,452,475],"display":{"pattern":{"kind":"slip","step":11,"start":452,"badIdx":2},"sequence":[452,463,475,485,496],"promptText":"Leo wrote 452, 463, 475, 485, 496, but one number breaks the pattern. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":475,"choices":[463,485,452,475],"display":{"pattern":{"kind":"slip","step":11,"start":452,"badIdx":2},"terms":[452,463,475,485,496],"promptText":"Leo meant to add the same number each time and wrote 452, 463, 475, 485, 496. Which number is wrong?"}},
   },
   {
     itemId: "patterns-conc-b0821-0721",
@@ -14862,7 +14862,7 @@ export const ITEMS = [
     structureType: "findError_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":264,"choices":[237,223,251,264],"display":{"pattern":{"kind":"slip","step":14,"start":223,"badIdx":3},"sequence":[223,237,251,264,279],"promptText":"One number in Luca's pattern 223, 237, 251, 264, 279 does not fit. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":264,"choices":[237,223,251,264],"display":{"pattern":{"kind":"slip","step":14,"start":223,"badIdx":3},"terms":[223,237,251,264,279],"promptText":"Luca's pattern should go up by the same amount each time: 223, 237, 251, 264, 279. Which number does not fit?"}},
   },
   {
     itemId: "patterns-conc-b0821-0722",
@@ -14872,7 +14872,7 @@ export const ITEMS = [
     structureType: "findError_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":357,"choices":[398,377,357,335],"display":{"pattern":{"kind":"slip","step":21,"start":335,"badIdx":1},"sequence":[335,357,377,398,419],"promptText":"Kai wrote 335, 357, 377, 398, 419, but one number breaks the pattern. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":357,"choices":[398,377,357,335],"display":{"pattern":{"kind":"slip","step":21,"start":335,"badIdx":1},"terms":[335,357,377,398,419],"promptText":"Kai meant to add the same number each time and wrote 335, 357, 377, 398, 419. Which number is wrong?"}},
   },
   {
     itemId: "patterns-conc-b0821-0723",
@@ -14882,7 +14882,7 @@ export const ITEMS = [
     structureType: "findError_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":169,"choices":[169,182,146,158],"display":{"pattern":{"kind":"slip","step":12,"start":146,"badIdx":2},"sequence":[146,158,169,182,194],"promptText":"One number in Zoe's pattern 146, 158, 169, 182, 194 does not fit. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":169,"choices":[169,182,146,158],"display":{"pattern":{"kind":"slip","step":12,"start":146,"badIdx":2},"terms":[146,158,169,182,194],"promptText":"Zoe's pattern should go up by the same amount each time: 146, 158, 169, 182, 194. Which number does not fit?"}},
   },
   {
     itemId: "patterns-conc-b0821-0724",
@@ -14892,7 +14892,7 @@ export const ITEMS = [
     structureType: "findError_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":558,"choices":[544,518,531,558],"display":{"pattern":{"kind":"slip","step":13,"start":518,"badIdx":3},"sequence":[518,531,544,558,570],"promptText":"Finn wrote 518, 531, 544, 558, 570, but one number breaks the pattern. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":558,"choices":[544,518,531,558],"display":{"pattern":{"kind":"slip","step":13,"start":518,"badIdx":3},"terms":[518,531,544,558,570],"promptText":"Finn meant to add the same number each time and wrote 518, 531, 544, 558, 570. Which number is wrong?"}},
   },
   {
     itemId: "patterns-conc-b0821-0725",
@@ -14902,7 +14902,7 @@ export const ITEMS = [
     structureType: "findError_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":262,"choices":[295,247,262,279],"display":{"pattern":{"kind":"slip","step":16,"start":247,"badIdx":1},"sequence":[247,262,279,295,311],"promptText":"One number in Leo's pattern 247, 262, 279, 295, 311 does not fit. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":262,"choices":[295,247,262,279],"display":{"pattern":{"kind":"slip","step":16,"start":247,"badIdx":1},"terms":[247,262,279,295,311],"promptText":"Leo's pattern should go up by the same amount each time: 247, 262, 279, 295, 311. Which number does not fit?"}},
   },
   {
     itemId: "patterns-conc-b0821-0726",
@@ -14912,7 +14912,7 @@ export const ITEMS = [
     structureType: "findError_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":378,"choices":[378,355,399,333],"display":{"pattern":{"kind":"slip","step":22,"start":333,"badIdx":2},"sequence":[333,355,378,399,421],"promptText":"Luca wrote 333, 355, 378, 399, 421, but one number breaks the pattern. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":378,"choices":[378,355,399,333],"display":{"pattern":{"kind":"slip","step":22,"start":333,"badIdx":2},"terms":[333,355,378,399,421],"promptText":"Luca meant to add the same number each time and wrote 333, 355, 378, 399, 421. Which number is wrong?"}},
   },
   {
     itemId: "patterns-conc-b0821-0727",
@@ -14922,7 +14922,7 @@ export const ITEMS = [
     structureType: "findError_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":468,"choices":[433,468,451,415],"display":{"pattern":{"kind":"slip","step":18,"start":415,"badIdx":3},"sequence":[415,433,451,468,487],"promptText":"One number in Kai's pattern 415, 433, 451, 468, 487 does not fit. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":468,"choices":[433,468,451,415],"display":{"pattern":{"kind":"slip","step":18,"start":415,"badIdx":3},"terms":[415,433,451,468,487],"promptText":"Kai's pattern should go up by the same amount each time: 415, 433, 451, 468, 487. Which number does not fit?"}},
   },
   {
     itemId: "patterns-conc-b0821-0728",
@@ -14932,7 +14932,7 @@ export const ITEMS = [
     structureType: "findError_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":153,"choices":[128,153,200,176],"display":{"pattern":{"kind":"slip","step":24,"start":128,"badIdx":1},"sequence":[128,153,176,200,224],"promptText":"Zoe wrote 128, 153, 176, 200, 224, but one number breaks the pattern. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":153,"choices":[128,153,200,176],"display":{"pattern":{"kind":"slip","step":24,"start":128,"badIdx":1},"terms":[128,153,176,200,224],"promptText":"Zoe meant to add the same number each time and wrote 128, 153, 176, 200, 224. Which number is wrong?"}},
   },
   {
     itemId: "patterns-conc-b0821-0729",
@@ -14942,7 +14942,7 @@ export const ITEMS = [
     structureType: "findError_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":651,"choices":[637,622,667,651],"display":{"pattern":{"kind":"slip","step":15,"start":622,"badIdx":2},"sequence":[622,637,651,667,682],"promptText":"One number in Finn's pattern 622, 637, 651, 667, 682 does not fit. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":651,"choices":[637,622,667,651],"display":{"pattern":{"kind":"slip","step":15,"start":622,"badIdx":2},"terms":[622,637,651,667,682],"promptText":"Finn's pattern should go up by the same amount each time: 622, 637, 651, 667, 682. Which number does not fit?"}},
   },
   {
     itemId: "patterns-conc-b0821-0730",
@@ -14952,7 +14952,7 @@ export const ITEMS = [
     structureType: "findError_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":341,"choices":[306,341,323,289],"display":{"pattern":{"kind":"slip","step":17,"start":289,"badIdx":3},"sequence":[289,306,323,341,357],"promptText":"Leo wrote 289, 306, 323, 341, 357, but one number breaks the pattern. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":341,"choices":[306,341,323,289],"display":{"pattern":{"kind":"slip","step":17,"start":289,"badIdx":3},"terms":[289,306,323,341,357],"promptText":"Leo meant to add the same number each time and wrote 289, 306, 323, 341, 357. Which number is wrong?"}},
   },
   {
     itemId: "patterns-conc-b0821-0731",
@@ -14962,7 +14962,7 @@ export const ITEMS = [
     structureType: "findError_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":339,"choices":[386,339,317,363],"display":{"pattern":{"kind":"slip","step":23,"start":317,"badIdx":1},"sequence":[317,339,363,386,409],"promptText":"One number in Luca's pattern 317, 339, 363, 386, 409 does not fit. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":339,"choices":[386,339,317,363],"display":{"pattern":{"kind":"slip","step":23,"start":317,"badIdx":1},"terms":[317,339,363,386,409],"promptText":"Luca's pattern should go up by the same amount each time: 317, 339, 363, 386, 409. Which number does not fit?"}},
   },
   {
     itemId: "patterns-conc-b0821-0732",
@@ -14972,7 +14972,7 @@ export const ITEMS = [
     structureType: "findError_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":473,"choices":[434,473,453,491],"display":{"pattern":{"kind":"slip","step":19,"start":434,"badIdx":2},"sequence":[434,453,473,491,510],"promptText":"Kai wrote 434, 453, 473, 491, 510, but one number breaks the pattern. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":473,"choices":[434,473,453,491],"display":{"pattern":{"kind":"slip","step":19,"start":434,"badIdx":2},"terms":[434,453,473,491,510],"promptText":"Kai meant to add the same number each time and wrote 434, 453, 473, 491, 510. Which number is wrong?"}},
   },
   {
     itemId: "patterns-conc-b0821-0733",
@@ -14982,7 +14982,7 @@ export const ITEMS = [
     structureType: "findError_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":564,"choices":[526,539,564,552],"display":{"pattern":{"kind":"slip","step":13,"start":526,"badIdx":3},"sequence":[526,539,552,564,578],"promptText":"One number in Zoe's pattern 526, 539, 552, 564, 578 does not fit. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":564,"choices":[526,539,564,552],"display":{"pattern":{"kind":"slip","step":13,"start":526,"badIdx":3},"terms":[526,539,552,564,578],"promptText":"Zoe's pattern should go up by the same amount each time: 526, 539, 552, 564, 578. Which number does not fit?"}},
   },
   {
     itemId: "patterns-conc-b0821-0734",
@@ -14992,7 +14992,7 @@ export const ITEMS = [
     structureType: "parityAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":2,"term":5,"start":2},"sequence":[2,4,6],"promptText":"The pattern 2, 4, 6 keeps adding 2. Nora says number 5 in the pattern will be even. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":2,"term":5,"start":2},"terms":[2,4,6],"promptText":"The pattern 2, 4, 6 keeps adding 2. Nora says the 5th number will be even. Is Nora right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0735",
@@ -15002,7 +15002,7 @@ export const ITEMS = [
     structureType: "parityAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":2,"term":6,"start":3},"sequence":[3,5,7],"promptText":"Luca follows the pattern 3, 5, 7 (add 2 each time) out to number 6. Will that number be even?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":2,"term":6,"start":3},"terms":[3,5,7],"promptText":"Luca's pattern 3, 5, 7 adds 2 each time. Will the 6th number in the pattern be even?"}},
   },
   {
     itemId: "patterns-conc-b0821-0736",
@@ -15012,7 +15012,7 @@ export const ITEMS = [
     structureType: "parityAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":3,"term":4,"start":1},"sequence":[1,4,7],"promptText":"The pattern 1, 4, 7 keeps adding 3. Ava says number 4 in the pattern will be even. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":3,"term":4,"start":1},"terms":[1,4,7],"promptText":"The pattern 1, 4, 7 keeps adding 3. Ava says the 4th number will be even. Is Ava right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0737",
@@ -15022,7 +15022,7 @@ export const ITEMS = [
     structureType: "parityAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":3,"term":5,"start":2},"sequence":[2,5,8],"promptText":"Omar follows the pattern 2, 5, 8 (add 3 each time) out to number 5. Will that number be even?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":3,"term":5,"start":2},"terms":[2,5,8],"promptText":"Omar's pattern 2, 5, 8 adds 3 each time. Will the 5th number in the pattern be even?"}},
   },
   {
     itemId: "patterns-conc-b0821-0738",
@@ -15032,7 +15032,7 @@ export const ITEMS = [
     structureType: "parityAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":2,"term":6,"start":4},"sequence":[4,6,8],"promptText":"The pattern 4, 6, 8 keeps adding 2. Ben says number 6 in the pattern will be even. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":2,"term":6,"start":4},"terms":[4,6,8],"promptText":"The pattern 4, 6, 8 keeps adding 2. Ben says the 6th number will be even. Is Ben right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0739",
@@ -15042,7 +15042,7 @@ export const ITEMS = [
     structureType: "parityAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":4,"term":4,"start":1},"sequence":[1,5,9],"promptText":"Finn follows the pattern 1, 5, 9 (add 4 each time) out to number 4. Will that number be even?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":4,"term":4,"start":1},"terms":[1,5,9],"promptText":"Finn's pattern 1, 5, 9 adds 4 each time. Will the 4th number in the pattern be even?"}},
   },
   {
     itemId: "patterns-conc-b0821-0740",
@@ -15052,7 +15052,7 @@ export const ITEMS = [
     structureType: "parityAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":4,"term":5,"start":3},"sequence":[3,7,11],"promptText":"The pattern 3, 7, 11 keeps adding 4. Priya says number 5 in the pattern will be even. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":4,"term":5,"start":3},"terms":[3,7,11],"promptText":"The pattern 3, 7, 11 keeps adding 4. Priya says the 5th number will be even. Is Priya right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0741",
@@ -15062,7 +15062,7 @@ export const ITEMS = [
     structureType: "parityAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":5,"term":4,"start":2},"sequence":[2,7,12],"promptText":"Sam follows the pattern 2, 7, 12 (add 5 each time) out to number 4. Will that number be even?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":5,"term":4,"start":2},"terms":[2,7,12],"promptText":"Sam's pattern 2, 7, 12 adds 5 each time. Will the 4th number in the pattern be even?"}},
   },
   {
     itemId: "patterns-conc-b0821-0742",
@@ -15072,7 +15072,7 @@ export const ITEMS = [
     structureType: "parityAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":2,"term":5,"start":5},"sequence":[5,7,9],"promptText":"The pattern 5, 7, 9 keeps adding 2. Nia says number 5 in the pattern will be even. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":2,"term":5,"start":5},"terms":[5,7,9],"promptText":"The pattern 5, 7, 9 keeps adding 2. Nia says the 5th number will be even. Is Nia right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0743",
@@ -15082,7 +15082,7 @@ export const ITEMS = [
     structureType: "parityAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":3,"term":6,"start":4},"sequence":[4,7,10],"promptText":"Kai follows the pattern 4, 7, 10 (add 3 each time) out to number 6. Will that number be even?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":3,"term":6,"start":4},"terms":[4,7,10],"promptText":"Kai's pattern 4, 7, 10 adds 3 each time. Will the 6th number in the pattern be even?"}},
   },
   {
     itemId: "patterns-conc-b0821-0744",
@@ -15092,7 +15092,7 @@ export const ITEMS = [
     structureType: "parityAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":5,"term":4,"start":1},"sequence":[1,6,11],"promptText":"The pattern 1, 6, 11 keeps adding 5. June says number 4 in the pattern will be even. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":5,"term":4,"start":1},"terms":[1,6,11],"promptText":"The pattern 1, 6, 11 keeps adding 5. June says the 4th number will be even. Is June right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0745",
@@ -15102,7 +15102,7 @@ export const ITEMS = [
     structureType: "parityAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":2,"term":5,"start":6},"sequence":[6,8,10],"promptText":"Lily follows the pattern 6, 8, 10 (add 2 each time) out to number 5. Will that number be even?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":2,"term":5,"start":6},"terms":[6,8,10],"promptText":"Lily's pattern 6, 8, 10 adds 2 each time. Will the 5th number in the pattern be even?"}},
   },
   {
     itemId: "patterns-conc-b0821-0746",
@@ -15112,7 +15112,7 @@ export const ITEMS = [
     structureType: "parityAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":3,"term":4,"start":5},"sequence":[5,8,11],"promptText":"The pattern 5, 8, 11 keeps adding 3. Amara says number 4 in the pattern will be even. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":3,"term":4,"start":5},"terms":[5,8,11],"promptText":"The pattern 5, 8, 11 keeps adding 3. Amara says the 4th number will be even. Is Amara right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0747",
@@ -15122,7 +15122,7 @@ export const ITEMS = [
     structureType: "parityAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":5,"term":5,"start":3},"sequence":[3,8,13],"promptText":"Leo follows the pattern 3, 8, 13 (add 5 each time) out to number 5. Will that number be even?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":5,"term":5,"start":3},"terms":[3,8,13],"promptText":"Leo's pattern 3, 8, 13 adds 5 each time. Will the 5th number in the pattern be even?"}},
   },
   {
     itemId: "patterns-conc-b0821-0748",
@@ -15132,7 +15132,7 @@ export const ITEMS = [
     structureType: "parityAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":2,"term":6,"start":7},"sequence":[7,9,11],"promptText":"The pattern 7, 9, 11 keeps adding 2. Mina says number 6 in the pattern will be even. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":2,"term":6,"start":7},"terms":[7,9,11],"promptText":"The pattern 7, 9, 11 keeps adding 2. Mina says the 6th number will be even. Is Mina right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0749",
@@ -15142,7 +15142,7 @@ export const ITEMS = [
     structureType: "parityAt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":4,"term":5,"start":2},"sequence":[2,6,10],"promptText":"Theo follows the pattern 2, 6, 10 (add 4 each time) out to number 5. Will that number be even?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":4,"term":5,"start":2},"terms":[2,6,10],"promptText":"Theo's pattern 2, 6, 10 adds 4 each time. Will the 5th number in the pattern be even?"}},
   },
   {
     itemId: "patterns-conc-b0821-0750",
@@ -15152,7 +15152,7 @@ export const ITEMS = [
     structureType: "parityAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":6,"term":8,"start":12},"sequence":[12,18,24],"promptText":"The pattern 12, 18, 24 keeps adding 6. Nora says number 8 in the pattern will be even. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":6,"term":8,"start":12},"terms":[12,18,24],"promptText":"The pattern 12, 18, 24 keeps adding 6. Nora says the 8th number will be even. Is Nora right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0751",
@@ -15162,7 +15162,7 @@ export const ITEMS = [
     structureType: "parityAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":7,"term":9,"start":25},"sequence":[25,32,39],"promptText":"Luca follows the pattern 25, 32, 39 (add 7 each time) out to number 9. Will that number be even?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":7,"term":9,"start":25},"terms":[25,32,39],"promptText":"Luca's pattern 25, 32, 39 adds 7 each time. Will the 9th number in the pattern be even?"}},
   },
   {
     itemId: "patterns-conc-b0821-0752",
@@ -15172,7 +15172,7 @@ export const ITEMS = [
     structureType: "parityAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":8,"term":8,"start":31},"sequence":[31,39,47],"promptText":"The pattern 31, 39, 47 keeps adding 8. Ava says number 8 in the pattern will be even. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":8,"term":8,"start":31},"terms":[31,39,47],"promptText":"The pattern 31, 39, 47 keeps adding 8. Ava says the 8th number will be even. Is Ava right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0753",
@@ -15182,7 +15182,7 @@ export const ITEMS = [
     structureType: "parityAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":9,"term":9,"start":14},"sequence":[14,23,32],"promptText":"Omar follows the pattern 14, 23, 32 (add 9 each time) out to number 9. Will that number be even?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":9,"term":9,"start":14},"terms":[14,23,32],"promptText":"Omar's pattern 14, 23, 32 adds 9 each time. Will the 9th number in the pattern be even?"}},
   },
   {
     itemId: "patterns-conc-b0821-0754",
@@ -15192,7 +15192,7 @@ export const ITEMS = [
     structureType: "parityAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":6,"term":10,"start":42},"sequence":[42,48,54],"promptText":"The pattern 42, 48, 54 keeps adding 6. Ben says number 10 in the pattern will be even. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":6,"term":10,"start":42},"terms":[42,48,54],"promptText":"The pattern 42, 48, 54 keeps adding 6. Ben says the 10th number will be even. Is Ben right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0755",
@@ -15202,7 +15202,7 @@ export const ITEMS = [
     structureType: "parityAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":7,"term":8,"start":23},"sequence":[23,30,37],"promptText":"Finn follows the pattern 23, 30, 37 (add 7 each time) out to number 8. Will that number be even?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":7,"term":8,"start":23},"terms":[23,30,37],"promptText":"Finn's pattern 23, 30, 37 adds 7 each time. Will the 8th number in the pattern be even?"}},
   },
   {
     itemId: "patterns-conc-b0821-0756",
@@ -15212,7 +15212,7 @@ export const ITEMS = [
     structureType: "parityAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":8,"term":9,"start":35},"sequence":[35,43,51],"promptText":"The pattern 35, 43, 51 keeps adding 8. Priya says number 9 in the pattern will be even. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":8,"term":9,"start":35},"terms":[35,43,51],"promptText":"The pattern 35, 43, 51 keeps adding 8. Priya says the 9th number will be even. Is Priya right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0757",
@@ -15222,7 +15222,7 @@ export const ITEMS = [
     structureType: "parityAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":9,"term":10,"start":16},"sequence":[16,25,34],"promptText":"Sam follows the pattern 16, 25, 34 (add 9 each time) out to number 10. Will that number be even?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":9,"term":10,"start":16},"terms":[16,25,34],"promptText":"Sam's pattern 16, 25, 34 adds 9 each time. Will the 10th number in the pattern be even?"}},
   },
   {
     itemId: "patterns-conc-b0821-0758",
@@ -15232,7 +15232,7 @@ export const ITEMS = [
     structureType: "parityAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":6,"term":8,"start":51},"sequence":[51,57,63],"promptText":"The pattern 51, 57, 63 keeps adding 6. Nia says number 8 in the pattern will be even. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":6,"term":8,"start":51},"terms":[51,57,63],"promptText":"The pattern 51, 57, 63 keeps adding 6. Nia says the 8th number will be even. Is Nia right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0759",
@@ -15242,7 +15242,7 @@ export const ITEMS = [
     structureType: "parityAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":4,"term":9,"start":27},"sequence":[27,31,35],"promptText":"Kai follows the pattern 27, 31, 35 (add 4 each time) out to number 9. Will that number be even?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":4,"term":9,"start":27},"terms":[27,31,35],"promptText":"Kai's pattern 27, 31, 35 adds 4 each time. Will the 9th number in the pattern be even?"}},
   },
   {
     itemId: "patterns-conc-b0821-0760",
@@ -15252,7 +15252,7 @@ export const ITEMS = [
     structureType: "parityAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":5,"term":10,"start":33},"sequence":[33,38,43],"promptText":"The pattern 33, 38, 43 keeps adding 5. June says number 10 in the pattern will be even. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":5,"term":10,"start":33},"terms":[33,38,43],"promptText":"The pattern 33, 38, 43 keeps adding 5. June says the 10th number will be even. Is June right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0761",
@@ -15262,7 +15262,7 @@ export const ITEMS = [
     structureType: "parityAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":7,"term":8,"start":45},"sequence":[45,52,59],"promptText":"Lily follows the pattern 45, 52, 59 (add 7 each time) out to number 8. Will that number be even?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":7,"term":8,"start":45},"terms":[45,52,59],"promptText":"Lily's pattern 45, 52, 59 adds 7 each time. Will the 8th number in the pattern be even?"}},
   },
   {
     itemId: "patterns-conc-b0821-0762",
@@ -15272,7 +15272,7 @@ export const ITEMS = [
     structureType: "parityAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":8,"term":9,"start":18},"sequence":[18,26,34],"promptText":"The pattern 18, 26, 34 keeps adding 8. Amara says number 9 in the pattern will be even. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":8,"term":9,"start":18},"terms":[18,26,34],"promptText":"The pattern 18, 26, 34 keeps adding 8. Amara says the 9th number will be even. Is Amara right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0763",
@@ -15282,7 +15282,7 @@ export const ITEMS = [
     structureType: "parityAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":3,"term":10,"start":62},"sequence":[62,65,68],"promptText":"Leo follows the pattern 62, 65, 68 (add 3 each time) out to number 10. Will that number be even?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":3,"term":10,"start":62},"terms":[62,65,68],"promptText":"Leo's pattern 62, 65, 68 adds 3 each time. Will the 10th number in the pattern be even?"}},
   },
   {
     itemId: "patterns-conc-b0821-0764",
@@ -15292,7 +15292,7 @@ export const ITEMS = [
     structureType: "parityAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":9,"term":8,"start":29},"sequence":[29,38,47],"promptText":"The pattern 29, 38, 47 keeps adding 9. Mina says number 8 in the pattern will be even. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":9,"term":8,"start":29},"terms":[29,38,47],"promptText":"The pattern 29, 38, 47 keeps adding 9. Mina says the 8th number will be even. Is Mina right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0765",
@@ -15302,7 +15302,7 @@ export const ITEMS = [
     structureType: "parityAt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":6,"term":9,"start":37},"sequence":[37,43,49],"promptText":"Theo follows the pattern 37, 43, 49 (add 6 each time) out to number 9. Will that number be even?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":6,"term":9,"start":37},"terms":[37,43,49],"promptText":"Theo's pattern 37, 43, 49 adds 6 each time. Will the 9th number in the pattern be even?"}},
   },
   {
     itemId: "patterns-conc-b0821-0766",
@@ -15312,7 +15312,7 @@ export const ITEMS = [
     structureType: "parityAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":11,"term":12,"start":112},"sequence":[112,123,134],"promptText":"The pattern 112, 123, 134 keeps adding 11. Nora says number 12 in the pattern will be even. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":11,"term":12,"start":112},"terms":[112,123,134],"promptText":"The pattern 112, 123, 134 keeps adding 11. Nora says the 12th number will be even. Is Nora right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0767",
@@ -15322,7 +15322,7 @@ export const ITEMS = [
     structureType: "parityAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":12,"term":11,"start":235},"sequence":[235,247,259],"promptText":"Luca follows the pattern 235, 247, 259 (add 12 each time) out to number 11. Will that number be even?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":12,"term":11,"start":235},"terms":[235,247,259],"promptText":"Luca's pattern 235, 247, 259 adds 12 each time. Will the 11th number in the pattern be even?"}},
   },
   {
     itemId: "patterns-conc-b0821-0768",
@@ -15332,7 +15332,7 @@ export const ITEMS = [
     structureType: "parityAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":15,"term":12,"start":341},"sequence":[341,356,371],"promptText":"The pattern 341, 356, 371 keeps adding 15. Ava says number 12 in the pattern will be even. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":15,"term":12,"start":341},"terms":[341,356,371],"promptText":"The pattern 341, 356, 371 keeps adding 15. Ava says the 12th number will be even. Is Ava right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0769",
@@ -15342,7 +15342,7 @@ export const ITEMS = [
     structureType: "parityAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":25,"term":11,"start":124},"sequence":[124,149,174],"promptText":"Omar follows the pattern 124, 149, 174 (add 25 each time) out to number 11. Will that number be even?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":25,"term":11,"start":124},"terms":[124,149,174],"promptText":"Omar's pattern 124, 149, 174 adds 25 each time. Will the 11th number in the pattern be even?"}},
   },
   {
     itemId: "patterns-conc-b0821-0770",
@@ -15352,7 +15352,7 @@ export const ITEMS = [
     structureType: "parityAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":11,"term":12,"start":452},"sequence":[452,463,474],"promptText":"The pattern 452, 463, 474 keeps adding 11. Ben says number 12 in the pattern will be even. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":11,"term":12,"start":452},"terms":[452,463,474],"promptText":"The pattern 452, 463, 474 keeps adding 11. Ben says the 12th number will be even. Is Ben right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0771",
@@ -15362,7 +15362,7 @@ export const ITEMS = [
     structureType: "parityAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":14,"term":11,"start":223},"sequence":[223,237,251],"promptText":"Finn follows the pattern 223, 237, 251 (add 14 each time) out to number 11. Will that number be even?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":14,"term":11,"start":223},"terms":[223,237,251],"promptText":"Finn's pattern 223, 237, 251 adds 14 each time. Will the 11th number in the pattern be even?"}},
   },
   {
     itemId: "patterns-conc-b0821-0772",
@@ -15372,7 +15372,7 @@ export const ITEMS = [
     structureType: "parityAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":21,"term":12,"start":335},"sequence":[335,356,377],"promptText":"The pattern 335, 356, 377 keeps adding 21. Priya says number 12 in the pattern will be even. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":21,"term":12,"start":335},"terms":[335,356,377],"promptText":"The pattern 335, 356, 377 keeps adding 21. Priya says the 12th number will be even. Is Priya right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0773",
@@ -15382,7 +15382,7 @@ export const ITEMS = [
     structureType: "parityAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":12,"term":11,"start":146},"sequence":[146,158,170],"promptText":"Sam follows the pattern 146, 158, 170 (add 12 each time) out to number 11. Will that number be even?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":12,"term":11,"start":146},"terms":[146,158,170],"promptText":"Sam's pattern 146, 158, 170 adds 12 each time. Will the 11th number in the pattern be even?"}},
   },
   {
     itemId: "patterns-conc-b0821-0774",
@@ -15392,7 +15392,7 @@ export const ITEMS = [
     structureType: "parityAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":13,"term":12,"start":518},"sequence":[518,531,544],"promptText":"The pattern 518, 531, 544 keeps adding 13. Nia says number 12 in the pattern will be even. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":13,"term":12,"start":518},"terms":[518,531,544],"promptText":"The pattern 518, 531, 544 keeps adding 13. Nia says the 12th number will be even. Is Nia right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0775",
@@ -15402,7 +15402,7 @@ export const ITEMS = [
     structureType: "parityAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":16,"term":11,"start":247},"sequence":[247,263,279],"promptText":"Kai follows the pattern 247, 263, 279 (add 16 each time) out to number 11. Will that number be even?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":16,"term":11,"start":247},"terms":[247,263,279],"promptText":"Kai's pattern 247, 263, 279 adds 16 each time. Will the 11th number in the pattern be even?"}},
   },
   {
     itemId: "patterns-conc-b0821-0776",
@@ -15412,7 +15412,7 @@ export const ITEMS = [
     structureType: "parityAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":22,"term":12,"start":333},"sequence":[333,355,377],"promptText":"The pattern 333, 355, 377 keeps adding 22. June says number 12 in the pattern will be even. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":22,"term":12,"start":333},"terms":[333,355,377],"promptText":"The pattern 333, 355, 377 keeps adding 22. June says the 12th number will be even. Is June right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0777",
@@ -15422,7 +15422,7 @@ export const ITEMS = [
     structureType: "parityAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":18,"term":11,"start":415},"sequence":[415,433,451],"promptText":"Lily follows the pattern 415, 433, 451 (add 18 each time) out to number 11. Will that number be even?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":18,"term":11,"start":415},"terms":[415,433,451],"promptText":"Lily's pattern 415, 433, 451 adds 18 each time. Will the 11th number in the pattern be even?"}},
   },
   {
     itemId: "patterns-conc-b0821-0778",
@@ -15432,7 +15432,7 @@ export const ITEMS = [
     structureType: "parityAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":24,"term":12,"start":128},"sequence":[128,152,176],"promptText":"The pattern 128, 152, 176 keeps adding 24. Amara says number 12 in the pattern will be even. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":24,"term":12,"start":128},"terms":[128,152,176],"promptText":"The pattern 128, 152, 176 keeps adding 24. Amara says the 12th number will be even. Is Amara right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0779",
@@ -15442,7 +15442,7 @@ export const ITEMS = [
     structureType: "parityAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":15,"term":11,"start":622},"sequence":[622,637,652],"promptText":"Leo follows the pattern 622, 637, 652 (add 15 each time) out to number 11. Will that number be even?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":15,"term":11,"start":622},"terms":[622,637,652],"promptText":"Leo's pattern 622, 637, 652 adds 15 each time. Will the 11th number in the pattern be even?"}},
   },
   {
     itemId: "patterns-conc-b0821-0780",
@@ -15452,7 +15452,7 @@ export const ITEMS = [
     structureType: "parityAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":17,"term":12,"start":289},"sequence":[289,306,323],"promptText":"The pattern 289, 306, 323 keeps adding 17. Mina says number 12 in the pattern will be even. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"pattern":{"kind":"parity","step":17,"term":12,"start":289},"terms":[289,306,323],"promptText":"The pattern 289, 306, 323 keeps adding 17. Mina says the 12th number will be even. Is Mina right?"}},
   },
   {
     itemId: "patterns-conc-b0821-0781",
@@ -15462,7 +15462,7 @@ export const ITEMS = [
     structureType: "parityAt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":23,"term":11,"start":317},"sequence":[317,340,363],"promptText":"Theo follows the pattern 317, 340, 363 (add 23 each time) out to number 11. Will that number be even?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"pattern":{"kind":"parity","step":23,"term":11,"start":317},"terms":[317,340,363],"promptText":"Theo's pattern 317, 340, 363 adds 23 each time. Will the 11th number in the pattern be even?"}},
   },
   {
     itemId: "patterns-proc-b0821-0001",
@@ -16172,7 +16172,7 @@ export const ITEMS = [
     structureType: "shapeAtPosition",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"circle","choices":["square","triangle","circle"],"display":{"pattern":{"pos":7,"core":["circle","square","triangle"],"kind":"repeatPos"},"sequence":["circle","square","triangle","circle","square","triangle"],"promptText":"Pattern: circle, square, triangle, circle, square, triangle, … What is shape number 7?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"circle","choices":["square","triangle","circle"],"display":{"pattern":{"pos":7,"core":["circle","square","triangle"],"kind":"repeatPos"},"sequence":["circle","square","triangle","circle","square","triangle"],"promptText":"Pattern: circle, square, triangle, circle, square, triangle, and so on. What is shape number 7?"}},
   },
   {
     itemId: "patterns-proc-b0821-0072",
@@ -16182,7 +16182,7 @@ export const ITEMS = [
     structureType: "shapeAtPosition",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"square","choices":["triangle","square","circle"],"display":{"pattern":{"pos":8,"core":["circle","square","triangle"],"kind":"repeatPos"},"sequence":["circle","square","triangle","circle","square","triangle"],"promptText":"Pattern: circle, square, triangle, circle, square, triangle, … Keep going. Which shape lands at position 8?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"square","choices":["triangle","square","circle"],"display":{"pattern":{"pos":8,"core":["circle","square","triangle"],"kind":"repeatPos"},"terms":["circle","square","triangle","circle","square","triangle"],"promptText":"Pattern: circle, square, triangle, circle, square, triangle, and so on. Which shape is in position 8?"}},
   },
   {
     itemId: "patterns-proc-b0821-0073",
@@ -16192,7 +16192,7 @@ export const ITEMS = [
     structureType: "shapeAtPosition",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"circle","choices":["circle","triangle","square"],"display":{"pattern":{"pos":10,"core":["circle","square","triangle"],"kind":"repeatPos"},"sequence":["circle","square","triangle","circle","square","triangle"],"promptText":"Pattern: circle, square, triangle, circle, square, triangle, … What is shape number 10?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"circle","choices":["circle","triangle","square"],"display":{"pattern":{"pos":10,"core":["circle","square","triangle"],"kind":"repeatPos"},"terms":["circle","square","triangle","circle","square","triangle"],"promptText":"Pattern: circle, square, triangle, circle, square, triangle, and so on. What is shape number 10?"}},
   },
   {
     itemId: "patterns-proc-b0821-0074",
@@ -16202,7 +16202,7 @@ export const ITEMS = [
     structureType: "shapeAtPosition",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"square","choices":["circle","triangle","square"],"display":{"pattern":{"pos":11,"core":["circle","square","triangle"],"kind":"repeatPos"},"sequence":["circle","square","triangle","circle","square","triangle"],"promptText":"Pattern: circle, square, triangle, circle, square, triangle, … Keep going. Which shape lands at position 11?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"square","choices":["circle","triangle","square"],"display":{"pattern":{"pos":11,"core":["circle","square","triangle"],"kind":"repeatPos"},"terms":["circle","square","triangle","circle","square","triangle"],"promptText":"Pattern: circle, square, triangle, circle, square, triangle, and so on. Which shape is in position 11?"}},
   },
   {
     itemId: "patterns-proc-b0821-0075",
@@ -16212,7 +16212,7 @@ export const ITEMS = [
     structureType: "shapeAtPosition",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"red","choices":["blue","green","red"],"display":{"pattern":{"pos":7,"core":["red","blue","green"],"kind":"repeatPos"},"sequence":["red","blue","green","red","blue","green"],"promptText":"Pattern: red, blue, green, red, blue, green, … What is shape number 7?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"red","choices":["blue","green","red"],"display":{"pattern":{"pos":7,"core":["red","blue","green"],"kind":"repeatPos"},"sequence":["red","blue","green","red","blue","green"],"promptText":"Pattern: red, blue, green, red, blue, green, and so on. What color is number 7 in the pattern?"}},
   },
   {
     itemId: "patterns-proc-b0821-0076",
@@ -16222,7 +16222,7 @@ export const ITEMS = [
     structureType: "shapeAtPosition",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"blue","choices":["green","blue","red"],"display":{"pattern":{"pos":8,"core":["red","blue","green"],"kind":"repeatPos"},"sequence":["red","blue","green","red","blue","green"],"promptText":"Pattern: red, blue, green, red, blue, green, … Keep going. Which shape lands at position 8?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"blue","choices":["green","blue","red"],"display":{"pattern":{"pos":8,"core":["red","blue","green"],"kind":"repeatPos"},"terms":["red","blue","green","red","blue","green"],"promptText":"Pattern: red, blue, green, red, blue, green, and so on. Which color is in position 8?"}},
   },
   {
     itemId: "patterns-proc-b0821-0077",
@@ -16232,7 +16232,7 @@ export const ITEMS = [
     structureType: "shapeAtPosition",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"red","choices":["red","green","blue"],"display":{"pattern":{"pos":10,"core":["red","blue","green"],"kind":"repeatPos"},"sequence":["red","blue","green","red","blue","green"],"promptText":"Pattern: red, blue, green, red, blue, green, … What is shape number 10?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"red","choices":["red","green","blue"],"display":{"pattern":{"pos":10,"core":["red","blue","green"],"kind":"repeatPos"},"terms":["red","blue","green","red","blue","green"],"promptText":"Pattern: red, blue, green, red, blue, green, and so on. What color is number 10 in the pattern?"}},
   },
   {
     itemId: "patterns-proc-b0821-0078",
@@ -16242,7 +16242,7 @@ export const ITEMS = [
     structureType: "shapeAtPosition",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"blue","choices":["red","green","blue"],"display":{"pattern":{"pos":11,"core":["red","blue","green"],"kind":"repeatPos"},"sequence":["red","blue","green","red","blue","green"],"promptText":"Pattern: red, blue, green, red, blue, green, … Keep going. Which shape lands at position 11?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"blue","choices":["red","green","blue"],"display":{"pattern":{"pos":11,"core":["red","blue","green"],"kind":"repeatPos"},"terms":["red","blue","green","red","blue","green"],"promptText":"Pattern: red, blue, green, red, blue, green, and so on. Which color is in position 11?"}},
   },
   {
     itemId: "patterns-proc-b0821-0079",
@@ -16252,7 +16252,7 @@ export const ITEMS = [
     structureType: "shapeAtPosition",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"star","choices":["moon","sun","star"],"display":{"pattern":{"pos":7,"core":["star","moon","sun"],"kind":"repeatPos"},"sequence":["star","moon","sun","star","moon","sun"],"promptText":"Pattern: star, moon, sun, star, moon, sun, … What is shape number 7?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"star","choices":["moon","sun","star"],"display":{"pattern":{"pos":7,"core":["star","moon","sun"],"kind":"repeatPos"},"sequence":["star","moon","sun","star","moon","sun"],"promptText":"Pattern: star, moon, sun, star, moon, sun, and so on. What is shape number 7?"}},
   },
   {
     itemId: "patterns-proc-b0821-0080",
@@ -16262,7 +16262,7 @@ export const ITEMS = [
     structureType: "shapeAtPosition",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"moon","choices":["sun","moon","star"],"display":{"pattern":{"pos":8,"core":["star","moon","sun"],"kind":"repeatPos"},"sequence":["star","moon","sun","star","moon","sun"],"promptText":"Pattern: star, moon, sun, star, moon, sun, … Keep going. Which shape lands at position 8?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"moon","choices":["sun","moon","star"],"display":{"pattern":{"pos":8,"core":["star","moon","sun"],"kind":"repeatPos"},"terms":["star","moon","sun","star","moon","sun"],"promptText":"Pattern: star, moon, sun, star, moon, sun, and so on. Which shape is in position 8?"}},
   },
   {
     itemId: "patterns-proc-b0821-0081",
@@ -16272,7 +16272,7 @@ export const ITEMS = [
     structureType: "shapeAtPosition",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"star","choices":["star","sun","moon"],"display":{"pattern":{"pos":10,"core":["star","moon","sun"],"kind":"repeatPos"},"sequence":["star","moon","sun","star","moon","sun"],"promptText":"Pattern: star, moon, sun, star, moon, sun, … What is shape number 10?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"star","choices":["star","sun","moon"],"display":{"pattern":{"pos":10,"core":["star","moon","sun"],"kind":"repeatPos"},"terms":["star","moon","sun","star","moon","sun"],"promptText":"Pattern: star, moon, sun, star, moon, sun, and so on. What is shape number 10?"}},
   },
   {
     itemId: "patterns-proc-b0821-0082",
@@ -16282,7 +16282,7 @@ export const ITEMS = [
     structureType: "shapeAtPosition",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"moon","choices":["star","sun","moon"],"display":{"pattern":{"pos":11,"core":["star","moon","sun"],"kind":"repeatPos"},"sequence":["star","moon","sun","star","moon","sun"],"promptText":"Pattern: star, moon, sun, star, moon, sun, … Keep going. Which shape lands at position 11?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"moon","choices":["star","sun","moon"],"display":{"pattern":{"pos":11,"core":["star","moon","sun"],"kind":"repeatPos"},"terms":["star","moon","sun","star","moon","sun"],"promptText":"Pattern: star, moon, sun, star, moon, sun, and so on. Which shape is in position 11?"}},
   },
   {
     itemId: "patterns-proc-b0821-0083",
@@ -16332,7 +16332,7 @@ export const ITEMS = [
     structureType: "shapeAtPositionQ2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"circle","choices":["square","heart","triangle","circle"],"display":{"pattern":{"pos":9,"core":["circle","square","triangle","heart"],"kind":"repeatPos"},"sequence":["circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"Pattern: circle, square, triangle, heart, circle, square, triangle, heart, … What is shape number 9?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"circle","choices":["square","heart","triangle","circle"],"display":{"pattern":{"pos":9,"core":["circle","square","triangle","heart"],"kind":"repeatPos"},"sequence":["circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"Pattern: circle, square, triangle, heart, circle, square, triangle, heart, and so on. What is shape number 9?"}},
   },
   {
     itemId: "patterns-proc-b0821-0088",
@@ -16342,7 +16342,7 @@ export const ITEMS = [
     structureType: "shapeAtPositionQ2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"heart","choices":["triangle","heart","circle","square"],"display":{"pattern":{"pos":12,"core":["circle","square","triangle","heart"],"kind":"repeatPos"},"sequence":["circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"Pattern: circle, square, triangle, heart, circle, square, triangle, heart, … Keep going. Which shape lands at position 12?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"heart","choices":["triangle","heart","circle","square"],"display":{"pattern":{"pos":12,"core":["circle","square","triangle","heart"],"kind":"repeatPos"},"terms":["circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"Pattern: circle, square, triangle, heart, circle, square, triangle, heart, and so on. Which shape is in position 12?"}},
   },
   {
     itemId: "patterns-proc-b0821-0089",
@@ -16352,7 +16352,7 @@ export const ITEMS = [
     structureType: "shapeAtPositionQ2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"red","choices":["green","blue","red"],"display":{"pattern":{"pos":9,"core":["red","blue","green","red"],"kind":"repeatPos"},"sequence":["red","blue","green","red","red","blue","green","red"],"promptText":"Pattern: red, blue, green, red, red, blue, green, red, … What is shape number 9?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"red","choices":["green","blue","red"],"display":{"pattern":{"pos":9,"core":["red","blue","green","red"],"kind":"repeatPos"},"sequence":["red","blue","green","red","red","blue","green","red"],"promptText":"Pattern: red, blue, green, red, red, blue, green, red, and so on. What color is number 9 in the pattern?"}},
   },
   {
     itemId: "patterns-proc-b0821-0090",
@@ -16362,7 +16362,7 @@ export const ITEMS = [
     structureType: "shapeAtPositionQ2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"red","choices":["blue","green","red"],"display":{"pattern":{"pos":12,"core":["red","blue","green","red"],"kind":"repeatPos"},"sequence":["red","blue","green","red","red","blue","green","red"],"promptText":"Pattern: red, blue, green, red, red, blue, green, red, … Keep going. Which shape lands at position 12?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"red","choices":["blue","green","red"],"display":{"pattern":{"pos":12,"core":["red","blue","green","red"],"kind":"repeatPos"},"terms":["red","blue","green","red","red","blue","green","red"],"promptText":"Pattern: red, blue, green, red, red, blue, green, red, and so on. Which color is in position 12?"}},
   },
   {
     itemId: "patterns-proc-b0821-0091",
@@ -16722,7 +16722,7 @@ export const ITEMS = [
     structureType: "shapeAtPositionQuad",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"square","choices":["circle","triangle","heart","square"],"display":{"pattern":{"pos":14,"core":["circle","square","triangle","heart"],"kind":"repeatPos"},"sequence":["circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"Pattern: circle, square, triangle, heart, circle, square, triangle, heart, … What is shape number 14?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"square","choices":["circle","triangle","heart","square"],"display":{"pattern":{"pos":14,"core":["circle","square","triangle","heart"],"kind":"repeatPos"},"terms":["circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"Pattern: circle, square, triangle, heart, circle, square, triangle, heart, and so on. What is shape number 14?"}},
   },
   {
     itemId: "patterns-proc-b0821-0127",
@@ -16732,7 +16732,7 @@ export const ITEMS = [
     structureType: "shapeAtPositionQuad",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"circle","choices":["heart","square","circle","triangle"],"display":{"pattern":{"pos":17,"core":["circle","square","triangle","heart"],"kind":"repeatPos"},"sequence":["circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"Pattern: circle, square, triangle, heart, circle, square, triangle, heart, … Keep going. Which shape lands at position 17?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"circle","choices":["heart","square","circle","triangle"],"display":{"pattern":{"pos":17,"core":["circle","square","triangle","heart"],"kind":"repeatPos"},"terms":["circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"Pattern: circle, square, triangle, heart, circle, square, triangle, heart, and so on. Which shape is in position 17?"}},
   },
   {
     itemId: "patterns-proc-b0821-0128",
@@ -16742,7 +16742,7 @@ export const ITEMS = [
     structureType: "shapeAtPositionQuad",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"square","choices":["circle","triangle","heart","square"],"display":{"pattern":{"pos":18,"core":["circle","square","triangle","heart"],"kind":"repeatPos"},"sequence":["circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"Pattern: circle, square, triangle, heart, circle, square, triangle, heart, … What is shape number 18?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"square","choices":["circle","triangle","heart","square"],"display":{"pattern":{"pos":18,"core":["circle","square","triangle","heart"],"kind":"repeatPos"},"terms":["circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"Pattern: circle, square, triangle, heart, circle, square, triangle, heart, and so on. What is shape number 18?"}},
   },
   {
     itemId: "patterns-proc-b0821-0129",
@@ -16752,7 +16752,7 @@ export const ITEMS = [
     structureType: "shapeAtPositionQuad",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"circle","choices":["triangle","circle","heart","square"],"display":{"pattern":{"pos":21,"core":["circle","square","triangle","heart"],"kind":"repeatPos"},"sequence":["circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"Pattern: circle, square, triangle, heart, circle, square, triangle, heart, … Keep going. Which shape lands at position 21?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"circle","choices":["triangle","circle","heart","square"],"display":{"pattern":{"pos":21,"core":["circle","square","triangle","heart"],"kind":"repeatPos"},"terms":["circle","square","triangle","heart","circle","square","triangle","heart"],"promptText":"Pattern: circle, square, triangle, heart, circle, square, triangle, heart, and so on. Which shape is in position 21?"}},
   },
   {
     itemId: "patterns-proc-b0821-0130",
@@ -16762,7 +16762,7 @@ export const ITEMS = [
     structureType: "shapeAtPositionQuad",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"blue","choices":["green","red","blue"],"display":{"pattern":{"pos":14,"core":["red","blue","green","red"],"kind":"repeatPos"},"sequence":["red","blue","green","red","red","blue","green","red"],"promptText":"Pattern: red, blue, green, red, red, blue, green, red, … What is shape number 14?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"blue","choices":["green","red","blue"],"display":{"pattern":{"pos":14,"core":["red","blue","green","red"],"kind":"repeatPos"},"terms":["red","blue","green","red","red","blue","green","red"],"promptText":"Pattern: red, blue, green, red, red, blue, green, red, and so on. What color is number 14 in the pattern?"}},
   },
   {
     itemId: "patterns-proc-b0821-0131",
@@ -16772,7 +16772,7 @@ export const ITEMS = [
     structureType: "shapeAtPositionQuad",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"red","choices":["blue","red","green"],"display":{"pattern":{"pos":17,"core":["red","blue","green","red"],"kind":"repeatPos"},"sequence":["red","blue","green","red","red","blue","green","red"],"promptText":"Pattern: red, blue, green, red, red, blue, green, red, … Keep going. Which shape lands at position 17?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"red","choices":["blue","red","green"],"display":{"pattern":{"pos":17,"core":["red","blue","green","red"],"kind":"repeatPos"},"terms":["red","blue","green","red","red","blue","green","red"],"promptText":"Pattern: red, blue, green, red, red, blue, green, red, and so on. Which color is in position 17?"}},
   },
   {
     itemId: "patterns-proc-b0821-0132",
@@ -16782,7 +16782,7 @@ export const ITEMS = [
     structureType: "shapeAtPositionQuad",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"blue","choices":["red","green","blue"],"display":{"pattern":{"pos":18,"core":["red","blue","green","red"],"kind":"repeatPos"},"sequence":["red","blue","green","red","red","blue","green","red"],"promptText":"Pattern: red, blue, green, red, red, blue, green, red, … What is shape number 18?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"blue","choices":["red","green","blue"],"display":{"pattern":{"pos":18,"core":["red","blue","green","red"],"kind":"repeatPos"},"terms":["red","blue","green","red","red","blue","green","red"],"promptText":"Pattern: red, blue, green, red, red, blue, green, red, and so on. What color is number 18 in the pattern?"}},
   },
   {
     itemId: "patterns-proc-b0821-0133",
@@ -16792,7 +16792,7 @@ export const ITEMS = [
     structureType: "shapeAtPositionQuad",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"red","choices":["green","red","blue"],"display":{"pattern":{"pos":21,"core":["red","blue","green","red"],"kind":"repeatPos"},"sequence":["red","blue","green","red","red","blue","green","red"],"promptText":"Pattern: red, blue, green, red, red, blue, green, red, … Keep going. Which shape lands at position 21?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"red","choices":["green","red","blue"],"display":{"pattern":{"pos":21,"core":["red","blue","green","red"],"kind":"repeatPos"},"terms":["red","blue","green","red","red","blue","green","red"],"promptText":"Pattern: red, blue, green, red, red, blue, green, red, and so on. Which color is in position 21?"}},
   },
   {
     itemId: "patterns-proc-b0821-0134",
@@ -16802,7 +16802,7 @@ export const ITEMS = [
     structureType: "shapeAtPositionFar",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"circle","choices":["triangle","circle","square"],"display":{"pattern":{"pos":13,"core":["circle","square","triangle"],"kind":"repeatPos"},"sequence":["circle","square","triangle","circle","square","triangle"],"promptText":"Pattern: circle, square, triangle, circle, square, triangle, … What is shape number 13?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"circle","choices":["triangle","circle","square"],"display":{"pattern":{"pos":13,"core":["circle","square","triangle"],"kind":"repeatPos"},"terms":["circle","square","triangle","circle","square","triangle"],"promptText":"Pattern: circle, square, triangle, circle, square, triangle, and so on. What is shape number 13?"}},
   },
   {
     itemId: "patterns-proc-b0821-0135",
@@ -16812,7 +16812,7 @@ export const ITEMS = [
     structureType: "shapeAtPositionFar",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"triangle","choices":["square","triangle","circle"],"display":{"pattern":{"pos":15,"core":["circle","square","triangle"],"kind":"repeatPos"},"sequence":["circle","square","triangle","circle","square","triangle"],"promptText":"Pattern: circle, square, triangle, circle, square, triangle, … Keep going. Which shape lands at position 15?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"triangle","choices":["square","triangle","circle"],"display":{"pattern":{"pos":15,"core":["circle","square","triangle"],"kind":"repeatPos"},"terms":["circle","square","triangle","circle","square","triangle"],"promptText":"Pattern: circle, square, triangle, circle, square, triangle, and so on. Which shape is in position 15?"}},
   },
   {
     itemId: "patterns-proc-b0821-0136",
@@ -16822,7 +16822,7 @@ export const ITEMS = [
     structureType: "shapeAtPositionFar",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"square","choices":["square","circle","triangle"],"display":{"pattern":{"pos":17,"core":["circle","square","triangle"],"kind":"repeatPos"},"sequence":["circle","square","triangle","circle","square","triangle"],"promptText":"Pattern: circle, square, triangle, circle, square, triangle, … What is shape number 17?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"square","choices":["square","circle","triangle"],"display":{"pattern":{"pos":17,"core":["circle","square","triangle"],"kind":"repeatPos"},"terms":["circle","square","triangle","circle","square","triangle"],"promptText":"Pattern: circle, square, triangle, circle, square, triangle, and so on. What is shape number 17?"}},
   },
   {
     itemId: "patterns-proc-b0821-0137",
@@ -16832,7 +16832,7 @@ export const ITEMS = [
     structureType: "shapeAtPositionFar",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"circle","choices":["square","triangle","circle"],"display":{"pattern":{"pos":19,"core":["circle","square","triangle"],"kind":"repeatPos"},"sequence":["circle","square","triangle","circle","square","triangle"],"promptText":"Pattern: circle, square, triangle, circle, square, triangle, … Keep going. Which shape lands at position 19?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"circle","choices":["square","triangle","circle"],"display":{"pattern":{"pos":19,"core":["circle","square","triangle"],"kind":"repeatPos"},"terms":["circle","square","triangle","circle","square","triangle"],"promptText":"Pattern: circle, square, triangle, circle, square, triangle, and so on. Which shape is in position 19?"}},
   },
   {
     itemId: "patterns-proc-b0821-0138",
@@ -16842,7 +16842,7 @@ export const ITEMS = [
     structureType: "shapeAtPositionFar",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"red","choices":["green","red","blue"],"display":{"pattern":{"pos":13,"core":["red","blue","green"],"kind":"repeatPos"},"sequence":["red","blue","green","red","blue","green"],"promptText":"Pattern: red, blue, green, red, blue, green, … What is shape number 13?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"red","choices":["green","red","blue"],"display":{"pattern":{"pos":13,"core":["red","blue","green"],"kind":"repeatPos"},"terms":["red","blue","green","red","blue","green"],"promptText":"Pattern: red, blue, green, red, blue, green, and so on. What color is number 13 in the pattern?"}},
   },
   {
     itemId: "patterns-proc-b0821-0139",
@@ -16852,7 +16852,7 @@ export const ITEMS = [
     structureType: "shapeAtPositionFar",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"green","choices":["blue","green","red"],"display":{"pattern":{"pos":15,"core":["red","blue","green"],"kind":"repeatPos"},"sequence":["red","blue","green","red","blue","green"],"promptText":"Pattern: red, blue, green, red, blue, green, … Keep going. Which shape lands at position 15?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"green","choices":["blue","green","red"],"display":{"pattern":{"pos":15,"core":["red","blue","green"],"kind":"repeatPos"},"terms":["red","blue","green","red","blue","green"],"promptText":"Pattern: red, blue, green, red, blue, green, and so on. Which color is in position 15?"}},
   },
   {
     itemId: "patterns-proc-b0821-0140",
@@ -16862,7 +16862,7 @@ export const ITEMS = [
     structureType: "shapeAtPositionFar",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"blue","choices":["blue","red","green"],"display":{"pattern":{"pos":17,"core":["red","blue","green"],"kind":"repeatPos"},"sequence":["red","blue","green","red","blue","green"],"promptText":"Pattern: red, blue, green, red, blue, green, … What is shape number 17?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"blue","choices":["blue","red","green"],"display":{"pattern":{"pos":17,"core":["red","blue","green"],"kind":"repeatPos"},"terms":["red","blue","green","red","blue","green"],"promptText":"Pattern: red, blue, green, red, blue, green, and so on. What color is number 17 in the pattern?"}},
   },
   {
     itemId: "patterns-proc-b0821-0141",
@@ -16872,7 +16872,7 @@ export const ITEMS = [
     structureType: "shapeAtPositionFar",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"red","choices":["blue","green","red"],"display":{"pattern":{"pos":19,"core":["red","blue","green"],"kind":"repeatPos"},"sequence":["red","blue","green","red","blue","green"],"promptText":"Pattern: red, blue, green, red, blue, green, … Keep going. Which shape lands at position 19?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"red","choices":["blue","green","red"],"display":{"pattern":{"pos":19,"core":["red","blue","green"],"kind":"repeatPos"},"terms":["red","blue","green","red","blue","green"],"promptText":"Pattern: red, blue, green, red, blue, green, and so on. Which color is in position 19?"}},
   },
   {
     itemId: "patterns-proc-b0821-0142",
@@ -16882,7 +16882,7 @@ export const ITEMS = [
     structureType: "shapeAtPositionFar",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"star","choices":["sun","star","moon"],"display":{"pattern":{"pos":13,"core":["star","moon","sun"],"kind":"repeatPos"},"sequence":["star","moon","sun","star","moon","sun"],"promptText":"Pattern: star, moon, sun, star, moon, sun, … What is shape number 13?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"star","choices":["sun","star","moon"],"display":{"pattern":{"pos":13,"core":["star","moon","sun"],"kind":"repeatPos"},"terms":["star","moon","sun","star","moon","sun"],"promptText":"Pattern: star, moon, sun, star, moon, sun, and so on. What is shape number 13?"}},
   },
   {
     itemId: "patterns-proc-b0821-0143",
@@ -16892,7 +16892,7 @@ export const ITEMS = [
     structureType: "shapeAtPositionFar",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"sun","choices":["moon","sun","star"],"display":{"pattern":{"pos":15,"core":["star","moon","sun"],"kind":"repeatPos"},"sequence":["star","moon","sun","star","moon","sun"],"promptText":"Pattern: star, moon, sun, star, moon, sun, … Keep going. Which shape lands at position 15?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"sun","choices":["moon","sun","star"],"display":{"pattern":{"pos":15,"core":["star","moon","sun"],"kind":"repeatPos"},"terms":["star","moon","sun","star","moon","sun"],"promptText":"Pattern: star, moon, sun, star, moon, sun, and so on. Which shape is in position 15?"}},
   },
   {
     itemId: "patterns-proc-b0821-0144",
@@ -16902,7 +16902,7 @@ export const ITEMS = [
     structureType: "shapeAtPositionFar",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"moon","choices":["moon","star","sun"],"display":{"pattern":{"pos":17,"core":["star","moon","sun"],"kind":"repeatPos"},"sequence":["star","moon","sun","star","moon","sun"],"promptText":"Pattern: star, moon, sun, star, moon, sun, … What is shape number 17?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"moon","choices":["moon","star","sun"],"display":{"pattern":{"pos":17,"core":["star","moon","sun"],"kind":"repeatPos"},"terms":["star","moon","sun","star","moon","sun"],"promptText":"Pattern: star, moon, sun, star, moon, sun, and so on. What is shape number 17?"}},
   },
   {
     itemId: "patterns-proc-b0821-0145",
@@ -16912,7 +16912,7 @@ export const ITEMS = [
     structureType: "shapeAtPositionFar",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"star","choices":["moon","sun","star"],"display":{"pattern":{"pos":19,"core":["star","moon","sun"],"kind":"repeatPos"},"sequence":["star","moon","sun","star","moon","sun"],"promptText":"Pattern: star, moon, sun, star, moon, sun, … Keep going. Which shape lands at position 19?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"star","choices":["moon","sun","star"],"display":{"pattern":{"pos":19,"core":["star","moon","sun"],"kind":"repeatPos"},"terms":["star","moon","sun","star","moon","sun"],"promptText":"Pattern: star, moon, sun, star, moon, sun, and so on. Which shape is in position 19?"}},
   },
   {
     itemId: "patterns-proc-b0821-0146",
@@ -17732,7 +17732,7 @@ export const ITEMS = [
     structureType: "firstMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"step":6,"counting":{"back":6,"kind":"countBack","start":23},"sequence":["?",23,29,35],"promptText":"Pattern: ?, 23, 29, 35 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"step":6,"counting":{"back":6,"kind":"countBack","start":23},"terms":["__",23,29,35],"promptText":"Pattern: __, 23, 29, 35. What number comes first?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0228",
@@ -17742,7 +17742,7 @@ export const ITEMS = [
     structureType: "firstMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"step":7,"counting":{"back":7,"kind":"countBack","start":35},"sequence":["?",35,42,49],"promptText":"Pattern: ?, 35, 42, 49 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"step":7,"counting":{"back":7,"kind":"countBack","start":35},"terms":["__",35,42,49],"promptText":"What number comes first in the pattern __, 35, 42, 49?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0229",
@@ -17752,7 +17752,7 @@ export const ITEMS = [
     structureType: "firstMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"step":8,"counting":{"back":8,"kind":"countBack","start":41},"sequence":["?",41,49,57],"promptText":"Pattern: ?, 41, 49, 57 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"step":8,"counting":{"back":8,"kind":"countBack","start":41},"terms":["__",41,49,57],"promptText":"Pattern: __, 41, 49, 57. What number comes first?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0230",
@@ -17762,7 +17762,7 @@ export const ITEMS = [
     structureType: "firstMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"step":9,"counting":{"back":9,"kind":"countBack","start":27},"sequence":["?",27,36,45],"promptText":"Pattern: ?, 27, 36, 45 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"step":9,"counting":{"back":9,"kind":"countBack","start":27},"terms":["__",27,36,45],"promptText":"What number comes first in the pattern __, 27, 36, 45?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0231",
@@ -17772,7 +17772,7 @@ export const ITEMS = [
     structureType: "firstMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"step":6,"counting":{"back":6,"kind":"countBack","start":52},"sequence":["?",52,58,64],"promptText":"Pattern: ?, 52, 58, 64 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"step":6,"counting":{"back":6,"kind":"countBack","start":52},"terms":["__",52,58,64],"promptText":"Pattern: __, 52, 58, 64. What number comes first?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0232",
@@ -17782,7 +17782,7 @@ export const ITEMS = [
     structureType: "firstMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"step":7,"counting":{"back":7,"kind":"countBack","start":33},"sequence":["?",33,40,47],"promptText":"Pattern: ?, 33, 40, 47 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"step":7,"counting":{"back":7,"kind":"countBack","start":33},"terms":["__",33,40,47],"promptText":"What number comes first in the pattern __, 33, 40, 47?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0233",
@@ -17792,7 +17792,7 @@ export const ITEMS = [
     structureType: "firstMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"step":8,"counting":{"back":8,"kind":"countBack","start":45},"sequence":["?",45,53,61],"promptText":"Pattern: ?, 45, 53, 61 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"step":8,"counting":{"back":8,"kind":"countBack","start":45},"terms":["__",45,53,61],"promptText":"Pattern: __, 45, 53, 61. What number comes first?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0234",
@@ -17802,7 +17802,7 @@ export const ITEMS = [
     structureType: "firstMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"step":4,"counting":{"back":4,"kind":"countBack","start":26},"sequence":["?",26,30,34],"promptText":"Pattern: ?, 26, 30, 34 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"step":4,"counting":{"back":4,"kind":"countBack","start":26},"terms":["__",26,30,34],"promptText":"What number comes first in the pattern __, 26, 30, 34?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0235",
@@ -17812,7 +17812,7 @@ export const ITEMS = [
     structureType: "firstMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"step":5,"counting":{"back":5,"kind":"countBack","start":61},"sequence":["?",61,66,71],"promptText":"Pattern: ?, 61, 66, 71 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"step":5,"counting":{"back":5,"kind":"countBack","start":61},"terms":["__",61,66,71],"promptText":"Pattern: __, 61, 66, 71. What number comes first?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0236",
@@ -17822,7 +17822,7 @@ export const ITEMS = [
     structureType: "firstMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"step":6,"counting":{"back":6,"kind":"countBack","start":38},"sequence":["?",38,44,50],"promptText":"Pattern: ?, 38, 44, 50 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"step":6,"counting":{"back":6,"kind":"countBack","start":38},"terms":["__",38,44,50],"promptText":"What number comes first in the pattern __, 38, 44, 50?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0237",
@@ -17832,7 +17832,7 @@ export const ITEMS = [
     structureType: "firstMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"step":7,"counting":{"back":7,"kind":"countBack","start":47},"sequence":["?",47,54,61],"promptText":"Pattern: ?, 47, 54, 61 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"step":7,"counting":{"back":7,"kind":"countBack","start":47},"terms":["__",47,54,61],"promptText":"Pattern: __, 47, 54, 61. What number comes first?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0238",
@@ -17842,7 +17842,7 @@ export const ITEMS = [
     structureType: "firstMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":52,"display":{"step":3,"counting":{"back":3,"kind":"countBack","start":55},"sequence":["?",55,58,61],"promptText":"Pattern: ?, 55, 58, 61 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":52,"display":{"step":3,"counting":{"back":3,"kind":"countBack","start":55},"terms":["__",55,58,61],"promptText":"What number comes first in the pattern __, 55, 58, 61?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0239",
@@ -17852,7 +17852,7 @@ export const ITEMS = [
     structureType: "firstMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"step":8,"counting":{"back":8,"kind":"countBack","start":29},"sequence":["?",29,37,45],"promptText":"Pattern: ?, 29, 37, 45 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"step":8,"counting":{"back":8,"kind":"countBack","start":29},"terms":["__",29,37,45],"promptText":"Pattern: __, 29, 37, 45. What number comes first?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0240",
@@ -17862,7 +17862,7 @@ export const ITEMS = [
     structureType: "firstMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"step":9,"counting":{"back":9,"kind":"countBack","start":64},"sequence":["?",64,73,82],"promptText":"Pattern: ?, 64, 73, 82 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"step":9,"counting":{"back":9,"kind":"countBack","start":64},"terms":["__",64,73,82],"promptText":"What number comes first in the pattern __, 64, 73, 82?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0241",
@@ -17872,7 +17872,7 @@ export const ITEMS = [
     structureType: "firstMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"step":4,"counting":{"back":4,"kind":"countBack","start":31},"sequence":["?",31,35,39],"promptText":"Pattern: ?, 31, 35, 39 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"step":4,"counting":{"back":4,"kind":"countBack","start":31},"terms":["__",31,35,39],"promptText":"Pattern: __, 31, 35, 39. What number comes first?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0242",
@@ -17882,7 +17882,7 @@ export const ITEMS = [
     structureType: "firstMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"step":5,"counting":{"back":5,"kind":"countBack","start":43},"sequence":["?",43,48,53],"promptText":"Pattern: ?, 43, 48, 53 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"step":5,"counting":{"back":5,"kind":"countBack","start":43},"terms":["__",43,48,53],"promptText":"What number comes first in the pattern __, 43, 48, 53?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0243",
@@ -18252,7 +18252,7 @@ export const ITEMS = [
     structureType: "firstBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":112,"display":{"step":11,"counting":{"back":11,"kind":"countBack","start":123},"sequence":["?",123,134,145],"promptText":"Pattern: ?, 123, 134, 145 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":112,"display":{"step":11,"counting":{"back":11,"kind":"countBack","start":123},"terms":["__",123,134,145],"promptText":"Pattern: __, 123, 134, 145. What number comes first?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0280",
@@ -18262,7 +18262,7 @@ export const ITEMS = [
     structureType: "firstBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":223,"display":{"step":12,"counting":{"back":12,"kind":"countBack","start":235},"sequence":["?",235,247,259],"promptText":"Pattern: ?, 235, 247, 259 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":223,"display":{"step":12,"counting":{"back":12,"kind":"countBack","start":235},"terms":["__",235,247,259],"promptText":"What number comes first in the pattern __, 235, 247, 259?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0281",
@@ -18272,7 +18272,7 @@ export const ITEMS = [
     structureType: "firstBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":326,"display":{"step":15,"counting":{"back":15,"kind":"countBack","start":341},"sequence":["?",341,356,371],"promptText":"Pattern: ?, 341, 356, 371 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":326,"display":{"step":15,"counting":{"back":15,"kind":"countBack","start":341},"terms":["__",341,356,371],"promptText":"Pattern: __, 341, 356, 371. What number comes first?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0282",
@@ -18282,7 +18282,7 @@ export const ITEMS = [
     structureType: "firstBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":202,"display":{"step":25,"counting":{"back":25,"kind":"countBack","start":227},"sequence":["?",227,252,277],"promptText":"Pattern: ?, 227, 252, 277 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":202,"display":{"step":25,"counting":{"back":25,"kind":"countBack","start":227},"terms":["__",227,252,277],"promptText":"What number comes first in the pattern __, 227, 252, 277?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0283",
@@ -18292,7 +18292,7 @@ export const ITEMS = [
     structureType: "firstBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":339,"display":{"step":13,"counting":{"back":13,"kind":"countBack","start":352},"sequence":["?",352,365,378],"promptText":"Pattern: ?, 352, 365, 378 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":339,"display":{"step":13,"counting":{"back":13,"kind":"countBack","start":352},"terms":["__",352,365,378],"promptText":"Pattern: __, 352, 365, 378. What number comes first?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0284",
@@ -18302,7 +18302,7 @@ export const ITEMS = [
     structureType: "firstBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":419,"display":{"step":14,"counting":{"back":14,"kind":"countBack","start":433},"sequence":["?",433,447,461],"promptText":"Pattern: ?, 433, 447, 461 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":419,"display":{"step":14,"counting":{"back":14,"kind":"countBack","start":433},"terms":["__",433,447,461],"promptText":"What number comes first in the pattern __, 433, 447, 461?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0285",
@@ -18312,7 +18312,7 @@ export const ITEMS = [
     structureType: "firstBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":524,"display":{"step":21,"counting":{"back":21,"kind":"countBack","start":545},"sequence":["?",545,566,587],"promptText":"Pattern: ?, 545, 566, 587 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":524,"display":{"step":21,"counting":{"back":21,"kind":"countBack","start":545},"terms":["__",545,566,587],"promptText":"Pattern: __, 545, 566, 587. What number comes first?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0286",
@@ -18322,7 +18322,7 @@ export const ITEMS = [
     structureType: "firstBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":210,"display":{"step":16,"counting":{"back":16,"kind":"countBack","start":226},"sequence":["?",226,242,258],"promptText":"Pattern: ?, 226, 242, 258 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":210,"display":{"step":16,"counting":{"back":16,"kind":"countBack","start":226},"terms":["__",226,242,258],"promptText":"What number comes first in the pattern __, 226, 242, 258?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0287",
@@ -18332,7 +18332,7 @@ export const ITEMS = [
     structureType: "firstBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":339,"display":{"step":22,"counting":{"back":22,"kind":"countBack","start":361},"sequence":["?",361,383,405],"promptText":"Pattern: ?, 361, 383, 405 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":339,"display":{"step":22,"counting":{"back":22,"kind":"countBack","start":361},"terms":["__",361,383,405],"promptText":"Pattern: __, 361, 383, 405. What number comes first?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0288",
@@ -18342,7 +18342,7 @@ export const ITEMS = [
     structureType: "firstBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":220,"display":{"step":18,"counting":{"back":18,"kind":"countBack","start":238},"sequence":["?",238,256,274],"promptText":"Pattern: ?, 238, 256, 274 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":220,"display":{"step":18,"counting":{"back":18,"kind":"countBack","start":238},"terms":["__",238,256,274],"promptText":"What number comes first in the pattern __, 238, 256, 274?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0289",
@@ -18352,7 +18352,7 @@ export const ITEMS = [
     structureType: "firstBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":423,"display":{"step":24,"counting":{"back":24,"kind":"countBack","start":447},"sequence":["?",447,471,495],"promptText":"Pattern: ?, 447, 471, 495 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":423,"display":{"step":24,"counting":{"back":24,"kind":"countBack","start":447},"terms":["__",447,471,495],"promptText":"Pattern: __, 447, 471, 495. What number comes first?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0290",
@@ -18362,7 +18362,7 @@ export const ITEMS = [
     structureType: "firstBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":538,"display":{"step":17,"counting":{"back":17,"kind":"countBack","start":555},"sequence":["?",555,572,589],"promptText":"Pattern: ?, 555, 572, 589 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":538,"display":{"step":17,"counting":{"back":17,"kind":"countBack","start":555},"terms":["__",555,572,589],"promptText":"What number comes first in the pattern __, 555, 572, 589?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0291",
@@ -18372,7 +18372,7 @@ export const ITEMS = [
     structureType: "firstBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":306,"display":{"step":23,"counting":{"back":23,"kind":"countBack","start":329},"sequence":["?",329,352,375],"promptText":"Pattern: ?, 329, 352, 375 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":306,"display":{"step":23,"counting":{"back":23,"kind":"countBack","start":329},"terms":["__",329,352,375],"promptText":"Pattern: __, 329, 352, 375. What number comes first?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0292",
@@ -18382,7 +18382,7 @@ export const ITEMS = [
     structureType: "firstBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":345,"display":{"step":19,"counting":{"back":19,"kind":"countBack","start":364},"sequence":["?",364,383,402],"promptText":"Pattern: ?, 364, 383, 402 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":345,"display":{"step":19,"counting":{"back":19,"kind":"countBack","start":364},"terms":["__",364,383,402],"promptText":"What number comes first in the pattern __, 364, 383, 402?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0293",
@@ -18392,7 +18392,7 @@ export const ITEMS = [
     structureType: "firstBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":205,"display":{"step":26,"counting":{"back":26,"kind":"countBack","start":231},"sequence":["?",231,257,283],"promptText":"Pattern: ?, 231, 257, 283 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":205,"display":{"step":26,"counting":{"back":26,"kind":"countBack","start":231},"terms":["__",231,257,283],"promptText":"Pattern: __, 231, 257, 283. What number comes first?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0294",
@@ -18402,7 +18402,7 @@ export const ITEMS = [
     structureType: "firstBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":416,"display":{"step":27,"counting":{"back":27,"kind":"countBack","start":443},"sequence":["?",443,470,497],"promptText":"Pattern: ?, 443, 470, 497 — what comes first?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":416,"display":{"step":27,"counting":{"back":27,"kind":"countBack","start":443},"terms":["__",443,470,497],"promptText":"What number comes first in the pattern __, 443, 470, 497?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0295",
@@ -18572,7 +18572,7 @@ export const ITEMS = [
     structureType: "doubleTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"step":2,"pattern":{"kind":"geo","start":1,"factor":2},"sequence":[1,2],"promptText":"Pattern: 1, 2, ? — each term is 2 times the one before."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"step":2,"pattern":{"kind":"geo","start":1,"factor":2},"terms":[1,2],"promptText":"Each number is 2 times the one before: 1, 2, __. What number comes next?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0312",
@@ -18582,7 +18582,7 @@ export const ITEMS = [
     structureType: "doubleTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"step":2,"pattern":{"kind":"geo","start":2,"factor":2},"sequence":[2,4],"promptText":"Pattern: 2, 4, ? — each term is 2 times the one before."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"step":2,"pattern":{"kind":"geo","start":2,"factor":2},"terms":[2,4],"promptText":"Each number is double the one before: 2, 4, __. What number comes next?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0313",
@@ -18592,7 +18592,7 @@ export const ITEMS = [
     structureType: "doubleTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"step":2,"pattern":{"kind":"geo","start":3,"factor":2},"sequence":[3,6],"promptText":"Pattern: 3, 6, ? — each term is 2 times the one before."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"step":2,"pattern":{"kind":"geo","start":3,"factor":2},"terms":[3,6],"promptText":"The pattern 3, 6, __ doubles each time. What number comes next?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0314",
@@ -18602,7 +18602,7 @@ export const ITEMS = [
     structureType: "doubleTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"step":2,"pattern":{"kind":"geo","start":4,"factor":2},"sequence":[4,8],"promptText":"Pattern: 4, 8, ? — each term is 2 times the one before."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"step":2,"pattern":{"kind":"geo","start":4,"factor":2},"terms":[4,8],"promptText":"Each number is 2 times the one before: 4, 8, __. What number comes next?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0315",
@@ -18612,7 +18612,7 @@ export const ITEMS = [
     structureType: "doubleTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"step":2,"pattern":{"kind":"geo","start":5,"factor":2},"sequence":[5,10],"promptText":"Pattern: 5, 10, ? — each term is 2 times the one before."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"step":2,"pattern":{"kind":"geo","start":5,"factor":2},"terms":[5,10],"promptText":"Each number is double the one before: 5, 10, __. What number comes next?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0316",
@@ -18622,7 +18622,7 @@ export const ITEMS = [
     structureType: "doubleTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"step":2,"pattern":{"kind":"geo","start":6,"factor":2},"sequence":[6,12],"promptText":"Pattern: 6, 12, ? — each term is 2 times the one before."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"step":2,"pattern":{"kind":"geo","start":6,"factor":2},"terms":[6,12],"promptText":"The pattern 6, 12, __ doubles each time. What number comes next?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0317",
@@ -18632,7 +18632,7 @@ export const ITEMS = [
     structureType: "doubleTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"step":2,"pattern":{"kind":"geo","start":7,"factor":2},"sequence":[7,14],"promptText":"Pattern: 7, 14, ? — each term is 2 times the one before."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"step":2,"pattern":{"kind":"geo","start":7,"factor":2},"terms":[7,14],"promptText":"Each number is 2 times the one before: 7, 14, __. What number comes next?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0318",
@@ -18642,7 +18642,7 @@ export const ITEMS = [
     structureType: "doubleTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"step":2,"pattern":{"kind":"geo","start":8,"factor":2},"sequence":[8,16],"promptText":"Pattern: 8, 16, ? — each term is 2 times the one before."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"step":2,"pattern":{"kind":"geo","start":8,"factor":2},"terms":[8,16],"promptText":"Each number is double the one before: 8, 16, __. What number comes next?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0319",
@@ -18652,7 +18652,7 @@ export const ITEMS = [
     structureType: "doubleTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"step":2,"pattern":{"kind":"geo","start":9,"factor":2},"sequence":[9,18],"promptText":"Pattern: 9, 18, ? — each term is 2 times the one before."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"step":2,"pattern":{"kind":"geo","start":9,"factor":2},"terms":[9,18],"promptText":"The pattern 9, 18, __ doubles each time. What number comes next?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0320",
@@ -18662,7 +18662,7 @@ export const ITEMS = [
     structureType: "doubleTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"step":2,"pattern":{"kind":"geo","start":10,"factor":2},"sequence":[10,20],"promptText":"Pattern: 10, 20, ? — each term is 2 times the one before."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"step":2,"pattern":{"kind":"geo","start":10,"factor":2},"terms":[10,20],"promptText":"Each number is 2 times the one before: 10, 20, __. What number comes next?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0321",
@@ -18692,7 +18692,7 @@ export const ITEMS = [
     structureType: "halfTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"pattern":{"kind":"geoDiv","start":16,"factor":2},"sequence":[16,8],"promptText":"Pattern: 16, 8, ? — each term is half the one before."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"pattern":{"kind":"geoDiv","start":16,"factor":2},"terms":[16,8],"promptText":"Each number is half the one before: 16, 8, __. What number comes next?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0324",
@@ -18702,7 +18702,7 @@ export const ITEMS = [
     structureType: "halfTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"pattern":{"kind":"geoDiv","start":20,"factor":2},"sequence":[20,10],"promptText":"Pattern: 20, 10, ? — each term is half the one before."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"pattern":{"kind":"geoDiv","start":20,"factor":2},"terms":[20,10],"promptText":"In the pattern 20, 10, __, each number is half of the one before. What number comes next?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0325",
@@ -18712,7 +18712,7 @@ export const ITEMS = [
     structureType: "halfTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"pattern":{"kind":"geoDiv","start":8,"factor":2},"sequence":[8,4],"promptText":"Pattern: 8, 4, ? — each term is half the one before."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"pattern":{"kind":"geoDiv","start":8,"factor":2},"terms":[8,4],"promptText":"Each number is half the one before: 8, 4, __. What number comes next?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0326",
@@ -18722,7 +18722,7 @@ export const ITEMS = [
     structureType: "halfTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"pattern":{"kind":"geoDiv","start":12,"factor":2},"sequence":[12,6],"promptText":"Pattern: 12, 6, ? — each term is half the one before."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"pattern":{"kind":"geoDiv","start":12,"factor":2},"terms":[12,6],"promptText":"In the pattern 12, 6, __, each number is half of the one before. What number comes next?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0327",
@@ -18732,7 +18732,7 @@ export const ITEMS = [
     structureType: "doubleOnce",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"pattern":{"kind":"geoApply","start":2,"times":1,"factor":2},"promptText":"Double 2. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"pattern":{"kind":"geoApply","start":2,"times":1,"factor":2},"promptText":"What do you get when you double 2?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0328",
@@ -18742,7 +18742,7 @@ export const ITEMS = [
     structureType: "doubleOnce",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"pattern":{"kind":"geoApply","start":3,"times":1,"factor":2},"promptText":"Double 3. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"pattern":{"kind":"geoApply","start":3,"times":1,"factor":2},"promptText":"If you double 3, what number do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0329",
@@ -18752,7 +18752,7 @@ export const ITEMS = [
     structureType: "doubleOnce",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"pattern":{"kind":"geoApply","start":4,"times":1,"factor":2},"promptText":"Double 4. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"pattern":{"kind":"geoApply","start":4,"times":1,"factor":2},"promptText":"What do you get when you double 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0330",
@@ -18762,7 +18762,7 @@ export const ITEMS = [
     structureType: "doubleOnce",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"pattern":{"kind":"geoApply","start":5,"times":1,"factor":2},"promptText":"Double 5. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"pattern":{"kind":"geoApply","start":5,"times":1,"factor":2},"promptText":"If you double 5, what number do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0331",
@@ -18772,7 +18772,7 @@ export const ITEMS = [
     structureType: "doubleOnce",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"pattern":{"kind":"geoApply","start":6,"times":1,"factor":2},"promptText":"Double 6. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"pattern":{"kind":"geoApply","start":6,"times":1,"factor":2},"promptText":"What do you get when you double 6?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0332",
@@ -18782,7 +18782,7 @@ export const ITEMS = [
     structureType: "doubleOnce",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"pattern":{"kind":"geoApply","start":7,"times":1,"factor":2},"promptText":"Double 7. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"pattern":{"kind":"geoApply","start":7,"times":1,"factor":2},"promptText":"If you double 7, what number do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0333",
@@ -18792,7 +18792,7 @@ export const ITEMS = [
     structureType: "doubleOnce",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"pattern":{"kind":"geoApply","start":8,"times":1,"factor":2},"promptText":"Double 8. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"pattern":{"kind":"geoApply","start":8,"times":1,"factor":2},"promptText":"What do you get when you double 8?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0334",
@@ -18802,7 +18802,7 @@ export const ITEMS = [
     structureType: "doubleOnce",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"pattern":{"kind":"geoApply","start":9,"times":1,"factor":2},"promptText":"Double 9. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"pattern":{"kind":"geoApply","start":9,"times":1,"factor":2},"promptText":"If you double 9, what number do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0335",
@@ -18812,7 +18812,7 @@ export const ITEMS = [
     structureType: "doubleOnce",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"pattern":{"kind":"geoApply","start":10,"times":1,"factor":2},"promptText":"Double 10. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"pattern":{"kind":"geoApply","start":10,"times":1,"factor":2},"promptText":"What do you get when you double 10?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0336",
@@ -18822,7 +18822,7 @@ export const ITEMS = [
     structureType: "doubleOnce",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"pattern":{"kind":"geoApply","start":1,"times":1,"factor":2},"promptText":"Double 1. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"pattern":{"kind":"geoApply","start":1,"times":1,"factor":2},"promptText":"If you double 1, what number do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0337",
@@ -18832,7 +18832,7 @@ export const ITEMS = [
     structureType: "halveOnce",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"pattern":{"kind":"geoDiv","start":4,"terms":1,"factor":2},"promptText":"Halve 4. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"pattern":{"kind":"geoDiv","start":4,"terms":1,"factor":2},"promptText":"What is half of 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0338",
@@ -18842,7 +18842,7 @@ export const ITEMS = [
     structureType: "halveOnce",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"pattern":{"kind":"geoDiv","start":6,"terms":1,"factor":2},"promptText":"Halve 6. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"pattern":{"kind":"geoDiv","start":6,"terms":1,"factor":2},"promptText":"What do you get when you halve 6?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0339",
@@ -18852,7 +18852,7 @@ export const ITEMS = [
     structureType: "halveOnce",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"pattern":{"kind":"geoDiv","start":8,"terms":1,"factor":2},"promptText":"Halve 8. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"pattern":{"kind":"geoDiv","start":8,"terms":1,"factor":2},"promptText":"What is half of 8?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0340",
@@ -18862,7 +18862,7 @@ export const ITEMS = [
     structureType: "halveOnce",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"pattern":{"kind":"geoDiv","start":10,"terms":1,"factor":2},"promptText":"Halve 10. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"pattern":{"kind":"geoDiv","start":10,"terms":1,"factor":2},"promptText":"What do you get when you halve 10?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0341",
@@ -18872,7 +18872,7 @@ export const ITEMS = [
     structureType: "halveOnce",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"pattern":{"kind":"geoDiv","start":12,"terms":1,"factor":2},"promptText":"Halve 12. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"pattern":{"kind":"geoDiv","start":12,"terms":1,"factor":2},"promptText":"What is half of 12?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0342",
@@ -18882,7 +18882,7 @@ export const ITEMS = [
     structureType: "halveOnce",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"pattern":{"kind":"geoDiv","start":14,"terms":1,"factor":2},"promptText":"Halve 14. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"pattern":{"kind":"geoDiv","start":14,"terms":1,"factor":2},"promptText":"What do you get when you halve 14?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0343",
@@ -18892,7 +18892,7 @@ export const ITEMS = [
     structureType: "halveOnce",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"pattern":{"kind":"geoDiv","start":16,"terms":1,"factor":2},"promptText":"Halve 16. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"pattern":{"kind":"geoDiv","start":16,"terms":1,"factor":2},"promptText":"What is half of 16?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0344",
@@ -18902,7 +18902,7 @@ export const ITEMS = [
     structureType: "halveOnce",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"pattern":{"kind":"geoDiv","start":18,"terms":1,"factor":2},"promptText":"Halve 18. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"pattern":{"kind":"geoDiv","start":18,"terms":1,"factor":2},"promptText":"What do you get when you halve 18?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0345",
@@ -18912,7 +18912,7 @@ export const ITEMS = [
     structureType: "halveOnce",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"pattern":{"kind":"geoDiv","start":20,"terms":1,"factor":2},"promptText":"Halve 20. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"pattern":{"kind":"geoDiv","start":20,"terms":1,"factor":2},"promptText":"What is half of 20?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0346",
@@ -18922,7 +18922,7 @@ export const ITEMS = [
     structureType: "halveOnce",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"pattern":{"kind":"geoDiv","start":2,"terms":1,"factor":2},"promptText":"Halve 2. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"pattern":{"kind":"geoDiv","start":2,"terms":1,"factor":2},"promptText":"What do you get when you halve 2?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0347",
@@ -18932,7 +18932,7 @@ export const ITEMS = [
     structureType: "tripleOnce",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"pattern":{"kind":"geoApply","start":1,"times":1,"factor":3},"promptText":"Triple 1. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"pattern":{"kind":"geoApply","start":1,"times":1,"factor":3},"promptText":"To triple a number, multiply it by 3. What is triple 1?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0348",
@@ -18942,7 +18942,7 @@ export const ITEMS = [
     structureType: "tripleOnce",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"pattern":{"kind":"geoApply","start":2,"times":1,"factor":3},"promptText":"Triple 2. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"pattern":{"kind":"geoApply","start":2,"times":1,"factor":3},"promptText":"Tripling a number makes it 3 times as big. What do you get when you triple 2?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0349",
@@ -18952,7 +18952,7 @@ export const ITEMS = [
     structureType: "tripleOnce",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"pattern":{"kind":"geoApply","start":3,"times":1,"factor":3},"promptText":"Triple 3. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"pattern":{"kind":"geoApply","start":3,"times":1,"factor":3},"promptText":"To triple a number, multiply it by 3. What is triple 3?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0350",
@@ -18962,7 +18962,7 @@ export const ITEMS = [
     structureType: "tripleOnce",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"pattern":{"kind":"geoApply","start":4,"times":1,"factor":3},"promptText":"Triple 4. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"pattern":{"kind":"geoApply","start":4,"times":1,"factor":3},"promptText":"Tripling a number makes it 3 times as big. What do you get when you triple 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0351",
@@ -18972,7 +18972,7 @@ export const ITEMS = [
     structureType: "tripleOnce",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"pattern":{"kind":"geoApply","start":5,"times":1,"factor":3},"promptText":"Triple 5. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"pattern":{"kind":"geoApply","start":5,"times":1,"factor":3},"promptText":"To triple a number, multiply it by 3. What is triple 5?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0352",
@@ -18982,7 +18982,7 @@ export const ITEMS = [
     structureType: "tripleOnce",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"pattern":{"kind":"geoApply","start":6,"times":1,"factor":3},"promptText":"Triple 6. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"pattern":{"kind":"geoApply","start":6,"times":1,"factor":3},"promptText":"Tripling a number makes it 3 times as big. What do you get when you triple 6?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0353",
@@ -18992,7 +18992,7 @@ export const ITEMS = [
     structureType: "doubleTwice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"pattern":{"kind":"geoApply","start":1,"times":2,"factor":2},"promptText":"Start at 1 and double it, 2 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"pattern":{"kind":"geoApply","start":1,"times":2,"factor":2},"promptText":"What number do you get if you start at 1 and double it twice?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0354",
@@ -19002,7 +19002,7 @@ export const ITEMS = [
     structureType: "doubleTwice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"pattern":{"kind":"geoApply","start":2,"times":2,"factor":2},"promptText":"Start at 2 and double it, 2 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"pattern":{"kind":"geoApply","start":2,"times":2,"factor":2},"promptText":"Start at 2. What number do you get when you double it twice?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0355",
@@ -19012,7 +19012,7 @@ export const ITEMS = [
     structureType: "doubleTwice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"pattern":{"kind":"geoApply","start":3,"times":2,"factor":2},"promptText":"Start at 3 and double it, 2 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"pattern":{"kind":"geoApply","start":3,"times":2,"factor":2},"promptText":"What number do you get if you start at 3 and double it twice?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0356",
@@ -19022,7 +19022,7 @@ export const ITEMS = [
     structureType: "doubleTwice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"pattern":{"kind":"geoApply","start":4,"times":2,"factor":2},"promptText":"Start at 4 and double it, 2 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"pattern":{"kind":"geoApply","start":4,"times":2,"factor":2},"promptText":"Start at 4. What number do you get when you double it twice?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0357",
@@ -19032,7 +19032,7 @@ export const ITEMS = [
     structureType: "doubleTwice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"pattern":{"kind":"geoApply","start":5,"times":2,"factor":2},"promptText":"Start at 5 and double it, 2 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"pattern":{"kind":"geoApply","start":5,"times":2,"factor":2},"promptText":"What number do you get if you start at 5 and double it twice?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0358",
@@ -19042,7 +19042,7 @@ export const ITEMS = [
     structureType: "doubleTwice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"pattern":{"kind":"geoApply","start":6,"times":2,"factor":2},"promptText":"Start at 6 and double it, 2 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"pattern":{"kind":"geoApply","start":6,"times":2,"factor":2},"promptText":"Start at 6. What number do you get when you double it twice?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0359",
@@ -19052,7 +19052,7 @@ export const ITEMS = [
     structureType: "doubleTwice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"pattern":{"kind":"geoApply","start":7,"times":2,"factor":2},"promptText":"Start at 7 and double it, 2 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"pattern":{"kind":"geoApply","start":7,"times":2,"factor":2},"promptText":"What number do you get if you start at 7 and double it twice?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0360",
@@ -19062,7 +19062,7 @@ export const ITEMS = [
     structureType: "doubleTwice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"pattern":{"kind":"geoApply","start":8,"times":2,"factor":2},"promptText":"Start at 8 and double it, 2 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"pattern":{"kind":"geoApply","start":8,"times":2,"factor":2},"promptText":"Start at 8. What number do you get when you double it twice?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0361",
@@ -19072,7 +19072,7 @@ export const ITEMS = [
     structureType: "doubleTwice",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"pattern":{"kind":"geoApply","start":9,"times":2,"factor":2},"promptText":"Start at 9 and double it, 2 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"pattern":{"kind":"geoApply","start":9,"times":2,"factor":2},"promptText":"What number do you get if you start at 9 and double it twice?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0362",
@@ -19402,7 +19402,7 @@ export const ITEMS = [
     structureType: "multiplyOnce",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"pattern":{"kind":"geoApply","start":6,"times":1,"factor":2},"promptText":"The rule is: multiply by 2. Apply it to 6. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"pattern":{"kind":"geoApply","start":6,"times":1,"factor":2},"promptText":"The rule is multiply by 2. What number do you get when you use the rule on 6?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0395",
@@ -19412,7 +19412,7 @@ export const ITEMS = [
     structureType: "multiplyOnce",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"pattern":{"kind":"geoApply","start":8,"times":1,"factor":2},"promptText":"The rule is: multiply by 2. Apply it to 8. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"pattern":{"kind":"geoApply","start":8,"times":1,"factor":2},"promptText":"The rule is to multiply by 2. What number do you get when you start with 8?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0396",
@@ -19422,7 +19422,7 @@ export const ITEMS = [
     structureType: "multiplyOnce",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"pattern":{"kind":"geoApply","start":12,"times":1,"factor":2},"promptText":"The rule is: multiply by 2. Apply it to 12. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"pattern":{"kind":"geoApply","start":12,"times":1,"factor":2},"promptText":"The rule is multiply by 2. What number do you get when you use the rule on 12?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0397",
@@ -19432,7 +19432,7 @@ export const ITEMS = [
     structureType: "multiplyOnce",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"pattern":{"kind":"geoApply","start":7,"times":1,"factor":3},"promptText":"The rule is: multiply by 3. Apply it to 7. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"pattern":{"kind":"geoApply","start":7,"times":1,"factor":3},"promptText":"The rule is to multiply by 3. What number do you get when you start with 7?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0398",
@@ -19442,7 +19442,7 @@ export const ITEMS = [
     structureType: "multiplyOnce",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"pattern":{"kind":"geoApply","start":9,"times":1,"factor":3},"promptText":"The rule is: multiply by 3. Apply it to 9. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"pattern":{"kind":"geoApply","start":9,"times":1,"factor":3},"promptText":"The rule is multiply by 3. What number do you get when you use the rule on 9?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0399",
@@ -19452,7 +19452,7 @@ export const ITEMS = [
     structureType: "multiplyOnce",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"pattern":{"kind":"geoApply","start":15,"times":1,"factor":2},"promptText":"The rule is: multiply by 2. Apply it to 15. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"pattern":{"kind":"geoApply","start":15,"times":1,"factor":2},"promptText":"The rule is to multiply by 2. What number do you get when you start with 15?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0400",
@@ -19462,7 +19462,7 @@ export const ITEMS = [
     structureType: "multiplyOnce",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"pattern":{"kind":"geoApply","start":11,"times":1,"factor":3},"promptText":"The rule is: multiply by 3. Apply it to 11. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"pattern":{"kind":"geoApply","start":11,"times":1,"factor":3},"promptText":"The rule is multiply by 3. What number do you get when you use the rule on 11?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0401",
@@ -19472,7 +19472,7 @@ export const ITEMS = [
     structureType: "multiplyOnce",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"pattern":{"kind":"geoApply","start":13,"times":1,"factor":3},"promptText":"The rule is: multiply by 3. Apply it to 13. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"pattern":{"kind":"geoApply","start":13,"times":1,"factor":3},"promptText":"The rule is to multiply by 3. What number do you get when you start with 13?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0402",
@@ -19482,7 +19482,7 @@ export const ITEMS = [
     structureType: "multiplyOnce",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"pattern":{"kind":"geoApply","start":14,"times":1,"factor":2},"promptText":"The rule is: multiply by 2. Apply it to 14. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"pattern":{"kind":"geoApply","start":14,"times":1,"factor":2},"promptText":"The rule is multiply by 2. What number do you get when you use the rule on 14?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0403",
@@ -19492,7 +19492,7 @@ export const ITEMS = [
     structureType: "multiplyOnce",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"pattern":{"kind":"geoApply","start":16,"times":1,"factor":2},"promptText":"The rule is: multiply by 2. Apply it to 16. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"pattern":{"kind":"geoApply","start":16,"times":1,"factor":2},"promptText":"The rule is to multiply by 2. What number do you get when you start with 16?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0404",
@@ -19502,7 +19502,7 @@ export const ITEMS = [
     structureType: "multiplyOnce",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"pattern":{"kind":"geoApply","start":18,"times":1,"factor":2},"promptText":"The rule is: multiply by 2. Apply it to 18. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"pattern":{"kind":"geoApply","start":18,"times":1,"factor":2},"promptText":"The rule is multiply by 2. What number do you get when you use the rule on 18?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0405",
@@ -19512,7 +19512,7 @@ export const ITEMS = [
     structureType: "multiplyOnce",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"pattern":{"kind":"geoApply","start":12,"times":1,"factor":3},"promptText":"The rule is: multiply by 3. Apply it to 12. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"pattern":{"kind":"geoApply","start":12,"times":1,"factor":3},"promptText":"The rule is to multiply by 3. What number do you get when you start with 12?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0406",
@@ -19522,7 +19522,7 @@ export const ITEMS = [
     structureType: "multiplyOnce",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"pattern":{"kind":"geoApply","start":17,"times":1,"factor":2},"promptText":"The rule is: multiply by 2. Apply it to 17. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"pattern":{"kind":"geoApply","start":17,"times":1,"factor":2},"promptText":"The rule is multiply by 2. What number do you get when you use the rule on 17?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0407",
@@ -19532,7 +19532,7 @@ export const ITEMS = [
     structureType: "multiplyOnce",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"pattern":{"kind":"geoApply","start":19,"times":1,"factor":2},"promptText":"The rule is: multiply by 2. Apply it to 19. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"pattern":{"kind":"geoApply","start":19,"times":1,"factor":2},"promptText":"The rule is to multiply by 2. What number do you get when you start with 19?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0408",
@@ -19542,7 +19542,7 @@ export const ITEMS = [
     structureType: "multiplyOnce",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"pattern":{"kind":"geoApply","start":21,"times":1,"factor":2},"promptText":"The rule is: multiply by 2. Apply it to 21. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"pattern":{"kind":"geoApply","start":21,"times":1,"factor":2},"promptText":"The rule is multiply by 2. What number do you get when you use the rule on 21?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0409",
@@ -19552,7 +19552,7 @@ export const ITEMS = [
     structureType: "multiplyOnce",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"pattern":{"kind":"geoApply","start":23,"times":1,"factor":2},"promptText":"The rule is: multiply by 2. Apply it to 23. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"pattern":{"kind":"geoApply","start":23,"times":1,"factor":2},"promptText":"The rule is to multiply by 2. What number do you get when you start with 23?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0410",
@@ -19562,7 +19562,7 @@ export const ITEMS = [
     structureType: "multiplyOnce",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"pattern":{"kind":"geoApply","start":15,"times":1,"factor":3},"promptText":"The rule is: multiply by 3. Apply it to 15. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"pattern":{"kind":"geoApply","start":15,"times":1,"factor":3},"promptText":"The rule is multiply by 3. What number do you get when you use the rule on 15?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0411",
@@ -19572,7 +19572,7 @@ export const ITEMS = [
     structureType: "multiplyOnce",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"pattern":{"kind":"geoApply","start":22,"times":1,"factor":2},"promptText":"The rule is: multiply by 2. Apply it to 22. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"pattern":{"kind":"geoApply","start":22,"times":1,"factor":2},"promptText":"The rule is to multiply by 2. What number do you get when you start with 22?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0412",
@@ -19582,7 +19582,7 @@ export const ITEMS = [
     structureType: "multiplyOnce",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"pattern":{"kind":"geoApply","start":25,"times":1,"factor":2},"promptText":"The rule is: multiply by 2. Apply it to 25. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"pattern":{"kind":"geoApply","start":25,"times":1,"factor":2},"promptText":"The rule is multiply by 2. What number do you get when you use the rule on 25?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0413",
@@ -19592,7 +19592,7 @@ export const ITEMS = [
     structureType: "multiplyOnce",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"pattern":{"kind":"geoApply","start":24,"times":1,"factor":3},"promptText":"The rule is: multiply by 3. Apply it to 24. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"pattern":{"kind":"geoApply","start":24,"times":1,"factor":3},"promptText":"The rule is to multiply by 3. What number do you get when you start with 24?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0414",
@@ -19922,7 +19922,7 @@ export const ITEMS = [
     structureType: "multiplyChain",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"pattern":{"kind":"geoApply","start":3,"times":3,"factor":2},"promptText":"Start at 3 and multiply by 2, 3 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"pattern":{"kind":"geoApply","start":3,"times":3,"factor":2},"promptText":"What number do you get if you start at 3 and multiply by 2 three times in a row?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0447",
@@ -19932,7 +19932,7 @@ export const ITEMS = [
     structureType: "multiplyChain",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":54,"display":{"pattern":{"kind":"geoApply","start":2,"times":3,"factor":3},"promptText":"Start at 2 and multiply by 3, 3 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":54,"display":{"pattern":{"kind":"geoApply","start":2,"times":3,"factor":3},"promptText":"Start at 2. What number do you get when you multiply by 3 three times in a row?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0448",
@@ -19942,7 +19942,7 @@ export const ITEMS = [
     structureType: "multiplyChain",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"pattern":{"kind":"geoApply","start":5,"times":4,"factor":2},"promptText":"Start at 5 and multiply by 2, 4 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"pattern":{"kind":"geoApply","start":5,"times":4,"factor":2},"promptText":"What number do you get if you start at 5 and multiply by 2 four times in a row?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0449",
@@ -19952,7 +19952,7 @@ export const ITEMS = [
     structureType: "multiplyChain",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"pattern":{"kind":"geoApply","start":4,"times":2,"factor":3},"promptText":"Start at 4 and multiply by 3, 2 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"pattern":{"kind":"geoApply","start":4,"times":2,"factor":3},"promptText":"Start at 4. What number do you get when you multiply by 3 two times in a row?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0450",
@@ -19962,7 +19962,7 @@ export const ITEMS = [
     structureType: "multiplyChain",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":64,"display":{"pattern":{"kind":"geoApply","start":2,"times":5,"factor":2},"promptText":"Start at 2 and multiply by 2, 5 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":64,"display":{"pattern":{"kind":"geoApply","start":2,"times":5,"factor":2},"promptText":"What number do you get if you start at 2 and multiply by 2 five times in a row?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0451",
@@ -19972,7 +19972,7 @@ export const ITEMS = [
     structureType: "multiplyChain",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"pattern":{"kind":"geoApply","start":3,"times":2,"factor":3},"promptText":"Start at 3 and multiply by 3, 2 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"pattern":{"kind":"geoApply","start":3,"times":2,"factor":3},"promptText":"Start at 3. What number do you get when you multiply by 3 two times in a row?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0452",
@@ -19982,7 +19982,7 @@ export const ITEMS = [
     structureType: "multiplyChain",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":96,"display":{"pattern":{"kind":"geoApply","start":6,"times":4,"factor":2},"promptText":"Start at 6 and multiply by 2, 4 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":96,"display":{"pattern":{"kind":"geoApply","start":6,"times":4,"factor":2},"promptText":"What number do you get if you start at 6 and multiply by 2 four times in a row?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0453",
@@ -19992,7 +19992,7 @@ export const ITEMS = [
     structureType: "multiplyChain",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"pattern":{"kind":"geoApply","start":2,"times":2,"factor":5},"promptText":"Start at 2 and multiply by 5, 2 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"pattern":{"kind":"geoApply","start":2,"times":2,"factor":5},"promptText":"Start at 2. What number do you get when you multiply by 5 two times in a row?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0454",
@@ -20002,7 +20002,7 @@ export const ITEMS = [
     structureType: "multiplyChain",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"pattern":{"kind":"geoApply","start":7,"times":3,"factor":2},"promptText":"Start at 7 and multiply by 2, 3 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"pattern":{"kind":"geoApply","start":7,"times":3,"factor":2},"promptText":"What number do you get if you start at 7 and multiply by 2 three times in a row?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0455",
@@ -20012,7 +20012,7 @@ export const ITEMS = [
     structureType: "multiplyChain",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"pattern":{"kind":"geoApply","start":3,"times":2,"factor":5},"promptText":"Start at 3 and multiply by 5, 2 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"pattern":{"kind":"geoApply","start":3,"times":2,"factor":5},"promptText":"Start at 3. What number do you get when you multiply by 5 two times in a row?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0456",
@@ -20022,7 +20022,7 @@ export const ITEMS = [
     structureType: "multiplyChain",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":128,"display":{"pattern":{"kind":"geoApply","start":4,"times":5,"factor":2},"promptText":"Start at 4 and multiply by 2, 5 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":128,"display":{"pattern":{"kind":"geoApply","start":4,"times":5,"factor":2},"promptText":"What number do you get if you start at 4 and multiply by 2 five times in a row?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0457",
@@ -20032,7 +20032,7 @@ export const ITEMS = [
     structureType: "multiplyChain",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":135,"display":{"pattern":{"kind":"geoApply","start":5,"times":3,"factor":3},"promptText":"Start at 5 and multiply by 3, 3 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":135,"display":{"pattern":{"kind":"geoApply","start":5,"times":3,"factor":3},"promptText":"Start at 5. What number do you get when you multiply by 3 three times in a row?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0458",
@@ -20042,7 +20042,7 @@ export const ITEMS = [
     structureType: "multiplyChain",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":128,"display":{"pattern":{"kind":"geoApply","start":8,"times":4,"factor":2},"promptText":"Start at 8 and multiply by 2, 4 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":128,"display":{"pattern":{"kind":"geoApply","start":8,"times":4,"factor":2},"promptText":"What number do you get if you start at 8 and multiply by 2 four times in a row?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0459",
@@ -20052,7 +20052,7 @@ export const ITEMS = [
     structureType: "multiplyChain",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":128,"display":{"pattern":{"kind":"geoApply","start":2,"times":3,"factor":4},"promptText":"Start at 2 and multiply by 4, 3 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":128,"display":{"pattern":{"kind":"geoApply","start":2,"times":3,"factor":4},"promptText":"Start at 2. What number do you get when you multiply by 4 three times in a row?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0460",
@@ -20062,7 +20062,7 @@ export const ITEMS = [
     structureType: "multiplyChain",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"pattern":{"kind":"geoApply","start":9,"times":3,"factor":2},"promptText":"Start at 9 and multiply by 2, 3 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"pattern":{"kind":"geoApply","start":9,"times":3,"factor":2},"promptText":"What number do you get if you start at 9 and multiply by 2 three times in a row?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0461",
@@ -20072,7 +20072,7 @@ export const ITEMS = [
     structureType: "multiplyChain",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":54,"display":{"pattern":{"kind":"geoApply","start":6,"times":2,"factor":3},"promptText":"Start at 6 and multiply by 3, 2 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":54,"display":{"pattern":{"kind":"geoApply","start":6,"times":2,"factor":3},"promptText":"Start at 6. What number do you get when you multiply by 3 two times in a row?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0462",
@@ -20082,7 +20082,7 @@ export const ITEMS = [
     structureType: "multiplyChain",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":160,"display":{"pattern":{"kind":"geoApply","start":10,"times":4,"factor":2},"promptText":"Start at 10 and multiply by 2, 4 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":160,"display":{"pattern":{"kind":"geoApply","start":10,"times":4,"factor":2},"promptText":"What number do you get if you start at 10 and multiply by 2 four times in a row?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0463",
@@ -20092,7 +20092,7 @@ export const ITEMS = [
     structureType: "multiplyChain",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"pattern":{"kind":"geoApply","start":3,"times":2,"factor":4},"promptText":"Start at 3 and multiply by 4, 2 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"pattern":{"kind":"geoApply","start":3,"times":2,"factor":4},"promptText":"Start at 3. What number do you get when you multiply by 4 two times in a row?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0464",
@@ -20102,7 +20102,7 @@ export const ITEMS = [
     structureType: "multiplyChain",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"pattern":{"kind":"geoApply","start":11,"times":3,"factor":2},"promptText":"Start at 11 and multiply by 2, 3 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"pattern":{"kind":"geoApply","start":11,"times":3,"factor":2},"promptText":"What number do you get if you start at 11 and multiply by 2 three times in a row?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0465",
@@ -20112,7 +20112,7 @@ export const ITEMS = [
     structureType: "multiplyChain",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"pattern":{"kind":"geoApply","start":4,"times":2,"factor":5},"promptText":"Start at 4 and multiply by 5, 2 times in a row. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"pattern":{"kind":"geoApply","start":4,"times":2,"factor":5},"promptText":"Start at 4. What number do you get when you multiply by 5 two times in a row?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0466",
@@ -20122,7 +20122,7 @@ export const ITEMS = [
     structureType: "gapTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"step":2,"counting":{"kind":"between","after":6,"before":2},"sequence":[2,"?",6,8],"promptText":"Fill the gap: 2, ?, 6, 8."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"step":2,"counting":{"kind":"between","after":6,"before":2},"terms":[2,"__",6,8],"promptText":"Pattern: 2, __, 6, 8. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0467",
@@ -20132,7 +20132,7 @@ export const ITEMS = [
     structureType: "gapTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"step":2,"counting":{"kind":"between","after":9,"before":5},"sequence":[3,5,"?",9],"promptText":"Fill the gap: 3, 5, ?, 9."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"step":2,"counting":{"kind":"between","after":9,"before":5},"terms":[3,5,"__",9],"promptText":"What number fills the gap in 3, 5, __, 9?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0468",
@@ -20142,7 +20142,7 @@ export const ITEMS = [
     structureType: "gapTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"step":3,"counting":{"kind":"between","after":7,"before":1},"sequence":[1,"?",7,10],"promptText":"Fill the gap: 1, ?, 7, 10."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"step":3,"counting":{"kind":"between","after":7,"before":1},"terms":[1,"__",7,10],"promptText":"What is the missing number in 1, __, 7, 10?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0469",
@@ -20152,7 +20152,7 @@ export const ITEMS = [
     structureType: "gapTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"step":3,"counting":{"kind":"between","after":11,"before":5},"sequence":[2,5,"?",11],"promptText":"Fill the gap: 2, 5, ?, 11."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"step":3,"counting":{"kind":"between","after":11,"before":5},"terms":[2,5,"__",11],"promptText":"Pattern: 2, 5, __, 11. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0470",
@@ -20162,7 +20162,7 @@ export const ITEMS = [
     structureType: "gapTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"step":2,"counting":{"kind":"between","after":8,"before":4},"sequence":[4,"?",8,10],"promptText":"Fill the gap: 4, ?, 8, 10."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"step":2,"counting":{"kind":"between","after":8,"before":4},"terms":[4,"__",8,10],"promptText":"What number fills the gap in 4, __, 8, 10?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0471",
@@ -20172,7 +20172,7 @@ export const ITEMS = [
     structureType: "gapTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"step":4,"counting":{"kind":"between","after":13,"before":5},"sequence":[1,5,"?",13],"promptText":"Fill the gap: 1, 5, ?, 13."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"step":4,"counting":{"kind":"between","after":13,"before":5},"terms":[1,5,"__",13],"promptText":"What is the missing number in 1, 5, __, 13?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0472",
@@ -20182,7 +20182,7 @@ export const ITEMS = [
     structureType: "gapTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"step":4,"counting":{"kind":"between","after":11,"before":3},"sequence":[3,"?",11,15],"promptText":"Fill the gap: 3, ?, 11, 15."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"step":4,"counting":{"kind":"between","after":11,"before":3},"terms":[3,"__",11,15],"promptText":"Pattern: 3, __, 11, 15. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0473",
@@ -20192,7 +20192,7 @@ export const ITEMS = [
     structureType: "gapTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"step":5,"counting":{"kind":"between","after":12,"before":2},"sequence":[2,"?",12,17],"promptText":"Fill the gap: 2, ?, 12, 17."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"step":5,"counting":{"kind":"between","after":12,"before":2},"terms":[2,"__",12,17],"promptText":"What number fills the gap in 2, __, 12, 17?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0474",
@@ -20202,7 +20202,7 @@ export const ITEMS = [
     structureType: "gapTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"step":2,"counting":{"kind":"between","after":11,"before":7},"sequence":[5,7,"?",11],"promptText":"Fill the gap: 5, 7, ?, 11."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"step":2,"counting":{"kind":"between","after":11,"before":7},"terms":[5,7,"__",11],"promptText":"What is the missing number in 5, 7, __, 11?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0475",
@@ -20212,7 +20212,7 @@ export const ITEMS = [
     structureType: "gapTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"step":3,"counting":{"kind":"between","after":10,"before":4},"sequence":[4,"?",10,13],"promptText":"Fill the gap: 4, ?, 10, 13."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"step":3,"counting":{"kind":"between","after":10,"before":4},"terms":[4,"__",10,13],"promptText":"Pattern: 4, __, 10, 13. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0476",
@@ -20222,7 +20222,7 @@ export const ITEMS = [
     structureType: "gapTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"step":5,"counting":{"kind":"between","after":11,"before":1},"sequence":[1,"?",11,16],"promptText":"Fill the gap: 1, ?, 11, 16."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"step":5,"counting":{"kind":"between","after":11,"before":1},"terms":[1,"__",11,16],"promptText":"What number fills the gap in 1, __, 11, 16?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0477",
@@ -20232,7 +20232,7 @@ export const ITEMS = [
     structureType: "gapTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"step":2,"counting":{"kind":"between","after":10,"before":6},"sequence":[6,"?",10,12],"promptText":"Fill the gap: 6, ?, 10, 12."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"step":2,"counting":{"kind":"between","after":10,"before":6},"terms":[6,"__",10,12],"promptText":"What is the missing number in 6, __, 10, 12?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0478",
@@ -20242,7 +20242,7 @@ export const ITEMS = [
     structureType: "gapTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"step":3,"counting":{"kind":"between","after":14,"before":8},"sequence":[5,8,"?",14],"promptText":"Fill the gap: 5, 8, ?, 14."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"step":3,"counting":{"kind":"between","after":14,"before":8},"terms":[5,8,"__",14],"promptText":"Pattern: 5, 8, __, 14. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0479",
@@ -20252,7 +20252,7 @@ export const ITEMS = [
     structureType: "gapTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"step":5,"counting":{"kind":"between","after":18,"before":8},"sequence":[3,8,"?",18],"promptText":"Fill the gap: 3, 8, ?, 18."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"step":5,"counting":{"kind":"between","after":18,"before":8},"terms":[3,8,"__",18],"promptText":"What number fills the gap in 3, 8, __, 18?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0480",
@@ -20262,7 +20262,7 @@ export const ITEMS = [
     structureType: "gapTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"step":2,"counting":{"kind":"between","after":13,"before":9},"sequence":[7,9,"?",13],"promptText":"Fill the gap: 7, 9, ?, 13."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"step":2,"counting":{"kind":"between","after":13,"before":9},"terms":[7,9,"__",13],"promptText":"What is the missing number in 7, 9, __, 13?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0481",
@@ -20272,7 +20272,7 @@ export const ITEMS = [
     structureType: "gapTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"step":4,"counting":{"kind":"between","after":10,"before":2},"sequence":[2,"?",10,14],"promptText":"Fill the gap: 2, ?, 10, 14."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"step":4,"counting":{"kind":"between","after":10,"before":2},"terms":[2,"__",10,14],"promptText":"Pattern: 2, __, 10, 14. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0482",
@@ -20282,7 +20282,7 @@ export const ITEMS = [
     structureType: "gapTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"step":3,"counting":{"kind":"between","after":12,"before":6},"sequence":[6,"?",12,15],"promptText":"Fill the gap: 6, ?, 12, 15."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"step":3,"counting":{"kind":"between","after":12,"before":6},"terms":[6,"__",12,15],"promptText":"What number fills the gap in 6, __, 12, 15?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0483",
@@ -20292,7 +20292,7 @@ export const ITEMS = [
     structureType: "gapTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"step":4,"counting":{"kind":"between","after":16,"before":8},"sequence":[4,8,"?",16],"promptText":"Fill the gap: 4, 8, ?, 16."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"step":4,"counting":{"kind":"between","after":16,"before":8},"terms":[4,8,"__",16],"promptText":"What is the missing number in 4, 8, __, 16?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0484",
@@ -20302,7 +20302,7 @@ export const ITEMS = [
     structureType: "gapTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"step":2,"counting":{"kind":"between","after":12,"before":8},"sequence":[8,"?",12,14],"promptText":"Fill the gap: 8, ?, 12, 14."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"step":2,"counting":{"kind":"between","after":12,"before":8},"terms":[8,"__",12,14],"promptText":"Pattern: 8, __, 12, 14. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0485",
@@ -20312,7 +20312,7 @@ export const ITEMS = [
     structureType: "gapTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"step":2,"counting":{"kind":"between","after":7,"before":3},"sequence":[1,3,"?",7],"promptText":"Fill the gap: 1, 3, ?, 7."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"step":2,"counting":{"kind":"between","after":7,"before":3},"terms":[1,3,"__",7],"promptText":"What number fills the gap in 1, 3, __, 7?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0486",
@@ -20322,7 +20322,7 @@ export const ITEMS = [
     structureType: "gapTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"step":4,"counting":{"kind":"between","after":13,"before":5},"sequence":[5,"?",13,17],"promptText":"Fill the gap: 5, ?, 13, 17."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"step":4,"counting":{"kind":"between","after":13,"before":5},"terms":[5,"__",13,17],"promptText":"What is the missing number in 5, __, 13, 17?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0487",
@@ -20332,7 +20332,7 @@ export const ITEMS = [
     structureType: "gapTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"step":3,"counting":{"kind":"between","after":13,"before":7},"sequence":[7,"?",13,16],"promptText":"Fill the gap: 7, ?, 13, 16."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"step":3,"counting":{"kind":"between","after":13,"before":7},"terms":[7,"__",13,16],"promptText":"Pattern: 7, __, 13, 16. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0488",
@@ -20342,7 +20342,7 @@ export const ITEMS = [
     structureType: "gapTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"step":2,"counting":{"kind":"between","after":15,"before":11},"sequence":[9,11,"?",15],"promptText":"Fill the gap: 9, 11, ?, 15."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"step":2,"counting":{"kind":"between","after":15,"before":11},"terms":[9,11,"__",15],"promptText":"What number fills the gap in 9, 11, __, 15?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0489",
@@ -20352,7 +20352,7 @@ export const ITEMS = [
     structureType: "gapTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"step":4,"counting":{"kind":"between","after":14,"before":6},"sequence":[6,"?",14,18],"promptText":"Fill the gap: 6, ?, 14, 18."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"step":4,"counting":{"kind":"between","after":14,"before":6},"terms":[6,"__",14,18],"promptText":"What is the missing number in 6, __, 14, 18?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0490",
@@ -20362,7 +20362,7 @@ export const ITEMS = [
     structureType: "gapTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"step":3,"counting":{"kind":"between","after":17,"before":11},"sequence":[8,11,"?",17],"promptText":"Fill the gap: 8, 11, ?, 17."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"step":3,"counting":{"kind":"between","after":17,"before":11},"terms":[8,11,"__",17],"promptText":"Pattern: 8, 11, __, 17. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0491",
@@ -20372,7 +20372,7 @@ export const ITEMS = [
     structureType: "gapTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"step":2,"counting":{"kind":"between","after":14,"before":10},"sequence":[10,"?",14,16],"promptText":"Fill the gap: 10, ?, 14, 16."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"step":2,"counting":{"kind":"between","after":14,"before":10},"terms":[10,"__",14,16],"promptText":"What number fills the gap in 10, __, 14, 16?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0492",
@@ -20382,7 +20382,7 @@ export const ITEMS = [
     structureType: "gapTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"step":6,"counting":{"kind":"between","after":14,"before":2},"sequence":[2,"?",14,20],"promptText":"Fill the gap: 2, ?, 14, 20."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"step":6,"counting":{"kind":"between","after":14,"before":2},"terms":[2,"__",14,20],"promptText":"What is the missing number in 2, __, 14, 20?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0493",
@@ -20392,7 +20392,7 @@ export const ITEMS = [
     structureType: "gapTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"step":3,"counting":{"kind":"between","after":12,"before":6},"sequence":[3,6,"?",12],"promptText":"Fill the gap: 3, 6, ?, 12."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"step":3,"counting":{"kind":"between","after":12,"before":6},"terms":[3,6,"__",12],"promptText":"Pattern: 3, 6, __, 12. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0494",
@@ -20402,7 +20402,7 @@ export const ITEMS = [
     structureType: "firstTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"step":2,"counting":{"back":2,"kind":"countBack","start":4},"sequence":["?",4,6,8],"promptText":"Fill the gap: ?, 4, 6, 8."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"step":2,"counting":{"back":2,"kind":"countBack","start":4},"terms":["__",4,6,8],"promptText":"Pattern: __, 4, 6, 8. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0495",
@@ -20412,7 +20412,7 @@ export const ITEMS = [
     structureType: "firstTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"step":3,"counting":{"back":3,"kind":"countBack","start":5},"sequence":["?",5,8,11],"promptText":"Fill the gap: ?, 5, 8, 11."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"step":3,"counting":{"back":3,"kind":"countBack","start":5},"terms":["__",5,8,11],"promptText":"What number fills the gap in __, 5, 8, 11?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0496",
@@ -20422,7 +20422,7 @@ export const ITEMS = [
     structureType: "firstTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"step":2,"counting":{"back":2,"kind":"countBack","start":6},"sequence":["?",6,8,10],"promptText":"Fill the gap: ?, 6, 8, 10."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"step":2,"counting":{"back":2,"kind":"countBack","start":6},"terms":["__",6,8,10],"promptText":"What is the missing number in __, 6, 8, 10?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0497",
@@ -20432,7 +20432,7 @@ export const ITEMS = [
     structureType: "firstTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"step":3,"counting":{"back":3,"kind":"countBack","start":7},"sequence":["?",7,10,13],"promptText":"Fill the gap: ?, 7, 10, 13."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"step":3,"counting":{"back":3,"kind":"countBack","start":7},"terms":["__",7,10,13],"promptText":"Pattern: __, 7, 10, 13. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0498",
@@ -20442,7 +20442,7 @@ export const ITEMS = [
     structureType: "firstTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"step":4,"counting":{"back":4,"kind":"countBack","start":8},"sequence":["?",8,12,16],"promptText":"Fill the gap: ?, 8, 12, 16."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"step":4,"counting":{"back":4,"kind":"countBack","start":8},"terms":["__",8,12,16],"promptText":"What number fills the gap in __, 8, 12, 16?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0499",
@@ -20452,7 +20452,7 @@ export const ITEMS = [
     structureType: "firstTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"step":2,"counting":{"back":2,"kind":"countBack","start":5},"sequence":["?",5,7,9],"promptText":"Fill the gap: ?, 5, 7, 9."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"step":2,"counting":{"back":2,"kind":"countBack","start":5},"terms":["__",5,7,9],"promptText":"What is the missing number in __, 5, 7, 9?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0500",
@@ -20462,7 +20462,7 @@ export const ITEMS = [
     structureType: "firstTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"step":3,"counting":{"back":3,"kind":"countBack","start":9},"sequence":["?",9,12,15],"promptText":"Fill the gap: ?, 9, 12, 15."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"step":3,"counting":{"back":3,"kind":"countBack","start":9},"terms":["__",9,12,15],"promptText":"Pattern: __, 9, 12, 15. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0501",
@@ -20472,7 +20472,7 @@ export const ITEMS = [
     structureType: "firstTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"step":4,"counting":{"back":4,"kind":"countBack","start":6},"sequence":["?",6,10,14],"promptText":"Fill the gap: ?, 6, 10, 14."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"step":4,"counting":{"back":4,"kind":"countBack","start":6},"terms":["__",6,10,14],"promptText":"What number fills the gap in __, 6, 10, 14?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0502",
@@ -20482,7 +20482,7 @@ export const ITEMS = [
     structureType: "firstTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"step":2,"counting":{"back":2,"kind":"countBack","start":10},"sequence":["?",10,12,14],"promptText":"Fill the gap: ?, 10, 12, 14."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"step":2,"counting":{"back":2,"kind":"countBack","start":10},"terms":["__",10,12,14],"promptText":"What is the missing number in __, 10, 12, 14?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0503",
@@ -20492,7 +20492,7 @@ export const ITEMS = [
     structureType: "firstTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"step":2,"counting":{"back":2,"kind":"countBack","start":7},"sequence":["?",7,9,11],"promptText":"Fill the gap: ?, 7, 9, 11."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"step":2,"counting":{"back":2,"kind":"countBack","start":7},"terms":["__",7,9,11],"promptText":"Pattern: __, 7, 9, 11. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0504",
@@ -20502,7 +20502,7 @@ export const ITEMS = [
     structureType: "firstTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"step":3,"counting":{"back":3,"kind":"countBack","start":11},"sequence":["?",11,14,17],"promptText":"Fill the gap: ?, 11, 14, 17."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"step":3,"counting":{"back":3,"kind":"countBack","start":11},"terms":["__",11,14,17],"promptText":"What number fills the gap in __, 11, 14, 17?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0505",
@@ -20512,7 +20512,7 @@ export const ITEMS = [
     structureType: "firstTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"step":2,"counting":{"back":2,"kind":"countBack","start":8},"sequence":["?",8,10,12],"promptText":"Fill the gap: ?, 8, 10, 12."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"step":2,"counting":{"back":2,"kind":"countBack","start":8},"terms":["__",8,10,12],"promptText":"What is the missing number in __, 8, 10, 12?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0506",
@@ -20522,7 +20522,7 @@ export const ITEMS = [
     structureType: "firstTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"step":4,"counting":{"back":4,"kind":"countBack","start":12},"sequence":["?",12,16,20],"promptText":"Fill the gap: ?, 12, 16, 20."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"step":4,"counting":{"back":4,"kind":"countBack","start":12},"terms":["__",12,16,20],"promptText":"Pattern: __, 12, 16, 20. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0507",
@@ -20532,7 +20532,7 @@ export const ITEMS = [
     structureType: "firstTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"step":4,"counting":{"back":4,"kind":"countBack","start":9},"sequence":["?",9,13,17],"promptText":"Fill the gap: ?, 9, 13, 17."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"step":4,"counting":{"back":4,"kind":"countBack","start":9},"terms":["__",9,13,17],"promptText":"What number fills the gap in __, 9, 13, 17?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0508",
@@ -20542,7 +20542,7 @@ export const ITEMS = [
     structureType: "firstTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"step":2,"counting":{"back":2,"kind":"countBack","start":13},"sequence":["?",13,15,17],"promptText":"Fill the gap: ?, 13, 15, 17."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"step":2,"counting":{"back":2,"kind":"countBack","start":13},"terms":["__",13,15,17],"promptText":"What is the missing number in __, 13, 15, 17?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0509",
@@ -20552,7 +20552,7 @@ export const ITEMS = [
     structureType: "firstTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"step":5,"counting":{"back":5,"kind":"countBack","start":10},"sequence":["?",10,15,20],"promptText":"Fill the gap: ?, 10, 15, 20."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"step":5,"counting":{"back":5,"kind":"countBack","start":10},"terms":["__",10,15,20],"promptText":"Pattern: __, 10, 15, 20. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0510",
@@ -20562,7 +20562,7 @@ export const ITEMS = [
     structureType: "firstTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"step":3,"counting":{"back":3,"kind":"countBack","start":14},"sequence":["?",14,17,20],"promptText":"Fill the gap: ?, 14, 17, 20."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"step":3,"counting":{"back":3,"kind":"countBack","start":14},"terms":["__",14,17,20],"promptText":"What number fills the gap in __, 14, 17, 20?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0511",
@@ -20572,7 +20572,7 @@ export const ITEMS = [
     structureType: "firstTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"step":5,"counting":{"back":5,"kind":"countBack","start":6},"sequence":["?",6,11,16],"promptText":"Fill the gap: ?, 6, 11, 16."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"step":5,"counting":{"back":5,"kind":"countBack","start":6},"terms":["__",6,11,16],"promptText":"What is the missing number in __, 6, 11, 16?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0512",
@@ -20582,7 +20582,7 @@ export const ITEMS = [
     structureType: "firstTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"step":2,"counting":{"back":2,"kind":"countBack","start":15},"sequence":["?",15,17,19],"promptText":"Fill the gap: ?, 15, 17, 19."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"step":2,"counting":{"back":2,"kind":"countBack","start":15},"terms":["__",15,17,19],"promptText":"Pattern: __, 15, 17, 19. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0513",
@@ -20592,7 +20592,7 @@ export const ITEMS = [
     structureType: "firstTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"step":5,"counting":{"back":5,"kind":"countBack","start":8},"sequence":["?",8,13,18],"promptText":"Fill the gap: ?, 8, 13, 18."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"step":5,"counting":{"back":5,"kind":"countBack","start":8},"terms":["__",8,13,18],"promptText":"What number fills the gap in __, 8, 13, 18?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0514",
@@ -20602,7 +20602,7 @@ export const ITEMS = [
     structureType: "firstTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"step":4,"counting":{"back":4,"kind":"countBack","start":7},"sequence":["?",7,11,15],"promptText":"Fill the gap: ?, 7, 11, 15."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"step":4,"counting":{"back":4,"kind":"countBack","start":7},"terms":["__",7,11,15],"promptText":"What is the missing number in __, 7, 11, 15?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0515",
@@ -20612,7 +20612,7 @@ export const ITEMS = [
     structureType: "firstTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"step":2,"counting":{"back":2,"kind":"countBack","start":11},"sequence":["?",11,13,15],"promptText":"Fill the gap: ?, 11, 13, 15."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"step":2,"counting":{"back":2,"kind":"countBack","start":11},"terms":["__",11,13,15],"promptText":"Pattern: __, 11, 13, 15. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0516",
@@ -20622,7 +20622,7 @@ export const ITEMS = [
     structureType: "firstTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"step":2,"counting":{"back":2,"kind":"countBack","start":9},"sequence":["?",9,11,13],"promptText":"Fill the gap: ?, 9, 11, 13."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"step":2,"counting":{"back":2,"kind":"countBack","start":9},"terms":["__",9,11,13],"promptText":"What number fills the gap in __, 9, 11, 13?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0517",
@@ -20632,7 +20632,7 @@ export const ITEMS = [
     structureType: "firstTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"step":3,"counting":{"back":3,"kind":"countBack","start":12},"sequence":["?",12,15,18],"promptText":"Fill the gap: ?, 12, 15, 18."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"step":3,"counting":{"back":3,"kind":"countBack","start":12},"terms":["__",12,15,18],"promptText":"What is the missing number in __, 12, 15, 18?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0518",
@@ -20642,7 +20642,7 @@ export const ITEMS = [
     structureType: "gapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"step":6,"counting":{"kind":"between","after":24,"before":12},"sequence":[12,"?",24,30],"promptText":"Fill the gap: 12, ?, 24, 30."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"step":6,"counting":{"kind":"between","after":24,"before":12},"terms":[12,"__",24,30],"promptText":"Pattern: 12, __, 24, 30. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0519",
@@ -20652,7 +20652,7 @@ export const ITEMS = [
     structureType: "gapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"step":7,"counting":{"kind":"between","after":46,"before":32},"sequence":[25,32,"?",46],"promptText":"Fill the gap: 25, 32, ?, 46."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"step":7,"counting":{"kind":"between","after":46,"before":32},"terms":[25,32,"__",46],"promptText":"What number fills the gap in 25, 32, __, 46?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0520",
@@ -20662,7 +20662,7 @@ export const ITEMS = [
     structureType: "gapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"step":8,"counting":{"kind":"between","after":47,"before":31},"sequence":[31,"?",47,55],"promptText":"Fill the gap: 31, ?, 47, 55."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"step":8,"counting":{"kind":"between","after":47,"before":31},"terms":[31,"__",47,55],"promptText":"What is the missing number in 31, __, 47, 55?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0521",
@@ -20672,7 +20672,7 @@ export const ITEMS = [
     structureType: "gapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"step":9,"counting":{"kind":"between","after":41,"before":23},"sequence":[14,23,"?",41],"promptText":"Fill the gap: 14, 23, ?, 41."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"step":9,"counting":{"kind":"between","after":41,"before":23},"terms":[14,23,"__",41],"promptText":"Pattern: 14, 23, __, 41. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0522",
@@ -20682,7 +20682,7 @@ export const ITEMS = [
     structureType: "gapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"step":6,"counting":{"kind":"between","after":54,"before":42},"sequence":[42,"?",54,60],"promptText":"Fill the gap: 42, ?, 54, 60."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"step":6,"counting":{"kind":"between","after":54,"before":42},"terms":[42,"__",54,60],"promptText":"What number fills the gap in 42, __, 54, 60?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0523",
@@ -20692,7 +20692,7 @@ export const ITEMS = [
     structureType: "gapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"step":7,"counting":{"kind":"between","after":44,"before":30},"sequence":[23,30,"?",44],"promptText":"Fill the gap: 23, 30, ?, 44."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"step":7,"counting":{"kind":"between","after":44,"before":30},"terms":[23,30,"__",44],"promptText":"What is the missing number in 23, 30, __, 44?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0524",
@@ -20702,7 +20702,7 @@ export const ITEMS = [
     structureType: "gapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":43,"display":{"step":8,"counting":{"kind":"between","after":51,"before":35},"sequence":[35,"?",51,59],"promptText":"Fill the gap: 35, ?, 51, 59."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":43,"display":{"step":8,"counting":{"kind":"between","after":51,"before":35},"terms":[35,"__",51,59],"promptText":"Pattern: 35, __, 51, 59. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0525",
@@ -20712,7 +20712,7 @@ export const ITEMS = [
     structureType: "gapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"step":9,"counting":{"kind":"between","after":34,"before":16},"sequence":[16,"?",34,43],"promptText":"Fill the gap: 16, ?, 34, 43."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"step":9,"counting":{"kind":"between","after":34,"before":16},"terms":[16,"__",34,43],"promptText":"What number fills the gap in 16, __, 34, 43?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0526",
@@ -20722,7 +20722,7 @@ export const ITEMS = [
     structureType: "gapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":63,"display":{"step":6,"counting":{"kind":"between","after":69,"before":57},"sequence":[51,57,"?",69],"promptText":"Fill the gap: 51, 57, ?, 69."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":63,"display":{"step":6,"counting":{"kind":"between","after":69,"before":57},"terms":[51,57,"__",69],"promptText":"What is the missing number in 51, 57, __, 69?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0527",
@@ -20732,7 +20732,7 @@ export const ITEMS = [
     structureType: "gapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"step":4,"counting":{"kind":"between","after":35,"before":27},"sequence":[27,"?",35,39],"promptText":"Fill the gap: 27, ?, 35, 39."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"step":4,"counting":{"kind":"between","after":35,"before":27},"terms":[27,"__",35,39],"promptText":"Pattern: 27, __, 35, 39. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0528",
@@ -20742,7 +20742,7 @@ export const ITEMS = [
     structureType: "gapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":43,"display":{"step":5,"counting":{"kind":"between","after":48,"before":38},"sequence":[33,38,"?",48],"promptText":"Fill the gap: 33, 38, ?, 48."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":43,"display":{"step":5,"counting":{"kind":"between","after":48,"before":38},"terms":[33,38,"__",48],"promptText":"What number fills the gap in 33, 38, __, 48?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0529",
@@ -20752,7 +20752,7 @@ export const ITEMS = [
     structureType: "gapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":52,"display":{"step":7,"counting":{"kind":"between","after":59,"before":45},"sequence":[45,"?",59,66],"promptText":"Fill the gap: 45, ?, 59, 66."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":52,"display":{"step":7,"counting":{"kind":"between","after":59,"before":45},"terms":[45,"__",59,66],"promptText":"What is the missing number in 45, __, 59, 66?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0530",
@@ -20762,7 +20762,7 @@ export const ITEMS = [
     structureType: "gapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"step":8,"counting":{"kind":"between","after":42,"before":26},"sequence":[18,26,"?",42],"promptText":"Fill the gap: 18, 26, ?, 42."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"step":8,"counting":{"kind":"between","after":42,"before":26},"terms":[18,26,"__",42],"promptText":"Pattern: 18, 26, __, 42. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0531",
@@ -20772,7 +20772,7 @@ export const ITEMS = [
     structureType: "gapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":65,"display":{"step":3,"counting":{"kind":"between","after":68,"before":62},"sequence":[62,"?",68,71],"promptText":"Fill the gap: 62, ?, 68, 71."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":65,"display":{"step":3,"counting":{"kind":"between","after":68,"before":62},"terms":[62,"__",68,71],"promptText":"What number fills the gap in 62, __, 68, 71?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0532",
@@ -20782,7 +20782,7 @@ export const ITEMS = [
     structureType: "gapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":47,"display":{"step":9,"counting":{"kind":"between","after":56,"before":38},"sequence":[29,38,"?",56],"promptText":"Fill the gap: 29, 38, ?, 56."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":47,"display":{"step":9,"counting":{"kind":"between","after":56,"before":38},"terms":[29,38,"__",56],"promptText":"What is the missing number in 29, 38, __, 56?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0533",
@@ -20792,7 +20792,7 @@ export const ITEMS = [
     structureType: "gapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":43,"display":{"step":6,"counting":{"kind":"between","after":49,"before":37},"sequence":[37,"?",49,55],"promptText":"Fill the gap: 37, ?, 49, 55."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":43,"display":{"step":6,"counting":{"kind":"between","after":49,"before":37},"terms":[37,"__",49,55],"promptText":"Pattern: 37, __, 49, 55. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0534",
@@ -20802,7 +20802,7 @@ export const ITEMS = [
     structureType: "gapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":54,"display":{"step":5,"counting":{"kind":"between","after":59,"before":49},"sequence":[44,49,"?",59],"promptText":"Fill the gap: 44, 49, ?, 59."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":54,"display":{"step":5,"counting":{"kind":"between","after":59,"before":49},"terms":[44,49,"__",59],"promptText":"What number fills the gap in 44, 49, __, 59?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0535",
@@ -20812,7 +20812,7 @@ export const ITEMS = [
     structureType: "gapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"step":4,"counting":{"kind":"between","after":64,"before":56},"sequence":[56,"?",64,68],"promptText":"Fill the gap: 56, ?, 64, 68."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"step":4,"counting":{"kind":"between","after":64,"before":56},"terms":[56,"__",64,68],"promptText":"What is the missing number in 56, __, 64, 68?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0536",
@@ -20822,7 +20822,7 @@ export const ITEMS = [
     structureType: "gapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"step":8,"counting":{"kind":"between","after":45,"before":29},"sequence":[21,29,"?",45],"promptText":"Fill the gap: 21, 29, ?, 45."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"step":8,"counting":{"kind":"between","after":45,"before":29},"terms":[21,29,"__",45],"promptText":"Pattern: 21, 29, __, 45. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0537",
@@ -20832,7 +20832,7 @@ export const ITEMS = [
     structureType: "gapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"step":7,"counting":{"kind":"between","after":53,"before":39},"sequence":[39,"?",53,60],"promptText":"Fill the gap: 39, ?, 53, 60."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"step":7,"counting":{"kind":"between","after":53,"before":39},"terms":[39,"__",53,60],"promptText":"What number fills the gap in 39, __, 53, 60?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0538",
@@ -20842,7 +20842,7 @@ export const ITEMS = [
     structureType: "gapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"step":6,"counting":{"kind":"between","after":42,"before":30},"sequence":[24,30,"?",42],"promptText":"Fill the gap: 24, 30, ?, 42."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"step":6,"counting":{"kind":"between","after":42,"before":30},"terms":[24,30,"__",42],"promptText":"What is the missing number in 24, 30, __, 42?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0539",
@@ -20852,7 +20852,7 @@ export const ITEMS = [
     structureType: "gapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":53,"display":{"step":3,"counting":{"kind":"between","after":56,"before":50},"sequence":[47,50,"?",56],"promptText":"Fill the gap: 47, 50, ?, 56."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":53,"display":{"step":3,"counting":{"kind":"between","after":56,"before":50},"terms":[47,50,"__",56],"promptText":"Pattern: 47, 50, __, 56. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0540",
@@ -20862,7 +20862,7 @@ export const ITEMS = [
     structureType: "gapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"step":4,"counting":{"kind":"between","after":61,"before":53},"sequence":[53,"?",61,65],"promptText":"Fill the gap: 53, ?, 61, 65."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"step":4,"counting":{"kind":"between","after":61,"before":53},"terms":[53,"__",61,65],"promptText":"What number fills the gap in 53, __, 61, 65?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0541",
@@ -20872,7 +20872,7 @@ export const ITEMS = [
     structureType: "gapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":54,"display":{"step":9,"counting":{"kind":"between","after":63,"before":45},"sequence":[36,45,"?",63],"promptText":"Fill the gap: 36, 45, ?, 63."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":54,"display":{"step":9,"counting":{"kind":"between","after":63,"before":45},"terms":[36,45,"__",63],"promptText":"What is the missing number in 36, 45, __, 63?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0542",
@@ -20882,7 +20882,7 @@ export const ITEMS = [
     structureType: "gapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"step":5,"counting":{"kind":"between","after":29,"before":19},"sequence":[19,"?",29,34],"promptText":"Fill the gap: 19, ?, 29, 34."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"step":5,"counting":{"kind":"between","after":29,"before":19},"terms":[19,"__",29,34],"promptText":"Pattern: 19, __, 29, 34. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0543",
@@ -20892,7 +20892,7 @@ export const ITEMS = [
     structureType: "gapMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"step":7,"counting":{"kind":"between","after":42,"before":28},"sequence":[28,"?",42,49],"promptText":"Fill the gap: 28, ?, 42, 49."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"step":7,"counting":{"kind":"between","after":42,"before":28},"terms":[28,"__",42,49],"promptText":"What number fills the gap in 28, __, 42, 49?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0544",
@@ -20902,7 +20902,7 @@ export const ITEMS = [
     structureType: "firstMidGap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"step":6,"counting":{"back":6,"kind":"countBack","start":23},"sequence":["?",23,29,35],"promptText":"Fill the gap: ?, 23, 29, 35."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"step":6,"counting":{"back":6,"kind":"countBack","start":23},"terms":["__",23,29,35],"promptText":"Pattern: __, 23, 29, 35. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0545",
@@ -20912,7 +20912,7 @@ export const ITEMS = [
     structureType: "firstMidGap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"step":7,"counting":{"back":7,"kind":"countBack","start":35},"sequence":["?",35,42,49],"promptText":"Fill the gap: ?, 35, 42, 49."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"step":7,"counting":{"back":7,"kind":"countBack","start":35},"terms":["__",35,42,49],"promptText":"What number fills the gap in __, 35, 42, 49?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0546",
@@ -20922,7 +20922,7 @@ export const ITEMS = [
     structureType: "firstMidGap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"step":8,"counting":{"back":8,"kind":"countBack","start":41},"sequence":["?",41,49,57],"promptText":"Fill the gap: ?, 41, 49, 57."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"step":8,"counting":{"back":8,"kind":"countBack","start":41},"terms":["__",41,49,57],"promptText":"What is the missing number in __, 41, 49, 57?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0547",
@@ -20932,7 +20932,7 @@ export const ITEMS = [
     structureType: "firstMidGap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"step":9,"counting":{"back":9,"kind":"countBack","start":27},"sequence":["?",27,36,45],"promptText":"Fill the gap: ?, 27, 36, 45."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"step":9,"counting":{"back":9,"kind":"countBack","start":27},"terms":["__",27,36,45],"promptText":"Pattern: __, 27, 36, 45. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0548",
@@ -20942,7 +20942,7 @@ export const ITEMS = [
     structureType: "firstMidGap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"step":6,"counting":{"back":6,"kind":"countBack","start":52},"sequence":["?",52,58,64],"promptText":"Fill the gap: ?, 52, 58, 64."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"step":6,"counting":{"back":6,"kind":"countBack","start":52},"terms":["__",52,58,64],"promptText":"What number fills the gap in __, 52, 58, 64?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0549",
@@ -20952,7 +20952,7 @@ export const ITEMS = [
     structureType: "firstMidGap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"step":7,"counting":{"back":7,"kind":"countBack","start":33},"sequence":["?",33,40,47],"promptText":"Fill the gap: ?, 33, 40, 47."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"step":7,"counting":{"back":7,"kind":"countBack","start":33},"terms":["__",33,40,47],"promptText":"What is the missing number in __, 33, 40, 47?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0550",
@@ -20962,7 +20962,7 @@ export const ITEMS = [
     structureType: "firstMidGap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"step":8,"counting":{"back":8,"kind":"countBack","start":45},"sequence":["?",45,53,61],"promptText":"Fill the gap: ?, 45, 53, 61."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"step":8,"counting":{"back":8,"kind":"countBack","start":45},"terms":["__",45,53,61],"promptText":"Pattern: __, 45, 53, 61. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0551",
@@ -20972,7 +20972,7 @@ export const ITEMS = [
     structureType: "firstMidGap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"step":4,"counting":{"back":4,"kind":"countBack","start":26},"sequence":["?",26,30,34],"promptText":"Fill the gap: ?, 26, 30, 34."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"step":4,"counting":{"back":4,"kind":"countBack","start":26},"terms":["__",26,30,34],"promptText":"What number fills the gap in __, 26, 30, 34?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0552",
@@ -20982,7 +20982,7 @@ export const ITEMS = [
     structureType: "firstMidGap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"step":5,"counting":{"back":5,"kind":"countBack","start":61},"sequence":["?",61,66,71],"promptText":"Fill the gap: ?, 61, 66, 71."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"step":5,"counting":{"back":5,"kind":"countBack","start":61},"terms":["__",61,66,71],"promptText":"What is the missing number in __, 61, 66, 71?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0553",
@@ -20992,7 +20992,7 @@ export const ITEMS = [
     structureType: "firstMidGap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"step":6,"counting":{"back":6,"kind":"countBack","start":38},"sequence":["?",38,44,50],"promptText":"Fill the gap: ?, 38, 44, 50."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"step":6,"counting":{"back":6,"kind":"countBack","start":38},"terms":["__",38,44,50],"promptText":"Pattern: __, 38, 44, 50. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0554",
@@ -21002,7 +21002,7 @@ export const ITEMS = [
     structureType: "firstMidGap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"step":7,"counting":{"back":7,"kind":"countBack","start":47},"sequence":["?",47,54,61],"promptText":"Fill the gap: ?, 47, 54, 61."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"step":7,"counting":{"back":7,"kind":"countBack","start":47},"terms":["__",47,54,61],"promptText":"What number fills the gap in __, 47, 54, 61?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0555",
@@ -21012,7 +21012,7 @@ export const ITEMS = [
     structureType: "firstMidGap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":52,"display":{"step":3,"counting":{"back":3,"kind":"countBack","start":55},"sequence":["?",55,58,61],"promptText":"Fill the gap: ?, 55, 58, 61."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":52,"display":{"step":3,"counting":{"back":3,"kind":"countBack","start":55},"terms":["__",55,58,61],"promptText":"What is the missing number in __, 55, 58, 61?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0556",
@@ -21022,7 +21022,7 @@ export const ITEMS = [
     structureType: "firstMidGap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"step":8,"counting":{"back":8,"kind":"countBack","start":29},"sequence":["?",29,37,45],"promptText":"Fill the gap: ?, 29, 37, 45."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"step":8,"counting":{"back":8,"kind":"countBack","start":29},"terms":["__",29,37,45],"promptText":"Pattern: __, 29, 37, 45. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0557",
@@ -21032,7 +21032,7 @@ export const ITEMS = [
     structureType: "firstMidGap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"step":9,"counting":{"back":9,"kind":"countBack","start":64},"sequence":["?",64,73,82],"promptText":"Fill the gap: ?, 64, 73, 82."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"step":9,"counting":{"back":9,"kind":"countBack","start":64},"terms":["__",64,73,82],"promptText":"What number fills the gap in __, 64, 73, 82?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0558",
@@ -21042,7 +21042,7 @@ export const ITEMS = [
     structureType: "firstMidGap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"step":4,"counting":{"back":4,"kind":"countBack","start":31},"sequence":["?",31,35,39],"promptText":"Fill the gap: ?, 31, 35, 39."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"step":4,"counting":{"back":4,"kind":"countBack","start":31},"terms":["__",31,35,39],"promptText":"What is the missing number in __, 31, 35, 39?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0559",
@@ -21052,7 +21052,7 @@ export const ITEMS = [
     structureType: "firstMidGap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"step":5,"counting":{"back":5,"kind":"countBack","start":43},"sequence":["?",43,48,53],"promptText":"Fill the gap: ?, 43, 48, 53."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"step":5,"counting":{"back":5,"kind":"countBack","start":43},"terms":["__",43,48,53],"promptText":"Pattern: __, 43, 48, 53. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0560",
@@ -21062,7 +21062,7 @@ export const ITEMS = [
     structureType: "firstMidGap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":51,"display":{"step":7,"counting":{"back":7,"kind":"countBack","start":58},"sequence":["?",58,65,72],"promptText":"Fill the gap: ?, 58, 65, 72."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":51,"display":{"step":7,"counting":{"back":7,"kind":"countBack","start":58},"terms":["__",58,65,72],"promptText":"What number fills the gap in __, 58, 65, 72?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0561",
@@ -21072,7 +21072,7 @@ export const ITEMS = [
     structureType: "firstMidGap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"step":8,"counting":{"back":8,"kind":"countBack","start":36},"sequence":["?",36,44,52],"promptText":"Fill the gap: ?, 36, 44, 52."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"step":8,"counting":{"back":8,"kind":"countBack","start":36},"terms":["__",36,44,52],"promptText":"What is the missing number in __, 36, 44, 52?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0562",
@@ -21082,7 +21082,7 @@ export const ITEMS = [
     structureType: "firstMidGap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"step":9,"counting":{"back":9,"kind":"countBack","start":49},"sequence":["?",49,58,67],"promptText":"Fill the gap: ?, 49, 58, 67."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"step":9,"counting":{"back":9,"kind":"countBack","start":49},"terms":["__",49,58,67],"promptText":"Pattern: __, 49, 58, 67. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0563",
@@ -21092,7 +21092,7 @@ export const ITEMS = [
     structureType: "firstMidGap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":63,"display":{"step":4,"counting":{"back":4,"kind":"countBack","start":67},"sequence":["?",67,71,75],"promptText":"Fill the gap: ?, 67, 71, 75."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":63,"display":{"step":4,"counting":{"back":4,"kind":"countBack","start":67},"terms":["__",67,71,75],"promptText":"What number fills the gap in __, 67, 71, 75?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0564",
@@ -21102,7 +21102,7 @@ export const ITEMS = [
     structureType: "firstMidGap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"step":5,"counting":{"back":5,"kind":"countBack","start":24},"sequence":["?",24,29,34],"promptText":"Fill the gap: ?, 24, 29, 34."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"step":5,"counting":{"back":5,"kind":"countBack","start":24},"terms":["__",24,29,34],"promptText":"What is the missing number in __, 24, 29, 34?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0565",
@@ -21112,7 +21112,7 @@ export const ITEMS = [
     structureType: "firstMidGap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":43,"display":{"step":8,"counting":{"back":8,"kind":"countBack","start":51},"sequence":["?",51,59,67],"promptText":"Fill the gap: ?, 51, 59, 67."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":43,"display":{"step":8,"counting":{"back":8,"kind":"countBack","start":51},"terms":["__",51,59,67],"promptText":"Pattern: __, 51, 59, 67. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0566",
@@ -21122,7 +21122,7 @@ export const ITEMS = [
     structureType: "firstMidGap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"step":3,"counting":{"back":3,"kind":"countBack","start":39},"sequence":["?",39,42,45],"promptText":"Fill the gap: ?, 39, 42, 45."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"step":3,"counting":{"back":3,"kind":"countBack","start":39},"terms":["__",39,42,45],"promptText":"What number fills the gap in __, 39, 42, 45?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0567",
@@ -21132,7 +21132,7 @@ export const ITEMS = [
     structureType: "firstMidGap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"step":6,"counting":{"back":6,"kind":"countBack","start":46},"sequence":["?",46,52,58],"promptText":"Fill the gap: ?, 46, 52, 58."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"step":6,"counting":{"back":6,"kind":"countBack","start":46},"terms":["__",46,52,58],"promptText":"What is the missing number in __, 46, 52, 58?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0568",
@@ -21142,7 +21142,7 @@ export const ITEMS = [
     structureType: "firstMidGap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"step":7,"counting":{"back":7,"kind":"countBack","start":63},"sequence":["?",63,70,77],"promptText":"Fill the gap: ?, 63, 70, 77."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"step":7,"counting":{"back":7,"kind":"countBack","start":63},"terms":["__",63,70,77],"promptText":"Pattern: __, 63, 70, 77. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0569",
@@ -21152,7 +21152,7 @@ export const ITEMS = [
     structureType: "firstMidGap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"step":9,"counting":{"back":9,"kind":"countBack","start":28},"sequence":["?",28,37,46],"promptText":"Fill the gap: ?, 28, 37, 46."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"step":9,"counting":{"back":9,"kind":"countBack","start":28},"terms":["__",28,37,46],"promptText":"What number fills the gap in __, 28, 37, 46?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0570",
@@ -21162,7 +21162,7 @@ export const ITEMS = [
     structureType: "gapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":123,"display":{"step":11,"counting":{"kind":"between","after":134,"before":112},"sequence":[112,"?",134,145],"promptText":"Fill the gap: 112, ?, 134, 145."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":123,"display":{"step":11,"counting":{"kind":"between","after":134,"before":112},"terms":[112,"__",134,145],"promptText":"Pattern: 112, __, 134, 145. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0571",
@@ -21172,7 +21172,7 @@ export const ITEMS = [
     structureType: "gapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":259,"display":{"step":12,"counting":{"kind":"between","after":271,"before":247},"sequence":[235,247,"?",271],"promptText":"Fill the gap: 235, 247, ?, 271."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":259,"display":{"step":12,"counting":{"kind":"between","after":271,"before":247},"terms":[235,247,"__",271],"promptText":"What number fills the gap in 235, 247, __, 271?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0572",
@@ -21182,7 +21182,7 @@ export const ITEMS = [
     structureType: "gapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":356,"display":{"step":15,"counting":{"kind":"between","after":371,"before":341},"sequence":[341,"?",371,386],"promptText":"Fill the gap: 341, ?, 371, 386."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":356,"display":{"step":15,"counting":{"kind":"between","after":371,"before":341},"terms":[341,"__",371,386],"promptText":"What is the missing number in 341, __, 371, 386?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0573",
@@ -21192,7 +21192,7 @@ export const ITEMS = [
     structureType: "gapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":174,"display":{"step":25,"counting":{"kind":"between","after":199,"before":149},"sequence":[124,149,"?",199],"promptText":"Fill the gap: 124, 149, ?, 199."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":174,"display":{"step":25,"counting":{"kind":"between","after":199,"before":149},"terms":[124,149,"__",199],"promptText":"Pattern: 124, 149, __, 199. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0574",
@@ -21202,7 +21202,7 @@ export const ITEMS = [
     structureType: "gapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":463,"display":{"step":11,"counting":{"kind":"between","after":474,"before":452},"sequence":[452,"?",474,485],"promptText":"Fill the gap: 452, ?, 474, 485."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":463,"display":{"step":11,"counting":{"kind":"between","after":474,"before":452},"terms":[452,"__",474,485],"promptText":"What number fills the gap in 452, __, 474, 485?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0575",
@@ -21212,7 +21212,7 @@ export const ITEMS = [
     structureType: "gapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":251,"display":{"step":14,"counting":{"kind":"between","after":265,"before":237},"sequence":[223,237,"?",265],"promptText":"Fill the gap: 223, 237, ?, 265."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":251,"display":{"step":14,"counting":{"kind":"between","after":265,"before":237},"terms":[223,237,"__",265],"promptText":"What is the missing number in 223, 237, __, 265?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0576",
@@ -21222,7 +21222,7 @@ export const ITEMS = [
     structureType: "gapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":356,"display":{"step":21,"counting":{"kind":"between","after":377,"before":335},"sequence":[335,"?",377,398],"promptText":"Fill the gap: 335, ?, 377, 398."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":356,"display":{"step":21,"counting":{"kind":"between","after":377,"before":335},"terms":[335,"__",377,398],"promptText":"Pattern: 335, __, 377, 398. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0577",
@@ -21232,7 +21232,7 @@ export const ITEMS = [
     structureType: "gapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":170,"display":{"step":12,"counting":{"kind":"between","after":182,"before":158},"sequence":[146,158,"?",182],"promptText":"Fill the gap: 146, 158, ?, 182."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":170,"display":{"step":12,"counting":{"kind":"between","after":182,"before":158},"terms":[146,158,"__",182],"promptText":"What number fills the gap in 146, 158, __, 182?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0578",
@@ -21242,7 +21242,7 @@ export const ITEMS = [
     structureType: "gapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":531,"display":{"step":13,"counting":{"kind":"between","after":544,"before":518},"sequence":[518,"?",544,557],"promptText":"Fill the gap: 518, ?, 544, 557."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":531,"display":{"step":13,"counting":{"kind":"between","after":544,"before":518},"terms":[518,"__",544,557],"promptText":"What is the missing number in 518, __, 544, 557?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0579",
@@ -21252,7 +21252,7 @@ export const ITEMS = [
     structureType: "gapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":279,"display":{"step":16,"counting":{"kind":"between","after":295,"before":263},"sequence":[247,263,"?",295],"promptText":"Fill the gap: 247, 263, ?, 295."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":279,"display":{"step":16,"counting":{"kind":"between","after":295,"before":263},"terms":[247,263,"__",295],"promptText":"Pattern: 247, 263, __, 295. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0580",
@@ -21262,7 +21262,7 @@ export const ITEMS = [
     structureType: "gapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":355,"display":{"step":22,"counting":{"kind":"between","after":377,"before":333},"sequence":[333,"?",377,399],"promptText":"Fill the gap: 333, ?, 377, 399."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":355,"display":{"step":22,"counting":{"kind":"between","after":377,"before":333},"terms":[333,"__",377,399],"promptText":"What number fills the gap in 333, __, 377, 399?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0581",
@@ -21272,7 +21272,7 @@ export const ITEMS = [
     structureType: "gapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":451,"display":{"step":18,"counting":{"kind":"between","after":469,"before":433},"sequence":[415,433,"?",469],"promptText":"Fill the gap: 415, 433, ?, 469."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":451,"display":{"step":18,"counting":{"kind":"between","after":469,"before":433},"terms":[415,433,"__",469],"promptText":"What is the missing number in 415, 433, __, 469?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0582",
@@ -21282,7 +21282,7 @@ export const ITEMS = [
     structureType: "gapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":152,"display":{"step":24,"counting":{"kind":"between","after":176,"before":128},"sequence":[128,"?",176,200],"promptText":"Fill the gap: 128, ?, 176, 200."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":152,"display":{"step":24,"counting":{"kind":"between","after":176,"before":128},"terms":[128,"__",176,200],"promptText":"Pattern: 128, __, 176, 200. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0583",
@@ -21292,7 +21292,7 @@ export const ITEMS = [
     structureType: "gapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":652,"display":{"step":15,"counting":{"kind":"between","after":667,"before":637},"sequence":[622,637,"?",667],"promptText":"Fill the gap: 622, 637, ?, 667."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":652,"display":{"step":15,"counting":{"kind":"between","after":667,"before":637},"terms":[622,637,"__",667],"promptText":"What number fills the gap in 622, 637, __, 667?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0584",
@@ -21302,7 +21302,7 @@ export const ITEMS = [
     structureType: "gapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":306,"display":{"step":17,"counting":{"kind":"between","after":323,"before":289},"sequence":[289,"?",323,340],"promptText":"Fill the gap: 289, ?, 323, 340."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":306,"display":{"step":17,"counting":{"kind":"between","after":323,"before":289},"terms":[289,"__",323,340],"promptText":"What is the missing number in 289, __, 323, 340?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0585",
@@ -21312,7 +21312,7 @@ export const ITEMS = [
     structureType: "gapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":363,"display":{"step":23,"counting":{"kind":"between","after":386,"before":340},"sequence":[317,340,"?",386],"promptText":"Fill the gap: 317, 340, ?, 386."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":363,"display":{"step":23,"counting":{"kind":"between","after":386,"before":340},"terms":[317,340,"__",386],"promptText":"Pattern: 317, 340, __, 386. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0586",
@@ -21322,7 +21322,7 @@ export const ITEMS = [
     structureType: "gapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":453,"display":{"step":19,"counting":{"kind":"between","after":472,"before":434},"sequence":[434,"?",472,491],"promptText":"Fill the gap: 434, ?, 472, 491."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":453,"display":{"step":19,"counting":{"kind":"between","after":472,"before":434},"terms":[434,"__",472,491],"promptText":"What number fills the gap in 434, __, 472, 491?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0587",
@@ -21332,7 +21332,7 @@ export const ITEMS = [
     structureType: "gapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":552,"display":{"step":13,"counting":{"kind":"between","after":565,"before":539},"sequence":[526,539,"?",565],"promptText":"Fill the gap: 526, 539, ?, 565."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":552,"display":{"step":13,"counting":{"kind":"between","after":565,"before":539},"terms":[526,539,"__",565],"promptText":"What is the missing number in 526, 539, __, 565?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0588",
@@ -21342,7 +21342,7 @@ export const ITEMS = [
     structureType: "gapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":237,"display":{"step":26,"counting":{"kind":"between","after":263,"before":211},"sequence":[211,"?",263,289],"promptText":"Fill the gap: 211, ?, 263, 289."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":237,"display":{"step":26,"counting":{"kind":"between","after":263,"before":211},"terms":[211,"__",263,289],"promptText":"Pattern: 211, __, 263, 289. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0589",
@@ -21352,7 +21352,7 @@ export const ITEMS = [
     structureType: "gapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":377,"display":{"step":14,"counting":{"kind":"between","after":391,"before":363},"sequence":[349,363,"?",391],"promptText":"Fill the gap: 349, 363, ?, 391."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":377,"display":{"step":14,"counting":{"kind":"between","after":391,"before":363},"terms":[349,363,"__",391],"promptText":"What number fills the gap in 349, 363, __, 391?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0590",
@@ -21362,7 +21362,7 @@ export const ITEMS = [
     structureType: "gapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":163,"display":{"step":27,"counting":{"kind":"between","after":190,"before":136},"sequence":[136,"?",190,217],"promptText":"Fill the gap: 136, ?, 190, 217."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":163,"display":{"step":27,"counting":{"kind":"between","after":190,"before":136},"terms":[136,"__",190,217],"promptText":"What is the missing number in 136, __, 190, 217?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0591",
@@ -21372,7 +21372,7 @@ export const ITEMS = [
     structureType: "gapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":309,"display":{"step":28,"counting":{"kind":"between","after":337,"before":281},"sequence":[253,281,"?",337],"promptText":"Fill the gap: 253, 281, ?, 337."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":309,"display":{"step":28,"counting":{"kind":"between","after":337,"before":281},"terms":[253,281,"__",337],"promptText":"Pattern: 253, 281, __, 337. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0592",
@@ -21382,7 +21382,7 @@ export const ITEMS = [
     structureType: "gapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":393,"display":{"step":29,"counting":{"kind":"between","after":422,"before":364},"sequence":[364,"?",422,451],"promptText":"Fill the gap: 364, ?, 422, 451."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":393,"display":{"step":29,"counting":{"kind":"between","after":422,"before":364},"terms":[364,"__",422,451],"promptText":"What number fills the gap in 364, __, 422, 451?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0593",
@@ -21392,7 +21392,7 @@ export const ITEMS = [
     structureType: "gapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":483,"display":{"step":21,"counting":{"kind":"between","after":504,"before":462},"sequence":[441,462,"?",504],"promptText":"Fill the gap: 441, 462, ?, 504."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":483,"display":{"step":21,"counting":{"kind":"between","after":504,"before":462},"terms":[441,462,"__",504],"promptText":"What is the missing number in 441, 462, __, 504?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0594",
@@ -21402,7 +21402,7 @@ export const ITEMS = [
     structureType: "gapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":179,"display":{"step":22,"counting":{"kind":"between","after":201,"before":157},"sequence":[157,"?",201,223],"promptText":"Fill the gap: 157, ?, 201, 223."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":179,"display":{"step":22,"counting":{"kind":"between","after":201,"before":157},"terms":[157,"__",201,223],"promptText":"Pattern: 157, __, 201, 223. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0595",
@@ -21412,7 +21412,7 @@ export const ITEMS = [
     structureType: "gapBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":314,"display":{"step":23,"counting":{"kind":"between","after":337,"before":291},"sequence":[268,291,"?",337],"promptText":"Fill the gap: 268, 291, ?, 337."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":314,"display":{"step":23,"counting":{"kind":"between","after":337,"before":291},"terms":[268,291,"__",337],"promptText":"What number fills the gap in 268, 291, __, 337?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0596",
@@ -21422,7 +21422,7 @@ export const ITEMS = [
     structureType: "firstBigGap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":112,"display":{"step":11,"counting":{"back":11,"kind":"countBack","start":123},"sequence":["?",123,134,145],"promptText":"Fill the gap: ?, 123, 134, 145."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":112,"display":{"step":11,"counting":{"back":11,"kind":"countBack","start":123},"terms":["__",123,134,145],"promptText":"Pattern: __, 123, 134, 145. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0597",
@@ -21432,7 +21432,7 @@ export const ITEMS = [
     structureType: "firstBigGap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":223,"display":{"step":12,"counting":{"back":12,"kind":"countBack","start":235},"sequence":["?",235,247,259],"promptText":"Fill the gap: ?, 235, 247, 259."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":223,"display":{"step":12,"counting":{"back":12,"kind":"countBack","start":235},"terms":["__",235,247,259],"promptText":"What number fills the gap in __, 235, 247, 259?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0598",
@@ -21442,7 +21442,7 @@ export const ITEMS = [
     structureType: "firstBigGap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":326,"display":{"step":15,"counting":{"back":15,"kind":"countBack","start":341},"sequence":["?",341,356,371],"promptText":"Fill the gap: ?, 341, 356, 371."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":326,"display":{"step":15,"counting":{"back":15,"kind":"countBack","start":341},"terms":["__",341,356,371],"promptText":"What is the missing number in __, 341, 356, 371?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0599",
@@ -21452,7 +21452,7 @@ export const ITEMS = [
     structureType: "firstBigGap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":202,"display":{"step":25,"counting":{"back":25,"kind":"countBack","start":227},"sequence":["?",227,252,277],"promptText":"Fill the gap: ?, 227, 252, 277."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":202,"display":{"step":25,"counting":{"back":25,"kind":"countBack","start":227},"terms":["__",227,252,277],"promptText":"Pattern: __, 227, 252, 277. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0600",
@@ -21462,7 +21462,7 @@ export const ITEMS = [
     structureType: "firstBigGap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":339,"display":{"step":13,"counting":{"back":13,"kind":"countBack","start":352},"sequence":["?",352,365,378],"promptText":"Fill the gap: ?, 352, 365, 378."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":339,"display":{"step":13,"counting":{"back":13,"kind":"countBack","start":352},"terms":["__",352,365,378],"promptText":"What number fills the gap in __, 352, 365, 378?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0601",
@@ -21472,7 +21472,7 @@ export const ITEMS = [
     structureType: "firstBigGap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":419,"display":{"step":14,"counting":{"back":14,"kind":"countBack","start":433},"sequence":["?",433,447,461],"promptText":"Fill the gap: ?, 433, 447, 461."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":419,"display":{"step":14,"counting":{"back":14,"kind":"countBack","start":433},"terms":["__",433,447,461],"promptText":"What is the missing number in __, 433, 447, 461?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0602",
@@ -21482,7 +21482,7 @@ export const ITEMS = [
     structureType: "firstBigGap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":524,"display":{"step":21,"counting":{"back":21,"kind":"countBack","start":545},"sequence":["?",545,566,587],"promptText":"Fill the gap: ?, 545, 566, 587."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":524,"display":{"step":21,"counting":{"back":21,"kind":"countBack","start":545},"terms":["__",545,566,587],"promptText":"Pattern: __, 545, 566, 587. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0603",
@@ -21492,7 +21492,7 @@ export const ITEMS = [
     structureType: "firstBigGap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":210,"display":{"step":16,"counting":{"back":16,"kind":"countBack","start":226},"sequence":["?",226,242,258],"promptText":"Fill the gap: ?, 226, 242, 258."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":210,"display":{"step":16,"counting":{"back":16,"kind":"countBack","start":226},"terms":["__",226,242,258],"promptText":"What number fills the gap in __, 226, 242, 258?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0604",
@@ -21502,7 +21502,7 @@ export const ITEMS = [
     structureType: "firstBigGap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":339,"display":{"step":22,"counting":{"back":22,"kind":"countBack","start":361},"sequence":["?",361,383,405],"promptText":"Fill the gap: ?, 361, 383, 405."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":339,"display":{"step":22,"counting":{"back":22,"kind":"countBack","start":361},"terms":["__",361,383,405],"promptText":"What is the missing number in __, 361, 383, 405?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0605",
@@ -21512,7 +21512,7 @@ export const ITEMS = [
     structureType: "firstBigGap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":220,"display":{"step":18,"counting":{"back":18,"kind":"countBack","start":238},"sequence":["?",238,256,274],"promptText":"Fill the gap: ?, 238, 256, 274."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":220,"display":{"step":18,"counting":{"back":18,"kind":"countBack","start":238},"terms":["__",238,256,274],"promptText":"Pattern: __, 238, 256, 274. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0606",
@@ -21522,7 +21522,7 @@ export const ITEMS = [
     structureType: "firstBigGap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":423,"display":{"step":24,"counting":{"back":24,"kind":"countBack","start":447},"sequence":["?",447,471,495],"promptText":"Fill the gap: ?, 447, 471, 495."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":423,"display":{"step":24,"counting":{"back":24,"kind":"countBack","start":447},"terms":["__",447,471,495],"promptText":"What number fills the gap in __, 447, 471, 495?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0607",
@@ -21532,7 +21532,7 @@ export const ITEMS = [
     structureType: "firstBigGap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":538,"display":{"step":17,"counting":{"back":17,"kind":"countBack","start":555},"sequence":["?",555,572,589],"promptText":"Fill the gap: ?, 555, 572, 589."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":538,"display":{"step":17,"counting":{"back":17,"kind":"countBack","start":555},"terms":["__",555,572,589],"promptText":"What is the missing number in __, 555, 572, 589?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0608",
@@ -21542,7 +21542,7 @@ export const ITEMS = [
     structureType: "firstBigGap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":306,"display":{"step":23,"counting":{"back":23,"kind":"countBack","start":329},"sequence":["?",329,352,375],"promptText":"Fill the gap: ?, 329, 352, 375."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":306,"display":{"step":23,"counting":{"back":23,"kind":"countBack","start":329},"terms":["__",329,352,375],"promptText":"Pattern: __, 329, 352, 375. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0609",
@@ -21552,7 +21552,7 @@ export const ITEMS = [
     structureType: "firstBigGap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":345,"display":{"step":19,"counting":{"back":19,"kind":"countBack","start":364},"sequence":["?",364,383,402],"promptText":"Fill the gap: ?, 364, 383, 402."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":345,"display":{"step":19,"counting":{"back":19,"kind":"countBack","start":364},"terms":["__",364,383,402],"promptText":"What number fills the gap in __, 364, 383, 402?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0610",
@@ -21562,7 +21562,7 @@ export const ITEMS = [
     structureType: "firstBigGap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":205,"display":{"step":26,"counting":{"back":26,"kind":"countBack","start":231},"sequence":["?",231,257,283],"promptText":"Fill the gap: ?, 231, 257, 283."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":205,"display":{"step":26,"counting":{"back":26,"kind":"countBack","start":231},"terms":["__",231,257,283],"promptText":"What is the missing number in __, 231, 257, 283?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0611",
@@ -21572,7 +21572,7 @@ export const ITEMS = [
     structureType: "firstBigGap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":416,"display":{"step":27,"counting":{"back":27,"kind":"countBack","start":443},"sequence":["?",443,470,497],"promptText":"Fill the gap: ?, 443, 470, 497."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":416,"display":{"step":27,"counting":{"back":27,"kind":"countBack","start":443},"terms":["__",443,470,497],"promptText":"Pattern: __, 443, 470, 497. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0612",
@@ -21582,7 +21582,7 @@ export const ITEMS = [
     structureType: "firstBigGap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":98,"display":{"step":28,"counting":{"back":28,"kind":"countBack","start":126},"sequence":["?",126,154,182],"promptText":"Fill the gap: ?, 126, 154, 182."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":98,"display":{"step":28,"counting":{"back":28,"kind":"countBack","start":126},"terms":["__",126,154,182],"promptText":"What number fills the gap in __, 126, 154, 182?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0613",
@@ -21592,7 +21592,7 @@ export const ITEMS = [
     structureType: "firstBigGap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":228,"display":{"step":29,"counting":{"back":29,"kind":"countBack","start":257},"sequence":["?",257,286,315],"promptText":"Fill the gap: ?, 257, 286, 315."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":228,"display":{"step":29,"counting":{"back":29,"kind":"countBack","start":257},"terms":["__",257,286,315],"promptText":"What is the missing number in __, 257, 286, 315?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0614",
@@ -21602,7 +21602,7 @@ export const ITEMS = [
     structureType: "firstBigGap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":326,"display":{"step":12,"counting":{"back":12,"kind":"countBack","start":338},"sequence":["?",338,350,362],"promptText":"Fill the gap: ?, 338, 350, 362."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":326,"display":{"step":12,"counting":{"back":12,"kind":"countBack","start":338},"terms":["__",338,350,362],"promptText":"Pattern: __, 338, 350, 362. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0615",
@@ -21612,7 +21612,7 @@ export const ITEMS = [
     structureType: "firstBigGap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":438,"display":{"step":11,"counting":{"back":11,"kind":"countBack","start":449},"sequence":["?",449,460,471],"promptText":"Fill the gap: ?, 449, 460, 471."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":438,"display":{"step":11,"counting":{"back":11,"kind":"countBack","start":449},"terms":["__",449,460,471],"promptText":"What number fills the gap in __, 449, 460, 471?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0616",
@@ -21622,7 +21622,7 @@ export const ITEMS = [
     structureType: "firstBigGap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":149,"display":{"step":13,"counting":{"back":13,"kind":"countBack","start":162},"sequence":["?",162,175,188],"promptText":"Fill the gap: ?, 162, 175, 188."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":149,"display":{"step":13,"counting":{"back":13,"kind":"countBack","start":162},"terms":["__",162,175,188],"promptText":"What is the missing number in __, 162, 175, 188?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0617",
@@ -21632,7 +21632,7 @@ export const ITEMS = [
     structureType: "firstBigGap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":259,"display":{"step":14,"counting":{"back":14,"kind":"countBack","start":273},"sequence":["?",273,287,301],"promptText":"Fill the gap: ?, 273, 287, 301."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":259,"display":{"step":14,"counting":{"back":14,"kind":"countBack","start":273},"terms":["__",273,287,301],"promptText":"Pattern: __, 273, 287, 301. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0618",
@@ -21642,7 +21642,7 @@ export const ITEMS = [
     structureType: "firstBigGap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":369,"display":{"step":15,"counting":{"back":15,"kind":"countBack","start":384},"sequence":["?",384,399,414],"promptText":"Fill the gap: ?, 384, 399, 414."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":369,"display":{"step":15,"counting":{"back":15,"kind":"countBack","start":384},"terms":["__",384,399,414],"promptText":"What number fills the gap in __, 384, 399, 414?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0619",
@@ -21652,7 +21652,7 @@ export const ITEMS = [
     structureType: "firstBigGap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":479,"display":{"step":16,"counting":{"back":16,"kind":"countBack","start":495},"sequence":["?",495,511,527],"promptText":"Fill the gap: ?, 495, 511, 527."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":479,"display":{"step":16,"counting":{"back":16,"kind":"countBack","start":495},"terms":["__",495,511,527],"promptText":"What is the missing number in __, 495, 511, 527?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0620",
@@ -21662,7 +21662,7 @@ export const ITEMS = [
     structureType: "firstBigGap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":99,"display":{"step":17,"counting":{"back":17,"kind":"countBack","start":116},"sequence":["?",116,133,150],"promptText":"Fill the gap: ?, 116, 133, 150."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":99,"display":{"step":17,"counting":{"back":17,"kind":"countBack","start":116},"terms":["__",116,133,150],"promptText":"Pattern: __, 116, 133, 150. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0621",
@@ -21672,7 +21672,7 @@ export const ITEMS = [
     structureType: "firstBigGap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":199,"display":{"step":18,"counting":{"back":18,"kind":"countBack","start":217},"sequence":["?",217,235,253],"promptText":"Fill the gap: ?, 217, 235, 253."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":199,"display":{"step":18,"counting":{"back":18,"kind":"countBack","start":217},"terms":["__",217,235,253],"promptText":"What number fills the gap in __, 217, 235, 253?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0622",
@@ -21682,7 +21682,7 @@ export const ITEMS = [
     structureType: "stepTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":2,"kind":"gap","target":4},"sequence":[2,4,6],"promptText":"Pattern: 2, 4, 6. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":2,"kind":"gap","target":4},"terms":[2,4,6],"promptText":"Pattern: 2, 4, 6. What number is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0623",
@@ -21692,7 +21692,7 @@ export const ITEMS = [
     structureType: "stepTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":3,"kind":"gap","target":5},"sequence":[3,5,7],"promptText":"Pattern: 3, 5, 7. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":3,"kind":"gap","target":5},"terms":[3,5,7],"promptText":"Look at the pattern 3, 5, 7. How much is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0624",
@@ -21702,7 +21702,7 @@ export const ITEMS = [
     structureType: "stepTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":1,"kind":"gap","target":4},"sequence":[1,4,7],"promptText":"Pattern: 1, 4, 7. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":1,"kind":"gap","target":4},"terms":[1,4,7],"promptText":"What number is added each time in the pattern 1, 4, 7?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0625",
@@ -21712,7 +21712,7 @@ export const ITEMS = [
     structureType: "stepTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":2,"kind":"gap","target":5},"sequence":[2,5,8],"promptText":"Pattern: 2, 5, 8. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":2,"kind":"gap","target":5},"terms":[2,5,8],"promptText":"Pattern: 2, 5, 8. What number is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0626",
@@ -21722,7 +21722,7 @@ export const ITEMS = [
     structureType: "stepTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":4,"kind":"gap","target":6},"sequence":[4,6,8],"promptText":"Pattern: 4, 6, 8. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":4,"kind":"gap","target":6},"terms":[4,6,8],"promptText":"Look at the pattern 4, 6, 8. How much is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0627",
@@ -21732,7 +21732,7 @@ export const ITEMS = [
     structureType: "stepTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":1,"kind":"gap","target":5},"sequence":[1,5,9],"promptText":"Pattern: 1, 5, 9. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":1,"kind":"gap","target":5},"terms":[1,5,9],"promptText":"What number is added each time in the pattern 1, 5, 9?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0628",
@@ -21742,7 +21742,7 @@ export const ITEMS = [
     structureType: "stepTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":3,"kind":"gap","target":7},"sequence":[3,7,11],"promptText":"Pattern: 3, 7, 11. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":3,"kind":"gap","target":7},"terms":[3,7,11],"promptText":"Pattern: 3, 7, 11. What number is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0629",
@@ -21752,7 +21752,7 @@ export const ITEMS = [
     structureType: "stepTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":2,"kind":"gap","target":7},"sequence":[2,7,12],"promptText":"Pattern: 2, 7, 12. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":2,"kind":"gap","target":7},"terms":[2,7,12],"promptText":"Look at the pattern 2, 7, 12. How much is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0630",
@@ -21762,7 +21762,7 @@ export const ITEMS = [
     structureType: "stepTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":5,"kind":"gap","target":7},"sequence":[5,7,9],"promptText":"Pattern: 5, 7, 9. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":5,"kind":"gap","target":7},"terms":[5,7,9],"promptText":"What number is added each time in the pattern 5, 7, 9?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0631",
@@ -21772,7 +21772,7 @@ export const ITEMS = [
     structureType: "stepTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":4,"kind":"gap","target":7},"sequence":[4,7,10],"promptText":"Pattern: 4, 7, 10. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":4,"kind":"gap","target":7},"terms":[4,7,10],"promptText":"Pattern: 4, 7, 10. What number is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0632",
@@ -21782,7 +21782,7 @@ export const ITEMS = [
     structureType: "stepTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":1,"kind":"gap","target":6},"sequence":[1,6,11],"promptText":"Pattern: 1, 6, 11. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":1,"kind":"gap","target":6},"terms":[1,6,11],"promptText":"Look at the pattern 1, 6, 11. How much is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0633",
@@ -21792,7 +21792,7 @@ export const ITEMS = [
     structureType: "stepTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":6,"kind":"gap","target":8},"sequence":[6,8,10],"promptText":"Pattern: 6, 8, 10. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":6,"kind":"gap","target":8},"terms":[6,8,10],"promptText":"What number is added each time in the pattern 6, 8, 10?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0634",
@@ -21802,7 +21802,7 @@ export const ITEMS = [
     structureType: "stepTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":5,"kind":"gap","target":8},"sequence":[5,8,11],"promptText":"Pattern: 5, 8, 11. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":5,"kind":"gap","target":8},"terms":[5,8,11],"promptText":"Pattern: 5, 8, 11. What number is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0635",
@@ -21812,7 +21812,7 @@ export const ITEMS = [
     structureType: "stepTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":3,"kind":"gap","target":8},"sequence":[3,8,13],"promptText":"Pattern: 3, 8, 13. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":3,"kind":"gap","target":8},"terms":[3,8,13],"promptText":"Look at the pattern 3, 8, 13. How much is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0636",
@@ -21822,7 +21822,7 @@ export const ITEMS = [
     structureType: "stepTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":7,"kind":"gap","target":9},"sequence":[7,9,11],"promptText":"Pattern: 7, 9, 11. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":7,"kind":"gap","target":9},"terms":[7,9,11],"promptText":"What number is added each time in the pattern 7, 9, 11?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0637",
@@ -21832,7 +21832,7 @@ export const ITEMS = [
     structureType: "stepTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":2,"kind":"gap","target":6},"sequence":[2,6,10],"promptText":"Pattern: 2, 6, 10. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":2,"kind":"gap","target":6},"terms":[2,6,10],"promptText":"Pattern: 2, 6, 10. What number is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0638",
@@ -21842,7 +21842,7 @@ export const ITEMS = [
     structureType: "stepTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":6,"kind":"gap","target":9},"sequence":[6,9,12],"promptText":"Pattern: 6, 9, 12. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":6,"kind":"gap","target":9},"terms":[6,9,12],"promptText":"Look at the pattern 6, 9, 12. How much is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0639",
@@ -21852,7 +21852,7 @@ export const ITEMS = [
     structureType: "stepTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":4,"kind":"gap","target":8},"sequence":[4,8,12],"promptText":"Pattern: 4, 8, 12. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":4,"kind":"gap","target":8},"terms":[4,8,12],"promptText":"What number is added each time in the pattern 4, 8, 12?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0640",
@@ -21862,7 +21862,7 @@ export const ITEMS = [
     structureType: "stepTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":8,"kind":"gap","target":10},"sequence":[8,10,12],"promptText":"Pattern: 8, 10, 12. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":8,"kind":"gap","target":10},"terms":[8,10,12],"promptText":"Pattern: 8, 10, 12. What number is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0641",
@@ -21872,7 +21872,7 @@ export const ITEMS = [
     structureType: "stepTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":1,"kind":"gap","target":3},"sequence":[1,3,5],"promptText":"Pattern: 1, 3, 5. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":1,"kind":"gap","target":3},"terms":[1,3,5],"promptText":"Look at the pattern 1, 3, 5. How much is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0642",
@@ -21882,7 +21882,7 @@ export const ITEMS = [
     structureType: "stepTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":5,"kind":"gap","target":9},"sequence":[5,9,13],"promptText":"Pattern: 5, 9, 13. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":5,"kind":"gap","target":9},"terms":[5,9,13],"promptText":"What number is added each time in the pattern 5, 9, 13?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0643",
@@ -21892,7 +21892,7 @@ export const ITEMS = [
     structureType: "stepTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":4,"kind":"gap","target":9},"sequence":[4,9,14],"promptText":"Pattern: 4, 9, 14. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":4,"kind":"gap","target":9},"terms":[4,9,14],"promptText":"Pattern: 4, 9, 14. What number is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0644",
@@ -21902,7 +21902,7 @@ export const ITEMS = [
     structureType: "stepTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":7,"kind":"gap","target":10},"sequence":[7,10,13],"promptText":"Pattern: 7, 10, 13. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":7,"kind":"gap","target":10},"terms":[7,10,13],"promptText":"Look at the pattern 7, 10, 13. How much is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0645",
@@ -21912,7 +21912,7 @@ export const ITEMS = [
     structureType: "stepTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":9,"kind":"gap","target":11},"sequence":[9,11,13],"promptText":"Pattern: 9, 11, 13. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":9,"kind":"gap","target":11},"terms":[9,11,13],"promptText":"What number is added each time in the pattern 9, 11, 13?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0646",
@@ -21922,7 +21922,7 @@ export const ITEMS = [
     structureType: "stepTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":6,"kind":"gap","target":10},"sequence":[6,10,14],"promptText":"Pattern: 6, 10, 14. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":6,"kind":"gap","target":10},"terms":[6,10,14],"promptText":"Pattern: 6, 10, 14. What number is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0647",
@@ -21932,7 +21932,7 @@ export const ITEMS = [
     structureType: "stepTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":5,"kind":"gap","target":10},"sequence":[5,10,15],"promptText":"Pattern: 5, 10, 15. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":5,"kind":"gap","target":10},"terms":[5,10,15],"promptText":"Look at the pattern 5, 10, 15. How much is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0648",
@@ -21942,7 +21942,7 @@ export const ITEMS = [
     structureType: "stepTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":8,"kind":"gap","target":11},"sequence":[8,11,14],"promptText":"Pattern: 8, 11, 14. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":8,"kind":"gap","target":11},"terms":[8,11,14],"promptText":"What number is added each time in the pattern 8, 11, 14?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0649",
@@ -21952,7 +21952,7 @@ export const ITEMS = [
     structureType: "stepTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":10,"kind":"gap","target":12},"sequence":[10,12,14],"promptText":"Pattern: 10, 12, 14. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":10,"kind":"gap","target":12},"terms":[10,12,14],"promptText":"Pattern: 10, 12, 14. What number is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0650",
@@ -21962,7 +21962,7 @@ export const ITEMS = [
     structureType: "stepMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":12,"kind":"gap","target":18},"sequence":[12,18,24],"promptText":"Pattern: 12, 18, 24. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":12,"kind":"gap","target":18},"terms":[12,18,24],"promptText":"Pattern: 12, 18, 24. What number is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0651",
@@ -21972,7 +21972,7 @@ export const ITEMS = [
     structureType: "stepMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":25,"kind":"gap","target":32},"sequence":[25,32,39],"promptText":"Pattern: 25, 32, 39. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":25,"kind":"gap","target":32},"terms":[25,32,39],"promptText":"Look at the pattern 25, 32, 39. How much is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0652",
@@ -21982,7 +21982,7 @@ export const ITEMS = [
     structureType: "stepMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":31,"kind":"gap","target":39},"sequence":[31,39,47],"promptText":"Pattern: 31, 39, 47. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":31,"kind":"gap","target":39},"terms":[31,39,47],"promptText":"What number is added each time in the pattern 31, 39, 47?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0653",
@@ -21992,7 +21992,7 @@ export const ITEMS = [
     structureType: "stepMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":14,"kind":"gap","target":23},"sequence":[14,23,32],"promptText":"Pattern: 14, 23, 32. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":14,"kind":"gap","target":23},"terms":[14,23,32],"promptText":"Pattern: 14, 23, 32. What number is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0654",
@@ -22002,7 +22002,7 @@ export const ITEMS = [
     structureType: "stepMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":42,"kind":"gap","target":48},"sequence":[42,48,54],"promptText":"Pattern: 42, 48, 54. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":42,"kind":"gap","target":48},"terms":[42,48,54],"promptText":"Look at the pattern 42, 48, 54. How much is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0655",
@@ -22012,7 +22012,7 @@ export const ITEMS = [
     structureType: "stepMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":23,"kind":"gap","target":30},"sequence":[23,30,37],"promptText":"Pattern: 23, 30, 37. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":23,"kind":"gap","target":30},"terms":[23,30,37],"promptText":"What number is added each time in the pattern 23, 30, 37?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0656",
@@ -22022,7 +22022,7 @@ export const ITEMS = [
     structureType: "stepMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":35,"kind":"gap","target":43},"sequence":[35,43,51],"promptText":"Pattern: 35, 43, 51. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":35,"kind":"gap","target":43},"terms":[35,43,51],"promptText":"Pattern: 35, 43, 51. What number is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0657",
@@ -22032,7 +22032,7 @@ export const ITEMS = [
     structureType: "stepMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":16,"kind":"gap","target":25},"sequence":[16,25,34],"promptText":"Pattern: 16, 25, 34. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":16,"kind":"gap","target":25},"terms":[16,25,34],"promptText":"Look at the pattern 16, 25, 34. How much is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0658",
@@ -22042,7 +22042,7 @@ export const ITEMS = [
     structureType: "stepMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":51,"kind":"gap","target":57},"sequence":[51,57,63],"promptText":"Pattern: 51, 57, 63. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":51,"kind":"gap","target":57},"terms":[51,57,63],"promptText":"What number is added each time in the pattern 51, 57, 63?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0659",
@@ -22052,7 +22052,7 @@ export const ITEMS = [
     structureType: "stepMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":27,"kind":"gap","target":31},"sequence":[27,31,35],"promptText":"Pattern: 27, 31, 35. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":27,"kind":"gap","target":31},"terms":[27,31,35],"promptText":"Pattern: 27, 31, 35. What number is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0660",
@@ -22062,7 +22062,7 @@ export const ITEMS = [
     structureType: "stepMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":33,"kind":"gap","target":38},"sequence":[33,38,43],"promptText":"Pattern: 33, 38, 43. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":33,"kind":"gap","target":38},"terms":[33,38,43],"promptText":"Look at the pattern 33, 38, 43. How much is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0661",
@@ -22072,7 +22072,7 @@ export const ITEMS = [
     structureType: "stepMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":45,"kind":"gap","target":52},"sequence":[45,52,59],"promptText":"Pattern: 45, 52, 59. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":45,"kind":"gap","target":52},"terms":[45,52,59],"promptText":"What number is added each time in the pattern 45, 52, 59?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0662",
@@ -22082,7 +22082,7 @@ export const ITEMS = [
     structureType: "stepMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":18,"kind":"gap","target":26},"sequence":[18,26,34],"promptText":"Pattern: 18, 26, 34. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":18,"kind":"gap","target":26},"terms":[18,26,34],"promptText":"Pattern: 18, 26, 34. What number is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0663",
@@ -22092,7 +22092,7 @@ export const ITEMS = [
     structureType: "stepMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":62,"kind":"gap","target":65},"sequence":[62,65,68],"promptText":"Pattern: 62, 65, 68. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":62,"kind":"gap","target":65},"terms":[62,65,68],"promptText":"Look at the pattern 62, 65, 68. How much is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0664",
@@ -22102,7 +22102,7 @@ export const ITEMS = [
     structureType: "stepMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":29,"kind":"gap","target":38},"sequence":[29,38,47],"promptText":"Pattern: 29, 38, 47. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":29,"kind":"gap","target":38},"terms":[29,38,47],"promptText":"What number is added each time in the pattern 29, 38, 47?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0665",
@@ -22112,7 +22112,7 @@ export const ITEMS = [
     structureType: "stepMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":37,"kind":"gap","target":43},"sequence":[37,43,49],"promptText":"Pattern: 37, 43, 49. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":37,"kind":"gap","target":43},"terms":[37,43,49],"promptText":"Pattern: 37, 43, 49. What number is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0666",
@@ -22122,7 +22122,7 @@ export const ITEMS = [
     structureType: "stepMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":44,"kind":"gap","target":49},"sequence":[44,49,54],"promptText":"Pattern: 44, 49, 54. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":44,"kind":"gap","target":49},"terms":[44,49,54],"promptText":"Look at the pattern 44, 49, 54. How much is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0667",
@@ -22132,7 +22132,7 @@ export const ITEMS = [
     structureType: "stepMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":56,"kind":"gap","target":60},"sequence":[56,60,64],"promptText":"Pattern: 56, 60, 64. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":56,"kind":"gap","target":60},"terms":[56,60,64],"promptText":"What number is added each time in the pattern 56, 60, 64?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0668",
@@ -22142,7 +22142,7 @@ export const ITEMS = [
     structureType: "stepMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":21,"kind":"gap","target":29},"sequence":[21,29,37],"promptText":"Pattern: 21, 29, 37. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":21,"kind":"gap","target":29},"terms":[21,29,37],"promptText":"Pattern: 21, 29, 37. What number is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0669",
@@ -22152,7 +22152,7 @@ export const ITEMS = [
     structureType: "stepMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":39,"kind":"gap","target":46},"sequence":[39,46,53],"promptText":"Pattern: 39, 46, 53. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":39,"kind":"gap","target":46},"terms":[39,46,53],"promptText":"Look at the pattern 39, 46, 53. How much is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0670",
@@ -22162,7 +22162,7 @@ export const ITEMS = [
     structureType: "stepMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":24,"kind":"gap","target":30},"sequence":[24,30,36],"promptText":"Pattern: 24, 30, 36. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":24,"kind":"gap","target":30},"terms":[24,30,36],"promptText":"What number is added each time in the pattern 24, 30, 36?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0671",
@@ -22172,7 +22172,7 @@ export const ITEMS = [
     structureType: "stepMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":47,"kind":"gap","target":50},"sequence":[47,50,53],"promptText":"Pattern: 47, 50, 53. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":47,"kind":"gap","target":50},"terms":[47,50,53],"promptText":"Pattern: 47, 50, 53. What number is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0672",
@@ -22182,7 +22182,7 @@ export const ITEMS = [
     structureType: "stepMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":53,"kind":"gap","target":57},"sequence":[53,57,61],"promptText":"Pattern: 53, 57, 61. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":53,"kind":"gap","target":57},"terms":[53,57,61],"promptText":"Look at the pattern 53, 57, 61. How much is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0673",
@@ -22192,7 +22192,7 @@ export const ITEMS = [
     structureType: "stepMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":36,"kind":"gap","target":45},"sequence":[36,45,54],"promptText":"Pattern: 36, 45, 54. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":36,"kind":"gap","target":45},"terms":[36,45,54],"promptText":"What number is added each time in the pattern 36, 45, 54?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0674",
@@ -22202,7 +22202,7 @@ export const ITEMS = [
     structureType: "stepMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":19,"kind":"gap","target":24},"sequence":[19,24,29],"promptText":"Pattern: 19, 24, 29. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":19,"kind":"gap","target":24},"terms":[19,24,29],"promptText":"Pattern: 19, 24, 29. What number is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0675",
@@ -22212,7 +22212,7 @@ export const ITEMS = [
     structureType: "stepMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":28,"kind":"gap","target":35},"sequence":[28,35,42],"promptText":"Pattern: 28, 35, 42. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":28,"kind":"gap","target":35},"terms":[28,35,42],"promptText":"Look at the pattern 28, 35, 42. How much is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0676",
@@ -22222,7 +22222,7 @@ export const ITEMS = [
     structureType: "stepBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":112,"kind":"gap","target":123},"sequence":[112,123,134],"promptText":"Pattern: 112, 123, 134. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":112,"kind":"gap","target":123},"terms":[112,123,134],"promptText":"Pattern: 112, 123, 134. What number is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0677",
@@ -22232,7 +22232,7 @@ export const ITEMS = [
     structureType: "stepBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"have":235,"kind":"gap","target":247},"sequence":[235,247,259],"promptText":"Pattern: 235, 247, 259. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"have":235,"kind":"gap","target":247},"terms":[235,247,259],"promptText":"Look at the pattern 235, 247, 259. How much is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0678",
@@ -22242,7 +22242,7 @@ export const ITEMS = [
     structureType: "stepBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"have":341,"kind":"gap","target":356},"sequence":[341,356,371],"promptText":"Pattern: 341, 356, 371. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"have":341,"kind":"gap","target":356},"terms":[341,356,371],"promptText":"What number is added each time in the pattern 341, 356, 371?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0679",
@@ -22252,7 +22252,7 @@ export const ITEMS = [
     structureType: "stepBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":124,"kind":"gap","target":149},"sequence":[124,149,174],"promptText":"Pattern: 124, 149, 174. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":124,"kind":"gap","target":149},"terms":[124,149,174],"promptText":"Pattern: 124, 149, 174. What number is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0680",
@@ -22262,7 +22262,7 @@ export const ITEMS = [
     structureType: "stepBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":452,"kind":"gap","target":463},"sequence":[452,463,474],"promptText":"Pattern: 452, 463, 474. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":452,"kind":"gap","target":463},"terms":[452,463,474],"promptText":"Look at the pattern 452, 463, 474. How much is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0681",
@@ -22272,7 +22272,7 @@ export const ITEMS = [
     structureType: "stepBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"have":223,"kind":"gap","target":237},"sequence":[223,237,251],"promptText":"Pattern: 223, 237, 251. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"have":223,"kind":"gap","target":237},"terms":[223,237,251],"promptText":"What number is added each time in the pattern 223, 237, 251?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0682",
@@ -22282,7 +22282,7 @@ export const ITEMS = [
     structureType: "stepBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"counting":{"have":335,"kind":"gap","target":356},"sequence":[335,356,377],"promptText":"Pattern: 335, 356, 377. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"counting":{"have":335,"kind":"gap","target":356},"terms":[335,356,377],"promptText":"Pattern: 335, 356, 377. What number is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0683",
@@ -22292,7 +22292,7 @@ export const ITEMS = [
     structureType: "stepBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"have":146,"kind":"gap","target":158},"sequence":[146,158,170],"promptText":"Pattern: 146, 158, 170. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"have":146,"kind":"gap","target":158},"terms":[146,158,170],"promptText":"Look at the pattern 146, 158, 170. How much is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0684",
@@ -22302,7 +22302,7 @@ export const ITEMS = [
     structureType: "stepBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":518,"kind":"gap","target":531},"sequence":[518,531,544],"promptText":"Pattern: 518, 531, 544. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":518,"kind":"gap","target":531},"terms":[518,531,544],"promptText":"What number is added each time in the pattern 518, 531, 544?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0685",
@@ -22312,7 +22312,7 @@ export const ITEMS = [
     structureType: "stepBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"have":247,"kind":"gap","target":263},"sequence":[247,263,279],"promptText":"Pattern: 247, 263, 279. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"have":247,"kind":"gap","target":263},"terms":[247,263,279],"promptText":"Pattern: 247, 263, 279. What number is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0686",
@@ -22322,7 +22322,7 @@ export const ITEMS = [
     structureType: "stepBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"counting":{"have":333,"kind":"gap","target":355},"sequence":[333,355,377],"promptText":"Pattern: 333, 355, 377. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"counting":{"have":333,"kind":"gap","target":355},"terms":[333,355,377],"promptText":"Look at the pattern 333, 355, 377. How much is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0687",
@@ -22332,7 +22332,7 @@ export const ITEMS = [
     structureType: "stepBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"have":415,"kind":"gap","target":433},"sequence":[415,433,451],"promptText":"Pattern: 415, 433, 451. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"have":415,"kind":"gap","target":433},"terms":[415,433,451],"promptText":"What number is added each time in the pattern 415, 433, 451?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0688",
@@ -22342,7 +22342,7 @@ export const ITEMS = [
     structureType: "stepBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"have":128,"kind":"gap","target":152},"sequence":[128,152,176],"promptText":"Pattern: 128, 152, 176. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"have":128,"kind":"gap","target":152},"terms":[128,152,176],"promptText":"Pattern: 128, 152, 176. What number is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0689",
@@ -22352,7 +22352,7 @@ export const ITEMS = [
     structureType: "stepBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"have":622,"kind":"gap","target":637},"sequence":[622,637,652],"promptText":"Pattern: 622, 637, 652. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"have":622,"kind":"gap","target":637},"terms":[622,637,652],"promptText":"Look at the pattern 622, 637, 652. How much is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0690",
@@ -22362,7 +22362,7 @@ export const ITEMS = [
     structureType: "stepBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"have":289,"kind":"gap","target":306},"sequence":[289,306,323],"promptText":"Pattern: 289, 306, 323. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"have":289,"kind":"gap","target":306},"terms":[289,306,323],"promptText":"What number is added each time in the pattern 289, 306, 323?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0691",
@@ -22372,7 +22372,7 @@ export const ITEMS = [
     structureType: "stepBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"counting":{"have":317,"kind":"gap","target":340},"sequence":[317,340,363],"promptText":"Pattern: 317, 340, 363. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"counting":{"have":317,"kind":"gap","target":340},"terms":[317,340,363],"promptText":"Pattern: 317, 340, 363. What number is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0692",
@@ -22382,7 +22382,7 @@ export const ITEMS = [
     structureType: "stepBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"have":434,"kind":"gap","target":453},"sequence":[434,453,472],"promptText":"Pattern: 434, 453, 472. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"have":434,"kind":"gap","target":453},"terms":[434,453,472],"promptText":"Look at the pattern 434, 453, 472. How much is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0693",
@@ -22392,7 +22392,7 @@ export const ITEMS = [
     structureType: "stepBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":526,"kind":"gap","target":539},"sequence":[526,539,552],"promptText":"Pattern: 526, 539, 552. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":526,"kind":"gap","target":539},"terms":[526,539,552],"promptText":"What number is added each time in the pattern 526, 539, 552?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0694",
@@ -22402,7 +22402,7 @@ export const ITEMS = [
     structureType: "stepBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"counting":{"have":211,"kind":"gap","target":237},"sequence":[211,237,263],"promptText":"Pattern: 211, 237, 263. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"counting":{"have":211,"kind":"gap","target":237},"terms":[211,237,263],"promptText":"Pattern: 211, 237, 263. What number is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0695",
@@ -22412,7 +22412,7 @@ export const ITEMS = [
     structureType: "stepBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"have":349,"kind":"gap","target":363},"sequence":[349,363,377],"promptText":"Pattern: 349, 363, 377. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"have":349,"kind":"gap","target":363},"terms":[349,363,377],"promptText":"Look at the pattern 349, 363, 377. How much is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0696",
@@ -22422,7 +22422,7 @@ export const ITEMS = [
     structureType: "stepBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"counting":{"have":136,"kind":"gap","target":163},"sequence":[136,163,190],"promptText":"Pattern: 136, 163, 190. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"counting":{"have":136,"kind":"gap","target":163},"terms":[136,163,190],"promptText":"What number is added each time in the pattern 136, 163, 190?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0697",
@@ -22432,7 +22432,7 @@ export const ITEMS = [
     structureType: "stepBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"counting":{"have":253,"kind":"gap","target":281},"sequence":[253,281,309],"promptText":"Pattern: 253, 281, 309. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"counting":{"have":253,"kind":"gap","target":281},"terms":[253,281,309],"promptText":"Pattern: 253, 281, 309. What number is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0698",
@@ -22442,7 +22442,7 @@ export const ITEMS = [
     structureType: "stepBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"counting":{"have":364,"kind":"gap","target":393},"sequence":[364,393,422],"promptText":"Pattern: 364, 393, 422. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"counting":{"have":364,"kind":"gap","target":393},"terms":[364,393,422],"promptText":"Look at the pattern 364, 393, 422. How much is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0699",
@@ -22452,7 +22452,7 @@ export const ITEMS = [
     structureType: "stepBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"have":441,"kind":"gap","target":453},"sequence":[441,453,465],"promptText":"Pattern: 441, 453, 465. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"have":441,"kind":"gap","target":453},"terms":[441,453,465],"promptText":"What number is added each time in the pattern 441, 453, 465?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0700",
@@ -22462,7 +22462,7 @@ export const ITEMS = [
     structureType: "stepBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"counting":{"have":157,"kind":"gap","target":178},"sequence":[157,178,199],"promptText":"Pattern: 157, 178, 199. Rule: add ? each time."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"counting":{"have":157,"kind":"gap","target":178},"terms":[157,178,199],"promptText":"Pattern: 157, 178, 199. What number is added each time?"},"answerType":"numberPad"},
   },
   {
     itemId: "patterns-proc-b0821-0701",

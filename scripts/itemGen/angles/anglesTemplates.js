@@ -74,7 +74,7 @@ export function classifyProcedural() {
     }
   }
   const turnPhr = [
-    (t, ans) => `A ${t} makes which kind of angle? Pick it.`,
+    (t, ans) => `A ${t} makes which kind of angle?`,
     (t, ans) => `Pick the kind of angle a ${t} makes.`,
     (t, ans) => `Turning through a ${t} sweeps which kind of angle?`,
     (t, ans) => `Which kind of angle comes from a ${t}?`,
@@ -96,7 +96,7 @@ export function classifyProcedural() {
     );
   }
   const cmpPhr = [
-    (thing, ans) => `${thing} opens ${ans === "acute" ? "just a little" : "very wide, past a square corner"}. Is that angle smaller or bigger than a square corner? Pick one.`,
+    (thing, ans) => `${thing} opens ${ans === "acute" ? "just a little" : "very wide, past a square corner"}. Is that angle smaller or bigger than a square corner?`,
     (thing, ans) => `${thing} makes ${ans === "acute" ? "a narrow opening" : "a wide opening beyond a square corner"}. Smaller or bigger than a square corner?`,
   ];
   const CMP_THINGS = ["A door open a crack", "A pair of scissors snipping", "A slightly open book", "A barely open laptop", "A pizza slice tip", "A wide-open gate", "A reclined chair back", "A fully spread fan", "A ramp leaning far back", "A wide-open door", "A folded-out sofa bed", "A wide slice of pie", "A nearly flat umbrella"];
@@ -111,7 +111,7 @@ export function classifyProcedural() {
     );
   }
   const smallestPhr = [
-    (list) => `Which kind of angle is the smallest opening: ${list}? Pick it.`,
+    (list) => `Which kind of angle is the smallest opening: ${list}?`,
     (list) => `Of ${list}, which kind opens the least?`,
     (list) => `Pick the widest opening among ${list}. Which is it?`,
     (list) => `Of ${list}, which kind opens the most?`,
@@ -138,7 +138,7 @@ export function classifyProcedural() {
     ],
     band3: [
       (d) => `Classify precisely: a ${d}-degree angle is which kind?`,
-      (d) => `Determine the kind of an angle measuring ${d} degrees.`,
+      (d) => `What kind of angle measures ${d} degrees?`,
       (d) => `Which class holds the ${d}-degree angle?`,
       (d) => `Assign the ${d}-degree angle its kind.`,
     ],
@@ -160,7 +160,7 @@ export function classifyProcedural() {
   }
   const rangePhr = {
     band2: [
-      (kind, list) => `Which of these measures is ${kind === "acute" ? "an acute" : kind === "obtuse" ? "an obtuse" : `a ${kind}`} angle: ${list} degrees? Pick it.`,
+      (kind, list) => `Which of these measures is ${kind === "acute" ? "an acute" : kind === "obtuse" ? "an obtuse" : `a ${kind}`} angle: ${list} degrees?`,
       (kind, list) => `From ${list} degrees, pick the ${kind} angle's measure. Which is it?`,
       (kind, list) => `Exactly one of ${list} degrees makes ${kind === "acute" ? "an acute" : kind === "obtuse" ? "an obtuse" : `a ${kind}`} angle. Which one?`,
       (kind, list) => `Of ${list} degrees, which measure is ${kind}?`,
@@ -169,7 +169,7 @@ export function classifyProcedural() {
       (kind, list) => `Identify the ${kind} measure among ${list} degrees. Which is it?`,
       (kind, list) => `Of ${list} degrees, which one is ${kind}?`,
       (kind, list) => `Precisely one of ${list} degrees is ${kind}. Which?`,
-      (kind, list) => `Determine which of ${list} degrees gives ${kind === "acute" ? "an acute" : kind === "obtuse" ? "an obtuse" : `a ${kind}`} angle.`,
+      (kind, list) => `Which of ${list} degrees makes ${kind === "acute" ? "an acute" : kind === "obtuse" ? "an obtuse" : `a ${kind}`} angle?`,
     ],
   };
   const rangeData = {
@@ -190,7 +190,7 @@ export function classifyProcedural() {
   }
   const halfPhr = {
     band2: [
-      (d) => `Is a ${d}-degree angle smaller or bigger than a right angle? Pick one.`,
+      (d) => `Is a ${d}-degree angle smaller or bigger than a right angle?`,
       (d) => `Compare ${d} degrees with a right angle: smaller or bigger?`,
       (d) => `A ${d}-degree angle sits which side of a right angle: smaller or bigger?`,
       (d) => `Against a right angle, is ${d} degrees smaller or bigger?`,
@@ -198,21 +198,21 @@ export function classifyProcedural() {
     band3: [
       (d) => `Judge ${d} degrees against a right angle: smaller or bigger?`,
       (d) => `Relative to 90 degrees, is ${d} degrees smaller or bigger?`,
-      (d) => `Does a ${d}-degree angle open less or more than a right angle? Pick smaller or bigger.`,
+      (d) => `Compared with a right angle, does a ${d}-degree angle open less or more: is it smaller or bigger?`,
       (d) => `Place ${d} degrees against the right-angle benchmark: smaller or bigger?`,
     ],
   };
   const halfData = { band2: [30, 120, 45, 150, 60, 100, 20, 170, 75, 95, 40, 160, 85], band3: [89, 91, 1, 179, 44, 136, 46, 134, 88, 92, 2, 178, 87] };
   const benchKindPhr = {
     band2: [
-      (name) => `What kind of angle is ${name}? Pick it.`,
+      (name) => `What kind of angle is ${name}?`,
       (name) => `Pick the kind of angle made by ${name}.`,
       (name) => `${name[0].toUpperCase() + name.slice(1)} is which kind of angle?`,
       (name) => `Classify ${name}. Which kind is it?`,
     ],
     band3: [
       (name) => `Classify precisely: ${name} is which kind of angle?`,
-      (name) => `Determine the kind of angle that ${name} makes.`,
+      (name) => `What kind of angle does ${name} make?`,
       (name) => `Which class holds ${name}?`,
       (name) => `Assign ${name} its kind of angle.`,
     ],
@@ -263,8 +263,8 @@ export function classifyConceptual() {
       (nm, d, said) => `A ${d}-degree angle gets the label ${said} from ${nm}. Is ${nm} right?`,
     ],
     band3: [
-      (nm, d, said) => `${nm} classifies a ${d}-degree angle as ${said}. Is the classification valid?`,
-      (nm, d, said) => `Audit ${nm}'s label: ${d} degrees, marked ${said}. Clean audit?`,
+      (nm, d, said) => `${nm} classifies a ${d}-degree angle as ${said}. Is that right?`,
+      (nm, d, said) => `${nm} marks a ${d}-degree angle as ${said}. Is the label right?`,
     ],
   };
   const saidData1 = [["less", "acute", true], ["less", "obtuse", false], ["equal", "right", true], ["equal", "acute", false], ["more", "obtuse", true], ["more", "acute", false], ["straight", "straight", true], ["straight", "right", false], ["less", "acute", true], ["equal", "obtuse", false], ["more", "obtuse", true], ["less", "right", false], ["equal", "right", true], ["more", "right", false], ["straight", "straight", true], ["less", "straight", false], ["more", "obtuse", true], ["equal", "straight", false]];
@@ -303,7 +303,7 @@ export function classifyConceptual() {
       (nm) => `Rotating the paper does not change a right angle, says ${nm}. Is that right?`,
     ],
     band3: [
-      (nm) => `${nm} asserts orientation decides rightness: a rotated 90-degree angle is no longer right. Sound assertion?`,
+      (nm) => `${nm} says turning the page makes a 90-degree angle stop being a right angle. Is ${nm} right?`,
       (nm) => `A 90-degree angle stays right at any orientation, states ${nm}. Should the statement stand?`,
     ],
   };
@@ -314,7 +314,7 @@ export function classifyConceptual() {
         item("classifyAngle", "conceptual", `tiltJudge_${band}`, band, {
           answer: ok ? "Yes" : "No",
           choices: ["Yes", "No"],
-          display: { ang: { kind: "authored" }, promptText: tiltPhr[band][i % 2](nameAt(i * 3 + 2 + OFF[band])) + (i >= 8 ? " Think about the opening, not the tilt." : ""), truth: ok },
+          display: { ang: { kind: "authored" }, promptText: (i >= 8 ? "Think about the opening, not the tilt. " : "") + tiltPhr[band][i % 2](nameAt(i * 3 + 2 + OFF[band])), truth: ok },
         })
       );
     }
@@ -340,7 +340,7 @@ export function classifyConceptual() {
         item("classifyAngle", "conceptual", `rayLengthTrap_${band}`, band, {
           answer: "No",
           choices: ["Yes", "No"],
-          display: { ang: { kind: "trapNo" }, promptText: sizePhr[band][i % 2](nameAt(i * 3 + 3 + OFF[band])) + (i >= 12 ? " The opening is what counts." : i >= 6 ? " Degrees measure the turn, not the sides." : ""), truth: false },
+          display: { ang: { kind: "trapNo" }, promptText: (i >= 12 ? "The opening is what counts. " : i >= 6 ? "Degrees measure the turn, not the sides. " : "") + sizePhr[band][i % 2](nameAt(i * 3 + 3 + OFF[band])), truth: false },
         })
       );
     }
@@ -358,13 +358,13 @@ export function measureProcedural() {
 
   // band1: degree-free turn counting (claims carry the degree math).
   const countPhr = [
-    (whole, unit) => `How many ${unit} fit exactly along ${whole}? Type the count.`,
+    (whole, unit) => `How many ${unit} fit exactly along ${whole}?`,
     (whole, unit) => `Count the ${unit} that make ${whole}. How many ${unit} is that?`,
-    (whole, unit) => `${whole[0].toUpperCase() + whole.slice(1)} is built from how many ${unit}? Type it.`,
+    (whole, unit) => `${whole[0].toUpperCase() + whole.slice(1)} is built from how many ${unit}?`,
     (whole, unit) => `Type how many ${unit} it takes to make ${whole}.`,
     (whole, unit) => `Stack ${unit} until they make ${whole}. How many ${unit} do you stack?`,
     (whole, unit) => `Exactly how many ${unit} together form ${whole}?`,
-    (whole, unit) => `It takes how many ${unit} to build ${whole}? Type the number.`,
+    (whole, unit) => `It takes how many ${unit} to build ${whole}?`,
     (whole, unit) => `${whole[0].toUpperCase() + whole.slice(1)} equals how many ${unit} put together?`,
   ];
   const COUNTS = [
@@ -384,7 +384,7 @@ export function measureProcedural() {
     );
   }
   const quartersPhr = [
-    (k) => `${k === 1 ? "One quarter turn" : `${k} quarter turns`} of a full turn leaves how many quarter turns to finish? Type it.`,
+    (k) => `${k === 1 ? "One quarter turn" : `${k} quarter turns`} of a full turn leaves how many quarter turns to finish?`,
     (k) => `A full turn is 4 quarter turns. After ${k} of them, how many quarter turns remain?`,
     (k) => `${k} quarter turn${k === 1 ? " is" : "s are"} done. How many quarter turns complete the full turn?`,
     (k) => `Out of 4 quarter turns in a full spin, ${k} ${k === 1 ? "is" : "are"} made. How many quarter turns are left?`,
@@ -407,7 +407,7 @@ export function measureProcedural() {
   // bands 2-3: degrees.
   const benchPhr = {
     band2: [
-      (name, d) => `How many degrees is ${name}? Type it.`,
+      (name, d) => `How many degrees is ${name}?`,
       (name, d) => `${name[0].toUpperCase() + name.slice(1)} measures how many degrees?`,
       (name, d) => `Type the degree measure of ${name}.`,
       (name, d) => `In degrees, ${name} = ?`,
@@ -415,8 +415,8 @@ export function measureProcedural() {
     band3: [
       (name, d) => `State the degree measure of ${name}.`,
       (name, d) => `Exactly how many degrees is ${name}?`,
-      (name, d) => `Determine the measure of ${name} in degrees.`,
-      (name, d) => `${name[0].toUpperCase() + name.slice(1)} spans how many degrees? Type it.`,
+      (name, d) => `What is the measure of ${name} in degrees?`,
+      (name, d) => `${name[0].toUpperCase() + name.slice(1)} spans how many degrees?`,
     ],
   };
   const BENCH = [
@@ -466,7 +466,7 @@ export function measureProcedural() {
 
   const halfOfPhr = {
     band2: [
-      (d) => `Half of a ${d}-degree angle measures how many degrees? Type it.`,
+      (d) => `Half of a ${d}-degree angle measures how many degrees?`,
       (d) => `Split a ${d}-degree angle into two equal parts. How many degrees is each part?`,
       (d) => `A ${d}-degree angle folds into two equal angles. Type each part's degrees.`,
       (d) => `Each half of a ${d}-degree angle is how many degrees?`,
@@ -475,7 +475,7 @@ export function measureProcedural() {
       (d) => `Bisect a ${d}-degree angle. Each half measures how many degrees?`,
       (d) => `Exactly how many degrees is half of ${d} degrees?`,
       (d) => `An angle bisector splits ${d} degrees into halves of how many degrees each?`,
-      (d) => `Determine each equal part when ${d} degrees is halved.`,
+      (d) => `When ${d} degrees is cut in half, how many degrees is each equal part?`,
     ],
   };
   const halfOfData = { band2: [90, 60, 180, 120, 80, 100, 40, 160, 140, 70? 70 : 70, 50, 170? 30 : 30, 110? 110 : 110], band3: [90, 150, 130, 170, 110, 50, 70, 30, 178, 86, 94, 62, 146] };
@@ -499,10 +499,10 @@ export function measureProcedural() {
       (d) => `Twice ${d} degrees makes how many degrees?`,
     ],
     band3: [
-      (d) => `Compute the double of a ${d}-degree angle in degrees.`,
+      (d) => `What is double a ${d}-degree angle, in degrees?`,
       (d) => `Exactly how many degrees do two adjacent ${d}-degree angles span?`,
-      (d) => `Determine the measure of a ${d}-degree angle doubled.`,
-      (d) => `Doubling ${d} degrees yields how many degrees? Type it.`,
+      (d) => `A ${d}-degree angle is doubled. What is its new measure in degrees?`,
+      (d) => `Doubling ${d} degrees yields how many degrees?`,
     ],
   };
   const doubleData = { band2: [15, 20, 25, 30, 35, 40, 45, 10, 50, 55, 60, 65, 70], band3: [35, 55, 65, 75, 85, 95, 105, 115, 125, 135, 145, 155, 165] };
@@ -592,7 +592,7 @@ export function measureConceptual() {
     ],
     band3: [
       (nm) => `${nm} states that two quarter turns in the same direction equal one half turn. Is the statement right?`,
-      (nm) => `Four quarter turns in the same direction return you to the start, asserts ${nm}. Sound assertion?`,
+      (nm) => `Four quarter turns in the same direction bring you back to the start, says ${nm}. Is that right?`,
     ],
   };
   for (const band of ["band1", "band2", "band3"]) {
@@ -601,7 +601,7 @@ export function measureConceptual() {
         item("measureAngle", "conceptual", `turnFactJudge_${band}`, band, {
           answer: "Yes",
           choices: ["Yes", "No"],
-          display: { ang: { kind: "authoredYes" }, promptText: zeroPhr[band][i % 2](nameAt(i * 3 + 3 + OFF[band])) + (i >= 12 ? " Picture the turn." : i >= 6 ? " Try acting it out." : ""), truth: true },
+          display: { ang: { kind: "authoredYes" }, promptText: (i >= 12 ? "Picture the turn. " : i >= 6 ? "Try acting it out. " : "") + zeroPhr[band][i % 2](nameAt(i * 3 + 3 + OFF[band])), truth: true },
         })
       );
     }

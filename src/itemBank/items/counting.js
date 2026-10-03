@@ -3992,7 +3992,7 @@ export const ITEMS = [
     structureType: "storyQuickRows",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"groups","ones":6,"tens":1},"promptText":"In one look Theo spots 1 ten-strips of balls plus 6 single balls. How many balls is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"groups","ones":6,"tens":1},"promptText":"In one look Theo spots 1 ten-strip of balls plus 6 single balls. How many balls is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-app-b0821-0394",
@@ -4012,7 +4012,7 @@ export const ITEMS = [
     structureType: "storyQuickRows",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"groups","ones":3,"tens":1},"promptText":"In one look Zoe spots 1 ten-strips of cars plus 3 single cars. How many cars is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"groups","ones":3,"tens":1},"promptText":"In one look Zoe spots 1 ten-strip of cars plus 3 single cars. How many cars is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-app-b0821-0396",
@@ -4032,7 +4032,7 @@ export const ITEMS = [
     structureType: "storyQuickRows",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"groups","ones":5,"tens":1},"promptText":"In one look Diego spots 1 ten-strips of apples plus 5 single apples. How many apples is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"groups","ones":5,"tens":1},"promptText":"In one look Diego spots 1 ten-strip of apples plus 5 single apples. How many apples is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-app-b0821-0398",
@@ -4052,7 +4052,7 @@ export const ITEMS = [
     structureType: "storyQuickRows",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"groups","ones":2,"tens":1},"promptText":"In one look Luca spots 1 ten-strips of fish plus 2 single fish. How many fish is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"groups","ones":2,"tens":1},"promptText":"In one look Luca spots 1 ten-strip of fish plus 2 single fish. How many fish is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-app-b0821-0400",
@@ -4072,7 +4072,7 @@ export const ITEMS = [
     structureType: "storyQuickRows",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"groups","ones":4,"tens":1},"promptText":"In one look Omar spots 1 ten-strips of flowers plus 4 single flowers. How many flowers is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"groups","ones":4,"tens":1},"promptText":"In one look Omar spots 1 ten-strip of flowers plus 4 single flowers. How many flowers is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-app-b0821-0402",
@@ -4092,7 +4092,7 @@ export const ITEMS = [
     structureType: "storyQuickRows",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"groups","ones":3,"tens":1},"promptText":"In one look Finn spots 1 ten-strips of turtles plus 3 single turtles. How many turtles is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"groups","ones":3,"tens":1},"promptText":"In one look Finn spots 1 ten-strip of turtles plus 3 single turtles. How many turtles is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-app-b0821-0404",
@@ -4112,7 +4112,7 @@ export const ITEMS = [
     structureType: "storyQuickRows",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"groups","ones":9,"tens":1},"promptText":"In one look Sam spots 1 ten-strips of balloons plus 9 single balloons. How many balloons is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"groups","ones":9,"tens":1},"promptText":"In one look Sam spots 1 ten-strip of balloons plus 9 single balloons. How many balloons is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-app-b0821-0406",
@@ -4132,7 +4132,7 @@ export const ITEMS = [
     structureType: "storyQuickRows",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"groups","ones":2,"tens":1},"promptText":"In one look Kai spots 1 ten-strips of butterflies plus 2 single butterflies. How many butterflies is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"groups","ones":2,"tens":1},"promptText":"In one look Kai spots 1 ten-strip of butterflies plus 2 single butterflies. How many butterflies is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-app-b0821-0408",
@@ -5742,7 +5742,7 @@ export const ITEMS = [
     structureType: "oddOneOutCount",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"🍪🍪🍪🍪🍪","choices":["4","🟠🟠🟠🟠","🔵🔵🔵🔵","🍪🍪🍪🍪🍪"],"display":{"promptText":"Three of these show 4 dots. Which one does NOT?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"🍪🍪🍪🍪🍪","choices":["4","🟠🟠🟠🟠","🔵🔵🔵🔵","🍪🍪🍪🍪🍪"],"display":{"promptText":"Three of these cards show 4. Which card does not show 4?"}},
   },
   {
     itemId: "counting-conc-b0821-0066",
@@ -5752,7 +5752,7 @@ export const ITEMS = [
     structureType: "oddOneOutCount",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"🐤🐤🐤🐤🐤 🐤","choices":["🐤🐤🐤🐤🐤 🐤","5","🟢🟢🟢🟢🟢","⭐⭐⭐⭐⭐"],"display":{"promptText":"One card does not show 5 stars. Which card is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"🐤🐤🐤🐤🐤 🐤","choices":["🐤🐤🐤🐤🐤 🐤","5","🟢🟢🟢🟢🟢","⭐⭐⭐⭐⭐"],"display":{"promptText":"Which card does not show 5?"}},
   },
   {
     itemId: "counting-conc-b0821-0067",
@@ -5762,7 +5762,7 @@ export const ITEMS = [
     structureType: "oddOneOutCount",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"🟠🟠🟠🟠🟠 🟠🟠","choices":["🟠🟠🟠🟠🟠 🟠🟠","🔵🔵🔵🔵🔵 🔵","6","🍪🍪🍪🍪🍪 🍪"],"display":{"promptText":"Three of these show 6 blue dots. Which one does NOT?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"🟠🟠🟠🟠🟠 🟠🟠","choices":["🟠🟠🟠🟠🟠 🟠🟠","🔵🔵🔵🔵🔵 🔵","6","🍪🍪🍪🍪🍪 🍪"],"display":{"promptText":"One card shows a different number. Which card does not show 6?"}},
   },
   {
     itemId: "counting-conc-b0821-0068",
@@ -5772,7 +5772,7 @@ export const ITEMS = [
     structureType: "oddOneOutCount",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"⭐⭐⭐⭐⭐ ⭐⭐⭐","choices":["7","🐤🐤🐤🐤🐤 🐤🐤","⭐⭐⭐⭐⭐ ⭐⭐⭐","🟢🟢🟢🟢🟢 🟢🟢"],"display":{"promptText":"One card does not show 7 green dots. Which card is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"⭐⭐⭐⭐⭐ ⭐⭐⭐","choices":["7","🐤🐤🐤🐤🐤 🐤🐤","⭐⭐⭐⭐⭐ ⭐⭐⭐","🟢🟢🟢🟢🟢 🟢🟢"],"display":{"promptText":"Look at the cards. Which card does not show 7?"}},
   },
   {
     itemId: "counting-conc-b0821-0069",
@@ -5782,7 +5782,7 @@ export const ITEMS = [
     structureType: "oddOneOutCount",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"🔵🔵🔵🔵🔵 🔵🔵🔵🔵","choices":["🔵🔵🔵🔵🔵 🔵🔵🔵🔵","8","🟠🟠🟠🟠🟠 🟠🟠🟠","🍪🍪🍪🍪🍪 🍪🍪🍪"],"display":{"promptText":"Three of these show 8 cookies. Which one does NOT?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"🔵🔵🔵🔵🔵 🔵🔵🔵🔵","choices":["🔵🔵🔵🔵🔵 🔵🔵🔵🔵","8","🟠🟠🟠🟠🟠 🟠🟠🟠","🍪🍪🍪🍪🍪 🍪🍪🍪"],"display":{"promptText":"Three cards show the same number. Which card does not show 8?"}},
   },
   {
     itemId: "counting-conc-b0821-0070",
@@ -5792,7 +5792,7 @@ export const ITEMS = [
     structureType: "oddOneOutCount",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"🟢🟢🟢🟢🟢 🟢🟢🟢🟢🟢","choices":["🟢🟢🟢🟢🟢 🟢🟢🟢🟢🟢","⭐⭐⭐⭐⭐ ⭐⭐⭐⭐","🐤🐤🐤🐤🐤 🐤🐤🐤🐤","9"],"display":{"promptText":"One card does not show 9 chicks. Which card is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"🟢🟢🟢🟢🟢 🟢🟢🟢🟢🟢","choices":["🟢🟢🟢🟢🟢 🟢🟢🟢🟢🟢","⭐⭐⭐⭐⭐ ⭐⭐⭐⭐","🐤🐤🐤🐤🐤 🐤🐤🐤🐤","9"],"display":{"promptText":"Three of these cards show 9. Which card does not show 9?"}},
   },
   {
     itemId: "counting-conc-b0821-0071",
@@ -5802,7 +5802,7 @@ export const ITEMS = [
     structureType: "oddOneOutCount",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"🐤🐤🐤🐤🐤 🐤🐤","choices":["🟠🟠🟠🟠🟠 🟠","🟢🟢🟢🟢🟢 🟢","6","🐤🐤🐤🐤🐤 🐤🐤"],"display":{"promptText":"Three of these show 6 dots. Which one does NOT?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"🐤🐤🐤🐤🐤 🐤🐤","choices":["🟠🟠🟠🟠🟠 🟠","🟢🟢🟢🟢🟢 🟢","6","🐤🐤🐤🐤🐤 🐤🐤"],"display":{"promptText":"Which card does not show 6?"}},
   },
   {
     itemId: "counting-conc-b0821-0072",
@@ -5812,7 +5812,7 @@ export const ITEMS = [
     structureType: "oddOneOutCount",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"🟠🟠🟠🟠🟠 🟠🟠🟠","choices":["7","⭐⭐⭐⭐⭐ ⭐⭐","🍪🍪🍪🍪🍪 🍪🍪","🟠🟠🟠🟠🟠 🟠🟠🟠"],"display":{"promptText":"One card does not show 7 stars. Which card is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"🟠🟠🟠🟠🟠 🟠🟠🟠","choices":["7","⭐⭐⭐⭐⭐ ⭐⭐","🍪🍪🍪🍪🍪 🍪🍪","🟠🟠🟠🟠🟠 🟠🟠🟠"],"display":{"promptText":"One card shows a different number. Which card does not show 7?"}},
   },
   {
     itemId: "counting-conc-b0821-0073",
@@ -5822,7 +5822,7 @@ export const ITEMS = [
     structureType: "oddOneOutCount",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"⭐⭐⭐⭐⭐ ⭐","choices":["🔵🔵🔵🔵🔵","🐤🐤🐤🐤🐤","⭐⭐⭐⭐⭐ ⭐","5"],"display":{"promptText":"Three of these show 5 blue dots. Which one does NOT?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"⭐⭐⭐⭐⭐ ⭐","choices":["🔵🔵🔵🔵🔵","🐤🐤🐤🐤🐤","⭐⭐⭐⭐⭐ ⭐","5"],"display":{"promptText":"Look at the cards. Which card does not show 5?"}},
   },
   {
     itemId: "counting-conc-b0821-0074",
@@ -5832,7 +5832,7 @@ export const ITEMS = [
     structureType: "oddOneOutCount",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"🔵🔵🔵🔵🔵 🔵🔵🔵🔵","choices":["🟢🟢🟢🟢🟢 🟢🟢🟢","🟠🟠🟠🟠🟠 🟠🟠🟠","8","🔵🔵🔵🔵🔵 🔵🔵🔵🔵"],"display":{"promptText":"One card does not show 8 green dots. Which card is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"🔵🔵🔵🔵🔵 🔵🔵🔵🔵","choices":["🟢🟢🟢🟢🟢 🟢🟢🟢","🟠🟠🟠🟠🟠 🟠🟠🟠","8","🔵🔵🔵🔵🔵 🔵🔵🔵🔵"],"display":{"promptText":"Three of these cards show 8. Which card does not show 8?"}},
   },
   {
     itemId: "counting-conc-b0821-0075",
@@ -6092,7 +6092,7 @@ export const ITEMS = [
     structureType: "whichShowsTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"🐤🐤🐤🐤🐤🐤🐤🐤🐤🐤 🐤🐤🐤","choices":["🐤🐤🐤🐤🐤🐤🐤🐤🐤🐤 🐤🐤🐤","🐤🐤🐤🐤🐤🐤🐤🐤🐤🐤 🐤🐤","🐤🐤🐤🐤🐤🐤🐤🐤🐤🐤 🐤🐤🐤🐤","🐤🐤🐤🐤🐤🐤🐤🐤🐤🐤 🐤🐤🐤🐤🐤"],"display":{"promptText":"Pick the group with 13 chicks. Count the full ten first."}},
+    question: {"a":null,"b":null,"op":"count","answer":"🐤🐤🐤🐤🐤🐤🐤🐤🐤🐤 🐤🐤🐤","choices":["🐤🐤🐤🐤🐤🐤🐤🐤🐤🐤 🐤🐤🐤","🐤🐤🐤🐤🐤🐤🐤🐤🐤🐤 🐤🐤","🐤🐤🐤🐤🐤🐤🐤🐤🐤🐤 🐤🐤🐤🐤","🐤🐤🐤🐤🐤🐤🐤🐤🐤🐤 🐤🐤🐤🐤🐤"],"display":{"promptText":"Count the full ten first. Which group has 13 chicks?"}},
   },
   {
     itemId: "counting-conc-b0821-0101",
@@ -6112,7 +6112,7 @@ export const ITEMS = [
     structureType: "whichShowsTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ ⭐⭐⭐⭐⭐","choices":["⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ ⭐⭐⭐⭐⭐⭐⭐","⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ ⭐⭐⭐⭐⭐⭐","⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ ⭐⭐⭐⭐","⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ ⭐⭐⭐⭐⭐"],"display":{"promptText":"Pick the group with 15 stars. Count the full ten first."}},
+    question: {"a":null,"b":null,"op":"count","answer":"⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ ⭐⭐⭐⭐⭐","choices":["⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ ⭐⭐⭐⭐⭐⭐⭐","⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ ⭐⭐⭐⭐⭐⭐","⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ ⭐⭐⭐⭐","⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ ⭐⭐⭐⭐⭐"],"display":{"promptText":"Start with the full ten. Which group has 15 stars?"}},
   },
   {
     itemId: "counting-conc-b0821-0103",
@@ -6132,7 +6132,7 @@ export const ITEMS = [
     structureType: "whichShowsTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢 🟢🟢🟢🟢🟢🟢🟢","choices":["🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢 🟢🟢🟢🟢🟢🟢🟢🟢","🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢 🟢🟢🟢🟢🟢🟢🟢🟢🟢","🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢 🟢🟢🟢🟢🟢🟢","🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢 🟢🟢🟢🟢🟢🟢🟢"],"display":{"promptText":"Pick the group with 17 green dots. Count the full ten first."}},
+    question: {"a":null,"b":null,"op":"count","answer":"🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢 🟢🟢🟢🟢🟢🟢🟢","choices":["🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢 🟢🟢🟢🟢🟢🟢🟢🟢","🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢 🟢🟢🟢🟢🟢🟢🟢🟢🟢","🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢 🟢🟢🟢🟢🟢🟢","🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢 🟢🟢🟢🟢🟢🟢🟢"],"display":{"promptText":"Count the full ten first. Which group has 17 green dots?"}},
   },
   {
     itemId: "counting-conc-b0821-0105",
@@ -6152,7 +6152,7 @@ export const ITEMS = [
     structureType: "whichShowsTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"🐤🐤🐤🐤🐤🐤🐤🐤🐤🐤 🐤","choices":["🐤🐤🐤🐤🐤🐤🐤🐤🐤🐤 🐤","🐤🐤🐤🐤🐤🐤🐤🐤🐤🐤 🐤🐤","🐤🐤🐤🐤🐤🐤🐤🐤🐤🐤 🐤🐤🐤","🐤🐤🐤🐤🐤🐤🐤🐤🐤🐤 "],"display":{"promptText":"Pick the group with 11 chicks. Count the full ten first."}},
+    question: {"a":null,"b":null,"op":"count","answer":"🐤🐤🐤🐤🐤🐤🐤🐤🐤🐤 🐤","choices":["🐤🐤🐤🐤🐤🐤🐤🐤🐤🐤 🐤","🐤🐤🐤🐤🐤🐤🐤🐤🐤🐤 🐤🐤","🐤🐤🐤🐤🐤🐤🐤🐤🐤🐤 🐤🐤🐤","🐤🐤🐤🐤🐤🐤🐤🐤🐤🐤 "],"display":{"promptText":"Start with the full ten. Which group has 11 chicks?"}},
   },
   {
     itemId: "counting-conc-b0821-0107",
@@ -6282,7 +6282,7 @@ export const ITEMS = [
     structureType: "oddOneOutTeen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"🍪🍪🍪🍪🍪 🍪🍪🍪🍪🍪🍪🍪","choices":["🔵🔵🔵🔵🔵 🔵🔵🔵🔵🔵🔵","11","🍪🍪🍪🍪🍪 🍪🍪🍪🍪🍪🍪🍪","🟠🟠🟠🟠🟠 🟠🟠🟠🟠🟠🟠"],"display":{"promptText":"Three of these show 11 dots. Which one does NOT?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"🍪🍪🍪🍪🍪 🍪🍪🍪🍪🍪🍪🍪","choices":["🔵🔵🔵🔵🔵 🔵🔵🔵🔵🔵🔵","11","🍪🍪🍪🍪🍪 🍪🍪🍪🍪🍪🍪🍪","🟠🟠🟠🟠🟠 🟠🟠🟠🟠🟠🟠"],"display":{"promptText":"Three cards show the same number. Which card does not show 11?"}},
   },
   {
     itemId: "counting-conc-b0821-0120",
@@ -6292,7 +6292,7 @@ export const ITEMS = [
     structureType: "oddOneOutTeen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"🐤🐤🐤🐤🐤 🐤🐤🐤🐤🐤🐤🐤🐤","choices":["⭐⭐⭐⭐⭐ ⭐⭐⭐⭐⭐⭐⭐","12","🟢🟢🟢🟢🟢 🟢🟢🟢🟢🟢🟢🟢","🐤🐤🐤🐤🐤 🐤🐤🐤🐤🐤🐤🐤🐤"],"display":{"promptText":"One card does not show 12 stars. Which card is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"🐤🐤🐤🐤🐤 🐤🐤🐤🐤🐤🐤🐤🐤","choices":["⭐⭐⭐⭐⭐ ⭐⭐⭐⭐⭐⭐⭐","12","🟢🟢🟢🟢🟢 🟢🟢🟢🟢🟢🟢🟢","🐤🐤🐤🐤🐤 🐤🐤🐤🐤🐤🐤🐤🐤"],"display":{"promptText":"Which card does not show 12?"}},
   },
   {
     itemId: "counting-conc-b0821-0121",
@@ -6302,7 +6302,7 @@ export const ITEMS = [
     structureType: "oddOneOutTeen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"🟠🟠🟠🟠🟠 🟠🟠🟠🟠🟠🟠🟠🟠🟠","choices":["🔵🔵🔵🔵🔵 🔵🔵🔵🔵🔵🔵🔵🔵","🍪🍪🍪🍪🍪 🍪🍪🍪🍪🍪🍪🍪🍪","🟠🟠🟠🟠🟠 🟠🟠🟠🟠🟠🟠🟠🟠🟠","13"],"display":{"promptText":"Three of these show 13 blue dots. Which one does NOT?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"🟠🟠🟠🟠🟠 🟠🟠🟠🟠🟠🟠🟠🟠🟠","choices":["🔵🔵🔵🔵🔵 🔵🔵🔵🔵🔵🔵🔵🔵","🍪🍪🍪🍪🍪 🍪🍪🍪🍪🍪🍪🍪🍪","🟠🟠🟠🟠🟠 🟠🟠🟠🟠🟠🟠🟠🟠🟠","13"],"display":{"promptText":"One card shows a different number. Which card does not show 13?"}},
   },
   {
     itemId: "counting-conc-b0821-0122",
@@ -6312,7 +6312,7 @@ export const ITEMS = [
     structureType: "oddOneOutTeen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"⭐⭐⭐⭐⭐ ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐","choices":["🐤🐤🐤🐤🐤 🐤🐤🐤🐤🐤🐤🐤🐤🐤","🟢🟢🟢🟢🟢 🟢🟢🟢🟢🟢🟢🟢🟢🟢","⭐⭐⭐⭐⭐ ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐","14"],"display":{"promptText":"One card does not show 14 green dots. Which card is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"⭐⭐⭐⭐⭐ ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐","choices":["🐤🐤🐤🐤🐤 🐤🐤🐤🐤🐤🐤🐤🐤🐤","🟢🟢🟢🟢🟢 🟢🟢🟢🟢🟢🟢🟢🟢🟢","⭐⭐⭐⭐⭐ ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐","14"],"display":{"promptText":"Look at the cards. Which card does not show 14?"}},
   },
   {
     itemId: "counting-conc-b0821-0123",
@@ -6322,7 +6322,7 @@ export const ITEMS = [
     structureType: "oddOneOutTeen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"🔵🔵🔵🔵🔵 🔵🔵🔵🔵🔵🔵🔵🔵","choices":["🍪🍪🍪🍪🍪 🍪🍪🍪🍪🍪🍪🍪","12","🔵🔵🔵🔵🔵 🔵🔵🔵🔵🔵🔵🔵🔵","🟠🟠🟠🟠🟠 🟠🟠🟠🟠🟠🟠🟠"],"display":{"promptText":"Three of these show 12 cookies. Which one does NOT?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"🔵🔵🔵🔵🔵 🔵🔵🔵🔵🔵🔵🔵🔵","choices":["🍪🍪🍪🍪🍪 🍪🍪🍪🍪🍪🍪🍪","12","🔵🔵🔵🔵🔵 🔵🔵🔵🔵🔵🔵🔵🔵","🟠🟠🟠🟠🟠 🟠🟠🟠🟠🟠🟠🟠"],"display":{"promptText":"Three cards show the same number. Which card does not show 12?"}},
   },
   {
     itemId: "counting-conc-b0821-0124",
@@ -6332,7 +6332,7 @@ export const ITEMS = [
     structureType: "oddOneOutTeen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"🟢🟢🟢🟢🟢 🟢🟢🟢🟢🟢🟢🟢","choices":["🐤🐤🐤🐤🐤 🐤🐤🐤🐤🐤🐤","⭐⭐⭐⭐⭐ ⭐⭐⭐⭐⭐⭐","11","🟢🟢🟢🟢🟢 🟢🟢🟢🟢🟢🟢🟢"],"display":{"promptText":"One card does not show 11 chicks. Which card is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"🟢🟢🟢🟢🟢 🟢🟢🟢🟢🟢🟢🟢","choices":["🐤🐤🐤🐤🐤 🐤🐤🐤🐤🐤🐤","⭐⭐⭐⭐⭐ ⭐⭐⭐⭐⭐⭐","11","🟢🟢🟢🟢🟢 🟢🟢🟢🟢🟢🟢🟢"],"display":{"promptText":"Three of these cards show 11. Which card does not show 11?"}},
   },
   {
     itemId: "counting-conc-b0821-0125",
@@ -6342,7 +6342,7 @@ export const ITEMS = [
     structureType: "oddOneOutTeen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"🐤🐤🐤🐤🐤 🐤🐤🐤🐤🐤🐤🐤🐤🐤","choices":["🟠🟠🟠🟠🟠 🟠🟠🟠🟠🟠🟠🟠🟠","🟢🟢🟢🟢🟢 🟢🟢🟢🟢🟢🟢🟢🟢","🐤🐤🐤🐤🐤 🐤🐤🐤🐤🐤🐤🐤🐤🐤","13"],"display":{"promptText":"Three of these show 13 dots. Which one does NOT?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"🐤🐤🐤🐤🐤 🐤🐤🐤🐤🐤🐤🐤🐤🐤","choices":["🟠🟠🟠🟠🟠 🟠🟠🟠🟠🟠🟠🟠🟠","🟢🟢🟢🟢🟢 🟢🟢🟢🟢🟢🟢🟢🟢","🐤🐤🐤🐤🐤 🐤🐤🐤🐤🐤🐤🐤🐤🐤","13"],"display":{"promptText":"Which card does not show 13?"}},
   },
   {
     itemId: "counting-conc-b0821-0126",
@@ -6352,7 +6352,7 @@ export const ITEMS = [
     structureType: "oddOneOutTeen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"🟠🟠🟠🟠🟠 🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠","choices":["⭐⭐⭐⭐⭐ ⭐⭐⭐⭐⭐⭐⭐⭐⭐","14","🍪🍪🍪🍪🍪 🍪🍪🍪🍪🍪🍪🍪🍪🍪","🟠🟠🟠🟠🟠 🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠"],"display":{"promptText":"One card does not show 14 stars. Which card is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"🟠🟠🟠🟠🟠 🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠","choices":["⭐⭐⭐⭐⭐ ⭐⭐⭐⭐⭐⭐⭐⭐⭐","14","🍪🍪🍪🍪🍪 🍪🍪🍪🍪🍪🍪🍪🍪🍪","🟠🟠🟠🟠🟠 🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠"],"display":{"promptText":"One card shows a different number. Which card does not show 14?"}},
   },
   {
     itemId: "counting-conc-b0821-0127",
@@ -6912,7 +6912,7 @@ export const ITEMS = [
     structureType: "oneMore",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"n":18,"kind":"moreLess","delta":1},"promptText":"Add one to 18. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"n":18,"kind":"moreLess","delta":1},"promptText":"What do you get when you add 1 to 18?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-conc-b0821-0183",
@@ -7092,7 +7092,7 @@ export const ITEMS = [
     structureType: "betweenTwo",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"between","after":13,"before":11},"promptText":"A number hides between 11 and 13. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"between","after":13,"before":11},"promptText":"What number hides between 11 and 13?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-conc-b0821-0201",
@@ -7212,7 +7212,7 @@ export const ITEMS = [
     structureType: "countOnJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"June has 8 flowers and gets 2 more. June counts on: 9, 10. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"June holds 8 flowers. A friend hands over 2 more. June says 9, 10. Is June counting on correctly?"}},
   },
   {
     itemId: "counting-conc-b0821-0213",
@@ -7222,7 +7222,7 @@ export const ITEMS = [
     structureType: "countOnJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe holds 7 turtles. A friend hands over 4 more. Zoe says 7, 8, 9, 10. Is Zoe counting on correctly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe has 7 turtles and gets 4 more. Zoe counts on: 7, 8, 9, 10. Is that right?"}},
   },
   {
     itemId: "counting-conc-b0821-0214",
@@ -7252,7 +7252,7 @@ export const ITEMS = [
     structureType: "countOnJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa has 6 berries and gets 4 more. Rosa counts on: 7, 8, 9, 10. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa holds 6 berries. A friend hands over 4 more. Rosa says 7, 8, 9, 10. Is Rosa counting on correctly?"}},
   },
   {
     itemId: "counting-conc-b0821-0217",
@@ -7262,7 +7262,7 @@ export const ITEMS = [
     structureType: "countOnJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn holds 8 balls. A friend hands over 3 more. Finn says 8, 9, 10. Is Finn counting on correctly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn has 8 balls and gets 3 more. Finn counts on: 8, 9, 10. Is that right?"}},
   },
   {
     itemId: "counting-conc-b0821-0218",
@@ -7462,7 +7462,7 @@ export const ITEMS = [
     structureType: "oneMoreDecade",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"n":39,"kind":"moreLess","delta":1},"promptText":"Add one to 39. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"n":39,"kind":"moreLess","delta":1},"promptText":"What number do you get when you add 1 to 39?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-conc-b0821-0238",
@@ -7522,7 +7522,7 @@ export const ITEMS = [
     structureType: "oneMoreDecade",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"n":24,"kind":"moreLess","delta":1},"promptText":"Add one to 24. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"n":24,"kind":"moreLess","delta":1},"promptText":"If you add 1 to 24, what number do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-conc-b0821-0244",
@@ -7672,7 +7672,7 @@ export const ITEMS = [
     structureType: "betweenDecade",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"kind":"between","after":41,"before":39},"promptText":"A number hides between 39 and 41. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"kind":"between","after":41,"before":39},"promptText":"What number is hiding between 39 and 41?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-conc-b0821-0259",
@@ -7722,7 +7722,7 @@ export const ITEMS = [
     structureType: "betweenDecade",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"counting":{"kind":"between","after":91,"before":89},"promptText":"A number hides between 89 and 91. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"counting":{"kind":"between","after":91,"before":89},"promptText":"Which number is hiding between 89 and 91?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-conc-b0821-0264",
@@ -7872,7 +7872,7 @@ export const ITEMS = [
     structureType: "decadeCrossingJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ben counts: 27, 28, 29, 30. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ben counts out loud: 27, 28, 29, 30. Did Ben count correctly?"}},
   },
   {
     itemId: "counting-conc-b0821-0279",
@@ -7882,7 +7882,7 @@ export const ITEMS = [
     structureType: "decadeCrossingJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Listen to Lily count: 37, 38, 39, 29. Did Lily count correctly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Lily counts: 37, 38, 39, 29. Is that right?"}},
   },
   {
     itemId: "counting-conc-b0821-0280",
@@ -7902,7 +7902,7 @@ export const ITEMS = [
     structureType: "decadeCrossingJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Listen to Finn count: 58, 59, 60, 50. Did Finn count correctly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn counts out loud: 58, 59, 60, 50. Did Finn count correctly?"}},
   },
   {
     itemId: "counting-conc-b0821-0282",
@@ -7912,7 +7912,7 @@ export const ITEMS = [
     structureType: "decadeCrossingJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Amara counts: 68, 69, 70, 71. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Amara counts out loud: 68, 69, 70, 71. Did Amara count correctly?"}},
   },
   {
     itemId: "counting-conc-b0821-0283",
@@ -7922,7 +7922,7 @@ export const ITEMS = [
     structureType: "decadeCrossingJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Listen to Diego count: 78, 79, 80, 70. Did Diego count correctly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Diego counts: 78, 79, 80, 70. Is that right?"}},
   },
   {
     itemId: "counting-conc-b0821-0284",
@@ -7942,7 +7942,7 @@ export const ITEMS = [
     structureType: "decadeCrossingJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Listen to Leo count: 18, 19, 20, 10. Did Leo count correctly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Leo counts out loud: 18, 19, 20, 10. Did Leo count correctly?"}},
   },
   {
     itemId: "counting-conc-b0821-0286",
@@ -7962,7 +7962,7 @@ export const ITEMS = [
     structureType: "decadeCrossingJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Listen to Sam count: 38, 39, 40, 41. Did Sam count correctly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Sam counts out loud: 38, 39, 40, 41. Did Sam count correctly?"}},
   },
   {
     itemId: "counting-conc-b0821-0288",
@@ -8162,7 +8162,7 @@ export const ITEMS = [
     structureType: "oneMoreHundred",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":110,"display":{"counting":{"n":109,"kind":"moreLess","delta":1},"promptText":"Add one to 109. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":110,"display":{"counting":{"n":109,"kind":"moreLess","delta":1},"promptText":"What do you get when you add 1 to 109?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-conc-b0821-0308",
@@ -8222,7 +8222,7 @@ export const ITEMS = [
     structureType: "oneMoreHundred",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":107,"display":{"counting":{"n":106,"kind":"moreLess","delta":1},"promptText":"Add one to 106. What do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":107,"display":{"counting":{"n":106,"kind":"moreLess","delta":1},"promptText":"If you add 1 to 106, what number do you get?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-conc-b0821-0314",
@@ -8352,7 +8352,7 @@ export const ITEMS = [
     structureType: "betweenHundred",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":105,"display":{"counting":{"kind":"between","after":106,"before":104},"promptText":"A number hides between 104 and 106. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":105,"display":{"counting":{"kind":"between","after":106,"before":104},"promptText":"What number hides between 104 and 106?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-conc-b0821-0327",
@@ -8402,7 +8402,7 @@ export const ITEMS = [
     structureType: "betweenHundred",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":119,"display":{"counting":{"kind":"between","after":120,"before":118},"promptText":"A number hides between 118 and 120. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":119,"display":{"counting":{"kind":"between","after":120,"before":118},"promptText":"Which number is hiding between 118 and 120?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-conc-b0821-0332",
@@ -8522,7 +8522,7 @@ export const ITEMS = [
     structureType: "centuryCrossingJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Listen to Finn count: 99, 100, 200, 300. Did Finn count correctly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn counts out loud: 99, 100, 200, 300. Did Finn count correctly?"}},
   },
   {
     itemId: "counting-conc-b0821-0344",
@@ -8532,7 +8532,7 @@ export const ITEMS = [
     structureType: "centuryCrossingJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Amara counts: 108, 109, 110, 111. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Amara counts out loud: 108, 109, 110, 111. Did Amara count correctly?"}},
   },
   {
     itemId: "counting-conc-b0821-0345",
@@ -8542,7 +8542,7 @@ export const ITEMS = [
     structureType: "centuryCrossingJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Listen to Diego count: 109, 110, 120, 130. Did Diego count correctly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Diego counts: 109, 110, 120, 130. Is that right?"}},
   },
   {
     itemId: "counting-conc-b0821-0346",
@@ -8562,7 +8562,7 @@ export const ITEMS = [
     structureType: "centuryCrossingJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Listen to Leo count: 99, 100, 101, 102. Did Leo count correctly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Leo counts out loud: 99, 100, 101, 102. Did Leo count correctly?"}},
   },
   {
     itemId: "counting-conc-b0821-0348",
@@ -8582,7 +8582,7 @@ export const ITEMS = [
     structureType: "centuryCrossingJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Listen to Sam count: 118, 119, 120, 131. Did Sam count correctly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Sam counts out loud: 118, 119, 120, 131. Did Sam count correctly?"}},
   },
   {
     itemId: "counting-conc-b0821-0350",
@@ -8602,7 +8602,7 @@ export const ITEMS = [
     structureType: "centuryCrossingJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Listen to Luca count: 116, 117, 118, 119. Did Luca count correctly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Luca counts out loud: 116, 117, 118, 119. Did Luca count correctly?"}},
   },
   {
     itemId: "counting-conc-b0821-0352",
@@ -9652,7 +9652,7 @@ export const ITEMS = [
     structureType: "doubleCountErrorBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"counting":{"n":37,"kind":"moreLess","delta":-1},"promptText":"Amara counted 37 butterflies. Then Amara noticed one butterflie got pointed at twice. What is the real number of butterflies?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"counting":{"n":37,"kind":"moreLess","delta":-1},"promptText":"Amara counted 37 butterflies. Then Amara saw that one butterfly got counted twice. How many butterflies are there really?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-conc-b0821-0457",
@@ -9662,7 +9662,7 @@ export const ITEMS = [
     structureType: "skippedOneErrorBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"n":23,"kind":"moreLess","delta":1},"promptText":"Diego counted 23 berries, but Diego skipped one berrie. How many berries are there really?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"n":23,"kind":"moreLess","delta":1},"promptText":"Diego counted 23 berries, but Diego skipped one berry. How many berries are there really?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-conc-b0821-0458",
@@ -9742,7 +9742,7 @@ export const ITEMS = [
     structureType: "skippedOneErrorBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"counting":{"n":26,"kind":"moreLess","delta":1},"promptText":"Theo said 26 butterflies. One butterflie never got counted. What is the real number of butterflies?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"counting":{"n":26,"kind":"moreLess","delta":1},"promptText":"Theo counted 26 butterflies, but one butterfly never got counted. What is the real number of butterflies?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-conc-b0821-0466",
@@ -9752,7 +9752,7 @@ export const ITEMS = [
     structureType: "doubleCountErrorBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"counting":{"n":56,"kind":"moreLess","delta":-1},"promptText":"A count of 56 berries was one too many: Ava double-counted one berrie. How many berries are there?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"counting":{"n":56,"kind":"moreLess","delta":-1},"promptText":"A count of 56 berries was one too many: Ava counted one berry twice. How many berries are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-conc-b0821-0467",
@@ -10092,7 +10092,7 @@ export const ITEMS = [
     structureType: "bigCountJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Mina counts every berrie one by one and says 36. 🍓🍓🍓🍓🍓🍓🍓🍓🍓🍓 | 🍓🍓🍓🍓🍓🍓🍓🍓🍓🍓 | 🍓🍓🍓🍓🍓🍓🍓🍓🍓🍓 | 🍓🍓🍓🍓🍓🍓 Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Mina counts every berry one by one: 🍓🍓🍓🍓🍓🍓🍓🍓🍓🍓 | 🍓🍓🍓🍓🍓🍓🍓🍓🍓🍓 | 🍓🍓🍓🍓🍓🍓🍓🍓🍓🍓 | 🍓🍓🍓🍓🍓🍓 Is Mina right that there are 36 berries?"}},
   },
   {
     itemId: "counting-conc-b0821-0501",
@@ -10282,7 +10282,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":30,"b":null,"op":"count","answer":30,"display":{"promptText":"Use count-on from 25 by 5s. After one step, what is the count?"}},
+    question: {"a":30,"b":null,"op":"count","answer":30,"display":{"promptText":"What number comes after 25 when you count by 5s?"}},
   },
   {
     itemId: "counting-conc-countOn-23-002",
@@ -10292,7 +10292,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":35,"b":null,"op":"count","answer":35,"display":{"promptText":"Use count-on from 30 by 5s. After one step, what is the count?"}},
+    question: {"a":35,"b":null,"op":"count","answer":35,"display":{"promptText":"Start at 30 and count by 5s. What number do you say after 30?"}},
   },
   {
     itemId: "counting-conc-countOn-23-003",
@@ -10302,7 +10302,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":40,"b":null,"op":"count","answer":40,"display":{"promptText":"Use count-on from 35 by 5s. After one step, what is the count?"}},
+    question: {"a":40,"b":null,"op":"count","answer":40,"display":{"promptText":"If you count by 5s from 35, what number comes next?"}},
   },
   {
     itemId: "counting-conc-countOn-4_5-001",
@@ -10422,7 +10422,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":60,"b":null,"op":"count","answer":60,"display":{"promptText":"Use count-on from 50 by 10s. After one step, what is the count?"}},
+    question: {"a":60,"b":null,"op":"count","answer":60,"display":{"promptText":"What number comes after 50 when you count by 10s?"}},
   },
   {
     itemId: "counting-conc-countOn-45-002",
@@ -10432,7 +10432,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":80,"b":null,"op":"count","answer":80,"display":{"promptText":"Use count-on from 75 by 5s. After one step, what is the count?"}},
+    question: {"a":80,"b":null,"op":"count","answer":80,"display":{"promptText":"Start at 75 and count by 5s. What number do you say after 75?"}},
   },
   {
     itemId: "counting-conc-countOn-45-003",
@@ -10442,7 +10442,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":100,"b":null,"op":"count","answer":100,"display":{"promptText":"Use count-on from 90 by 10s. After one step, what is the count?"}},
+    question: {"a":100,"b":null,"op":"count","answer":100,"display":{"promptText":"If you count by 10s from 90, what number comes next?"}},
   },
   {
     itemId: "counting-conc-countOn-K_1-001",
@@ -10482,7 +10482,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":null,"op":"count","answer":9,"display":{"promptText":"Use count-on from 6 to find 6 + 3."}},
+    question: {"a":9,"b":null,"op":"count","answer":9,"display":{"promptText":"Start at 6 and count on 3 more. What is 6 + 3?"}},
   },
   {
     itemId: "counting-conc-countOn-K_1-005",
@@ -10582,7 +10582,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":19,"b":null,"op":"count","answer":19,"display":{"promptText":"Use count-on from 17 to find 17 + 2."}},
+    question: {"a":19,"b":null,"op":"count","answer":19,"display":{"promptText":"Say 17, then count on 2 more. What is 17 + 2?"}},
   },
   {
     itemId: "counting-conc-countOn-K_1-015",
@@ -10612,7 +10612,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":null,"op":"count","answer":6,"display":{"promptText":"Use count-on from 4 to find 4 + 2."}},
+    question: {"a":6,"b":null,"op":"count","answer":6,"display":{"promptText":"Start at 4 and count on 2 more. What is 4 + 2?"}},
   },
   {
     itemId: "counting-conc-countOn-K1-002",
@@ -10622,7 +10622,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":null,"op":"count","answer":7,"display":{"promptText":"Use count-on from 5 to find 5 + 2."}},
+    question: {"a":7,"b":null,"op":"count","answer":7,"display":{"promptText":"Say 5, then count on 2 more. What is 5 + 2?"}},
   },
   {
     itemId: "counting-conc-countOn-K1-003",
@@ -10632,7 +10632,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":null,"op":"count","answer":8,"display":{"promptText":"Use count-on from 6 to find 6 + 2."}},
+    question: {"a":8,"b":null,"op":"count","answer":8,"display":{"promptText":"Count on 2 from 6. What is 6 + 2?"}},
   },
   {
     itemId: "counting-conc-subitizing-4_5-001",
@@ -10802,7 +10802,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":null,"op":"count","answer":3,"display":{"promptText":"Three acorns lie together on a flat stone. Say how many acorns there are without counting one by one."}},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"kind":"set","count":3},"promptText":"Some acorns sit on a flat stone. 🌰🌰🌰 How many acorns are on the stone?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-conc-subitizing-K_1-002",
@@ -10812,7 +10812,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":null,"op":"count","answer":3,"display":{"promptText":"A tray shows 2 blue beads with 1 yellow bead beside them. Name the total number of beads at a glance."}},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"kind":"set","count":3},"promptText":"A tray has blue beads and a yellow bead. 🔵🔵 🟡 How many beads are on the tray?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-conc-subitizing-K_1-003",
@@ -10822,7 +10822,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":null,"op":"count","answer":4,"display":{"promptText":"Four ladybugs sit in a square pattern on a green leaf. Tell how many ladybugs you see right away."}},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"set","count":4},"promptText":"Some ladybugs sit on a green leaf. 🐞🐞 | 🐞🐞 How many ladybugs are on the leaf?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-conc-subitizing-K_1-006",
@@ -10832,7 +10832,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":null,"op":"count","answer":5,"display":{"promptText":"Five smooth pebbles rest in a loose group on the sand. Name how many pebbles there are at a glance."}},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"set","count":5},"promptText":"Some shells lie on the sand. 🐚🐚 🐚 🐚🐚 How many shells are on the sand?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-conc-subitizing-K_1-008",
@@ -10842,7 +10842,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":null,"op":"count","answer":6,"display":{"promptText":"An egg box holds 4 white eggs and 2 brown eggs. Tell how many eggs are in the box at a glance."}},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"set","count":6},"promptText":"An egg box has eggs in it. 🥚🥚🥚 | 🥚🥚🥚 How many eggs are in the box?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-conc-subitizing-K_1-009",
@@ -10852,7 +10852,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":null,"op":"count","answer":7,"display":{"promptText":"A plate holds 5 grapes in a line with 2 more grapes beside them. Say how many grapes there are in all right away."}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"set","count":7},"promptText":"A plate has berries on it. 🍓🍓🍓🍓🍓 🍓🍓 How many berries are on the plate?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-conc-subitizing-K_1-011",
@@ -10862,7 +10862,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":null,"op":"count","answer":8,"display":{"promptText":"A picture shows a spider with 4 legs on each side. Say how many legs the spider has in all at a glance."}},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"set","count":8},"promptText":"Each dot is one spider leg. Left side: 🟤🟤🟤🟤 Right side: 🟤🟤🟤🟤 How many legs does the spider have?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-conc-subitizing-K_1-013",
@@ -10872,7 +10872,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":null,"op":"count","answer":9,"display":{"promptText":"A domino shows 5 dots on one end and 4 dots on the other end. Say how many dots there are in all right away."}},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"kind":"set","count":9},"promptText":"Look at the domino. One end: 🟠🟠🟠🟠🟠 Other end: 🟠🟠🟠🟠 How many dots are on the domino?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-conc-subitizing-K_1-014",
@@ -10882,7 +10882,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":null,"op":"count","answer":9,"display":{"promptText":"A sticker sheet shows 3 rows with 3 stars in each row. Name how many stars there are in all at a glance."}},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"kind":"set","count":9},"promptText":"A sticker sheet has rows of stars. ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ How many stars are on the sheet?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-conc-subitizing-K_1-016",
@@ -10892,7 +10892,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":null,"op":"count","answer":10,"display":{"promptText":"Two hands are held up side by side with 5 fingers open on each hand. Tell how many fingers are showing in all right away."}},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"set","count":10},"promptText":"Each dot is one finger that is up. Left hand: 🟠🟠🟠🟠🟠 Right hand: 🟠🟠🟠🟠🟠 How many fingers are up?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-proc-b0821-0001",
@@ -11422,7 +11422,7 @@ export const ITEMS = [
     structureType: "tenFrameRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"filled":4,"frames":1,"counting":{"kind":"set","count":4},"frameMode":"count","promptText":"How many counters fill the frame?"},"answerType":"tenFrame"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"filled":4,"frames":1,"counting":{"kind":"set","count":4},"frameMode":"count","promptText":"How many counters are in the frame?"},"answerType":"tenFrame"},
   },
   {
     itemId: "counting-proc-b0821-0054",
@@ -16412,7 +16412,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":null,"op":"count","answer":18,"display":{"promptText":"Count from 1 to 18. What is the count?"}},
+    question: {"a":18,"b":null,"op":"count","answer":18,"display":{"promptText":"What number comes after 17?"}},
   },
   {
     itemId: "counting-proc-subitizing-23-002",
@@ -16422,7 +16422,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":22,"b":null,"op":"count","answer":22,"display":{"promptText":"Count from 1 to 22. What is the count?"}},
+    question: {"a":22,"b":null,"op":"count","answer":22,"display":{"promptText":"When you count by ones, what number comes after 21?"}},
   },
   {
     itemId: "counting-proc-subitizing-23-003",
@@ -16432,7 +16432,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":25,"b":null,"op":"count","answer":25,"display":{"promptText":"Count from 1 to 25. What is the count?"}},
+    question: {"a":25,"b":null,"op":"count","answer":25,"display":{"promptText":"What number comes right after 24?"}},
   },
   {
     itemId: "counting-proc-subitizing-45-001",
@@ -16442,7 +16442,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":50,"b":null,"op":"count","answer":50,"display":{"promptText":"Count from 1 to 50. What is the count?"}},
+    question: {"a":50,"b":null,"op":"count","answer":50,"display":{"promptText":"What number comes after 49?"}},
   },
   {
     itemId: "counting-proc-subitizing-45-002",
@@ -16452,7 +16452,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":75,"b":null,"op":"count","answer":75,"display":{"promptText":"Count from 1 to 75. What is the count?"}},
+    question: {"a":75,"b":null,"op":"count","answer":75,"display":{"promptText":"When you count by ones, what number comes after 74?"}},
   },
   {
     itemId: "counting-proc-subitizing-45-003",
@@ -16462,7 +16462,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":100,"b":null,"op":"count","answer":100,"display":{"promptText":"Count from 1 to 100. What is the count?"}},
+    question: {"a":100,"b":null,"op":"count","answer":100,"display":{"promptText":"What number comes right after 99?"}},
   },
   {
     itemId: "counting-proc-subitizing-K1-001",
@@ -16472,7 +16472,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":null,"op":"count","answer":4,"display":{"promptText":"Count: 1, 2, 3, 4. What is the count?"}},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"count":4,"emoji":"🍎","counting":{"kind":"set","count":4},"promptText":"Touch and count each apple: 🍎🍎🍎🍎 How many apples are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-proc-subitizing-K1-002",
@@ -16482,7 +16482,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":null,"op":"count","answer":5,"display":{"promptText":"Count: 1, 2, 3, 4, 5. What is the count?"}},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"count":5,"emoji":"⭐","counting":{"kind":"set","count":5},"promptText":"Count the stars: ⭐⭐⭐⭐⭐ How many stars are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "counting-proc-subitizing-K1-003",
@@ -16492,6 +16492,6 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":null,"op":"count","answer":3,"display":{"promptText":"Count: 1, 2, 3. What is the count?"}},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"count":3,"emoji":"🐟","counting":{"kind":"set","count":3},"promptText":"Count the fish: 🐟🐟🐟 How many fish are there?"},"answerType":"numberPad"},
   },
 ];

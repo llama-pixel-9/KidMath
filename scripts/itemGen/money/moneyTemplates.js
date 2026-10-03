@@ -351,7 +351,7 @@ export function countCoinsConceptual() {
   });
   const whichNotationPhr = rotor([
     (nm, cents) => `${nm} needs to write ${cents} cents with a dollar sign. Which form is right?`,
-    (nm, cents) => `Which dollar form shows ${cents} cents? ${nm} is labeling a price tag.`,
+    (nm, cents) => `${nm} is labeling a price tag. Which dollar form shows ${cents} cents?`,
   ]);
   [130, 145, 160, 175, 205, 230, 255, 280, 305, 350, 115, 120, 165, 240, 190, 210].forEach((cents, i) => {
     const d = Math.floor(cents / 100);
@@ -708,7 +708,7 @@ export function coinEquivalenceConceptual() {
 
   const makeSamePhr = rotor([
     (nm, amount, coin) => `${nm} wants to swap ${amount} for only ${PLURAL[coin]}. Which count of ${PLURAL[coin]} matches?`,
-    (nm, amount, coin) => `To trade ${amount} into ${PLURAL[coin]} alone, how many ${PLURAL[coin]} does ${nm} need? Pick the right count.`,
+    (nm, amount, coin) => `To trade ${amount} into ${PLURAL[coin]} alone, how many ${PLURAL[coin]} does ${nm} need?`,
   ]);
   const makeSame = (band, data) =>
     data.forEach(([amount, cents, coin], i) => {
@@ -841,7 +841,7 @@ export function moneyReasoningConceptual() {
 
   const leftOverPhr = rotor([
     (nm, have, cost) => `${nm} spends ${cost} cents from a wallet of ${have} cents. Which amount is left?`,
-    (nm, have, cost) => `Out of ${have} cents, ${nm} pays ${cost} cents for a treat. How much money is left? Pick the amount.`,
+    (nm, have, cost) => `Out of ${have} cents, ${nm} pays ${cost} cents for a treat. How much money is left?`,
   ]);
   const leftOver = (band, data) =>
     data.forEach(([have, cost], i) => {

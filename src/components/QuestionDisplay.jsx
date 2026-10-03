@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { isVerbalPrompt } from "../modes/helpers";
-import { emojiPromptLines } from "../promptLayout";
+import { emojiPromptLines, promptSentences } from "../promptLayout";
 import { FIGURE_COLORS } from "./kit";
 import { useTheme } from "../useTheme";
 import { getFigure } from "./figureRegistry.js";
@@ -295,10 +295,7 @@ export default function QuestionDisplay({ question, modeColor, feedback, revealA
         </div>
       );
     }
-    const promptLines = promptText
-      .split(/(?<=[.!?])\s+/)
-      .map((line) => line.trim())
-      .filter(Boolean);
+    const promptLines = promptSentences(promptText);
     const isStoryProblem = q.metadata?.itemFamily === "application";
     return (
       <div className="text-center space-y-2">

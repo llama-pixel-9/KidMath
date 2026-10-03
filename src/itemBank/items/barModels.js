@@ -182,7 +182,7 @@ export const ITEMS = [
     structureType: "storyJoin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":58,"display":{"counting":{"kind":"sum","parts":[27,31]},"promptText":"Mina's jar holds 27 seashells; Priya's jar holds 31. Poured together, how many seashells fill one jar? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":58,"display":{"counting":{"kind":"sum","parts":[27,31]},"promptText":"Mina's jar holds 27 seashells; Priya's jar holds 31. Poured together, how many seashells fill one jar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0019",
@@ -192,7 +192,7 @@ export const ITEMS = [
     structureType: "storyJoin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"counting":{"kind":"sum","parts":[38,42]},"promptText":"Between them, Luca brings 38 trading cards and Leo brings 42. What is their combined count of trading cards? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"counting":{"kind":"sum","parts":[38,42]},"promptText":"Between them, Luca brings 38 trading cards and Leo brings 42. What is their combined count of trading cards?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0020",
@@ -202,7 +202,7 @@ export const ITEMS = [
     structureType: "storyJoin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"counting":{"kind":"sum","parts":[49,23]},"promptText":"Nia gathers 49 acorns and Nora gathers 23. How many acorns do they gather altogether? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"counting":{"kind":"sum","parts":[49,23]},"promptText":"Nia gathers 49 acorns and Nora gathers 23. How many acorns do they gather altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0021",
@@ -212,7 +212,7 @@ export const ITEMS = [
     structureType: "storyJoin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":73,"display":{"counting":{"kind":"sum","parts":[54,19]},"promptText":"Theo's jar holds 54 bottle caps; Sam's jar holds 19. Poured together, how many bottle caps fill one jar? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":73,"display":{"counting":{"kind":"sum","parts":[54,19]},"promptText":"Theo's jar holds 54 bottle caps; Sam's jar holds 19. Poured together, how many bottle caps fill one jar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0022",
@@ -222,7 +222,7 @@ export const ITEMS = [
     structureType: "storyJoin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"counting":{"kind":"sum","parts":[35,45]},"promptText":"Between them, Ava brings 35 seashells and Mina brings 45. What is their combined count of seashells? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"counting":{"kind":"sum","parts":[35,45]},"promptText":"Between them, Ava brings 35 seashells and Mina brings 45. What is their combined count of seashells?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0023",
@@ -232,7 +232,7 @@ export const ITEMS = [
     structureType: "storyJoin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":94,"display":{"counting":{"kind":"sum","parts":[28,66]},"promptText":"Kai gathers 28 trading cards and Luca gathers 66. How many trading cards do they gather altogether? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":94,"display":{"counting":{"kind":"sum","parts":[28,66]},"promptText":"Kai gathers 28 trading cards and Luca gathers 66. How many trading cards do they gather altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0024",
@@ -242,7 +242,7 @@ export const ITEMS = [
     structureType: "storyJoin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":92,"display":{"counting":{"kind":"sum","parts":[59,33]},"promptText":"Ida's jar holds 59 acorns; Nia's jar holds 33. Poured together, how many acorns fill one jar? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":92,"display":{"counting":{"kind":"sum","parts":[59,33]},"promptText":"Ida's jar holds 59 acorns; Nia's jar holds 33. Poured together, how many acorns fill one jar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0025",
@@ -252,7 +252,7 @@ export const ITEMS = [
     structureType: "storyJoin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"counting":{"kind":"sum","parts":[42,39]},"promptText":"Between them, Omar brings 42 bottle caps and Theo brings 39. What is their combined count of bottle caps? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"counting":{"kind":"sum","parts":[42,39]},"promptText":"Between them, Omar brings 42 bottle caps and Theo brings 39. What is their combined count of bottle caps?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0026",
@@ -262,7 +262,7 @@ export const ITEMS = [
     structureType: "storyJoin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"counting":{"kind":"sum","parts":[63,17]},"promptText":"June gathers 63 seashells and Ava gathers 17. How many seashells do they gather altogether? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"counting":{"kind":"sum","parts":[63,17]},"promptText":"June gathers 63 seashells and Ava gathers 17. How many seashells do they gather altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0027",
@@ -272,7 +272,7 @@ export const ITEMS = [
     structureType: "storyJoin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"counting":{"kind":"sum","parts":[30,54]},"promptText":"Zoe's jar holds 30 trading cards; Kai's jar holds 54. Poured together, how many trading cards fill one jar? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"counting":{"kind":"sum","parts":[30,54]},"promptText":"Zoe's jar holds 30 trading cards; Kai's jar holds 54. Poured together, how many trading cards fill one jar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0028",
@@ -282,7 +282,7 @@ export const ITEMS = [
     structureType: "storyJoin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":85,"display":{"counting":{"kind":"sum","parts":[47,38]},"promptText":"Between them, Ben brings 47 acorns and Ida brings 38. What is their combined count of acorns? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":85,"display":{"counting":{"kind":"sum","parts":[47,38]},"promptText":"Between them, Ben brings 47 acorns and Ida brings 38. What is their combined count of acorns?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0029",
@@ -292,7 +292,7 @@ export const ITEMS = [
     structureType: "storyJoin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"counting":{"kind":"sum","parts":[52,28]},"promptText":"Lily gathers 52 bottle caps and Omar gathers 28. How many bottle caps do they gather altogether? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"counting":{"kind":"sum","parts":[52,28]},"promptText":"Lily gathers 52 bottle caps and Omar gathers 28. How many bottle caps do they gather altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0030",
@@ -302,7 +302,7 @@ export const ITEMS = [
     structureType: "storyJoin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"counting":{"kind":"sum","parts":[37,47]},"promptText":"Rosa's jar holds 37 seashells; June's jar holds 47. Poured together, how many seashells fill one jar? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"counting":{"kind":"sum","parts":[37,47]},"promptText":"Rosa's jar holds 37 seashells; June's jar holds 47. Poured together, how many seashells fill one jar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0031",
@@ -312,7 +312,7 @@ export const ITEMS = [
     structureType: "storyJoin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"counting":{"kind":"sum","parts":[66,22]},"promptText":"Between them, Finn brings 66 trading cards and Zoe brings 22. What is their combined count of trading cards? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"counting":{"kind":"sum","parts":[66,22]},"promptText":"Between them, Finn brings 66 trading cards and Zoe brings 22. What is their combined count of trading cards?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0032",
@@ -322,7 +322,7 @@ export const ITEMS = [
     structureType: "storyJoin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":93,"display":{"counting":{"kind":"sum","parts":[44,49]},"promptText":"Amara gathers 44 acorns and Ben gathers 49. How many acorns do they gather altogether? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":93,"display":{"counting":{"kind":"sum","parts":[44,49]},"promptText":"Amara gathers 44 acorns and Ben gathers 49. How many acorns do they gather altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0033",
@@ -332,7 +332,7 @@ export const ITEMS = [
     structureType: "storyJoin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":89,"display":{"counting":{"kind":"sum","parts":[58,31]},"promptText":"Diego's jar holds 58 bottle caps; Lily's jar holds 31. Poured together, how many bottle caps fill one jar? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":89,"display":{"counting":{"kind":"sum","parts":[58,31]},"promptText":"Diego's jar holds 58 bottle caps; Lily's jar holds 31. Poured together, how many bottle caps fill one jar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0034",
@@ -342,7 +342,7 @@ export const ITEMS = [
     structureType: "storyJoin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":93,"display":{"counting":{"kind":"sum","parts":[25,68]},"promptText":"Between them, Priya brings 25 seashells and Rosa brings 68. What is their combined count of seashells? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":93,"display":{"counting":{"kind":"sum","parts":[25,68]},"promptText":"Between them, Priya brings 25 seashells and Rosa brings 68. What is their combined count of seashells?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0035",
@@ -352,7 +352,7 @@ export const ITEMS = [
     structureType: "storyJoin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":558,"display":{"counting":{"kind":"sum","parts":[227,331]},"promptText":"Between them, Luca brings 227 seashells and Nia brings 331. What is their combined count of seashells? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":558,"display":{"counting":{"kind":"sum","parts":[227,331]},"promptText":"Between them, Luca brings 227 seashells and Nia brings 331. What is their combined count of seashells?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0036",
@@ -362,7 +362,7 @@ export const ITEMS = [
     structureType: "storyJoin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":780,"display":{"counting":{"kind":"sum","parts":[338,442]},"promptText":"Nia gathers 338 trading cards and Theo gathers 442. How many trading cards do they gather altogether? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":780,"display":{"counting":{"kind":"sum","parts":[338,442]},"promptText":"Nia gathers 338 trading cards and Theo gathers 442. How many trading cards do they gather altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0037",
@@ -372,7 +372,7 @@ export const ITEMS = [
     structureType: "storyJoin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":672,"display":{"counting":{"kind":"sum","parts":[449,223]},"promptText":"Theo's jar holds 449 acorns; Ava's jar holds 223. Poured together, how many acorns fill one jar? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":672,"display":{"counting":{"kind":"sum","parts":[449,223]},"promptText":"Theo's jar holds 449 acorns; Ava's jar holds 223. Poured together, how many acorns fill one jar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0038",
@@ -382,7 +382,7 @@ export const ITEMS = [
     structureType: "storyJoin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":745,"display":{"counting":{"kind":"sum","parts":[554,191]},"promptText":"Between them, Ava brings 554 bottle caps and Kai brings 191. What is their combined count of bottle caps? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":745,"display":{"counting":{"kind":"sum","parts":[554,191]},"promptText":"Between them, Ava brings 554 bottle caps and Kai brings 191. What is their combined count of bottle caps?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0039",
@@ -392,7 +392,7 @@ export const ITEMS = [
     structureType: "storyJoin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":780,"display":{"counting":{"kind":"sum","parts":[335,445]},"promptText":"Kai gathers 335 seashells and Ida gathers 445. How many seashells do they gather altogether? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":780,"display":{"counting":{"kind":"sum","parts":[335,445]},"promptText":"Kai gathers 335 seashells and Ida gathers 445. How many seashells do they gather altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0040",
@@ -402,7 +402,7 @@ export const ITEMS = [
     structureType: "storyJoin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":890,"display":{"counting":{"kind":"sum","parts":[228,662]},"promptText":"Ida's jar holds 228 trading cards; Omar's jar holds 662. Poured together, how many trading cards fill one jar? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":890,"display":{"counting":{"kind":"sum","parts":[228,662]},"promptText":"Ida's jar holds 228 trading cards; Omar's jar holds 662. Poured together, how many trading cards fill one jar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0041",
@@ -412,7 +412,7 @@ export const ITEMS = [
     structureType: "storyJoin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":892,"display":{"counting":{"kind":"sum","parts":[559,333]},"promptText":"Between them, Omar brings 559 acorns and June brings 333. What is their combined count of acorns? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":892,"display":{"counting":{"kind":"sum","parts":[559,333]},"promptText":"Between them, Omar brings 559 acorns and June brings 333. What is their combined count of acorns?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0042",
@@ -422,7 +422,7 @@ export const ITEMS = [
     structureType: "storyJoin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":833,"display":{"counting":{"kind":"sum","parts":[442,391]},"promptText":"June gathers 442 bottle caps and Zoe gathers 391. How many bottle caps do they gather altogether? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":833,"display":{"counting":{"kind":"sum","parts":[442,391]},"promptText":"June gathers 442 bottle caps and Zoe gathers 391. How many bottle caps do they gather altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0043",
@@ -432,7 +432,7 @@ export const ITEMS = [
     structureType: "storyJoin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":835,"display":{"counting":{"kind":"sum","parts":[663,172]},"promptText":"Zoe's jar holds 663 seashells; Ben's jar holds 172. Poured together, how many seashells fill one jar? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":835,"display":{"counting":{"kind":"sum","parts":[663,172]},"promptText":"Zoe's jar holds 663 seashells; Ben's jar holds 172. Poured together, how many seashells fill one jar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0044",
@@ -442,7 +442,7 @@ export const ITEMS = [
     structureType: "storyJoin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":847,"display":{"counting":{"kind":"sum","parts":[303,544]},"promptText":"Between them, Ben brings 303 trading cards and Lily brings 544. What is their combined count of trading cards? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":847,"display":{"counting":{"kind":"sum","parts":[303,544]},"promptText":"Between them, Ben brings 303 trading cards and Lily brings 544. What is their combined count of trading cards?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0045",
@@ -452,7 +452,7 @@ export const ITEMS = [
     structureType: "storyJoin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":859,"display":{"counting":{"kind":"sum","parts":[477,382]},"promptText":"Lily gathers 477 acorns and Rosa gathers 382. How many acorns do they gather altogether? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":859,"display":{"counting":{"kind":"sum","parts":[477,382]},"promptText":"Lily gathers 477 acorns and Rosa gathers 382. How many acorns do they gather altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0046",
@@ -462,7 +462,7 @@ export const ITEMS = [
     structureType: "storyJoin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":833,"display":{"counting":{"kind":"sum","parts":[552,281]},"promptText":"Rosa's jar holds 552 bottle caps; Finn's jar holds 281. Poured together, how many bottle caps fill one jar? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":833,"display":{"counting":{"kind":"sum","parts":[552,281]},"promptText":"Rosa's jar holds 552 bottle caps; Finn's jar holds 281. Poured together, how many bottle caps fill one jar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0047",
@@ -472,7 +472,7 @@ export const ITEMS = [
     structureType: "storyJoin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":847,"display":{"counting":{"kind":"sum","parts":[376,471]},"promptText":"Between them, Finn brings 376 seashells and Amara brings 471. What is their combined count of seashells? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":847,"display":{"counting":{"kind":"sum","parts":[376,471]},"promptText":"Between them, Finn brings 376 seashells and Amara brings 471. What is their combined count of seashells?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0048",
@@ -482,7 +482,7 @@ export const ITEMS = [
     structureType: "storyJoin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":892,"display":{"counting":{"kind":"sum","parts":[665,227]},"promptText":"Amara gathers 665 trading cards and Diego gathers 227. How many trading cards do they gather altogether? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":892,"display":{"counting":{"kind":"sum","parts":[665,227]},"promptText":"Amara gathers 665 trading cards and Diego gathers 227. How many trading cards do they gather altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0049",
@@ -492,7 +492,7 @@ export const ITEMS = [
     structureType: "storyJoin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":937,"display":{"counting":{"kind":"sum","parts":[444,493]},"promptText":"Diego's jar holds 444 acorns; Priya's jar holds 493. Poured together, how many acorns fill one jar? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":937,"display":{"counting":{"kind":"sum","parts":[444,493]},"promptText":"Diego's jar holds 444 acorns; Priya's jar holds 493. Poured together, how many acorns fill one jar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0050",
@@ -502,7 +502,7 @@ export const ITEMS = [
     structureType: "storyJoin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":897,"display":{"counting":{"kind":"sum","parts":[581,316]},"promptText":"Between them, Priya brings 581 bottle caps and Leo brings 316. What is their combined count of bottle caps? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":897,"display":{"counting":{"kind":"sum","parts":[581,316]},"promptText":"Between them, Priya brings 581 bottle caps and Leo brings 316. What is their combined count of bottle caps?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0051",
@@ -512,7 +512,7 @@ export const ITEMS = [
     structureType: "storyJoin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":942,"display":{"counting":{"kind":"sum","parts":[259,683]},"promptText":"Leo gathers 259 seashells and Nora gathers 683. How many seashells do they gather altogether? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":942,"display":{"counting":{"kind":"sum","parts":[259,683]},"promptText":"Leo gathers 259 seashells and Nora gathers 683. How many seashells do they gather altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0052",
@@ -692,7 +692,7 @@ export const ITEMS = [
     structureType: "storyLeft_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"part":27,"type":"barPartWhole","whole":45,"counting":{"back":27,"kind":"countBack","start":45},"promptText":"A pouch of 45 seashells loses 27 through a hole. How many seashells stay in Luca's pouch? Sketch the bar if it helps."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"part":27,"type":"barPartWhole","whole":45,"counting":{"back":27,"kind":"countBack","start":45},"promptText":"Luca's pouch holds 45 seashells, and 27 of them fall out through a hole. How many seashells are still in the pouch?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0070",
@@ -702,7 +702,7 @@ export const ITEMS = [
     structureType: "storyLeft_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"part":38,"type":"barPartWhole","whole":62,"counting":{"back":38,"kind":"countBack","start":62},"promptText":"Nia starts with 62 trading cards and gives away 38. How many trading cards does Nia still have? Sketch the bar if it helps."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"part":38,"type":"barPartWhole","whole":62,"counting":{"back":38,"kind":"countBack","start":62},"promptText":"Nia starts with 62 trading cards and gives away 38. How many trading cards does Nia still have?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0071",
@@ -712,7 +712,7 @@ export const ITEMS = [
     structureType: "storyLeft_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"part":46,"type":"barPartWhole","whole":71,"counting":{"back":46,"kind":"countBack","start":71},"promptText":"Of Theo's 71 acorns, 46 get traded away. What number of acorns remains? Sketch the bar if it helps."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"part":46,"type":"barPartWhole","whole":71,"counting":{"back":46,"kind":"countBack","start":71},"promptText":"Of Theo's 71 acorns, 46 get traded away. What number of acorns remains?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0072",
@@ -722,7 +722,7 @@ export const ITEMS = [
     structureType: "storyLeft_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"part":29,"type":"barPartWhole","whole":53,"counting":{"back":29,"kind":"countBack","start":53},"promptText":"A pouch of 53 bottle caps loses 29 through a hole. How many bottle caps stay in Ava's pouch? Sketch the bar if it helps."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"part":29,"type":"barPartWhole","whole":53,"counting":{"back":29,"kind":"countBack","start":53},"promptText":"Ava's pouch holds 53 bottle caps, and 29 of them fall out through a hole. How many bottle caps are still in the pouch?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0073",
@@ -732,7 +732,7 @@ export const ITEMS = [
     structureType: "storyLeft_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"part":57,"type":"barPartWhole","whole":84,"counting":{"back":57,"kind":"countBack","start":84},"promptText":"Kai starts with 84 seashells and gives away 57. How many seashells does Kai still have? Sketch the bar if it helps."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"part":57,"type":"barPartWhole","whole":84,"counting":{"back":57,"kind":"countBack","start":84},"promptText":"Kai starts with 84 seashells and gives away 57. How many seashells does Kai still have?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0074",
@@ -742,7 +742,7 @@ export const ITEMS = [
     structureType: "storyLeft_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"part":31,"type":"barPartWhole","whole":66,"counting":{"back":31,"kind":"countBack","start":66},"promptText":"Of Ida's 66 trading cards, 31 get traded away. What number of trading cards remains? Sketch the bar if it helps."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"part":31,"type":"barPartWhole","whole":66,"counting":{"back":31,"kind":"countBack","start":66},"promptText":"Of Ida's 66 trading cards, 31 get traded away. What number of trading cards remains?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0075",
@@ -752,7 +752,7 @@ export const ITEMS = [
     structureType: "storyLeft_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"part":68,"type":"barPartWhole","whole":92,"counting":{"back":68,"kind":"countBack","start":92},"promptText":"A pouch of 92 acorns loses 68 through a hole. How many acorns stay in Omar's pouch? Sketch the bar if it helps."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"part":68,"type":"barPartWhole","whole":92,"counting":{"back":68,"kind":"countBack","start":92},"promptText":"Omar's pouch holds 92 acorns, and 68 of them fall out through a hole. How many acorns are still in the pouch?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0076",
@@ -762,7 +762,7 @@ export const ITEMS = [
     structureType: "storyLeft_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"part":24,"type":"barPartWhole","whole":58,"counting":{"back":24,"kind":"countBack","start":58},"promptText":"June starts with 58 bottle caps and gives away 24. How many bottle caps does June still have? Sketch the bar if it helps."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"part":24,"type":"barPartWhole","whole":58,"counting":{"back":24,"kind":"countBack","start":58},"promptText":"June starts with 58 bottle caps and gives away 24. How many bottle caps does June still have?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0077",
@@ -772,7 +772,7 @@ export const ITEMS = [
     structureType: "storyLeft_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"part":49,"type":"barPartWhole","whole":77,"counting":{"back":49,"kind":"countBack","start":77},"promptText":"Of Zoe's 77 seashells, 49 get traded away. What number of seashells remains? Sketch the bar if it helps."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"part":49,"type":"barPartWhole","whole":77,"counting":{"back":49,"kind":"countBack","start":77},"promptText":"Of Zoe's 77 seashells, 49 get traded away. What number of seashells remains?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0078",
@@ -782,7 +782,7 @@ export const ITEMS = [
     structureType: "storyLeft_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"part":36,"type":"barPartWhole","whole":63,"counting":{"back":36,"kind":"countBack","start":63},"promptText":"A pouch of 63 trading cards loses 36 through a hole. How many trading cards stay in Ben's pouch? Sketch the bar if it helps."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"part":36,"type":"barPartWhole","whole":63,"counting":{"back":36,"kind":"countBack","start":63},"promptText":"Ben's pouch holds 63 trading cards, and 36 of them fall out through a hole. How many trading cards are still in the pouch?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0079",
@@ -792,7 +792,7 @@ export const ITEMS = [
     structureType: "storyLeft_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"part":52,"type":"barPartWhole","whole":85,"counting":{"back":52,"kind":"countBack","start":85},"promptText":"Lily starts with 85 acorns and gives away 52. How many acorns does Lily still have? Sketch the bar if it helps."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"part":52,"type":"barPartWhole","whole":85,"counting":{"back":52,"kind":"countBack","start":85},"promptText":"Lily starts with 85 acorns and gives away 52. How many acorns does Lily still have?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0080",
@@ -802,7 +802,7 @@ export const ITEMS = [
     structureType: "storyLeft_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"part":18,"type":"barPartWhole","whole":49,"counting":{"back":18,"kind":"countBack","start":49},"promptText":"Of Rosa's 49 bottle caps, 18 get traded away. What number of bottle caps remains? Sketch the bar if it helps."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"part":18,"type":"barPartWhole","whole":49,"counting":{"back":18,"kind":"countBack","start":49},"promptText":"Of Rosa's 49 bottle caps, 18 get traded away. What number of bottle caps remains?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0081",
@@ -812,7 +812,7 @@ export const ITEMS = [
     structureType: "storyLeft_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"part":73,"type":"barPartWhole","whole":96,"counting":{"back":73,"kind":"countBack","start":96},"promptText":"A pouch of 96 seashells loses 73 through a hole. How many seashells stay in Finn's pouch? Sketch the bar if it helps."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"part":73,"type":"barPartWhole","whole":96,"counting":{"back":73,"kind":"countBack","start":96},"promptText":"Finn's pouch holds 96 seashells, and 73 of them fall out through a hole. How many seashells are still in the pouch?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0082",
@@ -822,7 +822,7 @@ export const ITEMS = [
     structureType: "storyLeft_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"part":42,"type":"barPartWhole","whole":67,"counting":{"back":42,"kind":"countBack","start":67},"promptText":"Amara starts with 67 trading cards and gives away 42. How many trading cards does Amara still have? Sketch the bar if it helps."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"part":42,"type":"barPartWhole","whole":67,"counting":{"back":42,"kind":"countBack","start":67},"promptText":"Amara starts with 67 trading cards and gives away 42. How many trading cards does Amara still have?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0083",
@@ -832,7 +832,7 @@ export const ITEMS = [
     structureType: "storyLeft_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"part":28,"type":"barPartWhole","whole":74,"counting":{"back":28,"kind":"countBack","start":74},"promptText":"Of Diego's 74 acorns, 28 get traded away. What number of acorns remains? Sketch the bar if it helps."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"part":28,"type":"barPartWhole","whole":74,"counting":{"back":28,"kind":"countBack","start":74},"promptText":"Of Diego's 74 acorns, 28 get traded away. What number of acorns remains?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0084",
@@ -842,7 +842,7 @@ export const ITEMS = [
     structureType: "storyLeft_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"part":61,"type":"barPartWhole","whole":88,"counting":{"back":61,"kind":"countBack","start":88},"promptText":"A pouch of 88 bottle caps loses 61 through a hole. How many bottle caps stay in Priya's pouch? Sketch the bar if it helps."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"part":61,"type":"barPartWhole","whole":88,"counting":{"back":61,"kind":"countBack","start":88},"promptText":"Priya's pouch holds 88 bottle caps, and 61 of them fall out through a hole. How many bottle caps are still in the pouch?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0085",
@@ -852,7 +852,7 @@ export const ITEMS = [
     structureType: "storyLeft_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"part":33,"type":"barPartWhole","whole":55,"counting":{"back":33,"kind":"countBack","start":55},"promptText":"Leo starts with 55 seashells and gives away 33. How many seashells does Leo still have? Sketch the bar if it helps."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"part":33,"type":"barPartWhole","whole":55,"counting":{"back":33,"kind":"countBack","start":55},"promptText":"Leo starts with 55 seashells and gives away 33. How many seashells does Leo still have?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0086",
@@ -862,7 +862,7 @@ export const ITEMS = [
     structureType: "storyLeft_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":185,"display":{"part":267,"type":"barPartWhole","whole":452,"counting":{"back":267,"kind":"countBack","start":452},"promptText":"Sam starts with 452 seashells and gives away 267. How many seashells does Sam still have? A bar model makes it clear."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":185,"display":{"part":267,"type":"barPartWhole","whole":452,"counting":{"back":267,"kind":"countBack","start":452},"promptText":"Sam starts with 452 seashells and gives away 267. How many seashells does Sam still have?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0087",
@@ -872,7 +872,7 @@ export const ITEMS = [
     structureType: "storyLeft_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":234,"display":{"part":384,"type":"barPartWhole","whole":618,"counting":{"back":384,"kind":"countBack","start":618},"promptText":"Of Mina's 618 trading cards, 384 get traded away. What number of trading cards remains? A bar model makes it clear."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":234,"display":{"part":384,"type":"barPartWhole","whole":618,"counting":{"back":384,"kind":"countBack","start":618},"promptText":"Of Mina's 618 trading cards, 384 get traded away. What number of trading cards remains?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0088",
@@ -882,7 +882,7 @@ export const ITEMS = [
     structureType: "storyLeft_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":267,"display":{"part":456,"type":"barPartWhole","whole":723,"counting":{"back":456,"kind":"countBack","start":723},"promptText":"A pouch of 723 acorns loses 456 through a hole. How many acorns stay in Luca's pouch? A bar model makes it clear."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":267,"display":{"part":456,"type":"barPartWhole","whole":723,"counting":{"back":456,"kind":"countBack","start":723},"promptText":"Luca's big sack holds 723 acorns, and 456 of them fall out through a hole. How many acorns are still in the sack?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0089",
@@ -892,7 +892,7 @@ export const ITEMS = [
     structureType: "storyLeft_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":248,"display":{"part":291,"type":"barPartWhole","whole":539,"counting":{"back":291,"kind":"countBack","start":539},"promptText":"Nia starts with 539 bottle caps and gives away 291. How many bottle caps does Nia still have? A bar model makes it clear."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":248,"display":{"part":291,"type":"barPartWhole","whole":539,"counting":{"back":291,"kind":"countBack","start":539},"promptText":"Nia starts with 539 bottle caps and gives away 291. How many bottle caps does Nia still have?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0090",
@@ -902,7 +902,7 @@ export const ITEMS = [
     structureType: "storyLeft_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":274,"display":{"part":572,"type":"barPartWhole","whole":846,"counting":{"back":572,"kind":"countBack","start":846},"promptText":"Of Theo's 846 seashells, 572 get traded away. What number of seashells remains? A bar model makes it clear."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":274,"display":{"part":572,"type":"barPartWhole","whole":846,"counting":{"back":572,"kind":"countBack","start":846},"promptText":"Of Theo's 846 seashells, 572 get traded away. What number of seashells remains?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0091",
@@ -912,7 +912,7 @@ export const ITEMS = [
     structureType: "storyLeft_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":349,"display":{"part":318,"type":"barPartWhole","whole":667,"counting":{"back":318,"kind":"countBack","start":667},"promptText":"A pouch of 667 trading cards loses 318 through a hole. How many trading cards stay in Ava's pouch? A bar model makes it clear."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":349,"display":{"part":318,"type":"barPartWhole","whole":667,"counting":{"back":318,"kind":"countBack","start":667},"promptText":"Ava's big sack holds 667 trading cards, and 318 of them fall out through a hole. How many trading cards are still in the sack?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0092",
@@ -922,7 +922,7 @@ export const ITEMS = [
     structureType: "storyLeft_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":241,"display":{"part":683,"type":"barPartWhole","whole":924,"counting":{"back":683,"kind":"countBack","start":924},"promptText":"Kai starts with 924 acorns and gives away 683. How many acorns does Kai still have? A bar model makes it clear."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":241,"display":{"part":683,"type":"barPartWhole","whole":924,"counting":{"back":683,"kind":"countBack","start":924},"promptText":"Kai starts with 924 acorns and gives away 683. How many acorns does Kai still have?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0093",
@@ -932,7 +932,7 @@ export const ITEMS = [
     structureType: "storyLeft_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":337,"display":{"part":246,"type":"barPartWhole","whole":583,"counting":{"back":246,"kind":"countBack","start":583},"promptText":"Of Ida's 583 bottle caps, 246 get traded away. What number of bottle caps remains? A bar model makes it clear."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":337,"display":{"part":246,"type":"barPartWhole","whole":583,"counting":{"back":246,"kind":"countBack","start":583},"promptText":"Of Ida's 583 bottle caps, 246 get traded away. What number of bottle caps remains?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0094",
@@ -942,7 +942,7 @@ export const ITEMS = [
     structureType: "storyLeft_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":284,"display":{"part":491,"type":"barPartWhole","whole":775,"counting":{"back":491,"kind":"countBack","start":775},"promptText":"A pouch of 775 seashells loses 491 through a hole. How many seashells stay in Omar's pouch? A bar model makes it clear."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":284,"display":{"part":491,"type":"barPartWhole","whole":775,"counting":{"back":491,"kind":"countBack","start":775},"promptText":"Omar's big sack holds 775 seashells, and 491 of them fall out through a hole. How many seashells are still in the sack?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0095",
@@ -952,7 +952,7 @@ export const ITEMS = [
     structureType: "storyLeft_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":276,"display":{"part":362,"type":"barPartWhole","whole":638,"counting":{"back":362,"kind":"countBack","start":638},"promptText":"June starts with 638 trading cards and gives away 362. How many trading cards does June still have? A bar model makes it clear."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":276,"display":{"part":362,"type":"barPartWhole","whole":638,"counting":{"back":362,"kind":"countBack","start":638},"promptText":"June starts with 638 trading cards and gives away 362. How many trading cards does June still have?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0096",
@@ -962,7 +962,7 @@ export const ITEMS = [
     structureType: "storyLeft_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":325,"display":{"part":527,"type":"barPartWhole","whole":852,"counting":{"back":527,"kind":"countBack","start":852},"promptText":"Of Zoe's 852 acorns, 527 get traded away. What number of acorns remains? A bar model makes it clear."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":325,"display":{"part":527,"type":"barPartWhole","whole":852,"counting":{"back":527,"kind":"countBack","start":852},"promptText":"Of Zoe's 852 acorns, 527 get traded away. What number of acorns remains?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0097",
@@ -972,7 +972,7 @@ export const ITEMS = [
     structureType: "storyLeft_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":314,"display":{"part":183,"type":"barPartWhole","whole":497,"counting":{"back":183,"kind":"countBack","start":497},"promptText":"A pouch of 497 bottle caps loses 183 through a hole. How many bottle caps stay in Ben's pouch? A bar model makes it clear."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":314,"display":{"part":183,"type":"barPartWhole","whole":497,"counting":{"back":183,"kind":"countBack","start":497},"promptText":"Ben's big sack holds 497 bottle caps, and 183 of them fall out through a hole. How many bottle caps are still in the sack?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0098",
@@ -982,7 +982,7 @@ export const ITEMS = [
     structureType: "storyLeft_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":234,"display":{"part":734,"type":"barPartWhole","whole":968,"counting":{"back":734,"kind":"countBack","start":968},"promptText":"Lily starts with 968 seashells and gives away 734. How many seashells does Lily still have? A bar model makes it clear."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":234,"display":{"part":734,"type":"barPartWhole","whole":968,"counting":{"back":734,"kind":"countBack","start":968},"promptText":"Lily starts with 968 seashells and gives away 734. How many seashells does Lily still have?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0099",
@@ -992,7 +992,7 @@ export const ITEMS = [
     structureType: "storyLeft_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":248,"display":{"part":428,"type":"barPartWhole","whole":676,"counting":{"back":428,"kind":"countBack","start":676},"promptText":"Of Rosa's 676 trading cards, 428 get traded away. What number of trading cards remains? A bar model makes it clear."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":248,"display":{"part":428,"type":"barPartWhole","whole":676,"counting":{"back":428,"kind":"countBack","start":676},"promptText":"Of Rosa's 676 trading cards, 428 get traded away. What number of trading cards remains?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0100",
@@ -1002,7 +1002,7 @@ export const ITEMS = [
     structureType: "storyLeft_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":456,"display":{"part":285,"type":"barPartWhole","whole":741,"counting":{"back":285,"kind":"countBack","start":741},"promptText":"A pouch of 741 acorns loses 285 through a hole. How many acorns stay in Finn's pouch? A bar model makes it clear."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":456,"display":{"part":285,"type":"barPartWhole","whole":741,"counting":{"back":285,"kind":"countBack","start":741},"promptText":"Finn's big sack holds 741 acorns, and 285 of them fall out through a hole. How many acorns are still in the sack?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0101",
@@ -1012,7 +1012,7 @@ export const ITEMS = [
     structureType: "storyLeft_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":266,"display":{"part":617,"type":"barPartWhole","whole":883,"counting":{"back":617,"kind":"countBack","start":883},"promptText":"Amara starts with 883 bottle caps and gives away 617. How many bottle caps does Amara still have? A bar model makes it clear."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":266,"display":{"part":617,"type":"barPartWhole","whole":883,"counting":{"back":617,"kind":"countBack","start":883},"promptText":"Amara starts with 883 bottle caps and gives away 617. How many bottle caps does Amara still have?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0102",
@@ -1022,7 +1022,7 @@ export const ITEMS = [
     structureType: "storyLeft_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":218,"display":{"part":338,"type":"barPartWhole","whole":556,"counting":{"back":338,"kind":"countBack","start":556},"promptText":"Of Diego's 556 seashells, 338 get traded away. What number of seashells remains? A bar model makes it clear."},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":218,"display":{"part":338,"type":"barPartWhole","whole":556,"counting":{"back":338,"kind":"countBack","start":556},"promptText":"Of Diego's 556 seashells, 338 get traded away. What number of seashells remains?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-app-b0821-0103",
@@ -1202,7 +1202,7 @@ export const ITEMS = [
     structureType: "storyThree_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"counting":{"kind":"sum","parts":[24,25,26]},"promptText":"Sam sorts seashells into three boxes: 24, 25, and 26. How many seashells are there in all? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"counting":{"kind":"sum","parts":[24,25,26]},"promptText":"Sam sorts seashells into three boxes: 24, 25, and 26. How many seashells are there in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0121",
@@ -1212,7 +1212,7 @@ export const ITEMS = [
     structureType: "storyThree_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"counting":{"kind":"sum","parts":[25,26,24]},"promptText":"Three shelves hold Mina's trading cards: 25 on top, 26 in the middle, 24 below. What is the total count of trading cards? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"counting":{"kind":"sum","parts":[25,26,24]},"promptText":"Three shelves hold Mina's trading cards: 25 on top, 26 in the middle, 24 below. What is the total count of trading cards?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0122",
@@ -1222,7 +1222,7 @@ export const ITEMS = [
     structureType: "storyThree_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"counting":{"kind":"sum","parts":[26,25,37]},"promptText":"Luca packs 26, then 25, then 37 acorns. Altogether, how many acorns get packed? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"counting":{"kind":"sum","parts":[26,25,37]},"promptText":"Luca packs 26, then 25, then 37 acorns. Altogether, how many acorns get packed?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0123",
@@ -1232,7 +1232,7 @@ export const ITEMS = [
     structureType: "storyThree_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"counting":{"kind":"sum","parts":[24,26,38]},"promptText":"Nia sorts bottle caps into three boxes: 24, 26, and 38. How many bottle caps are there in all? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"counting":{"kind":"sum","parts":[24,26,38]},"promptText":"Nia sorts bottle caps into three boxes: 24, 26, and 38. How many bottle caps are there in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0124",
@@ -1242,7 +1242,7 @@ export const ITEMS = [
     structureType: "storyThree_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":62,"display":{"counting":{"kind":"sum","parts":[13,24,25]},"promptText":"Three shelves hold Theo's seashells: 13 on top, 24 in the middle, 25 below. What is the total count of seashells? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":62,"display":{"counting":{"kind":"sum","parts":[13,24,25]},"promptText":"Three shelves hold Theo's seashells: 13 on top, 24 in the middle, 25 below. What is the total count of seashells?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0125",
@@ -1252,7 +1252,7 @@ export const ITEMS = [
     structureType: "storyThree_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":65,"display":{"counting":{"kind":"sum","parts":[25,15,25]},"promptText":"Ava packs 25, then 15, then 25 trading cards. Altogether, how many trading cards get packed? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":65,"display":{"counting":{"kind":"sum","parts":[25,15,25]},"promptText":"Ava packs 25, then 15, then 25 trading cards. Altogether, how many trading cards get packed?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0126",
@@ -1262,7 +1262,7 @@ export const ITEMS = [
     structureType: "storyThree_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"counting":{"kind":"sum","parts":[26,27,37]},"promptText":"Kai sorts acorns into three boxes: 26, 27, and 37. How many acorns are there in all? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"counting":{"kind":"sum","parts":[26,27,37]},"promptText":"Kai sorts acorns into three boxes: 26, 27, and 37. How many acorns are there in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0127",
@@ -1272,7 +1272,7 @@ export const ITEMS = [
     structureType: "storyThree_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"counting":{"kind":"sum","parts":[25,26,37]},"promptText":"Three shelves hold Ida's bottle caps: 25 on top, 26 in the middle, 37 below. What is the total count of bottle caps? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"counting":{"kind":"sum","parts":[25,26,37]},"promptText":"Three shelves hold Ida's bottle caps: 25 on top, 26 in the middle, 37 below. What is the total count of bottle caps?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0128",
@@ -1282,7 +1282,7 @@ export const ITEMS = [
     structureType: "storyThree_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":63,"display":{"counting":{"kind":"sum","parts":[13,24,26]},"promptText":"Omar packs 13, then 24, then 26 seashells. Altogether, how many seashells get packed? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":63,"display":{"counting":{"kind":"sum","parts":[13,24,26]},"promptText":"Omar packs 13, then 24, then 26 seashells. Altogether, how many seashells get packed?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0129",
@@ -1292,7 +1292,7 @@ export const ITEMS = [
     structureType: "storyThree_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":66,"display":{"counting":{"kind":"sum","parts":[25,15,26]},"promptText":"June sorts trading cards into three boxes: 25, 15, and 26. How many trading cards are there in all? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":66,"display":{"counting":{"kind":"sum","parts":[25,15,26]},"promptText":"June sorts trading cards into three boxes: 25, 15, and 26. How many trading cards are there in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0130",
@@ -1302,7 +1302,7 @@ export const ITEMS = [
     structureType: "storyThree_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":77,"display":{"counting":{"kind":"sum","parts":[25,26,26]},"promptText":"Three shelves hold Zoe's acorns: 25 on top, 26 in the middle, 26 below. What is the total count of acorns? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":77,"display":{"counting":{"kind":"sum","parts":[25,26,26]},"promptText":"Three shelves hold Zoe's acorns: 25 on top, 26 in the middle, 26 below. What is the total count of acorns?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0131",
@@ -1312,7 +1312,7 @@ export const ITEMS = [
     structureType: "storyThree_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"counting":{"kind":"sum","parts":[25,27,39]},"promptText":"Ben packs 25, then 27, then 39 bottle caps. Altogether, how many bottle caps get packed? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"counting":{"kind":"sum","parts":[25,27,39]},"promptText":"Ben packs 25, then 27, then 39 bottle caps. Altogether, how many bottle caps get packed?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0132",
@@ -1322,7 +1322,7 @@ export const ITEMS = [
     structureType: "storyThree_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":66,"display":{"counting":{"kind":"sum","parts":[14,25,27]},"promptText":"Lily sorts seashells into three boxes: 14, 25, and 27. How many seashells are there in all? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":66,"display":{"counting":{"kind":"sum","parts":[14,25,27]},"promptText":"Lily sorts seashells into three boxes: 14, 25, and 27. How many seashells are there in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0133",
@@ -1332,7 +1332,7 @@ export const ITEMS = [
     structureType: "storyThree_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":77,"display":{"counting":{"kind":"sum","parts":[25,26,26]},"promptText":"Three shelves hold Rosa's trading cards: 25 on top, 26 in the middle, 26 below. What is the total count of trading cards? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":77,"display":{"counting":{"kind":"sum","parts":[25,26,26]},"promptText":"Three shelves hold Rosa's trading cards: 25 on top, 26 in the middle, 26 below. What is the total count of trading cards?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0134",
@@ -1342,7 +1342,7 @@ export const ITEMS = [
     structureType: "storyThree_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":89,"display":{"counting":{"kind":"sum","parts":[26,26,37]},"promptText":"Finn packs 26, then 26, then 37 acorns. Altogether, how many acorns get packed? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":89,"display":{"counting":{"kind":"sum","parts":[26,26,37]},"promptText":"Finn packs 26, then 26, then 37 acorns. Altogether, how many acorns get packed?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0135",
@@ -1352,7 +1352,7 @@ export const ITEMS = [
     structureType: "storyThree_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":63,"display":{"counting":{"kind":"sum","parts":[14,24,25]},"promptText":"Amara sorts bottle caps into three boxes: 14, 24, and 25. How many bottle caps are there in all? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":63,"display":{"counting":{"kind":"sum","parts":[14,24,25]},"promptText":"Amara sorts bottle caps into three boxes: 14, 24, and 25. How many bottle caps are there in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0136",
@@ -1362,7 +1362,7 @@ export const ITEMS = [
     structureType: "storyThree_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":63,"display":{"counting":{"kind":"sum","parts":[12,25,26]},"promptText":"Three shelves hold Diego's seashells: 12 on top, 25 in the middle, 26 below. What is the total count of seashells? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":63,"display":{"counting":{"kind":"sum","parts":[12,25,26]},"promptText":"Three shelves hold Diego's seashells: 12 on top, 25 in the middle, 26 below. What is the total count of seashells?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0137",
@@ -1372,7 +1372,7 @@ export const ITEMS = [
     structureType: "storyThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":675,"display":{"counting":{"kind":"sum","parts":[224,225,226]},"promptText":"Three shelves hold Mina's seashells: 224 on top, 225 in the middle, 226 below. What is the total count of seashells? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":675,"display":{"counting":{"kind":"sum","parts":[224,225,226]},"promptText":"Three shelves hold Mina's seashells: 224 on top, 225 in the middle, 226 below. What is the total count of seashells?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0138",
@@ -1382,7 +1382,7 @@ export const ITEMS = [
     structureType: "storyThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":675,"display":{"counting":{"kind":"sum","parts":[225,226,224]},"promptText":"Luca packs 225, then 226, then 224 trading cards. Altogether, how many trading cards get packed? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":675,"display":{"counting":{"kind":"sum","parts":[225,226,224]},"promptText":"Luca packs 225, then 226, then 224 trading cards. Altogether, how many trading cards get packed?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0139",
@@ -1392,7 +1392,7 @@ export const ITEMS = [
     structureType: "storyThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":788,"display":{"counting":{"kind":"sum","parts":[226,225,337]},"promptText":"Nia sorts acorns into three boxes: 226, 225, and 337. How many acorns are there in all? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":788,"display":{"counting":{"kind":"sum","parts":[226,225,337]},"promptText":"Nia sorts acorns into three boxes: 226, 225, and 337. How many acorns are there in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0140",
@@ -1402,7 +1402,7 @@ export const ITEMS = [
     structureType: "storyThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":788,"display":{"counting":{"kind":"sum","parts":[224,226,338]},"promptText":"Three shelves hold Theo's bottle caps: 224 on top, 226 in the middle, 338 below. What is the total count of bottle caps? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":788,"display":{"counting":{"kind":"sum","parts":[224,226,338]},"promptText":"Three shelves hold Theo's bottle caps: 224 on top, 226 in the middle, 338 below. What is the total count of bottle caps?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0141",
@@ -1412,7 +1412,7 @@ export const ITEMS = [
     structureType: "storyThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":562,"display":{"counting":{"kind":"sum","parts":[113,224,225]},"promptText":"Ava packs 113, then 224, then 225 seashells. Altogether, how many seashells get packed? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":562,"display":{"counting":{"kind":"sum","parts":[113,224,225]},"promptText":"Ava packs 113, then 224, then 225 seashells. Altogether, how many seashells get packed?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0142",
@@ -1422,7 +1422,7 @@ export const ITEMS = [
     structureType: "storyThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":565,"display":{"counting":{"kind":"sum","parts":[225,115,225]},"promptText":"Kai sorts trading cards into three boxes: 225, 115, and 225. How many trading cards are there in all? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":565,"display":{"counting":{"kind":"sum","parts":[225,115,225]},"promptText":"Kai sorts trading cards into three boxes: 225, 115, and 225. How many trading cards are there in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0143",
@@ -1432,7 +1432,7 @@ export const ITEMS = [
     structureType: "storyThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":890,"display":{"counting":{"kind":"sum","parts":[226,227,437]},"promptText":"Three shelves hold Ida's acorns: 226 on top, 227 in the middle, 437 below. What is the total count of acorns? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":890,"display":{"counting":{"kind":"sum","parts":[226,227,437]},"promptText":"Three shelves hold Ida's acorns: 226 on top, 227 in the middle, 437 below. What is the total count of acorns?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0144",
@@ -1442,7 +1442,7 @@ export const ITEMS = [
     structureType: "storyThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":888,"display":{"counting":{"kind":"sum","parts":[225,226,437]},"promptText":"Omar packs 225, then 226, then 437 bottle caps. Altogether, how many bottle caps get packed? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":888,"display":{"counting":{"kind":"sum","parts":[225,226,437]},"promptText":"Omar packs 225, then 226, then 437 bottle caps. Altogether, how many bottle caps get packed?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0145",
@@ -1452,7 +1452,7 @@ export const ITEMS = [
     structureType: "storyThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":563,"display":{"counting":{"kind":"sum","parts":[113,224,226]},"promptText":"June sorts seashells into three boxes: 113, 224, and 226. How many seashells are there in all? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":563,"display":{"counting":{"kind":"sum","parts":[113,224,226]},"promptText":"June sorts seashells into three boxes: 113, 224, and 226. How many seashells are there in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0146",
@@ -1462,7 +1462,7 @@ export const ITEMS = [
     structureType: "storyThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":566,"display":{"counting":{"kind":"sum","parts":[225,115,226]},"promptText":"Three shelves hold Zoe's trading cards: 225 on top, 115 in the middle, 226 below. What is the total count of trading cards? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":566,"display":{"counting":{"kind":"sum","parts":[225,115,226]},"promptText":"Three shelves hold Zoe's trading cards: 225 on top, 115 in the middle, 226 below. What is the total count of trading cards?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0147",
@@ -1472,7 +1472,7 @@ export const ITEMS = [
     structureType: "storyThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":677,"display":{"counting":{"kind":"sum","parts":[225,226,226]},"promptText":"Ben packs 225, then 226, then 226 acorns. Altogether, how many acorns get packed? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":677,"display":{"counting":{"kind":"sum","parts":[225,226,226]},"promptText":"Ben packs 225, then 226, then 226 acorns. Altogether, how many acorns get packed?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0148",
@@ -1482,7 +1482,7 @@ export const ITEMS = [
     structureType: "storyThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":891,"display":{"counting":{"kind":"sum","parts":[225,227,439]},"promptText":"Lily sorts bottle caps into three boxes: 225, 227, and 439. How many bottle caps are there in all? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":891,"display":{"counting":{"kind":"sum","parts":[225,227,439]},"promptText":"Lily sorts bottle caps into three boxes: 225, 227, and 439. How many bottle caps are there in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0149",
@@ -1492,7 +1492,7 @@ export const ITEMS = [
     structureType: "storyThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":566,"display":{"counting":{"kind":"sum","parts":[114,225,227]},"promptText":"Three shelves hold Rosa's seashells: 114 on top, 225 in the middle, 227 below. What is the total count of seashells? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":566,"display":{"counting":{"kind":"sum","parts":[114,225,227]},"promptText":"Three shelves hold Rosa's seashells: 114 on top, 225 in the middle, 227 below. What is the total count of seashells?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0150",
@@ -1502,7 +1502,7 @@ export const ITEMS = [
     structureType: "storyThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":677,"display":{"counting":{"kind":"sum","parts":[225,226,226]},"promptText":"Finn packs 225, then 226, then 226 trading cards. Altogether, how many trading cards get packed? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":677,"display":{"counting":{"kind":"sum","parts":[225,226,226]},"promptText":"Finn packs 225, then 226, then 226 trading cards. Altogether, how many trading cards get packed?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0151",
@@ -1512,7 +1512,7 @@ export const ITEMS = [
     structureType: "storyThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":889,"display":{"counting":{"kind":"sum","parts":[226,226,437]},"promptText":"Amara sorts acorns into three boxes: 226, 226, and 437. How many acorns are there in all? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":889,"display":{"counting":{"kind":"sum","parts":[226,226,437]},"promptText":"Amara sorts acorns into three boxes: 226, 226, and 437. How many acorns are there in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0152",
@@ -1522,7 +1522,7 @@ export const ITEMS = [
     structureType: "storyThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":563,"display":{"counting":{"kind":"sum","parts":[114,224,225]},"promptText":"Three shelves hold Diego's bottle caps: 114 on top, 224 in the middle, 225 below. What is the total count of bottle caps? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":563,"display":{"counting":{"kind":"sum","parts":[114,224,225]},"promptText":"Three shelves hold Diego's bottle caps: 114 on top, 224 in the middle, 225 below. What is the total count of bottle caps?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0153",
@@ -1532,7 +1532,7 @@ export const ITEMS = [
     structureType: "storyThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":563,"display":{"counting":{"kind":"sum","parts":[112,225,226]},"promptText":"Priya packs 112, then 225, then 226 seashells. Altogether, how many seashells get packed? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":563,"display":{"counting":{"kind":"sum","parts":[112,225,226]},"promptText":"Priya packs 112, then 225, then 226 seashells. Altogether, how many seashells get packed?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0154",
@@ -1712,7 +1712,7 @@ export const ITEMS = [
     structureType: "storyDiff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":39,"kind":"gap","target":64},"promptText":"With 64 seashells against Leo's 39, how far ahead is Mina? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":39,"kind":"gap","target":64},"promptText":"Mina has 64 seashells. Leo has 39 seashells. How many more seashells does Mina have than Leo?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0172",
@@ -1722,7 +1722,7 @@ export const ITEMS = [
     structureType: "storyDiff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"counting":{"have":45,"kind":"gap","target":72},"promptText":"Luca has 72 trading cards and Nora has 45. What is the difference in their trading cards? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"counting":{"have":45,"kind":"gap","target":72},"promptText":"Luca has 72 trading cards and Nora has 45. What is the difference in their trading cards?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0173",
@@ -1732,7 +1732,7 @@ export const ITEMS = [
     structureType: "storyDiff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":56,"kind":"gap","target":81},"promptText":"Nia counts 81 acorns; Sam counts 56. How many more acorns does the leader have? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":56,"kind":"gap","target":81},"promptText":"Nia counts 81 acorns; Sam counts 56. How many more acorns does the leader have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0174",
@@ -1742,7 +1742,7 @@ export const ITEMS = [
     structureType: "storyDiff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":24,"kind":"gap","target":59},"promptText":"With 59 bottle caps against Mina's 24, how far ahead is Theo? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":24,"kind":"gap","target":59},"promptText":"Theo has 59 bottle caps. Mina has 24 bottle caps. How many more bottle caps does Theo have than Mina?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0175",
@@ -1752,7 +1752,7 @@ export const ITEMS = [
     structureType: "storyDiff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":63,"kind":"gap","target":88},"promptText":"Ava has 88 seashells and Luca has 63. What is the difference in their seashells? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":63,"kind":"gap","target":88},"promptText":"Ava has 88 seashells and Luca has 63. What is the difference in their seashells?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0176",
@@ -1762,7 +1762,7 @@ export const ITEMS = [
     structureType: "storyDiff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":32,"kind":"gap","target":67},"promptText":"Kai counts 67 trading cards; Nia counts 32. How many more trading cards does the leader have? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":32,"kind":"gap","target":67},"promptText":"Kai counts 67 trading cards; Nia counts 32. How many more trading cards does the leader have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0177",
@@ -1772,7 +1772,7 @@ export const ITEMS = [
     structureType: "storyDiff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"have":71,"kind":"gap","target":95},"promptText":"With 95 acorns against Theo's 71, how far ahead is Ida? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"have":71,"kind":"gap","target":95},"promptText":"Ida has 95 acorns. Theo has 71 acorns. How many more acorns does Ida have than Theo?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0178",
@@ -1782,7 +1782,7 @@ export const ITEMS = [
     structureType: "storyDiff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":28,"kind":"gap","target":53},"promptText":"Omar has 53 bottle caps and Ava has 28. What is the difference in their bottle caps? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":28,"kind":"gap","target":53},"promptText":"Omar has 53 bottle caps and Ava has 28. What is the difference in their bottle caps?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0179",
@@ -1792,7 +1792,7 @@ export const ITEMS = [
     structureType: "storyDiff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":41,"kind":"gap","target":76},"promptText":"June counts 76 seashells; Kai counts 41. How many more seashells does the leader have? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":41,"kind":"gap","target":76},"promptText":"June counts 76 seashells; Kai counts 41. How many more seashells does the leader have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0180",
@@ -1802,7 +1802,7 @@ export const ITEMS = [
     structureType: "storyDiff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":34,"kind":"gap","target":69},"promptText":"With 69 trading cards against Ida's 34, how far ahead is Zoe? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":34,"kind":"gap","target":69},"promptText":"Zoe has 69 trading cards. Ida has 34 trading cards. How many more trading cards does Zoe have than Ida?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0181",
@@ -1812,7 +1812,7 @@ export const ITEMS = [
     structureType: "storyDiff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"counting":{"have":58,"kind":"gap","target":84},"promptText":"Ben has 84 acorns and Omar has 58. What is the difference in their acorns? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"counting":{"have":58,"kind":"gap","target":84},"promptText":"Ben has 84 acorns and Omar has 58. What is the difference in their acorns?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0182",
@@ -1822,7 +1822,7 @@ export const ITEMS = [
     structureType: "storyDiff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":23,"kind":"gap","target":48},"promptText":"Lily counts 48 bottle caps; June counts 23. How many more bottle caps does the leader have? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":23,"kind":"gap","target":48},"promptText":"Lily counts 48 bottle caps; June counts 23. How many more bottle caps does the leader have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0183",
@@ -1832,7 +1832,7 @@ export const ITEMS = [
     structureType: "storyDiff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":67,"kind":"gap","target":92},"promptText":"With 92 seashells against Zoe's 67, how far ahead is Rosa? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":67,"kind":"gap","target":92},"promptText":"Rosa has 92 seashells. Zoe has 67 seashells. How many more seashells does Rosa have than Zoe?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0184",
@@ -1842,7 +1842,7 @@ export const ITEMS = [
     structureType: "storyDiff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":36,"kind":"gap","target":61},"promptText":"Finn has 61 trading cards and Ben has 36. What is the difference in their trading cards? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":36,"kind":"gap","target":61},"promptText":"Finn has 61 trading cards and Ben has 36. What is the difference in their trading cards?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0185",
@@ -1852,7 +1852,7 @@ export const ITEMS = [
     structureType: "storyDiff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":44,"kind":"gap","target":79},"promptText":"Amara counts 79 acorns; Lily counts 44. How many more acorns does the leader have? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":44,"kind":"gap","target":79},"promptText":"Amara counts 79 acorns; Lily counts 44. How many more acorns does the leader have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0186",
@@ -1862,7 +1862,7 @@ export const ITEMS = [
     structureType: "storyDiff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":52,"kind":"gap","target":87},"promptText":"With 87 bottle caps against Rosa's 52, how far ahead is Diego? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":52,"kind":"gap","target":87},"promptText":"Diego has 87 bottle caps. Rosa has 52 bottle caps. How many more bottle caps does Diego have than Rosa?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0187",
@@ -1872,7 +1872,7 @@ export const ITEMS = [
     structureType: "storyDiff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":31,"kind":"gap","target":56},"promptText":"Priya has 56 seashells and Finn has 31. What is the difference in their seashells? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":31,"kind":"gap","target":56},"promptText":"Priya has 56 seashells and Finn has 31. What is the difference in their seashells?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0188",
@@ -1882,7 +1882,7 @@ export const ITEMS = [
     structureType: "storyDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":245,"display":{"counting":{"have":397,"kind":"gap","target":642},"promptText":"Luca has 642 seashells and Theo has 397. What is the difference in their seashells? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":245,"display":{"counting":{"have":397,"kind":"gap","target":642},"promptText":"Luca has 642 seashells and Theo has 397. What is the difference in their seashells?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0189",
@@ -1892,7 +1892,7 @@ export const ITEMS = [
     structureType: "storyDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":265,"display":{"counting":{"have":456,"kind":"gap","target":721},"promptText":"Nia counts 721 trading cards; Ava counts 456. How many more trading cards does the leader have? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":265,"display":{"counting":{"have":456,"kind":"gap","target":721},"promptText":"Nia counts 721 trading cards; Ava counts 456. How many more trading cards does the leader have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0190",
@@ -1902,7 +1902,7 @@ export const ITEMS = [
     structureType: "storyDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":245,"display":{"counting":{"have":568,"kind":"gap","target":813},"promptText":"With 813 acorns against Kai's 568, how far ahead is Theo? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":245,"display":{"counting":{"have":568,"kind":"gap","target":813},"promptText":"Theo has 813 acorns. Kai has 568 acorns. How many more acorns does Theo have than Kai?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0191",
@@ -1912,7 +1912,7 @@ export const ITEMS = [
     structureType: "storyDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":347,"display":{"counting":{"have":247,"kind":"gap","target":594},"promptText":"Ava has 594 bottle caps and Ida has 247. What is the difference in their bottle caps? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":347,"display":{"counting":{"have":247,"kind":"gap","target":594},"promptText":"Ava has 594 bottle caps and Ida has 247. What is the difference in their bottle caps?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0192",
@@ -1922,7 +1922,7 @@ export const ITEMS = [
     structureType: "storyDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":255,"display":{"counting":{"have":631,"kind":"gap","target":886},"promptText":"Kai counts 886 seashells; Omar counts 631. How many more seashells does the leader have? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":255,"display":{"counting":{"have":631,"kind":"gap","target":886},"promptText":"Kai counts 886 seashells; Omar counts 631. How many more seashells does the leader have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0193",
@@ -1932,7 +1932,7 @@ export const ITEMS = [
     structureType: "storyDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":347,"display":{"counting":{"have":328,"kind":"gap","target":675},"promptText":"With 675 trading cards against June's 328, how far ahead is Ida? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":347,"display":{"counting":{"have":328,"kind":"gap","target":675},"promptText":"Ida has 675 trading cards. June has 328 trading cards. How many more trading cards does Ida have than June?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0194",
@@ -1942,7 +1942,7 @@ export const ITEMS = [
     structureType: "storyDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":235,"display":{"counting":{"have":718,"kind":"gap","target":953},"promptText":"Omar has 953 acorns and Zoe has 718. What is the difference in their acorns? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":235,"display":{"counting":{"have":718,"kind":"gap","target":953},"promptText":"Omar has 953 acorns and Zoe has 718. What is the difference in their acorns?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0195",
@@ -1952,7 +1952,7 @@ export const ITEMS = [
     structureType: "storyDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":247,"display":{"counting":{"have":285,"kind":"gap","target":532},"promptText":"June counts 532 bottle caps; Ben counts 285. How many more bottle caps does the leader have? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":247,"display":{"counting":{"have":285,"kind":"gap","target":532},"promptText":"June counts 532 bottle caps; Ben counts 285. How many more bottle caps does the leader have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0196",
@@ -1962,7 +1962,7 @@ export const ITEMS = [
     structureType: "storyDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":345,"display":{"counting":{"have":419,"kind":"gap","target":764},"promptText":"With 764 seashells against Lily's 419, how far ahead is Zoe? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":345,"display":{"counting":{"have":419,"kind":"gap","target":764},"promptText":"Zoe has 764 seashells. Lily has 419 seashells. How many more seashells does Zoe have than Lily?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0197",
@@ -1972,7 +1972,7 @@ export const ITEMS = [
     structureType: "storyDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":355,"display":{"counting":{"have":342,"kind":"gap","target":697},"promptText":"Ben has 697 trading cards and Rosa has 342. What is the difference in their trading cards? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":355,"display":{"counting":{"have":342,"kind":"gap","target":697},"promptText":"Ben has 697 trading cards and Rosa has 342. What is the difference in their trading cards?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0198",
@@ -1982,7 +1982,7 @@ export const ITEMS = [
     structureType: "storyDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":258,"display":{"counting":{"have":587,"kind":"gap","target":845},"promptText":"Lily counts 845 acorns; Finn counts 587. How many more acorns does the leader have? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":258,"display":{"counting":{"have":587,"kind":"gap","target":845},"promptText":"Lily counts 845 acorns; Finn counts 587. How many more acorns does the leader have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0199",
@@ -1992,7 +1992,7 @@ export const ITEMS = [
     structureType: "storyDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":247,"display":{"counting":{"have":236,"kind":"gap","target":483},"promptText":"With 483 bottle caps against Amara's 236, how far ahead is Rosa? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":247,"display":{"counting":{"have":236,"kind":"gap","target":483},"promptText":"Rosa has 483 bottle caps. Amara has 236 bottle caps. How many more bottle caps does Rosa have than Amara?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0200",
@@ -2002,7 +2002,7 @@ export const ITEMS = [
     structureType: "storyDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":255,"display":{"counting":{"have":673,"kind":"gap","target":928},"promptText":"Finn has 928 seashells and Diego has 673. What is the difference in their seashells? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":255,"display":{"counting":{"have":673,"kind":"gap","target":928},"promptText":"Finn has 928 seashells and Diego has 673. What is the difference in their seashells?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0201",
@@ -2012,7 +2012,7 @@ export const ITEMS = [
     structureType: "storyDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":247,"display":{"counting":{"have":368,"kind":"gap","target":615},"promptText":"Amara counts 615 trading cards; Priya counts 368. How many more trading cards does the leader have? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":247,"display":{"counting":{"have":368,"kind":"gap","target":615},"promptText":"Amara counts 615 trading cards; Priya counts 368. How many more trading cards does the leader have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0202",
@@ -2022,7 +2022,7 @@ export const ITEMS = [
     structureType: "storyDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":345,"display":{"counting":{"have":447,"kind":"gap","target":792},"promptText":"With 792 acorns against Leo's 447, how far ahead is Diego? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":345,"display":{"counting":{"have":447,"kind":"gap","target":792},"promptText":"Diego has 792 acorns. Leo has 447 acorns. How many more acorns does Diego have than Leo?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0203",
@@ -2032,7 +2032,7 @@ export const ITEMS = [
     structureType: "storyDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":345,"display":{"counting":{"have":529,"kind":"gap","target":874},"promptText":"Priya has 874 bottle caps and Nora has 529. What is the difference in their bottle caps? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":345,"display":{"counting":{"have":529,"kind":"gap","target":874},"promptText":"Priya has 874 bottle caps and Nora has 529. What is the difference in their bottle caps?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0204",
@@ -2042,7 +2042,7 @@ export const ITEMS = [
     structureType: "storyDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":247,"display":{"counting":{"have":316,"kind":"gap","target":563},"promptText":"Leo counts 563 seashells; Sam counts 316. How many more seashells does the leader have? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":247,"display":{"counting":{"have":316,"kind":"gap","target":563},"promptText":"Leo counts 563 seashells; Sam counts 316. How many more seashells does the leader have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0205",
@@ -2162,7 +2162,7 @@ export const ITEMS = [
     structureType: "storyMore_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"counting":{"kind":"countOn","more":27,"start":45},"promptText":"Sam finds 45 trading cards. Nia finds 27 more than Sam. How many trading cards does Nia find? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"counting":{"kind":"countOn","more":27,"start":45},"promptText":"Sam finds 45 trading cards. Nia finds 27 more than Sam. How many trading cards does Nia find?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0224",
@@ -2172,7 +2172,7 @@ export const ITEMS = [
     structureType: "storyMore_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"counting":{"kind":"countOn","more":25,"start":56},"promptText":"Theo beats Mina's pile of 56 acorns by 25. What is Theo's pile of acorns? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"counting":{"kind":"countOn","more":25,"start":56},"promptText":"Mina has a pile of 56 acorns. Theo's pile has 25 more acorns than Mina's. How many acorns are in Theo's pile?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0226",
@@ -2182,7 +2182,7 @@ export const ITEMS = [
     structureType: "storyMore_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"counting":{"kind":"countOn","more":25,"start":63},"promptText":"Nia finds 63 seashells. Kai finds 25 more than Nia. How many seashells does Kai find? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"counting":{"kind":"countOn","more":25,"start":63},"promptText":"Nia finds 63 seashells. Kai finds 25 more than Nia. How many seashells does Kai find?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0227",
@@ -2192,7 +2192,7 @@ export const ITEMS = [
     structureType: "storyMore_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":67,"display":{"counting":{"kind":"countOn","more":35,"start":32},"promptText":"Ida beats Theo's pile of 32 trading cards by 35. What is Ida's pile of trading cards? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":67,"display":{"counting":{"kind":"countOn","more":35,"start":32},"promptText":"Theo has a pile of 32 trading cards. Ida's pile has 35 more trading cards than Theo's. How many trading cards are in Ida's pile?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0229",
@@ -2202,7 +2202,7 @@ export const ITEMS = [
     structureType: "storyMore_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":53,"display":{"counting":{"kind":"countOn","more":25,"start":28},"promptText":"Kai finds 28 bottle caps. June finds 25 more than Kai. How many bottle caps does June find? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":53,"display":{"counting":{"kind":"countOn","more":25,"start":28},"promptText":"Kai finds 28 bottle caps. June finds 25 more than Kai. How many bottle caps does June find?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0230",
@@ -2212,7 +2212,7 @@ export const ITEMS = [
     structureType: "storyMore_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":76,"display":{"counting":{"kind":"countOn","more":35,"start":41},"promptText":"Zoe beats Ida's pile of 41 seashells by 35. What is Zoe's pile of seashells? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":76,"display":{"counting":{"kind":"countOn","more":35,"start":41},"promptText":"Ida has a pile of 41 seashells. Zoe's pile has 35 more seashells than Ida's. How many seashells are in Zoe's pile?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0232",
@@ -2222,7 +2222,7 @@ export const ITEMS = [
     structureType: "storyMore_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"counting":{"kind":"countOn","more":26,"start":58},"promptText":"June finds 58 acorns. Lily finds 26 more than June. How many acorns does Lily find? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"counting":{"kind":"countOn","more":26,"start":58},"promptText":"June finds 58 acorns. Lily finds 26 more than June. How many acorns does Lily find?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0233",
@@ -2232,7 +2232,7 @@ export const ITEMS = [
     structureType: "storyMore_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"counting":{"kind":"countOn","more":25,"start":23},"promptText":"Rosa beats Zoe's pile of 23 bottle caps by 25. What is Rosa's pile of bottle caps? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"counting":{"kind":"countOn","more":25,"start":23},"promptText":"Zoe has a pile of 23 bottle caps. Rosa's pile has 25 more bottle caps than Zoe's. How many bottle caps are in Rosa's pile?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0235",
@@ -2242,7 +2242,7 @@ export const ITEMS = [
     structureType: "storyMore_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":61,"display":{"counting":{"kind":"countOn","more":25,"start":36},"promptText":"Lily finds 36 trading cards. Amara finds 25 more than Lily. How many trading cards does Amara find? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":61,"display":{"counting":{"kind":"countOn","more":25,"start":36},"promptText":"Lily finds 36 trading cards. Amara finds 25 more than Lily. How many trading cards does Amara find?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0236",
@@ -2252,7 +2252,7 @@ export const ITEMS = [
     structureType: "storyMore_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":79,"display":{"counting":{"kind":"countOn","more":35,"start":44},"promptText":"Diego beats Rosa's pile of 44 acorns by 35. What is Diego's pile of acorns? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":79,"display":{"counting":{"kind":"countOn","more":35,"start":44},"promptText":"Rosa has a pile of 44 acorns. Diego's pile has 35 more acorns than Rosa's. How many acorns are in Diego's pile?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0238",
@@ -2262,7 +2262,7 @@ export const ITEMS = [
     structureType: "storyMore_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"counting":{"kind":"countOn","more":25,"start":31},"promptText":"Amara finds 31 seashells. Leo finds 25 more than Amara. How many seashells does Leo find? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"counting":{"kind":"countOn","more":25,"start":31},"promptText":"Amara finds 31 seashells. Leo finds 25 more than Amara. How many seashells does Leo find?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0239",
@@ -2272,7 +2272,7 @@ export const ITEMS = [
     structureType: "storyMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":642,"display":{"counting":{"kind":"countOn","more":245,"start":397},"promptText":"Ava finds 397 seashells. Sam finds 245 more than Ava. How many seashells does Sam find? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":642,"display":{"counting":{"kind":"countOn","more":245,"start":397},"promptText":"Ava finds 397 seashells. Sam finds 245 more than Ava. How many seashells does Sam find?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0240",
@@ -2282,7 +2282,7 @@ export const ITEMS = [
     structureType: "storyMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":721,"display":{"counting":{"kind":"countOn","more":265,"start":456},"promptText":"Mina beats Kai's pile of 456 trading cards by 265. What is Mina's pile of trading cards? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":721,"display":{"counting":{"kind":"countOn","more":265,"start":456},"promptText":"Kai has a pile of 456 trading cards. Mina's pile has 265 more trading cards than Kai's. How many trading cards are in Mina's pile?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0242",
@@ -2292,7 +2292,7 @@ export const ITEMS = [
     structureType: "storyMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":586,"display":{"counting":{"kind":"countOn","more":339,"start":247},"promptText":"Omar finds 247 bottle caps. Nia finds 339 more than Omar. How many bottle caps does Nia find? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":586,"display":{"counting":{"kind":"countOn","more":339,"start":247},"promptText":"Omar finds 247 bottle caps. Nia finds 339 more than Omar. How many bottle caps does Nia find?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0243",
@@ -2302,7 +2302,7 @@ export const ITEMS = [
     structureType: "storyMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":886,"display":{"counting":{"kind":"countOn","more":255,"start":631},"promptText":"Theo beats June's pile of 631 seashells by 255. What is Theo's pile of seashells? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":886,"display":{"counting":{"kind":"countOn","more":255,"start":631},"promptText":"June has a pile of 631 seashells. Theo's pile has 255 more seashells than June's. How many seashells are in Theo's pile?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0245",
@@ -2312,7 +2312,7 @@ export const ITEMS = [
     structureType: "storyMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":953,"display":{"counting":{"kind":"countOn","more":235,"start":718},"promptText":"Ben finds 718 acorns. Kai finds 235 more than Ben. How many acorns does Kai find? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":953,"display":{"counting":{"kind":"countOn","more":235,"start":718},"promptText":"Ben finds 718 acorns. Kai finds 235 more than Ben. How many acorns does Kai find?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0246",
@@ -2322,7 +2322,7 @@ export const ITEMS = [
     structureType: "storyMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":532,"display":{"counting":{"kind":"countOn","more":247,"start":285},"promptText":"Ida beats Lily's pile of 285 bottle caps by 247. What is Ida's pile of bottle caps? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":532,"display":{"counting":{"kind":"countOn","more":247,"start":285},"promptText":"Lily has a pile of 285 bottle caps. Ida's pile has 247 more bottle caps than Lily's. How many bottle caps are in Ida's pile?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0248",
@@ -2332,7 +2332,7 @@ export const ITEMS = [
     structureType: "storyMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":697,"display":{"counting":{"kind":"countOn","more":355,"start":342},"promptText":"Finn finds 342 trading cards. June finds 355 more than Finn. How many trading cards does June find? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":697,"display":{"counting":{"kind":"countOn","more":355,"start":342},"promptText":"Finn finds 342 trading cards. June finds 355 more than Finn. How many trading cards does June find?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0249",
@@ -2342,7 +2342,7 @@ export const ITEMS = [
     structureType: "storyMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":845,"display":{"counting":{"kind":"countOn","more":258,"start":587},"promptText":"Zoe beats Amara's pile of 587 acorns by 258. What is Zoe's pile of acorns? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":845,"display":{"counting":{"kind":"countOn","more":258,"start":587},"promptText":"Amara has a pile of 587 acorns. Zoe's pile has 258 more acorns than Amara's. How many acorns are in Zoe's pile?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0251",
@@ -2352,7 +2352,7 @@ export const ITEMS = [
     structureType: "storyMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":928,"display":{"counting":{"kind":"countOn","more":255,"start":673},"promptText":"Priya finds 673 seashells. Lily finds 255 more than Priya. How many seashells does Lily find? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":928,"display":{"counting":{"kind":"countOn","more":255,"start":673},"promptText":"Priya finds 673 seashells. Lily finds 255 more than Priya. How many seashells does Lily find?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0252",
@@ -2362,7 +2362,7 @@ export const ITEMS = [
     structureType: "storyMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":615,"display":{"counting":{"kind":"countOn","more":247,"start":368},"promptText":"Rosa beats Leo's pile of 368 trading cards by 247. What is Rosa's pile of trading cards? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":615,"display":{"counting":{"kind":"countOn","more":247,"start":368},"promptText":"Leo has a pile of 368 trading cards. Rosa's pile has 247 more trading cards than Leo's. How many trading cards are in Rosa's pile?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0254",
@@ -2372,7 +2372,7 @@ export const ITEMS = [
     structureType: "storyMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":874,"display":{"counting":{"kind":"countOn","more":345,"start":529},"promptText":"Sam finds 529 bottle caps. Amara finds 345 more than Sam. How many bottle caps does Amara find? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":874,"display":{"counting":{"kind":"countOn","more":345,"start":529},"promptText":"Sam finds 529 bottle caps. Amara finds 345 more than Sam. How many bottle caps does Amara find?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0255",
@@ -2382,7 +2382,7 @@ export const ITEMS = [
     structureType: "storyMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":563,"display":{"counting":{"kind":"countOn","more":247,"start":316},"promptText":"Diego beats Mina's pile of 316 seashells by 247. What is Diego's pile of seashells? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":563,"display":{"counting":{"kind":"countOn","more":247,"start":316},"promptText":"Mina has a pile of 316 seashells. Diego's pile has 247 more seashells than Mina's. How many seashells are in Diego's pile?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0256",
@@ -2562,7 +2562,7 @@ export const ITEMS = [
     structureType: "storyFewer_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"counting":{"back":25,"kind":"countBack","start":64},"promptText":"Mina spots 64 seashells. Sam spots 25 fewer. How many seashells does Sam spot? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"counting":{"back":25,"kind":"countBack","start":64},"promptText":"Mina spots 64 seashells. Sam spots 25 fewer. How many seashells does Sam spot?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0274",
@@ -2572,7 +2572,7 @@ export const ITEMS = [
     structureType: "storyFewer_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"counting":{"back":38,"kind":"countBack","start":72},"promptText":"Mina trails Luca's 72 trading cards by 38. What is Mina's count of trading cards? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"counting":{"back":38,"kind":"countBack","start":72},"promptText":"Luca has 72 trading cards. Mina has 38 fewer trading cards than Luca. How many trading cards does Mina have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0275",
@@ -2582,7 +2582,7 @@ export const ITEMS = [
     structureType: "storyFewer_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"back":46,"kind":"countBack","start":81},"promptText":"From Nia's total of 81 acorns, Luca sits 46 below. How many acorns does Luca hold? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"back":46,"kind":"countBack","start":81},"promptText":"Nia collects 81 acorns. Luca collects 46 fewer acorns than Nia. How many acorns does Luca collect?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0276",
@@ -2592,7 +2592,7 @@ export const ITEMS = [
     structureType: "storyFewer_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"counting":{"back":22,"kind":"countBack","start":59},"promptText":"Theo spots 59 bottle caps. Nia spots 22 fewer. How many bottle caps does Nia spot? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"counting":{"back":22,"kind":"countBack","start":59},"promptText":"Theo spots 59 bottle caps. Nia spots 22 fewer. How many bottle caps does Nia spot?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0277",
@@ -2602,7 +2602,7 @@ export const ITEMS = [
     structureType: "storyFewer_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"back":53,"kind":"countBack","start":88},"promptText":"Theo trails Ava's 88 seashells by 53. What is Theo's count of seashells? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"back":53,"kind":"countBack","start":88},"promptText":"Ava has 88 seashells. Theo has 53 fewer seashells than Ava. How many seashells does Theo have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0278",
@@ -2612,7 +2612,7 @@ export const ITEMS = [
     structureType: "storyFewer_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"counting":{"back":29,"kind":"countBack","start":67},"promptText":"From Kai's total of 67 trading cards, Ava sits 29 below. How many trading cards does Ava hold? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"counting":{"back":29,"kind":"countBack","start":67},"promptText":"Kai collects 67 trading cards. Ava collects 29 fewer trading cards than Kai. How many trading cards does Ava collect?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0279",
@@ -2622,7 +2622,7 @@ export const ITEMS = [
     structureType: "storyFewer_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"counting":{"back":61,"kind":"countBack","start":95},"promptText":"Ida spots 95 acorns. Kai spots 61 fewer. How many acorns does Kai spot? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"counting":{"back":61,"kind":"countBack","start":95},"promptText":"Ida spots 95 acorns. Kai spots 61 fewer. How many acorns does Kai spot?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0280",
@@ -2632,7 +2632,7 @@ export const ITEMS = [
     structureType: "storyFewer_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"counting":{"back":26,"kind":"countBack","start":53},"promptText":"Ida trails Omar's 53 bottle caps by 26. What is Ida's count of bottle caps? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"counting":{"back":26,"kind":"countBack","start":53},"promptText":"Omar has 53 bottle caps. Ida has 26 fewer bottle caps than Omar. How many bottle caps does Ida have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0281",
@@ -2642,7 +2642,7 @@ export const ITEMS = [
     structureType: "storyFewer_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"counting":{"back":37,"kind":"countBack","start":76},"promptText":"From June's total of 76 seashells, Omar sits 37 below. How many seashells does Omar hold? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"counting":{"back":37,"kind":"countBack","start":76},"promptText":"June collects 76 seashells. Omar collects 37 fewer seashells than June. How many seashells does Omar collect?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0282",
@@ -2652,7 +2652,7 @@ export const ITEMS = [
     structureType: "storyFewer_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"counting":{"back":31,"kind":"countBack","start":69},"promptText":"Zoe spots 69 trading cards. June spots 31 fewer. How many trading cards does June spot? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"counting":{"back":31,"kind":"countBack","start":69},"promptText":"Zoe spots 69 trading cards. June spots 31 fewer. How many trading cards does June spot?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0283",
@@ -2662,7 +2662,7 @@ export const ITEMS = [
     structureType: "storyFewer_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"counting":{"back":48,"kind":"countBack","start":84},"promptText":"Zoe trails Ben's 84 acorns by 48. What is Zoe's count of acorns? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"counting":{"back":48,"kind":"countBack","start":84},"promptText":"Ben has 84 acorns. Zoe has 48 fewer acorns than Ben. How many acorns does Zoe have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0284",
@@ -2672,7 +2672,7 @@ export const ITEMS = [
     structureType: "storyFewer_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"counting":{"back":21,"kind":"countBack","start":48},"promptText":"From Lily's total of 48 bottle caps, Ben sits 21 below. How many bottle caps does Ben hold? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"counting":{"back":21,"kind":"countBack","start":48},"promptText":"Lily collects 48 bottle caps. Ben collects 21 fewer bottle caps than Lily. How many bottle caps does Ben collect?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0285",
@@ -2682,7 +2682,7 @@ export const ITEMS = [
     structureType: "storyFewer_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"back":57,"kind":"countBack","start":92},"promptText":"Rosa spots 92 seashells. Lily spots 57 fewer. How many seashells does Lily spot? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"back":57,"kind":"countBack","start":92},"promptText":"Rosa spots 92 seashells. Lily spots 57 fewer. How many seashells does Lily spot?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0286",
@@ -2692,7 +2692,7 @@ export const ITEMS = [
     structureType: "storyFewer_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"counting":{"back":33,"kind":"countBack","start":61},"promptText":"Rosa trails Finn's 61 trading cards by 33. What is Rosa's count of trading cards? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"counting":{"back":33,"kind":"countBack","start":61},"promptText":"Finn has 61 trading cards. Rosa has 33 fewer trading cards than Finn. How many trading cards does Rosa have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0287",
@@ -2702,7 +2702,7 @@ export const ITEMS = [
     structureType: "storyFewer_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"counting":{"back":41,"kind":"countBack","start":79},"promptText":"From Amara's total of 79 acorns, Finn sits 41 below. How many acorns does Finn hold? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"counting":{"back":41,"kind":"countBack","start":79},"promptText":"Amara collects 79 acorns. Finn collects 41 fewer acorns than Amara. How many acorns does Finn collect?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0288",
@@ -2712,7 +2712,7 @@ export const ITEMS = [
     structureType: "storyFewer_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"counting":{"back":49,"kind":"countBack","start":87},"promptText":"Diego spots 87 bottle caps. Amara spots 49 fewer. How many bottle caps does Amara spot? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"counting":{"back":49,"kind":"countBack","start":87},"promptText":"Diego spots 87 bottle caps. Amara spots 49 fewer. How many bottle caps does Amara spot?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0289",
@@ -2722,7 +2722,7 @@ export const ITEMS = [
     structureType: "storyFewer_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"counting":{"back":27,"kind":"countBack","start":56},"promptText":"Diego trails Priya's 56 seashells by 27. What is Diego's count of seashells? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"counting":{"back":27,"kind":"countBack","start":56},"promptText":"Priya has 56 seashells. Diego has 27 fewer seashells than Priya. How many seashells does Diego have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0290",
@@ -2732,7 +2732,7 @@ export const ITEMS = [
     structureType: "storyFewer_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":385,"display":{"counting":{"back":257,"kind":"countBack","start":642},"promptText":"Mina trails Ida's 642 seashells by 257. What is Mina's count of seashells? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":385,"display":{"counting":{"back":257,"kind":"countBack","start":642},"promptText":"Ida has 642 seashells. Mina has 257 fewer seashells than Ida. How many seashells does Mina have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0291",
@@ -2742,7 +2742,7 @@ export const ITEMS = [
     structureType: "storyFewer_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":335,"display":{"counting":{"back":386,"kind":"countBack","start":721},"promptText":"From Omar's total of 721 trading cards, Luca sits 386 below. How many trading cards does Luca hold? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":335,"display":{"counting":{"back":386,"kind":"countBack","start":721},"promptText":"Omar collects 721 trading cards. Luca collects 386 fewer trading cards than Omar. How many trading cards does Luca collect?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0292",
@@ -2752,7 +2752,7 @@ export const ITEMS = [
     structureType: "storyFewer_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":345,"display":{"counting":{"back":468,"kind":"countBack","start":813},"promptText":"June spots 813 acorns. Nia spots 468 fewer. How many acorns does Nia spot? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":345,"display":{"counting":{"back":468,"kind":"countBack","start":813},"promptText":"June spots 813 acorns. Nia spots 468 fewer. How many acorns does Nia spot?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0293",
@@ -2762,7 +2762,7 @@ export const ITEMS = [
     structureType: "storyFewer_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":367,"display":{"counting":{"back":227,"kind":"countBack","start":594},"promptText":"Theo trails Zoe's 594 bottle caps by 227. What is Theo's count of bottle caps? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":367,"display":{"counting":{"back":227,"kind":"countBack","start":594},"promptText":"Zoe has 594 bottle caps. Theo has 227 fewer bottle caps than Zoe. How many bottle caps does Theo have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0294",
@@ -2772,7 +2772,7 @@ export const ITEMS = [
     structureType: "storyFewer_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":355,"display":{"counting":{"back":531,"kind":"countBack","start":886},"promptText":"From Ben's total of 886 seashells, Ava sits 531 below. How many seashells does Ava hold? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":355,"display":{"counting":{"back":531,"kind":"countBack","start":886},"promptText":"Ben collects 886 seashells. Ava collects 531 fewer seashells than Ben. How many seashells does Ava collect?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0295",
@@ -2782,7 +2782,7 @@ export const ITEMS = [
     structureType: "storyFewer_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":377,"display":{"counting":{"back":298,"kind":"countBack","start":675},"promptText":"Lily spots 675 trading cards. Kai spots 298 fewer. How many trading cards does Kai spot? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":377,"display":{"counting":{"back":298,"kind":"countBack","start":675},"promptText":"Lily spots 675 trading cards. Kai spots 298 fewer. How many trading cards does Kai spot?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0296",
@@ -2792,7 +2792,7 @@ export const ITEMS = [
     structureType: "storyFewer_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":336,"display":{"counting":{"back":617,"kind":"countBack","start":953},"promptText":"Ida trails Rosa's 953 acorns by 617. What is Ida's count of acorns? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":336,"display":{"counting":{"back":617,"kind":"countBack","start":953},"promptText":"Rosa has 953 acorns. Ida has 617 fewer acorns than Rosa. How many acorns does Ida have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0297",
@@ -2802,7 +2802,7 @@ export const ITEMS = [
     structureType: "storyFewer_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":267,"display":{"counting":{"back":265,"kind":"countBack","start":532},"promptText":"From Finn's total of 532 bottle caps, Omar sits 265 below. How many bottle caps does Omar hold? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":267,"display":{"counting":{"back":265,"kind":"countBack","start":532},"promptText":"Finn collects 532 bottle caps. Omar collects 265 fewer bottle caps than Finn. How many bottle caps does Omar collect?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0298",
@@ -2812,7 +2812,7 @@ export const ITEMS = [
     structureType: "storyFewer_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":385,"display":{"counting":{"back":379,"kind":"countBack","start":764},"promptText":"Amara spots 764 seashells. June spots 379 fewer. How many seashells does June spot? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":385,"display":{"counting":{"back":379,"kind":"countBack","start":764},"promptText":"Amara spots 764 seashells. June spots 379 fewer. How many seashells does June spot?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0299",
@@ -2822,7 +2822,7 @@ export const ITEMS = [
     structureType: "storyFewer_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":384,"display":{"counting":{"back":313,"kind":"countBack","start":697},"promptText":"Zoe trails Diego's 697 trading cards by 313. What is Zoe's count of trading cards? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":384,"display":{"counting":{"back":313,"kind":"countBack","start":697},"promptText":"Diego has 697 trading cards. Zoe has 313 fewer trading cards than Diego. How many trading cards does Zoe have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0300",
@@ -2832,7 +2832,7 @@ export const ITEMS = [
     structureType: "storyFewer_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":358,"display":{"counting":{"back":487,"kind":"countBack","start":845},"promptText":"From Priya's total of 845 acorns, Ben sits 487 below. How many acorns does Ben hold? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":358,"display":{"counting":{"back":487,"kind":"countBack","start":845},"promptText":"Priya collects 845 acorns. Ben collects 487 fewer acorns than Priya. How many acorns does Ben collect?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0301",
@@ -2842,7 +2842,7 @@ export const ITEMS = [
     structureType: "storyFewer_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":267,"display":{"counting":{"back":216,"kind":"countBack","start":483},"promptText":"Leo spots 483 bottle caps. Lily spots 216 fewer. How many bottle caps does Lily spot? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":267,"display":{"counting":{"back":216,"kind":"countBack","start":483},"promptText":"Leo spots 483 bottle caps. Lily spots 216 fewer. How many bottle caps does Lily spot?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0302",
@@ -2852,7 +2852,7 @@ export const ITEMS = [
     structureType: "storyFewer_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":356,"display":{"counting":{"back":572,"kind":"countBack","start":928},"promptText":"Rosa trails Nora's 928 seashells by 572. What is Rosa's count of seashells? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":356,"display":{"counting":{"back":572,"kind":"countBack","start":928},"promptText":"Nora has 928 seashells. Rosa has 572 fewer seashells than Nora. How many seashells does Rosa have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0303",
@@ -2862,7 +2862,7 @@ export const ITEMS = [
     structureType: "storyFewer_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":281,"display":{"counting":{"back":334,"kind":"countBack","start":615},"promptText":"From Sam's total of 615 trading cards, Finn sits 334 below. How many trading cards does Finn hold? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":281,"display":{"counting":{"back":334,"kind":"countBack","start":615},"promptText":"Sam collects 615 trading cards. Finn collects 334 fewer trading cards than Sam. How many trading cards does Finn collect?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0304",
@@ -2872,7 +2872,7 @@ export const ITEMS = [
     structureType: "storyFewer_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":374,"display":{"counting":{"back":418,"kind":"countBack","start":792},"promptText":"Mina spots 792 acorns. Amara spots 418 fewer. How many acorns does Amara spot? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":374,"display":{"counting":{"back":418,"kind":"countBack","start":792},"promptText":"Mina spots 792 acorns. Amara spots 418 fewer. How many acorns does Amara spot?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0305",
@@ -2882,7 +2882,7 @@ export const ITEMS = [
     structureType: "storyFewer_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":374,"display":{"counting":{"back":493,"kind":"countBack","start":867},"promptText":"Diego trails Luca's 867 bottle caps by 493. What is Diego's count of bottle caps? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":374,"display":{"counting":{"back":493,"kind":"countBack","start":867},"promptText":"Luca has 867 bottle caps. Diego has 493 fewer bottle caps than Luca. How many bottle caps does Diego have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0306",
@@ -2892,7 +2892,7 @@ export const ITEMS = [
     structureType: "storyFewer_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":316,"display":{"counting":{"back":247,"kind":"countBack","start":563},"promptText":"From Nia's total of 563 seashells, Priya sits 247 below. How many seashells does Priya hold? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":316,"display":{"counting":{"back":247,"kind":"countBack","start":563},"promptText":"Nia collects 563 seashells. Priya collects 247 fewer seashells than Nia. How many seashells does Priya collect?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0307",
@@ -3072,7 +3072,7 @@ export const ITEMS = [
     structureType: "storyTimes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":63,"display":{"bar":{"k":3,"u":21,"kind":"timesOf"},"promptText":"Mina's haul of seashells is 3 of Luca's piles of 21 stacked together. How many seashells is that? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":63,"display":{"bar":{"k":3,"u":21,"kind":"timesOf"},"promptText":"Mina's haul of seashells is 3 of Luca's piles of 21 stacked together. How many seashells is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0325",
@@ -3082,7 +3082,7 @@ export const ITEMS = [
     structureType: "storyTimes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":68,"display":{"bar":{"k":4,"u":17,"kind":"timesOf"},"promptText":"Whatever Nia collects, Luca collects 4 times over. Nia has 17 trading cards. What does Luca have? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":68,"display":{"bar":{"k":4,"u":17,"kind":"timesOf"},"promptText":"Nia has 17 trading cards. Luca has 4 times as many trading cards as Nia. How many trading cards does Luca have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0326",
@@ -3092,7 +3092,7 @@ export const ITEMS = [
     structureType: "storyTimes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"bar":{"k":5,"u":14,"kind":"timesOf"},"promptText":"Theo saves 14 acorns; Nia saves 5 times as many. How many acorns does Nia save? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"bar":{"k":5,"u":14,"kind":"timesOf"},"promptText":"Theo saves 14 acorns; Nia saves 5 times as many. How many acorns does Nia save?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0327",
@@ -3102,7 +3102,7 @@ export const ITEMS = [
     structureType: "storyTimes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"bar":{"k":6,"u":12,"kind":"timesOf"},"promptText":"Theo's haul of bottle caps is 6 of Ava's piles of 12 stacked together. How many bottle caps is that? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"bar":{"k":6,"u":12,"kind":"timesOf"},"promptText":"Theo's haul of bottle caps is 6 of Ava's piles of 12 stacked together. How many bottle caps is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0328",
@@ -3112,7 +3112,7 @@ export const ITEMS = [
     structureType: "storyTimes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":78,"display":{"bar":{"k":3,"u":26,"kind":"timesOf"},"promptText":"Whatever Kai collects, Ava collects 3 times over. Kai has 26 seashells. What does Ava have? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":78,"display":{"bar":{"k":3,"u":26,"kind":"timesOf"},"promptText":"Ava collects 3 times as many seashells as Kai. Kai has 26 seashells. How many seashells does Ava have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0329",
@@ -3122,7 +3122,7 @@ export const ITEMS = [
     structureType: "storyTimes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":76,"display":{"bar":{"k":4,"u":19,"kind":"timesOf"},"promptText":"Ida saves 19 trading cards; Kai saves 4 times as many. How many trading cards does Kai save? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":76,"display":{"bar":{"k":4,"u":19,"kind":"timesOf"},"promptText":"Ida saves 19 trading cards; Kai saves 4 times as many. How many trading cards does Kai save?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0330",
@@ -3132,7 +3132,7 @@ export const ITEMS = [
     structureType: "storyTimes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"bar":{"k":5,"u":16,"kind":"timesOf"},"promptText":"Ida's haul of acorns is 5 of Omar's piles of 16 stacked together. How many acorns is that? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"bar":{"k":5,"u":16,"kind":"timesOf"},"promptText":"Ida's haul of acorns is 5 of Omar's piles of 16 stacked together. How many acorns is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0331",
@@ -3142,7 +3142,7 @@ export const ITEMS = [
     structureType: "storyTimes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":78,"display":{"bar":{"k":6,"u":13,"kind":"timesOf"},"promptText":"Whatever June collects, Omar collects 6 times over. June has 13 bottle caps. What does Omar have? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":78,"display":{"bar":{"k":6,"u":13,"kind":"timesOf"},"promptText":"June has 13 bottle caps. Omar has 6 times as many bottle caps as June. How many bottle caps does Omar have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0332",
@@ -3152,7 +3152,7 @@ export const ITEMS = [
     structureType: "storyTimes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"bar":{"k":3,"u":24,"kind":"timesOf"},"promptText":"Zoe saves 24 seashells; June saves 3 times as many. How many seashells does June save? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"bar":{"k":3,"u":24,"kind":"timesOf"},"promptText":"Zoe saves 24 seashells; June saves 3 times as many. How many seashells does June save?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0333",
@@ -3162,7 +3162,7 @@ export const ITEMS = [
     structureType: "storyTimes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"bar":{"k":4,"u":22,"kind":"timesOf"},"promptText":"Zoe's haul of trading cards is 4 of Ben's piles of 22 stacked together. How many trading cards is that? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"bar":{"k":4,"u":22,"kind":"timesOf"},"promptText":"Zoe's haul of trading cards is 4 of Ben's piles of 22 stacked together. How many trading cards is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0334",
@@ -3172,7 +3172,7 @@ export const ITEMS = [
     structureType: "storyTimes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"bar":{"k":5,"u":18,"kind":"timesOf"},"promptText":"Whatever Lily collects, Ben collects 5 times over. Lily has 18 acorns. What does Ben have? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"bar":{"k":5,"u":18,"kind":"timesOf"},"promptText":"Ben collects 5 times as many acorns as Lily. Lily has 18 acorns. How many acorns does Ben have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0335",
@@ -3182,7 +3182,7 @@ export const ITEMS = [
     structureType: "storyTimes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":77,"display":{"bar":{"k":7,"u":11,"kind":"timesOf"},"promptText":"Rosa saves 11 bottle caps; Lily saves 7 times as many. How many bottle caps does Lily save? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":77,"display":{"bar":{"k":7,"u":11,"kind":"timesOf"},"promptText":"Rosa saves 11 bottle caps; Lily saves 7 times as many. How many bottle caps does Lily save?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0336",
@@ -3192,7 +3192,7 @@ export const ITEMS = [
     structureType: "storyTimes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":87,"display":{"bar":{"k":3,"u":29,"kind":"timesOf"},"promptText":"Rosa's haul of seashells is 3 of Finn's piles of 29 stacked together. How many seashells is that? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":87,"display":{"bar":{"k":3,"u":29,"kind":"timesOf"},"promptText":"Rosa's haul of seashells is 3 of Finn's piles of 29 stacked together. How many seashells is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0337",
@@ -3202,7 +3202,7 @@ export const ITEMS = [
     structureType: "storyTimes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":92,"display":{"bar":{"k":4,"u":23,"kind":"timesOf"},"promptText":"Whatever Amara collects, Finn collects 4 times over. Amara has 23 trading cards. What does Finn have? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":92,"display":{"bar":{"k":4,"u":23,"kind":"timesOf"},"promptText":"Amara has 23 trading cards. Finn has 4 times as many trading cards as Amara. How many trading cards does Finn have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0338",
@@ -3212,7 +3212,7 @@ export const ITEMS = [
     structureType: "storyTimes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":95,"display":{"bar":{"k":5,"u":19,"kind":"timesOf"},"promptText":"Diego saves 19 acorns; Amara saves 5 times as many. How many acorns does Amara save? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":95,"display":{"bar":{"k":5,"u":19,"kind":"timesOf"},"promptText":"Diego saves 19 acorns; Amara saves 5 times as many. How many acorns does Amara save?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0339",
@@ -3222,7 +3222,7 @@ export const ITEMS = [
     structureType: "storyTimes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"bar":{"k":7,"u":12,"kind":"timesOf"},"promptText":"Diego's haul of bottle caps is 7 of Priya's piles of 12 stacked together. How many bottle caps is that? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"bar":{"k":7,"u":12,"kind":"timesOf"},"promptText":"Diego's haul of bottle caps is 7 of Priya's piles of 12 stacked together. How many bottle caps is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0340",
@@ -3232,7 +3232,7 @@ export const ITEMS = [
     structureType: "storyTimes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"bar":{"k":3,"u":27,"kind":"timesOf"},"promptText":"Whatever Leo collects, Priya collects 3 times over. Leo has 27 seashells. What does Priya have? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"bar":{"k":3,"u":27,"kind":"timesOf"},"promptText":"Priya collects 3 times as many seashells as Leo. Leo has 27 seashells. How many seashells does Priya have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0341",
@@ -3242,7 +3242,7 @@ export const ITEMS = [
     structureType: "storyTimes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":642,"display":{"bar":{"k":3,"u":214,"kind":"timesOf"},"promptText":"Whatever Omar collects, Luca collects 3 times over. Omar has 214 seashells. What does Luca have? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":642,"display":{"bar":{"k":3,"u":214,"kind":"timesOf"},"promptText":"Omar has 214 seashells. Luca has 3 times as many seashells as Omar. How many seashells does Luca have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0342",
@@ -3252,7 +3252,7 @@ export const ITEMS = [
     structureType: "storyTimes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":692,"display":{"bar":{"k":4,"u":173,"kind":"timesOf"},"promptText":"June saves 173 trading cards; Nia saves 4 times as many. How many trading cards does Nia save? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":692,"display":{"bar":{"k":4,"u":173,"kind":"timesOf"},"promptText":"June saves 173 trading cards; Nia saves 4 times as many. How many trading cards does Nia save?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0343",
@@ -3262,7 +3262,7 @@ export const ITEMS = [
     structureType: "storyTimes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":730,"display":{"bar":{"k":5,"u":146,"kind":"timesOf"},"promptText":"Theo's haul of acorns is 5 of Zoe's piles of 146 stacked together. How many acorns is that? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":730,"display":{"bar":{"k":5,"u":146,"kind":"timesOf"},"promptText":"Theo's haul of acorns is 5 of Zoe's piles of 146 stacked together. How many acorns is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0344",
@@ -3272,7 +3272,7 @@ export const ITEMS = [
     structureType: "storyTimes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":744,"display":{"bar":{"k":6,"u":124,"kind":"timesOf"},"promptText":"Whatever Ben collects, Ava collects 6 times over. Ben has 124 bottle caps. What does Ava have? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":744,"display":{"bar":{"k":6,"u":124,"kind":"timesOf"},"promptText":"Ava collects 6 times as many bottle caps as Ben. Ben has 124 bottle caps. How many bottle caps does Ava have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0345",
@@ -3282,7 +3282,7 @@ export const ITEMS = [
     structureType: "storyTimes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":801,"display":{"bar":{"k":3,"u":267,"kind":"timesOf"},"promptText":"Lily saves 267 seashells; Kai saves 3 times as many. How many seashells does Kai save? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":801,"display":{"bar":{"k":3,"u":267,"kind":"timesOf"},"promptText":"Lily saves 267 seashells; Kai saves 3 times as many. How many seashells does Kai save?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0346",
@@ -3292,7 +3292,7 @@ export const ITEMS = [
     structureType: "storyTimes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":768,"display":{"bar":{"k":4,"u":192,"kind":"timesOf"},"promptText":"Ida's haul of trading cards is 4 of Rosa's piles of 192 stacked together. How many trading cards is that? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":768,"display":{"bar":{"k":4,"u":192,"kind":"timesOf"},"promptText":"Ida's haul of trading cards is 4 of Rosa's piles of 192 stacked together. How many trading cards is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0347",
@@ -3302,7 +3302,7 @@ export const ITEMS = [
     structureType: "storyTimes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":815,"display":{"bar":{"k":5,"u":163,"kind":"timesOf"},"promptText":"Whatever Finn collects, Omar collects 5 times over. Finn has 163 acorns. What does Omar have? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":815,"display":{"bar":{"k":5,"u":163,"kind":"timesOf"},"promptText":"Finn has 163 acorns. Omar has 5 times as many acorns as Finn. How many acorns does Omar have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0348",
@@ -3312,7 +3312,7 @@ export const ITEMS = [
     structureType: "storyTimes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":822,"display":{"bar":{"k":6,"u":137,"kind":"timesOf"},"promptText":"Amara saves 137 bottle caps; June saves 6 times as many. How many bottle caps does June save? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":822,"display":{"bar":{"k":6,"u":137,"kind":"timesOf"},"promptText":"Amara saves 137 bottle caps; June saves 6 times as many. How many bottle caps does June save?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0349",
@@ -3322,7 +3322,7 @@ export const ITEMS = [
     structureType: "storyTimes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":729,"display":{"bar":{"k":3,"u":243,"kind":"timesOf"},"promptText":"Zoe's haul of seashells is 3 of Diego's piles of 243 stacked together. How many seashells is that? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":729,"display":{"bar":{"k":3,"u":243,"kind":"timesOf"},"promptText":"Zoe's haul of seashells is 3 of Diego's piles of 243 stacked together. How many seashells is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0350",
@@ -3332,7 +3332,7 @@ export const ITEMS = [
     structureType: "storyTimes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":904,"display":{"bar":{"k":4,"u":226,"kind":"timesOf"},"promptText":"Whatever Priya collects, Ben collects 4 times over. Priya has 226 trading cards. What does Ben have? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":904,"display":{"bar":{"k":4,"u":226,"kind":"timesOf"},"promptText":"Ben collects 4 times as many trading cards as Priya. Priya has 226 trading cards. How many trading cards does Ben have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0351",
@@ -3342,7 +3342,7 @@ export const ITEMS = [
     structureType: "storyTimes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":920,"display":{"bar":{"k":5,"u":184,"kind":"timesOf"},"promptText":"Leo saves 184 acorns; Lily saves 5 times as many. How many acorns does Lily save? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":920,"display":{"bar":{"k":5,"u":184,"kind":"timesOf"},"promptText":"Leo saves 184 acorns; Lily saves 5 times as many. How many acorns does Lily save?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0352",
@@ -3352,7 +3352,7 @@ export const ITEMS = [
     structureType: "storyTimes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":826,"display":{"bar":{"k":7,"u":118,"kind":"timesOf"},"promptText":"Rosa's haul of bottle caps is 7 of Nora's piles of 118 stacked together. How many bottle caps is that? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":826,"display":{"bar":{"k":7,"u":118,"kind":"timesOf"},"promptText":"Rosa's haul of bottle caps is 7 of Nora's piles of 118 stacked together. How many bottle caps is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0353",
@@ -3362,7 +3362,7 @@ export const ITEMS = [
     structureType: "storyTimes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":876,"display":{"bar":{"k":3,"u":292,"kind":"timesOf"},"promptText":"Whatever Sam collects, Finn collects 3 times over. Sam has 292 seashells. What does Finn have? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":876,"display":{"bar":{"k":3,"u":292,"kind":"timesOf"},"promptText":"Sam has 292 seashells. Finn has 3 times as many seashells as Sam. How many seashells does Finn have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0354",
@@ -3372,7 +3372,7 @@ export const ITEMS = [
     structureType: "storyTimes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":936,"display":{"bar":{"k":4,"u":234,"kind":"timesOf"},"promptText":"Mina saves 234 trading cards; Amara saves 4 times as many. How many trading cards does Amara save? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":936,"display":{"bar":{"k":4,"u":234,"kind":"timesOf"},"promptText":"Mina saves 234 trading cards; Amara saves 4 times as many. How many trading cards does Amara save?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0355",
@@ -3382,7 +3382,7 @@ export const ITEMS = [
     structureType: "storyTimes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":985,"display":{"bar":{"k":5,"u":197,"kind":"timesOf"},"promptText":"Diego's haul of acorns is 5 of Luca's piles of 197 stacked together. How many acorns is that? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":985,"display":{"bar":{"k":5,"u":197,"kind":"timesOf"},"promptText":"Diego's haul of acorns is 5 of Luca's piles of 197 stacked together. How many acorns is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0356",
@@ -3392,7 +3392,7 @@ export const ITEMS = [
     structureType: "storyTimes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":847,"display":{"bar":{"k":7,"u":121,"kind":"timesOf"},"promptText":"Whatever Nia collects, Priya collects 7 times over. Nia has 121 bottle caps. What does Priya have? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":847,"display":{"bar":{"k":7,"u":121,"kind":"timesOf"},"promptText":"Priya collects 7 times as many bottle caps as Nia. Nia has 121 bottle caps. How many bottle caps does Priya have?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0357",
@@ -3402,7 +3402,7 @@ export const ITEMS = [
     structureType: "storyTimes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":825,"display":{"bar":{"k":3,"u":275,"kind":"timesOf"},"promptText":"Theo saves 275 seashells; Leo saves 3 times as many. How many seashells does Leo save? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":825,"display":{"bar":{"k":3,"u":275,"kind":"timesOf"},"promptText":"Theo saves 275 seashells; Leo saves 3 times as many. How many seashells does Leo save?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0358",
@@ -3582,7 +3582,7 @@ export const ITEMS = [
     structureType: "storyShare_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"bar":{"k":3,"w":84,"kind":"unitOf"},"promptText":"Luca lines up 84 seashells in 3 equal rows. How many seashells fill one row? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"bar":{"k":3,"w":84,"kind":"unitOf"},"promptText":"Luca lines up 84 seashells in 3 equal rows. How many seashells fill one row?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0376",
@@ -3592,7 +3592,7 @@ export const ITEMS = [
     structureType: "storyShare_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"bar":{"k":4,"w":76,"kind":"unitOf"},"promptText":"Nia deals 76 trading cards evenly into 4 gift bags. How many trading cards go in each bag? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"bar":{"k":4,"w":76,"kind":"unitOf"},"promptText":"Nia deals 76 trading cards evenly into 4 gift bags. How many trading cards go in each bag?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0377",
@@ -3602,7 +3602,7 @@ export const ITEMS = [
     structureType: "storyShare_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"bar":{"k":5,"w":95,"kind":"unitOf"},"promptText":"A crate of 95 acorns splits fairly across 5 tables for Theo's party. How many acorns per table? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"bar":{"k":5,"w":95,"kind":"unitOf"},"promptText":"A crate of 95 acorns splits fairly across 5 tables for Theo's party. How many acorns per table?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0378",
@@ -3612,7 +3612,7 @@ export const ITEMS = [
     structureType: "storyShare_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"bar":{"k":6,"w":72,"kind":"unitOf"},"promptText":"Ava lines up 72 bottle caps in 6 equal rows. How many bottle caps fill one row? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"bar":{"k":6,"w":72,"kind":"unitOf"},"promptText":"Ava lines up 72 bottle caps in 6 equal rows. How many bottle caps fill one row?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0379",
@@ -3622,7 +3622,7 @@ export const ITEMS = [
     structureType: "storyShare_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"bar":{"k":3,"w":87,"kind":"unitOf"},"promptText":"Kai deals 87 seashells evenly into 3 gift bags. How many seashells go in each bag? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"bar":{"k":3,"w":87,"kind":"unitOf"},"promptText":"Kai deals 87 seashells evenly into 3 gift bags. How many seashells go in each bag?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0380",
@@ -3632,7 +3632,7 @@ export const ITEMS = [
     structureType: "storyShare_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"bar":{"k":4,"w":92,"kind":"unitOf"},"promptText":"A crate of 92 trading cards splits fairly across 4 tables for Ida's party. How many trading cards per table? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"bar":{"k":4,"w":92,"kind":"unitOf"},"promptText":"A crate of 92 trading cards splits fairly across 4 tables for Ida's party. How many trading cards per table?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0381",
@@ -3642,7 +3642,7 @@ export const ITEMS = [
     structureType: "storyShare_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"bar":{"k":5,"w":85,"kind":"unitOf"},"promptText":"Omar lines up 85 acorns in 5 equal rows. How many acorns fill one row? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"bar":{"k":5,"w":85,"kind":"unitOf"},"promptText":"Omar lines up 85 acorns in 5 equal rows. How many acorns fill one row?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0382",
@@ -3652,7 +3652,7 @@ export const ITEMS = [
     structureType: "storyShare_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bar":{"k":6,"w":78,"kind":"unitOf"},"promptText":"June deals 78 bottle caps evenly into 6 gift bags. How many bottle caps go in each bag? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bar":{"k":6,"w":78,"kind":"unitOf"},"promptText":"June deals 78 bottle caps evenly into 6 gift bags. How many bottle caps go in each bag?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0383",
@@ -3662,7 +3662,7 @@ export const ITEMS = [
     structureType: "storyShare_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"bar":{"k":3,"w":96,"kind":"unitOf"},"promptText":"A crate of 96 seashells splits fairly across 3 tables for Zoe's party. How many seashells per table? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"bar":{"k":3,"w":96,"kind":"unitOf"},"promptText":"A crate of 96 seashells splits fairly across 3 tables for Zoe's party. How many seashells per table?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0384",
@@ -3672,7 +3672,7 @@ export const ITEMS = [
     structureType: "storyShare_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"bar":{"k":4,"w":88,"kind":"unitOf"},"promptText":"Ben lines up 88 trading cards in 4 equal rows. How many trading cards fill one row? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"bar":{"k":4,"w":88,"kind":"unitOf"},"promptText":"Ben lines up 88 trading cards in 4 equal rows. How many trading cards fill one row?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0385",
@@ -3682,7 +3682,7 @@ export const ITEMS = [
     structureType: "storyShare_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bar":{"k":5,"w":75,"kind":"unitOf"},"promptText":"Lily deals 75 acorns evenly into 5 gift bags. How many acorns go in each bag? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bar":{"k":5,"w":75,"kind":"unitOf"},"promptText":"Lily deals 75 acorns evenly into 5 gift bags. How many acorns go in each bag?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0386",
@@ -3692,7 +3692,7 @@ export const ITEMS = [
     structureType: "storyShare_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bar":{"k":6,"w":84,"kind":"unitOf"},"promptText":"A crate of 84 bottle caps splits fairly across 6 tables for Rosa's party. How many bottle caps per table? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bar":{"k":6,"w":84,"kind":"unitOf"},"promptText":"A crate of 84 bottle caps splits fairly across 6 tables for Rosa's party. How many bottle caps per table?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0387",
@@ -3702,7 +3702,7 @@ export const ITEMS = [
     structureType: "storyShare_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"bar":{"k":3,"w":93,"kind":"unitOf"},"promptText":"Finn lines up 93 seashells in 3 equal rows. How many seashells fill one row? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"bar":{"k":3,"w":93,"kind":"unitOf"},"promptText":"Finn lines up 93 seashells in 3 equal rows. How many seashells fill one row?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0388",
@@ -3712,7 +3712,7 @@ export const ITEMS = [
     structureType: "storyShare_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"bar":{"k":4,"w":68,"kind":"unitOf"},"promptText":"Amara deals 68 trading cards evenly into 4 gift bags. How many trading cards go in each bag? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"bar":{"k":4,"w":68,"kind":"unitOf"},"promptText":"Amara deals 68 trading cards evenly into 4 gift bags. How many trading cards go in each bag?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0389",
@@ -3722,7 +3722,7 @@ export const ITEMS = [
     structureType: "storyShare_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"bar":{"k":5,"w":90,"kind":"unitOf"},"promptText":"A crate of 90 acorns splits fairly across 5 tables for Diego's party. How many acorns per table? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"bar":{"k":5,"w":90,"kind":"unitOf"},"promptText":"A crate of 90 acorns splits fairly across 5 tables for Diego's party. How many acorns per table?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0390",
@@ -3732,7 +3732,7 @@ export const ITEMS = [
     structureType: "storyShare_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bar":{"k":6,"w":66,"kind":"unitOf"},"promptText":"Priya lines up 66 bottle caps in 6 equal rows. How many bottle caps fill one row? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bar":{"k":6,"w":66,"kind":"unitOf"},"promptText":"Priya lines up 66 bottle caps in 6 equal rows. How many bottle caps fill one row?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0391",
@@ -3742,7 +3742,7 @@ export const ITEMS = [
     structureType: "storyShare_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"bar":{"k":3,"w":81,"kind":"unitOf"},"promptText":"Leo deals 81 seashells evenly into 3 gift bags. How many seashells go in each bag? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"bar":{"k":3,"w":81,"kind":"unitOf"},"promptText":"Leo deals 81 seashells evenly into 3 gift bags. How many seashells go in each bag?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0392",
@@ -3752,7 +3752,7 @@ export const ITEMS = [
     structureType: "storyShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":282,"display":{"bar":{"k":3,"w":846,"kind":"unitOf"},"promptText":"Sam deals 846 seashells evenly into 3 gift bags. How many seashells go in each bag? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":282,"display":{"bar":{"k":3,"w":846,"kind":"unitOf"},"promptText":"Sam deals 846 seashells evenly into 3 gift bags. How many seashells go in each bag?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0393",
@@ -3762,7 +3762,7 @@ export const ITEMS = [
     structureType: "storyShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":191,"display":{"bar":{"k":4,"w":764,"kind":"unitOf"},"promptText":"A crate of 764 trading cards splits fairly across 4 tables for Mina's party. How many trading cards per table? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":191,"display":{"bar":{"k":4,"w":764,"kind":"unitOf"},"promptText":"A crate of 764 trading cards splits fairly across 4 tables for Mina's party. How many trading cards per table?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0394",
@@ -3772,7 +3772,7 @@ export const ITEMS = [
     structureType: "storyShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":191,"display":{"bar":{"k":5,"w":955,"kind":"unitOf"},"promptText":"Luca lines up 955 acorns in 5 equal rows. How many acorns fill one row? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":191,"display":{"bar":{"k":5,"w":955,"kind":"unitOf"},"promptText":"Luca lines up 955 acorns in 5 equal rows. How many acorns fill one row?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0395",
@@ -3782,7 +3782,7 @@ export const ITEMS = [
     structureType: "storyShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":121,"display":{"bar":{"k":6,"w":726,"kind":"unitOf"},"promptText":"Nia deals 726 bottle caps evenly into 6 gift bags. How many bottle caps go in each bag? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":121,"display":{"bar":{"k":6,"w":726,"kind":"unitOf"},"promptText":"Nia deals 726 bottle caps evenly into 6 gift bags. How many bottle caps go in each bag?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0396",
@@ -3792,7 +3792,7 @@ export const ITEMS = [
     structureType: "storyShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":291,"display":{"bar":{"k":3,"w":873,"kind":"unitOf"},"promptText":"A crate of 873 seashells splits fairly across 3 tables for Theo's party. How many seashells per table? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":291,"display":{"bar":{"k":3,"w":873,"kind":"unitOf"},"promptText":"A crate of 873 seashells splits fairly across 3 tables for Theo's party. How many seashells per table?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0397",
@@ -3802,7 +3802,7 @@ export const ITEMS = [
     structureType: "storyShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":232,"display":{"bar":{"k":4,"w":928,"kind":"unitOf"},"promptText":"Ava lines up 928 trading cards in 4 equal rows. How many trading cards fill one row? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":232,"display":{"bar":{"k":4,"w":928,"kind":"unitOf"},"promptText":"Ava lines up 928 trading cards in 4 equal rows. How many trading cards fill one row?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0398",
@@ -3812,7 +3812,7 @@ export const ITEMS = [
     structureType: "storyShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":171,"display":{"bar":{"k":5,"w":855,"kind":"unitOf"},"promptText":"Kai deals 855 acorns evenly into 5 gift bags. How many acorns go in each bag? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":171,"display":{"bar":{"k":5,"w":855,"kind":"unitOf"},"promptText":"Kai deals 855 acorns evenly into 5 gift bags. How many acorns go in each bag?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0399",
@@ -3822,7 +3822,7 @@ export const ITEMS = [
     structureType: "storyShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":131,"display":{"bar":{"k":6,"w":786,"kind":"unitOf"},"promptText":"A crate of 786 bottle caps splits fairly across 6 tables for Ida's party. How many bottle caps per table? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":131,"display":{"bar":{"k":6,"w":786,"kind":"unitOf"},"promptText":"A crate of 786 bottle caps splits fairly across 6 tables for Ida's party. How many bottle caps per table?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0400",
@@ -3832,7 +3832,7 @@ export const ITEMS = [
     structureType: "storyShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":321,"display":{"bar":{"k":3,"w":963,"kind":"unitOf"},"promptText":"Omar lines up 963 seashells in 3 equal rows. How many seashells fill one row? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":321,"display":{"bar":{"k":3,"w":963,"kind":"unitOf"},"promptText":"Omar lines up 963 seashells in 3 equal rows. How many seashells fill one row?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0401",
@@ -3842,7 +3842,7 @@ export const ITEMS = [
     structureType: "storyShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":221,"display":{"bar":{"k":4,"w":884,"kind":"unitOf"},"promptText":"June deals 884 trading cards evenly into 4 gift bags. How many trading cards go in each bag? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":221,"display":{"bar":{"k":4,"w":884,"kind":"unitOf"},"promptText":"June deals 884 trading cards evenly into 4 gift bags. How many trading cards go in each bag?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0402",
@@ -3852,7 +3852,7 @@ export const ITEMS = [
     structureType: "storyShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":151,"display":{"bar":{"k":5,"w":755,"kind":"unitOf"},"promptText":"A crate of 755 acorns splits fairly across 5 tables for Zoe's party. How many acorns per table? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":151,"display":{"bar":{"k":5,"w":755,"kind":"unitOf"},"promptText":"A crate of 755 acorns splits fairly across 5 tables for Zoe's party. How many acorns per table?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0403",
@@ -3862,7 +3862,7 @@ export const ITEMS = [
     structureType: "storyShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":141,"display":{"bar":{"k":6,"w":846,"kind":"unitOf"},"promptText":"Ben lines up 846 bottle caps in 6 equal rows. How many bottle caps fill one row? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":141,"display":{"bar":{"k":6,"w":846,"kind":"unitOf"},"promptText":"Ben lines up 846 bottle caps in 6 equal rows. How many bottle caps fill one row?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0404",
@@ -3872,7 +3872,7 @@ export const ITEMS = [
     structureType: "storyShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":313,"display":{"bar":{"k":3,"w":939,"kind":"unitOf"},"promptText":"Lily deals 939 seashells evenly into 3 gift bags. How many seashells go in each bag? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":313,"display":{"bar":{"k":3,"w":939,"kind":"unitOf"},"promptText":"Lily deals 939 seashells evenly into 3 gift bags. How many seashells go in each bag?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0405",
@@ -3882,7 +3882,7 @@ export const ITEMS = [
     structureType: "storyShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":172,"display":{"bar":{"k":4,"w":688,"kind":"unitOf"},"promptText":"A crate of 688 trading cards splits fairly across 4 tables for Rosa's party. How many trading cards per table? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":172,"display":{"bar":{"k":4,"w":688,"kind":"unitOf"},"promptText":"A crate of 688 trading cards splits fairly across 4 tables for Rosa's party. How many trading cards per table?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0406",
@@ -3892,7 +3892,7 @@ export const ITEMS = [
     structureType: "storyShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":181,"display":{"bar":{"k":5,"w":905,"kind":"unitOf"},"promptText":"Finn lines up 905 acorns in 5 equal rows. How many acorns fill one row? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":181,"display":{"bar":{"k":5,"w":905,"kind":"unitOf"},"promptText":"Finn lines up 905 acorns in 5 equal rows. How many acorns fill one row?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0407",
@@ -3902,7 +3902,7 @@ export const ITEMS = [
     structureType: "storyShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":111,"display":{"bar":{"k":6,"w":666,"kind":"unitOf"},"promptText":"Amara deals 666 bottle caps evenly into 6 gift bags. How many bottle caps go in each bag? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":111,"display":{"bar":{"k":6,"w":666,"kind":"unitOf"},"promptText":"Amara deals 666 bottle caps evenly into 6 gift bags. How many bottle caps go in each bag?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0408",
@@ -3912,7 +3912,7 @@ export const ITEMS = [
     structureType: "storyShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":271,"display":{"bar":{"k":3,"w":813,"kind":"unitOf"},"promptText":"A crate of 813 seashells splits fairly across 3 tables for Diego's party. How many seashells per table? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":271,"display":{"bar":{"k":3,"w":813,"kind":"unitOf"},"promptText":"A crate of 813 seashells splits fairly across 3 tables for Diego's party. How many seashells per table?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0409",
@@ -4092,7 +4092,7 @@ export const ITEMS = [
     structureType: "storyRows_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":63,"display":{"counting":{"kind":"sum","parts":[21,21,21]},"promptText":"Sam plants 3 rows of 21 seedlings. How many seedlings stand in Sam's garden? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":63,"display":{"counting":{"kind":"sum","parts":[21,21,21]},"promptText":"Sam plants 3 rows of 21 seedlings. How many seedlings stand in Sam's garden?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0427",
@@ -4102,7 +4102,7 @@ export const ITEMS = [
     structureType: "storyRows_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":68,"display":{"counting":{"kind":"sum","parts":[17,17,17,17]},"promptText":"Each of Mina's 4 trays carries 17 muffins. How many muffins bake in all? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":68,"display":{"counting":{"kind":"sum","parts":[17,17,17,17]},"promptText":"Each of Mina's 4 trays carries 17 muffins. How many muffins bake in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0428",
@@ -4112,7 +4112,7 @@ export const ITEMS = [
     structureType: "storyRows_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"counting":{"kind":"sum","parts":[14,14,14,14,14]},"promptText":"Luca clips 5 strings of 14 beads. How many beads hang altogether? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"counting":{"kind":"sum","parts":[14,14,14,14,14]},"promptText":"Luca clips 5 strings of 14 beads. How many beads hang altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0429",
@@ -4122,7 +4122,7 @@ export const ITEMS = [
     structureType: "storyRows_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"counting":{"kind":"sum","parts":[12,12,12,12,12,12]},"promptText":"Nia plants 6 rows of 12 seedlings. How many seedlings stand in Nia's garden? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"counting":{"kind":"sum","parts":[12,12,12,12,12,12]},"promptText":"Nia plants 6 rows of 12 seedlings. How many seedlings stand in Nia's garden?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0430",
@@ -4132,7 +4132,7 @@ export const ITEMS = [
     structureType: "storyRows_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":78,"display":{"counting":{"kind":"sum","parts":[26,26,26]},"promptText":"Each of Theo's 3 trays carries 26 muffins. How many muffins bake in all? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":78,"display":{"counting":{"kind":"sum","parts":[26,26,26]},"promptText":"Each of Theo's 3 trays carries 26 muffins. How many muffins bake in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0431",
@@ -4142,7 +4142,7 @@ export const ITEMS = [
     structureType: "storyRows_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":76,"display":{"counting":{"kind":"sum","parts":[19,19,19,19]},"promptText":"Ava clips 4 strings of 19 beads. How many beads hang altogether? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":76,"display":{"counting":{"kind":"sum","parts":[19,19,19,19]},"promptText":"Ava clips 4 strings of 19 beads. How many beads hang altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0432",
@@ -4152,7 +4152,7 @@ export const ITEMS = [
     structureType: "storyRows_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"counting":{"kind":"sum","parts":[16,16,16,16,16]},"promptText":"Kai plants 5 rows of 16 seedlings. How many seedlings stand in Kai's garden? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"counting":{"kind":"sum","parts":[16,16,16,16,16]},"promptText":"Kai plants 5 rows of 16 seedlings. How many seedlings stand in Kai's garden?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0433",
@@ -4162,7 +4162,7 @@ export const ITEMS = [
     structureType: "storyRows_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":78,"display":{"counting":{"kind":"sum","parts":[13,13,13,13,13,13]},"promptText":"Each of Ida's 6 trays carries 13 muffins. How many muffins bake in all? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":78,"display":{"counting":{"kind":"sum","parts":[13,13,13,13,13,13]},"promptText":"Each of Ida's 6 trays carries 13 muffins. How many muffins bake in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0434",
@@ -4172,7 +4172,7 @@ export const ITEMS = [
     structureType: "storyRows_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"counting":{"kind":"sum","parts":[24,24,24]},"promptText":"Omar clips 3 strings of 24 beads. How many beads hang altogether? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"counting":{"kind":"sum","parts":[24,24,24]},"promptText":"Omar clips 3 strings of 24 beads. How many beads hang altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0435",
@@ -4182,7 +4182,7 @@ export const ITEMS = [
     structureType: "storyRows_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"counting":{"kind":"sum","parts":[22,22,22,22]},"promptText":"June plants 4 rows of 22 seedlings. How many seedlings stand in June's garden? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"counting":{"kind":"sum","parts":[22,22,22,22]},"promptText":"June plants 4 rows of 22 seedlings. How many seedlings stand in June's garden?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0436",
@@ -4192,7 +4192,7 @@ export const ITEMS = [
     structureType: "storyRows_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"counting":{"kind":"sum","parts":[18,18,18,18,18]},"promptText":"Each of Zoe's 5 trays carries 18 muffins. How many muffins bake in all? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"counting":{"kind":"sum","parts":[18,18,18,18,18]},"promptText":"Each of Zoe's 5 trays carries 18 muffins. How many muffins bake in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0437",
@@ -4202,7 +4202,7 @@ export const ITEMS = [
     structureType: "storyRows_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":77,"display":{"counting":{"kind":"sum","parts":[11,11,11,11,11,11,11]},"promptText":"Ben clips 7 strings of 11 beads. How many beads hang altogether? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":77,"display":{"counting":{"kind":"sum","parts":[11,11,11,11,11,11,11]},"promptText":"Ben clips 7 strings of 11 beads. How many beads hang altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0438",
@@ -4212,7 +4212,7 @@ export const ITEMS = [
     structureType: "storyRows_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":87,"display":{"counting":{"kind":"sum","parts":[29,29,29]},"promptText":"Lily plants 3 rows of 29 seedlings. How many seedlings stand in Lily's garden? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":87,"display":{"counting":{"kind":"sum","parts":[29,29,29]},"promptText":"Lily plants 3 rows of 29 seedlings. How many seedlings stand in Lily's garden?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0439",
@@ -4222,7 +4222,7 @@ export const ITEMS = [
     structureType: "storyRows_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":92,"display":{"counting":{"kind":"sum","parts":[23,23,23,23]},"promptText":"Each of Rosa's 4 trays carries 23 muffins. How many muffins bake in all? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":92,"display":{"counting":{"kind":"sum","parts":[23,23,23,23]},"promptText":"Each of Rosa's 4 trays carries 23 muffins. How many muffins bake in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0440",
@@ -4232,7 +4232,7 @@ export const ITEMS = [
     structureType: "storyRows_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":95,"display":{"counting":{"kind":"sum","parts":[19,19,19,19,19]},"promptText":"Finn clips 5 strings of 19 beads. How many beads hang altogether? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":95,"display":{"counting":{"kind":"sum","parts":[19,19,19,19,19]},"promptText":"Finn clips 5 strings of 19 beads. How many beads hang altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0441",
@@ -4242,7 +4242,7 @@ export const ITEMS = [
     structureType: "storyRows_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"counting":{"kind":"sum","parts":[12,12,12,12,12,12,12]},"promptText":"Amara plants 7 rows of 12 seedlings. How many seedlings stand in Amara's garden? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"counting":{"kind":"sum","parts":[12,12,12,12,12,12,12]},"promptText":"Amara plants 7 rows of 12 seedlings. How many seedlings stand in Amara's garden?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0442",
@@ -4252,7 +4252,7 @@ export const ITEMS = [
     structureType: "storyRows_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"counting":{"kind":"sum","parts":[11,11,11,11,11,11,11,11]},"promptText":"Each of Diego's 8 trays carries 11 muffins. How many muffins bake in all? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"counting":{"kind":"sum","parts":[11,11,11,11,11,11,11,11]},"promptText":"Each of Diego's 8 trays carries 11 muffins. How many muffins bake in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0443",
@@ -4262,7 +4262,7 @@ export const ITEMS = [
     structureType: "storyRows_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":642,"display":{"counting":{"kind":"sum","parts":[214,214,214]},"promptText":"Each of Mina's 3 trays carries 214 muffins. How many muffins bake in all? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":642,"display":{"counting":{"kind":"sum","parts":[214,214,214]},"promptText":"Mina's family bakery bakes 214 muffins each day. How many muffins does the bakery bake in 3 days?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0444",
@@ -4272,7 +4272,7 @@ export const ITEMS = [
     structureType: "storyRows_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":692,"display":{"counting":{"kind":"sum","parts":[173,173,173,173]},"promptText":"Luca clips 4 strings of 173 beads. How many beads hang altogether? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":692,"display":{"counting":{"kind":"sum","parts":[173,173,173,173]},"promptText":"Luca clips 4 strings of 173 beads. How many beads hang altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0445",
@@ -4282,7 +4282,7 @@ export const ITEMS = [
     structureType: "storyRows_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":730,"display":{"counting":{"kind":"sum","parts":[146,146,146,146,146]},"promptText":"Nia plants 5 rows of 146 seedlings. How many seedlings stand in Nia's garden? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":730,"display":{"counting":{"kind":"sum","parts":[146,146,146,146,146]},"promptText":"Nia plants 5 rows of 146 seedlings. How many seedlings stand in Nia's garden?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0446",
@@ -4292,7 +4292,7 @@ export const ITEMS = [
     structureType: "storyRows_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":744,"display":{"counting":{"kind":"sum","parts":[124,124,124,124,124,124]},"promptText":"Each of Theo's 6 trays carries 124 muffins. How many muffins bake in all? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":744,"display":{"counting":{"kind":"sum","parts":[124,124,124,124,124,124]},"promptText":"The bakery on Theo's street bakes 124 muffins every morning. How many muffins does it bake in 6 mornings?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0447",
@@ -4302,7 +4302,7 @@ export const ITEMS = [
     structureType: "storyRows_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":801,"display":{"counting":{"kind":"sum","parts":[267,267,267]},"promptText":"Ava clips 3 strings of 267 beads. How many beads hang altogether? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":801,"display":{"counting":{"kind":"sum","parts":[267,267,267]},"promptText":"Ava clips 3 strings of 267 beads. How many beads hang altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0448",
@@ -4312,7 +4312,7 @@ export const ITEMS = [
     structureType: "storyRows_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":768,"display":{"counting":{"kind":"sum","parts":[192,192,192,192]},"promptText":"Kai plants 4 rows of 192 seedlings. How many seedlings stand in Kai's garden? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":768,"display":{"counting":{"kind":"sum","parts":[192,192,192,192]},"promptText":"Kai plants 4 rows of 192 seedlings. How many seedlings stand in Kai's garden?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0449",
@@ -4322,7 +4322,7 @@ export const ITEMS = [
     structureType: "storyRows_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":815,"display":{"counting":{"kind":"sum","parts":[163,163,163,163,163]},"promptText":"Each of Ida's 5 trays carries 163 muffins. How many muffins bake in all? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":815,"display":{"counting":{"kind":"sum","parts":[163,163,163,163,163]},"promptText":"Ida's family bakery bakes 163 muffins each day. How many muffins does the bakery bake in 5 days?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0450",
@@ -4332,7 +4332,7 @@ export const ITEMS = [
     structureType: "storyRows_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":822,"display":{"counting":{"kind":"sum","parts":[137,137,137,137,137,137]},"promptText":"Omar clips 6 strings of 137 beads. How many beads hang altogether? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":822,"display":{"counting":{"kind":"sum","parts":[137,137,137,137,137,137]},"promptText":"Omar clips 6 strings of 137 beads. How many beads hang altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0451",
@@ -4342,7 +4342,7 @@ export const ITEMS = [
     structureType: "storyRows_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":729,"display":{"counting":{"kind":"sum","parts":[243,243,243]},"promptText":"June plants 3 rows of 243 seedlings. How many seedlings stand in June's garden? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":729,"display":{"counting":{"kind":"sum","parts":[243,243,243]},"promptText":"June plants 3 rows of 243 seedlings. How many seedlings stand in June's garden?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0452",
@@ -4352,7 +4352,7 @@ export const ITEMS = [
     structureType: "storyRows_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":904,"display":{"counting":{"kind":"sum","parts":[226,226,226,226]},"promptText":"Each of Zoe's 4 trays carries 226 muffins. How many muffins bake in all? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":904,"display":{"counting":{"kind":"sum","parts":[226,226,226,226]},"promptText":"The bakery on Zoe's street bakes 226 muffins every morning. How many muffins does it bake in 4 mornings?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0453",
@@ -4362,7 +4362,7 @@ export const ITEMS = [
     structureType: "storyRows_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":920,"display":{"counting":{"kind":"sum","parts":[184,184,184,184,184]},"promptText":"Ben clips 5 strings of 184 beads. How many beads hang altogether? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":920,"display":{"counting":{"kind":"sum","parts":[184,184,184,184,184]},"promptText":"Ben clips 5 strings of 184 beads. How many beads hang altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0454",
@@ -4372,7 +4372,7 @@ export const ITEMS = [
     structureType: "storyRows_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":826,"display":{"counting":{"kind":"sum","parts":[118,118,118,118,118,118,118]},"promptText":"Lily plants 7 rows of 118 seedlings. How many seedlings stand in Lily's garden? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":826,"display":{"counting":{"kind":"sum","parts":[118,118,118,118,118,118,118]},"promptText":"Lily plants 7 rows of 118 seedlings. How many seedlings stand in Lily's garden?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0455",
@@ -4382,7 +4382,7 @@ export const ITEMS = [
     structureType: "storyRows_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":876,"display":{"counting":{"kind":"sum","parts":[292,292,292]},"promptText":"Each of Rosa's 3 trays carries 292 muffins. How many muffins bake in all? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":876,"display":{"counting":{"kind":"sum","parts":[292,292,292]},"promptText":"Rosa's family bakery bakes 292 muffins each day. How many muffins does the bakery bake in 3 days?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0456",
@@ -4392,7 +4392,7 @@ export const ITEMS = [
     structureType: "storyRows_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":936,"display":{"counting":{"kind":"sum","parts":[234,234,234,234]},"promptText":"Finn clips 4 strings of 234 beads. How many beads hang altogether? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":936,"display":{"counting":{"kind":"sum","parts":[234,234,234,234]},"promptText":"Finn clips 4 strings of 234 beads. How many beads hang altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0457",
@@ -4402,7 +4402,7 @@ export const ITEMS = [
     structureType: "storyRows_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":985,"display":{"counting":{"kind":"sum","parts":[197,197,197,197,197]},"promptText":"Amara plants 5 rows of 197 seedlings. How many seedlings stand in Amara's garden? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":985,"display":{"counting":{"kind":"sum","parts":[197,197,197,197,197]},"promptText":"Amara plants 5 rows of 197 seedlings. How many seedlings stand in Amara's garden?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0458",
@@ -4412,7 +4412,7 @@ export const ITEMS = [
     structureType: "storyRows_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":847,"display":{"counting":{"kind":"sum","parts":[121,121,121,121,121,121,121]},"promptText":"Each of Diego's 7 trays carries 121 muffins. How many muffins bake in all? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":847,"display":{"counting":{"kind":"sum","parts":[121,121,121,121,121,121,121]},"promptText":"The bakery on Diego's street bakes 121 muffins every morning. How many muffins does it bake in 7 mornings?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0459",
@@ -4422,7 +4422,7 @@ export const ITEMS = [
     structureType: "storyRows_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":928,"display":{"counting":{"kind":"sum","parts":[116,116,116,116,116,116,116,116]},"promptText":"Priya clips 8 strings of 116 beads. How many beads hang altogether? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":928,"display":{"counting":{"kind":"sum","parts":[116,116,116,116,116,116,116,116]},"promptText":"Priya clips 8 strings of 116 beads. How many beads hang altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0460",
@@ -4442,7 +4442,7 @@ export const ITEMS = [
     structureType: "storyFrac_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bar":{"w":16,"den":2,"num":1,"kind":"fracOf"},"promptText":"Of Mina's 16-page comic, 1 of the 2 equal chapters are finished. How many pages are finished?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bar":{"w":16,"den":2,"num":1,"kind":"fracOf"},"promptText":"Of Mina's 16-page comic, 1 of the 2 equal chapters is finished. How many pages are finished?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0462",
@@ -4452,7 +4452,7 @@ export const ITEMS = [
     structureType: "storyFrac_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bar":{"w":12,"den":4,"num":1,"kind":"fracOf"},"promptText":"Luca pours a 12-cup batch into 4 equal jars and hands over 1. How many cups get handed over?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bar":{"w":12,"den":4,"num":1,"kind":"fracOf"},"promptText":"Luca pours 12 cups of juice into 4 jars, with the same amount in each jar. Luca gives 1 jar to a neighbor. How many cups of juice does Luca give away?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0463",
@@ -4472,7 +4472,7 @@ export const ITEMS = [
     structureType: "storyFrac_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bar":{"w":20,"den":2,"num":1,"kind":"fracOf"},"promptText":"Of Theo's 20-page comic, 1 of the 2 equal chapters are finished. How many pages are finished?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bar":{"w":20,"den":2,"num":1,"kind":"fracOf"},"promptText":"Of Theo's 20-page comic, 1 of the 2 equal chapters is finished. How many pages are finished?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0465",
@@ -4482,7 +4482,7 @@ export const ITEMS = [
     structureType: "storyFrac_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bar":{"w":12,"den":3,"num":1,"kind":"fracOf"},"promptText":"Ava pours a 12-cup batch into 3 equal jars and hands over 1. How many cups get handed over?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bar":{"w":12,"den":3,"num":1,"kind":"fracOf"},"promptText":"Ava pours 12 cups of soup into 3 jars, with the same amount in each jar. Ava gives away 1 jar. How many cups of soup does Ava give away?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0466",
@@ -4512,7 +4512,7 @@ export const ITEMS = [
     structureType: "storyFrac_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bar":{"w":12,"den":3,"num":2,"kind":"fracOf"},"promptText":"Omar pours a 12-cup batch into 3 equal jars and hands over 2. How many cups get handed over?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bar":{"w":12,"den":3,"num":2,"kind":"fracOf"},"promptText":"Omar pours 12 cups of milk into 3 jars, with the same amount in each jar. Omar gives away 2 jars. How many cups of milk does Omar give away?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0469",
@@ -4532,7 +4532,7 @@ export const ITEMS = [
     structureType: "storyFrac_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bar":{"w":20,"den":4,"num":1,"kind":"fracOf"},"promptText":"Of Zoe's 20-page comic, 1 of the 4 equal chapters are finished. How many pages are finished?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bar":{"w":20,"den":4,"num":1,"kind":"fracOf"},"promptText":"Of Zoe's 20-page comic, 1 of the 4 equal chapters is finished. How many pages are finished?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0471",
@@ -4542,7 +4542,7 @@ export const ITEMS = [
     structureType: "storyFrac_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bar":{"w":18,"den":3,"num":1,"kind":"fracOf"},"promptText":"Ben pours a 18-cup batch into 3 equal jars and hands over 1. How many cups get handed over?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bar":{"w":18,"den":3,"num":1,"kind":"fracOf"},"promptText":"Ben pours 18 cups of lemonade into 3 jars, with the same amount in each jar. Ben gives away 1 jar. How many cups of lemonade does Ben give away?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0472",
@@ -4572,7 +4572,7 @@ export const ITEMS = [
     structureType: "storyFrac_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bar":{"w":18,"den":2,"num":1,"kind":"fracOf"},"promptText":"Finn pours a 18-cup batch into 2 equal jars and hands over 1. How many cups get handed over?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bar":{"w":18,"den":2,"num":1,"kind":"fracOf"},"promptText":"Finn pours 18 cups of water into 2 jars, with the same amount in each jar. Finn gives 1 jar to a friend. How many cups of water does Finn give away?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0475",
@@ -4592,7 +4592,7 @@ export const ITEMS = [
     structureType: "storyFrac_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bar":{"w":8,"den":4,"num":1,"kind":"fracOf"},"promptText":"Of Diego's 8-page comic, 1 of the 4 equal chapters are finished. How many pages are finished?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bar":{"w":8,"den":4,"num":1,"kind":"fracOf"},"promptText":"Of Diego's 8-page comic, 1 of the 4 equal chapters is finished. How many pages are finished?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0477",
@@ -4602,7 +4602,7 @@ export const ITEMS = [
     structureType: "storyFrac_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"bar":{"w":84,"den":4,"num":1,"kind":"fracOf"},"promptText":"Of Mina's 84-page comic, 1 of the 4 equal chapters are finished. How many pages are finished? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"bar":{"w":84,"den":4,"num":1,"kind":"fracOf"},"promptText":"Of Mina's 84-page comic, 1 of the 4 equal chapters is finished. How many pages are finished?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0478",
@@ -4612,7 +4612,7 @@ export const ITEMS = [
     structureType: "storyFrac_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"bar":{"w":76,"den":4,"num":3,"kind":"fracOf"},"promptText":"Luca pours a 76-cup batch into 4 equal jars and hands over 3. How many cups get handed over? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"bar":{"w":76,"den":4,"num":3,"kind":"fracOf"},"promptText":"Luca pours 76 cups of lemonade into 4 equal jugs and gives 3 of the jugs to friends. How many cups of lemonade does Luca give away?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0479",
@@ -4622,7 +4622,7 @@ export const ITEMS = [
     structureType: "storyFrac_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"bar":{"w":95,"den":5,"num":2,"kind":"fracOf"},"promptText":"Nia bakes 95 rolls and shares 2 of the 5 equal shares with neighbors. How many rolls go to the neighbors? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"bar":{"w":95,"den":5,"num":2,"kind":"fracOf"},"promptText":"Nia bakes 95 rolls and packs them into 5 equal bags. Nia gives 2 of the bags to neighbors. How many rolls go to the neighbors?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0480",
@@ -4632,7 +4632,7 @@ export const ITEMS = [
     structureType: "storyFrac_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"bar":{"w":72,"den":6,"num":5,"kind":"fracOf"},"promptText":"Of Theo's 72-page comic, 5 of the 6 equal chapters are finished. How many pages are finished? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"bar":{"w":72,"den":6,"num":5,"kind":"fracOf"},"promptText":"Of Theo's 72-page comic, 5 of the 6 equal chapters are finished. How many pages are finished?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0481",
@@ -4642,7 +4642,7 @@ export const ITEMS = [
     structureType: "storyFrac_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"bar":{"w":87,"den":3,"num":1,"kind":"fracOf"},"promptText":"Ava pours a 87-cup batch into 3 equal jars and hands over 1. How many cups get handed over? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"bar":{"w":87,"den":3,"num":1,"kind":"fracOf"},"promptText":"Ava pours 87 cups of lemonade into 3 equal jugs and gives 1 of the jugs to friends. How many cups of lemonade does Ava give away?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0482",
@@ -4652,7 +4652,7 @@ export const ITEMS = [
     structureType: "storyFrac_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":69,"display":{"bar":{"w":92,"den":4,"num":3,"kind":"fracOf"},"promptText":"Kai bakes 92 rolls and shares 3 of the 4 equal shares with neighbors. How many rolls go to the neighbors? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":69,"display":{"bar":{"w":92,"den":4,"num":3,"kind":"fracOf"},"promptText":"Kai bakes 92 rolls and packs them into 4 equal bags. Kai gives 3 of the bags to neighbors. How many rolls go to the neighbors?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0483",
@@ -4662,7 +4662,7 @@ export const ITEMS = [
     structureType: "storyFrac_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":68,"display":{"bar":{"w":85,"den":5,"num":4,"kind":"fracOf"},"promptText":"Of Ida's 85-page comic, 4 of the 5 equal chapters are finished. How many pages are finished? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":68,"display":{"bar":{"w":85,"den":5,"num":4,"kind":"fracOf"},"promptText":"Of Ida's 85-page comic, 4 of the 5 equal chapters are finished. How many pages are finished?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0484",
@@ -4672,7 +4672,7 @@ export const ITEMS = [
     structureType: "storyFrac_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bar":{"w":78,"den":6,"num":1,"kind":"fracOf"},"promptText":"Omar pours a 78-cup batch into 6 equal jars and hands over 1. How many cups get handed over? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bar":{"w":78,"den":6,"num":1,"kind":"fracOf"},"promptText":"Omar pours 78 cups of lemonade into 6 equal jugs and gives 1 of the jugs to friends. How many cups of lemonade does Omar give away?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0485",
@@ -4682,7 +4682,7 @@ export const ITEMS = [
     structureType: "storyFrac_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":64,"display":{"bar":{"w":96,"den":3,"num":2,"kind":"fracOf"},"promptText":"June bakes 96 rolls and shares 2 of the 3 equal shares with neighbors. How many rolls go to the neighbors? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":64,"display":{"bar":{"w":96,"den":3,"num":2,"kind":"fracOf"},"promptText":"June bakes 96 rolls and packs them into 3 equal bags. June gives 2 of the bags to neighbors. How many rolls go to the neighbors?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0486",
@@ -4692,7 +4692,7 @@ export const ITEMS = [
     structureType: "storyFrac_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"bar":{"w":88,"den":4,"num":1,"kind":"fracOf"},"promptText":"Of Zoe's 88-page comic, 1 of the 4 equal chapters are finished. How many pages are finished? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"bar":{"w":88,"den":4,"num":1,"kind":"fracOf"},"promptText":"Of Zoe's 88-page comic, 1 of the 4 equal chapters is finished. How many pages are finished?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0487",
@@ -4702,7 +4702,7 @@ export const ITEMS = [
     structureType: "storyFrac_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"bar":{"w":75,"den":5,"num":3,"kind":"fracOf"},"promptText":"Ben pours a 75-cup batch into 5 equal jars and hands over 3. How many cups get handed over? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"bar":{"w":75,"den":5,"num":3,"kind":"fracOf"},"promptText":"Ben pours 75 cups of lemonade into 5 equal jugs and gives 3 of the jugs to friends. How many cups of lemonade does Ben give away?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0488",
@@ -4712,7 +4712,7 @@ export const ITEMS = [
     structureType: "storyFrac_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"bar":{"w":84,"den":6,"num":5,"kind":"fracOf"},"promptText":"Lily bakes 84 rolls and shares 5 of the 6 equal shares with neighbors. How many rolls go to the neighbors? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"bar":{"w":84,"den":6,"num":5,"kind":"fracOf"},"promptText":"Lily bakes 84 rolls and packs them into 6 equal bags. Lily gives 5 of the bags to neighbors. How many rolls go to the neighbors?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0489",
@@ -4722,7 +4722,7 @@ export const ITEMS = [
     structureType: "storyFrac_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"bar":{"w":93,"den":3,"num":1,"kind":"fracOf"},"promptText":"Of Rosa's 93-page comic, 1 of the 3 equal chapters are finished. How many pages are finished? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"bar":{"w":93,"den":3,"num":1,"kind":"fracOf"},"promptText":"Of Rosa's 93-page comic, 1 of the 3 equal chapters is finished. How many pages are finished?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0490",
@@ -4732,7 +4732,7 @@ export const ITEMS = [
     structureType: "storyFrac_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"bar":{"w":68,"den":4,"num":1,"kind":"fracOf"},"promptText":"Finn pours a 68-cup batch into 4 equal jars and hands over 1. How many cups get handed over? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"bar":{"w":68,"den":4,"num":1,"kind":"fracOf"},"promptText":"Finn pours 68 cups of lemonade into 4 equal jugs and gives 1 of the jugs to friends. How many cups of lemonade does Finn give away?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0491",
@@ -4742,7 +4742,7 @@ export const ITEMS = [
     structureType: "storyFrac_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"bar":{"w":90,"den":5,"num":2,"kind":"fracOf"},"promptText":"Amara bakes 90 rolls and shares 2 of the 5 equal shares with neighbors. How many rolls go to the neighbors? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"bar":{"w":90,"den":5,"num":2,"kind":"fracOf"},"promptText":"Amara bakes 90 rolls and packs them into 5 equal bags. Amara gives 2 of the bags to neighbors. How many rolls go to the neighbors?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0492",
@@ -4752,7 +4752,7 @@ export const ITEMS = [
     structureType: "storyFrac_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bar":{"w":66,"den":6,"num":1,"kind":"fracOf"},"promptText":"Of Diego's 66-page comic, 1 of the 6 equal chapters are finished. How many pages are finished? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bar":{"w":66,"den":6,"num":1,"kind":"fracOf"},"promptText":"Of Diego's 66-page comic, 1 of the 6 equal chapters is finished. How many pages are finished?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0493",
@@ -4762,7 +4762,7 @@ export const ITEMS = [
     structureType: "storyFrac_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":54,"display":{"bar":{"w":81,"den":3,"num":2,"kind":"fracOf"},"promptText":"Priya pours a 81-cup batch into 3 equal jars and hands over 2. How many cups get handed over? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":54,"display":{"bar":{"w":81,"den":3,"num":2,"kind":"fracOf"},"promptText":"Priya pours 81 cups of lemonade into 3 equal jugs and gives 2 of the jugs to friends. How many cups of lemonade does Priya give away?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0494",
@@ -4772,7 +4772,7 @@ export const ITEMS = [
     structureType: "storyFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":212,"display":{"bar":{"w":848,"den":4,"num":1,"kind":"fracOf"},"promptText":"Luca pours a 848-cup batch into 4 equal jars and hands over 1. How many cups get handed over? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":212,"display":{"bar":{"w":848,"den":4,"num":1,"kind":"fracOf"},"promptText":"Luca's school pours 848 cups of lemonade into 4 equal coolers for field day. Luca's class gets 1 of the coolers. How many cups does the class get?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0495",
@@ -4782,7 +4782,7 @@ export const ITEMS = [
     structureType: "storyFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":573,"display":{"bar":{"w":764,"den":4,"num":3,"kind":"fracOf"},"promptText":"Nia bakes 764 rolls and shares 3 of the 4 equal shares with neighbors. How many rolls go to the neighbors? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":573,"display":{"bar":{"w":764,"den":4,"num":3,"kind":"fracOf"},"promptText":"Nia's family bakery bakes 764 rolls in 4 equal batches. It gives 3 of the batches to the food bank. How many rolls go to the food bank?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0496",
@@ -4792,7 +4792,7 @@ export const ITEMS = [
     structureType: "storyFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":382,"display":{"bar":{"w":955,"den":5,"num":2,"kind":"fracOf"},"promptText":"Of Theo's 955-page comic, 2 of the 5 equal chapters are finished. How many pages are finished? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":382,"display":{"bar":{"w":955,"den":5,"num":2,"kind":"fracOf"},"promptText":"Of Theo's 955-page comic, 2 of the 5 equal chapters are finished. How many pages are finished?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0497",
@@ -4802,7 +4802,7 @@ export const ITEMS = [
     structureType: "storyFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":605,"display":{"bar":{"w":726,"den":6,"num":5,"kind":"fracOf"},"promptText":"Ava pours a 726-cup batch into 6 equal jars and hands over 5. How many cups get handed over? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":605,"display":{"bar":{"w":726,"den":6,"num":5,"kind":"fracOf"},"promptText":"Ava's school pours 726 cups of lemonade into 6 equal coolers for field day. Ava's class gets 5 of the coolers. How many cups does the class get?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0498",
@@ -4812,7 +4812,7 @@ export const ITEMS = [
     structureType: "storyFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":291,"display":{"bar":{"w":873,"den":3,"num":1,"kind":"fracOf"},"promptText":"Kai bakes 873 rolls and shares one third with neighbors. How many rolls go to the neighbors? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":291,"display":{"bar":{"w":873,"den":3,"num":1,"kind":"fracOf"},"promptText":"Kai's family bakery bakes 873 rolls and gives one third of them to the food bank. How many rolls go to the food bank?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0499",
@@ -4822,7 +4822,7 @@ export const ITEMS = [
     structureType: "storyFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":696,"display":{"bar":{"w":928,"den":4,"num":3,"kind":"fracOf"},"promptText":"Of Ida's 928-page comic, 3 of the 4 equal chapters are finished. How many pages are finished? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":696,"display":{"bar":{"w":928,"den":4,"num":3,"kind":"fracOf"},"promptText":"Of Ida's 928-page comic, 3 of the 4 equal chapters are finished. How many pages are finished?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0500",
@@ -4832,7 +4832,7 @@ export const ITEMS = [
     structureType: "storyFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":684,"display":{"bar":{"w":855,"den":5,"num":4,"kind":"fracOf"},"promptText":"Omar pours a 855-cup batch into 5 equal jars and hands over 4. How many cups get handed over? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":684,"display":{"bar":{"w":855,"den":5,"num":4,"kind":"fracOf"},"promptText":"Omar's school pours 855 cups of lemonade into 5 equal coolers for field day. Omar's class gets 4 of the coolers. How many cups does the class get?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0501",
@@ -4842,7 +4842,7 @@ export const ITEMS = [
     structureType: "storyFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":131,"display":{"bar":{"w":786,"den":6,"num":1,"kind":"fracOf"},"promptText":"June bakes 786 rolls and shares one sixth with neighbors. How many rolls go to the neighbors? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":131,"display":{"bar":{"w":786,"den":6,"num":1,"kind":"fracOf"},"promptText":"June's family bakery bakes 786 rolls and gives one sixth of them to the food bank. How many rolls go to the food bank?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0502",
@@ -4852,7 +4852,7 @@ export const ITEMS = [
     structureType: "storyFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":642,"display":{"bar":{"w":963,"den":3,"num":2,"kind":"fracOf"},"promptText":"Of Zoe's 963-page comic, 2 of the 3 equal chapters are finished. How many pages are finished? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":642,"display":{"bar":{"w":963,"den":3,"num":2,"kind":"fracOf"},"promptText":"Of Zoe's 963-page comic, 2 of the 3 equal chapters are finished. How many pages are finished?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0503",
@@ -4862,7 +4862,7 @@ export const ITEMS = [
     structureType: "storyFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":221,"display":{"bar":{"w":884,"den":4,"num":1,"kind":"fracOf"},"promptText":"Ben pours a 884-cup batch into 4 equal jars and hands over 1. How many cups get handed over? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":221,"display":{"bar":{"w":884,"den":4,"num":1,"kind":"fracOf"},"promptText":"Ben's school pours 884 cups of lemonade into 4 equal coolers for field day. Ben's class gets 1 of the coolers. How many cups does the class get?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0504",
@@ -4872,7 +4872,7 @@ export const ITEMS = [
     structureType: "storyFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":453,"display":{"bar":{"w":755,"den":5,"num":3,"kind":"fracOf"},"promptText":"Lily bakes 755 rolls and shares 3 of the 5 equal shares with neighbors. How many rolls go to the neighbors? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":453,"display":{"bar":{"w":755,"den":5,"num":3,"kind":"fracOf"},"promptText":"Lily's family bakery bakes 755 rolls in 5 equal batches. It gives 3 of the batches to the food bank. How many rolls go to the food bank?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0505",
@@ -4882,7 +4882,7 @@ export const ITEMS = [
     structureType: "storyFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":705,"display":{"bar":{"w":846,"den":6,"num":5,"kind":"fracOf"},"promptText":"Of Rosa's 846-page comic, 5 of the 6 equal chapters are finished. How many pages are finished? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":705,"display":{"bar":{"w":846,"den":6,"num":5,"kind":"fracOf"},"promptText":"Of Rosa's 846-page comic, 5 of the 6 equal chapters are finished. How many pages are finished?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0506",
@@ -4892,7 +4892,7 @@ export const ITEMS = [
     structureType: "storyFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":313,"display":{"bar":{"w":939,"den":3,"num":1,"kind":"fracOf"},"promptText":"Finn pours a 939-cup batch into 3 equal jars and hands over 1. How many cups get handed over? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":313,"display":{"bar":{"w":939,"den":3,"num":1,"kind":"fracOf"},"promptText":"Finn's school pours 939 cups of lemonade into 3 equal coolers for field day. Finn's class gets 1 of the coolers. How many cups does the class get?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0507",
@@ -4902,7 +4902,7 @@ export const ITEMS = [
     structureType: "storyFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":172,"display":{"bar":{"w":688,"den":4,"num":1,"kind":"fracOf"},"promptText":"Amara bakes 688 rolls and shares one quarter with neighbors. How many rolls go to the neighbors? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":172,"display":{"bar":{"w":688,"den":4,"num":1,"kind":"fracOf"},"promptText":"Amara's family bakery bakes 688 rolls and gives one quarter of them to the food bank. How many rolls go to the food bank?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0508",
@@ -4912,7 +4912,7 @@ export const ITEMS = [
     structureType: "storyFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":362,"display":{"bar":{"w":905,"den":5,"num":2,"kind":"fracOf"},"promptText":"Of Diego's 905-page comic, 2 of the 5 equal chapters are finished. How many pages are finished? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":362,"display":{"bar":{"w":905,"den":5,"num":2,"kind":"fracOf"},"promptText":"Of Diego's 905-page comic, 2 of the 5 equal chapters are finished. How many pages are finished?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0509",
@@ -4922,7 +4922,7 @@ export const ITEMS = [
     structureType: "storyFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":111,"display":{"bar":{"w":666,"den":6,"num":1,"kind":"fracOf"},"promptText":"Priya pours a 666-cup batch into 6 equal jars and hands over 1. How many cups get handed over? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":111,"display":{"bar":{"w":666,"den":6,"num":1,"kind":"fracOf"},"promptText":"Priya's school pours 666 cups of lemonade into 6 equal coolers for field day. Priya's class gets 1 of the coolers. How many cups does the class get?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0510",
@@ -4932,7 +4932,7 @@ export const ITEMS = [
     structureType: "storyFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":542,"display":{"bar":{"w":813,"den":3,"num":2,"kind":"fracOf"},"promptText":"Leo bakes 813 rolls and shares 2 of the 3 equal shares with neighbors. How many rolls go to the neighbors? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":542,"display":{"bar":{"w":813,"den":3,"num":2,"kind":"fracOf"},"promptText":"Leo's family bakery bakes 813 rolls in 3 equal batches. It gives 2 of the batches to the food bank. How many rolls go to the food bank?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0511",
@@ -5112,7 +5112,7 @@ export const ITEMS = [
     structureType: "storyHalf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"bar":{"w":84,"den":2,"num":1,"kind":"fracOf"},"promptText":"Luca freezes half of 84 juice pops for later. How many pops go in the freezer? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"bar":{"w":84,"den":2,"num":1,"kind":"fracOf"},"promptText":"Luca freezes half of 84 juice pops for later. How many pops go in the freezer?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0529",
@@ -5122,7 +5122,7 @@ export const ITEMS = [
     structureType: "storyHalf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"bar":{"w":76,"den":2,"num":1,"kind":"fracOf"},"promptText":"Nia reads half of a 76-page book on the trip. How many pages has Nia read? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"bar":{"w":76,"den":2,"num":1,"kind":"fracOf"},"promptText":"Nia reads half of a 76-page book on the trip. How many pages has Nia read?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0530",
@@ -5132,7 +5132,7 @@ export const ITEMS = [
     structureType: "storyHalf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":47,"display":{"bar":{"w":94,"den":2,"num":1,"kind":"fracOf"},"promptText":"Half of Theo's 94 balloons float away. How many balloons drift off? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":47,"display":{"bar":{"w":94,"den":2,"num":1,"kind":"fracOf"},"promptText":"Half of Theo's 94 balloons float away. How many balloons drift off?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0531",
@@ -5142,7 +5142,7 @@ export const ITEMS = [
     structureType: "storyHalf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"bar":{"w":68,"den":2,"num":1,"kind":"fracOf"},"promptText":"Ava freezes half of 68 juice pops for later. How many pops go in the freezer? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"bar":{"w":68,"den":2,"num":1,"kind":"fracOf"},"promptText":"Ava freezes half of 68 juice pops for later. How many pops go in the freezer?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0532",
@@ -5152,7 +5152,7 @@ export const ITEMS = [
     structureType: "storyHalf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"bar":{"w":92,"den":2,"num":1,"kind":"fracOf"},"promptText":"Kai reads half of a 92-page book on the trip. How many pages has Kai read? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"bar":{"w":92,"den":2,"num":1,"kind":"fracOf"},"promptText":"Kai reads half of a 92-page book on the trip. How many pages has Kai read?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0533",
@@ -5162,7 +5162,7 @@ export const ITEMS = [
     structureType: "storyHalf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"bar":{"w":88,"den":2,"num":1,"kind":"fracOf"},"promptText":"Half of Ida's 88 balloons float away. How many balloons drift off? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"bar":{"w":88,"den":2,"num":1,"kind":"fracOf"},"promptText":"Half of Ida's 88 balloons float away. How many balloons drift off?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0534",
@@ -5172,7 +5172,7 @@ export const ITEMS = [
     structureType: "storyHalf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"bar":{"w":96,"den":2,"num":1,"kind":"fracOf"},"promptText":"Omar freezes half of 96 juice pops for later. How many pops go in the freezer? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"bar":{"w":96,"den":2,"num":1,"kind":"fracOf"},"promptText":"Omar freezes half of 96 juice pops for later. How many pops go in the freezer?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0535",
@@ -5182,7 +5182,7 @@ export const ITEMS = [
     structureType: "storyHalf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"bar":{"w":72,"den":2,"num":1,"kind":"fracOf"},"promptText":"June reads half of a 72-page book on the trip. How many pages has June read? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"bar":{"w":72,"den":2,"num":1,"kind":"fracOf"},"promptText":"June reads half of a 72-page book on the trip. How many pages has June read?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0536",
@@ -5192,7 +5192,7 @@ export const ITEMS = [
     structureType: "storyHalf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":43,"display":{"bar":{"w":86,"den":2,"num":1,"kind":"fracOf"},"promptText":"Half of Zoe's 86 balloons float away. How many balloons drift off? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":43,"display":{"bar":{"w":86,"den":2,"num":1,"kind":"fracOf"},"promptText":"Half of Zoe's 86 balloons float away. How many balloons drift off?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0537",
@@ -5202,7 +5202,7 @@ export const ITEMS = [
     structureType: "storyHalf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"bar":{"w":78,"den":2,"num":1,"kind":"fracOf"},"promptText":"Ben freezes half of 78 juice pops for later. How many pops go in the freezer? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"bar":{"w":78,"den":2,"num":1,"kind":"fracOf"},"promptText":"Ben freezes half of 78 juice pops for later. How many pops go in the freezer?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0538",
@@ -5212,7 +5212,7 @@ export const ITEMS = [
     structureType: "storyHalf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"bar":{"w":90,"den":2,"num":1,"kind":"fracOf"},"promptText":"Lily reads half of a 90-page book on the trip. How many pages has Lily read? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"bar":{"w":90,"den":2,"num":1,"kind":"fracOf"},"promptText":"Lily reads half of a 90-page book on the trip. How many pages has Lily read?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0539",
@@ -5222,7 +5222,7 @@ export const ITEMS = [
     structureType: "storyHalf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"bar":{"w":64,"den":2,"num":1,"kind":"fracOf"},"promptText":"Half of Rosa's 64 balloons float away. How many balloons drift off? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"bar":{"w":64,"den":2,"num":1,"kind":"fracOf"},"promptText":"Half of Rosa's 64 balloons float away. How many balloons drift off?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0540",
@@ -5232,7 +5232,7 @@ export const ITEMS = [
     structureType: "storyHalf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":41,"display":{"bar":{"w":82,"den":2,"num":1,"kind":"fracOf"},"promptText":"Finn freezes half of 82 juice pops for later. How many pops go in the freezer? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":41,"display":{"bar":{"w":82,"den":2,"num":1,"kind":"fracOf"},"promptText":"Finn freezes half of 82 juice pops for later. How many pops go in the freezer?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0541",
@@ -5242,7 +5242,7 @@ export const ITEMS = [
     structureType: "storyHalf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":49,"display":{"bar":{"w":98,"den":2,"num":1,"kind":"fracOf"},"promptText":"Amara reads half of a 98-page book on the trip. How many pages has Amara read? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":49,"display":{"bar":{"w":98,"den":2,"num":1,"kind":"fracOf"},"promptText":"Amara reads half of a 98-page book on the trip. How many pages has Amara read?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0542",
@@ -5252,7 +5252,7 @@ export const ITEMS = [
     structureType: "storyHalf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"bar":{"w":74,"den":2,"num":1,"kind":"fracOf"},"promptText":"Half of Diego's 74 balloons float away. How many balloons drift off? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"bar":{"w":74,"den":2,"num":1,"kind":"fracOf"},"promptText":"Half of Diego's 74 balloons float away. How many balloons drift off?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0543",
@@ -5262,7 +5262,7 @@ export const ITEMS = [
     structureType: "storyHalf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"bar":{"w":66,"den":2,"num":1,"kind":"fracOf"},"promptText":"Priya freezes half of 66 juice pops for later. How many pops go in the freezer? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"bar":{"w":66,"den":2,"num":1,"kind":"fracOf"},"promptText":"Priya freezes half of 66 juice pops for later. How many pops go in the freezer?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0544",
@@ -5272,7 +5272,7 @@ export const ITEMS = [
     structureType: "storyHalf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"bar":{"w":80,"den":2,"num":1,"kind":"fracOf"},"promptText":"Leo reads half of a 80-page book on the trip. How many pages has Leo read? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"bar":{"w":80,"den":2,"num":1,"kind":"fracOf"},"promptText":"Leo reads half of an 80-page book on the trip. How many pages has Leo read?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0545",
@@ -5282,7 +5282,7 @@ export const ITEMS = [
     structureType: "storyHalf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":424,"display":{"bar":{"w":848,"den":2,"num":1,"kind":"fracOf"},"promptText":"Sam reads half of a 848-page book on the trip. How many pages has Sam read? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":424,"display":{"bar":{"w":848,"den":2,"num":1,"kind":"fracOf"},"promptText":"Sam reads half of an 848-page book on the trip. How many pages has Sam read?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0546",
@@ -5292,7 +5292,7 @@ export const ITEMS = [
     structureType: "storyHalf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":382,"display":{"bar":{"w":764,"den":2,"num":1,"kind":"fracOf"},"promptText":"Half of Mina's 764 balloons float away. How many balloons drift off? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":382,"display":{"bar":{"w":764,"den":2,"num":1,"kind":"fracOf"},"promptText":"At the town parade, Mina sees half of the 764 balloons float away. How many balloons drift off?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0547",
@@ -5302,7 +5302,7 @@ export const ITEMS = [
     structureType: "storyHalf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":473,"display":{"bar":{"w":946,"den":2,"num":1,"kind":"fracOf"},"promptText":"Luca freezes half of 946 juice pops for later. How many pops go in the freezer? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":473,"display":{"bar":{"w":946,"den":2,"num":1,"kind":"fracOf"},"promptText":"Luca's school kitchen freezes half of its 946 juice pops for later. How many pops go in the freezer?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0548",
@@ -5312,7 +5312,7 @@ export const ITEMS = [
     structureType: "storyHalf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":344,"display":{"bar":{"w":688,"den":2,"num":1,"kind":"fracOf"},"promptText":"Nia reads half of a 688-page book on the trip. How many pages has Nia read? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":344,"display":{"bar":{"w":688,"den":2,"num":1,"kind":"fracOf"},"promptText":"Nia reads half of a 688-page book on the trip. How many pages has Nia read?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0549",
@@ -5322,7 +5322,7 @@ export const ITEMS = [
     structureType: "storyHalf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":464,"display":{"bar":{"w":928,"den":2,"num":1,"kind":"fracOf"},"promptText":"Half of Theo's 928 balloons float away. How many balloons drift off? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":464,"display":{"bar":{"w":928,"den":2,"num":1,"kind":"fracOf"},"promptText":"At the town parade, Theo sees half of the 928 balloons float away. How many balloons drift off?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0550",
@@ -5332,7 +5332,7 @@ export const ITEMS = [
     structureType: "storyHalf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":443,"display":{"bar":{"w":886,"den":2,"num":1,"kind":"fracOf"},"promptText":"Ava freezes half of 886 juice pops for later. How many pops go in the freezer? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":443,"display":{"bar":{"w":886,"den":2,"num":1,"kind":"fracOf"},"promptText":"Ava's school kitchen freezes half of its 886 juice pops for later. How many pops go in the freezer?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0551",
@@ -5342,7 +5342,7 @@ export const ITEMS = [
     structureType: "storyHalf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":484,"display":{"bar":{"w":968,"den":2,"num":1,"kind":"fracOf"},"promptText":"Kai reads half of a 968-page book on the trip. How many pages has Kai read? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":484,"display":{"bar":{"w":968,"den":2,"num":1,"kind":"fracOf"},"promptText":"Kai reads half of a 968-page book on the trip. How many pages has Kai read?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0552",
@@ -5352,7 +5352,7 @@ export const ITEMS = [
     structureType: "storyHalf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":363,"display":{"bar":{"w":726,"den":2,"num":1,"kind":"fracOf"},"promptText":"Half of Ida's 726 balloons float away. How many balloons drift off? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":363,"display":{"bar":{"w":726,"den":2,"num":1,"kind":"fracOf"},"promptText":"At the town parade, Ida sees half of the 726 balloons float away. How many balloons drift off?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0553",
@@ -5362,7 +5362,7 @@ export const ITEMS = [
     structureType: "storyHalf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":432,"display":{"bar":{"w":864,"den":2,"num":1,"kind":"fracOf"},"promptText":"Omar freezes half of 864 juice pops for later. How many pops go in the freezer? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":432,"display":{"bar":{"w":864,"den":2,"num":1,"kind":"fracOf"},"promptText":"Omar's school kitchen freezes half of its 864 juice pops for later. How many pops go in the freezer?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0554",
@@ -5372,7 +5372,7 @@ export const ITEMS = [
     structureType: "storyHalf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":393,"display":{"bar":{"w":786,"den":2,"num":1,"kind":"fracOf"},"promptText":"June reads half of a 786-page book on the trip. How many pages has June read? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":393,"display":{"bar":{"w":786,"den":2,"num":1,"kind":"fracOf"},"promptText":"June reads half of a 786-page book on the trip. How many pages has June read?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0555",
@@ -5382,7 +5382,7 @@ export const ITEMS = [
     structureType: "storyHalf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":453,"display":{"bar":{"w":906,"den":2,"num":1,"kind":"fracOf"},"promptText":"Half of Zoe's 906 balloons float away. How many balloons drift off? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":453,"display":{"bar":{"w":906,"den":2,"num":1,"kind":"fracOf"},"promptText":"At the town parade, Zoe sees half of the 906 balloons float away. How many balloons drift off?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0556",
@@ -5392,7 +5392,7 @@ export const ITEMS = [
     structureType: "storyHalf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":322,"display":{"bar":{"w":644,"den":2,"num":1,"kind":"fracOf"},"promptText":"Ben freezes half of 644 juice pops for later. How many pops go in the freezer? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":322,"display":{"bar":{"w":644,"den":2,"num":1,"kind":"fracOf"},"promptText":"Ben's school kitchen freezes half of its 644 juice pops for later. How many pops go in the freezer?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0557",
@@ -5402,7 +5402,7 @@ export const ITEMS = [
     structureType: "storyHalf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":412,"display":{"bar":{"w":824,"den":2,"num":1,"kind":"fracOf"},"promptText":"Lily reads half of a 824-page book on the trip. How many pages has Lily read? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":412,"display":{"bar":{"w":824,"den":2,"num":1,"kind":"fracOf"},"promptText":"Lily reads half of an 824-page book on the trip. How many pages has Lily read?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0558",
@@ -5412,7 +5412,7 @@ export const ITEMS = [
     structureType: "storyHalf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":493,"display":{"bar":{"w":986,"den":2,"num":1,"kind":"fracOf"},"promptText":"Half of Rosa's 986 balloons float away. How many balloons drift off? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":493,"display":{"bar":{"w":986,"den":2,"num":1,"kind":"fracOf"},"promptText":"At the town parade, Rosa sees half of the 986 balloons float away. How many balloons drift off?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0559",
@@ -5422,7 +5422,7 @@ export const ITEMS = [
     structureType: "storyHalf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":372,"display":{"bar":{"w":744,"den":2,"num":1,"kind":"fracOf"},"promptText":"Finn freezes half of 744 juice pops for later. How many pops go in the freezer? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":372,"display":{"bar":{"w":744,"den":2,"num":1,"kind":"fracOf"},"promptText":"Finn's school kitchen freezes half of its 744 juice pops for later. How many pops go in the freezer?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0560",
@@ -5432,7 +5432,7 @@ export const ITEMS = [
     structureType: "storyHalf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":333,"display":{"bar":{"w":666,"den":2,"num":1,"kind":"fracOf"},"promptText":"Amara reads half of a 666-page book on the trip. How many pages has Amara read? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":333,"display":{"bar":{"w":666,"den":2,"num":1,"kind":"fracOf"},"promptText":"Amara reads half of a 666-page book on the trip. How many pages has Amara read?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0561",
@@ -5442,7 +5442,7 @@ export const ITEMS = [
     structureType: "storyHalf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":404,"display":{"bar":{"w":808,"den":2,"num":1,"kind":"fracOf"},"promptText":"Half of Diego's 808 balloons float away. How many balloons drift off? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":404,"display":{"bar":{"w":808,"den":2,"num":1,"kind":"fracOf"},"promptText":"At the town parade, Diego sees half of the 808 balloons float away. How many balloons drift off?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0562",
@@ -5622,7 +5622,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"counting":{"kind":"sum","parts":[28,28,28]},"promptText":"Mina split a bag evenly into 3 pouches of 28 beads each. How many beads filled the bag? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"counting":{"kind":"sum","parts":[28,28,28]},"promptText":"Mina split a bag evenly into 3 pouches of 28 beads each. How many beads filled the bag?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0580",
@@ -5632,7 +5632,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":76,"display":{"counting":{"kind":"sum","parts":[19,19,19,19]},"promptText":"Each of the 4 equal slices of Luca's fruit bar weighs 19 grams. What did the whole bar weigh? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":76,"display":{"counting":{"kind":"sum","parts":[19,19,19,19]},"promptText":"Each of the 4 equal slices of Luca's fruit bar weighs 19 grams. What did the whole bar weigh?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0581",
@@ -5642,7 +5642,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":95,"display":{"counting":{"kind":"sum","parts":[19,19,19,19,19]},"promptText":"One of the 5 equal ribbons from Nia's spool measures 19. How long was the whole spool? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":95,"display":{"counting":{"kind":"sum","parts":[19,19,19,19,19]},"promptText":"Nia cuts the ribbon on a spool into 5 equal pieces. One piece is 19 inches long. How many inches of ribbon were on the spool?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0582",
@@ -5652,7 +5652,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"counting":{"kind":"sum","parts":[12,12,12,12,12,12]},"promptText":"Theo split a bag evenly into 6 pouches of 12 beads each. How many beads filled the bag? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"counting":{"kind":"sum","parts":[12,12,12,12,12,12]},"promptText":"Theo split a bag evenly into 6 pouches of 12 beads each. How many beads filled the bag?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0583",
@@ -5662,7 +5662,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":87,"display":{"counting":{"kind":"sum","parts":[29,29,29]},"promptText":"Each of the 3 equal slices of Ava's fruit bar weighs 29 grams. What did the whole bar weigh? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":87,"display":{"counting":{"kind":"sum","parts":[29,29,29]},"promptText":"Each of the 3 equal slices of Ava's fruit bar weighs 29 grams. What did the whole bar weigh?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0584",
@@ -5672,7 +5672,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":92,"display":{"counting":{"kind":"sum","parts":[23,23,23,23]},"promptText":"One of the 4 equal ribbons from Kai's spool measures 23. How long was the whole spool? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":92,"display":{"counting":{"kind":"sum","parts":[23,23,23,23]},"promptText":"Kai cuts the ribbon on a spool into 4 equal pieces. One piece is 23 inches long. How many inches of ribbon were on the spool?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0585",
@@ -5682,7 +5682,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":85,"display":{"counting":{"kind":"sum","parts":[17,17,17,17,17]},"promptText":"Ida split a bag evenly into 5 pouches of 17 beads each. How many beads filled the bag? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":85,"display":{"counting":{"kind":"sum","parts":[17,17,17,17,17]},"promptText":"Ida split a bag evenly into 5 pouches of 17 beads each. How many beads filled the bag?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0586",
@@ -5692,7 +5692,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":78,"display":{"counting":{"kind":"sum","parts":[13,13,13,13,13,13]},"promptText":"Each of the 6 equal slices of Omar's fruit bar weighs 13 grams. What did the whole bar weigh? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":78,"display":{"counting":{"kind":"sum","parts":[13,13,13,13,13,13]},"promptText":"Each of the 6 equal slices of Omar's fruit bar weighs 13 grams. What did the whole bar weigh?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0587",
@@ -5702,7 +5702,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":96,"display":{"counting":{"kind":"sum","parts":[32,32,32]},"promptText":"One of the 3 equal ribbons from June's spool measures 32. How long was the whole spool? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":96,"display":{"counting":{"kind":"sum","parts":[32,32,32]},"promptText":"June cuts the ribbon on a spool into 3 equal pieces. One piece is 32 inches long. How many inches of ribbon were on the spool?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0588",
@@ -5712,7 +5712,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"counting":{"kind":"sum","parts":[22,22,22,22]},"promptText":"Zoe split a bag evenly into 4 pouches of 22 beads each. How many beads filled the bag? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"counting":{"kind":"sum","parts":[22,22,22,22]},"promptText":"Zoe split a bag evenly into 4 pouches of 22 beads each. How many beads filled the bag?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0589",
@@ -5722,7 +5722,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"counting":{"kind":"sum","parts":[15,15,15,15,15]},"promptText":"Each of the 5 equal slices of Ben's fruit bar weighs 15 grams. What did the whole bar weigh? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"counting":{"kind":"sum","parts":[15,15,15,15,15]},"promptText":"Each of the 5 equal slices of Ben's fruit bar weighs 15 grams. What did the whole bar weigh?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0590",
@@ -5732,7 +5732,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"counting":{"kind":"sum","parts":[14,14,14,14,14,14]},"promptText":"One of the 6 equal ribbons from Lily's spool measures 14. How long was the whole spool? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"counting":{"kind":"sum","parts":[14,14,14,14,14,14]},"promptText":"Lily cuts the ribbon on a spool into 6 equal pieces. One piece is 14 inches long. How many inches of ribbon were on the spool?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0591",
@@ -5742,7 +5742,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":93,"display":{"counting":{"kind":"sum","parts":[31,31,31]},"promptText":"Rosa split a bag evenly into 3 pouches of 31 beads each. How many beads filled the bag? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":93,"display":{"counting":{"kind":"sum","parts":[31,31,31]},"promptText":"Rosa split a bag evenly into 3 pouches of 31 beads each. How many beads filled the bag?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0592",
@@ -5752,7 +5752,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":68,"display":{"counting":{"kind":"sum","parts":[17,17,17,17]},"promptText":"Each of the 4 equal slices of Finn's fruit bar weighs 17 grams. What did the whole bar weigh? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":68,"display":{"counting":{"kind":"sum","parts":[17,17,17,17]},"promptText":"Each of the 4 equal slices of Finn's fruit bar weighs 17 grams. What did the whole bar weigh?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0593",
@@ -5762,7 +5762,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"counting":{"kind":"sum","parts":[18,18,18,18,18]},"promptText":"One of the 5 equal ribbons from Amara's spool measures 18. How long was the whole spool? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"counting":{"kind":"sum","parts":[18,18,18,18,18]},"promptText":"Amara cuts the ribbon on a spool into 5 equal pieces. One piece is 18 inches long. How many inches of ribbon were on the spool?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0594",
@@ -5772,7 +5772,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":66,"display":{"counting":{"kind":"sum","parts":[11,11,11,11,11,11]},"promptText":"Diego split a bag evenly into 6 pouches of 11 beads each. How many beads filled the bag? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":66,"display":{"counting":{"kind":"sum","parts":[11,11,11,11,11,11]},"promptText":"Diego split a bag evenly into 6 pouches of 11 beads each. How many beads filled the bag?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0595",
@@ -5782,7 +5782,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"counting":{"kind":"sum","parts":[27,27,27]},"promptText":"Each of the 3 equal slices of Priya's fruit bar weighs 27 grams. What did the whole bar weigh? Sketch the bar if it helps."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"counting":{"kind":"sum","parts":[27,27,27]},"promptText":"Each of the 3 equal slices of Priya's fruit bar weighs 27 grams. What did the whole bar weigh?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0596",
@@ -5792,7 +5792,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":846,"display":{"counting":{"kind":"sum","parts":[282,282,282]},"promptText":"Each of the 3 equal slices of Luca's fruit bar weighs 282 grams. What did the whole bar weigh? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":846,"display":{"counting":{"kind":"sum","parts":[282,282,282]},"promptText":"Each of the 3 equal slices of Luca's fruit bar weighs 282 grams. What did the whole bar weigh?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0597",
@@ -5802,7 +5802,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":764,"display":{"counting":{"kind":"sum","parts":[191,191,191,191]},"promptText":"One of the 4 equal ribbons from Nia's spool measures 191. How long was the whole spool? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":764,"display":{"counting":{"kind":"sum","parts":[191,191,191,191]},"promptText":"Nia cuts the ribbon on a spool into 4 equal pieces. One piece is 191 centimeters long. How many centimeters of ribbon were on the spool?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0598",
@@ -5812,7 +5812,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":955,"display":{"counting":{"kind":"sum","parts":[191,191,191,191,191]},"promptText":"Theo split a bag evenly into 5 pouches of 191 beads each. How many beads filled the bag? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":955,"display":{"counting":{"kind":"sum","parts":[191,191,191,191,191]},"promptText":"Theo split a bag evenly into 5 pouches of 191 beads each. How many beads filled the bag?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0599",
@@ -5822,7 +5822,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":726,"display":{"counting":{"kind":"sum","parts":[121,121,121,121,121,121]},"promptText":"Each of the 6 equal slices of Ava's fruit bar weighs 121 grams. What did the whole bar weigh? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":726,"display":{"counting":{"kind":"sum","parts":[121,121,121,121,121,121]},"promptText":"Each of the 6 equal slices of Ava's fruit bar weighs 121 grams. What did the whole bar weigh?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0600",
@@ -5832,7 +5832,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":873,"display":{"counting":{"kind":"sum","parts":[291,291,291]},"promptText":"One of the 3 equal ribbons from Kai's spool measures 291. How long was the whole spool? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":873,"display":{"counting":{"kind":"sum","parts":[291,291,291]},"promptText":"Kai cuts the ribbon on a spool into 3 equal pieces. One piece is 291 centimeters long. How many centimeters of ribbon were on the spool?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0601",
@@ -5842,7 +5842,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":928,"display":{"counting":{"kind":"sum","parts":[232,232,232,232]},"promptText":"Ida split a bag evenly into 4 pouches of 232 beads each. How many beads filled the bag? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":928,"display":{"counting":{"kind":"sum","parts":[232,232,232,232]},"promptText":"Ida split a bag evenly into 4 pouches of 232 beads each. How many beads filled the bag?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0602",
@@ -5852,7 +5852,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":855,"display":{"counting":{"kind":"sum","parts":[171,171,171,171,171]},"promptText":"Each of the 5 equal slices of Omar's fruit bar weighs 171 grams. What did the whole bar weigh? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":855,"display":{"counting":{"kind":"sum","parts":[171,171,171,171,171]},"promptText":"Each of the 5 equal slices of Omar's fruit bar weighs 171 grams. What did the whole bar weigh?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0603",
@@ -5862,7 +5862,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":786,"display":{"counting":{"kind":"sum","parts":[131,131,131,131,131,131]},"promptText":"One of the 6 equal ribbons from June's spool measures 131. How long was the whole spool? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":786,"display":{"counting":{"kind":"sum","parts":[131,131,131,131,131,131]},"promptText":"June cuts the ribbon on a spool into 6 equal pieces. One piece is 131 centimeters long. How many centimeters of ribbon were on the spool?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0604",
@@ -5872,7 +5872,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":963,"display":{"counting":{"kind":"sum","parts":[321,321,321]},"promptText":"Zoe split a bag evenly into 3 pouches of 321 beads each. How many beads filled the bag? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":963,"display":{"counting":{"kind":"sum","parts":[321,321,321]},"promptText":"Zoe split a bag evenly into 3 pouches of 321 beads each. How many beads filled the bag?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0605",
@@ -5882,7 +5882,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":884,"display":{"counting":{"kind":"sum","parts":[221,221,221,221]},"promptText":"Each of the 4 equal slices of Ben's fruit bar weighs 221 grams. What did the whole bar weigh? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":884,"display":{"counting":{"kind":"sum","parts":[221,221,221,221]},"promptText":"Each of the 4 equal slices of Ben's fruit bar weighs 221 grams. What did the whole bar weigh?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0606",
@@ -5892,7 +5892,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":755,"display":{"counting":{"kind":"sum","parts":[151,151,151,151,151]},"promptText":"One of the 5 equal ribbons from Lily's spool measures 151. How long was the whole spool? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":755,"display":{"counting":{"kind":"sum","parts":[151,151,151,151,151]},"promptText":"Lily cuts the ribbon on a spool into 5 equal pieces. One piece is 151 centimeters long. How many centimeters of ribbon were on the spool?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0607",
@@ -5902,7 +5902,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":846,"display":{"counting":{"kind":"sum","parts":[141,141,141,141,141,141]},"promptText":"Rosa split a bag evenly into 6 pouches of 141 beads each. How many beads filled the bag? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":846,"display":{"counting":{"kind":"sum","parts":[141,141,141,141,141,141]},"promptText":"Rosa split a bag evenly into 6 pouches of 141 beads each. How many beads filled the bag?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0608",
@@ -5912,7 +5912,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":939,"display":{"counting":{"kind":"sum","parts":[313,313,313]},"promptText":"Each of the 3 equal slices of Finn's fruit bar weighs 313 grams. What did the whole bar weigh? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":939,"display":{"counting":{"kind":"sum","parts":[313,313,313]},"promptText":"Each of the 3 equal slices of Finn's fruit bar weighs 313 grams. What did the whole bar weigh?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0609",
@@ -5922,7 +5922,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":688,"display":{"counting":{"kind":"sum","parts":[172,172,172,172]},"promptText":"One of the 4 equal ribbons from Amara's spool measures 172. How long was the whole spool? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":688,"display":{"counting":{"kind":"sum","parts":[172,172,172,172]},"promptText":"Amara cuts the ribbon on a spool into 4 equal pieces. One piece is 172 centimeters long. How many centimeters of ribbon were on the spool?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0610",
@@ -5932,7 +5932,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":905,"display":{"counting":{"kind":"sum","parts":[181,181,181,181,181]},"promptText":"Diego split a bag evenly into 5 pouches of 181 beads each. How many beads filled the bag? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":905,"display":{"counting":{"kind":"sum","parts":[181,181,181,181,181]},"promptText":"Diego split a bag evenly into 5 pouches of 181 beads each. How many beads filled the bag?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0611",
@@ -5942,7 +5942,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":666,"display":{"counting":{"kind":"sum","parts":[111,111,111,111,111,111]},"promptText":"Each of the 6 equal slices of Priya's fruit bar weighs 111 grams. What did the whole bar weigh? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":666,"display":{"counting":{"kind":"sum","parts":[111,111,111,111,111,111]},"promptText":"Each of the 6 equal slices of Priya's fruit bar weighs 111 grams. What did the whole bar weigh?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-app-b0821-0612",
@@ -5952,7 +5952,7 @@ export const ITEMS = [
     structureType: "storyRebuild_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":813,"display":{"counting":{"kind":"sum","parts":[271,271,271]},"promptText":"One of the 3 equal ribbons from Leo's spool measures 271. How long was the whole spool? A bar model makes it clear."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":813,"display":{"counting":{"kind":"sum","parts":[271,271,271]},"promptText":"Leo cuts the ribbon on a spool into 3 equal pieces. One piece is 271 centimeters long. How many centimeters of ribbon were on the spool?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0001",
@@ -5962,7 +5962,7 @@ export const ITEMS = [
     structureType: "barJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":7,"b":6,"w":13,"kind":"wholeSaid"},"truth":true,"promptText":"Mina fills a bar: whole 13, parts 7 and 6. Is the bar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":7,"b":6,"w":13,"kind":"wholeSaid"},"truth":true,"promptText":"Mina says parts of 7 and 6 make a whole of 13. Is Mina right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0002",
@@ -5972,7 +5972,7 @@ export const ITEMS = [
     structureType: "barJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":9,"b":5,"w":15,"kind":"wholeSaid"},"truth":false,"promptText":"Theo claims parts 9 and 5 make a whole of 15. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":9,"b":5,"w":15,"kind":"wholeSaid"},"truth":false,"promptText":"Theo draws a bar for 15 with parts of 9 and 5. Is Theo's bar right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0003",
@@ -5982,7 +5982,7 @@ export const ITEMS = [
     structureType: "barJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":9,"b":8,"w":17,"kind":"wholeSaid"},"truth":true,"promptText":"Ida fills a bar: whole 17, parts 9 and 8. Is the bar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":9,"b":8,"w":17,"kind":"wholeSaid"},"truth":true,"promptText":"Ida's bar has parts of 9 and 8. Is the whole 17?"}},
   },
   {
     itemId: "barModels-conc-b0821-0004",
@@ -5992,7 +5992,7 @@ export const ITEMS = [
     structureType: "barJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":8,"b":7,"w":14,"kind":"wholeSaid"},"truth":false,"promptText":"Zoe claims parts 8 and 7 make a whole of 14. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":8,"b":7,"w":14,"kind":"wholeSaid"},"truth":false,"promptText":"Zoe says parts of 8 and 7 make a whole of 14. Is Zoe right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0005",
@@ -6002,7 +6002,7 @@ export const ITEMS = [
     structureType: "barJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":12,"b":6,"w":18,"kind":"wholeSaid"},"truth":true,"promptText":"Rosa fills a bar: whole 18, parts 12 and 6. Is the bar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":12,"b":6,"w":18,"kind":"wholeSaid"},"truth":true,"promptText":"Rosa draws a bar for 18 with parts of 12 and 6. Is Rosa's bar right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0006",
@@ -6012,7 +6012,7 @@ export const ITEMS = [
     structureType: "barJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":9,"b":6,"w":16,"kind":"wholeSaid"},"truth":false,"promptText":"Diego claims parts 9 and 6 make a whole of 16. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":9,"b":6,"w":16,"kind":"wholeSaid"},"truth":false,"promptText":"Diego's bar has parts of 9 and 6. Is the whole 16?"}},
   },
   {
     itemId: "barModels-conc-b0821-0007",
@@ -6022,7 +6022,7 @@ export const ITEMS = [
     structureType: "barJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":13,"b":7,"w":20,"kind":"wholeSaid"},"truth":true,"promptText":"Nora fills a bar: whole 20, parts 13 and 7. Is the bar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":13,"b":7,"w":20,"kind":"wholeSaid"},"truth":true,"promptText":"Nora says parts of 13 and 7 make a whole of 20. Is Nora right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0008",
@@ -6032,7 +6032,7 @@ export const ITEMS = [
     structureType: "barJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":5,"b":8,"w":12,"kind":"wholeSaid"},"truth":false,"promptText":"Luca claims parts 5 and 8 make a whole of 12. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":5,"b":8,"w":12,"kind":"wholeSaid"},"truth":false,"promptText":"Luca draws a bar for 12 with parts of 5 and 8. Is Luca's bar right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0009",
@@ -6042,7 +6042,7 @@ export const ITEMS = [
     structureType: "barJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":12,"b":7,"w":19,"kind":"wholeSaid"},"truth":true,"promptText":"Ava fills a bar: whole 19, parts 12 and 7. Is the bar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":12,"b":7,"w":19,"kind":"wholeSaid"},"truth":true,"promptText":"Ava's bar has parts of 12 and 7. Is the whole 19?"}},
   },
   {
     itemId: "barModels-conc-b0821-0010",
@@ -6052,7 +6052,7 @@ export const ITEMS = [
     structureType: "barJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":4,"b":6,"w":11,"kind":"wholeSaid"},"truth":false,"promptText":"Omar claims parts 4 and 6 make a whole of 11. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":4,"b":6,"w":11,"kind":"wholeSaid"},"truth":false,"promptText":"Omar says parts of 4 and 6 make a whole of 11. Is Omar right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0011",
@@ -6062,7 +6062,7 @@ export const ITEMS = [
     structureType: "barJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":7,"b":8,"w":15,"kind":"wholeSaid"},"truth":true,"promptText":"Ben fills a bar: whole 15, parts 7 and 8. Is the bar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":7,"b":8,"w":15,"kind":"wholeSaid"},"truth":true,"promptText":"Ben draws a bar for 15 with parts of 7 and 8. Is Ben's bar right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0012",
@@ -6072,7 +6072,7 @@ export const ITEMS = [
     structureType: "barJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":6,"b":13,"w":18,"kind":"wholeSaid"},"truth":false,"promptText":"Finn claims parts 6 and 13 make a whole of 18. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":6,"b":13,"w":18,"kind":"wholeSaid"},"truth":false,"promptText":"Finn's bar has parts of 6 and 13. Is the whole 18?"}},
   },
   {
     itemId: "barModels-conc-b0821-0013",
@@ -6082,7 +6082,7 @@ export const ITEMS = [
     structureType: "barJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":5,"b":8,"w":13,"kind":"wholeSaid"},"truth":true,"promptText":"Priya fills a bar: whole 13, parts 5 and 8. Is the bar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":5,"b":8,"w":13,"kind":"wholeSaid"},"truth":true,"promptText":"Priya says parts of 5 and 8 make a whole of 13. Is Priya right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0014",
@@ -6092,7 +6092,7 @@ export const ITEMS = [
     structureType: "barJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":8,"b":8,"w":17,"kind":"wholeSaid"},"truth":false,"promptText":"Sam claims parts 8 and 8 make a whole of 17. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":8,"b":8,"w":17,"kind":"wholeSaid"},"truth":false,"promptText":"Sam draws a bar for 17 with parts of 8 and 8. Is Sam's bar right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0015",
@@ -6102,7 +6102,7 @@ export const ITEMS = [
     structureType: "barJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":7,"b":9,"w":16,"kind":"wholeSaid"},"truth":true,"promptText":"Nia fills a bar: whole 16, parts 7 and 9. Is the bar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":7,"b":9,"w":16,"kind":"wholeSaid"},"truth":true,"promptText":"Nia's bar has parts of 7 and 9. Is the whole 16?"}},
   },
   {
     itemId: "barModels-conc-b0821-0016",
@@ -6112,7 +6112,7 @@ export const ITEMS = [
     structureType: "barJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":9,"b":12,"w":20,"kind":"wholeSaid"},"truth":false,"promptText":"Kai claims parts 9 and 12 make a whole of 20. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":9,"b":12,"w":20,"kind":"wholeSaid"},"truth":false,"promptText":"Kai says parts of 9 and 12 make a whole of 20. Is Kai right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0017",
@@ -6122,7 +6122,7 @@ export const ITEMS = [
     structureType: "barJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":9,"b":5,"w":14,"kind":"wholeSaid"},"truth":true,"promptText":"June fills a bar: whole 14, parts 9 and 5. Is the bar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":9,"b":5,"w":14,"kind":"wholeSaid"},"truth":true,"promptText":"June draws a bar for 14 with parts of 9 and 5. Is June's bar right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0018",
@@ -6132,7 +6132,7 @@ export const ITEMS = [
     structureType: "barJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":4,"b":14,"w":19,"kind":"wholeSaid"},"truth":false,"promptText":"Lily claims parts 4 and 14 make a whole of 19. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":4,"b":14,"w":19,"kind":"wholeSaid"},"truth":false,"promptText":"Lily's bar has parts of 4 and 14. Is the whole 19?"}},
   },
   {
     itemId: "barModels-conc-b0821-0019",
@@ -6142,7 +6142,7 @@ export const ITEMS = [
     structureType: "barJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":27,"b":31,"w":58,"kind":"wholeSaid"},"truth":true,"promptText":"Omar sketches whole 58 over parts 27 and 31. Does the model check out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":27,"b":31,"w":58,"kind":"wholeSaid"},"truth":true,"promptText":"Omar says parts of 27 and 31 make a whole of 58. Is Omar right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0020",
@@ -6152,7 +6152,7 @@ export const ITEMS = [
     structureType: "barJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":38,"b":41,"w":80,"kind":"wholeSaid"},"truth":false,"promptText":"In Ben's bar model, 38 plus 41 should equal 80. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":38,"b":41,"w":80,"kind":"wholeSaid"},"truth":false,"promptText":"Ben draws a tape diagram with parts of 38 and 41 and labels the whole 80. Is Ben right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0021",
@@ -6162,7 +6162,7 @@ export const ITEMS = [
     structureType: "barJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":49,"b":23,"w":72,"kind":"wholeSaid"},"truth":true,"promptText":"Finn sketches whole 72 over parts 49 and 23. Does the model check out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":49,"b":23,"w":72,"kind":"wholeSaid"},"truth":true,"promptText":"Finn's bar has parts of 49 and 23. Is the whole 72?"}},
   },
   {
     itemId: "barModels-conc-b0821-0022",
@@ -6172,7 +6172,7 @@ export const ITEMS = [
     structureType: "barJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":54,"b":18,"w":73,"kind":"wholeSaid"},"truth":false,"promptText":"In Priya's bar model, 54 plus 18 should equal 73. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":54,"b":18,"w":73,"kind":"wholeSaid"},"truth":false,"promptText":"Priya says parts of 54 and 18 make a whole of 73. Is Priya right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0023",
@@ -6182,7 +6182,7 @@ export const ITEMS = [
     structureType: "barJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":35,"b":45,"w":80,"kind":"wholeSaid"},"truth":true,"promptText":"Sam sketches whole 80 over parts 35 and 45. Does the model check out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":35,"b":45,"w":80,"kind":"wholeSaid"},"truth":true,"promptText":"Sam draws a tape diagram with parts of 35 and 45 and labels the whole 80. Is Sam right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0024",
@@ -6192,7 +6192,7 @@ export const ITEMS = [
     structureType: "barJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":28,"b":65,"w":94,"kind":"wholeSaid"},"truth":false,"promptText":"In Nia's bar model, 28 plus 65 should equal 94. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":28,"b":65,"w":94,"kind":"wholeSaid"},"truth":false,"promptText":"Nia's bar has parts of 28 and 65. Is the whole 94?"}},
   },
   {
     itemId: "barModels-conc-b0821-0025",
@@ -6202,7 +6202,7 @@ export const ITEMS = [
     structureType: "barJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":59,"b":33,"w":92,"kind":"wholeSaid"},"truth":true,"promptText":"Kai sketches whole 92 over parts 59 and 33. Does the model check out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":59,"b":33,"w":92,"kind":"wholeSaid"},"truth":true,"promptText":"Kai says parts of 59 and 33 make a whole of 92. Is Kai right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0026",
@@ -6212,7 +6212,7 @@ export const ITEMS = [
     structureType: "barJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":42,"b":38,"w":81,"kind":"wholeSaid"},"truth":false,"promptText":"In June's bar model, 42 plus 38 should equal 81. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":42,"b":38,"w":81,"kind":"wholeSaid"},"truth":false,"promptText":"June draws a tape diagram with parts of 42 and 38 and labels the whole 81. Is June right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0027",
@@ -6222,7 +6222,7 @@ export const ITEMS = [
     structureType: "barJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":63,"b":17,"w":80,"kind":"wholeSaid"},"truth":true,"promptText":"Lily sketches whole 80 over parts 63 and 17. Does the model check out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":63,"b":17,"w":80,"kind":"wholeSaid"},"truth":true,"promptText":"Lily's bar has parts of 63 and 17. Is the whole 80?"}},
   },
   {
     itemId: "barModels-conc-b0821-0028",
@@ -6232,7 +6232,7 @@ export const ITEMS = [
     structureType: "barJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":30,"b":55,"w":84,"kind":"wholeSaid"},"truth":false,"promptText":"In Amara's bar model, 30 plus 55 should equal 84. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":30,"b":55,"w":84,"kind":"wholeSaid"},"truth":false,"promptText":"Amara says parts of 30 and 55 make a whole of 84. Is Amara right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0029",
@@ -6242,7 +6242,7 @@ export const ITEMS = [
     structureType: "barJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":47,"b":38,"w":85,"kind":"wholeSaid"},"truth":true,"promptText":"Leo sketches whole 85 over parts 47 and 38. Does the model check out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":47,"b":38,"w":85,"kind":"wholeSaid"},"truth":true,"promptText":"Leo draws a tape diagram with parts of 47 and 38 and labels the whole 85. Is Leo right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0030",
@@ -6252,7 +6252,7 @@ export const ITEMS = [
     structureType: "barJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":52,"b":27,"w":80,"kind":"wholeSaid"},"truth":false,"promptText":"In Mina's bar model, 52 plus 27 should equal 80. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":52,"b":27,"w":80,"kind":"wholeSaid"},"truth":false,"promptText":"Mina's bar has parts of 52 and 27. Is the whole 80?"}},
   },
   {
     itemId: "barModels-conc-b0821-0031",
@@ -6262,7 +6262,7 @@ export const ITEMS = [
     structureType: "barJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":37,"b":47,"w":84,"kind":"wholeSaid"},"truth":true,"promptText":"Theo sketches whole 84 over parts 37 and 47. Does the model check out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":37,"b":47,"w":84,"kind":"wholeSaid"},"truth":true,"promptText":"Theo says parts of 37 and 47 make a whole of 84. Is Theo right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0032",
@@ -6272,7 +6272,7 @@ export const ITEMS = [
     structureType: "barJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":66,"b":23,"w":88,"kind":"wholeSaid"},"truth":false,"promptText":"In Ida's bar model, 66 plus 23 should equal 88. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":66,"b":23,"w":88,"kind":"wholeSaid"},"truth":false,"promptText":"Ida draws a tape diagram with parts of 66 and 23 and labels the whole 88. Is Ida right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0033",
@@ -6282,7 +6282,7 @@ export const ITEMS = [
     structureType: "barJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":44,"b":49,"w":93,"kind":"wholeSaid"},"truth":true,"promptText":"Zoe sketches whole 93 over parts 44 and 49. Does the model check out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":44,"b":49,"w":93,"kind":"wholeSaid"},"truth":true,"promptText":"Zoe's bar has parts of 44 and 49. Is the whole 93?"}},
   },
   {
     itemId: "barModels-conc-b0821-0034",
@@ -6292,7 +6292,7 @@ export const ITEMS = [
     structureType: "barJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":58,"b":30,"w":89,"kind":"wholeSaid"},"truth":false,"promptText":"In Rosa's bar model, 58 plus 30 should equal 89. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":58,"b":30,"w":89,"kind":"wholeSaid"},"truth":false,"promptText":"Rosa says parts of 58 and 30 make a whole of 89. Is Rosa right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0035",
@@ -6302,7 +6302,7 @@ export const ITEMS = [
     structureType: "barJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":25,"b":68,"w":93,"kind":"wholeSaid"},"truth":true,"promptText":"Diego sketches whole 93 over parts 25 and 68. Does the model check out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":25,"b":68,"w":93,"kind":"wholeSaid"},"truth":true,"promptText":"Diego draws a tape diagram with parts of 25 and 68 and labels the whole 93. Is Diego right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0036",
@@ -6312,7 +6312,7 @@ export const ITEMS = [
     structureType: "barJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":39,"b":45,"w":83,"kind":"wholeSaid"},"truth":false,"promptText":"In Nora's bar model, 39 plus 45 should equal 83. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":39,"b":45,"w":83,"kind":"wholeSaid"},"truth":false,"promptText":"Nora's bar has parts of 39 and 45. Is the whole 83?"}},
   },
   {
     itemId: "barModels-conc-b0821-0037",
@@ -6322,7 +6322,7 @@ export const ITEMS = [
     structureType: "barJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":227,"b":331,"w":558,"kind":"wholeSaid"},"truth":true,"promptText":"Finn audits a bar: whole 558, sections 227 and 331. Is the audit clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":227,"b":331,"w":558,"kind":"wholeSaid"},"truth":true,"promptText":"Finn draws a tape diagram with parts of 227 and 331 and labels the whole 558. Is Finn right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0038",
@@ -6332,7 +6332,7 @@ export const ITEMS = [
     structureType: "barJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":338,"b":441,"w":780,"kind":"wholeSaid"},"truth":false,"promptText":"Priya balances sections 338 and 441 against a whole of 780. Is the balance right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":338,"b":441,"w":780,"kind":"wholeSaid"},"truth":false,"promptText":"Priya says a bar with parts of 338 and 441 has a whole of 780. Is Priya correct?"}},
   },
   {
     itemId: "barModels-conc-b0821-0039",
@@ -6342,7 +6342,7 @@ export const ITEMS = [
     structureType: "barJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":449,"b":223,"w":672,"kind":"wholeSaid"},"truth":true,"promptText":"Sam audits a bar: whole 672, sections 449 and 223. Is the audit clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":449,"b":223,"w":672,"kind":"wholeSaid"},"truth":true,"promptText":"Sam's bar has parts of 449 and 223. Is the whole 672?"}},
   },
   {
     itemId: "barModels-conc-b0821-0040",
@@ -6352,7 +6352,7 @@ export const ITEMS = [
     structureType: "barJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":554,"b":190,"w":745,"kind":"wholeSaid"},"truth":false,"promptText":"Nia balances sections 554 and 190 against a whole of 745. Is the balance right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":554,"b":190,"w":745,"kind":"wholeSaid"},"truth":false,"promptText":"Nia draws a tape diagram with parts of 554 and 190 and labels the whole 745. Is Nia right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0041",
@@ -6362,7 +6362,7 @@ export const ITEMS = [
     structureType: "barJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":335,"b":445,"w":780,"kind":"wholeSaid"},"truth":true,"promptText":"Kai audits a bar: whole 780, sections 335 and 445. Is the audit clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":335,"b":445,"w":780,"kind":"wholeSaid"},"truth":true,"promptText":"Kai says a bar with parts of 335 and 445 has a whole of 780. Is Kai correct?"}},
   },
   {
     itemId: "barModels-conc-b0821-0042",
@@ -6372,7 +6372,7 @@ export const ITEMS = [
     structureType: "barJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":228,"b":661,"w":890,"kind":"wholeSaid"},"truth":false,"promptText":"June balances sections 228 and 661 against a whole of 890. Is the balance right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":228,"b":661,"w":890,"kind":"wholeSaid"},"truth":false,"promptText":"June's bar has parts of 228 and 661. Is the whole 890?"}},
   },
   {
     itemId: "barModels-conc-b0821-0043",
@@ -6382,7 +6382,7 @@ export const ITEMS = [
     structureType: "barJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":559,"b":333,"w":892,"kind":"wholeSaid"},"truth":true,"promptText":"Lily audits a bar: whole 892, sections 559 and 333. Is the audit clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":559,"b":333,"w":892,"kind":"wholeSaid"},"truth":true,"promptText":"Lily draws a tape diagram with parts of 559 and 333 and labels the whole 892. Is Lily right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0044",
@@ -6392,7 +6392,7 @@ export const ITEMS = [
     structureType: "barJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":442,"b":390,"w":833,"kind":"wholeSaid"},"truth":false,"promptText":"Amara balances sections 442 and 390 against a whole of 833. Is the balance right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":442,"b":390,"w":833,"kind":"wholeSaid"},"truth":false,"promptText":"Amara says a bar with parts of 442 and 390 has a whole of 833. Is Amara correct?"}},
   },
   {
     itemId: "barModels-conc-b0821-0045",
@@ -6402,7 +6402,7 @@ export const ITEMS = [
     structureType: "barJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":663,"b":172,"w":835,"kind":"wholeSaid"},"truth":true,"promptText":"Leo audits a bar: whole 835, sections 663 and 172. Is the audit clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":663,"b":172,"w":835,"kind":"wholeSaid"},"truth":true,"promptText":"Leo's bar has parts of 663 and 172. Is the whole 835?"}},
   },
   {
     itemId: "barModels-conc-b0821-0046",
@@ -6412,7 +6412,7 @@ export const ITEMS = [
     structureType: "barJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":303,"b":543,"w":847,"kind":"wholeSaid"},"truth":false,"promptText":"Mina balances sections 303 and 543 against a whole of 847. Is the balance right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":303,"b":543,"w":847,"kind":"wholeSaid"},"truth":false,"promptText":"Mina draws a tape diagram with parts of 303 and 543 and labels the whole 847. Is Mina right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0047",
@@ -6422,7 +6422,7 @@ export const ITEMS = [
     structureType: "barJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":477,"b":382,"w":859,"kind":"wholeSaid"},"truth":true,"promptText":"Theo audits a bar: whole 859, sections 477 and 382. Is the audit clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":477,"b":382,"w":859,"kind":"wholeSaid"},"truth":true,"promptText":"Theo says a bar with parts of 477 and 382 has a whole of 859. Is Theo correct?"}},
   },
   {
     itemId: "barModels-conc-b0821-0048",
@@ -6432,7 +6432,7 @@ export const ITEMS = [
     structureType: "barJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":552,"b":280,"w":833,"kind":"wholeSaid"},"truth":false,"promptText":"Ida balances sections 552 and 280 against a whole of 833. Is the balance right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":552,"b":280,"w":833,"kind":"wholeSaid"},"truth":false,"promptText":"Ida's bar has parts of 552 and 280. Is the whole 833?"}},
   },
   {
     itemId: "barModels-conc-b0821-0049",
@@ -6442,7 +6442,7 @@ export const ITEMS = [
     structureType: "barJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":376,"b":471,"w":847,"kind":"wholeSaid"},"truth":true,"promptText":"Zoe audits a bar: whole 847, sections 376 and 471. Is the audit clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":376,"b":471,"w":847,"kind":"wholeSaid"},"truth":true,"promptText":"Zoe draws a tape diagram with parts of 376 and 471 and labels the whole 847. Is Zoe right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0050",
@@ -6452,7 +6452,7 @@ export const ITEMS = [
     structureType: "barJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":665,"b":226,"w":892,"kind":"wholeSaid"},"truth":false,"promptText":"Rosa balances sections 665 and 226 against a whole of 892. Is the balance right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":665,"b":226,"w":892,"kind":"wholeSaid"},"truth":false,"promptText":"Rosa says a bar with parts of 665 and 226 has a whole of 892. Is Rosa correct?"}},
   },
   {
     itemId: "barModels-conc-b0821-0051",
@@ -6462,7 +6462,7 @@ export const ITEMS = [
     structureType: "barJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":444,"b":493,"w":937,"kind":"wholeSaid"},"truth":true,"promptText":"Diego audits a bar: whole 937, sections 444 and 493. Is the audit clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":444,"b":493,"w":937,"kind":"wholeSaid"},"truth":true,"promptText":"Diego's bar has parts of 444 and 493. Is the whole 937?"}},
   },
   {
     itemId: "barModels-conc-b0821-0052",
@@ -6472,7 +6472,7 @@ export const ITEMS = [
     structureType: "barJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":581,"b":315,"w":897,"kind":"wholeSaid"},"truth":false,"promptText":"Nora balances sections 581 and 315 against a whole of 897. Is the balance right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":581,"b":315,"w":897,"kind":"wholeSaid"},"truth":false,"promptText":"Nora draws a tape diagram with parts of 581 and 315 and labels the whole 897. Is Nora right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0053",
@@ -6482,7 +6482,7 @@ export const ITEMS = [
     structureType: "barJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":259,"b":683,"w":942,"kind":"wholeSaid"},"truth":true,"promptText":"Luca audits a bar: whole 942, sections 259 and 683. Is the audit clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":259,"b":683,"w":942,"kind":"wholeSaid"},"truth":true,"promptText":"Luca says a bar with parts of 259 and 683 has a whole of 942. Is Luca correct?"}},
   },
   {
     itemId: "barModels-conc-b0821-0054",
@@ -6492,7 +6492,7 @@ export const ITEMS = [
     structureType: "barJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":394,"b":446,"w":841,"kind":"wholeSaid"},"truth":false,"promptText":"Ava balances sections 394 and 446 against a whole of 841. Is the balance right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":394,"b":446,"w":841,"kind":"wholeSaid"},"truth":false,"promptText":"Ava's bar has parts of 394 and 446. Is the whole 841?"}},
   },
   {
     itemId: "barModels-conc-b0821-0055",
@@ -6502,7 +6502,7 @@ export const ITEMS = [
     structureType: "eqPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"12 - 7","choices":["12 + 7","12 - 7","7 - 12"],"display":{"bar":{"p":7,"w":12,"kind":"eqPick"},"promptText":"A bar shows whole 12 and part 7. Which number sentence finds the missing part? Luca picks one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"12 - 7","choices":["12 + 7","12 - 7","7 - 12"],"display":{"bar":{"p":7,"w":12,"kind":"eqPick"},"promptText":"Luca's bar has a whole of 12 and one part of 7. Which can Luca use to find the missing part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0056",
@@ -6512,7 +6512,7 @@ export const ITEMS = [
     structureType: "eqPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"15 - 9","choices":["15 + 9","15 - 9","9 - 15"],"display":{"bar":{"p":9,"w":15,"kind":"eqPick"},"promptText":"Ava must find the blank part of a whole-15, part-9 bar. Which sentence does the job?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"15 - 9","choices":["15 + 9","15 - 9","9 - 15"],"display":{"bar":{"p":9,"w":15,"kind":"eqPick"},"promptText":"Ava needs the missing part of a bar with a whole of 15 and a part of 9. Which finds the missing part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0057",
@@ -6522,7 +6522,7 @@ export const ITEMS = [
     structureType: "eqPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"18 - 6","choices":["18 + 6","6 - 18","18 - 6"],"display":{"bar":{"p":6,"w":18,"kind":"eqPick"},"promptText":"A bar shows whole 18 and part 6. Which number sentence finds the missing part? Omar picks one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"18 - 6","choices":["18 + 6","6 - 18","18 - 6"],"display":{"bar":{"p":6,"w":18,"kind":"eqPick"},"promptText":"Omar draws a bar with a whole of 18 and one part of 6. Which shows how to find the other part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0058",
@@ -6532,7 +6532,7 @@ export const ITEMS = [
     structureType: "eqPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"14 - 8","choices":["8 - 14","14 + 8","14 - 8"],"display":{"bar":{"p":8,"w":14,"kind":"eqPick"},"promptText":"Ben must find the blank part of a whole-14, part-8 bar. Which sentence does the job?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"14 - 8","choices":["8 - 14","14 + 8","14 - 8"],"display":{"bar":{"p":8,"w":14,"kind":"eqPick"},"promptText":"Ben has a bar with a whole of 14 and one part of 8. Which shows how to find the other part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0059",
@@ -6542,7 +6542,7 @@ export const ITEMS = [
     structureType: "eqPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"20 - 13","choices":["20 - 13","20 + 13","13 - 20"],"display":{"bar":{"p":13,"w":20,"kind":"eqPick"},"promptText":"A bar shows whole 20 and part 13. Which number sentence finds the missing part? Finn picks one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"20 - 13","choices":["20 - 13","20 + 13","13 - 20"],"display":{"bar":{"p":13,"w":20,"kind":"eqPick"},"promptText":"Finn's bar has a whole of 20 and one part of 13. Which can Finn use to find the missing part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0060",
@@ -6552,7 +6552,7 @@ export const ITEMS = [
     structureType: "eqPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"11 - 4","choices":["4 - 11","11 + 4","11 - 4"],"display":{"bar":{"p":4,"w":11,"kind":"eqPick"},"promptText":"Priya must find the blank part of a whole-11, part-4 bar. Which sentence does the job?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"11 - 4","choices":["4 - 11","11 + 4","11 - 4"],"display":{"bar":{"p":4,"w":11,"kind":"eqPick"},"promptText":"Priya needs the missing part of a bar with a whole of 11 and a part of 4. Which finds the missing part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0061",
@@ -6562,7 +6562,7 @@ export const ITEMS = [
     structureType: "eqPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"16 - 9","choices":["16 + 9","16 - 9","9 - 16"],"display":{"bar":{"p":9,"w":16,"kind":"eqPick"},"promptText":"A bar shows whole 16 and part 9. Which number sentence finds the missing part? Sam picks one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"16 - 9","choices":["16 + 9","16 - 9","9 - 16"],"display":{"bar":{"p":9,"w":16,"kind":"eqPick"},"promptText":"Sam's bar has a whole of 16 and one part of 9. Which can Sam use to find the missing part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0062",
@@ -6572,7 +6572,7 @@ export const ITEMS = [
     structureType: "eqPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"13 - 5","choices":["13 + 5","13 - 5","5 - 13"],"display":{"bar":{"p":5,"w":13,"kind":"eqPick"},"promptText":"Nia must find the blank part of a whole-13, part-5 bar. Which sentence does the job?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"13 - 5","choices":["13 + 5","13 - 5","5 - 13"],"display":{"bar":{"p":5,"w":13,"kind":"eqPick"},"promptText":"Nia has a bar with a whole of 13 and one part of 5. Which shows how to find the other part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0063",
@@ -6582,7 +6582,7 @@ export const ITEMS = [
     structureType: "eqPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"19 - 12","choices":["19 - 12","12 - 19","19 + 12"],"display":{"bar":{"p":12,"w":19,"kind":"eqPick"},"promptText":"A bar shows whole 19 and part 12. Which number sentence finds the missing part? Kai picks one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"19 - 12","choices":["19 - 12","12 - 19","19 + 12"],"display":{"bar":{"p":12,"w":19,"kind":"eqPick"},"promptText":"Kai draws a bar with a whole of 19 and one part of 12. Which shows how to find the other part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0064",
@@ -6592,7 +6592,7 @@ export const ITEMS = [
     structureType: "eqPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"17 - 8","choices":["17 + 8","17 - 8","8 - 17"],"display":{"bar":{"p":8,"w":17,"kind":"eqPick"},"promptText":"June must find the blank part of a whole-17, part-8 bar. Which sentence does the job?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"17 - 8","choices":["17 + 8","17 - 8","8 - 17"],"display":{"bar":{"p":8,"w":17,"kind":"eqPick"},"promptText":"June has a bar with a whole of 17 and one part of 8. Which shows how to find the other part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0065",
@@ -6602,7 +6602,7 @@ export const ITEMS = [
     structureType: "eqPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"10 - 3","choices":["10 + 3","10 - 3","3 - 10"],"display":{"bar":{"p":3,"w":10,"kind":"eqPick"},"promptText":"A bar shows whole 10 and part 3. Which number sentence finds the missing part? Lily picks one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"10 - 3","choices":["10 + 3","10 - 3","3 - 10"],"display":{"bar":{"p":3,"w":10,"kind":"eqPick"},"promptText":"Lily draws a bar with a whole of 10 and one part of 3. Which shows how to find the other part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0066",
@@ -6612,7 +6612,7 @@ export const ITEMS = [
     structureType: "eqPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"20 - 6","choices":["6 - 20","20 + 6","20 - 6"],"display":{"bar":{"p":6,"w":20,"kind":"eqPick"},"promptText":"Amara must find the blank part of a whole-20, part-6 bar. Which sentence does the job?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"20 - 6","choices":["6 - 20","20 + 6","20 - 6"],"display":{"bar":{"p":6,"w":20,"kind":"eqPick"},"promptText":"Amara has a bar with a whole of 20 and one part of 6. Which shows how to find the other part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0067",
@@ -6622,7 +6622,7 @@ export const ITEMS = [
     structureType: "eqPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"15 - 7","choices":["15 - 7","7 - 15","15 + 7"],"display":{"bar":{"p":7,"w":15,"kind":"eqPick"},"promptText":"A bar shows whole 15 and part 7. Which number sentence finds the missing part? Leo picks one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"15 - 7","choices":["15 - 7","7 - 15","15 + 7"],"display":{"bar":{"p":7,"w":15,"kind":"eqPick"},"promptText":"Leo's bar has a whole of 15 and one part of 7. Which can Leo use to find the missing part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0068",
@@ -6632,7 +6632,7 @@ export const ITEMS = [
     structureType: "eqPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"18 - 11","choices":["18 - 11","11 - 18","18 + 11"],"display":{"bar":{"p":11,"w":18,"kind":"eqPick"},"promptText":"Mina must find the blank part of a whole-18, part-11 bar. Which sentence does the job?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"18 - 11","choices":["18 - 11","11 - 18","18 + 11"],"display":{"bar":{"p":11,"w":18,"kind":"eqPick"},"promptText":"Mina needs the missing part of a bar with a whole of 18 and a part of 11. Which finds the missing part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0069",
@@ -6642,7 +6642,7 @@ export const ITEMS = [
     structureType: "eqPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"12 - 5","choices":["12 - 5","5 - 12","12 + 5"],"display":{"bar":{"p":5,"w":12,"kind":"eqPick"},"promptText":"A bar shows whole 12 and part 5. Which number sentence finds the missing part? Theo picks one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"12 - 5","choices":["12 - 5","5 - 12","12 + 5"],"display":{"bar":{"p":5,"w":12,"kind":"eqPick"},"promptText":"Theo draws a bar with a whole of 12 and one part of 5. Which shows how to find the other part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0070",
@@ -6652,7 +6652,7 @@ export const ITEMS = [
     structureType: "eqPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"14 - 9","choices":["14 + 9","9 - 14","14 - 9"],"display":{"bar":{"p":9,"w":14,"kind":"eqPick"},"promptText":"Ida must find the blank part of a whole-14, part-9 bar. Which sentence does the job?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"14 - 9","choices":["14 + 9","9 - 14","14 - 9"],"display":{"bar":{"p":9,"w":14,"kind":"eqPick"},"promptText":"Ida needs the missing part of a bar with a whole of 14 and a part of 9. Which finds the missing part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0071",
@@ -6662,7 +6662,7 @@ export const ITEMS = [
     structureType: "eqPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"45 - 27","choices":["27 - 45","45 + 27","45 - 27"],"display":{"bar":{"p":27,"w":45,"kind":"eqPick"},"promptText":"To solve a whole-45 bar with a known part of 27, which sentence should June write?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"45 - 27","choices":["27 - 45","45 + 27","45 - 27"],"display":{"bar":{"p":27,"w":45,"kind":"eqPick"},"promptText":"June draws a bar with a whole of 45 and a part of 27. What should June write to find the other part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0072",
@@ -6682,7 +6682,7 @@ export const ITEMS = [
     structureType: "eqPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"71 - 46","choices":["46 - 71","71 - 46","71 + 46"],"display":{"bar":{"p":46,"w":71,"kind":"eqPick"},"promptText":"To solve a whole-71 bar with a known part of 46, which sentence should Amara write?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"71 - 46","choices":["46 - 71","71 - 46","71 + 46"],"display":{"bar":{"p":46,"w":71,"kind":"eqPick"},"promptText":"Amara draws a bar with a whole of 71 and a part of 46. What should Amara write to find the other part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0074",
@@ -6702,7 +6702,7 @@ export const ITEMS = [
     structureType: "eqPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"84 - 57","choices":["57 - 84","84 - 57","84 + 57"],"display":{"bar":{"p":57,"w":84,"kind":"eqPick"},"promptText":"To solve a whole-84 bar with a known part of 57, which sentence should Mina write?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"84 - 57","choices":["57 - 84","84 - 57","84 + 57"],"display":{"bar":{"p":57,"w":84,"kind":"eqPick"},"promptText":"Mina's tape diagram has a whole of 84 and one part of 57. Which should Mina write to find the missing part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0076",
@@ -6722,7 +6722,7 @@ export const ITEMS = [
     structureType: "eqPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"92 - 68","choices":["92 - 68","92 + 68","68 - 92"],"display":{"bar":{"p":68,"w":92,"kind":"eqPick"},"promptText":"To solve a whole-92 bar with a known part of 68, which sentence should Ida write?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"92 - 68","choices":["92 - 68","92 + 68","68 - 92"],"display":{"bar":{"p":68,"w":92,"kind":"eqPick"},"promptText":"Ida's tape diagram has a whole of 92 and one part of 68. Which should Ida write to find the missing part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0078",
@@ -6742,7 +6742,7 @@ export const ITEMS = [
     structureType: "eqPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"77 - 49","choices":["49 - 77","77 + 49","77 - 49"],"display":{"bar":{"p":49,"w":77,"kind":"eqPick"},"promptText":"To solve a whole-77 bar with a known part of 49, which sentence should Rosa write?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"77 - 49","choices":["49 - 77","77 + 49","77 - 49"],"display":{"bar":{"p":49,"w":77,"kind":"eqPick"},"promptText":"Rosa's tape diagram has a whole of 77 and one part of 49. Which should Rosa write to find the missing part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0080",
@@ -6762,7 +6762,7 @@ export const ITEMS = [
     structureType: "eqPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"85 - 52","choices":["85 + 52","85 - 52","52 - 85"],"display":{"bar":{"p":52,"w":85,"kind":"eqPick"},"promptText":"To solve a whole-85 bar with a known part of 52, which sentence should Nora write?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"85 - 52","choices":["85 + 52","85 - 52","52 - 85"],"display":{"bar":{"p":52,"w":85,"kind":"eqPick"},"promptText":"Nora draws a bar with a whole of 85 and a part of 52. What should Nora write to find the other part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0082",
@@ -6782,7 +6782,7 @@ export const ITEMS = [
     structureType: "eqPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"96 - 73","choices":["73 - 96","96 + 73","96 - 73"],"display":{"bar":{"p":73,"w":96,"kind":"eqPick"},"promptText":"To solve a whole-96 bar with a known part of 73, which sentence should Ava write?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"96 - 73","choices":["73 - 96","96 + 73","96 - 73"],"display":{"bar":{"p":73,"w":96,"kind":"eqPick"},"promptText":"Ava's tape diagram has a whole of 96 and one part of 73. Which should Ava write to find the missing part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0084",
@@ -6802,7 +6802,7 @@ export const ITEMS = [
     structureType: "eqPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"74 - 28","choices":["74 + 28","74 - 28","28 - 74"],"display":{"bar":{"p":28,"w":74,"kind":"eqPick"},"promptText":"To solve a whole-74 bar with a known part of 28, which sentence should Ben write?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"74 - 28","choices":["74 + 28","74 - 28","28 - 74"],"display":{"bar":{"p":28,"w":74,"kind":"eqPick"},"promptText":"Ben draws a bar with a whole of 74 and a part of 28. What should Ben write to find the other part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0086",
@@ -6822,7 +6822,7 @@ export const ITEMS = [
     structureType: "eqPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"452 - 267","choices":["452 + 267","452 - 267","267 - 452"],"display":{"bar":{"p":267,"w":452,"kind":"eqPick"},"promptText":"For a bar of 452 holding a section of 267 and a blank, which computation does Amara run?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"452 - 267","choices":["452 + 267","452 - 267","267 - 452"],"display":{"bar":{"p":267,"w":452,"kind":"eqPick"},"promptText":"A bar for 452 has one part of 267 and one empty part. Which should Amara use to find the empty part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0088",
@@ -6832,7 +6832,7 @@ export const ITEMS = [
     structureType: "eqPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"618 - 384","choices":["384 - 618","618 - 384","618 + 384"],"display":{"bar":{"p":384,"w":618,"kind":"eqPick"},"promptText":"Leo translates a whole-618, part-384 bar into arithmetic. Which sentence is faithful?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"618 - 384","choices":["384 - 618","618 - 384","618 + 384"],"display":{"bar":{"p":384,"w":618,"kind":"eqPick"},"promptText":"Leo's tape diagram has a whole of 618 and one part of 384. Which shows how to find the other part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0089",
@@ -6842,7 +6842,7 @@ export const ITEMS = [
     structureType: "eqPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"723 - 456","choices":["456 - 723","723 - 456","723 + 456"],"display":{"bar":{"p":456,"w":723,"kind":"eqPick"},"promptText":"For a bar of 723 holding a section of 456 and a blank, which computation does Mina run?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"723 - 456","choices":["456 - 723","723 - 456","723 + 456"],"display":{"bar":{"p":456,"w":723,"kind":"eqPick"},"promptText":"A bar for 723 has one part of 456 and one empty part. Which should Mina use to find the empty part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0090",
@@ -6852,7 +6852,7 @@ export const ITEMS = [
     structureType: "eqPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"539 - 291","choices":["539 - 291","291 - 539","539 + 291"],"display":{"bar":{"p":291,"w":539,"kind":"eqPick"},"promptText":"Theo translates a whole-539, part-291 bar into arithmetic. Which sentence is faithful?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"539 - 291","choices":["539 - 291","291 - 539","539 + 291"],"display":{"bar":{"p":291,"w":539,"kind":"eqPick"},"promptText":"Theo's tape diagram has a whole of 539 and one part of 291. Which shows how to find the other part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0091",
@@ -6862,7 +6862,7 @@ export const ITEMS = [
     structureType: "eqPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"846 - 572","choices":["572 - 846","846 - 572","846 + 572"],"display":{"bar":{"p":572,"w":846,"kind":"eqPick"},"promptText":"For a bar of 846 holding a section of 572 and a blank, which computation does Ida run?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"846 - 572","choices":["572 - 846","846 - 572","846 + 572"],"display":{"bar":{"p":572,"w":846,"kind":"eqPick"},"promptText":"Ida's bar has a whole of 846. One part is 572 and the other part is empty. Which finds the empty part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0092",
@@ -6872,7 +6872,7 @@ export const ITEMS = [
     structureType: "eqPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"667 - 318","choices":["318 - 667","667 + 318","667 - 318"],"display":{"bar":{"p":318,"w":667,"kind":"eqPick"},"promptText":"Zoe translates a whole-667, part-318 bar into arithmetic. Which sentence is faithful?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"667 - 318","choices":["318 - 667","667 + 318","667 - 318"],"display":{"bar":{"p":318,"w":667,"kind":"eqPick"},"promptText":"Zoe draws a tape diagram with a whole of 667 and a part of 318. Which can Zoe use to find the missing part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0093",
@@ -6882,7 +6882,7 @@ export const ITEMS = [
     structureType: "eqPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"924 - 683","choices":["683 - 924","924 - 683","924 + 683"],"display":{"bar":{"p":683,"w":924,"kind":"eqPick"},"promptText":"For a bar of 924 holding a section of 683 and a blank, which computation does Rosa run?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"924 - 683","choices":["683 - 924","924 - 683","924 + 683"],"display":{"bar":{"p":683,"w":924,"kind":"eqPick"},"promptText":"Rosa's bar has a whole of 924. One part is 683 and the other part is empty. Which finds the empty part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0094",
@@ -6892,7 +6892,7 @@ export const ITEMS = [
     structureType: "eqPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"583 - 246","choices":["583 - 246","246 - 583","583 + 246"],"display":{"bar":{"p":246,"w":583,"kind":"eqPick"},"promptText":"Diego translates a whole-583, part-246 bar into arithmetic. Which sentence is faithful?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"583 - 246","choices":["583 - 246","246 - 583","583 + 246"],"display":{"bar":{"p":246,"w":583,"kind":"eqPick"},"promptText":"Diego's tape diagram has a whole of 583 and one part of 246. Which shows how to find the other part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0095",
@@ -6902,7 +6902,7 @@ export const ITEMS = [
     structureType: "eqPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"775 - 491","choices":["775 - 491","775 + 491","491 - 775"],"display":{"bar":{"p":491,"w":775,"kind":"eqPick"},"promptText":"For a bar of 775 holding a section of 491 and a blank, which computation does Nora run?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"775 - 491","choices":["775 - 491","775 + 491","491 - 775"],"display":{"bar":{"p":491,"w":775,"kind":"eqPick"},"promptText":"Nora's bar has a whole of 775. One part is 491 and the other part is empty. Which finds the empty part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0096",
@@ -6912,7 +6912,7 @@ export const ITEMS = [
     structureType: "eqPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"638 - 362","choices":["638 - 362","362 - 638","638 + 362"],"display":{"bar":{"p":362,"w":638,"kind":"eqPick"},"promptText":"Luca translates a whole-638, part-362 bar into arithmetic. Which sentence is faithful?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"638 - 362","choices":["638 - 362","362 - 638","638 + 362"],"display":{"bar":{"p":362,"w":638,"kind":"eqPick"},"promptText":"Luca draws a tape diagram with a whole of 638 and a part of 362. Which can Luca use to find the missing part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0097",
@@ -6922,7 +6922,7 @@ export const ITEMS = [
     structureType: "eqPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"852 - 527","choices":["527 - 852","852 - 527","852 + 527"],"display":{"bar":{"p":527,"w":852,"kind":"eqPick"},"promptText":"For a bar of 852 holding a section of 527 and a blank, which computation does Ava run?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"852 - 527","choices":["527 - 852","852 - 527","852 + 527"],"display":{"bar":{"p":527,"w":852,"kind":"eqPick"},"promptText":"Ava's bar has a whole of 852. One part is 527 and the other part is empty. Which finds the empty part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0098",
@@ -6932,7 +6932,7 @@ export const ITEMS = [
     structureType: "eqPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"497 - 183","choices":["497 - 183","497 + 183","183 - 497"],"display":{"bar":{"p":183,"w":497,"kind":"eqPick"},"promptText":"Omar translates a whole-497, part-183 bar into arithmetic. Which sentence is faithful?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"497 - 183","choices":["497 - 183","497 + 183","183 - 497"],"display":{"bar":{"p":183,"w":497,"kind":"eqPick"},"promptText":"Omar's tape diagram has a whole of 497 and one part of 183. Which shows how to find the other part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0099",
@@ -6942,7 +6942,7 @@ export const ITEMS = [
     structureType: "eqPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"968 - 734","choices":["968 - 734","968 + 734","734 - 968"],"display":{"bar":{"p":734,"w":968,"kind":"eqPick"},"promptText":"For a bar of 968 holding a section of 734 and a blank, which computation does Ben run?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"968 - 734","choices":["968 - 734","968 + 734","734 - 968"],"display":{"bar":{"p":734,"w":968,"kind":"eqPick"},"promptText":"A bar for 968 has one part of 734 and one empty part. Which should Ben use to find the empty part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0100",
@@ -6952,7 +6952,7 @@ export const ITEMS = [
     structureType: "eqPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"676 - 428","choices":["428 - 676","676 - 428","676 + 428"],"display":{"bar":{"p":428,"w":676,"kind":"eqPick"},"promptText":"Finn translates a whole-676, part-428 bar into arithmetic. Which sentence is faithful?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"676 - 428","choices":["428 - 676","676 - 428","676 + 428"],"display":{"bar":{"p":428,"w":676,"kind":"eqPick"},"promptText":"Finn draws a tape diagram with a whole of 676 and a part of 428. Which can Finn use to find the missing part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0101",
@@ -6962,7 +6962,7 @@ export const ITEMS = [
     structureType: "eqPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"741 - 285","choices":["741 - 285","741 + 285","285 - 741"],"display":{"bar":{"p":285,"w":741,"kind":"eqPick"},"promptText":"For a bar of 741 holding a section of 285 and a blank, which computation does Priya run?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"741 - 285","choices":["741 - 285","741 + 285","285 - 741"],"display":{"bar":{"p":285,"w":741,"kind":"eqPick"},"promptText":"A bar for 741 has one part of 285 and one empty part. Which should Priya use to find the empty part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0102",
@@ -6972,7 +6972,7 @@ export const ITEMS = [
     structureType: "eqPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"883 - 617","choices":["883 - 617","883 + 617","617 - 883"],"display":{"bar":{"p":617,"w":883,"kind":"eqPick"},"promptText":"Sam translates a whole-883, part-617 bar into arithmetic. Which sentence is faithful?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"883 - 617","choices":["883 - 617","883 + 617","617 - 883"],"display":{"bar":{"p":617,"w":883,"kind":"eqPick"},"promptText":"Sam draws a tape diagram with a whole of 883 and a part of 617. Which can Sam use to find the missing part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0103",
@@ -6982,7 +6982,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":4,"b":5,"c":6,"w":15,"kind":"threeSaid"},"truth":true,"promptText":"Nia splits a whole of 15 into 4, 5, and 6. Does the split work?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":4,"b":5,"c":6,"w":15,"kind":"threeSaid"},"truth":true,"promptText":"Do the parts 4, 5, and 6 make Nia's whole of 15?"}},
   },
   {
     itemId: "barModels-conc-b0821-0104",
@@ -6992,7 +6992,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":5,"b":6,"c":4,"w":16,"kind":"threeSaid"},"truth":false,"promptText":"Three parts — 5, 6, 4 — should rebuild Kai's whole of 16. Do they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":5,"b":6,"c":4,"w":16,"kind":"threeSaid"},"truth":false,"promptText":"Do the parts 5, 6, and 4 make Kai's whole of 16?"}},
   },
   {
     itemId: "barModels-conc-b0821-0105",
@@ -7002,7 +7002,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":6,"b":5,"c":7,"w":18,"kind":"threeSaid"},"truth":true,"promptText":"June splits a whole of 18 into 6, 5, and 7. Does the split work?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":6,"b":5,"c":7,"w":18,"kind":"threeSaid"},"truth":true,"promptText":"June has three parts: 6, 5, and 7. Do they make a whole of 18?"}},
   },
   {
     itemId: "barModels-conc-b0821-0106",
@@ -7012,7 +7012,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":4,"b":6,"c":8,"w":17,"kind":"threeSaid"},"truth":false,"promptText":"Three parts — 4, 6, 8 — should rebuild Lily's whole of 17. Do they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":4,"b":6,"c":8,"w":17,"kind":"threeSaid"},"truth":false,"promptText":"Lily says a bar for 17 has parts of 4, 6, and 8. Is Lily right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0107",
@@ -7022,7 +7022,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":3,"b":4,"c":5,"w":12,"kind":"threeSaid"},"truth":true,"promptText":"Amara splits a whole of 12 into 3, 4, and 5. Does the split work?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":3,"b":4,"c":5,"w":12,"kind":"threeSaid"},"truth":true,"promptText":"Amara says a bar for 12 has parts of 3, 4, and 5. Is Amara right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0108",
@@ -7032,7 +7032,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":5,"b":5,"c":5,"w":14,"kind":"threeSaid"},"truth":false,"promptText":"Three parts — 5, 5, 5 — should rebuild Leo's whole of 14. Do they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":5,"b":5,"c":5,"w":14,"kind":"threeSaid"},"truth":false,"promptText":"Leo has three parts: 5, 5, and 5. Do they make a whole of 14?"}},
   },
   {
     itemId: "barModels-conc-b0821-0109",
@@ -7042,7 +7042,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":6,"b":7,"c":7,"w":20,"kind":"threeSaid"},"truth":true,"promptText":"Mina splits a whole of 20 into 6, 7, and 7. Does the split work?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":6,"b":7,"c":7,"w":20,"kind":"threeSaid"},"truth":true,"promptText":"Do the parts 6, 7, and 7 make Mina's whole of 20?"}},
   },
   {
     itemId: "barModels-conc-b0821-0110",
@@ -7052,7 +7052,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":5,"b":6,"c":7,"w":19,"kind":"threeSaid"},"truth":false,"promptText":"Three parts — 5, 6, 7 — should rebuild Theo's whole of 19. Do they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":5,"b":6,"c":7,"w":19,"kind":"threeSaid"},"truth":false,"promptText":"Theo says a bar for 19 has parts of 5, 6, and 7. Is Theo right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0111",
@@ -7062,7 +7062,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":3,"b":4,"c":6,"w":13,"kind":"threeSaid"},"truth":true,"promptText":"Ida splits a whole of 13 into 3, 4, and 6. Does the split work?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":3,"b":4,"c":6,"w":13,"kind":"threeSaid"},"truth":true,"promptText":"Ida has three parts: 3, 4, and 6. Do they make a whole of 13?"}},
   },
   {
     itemId: "barModels-conc-b0821-0112",
@@ -7072,7 +7072,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":5,"b":5,"c":6,"w":15,"kind":"threeSaid"},"truth":false,"promptText":"Three parts — 5, 5, 6 — should rebuild Zoe's whole of 15. Do they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":5,"b":5,"c":6,"w":15,"kind":"threeSaid"},"truth":false,"promptText":"Do the parts 5, 5, and 6 make Zoe's whole of 15?"}},
   },
   {
     itemId: "barModels-conc-b0821-0113",
@@ -7082,7 +7082,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":5,"b":6,"c":6,"w":17,"kind":"threeSaid"},"truth":true,"promptText":"Rosa splits a whole of 17 into 5, 6, and 6. Does the split work?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":5,"b":6,"c":6,"w":17,"kind":"threeSaid"},"truth":true,"promptText":"Rosa says a bar for 17 has parts of 5, 6, and 6. Is Rosa right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0114",
@@ -7092,7 +7092,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":5,"b":7,"c":9,"w":20,"kind":"threeSaid"},"truth":false,"promptText":"Three parts — 5, 7, 9 — should rebuild Diego's whole of 20. Do they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":5,"b":7,"c":9,"w":20,"kind":"threeSaid"},"truth":false,"promptText":"Diego has three parts: 5, 7, and 9. Do they make a whole of 20?"}},
   },
   {
     itemId: "barModels-conc-b0821-0115",
@@ -7102,7 +7102,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":4,"b":5,"c":7,"w":16,"kind":"threeSaid"},"truth":true,"promptText":"Nora splits a whole of 16 into 4, 5, and 7. Does the split work?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":4,"b":5,"c":7,"w":16,"kind":"threeSaid"},"truth":true,"promptText":"Do the parts 4, 5, and 7 make Nora's whole of 16?"}},
   },
   {
     itemId: "barModels-conc-b0821-0116",
@@ -7112,7 +7112,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":5,"b":6,"c":6,"w":18,"kind":"threeSaid"},"truth":false,"promptText":"Three parts — 5, 6, 6 — should rebuild Luca's whole of 18. Do they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":5,"b":6,"c":6,"w":18,"kind":"threeSaid"},"truth":false,"promptText":"Luca has three parts: 5, 6, and 6. Do they make a whole of 18?"}},
   },
   {
     itemId: "barModels-conc-b0821-0117",
@@ -7122,7 +7122,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":6,"b":6,"c":7,"w":19,"kind":"threeSaid"},"truth":true,"promptText":"Ava splits a whole of 19 into 6, 6, and 7. Does the split work?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":6,"b":6,"c":7,"w":19,"kind":"threeSaid"},"truth":true,"promptText":"Ava has three parts: 6, 6, and 7. Do they make a whole of 19?"}},
   },
   {
     itemId: "barModels-conc-b0821-0118",
@@ -7132,7 +7132,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":4,"b":4,"c":5,"w":12,"kind":"threeSaid"},"truth":false,"promptText":"Three parts — 4, 4, 5 — should rebuild Omar's whole of 12. Do they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":4,"b":4,"c":5,"w":12,"kind":"threeSaid"},"truth":false,"promptText":"Do the parts 4, 4, and 5 make Omar's whole of 12?"}},
   },
   {
     itemId: "barModels-conc-b0821-0119",
@@ -7142,7 +7142,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":24,"b":25,"c":26,"w":75,"kind":"threeSaid"},"truth":true,"promptText":"Zoe cuts a 75-bar into 24, 25, and 26. Is the cut exact?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":24,"b":25,"c":26,"w":75,"kind":"threeSaid"},"truth":true,"promptText":"Zoe says a bar for 75 is made of parts of 24, 25, and 26. Is Zoe right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0120",
@@ -7152,7 +7152,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":25,"b":26,"c":24,"w":76,"kind":"threeSaid"},"truth":false,"promptText":"Parts 25, 26, and 24 fill Rosa's bar of 76 with nothing left over. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":25,"b":26,"c":24,"w":76,"kind":"threeSaid"},"truth":false,"promptText":"Rosa says a bar for 76 is made of parts of 25, 26, and 24. Is Rosa right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0121",
@@ -7162,7 +7162,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":26,"b":25,"c":37,"w":88,"kind":"threeSaid"},"truth":true,"promptText":"Diego cuts a 88-bar into 26, 25, and 37. Is the cut exact?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":26,"b":25,"c":37,"w":88,"kind":"threeSaid"},"truth":true,"promptText":"Diego wants to cut a bar for 88 into parts of 26, 25, and 37. Do the three parts add up to 88?"}},
   },
   {
     itemId: "barModels-conc-b0821-0122",
@@ -7172,7 +7172,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":24,"b":26,"c":38,"w":87,"kind":"threeSaid"},"truth":false,"promptText":"Parts 24, 26, and 38 fill Nora's bar of 87 with nothing left over. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":24,"b":26,"c":38,"w":87,"kind":"threeSaid"},"truth":false,"promptText":"Nora wants to cut a bar for 87 into parts of 24, 26, and 38. Do the three parts add up to 87?"}},
   },
   {
     itemId: "barModels-conc-b0821-0123",
@@ -7182,7 +7182,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":13,"b":24,"c":25,"w":62,"kind":"threeSaid"},"truth":true,"promptText":"Luca cuts a 62-bar into 13, 24, and 25. Is the cut exact?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":13,"b":24,"c":25,"w":62,"kind":"threeSaid"},"truth":true,"promptText":"Luca wants to cut a bar for 62 into parts of 13, 24, and 25. Do the three parts add up to 62?"}},
   },
   {
     itemId: "barModels-conc-b0821-0124",
@@ -7192,7 +7192,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":25,"b":15,"c":25,"w":64,"kind":"threeSaid"},"truth":false,"promptText":"Parts 25, 15, and 25 fill Ava's bar of 64 with nothing left over. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":25,"b":15,"c":25,"w":64,"kind":"threeSaid"},"truth":false,"promptText":"Do parts of 25, 15, and 25 fill Ava's bar for 64 with nothing left over?"}},
   },
   {
     itemId: "barModels-conc-b0821-0125",
@@ -7202,7 +7202,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":26,"b":27,"c":37,"w":90,"kind":"threeSaid"},"truth":true,"promptText":"Omar cuts a 90-bar into 26, 27, and 37. Is the cut exact?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":26,"b":27,"c":37,"w":90,"kind":"threeSaid"},"truth":true,"promptText":"Omar says a bar for 90 is made of parts of 26, 27, and 37. Is Omar right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0126",
@@ -7212,7 +7212,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":25,"b":26,"c":37,"w":89,"kind":"threeSaid"},"truth":false,"promptText":"Parts 25, 26, and 37 fill Ben's bar of 89 with nothing left over. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":25,"b":26,"c":37,"w":89,"kind":"threeSaid"},"truth":false,"promptText":"Ben says a bar for 89 is made of parts of 25, 26, and 37. Is Ben right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0127",
@@ -7222,7 +7222,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":13,"b":24,"c":26,"w":63,"kind":"threeSaid"},"truth":true,"promptText":"Finn cuts a 63-bar into 13, 24, and 26. Is the cut exact?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":13,"b":24,"c":26,"w":63,"kind":"threeSaid"},"truth":true,"promptText":"Do parts of 13, 24, and 26 fill Finn's bar for 63 with nothing left over?"}},
   },
   {
     itemId: "barModels-conc-b0821-0128",
@@ -7232,7 +7232,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":25,"b":15,"c":26,"w":65,"kind":"threeSaid"},"truth":false,"promptText":"Parts 25, 15, and 26 fill Priya's bar of 65 with nothing left over. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":25,"b":15,"c":26,"w":65,"kind":"threeSaid"},"truth":false,"promptText":"Priya wants to cut a bar for 65 into parts of 25, 15, and 26. Do the three parts add up to 65?"}},
   },
   {
     itemId: "barModels-conc-b0821-0129",
@@ -7242,7 +7242,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":25,"b":26,"c":26,"w":77,"kind":"threeSaid"},"truth":true,"promptText":"Sam cuts a 77-bar into 25, 26, and 26. Is the cut exact?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":25,"b":26,"c":26,"w":77,"kind":"threeSaid"},"truth":true,"promptText":"Sam wants to cut a bar for 77 into parts of 25, 26, and 26. Do the three parts add up to 77?"}},
   },
   {
     itemId: "barModels-conc-b0821-0130",
@@ -7252,7 +7252,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":25,"b":27,"c":39,"w":90,"kind":"threeSaid"},"truth":false,"promptText":"Parts 25, 27, and 39 fill Nia's bar of 90 with nothing left over. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":25,"b":27,"c":39,"w":90,"kind":"threeSaid"},"truth":false,"promptText":"Do parts of 25, 27, and 39 fill Nia's bar for 90 with nothing left over?"}},
   },
   {
     itemId: "barModels-conc-b0821-0131",
@@ -7262,7 +7262,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":14,"b":25,"c":27,"w":66,"kind":"threeSaid"},"truth":true,"promptText":"Kai cuts a 66-bar into 14, 25, and 27. Is the cut exact?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":14,"b":25,"c":27,"w":66,"kind":"threeSaid"},"truth":true,"promptText":"Do parts of 14, 25, and 27 fill Kai's bar for 66 with nothing left over?"}},
   },
   {
     itemId: "barModels-conc-b0821-0132",
@@ -7272,7 +7272,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":25,"b":26,"c":26,"w":78,"kind":"threeSaid"},"truth":false,"promptText":"Parts 25, 26, and 26 fill June's bar of 78 with nothing left over. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":25,"b":26,"c":26,"w":78,"kind":"threeSaid"},"truth":false,"promptText":"June says a bar for 78 is made of parts of 25, 26, and 26. Is June right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0133",
@@ -7282,7 +7282,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":26,"b":26,"c":37,"w":89,"kind":"threeSaid"},"truth":true,"promptText":"Lily cuts a 89-bar into 26, 26, and 37. Is the cut exact?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":26,"b":26,"c":37,"w":89,"kind":"threeSaid"},"truth":true,"promptText":"Lily says a bar for 89 is made of parts of 26, 26, and 37. Is Lily right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0134",
@@ -7292,7 +7292,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":14,"b":24,"c":25,"w":62,"kind":"threeSaid"},"truth":false,"promptText":"Parts 14, 24, and 25 fill Amara's bar of 62 with nothing left over. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":14,"b":24,"c":25,"w":62,"kind":"threeSaid"},"truth":false,"promptText":"Amara wants to cut a bar for 62 into parts of 14, 24, and 25. Do the three parts add up to 62?"}},
   },
   {
     itemId: "barModels-conc-b0821-0135",
@@ -7302,7 +7302,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":224,"b":225,"c":226,"w":675,"kind":"threeSaid"},"truth":true,"promptText":"Diego splits 675 into parts 224, 225, and 226. Do the parts add up to 675?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":224,"b":225,"c":226,"w":675,"kind":"threeSaid"},"truth":true,"promptText":"Diego says parts of 224, 225, and 226 make a whole of 675. Is Diego right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0136",
@@ -7312,7 +7312,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":225,"b":226,"c":224,"w":676,"kind":"threeSaid"},"truth":false,"promptText":"Sections 225, 226, and 224 claim to total Nora's whole of 676. Do they truly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":225,"b":226,"c":224,"w":676,"kind":"threeSaid"},"truth":false,"promptText":"Nora says parts of 225, 226, and 224 make a whole of 676. Is Nora right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0137",
@@ -7322,7 +7322,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":226,"b":225,"c":337,"w":788,"kind":"threeSaid"},"truth":true,"promptText":"Luca splits 788 into parts 226, 225, and 337. Do the parts add up to 788?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":226,"b":225,"c":337,"w":788,"kind":"threeSaid"},"truth":true,"promptText":"Luca draws a tape diagram with a whole of 788 and three parts: 226, 225, and 337. Do the three parts add up to 788?"}},
   },
   {
     itemId: "barModels-conc-b0821-0138",
@@ -7332,7 +7332,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":224,"b":226,"c":338,"w":787,"kind":"threeSaid"},"truth":false,"promptText":"Sections 224, 226, and 338 claim to total Ava's whole of 787. Do they truly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":224,"b":226,"c":338,"w":787,"kind":"threeSaid"},"truth":false,"promptText":"Ava draws a tape diagram with a whole of 787 and three parts: 224, 226, and 338. Do the three parts add up to 787?"}},
   },
   {
     itemId: "barModels-conc-b0821-0139",
@@ -7342,7 +7342,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":113,"b":224,"c":225,"w":562,"kind":"threeSaid"},"truth":true,"promptText":"Omar splits 562 into parts 113, 224, and 225. Do the parts add up to 562?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":113,"b":224,"c":225,"w":562,"kind":"threeSaid"},"truth":true,"promptText":"Omar says parts of 113, 224, and 225 make a whole of 562. Is Omar right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0140",
@@ -7352,7 +7352,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":225,"b":115,"c":225,"w":564,"kind":"threeSaid"},"truth":false,"promptText":"Sections 225, 115, and 225 claim to total Ben's whole of 564. Do they truly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":225,"b":115,"c":225,"w":564,"kind":"threeSaid"},"truth":false,"promptText":"Ben says parts of 225, 115, and 225 make a whole of 564. Is Ben right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0141",
@@ -7362,7 +7362,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":226,"b":227,"c":437,"w":890,"kind":"threeSaid"},"truth":true,"promptText":"Finn splits 890 into parts 226, 227, and 437. Do the parts add up to 890?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":226,"b":227,"c":437,"w":890,"kind":"threeSaid"},"truth":true,"promptText":"Finn draws a tape diagram with a whole of 890 and three parts: 226, 227, and 437. Do the three parts add up to 890?"}},
   },
   {
     itemId: "barModels-conc-b0821-0142",
@@ -7372,7 +7372,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":225,"b":226,"c":437,"w":889,"kind":"threeSaid"},"truth":false,"promptText":"Sections 225, 226, and 437 claim to total Priya's whole of 889. Do they truly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":225,"b":226,"c":437,"w":889,"kind":"threeSaid"},"truth":false,"promptText":"Priya draws a tape diagram with a whole of 889 and three parts: 225, 226, and 437. Do the three parts add up to 889?"}},
   },
   {
     itemId: "barModels-conc-b0821-0143",
@@ -7382,7 +7382,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":113,"b":224,"c":226,"w":563,"kind":"threeSaid"},"truth":true,"promptText":"Sam splits 563 into parts 113, 224, and 226. Do the parts add up to 563?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":113,"b":224,"c":226,"w":563,"kind":"threeSaid"},"truth":true,"promptText":"Sam says parts of 113, 224, and 226 make a whole of 563. Is Sam right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0144",
@@ -7392,7 +7392,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":225,"b":115,"c":226,"w":565,"kind":"threeSaid"},"truth":false,"promptText":"Sections 225, 115, and 226 claim to total Nia's whole of 565. Do they truly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":225,"b":115,"c":226,"w":565,"kind":"threeSaid"},"truth":false,"promptText":"Nia draws a tape diagram with a whole of 565 and three parts: 225, 115, and 226. Do the three parts add up to 565?"}},
   },
   {
     itemId: "barModels-conc-b0821-0145",
@@ -7402,7 +7402,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":225,"b":226,"c":226,"w":677,"kind":"threeSaid"},"truth":true,"promptText":"Kai splits 677 into parts 225, 226, and 226. Do the parts add up to 677?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":225,"b":226,"c":226,"w":677,"kind":"threeSaid"},"truth":true,"promptText":"Kai draws a tape diagram with a whole of 677 and three parts: 225, 226, and 226. Do the three parts add up to 677?"}},
   },
   {
     itemId: "barModels-conc-b0821-0146",
@@ -7412,7 +7412,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":225,"b":227,"c":439,"w":890,"kind":"threeSaid"},"truth":false,"promptText":"Sections 225, 227, and 439 claim to total June's whole of 890. Do they truly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":225,"b":227,"c":439,"w":890,"kind":"threeSaid"},"truth":false,"promptText":"June draws a tape diagram with a whole of 890 and three parts: 225, 227, and 439. Do the three parts add up to 890?"}},
   },
   {
     itemId: "barModels-conc-b0821-0147",
@@ -7422,7 +7422,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":114,"b":225,"c":227,"w":566,"kind":"threeSaid"},"truth":true,"promptText":"Lily splits 566 into parts 114, 225, and 227. Do the parts add up to 566?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":114,"b":225,"c":227,"w":566,"kind":"threeSaid"},"truth":true,"promptText":"Lily says parts of 114, 225, and 227 make a whole of 566. Is Lily right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0148",
@@ -7432,7 +7432,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":225,"b":226,"c":226,"w":678,"kind":"threeSaid"},"truth":false,"promptText":"Sections 225, 226, and 226 claim to total Amara's whole of 678. Do they truly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":225,"b":226,"c":226,"w":678,"kind":"threeSaid"},"truth":false,"promptText":"Amara says parts of 225, 226, and 226 make a whole of 678. Is Amara right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0149",
@@ -7442,7 +7442,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":226,"b":226,"c":437,"w":889,"kind":"threeSaid"},"truth":true,"promptText":"Leo splits 889 into parts 226, 226, and 437. Do the parts add up to 889?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":226,"b":226,"c":437,"w":889,"kind":"threeSaid"},"truth":true,"promptText":"Leo draws a tape diagram with a whole of 889 and three parts: 226, 226, and 437. Do the three parts add up to 889?"}},
   },
   {
     itemId: "barModels-conc-b0821-0150",
@@ -7452,7 +7452,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":114,"b":224,"c":225,"w":562,"kind":"threeSaid"},"truth":false,"promptText":"Sections 114, 224, and 225 claim to total Mina's whole of 562. Do they truly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":114,"b":224,"c":225,"w":562,"kind":"threeSaid"},"truth":false,"promptText":"Mina says parts of 114, 224, and 225 make a whole of 562. Is Mina right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0151",
@@ -7462,7 +7462,7 @@ export const ITEMS = [
     structureType: "fewerPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[8,9,19,14],"display":{"bar":{"a":14,"d":5,"kind":"fewerOf"},"promptText":"Theo has 5 fewer stickers than Ava, who has 14. How many stickers does Theo have? Pick the number."}},
+    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[8,9,19,14],"display":{"bar":{"a":14,"d":5,"kind":"fewerOf"},"promptText":"Theo has 5 fewer stickers than Ava, who has 14. How many stickers does Theo have?"}},
   },
   {
     itemId: "barModels-conc-b0821-0152",
@@ -7482,7 +7482,7 @@ export const ITEMS = [
     structureType: "fewerPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[16,8,7,12],"display":{"bar":{"a":12,"d":4,"kind":"fewerOf"},"promptText":"Zoe has 4 fewer stickers than Ben, who has 12. How many stickers does Zoe have? Pick the number."}},
+    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[16,8,7,12],"display":{"bar":{"a":12,"d":4,"kind":"fewerOf"},"promptText":"Ben has 12 stickers. Zoe has 4 fewer stickers than Ben. How many stickers does Zoe have?"}},
   },
   {
     itemId: "barModels-conc-b0821-0154",
@@ -7502,7 +7502,7 @@ export const ITEMS = [
     structureType: "fewerPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[9,16,8,23],"display":{"bar":{"a":16,"d":7,"kind":"fewerOf"},"promptText":"Diego has 7 fewer stickers than Priya, who has 16. How many stickers does Diego have? Pick the number."}},
+    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[9,16,8,23],"display":{"bar":{"a":16,"d":7,"kind":"fewerOf"},"promptText":"Diego has 7 fewer stickers than Priya, who has 16. How many stickers does Diego have?"}},
   },
   {
     itemId: "barModels-conc-b0821-0156",
@@ -7522,7 +7522,7 @@ export const ITEMS = [
     structureType: "fewerPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[28,11,20,12],"display":{"bar":{"a":20,"d":8,"kind":"fewerOf"},"promptText":"Luca has 8 fewer stickers than Nia, who has 20. How many stickers does Luca have? Pick the number."}},
+    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[28,11,20,12],"display":{"bar":{"a":20,"d":8,"kind":"fewerOf"},"promptText":"Nia has 20 stickers. Luca has 8 fewer stickers than Nia. How many stickers does Luca have?"}},
   },
   {
     itemId: "barModels-conc-b0821-0158",
@@ -7542,7 +7542,7 @@ export const ITEMS = [
     structureType: "fewerPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[12,18,13,23],"display":{"bar":{"a":18,"d":5,"kind":"fewerOf"},"promptText":"Omar has 5 fewer stickers than June, who has 18. How many stickers does Omar have? Pick the number."}},
+    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[12,18,13,23],"display":{"bar":{"a":18,"d":5,"kind":"fewerOf"},"promptText":"Omar has 5 fewer stickers than June, who has 18. How many stickers does Omar have?"}},
   },
   {
     itemId: "barModels-conc-b0821-0160",
@@ -7562,7 +7562,7 @@ export const ITEMS = [
     structureType: "fewerPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[9,8,31,20],"display":{"bar":{"a":20,"d":11,"kind":"fewerOf"},"promptText":"Finn has 11 fewer stickers than Amara, who has 20. How many stickers does Finn have? Pick the number."}},
+    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[9,8,31,20],"display":{"bar":{"a":20,"d":11,"kind":"fewerOf"},"promptText":"Amara has 20 stickers. Finn has 11 fewer stickers than Amara. How many stickers does Finn have?"}},
   },
   {
     itemId: "barModels-conc-b0821-0162",
@@ -7582,7 +7582,7 @@ export const ITEMS = [
     structureType: "fewerPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[7,21,14,6],"display":{"bar":{"a":14,"d":7,"kind":"fewerOf"},"promptText":"Sam has 7 fewer stickers than Mina, who has 14. How many stickers does Sam have? Pick the number."}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[7,21,14,6],"display":{"bar":{"a":14,"d":7,"kind":"fewerOf"},"promptText":"Mina has 14 stickers. Sam has 7 fewer stickers than Mina. How many stickers does Sam have?"}},
   },
   {
     itemId: "barModels-conc-b0821-0164",
@@ -7602,7 +7602,7 @@ export const ITEMS = [
     structureType: "fewerPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[15,8,12,9],"display":{"bar":{"a":12,"d":3,"kind":"fewerOf"},"promptText":"Kai has 3 fewer stickers than Ida, who has 12. How many stickers does Kai have? Pick the number."}},
+    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[15,8,12,9],"display":{"bar":{"a":12,"d":3,"kind":"fewerOf"},"promptText":"Kai has 3 fewer stickers than Ida, who has 12. How many stickers does Kai have?"}},
   },
   {
     itemId: "barModels-conc-b0821-0166",
@@ -7632,7 +7632,7 @@ export const ITEMS = [
     structureType: "fewerPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"choices":[72,34,110,33],"display":{"bar":{"a":72,"d":38,"kind":"fewerOf"},"promptText":"With Amara at 72 and Finn trailing by 38, what is Finn's count? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":34,"choices":[72,34,110,33],"display":{"bar":{"a":72,"d":38,"kind":"fewerOf"},"promptText":"Amara has 72 points. Finn has 38 fewer points than Amara. How many points does Finn have?"}},
   },
   {
     itemId: "barModels-conc-b0821-0169",
@@ -7652,7 +7652,7 @@ export const ITEMS = [
     structureType: "fewerPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":37,"choices":[37,36,81,59],"display":{"bar":{"a":59,"d":22,"kind":"fewerOf"},"promptText":"With Mina at 59 and Sam trailing by 22, what is Sam's count? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":37,"choices":[37,36,81,59],"display":{"bar":{"a":59,"d":22,"kind":"fewerOf"},"promptText":"Mina has 59 points. Sam has 22 fewer points than Mina. How many points does Sam have?"}},
   },
   {
     itemId: "barModels-conc-b0821-0171",
@@ -7672,7 +7672,7 @@ export const ITEMS = [
     structureType: "fewerPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"choices":[37,67,96,38],"display":{"bar":{"a":67,"d":29,"kind":"fewerOf"},"promptText":"With Ida at 67 and Kai trailing by 29, what is Kai's count? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":38,"choices":[37,67,96,38],"display":{"bar":{"a":67,"d":29,"kind":"fewerOf"},"promptText":"Ida scored 67 points in a game. Kai scored 29 fewer points than Ida. How many points did Kai score?"}},
   },
   {
     itemId: "barModels-conc-b0821-0173",
@@ -7692,7 +7692,7 @@ export const ITEMS = [
     structureType: "fewerPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"choices":[79,26,27,53],"display":{"bar":{"a":53,"d":26,"kind":"fewerOf"},"promptText":"With Rosa at 53 and Lily trailing by 26, what is Lily's count? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":27,"choices":[79,26,27,53],"display":{"bar":{"a":53,"d":26,"kind":"fewerOf"},"promptText":"Rosa scored 53 points in a game. Lily scored 26 fewer points than Rosa. How many points did Lily score?"}},
   },
   {
     itemId: "barModels-conc-b0821-0175",
@@ -7712,7 +7712,7 @@ export const ITEMS = [
     structureType: "fewerPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"choices":[37,38,100,69],"display":{"bar":{"a":69,"d":31,"kind":"fewerOf"},"promptText":"With Nora at 69 and Leo trailing by 31, what is Leo's count? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":38,"choices":[37,38,100,69],"display":{"bar":{"a":69,"d":31,"kind":"fewerOf"},"promptText":"Nora scored 69 points in a game. Leo scored 31 fewer points than Nora. How many points did Leo score?"}},
   },
   {
     itemId: "barModels-conc-b0821-0177",
@@ -7732,7 +7732,7 @@ export const ITEMS = [
     structureType: "fewerPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"choices":[27,26,48,69],"display":{"bar":{"a":48,"d":21,"kind":"fewerOf"},"promptText":"With Ava at 48 and Theo trailing by 21, what is Theo's count? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":27,"choices":[27,26,48,69],"display":{"bar":{"a":48,"d":21,"kind":"fewerOf"},"promptText":"Ava scored 48 points in a game. Theo scored 21 fewer points than Ava. How many points did Theo score?"}},
   },
   {
     itemId: "barModels-conc-b0821-0179",
@@ -7752,7 +7752,7 @@ export const ITEMS = [
     structureType: "fewerPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":28,"choices":[28,61,27,94],"display":{"bar":{"a":61,"d":33,"kind":"fewerOf"},"promptText":"With Ben at 61 and Zoe trailing by 33, what is Zoe's count? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":28,"choices":[28,61,27,94],"display":{"bar":{"a":61,"d":33,"kind":"fewerOf"},"promptText":"Ben has 61 points. Zoe has 33 fewer points than Ben. How many points does Zoe have?"}},
   },
   {
     itemId: "barModels-conc-b0821-0181",
@@ -7772,7 +7772,7 @@ export const ITEMS = [
     structureType: "fewerPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"choices":[37,38,87,136],"display":{"bar":{"a":87,"d":49,"kind":"fewerOf"},"promptText":"With Priya at 87 and Diego trailing by 49, what is Diego's count? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":38,"choices":[37,38,87,136],"display":{"bar":{"a":87,"d":49,"kind":"fewerOf"},"promptText":"Priya has 87 points. Diego has 49 fewer points than Priya. How many points does Diego have?"}},
   },
   {
     itemId: "barModels-conc-b0821-0183",
@@ -7792,7 +7792,7 @@ export const ITEMS = [
     structureType: "fewerPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":335,"choices":[334,335,1107,721],"display":{"bar":{"a":721,"d":386,"kind":"fewerOf"},"promptText":"Sam sits exactly 386 below Mina's 721. Which value is Sam at?"}},
+    question: {"a":null,"b":null,"op":"count","answer":335,"choices":[334,335,1107,721],"display":{"bar":{"a":721,"d":386,"kind":"fewerOf"},"promptText":"Mina has 721 beads. Sam has 386 fewer beads than Mina. How many beads does Sam have?"}},
   },
   {
     itemId: "barModels-conc-b0821-0185",
@@ -7812,7 +7812,7 @@ export const ITEMS = [
     structureType: "fewerPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":367,"choices":[594,366,367,821],"display":{"bar":{"a":594,"d":227,"kind":"fewerOf"},"promptText":"Kai sits exactly 227 below Ida's 594. Which value is Kai at?"}},
+    question: {"a":null,"b":null,"op":"count","answer":367,"choices":[594,366,367,821],"display":{"bar":{"a":594,"d":227,"kind":"fewerOf"},"promptText":"Ida has 594 beads. Kai has 227 fewer beads than Ida. How many beads does Kai have?"}},
   },
   {
     itemId: "barModels-conc-b0821-0187",
@@ -7832,7 +7832,7 @@ export const ITEMS = [
     structureType: "fewerPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":377,"choices":[973,377,675,376],"display":{"bar":{"a":675,"d":298,"kind":"fewerOf"},"promptText":"Lily sits exactly 298 below Rosa's 675. Which value is Lily at?"}},
+    question: {"a":null,"b":null,"op":"count","answer":377,"choices":[973,377,675,376],"display":{"bar":{"a":675,"d":298,"kind":"fewerOf"},"promptText":"Rosa has 675 beads. Lily has 298 fewer beads than Rosa. How many beads does Lily have?"}},
   },
   {
     itemId: "barModels-conc-b0821-0189",
@@ -7852,7 +7852,7 @@ export const ITEMS = [
     structureType: "fewerPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":267,"choices":[267,532,797,266],"display":{"bar":{"a":532,"d":265,"kind":"fewerOf"},"promptText":"Leo sits exactly 265 below Nora's 532. Which value is Leo at?"}},
+    question: {"a":null,"b":null,"op":"count","answer":267,"choices":[267,532,797,266],"display":{"bar":{"a":532,"d":265,"kind":"fewerOf"},"promptText":"Nora read 532 pages. Leo read 265 fewer pages than Nora. How many pages did Leo read?"}},
   },
   {
     itemId: "barModels-conc-b0821-0191",
@@ -7872,7 +7872,7 @@ export const ITEMS = [
     structureType: "fewerPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":384,"choices":[384,1010,697,383],"display":{"bar":{"a":697,"d":313,"kind":"fewerOf"},"promptText":"Theo sits exactly 313 below Ava's 697. Which value is Theo at?"}},
+    question: {"a":null,"b":null,"op":"count","answer":384,"choices":[384,1010,697,383],"display":{"bar":{"a":697,"d":313,"kind":"fewerOf"},"promptText":"Ava read 697 pages. Theo read 313 fewer pages than Ava. How many pages did Theo read?"}},
   },
   {
     itemId: "barModels-conc-b0821-0193",
@@ -7892,7 +7892,7 @@ export const ITEMS = [
     structureType: "fewerPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":267,"choices":[483,266,267,699],"display":{"bar":{"a":483,"d":216,"kind":"fewerOf"},"promptText":"Zoe sits exactly 216 below Ben's 483. Which value is Zoe at?"}},
+    question: {"a":null,"b":null,"op":"count","answer":267,"choices":[483,266,267,699],"display":{"bar":{"a":483,"d":216,"kind":"fewerOf"},"promptText":"Ben has 483 beads. Zoe has 216 fewer beads than Ben. How many beads does Zoe have?"}},
   },
   {
     itemId: "barModels-conc-b0821-0195",
@@ -7912,7 +7912,7 @@ export const ITEMS = [
     structureType: "fewerPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":281,"choices":[949,281,280,615],"display":{"bar":{"a":615,"d":334,"kind":"fewerOf"},"promptText":"Diego sits exactly 334 below Priya's 615. Which value is Diego at?"}},
+    question: {"a":null,"b":null,"op":"count","answer":281,"choices":[949,281,280,615],"display":{"bar":{"a":615,"d":334,"kind":"fewerOf"},"promptText":"Priya read 615 pages. Diego read 334 fewer pages than Priya. How many pages did Diego read?"}},
   },
   {
     itemId: "barModels-conc-b0821-0197",
@@ -7932,7 +7932,7 @@ export const ITEMS = [
     structureType: "fewerPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":374,"choices":[867,374,373,1360],"display":{"bar":{"a":867,"d":493,"kind":"fewerOf"},"promptText":"Luca sits exactly 493 below Nia's 867. Which value is Luca at?"}},
+    question: {"a":null,"b":null,"op":"count","answer":374,"choices":[867,374,373,1360],"display":{"bar":{"a":867,"d":493,"kind":"fewerOf"},"promptText":"Nia read 867 pages. Luca read 493 fewer pages than Nia. How many pages did Luca read?"}},
   },
   {
     itemId: "barModels-conc-b0821-0199",
@@ -7942,7 +7942,7 @@ export const ITEMS = [
     structureType: "diffJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":14,"b":9,"kind":"diffSaid","said":5},"truth":true,"promptText":"Kai compares bars of 14 and 9 and calls the gap 5. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":14,"b":9,"kind":"diffSaid","said":5},"truth":true,"promptText":"Kai compares bars of 14 and 9 and says the difference is 5. Is Kai right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0200",
@@ -7952,7 +7952,7 @@ export const ITEMS = [
     structureType: "diffJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":17,"b":8,"kind":"diffSaid","said":8},"truth":false,"promptText":"Between 17 and 8, June measures a difference of 8. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":17,"b":8,"kind":"diffSaid","said":8},"truth":false,"promptText":"June says the bar for 17 is 8 longer than the bar for 8. Is that right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0201",
@@ -7962,7 +7962,7 @@ export const ITEMS = [
     structureType: "diffJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":12,"b":5,"kind":"diffSaid","said":7},"truth":true,"promptText":"Lily compares bars of 12 and 5 and calls the gap 7. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":12,"b":5,"kind":"diffSaid","said":7},"truth":true,"promptText":"Lily says the bar for 12 is 7 longer than the bar for 5. Is that right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0202",
@@ -7972,7 +7972,7 @@ export const ITEMS = [
     structureType: "diffJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":19,"b":11,"kind":"diffSaid","said":7},"truth":false,"promptText":"Between 19 and 11, Amara measures a difference of 7. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":19,"b":11,"kind":"diffSaid","said":7},"truth":false,"promptText":"Amara compares bars of 19 and 11 and says the difference is 7. Is Amara right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0203",
@@ -7982,7 +7982,7 @@ export const ITEMS = [
     structureType: "diffJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":16,"b":7,"kind":"diffSaid","said":9},"truth":true,"promptText":"Leo compares bars of 16 and 7 and calls the gap 9. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":16,"b":7,"kind":"diffSaid","said":9},"truth":true,"promptText":"Leo compares bars of 16 and 7 and says the difference is 9. Is Leo right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0204",
@@ -7992,7 +7992,7 @@ export const ITEMS = [
     structureType: "diffJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":15,"b":6,"kind":"diffSaid","said":8},"truth":false,"promptText":"Between 15 and 6, Mina measures a difference of 8. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":15,"b":6,"kind":"diffSaid","said":8},"truth":false,"promptText":"Mina says the bar for 15 is 8 longer than the bar for 6. Is that right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0205",
@@ -8002,7 +8002,7 @@ export const ITEMS = [
     structureType: "diffJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":20,"b":12,"kind":"diffSaid","said":8},"truth":true,"promptText":"Theo compares bars of 20 and 12 and calls the gap 8. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":20,"b":12,"kind":"diffSaid","said":8},"truth":true,"promptText":"Theo says the bar for 20 is 8 longer than the bar for 12. Is that right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0206",
@@ -8012,7 +8012,7 @@ export const ITEMS = [
     structureType: "diffJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":13,"b":4,"kind":"diffSaid","said":8},"truth":false,"promptText":"Between 13 and 4, Ida measures a difference of 8. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":13,"b":4,"kind":"diffSaid","said":8},"truth":false,"promptText":"Ida compares bars of 13 and 4 and says the difference is 8. Is Ida right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0207",
@@ -8022,7 +8022,7 @@ export const ITEMS = [
     structureType: "diffJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":18,"b":9,"kind":"diffSaid","said":9},"truth":true,"promptText":"Zoe compares bars of 18 and 9 and calls the gap 9. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":18,"b":9,"kind":"diffSaid","said":9},"truth":true,"promptText":"Zoe compares bars of 18 and 9 and says the difference is 9. Is Zoe right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0208",
@@ -8032,7 +8032,7 @@ export const ITEMS = [
     structureType: "diffJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":11,"b":3,"kind":"diffSaid","said":7},"truth":false,"promptText":"Between 11 and 3, Rosa measures a difference of 7. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":11,"b":3,"kind":"diffSaid","said":7},"truth":false,"promptText":"Rosa says the bar for 11 is 7 longer than the bar for 3. Is that right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0209",
@@ -8042,7 +8042,7 @@ export const ITEMS = [
     structureType: "diffJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":20,"b":14,"kind":"diffSaid","said":6},"truth":true,"promptText":"Diego compares bars of 20 and 14 and calls the gap 6. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":20,"b":14,"kind":"diffSaid","said":6},"truth":true,"promptText":"Diego says the bar for 20 is 6 longer than the bar for 14. Is that right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0210",
@@ -8052,7 +8052,7 @@ export const ITEMS = [
     structureType: "diffJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":16,"b":9,"kind":"diffSaid","said":6},"truth":false,"promptText":"Between 16 and 9, Nora measures a difference of 6. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":16,"b":9,"kind":"diffSaid","said":6},"truth":false,"promptText":"Nora compares bars of 16 and 9 and says the difference is 6. Is Nora right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0211",
@@ -8062,7 +8062,7 @@ export const ITEMS = [
     structureType: "diffJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":14,"b":6,"kind":"diffSaid","said":8},"truth":true,"promptText":"Luca compares bars of 14 and 6 and calls the gap 8. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":14,"b":6,"kind":"diffSaid","said":8},"truth":true,"promptText":"Luca compares bars of 14 and 6 and says the difference is 8. Is Luca right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0212",
@@ -8072,7 +8072,7 @@ export const ITEMS = [
     structureType: "diffJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":19,"b":13,"kind":"diffSaid","said":5},"truth":false,"promptText":"Between 19 and 13, Ava measures a difference of 5. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":19,"b":13,"kind":"diffSaid","said":5},"truth":false,"promptText":"Ava says the bar for 19 is 5 longer than the bar for 13. Is that right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0213",
@@ -8082,7 +8082,7 @@ export const ITEMS = [
     structureType: "diffJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":12,"b":7,"kind":"diffSaid","said":5},"truth":true,"promptText":"Omar compares bars of 12 and 7 and calls the gap 5. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":12,"b":7,"kind":"diffSaid","said":5},"truth":true,"promptText":"Omar says the bar for 12 is 5 longer than the bar for 7. Is that right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0214",
@@ -8092,7 +8092,7 @@ export const ITEMS = [
     structureType: "diffJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":17,"b":4,"kind":"diffSaid","said":12},"truth":false,"promptText":"Between 17 and 4, Ben measures a difference of 12. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":17,"b":4,"kind":"diffSaid","said":12},"truth":false,"promptText":"Ben compares bars of 17 and 4 and says the difference is 12. Is Ben right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0215",
@@ -8102,7 +8102,7 @@ export const ITEMS = [
     structureType: "diffJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":15,"b":8,"kind":"diffSaid","said":7},"truth":true,"promptText":"Finn compares bars of 15 and 8 and calls the gap 7. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":15,"b":8,"kind":"diffSaid","said":7},"truth":true,"promptText":"Finn compares bars of 15 and 8 and says the difference is 7. Is Finn right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0216",
@@ -8112,7 +8112,7 @@ export const ITEMS = [
     structureType: "diffJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":18,"b":5,"kind":"diffSaid","said":14},"truth":false,"promptText":"Between 18 and 5, Priya measures a difference of 14. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":18,"b":5,"kind":"diffSaid","said":14},"truth":false,"promptText":"Priya says the bar for 18 is 14 longer than the bar for 5. Is that right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0217",
@@ -8122,7 +8122,7 @@ export const ITEMS = [
     structureType: "diffJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":64,"b":39,"kind":"diffSaid","said":25},"truth":true,"promptText":"Rosa lines up 64 against 39 and reports a gap of 25. Does the report hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":64,"b":39,"kind":"diffSaid","said":25},"truth":true,"promptText":"Rosa says the difference between 64 and 39 is 25. Is Rosa right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0218",
@@ -8132,7 +8132,7 @@ export const ITEMS = [
     structureType: "diffJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":72,"b":45,"kind":"diffSaid","said":26},"truth":false,"promptText":"Diego figures 72 beats 45 by 26. Is the figure right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":72,"b":45,"kind":"diffSaid","said":26},"truth":false,"promptText":"Diego says 72 is 26 more than 45. Is Diego right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0219",
@@ -8142,7 +8142,7 @@ export const ITEMS = [
     structureType: "diffJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":81,"b":56,"kind":"diffSaid","said":25},"truth":true,"promptText":"Nora lines up 81 against 56 and reports a gap of 25. Does the report hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":81,"b":56,"kind":"diffSaid","said":25},"truth":true,"promptText":"Nora says 81 is 25 more than 56. Is Nora right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0220",
@@ -8152,7 +8152,7 @@ export const ITEMS = [
     structureType: "diffJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":59,"b":24,"kind":"diffSaid","said":34},"truth":false,"promptText":"Luca figures 59 beats 24 by 34. Is the figure right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":59,"b":24,"kind":"diffSaid","said":34},"truth":false,"promptText":"Luca says 24 is 34 less than 59. Is Luca right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0221",
@@ -8162,7 +8162,7 @@ export const ITEMS = [
     structureType: "diffJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":88,"b":63,"kind":"diffSaid","said":25},"truth":true,"promptText":"Ava lines up 88 against 63 and reports a gap of 25. Does the report hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":88,"b":63,"kind":"diffSaid","said":25},"truth":true,"promptText":"Ava says 63 is 25 less than 88. Is Ava right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0222",
@@ -8172,7 +8172,7 @@ export const ITEMS = [
     structureType: "diffJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":67,"b":32,"kind":"diffSaid","said":34},"truth":false,"promptText":"Omar figures 67 beats 32 by 34. Is the figure right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":67,"b":32,"kind":"diffSaid","said":34},"truth":false,"promptText":"Omar draws a tape diagram with a bar for 67 and a bar for 32. Omar says the bar for 32 is 34 shorter than the bar for 67. Is Omar right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0223",
@@ -8182,7 +8182,7 @@ export const ITEMS = [
     structureType: "diffJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":95,"b":71,"kind":"diffSaid","said":24},"truth":true,"promptText":"Ben lines up 95 against 71 and reports a gap of 24. Does the report hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":95,"b":71,"kind":"diffSaid","said":24},"truth":true,"promptText":"Ben says the difference between 95 and 71 is 24. Is Ben right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0224",
@@ -8192,7 +8192,7 @@ export const ITEMS = [
     structureType: "diffJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":53,"b":28,"kind":"diffSaid","said":26},"truth":false,"promptText":"Finn figures 53 beats 28 by 26. Is the figure right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":53,"b":28,"kind":"diffSaid","said":26},"truth":false,"promptText":"Finn says 28 is 26 less than 53. Is Finn right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0225",
@@ -8202,7 +8202,7 @@ export const ITEMS = [
     structureType: "diffJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":76,"b":41,"kind":"diffSaid","said":35},"truth":true,"promptText":"Priya lines up 76 against 41 and reports a gap of 35. Does the report hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":76,"b":41,"kind":"diffSaid","said":35},"truth":true,"promptText":"Priya draws a tape diagram with a bar for 76 and a bar for 41. Priya says the bar for 41 is 35 shorter than the bar for 76. Is Priya right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0226",
@@ -8212,7 +8212,7 @@ export const ITEMS = [
     structureType: "diffJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":69,"b":34,"kind":"diffSaid","said":34},"truth":false,"promptText":"Sam figures 69 beats 34 by 34. Is the figure right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":69,"b":34,"kind":"diffSaid","said":34},"truth":false,"promptText":"Sam says the difference between 69 and 34 is 34. Is Sam right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0227",
@@ -8222,7 +8222,7 @@ export const ITEMS = [
     structureType: "diffJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":84,"b":58,"kind":"diffSaid","said":26},"truth":true,"promptText":"Nia lines up 84 against 58 and reports a gap of 26. Does the report hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":84,"b":58,"kind":"diffSaid","said":26},"truth":true,"promptText":"Nia says 84 is 26 more than 58. Is Nia right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0228",
@@ -8232,7 +8232,7 @@ export const ITEMS = [
     structureType: "diffJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":48,"b":23,"kind":"diffSaid","said":26},"truth":false,"promptText":"Kai figures 48 beats 23 by 26. Is the figure right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":48,"b":23,"kind":"diffSaid","said":26},"truth":false,"promptText":"Kai says 48 is 26 more than 23. Is Kai right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0229",
@@ -8242,7 +8242,7 @@ export const ITEMS = [
     structureType: "diffJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":92,"b":67,"kind":"diffSaid","said":25},"truth":true,"promptText":"June lines up 92 against 67 and reports a gap of 25. Does the report hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":92,"b":67,"kind":"diffSaid","said":25},"truth":true,"promptText":"June draws a tape diagram with a bar for 92 and a bar for 67. June says the bar for 92 is 25 longer than the bar for 67. Is June right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0230",
@@ -8252,7 +8252,7 @@ export const ITEMS = [
     structureType: "diffJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":61,"b":36,"kind":"diffSaid","said":24},"truth":false,"promptText":"Lily figures 61 beats 36 by 24. Is the figure right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":61,"b":36,"kind":"diffSaid","said":24},"truth":false,"promptText":"Lily says the difference between 61 and 36 is 24. Is Lily right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0231",
@@ -8262,7 +8262,7 @@ export const ITEMS = [
     structureType: "diffJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":79,"b":44,"kind":"diffSaid","said":35},"truth":true,"promptText":"Amara lines up 79 against 44 and reports a gap of 35. Does the report hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":79,"b":44,"kind":"diffSaid","said":35},"truth":true,"promptText":"Amara says 44 is 35 less than 79. Is Amara right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0232",
@@ -8272,7 +8272,7 @@ export const ITEMS = [
     structureType: "diffJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":87,"b":52,"kind":"diffSaid","said":34},"truth":false,"promptText":"Leo figures 87 beats 52 by 34. Is the figure right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":87,"b":52,"kind":"diffSaid","said":34},"truth":false,"promptText":"Leo draws a tape diagram with a bar for 87 and a bar for 52. Leo says the bar for 87 is 34 longer than the bar for 52. Is Leo right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0233",
@@ -8282,7 +8282,7 @@ export const ITEMS = [
     structureType: "diffJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":56,"b":31,"kind":"diffSaid","said":25},"truth":true,"promptText":"Mina lines up 56 against 31 and reports a gap of 25. Does the report hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":56,"b":31,"kind":"diffSaid","said":25},"truth":true,"promptText":"Mina says the difference between 56 and 31 is 25. Is Mina right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0234",
@@ -8292,7 +8292,7 @@ export const ITEMS = [
     structureType: "diffJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":93,"b":68,"kind":"diffSaid","said":26},"truth":false,"promptText":"Theo figures 93 beats 68 by 26. Is the figure right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":93,"b":68,"kind":"diffSaid","said":26},"truth":false,"promptText":"Theo says 93 is 26 more than 68. Is Theo right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0235",
@@ -8302,7 +8302,7 @@ export const ITEMS = [
     structureType: "diffJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":642,"b":397,"kind":"diffSaid","said":245},"truth":true,"promptText":"Nora computes the spread between 642 and 397 as 245. Is the computation right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":642,"b":397,"kind":"diffSaid","said":245},"truth":true,"promptText":"Nora says 642 is 245 more than 397. Is Nora right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0236",
@@ -8312,7 +8312,7 @@ export const ITEMS = [
     structureType: "diffJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":721,"b":456,"kind":"diffSaid","said":264},"truth":false,"promptText":"A spread of 264 between 721 and 456 — Luca signs off. Should Luca have?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":721,"b":456,"kind":"diffSaid","said":264},"truth":false,"promptText":"Luca says the difference between 721 and 456 is 264. Is Luca right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0237",
@@ -8322,7 +8322,7 @@ export const ITEMS = [
     structureType: "diffJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":813,"b":568,"kind":"diffSaid","said":245},"truth":true,"promptText":"Ava computes the spread between 813 and 568 as 245. Is the computation right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":813,"b":568,"kind":"diffSaid","said":245},"truth":true,"promptText":"Ava says the difference between 813 and 568 is 245. Is Ava right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0238",
@@ -8332,7 +8332,7 @@ export const ITEMS = [
     structureType: "diffJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":594,"b":247,"kind":"diffSaid","said":346},"truth":false,"promptText":"A spread of 346 between 594 and 247 — Omar signs off. Should Omar have?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":594,"b":247,"kind":"diffSaid","said":346},"truth":false,"promptText":"Omar draws a tape diagram with a bar for 594 and a bar for 247. Omar says the bar for 594 is 346 longer than the bar for 247. Is Omar right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0239",
@@ -8342,7 +8342,7 @@ export const ITEMS = [
     structureType: "diffJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":886,"b":631,"kind":"diffSaid","said":255},"truth":true,"promptText":"Ben computes the spread between 886 and 631 as 255. Is the computation right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":886,"b":631,"kind":"diffSaid","said":255},"truth":true,"promptText":"Ben says 631 is 255 less than 886. Is Ben right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0240",
@@ -8352,7 +8352,7 @@ export const ITEMS = [
     structureType: "diffJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":675,"b":328,"kind":"diffSaid","said":346},"truth":false,"promptText":"A spread of 346 between 675 and 328 — Finn signs off. Should Finn have?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":675,"b":328,"kind":"diffSaid","said":346},"truth":false,"promptText":"Finn says 675 is 346 more than 328. Is Finn right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0241",
@@ -8362,7 +8362,7 @@ export const ITEMS = [
     structureType: "diffJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":953,"b":718,"kind":"diffSaid","said":235},"truth":true,"promptText":"Priya computes the spread between 953 and 718 as 235. Is the computation right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":953,"b":718,"kind":"diffSaid","said":235},"truth":true,"promptText":"Priya draws a tape diagram with a bar for 953 and a bar for 718. Priya says the bar for 953 is 235 longer than the bar for 718. Is Priya right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0242",
@@ -8372,7 +8372,7 @@ export const ITEMS = [
     structureType: "diffJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":532,"b":285,"kind":"diffSaid","said":246},"truth":false,"promptText":"A spread of 246 between 532 and 285 — Sam signs off. Should Sam have?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":532,"b":285,"kind":"diffSaid","said":246},"truth":false,"promptText":"Sam says the difference between 532 and 285 is 246. Is Sam right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0243",
@@ -8382,7 +8382,7 @@ export const ITEMS = [
     structureType: "diffJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":764,"b":419,"kind":"diffSaid","said":345},"truth":true,"promptText":"Nia computes the spread between 764 and 419 as 345. Is the computation right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":764,"b":419,"kind":"diffSaid","said":345},"truth":true,"promptText":"Nia says the difference between 764 and 419 is 345. Is Nia right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0244",
@@ -8392,7 +8392,7 @@ export const ITEMS = [
     structureType: "diffJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":697,"b":342,"kind":"diffSaid","said":354},"truth":false,"promptText":"A spread of 354 between 697 and 342 — Kai signs off. Should Kai have?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":697,"b":342,"kind":"diffSaid","said":354},"truth":false,"promptText":"Kai draws a tape diagram with a bar for 697 and a bar for 342. Kai says the bar for 342 is 354 shorter than the bar for 697. Is Kai right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0245",
@@ -8402,7 +8402,7 @@ export const ITEMS = [
     structureType: "diffJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":845,"b":587,"kind":"diffSaid","said":258},"truth":true,"promptText":"June computes the spread between 845 and 587 as 258. Is the computation right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":845,"b":587,"kind":"diffSaid","said":258},"truth":true,"promptText":"June draws a tape diagram with a bar for 845 and a bar for 587. June says the bar for 587 is 258 shorter than the bar for 845. Is June right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0246",
@@ -8412,7 +8412,7 @@ export const ITEMS = [
     structureType: "diffJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":483,"b":236,"kind":"diffSaid","said":246},"truth":false,"promptText":"A spread of 246 between 483 and 236 — Lily signs off. Should Lily have?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":483,"b":236,"kind":"diffSaid","said":246},"truth":false,"promptText":"Lily draws a tape diagram with a bar for 483 and a bar for 236. Lily says the bar for 483 is 246 longer than the bar for 236. Is Lily right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0247",
@@ -8422,7 +8422,7 @@ export const ITEMS = [
     structureType: "diffJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":928,"b":673,"kind":"diffSaid","said":255},"truth":true,"promptText":"Amara computes the spread between 928 and 673 as 255. Is the computation right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":928,"b":673,"kind":"diffSaid","said":255},"truth":true,"promptText":"Amara says 673 is 255 less than 928. Is Amara right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0248",
@@ -8432,7 +8432,7 @@ export const ITEMS = [
     structureType: "diffJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":615,"b":368,"kind":"diffSaid","said":246},"truth":false,"promptText":"A spread of 246 between 615 and 368 — Leo signs off. Should Leo have?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":615,"b":368,"kind":"diffSaid","said":246},"truth":false,"promptText":"Leo says 368 is 246 less than 615. Is Leo right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0249",
@@ -8442,7 +8442,7 @@ export const ITEMS = [
     structureType: "diffJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":792,"b":447,"kind":"diffSaid","said":345},"truth":true,"promptText":"Mina computes the spread between 792 and 447 as 345. Is the computation right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":792,"b":447,"kind":"diffSaid","said":345},"truth":true,"promptText":"Mina says 792 is 345 more than 447. Is Mina right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0250",
@@ -8452,7 +8452,7 @@ export const ITEMS = [
     structureType: "diffJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":874,"b":529,"kind":"diffSaid","said":344},"truth":false,"promptText":"A spread of 344 between 874 and 529 — Theo signs off. Should Theo have?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":874,"b":529,"kind":"diffSaid","said":344},"truth":false,"promptText":"Theo says 874 is 344 more than 529. Is Theo right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0251",
@@ -8462,7 +8462,7 @@ export const ITEMS = [
     structureType: "diffJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":563,"b":316,"kind":"diffSaid","said":247},"truth":true,"promptText":"Ida computes the spread between 563 and 316 as 247. Is the computation right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":563,"b":316,"kind":"diffSaid","said":247},"truth":true,"promptText":"Ida says 563 is 247 more than 316. Is Ida right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0252",
@@ -8472,7 +8472,7 @@ export const ITEMS = [
     structureType: "diffJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":937,"b":682,"kind":"diffSaid","said":254},"truth":false,"promptText":"A spread of 254 between 937 and 682 — Zoe signs off. Should Zoe have?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"a":937,"b":682,"kind":"diffSaid","said":254},"truth":false,"promptText":"Zoe says the difference between 937 and 682 is 254. Is Zoe right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0253",
@@ -8482,7 +8482,7 @@ export const ITEMS = [
     structureType: "whichLonger_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Omar","choices":["Omar","June"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"\"Omar has 5 more than June.\" Whose bar should be drawn LONGER?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Omar","choices":["Omar","June"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Omar has 5 more stickers than June. If you draw a bar for each of them, who gets the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0254",
@@ -8492,7 +8492,7 @@ export const ITEMS = [
     structureType: "whichLonger_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Lily","choices":["Lily","Ben"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"The story says Ben has 8 fewer than Lily. Whose bar is longer?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Lily","choices":["Lily","Ben"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Ben has 8 fewer marbles than Lily. You draw a bar to show each child's marbles. Who has the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0255",
@@ -8502,7 +8502,7 @@ export const ITEMS = [
     structureType: "whichLonger_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Finn","choices":["Finn","Amara"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"\"Finn has 4 more than Amara.\" Whose bar should be drawn LONGER?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Finn","choices":["Finn","Amara"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Finn has 4 more marbles than Amara. You draw a bar to show each child's marbles. Who has the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0256",
@@ -8512,7 +8512,7 @@ export const ITEMS = [
     structureType: "whichLonger_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Leo","choices":["Priya","Leo"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"The story says Priya has 6 fewer than Leo. Whose bar is longer?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Leo","choices":["Priya","Leo"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Priya has 6 fewer seashells than Leo. If you draw a bar for each of them, who gets the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0257",
@@ -8522,7 +8522,7 @@ export const ITEMS = [
     structureType: "whichLonger_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Sam","choices":["Mina","Sam"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"\"Sam has 7 more than Mina.\" Whose bar should be drawn LONGER?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Sam","choices":["Mina","Sam"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Sam has 7 more acorns than Mina. If you draw a bar for each of them, who gets the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0258",
@@ -8532,7 +8532,7 @@ export const ITEMS = [
     structureType: "whichLonger_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Theo","choices":["Theo","Nia"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"The story says Nia has 9 fewer than Theo. Whose bar is longer?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Theo","choices":["Theo","Nia"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Nia has 9 fewer marbles than Theo. You draw a bar to show each child's marbles. Who has the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0259",
@@ -8542,7 +8542,7 @@ export const ITEMS = [
     structureType: "whichLonger_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Kai","choices":["Ida","Kai"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"\"Kai has 8 more than Ida.\" Whose bar should be drawn LONGER?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Kai","choices":["Ida","Kai"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Kai has 8 more seashells than Ida. You draw a bar to show each child's seashells. Who has the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0260",
@@ -8552,7 +8552,7 @@ export const ITEMS = [
     structureType: "whichLonger_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Zoe","choices":["Zoe","June"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"The story says June has 6 fewer than Zoe. Whose bar is longer?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Zoe","choices":["Zoe","June"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"June has 6 fewer acorns than Zoe. You draw a bar to show each child's acorns. Who has the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0261",
@@ -8562,7 +8562,7 @@ export const ITEMS = [
     structureType: "whichLonger_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Lily","choices":["Rosa","Lily"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"\"Lily has 5 more than Rosa.\" Whose bar should be drawn LONGER?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Lily","choices":["Rosa","Lily"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Lily has 5 more stickers than Rosa. If you draw a bar for each of them, who gets the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0262",
@@ -8572,7 +8572,7 @@ export const ITEMS = [
     structureType: "whichLonger_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Diego","choices":["Diego","Amara"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"The story says Amara has 4 fewer than Diego. Whose bar is longer?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Diego","choices":["Diego","Amara"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Amara has 4 fewer stickers than Diego. If you draw a bar for each of them, who gets the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0263",
@@ -8582,7 +8582,7 @@ export const ITEMS = [
     structureType: "whichLonger_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Leo","choices":["Nora","Leo"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"\"Leo has 11 more than Nora.\" Whose bar should be drawn LONGER?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Leo","choices":["Nora","Leo"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Leo has 11 more marbles than Nora. You draw a bar to show each child's marbles. Who has the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0264",
@@ -8592,7 +8592,7 @@ export const ITEMS = [
     structureType: "whichLonger_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Luca","choices":["Mina","Luca"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"The story says Mina has 8 fewer than Luca. Whose bar is longer?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Luca","choices":["Mina","Luca"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Mina has 8 fewer stickers than Luca. If you draw a bar for each of them, who gets the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0265",
@@ -8602,7 +8602,7 @@ export const ITEMS = [
     structureType: "whichLonger_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Theo","choices":["Theo","Ava"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"\"Theo has 7 more than Ava.\" Whose bar should be drawn LONGER?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Theo","choices":["Theo","Ava"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Theo has 7 more acorns than Ava. If you draw a bar for each of them, who gets the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0266",
@@ -8612,7 +8612,7 @@ export const ITEMS = [
     structureType: "whichLonger_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Omar","choices":["Omar","Ida"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"The story says Ida has 12 fewer than Omar. Whose bar is longer?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Omar","choices":["Omar","Ida"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Ida has 12 fewer seashells than Omar. If you draw a bar for each of them, who gets the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0267",
@@ -8622,7 +8622,7 @@ export const ITEMS = [
     structureType: "whichLonger_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Zoe","choices":["Ben","Zoe"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"\"Zoe has 3 more than Ben.\" Whose bar should be drawn LONGER?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Zoe","choices":["Ben","Zoe"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Zoe has 3 more seashells than Ben. You draw a bar to show each child's seashells. Who has the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0268",
@@ -8632,7 +8632,7 @@ export const ITEMS = [
     structureType: "whichLonger_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Finn","choices":["Rosa","Finn"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"The story says Rosa has 9 fewer than Finn. Whose bar is longer?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Finn","choices":["Rosa","Finn"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Rosa has 9 fewer acorns than Finn. You draw a bar to show each child's acorns. Who has the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0269",
@@ -8642,7 +8642,7 @@ export const ITEMS = [
     structureType: "whichLonger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Amara","choices":["Diego","Amara"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"A problem reads: Amara outscores Diego by 25. Which bar stretches further?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Amara","choices":["Diego","Amara"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Amara scores 25 more points than Diego. If you draw a tape diagram, who gets the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0270",
@@ -8652,7 +8652,7 @@ export const ITEMS = [
     structureType: "whichLonger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Nora","choices":["Nora","Leo"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"\"Nora leads Leo by 38.\" In the model, whose bar is the long one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Nora","choices":["Nora","Leo"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Nora has 38 more points than Leo. If you draw a tape diagram, who gets the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0271",
@@ -8662,7 +8662,7 @@ export const ITEMS = [
     structureType: "whichLonger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mina","choices":["Mina","Luca"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"A problem reads: Mina outscores Luca by 46. Which bar stretches further?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mina","choices":["Mina","Luca"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Mina scores 46 more points than Luca. If you draw a tape diagram, who gets the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0272",
@@ -8672,7 +8672,7 @@ export const ITEMS = [
     structureType: "whichLonger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Ava","choices":["Ava","Theo"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"\"Ava leads Theo by 22.\" In the model, whose bar is the long one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Ava","choices":["Ava","Theo"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Ava has 22 more points than Theo. Who would get the longer bar in a tape diagram?"}},
   },
   {
     itemId: "barModels-conc-b0821-0273",
@@ -8682,7 +8682,7 @@ export const ITEMS = [
     structureType: "whichLonger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Ida","choices":["Ida","Omar"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"A problem reads: Ida outscores Omar by 53. Which bar stretches further?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Ida","choices":["Ida","Omar"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Ida scores 53 more points than Omar. Who would get the longer bar in a tape diagram?"}},
   },
   {
     itemId: "barModels-conc-b0821-0274",
@@ -8692,7 +8692,7 @@ export const ITEMS = [
     structureType: "whichLonger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Ben","choices":["Ben","Zoe"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"\"Ben leads Zoe by 29.\" In the model, whose bar is the long one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Ben","choices":["Ben","Zoe"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Ben has 29 more points than Zoe. If you draw a tape diagram, who gets the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0275",
@@ -8702,7 +8702,7 @@ export const ITEMS = [
     structureType: "whichLonger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Rosa","choices":["Finn","Rosa"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"A problem reads: Rosa outscores Finn by 61. Which bar stretches further?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Rosa","choices":["Finn","Rosa"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Rosa scores 61 more points than Finn. Who would get the longer bar in a tape diagram?"}},
   },
   {
     itemId: "barModels-conc-b0821-0276",
@@ -8712,7 +8712,7 @@ export const ITEMS = [
     structureType: "whichLonger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Priya","choices":["Priya","Diego"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"\"Priya leads Diego by 26.\" In the model, whose bar is the long one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Priya","choices":["Priya","Diego"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Priya has 26 more points than Diego. Who would get the longer bar in a tape diagram?"}},
   },
   {
     itemId: "barModels-conc-b0821-0277",
@@ -8722,7 +8722,7 @@ export const ITEMS = [
     structureType: "whichLonger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Nora","choices":["Sam","Nora"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"A problem reads: Nora outscores Sam by 37. Which bar stretches further?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Nora","choices":["Sam","Nora"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Nora scores 37 more points than Sam. Who would get the longer bar in a tape diagram?"}},
   },
   {
     itemId: "barModels-conc-b0821-0278",
@@ -8732,7 +8732,7 @@ export const ITEMS = [
     structureType: "whichLonger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Nia","choices":["Luca","Nia"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"\"Nia leads Luca by 31.\" In the model, whose bar is the long one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Nia","choices":["Luca","Nia"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Nia has 31 more points than Luca. Who would get the longer bar in a tape diagram?"}},
   },
   {
     itemId: "barModels-conc-b0821-0279",
@@ -8742,7 +8742,7 @@ export const ITEMS = [
     structureType: "whichLonger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Ava","choices":["Kai","Ava"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"A problem reads: Ava outscores Kai by 48. Which bar stretches further?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Ava","choices":["Kai","Ava"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Ava scores 48 more points than Kai. Who would get the longer bar in a tape diagram?"}},
   },
   {
     itemId: "barModels-conc-b0821-0280",
@@ -8752,7 +8752,7 @@ export const ITEMS = [
     structureType: "whichLonger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"June","choices":["Omar","June"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"\"June leads Omar by 21.\" In the model, whose bar is the long one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"June","choices":["Omar","June"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"June has 21 more points than Omar. Who would get the longer bar in a tape diagram?"}},
   },
   {
     itemId: "barModels-conc-b0821-0281",
@@ -8762,7 +8762,7 @@ export const ITEMS = [
     structureType: "whichLonger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Ben","choices":["Ben","Lily"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"A problem reads: Ben outscores Lily by 57. Which bar stretches further?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Ben","choices":["Ben","Lily"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Ben scores 57 more points than Lily. If you draw a tape diagram, who gets the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0282",
@@ -8772,7 +8772,7 @@ export const ITEMS = [
     structureType: "whichLonger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Amara","choices":["Finn","Amara"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"\"Amara leads Finn by 33.\" In the model, whose bar is the long one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Amara","choices":["Finn","Amara"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Amara has 33 more points than Finn. If you draw a tape diagram, who gets the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0283",
@@ -8782,7 +8782,7 @@ export const ITEMS = [
     structureType: "whichLonger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Priya","choices":["Priya","Leo"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"A problem reads: Priya outscores Leo by 41. Which bar stretches further?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Priya","choices":["Priya","Leo"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Priya scores 41 more points than Leo. If you draw a tape diagram, who gets the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0284",
@@ -8792,7 +8792,7 @@ export const ITEMS = [
     structureType: "whichLonger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mina","choices":["Sam","Mina"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"\"Mina leads Sam by 49.\" In the model, whose bar is the long one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mina","choices":["Sam","Mina"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Mina has 49 more points than Sam. If you draw a tape diagram, who gets the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0285",
@@ -8802,7 +8802,7 @@ export const ITEMS = [
     structureType: "whichLonger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Luca","choices":["Luca","Mina"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"The data note says Mina trails Luca by exactly 257. Whose bar dominates the model?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Luca","choices":["Luca","Mina"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Mina has 257 fewer points than Luca. Who would get the longer bar in a tape diagram?"}},
   },
   {
     itemId: "barModels-conc-b0821-0286",
@@ -8812,7 +8812,7 @@ export const ITEMS = [
     structureType: "whichLonger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Theo","choices":["Theo","Ava"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"With Theo ahead of Ava by 386, which bar towers in the diagram?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Theo","choices":["Theo","Ava"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Theo has 386 more points than Ava. If you draw a tape diagram, who gets the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0287",
@@ -8822,7 +8822,7 @@ export const ITEMS = [
     structureType: "whichLonger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Omar","choices":["Ida","Omar"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"The data note says Ida trails Omar by exactly 468. Whose bar dominates the model?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Omar","choices":["Ida","Omar"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Ida has 468 fewer points than Omar. If you draw a tape diagram, who gets the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0288",
@@ -8832,7 +8832,7 @@ export const ITEMS = [
     structureType: "whichLonger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Zoe","choices":["Zoe","Ben"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"With Zoe ahead of Ben by 227, which bar towers in the diagram?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Zoe","choices":["Zoe","Ben"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Zoe has 227 more points than Ben. Who would get the longer bar in a tape diagram?"}},
   },
   {
     itemId: "barModels-conc-b0821-0289",
@@ -8842,7 +8842,7 @@ export const ITEMS = [
     structureType: "whichLonger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Finn","choices":["Finn","Rosa"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"The data note says Rosa trails Finn by exactly 531. Whose bar dominates the model?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Finn","choices":["Finn","Rosa"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Rosa has 531 fewer points than Finn. Who would get the longer bar in a tape diagram?"}},
   },
   {
     itemId: "barModels-conc-b0821-0290",
@@ -8852,7 +8852,7 @@ export const ITEMS = [
     structureType: "whichLonger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Diego","choices":["Diego","Priya"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"With Diego ahead of Priya by 298, which bar towers in the diagram?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Diego","choices":["Diego","Priya"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Diego has 298 more points than Priya. If you draw a tape diagram, who gets the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0291",
@@ -8862,7 +8862,7 @@ export const ITEMS = [
     structureType: "whichLonger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Sam","choices":["Sam","Nora"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"The data note says Nora trails Sam by exactly 617. Whose bar dominates the model?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Sam","choices":["Sam","Nora"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Nora has 617 fewer points than Sam. Who would get the longer bar in a tape diagram?"}},
   },
   {
     itemId: "barModels-conc-b0821-0292",
@@ -8872,7 +8872,7 @@ export const ITEMS = [
     structureType: "whichLonger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Luca","choices":["Nia","Luca"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"With Luca ahead of Nia by 265, which bar towers in the diagram?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Luca","choices":["Nia","Luca"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Luca has 265 more points than Nia. Who would get the longer bar in a tape diagram?"}},
   },
   {
     itemId: "barModels-conc-b0821-0293",
@@ -8882,7 +8882,7 @@ export const ITEMS = [
     structureType: "whichLonger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Kai","choices":["Ava","Kai"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"The data note says Ava trails Kai by exactly 379. Whose bar dominates the model?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Kai","choices":["Ava","Kai"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Ava has 379 fewer points than Kai. If you draw a tape diagram, who gets the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0294",
@@ -8892,7 +8892,7 @@ export const ITEMS = [
     structureType: "whichLonger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Omar","choices":["Omar","June"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"With Omar ahead of June by 313, which bar towers in the diagram?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Omar","choices":["Omar","June"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Omar has 313 more points than June. If you draw a tape diagram, who gets the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0295",
@@ -8902,7 +8902,7 @@ export const ITEMS = [
     structureType: "whichLonger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Lily","choices":["Lily","Ben"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"The data note says Ben trails Lily by exactly 487. Whose bar dominates the model?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Lily","choices":["Lily","Ben"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Ben has 487 fewer points than Lily. Who would get the longer bar in a tape diagram?"}},
   },
   {
     itemId: "barModels-conc-b0821-0296",
@@ -8912,7 +8912,7 @@ export const ITEMS = [
     structureType: "whichLonger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Finn","choices":["Finn","Amara"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"With Finn ahead of Amara by 216, which bar towers in the diagram?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Finn","choices":["Finn","Amara"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Finn has 216 more points than Amara. Who would get the longer bar in a tape diagram?"}},
   },
   {
     itemId: "barModels-conc-b0821-0297",
@@ -8922,7 +8922,7 @@ export const ITEMS = [
     structureType: "whichLonger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Leo","choices":["Leo","Priya"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"The data note says Priya trails Leo by exactly 572. Whose bar dominates the model?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Leo","choices":["Leo","Priya"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Priya has 572 fewer points than Leo. If you draw a tape diagram, who gets the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0298",
@@ -8932,7 +8932,7 @@ export const ITEMS = [
     structureType: "whichLonger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Sam","choices":["Mina","Sam"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"With Sam ahead of Mina by 334, which bar towers in the diagram?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Sam","choices":["Mina","Sam"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Sam has 334 more points than Mina. Who would get the longer bar in a tape diagram?"}},
   },
   {
     itemId: "barModels-conc-b0821-0299",
@@ -8942,7 +8942,7 @@ export const ITEMS = [
     structureType: "whichLonger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Theo","choices":["Theo","Nia"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"The data note says Nia trails Theo by exactly 418. Whose bar dominates the model?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Theo","choices":["Theo","Nia"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Nia has 418 fewer points than Theo. If you draw a tape diagram, who gets the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0300",
@@ -8952,7 +8952,7 @@ export const ITEMS = [
     structureType: "whichLonger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Kai","choices":["Ida","Kai"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"With Kai ahead of Ida by 493, which bar towers in the diagram?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Kai","choices":["Ida","Kai"],"display":{"bar":{"kind":"authoredChoice"},"promptText":"Kai has 493 more points than Ida. If you draw a tape diagram, who gets the longer bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0301",
@@ -8962,7 +8962,7 @@ export const ITEMS = [
     structureType: "timesPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[12,6,8,18],"display":{"bar":{"k":2,"u":6,"kind":"timesOf"},"promptText":"Mina has 2 times as many shells as Luca, who has 6. How many shells does Mina have? Pick the count."}},
+    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[12,6,8,18],"display":{"bar":{"k":2,"u":6,"kind":"timesOf"},"promptText":"Mina has 2 times as many shells as Luca. Luca has 6 shells. How many shells does Mina have?"}},
   },
   {
     itemId: "barModels-conc-b0821-0302",
@@ -8982,7 +8982,7 @@ export const ITEMS = [
     structureType: "timesPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"choices":[14,9,21,7],"display":{"bar":{"k":2,"u":7,"kind":"timesOf"},"promptText":"Ida has 2 times as many shells as Omar, who has 7. How many shells does Ida have? Pick the count."}},
+    question: {"a":null,"b":null,"op":"count","answer":14,"choices":[14,9,21,7],"display":{"bar":{"k":2,"u":7,"kind":"timesOf"},"promptText":"Omar has 7 shells. Ida has 2 times as many shells as Omar. How many shells does Ida have?"}},
   },
   {
     itemId: "barModels-conc-b0821-0304",
@@ -9002,7 +9002,7 @@ export const ITEMS = [
     structureType: "timesPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"choices":[10,8,24,16],"display":{"bar":{"k":2,"u":8,"kind":"timesOf"},"promptText":"Rosa has 2 times as many shells as Finn, who has 8. How many shells does Rosa have? Pick the count."}},
+    question: {"a":null,"b":null,"op":"count","answer":16,"choices":[10,8,24,16],"display":{"bar":{"k":2,"u":8,"kind":"timesOf"},"promptText":"Rosa has 2 times as many shells as Finn. Finn has 8 shells. How many shells does Rosa have?"}},
   },
   {
     itemId: "barModels-conc-b0821-0306",
@@ -9022,7 +9022,7 @@ export const ITEMS = [
     structureType: "timesPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"choices":[27,18,11,9],"display":{"bar":{"k":2,"u":9,"kind":"timesOf"},"promptText":"Nora has 2 times as many shells as Sam, who has 9. How many shells does Nora have? Pick the count."}},
+    question: {"a":null,"b":null,"op":"count","answer":18,"choices":[27,18,11,9],"display":{"bar":{"k":2,"u":9,"kind":"timesOf"},"promptText":"Nora has 2 times as many shells as Sam. Sam has 9 shells. How many shells does Nora have?"}},
   },
   {
     itemId: "barModels-conc-b0821-0308",
@@ -9042,7 +9042,7 @@ export const ITEMS = [
     structureType: "timesPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"choices":[12,8,20,16],"display":{"bar":{"k":4,"u":4,"kind":"timesOf"},"promptText":"Ava has 4 times as many shells as Kai, who has 4. How many shells does Ava have? Pick the count."}},
+    question: {"a":null,"b":null,"op":"count","answer":16,"choices":[12,8,20,16],"display":{"bar":{"k":4,"u":4,"kind":"timesOf"},"promptText":"Kai has 4 shells. Ava has 4 times as many shells as Kai. How many shells does Ava have?"}},
   },
   {
     itemId: "barModels-conc-b0821-0310",
@@ -9062,7 +9062,7 @@ export const ITEMS = [
     structureType: "timesPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"choices":[18,15,8,12],"display":{"bar":{"k":5,"u":3,"kind":"timesOf"},"promptText":"Ben has 5 times as many shells as Lily, who has 3. How many shells does Ben have? Pick the count."}},
+    question: {"a":null,"b":null,"op":"count","answer":15,"choices":[18,15,8,12],"display":{"bar":{"k":5,"u":3,"kind":"timesOf"},"promptText":"Ben has 5 times as many shells as Lily. Lily has 3 shells. How many shells does Ben have?"}},
   },
   {
     itemId: "barModels-conc-b0821-0312",
@@ -9082,7 +9082,7 @@ export const ITEMS = [
     structureType: "timesPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"choices":[25,9,20,15],"display":{"bar":{"k":4,"u":5,"kind":"timesOf"},"promptText":"Priya has 4 times as many shells as Leo, who has 5. How many shells does Priya have? Pick the count."}},
+    question: {"a":null,"b":null,"op":"count","answer":20,"choices":[25,9,20,15],"display":{"bar":{"k":4,"u":5,"kind":"timesOf"},"promptText":"Leo has 5 shells. Priya has 4 times as many shells as Leo. How many shells does Priya have?"}},
   },
   {
     itemId: "barModels-conc-b0821-0314",
@@ -9102,7 +9102,7 @@ export const ITEMS = [
     structureType: "timesPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"choices":[24,16,20,9],"display":{"bar":{"k":5,"u":4,"kind":"timesOf"},"promptText":"Nia has 5 times as many shells as Theo, who has 4. How many shells does Nia have? Pick the count."}},
+    question: {"a":null,"b":null,"op":"count","answer":20,"choices":[24,16,20,9],"display":{"bar":{"k":5,"u":4,"kind":"timesOf"},"promptText":"Theo has 4 shells. Nia has 5 times as many shells as Theo. How many shells does Nia have?"}},
   },
   {
     itemId: "barModels-conc-b0821-0316",
@@ -9132,7 +9132,7 @@ export const ITEMS = [
     structureType: "timesPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":68,"choices":[68,51,85,21],"display":{"bar":{"k":4,"u":17,"kind":"timesOf"},"promptText":"Ben's collection is 4 of Lily's bars of 17 laid end to end. What does it total? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":68,"choices":[68,51,85,21],"display":{"bar":{"k":4,"u":17,"kind":"timesOf"},"promptText":"Ben puts 4 of Lily's bars end to end. Each bar is 17 units long. How many units long are the 4 bars together?"}},
   },
   {
     itemId: "barModels-conc-b0821-0319",
@@ -9152,7 +9152,7 @@ export const ITEMS = [
     structureType: "timesPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":72,"choices":[72,84,60,18],"display":{"bar":{"k":6,"u":12,"kind":"timesOf"},"promptText":"Priya's collection is 6 of Leo's bars of 12 laid end to end. What does it total? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":72,"choices":[72,84,60,18],"display":{"bar":{"k":6,"u":12,"kind":"timesOf"},"promptText":"Leo's bar is 12 units long. Priya lines up 6 bars like it, end to end. How many units long is Priya's row of bars?"}},
   },
   {
     itemId: "barModels-conc-b0821-0321",
@@ -9172,7 +9172,7 @@ export const ITEMS = [
     structureType: "timesPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":76,"choices":[57,76,95,23],"display":{"bar":{"k":4,"u":19,"kind":"timesOf"},"promptText":"Nia's collection is 4 of Theo's bars of 19 laid end to end. What does it total? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":76,"choices":[57,76,95,23],"display":{"bar":{"k":4,"u":19,"kind":"timesOf"},"promptText":"Nia puts 4 of Theo's bars end to end. Each bar is 19 units long. How many units long are the 4 bars together?"}},
   },
   {
     itemId: "barModels-conc-b0821-0323",
@@ -9192,7 +9192,7 @@ export const ITEMS = [
     structureType: "timesPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":78,"choices":[65,78,19,91],"display":{"bar":{"k":6,"u":13,"kind":"timesOf"},"promptText":"June's collection is 6 of Zoe's bars of 13 laid end to end. What does it total? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":78,"choices":[65,78,19,91],"display":{"bar":{"k":6,"u":13,"kind":"timesOf"},"promptText":"June puts 6 of Zoe's bars end to end. Each bar is 13 units long. How many units long are the 6 bars together?"}},
   },
   {
     itemId: "barModels-conc-b0821-0325",
@@ -9212,7 +9212,7 @@ export const ITEMS = [
     structureType: "timesPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":88,"choices":[110,66,88,26],"display":{"bar":{"k":4,"u":22,"kind":"timesOf"},"promptText":"Amara's collection is 4 of Diego's bars of 22 laid end to end. What does it total? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":88,"choices":[110,66,88,26],"display":{"bar":{"k":4,"u":22,"kind":"timesOf"},"promptText":"Diego's bar is 22 units long. Amara lines up 4 bars like it, end to end. How many units long is Amara's row of bars?"}},
   },
   {
     itemId: "barModels-conc-b0821-0327",
@@ -9232,7 +9232,7 @@ export const ITEMS = [
     structureType: "timesPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":77,"choices":[18,77,88,66],"display":{"bar":{"k":7,"u":11,"kind":"timesOf"},"promptText":"Mina's collection is 7 of Luca's bars of 11 laid end to end. What does it total? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":77,"choices":[18,77,88,66],"display":{"bar":{"k":7,"u":11,"kind":"timesOf"},"promptText":"Luca's bar is 11 units long. Mina lines up 7 bars like it, end to end. How many units long is Mina's row of bars?"}},
   },
   {
     itemId: "barModels-conc-b0821-0329",
@@ -9252,7 +9252,7 @@ export const ITEMS = [
     structureType: "timesPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":92,"choices":[92,115,27,69],"display":{"bar":{"k":4,"u":23,"kind":"timesOf"},"promptText":"Ida's collection is 4 of Omar's bars of 23 laid end to end. What does it total? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":92,"choices":[92,115,27,69],"display":{"bar":{"k":4,"u":23,"kind":"timesOf"},"promptText":"Omar's bar is 23 units long. Ida lines up 4 bars like it, end to end. How many units long is Ida's row of bars?"}},
   },
   {
     itemId: "barModels-conc-b0821-0331",
@@ -9272,7 +9272,7 @@ export const ITEMS = [
     structureType: "timesPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":84,"choices":[84,19,96,72],"display":{"bar":{"k":7,"u":12,"kind":"timesOf"},"promptText":"Rosa's collection is 7 of Finn's bars of 12 laid end to end. What does it total? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":84,"choices":[84,19,96,72],"display":{"bar":{"k":7,"u":12,"kind":"timesOf"},"promptText":"Rosa puts 7 of Finn's bars end to end. Each bar is 12 units long. How many units long are the 7 bars together?"}},
   },
   {
     itemId: "barModels-conc-b0821-0333",
@@ -9292,7 +9292,7 @@ export const ITEMS = [
     structureType: "timesPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":692,"choices":[865,519,692,177],"display":{"bar":{"k":4,"u":173,"kind":"timesOf"},"promptText":"Priya's bar repeats Leo's 173-bar 4 times over. Which value does it reach?"}},
+    question: {"a":null,"b":null,"op":"count","answer":692,"choices":[865,519,692,177],"display":{"bar":{"k":4,"u":173,"kind":"timesOf"},"promptText":"Leo's bar is 173 units long. Priya's bar is 4 times as long. How many units long is Priya's bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0335",
@@ -9312,7 +9312,7 @@ export const ITEMS = [
     structureType: "timesPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":744,"choices":[130,744,620,868],"display":{"bar":{"k":6,"u":124,"kind":"timesOf"},"promptText":"Nia's bar repeats Theo's 124-bar 6 times over. Which value does it reach?"}},
+    question: {"a":null,"b":null,"op":"count","answer":744,"choices":[130,744,620,868],"display":{"bar":{"k":6,"u":124,"kind":"timesOf"},"promptText":"Theo's bar is 124 units long. Nia's bar is 6 times as long. How many units long is Nia's bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0337",
@@ -9332,7 +9332,7 @@ export const ITEMS = [
     structureType: "timesPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":768,"choices":[960,768,576,196],"display":{"bar":{"k":4,"u":192,"kind":"timesOf"},"promptText":"June's bar repeats Zoe's 192-bar 4 times over. Which value does it reach?"}},
+    question: {"a":null,"b":null,"op":"count","answer":768,"choices":[960,768,576,196],"display":{"bar":{"k":4,"u":192,"kind":"timesOf"},"promptText":"Zoe's bar is 192 units long. June's bar is 4 times as long. How many units long is June's bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0339",
@@ -9352,7 +9352,7 @@ export const ITEMS = [
     structureType: "timesPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":822,"choices":[822,959,685,143],"display":{"bar":{"k":6,"u":137,"kind":"timesOf"},"promptText":"Amara's bar repeats Diego's 137-bar 6 times over. Which value does it reach?"}},
+    question: {"a":null,"b":null,"op":"count","answer":822,"choices":[822,959,685,143],"display":{"bar":{"k":6,"u":137,"kind":"timesOf"},"promptText":"Diego's bar is 137 units long. Amara's bar is 6 times as long. How many units long is Amara's bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0341",
@@ -9372,7 +9372,7 @@ export const ITEMS = [
     structureType: "timesPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":904,"choices":[678,230,904,1130],"display":{"bar":{"k":4,"u":226,"kind":"timesOf"},"promptText":"Mina's bar repeats Luca's 226-bar 4 times over. Which value does it reach?"}},
+    question: {"a":null,"b":null,"op":"count","answer":904,"choices":[678,230,904,1130],"display":{"bar":{"k":4,"u":226,"kind":"timesOf"},"promptText":"Mina's bar is 4 times as long as Luca's bar, which is 226 units long. How many units long is Mina's bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0343",
@@ -9392,7 +9392,7 @@ export const ITEMS = [
     structureType: "timesPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":826,"choices":[944,708,125,826],"display":{"bar":{"k":7,"u":118,"kind":"timesOf"},"promptText":"Ida's bar repeats Omar's 118-bar 7 times over. Which value does it reach?"}},
+    question: {"a":null,"b":null,"op":"count","answer":826,"choices":[944,708,125,826],"display":{"bar":{"k":7,"u":118,"kind":"timesOf"},"promptText":"Ida's bar is 7 times as long as Omar's bar, which is 118 units long. How many units long is Ida's bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0345",
@@ -9412,7 +9412,7 @@ export const ITEMS = [
     structureType: "timesPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":936,"choices":[702,1170,936,238],"display":{"bar":{"k":4,"u":234,"kind":"timesOf"},"promptText":"Rosa's bar repeats Finn's 234-bar 4 times over. Which value does it reach?"}},
+    question: {"a":null,"b":null,"op":"count","answer":936,"choices":[702,1170,936,238],"display":{"bar":{"k":4,"u":234,"kind":"timesOf"},"promptText":"Rosa's bar is 4 times as long as Finn's bar, which is 234 units long. How many units long is Rosa's bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0347",
@@ -9432,7 +9432,7 @@ export const ITEMS = [
     structureType: "timesPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":847,"choices":[726,847,968,128],"display":{"bar":{"k":7,"u":121,"kind":"timesOf"},"promptText":"Nora's bar repeats Sam's 121-bar 7 times over. Which value does it reach?"}},
+    question: {"a":null,"b":null,"op":"count","answer":847,"choices":[726,847,968,128],"display":{"bar":{"k":7,"u":121,"kind":"timesOf"},"promptText":"Nora's bar is 7 times as long as Sam's bar, which is 121 units long. How many units long is Nora's bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0349",
@@ -9442,7 +9442,7 @@ export const ITEMS = [
     structureType: "equalJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":3,"u":4,"w":12,"kind":"equalSaid"},"truth":true,"promptText":"Nia cuts a 12-bar into 3 equal parts of 4. Does the cut work?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":3,"u":4,"w":12,"kind":"equalSaid"},"truth":true,"promptText":"Nia cuts a bar for 12 into 3 equal parts. Is each part 4?"}},
   },
   {
     itemId: "barModels-conc-b0821-0350",
@@ -9452,7 +9452,7 @@ export const ITEMS = [
     structureType: "equalJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":3,"u":5,"w":12,"kind":"equalSaid"},"truth":false,"promptText":"3 parts of 5 each should rebuild Kai's whole of 12. Do they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":3,"u":5,"w":12,"kind":"equalSaid"},"truth":false,"promptText":"Kai cuts a bar for 12 into 3 equal parts. Is each part 5?"}},
   },
   {
     itemId: "barModels-conc-b0821-0351",
@@ -9462,7 +9462,7 @@ export const ITEMS = [
     structureType: "equalJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":3,"u":5,"w":15,"kind":"equalSaid"},"truth":true,"promptText":"June cuts a 15-bar into 3 equal parts of 5. Does the cut work?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":3,"u":5,"w":15,"kind":"equalSaid"},"truth":true,"promptText":"June cuts a bar for 15 into 3 equal parts. Is each part 5?"}},
   },
   {
     itemId: "barModels-conc-b0821-0352",
@@ -9472,7 +9472,7 @@ export const ITEMS = [
     structureType: "equalJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":4,"u":5,"w":16,"kind":"equalSaid"},"truth":false,"promptText":"4 parts of 5 each should rebuild Lily's whole of 16. Do they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":4,"u":5,"w":16,"kind":"equalSaid"},"truth":false,"promptText":"Lily cuts a bar for 16 into 4 equal parts. Is each part 5?"}},
   },
   {
     itemId: "barModels-conc-b0821-0353",
@@ -9482,7 +9482,7 @@ export const ITEMS = [
     structureType: "equalJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":4,"u":4,"w":16,"kind":"equalSaid"},"truth":true,"promptText":"Amara cuts a 16-bar into 4 equal parts of 4. Does the cut work?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":4,"u":4,"w":16,"kind":"equalSaid"},"truth":true,"promptText":"Amara cuts a bar for 16 into 4 equal parts. Is each part 4?"}},
   },
   {
     itemId: "barModels-conc-b0821-0354",
@@ -9492,7 +9492,7 @@ export const ITEMS = [
     structureType: "equalJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":3,"u":5,"w":18,"kind":"equalSaid"},"truth":false,"promptText":"3 parts of 5 each should rebuild Leo's whole of 18. Do they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":3,"u":5,"w":18,"kind":"equalSaid"},"truth":false,"promptText":"Leo says a bar for 18 can be cut into 3 equal parts of 5 each. Is Leo right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0355",
@@ -9502,7 +9502,7 @@ export const ITEMS = [
     structureType: "equalJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":3,"u":6,"w":18,"kind":"equalSaid"},"truth":true,"promptText":"Mina cuts a 18-bar into 3 equal parts of 6. Does the cut work?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":3,"u":6,"w":18,"kind":"equalSaid"},"truth":true,"promptText":"Mina says a bar for 18 can be cut into 3 equal parts of 6 each. Is Mina right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0356",
@@ -9512,7 +9512,7 @@ export const ITEMS = [
     structureType: "equalJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":4,"u":4,"w":20,"kind":"equalSaid"},"truth":false,"promptText":"4 parts of 4 each should rebuild Theo's whole of 20. Do they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":4,"u":4,"w":20,"kind":"equalSaid"},"truth":false,"promptText":"Theo says a bar for 20 can be cut into 4 equal parts of 4 each. Is Theo right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0357",
@@ -9522,7 +9522,7 @@ export const ITEMS = [
     structureType: "equalJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":4,"u":5,"w":20,"kind":"equalSaid"},"truth":true,"promptText":"Ida cuts a 20-bar into 4 equal parts of 5. Does the cut work?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":4,"u":5,"w":20,"kind":"equalSaid"},"truth":true,"promptText":"Ida says a bar for 20 can be cut into 4 equal parts of 5 each. Is Ida right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0358",
@@ -9532,7 +9532,7 @@ export const ITEMS = [
     structureType: "equalJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":2,"u":6,"w":14,"kind":"equalSaid"},"truth":false,"promptText":"2 parts of 6 each should rebuild Zoe's whole of 14. Do they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":2,"u":6,"w":14,"kind":"equalSaid"},"truth":false,"promptText":"Zoe puts together 2 parts that are each 6. Do they make a whole of 14?"}},
   },
   {
     itemId: "barModels-conc-b0821-0359",
@@ -9542,7 +9542,7 @@ export const ITEMS = [
     structureType: "equalJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":2,"u":7,"w":14,"kind":"equalSaid"},"truth":true,"promptText":"Rosa cuts a 14-bar into 2 equal parts of 7. Does the cut work?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":2,"u":7,"w":14,"kind":"equalSaid"},"truth":true,"promptText":"Rosa puts together 2 parts that are each 7. Do they make a whole of 14?"}},
   },
   {
     itemId: "barModels-conc-b0821-0360",
@@ -9552,7 +9552,7 @@ export const ITEMS = [
     structureType: "equalJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":2,"u":4,"w":10,"kind":"equalSaid"},"truth":false,"promptText":"2 parts of 4 each should rebuild Diego's whole of 10. Do they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":2,"u":4,"w":10,"kind":"equalSaid"},"truth":false,"promptText":"Diego puts together 2 parts that are each 4. Do they make a whole of 10?"}},
   },
   {
     itemId: "barModels-conc-b0821-0361",
@@ -9562,7 +9562,7 @@ export const ITEMS = [
     structureType: "equalJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":2,"u":5,"w":10,"kind":"equalSaid"},"truth":true,"promptText":"Nora cuts a 10-bar into 2 equal parts of 5. Does the cut work?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":2,"u":5,"w":10,"kind":"equalSaid"},"truth":true,"promptText":"Nora says 2 parts that are each 5 make a whole of 10. Is Nora right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0362",
@@ -9572,7 +9572,7 @@ export const ITEMS = [
     structureType: "equalJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":3,"u":4,"w":9,"kind":"equalSaid"},"truth":false,"promptText":"3 parts of 4 each should rebuild Luca's whole of 9. Do they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":3,"u":4,"w":9,"kind":"equalSaid"},"truth":false,"promptText":"Luca says 3 parts that are each 4 make a whole of 9. Is Luca right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0363",
@@ -9582,7 +9582,7 @@ export const ITEMS = [
     structureType: "equalJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":3,"u":3,"w":9,"kind":"equalSaid"},"truth":true,"promptText":"Ava cuts a 9-bar into 3 equal parts of 3. Does the cut work?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":3,"u":3,"w":9,"kind":"equalSaid"},"truth":true,"promptText":"Ava says 3 parts that are each 3 make a whole of 9. Is Ava right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0364",
@@ -9592,7 +9592,7 @@ export const ITEMS = [
     structureType: "equalJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":4,"u":3,"w":8,"kind":"equalSaid"},"truth":false,"promptText":"4 parts of 3 each should rebuild Omar's whole of 8. Do they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":4,"u":3,"w":8,"kind":"equalSaid"},"truth":false,"promptText":"Omar puts together 4 parts that are each 3. Do they make a whole of 8?"}},
   },
   {
     itemId: "barModels-conc-b0821-0365",
@@ -9602,7 +9602,7 @@ export const ITEMS = [
     structureType: "equalJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":4,"u":2,"w":8,"kind":"equalSaid"},"truth":true,"promptText":"Ben cuts a 8-bar into 4 equal parts of 2. Does the cut work?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":4,"u":2,"w":8,"kind":"equalSaid"},"truth":true,"promptText":"Ben puts together 4 parts that are each 2. Do they make a whole of 8?"}},
   },
   {
     itemId: "barModels-conc-b0821-0366",
@@ -9612,7 +9612,7 @@ export const ITEMS = [
     structureType: "equalJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":2,"u":4,"w":6,"kind":"equalSaid"},"truth":false,"promptText":"2 parts of 4 each should rebuild Finn's whole of 6. Do they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":2,"u":4,"w":6,"kind":"equalSaid"},"truth":false,"promptText":"Finn says 2 parts that are each 4 make a whole of 6. Is Finn right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0367",
@@ -9622,7 +9622,7 @@ export const ITEMS = [
     structureType: "equalJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":3,"u":28,"w":84,"kind":"equalSaid"},"truth":true,"promptText":"Zoe claims 3 equal sections of 28 exactly fill a 84-bar. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":3,"u":28,"w":84,"kind":"equalSaid"},"truth":true,"promptText":"Zoe says 3 equal parts of 28 each fill a bar for 84 exactly. Is Zoe right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0368",
@@ -9632,7 +9632,7 @@ export const ITEMS = [
     structureType: "equalJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":3,"u":27,"w":84,"kind":"equalSaid"},"truth":false,"promptText":"A 84-bar divided by Rosa into 3 sections of 27 — is the division exact?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":3,"u":27,"w":84,"kind":"equalSaid"},"truth":false,"promptText":"Rosa cuts a bar for 84 into 3 equal parts and says each part is 27. Is Rosa right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0369",
@@ -9642,7 +9642,7 @@ export const ITEMS = [
     structureType: "equalJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":4,"u":19,"w":76,"kind":"equalSaid"},"truth":true,"promptText":"Diego claims 4 equal sections of 19 exactly fill a 76-bar. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":4,"u":19,"w":76,"kind":"equalSaid"},"truth":true,"promptText":"Diego says 4 equal parts of 19 each fill a bar for 76 exactly. Is Diego right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0370",
@@ -9652,7 +9652,7 @@ export const ITEMS = [
     structureType: "equalJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":4,"u":18,"w":76,"kind":"equalSaid"},"truth":false,"promptText":"A 76-bar divided by Nora into 4 sections of 18 — is the division exact?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":4,"u":18,"w":76,"kind":"equalSaid"},"truth":false,"promptText":"Nora says 4 equal parts of 18 each fill a bar for 76 exactly. Is Nora right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0371",
@@ -9662,7 +9662,7 @@ export const ITEMS = [
     structureType: "equalJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":5,"u":19,"w":95,"kind":"equalSaid"},"truth":true,"promptText":"Luca claims 5 equal sections of 19 exactly fill a 95-bar. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":5,"u":19,"w":95,"kind":"equalSaid"},"truth":true,"promptText":"Luca lines up 5 equal parts of 19 each. Do they fill a bar for 95 exactly?"}},
   },
   {
     itemId: "barModels-conc-b0821-0372",
@@ -9672,7 +9672,7 @@ export const ITEMS = [
     structureType: "equalJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":5,"u":18,"w":95,"kind":"equalSaid"},"truth":false,"promptText":"A 95-bar divided by Ava into 5 sections of 18 — is the division exact?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":5,"u":18,"w":95,"kind":"equalSaid"},"truth":false,"promptText":"Ava wants to cut a bar for 95 into 5 equal parts. Will each part be 18?"}},
   },
   {
     itemId: "barModels-conc-b0821-0373",
@@ -9682,7 +9682,7 @@ export const ITEMS = [
     structureType: "equalJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":6,"u":12,"w":72,"kind":"equalSaid"},"truth":true,"promptText":"Omar claims 6 equal sections of 12 exactly fill a 72-bar. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":6,"u":12,"w":72,"kind":"equalSaid"},"truth":true,"promptText":"Omar says 6 equal parts of 12 each fill a bar for 72 exactly. Is Omar right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0374",
@@ -9692,7 +9692,7 @@ export const ITEMS = [
     structureType: "equalJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":6,"u":13,"w":72,"kind":"equalSaid"},"truth":false,"promptText":"A 72-bar divided by Ben into 6 sections of 13 — is the division exact?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":6,"u":13,"w":72,"kind":"equalSaid"},"truth":false,"promptText":"Ben says 6 equal parts of 13 each fill a bar for 72 exactly. Is Ben right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0375",
@@ -9702,7 +9702,7 @@ export const ITEMS = [
     structureType: "equalJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":3,"u":29,"w":87,"kind":"equalSaid"},"truth":true,"promptText":"Finn claims 3 equal sections of 29 exactly fill a 87-bar. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":3,"u":29,"w":87,"kind":"equalSaid"},"truth":true,"promptText":"Finn lines up 3 equal parts of 29 each. Do they fill a bar for 87 exactly?"}},
   },
   {
     itemId: "barModels-conc-b0821-0376",
@@ -9712,7 +9712,7 @@ export const ITEMS = [
     structureType: "equalJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":3,"u":28,"w":87,"kind":"equalSaid"},"truth":false,"promptText":"A 87-bar divided by Priya into 3 sections of 28 — is the division exact?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":3,"u":28,"w":87,"kind":"equalSaid"},"truth":false,"promptText":"Priya lines up 3 equal parts of 28 each. Do they fill a bar for 87 exactly?"}},
   },
   {
     itemId: "barModels-conc-b0821-0377",
@@ -9722,7 +9722,7 @@ export const ITEMS = [
     structureType: "equalJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":4,"u":23,"w":92,"kind":"equalSaid"},"truth":true,"promptText":"Sam claims 4 equal sections of 23 exactly fill a 92-bar. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":4,"u":23,"w":92,"kind":"equalSaid"},"truth":true,"promptText":"Sam wants to cut a bar for 92 into 4 equal parts. Will each part be 23?"}},
   },
   {
     itemId: "barModels-conc-b0821-0378",
@@ -9732,7 +9732,7 @@ export const ITEMS = [
     structureType: "equalJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":4,"u":24,"w":92,"kind":"equalSaid"},"truth":false,"promptText":"A 92-bar divided by Nia into 4 sections of 24 — is the division exact?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":4,"u":24,"w":92,"kind":"equalSaid"},"truth":false,"promptText":"Nia lines up 4 equal parts of 24 each. Do they fill a bar for 92 exactly?"}},
   },
   {
     itemId: "barModels-conc-b0821-0379",
@@ -9742,7 +9742,7 @@ export const ITEMS = [
     structureType: "equalJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":5,"u":17,"w":85,"kind":"equalSaid"},"truth":true,"promptText":"Kai claims 5 equal sections of 17 exactly fill a 85-bar. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":5,"u":17,"w":85,"kind":"equalSaid"},"truth":true,"promptText":"Kai cuts a bar for 85 into 5 equal parts and says each part is 17. Is Kai right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0380",
@@ -9752,7 +9752,7 @@ export const ITEMS = [
     structureType: "equalJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":5,"u":16,"w":85,"kind":"equalSaid"},"truth":false,"promptText":"A 85-bar divided by June into 5 sections of 16 — is the division exact?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":5,"u":16,"w":85,"kind":"equalSaid"},"truth":false,"promptText":"June wants to cut a bar for 85 into 5 equal parts. Will each part be 16?"}},
   },
   {
     itemId: "barModels-conc-b0821-0381",
@@ -9762,7 +9762,7 @@ export const ITEMS = [
     structureType: "equalJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":6,"u":13,"w":78,"kind":"equalSaid"},"truth":true,"promptText":"Lily claims 6 equal sections of 13 exactly fill a 78-bar. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":6,"u":13,"w":78,"kind":"equalSaid"},"truth":true,"promptText":"Lily cuts a bar for 78 into 6 equal parts and says each part is 13. Is Lily right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0382",
@@ -9772,7 +9772,7 @@ export const ITEMS = [
     structureType: "equalJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":6,"u":12,"w":78,"kind":"equalSaid"},"truth":false,"promptText":"A 78-bar divided by Amara into 6 sections of 12 — is the division exact?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":6,"u":12,"w":78,"kind":"equalSaid"},"truth":false,"promptText":"Amara cuts a bar for 78 into 6 equal parts and says each part is 12. Is Amara right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0383",
@@ -9782,7 +9782,7 @@ export const ITEMS = [
     structureType: "equalJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":3,"u":32,"w":96,"kind":"equalSaid"},"truth":true,"promptText":"Leo claims 3 equal sections of 32 exactly fill a 96-bar. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":3,"u":32,"w":96,"kind":"equalSaid"},"truth":true,"promptText":"Leo wants to cut a bar for 96 into 3 equal parts. Will each part be 32?"}},
   },
   {
     itemId: "barModels-conc-b0821-0384",
@@ -9792,7 +9792,7 @@ export const ITEMS = [
     structureType: "equalJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":3,"u":31,"w":96,"kind":"equalSaid"},"truth":false,"promptText":"A 96-bar divided by Mina into 3 sections of 31 — is the division exact?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":3,"u":31,"w":96,"kind":"equalSaid"},"truth":false,"promptText":"Mina cuts a bar for 96 into 3 equal parts and says each part is 31. Is Mina right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0385",
@@ -9802,7 +9802,7 @@ export const ITEMS = [
     structureType: "equalJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":3,"u":282,"w":846,"kind":"equalSaid"},"truth":true,"promptText":"Diego splits 846 into 3 equal parts of 282. Is that exactly right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":3,"u":282,"w":846,"kind":"equalSaid"},"truth":true,"promptText":"Diego draws a bar for 846 and splits it into 3 equal parts. Diego says each part is 282. Is Diego right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0386",
@@ -9812,7 +9812,7 @@ export const ITEMS = [
     structureType: "equalJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":3,"u":281,"w":846,"kind":"equalSaid"},"truth":false,"promptText":"3 units of 281 claim to total Nora's 846. Do they truly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":3,"u":281,"w":846,"kind":"equalSaid"},"truth":false,"promptText":"Nora draws a bar for 846 and splits it into 3 equal parts. Nora says each part is 281. Is Nora right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0387",
@@ -9822,7 +9822,7 @@ export const ITEMS = [
     structureType: "equalJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":4,"u":191,"w":764,"kind":"equalSaid"},"truth":true,"promptText":"Luca splits 764 into 4 equal parts of 191. Is that exactly right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":4,"u":191,"w":764,"kind":"equalSaid"},"truth":true,"promptText":"Luca puts 4 equal parts together to make a bar. Each part is 191. Luca says the whole bar is 764. Is Luca right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0388",
@@ -9832,7 +9832,7 @@ export const ITEMS = [
     structureType: "equalJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":4,"u":190,"w":764,"kind":"equalSaid"},"truth":false,"promptText":"4 units of 190 claim to total Ava's 764. Do they truly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":4,"u":190,"w":764,"kind":"equalSaid"},"truth":false,"promptText":"Ava draws a bar for 764 and splits it into 4 equal parts. Ava says each part is 190. Is Ava right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0389",
@@ -9842,7 +9842,7 @@ export const ITEMS = [
     structureType: "equalJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":5,"u":191,"w":955,"kind":"equalSaid"},"truth":true,"promptText":"Omar splits 955 into 5 equal parts of 191. Is that exactly right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":5,"u":191,"w":955,"kind":"equalSaid"},"truth":true,"promptText":"Omar draws a bar with 5 equal parts, and each part is 191. Omar says the whole bar is 955. Is Omar right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0390",
@@ -9852,7 +9852,7 @@ export const ITEMS = [
     structureType: "equalJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":5,"u":190,"w":955,"kind":"equalSaid"},"truth":false,"promptText":"5 units of 190 claim to total Ben's 955. Do they truly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":5,"u":190,"w":955,"kind":"equalSaid"},"truth":false,"promptText":"Ben puts 5 equal parts together to make a bar. Each part is 190. Ben says the whole bar is 955. Is Ben right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0391",
@@ -9862,7 +9862,7 @@ export const ITEMS = [
     structureType: "equalJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":6,"u":121,"w":726,"kind":"equalSaid"},"truth":true,"promptText":"Finn splits 726 into 6 equal parts of 121. Is that exactly right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":6,"u":121,"w":726,"kind":"equalSaid"},"truth":true,"promptText":"Finn draws a bar for 726 and splits it into 6 equal parts. Finn says each part is 121. Is Finn right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0392",
@@ -9872,7 +9872,7 @@ export const ITEMS = [
     structureType: "equalJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":6,"u":122,"w":726,"kind":"equalSaid"},"truth":false,"promptText":"6 units of 122 claim to total Priya's 726. Do they truly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":6,"u":122,"w":726,"kind":"equalSaid"},"truth":false,"promptText":"Priya draws a bar with 6 equal parts, and each part is 122. Priya says the whole bar is 726. Is Priya right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0393",
@@ -9882,7 +9882,7 @@ export const ITEMS = [
     structureType: "equalJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":3,"u":291,"w":873,"kind":"equalSaid"},"truth":true,"promptText":"Sam splits 873 into 3 equal parts of 291. Is that exactly right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":3,"u":291,"w":873,"kind":"equalSaid"},"truth":true,"promptText":"Sam puts 3 equal parts together to make a bar. Each part is 291. Sam says the whole bar is 873. Is Sam right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0394",
@@ -9892,7 +9892,7 @@ export const ITEMS = [
     structureType: "equalJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":3,"u":290,"w":873,"kind":"equalSaid"},"truth":false,"promptText":"3 units of 290 claim to total Nia's 873. Do they truly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":3,"u":290,"w":873,"kind":"equalSaid"},"truth":false,"promptText":"Nia puts 3 equal parts together to make a bar. Each part is 290. Nia says the whole bar is 873. Is Nia right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0395",
@@ -9902,7 +9902,7 @@ export const ITEMS = [
     structureType: "equalJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":4,"u":232,"w":928,"kind":"equalSaid"},"truth":true,"promptText":"Kai splits 928 into 4 equal parts of 232. Is that exactly right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":4,"u":232,"w":928,"kind":"equalSaid"},"truth":true,"promptText":"Kai draws a bar with 4 equal parts, and each part is 232. Kai says the whole bar is 928. Is Kai right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0396",
@@ -9912,7 +9912,7 @@ export const ITEMS = [
     structureType: "equalJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":4,"u":233,"w":928,"kind":"equalSaid"},"truth":false,"promptText":"4 units of 233 claim to total June's 928. Do they truly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":4,"u":233,"w":928,"kind":"equalSaid"},"truth":false,"promptText":"June draws a bar with 4 equal parts, and each part is 233. June says the whole bar is 928. Is June right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0397",
@@ -9922,7 +9922,7 @@ export const ITEMS = [
     structureType: "equalJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":5,"u":171,"w":855,"kind":"equalSaid"},"truth":true,"promptText":"Lily splits 855 into 5 equal parts of 171. Is that exactly right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":5,"u":171,"w":855,"kind":"equalSaid"},"truth":true,"promptText":"Lily draws a bar for 855 and splits it into 5 equal parts. Lily says each part is 171. Is Lily right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0398",
@@ -9932,7 +9932,7 @@ export const ITEMS = [
     structureType: "equalJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":5,"u":170,"w":855,"kind":"equalSaid"},"truth":false,"promptText":"5 units of 170 claim to total Amara's 855. Do they truly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":5,"u":170,"w":855,"kind":"equalSaid"},"truth":false,"promptText":"Amara puts 5 equal parts together to make a bar. Each part is 170. Amara says the whole bar is 855. Is Amara right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0399",
@@ -9942,7 +9942,7 @@ export const ITEMS = [
     structureType: "equalJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":6,"u":131,"w":786,"kind":"equalSaid"},"truth":true,"promptText":"Leo splits 786 into 6 equal parts of 131. Is that exactly right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":6,"u":131,"w":786,"kind":"equalSaid"},"truth":true,"promptText":"Leo puts 6 equal parts together to make a bar. Each part is 131. Leo says the whole bar is 786. Is Leo right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0400",
@@ -9952,7 +9952,7 @@ export const ITEMS = [
     structureType: "equalJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":6,"u":130,"w":786,"kind":"equalSaid"},"truth":false,"promptText":"6 units of 130 claim to total Mina's 786. Do they truly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":6,"u":130,"w":786,"kind":"equalSaid"},"truth":false,"promptText":"Mina draws a bar for 786 and splits it into 6 equal parts. Mina says each part is 130. Is Mina right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0401",
@@ -9962,7 +9962,7 @@ export const ITEMS = [
     structureType: "equalJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":3,"u":321,"w":963,"kind":"equalSaid"},"truth":true,"promptText":"Theo splits 963 into 3 equal parts of 321. Is that exactly right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":3,"u":321,"w":963,"kind":"equalSaid"},"truth":true,"promptText":"Theo draws a bar with 3 equal parts, and each part is 321. Theo says the whole bar is 963. Is Theo right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0402",
@@ -9972,7 +9972,7 @@ export const ITEMS = [
     structureType: "equalJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":3,"u":320,"w":963,"kind":"equalSaid"},"truth":false,"promptText":"3 units of 320 claim to total Ida's 963. Do they truly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"k":3,"u":320,"w":963,"kind":"equalSaid"},"truth":false,"promptText":"Ida draws a bar for 963 and splits it into 3 equal parts. Ida says each part is 320. Is Ida right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0403",
@@ -9982,7 +9982,7 @@ export const ITEMS = [
     structureType: "unitCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bar":{"u":4,"w":12,"kind":"unitCount"},"promptText":"Ava tiles a 12-bar with equal parts of 4. How many parts fit?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bar":{"u":4,"w":12,"kind":"unitCount"},"promptText":"Ava cuts a bar for 12 into equal parts of 4. How many parts does Ava get?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0404",
@@ -9992,7 +9992,7 @@ export const ITEMS = [
     structureType: "unitCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bar":{"u":3,"w":12,"kind":"unitCount"},"promptText":"How many 3-parts fill Omar's bar of 12? Count the units."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bar":{"u":3,"w":12,"kind":"unitCount"},"promptText":"How many parts of 3 fill Omar's bar for 12?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0405",
@@ -10002,7 +10002,7 @@ export const ITEMS = [
     structureType: "unitCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bar":{"u":5,"w":15,"kind":"unitCount"},"promptText":"Ben tiles a 15-bar with equal parts of 5. How many parts fit?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bar":{"u":5,"w":15,"kind":"unitCount"},"promptText":"Ben fills a bar for 15 with equal parts of 5. How many parts fit?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0406",
@@ -10012,7 +10012,7 @@ export const ITEMS = [
     structureType: "unitCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bar":{"u":4,"w":16,"kind":"unitCount"},"promptText":"How many 4-parts fill Finn's bar of 16? Count the units."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bar":{"u":4,"w":16,"kind":"unitCount"},"promptText":"How many parts of 4 fill Finn's bar for 16?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0407",
@@ -10022,7 +10022,7 @@ export const ITEMS = [
     structureType: "unitCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bar":{"u":6,"w":18,"kind":"unitCount"},"promptText":"Priya tiles a 18-bar with equal parts of 6. How many parts fit?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bar":{"u":6,"w":18,"kind":"unitCount"},"promptText":"Priya cuts a bar for 18 into equal parts of 6. How many parts does Priya get?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0408",
@@ -10032,7 +10032,7 @@ export const ITEMS = [
     structureType: "unitCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bar":{"u":5,"w":20,"kind":"unitCount"},"promptText":"How many 5-parts fill Sam's bar of 20? Count the units."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bar":{"u":5,"w":20,"kind":"unitCount"},"promptText":"Sam has a bar for 20. How many equal parts of 5 fit in the bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0409",
@@ -10042,7 +10042,7 @@ export const ITEMS = [
     structureType: "unitCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bar":{"u":7,"w":14,"kind":"unitCount"},"promptText":"Nia tiles a 14-bar with equal parts of 7. How many parts fit?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bar":{"u":7,"w":14,"kind":"unitCount"},"promptText":"Nia fills a bar for 14 with equal parts of 7. How many parts fit?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0410",
@@ -10052,7 +10052,7 @@ export const ITEMS = [
     structureType: "unitCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bar":{"u":5,"w":10,"kind":"unitCount"},"promptText":"How many 5-parts fill Kai's bar of 10? Count the units."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bar":{"u":5,"w":10,"kind":"unitCount"},"promptText":"Kai has a bar for 10. How many equal parts of 5 fit in the bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0411",
@@ -10062,7 +10062,7 @@ export const ITEMS = [
     structureType: "unitCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bar":{"u":3,"w":9,"kind":"unitCount"},"promptText":"June tiles a 9-bar with equal parts of 3. How many parts fit?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bar":{"u":3,"w":9,"kind":"unitCount"},"promptText":"June fills a bar for 9 with equal parts of 3. How many parts fit?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0412",
@@ -10072,7 +10072,7 @@ export const ITEMS = [
     structureType: "unitCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bar":{"u":4,"w":8,"kind":"unitCount"},"promptText":"How many 4-parts fill Lily's bar of 8? Count the units."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bar":{"u":4,"w":8,"kind":"unitCount"},"promptText":"Lily has a bar for 8. How many equal parts of 4 fit in the bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0413",
@@ -10082,7 +10082,7 @@ export const ITEMS = [
     structureType: "unitCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bar":{"u":3,"w":18,"kind":"unitCount"},"promptText":"Amara tiles a 18-bar with equal parts of 3. How many parts fit?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bar":{"u":3,"w":18,"kind":"unitCount"},"promptText":"Amara fills a bar for 18 with equal parts of 3. How many parts fit?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0414",
@@ -10092,7 +10092,7 @@ export const ITEMS = [
     structureType: "unitCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bar":{"u":8,"w":16,"kind":"unitCount"},"promptText":"How many 8-parts fill Leo's bar of 16? Count the units."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bar":{"u":8,"w":16,"kind":"unitCount"},"promptText":"How many parts of 8 fill Leo's bar for 16?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0415",
@@ -10102,7 +10102,7 @@ export const ITEMS = [
     structureType: "unitCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bar":{"u":4,"w":20,"kind":"unitCount"},"promptText":"Mina tiles a 20-bar with equal parts of 4. How many parts fit?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bar":{"u":4,"w":20,"kind":"unitCount"},"promptText":"Mina cuts a bar for 20 into equal parts of 4. How many parts does Mina get?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0416",
@@ -10112,7 +10112,7 @@ export const ITEMS = [
     structureType: "unitCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bar":{"u":6,"w":12,"kind":"unitCount"},"promptText":"How many 6-parts fill Theo's bar of 12? Count the units."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bar":{"u":6,"w":12,"kind":"unitCount"},"promptText":"How many parts of 6 fill Theo's bar for 12?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0417",
@@ -10122,7 +10122,7 @@ export const ITEMS = [
     structureType: "unitCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bar":{"u":3,"w":15,"kind":"unitCount"},"promptText":"Ida tiles a 15-bar with equal parts of 3. How many parts fit?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bar":{"u":3,"w":15,"kind":"unitCount"},"promptText":"Ida cuts a bar for 15 into equal parts of 3. How many parts does Ida get?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0418",
@@ -10132,7 +10132,7 @@ export const ITEMS = [
     structureType: "unitCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bar":{"u":10,"w":20,"kind":"unitCount"},"promptText":"How many 10-parts fill Zoe's bar of 20? Count the units."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bar":{"u":10,"w":20,"kind":"unitCount"},"promptText":"Zoe has a bar for 20. How many equal parts of 10 fit in the bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0419",
@@ -10142,7 +10142,7 @@ export const ITEMS = [
     structureType: "unitCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bar":{"u":28,"w":84,"kind":"unitCount"},"promptText":"Lily lays units of 28 along a 84-bar. How many units complete it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bar":{"u":28,"w":84,"kind":"unitCount"},"promptText":"Lily makes a bar for 84 out of equal parts of 28. How many parts does Lily use?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0420",
@@ -10152,7 +10152,7 @@ export const ITEMS = [
     structureType: "unitCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bar":{"u":19,"w":76,"kind":"unitCount"},"promptText":"A 76-bar swallows units of 19 whole. How many units does Amara place?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bar":{"u":19,"w":76,"kind":"unitCount"},"promptText":"Amara splits a bar for 76 into equal parts of 19. How many parts does Amara get?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0421",
@@ -10162,7 +10162,7 @@ export const ITEMS = [
     structureType: "unitCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bar":{"u":19,"w":95,"kind":"unitCount"},"promptText":"Leo lays units of 19 along a 95-bar. How many units complete it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bar":{"u":19,"w":95,"kind":"unitCount"},"promptText":"Leo lines up parts of 19 to make a bar for 95. How many parts does Leo need?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0422",
@@ -10172,7 +10172,7 @@ export const ITEMS = [
     structureType: "unitCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bar":{"u":12,"w":72,"kind":"unitCount"},"promptText":"A 72-bar swallows units of 12 whole. How many units does Mina place?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bar":{"u":12,"w":72,"kind":"unitCount"},"promptText":"Mina splits a bar for 72 into equal parts of 12. How many parts does Mina get?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0423",
@@ -10182,7 +10182,7 @@ export const ITEMS = [
     structureType: "unitCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bar":{"u":29,"w":87,"kind":"unitCount"},"promptText":"Theo lays units of 29 along a 87-bar. How many units complete it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bar":{"u":29,"w":87,"kind":"unitCount"},"promptText":"Theo lines up parts of 29 to make a bar for 87. How many parts does Theo need?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0424",
@@ -10192,7 +10192,7 @@ export const ITEMS = [
     structureType: "unitCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bar":{"u":23,"w":92,"kind":"unitCount"},"promptText":"A 92-bar swallows units of 23 whole. How many units does Ida place?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bar":{"u":23,"w":92,"kind":"unitCount"},"promptText":"Ida fills a bar for 92 with equal parts of 23. How many parts of 23 does Ida need?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0425",
@@ -10202,7 +10202,7 @@ export const ITEMS = [
     structureType: "unitCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bar":{"u":17,"w":85,"kind":"unitCount"},"promptText":"Zoe lays units of 17 along a 85-bar. How many units complete it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bar":{"u":17,"w":85,"kind":"unitCount"},"promptText":"Zoe makes a bar for 85 out of equal parts of 17. How many parts does Zoe use?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0426",
@@ -10212,7 +10212,7 @@ export const ITEMS = [
     structureType: "unitCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bar":{"u":13,"w":78,"kind":"unitCount"},"promptText":"A 78-bar swallows units of 13 whole. How many units does Rosa place?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bar":{"u":13,"w":78,"kind":"unitCount"},"promptText":"Rosa fills a bar for 78 with equal parts of 13. How many parts of 13 does Rosa need?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0427",
@@ -10222,7 +10222,7 @@ export const ITEMS = [
     structureType: "unitCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bar":{"u":32,"w":96,"kind":"unitCount"},"promptText":"Diego lays units of 32 along a 96-bar. How many units complete it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bar":{"u":32,"w":96,"kind":"unitCount"},"promptText":"Diego lines up parts of 32 to make a bar for 96. How many parts does Diego need?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0428",
@@ -10232,7 +10232,7 @@ export const ITEMS = [
     structureType: "unitCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bar":{"u":22,"w":88,"kind":"unitCount"},"promptText":"A 88-bar swallows units of 22 whole. How many units does Nora place?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bar":{"u":22,"w":88,"kind":"unitCount"},"promptText":"Nora fills a bar for 88 with equal parts of 22. How many parts of 22 does Nora need?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0429",
@@ -10242,7 +10242,7 @@ export const ITEMS = [
     structureType: "unitCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bar":{"u":15,"w":75,"kind":"unitCount"},"promptText":"Luca lays units of 15 along a 75-bar. How many units complete it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bar":{"u":15,"w":75,"kind":"unitCount"},"promptText":"Luca lines up parts of 15 to make a bar for 75. How many parts does Luca need?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0430",
@@ -10252,7 +10252,7 @@ export const ITEMS = [
     structureType: "unitCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"bar":{"u":12,"w":84,"kind":"unitCount"},"promptText":"A 84-bar swallows units of 12 whole. How many units does Ava place?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"bar":{"u":12,"w":84,"kind":"unitCount"},"promptText":"Ava fills a bar for 84 with equal parts of 12. How many parts of 12 does Ava need?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0431",
@@ -10262,7 +10262,7 @@ export const ITEMS = [
     structureType: "unitCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bar":{"u":31,"w":93,"kind":"unitCount"},"promptText":"Omar lays units of 31 along a 93-bar. How many units complete it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bar":{"u":31,"w":93,"kind":"unitCount"},"promptText":"Omar makes a bar for 93 out of equal parts of 31. How many parts does Omar use?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0432",
@@ -10272,7 +10272,7 @@ export const ITEMS = [
     structureType: "unitCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bar":{"u":17,"w":68,"kind":"unitCount"},"promptText":"A 68-bar swallows units of 17 whole. How many units does Ben place?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bar":{"u":17,"w":68,"kind":"unitCount"},"promptText":"Ben splits a bar for 68 into equal parts of 17. How many parts does Ben get?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0433",
@@ -10282,7 +10282,7 @@ export const ITEMS = [
     structureType: "unitCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bar":{"u":18,"w":90,"kind":"unitCount"},"promptText":"Finn lays units of 18 along a 90-bar. How many units complete it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bar":{"u":18,"w":90,"kind":"unitCount"},"promptText":"Finn makes a bar for 90 out of equal parts of 18. How many parts does Finn use?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0434",
@@ -10292,7 +10292,7 @@ export const ITEMS = [
     structureType: "unitCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bar":{"u":11,"w":66,"kind":"unitCount"},"promptText":"A 66-bar swallows units of 11 whole. How many units does Priya place?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bar":{"u":11,"w":66,"kind":"unitCount"},"promptText":"Priya splits a bar for 66 into equal parts of 11. How many parts does Priya get?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0435",
@@ -10302,7 +10302,7 @@ export const ITEMS = [
     structureType: "unitCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bar":{"u":282,"w":846,"kind":"unitCount"},"promptText":"Exactly how many 282-units make up Leo's 846-bar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bar":{"u":282,"w":846,"kind":"unitCount"},"promptText":"Leo's tape diagram has a whole of 846 cut into equal parts of 282. How many parts are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0436",
@@ -10312,7 +10312,7 @@ export const ITEMS = [
     structureType: "unitCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bar":{"u":191,"w":764,"kind":"unitCount"},"promptText":"Mina measures a 764-bar in strides of 191. How many strides is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bar":{"u":191,"w":764,"kind":"unitCount"},"promptText":"Mina splits a bar for 764 into equal parts of 191. How many parts does Mina make?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0437",
@@ -10322,7 +10322,7 @@ export const ITEMS = [
     structureType: "unitCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bar":{"u":191,"w":955,"kind":"unitCount"},"promptText":"Exactly how many 191-units make up Theo's 955-bar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bar":{"u":191,"w":955,"kind":"unitCount"},"promptText":"Theo's tape diagram has a whole of 955 cut into equal parts of 191. How many parts are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0438",
@@ -10332,7 +10332,7 @@ export const ITEMS = [
     structureType: "unitCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bar":{"u":121,"w":726,"kind":"unitCount"},"promptText":"Ida measures a 726-bar in strides of 121. How many strides is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bar":{"u":121,"w":726,"kind":"unitCount"},"promptText":"Ida's bar stands for 726. How many equal parts of 121 fit in it?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0439",
@@ -10342,7 +10342,7 @@ export const ITEMS = [
     structureType: "unitCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bar":{"u":291,"w":873,"kind":"unitCount"},"promptText":"Exactly how many 291-units make up Zoe's 873-bar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bar":{"u":291,"w":873,"kind":"unitCount"},"promptText":"How many equal parts of 291 make Zoe's bar for 873?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0440",
@@ -10352,7 +10352,7 @@ export const ITEMS = [
     structureType: "unitCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bar":{"u":232,"w":928,"kind":"unitCount"},"promptText":"Rosa measures a 928-bar in strides of 232. How many strides is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bar":{"u":232,"w":928,"kind":"unitCount"},"promptText":"Rosa splits a bar for 928 into equal parts of 232. How many parts does Rosa make?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0441",
@@ -10362,7 +10362,7 @@ export const ITEMS = [
     structureType: "unitCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bar":{"u":171,"w":855,"kind":"unitCount"},"promptText":"Exactly how many 171-units make up Diego's 855-bar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bar":{"u":171,"w":855,"kind":"unitCount"},"promptText":"Diego's tape diagram has a whole of 855 cut into equal parts of 171. How many parts are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0442",
@@ -10372,7 +10372,7 @@ export const ITEMS = [
     structureType: "unitCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bar":{"u":131,"w":786,"kind":"unitCount"},"promptText":"Nora measures a 786-bar in strides of 131. How many strides is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bar":{"u":131,"w":786,"kind":"unitCount"},"promptText":"Nora splits a bar for 786 into equal parts of 131. How many parts does Nora make?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0443",
@@ -10382,7 +10382,7 @@ export const ITEMS = [
     structureType: "unitCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bar":{"u":321,"w":963,"kind":"unitCount"},"promptText":"Exactly how many 321-units make up Luca's 963-bar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bar":{"u":321,"w":963,"kind":"unitCount"},"promptText":"How many equal parts of 321 make Luca's bar for 963?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0444",
@@ -10392,7 +10392,7 @@ export const ITEMS = [
     structureType: "unitCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bar":{"u":221,"w":884,"kind":"unitCount"},"promptText":"Ava measures a 884-bar in strides of 221. How many strides is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bar":{"u":221,"w":884,"kind":"unitCount"},"promptText":"Ava's bar stands for 884. How many equal parts of 221 fit in it?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0445",
@@ -10402,7 +10402,7 @@ export const ITEMS = [
     structureType: "unitCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bar":{"u":151,"w":755,"kind":"unitCount"},"promptText":"Exactly how many 151-units make up Omar's 755-bar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bar":{"u":151,"w":755,"kind":"unitCount"},"promptText":"Omar's tape diagram has a whole of 755 cut into equal parts of 151. How many parts are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0446",
@@ -10412,7 +10412,7 @@ export const ITEMS = [
     structureType: "unitCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bar":{"u":141,"w":846,"kind":"unitCount"},"promptText":"Ben measures a 846-bar in strides of 141. How many strides is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bar":{"u":141,"w":846,"kind":"unitCount"},"promptText":"Ben splits a bar for 846 into equal parts of 141. How many parts does Ben make?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0447",
@@ -10422,7 +10422,7 @@ export const ITEMS = [
     structureType: "unitCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bar":{"u":313,"w":939,"kind":"unitCount"},"promptText":"Exactly how many 313-units make up Finn's 939-bar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bar":{"u":313,"w":939,"kind":"unitCount"},"promptText":"How many equal parts of 313 make Finn's bar for 939?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0448",
@@ -10432,7 +10432,7 @@ export const ITEMS = [
     structureType: "unitCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bar":{"u":172,"w":688,"kind":"unitCount"},"promptText":"Priya measures a 688-bar in strides of 172. How many strides is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bar":{"u":172,"w":688,"kind":"unitCount"},"promptText":"Priya's bar stands for 688. How many equal parts of 172 fit in it?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0449",
@@ -10442,7 +10442,7 @@ export const ITEMS = [
     structureType: "unitCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bar":{"u":181,"w":905,"kind":"unitCount"},"promptText":"Exactly how many 181-units make up Sam's 905-bar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bar":{"u":181,"w":905,"kind":"unitCount"},"promptText":"How many equal parts of 181 make Sam's bar for 905?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0450",
@@ -10452,7 +10452,7 @@ export const ITEMS = [
     structureType: "unitCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bar":{"u":111,"w":666,"kind":"unitCount"},"promptText":"Nia measures a 666-bar in strides of 111. How many strides is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bar":{"u":111,"w":666,"kind":"unitCount"},"promptText":"Nia's bar stands for 666. How many equal parts of 111 fit in it?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-conc-b0821-0451",
@@ -10462,7 +10462,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":12,"den":2,"num":1,"kind":"fracSaid","said":6},"truth":true,"promptText":"Mina says half of a 12-bar is 6. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":12,"den":2,"num":1,"kind":"fracSaid","said":6},"truth":true,"promptText":"Mina folds a bar for 12 in half. Mina says each half is 6. Is Mina right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0452",
@@ -10472,7 +10472,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":16,"den":2,"num":1,"kind":"fracSaid","said":7},"truth":false,"promptText":"Half of 16, according to Theo, is 7. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":16,"den":2,"num":1,"kind":"fracSaid","said":7},"truth":false,"promptText":"Theo cuts a bar for 16 into 2 equal parts and says each part is 7. Is Theo right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0453",
@@ -10482,7 +10482,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":20,"den":2,"num":1,"kind":"fracSaid","said":10},"truth":true,"promptText":"Ida says half of a 20-bar is 10. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":20,"den":2,"num":1,"kind":"fracSaid","said":10},"truth":true,"promptText":"Ida says each half of a bar for 20 is 10. Is Ida right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0454",
@@ -10492,7 +10492,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":14,"den":2,"num":1,"kind":"fracSaid","said":8},"truth":false,"promptText":"Half of 14, according to Zoe, is 8. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":14,"den":2,"num":1,"kind":"fracSaid","said":8},"truth":false,"promptText":"Zoe folds a bar for 14 in half. Zoe says each half is 8. Is Zoe right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0455",
@@ -10502,7 +10502,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":18,"den":2,"num":1,"kind":"fracSaid","said":9},"truth":true,"promptText":"Rosa says half of a 18-bar is 9. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":18,"den":2,"num":1,"kind":"fracSaid","said":9},"truth":true,"promptText":"Rosa says each half of a bar for 18 is 9. Is Rosa right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0456",
@@ -10512,7 +10512,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":10,"den":2,"num":1,"kind":"fracSaid","said":6},"truth":false,"promptText":"Half of 10, according to Diego, is 6. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":10,"den":2,"num":1,"kind":"fracSaid","said":6},"truth":false,"promptText":"Diego says each half of a bar for 10 is 6. Is Diego right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0457",
@@ -10522,7 +10522,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":8,"den":2,"num":1,"kind":"fracSaid","said":4},"truth":true,"promptText":"Nora says half of a 8-bar is 4. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":8,"den":2,"num":1,"kind":"fracSaid","said":4},"truth":true,"promptText":"Nora cuts a bar for 8 into 2 equal parts and says each part is 4. Is Nora right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0458",
@@ -10532,7 +10532,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":6,"den":2,"num":1,"kind":"fracSaid","said":4},"truth":false,"promptText":"Half of 6, according to Luca, is 4. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":6,"den":2,"num":1,"kind":"fracSaid","said":4},"truth":false,"promptText":"Luca cuts a bar for 6 into 2 equal parts. Luca says each part is 4. Is Luca right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0459",
@@ -10542,7 +10542,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":4,"den":2,"num":1,"kind":"fracSaid","said":2},"truth":true,"promptText":"Ava says half of a 4-bar is 2. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":4,"den":2,"num":1,"kind":"fracSaid","said":2},"truth":true,"promptText":"Ava folds a bar for 4 in half. Ava says each half is 2. Is Ava right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0460",
@@ -10552,7 +10552,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":12,"den":2,"num":1,"kind":"fracSaid","said":5},"truth":false,"promptText":"Half of 12, according to Omar, is 5. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":12,"den":2,"num":1,"kind":"fracSaid","said":5},"truth":false,"promptText":"Omar cuts a bar for 12 into 2 equal parts. Omar says each part is 5. Is Omar right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0461",
@@ -10562,7 +10562,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":16,"den":2,"num":1,"kind":"fracSaid","said":8},"truth":true,"promptText":"Ben says half of a 16-bar is 8. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":16,"den":2,"num":1,"kind":"fracSaid","said":8},"truth":true,"promptText":"Ben cuts a bar for 16 into 2 equal parts. Ben says each part is 8. Is Ben right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0462",
@@ -10572,7 +10572,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":20,"den":2,"num":1,"kind":"fracSaid","said":11},"truth":false,"promptText":"Half of 20, according to Finn, is 11. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":20,"den":2,"num":1,"kind":"fracSaid","said":11},"truth":false,"promptText":"Finn cuts a bar for 20 into 2 equal parts and says each part is 11. Is Finn right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0463",
@@ -10582,7 +10582,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":14,"den":2,"num":1,"kind":"fracSaid","said":7},"truth":true,"promptText":"Priya says half of a 14-bar is 7. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":14,"den":2,"num":1,"kind":"fracSaid","said":7},"truth":true,"promptText":"Priya cuts a bar for 14 into 2 equal parts and says each part is 7. Is Priya right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0464",
@@ -10592,7 +10592,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":18,"den":2,"num":1,"kind":"fracSaid","said":8},"truth":false,"promptText":"Half of 18, according to Sam, is 8. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":18,"den":2,"num":1,"kind":"fracSaid","said":8},"truth":false,"promptText":"Sam folds a bar for 18 in half. Sam says each half is 8. Is Sam right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0465",
@@ -10602,7 +10602,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":10,"den":2,"num":1,"kind":"fracSaid","said":5},"truth":true,"promptText":"Nia says half of a 10-bar is 5. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":10,"den":2,"num":1,"kind":"fracSaid","said":5},"truth":true,"promptText":"Nia cuts a bar for 10 into 2 equal parts and says each part is 5. Is Nia right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0466",
@@ -10612,7 +10612,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":8,"den":2,"num":1,"kind":"fracSaid","said":5},"truth":false,"promptText":"Half of 8, according to Kai, is 5. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":8,"den":2,"num":1,"kind":"fracSaid","said":5},"truth":false,"promptText":"Kai says each half of a bar for 8 is 5. Is Kai right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0467",
@@ -10622,7 +10622,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":6,"den":2,"num":1,"kind":"fracSaid","said":3},"truth":true,"promptText":"June says half of a 6-bar is 3. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":6,"den":2,"num":1,"kind":"fracSaid","said":3},"truth":true,"promptText":"June cuts a bar for 6 into 2 equal parts. June says each part is 3. Is June right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0468",
@@ -10632,7 +10632,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":4,"den":2,"num":1,"kind":"fracSaid","said":3},"truth":false,"promptText":"Half of 4, according to Lily, is 3. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":4,"den":2,"num":1,"kind":"fracSaid","said":3},"truth":false,"promptText":"Lily says each half of a bar for 4 is 3. Is Lily right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0469",
@@ -10642,7 +10642,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":84,"den":2,"num":1,"kind":"fracSaid","said":42},"truth":true,"promptText":"Omar halves a 84-bar and writes 42. Does the halving hold up?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":84,"den":2,"num":1,"kind":"fracSaid","said":42},"truth":true,"promptText":"Omar draws a bar for 84 and cuts it in half. Omar says each half is 42. Is Omar right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0470",
@@ -10652,7 +10652,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":76,"den":2,"num":1,"kind":"fracSaid","said":39},"truth":false,"promptText":"A 76-bar folded in half should show 39, says Ben. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":76,"den":2,"num":1,"kind":"fracSaid","said":39},"truth":false,"promptText":"Ben splits a bar for 76 into 2 equal parts and says each part is 39. Is Ben right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0471",
@@ -10662,7 +10662,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":94,"den":2,"num":1,"kind":"fracSaid","said":47},"truth":true,"promptText":"Finn halves a 94-bar and writes 47. Does the halving hold up?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":94,"den":2,"num":1,"kind":"fracSaid","said":47},"truth":true,"promptText":"Finn splits a bar for 94 into 2 equal parts and says each part is 47. Is Finn right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0472",
@@ -10672,7 +10672,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":68,"den":2,"num":1,"kind":"fracSaid","said":35},"truth":false,"promptText":"A 68-bar folded in half should show 35, says Priya. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":68,"den":2,"num":1,"kind":"fracSaid","said":35},"truth":false,"promptText":"Priya draws a bar for 68 and cuts it in half. Priya says each half is 35. Is Priya right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0473",
@@ -10682,7 +10682,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":92,"den":2,"num":1,"kind":"fracSaid","said":46},"truth":true,"promptText":"Sam halves a 92-bar and writes 46. Does the halving hold up?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":92,"den":2,"num":1,"kind":"fracSaid","said":46},"truth":true,"promptText":"Sam folds a bar for 92 in half. Sam says each half is 46. Is Sam right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0474",
@@ -10692,7 +10692,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":88,"den":2,"num":1,"kind":"fracSaid","said":45},"truth":false,"promptText":"A 88-bar folded in half should show 45, says Nia. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":88,"den":2,"num":1,"kind":"fracSaid","said":45},"truth":false,"promptText":"Nia draws a bar for 88 and cuts it in half. Nia says each half is 45. Is Nia right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0475",
@@ -10702,7 +10702,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":96,"den":2,"num":1,"kind":"fracSaid","said":48},"truth":true,"promptText":"Kai halves a 96-bar and writes 48. Does the halving hold up?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":96,"den":2,"num":1,"kind":"fracSaid","said":48},"truth":true,"promptText":"Kai draws a bar for 96 and cuts it in half. Kai says each half is 48. Is Kai right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0476",
@@ -10712,7 +10712,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":72,"den":2,"num":1,"kind":"fracSaid","said":37},"truth":false,"promptText":"A 72-bar folded in half should show 37, says June. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":72,"den":2,"num":1,"kind":"fracSaid","said":37},"truth":false,"promptText":"June splits a bar for 72 into 2 equal parts and says each part is 37. Is June right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0477",
@@ -10722,7 +10722,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":86,"den":2,"num":1,"kind":"fracSaid","said":43},"truth":true,"promptText":"Lily halves a 86-bar and writes 43. Does the halving hold up?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":86,"den":2,"num":1,"kind":"fracSaid","said":43},"truth":true,"promptText":"Lily says each half of a bar for 86 is 43. Is Lily right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0478",
@@ -10732,7 +10732,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":78,"den":2,"num":1,"kind":"fracSaid","said":40},"truth":false,"promptText":"A 78-bar folded in half should show 40, says Amara. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":78,"den":2,"num":1,"kind":"fracSaid","said":40},"truth":false,"promptText":"Amara says each half of a bar for 78 is 40. Is Amara right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0479",
@@ -10742,7 +10742,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":90,"den":2,"num":1,"kind":"fracSaid","said":45},"truth":true,"promptText":"Leo halves a 90-bar and writes 45. Does the halving hold up?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":90,"den":2,"num":1,"kind":"fracSaid","said":45},"truth":true,"promptText":"Leo draws a bar for 90 and cuts it in half. Leo says each half is 45. Is Leo right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0480",
@@ -10752,7 +10752,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":64,"den":2,"num":1,"kind":"fracSaid","said":33},"truth":false,"promptText":"A 64-bar folded in half should show 33, says Mina. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":64,"den":2,"num":1,"kind":"fracSaid","said":33},"truth":false,"promptText":"Mina folds a bar for 64 in half. Mina says each half is 33. Is Mina right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0481",
@@ -10762,7 +10762,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":82,"den":2,"num":1,"kind":"fracSaid","said":41},"truth":true,"promptText":"Theo halves a 82-bar and writes 41. Does the halving hold up?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":82,"den":2,"num":1,"kind":"fracSaid","said":41},"truth":true,"promptText":"Theo says each half of a bar for 82 is 41. Is Theo right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0482",
@@ -10772,7 +10772,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":98,"den":2,"num":1,"kind":"fracSaid","said":50},"truth":false,"promptText":"A 98-bar folded in half should show 50, says Ida. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":98,"den":2,"num":1,"kind":"fracSaid","said":50},"truth":false,"promptText":"Ida says each half of a bar for 98 is 50. Is Ida right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0483",
@@ -10782,7 +10782,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":74,"den":2,"num":1,"kind":"fracSaid","said":37},"truth":true,"promptText":"Zoe halves a 74-bar and writes 37. Does the halving hold up?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":74,"den":2,"num":1,"kind":"fracSaid","said":37},"truth":true,"promptText":"Zoe folds a bar for 74 in half. Zoe says each half is 37. Is Zoe right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0484",
@@ -10792,7 +10792,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":66,"den":2,"num":1,"kind":"fracSaid","said":34},"truth":false,"promptText":"A 66-bar folded in half should show 34, says Rosa. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":66,"den":2,"num":1,"kind":"fracSaid","said":34},"truth":false,"promptText":"Rosa folds a bar for 66 in half. Rosa says each half is 34. Is Rosa right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0485",
@@ -10802,7 +10802,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":80,"den":2,"num":1,"kind":"fracSaid","said":40},"truth":true,"promptText":"Diego halves a 80-bar and writes 40. Does the halving hold up?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":80,"den":2,"num":1,"kind":"fracSaid","said":40},"truth":true,"promptText":"Diego splits a bar for 80 into 2 equal parts and says each part is 40. Is Diego right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0486",
@@ -10812,7 +10812,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":70,"den":2,"num":1,"kind":"fracSaid","said":36},"truth":false,"promptText":"A 70-bar folded in half should show 36, says Nora. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":70,"den":2,"num":1,"kind":"fracSaid","said":36},"truth":false,"promptText":"Nora says each half of a bar for 70 is 36. Is Nora right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0487",
@@ -10822,7 +10822,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":848,"den":2,"num":1,"kind":"fracSaid","said":424},"truth":true,"promptText":"Finn computes half of 848 as 424. Is the computation right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":848,"den":2,"num":1,"kind":"fracSaid","said":424},"truth":true,"promptText":"Finn finds half of 848 and gets 424. Is Finn right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0488",
@@ -10832,7 +10832,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":764,"den":2,"num":1,"kind":"fracSaid","said":383},"truth":false,"promptText":"Half of a 764-bar equals 383 — Priya stakes the claim. Does it stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":764,"den":2,"num":1,"kind":"fracSaid","said":383},"truth":false,"promptText":"Priya finds half of 764 and gets 383. Is Priya right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0489",
@@ -10842,7 +10842,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":946,"den":2,"num":1,"kind":"fracSaid","said":473},"truth":true,"promptText":"Sam computes half of 946 as 473. Is the computation right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":946,"den":2,"num":1,"kind":"fracSaid","said":473},"truth":true,"promptText":"Sam draws a bar for 946 and splits it into 2 equal parts. Sam says each part is 473. Is Sam right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0490",
@@ -10852,7 +10852,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":688,"den":2,"num":1,"kind":"fracSaid","said":345},"truth":false,"promptText":"Half of a 688-bar equals 345 — Nia stakes the claim. Does it stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":688,"den":2,"num":1,"kind":"fracSaid","said":345},"truth":false,"promptText":"Nia says half of 688 is 345. Is Nia right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0491",
@@ -10862,7 +10862,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":928,"den":2,"num":1,"kind":"fracSaid","said":464},"truth":true,"promptText":"Kai computes half of 928 as 464. Is the computation right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":928,"den":2,"num":1,"kind":"fracSaid","said":464},"truth":true,"promptText":"Kai says half of 928 is 464. Is Kai right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0492",
@@ -10872,7 +10872,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":886,"den":2,"num":1,"kind":"fracSaid","said":444},"truth":false,"promptText":"Half of a 886-bar equals 444 — June stakes the claim. Does it stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":886,"den":2,"num":1,"kind":"fracSaid","said":444},"truth":false,"promptText":"June draws a bar for 886 and splits it into 2 equal parts. June says each part is 444. Is June right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0493",
@@ -10882,7 +10882,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":968,"den":2,"num":1,"kind":"fracSaid","said":484},"truth":true,"promptText":"Lily computes half of 968 as 484. Is the computation right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":968,"den":2,"num":1,"kind":"fracSaid","said":484},"truth":true,"promptText":"Lily folds a bar for 968 in half. Lily says each half is 484. Is Lily right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0494",
@@ -10892,7 +10892,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":726,"den":2,"num":1,"kind":"fracSaid","said":364},"truth":false,"promptText":"Half of a 726-bar equals 364 — Amara stakes the claim. Does it stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":726,"den":2,"num":1,"kind":"fracSaid","said":364},"truth":false,"promptText":"Amara folds a bar for 726 in half. Amara says each half is 364. Is Amara right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0495",
@@ -10902,7 +10902,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":864,"den":2,"num":1,"kind":"fracSaid","said":432},"truth":true,"promptText":"Leo computes half of 864 as 432. Is the computation right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":864,"den":2,"num":1,"kind":"fracSaid","said":432},"truth":true,"promptText":"Leo finds half of 864 and gets 432. Is Leo right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0496",
@@ -10912,7 +10912,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":786,"den":2,"num":1,"kind":"fracSaid","said":394},"truth":false,"promptText":"Half of a 786-bar equals 394 — Mina stakes the claim. Does it stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":786,"den":2,"num":1,"kind":"fracSaid","said":394},"truth":false,"promptText":"Mina says each half of a bar for 786 is 394. Is Mina right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0497",
@@ -10922,7 +10922,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":906,"den":2,"num":1,"kind":"fracSaid","said":453},"truth":true,"promptText":"Theo computes half of 906 as 453. Is the computation right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":906,"den":2,"num":1,"kind":"fracSaid","said":453},"truth":true,"promptText":"Theo says each half of a bar for 906 is 453. Is Theo right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0498",
@@ -10932,7 +10932,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":644,"den":2,"num":1,"kind":"fracSaid","said":323},"truth":false,"promptText":"Half of a 644-bar equals 323 — Ida stakes the claim. Does it stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":644,"den":2,"num":1,"kind":"fracSaid","said":323},"truth":false,"promptText":"Ida folds a bar for 644 in half. Ida says each half is 323. Is Ida right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0499",
@@ -10942,7 +10942,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":824,"den":2,"num":1,"kind":"fracSaid","said":412},"truth":true,"promptText":"Zoe computes half of 824 as 412. Is the computation right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":824,"den":2,"num":1,"kind":"fracSaid","said":412},"truth":true,"promptText":"Zoe draws a bar for 824 and splits it into 2 equal parts. Zoe says each part is 412. Is Zoe right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0500",
@@ -10952,7 +10952,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":986,"den":2,"num":1,"kind":"fracSaid","said":494},"truth":false,"promptText":"Half of a 986-bar equals 494 — Rosa stakes the claim. Does it stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":986,"den":2,"num":1,"kind":"fracSaid","said":494},"truth":false,"promptText":"Rosa says half of 986 is 494. Is Rosa right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0501",
@@ -10962,7 +10962,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":744,"den":2,"num":1,"kind":"fracSaid","said":372},"truth":true,"promptText":"Diego computes half of 744 as 372. Is the computation right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":744,"den":2,"num":1,"kind":"fracSaid","said":372},"truth":true,"promptText":"Diego says half of 744 is 372. Is Diego right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0502",
@@ -10972,7 +10972,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":666,"den":2,"num":1,"kind":"fracSaid","said":334},"truth":false,"promptText":"Half of a 666-bar equals 334 — Nora stakes the claim. Does it stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":666,"den":2,"num":1,"kind":"fracSaid","said":334},"truth":false,"promptText":"Nora finds half of 666 and gets 334. Is Nora right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0503",
@@ -10982,7 +10982,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":808,"den":2,"num":1,"kind":"fracSaid","said":404},"truth":true,"promptText":"Luca computes half of 808 as 404. Is the computation right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"w":808,"den":2,"num":1,"kind":"fracSaid","said":404},"truth":true,"promptText":"Luca folds a bar for 808 in half. Luca says each half is 404. Is Luca right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0504",
@@ -10992,7 +10992,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":706,"den":2,"num":1,"kind":"fracSaid","said":354},"truth":false,"promptText":"Half of a 706-bar equals 354 — Ava stakes the claim. Does it stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bar":{"w":706,"den":2,"num":1,"kind":"fracSaid","said":354},"truth":false,"promptText":"Ava draws a bar for 706 and splits it into 2 equal parts. Ava says each part is 354. Is Ava right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0505",
@@ -11002,7 +11002,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one half","one quarter"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"From a 12-bar, would Nia get more with one half or one quarter?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one half","one quarter"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Nia can take one half or one quarter of a bar for 12. Which piece is bigger?"}},
   },
   {
     itemId: "barModels-conc-b0821-0506",
@@ -11012,7 +11012,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one quarter","one half"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Kai picks a piece of a 16-bar: a half or a quarter. Which piece is bigger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one quarter","one half"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Kai cuts a bar for 16 into halves and another bar for 16 into quarters. Which piece is bigger, one half or one quarter?"}},
   },
   {
     itemId: "barModels-conc-b0821-0507",
@@ -11022,7 +11022,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one half","one quarter"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"From a 20-bar, would June get more with one half or one quarter?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one half","one quarter"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"June can take one half or one quarter of a bar for 20. Which piece is bigger?"}},
   },
   {
     itemId: "barModels-conc-b0821-0508",
@@ -11032,7 +11032,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one half","one quarter"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Lily picks a piece of a 8-bar: a half or a quarter. Which piece is bigger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one half","one quarter"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Lily cuts one bar for 8 into halves and another bar for 8 into quarters. Which piece is bigger, one half or one quarter?"}},
   },
   {
     itemId: "barModels-conc-b0821-0509",
@@ -11042,7 +11042,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one quarter","one half"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"From a 4-bar, would Amara get more with one half or one quarter?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one quarter","one half"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Would Amara get more from one half of a bar for 4 or from one quarter of it?"}},
   },
   {
     itemId: "barModels-conc-b0821-0510",
@@ -11052,7 +11052,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one half","one quarter"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Leo picks a piece of a 12-bar: a half or a quarter. Which piece is bigger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one half","one quarter"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Leo can take one half or one quarter of a bar for 12. Which piece is bigger?"}},
   },
   {
     itemId: "barModels-conc-b0821-0511",
@@ -11062,7 +11062,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one half","one quarter"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"From a 16-bar, would Mina get more with one half or one quarter?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one half","one quarter"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Would Mina get more from one half of a bar for 16 or from one quarter of it?"}},
   },
   {
     itemId: "barModels-conc-b0821-0512",
@@ -11072,7 +11072,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one quarter","one half"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Theo picks a piece of a 20-bar: a half or a quarter. Which piece is bigger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one quarter","one half"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Theo can take one half or one quarter of a bar for 20. Which piece is bigger?"}},
   },
   {
     itemId: "barModels-conc-b0821-0513",
@@ -11082,7 +11082,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one quarter","one half"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"From a 8-bar, would Ida get more with one half or one quarter?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one quarter","one half"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Would Ida get more from one half of a bar for 8 or from one quarter of it?"}},
   },
   {
     itemId: "barModels-conc-b0821-0514",
@@ -11092,7 +11092,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one quarter","one half"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Zoe picks a piece of a 4-bar: a half or a quarter. Which piece is bigger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one quarter","one half"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Zoe cuts one bar for 4 into halves and another bar for 4 into quarters. Which piece is bigger, one half or one quarter?"}},
   },
   {
     itemId: "barModels-conc-b0821-0515",
@@ -11102,7 +11102,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one half","one quarter"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"From a 12-bar, would Rosa get more with one half or one quarter?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one half","one quarter"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Rosa can take one half or one quarter of a bar for 12. Which piece is bigger?"}},
   },
   {
     itemId: "barModels-conc-b0821-0516",
@@ -11112,7 +11112,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one quarter","one half"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Diego picks a piece of a 16-bar: a half or a quarter. Which piece is bigger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one quarter","one half"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Diego cuts a bar for 16 into halves and another bar for 16 into quarters. Which piece is bigger, one half or one quarter?"}},
   },
   {
     itemId: "barModels-conc-b0821-0517",
@@ -11122,7 +11122,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one quarter","one half"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"From a 20-bar, would Nora get more with one half or one quarter?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one quarter","one half"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Would Nora get more from one half of a bar for 20 or from one quarter of it?"}},
   },
   {
     itemId: "barModels-conc-b0821-0518",
@@ -11132,7 +11132,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one half","one quarter"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Luca picks a piece of a 8-bar: a half or a quarter. Which piece is bigger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one half","one quarter"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Luca can take one half or one quarter of a bar for 8. Which piece is bigger?"}},
   },
   {
     itemId: "barModels-conc-b0821-0519",
@@ -11142,7 +11142,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one half","one quarter"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"From a 4-bar, would Ava get more with one half or one quarter?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one half","one quarter"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Ava can take one half or one quarter of a bar for 4. Which piece is bigger?"}},
   },
   {
     itemId: "barModels-conc-b0821-0520",
@@ -11152,7 +11152,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one quarter","one half"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Omar picks a piece of a 12-bar: a half or a quarter. Which piece is bigger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one half","choices":["one quarter","one half"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Omar cuts one bar for 12 into halves and another bar for 12 into quarters. Which piece is bigger, one half or one quarter?"}},
   },
   {
     itemId: "barModels-conc-b0821-0521",
@@ -11162,7 +11162,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one third","one sixth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Cutting a 84-bar, is one third or one sixth the larger share? Zoe chooses."}},
+    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one third","one sixth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Zoe cuts one bar for 84 into thirds and another bar for 84 into sixths. Which piece is larger, one third or one sixth?"}},
   },
   {
     itemId: "barModels-conc-b0821-0522",
@@ -11172,7 +11172,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one third","one sixth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Rosa weighs one third of 96 against one sixth of 96. Which share wins?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one third","one sixth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Rosa cuts one bar for 96 into thirds and another bar for 96 into sixths. Which share is larger, one third or one sixth?"}},
   },
   {
     itemId: "barModels-conc-b0821-0523",
@@ -11182,7 +11182,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one sixth","one third"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Cutting a 72-bar, is one third or one sixth the larger share? Diego chooses."}},
+    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one sixth","one third"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Diego can have one third or one sixth of a bar for 72. Which share is larger?"}},
   },
   {
     itemId: "barModels-conc-b0821-0524",
@@ -11192,7 +11192,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one third","one sixth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Nora weighs one third of 66 against one sixth of 66. Which share wins?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one third","one sixth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Nora cuts one bar for 66 into thirds and another bar for 66 into sixths. Which share is larger, one third or one sixth?"}},
   },
   {
     itemId: "barModels-conc-b0821-0525",
@@ -11202,7 +11202,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one sixth","one third"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Cutting a 90-bar, is one third or one sixth the larger share? Luca chooses."}},
+    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one sixth","one third"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Luca can have one third or one sixth of a bar for 90. Which share is larger?"}},
   },
   {
     itemId: "barModels-conc-b0821-0526",
@@ -11212,7 +11212,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one third","one sixth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Ava weighs one third of 78 against one sixth of 78. Which share wins?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one third","one sixth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Ava can choose one third of 78 or one sixth of 78. Which share is bigger?"}},
   },
   {
     itemId: "barModels-conc-b0821-0527",
@@ -11222,7 +11222,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one third","one sixth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Cutting a 84-bar, is one third or one sixth the larger share? Omar chooses."}},
+    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one third","one sixth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Omar cuts one bar for 84 into thirds and another bar for 84 into sixths. Which piece is larger, one third or one sixth?"}},
   },
   {
     itemId: "barModels-conc-b0821-0528",
@@ -11232,7 +11232,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one sixth","one third"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Ben weighs one third of 96 against one sixth of 96. Which share wins?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one sixth","one third"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Ben can choose one third of 96 or one sixth of 96. Which share is bigger?"}},
   },
   {
     itemId: "barModels-conc-b0821-0529",
@@ -11242,7 +11242,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one third","one sixth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Cutting a 72-bar, is one third or one sixth the larger share? Finn chooses."}},
+    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one third","one sixth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Finn cuts one bar for 72 into thirds and another bar for 72 into sixths. Which piece is larger, one third or one sixth?"}},
   },
   {
     itemId: "barModels-conc-b0821-0530",
@@ -11252,7 +11252,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one third","one sixth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Priya weighs one third of 66 against one sixth of 66. Which share wins?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one third","one sixth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Priya can have one third of 66 or one sixth of 66. Which share is larger?"}},
   },
   {
     itemId: "barModels-conc-b0821-0531",
@@ -11262,7 +11262,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one third","one sixth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Cutting a 90-bar, is one third or one sixth the larger share? Sam chooses."}},
+    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one third","one sixth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Sam can have one third or one sixth of a bar for 90. Which share is larger?"}},
   },
   {
     itemId: "barModels-conc-b0821-0532",
@@ -11272,7 +11272,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one sixth","one third"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Nia weighs one third of 78 against one sixth of 78. Which share wins?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one sixth","one third"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Nia can have one third of 78 or one sixth of 78. Which share is larger?"}},
   },
   {
     itemId: "barModels-conc-b0821-0533",
@@ -11282,7 +11282,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one third","one sixth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Cutting a 84-bar, is one third or one sixth the larger share? Kai chooses."}},
+    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one third","one sixth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Kai can have one third or one sixth of a bar for 84. Which share is larger?"}},
   },
   {
     itemId: "barModels-conc-b0821-0534",
@@ -11292,7 +11292,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one sixth","one third"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"June weighs one third of 96 against one sixth of 96. Which share wins?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one sixth","one third"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"June can choose one third of 96 or one sixth of 96. Which share is bigger?"}},
   },
   {
     itemId: "barModels-conc-b0821-0535",
@@ -11302,7 +11302,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one third","one sixth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Cutting a 72-bar, is one third or one sixth the larger share? Lily chooses."}},
+    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one third","one sixth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Lily cuts one bar for 72 into thirds and another bar for 72 into sixths. Which piece is larger, one third or one sixth?"}},
   },
   {
     itemId: "barModels-conc-b0821-0536",
@@ -11312,7 +11312,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one third","one sixth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Amara weighs one third of 66 against one sixth of 66. Which share wins?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one third","choices":["one third","one sixth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Amara can choose one third of 66 or one sixth of 66. Which share is bigger?"}},
   },
   {
     itemId: "barModels-conc-b0821-0537",
@@ -11322,7 +11322,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fifth","one fourth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Of a 840-bar, which is larger: one fourth or one fifth? Diego reasons it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fifth","one fourth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Diego has a bar for 840. Which is larger, one fourth of the bar or one fifth of the bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0538",
@@ -11332,7 +11332,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fifth","one fourth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Nora contrasts a fourth of 960 with a fifth of 960. Which piece is larger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fifth","one fourth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Nora compares one fourth of 960 with one fifth of 960. Which piece is larger?"}},
   },
   {
     itemId: "barModels-conc-b0821-0539",
@@ -11342,7 +11342,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fifth","one fourth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Of a 720-bar, which is larger: one fourth or one fifth? Luca reasons it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fifth","one fourth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Luca cuts one bar for 720 into fourths and another bar for 720 into fifths. Which piece is larger, one fourth or one fifth?"}},
   },
   {
     itemId: "barModels-conc-b0821-0540",
@@ -11352,7 +11352,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fifth","one fourth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Ava contrasts a fourth of 660 with a fifth of 660. Which piece is larger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fifth","one fourth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Ava cuts one bar for 660 into fourths and another bar for 660 into fifths. Which piece is larger, one fourth or one fifth?"}},
   },
   {
     itemId: "barModels-conc-b0821-0541",
@@ -11362,7 +11362,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fifth","one fourth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Of a 900-bar, which is larger: one fourth or one fifth? Omar reasons it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fifth","one fourth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Omar has a bar for 900. Which is larger, one fourth of the bar or one fifth of the bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0542",
@@ -11372,7 +11372,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fifth","one fourth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Ben contrasts a fourth of 780 with a fifth of 780. Which piece is larger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fifth","one fourth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Ben can take one fourth of 780 or one fifth of 780. Which piece is larger?"}},
   },
   {
     itemId: "barModels-conc-b0821-0543",
@@ -11382,7 +11382,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fifth","one fourth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Of a 840-bar, which is larger: one fourth or one fifth? Finn reasons it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fifth","one fourth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Finn cuts one bar for 840 into fourths and another bar for 840 into fifths. Which piece is larger, one fourth or one fifth?"}},
   },
   {
     itemId: "barModels-conc-b0821-0544",
@@ -11392,7 +11392,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fourth","one fifth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Priya contrasts a fourth of 960 with a fifth of 960. Which piece is larger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fourth","one fifth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Priya can take one fourth of 960 or one fifth of 960. Which piece is larger?"}},
   },
   {
     itemId: "barModels-conc-b0821-0545",
@@ -11402,7 +11402,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fourth","one fifth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Of a 720-bar, which is larger: one fourth or one fifth? Sam reasons it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fourth","one fifth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Sam cuts one bar for 720 into fourths and another bar for 720 into fifths. Which piece is larger, one fourth or one fifth?"}},
   },
   {
     itemId: "barModels-conc-b0821-0546",
@@ -11412,7 +11412,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fifth","one fourth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Nia contrasts a fourth of 660 with a fifth of 660. Which piece is larger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fifth","one fourth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Nia can take one fourth of 660 or one fifth of 660. Which piece is larger?"}},
   },
   {
     itemId: "barModels-conc-b0821-0547",
@@ -11422,7 +11422,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fifth","one fourth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Of a 900-bar, which is larger: one fourth or one fifth? Kai reasons it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fifth","one fourth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Kai has a bar for 900. Which is larger, one fourth of the bar or one fifth of the bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0548",
@@ -11432,7 +11432,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fourth","one fifth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"June contrasts a fourth of 780 with a fifth of 780. Which piece is larger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fourth","one fifth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"June cuts one bar for 780 into fourths and another bar for 780 into fifths. Which piece is larger, one fourth or one fifth?"}},
   },
   {
     itemId: "barModels-conc-b0821-0549",
@@ -11442,7 +11442,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fifth","one fourth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Of a 840-bar, which is larger: one fourth or one fifth? Lily reasons it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fifth","one fourth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Lily has a bar for 840. Which is larger, one fourth of the bar or one fifth of the bar?"}},
   },
   {
     itemId: "barModels-conc-b0821-0550",
@@ -11452,7 +11452,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fifth","one fourth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Amara contrasts a fourth of 960 with a fifth of 960. Which piece is larger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fifth","one fourth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Amara can take one fourth of 960 or one fifth of 960. Which piece is larger?"}},
   },
   {
     itemId: "barModels-conc-b0821-0551",
@@ -11462,7 +11462,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fourth","one fifth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Of a 720-bar, which is larger: one fourth or one fifth? Leo reasons it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fourth","one fifth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Leo cuts one bar for 720 into fourths and another bar for 720 into fifths. Which piece is larger, one fourth or one fifth?"}},
   },
   {
     itemId: "barModels-conc-b0821-0552",
@@ -11472,7 +11472,7 @@ export const ITEMS = [
     structureType: "biggerPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fifth","one fourth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Mina contrasts a fourth of 660 with a fifth of 660. Which piece is larger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one fourth","choices":["one fifth","one fourth"],"display":{"bar":{"kind":"biggerPiece"},"promptText":"Mina compares one fourth of 660 with one fifth of 660. Which piece is larger?"}},
   },
   {
     itemId: "barModels-conc-b0821-0553",
@@ -11482,7 +11482,7 @@ export const ITEMS = [
     structureType: "sharePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[10,6,7,5],"display":{"bar":{"k":2,"w":12,"kind":"unitOf"},"promptText":"Ava shares a 12-bar equally among 2 friends. Which amount does each friend get?"}},
+    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[10,6,7,5],"display":{"bar":{"k":2,"w":12,"kind":"unitOf"},"promptText":"Ava draws a bar for 12 stickers and cuts it into 2 equal parts, one for each friend. How many stickers does each friend get?"}},
   },
   {
     itemId: "barModels-conc-b0821-0554",
@@ -11492,7 +11492,7 @@ export const ITEMS = [
     structureType: "sharePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[9,4,3,5],"display":{"bar":{"k":3,"w":12,"kind":"unitOf"},"promptText":"A 12-bar split fairly 3 ways gives each of Omar's friends how much? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[9,4,3,5],"display":{"bar":{"k":3,"w":12,"kind":"unitOf"},"promptText":"Omar draws a bar for 12 and splits it into 3 equal parts. How much is each part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0555",
@@ -11502,7 +11502,7 @@ export const ITEMS = [
     structureType: "sharePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[8,3,2,4],"display":{"bar":{"k":4,"w":12,"kind":"unitOf"},"promptText":"Ben shares a 12-bar equally among 4 friends. Which amount does each friend get?"}},
+    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[8,3,2,4],"display":{"bar":{"k":4,"w":12,"kind":"unitOf"},"promptText":"To share 12 stickers equally among 4 friends, Ben draws a bar for 12 and cuts it into 4 equal parts. How many stickers does each friend get?"}},
   },
   {
     itemId: "barModels-conc-b0821-0556",
@@ -11512,7 +11512,7 @@ export const ITEMS = [
     structureType: "sharePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[14,7,8,9],"display":{"bar":{"k":2,"w":16,"kind":"unitOf"},"promptText":"A 16-bar split fairly 2 ways gives each of Finn's friends how much? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[14,7,8,9],"display":{"bar":{"k":2,"w":16,"kind":"unitOf"},"promptText":"Finn draws a bar for 16 and splits it into 2 equal parts. How much is each part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0557",
@@ -11522,7 +11522,7 @@ export const ITEMS = [
     structureType: "sharePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[12,4,3,5],"display":{"bar":{"k":4,"w":16,"kind":"unitOf"},"promptText":"Priya shares a 16-bar equally among 4 friends. Which amount does each friend get?"}},
+    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[12,4,3,5],"display":{"bar":{"k":4,"w":16,"kind":"unitOf"},"promptText":"Priya draws a bar for 16 and cuts it into 4 equal shares, one for each friend. How much is each friend's share?"}},
   },
   {
     itemId: "barModels-conc-b0821-0558",
@@ -11532,7 +11532,7 @@ export const ITEMS = [
     structureType: "sharePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[8,10,9,16],"display":{"bar":{"k":2,"w":18,"kind":"unitOf"},"promptText":"A 18-bar split fairly 2 ways gives each of Sam's friends how much? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[8,10,9,16],"display":{"bar":{"k":2,"w":18,"kind":"unitOf"},"promptText":"Sam draws a bar for 18 and splits it into 2 equal parts. How much is each part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0559",
@@ -11542,7 +11542,7 @@ export const ITEMS = [
     structureType: "sharePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[5,7,15,6],"display":{"bar":{"k":3,"w":18,"kind":"unitOf"},"promptText":"Nia shares a 18-bar equally among 3 friends. Which amount does each friend get?"}},
+    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[5,7,15,6],"display":{"bar":{"k":3,"w":18,"kind":"unitOf"},"promptText":"Nia cuts a bar for 18 into 3 equal shares, one for each friend. How much is one share?"}},
   },
   {
     itemId: "barModels-conc-b0821-0560",
@@ -11552,7 +11552,7 @@ export const ITEMS = [
     structureType: "sharePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[9,10,11,18],"display":{"bar":{"k":2,"w":20,"kind":"unitOf"},"promptText":"A 20-bar split fairly 2 ways gives each of Kai's friends how much? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[9,10,11,18],"display":{"bar":{"k":2,"w":20,"kind":"unitOf"},"promptText":"Kai draws a bar for 20 and splits it into 2 equal parts. How much is each part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0561",
@@ -11562,7 +11562,7 @@ export const ITEMS = [
     structureType: "sharePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[6,16,5,4],"display":{"bar":{"k":4,"w":20,"kind":"unitOf"},"promptText":"June shares a 20-bar equally among 4 friends. Which amount does each friend get?"}},
+    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[6,16,5,4],"display":{"bar":{"k":4,"w":20,"kind":"unitOf"},"promptText":"June draws a bar for 20 stickers and cuts it into 4 equal parts, one for each friend. How many stickers does each friend get?"}},
   },
   {
     itemId: "barModels-conc-b0821-0562",
@@ -11572,7 +11572,7 @@ export const ITEMS = [
     structureType: "sharePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[5,12,6,4],"display":{"bar":{"k":3,"w":15,"kind":"unitOf"},"promptText":"A 15-bar split fairly 3 ways gives each of Lily's friends how much? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[5,12,6,4],"display":{"bar":{"k":3,"w":15,"kind":"unitOf"},"promptText":"Lily draws a bar for 15 and splits it into 3 equal parts. How much is each part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0563",
@@ -11582,7 +11582,7 @@ export const ITEMS = [
     structureType: "sharePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[6,4,5,8],"display":{"bar":{"k":2,"w":10,"kind":"unitOf"},"promptText":"Amara shares a 10-bar equally among 2 friends. Which amount does each friend get?"}},
+    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[6,4,5,8],"display":{"bar":{"k":2,"w":10,"kind":"unitOf"},"promptText":"To share 10 stickers equally among 2 friends, Amara draws a bar for 10 and cuts it into 2 equal parts. How many stickers does each friend get?"}},
   },
   {
     itemId: "barModels-conc-b0821-0564",
@@ -11592,7 +11592,7 @@ export const ITEMS = [
     structureType: "sharePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[3,2,1,4],"display":{"bar":{"k":4,"w":8,"kind":"unitOf"},"promptText":"A 8-bar split fairly 4 ways gives each of Leo's friends how much? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[3,2,1,4],"display":{"bar":{"k":4,"w":8,"kind":"unitOf"},"promptText":"Leo draws a bar for 8 and splits it into 4 equal parts. How much is each part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0565",
@@ -11602,7 +11602,7 @@ export const ITEMS = [
     structureType: "sharePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[6,2,4,3],"display":{"bar":{"k":3,"w":9,"kind":"unitOf"},"promptText":"Mina shares a 9-bar equally among 3 friends. Which amount does each friend get?"}},
+    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[6,2,4,3],"display":{"bar":{"k":3,"w":9,"kind":"unitOf"},"promptText":"Mina draws a bar for 9 and cuts it into 3 equal shares, one for each friend. How much is each friend's share?"}},
   },
   {
     itemId: "barModels-conc-b0821-0566",
@@ -11612,7 +11612,7 @@ export const ITEMS = [
     structureType: "sharePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[8,12,7,6],"display":{"bar":{"k":2,"w":14,"kind":"unitOf"},"promptText":"A 14-bar split fairly 2 ways gives each of Theo's friends how much? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[8,12,7,6],"display":{"bar":{"k":2,"w":14,"kind":"unitOf"},"promptText":"Theo draws a bar for 14 and splits it into 2 equal parts. How much is each part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0567",
@@ -11622,7 +11622,7 @@ export const ITEMS = [
     structureType: "sharePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[5,3,4,15],"display":{"bar":{"k":5,"w":20,"kind":"unitOf"},"promptText":"Ida shares a 20-bar equally among 5 friends. Which amount does each friend get?"}},
+    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[5,3,4,15],"display":{"bar":{"k":5,"w":20,"kind":"unitOf"},"promptText":"Ida draws a bar for 20 stickers and cuts it into 5 equal parts, one for each friend. How many stickers does each friend get?"}},
   },
   {
     itemId: "barModels-conc-b0821-0568",
@@ -11632,7 +11632,7 @@ export const ITEMS = [
     structureType: "sharePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[2,3,1],"display":{"bar":{"k":3,"w":6,"kind":"unitOf"},"promptText":"A 6-bar split fairly 3 ways gives each of Zoe's friends how much? Pick the amount."}},
+    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[2,3,1],"display":{"bar":{"k":3,"w":6,"kind":"unitOf"},"promptText":"Zoe draws a bar for 6 and splits it into 3 equal parts. How much is each part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0569",
@@ -11642,7 +11642,7 @@ export const ITEMS = [
     structureType: "sharePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":21,"choices":[20,80,21,22],"display":{"bar":{"k":4,"w":84,"kind":"unitOf"},"promptText":"Lily deals a 84-bar into 4 fair shares. Which value is one share?"}},
+    question: {"a":null,"b":null,"op":"count","answer":21,"choices":[20,80,21,22],"display":{"bar":{"k":4,"w":84,"kind":"unitOf"},"promptText":"Lily draws a bar for 84 and splits it into 4 equal shares. How much is one share?"}},
   },
   {
     itemId: "barModels-conc-b0821-0570",
@@ -11652,7 +11652,7 @@ export const ITEMS = [
     structureType: "sharePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"choices":[72,20,19,18],"display":{"bar":{"k":4,"w":76,"kind":"unitOf"},"promptText":"Divide 76 fairly by 4 for Amara's group. Which share size is right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":19,"choices":[72,20,19,18],"display":{"bar":{"k":4,"w":76,"kind":"unitOf"},"promptText":"Amara shares 76 marbles equally among 4 friends. How many marbles does each friend get?"}},
   },
   {
     itemId: "barModels-conc-b0821-0571",
@@ -11662,7 +11662,7 @@ export const ITEMS = [
     structureType: "sharePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"choices":[90,18,19,20],"display":{"bar":{"k":5,"w":95,"kind":"unitOf"},"promptText":"Leo deals a 95-bar into 5 fair shares. Which value is one share?"}},
+    question: {"a":null,"b":null,"op":"count","answer":19,"choices":[90,18,19,20],"display":{"bar":{"k":5,"w":95,"kind":"unitOf"},"promptText":"Leo draws a bar for 95 and splits it into 5 equal parts. How much is one part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0572",
@@ -11672,7 +11672,7 @@ export const ITEMS = [
     structureType: "sharePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[12,11,66,13],"display":{"bar":{"k":6,"w":72,"kind":"unitOf"},"promptText":"Divide 72 fairly by 6 for Mina's group. Which share size is right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[12,11,66,13],"display":{"bar":{"k":6,"w":72,"kind":"unitOf"},"promptText":"Mina shares 72 marbles equally among 6 friends. How many marbles does each friend get?"}},
   },
   {
     itemId: "barModels-conc-b0821-0573",
@@ -11682,7 +11682,7 @@ export const ITEMS = [
     structureType: "sharePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":29,"choices":[28,29,30,84],"display":{"bar":{"k":3,"w":87,"kind":"unitOf"},"promptText":"Theo deals a 87-bar into 3 fair shares. Which value is one share?"}},
+    question: {"a":null,"b":null,"op":"count","answer":29,"choices":[28,29,30,84],"display":{"bar":{"k":3,"w":87,"kind":"unitOf"},"promptText":"Theo shares a bar for 87 fairly among 3 friends. How much does each friend get?"}},
   },
   {
     itemId: "barModels-conc-b0821-0574",
@@ -11692,7 +11692,7 @@ export const ITEMS = [
     structureType: "sharePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":23,"choices":[24,23,22,88],"display":{"bar":{"k":4,"w":92,"kind":"unitOf"},"promptText":"Divide 92 fairly by 4 for Ida's group. Which share size is right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":23,"choices":[24,23,22,88],"display":{"bar":{"k":4,"w":92,"kind":"unitOf"},"promptText":"Ida shares 92 marbles equally among 4 friends. How many marbles does each friend get?"}},
   },
   {
     itemId: "barModels-conc-b0821-0575",
@@ -11702,7 +11702,7 @@ export const ITEMS = [
     structureType: "sharePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[18,16,80,17],"display":{"bar":{"k":5,"w":85,"kind":"unitOf"},"promptText":"Zoe deals a 85-bar into 5 fair shares. Which value is one share?"}},
+    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[18,16,80,17],"display":{"bar":{"k":5,"w":85,"kind":"unitOf"},"promptText":"Zoe draws a bar for 85 and splits it into 5 equal shares. How much is one share?"}},
   },
   {
     itemId: "barModels-conc-b0821-0576",
@@ -11712,7 +11712,7 @@ export const ITEMS = [
     structureType: "sharePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[12,13,14,72],"display":{"bar":{"k":6,"w":78,"kind":"unitOf"},"promptText":"Divide 78 fairly by 6 for Rosa's group. Which share size is right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[12,13,14,72],"display":{"bar":{"k":6,"w":78,"kind":"unitOf"},"promptText":"Rosa shares 78 marbles equally among 6 friends. How many marbles does each friend get?"}},
   },
   {
     itemId: "barModels-conc-b0821-0577",
@@ -11722,7 +11722,7 @@ export const ITEMS = [
     structureType: "sharePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"choices":[31,32,93,33],"display":{"bar":{"k":3,"w":96,"kind":"unitOf"},"promptText":"Diego deals a 96-bar into 3 fair shares. Which value is one share?"}},
+    question: {"a":null,"b":null,"op":"count","answer":32,"choices":[31,32,93,33],"display":{"bar":{"k":3,"w":96,"kind":"unitOf"},"promptText":"Diego draws a bar for 96 and splits it into 3 equal parts. How much is one part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0578",
@@ -11732,7 +11732,7 @@ export const ITEMS = [
     structureType: "sharePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":22,"choices":[84,22,21,23],"display":{"bar":{"k":4,"w":88,"kind":"unitOf"},"promptText":"Divide 88 fairly by 4 for Nora's group. Which share size is right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":22,"choices":[84,22,21,23],"display":{"bar":{"k":4,"w":88,"kind":"unitOf"},"promptText":"Nora shares 88 marbles equally among 4 friends. How many marbles does each friend get?"}},
   },
   {
     itemId: "barModels-conc-b0821-0579",
@@ -11742,7 +11742,7 @@ export const ITEMS = [
     structureType: "sharePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"choices":[70,15,14,16],"display":{"bar":{"k":5,"w":75,"kind":"unitOf"},"promptText":"Luca deals a 75-bar into 5 fair shares. Which value is one share?"}},
+    question: {"a":null,"b":null,"op":"count","answer":15,"choices":[70,15,14,16],"display":{"bar":{"k":5,"w":75,"kind":"unitOf"},"promptText":"Luca shares a bar for 75 fairly among 5 friends. How much does each friend get?"}},
   },
   {
     itemId: "barModels-conc-b0821-0580",
@@ -11752,7 +11752,7 @@ export const ITEMS = [
     structureType: "sharePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"choices":[78,13,15,14],"display":{"bar":{"k":6,"w":84,"kind":"unitOf"},"promptText":"Divide 84 fairly by 6 for Ava's group. Which share size is right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":14,"choices":[78,13,15,14],"display":{"bar":{"k":6,"w":84,"kind":"unitOf"},"promptText":"Ava shares 84 marbles equally among 6 friends. How many marbles does each friend get?"}},
   },
   {
     itemId: "barModels-conc-b0821-0581",
@@ -11762,7 +11762,7 @@ export const ITEMS = [
     structureType: "sharePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":31,"choices":[90,30,31,32],"display":{"bar":{"k":3,"w":93,"kind":"unitOf"},"promptText":"Omar deals a 93-bar into 3 fair shares. Which value is one share?"}},
+    question: {"a":null,"b":null,"op":"count","answer":31,"choices":[90,30,31,32],"display":{"bar":{"k":3,"w":93,"kind":"unitOf"},"promptText":"Omar draws a bar for 93 and splits it into 3 equal shares. How much is one share?"}},
   },
   {
     itemId: "barModels-conc-b0821-0582",
@@ -11772,7 +11772,7 @@ export const ITEMS = [
     structureType: "sharePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[64,16,18,17],"display":{"bar":{"k":4,"w":68,"kind":"unitOf"},"promptText":"Divide 68 fairly by 4 for Ben's group. Which share size is right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[64,16,18,17],"display":{"bar":{"k":4,"w":68,"kind":"unitOf"},"promptText":"Ben shares 68 marbles equally among 4 friends. How many marbles does each friend get?"}},
   },
   {
     itemId: "barModels-conc-b0821-0583",
@@ -11782,7 +11782,7 @@ export const ITEMS = [
     structureType: "sharePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"choices":[19,17,18,85],"display":{"bar":{"k":5,"w":90,"kind":"unitOf"},"promptText":"Finn deals a 90-bar into 5 fair shares. Which value is one share?"}},
+    question: {"a":null,"b":null,"op":"count","answer":18,"choices":[19,17,18,85],"display":{"bar":{"k":5,"w":90,"kind":"unitOf"},"promptText":"Finn draws a bar for 90 and splits it into 5 equal parts. How much is one part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0584",
@@ -11792,7 +11792,7 @@ export const ITEMS = [
     structureType: "sharePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"choices":[11,10,12,60],"display":{"bar":{"k":6,"w":66,"kind":"unitOf"},"promptText":"Divide 66 fairly by 6 for Priya's group. Which share size is right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":11,"choices":[11,10,12,60],"display":{"bar":{"k":6,"w":66,"kind":"unitOf"},"promptText":"Priya shares 66 marbles equally among 6 friends. How many marbles does each friend get?"}},
   },
   {
     itemId: "barModels-conc-b0821-0585",
@@ -11802,7 +11802,7 @@ export const ITEMS = [
     structureType: "sharePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":212,"choices":[211,212,213,844],"display":{"bar":{"k":4,"w":848,"kind":"unitOf"},"promptText":"Leo allocates a 848-bar across 4 equal claims. Which amount is one claim?"}},
+    question: {"a":null,"b":null,"op":"count","answer":212,"choices":[211,212,213,844],"display":{"bar":{"k":4,"w":848,"kind":"unitOf"},"promptText":"Leo splits a bar for 848 into 4 equal parts. How much is one part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0586",
@@ -11812,7 +11812,7 @@ export const ITEMS = [
     structureType: "sharePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":191,"choices":[760,190,192,191],"display":{"bar":{"k":4,"w":764,"kind":"unitOf"},"promptText":"A fair 4-way split of 764 hands Mina which amount? Choose it."}},
+    question: {"a":null,"b":null,"op":"count","answer":191,"choices":[760,190,192,191],"display":{"bar":{"k":4,"w":764,"kind":"unitOf"},"promptText":"Mina puts 764 beads into 4 equal groups. How many beads are in each group?"}},
   },
   {
     itemId: "barModels-conc-b0821-0587",
@@ -11822,7 +11822,7 @@ export const ITEMS = [
     structureType: "sharePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":191,"choices":[192,190,950,191],"display":{"bar":{"k":5,"w":955,"kind":"unitOf"},"promptText":"Theo allocates a 955-bar across 5 equal claims. Which amount is one claim?"}},
+    question: {"a":null,"b":null,"op":"count","answer":191,"choices":[192,190,950,191],"display":{"bar":{"k":5,"w":955,"kind":"unitOf"},"promptText":"Theo cuts a bar for 955 into 5 equal parts. How much is one part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0588",
@@ -11832,7 +11832,7 @@ export const ITEMS = [
     structureType: "sharePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":121,"choices":[122,121,120,720],"display":{"bar":{"k":6,"w":726,"kind":"unitOf"},"promptText":"A fair 6-way split of 726 hands Ida which amount? Choose it."}},
+    question: {"a":null,"b":null,"op":"count","answer":121,"choices":[122,121,120,720],"display":{"bar":{"k":6,"w":726,"kind":"unitOf"},"promptText":"Ida puts 726 beads into 6 equal groups. How many beads are in each group?"}},
   },
   {
     itemId: "barModels-conc-b0821-0589",
@@ -11842,7 +11842,7 @@ export const ITEMS = [
     structureType: "sharePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":291,"choices":[292,290,870,291],"display":{"bar":{"k":3,"w":873,"kind":"unitOf"},"promptText":"Zoe allocates a 873-bar across 3 equal claims. Which amount is one claim?"}},
+    question: {"a":null,"b":null,"op":"count","answer":291,"choices":[292,290,870,291],"display":{"bar":{"k":3,"w":873,"kind":"unitOf"},"promptText":"Zoe's tape diagram has a whole of 873 split into 3 equal parts. How much is one part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0590",
@@ -11852,7 +11852,7 @@ export const ITEMS = [
     structureType: "sharePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":232,"choices":[231,233,924,232],"display":{"bar":{"k":4,"w":928,"kind":"unitOf"},"promptText":"A fair 4-way split of 928 hands Rosa which amount? Choose it."}},
+    question: {"a":null,"b":null,"op":"count","answer":232,"choices":[231,233,924,232],"display":{"bar":{"k":4,"w":928,"kind":"unitOf"},"promptText":"Rosa puts 928 beads into 4 equal groups. How many beads are in each group?"}},
   },
   {
     itemId: "barModels-conc-b0821-0591",
@@ -11862,7 +11862,7 @@ export const ITEMS = [
     structureType: "sharePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":171,"choices":[170,850,172,171],"display":{"bar":{"k":5,"w":855,"kind":"unitOf"},"promptText":"Diego allocates a 855-bar across 5 equal claims. Which amount is one claim?"}},
+    question: {"a":null,"b":null,"op":"count","answer":171,"choices":[170,850,172,171],"display":{"bar":{"k":5,"w":855,"kind":"unitOf"},"promptText":"Diego splits a bar for 855 into 5 equal parts. How much is one part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0592",
@@ -11872,7 +11872,7 @@ export const ITEMS = [
     structureType: "sharePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":131,"choices":[780,132,131,130],"display":{"bar":{"k":6,"w":786,"kind":"unitOf"},"promptText":"A fair 6-way split of 786 hands Nora which amount? Choose it."}},
+    question: {"a":null,"b":null,"op":"count","answer":131,"choices":[780,132,131,130],"display":{"bar":{"k":6,"w":786,"kind":"unitOf"},"promptText":"Nora puts 786 beads into 6 equal groups. How many beads are in each group?"}},
   },
   {
     itemId: "barModels-conc-b0821-0593",
@@ -11882,7 +11882,7 @@ export const ITEMS = [
     structureType: "sharePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":321,"choices":[322,960,320,321],"display":{"bar":{"k":3,"w":963,"kind":"unitOf"},"promptText":"Luca allocates a 963-bar across 3 equal claims. Which amount is one claim?"}},
+    question: {"a":null,"b":null,"op":"count","answer":321,"choices":[322,960,320,321],"display":{"bar":{"k":3,"w":963,"kind":"unitOf"},"promptText":"Luca's tape diagram has a whole of 963 split into 3 equal parts. How much is one part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0594",
@@ -11892,7 +11892,7 @@ export const ITEMS = [
     structureType: "sharePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":221,"choices":[222,221,880,220],"display":{"bar":{"k":4,"w":884,"kind":"unitOf"},"promptText":"A fair 4-way split of 884 hands Ava which amount? Choose it."}},
+    question: {"a":null,"b":null,"op":"count","answer":221,"choices":[222,221,880,220],"display":{"bar":{"k":4,"w":884,"kind":"unitOf"},"promptText":"Ava puts 884 beads into 4 equal groups. How many beads are in each group?"}},
   },
   {
     itemId: "barModels-conc-b0821-0595",
@@ -11902,7 +11902,7 @@ export const ITEMS = [
     structureType: "sharePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":151,"choices":[152,750,151,150],"display":{"bar":{"k":5,"w":755,"kind":"unitOf"},"promptText":"Omar allocates a 755-bar across 5 equal claims. Which amount is one claim?"}},
+    question: {"a":null,"b":null,"op":"count","answer":151,"choices":[152,750,151,150],"display":{"bar":{"k":5,"w":755,"kind":"unitOf"},"promptText":"Omar's bar for 755 is cut into 5 equal parts. How much is one part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0596",
@@ -11912,7 +11912,7 @@ export const ITEMS = [
     structureType: "sharePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":141,"choices":[142,840,140,141],"display":{"bar":{"k":6,"w":846,"kind":"unitOf"},"promptText":"A fair 6-way split of 846 hands Ben which amount? Choose it."}},
+    question: {"a":null,"b":null,"op":"count","answer":141,"choices":[142,840,140,141],"display":{"bar":{"k":6,"w":846,"kind":"unitOf"},"promptText":"Ben puts 846 beads into 6 equal groups. How many beads are in each group?"}},
   },
   {
     itemId: "barModels-conc-b0821-0597",
@@ -11922,7 +11922,7 @@ export const ITEMS = [
     structureType: "sharePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":313,"choices":[936,314,312,313],"display":{"bar":{"k":3,"w":939,"kind":"unitOf"},"promptText":"Finn allocates a 939-bar across 3 equal claims. Which amount is one claim?"}},
+    question: {"a":null,"b":null,"op":"count","answer":313,"choices":[936,314,312,313],"display":{"bar":{"k":3,"w":939,"kind":"unitOf"},"promptText":"Finn splits a bar for 939 into 3 equal parts. How much is one part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0598",
@@ -11932,7 +11932,7 @@ export const ITEMS = [
     structureType: "sharePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":172,"choices":[684,172,173,171],"display":{"bar":{"k":4,"w":688,"kind":"unitOf"},"promptText":"A fair 4-way split of 688 hands Priya which amount? Choose it."}},
+    question: {"a":null,"b":null,"op":"count","answer":172,"choices":[684,172,173,171],"display":{"bar":{"k":4,"w":688,"kind":"unitOf"},"promptText":"Priya puts 688 beads into 4 equal groups. How many beads are in each group?"}},
   },
   {
     itemId: "barModels-conc-b0821-0599",
@@ -11942,7 +11942,7 @@ export const ITEMS = [
     structureType: "sharePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":181,"choices":[181,180,900,182],"display":{"bar":{"k":5,"w":905,"kind":"unitOf"},"promptText":"Sam allocates a 905-bar across 5 equal claims. Which amount is one claim?"}},
+    question: {"a":null,"b":null,"op":"count","answer":181,"choices":[181,180,900,182],"display":{"bar":{"k":5,"w":905,"kind":"unitOf"},"promptText":"Sam's tape diagram has a whole of 905 split into 5 equal parts. How much is one part?"}},
   },
   {
     itemId: "barModels-conc-b0821-0600",
@@ -11952,7 +11952,7 @@ export const ITEMS = [
     structureType: "sharePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":111,"choices":[111,110,660,112],"display":{"bar":{"k":6,"w":666,"kind":"unitOf"},"promptText":"A fair 6-way split of 666 hands Nia which amount? Choose it."}},
+    question: {"a":null,"b":null,"op":"count","answer":111,"choices":[111,110,660,112],"display":{"bar":{"k":6,"w":666,"kind":"unitOf"},"promptText":"Nia puts 666 beads into 6 equal groups. How many beads are in each group?"}},
   },
   {
     itemId: "barModels-proc-b0821-0001",
@@ -12232,7 +12232,7 @@ export const ITEMS = [
     structureType: "barMissingPart_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"part":38,"type":"barPartWhole","whole":62,"counting":{"back":38,"kind":"countBack","start":62},"promptText":"Bar model: whole 62, known part 38. Find the unknown part. What is it?"},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"part":38,"type":"barPartWhole","whole":62,"counting":{"back":38,"kind":"countBack","start":62},"promptText":"The tape diagram shows a whole of 62 and one part of 38. What is the other part?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-proc-b0821-0029",
@@ -12252,7 +12252,7 @@ export const ITEMS = [
     structureType: "barMissingPart_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"part":29,"type":"barPartWhole","whole":53,"counting":{"back":29,"kind":"countBack","start":53},"promptText":"Bar model: whole 53, known part 29. Find the unknown part. What is it?"},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"part":29,"type":"barPartWhole","whole":53,"counting":{"back":29,"kind":"countBack","start":53},"promptText":"Look at the tape diagram. The whole is 53 and one part is 29. What is the missing part?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-proc-b0821-0031",
@@ -12272,7 +12272,7 @@ export const ITEMS = [
     structureType: "barMissingPart_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"part":31,"type":"barPartWhole","whole":66,"counting":{"back":31,"kind":"countBack","start":66},"promptText":"Bar model: whole 66, known part 31. Find the unknown part. What is it?"},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"part":31,"type":"barPartWhole","whole":66,"counting":{"back":31,"kind":"countBack","start":66},"promptText":"The tape diagram shows a whole of 66 and one part of 31. What is the other part?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-proc-b0821-0033",
@@ -12292,7 +12292,7 @@ export const ITEMS = [
     structureType: "barMissingPart_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"part":24,"type":"barPartWhole","whole":58,"counting":{"back":24,"kind":"countBack","start":58},"promptText":"Bar model: whole 58, known part 24. Find the unknown part. What is it?"},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"part":24,"type":"barPartWhole","whole":58,"counting":{"back":24,"kind":"countBack","start":58},"promptText":"Look at the tape diagram. The whole is 58 and one part is 24. What is the missing part?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-proc-b0821-0035",
@@ -12312,7 +12312,7 @@ export const ITEMS = [
     structureType: "barMissingPart_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"part":36,"type":"barPartWhole","whole":63,"counting":{"back":36,"kind":"countBack","start":63},"promptText":"Bar model: whole 63, known part 36. Find the unknown part. What is it?"},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"part":36,"type":"barPartWhole","whole":63,"counting":{"back":36,"kind":"countBack","start":63},"promptText":"The tape diagram shows a whole of 63 and one part of 36. What is the other part?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-proc-b0821-0037",
@@ -12332,7 +12332,7 @@ export const ITEMS = [
     structureType: "barMissingPart_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"part":18,"type":"barPartWhole","whole":49,"counting":{"back":18,"kind":"countBack","start":49},"promptText":"Bar model: whole 49, known part 18. Find the unknown part. What is it?"},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"part":18,"type":"barPartWhole","whole":49,"counting":{"back":18,"kind":"countBack","start":49},"promptText":"Look at the tape diagram. The whole is 49 and one part is 18. What is the missing part?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-proc-b0821-0039",
@@ -12352,7 +12352,7 @@ export const ITEMS = [
     structureType: "barMissingPart_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"part":42,"type":"barPartWhole","whole":67,"counting":{"back":42,"kind":"countBack","start":67},"promptText":"Bar model: whole 67, known part 42. Find the unknown part. What is it?"},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"part":42,"type":"barPartWhole","whole":67,"counting":{"back":42,"kind":"countBack","start":67},"promptText":"The tape diagram shows a whole of 67 and one part of 42. What is the other part?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-proc-b0821-0041",
@@ -12372,7 +12372,7 @@ export const ITEMS = [
     structureType: "barMissingPart_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"part":61,"type":"barPartWhole","whole":88,"counting":{"back":61,"kind":"countBack","start":88},"promptText":"Bar model: whole 88, known part 61. Find the unknown part. What is it?"},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"part":61,"type":"barPartWhole","whole":88,"counting":{"back":61,"kind":"countBack","start":88},"promptText":"Look at the tape diagram. The whole is 88 and one part is 61. What is the missing part?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-proc-b0821-0043",
@@ -12392,7 +12392,7 @@ export const ITEMS = [
     structureType: "barMissingPart_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"part":47,"type":"barPartWhole","whole":91,"counting":{"back":47,"kind":"countBack","start":91},"promptText":"Bar model: whole 91, known part 47. Find the unknown part. What is it?"},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"part":47,"type":"barPartWhole","whole":91,"counting":{"back":47,"kind":"countBack","start":91},"promptText":"The tape diagram shows a whole of 91 and one part of 47. What is the other part?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-proc-b0821-0045",
@@ -12412,7 +12412,7 @@ export const ITEMS = [
     structureType: "barMissingPart_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"part":56,"type":"barPartWhole","whole":82,"counting":{"back":56,"kind":"countBack","start":82},"promptText":"Bar model: whole 82, known part 56. Find the unknown part. What is it?"},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"part":56,"type":"barPartWhole","whole":82,"counting":{"back":56,"kind":"countBack","start":82},"promptText":"Look at the tape diagram. The whole is 82 and one part is 56. What is the missing part?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-proc-b0821-0047",
@@ -12432,7 +12432,7 @@ export const ITEMS = [
     structureType: "barMissingPart_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"part":64,"type":"barPartWhole","whole":93,"counting":{"back":64,"kind":"countBack","start":93},"promptText":"Bar model: whole 93, known part 64. Find the unknown part. What is it?"},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"part":64,"type":"barPartWhole","whole":93,"counting":{"back":64,"kind":"countBack","start":93},"promptText":"The tape diagram shows a whole of 93 and one part of 64. What is the other part?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-proc-b0821-0049",
@@ -12452,7 +12452,7 @@ export const ITEMS = [
     structureType: "barMissingPart_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"part":51,"type":"barPartWhole","whole":76,"counting":{"back":51,"kind":"countBack","start":76},"promptText":"Bar model: whole 76, known part 51. Find the unknown part. What is it?"},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"part":51,"type":"barPartWhole","whole":76,"counting":{"back":51,"kind":"countBack","start":76},"promptText":"Look at the tape diagram. The whole is 76 and one part is 51. What is the missing part?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-proc-b0821-0051",
@@ -12472,7 +12472,7 @@ export const ITEMS = [
     structureType: "barMissingPart_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"part":43,"type":"barPartWhole","whole":87,"counting":{"back":43,"kind":"countBack","start":87},"promptText":"Bar model: whole 87, known part 43. Find the unknown part. What is it?"},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"part":43,"type":"barPartWhole","whole":87,"counting":{"back":43,"kind":"countBack","start":87},"promptText":"The tape diagram shows a whole of 87 and one part of 43. What is the other part?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-proc-b0821-0053",
@@ -12482,7 +12482,7 @@ export const ITEMS = [
     structureType: "barMissingPart_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":185,"display":{"part":267,"type":"barPartWhole","whole":452,"counting":{"back":267,"kind":"countBack","start":452},"promptText":"The bar's whole reads 452; one section reads 267. Exactly what does the blank section hold?"},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":185,"display":{"part":267,"type":"barPartWhole","whole":452,"counting":{"back":267,"kind":"countBack","start":452},"promptText":"In the tape diagram, the whole is 452 and one part is 267. What is the missing part?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-proc-b0821-0054",
@@ -12502,7 +12502,7 @@ export const ITEMS = [
     structureType: "barMissingPart_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":267,"display":{"part":456,"type":"barPartWhole","whole":723,"counting":{"back":456,"kind":"countBack","start":723},"promptText":"The bar's whole reads 723; one section reads 456. Exactly what does the blank section hold?"},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":267,"display":{"part":456,"type":"barPartWhole","whole":723,"counting":{"back":456,"kind":"countBack","start":723},"promptText":"The tape diagram has a whole of 723. One part is 456. What is the other part?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-proc-b0821-0056",
@@ -12522,7 +12522,7 @@ export const ITEMS = [
     structureType: "barMissingPart_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":274,"display":{"part":572,"type":"barPartWhole","whole":846,"counting":{"back":572,"kind":"countBack","start":846},"promptText":"The bar's whole reads 846; one section reads 572. Exactly what does the blank section hold?"},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":274,"display":{"part":572,"type":"barPartWhole","whole":846,"counting":{"back":572,"kind":"countBack","start":846},"promptText":"In the tape diagram, the whole is 846 and one part is 572. What is the missing part?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-proc-b0821-0058",
@@ -12542,7 +12542,7 @@ export const ITEMS = [
     structureType: "barMissingPart_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":241,"display":{"part":683,"type":"barPartWhole","whole":924,"counting":{"back":683,"kind":"countBack","start":924},"promptText":"The bar's whole reads 924; one section reads 683. Exactly what does the blank section hold?"},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":241,"display":{"part":683,"type":"barPartWhole","whole":924,"counting":{"back":683,"kind":"countBack","start":924},"promptText":"The tape diagram has a whole of 924. One part is 683. What is the other part?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-proc-b0821-0060",
@@ -12562,7 +12562,7 @@ export const ITEMS = [
     structureType: "barMissingPart_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":284,"display":{"part":491,"type":"barPartWhole","whole":775,"counting":{"back":491,"kind":"countBack","start":775},"promptText":"The bar's whole reads 775; one section reads 491. Exactly what does the blank section hold?"},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":284,"display":{"part":491,"type":"barPartWhole","whole":775,"counting":{"back":491,"kind":"countBack","start":775},"promptText":"In the tape diagram, the whole is 775 and one part is 491. What is the missing part?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-proc-b0821-0062",
@@ -12582,7 +12582,7 @@ export const ITEMS = [
     structureType: "barMissingPart_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":325,"display":{"part":527,"type":"barPartWhole","whole":852,"counting":{"back":527,"kind":"countBack","start":852},"promptText":"The bar's whole reads 852; one section reads 527. Exactly what does the blank section hold?"},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":325,"display":{"part":527,"type":"barPartWhole","whole":852,"counting":{"back":527,"kind":"countBack","start":852},"promptText":"The tape diagram has a whole of 852. One part is 527. What is the other part?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-proc-b0821-0064",
@@ -12602,7 +12602,7 @@ export const ITEMS = [
     structureType: "barMissingPart_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":234,"display":{"part":734,"type":"barPartWhole","whole":968,"counting":{"back":734,"kind":"countBack","start":968},"promptText":"The bar's whole reads 968; one section reads 734. Exactly what does the blank section hold?"},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":234,"display":{"part":734,"type":"barPartWhole","whole":968,"counting":{"back":734,"kind":"countBack","start":968},"promptText":"In the tape diagram, the whole is 968 and one part is 734. What is the missing part?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-proc-b0821-0066",
@@ -12622,7 +12622,7 @@ export const ITEMS = [
     structureType: "barMissingPart_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":456,"display":{"part":285,"type":"barPartWhole","whole":741,"counting":{"back":285,"kind":"countBack","start":741},"promptText":"The bar's whole reads 741; one section reads 285. Exactly what does the blank section hold?"},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":456,"display":{"part":285,"type":"barPartWhole","whole":741,"counting":{"back":285,"kind":"countBack","start":741},"promptText":"The tape diagram has a whole of 741. One part is 285. What is the other part?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-proc-b0821-0068",
@@ -12642,7 +12642,7 @@ export const ITEMS = [
     structureType: "barMissingPart_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":218,"display":{"part":338,"type":"barPartWhole","whole":556,"counting":{"back":338,"kind":"countBack","start":556},"promptText":"The bar's whole reads 556; one section reads 338. Exactly what does the blank section hold?"},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":218,"display":{"part":338,"type":"barPartWhole","whole":556,"counting":{"back":338,"kind":"countBack","start":556},"promptText":"In the tape diagram, the whole is 556 and one part is 338. What is the missing part?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-proc-b0821-0070",
@@ -12662,7 +12662,7 @@ export const ITEMS = [
     structureType: "barMissingPart_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":439,"display":{"part":253,"type":"barPartWhole","whole":692,"counting":{"back":253,"kind":"countBack","start":692},"promptText":"The bar's whole reads 692; one section reads 253. Exactly what does the blank section hold?"},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":439,"display":{"part":253,"type":"barPartWhole","whole":692,"counting":{"back":253,"kind":"countBack","start":692},"promptText":"The tape diagram has a whole of 692. One part is 253. What is the other part?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-proc-b0821-0072",
@@ -12682,7 +12682,7 @@ export const ITEMS = [
     structureType: "barMissingPart_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":281,"display":{"part":192,"type":"barPartWhole","whole":473,"counting":{"back":192,"kind":"countBack","start":473},"promptText":"The bar's whole reads 473; one section reads 192. Exactly what does the blank section hold?"},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":281,"display":{"part":192,"type":"barPartWhole","whole":473,"counting":{"back":192,"kind":"countBack","start":473},"promptText":"In the tape diagram, the whole is 473 and one part is 192. What is the missing part?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-proc-b0821-0074",
@@ -12702,7 +12702,7 @@ export const ITEMS = [
     structureType: "barMissingPart_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":218,"display":{"part":376,"type":"barPartWhole","whole":594,"counting":{"back":376,"kind":"countBack","start":594},"promptText":"The bar's whole reads 594; one section reads 376. Exactly what does the blank section hold?"},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":218,"display":{"part":376,"type":"barPartWhole","whole":594,"counting":{"back":376,"kind":"countBack","start":594},"promptText":"The tape diagram has a whole of 594. One part is 376. What is the other part?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-proc-b0821-0076",
@@ -12722,7 +12722,7 @@ export const ITEMS = [
     structureType: "barMissingPart_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":417,"display":{"part":228,"type":"barPartWhole","whole":645,"counting":{"back":228,"kind":"countBack","start":645},"promptText":"The bar's whole reads 645; one section reads 228. Exactly what does the blank section hold?"},"answerType":"barModel"},
+    question: {"a":null,"b":null,"op":"count","answer":417,"display":{"part":228,"type":"barPartWhole","whole":645,"counting":{"back":228,"kind":"countBack","start":645},"promptText":"In the tape diagram, the whole is 645 and one part is 228. What is the missing part?"},"answerType":"barModel"},
   },
   {
     itemId: "barModels-proc-b0821-0078",
@@ -13262,7 +13262,7 @@ export const ITEMS = [
     structureType: "barWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":558,"display":{"counting":{"kind":"sum","parts":[227,331]},"promptText":"Sections of 227 and 331 complete one bar. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":558,"display":{"counting":{"kind":"sum","parts":[227,331]},"promptText":"A bar has two parts, 227 and 331. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0132",
@@ -13282,7 +13282,7 @@ export const ITEMS = [
     structureType: "barWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":672,"display":{"counting":{"kind":"sum","parts":[449,223]},"promptText":"Sections of 449 and 223 complete one bar. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":672,"display":{"counting":{"kind":"sum","parts":[449,223]},"promptText":"Parts of 449 and 223 make one bar. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0134",
@@ -13302,7 +13302,7 @@ export const ITEMS = [
     structureType: "barWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":780,"display":{"counting":{"kind":"sum","parts":[335,445]},"promptText":"Sections of 335 and 445 complete one bar. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":780,"display":{"counting":{"kind":"sum","parts":[335,445]},"promptText":"A bar has two parts, 335 and 445. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0136",
@@ -13322,7 +13322,7 @@ export const ITEMS = [
     structureType: "barWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":892,"display":{"counting":{"kind":"sum","parts":[559,333]},"promptText":"Sections of 559 and 333 complete one bar. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":892,"display":{"counting":{"kind":"sum","parts":[559,333]},"promptText":"Parts of 559 and 333 make one bar. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0138",
@@ -13342,7 +13342,7 @@ export const ITEMS = [
     structureType: "barWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":835,"display":{"counting":{"kind":"sum","parts":[663,172]},"promptText":"Sections of 663 and 172 complete one bar. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":835,"display":{"counting":{"kind":"sum","parts":[663,172]},"promptText":"A bar has two parts, 663 and 172. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0140",
@@ -13362,7 +13362,7 @@ export const ITEMS = [
     structureType: "barWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":859,"display":{"counting":{"kind":"sum","parts":[477,382]},"promptText":"Sections of 477 and 382 complete one bar. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":859,"display":{"counting":{"kind":"sum","parts":[477,382]},"promptText":"Parts of 477 and 382 make one bar. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0142",
@@ -13382,7 +13382,7 @@ export const ITEMS = [
     structureType: "barWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":847,"display":{"counting":{"kind":"sum","parts":[376,471]},"promptText":"Sections of 376 and 471 complete one bar. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":847,"display":{"counting":{"kind":"sum","parts":[376,471]},"promptText":"A bar has two parts, 376 and 471. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0144",
@@ -13402,7 +13402,7 @@ export const ITEMS = [
     structureType: "barWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":937,"display":{"counting":{"kind":"sum","parts":[444,493]},"promptText":"Sections of 444 and 493 complete one bar. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":937,"display":{"counting":{"kind":"sum","parts":[444,493]},"promptText":"Parts of 444 and 493 make one bar. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0146",
@@ -13422,7 +13422,7 @@ export const ITEMS = [
     structureType: "barWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":942,"display":{"counting":{"kind":"sum","parts":[259,683]},"promptText":"Sections of 259 and 683 complete one bar. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":942,"display":{"counting":{"kind":"sum","parts":[259,683]},"promptText":"A bar has two parts, 259 and 683. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0148",
@@ -13442,7 +13442,7 @@ export const ITEMS = [
     structureType: "barWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":837,"display":{"counting":{"kind":"sum","parts":[563,274]},"promptText":"Sections of 563 and 274 complete one bar. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":837,"display":{"counting":{"kind":"sum","parts":[563,274]},"promptText":"Parts of 563 and 274 make one bar. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0150",
@@ -13462,7 +13462,7 @@ export const ITEMS = [
     structureType: "barWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":915,"display":{"counting":{"kind":"sum","parts":[451,464]},"promptText":"Sections of 451 and 464 complete one bar. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":915,"display":{"counting":{"kind":"sum","parts":[451,464]},"promptText":"A bar has two parts, 451 and 464. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0152",
@@ -13482,7 +13482,7 @@ export const ITEMS = [
     structureType: "barWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":904,"display":{"counting":{"kind":"sum","parts":[286,618]},"promptText":"Sections of 286 and 618 complete one bar. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":904,"display":{"counting":{"kind":"sum","parts":[286,618]},"promptText":"Parts of 286 and 618 make one bar. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0154",
@@ -13502,7 +13502,7 @@ export const ITEMS = [
     structureType: "barWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":923,"display":{"counting":{"kind":"sum","parts":[556,367]},"promptText":"Sections of 556 and 367 complete one bar. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":923,"display":{"counting":{"kind":"sum","parts":[556,367]},"promptText":"A bar has two parts, 556 and 367. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0156",
@@ -14042,7 +14042,7 @@ export const ITEMS = [
     structureType: "barDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":245,"display":{"counting":{"have":397,"kind":"gap","target":642},"promptText":"Bars of 642 and 397: compute the exact difference. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":245,"display":{"counting":{"have":397,"kind":"gap","target":642},"promptText":"One bar is 642 long and another bar is 397 long. How much longer is the first bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0210",
@@ -14062,7 +14062,7 @@ export const ITEMS = [
     structureType: "barDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":245,"display":{"counting":{"have":568,"kind":"gap","target":813},"promptText":"Bars of 813 and 568: compute the exact difference. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":245,"display":{"counting":{"have":568,"kind":"gap","target":813},"promptText":"What is the difference between a bar of 813 and a bar of 568?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0212",
@@ -14082,7 +14082,7 @@ export const ITEMS = [
     structureType: "barDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":255,"display":{"counting":{"have":631,"kind":"gap","target":886},"promptText":"Bars of 886 and 631: compute the exact difference. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":255,"display":{"counting":{"have":631,"kind":"gap","target":886},"promptText":"Bar A is 886. Bar B is 631. How much longer is Bar A than Bar B?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0214",
@@ -14102,7 +14102,7 @@ export const ITEMS = [
     structureType: "barDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":235,"display":{"counting":{"have":718,"kind":"gap","target":953},"promptText":"Bars of 953 and 718: compute the exact difference. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":235,"display":{"counting":{"have":718,"kind":"gap","target":953},"promptText":"One bar is 953 long and another bar is 718 long. How much longer is the first bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0216",
@@ -14122,7 +14122,7 @@ export const ITEMS = [
     structureType: "barDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":345,"display":{"counting":{"have":419,"kind":"gap","target":764},"promptText":"Bars of 764 and 419: compute the exact difference. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":345,"display":{"counting":{"have":419,"kind":"gap","target":764},"promptText":"What is the difference between a bar of 764 and a bar of 419?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0218",
@@ -14142,7 +14142,7 @@ export const ITEMS = [
     structureType: "barDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":258,"display":{"counting":{"have":587,"kind":"gap","target":845},"promptText":"Bars of 845 and 587: compute the exact difference. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":258,"display":{"counting":{"have":587,"kind":"gap","target":845},"promptText":"Bar A is 845. Bar B is 587. How much longer is Bar A than Bar B?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0220",
@@ -14162,7 +14162,7 @@ export const ITEMS = [
     structureType: "barDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":255,"display":{"counting":{"have":673,"kind":"gap","target":928},"promptText":"Bars of 928 and 673: compute the exact difference. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":255,"display":{"counting":{"have":673,"kind":"gap","target":928},"promptText":"One bar is 928 long and another bar is 673 long. How much longer is the first bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0222",
@@ -14182,7 +14182,7 @@ export const ITEMS = [
     structureType: "barDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":345,"display":{"counting":{"have":447,"kind":"gap","target":792},"promptText":"Bars of 792 and 447: compute the exact difference. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":345,"display":{"counting":{"have":447,"kind":"gap","target":792},"promptText":"What is the difference between a bar of 792 and a bar of 447?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0224",
@@ -14202,7 +14202,7 @@ export const ITEMS = [
     structureType: "barDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":247,"display":{"counting":{"have":316,"kind":"gap","target":563},"promptText":"Bars of 563 and 316: compute the exact difference. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":247,"display":{"counting":{"have":316,"kind":"gap","target":563},"promptText":"Bar A is 563. Bar B is 316. How much longer is Bar A than Bar B?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0226",
@@ -14222,7 +14222,7 @@ export const ITEMS = [
     structureType: "barDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":227,"display":{"counting":{"have":427,"kind":"gap","target":654},"promptText":"Bars of 654 and 427: compute the exact difference. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":227,"display":{"counting":{"have":427,"kind":"gap","target":654},"promptText":"One bar is 654 long and another bar is 427 long. How much longer is the first bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0228",
@@ -14242,7 +14242,7 @@ export const ITEMS = [
     structureType: "barDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":227,"display":{"counting":{"have":268,"kind":"gap","target":495},"promptText":"Bars of 495 and 268: compute the exact difference. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":227,"display":{"counting":{"have":268,"kind":"gap","target":495},"promptText":"What is the difference between a bar of 495 and a bar of 268?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0230",
@@ -14262,7 +14262,7 @@ export const ITEMS = [
     structureType: "barDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":245,"display":{"counting":{"have":337,"kind":"gap","target":582},"promptText":"Bars of 582 and 337: compute the exact difference. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":245,"display":{"counting":{"have":337,"kind":"gap","target":582},"promptText":"Bar A is 582. Bar B is 337. How much longer is Bar A than Bar B?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0232",
@@ -14282,7 +14282,7 @@ export const ITEMS = [
     structureType: "barDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":247,"display":{"counting":{"have":389,"kind":"gap","target":636},"promptText":"Bars of 636 and 389: compute the exact difference. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":247,"display":{"counting":{"have":389,"kind":"gap","target":636},"promptText":"One bar is 636 long and another bar is 389 long. How much longer is the first bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0234",
@@ -14312,7 +14312,7 @@ export const ITEMS = [
     structureType: "barMore_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"countOn","more":7,"start":8},"promptText":"A bar of 8 plus 7 extra makes the longer bar. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"countOn","more":7,"start":8},"promptText":"A short bar is 8 cubes long. The long bar is 7 cubes longer. How many cubes long is the long bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0237",
@@ -14332,7 +14332,7 @@ export const ITEMS = [
     structureType: "barMore_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"countOn","more":6,"start":11},"promptText":"A bar of 11 plus 6 extra makes the longer bar. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"countOn","more":6,"start":11},"promptText":"Leo's bar is 11 cubes long. Ava's bar is 6 cubes longer than Leo's bar. How many cubes long is Ava's bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0239",
@@ -14352,7 +14352,7 @@ export const ITEMS = [
     structureType: "barMore_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"countOn","more":9,"start":6},"promptText":"A bar of 6 plus 9 extra makes the longer bar. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"countOn","more":9,"start":6},"promptText":"One bar is 6 cubes long. A second bar is 9 cubes longer than the first. How many cubes long is the second bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0241",
@@ -14372,7 +14372,7 @@ export const ITEMS = [
     structureType: "barMore_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"countOn","more":9,"start":4},"promptText":"A bar of 4 plus 9 extra makes the longer bar. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"countOn","more":9,"start":4},"promptText":"A short bar is 4 cubes long. The long bar is 9 cubes longer. How many cubes long is the long bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0243",
@@ -14392,7 +14392,7 @@ export const ITEMS = [
     structureType: "barMore_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"countOn","more":8,"start":3},"promptText":"A bar of 3 plus 8 extra makes the longer bar. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"countOn","more":8,"start":3},"promptText":"Mina's bar is 3 cubes long. Omar's bar is 8 cubes longer than Mina's bar. How many cubes long is Omar's bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0245",
@@ -14412,7 +14412,7 @@ export const ITEMS = [
     structureType: "barMore_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"countOn","more":7,"start":9},"promptText":"A bar of 9 plus 7 extra makes the longer bar. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"countOn","more":7,"start":9},"promptText":"One bar is 9 cubes long. A second bar is 7 cubes longer than the first. How many cubes long is the second bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0247",
@@ -14432,7 +14432,7 @@ export const ITEMS = [
     structureType: "barMore_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"countOn","more":6,"start":13},"promptText":"A bar of 13 plus 6 extra makes the longer bar. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"countOn","more":6,"start":13},"promptText":"A short bar is 13 cubes long. The long bar is 6 cubes longer. How many cubes long is the long bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0249",
@@ -14452,7 +14452,7 @@ export const ITEMS = [
     structureType: "barMore_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"countOn","more":12,"start":4},"promptText":"A bar of 4 plus 12 extra makes the longer bar. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"countOn","more":12,"start":4},"promptText":"Zoe's bar is 4 cubes long. Ben's bar is 12 cubes longer than Zoe's bar. How many cubes long is Ben's bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0251",
@@ -14472,7 +14472,7 @@ export const ITEMS = [
     structureType: "barMore_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"countOn","more":11,"start":5},"promptText":"A bar of 5 plus 11 extra makes the longer bar. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"countOn","more":11,"start":5},"promptText":"One bar is 5 cubes long. A second bar is 11 cubes longer than the first. How many cubes long is the second bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0253",
@@ -14492,7 +14492,7 @@ export const ITEMS = [
     structureType: "barMore_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"countOn","more":12,"start":7},"promptText":"A bar of 7 plus 12 extra makes the longer bar. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"countOn","more":12,"start":7},"promptText":"A short bar is 7 cubes long. The long bar is 12 cubes longer. How many cubes long is the long bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0255",
@@ -14512,7 +14512,7 @@ export const ITEMS = [
     structureType: "barMore_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"countOn","more":13,"start":3},"promptText":"A bar of 3 plus 13 extra makes the longer bar. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"countOn","more":13,"start":3},"promptText":"Nia's bar is 3 cubes long. Kai's bar is 13 cubes longer than Nia's bar. How many cubes long is Kai's bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0257",
@@ -14532,7 +14532,7 @@ export const ITEMS = [
     structureType: "barMore_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"countOn","more":8,"start":11},"promptText":"A bar of 11 plus 8 extra makes the longer bar. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"countOn","more":8,"start":11},"promptText":"One bar is 11 cubes long. A second bar is 8 cubes longer than the first. How many cubes long is the second bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0259",
@@ -14552,7 +14552,7 @@ export const ITEMS = [
     structureType: "barMore_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"countOn","more":14,"start":2},"promptText":"A bar of 2 plus 14 extra makes the longer bar. What is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"countOn","more":14,"start":2},"promptText":"A short bar is 2 cubes long. The long bar is 14 cubes longer. How many cubes long is the long bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0261",
@@ -14822,7 +14822,7 @@ export const ITEMS = [
     structureType: "barMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":642,"display":{"counting":{"kind":"countOn","more":245,"start":397},"promptText":"A base bar of 397 extended by exactly 245. What does the extended bar total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":642,"display":{"counting":{"kind":"countOn","more":245,"start":397},"promptText":"Nia's bar is 397 units long. Omar's bar is 245 units longer than Nia's bar. How many units long is Omar's bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0288",
@@ -14832,7 +14832,7 @@ export const ITEMS = [
     structureType: "barMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":721,"display":{"counting":{"kind":"countOn","more":265,"start":456},"promptText":"Add a difference of 265 onto the 456-bar. What is the resulting bar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":721,"display":{"counting":{"kind":"countOn","more":265,"start":456},"promptText":"The short bar is 456 long. The long bar is 265 longer. How long is the long bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0289",
@@ -14842,7 +14842,7 @@ export const ITEMS = [
     structureType: "barMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":813,"display":{"counting":{"kind":"countOn","more":245,"start":568},"promptText":"A base bar of 568 extended by exactly 245. What does the extended bar total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":813,"display":{"counting":{"kind":"countOn","more":245,"start":568},"promptText":"Bar A is 568 units long. Bar B is 245 units longer than Bar A. How long is Bar B?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0290",
@@ -14852,7 +14852,7 @@ export const ITEMS = [
     structureType: "barMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":586,"display":{"counting":{"kind":"countOn","more":339,"start":247},"promptText":"Add a difference of 339 onto the 247-bar. What is the resulting bar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":586,"display":{"counting":{"kind":"countOn","more":339,"start":247},"promptText":"A tape diagram has a short bar of 247 and a long bar that is 339 longer. How long is the long bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0291",
@@ -14862,7 +14862,7 @@ export const ITEMS = [
     structureType: "barMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":886,"display":{"counting":{"kind":"countOn","more":255,"start":631},"promptText":"A base bar of 631 extended by exactly 255. What does the extended bar total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":886,"display":{"counting":{"kind":"countOn","more":255,"start":631},"promptText":"Sam's bar is 631 units long. Priya's bar is 255 units longer than Sam's bar. How many units long is Priya's bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0292",
@@ -14872,7 +14872,7 @@ export const ITEMS = [
     structureType: "barMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":675,"display":{"counting":{"kind":"countOn","more":347,"start":328},"promptText":"Add a difference of 347 onto the 328-bar. What is the resulting bar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":675,"display":{"counting":{"kind":"countOn","more":347,"start":328},"promptText":"The short bar is 328 long. The long bar is 347 longer. How long is the long bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0293",
@@ -14882,7 +14882,7 @@ export const ITEMS = [
     structureType: "barMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":953,"display":{"counting":{"kind":"countOn","more":235,"start":718},"promptText":"A base bar of 718 extended by exactly 235. What does the extended bar total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":953,"display":{"counting":{"kind":"countOn","more":235,"start":718},"promptText":"Bar A is 718 units long. Bar B is 235 units longer than Bar A. How long is Bar B?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0294",
@@ -14892,7 +14892,7 @@ export const ITEMS = [
     structureType: "barMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":532,"display":{"counting":{"kind":"countOn","more":247,"start":285},"promptText":"Add a difference of 247 onto the 285-bar. What is the resulting bar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":532,"display":{"counting":{"kind":"countOn","more":247,"start":285},"promptText":"A tape diagram has a short bar of 285 and a long bar that is 247 longer. How long is the long bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0295",
@@ -14902,7 +14902,7 @@ export const ITEMS = [
     structureType: "barMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":764,"display":{"counting":{"kind":"countOn","more":345,"start":419},"promptText":"A base bar of 419 extended by exactly 345. What does the extended bar total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":764,"display":{"counting":{"kind":"countOn","more":345,"start":419},"promptText":"Ida's bar is 419 units long. Theo's bar is 345 units longer than Ida's bar. How many units long is Theo's bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0296",
@@ -14912,7 +14912,7 @@ export const ITEMS = [
     structureType: "barMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":697,"display":{"counting":{"kind":"countOn","more":355,"start":342},"promptText":"Add a difference of 355 onto the 342-bar. What is the resulting bar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":697,"display":{"counting":{"kind":"countOn","more":355,"start":342},"promptText":"The short bar is 342 long. The long bar is 355 longer. How long is the long bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0297",
@@ -14922,7 +14922,7 @@ export const ITEMS = [
     structureType: "barMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":845,"display":{"counting":{"kind":"countOn","more":258,"start":587},"promptText":"A base bar of 587 extended by exactly 258. What does the extended bar total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":845,"display":{"counting":{"kind":"countOn","more":258,"start":587},"promptText":"Bar A is 587 units long. Bar B is 258 units longer than Bar A. How long is Bar B?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0298",
@@ -14932,7 +14932,7 @@ export const ITEMS = [
     structureType: "barMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":483,"display":{"counting":{"kind":"countOn","more":247,"start":236},"promptText":"Add a difference of 247 onto the 236-bar. What is the resulting bar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":483,"display":{"counting":{"kind":"countOn","more":247,"start":236},"promptText":"A tape diagram has a short bar of 236 and a long bar that is 247 longer. How long is the long bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0299",
@@ -14942,7 +14942,7 @@ export const ITEMS = [
     structureType: "barMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":928,"display":{"counting":{"kind":"countOn","more":255,"start":673},"promptText":"A base bar of 673 extended by exactly 255. What does the extended bar total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":928,"display":{"counting":{"kind":"countOn","more":255,"start":673},"promptText":"Rosa's bar is 673 units long. Finn's bar is 255 units longer than Rosa's bar. How many units long is Finn's bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0300",
@@ -14952,7 +14952,7 @@ export const ITEMS = [
     structureType: "barMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":615,"display":{"counting":{"kind":"countOn","more":247,"start":368},"promptText":"Add a difference of 247 onto the 368-bar. What is the resulting bar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":615,"display":{"counting":{"kind":"countOn","more":247,"start":368},"promptText":"The short bar is 368 long. The long bar is 247 longer. How long is the long bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0301",
@@ -14962,7 +14962,7 @@ export const ITEMS = [
     structureType: "barMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":792,"display":{"counting":{"kind":"countOn","more":345,"start":447},"promptText":"A base bar of 447 extended by exactly 345. What does the extended bar total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":792,"display":{"counting":{"kind":"countOn","more":345,"start":447},"promptText":"Bar A is 447 units long. Bar B is 345 units longer than Bar A. How long is Bar B?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0302",
@@ -14972,7 +14972,7 @@ export const ITEMS = [
     structureType: "barMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":874,"display":{"counting":{"kind":"countOn","more":345,"start":529},"promptText":"Add a difference of 345 onto the 529-bar. What is the resulting bar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":874,"display":{"counting":{"kind":"countOn","more":345,"start":529},"promptText":"A tape diagram has a short bar of 529 and a long bar that is 345 longer. How long is the long bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0303",
@@ -14982,7 +14982,7 @@ export const ITEMS = [
     structureType: "barMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":563,"display":{"counting":{"kind":"countOn","more":247,"start":316},"promptText":"A base bar of 316 extended by exactly 247. What does the extended bar total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":563,"display":{"counting":{"kind":"countOn","more":247,"start":316},"promptText":"June's bar is 316 units long. Diego's bar is 247 units longer than June's bar. How many units long is Diego's bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0304",
@@ -14992,7 +14992,7 @@ export const ITEMS = [
     structureType: "barMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":937,"display":{"counting":{"kind":"countOn","more":255,"start":682},"promptText":"Add a difference of 255 onto the 682-bar. What is the resulting bar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":937,"display":{"counting":{"kind":"countOn","more":255,"start":682},"promptText":"The short bar is 682 long. The long bar is 255 longer. How long is the long bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0305",
@@ -15002,7 +15002,7 @@ export const ITEMS = [
     structureType: "barMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":654,"display":{"counting":{"kind":"countOn","more":227,"start":427},"promptText":"A base bar of 427 extended by exactly 227. What does the extended bar total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":654,"display":{"counting":{"kind":"countOn","more":227,"start":427},"promptText":"Bar A is 427 units long. Bar B is 227 units longer than Bar A. How long is Bar B?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0306",
@@ -15012,7 +15012,7 @@ export const ITEMS = [
     structureType: "barMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":826,"display":{"counting":{"kind":"countOn","more":255,"start":571},"promptText":"Add a difference of 255 onto the 571-bar. What is the resulting bar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":826,"display":{"counting":{"kind":"countOn","more":255,"start":571},"promptText":"A tape diagram has a short bar of 571 and a long bar that is 255 longer. How long is the long bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0307",
@@ -15022,7 +15022,7 @@ export const ITEMS = [
     structureType: "barMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":495,"display":{"counting":{"kind":"countOn","more":227,"start":268},"promptText":"A base bar of 268 extended by exactly 227. What does the extended bar total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":495,"display":{"counting":{"kind":"countOn","more":227,"start":268},"promptText":"Lily's bar is 268 units long. Kai's bar is 227 units longer than Lily's bar. How many units long is Kai's bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0308",
@@ -15032,7 +15032,7 @@ export const ITEMS = [
     structureType: "barMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":913,"display":{"counting":{"kind":"countOn","more":267,"start":646},"promptText":"Add a difference of 267 onto the 646-bar. What is the resulting bar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":913,"display":{"counting":{"kind":"countOn","more":267,"start":646},"promptText":"The short bar is 646 long. The long bar is 267 longer. How long is the long bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0309",
@@ -15042,7 +15042,7 @@ export const ITEMS = [
     structureType: "barMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":592,"display":{"counting":{"kind":"countOn","more":255,"start":337},"promptText":"A base bar of 337 extended by exactly 255. What does the extended bar total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":592,"display":{"counting":{"kind":"countOn","more":255,"start":337},"promptText":"Bar A is 337 units long. Bar B is 255 units longer than Bar A. How long is Bar B?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0310",
@@ -15052,7 +15052,7 @@ export const ITEMS = [
     structureType: "barMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":748,"display":{"counting":{"kind":"countOn","more":275,"start":473},"promptText":"Add a difference of 275 onto the 473-bar. What is the resulting bar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":748,"display":{"counting":{"kind":"countOn","more":275,"start":473},"promptText":"A tape diagram has a short bar of 473 and a long bar that is 275 longer. How long is the long bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0311",
@@ -15062,7 +15062,7 @@ export const ITEMS = [
     structureType: "barMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":644,"display":{"counting":{"kind":"countOn","more":255,"start":389},"promptText":"A base bar of 389 extended by exactly 255. What does the extended bar total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":644,"display":{"counting":{"kind":"countOn","more":255,"start":389},"promptText":"Amara's bar is 389 units long. Luca's bar is 255 units longer than Amara's bar. How many units long is Luca's bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0312",
@@ -15072,7 +15072,7 @@ export const ITEMS = [
     structureType: "barMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":859,"display":{"counting":{"kind":"countOn","more":345,"start":514},"promptText":"Add a difference of 345 onto the 514-bar. What is the resulting bar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":859,"display":{"counting":{"kind":"countOn","more":345,"start":514},"promptText":"The short bar is 514 long. The long bar is 345 longer. How long is the long bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0313",
@@ -15602,7 +15602,7 @@ export const ITEMS = [
     structureType: "unitsTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":642,"display":{"counting":{"kind":"sum","parts":[214,214,214]},"promptText":"A bar of 3 equal units, 214 apiece. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":642,"display":{"counting":{"kind":"sum","parts":[214,214,214]},"promptText":"A tape diagram has 3 equal parts. Each part is 214. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0366",
@@ -15612,7 +15612,7 @@ export const ITEMS = [
     structureType: "unitsTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":692,"display":{"counting":{"kind":"sum","parts":[173,173,173,173]},"promptText":"Multiply out the bar: 4 units of 173. What total does it show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":692,"display":{"counting":{"kind":"sum","parts":[173,173,173,173]},"promptText":"A bar has 4 equal parts of 173 each. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0367",
@@ -15622,7 +15622,7 @@ export const ITEMS = [
     structureType: "unitsTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":730,"display":{"counting":{"kind":"sum","parts":[146,146,146,146,146]},"promptText":"A bar of 5 equal units, 146 apiece. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":730,"display":{"counting":{"kind":"sum","parts":[146,146,146,146,146]},"promptText":"Each of the 5 equal parts of a bar is 146. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0368",
@@ -15632,7 +15632,7 @@ export const ITEMS = [
     structureType: "unitsTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":744,"display":{"counting":{"kind":"sum","parts":[124,124,124,124,124,124]},"promptText":"Multiply out the bar: 6 units of 124. What total does it show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":744,"display":{"counting":{"kind":"sum","parts":[124,124,124,124,124,124]},"promptText":"A bar has 6 equal parts. Each one is 124. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0369",
@@ -15642,7 +15642,7 @@ export const ITEMS = [
     structureType: "unitsTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":801,"display":{"counting":{"kind":"sum","parts":[267,267,267]},"promptText":"A bar of 3 equal units, 267 apiece. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":801,"display":{"counting":{"kind":"sum","parts":[267,267,267]},"promptText":"A tape diagram has 3 equal parts. Each part is 267. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0370",
@@ -15652,7 +15652,7 @@ export const ITEMS = [
     structureType: "unitsTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":768,"display":{"counting":{"kind":"sum","parts":[192,192,192,192]},"promptText":"Multiply out the bar: 4 units of 192. What total does it show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":768,"display":{"counting":{"kind":"sum","parts":[192,192,192,192]},"promptText":"A bar has 4 equal parts of 192 each. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0371",
@@ -15662,7 +15662,7 @@ export const ITEMS = [
     structureType: "unitsTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":815,"display":{"counting":{"kind":"sum","parts":[163,163,163,163,163]},"promptText":"A bar of 5 equal units, 163 apiece. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":815,"display":{"counting":{"kind":"sum","parts":[163,163,163,163,163]},"promptText":"Each of the 5 equal parts of a bar is 163. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0372",
@@ -15672,7 +15672,7 @@ export const ITEMS = [
     structureType: "unitsTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":822,"display":{"counting":{"kind":"sum","parts":[137,137,137,137,137,137]},"promptText":"Multiply out the bar: 6 units of 137. What total does it show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":822,"display":{"counting":{"kind":"sum","parts":[137,137,137,137,137,137]},"promptText":"A bar has 6 equal parts. Each one is 137. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0373",
@@ -15682,7 +15682,7 @@ export const ITEMS = [
     structureType: "unitsTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":729,"display":{"counting":{"kind":"sum","parts":[243,243,243]},"promptText":"A bar of 3 equal units, 243 apiece. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":729,"display":{"counting":{"kind":"sum","parts":[243,243,243]},"promptText":"A tape diagram has 3 equal parts. Each part is 243. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0374",
@@ -15692,7 +15692,7 @@ export const ITEMS = [
     structureType: "unitsTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":904,"display":{"counting":{"kind":"sum","parts":[226,226,226,226]},"promptText":"Multiply out the bar: 4 units of 226. What total does it show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":904,"display":{"counting":{"kind":"sum","parts":[226,226,226,226]},"promptText":"A bar has 4 equal parts of 226 each. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0375",
@@ -15702,7 +15702,7 @@ export const ITEMS = [
     structureType: "unitsTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":920,"display":{"counting":{"kind":"sum","parts":[184,184,184,184,184]},"promptText":"A bar of 5 equal units, 184 apiece. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":920,"display":{"counting":{"kind":"sum","parts":[184,184,184,184,184]},"promptText":"Each of the 5 equal parts of a bar is 184. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0376",
@@ -15712,7 +15712,7 @@ export const ITEMS = [
     structureType: "unitsTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":826,"display":{"counting":{"kind":"sum","parts":[118,118,118,118,118,118,118]},"promptText":"Multiply out the bar: 7 units of 118. What total does it show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":826,"display":{"counting":{"kind":"sum","parts":[118,118,118,118,118,118,118]},"promptText":"A bar has 7 equal parts. Each one is 118. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0377",
@@ -15722,7 +15722,7 @@ export const ITEMS = [
     structureType: "unitsTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":876,"display":{"counting":{"kind":"sum","parts":[292,292,292]},"promptText":"A bar of 3 equal units, 292 apiece. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":876,"display":{"counting":{"kind":"sum","parts":[292,292,292]},"promptText":"A tape diagram has 3 equal parts. Each part is 292. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0378",
@@ -15732,7 +15732,7 @@ export const ITEMS = [
     structureType: "unitsTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":936,"display":{"counting":{"kind":"sum","parts":[234,234,234,234]},"promptText":"Multiply out the bar: 4 units of 234. What total does it show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":936,"display":{"counting":{"kind":"sum","parts":[234,234,234,234]},"promptText":"A bar has 4 equal parts of 234 each. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0379",
@@ -15742,7 +15742,7 @@ export const ITEMS = [
     structureType: "unitsTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":985,"display":{"counting":{"kind":"sum","parts":[197,197,197,197,197]},"promptText":"A bar of 5 equal units, 197 apiece. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":985,"display":{"counting":{"kind":"sum","parts":[197,197,197,197,197]},"promptText":"Each of the 5 equal parts of a bar is 197. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0380",
@@ -15752,7 +15752,7 @@ export const ITEMS = [
     structureType: "unitsTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":847,"display":{"counting":{"kind":"sum","parts":[121,121,121,121,121,121,121]},"promptText":"Multiply out the bar: 7 units of 121. What total does it show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":847,"display":{"counting":{"kind":"sum","parts":[121,121,121,121,121,121,121]},"promptText":"A bar has 7 equal parts. Each one is 121. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0381",
@@ -15762,7 +15762,7 @@ export const ITEMS = [
     structureType: "unitsTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":825,"display":{"counting":{"kind":"sum","parts":[275,275,275]},"promptText":"A bar of 3 equal units, 275 apiece. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":825,"display":{"counting":{"kind":"sum","parts":[275,275,275]},"promptText":"A tape diagram has 3 equal parts. Each part is 275. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0382",
@@ -15772,7 +15772,7 @@ export const ITEMS = [
     structureType: "unitsTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":872,"display":{"counting":{"kind":"sum","parts":[218,218,218,218]},"promptText":"Multiply out the bar: 4 units of 218. What total does it show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":872,"display":{"counting":{"kind":"sum","parts":[218,218,218,218]},"promptText":"A bar has 4 equal parts of 218 each. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0383",
@@ -15782,7 +15782,7 @@ export const ITEMS = [
     structureType: "unitsTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":858,"display":{"counting":{"kind":"sum","parts":[143,143,143,143,143,143]},"promptText":"A bar of 6 equal units, 143 apiece. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":858,"display":{"counting":{"kind":"sum","parts":[143,143,143,143,143,143]},"promptText":"Each of the 6 equal parts of a bar is 143. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0384",
@@ -15792,7 +15792,7 @@ export const ITEMS = [
     structureType: "unitsTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":928,"display":{"counting":{"kind":"sum","parts":[116,116,116,116,116,116,116,116]},"promptText":"Multiply out the bar: 8 units of 116. What total does it show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":928,"display":{"counting":{"kind":"sum","parts":[116,116,116,116,116,116,116,116]},"promptText":"A bar has 8 equal parts. Each one is 116. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0385",
@@ -15802,7 +15802,7 @@ export const ITEMS = [
     structureType: "unitsTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":774,"display":{"counting":{"kind":"sum","parts":[258,258,258]},"promptText":"A bar of 3 equal units, 258 apiece. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":774,"display":{"counting":{"kind":"sum","parts":[258,258,258]},"promptText":"A tape diagram has 3 equal parts. Each part is 258. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0386",
@@ -15812,7 +15812,7 @@ export const ITEMS = [
     structureType: "unitsTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":748,"display":{"counting":{"kind":"sum","parts":[187,187,187,187]},"promptText":"Multiply out the bar: 4 units of 187. What total does it show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":748,"display":{"counting":{"kind":"sum","parts":[187,187,187,187]},"promptText":"A bar has 4 equal parts of 187 each. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0387",
@@ -15822,7 +15822,7 @@ export const ITEMS = [
     structureType: "unitsTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":912,"display":{"counting":{"kind":"sum","parts":[152,152,152,152,152,152]},"promptText":"A bar of 6 equal units, 152 apiece. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":912,"display":{"counting":{"kind":"sum","parts":[152,152,152,152,152,152]},"promptText":"Each of the 6 equal parts of a bar is 152. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0388",
@@ -15832,7 +15832,7 @@ export const ITEMS = [
     structureType: "unitsTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":984,"display":{"counting":{"kind":"sum","parts":[123,123,123,123,123,123,123,123]},"promptText":"Multiply out the bar: 8 units of 123. What total does it show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":984,"display":{"counting":{"kind":"sum","parts":[123,123,123,123,123,123,123,123]},"promptText":"A bar has 8 equal parts. Each one is 123. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0389",
@@ -15842,7 +15842,7 @@ export const ITEMS = [
     structureType: "unitsTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":890,"display":{"counting":{"kind":"sum","parts":[178,178,178,178,178]},"promptText":"A bar of 5 equal units, 178 apiece. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":890,"display":{"counting":{"kind":"sum","parts":[178,178,178,178,178]},"promptText":"A tape diagram has 5 equal parts. Each part is 178. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0390",
@@ -15852,7 +15852,7 @@ export const ITEMS = [
     structureType: "unitsTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":924,"display":{"counting":{"kind":"sum","parts":[132,132,132,132,132,132,132]},"promptText":"Multiply out the bar: 7 units of 132. What total does it show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":924,"display":{"counting":{"kind":"sum","parts":[132,132,132,132,132,132,132]},"promptText":"A bar has 7 equal parts of 132 each. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0391",
@@ -16122,7 +16122,7 @@ export const ITEMS = [
     structureType: "unitOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"bar":{"k":3,"w":84,"kind":"unitOf"},"promptText":"Divide a 84-bar into 3 equal sections. One section = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"bar":{"k":3,"w":84,"kind":"unitOf"},"promptText":"Divide a bar for 84 into 3 equal parts. How much is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0418",
@@ -16132,7 +16132,7 @@ export const ITEMS = [
     structureType: "unitOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"bar":{"k":4,"w":76,"kind":"unitOf"},"promptText":"4 equal sections share a whole of 76. Each section carries ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"bar":{"k":4,"w":76,"kind":"unitOf"},"promptText":"A whole of 76 is split into 4 equal parts. How much is each part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0419",
@@ -16142,7 +16142,7 @@ export const ITEMS = [
     structureType: "unitOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"bar":{"k":5,"w":95,"kind":"unitOf"},"promptText":"Divide a 95-bar into 5 equal sections. One section = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"bar":{"k":5,"w":95,"kind":"unitOf"},"promptText":"A bar for 95 is cut into 5 equal parts. What is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0420",
@@ -16152,7 +16152,7 @@ export const ITEMS = [
     structureType: "unitOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"bar":{"k":6,"w":72,"kind":"unitOf"},"promptText":"6 equal sections share a whole of 72. Each section carries ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"bar":{"k":6,"w":72,"kind":"unitOf"},"promptText":"A tape diagram has a whole of 72 and 6 equal parts. What is each part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0421",
@@ -16162,7 +16162,7 @@ export const ITEMS = [
     structureType: "unitOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"bar":{"k":3,"w":87,"kind":"unitOf"},"promptText":"Divide a 87-bar into 3 equal sections. One section = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"bar":{"k":3,"w":87,"kind":"unitOf"},"promptText":"Divide a bar for 87 into 3 equal parts. How much is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0422",
@@ -16172,7 +16172,7 @@ export const ITEMS = [
     structureType: "unitOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"bar":{"k":4,"w":92,"kind":"unitOf"},"promptText":"4 equal sections share a whole of 92. Each section carries ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"bar":{"k":4,"w":92,"kind":"unitOf"},"promptText":"A whole of 92 is split into 4 equal parts. How much is each part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0423",
@@ -16182,7 +16182,7 @@ export const ITEMS = [
     structureType: "unitOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"bar":{"k":5,"w":85,"kind":"unitOf"},"promptText":"Divide a 85-bar into 5 equal sections. One section = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"bar":{"k":5,"w":85,"kind":"unitOf"},"promptText":"A bar for 85 is cut into 5 equal parts. What is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0424",
@@ -16192,7 +16192,7 @@ export const ITEMS = [
     structureType: "unitOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bar":{"k":6,"w":78,"kind":"unitOf"},"promptText":"6 equal sections share a whole of 78. Each section carries ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bar":{"k":6,"w":78,"kind":"unitOf"},"promptText":"A tape diagram has a whole of 78 and 6 equal parts. What is each part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0425",
@@ -16202,7 +16202,7 @@ export const ITEMS = [
     structureType: "unitOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"bar":{"k":3,"w":96,"kind":"unitOf"},"promptText":"Divide a 96-bar into 3 equal sections. One section = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"bar":{"k":3,"w":96,"kind":"unitOf"},"promptText":"Divide a bar for 96 into 3 equal parts. How much is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0426",
@@ -16212,7 +16212,7 @@ export const ITEMS = [
     structureType: "unitOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"bar":{"k":4,"w":88,"kind":"unitOf"},"promptText":"4 equal sections share a whole of 88. Each section carries ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"bar":{"k":4,"w":88,"kind":"unitOf"},"promptText":"A whole of 88 is split into 4 equal parts. How much is each part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0427",
@@ -16222,7 +16222,7 @@ export const ITEMS = [
     structureType: "unitOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bar":{"k":5,"w":75,"kind":"unitOf"},"promptText":"Divide a 75-bar into 5 equal sections. One section = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bar":{"k":5,"w":75,"kind":"unitOf"},"promptText":"A bar for 75 is cut into 5 equal parts. What is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0428",
@@ -16232,7 +16232,7 @@ export const ITEMS = [
     structureType: "unitOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bar":{"k":6,"w":84,"kind":"unitOf"},"promptText":"6 equal sections share a whole of 84. Each section carries ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bar":{"k":6,"w":84,"kind":"unitOf"},"promptText":"A tape diagram has a whole of 84 and 6 equal parts. What is each part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0429",
@@ -16242,7 +16242,7 @@ export const ITEMS = [
     structureType: "unitOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"bar":{"k":3,"w":93,"kind":"unitOf"},"promptText":"Divide a 93-bar into 3 equal sections. One section = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"bar":{"k":3,"w":93,"kind":"unitOf"},"promptText":"Divide a bar for 93 into 3 equal parts. How much is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0430",
@@ -16252,7 +16252,7 @@ export const ITEMS = [
     structureType: "unitOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"bar":{"k":4,"w":68,"kind":"unitOf"},"promptText":"4 equal sections share a whole of 68. Each section carries ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"bar":{"k":4,"w":68,"kind":"unitOf"},"promptText":"A whole of 68 is split into 4 equal parts. How much is each part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0431",
@@ -16262,7 +16262,7 @@ export const ITEMS = [
     structureType: "unitOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"bar":{"k":5,"w":90,"kind":"unitOf"},"promptText":"Divide a 90-bar into 5 equal sections. One section = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"bar":{"k":5,"w":90,"kind":"unitOf"},"promptText":"A bar for 90 is cut into 5 equal parts. What is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0432",
@@ -16272,7 +16272,7 @@ export const ITEMS = [
     structureType: "unitOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bar":{"k":6,"w":66,"kind":"unitOf"},"promptText":"6 equal sections share a whole of 66. Each section carries ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bar":{"k":6,"w":66,"kind":"unitOf"},"promptText":"A tape diagram has a whole of 66 and 6 equal parts. What is each part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0433",
@@ -16282,7 +16282,7 @@ export const ITEMS = [
     structureType: "unitOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"bar":{"k":3,"w":81,"kind":"unitOf"},"promptText":"Divide a 81-bar into 3 equal sections. One section = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"bar":{"k":3,"w":81,"kind":"unitOf"},"promptText":"Divide a bar for 81 into 3 equal parts. How much is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0434",
@@ -16292,7 +16292,7 @@ export const ITEMS = [
     structureType: "unitOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"bar":{"k":4,"w":64,"kind":"unitOf"},"promptText":"4 equal sections share a whole of 64. Each section carries ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"bar":{"k":4,"w":64,"kind":"unitOf"},"promptText":"A whole of 64 is split into 4 equal parts. How much is each part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0435",
@@ -16302,7 +16302,7 @@ export const ITEMS = [
     structureType: "unitOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"bar":{"k":5,"w":80,"kind":"unitOf"},"promptText":"Divide a 80-bar into 5 equal sections. One section = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"bar":{"k":5,"w":80,"kind":"unitOf"},"promptText":"A bar for 80 is cut into 5 equal parts. What is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0436",
@@ -16312,7 +16312,7 @@ export const ITEMS = [
     structureType: "unitOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"bar":{"k":6,"w":96,"kind":"unitOf"},"promptText":"6 equal sections share a whole of 96. Each section carries ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"bar":{"k":6,"w":96,"kind":"unitOf"},"promptText":"A tape diagram has a whole of 96 and 6 equal parts. What is each part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0437",
@@ -16322,7 +16322,7 @@ export const ITEMS = [
     structureType: "unitOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"bar":{"k":3,"w":99,"kind":"unitOf"},"promptText":"Divide a 99-bar into 3 equal sections. One section = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"bar":{"k":3,"w":99,"kind":"unitOf"},"promptText":"Divide a bar for 99 into 3 equal parts. How much is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0438",
@@ -16332,7 +16332,7 @@ export const ITEMS = [
     structureType: "unitOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bar":{"k":4,"w":56,"kind":"unitOf"},"promptText":"4 equal sections share a whole of 56. Each section carries ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bar":{"k":4,"w":56,"kind":"unitOf"},"promptText":"A whole of 56 is split into 4 equal parts. How much is each part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0439",
@@ -16342,7 +16342,7 @@ export const ITEMS = [
     structureType: "unitOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bar":{"k":5,"w":65,"kind":"unitOf"},"promptText":"Divide a 65-bar into 5 equal sections. One section = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bar":{"k":5,"w":65,"kind":"unitOf"},"promptText":"A bar for 65 is cut into 5 equal parts. What is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0440",
@@ -16352,7 +16352,7 @@ export const ITEMS = [
     structureType: "unitOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bar":{"k":6,"w":54,"kind":"unitOf"},"promptText":"6 equal sections share a whole of 54. Each section carries ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bar":{"k":6,"w":54,"kind":"unitOf"},"promptText":"A tape diagram has a whole of 54 and 6 equal parts. What is each part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0441",
@@ -16362,7 +16362,7 @@ export const ITEMS = [
     structureType: "unitOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bar":{"k":7,"w":63,"kind":"unitOf"},"promptText":"Divide a 63-bar into 7 equal sections. One section = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bar":{"k":7,"w":63,"kind":"unitOf"},"promptText":"Divide a bar for 63 into 7 equal parts. How much is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0442",
@@ -16372,7 +16372,7 @@ export const ITEMS = [
     structureType: "unitOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bar":{"k":8,"w":72,"kind":"unitOf"},"promptText":"8 equal sections share a whole of 72. Each section carries ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bar":{"k":8,"w":72,"kind":"unitOf"},"promptText":"A whole of 72 is split into 8 equal parts. How much is each part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0443",
@@ -16392,7 +16392,7 @@ export const ITEMS = [
     structureType: "unitOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":191,"display":{"bar":{"k":4,"w":764,"kind":"unitOf"},"promptText":"A whole of 764 spread over 4 equal units leaves each unit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":191,"display":{"bar":{"k":4,"w":764,"kind":"unitOf"},"promptText":"A tape diagram has a whole of 764 cut into 4 equal parts. How much is each part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0445",
@@ -16412,7 +16412,7 @@ export const ITEMS = [
     structureType: "unitOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":121,"display":{"bar":{"k":6,"w":726,"kind":"unitOf"},"promptText":"A whole of 726 spread over 6 equal units leaves each unit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":121,"display":{"bar":{"k":6,"w":726,"kind":"unitOf"},"promptText":"A bar for 726 has 6 equal parts. What is each part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0447",
@@ -16432,7 +16432,7 @@ export const ITEMS = [
     structureType: "unitOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":232,"display":{"bar":{"k":4,"w":928,"kind":"unitOf"},"promptText":"A whole of 928 spread over 4 equal units leaves each unit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":232,"display":{"bar":{"k":4,"w":928,"kind":"unitOf"},"promptText":"A tape diagram has a whole of 928 cut into 4 equal parts. How much is each part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0449",
@@ -16452,7 +16452,7 @@ export const ITEMS = [
     structureType: "unitOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":131,"display":{"bar":{"k":6,"w":786,"kind":"unitOf"},"promptText":"A whole of 786 spread over 6 equal units leaves each unit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":131,"display":{"bar":{"k":6,"w":786,"kind":"unitOf"},"promptText":"A bar for 786 has 6 equal parts. What is each part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0451",
@@ -16472,7 +16472,7 @@ export const ITEMS = [
     structureType: "unitOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":221,"display":{"bar":{"k":4,"w":884,"kind":"unitOf"},"promptText":"A whole of 884 spread over 4 equal units leaves each unit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":221,"display":{"bar":{"k":4,"w":884,"kind":"unitOf"},"promptText":"A tape diagram has a whole of 884 cut into 4 equal parts. How much is each part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0453",
@@ -16492,7 +16492,7 @@ export const ITEMS = [
     structureType: "unitOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":141,"display":{"bar":{"k":6,"w":846,"kind":"unitOf"},"promptText":"A whole of 846 spread over 6 equal units leaves each unit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":141,"display":{"bar":{"k":6,"w":846,"kind":"unitOf"},"promptText":"A bar for 846 has 6 equal parts. What is each part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0455",
@@ -16512,7 +16512,7 @@ export const ITEMS = [
     structureType: "unitOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":172,"display":{"bar":{"k":4,"w":688,"kind":"unitOf"},"promptText":"A whole of 688 spread over 4 equal units leaves each unit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":172,"display":{"bar":{"k":4,"w":688,"kind":"unitOf"},"promptText":"A tape diagram has a whole of 688 cut into 4 equal parts. How much is each part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0457",
@@ -16532,7 +16532,7 @@ export const ITEMS = [
     structureType: "unitOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":111,"display":{"bar":{"k":6,"w":666,"kind":"unitOf"},"promptText":"A whole of 666 spread over 6 equal units leaves each unit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":111,"display":{"bar":{"k":6,"w":666,"kind":"unitOf"},"promptText":"A bar for 666 has 6 equal parts. What is each part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0459",
@@ -16552,7 +16552,7 @@ export const ITEMS = [
     structureType: "unitOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":161,"display":{"bar":{"k":4,"w":644,"kind":"unitOf"},"promptText":"A whole of 644 spread over 4 equal units leaves each unit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":161,"display":{"bar":{"k":4,"w":644,"kind":"unitOf"},"promptText":"A tape diagram has a whole of 644 cut into 4 equal parts. How much is each part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0461",
@@ -16572,7 +16572,7 @@ export const ITEMS = [
     structureType: "unitOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":161,"display":{"bar":{"k":6,"w":966,"kind":"unitOf"},"promptText":"A whole of 966 spread over 6 equal units leaves each unit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":161,"display":{"bar":{"k":6,"w":966,"kind":"unitOf"},"promptText":"A bar for 966 has 6 equal parts. What is each part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0463",
@@ -16592,7 +16592,7 @@ export const ITEMS = [
     structureType: "unitOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":142,"display":{"bar":{"k":4,"w":568,"kind":"unitOf"},"promptText":"A whole of 568 spread over 4 equal units leaves each unit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":142,"display":{"bar":{"k":4,"w":568,"kind":"unitOf"},"promptText":"A tape diagram has a whole of 568 cut into 4 equal parts. How much is each part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0465",
@@ -16612,7 +16612,7 @@ export const ITEMS = [
     structureType: "unitOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"bar":{"k":6,"w":546,"kind":"unitOf"},"promptText":"A whole of 546 spread over 6 equal units leaves each unit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"bar":{"k":6,"w":546,"kind":"unitOf"},"promptText":"A bar for 546 has 6 equal parts. What is each part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0467",
@@ -16632,7 +16632,7 @@ export const ITEMS = [
     structureType: "unitOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"bar":{"k":8,"w":728,"kind":"unitOf"},"promptText":"A whole of 728 spread over 8 equal units leaves each unit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"bar":{"k":8,"w":728,"kind":"unitOf"},"promptText":"A tape diagram has a whole of 728 cut into 8 equal parts. How much is each part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0469",
@@ -16902,7 +16902,7 @@ export const ITEMS = [
     structureType: "fracOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"bar":{"w":84,"den":4,"num":1,"kind":"fracOf"},"promptText":"Shade 1 of the 4 equal parts of a 84-bar. What value is shaded?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"bar":{"w":84,"den":4,"num":1,"kind":"fracOf"},"promptText":"A bar for 84 is cut into 4 equal parts, and 1 of them is shaded. How much is shaded?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0496",
@@ -16912,7 +16912,7 @@ export const ITEMS = [
     structureType: "fracOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"bar":{"w":76,"den":4,"num":3,"kind":"fracOf"},"promptText":"A 76-bar in 4 equal parts: 3 of them together = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"bar":{"w":76,"den":4,"num":3,"kind":"fracOf"},"promptText":"A bar for 76 is cut into 4 equal parts. How much do 3 of the parts make together?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0497",
@@ -16922,7 +16922,7 @@ export const ITEMS = [
     structureType: "fracOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"bar":{"w":95,"den":5,"num":2,"kind":"fracOf"},"promptText":"Shade 2 of the 5 equal parts of a 95-bar. What value is shaded?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"bar":{"w":95,"den":5,"num":2,"kind":"fracOf"},"promptText":"A bar for 95 has 5 equal parts. If 2 of the parts are shaded, how much is shaded?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0498",
@@ -16932,7 +16932,7 @@ export const ITEMS = [
     structureType: "fracOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"bar":{"w":72,"den":6,"num":5,"kind":"fracOf"},"promptText":"A 72-bar in 6 equal parts: 5 of them together = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"bar":{"w":72,"den":6,"num":5,"kind":"fracOf"},"promptText":"A tape diagram has a whole of 72 split into 6 equal parts. What is the total of 5 parts?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0499",
@@ -16942,7 +16942,7 @@ export const ITEMS = [
     structureType: "fracOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"bar":{"w":87,"den":3,"num":1,"kind":"fracOf"},"promptText":"Shade 1 of the 3 equal parts of a 87-bar. What value is shaded?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"bar":{"w":87,"den":3,"num":1,"kind":"fracOf"},"promptText":"A bar for 87 is cut into 3 equal parts, and 1 of them is shaded. How much is shaded?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0500",
@@ -16952,7 +16952,7 @@ export const ITEMS = [
     structureType: "fracOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":69,"display":{"bar":{"w":92,"den":4,"num":3,"kind":"fracOf"},"promptText":"A 92-bar in 4 equal parts: 3 of them together = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":69,"display":{"bar":{"w":92,"den":4,"num":3,"kind":"fracOf"},"promptText":"A bar for 92 is cut into 4 equal parts. How much do 3 of the parts make together?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0501",
@@ -16962,7 +16962,7 @@ export const ITEMS = [
     structureType: "fracOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":68,"display":{"bar":{"w":85,"den":5,"num":4,"kind":"fracOf"},"promptText":"Shade 4 of the 5 equal parts of a 85-bar. What value is shaded?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":68,"display":{"bar":{"w":85,"den":5,"num":4,"kind":"fracOf"},"promptText":"A bar for 85 has 5 equal parts. If 4 of the parts are shaded, how much is shaded?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0502",
@@ -16972,7 +16972,7 @@ export const ITEMS = [
     structureType: "fracOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bar":{"w":78,"den":6,"num":1,"kind":"fracOf"},"promptText":"A 78-bar in 6 equal parts: 1 of them together = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bar":{"w":78,"den":6,"num":1,"kind":"fracOf"},"promptText":"A tape diagram has a whole of 78 split into 6 equal parts. How much is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0503",
@@ -16982,7 +16982,7 @@ export const ITEMS = [
     structureType: "fracOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":64,"display":{"bar":{"w":96,"den":3,"num":2,"kind":"fracOf"},"promptText":"Shade 2 of the 3 equal parts of a 96-bar. What value is shaded?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":64,"display":{"bar":{"w":96,"den":3,"num":2,"kind":"fracOf"},"promptText":"A bar for 96 is cut into 3 equal parts, and 2 of them are shaded. How much is shaded?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0504",
@@ -16992,7 +16992,7 @@ export const ITEMS = [
     structureType: "fracOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"bar":{"w":88,"den":4,"num":1,"kind":"fracOf"},"promptText":"A 88-bar in 4 equal parts: 1 of them together = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"bar":{"w":88,"den":4,"num":1,"kind":"fracOf"},"promptText":"A bar for 88 is cut into 4 equal parts. How much is one of the parts?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0505",
@@ -17002,7 +17002,7 @@ export const ITEMS = [
     structureType: "fracOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"bar":{"w":75,"den":5,"num":3,"kind":"fracOf"},"promptText":"Shade 3 of the 5 equal parts of a 75-bar. What value is shaded?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"bar":{"w":75,"den":5,"num":3,"kind":"fracOf"},"promptText":"A bar for 75 has 5 equal parts. If 3 of the parts are shaded, how much is shaded?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0506",
@@ -17012,7 +17012,7 @@ export const ITEMS = [
     structureType: "fracOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"bar":{"w":84,"den":6,"num":5,"kind":"fracOf"},"promptText":"A 84-bar in 6 equal parts: 5 of them together = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"bar":{"w":84,"den":6,"num":5,"kind":"fracOf"},"promptText":"A tape diagram has a whole of 84 split into 6 equal parts. What is the total of 5 parts?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0507",
@@ -17022,7 +17022,7 @@ export const ITEMS = [
     structureType: "fracOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"bar":{"w":93,"den":3,"num":1,"kind":"fracOf"},"promptText":"Shade 1 of the 3 equal parts of a 93-bar. What value is shaded?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"bar":{"w":93,"den":3,"num":1,"kind":"fracOf"},"promptText":"A bar for 93 is cut into 3 equal parts, and 1 of them is shaded. How much is shaded?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0508",
@@ -17032,7 +17032,7 @@ export const ITEMS = [
     structureType: "fracOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"bar":{"w":68,"den":4,"num":1,"kind":"fracOf"},"promptText":"A 68-bar in 4 equal parts: 1 of them together = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"bar":{"w":68,"den":4,"num":1,"kind":"fracOf"},"promptText":"A bar for 68 is cut into 4 equal parts. How much is one of the parts?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0509",
@@ -17042,7 +17042,7 @@ export const ITEMS = [
     structureType: "fracOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"bar":{"w":90,"den":5,"num":2,"kind":"fracOf"},"promptText":"Shade 2 of the 5 equal parts of a 90-bar. What value is shaded?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"bar":{"w":90,"den":5,"num":2,"kind":"fracOf"},"promptText":"A bar for 90 has 5 equal parts. If 2 of the parts are shaded, how much is shaded?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0510",
@@ -17052,7 +17052,7 @@ export const ITEMS = [
     structureType: "fracOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bar":{"w":66,"den":6,"num":1,"kind":"fracOf"},"promptText":"A 66-bar in 6 equal parts: 1 of them together = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bar":{"w":66,"den":6,"num":1,"kind":"fracOf"},"promptText":"A tape diagram has a whole of 66 split into 6 equal parts. How much is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0511",
@@ -17062,7 +17062,7 @@ export const ITEMS = [
     structureType: "fracOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":54,"display":{"bar":{"w":81,"den":3,"num":2,"kind":"fracOf"},"promptText":"Shade 2 of the 3 equal parts of a 81-bar. What value is shaded?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":54,"display":{"bar":{"w":81,"den":3,"num":2,"kind":"fracOf"},"promptText":"A bar for 81 is cut into 3 equal parts, and 2 of them are shaded. How much is shaded?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0512",
@@ -17072,7 +17072,7 @@ export const ITEMS = [
     structureType: "fracOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"bar":{"w":64,"den":4,"num":3,"kind":"fracOf"},"promptText":"A 64-bar in 4 equal parts: 3 of them together = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"bar":{"w":64,"den":4,"num":3,"kind":"fracOf"},"promptText":"A bar for 64 is cut into 4 equal parts. How much do 3 of the parts make together?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0513",
@@ -17082,7 +17082,7 @@ export const ITEMS = [
     structureType: "fracOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":64,"display":{"bar":{"w":80,"den":5,"num":4,"kind":"fracOf"},"promptText":"Shade 4 of the 5 equal parts of a 80-bar. What value is shaded?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":64,"display":{"bar":{"w":80,"den":5,"num":4,"kind":"fracOf"},"promptText":"A bar for 80 has 5 equal parts. If 4 of the parts are shaded, how much is shaded?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0514",
@@ -17092,7 +17092,7 @@ export const ITEMS = [
     structureType: "fracOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"bar":{"w":96,"den":6,"num":5,"kind":"fracOf"},"promptText":"A 96-bar in 6 equal parts: 5 of them together = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"bar":{"w":96,"den":6,"num":5,"kind":"fracOf"},"promptText":"A tape diagram has a whole of 96 split into 6 equal parts. What is the total of 5 parts?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0515",
@@ -17102,7 +17102,7 @@ export const ITEMS = [
     structureType: "fracOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"bar":{"w":99,"den":3,"num":1,"kind":"fracOf"},"promptText":"Shade 1 of the 3 equal parts of a 99-bar. What value is shaded?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"bar":{"w":99,"den":3,"num":1,"kind":"fracOf"},"promptText":"A bar for 99 is cut into 3 equal parts, and 1 of them is shaded. How much is shaded?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0516",
@@ -17112,7 +17112,7 @@ export const ITEMS = [
     structureType: "fracOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bar":{"w":56,"den":4,"num":1,"kind":"fracOf"},"promptText":"A 56-bar in 4 equal parts: 1 of them together = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bar":{"w":56,"den":4,"num":1,"kind":"fracOf"},"promptText":"A bar for 56 is cut into 4 equal parts. How much is one of the parts?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0517",
@@ -17122,7 +17122,7 @@ export const ITEMS = [
     structureType: "fracOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"bar":{"w":65,"den":5,"num":3,"kind":"fracOf"},"promptText":"Shade 3 of the 5 equal parts of a 65-bar. What value is shaded?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"bar":{"w":65,"den":5,"num":3,"kind":"fracOf"},"promptText":"A bar for 65 has 5 equal parts. If 3 of the parts are shaded, how much is shaded?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0518",
@@ -17132,7 +17132,7 @@ export const ITEMS = [
     structureType: "fracOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bar":{"w":54,"den":6,"num":1,"kind":"fracOf"},"promptText":"A 54-bar in 6 equal parts: 1 of them together = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bar":{"w":54,"den":6,"num":1,"kind":"fracOf"},"promptText":"A tape diagram has a whole of 54 split into 6 equal parts. How much is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0519",
@@ -17142,7 +17142,7 @@ export const ITEMS = [
     structureType: "fracOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"bar":{"w":63,"den":7,"num":2,"kind":"fracOf"},"promptText":"Shade 2 of the 7 equal parts of a 63-bar. What value is shaded?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"bar":{"w":63,"den":7,"num":2,"kind":"fracOf"},"promptText":"A bar for 63 is cut into 7 equal parts, and 2 of them are shaded. How much is shaded?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0520",
@@ -17152,7 +17152,7 @@ export const ITEMS = [
     structureType: "fracOf_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"bar":{"w":72,"den":8,"num":3,"kind":"fracOf"},"promptText":"A 72-bar in 8 equal parts: 3 of them together = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"bar":{"w":72,"den":8,"num":3,"kind":"fracOf"},"promptText":"A bar for 72 is cut into 8 equal parts. How much do 3 of the parts make together?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0521",
@@ -17162,7 +17162,7 @@ export const ITEMS = [
     structureType: "fracOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":212,"display":{"bar":{"w":848,"den":4,"num":1,"kind":"fracOf"},"promptText":"Take exactly 1 of the 4 equal sections of a 848-bar. What amount is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":212,"display":{"bar":{"w":848,"den":4,"num":1,"kind":"fracOf"},"promptText":"A tape diagram has a whole of 848 cut into 4 equal parts. How much is 1 part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0522",
@@ -17172,7 +17172,7 @@ export const ITEMS = [
     structureType: "fracOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":573,"display":{"bar":{"w":764,"den":4,"num":3,"kind":"fracOf"},"promptText":"Of a 764-bar split 4 ways, claim 3 sections. What do they total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":573,"display":{"bar":{"w":764,"den":4,"num":3,"kind":"fracOf"},"promptText":"A bar for 764 is split into 4 equal parts. What do 3 of the parts add up to?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0523",
@@ -17182,7 +17182,7 @@ export const ITEMS = [
     structureType: "fracOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":382,"display":{"bar":{"w":955,"den":5,"num":2,"kind":"fracOf"},"promptText":"Take exactly 2 of the 5 equal sections of a 955-bar. What amount is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":382,"display":{"bar":{"w":955,"den":5,"num":2,"kind":"fracOf"},"promptText":"A bar for 955 has 5 equal parts. How much are 2 of the parts?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0524",
@@ -17192,7 +17192,7 @@ export const ITEMS = [
     structureType: "fracOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":605,"display":{"bar":{"w":726,"den":6,"num":5,"kind":"fracOf"},"promptText":"Of a 726-bar split 6 ways, claim 5 sections. What do they total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":605,"display":{"bar":{"w":726,"den":6,"num":5,"kind":"fracOf"},"promptText":"Split a whole of 726 into 6 equal parts. How much are 5 of the parts together?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0525",
@@ -17202,7 +17202,7 @@ export const ITEMS = [
     structureType: "fracOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":291,"display":{"bar":{"w":873,"den":3,"num":1,"kind":"fracOf"},"promptText":"Take exactly 1 of the 3 equal sections of a 873-bar. What amount is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":291,"display":{"bar":{"w":873,"den":3,"num":1,"kind":"fracOf"},"promptText":"A tape diagram has a whole of 873 cut into 3 equal parts. How much is 1 part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0526",
@@ -17212,7 +17212,7 @@ export const ITEMS = [
     structureType: "fracOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":696,"display":{"bar":{"w":928,"den":4,"num":3,"kind":"fracOf"},"promptText":"Of a 928-bar split 4 ways, claim 3 sections. What do they total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":696,"display":{"bar":{"w":928,"den":4,"num":3,"kind":"fracOf"},"promptText":"A bar for 928 is split into 4 equal parts. What do 3 of the parts add up to?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0527",
@@ -17222,7 +17222,7 @@ export const ITEMS = [
     structureType: "fracOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":684,"display":{"bar":{"w":855,"den":5,"num":4,"kind":"fracOf"},"promptText":"Take exactly 4 of the 5 equal sections of a 855-bar. What amount is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":684,"display":{"bar":{"w":855,"den":5,"num":4,"kind":"fracOf"},"promptText":"A bar for 855 has 5 equal parts. How much are 4 of the parts?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0528",
@@ -17232,7 +17232,7 @@ export const ITEMS = [
     structureType: "fracOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":131,"display":{"bar":{"w":786,"den":6,"num":1,"kind":"fracOf"},"promptText":"Of a 786-bar split 6 ways, claim 1 sections. What do they total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":131,"display":{"bar":{"w":786,"den":6,"num":1,"kind":"fracOf"},"promptText":"Split a whole of 786 into 6 equal parts. How much is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0529",
@@ -17242,7 +17242,7 @@ export const ITEMS = [
     structureType: "fracOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":642,"display":{"bar":{"w":963,"den":3,"num":2,"kind":"fracOf"},"promptText":"Take exactly 2 of the 3 equal sections of a 963-bar. What amount is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":642,"display":{"bar":{"w":963,"den":3,"num":2,"kind":"fracOf"},"promptText":"A tape diagram has a whole of 963 cut into 3 equal parts. How much are 2 parts?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0530",
@@ -17252,7 +17252,7 @@ export const ITEMS = [
     structureType: "fracOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":221,"display":{"bar":{"w":884,"den":4,"num":1,"kind":"fracOf"},"promptText":"Of a 884-bar split 4 ways, claim 1 sections. What do they total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":221,"display":{"bar":{"w":884,"den":4,"num":1,"kind":"fracOf"},"promptText":"A bar for 884 is split into 4 equal parts. How much is one of the parts?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0531",
@@ -17262,7 +17262,7 @@ export const ITEMS = [
     structureType: "fracOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":453,"display":{"bar":{"w":755,"den":5,"num":3,"kind":"fracOf"},"promptText":"Take exactly 3 of the 5 equal sections of a 755-bar. What amount is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":453,"display":{"bar":{"w":755,"den":5,"num":3,"kind":"fracOf"},"promptText":"A bar for 755 has 5 equal parts. How much are 3 of the parts?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0532",
@@ -17272,7 +17272,7 @@ export const ITEMS = [
     structureType: "fracOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":705,"display":{"bar":{"w":846,"den":6,"num":5,"kind":"fracOf"},"promptText":"Of a 846-bar split 6 ways, claim 5 sections. What do they total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":705,"display":{"bar":{"w":846,"den":6,"num":5,"kind":"fracOf"},"promptText":"Split a whole of 846 into 6 equal parts. How much are 5 of the parts together?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0533",
@@ -17282,7 +17282,7 @@ export const ITEMS = [
     structureType: "fracOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":313,"display":{"bar":{"w":939,"den":3,"num":1,"kind":"fracOf"},"promptText":"Take exactly 1 of the 3 equal sections of a 939-bar. What amount is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":313,"display":{"bar":{"w":939,"den":3,"num":1,"kind":"fracOf"},"promptText":"A tape diagram has a whole of 939 cut into 3 equal parts. How much is 1 part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0534",
@@ -17292,7 +17292,7 @@ export const ITEMS = [
     structureType: "fracOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":172,"display":{"bar":{"w":688,"den":4,"num":1,"kind":"fracOf"},"promptText":"Of a 688-bar split 4 ways, claim 1 sections. What do they total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":172,"display":{"bar":{"w":688,"den":4,"num":1,"kind":"fracOf"},"promptText":"A bar for 688 is split into 4 equal parts. How much is one of the parts?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0535",
@@ -17302,7 +17302,7 @@ export const ITEMS = [
     structureType: "fracOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":362,"display":{"bar":{"w":905,"den":5,"num":2,"kind":"fracOf"},"promptText":"Take exactly 2 of the 5 equal sections of a 905-bar. What amount is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":362,"display":{"bar":{"w":905,"den":5,"num":2,"kind":"fracOf"},"promptText":"A bar for 905 has 5 equal parts. How much are 2 of the parts?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0536",
@@ -17312,7 +17312,7 @@ export const ITEMS = [
     structureType: "fracOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":111,"display":{"bar":{"w":666,"den":6,"num":1,"kind":"fracOf"},"promptText":"Of a 666-bar split 6 ways, claim 1 sections. What do they total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":111,"display":{"bar":{"w":666,"den":6,"num":1,"kind":"fracOf"},"promptText":"Split a whole of 666 into 6 equal parts. How much is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0537",
@@ -17322,7 +17322,7 @@ export const ITEMS = [
     structureType: "fracOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":542,"display":{"bar":{"w":813,"den":3,"num":2,"kind":"fracOf"},"promptText":"Take exactly 2 of the 3 equal sections of a 813-bar. What amount is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":542,"display":{"bar":{"w":813,"den":3,"num":2,"kind":"fracOf"},"promptText":"A tape diagram has a whole of 813 cut into 3 equal parts. How much are 2 parts?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0538",
@@ -17332,7 +17332,7 @@ export const ITEMS = [
     structureType: "fracOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":483,"display":{"bar":{"w":644,"den":4,"num":3,"kind":"fracOf"},"promptText":"Of a 644-bar split 4 ways, claim 3 sections. What do they total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":483,"display":{"bar":{"w":644,"den":4,"num":3,"kind":"fracOf"},"promptText":"A bar for 644 is split into 4 equal parts. What do 3 of the parts add up to?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0539",
@@ -17342,7 +17342,7 @@ export const ITEMS = [
     structureType: "fracOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":644,"display":{"bar":{"w":805,"den":5,"num":4,"kind":"fracOf"},"promptText":"Take exactly 4 of the 5 equal sections of a 805-bar. What amount is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":644,"display":{"bar":{"w":805,"den":5,"num":4,"kind":"fracOf"},"promptText":"A bar for 805 has 5 equal parts. How much are 4 of the parts?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0540",
@@ -17352,7 +17352,7 @@ export const ITEMS = [
     structureType: "fracOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":805,"display":{"bar":{"w":966,"den":6,"num":5,"kind":"fracOf"},"promptText":"Of a 966-bar split 6 ways, claim 5 sections. What do they total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":805,"display":{"bar":{"w":966,"den":6,"num":5,"kind":"fracOf"},"promptText":"Split a whole of 966 into 6 equal parts. How much are 5 of the parts together?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0541",
@@ -17362,7 +17362,7 @@ export const ITEMS = [
     structureType: "fracOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":333,"display":{"bar":{"w":999,"den":3,"num":1,"kind":"fracOf"},"promptText":"Take exactly 1 of the 3 equal sections of a 999-bar. What amount is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":333,"display":{"bar":{"w":999,"den":3,"num":1,"kind":"fracOf"},"promptText":"A tape diagram has a whole of 999 cut into 3 equal parts. How much is 1 part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0542",
@@ -17372,7 +17372,7 @@ export const ITEMS = [
     structureType: "fracOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":142,"display":{"bar":{"w":568,"den":4,"num":1,"kind":"fracOf"},"promptText":"Of a 568-bar split 4 ways, claim 1 sections. What do they total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":142,"display":{"bar":{"w":568,"den":4,"num":1,"kind":"fracOf"},"promptText":"A bar for 568 is split into 4 equal parts. How much is one of the parts?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0543",
@@ -17382,7 +17382,7 @@ export const ITEMS = [
     structureType: "fracOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":393,"display":{"bar":{"w":655,"den":5,"num":3,"kind":"fracOf"},"promptText":"Take exactly 3 of the 5 equal sections of a 655-bar. What amount is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":393,"display":{"bar":{"w":655,"den":5,"num":3,"kind":"fracOf"},"promptText":"A bar for 655 has 5 equal parts. How much are 3 of the parts?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0544",
@@ -17392,7 +17392,7 @@ export const ITEMS = [
     structureType: "fracOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"bar":{"w":546,"den":6,"num":1,"kind":"fracOf"},"promptText":"Of a 546-bar split 6 ways, claim 1 sections. What do they total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"bar":{"w":546,"den":6,"num":1,"kind":"fracOf"},"promptText":"Split a whole of 546 into 6 equal parts. How much is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0545",
@@ -17402,7 +17402,7 @@ export const ITEMS = [
     structureType: "fracOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":182,"display":{"bar":{"w":637,"den":7,"num":2,"kind":"fracOf"},"promptText":"Take exactly 2 of the 7 equal sections of a 637-bar. What amount is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":182,"display":{"bar":{"w":637,"den":7,"num":2,"kind":"fracOf"},"promptText":"A tape diagram has a whole of 637 cut into 7 equal parts. How much are 2 parts?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0546",
@@ -17412,7 +17412,7 @@ export const ITEMS = [
     structureType: "fracOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":273,"display":{"bar":{"w":728,"den":8,"num":3,"kind":"fracOf"},"promptText":"Of a 728-bar split 8 ways, claim 3 sections. What do they total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":273,"display":{"bar":{"w":728,"den":8,"num":3,"kind":"fracOf"},"promptText":"A bar for 728 is split into 8 equal parts. What do 3 of the parts add up to?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0547",
@@ -17942,7 +17942,7 @@ export const ITEMS = [
     structureType: "wholeFromPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":846,"display":{"counting":{"kind":"sum","parts":[282,282,282]},"promptText":"One of 3 identical sections carries 282. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":846,"display":{"counting":{"kind":"sum","parts":[282,282,282]},"promptText":"One of 3 equal parts of a bar is 282. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0600",
@@ -17952,7 +17952,7 @@ export const ITEMS = [
     structureType: "wholeFromPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":764,"display":{"counting":{"kind":"sum","parts":[191,191,191,191]},"promptText":"Rebuild the bar: 4 sections, 191 apiece. What whole results?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":764,"display":{"counting":{"kind":"sum","parts":[191,191,191,191]},"promptText":"A bar is made of 4 equal parts of 191. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0601",
@@ -17962,7 +17962,7 @@ export const ITEMS = [
     structureType: "wholeFromPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":955,"display":{"counting":{"kind":"sum","parts":[191,191,191,191,191]},"promptText":"One of 5 identical sections carries 191. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":955,"display":{"counting":{"kind":"sum","parts":[191,191,191,191,191]},"promptText":"A bar has 5 equal parts, and one part is 191. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0602",
@@ -17972,7 +17972,7 @@ export const ITEMS = [
     structureType: "wholeFromPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":726,"display":{"counting":{"kind":"sum","parts":[121,121,121,121,121,121]},"promptText":"Rebuild the bar: 6 sections, 121 apiece. What whole results?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":726,"display":{"counting":{"kind":"sum","parts":[121,121,121,121,121,121]},"promptText":"Put 6 equal parts of 121 together to make one bar. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0603",
@@ -17982,7 +17982,7 @@ export const ITEMS = [
     structureType: "wholeFromPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":873,"display":{"counting":{"kind":"sum","parts":[291,291,291]},"promptText":"One of 3 identical sections carries 291. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":873,"display":{"counting":{"kind":"sum","parts":[291,291,291]},"promptText":"One of 3 equal parts of a bar is 291. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0604",
@@ -17992,7 +17992,7 @@ export const ITEMS = [
     structureType: "wholeFromPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":928,"display":{"counting":{"kind":"sum","parts":[232,232,232,232]},"promptText":"Rebuild the bar: 4 sections, 232 apiece. What whole results?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":928,"display":{"counting":{"kind":"sum","parts":[232,232,232,232]},"promptText":"A bar is made of 4 equal parts of 232. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0605",
@@ -18002,7 +18002,7 @@ export const ITEMS = [
     structureType: "wholeFromPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":855,"display":{"counting":{"kind":"sum","parts":[171,171,171,171,171]},"promptText":"One of 5 identical sections carries 171. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":855,"display":{"counting":{"kind":"sum","parts":[171,171,171,171,171]},"promptText":"A bar has 5 equal parts, and one part is 171. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0606",
@@ -18012,7 +18012,7 @@ export const ITEMS = [
     structureType: "wholeFromPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":786,"display":{"counting":{"kind":"sum","parts":[131,131,131,131,131,131]},"promptText":"Rebuild the bar: 6 sections, 131 apiece. What whole results?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":786,"display":{"counting":{"kind":"sum","parts":[131,131,131,131,131,131]},"promptText":"Put 6 equal parts of 131 together to make one bar. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0607",
@@ -18022,7 +18022,7 @@ export const ITEMS = [
     structureType: "wholeFromPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":963,"display":{"counting":{"kind":"sum","parts":[321,321,321]},"promptText":"One of 3 identical sections carries 321. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":963,"display":{"counting":{"kind":"sum","parts":[321,321,321]},"promptText":"One of 3 equal parts of a bar is 321. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0608",
@@ -18032,7 +18032,7 @@ export const ITEMS = [
     structureType: "wholeFromPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":884,"display":{"counting":{"kind":"sum","parts":[221,221,221,221]},"promptText":"Rebuild the bar: 4 sections, 221 apiece. What whole results?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":884,"display":{"counting":{"kind":"sum","parts":[221,221,221,221]},"promptText":"A bar is made of 4 equal parts of 221. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0609",
@@ -18042,7 +18042,7 @@ export const ITEMS = [
     structureType: "wholeFromPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":755,"display":{"counting":{"kind":"sum","parts":[151,151,151,151,151]},"promptText":"One of 5 identical sections carries 151. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":755,"display":{"counting":{"kind":"sum","parts":[151,151,151,151,151]},"promptText":"A bar has 5 equal parts, and one part is 151. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0610",
@@ -18052,7 +18052,7 @@ export const ITEMS = [
     structureType: "wholeFromPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":846,"display":{"counting":{"kind":"sum","parts":[141,141,141,141,141,141]},"promptText":"Rebuild the bar: 6 sections, 141 apiece. What whole results?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":846,"display":{"counting":{"kind":"sum","parts":[141,141,141,141,141,141]},"promptText":"Put 6 equal parts of 141 together to make one bar. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0611",
@@ -18062,7 +18062,7 @@ export const ITEMS = [
     structureType: "wholeFromPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":939,"display":{"counting":{"kind":"sum","parts":[313,313,313]},"promptText":"One of 3 identical sections carries 313. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":939,"display":{"counting":{"kind":"sum","parts":[313,313,313]},"promptText":"One of 3 equal parts of a bar is 313. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0612",
@@ -18072,7 +18072,7 @@ export const ITEMS = [
     structureType: "wholeFromPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":688,"display":{"counting":{"kind":"sum","parts":[172,172,172,172]},"promptText":"Rebuild the bar: 4 sections, 172 apiece. What whole results?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":688,"display":{"counting":{"kind":"sum","parts":[172,172,172,172]},"promptText":"A bar is made of 4 equal parts of 172. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0613",
@@ -18082,7 +18082,7 @@ export const ITEMS = [
     structureType: "wholeFromPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":905,"display":{"counting":{"kind":"sum","parts":[181,181,181,181,181]},"promptText":"One of 5 identical sections carries 181. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":905,"display":{"counting":{"kind":"sum","parts":[181,181,181,181,181]},"promptText":"A bar has 5 equal parts, and one part is 181. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0614",
@@ -18092,7 +18092,7 @@ export const ITEMS = [
     structureType: "wholeFromPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":666,"display":{"counting":{"kind":"sum","parts":[111,111,111,111,111,111]},"promptText":"Rebuild the bar: 6 sections, 111 apiece. What whole results?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":666,"display":{"counting":{"kind":"sum","parts":[111,111,111,111,111,111]},"promptText":"Put 6 equal parts of 111 together to make one bar. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0615",
@@ -18102,7 +18102,7 @@ export const ITEMS = [
     structureType: "wholeFromPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":813,"display":{"counting":{"kind":"sum","parts":[271,271,271]},"promptText":"One of 3 identical sections carries 271. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":813,"display":{"counting":{"kind":"sum","parts":[271,271,271]},"promptText":"One of 3 equal parts of a bar is 271. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0616",
@@ -18112,7 +18112,7 @@ export const ITEMS = [
     structureType: "wholeFromPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":644,"display":{"counting":{"kind":"sum","parts":[161,161,161,161]},"promptText":"Rebuild the bar: 4 sections, 161 apiece. What whole results?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":644,"display":{"counting":{"kind":"sum","parts":[161,161,161,161]},"promptText":"A bar is made of 4 equal parts of 161. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0617",
@@ -18122,7 +18122,7 @@ export const ITEMS = [
     structureType: "wholeFromPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":805,"display":{"counting":{"kind":"sum","parts":[161,161,161,161,161]},"promptText":"One of 5 identical sections carries 161. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":805,"display":{"counting":{"kind":"sum","parts":[161,161,161,161,161]},"promptText":"A bar has 5 equal parts, and one part is 161. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0618",
@@ -18132,7 +18132,7 @@ export const ITEMS = [
     structureType: "wholeFromPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":966,"display":{"counting":{"kind":"sum","parts":[161,161,161,161,161,161]},"promptText":"Rebuild the bar: 6 sections, 161 apiece. What whole results?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":966,"display":{"counting":{"kind":"sum","parts":[161,161,161,161,161,161]},"promptText":"Put 6 equal parts of 161 together to make one bar. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0619",
@@ -18142,7 +18142,7 @@ export const ITEMS = [
     structureType: "wholeFromPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":999,"display":{"counting":{"kind":"sum","parts":[333,333,333]},"promptText":"One of 3 identical sections carries 333. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":999,"display":{"counting":{"kind":"sum","parts":[333,333,333]},"promptText":"One of 3 equal parts of a bar is 333. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0620",
@@ -18152,7 +18152,7 @@ export const ITEMS = [
     structureType: "wholeFromPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":568,"display":{"counting":{"kind":"sum","parts":[142,142,142,142]},"promptText":"Rebuild the bar: 4 sections, 142 apiece. What whole results?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":568,"display":{"counting":{"kind":"sum","parts":[142,142,142,142]},"promptText":"A bar is made of 4 equal parts of 142. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0621",
@@ -18162,7 +18162,7 @@ export const ITEMS = [
     structureType: "wholeFromPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":655,"display":{"counting":{"kind":"sum","parts":[131,131,131,131,131]},"promptText":"One of 5 identical sections carries 131. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":655,"display":{"counting":{"kind":"sum","parts":[131,131,131,131,131]},"promptText":"A bar has 5 equal parts, and one part is 131. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0622",
@@ -18172,7 +18172,7 @@ export const ITEMS = [
     structureType: "wholeFromPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":546,"display":{"counting":{"kind":"sum","parts":[91,91,91,91,91,91]},"promptText":"Rebuild the bar: 6 sections, 91 apiece. What whole results?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":546,"display":{"counting":{"kind":"sum","parts":[91,91,91,91,91,91]},"promptText":"Put 6 equal parts of 91 together to make one bar. What is the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0623",
@@ -18182,7 +18182,7 @@ export const ITEMS = [
     structureType: "wholeFromPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":637,"display":{"counting":{"kind":"sum","parts":[91,91,91,91,91,91,91]},"promptText":"One of 7 identical sections carries 91. Exactly what is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":637,"display":{"counting":{"kind":"sum","parts":[91,91,91,91,91,91,91]},"promptText":"One of 7 equal parts of a bar is 91. What is the whole bar?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0624",
@@ -18192,6 +18192,6 @@ export const ITEMS = [
     structureType: "wholeFromPiece_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":728,"display":{"counting":{"kind":"sum","parts":[91,91,91,91,91,91,91,91]},"promptText":"Rebuild the bar: 8 sections, 91 apiece. What whole results?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":728,"display":{"counting":{"kind":"sum","parts":[91,91,91,91,91,91,91,91]},"promptText":"A bar is made of 8 equal parts of 91. What is the whole bar?"},"answerType":"numberPad"},
   },
 ];

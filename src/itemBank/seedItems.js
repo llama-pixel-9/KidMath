@@ -615,7 +615,7 @@ export const SEED_ITEMS = [
    "op": "+",
    "answer": 200,
    "display": {
-    "promptText": "Write 500 as a sum of 300 and another whole number. The other number is?"
+    "promptText": "What number goes in the blank: 500 = 300 + __?"
    }
   }
  },
@@ -636,7 +636,7 @@ export const SEED_ITEMS = [
    "op": "+",
    "answer": 80,
    "display": {
-    "promptText": "Use doubles: 40 + 40 equals?"
+    "promptText": "It is a doubles fact. What is 40 + 40?"
    }
   }
  },
@@ -678,7 +678,7 @@ export const SEED_ITEMS = [
    "op": "+",
    "answer": 750,
    "display": {
-    "promptText": "Halve and double reasoning: double 375 is 375 + 375. What is the total?"
+    "promptText": "What number is double 375?"
    }
   }
  },
@@ -762,7 +762,7 @@ export const SEED_ITEMS = [
    "op": "+",
    "answer": 5,
    "display": {
-    "promptText": "Write 20 as a sum of 15 and another whole number. The other number is?"
+    "promptText": "If 20 is split into 15 and another part, what is the other part?"
    }
   }
  },
@@ -825,7 +825,7 @@ export const SEED_ITEMS = [
    "op": "+",
    "answer": 43,
    "display": {
-    "promptText": "Open number sentence: 29 + 14 equals what?"
+    "promptText": "What is the sum of 29 and 14?"
    }
   }
  },
@@ -842,11 +842,11 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 9,
-   "b": 9,
+   "b": 10,
    "op": "+",
-   "answer": 18,
+   "answer": 19,
    "display": {
-    "promptText": "Halve and double reasoning: double 9 is 9 + 9. What is the total?"
+    "promptText": "9 + 9 = 18. What is 9 + 10?"
    }
   }
  },
@@ -930,7 +930,7 @@ export const SEED_ITEMS = [
    "op": "+",
    "answer": 2,
    "display": {
-    "promptText": "Write 10 as a sum of 8 and another whole number. The other number is?"
+    "promptText": "What number goes in the blank: 10 = 8 + __?"
    }
   }
  },
@@ -951,7 +951,7 @@ export const SEED_ITEMS = [
    "op": "+",
    "answer": 9,
    "display": {
-    "promptText": "Adding zero keeps a number the same. What is 9 + 0?"
+    "promptText": "What do you get when you add 0 to 9?"
    }
   }
  },
@@ -988,12 +988,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 6,
+   "a": 5,
    "b": 3,
    "op": "+",
-   "answer": 9,
+   "answer": 8,
    "display": {
-    "promptText": "Fingers: show 6 on one hand and 3 on the other. How many fingers?"
+    "promptText": "Hold up 5 fingers. Then hold up 3 more. How many fingers are up now?"
    }
   }
  },
@@ -1014,7 +1014,7 @@ export const SEED_ITEMS = [
    "op": "+",
    "answer": 8,
    "display": {
-    "promptText": "Fingers: show 2 on one hand and 6 on the other. How many fingers?"
+    "promptText": "Hold up 6 fingers. Then hold up 2 more. How many fingers are up now?"
    }
   }
  },
@@ -1549,7 +1549,7 @@ export const SEED_ITEMS = [
     "ang": {
      "kind": "authoredChoice"
     },
-    "promptText": "Mina opens a door just a crack. Which kind of angle does the door make with the wall? Pick it."
+    "promptText": "Mina opens a door just a crack. Which kind of angle does the door swing through?"
    }
   }
  },
@@ -1575,7 +1575,7 @@ export const SEED_ITEMS = [
      "unit": 90,
      "whole": 180
     },
-    "promptText": "Luca's toy robot makes a half turn. How many quarter turns is that? Type it."
+    "promptText": "Luca's toy robot makes a half turn. How many quarter turns is that?"
    },
    "answerType": "numberPad"
   }
@@ -1661,7 +1661,7 @@ export const SEED_ITEMS = [
      "deg": 90,
      "kind": "classify"
     },
-    "promptText": "Lily looks at the clock at 3:00. Which kind of angle do the two hands make? Pick it."
+    "promptText": "Lily looks at the clock at 3:00. Which kind of angle do the two hands make?"
    }
   }
  },
@@ -1772,7 +1772,7 @@ export const SEED_ITEMS = [
     "ang": {
      "kind": "authoredChoice"
     },
-    "promptText": "Omar swings a locker door just a crack. Pick the kind of angle between door and frame."
+    "promptText": "Omar swings a locker door open just a crack. What kind of angle is between the door and the frame?"
    }
   }
  },
@@ -1797,7 +1797,7 @@ export const SEED_ITEMS = [
      "d": 90,
      "kind": "benchDeg"
     },
-    "promptText": "June's drone rotates through a quarter turn. How many degrees does it rotate? Type it."
+    "promptText": "June's drone rotates through a quarter turn. How many degrees does it rotate?"
    },
    "answerType": "numberPad"
   }
@@ -1883,7 +1883,7 @@ export const SEED_ITEMS = [
      "deg": 90,
      "kind": "classify"
     },
-    "promptText": "At 3:00, Nora checks the clock hands. Pick the kind of angle between them."
+    "promptText": "At 3:00, Nora checks the clock hands. What kind of angle is between the hands?"
    }
   }
  },
@@ -2129,7 +2129,7 @@ export const SEED_ITEMS = [
      "d": 90,
      "kind": "benchDeg"
     },
-    "promptText": "Kai rotates a telescope mount through a quarter turn. Determine the rotation in degrees."
+    "promptText": "Kai's telescope mount swings through a quarter turn. How many degrees does the mount swing?"
    },
    "answerType": "numberPad"
   }
@@ -2244,7 +2244,7 @@ export const SEED_ITEMS = [
      "kind": "authoredYes"
     },
     "truth": true,
-    "promptText": "Mina says a wide-open gate makes an angle wider than a square corner. Is Mina right?"
+    "promptText": "Mina opens a laptop until the screen lies almost flat. Mina says the angle between the screen and the keys is wider than a square corner. Is Mina right?"
    }
   }
  },
@@ -2276,7 +2276,7 @@ export const SEED_ITEMS = [
      "said": 2
     },
     "truth": true,
-    "promptText": "Mina says 1 quarter turn plus 1 more make 2 quarter turns in all. Is Mina right?"
+    "promptText": "Is Mina right that 1 quarter turn and 1 more make 2 quarter turns in all?"
    }
   }
  },
@@ -2308,7 +2308,7 @@ export const SEED_ITEMS = [
      "whole": 4
     },
     "truth": true,
-    "promptText": "Mina says a full spin with 1 quarter turn done is missing 3 quarter turns. Is Mina right?"
+    "promptText": "Mina spins and stops after 1 quarter turn. Mina says 3 more quarter turns will finish one full turn. Is Mina right?"
    }
   }
  },
@@ -2337,7 +2337,7 @@ export const SEED_ITEMS = [
      "kind": "authored"
     },
     "truth": false,
-    "promptText": "Kai says a square corner is only a right angle when one side points straight up. Is Kai right? Think about the opening, not the tilt."
+    "promptText": "Is Kai correct that a square corner is a right angle only when one side points straight up?"
    }
   }
  },
@@ -2366,7 +2366,7 @@ export const SEED_ITEMS = [
      "kind": "trapNo"
     },
     "truth": false,
-    "promptText": "Kai claims a wide slice of pie opens less than a square corner. Is Kai right?"
+    "promptText": "Kai cuts a slice that is more than a quarter of a pie. Is Kai right that its tip opens less than a square corner?"
    }
   }
  },
@@ -2395,7 +2395,7 @@ export const SEED_ITEMS = [
      "kind": "authored"
     },
     "truth": true,
-    "promptText": "Kai says two square corners put together make a straight line. Is Kai right? Try drawing it."
+    "promptText": "Kai puts two square corners side by side. Is Kai right that they make a straight line?"
    }
   }
  },
@@ -2424,7 +2424,7 @@ export const SEED_ITEMS = [
      "kind": "authored"
     },
     "truth": false,
-    "promptText": "Splitting a square corner loses some of the turn, claims Nia. Is that right?"
+    "promptText": "Nia says splitting a square corner loses some of the turn. Is Nia right?"
    }
   }
  },
@@ -2455,7 +2455,7 @@ export const SEED_ITEMS = [
      "said": "acute"
     },
     "truth": true,
-    "promptText": "Omar measures an angle at 40 degrees and calls it acute. Does the label fit?"
+    "promptText": "Omar measures an angle at 40 degrees and calls it acute. Is Omar right?"
    }
   }
  },
@@ -2484,7 +2484,7 @@ export const SEED_ITEMS = [
      "kind": "authoredYes"
     },
     "truth": true,
-    "promptText": "Omar estimates the angle of a wide-open gate at about 150 degrees. Is that a sensible estimate?"
+    "promptText": "Omar looks at a clock at 5 o'clock. Omar estimates the angle between the two hands at about 150 degrees. Is that a sensible estimate?"
    }
   }
  },
@@ -2516,7 +2516,7 @@ export const SEED_ITEMS = [
      "said": 75
     },
     "truth": true,
-    "promptText": "Omar adds adjacent angles of 30 and 45 degrees and reports 75 degrees. Does the report hold?"
+    "promptText": "Omar says side-by-side angles of 30 and 45 degrees make 75 degrees together. Is Omar right?"
    }
   }
  },
@@ -2548,7 +2548,7 @@ export const SEED_ITEMS = [
      "total": 90
     },
     "truth": true,
-    "promptText": "Omar says an angle of 30 degrees needs 60 more degrees to make a right angle. Does the number hold?"
+    "promptText": "Is Omar right that a 30-degree angle needs 60 more degrees to make a right angle?"
    }
   }
  },
@@ -2577,7 +2577,7 @@ export const SEED_ITEMS = [
      "kind": "authored"
     },
     "truth": false,
-    "promptText": "Rosa claims a 90-degree angle stops being right when the page is rotated. Is the claim right? Think about the opening, not the tilt."
+    "promptText": "Is Rosa correct that a 90-degree angle drawn on paper stops being a right angle when she tilts the paper?"
    }
   }
  },
@@ -2606,7 +2606,7 @@ export const SEED_ITEMS = [
      "kind": "trapNo"
     },
     "truth": false,
-    "promptText": "Rosa estimates a wide slice of pie at 20 degrees. Is that a sensible estimate?"
+    "promptText": "Rosa cuts a slice that is a quarter of a pie. Rosa estimates the angle at its tip at about 20 degrees. Is that a sensible estimate?"
    }
   }
  },
@@ -2638,7 +2638,7 @@ export const SEED_ITEMS = [
      "total": 90
     },
     "truth": true,
-    "promptText": "Rosa claims angles of 15 and 75 degrees together make a right angle. Is the claim right?"
+    "promptText": "Rosa puts a 15-degree angle next to a 75-degree angle. Is Rosa right that they make a right angle?"
    }
   }
  },
@@ -2667,7 +2667,7 @@ export const SEED_ITEMS = [
      "kind": "authored"
     },
     "truth": false,
-    "promptText": "Splitting a right angle changes its total, argues Zoe. Is that right?"
+    "promptText": "Zoe says splitting a right angle into two parts changes its total. Is Zoe right?"
    }
   }
  },
@@ -2698,7 +2698,7 @@ export const SEED_ITEMS = [
      "said": "acute"
     },
     "truth": true,
-    "promptText": "Finn classifies a 89-degree angle as acute. Is the classification valid?"
+    "promptText": "Finn calls an 89-degree angle acute. Is an 89-degree angle an acute angle?"
    }
   }
  },
@@ -2727,7 +2727,7 @@ export const SEED_ITEMS = [
      "kind": "authoredYes"
     },
     "truth": true,
-    "promptText": "Finn pegs a wide-open gate near 160 degrees. Is the estimate reasonable?"
+    "promptText": "Finn tips his laptop screen back until it is almost flat. Finn says the angle between the screen and the keys is about 160 degrees. Is that a sensible estimate?"
    }
   }
  },
@@ -2759,7 +2759,7 @@ export const SEED_ITEMS = [
      "said": 125
     },
     "truth": true,
-    "promptText": "Finn certifies 125 degrees as the combined measure of 85 and 40 degrees. Valid?"
+    "promptText": "Finn adds 85 degrees and 40 degrees and gets 125 degrees. Is 125 degrees the right total?"
    }
   }
  },
@@ -2791,7 +2791,7 @@ export const SEED_ITEMS = [
      "total": 180
     },
     "truth": true,
-    "promptText": "Finn certifies that 65 degrees and 115 degrees complete a straight angle. Valid?"
+    "promptText": "Finn says a 65-degree angle needs 115 more degrees to make a straight angle. Is Finn right?"
    }
   }
  },
@@ -2820,7 +2820,7 @@ export const SEED_ITEMS = [
      "kind": "authored"
     },
     "truth": false,
-    "promptText": "Nora asserts orientation decides rightness: a rotated 90-degree angle is no longer right. Sound assertion? Think about the opening, not the tilt."
+    "promptText": "Nora says a 90-degree angle is a right angle only when one side goes straight across. Is Nora right?"
    }
   }
  },
@@ -2849,7 +2849,7 @@ export const SEED_ITEMS = [
      "kind": "trapNo"
     },
     "truth": false,
-    "promptText": "Nora pegs a wide slice of pie near 15 degrees. Is the estimate reasonable?"
+    "promptText": "Nora cuts a slice that is a quarter of a pie. Nora estimates the angle at its tip at about 15 degrees. Is that a sensible estimate?"
    }
   }
  },
@@ -2881,7 +2881,7 @@ export const SEED_ITEMS = [
      "total": 180
     },
     "truth": true,
-    "promptText": "Nora asserts 65 and 115 degrees combine into a straight angle. Is the assertion right?"
+    "promptText": "Is Nora right that 65 degrees and 115 degrees together make a straight line?"
    }
   }
  },
@@ -2910,7 +2910,7 @@ export const SEED_ITEMS = [
      "kind": "authored"
     },
     "truth": false,
-    "promptText": "The pieces of a cut straight angle can total more than 180 degrees, asserts Diego. Is the assertion right?"
+    "promptText": "Is Diego right that the pieces of a cut straight angle can add up to more than 180 degrees?"
    }
   }
  },
@@ -2941,7 +2941,7 @@ export const SEED_ITEMS = [
      "rel": "less",
      "kind": "classifyRel"
     },
-    "promptText": "An angle opens less than a square corner. Pick its kind."
+    "promptText": "What kind of angle opens less than a square corner?"
    }
   }
  },
@@ -2967,7 +2967,7 @@ export const SEED_ITEMS = [
      "unit": 90,
      "whole": 180
     },
-    "promptText": "How many square corners fit exactly along a straight line? Type the count."
+    "promptText": "How many square corners fit exactly along a straight line?"
    },
    "answerType": "numberPad"
   }
@@ -2998,7 +2998,7 @@ export const SEED_ITEMS = [
     "ang": {
      "kind": "authoredChoice"
     },
-    "promptText": "Two square corners side by side together make what? Pick it."
+    "promptText": "What do two square corners side by side make together?"
    }
   }
  },
@@ -3024,7 +3024,7 @@ export const SEED_ITEMS = [
      "kind": "missDeg",
      "total": 360
     },
-    "promptText": "A full spin is missing some quarter turns: 1 is done. How many quarter turns are missing? Type it."
+    "promptText": "Only 1 quarter turn of a full spin is done. How many more quarter turns are needed?"
    },
    "answerType": "numberPad"
   }
@@ -3082,7 +3082,7 @@ export const SEED_ITEMS = [
      "unit": 90,
      "whole": 360
     },
-    "promptText": "It takes how many square corners to build a full turn? Type the number."
+    "promptText": "How many square corners does it take to build a full turn?"
    },
    "answerType": "numberPad"
   }
@@ -3109,7 +3109,7 @@ export const SEED_ITEMS = [
      "b": 2,
      "kind": "sumUnits"
     },
-    "promptText": "2 quarter turns, then 2 more. How many quarter turns in all? Type it."
+    "promptText": "Make 2 quarter turns and then 2 more. How many quarter turns is that in all?"
    },
    "answerType": "numberPad"
   }
@@ -3136,7 +3136,7 @@ export const SEED_ITEMS = [
      "kind": "missDeg",
      "total": 180
     },
-    "promptText": "The line needs 2 square corners and shows 1. How many square corners does it still need?"
+    "promptText": "A straight line is made of 2 square corners. Only 1 is there so far. How many square corners does the line still need?"
    },
    "answerType": "numberPad"
   }
@@ -3168,7 +3168,7 @@ export const SEED_ITEMS = [
      "deg": 30,
      "kind": "classify"
     },
-    "promptText": "An angle measures 30 degrees. Pick its kind."
+    "promptText": "What kind of angle is a 30-degree angle?"
    }
   }
  },
@@ -3280,7 +3280,7 @@ export const SEED_ITEMS = [
      "deg": 90,
      "kind": "classify"
     },
-    "promptText": "What kind of angle is a quarter turn? Pick it."
+    "promptText": "What kind of angle is a quarter turn?"
    }
   }
  },
@@ -3305,7 +3305,7 @@ export const SEED_ITEMS = [
      "of": 90,
      "kind": "halfDeg"
     },
-    "promptText": "Half of a 90-degree angle measures how many degrees? Type it."
+    "promptText": "Half of a 90-degree angle measures how many degrees?"
    },
    "answerType": "numberPad"
   }
@@ -3333,7 +3333,7 @@ export const SEED_ITEMS = [
      "c": 40,
      "kind": "sumDeg3"
     },
-    "promptText": "Three angles around a line measure 20, 30, and 40 degrees. Type their total in degrees."
+    "promptText": "Three angles sit side by side with no gaps. They measure 20, 30, and 40 degrees. How many degrees do they make together?"
    },
    "answerType": "numberPad"
   }
@@ -3361,7 +3361,7 @@ export const SEED_ITEMS = [
      "kind": "missDeg3",
      "total": 180
     },
-    "promptText": "Three angles make a straight angle. Two measure 60 and 70 degrees. The third = ? Type it."
+    "promptText": "Three angles make a straight angle. Two of them measure 60 and 70 degrees. How many degrees is the third angle?"
    },
    "answerType": "numberPad"
   }
@@ -3393,7 +3393,7 @@ export const SEED_ITEMS = [
      "deg": 89,
      "kind": "classify"
     },
-    "promptText": "Classify precisely: a 89-degree angle is which kind?"
+    "promptText": "An 89-degree angle is which kind of angle?"
    }
   }
  },
@@ -3505,7 +3505,7 @@ export const SEED_ITEMS = [
      "deg": 90,
      "kind": "classify"
     },
-    "promptText": "Classify precisely: a quarter turn is which kind of angle?"
+    "promptText": "Is a quarter turn an acute, right, obtuse, or straight angle?"
    }
   }
  },
@@ -3530,7 +3530,7 @@ export const SEED_ITEMS = [
      "of": 90,
      "kind": "halfDeg"
     },
-    "promptText": "Bisect a 90-degree angle. Each half measures how many degrees?"
+    "promptText": "A 90-degree angle is cut into two equal angles. How many degrees is each one?"
    },
    "answerType": "numberPad"
   }
@@ -3558,7 +3558,7 @@ export const SEED_ITEMS = [
      "c": 70,
      "kind": "sumDeg3"
     },
-    "promptText": "Compute the total of three adjacent angles: 50, 60, and 70 degrees."
+    "promptText": "Three angles side by side measure 50, 60, and 70 degrees. What is their total in degrees?"
    },
    "answerType": "numberPad"
   }
@@ -3586,7 +3586,7 @@ export const SEED_ITEMS = [
      "kind": "missDeg3",
      "total": 360
     },
-    "promptText": "Compute the third angle when a full turn contains parts of 120 and 130 degrees."
+    "promptText": "A full turn is cut into three angles. Two of them are 120 and 130 degrees. How many degrees is the third angle?"
    },
    "answerType": "numberPad"
   }
@@ -4219,7 +4219,7 @@ export const SEED_ITEMS = [
      "d": 4,
      "kind": "joinAreas"
     },
-    "promptText": "Ava pours an L-shaped court from a 14 m by 5 m pad and a 8 m by 4 m pad. How many square m is the court?"
+    "promptText": "Ava pours an L-shaped court from a 14 m by 5 m pad and an 8 m by 4 m pad. How many square m is the court?"
    },
    "answerType": "numberPad"
   }
@@ -4302,7 +4302,10 @@ export const SEED_ITEMS = [
    ],
    "display": {
     "ap": {
-     "kind": "trapNo"
+     "kind": "perimSaid",
+     "w": 2,
+     "h": 3,
+     "said": 5
     },
     "truth": false,
     "promptText": "Mina finds the trip around a 2-by-3 rectangle by adding just two sides: 2 + 3 = 5 units. Is Mina right?"
@@ -4363,7 +4366,7 @@ export const SEED_ITEMS = [
      "kind": "authored"
     },
     "truth": false,
-    "promptText": "Mina wants to put ribbon around a card and measures the space INSIDE the shape to do it. Is that the right measure?"
+    "promptText": "Mina wants to put ribbon around a card and measures the space inside the shape to do it. Is that the right measure?"
    }
   }
  },
@@ -4427,7 +4430,7 @@ export const SEED_ITEMS = [
      "said": 12
     },
     "truth": true,
-    "promptText": "Kai says the trip around a 2-by-4 rectangle is 12 units. Is Kai right?"
+    "promptText": "Kai finds that the border of a 2-unit by 4-unit rectangle is 12 units. Is that right?"
    }
   }
  },
@@ -4456,7 +4459,7 @@ export const SEED_ITEMS = [
      "kind": "authoredYes"
     },
     "truth": true,
-    "promptText": "Kai cuts a paper rectangle into two pieces and says the two pieces together cover the same amount as before. Is Kai right? No paper is lost in the cut."
+    "promptText": "Kai cuts a paper rectangle into two pieces. Do the two pieces together cover the same amount of space as the whole rectangle?"
    }
   }
  },
@@ -4485,7 +4488,7 @@ export const SEED_ITEMS = [
      "kind": "trapNo"
     },
     "truth": false,
-    "promptText": "Nia labels the border of a 5-by-2 rectangle \"14 unit squares\". Is the label right?"
+    "promptText": "Nia finds the perimeter of a 5-by-2 grid rectangle and writes 14 square units. Did Nia use the right unit?"
    }
   }
  },
@@ -4514,7 +4517,7 @@ export const SEED_ITEMS = [
      "kind": "trapNo"
     },
     "truth": false,
-    "promptText": "Omar computes the area of a 7 cm by 4 cm rectangle as 7 + 4 = 11 square cm. Does the work hold?"
+    "promptText": "Omar says the area of a 7 cm by 4 cm rectangle is 7 + 4 = 11 square cm. Is Omar right?"
    }
   }
  },
@@ -4540,10 +4543,13 @@ export const SEED_ITEMS = [
    ],
    "display": {
     "ap": {
-     "kind": "trapNo"
+     "kind": "perimSaid",
+     "w": 7,
+     "h": 4,
+     "said": 11
     },
     "truth": false,
-    "promptText": "Omar computes the perimeter of a 7 cm by 4 cm rectangle as 7 + 4 = 11 cm. Does the work hold?"
+    "promptText": "Omar says the perimeter of a 7 cm by 4 cm rectangle is 7 + 4 = 11 cm. Is Omar right?"
    }
   }
  },
@@ -4572,7 +4578,7 @@ export const SEED_ITEMS = [
      "kind": "trapNo"
     },
     "truth": false,
-    "promptText": "Omar overlaps two rugs and sums their areas to report the floor space they cover. Does the sum hold?"
+    "promptText": "Two rugs overlap on Omar's floor. Omar adds their areas to find the floor space they cover. Is Omar right about the floor space?"
    }
   }
  },
@@ -4601,7 +4607,7 @@ export const SEED_ITEMS = [
      "kind": "authored"
     },
     "truth": false,
-    "promptText": "Omar plans to fence a chicken run and calculates the area. Is area the measure the job needs?"
+    "promptText": "Omar wants to fence a chicken run. Omar works out the area first. Is area the right measure for this job?"
    }
   }
  },
@@ -4633,7 +4639,7 @@ export const SEED_ITEMS = [
      "said": 63
     },
     "truth": true,
-    "promptText": "Rosa records 63 square cm for a 9 cm by 7 cm rectangle. Does the record hold?"
+    "promptText": "Rosa finds that a 9 cm by 7 cm rectangle has an area of 63 square cm. Is Rosa right about the area?"
    }
   }
  },
@@ -4665,7 +4671,7 @@ export const SEED_ITEMS = [
      "said": 32
     },
     "truth": true,
-    "promptText": "Rosa records 32 cm for the perimeter of a 9 cm by 7 cm rectangle. Does the record hold?"
+    "promptText": "Rosa finds that the perimeter of a 9 cm by 7 cm rectangle is 32 cm. Is Rosa right about the perimeter?"
    }
   }
  },
@@ -4694,7 +4700,7 @@ export const SEED_ITEMS = [
      "kind": "authoredYes"
     },
     "truth": true,
-    "promptText": "Rosa splits a garden into two beds and claims the total planted area stays the same. Does the claim hold? No paper is lost in the cut."
+    "promptText": "Rosa splits a garden into two beds and says the total planted area stays the same. Is Rosa right about the planted area?"
    }
   }
  },
@@ -4713,17 +4719,17 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": "No",
+   "answer": "Yes",
    "choices": [
     "Yes",
     "No"
    ],
    "display": {
     "ap": {
-     "kind": "trapNo"
+     "kind": "authoredYes"
     },
-    "truth": false,
-    "promptText": "Zoe writes the perimeter of a 8 cm by 8 cm rectangle as 32 square cm. Is the unit right?"
+    "truth": true,
+    "promptText": "Zoe writes the perimeter of an 8 cm by 8 cm rectangle as 32 cm. Is the unit right?"
    }
   }
  },
@@ -4752,7 +4758,7 @@ export const SEED_ITEMS = [
      "kind": "trapNo"
     },
     "truth": false,
-    "promptText": "Finn's worked area for a 12 m by 8 m rectangle reads 12 + 8 = 20 square m. Is the work sound?"
+    "promptText": "Finn works out the area of a 12 m by 8 m rectangle as 12 + 8 = 20 square m. Is Finn right?"
    }
   }
  },
@@ -4778,10 +4784,13 @@ export const SEED_ITEMS = [
    ],
    "display": {
     "ap": {
-     "kind": "trapNo"
+     "kind": "perimSaid",
+     "w": 12,
+     "h": 8,
+     "said": 20
     },
     "truth": false,
-    "promptText": "Finn's perimeter for a 12 m by 8 m rectangle reads 12 + 8 = 20 m. Is the work sound?"
+    "promptText": "Finn works out the perimeter of a 12 m by 8 m rectangle as 12 + 8 = 20 m. Is Finn right?"
    }
   }
  },
@@ -4810,7 +4819,7 @@ export const SEED_ITEMS = [
      "kind": "trapNo"
     },
     "truth": false,
-    "promptText": "Finn computes covered ground for two overlapping tarps by simple addition of their areas. Is the computation sound?"
+    "promptText": "Two tarps overlap on the ground. Finn adds their areas to find how much ground they cover. Is Finn right about the ground covered?"
    }
   }
  },
@@ -4839,7 +4848,7 @@ export const SEED_ITEMS = [
      "kind": "authored"
     },
     "truth": false,
-    "promptText": "Finn prepares to rail a balcony by computing the area. Does the job call for area?"
+    "promptText": "Before Finn starts to put a fence around a vegetable garden, Finn works out the area. Does this job need the area?"
    }
   }
  },
@@ -4871,7 +4880,7 @@ export const SEED_ITEMS = [
      "said": 132
     },
     "truth": true,
-    "promptText": "Nora certifies 132 square m as the area of a 12 m by 11 m rectangle. Valid?"
+    "promptText": "Nora says a 12 m by 11 m rectangle has an area of 132 square m. Is Nora right?"
    }
   }
  },
@@ -4903,7 +4912,7 @@ export const SEED_ITEMS = [
      "said": 46
     },
     "truth": true,
-    "promptText": "Nora certifies 46 m as the perimeter of a 12 m by 11 m rectangle. Valid?"
+    "promptText": "Nora works out that a 12 m by 11 m rectangle has a perimeter of 46 m. Is Nora's answer right?"
    }
   }
  },
@@ -4932,7 +4941,7 @@ export const SEED_ITEMS = [
      "kind": "authoredYes"
     },
     "truth": true,
-    "promptText": "Nora cuts a field into two plots and says the two areas add up to the whole field. Nothing is lost in the cut. Is Nora right?"
+    "promptText": "Nora cuts a field into two plots. Do the areas of the two plots add up to the area of the whole field?"
    }
   }
  },
@@ -4951,17 +4960,17 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": "No",
+   "answer": "Yes",
    "choices": [
     "Yes",
     "No"
    ],
    "display": {
     "ap": {
-     "kind": "trapNo"
+     "kind": "authoredYes"
     },
-    "truth": false,
-    "promptText": "Diego states a 15 m by 8 m rectangle's perimeter as 46 square m. Is the unit correct?"
+    "truth": true,
+    "promptText": "Diego states a 15 m by 8 m rectangle's perimeter as 46 m. Is the unit correct?"
    }
   }
  },
@@ -4993,11 +5002,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "areaPerimeter-proc-b0821-0223",
+  "itemId": "areaPerimeter-proc-b0821-0175",
   "modeId": "areaPerimeter",
   "itemFamily": "procedural",
   "subskill": "perimeter",
-  "structureType": "perimLF_band1",
+  "structureType": "perimDims_band1",
   "levelRange": [
    1,
    3
@@ -5014,7 +5023,7 @@ export const SEED_ITEMS = [
      "w": 2,
      "kind": "perimOf"
     },
-    "promptText": "Perim: 2 + 3 + 2 + 3 = ?"
+    "promptText": "A rectangle is 2 units across and 3 units down. How many units is the trip all the way around it?"
    },
    "answerType": "numberPad"
   }
@@ -5072,7 +5081,7 @@ export const SEED_ITEMS = [
     "ap": {
      "kind": "authoredChoice"
     },
-    "promptText": "To put tape all the way around a card, do you need the trip AROUND the shape or the space INSIDE it? Pick one."
+    "promptText": "To put tape all the way around a card, which do you measure: around the edge or inside the shape?"
    }
   }
  },
@@ -5104,11 +5113,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "areaPerimeter-proc-b0821-0186",
+  "itemId": "areaPerimeter-proc-b0821-0234",
   "modeId": "areaPerimeter",
   "itemFamily": "procedural",
   "subskill": "perimeter",
-  "structureType": "perimDims_band1",
+  "structureType": "perimLF_band1",
   "levelRange": [
    1,
    3
@@ -5125,7 +5134,7 @@ export const SEED_ITEMS = [
      "w": 6,
      "kind": "perimOf"
     },
-    "promptText": "Walk the edge of a 6-unit by 6-unit rectangle. How many units long is the walk around?"
+    "promptText": "6 + 6 + 6 + 6 = ? (perimeter)"
    },
    "answerType": "numberPad"
   }
@@ -5183,7 +5192,7 @@ export const SEED_ITEMS = [
     "ap": {
      "kind": "authoredChoice"
     },
-    "promptText": "A rectangle is 2 units by 3 units. Its area is 6 of which count: unit squares or units? Pick one."
+    "promptText": "A rectangle is 2 units by 3 units. Its area is 6. What does the 6 count?"
    }
   }
  },
@@ -5215,11 +5224,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "areaPerimeter-proc-b0821-0239",
+  "itemId": "areaPerimeter-proc-b0821-0191",
   "modeId": "areaPerimeter",
   "itemFamily": "procedural",
   "subskill": "perimeter",
-  "structureType": "perimLF_band2",
+  "structureType": "perimDims_band2",
   "levelRange": [
    4,
    6
@@ -5236,7 +5245,7 @@ export const SEED_ITEMS = [
      "w": 7,
      "kind": "perimOf"
     },
-    "promptText": "Perim: 7 + 4 + 7 + 4 = ?"
+    "promptText": "A rectangle is 7 cm long and 4 cm wide. What is its perimeter in cm?"
    },
    "answerType": "numberPad"
   }
@@ -5320,17 +5329,17 @@ export const SEED_ITEMS = [
      "w": 8,
      "kind": "areaOf"
     },
-    "promptText": "Compute the area in square cm of a rectangle 8 cm by 4 cm."
+    "promptText": "What is the area of a rectangle 8 cm by 4 cm, in square cm?"
    },
    "answerType": "numberPad"
   }
  },
  {
-  "itemId": "areaPerimeter-proc-b0821-0202",
+  "itemId": "areaPerimeter-proc-b0821-0250",
   "modeId": "areaPerimeter",
   "itemFamily": "procedural",
   "subskill": "perimeter",
-  "structureType": "perimDims_band2",
+  "structureType": "perimLF_band2",
   "levelRange": [
    4,
    6
@@ -5347,7 +5356,7 @@ export const SEED_ITEMS = [
      "w": 12,
      "kind": "perimOf"
     },
-    "promptText": "Find the perimeter of a 12 cm by 3 cm rectangle in cm."
+    "promptText": "12 + 3 + 12 + 3 = ? (perimeter)"
    },
    "answerType": "numberPad"
   }
@@ -5437,11 +5446,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "areaPerimeter-proc-b0821-0255",
+  "itemId": "areaPerimeter-proc-b0821-0207",
   "modeId": "areaPerimeter",
   "itemFamily": "procedural",
   "subskill": "perimeter",
-  "structureType": "perimLF_band3",
+  "structureType": "perimDims_band3",
   "levelRange": [
    7,
    10
@@ -5458,7 +5467,7 @@ export const SEED_ITEMS = [
      "w": 12,
      "kind": "perimOf"
     },
-    "promptText": "Perim: 12 + 8 + 12 + 8 = ?"
+    "promptText": "A rectangle measures 12 m by 8 m. What is its perimeter in m?"
    },
    "answerType": "numberPad"
   }
@@ -5487,7 +5496,7 @@ export const SEED_ITEMS = [
      "d": 4,
      "kind": "joinAreas"
     },
-    "promptText": "A composite figure is a 12 m by 8 m rectangle plus a 6 m by 4 m rectangle, no overlap. Compute its area in square m."
+    "promptText": "A shape is made of a 12 m by 8 m rectangle and a 6 m by 4 m rectangle that do not overlap. What is its area in square m?"
    },
    "answerType": "numberPad"
   }
@@ -5516,7 +5525,7 @@ export const SEED_ITEMS = [
     "ap": {
      "kind": "authoredChoice"
     },
-    "promptText": "Deciding how to install a railing around a deck calls for which measure: perimeter or area?"
+    "promptText": "To put a railing around a deck, which measure do you need: perimeter or area?"
    }
   }
  },
@@ -5548,11 +5557,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "areaPerimeter-proc-b0821-0218",
+  "itemId": "areaPerimeter-proc-b0821-0266",
   "modeId": "areaPerimeter",
   "itemFamily": "procedural",
   "subskill": "perimeter",
-  "structureType": "perimDims_band3",
+  "structureType": "perimLF_band3",
   "levelRange": [
    7,
    10
@@ -5569,7 +5578,7 @@ export const SEED_ITEMS = [
      "w": 15,
      "kind": "perimOf"
     },
-    "promptText": "Exactly how many m is the perimeter of a 15 m by 15 m rectangle?"
+    "promptText": "15 + 15 + 15 + 15 = ? (perimeter)"
    },
    "answerType": "numberPad"
   }
@@ -5598,7 +5607,7 @@ export const SEED_ITEMS = [
      "d": 10,
      "kind": "joinAreas"
     },
-    "promptText": "Squares of side 9 m and side 10 m form one non-overlapping figure. Compute its area in square m."
+    "promptText": "A square with 9 m sides and a square with 10 m sides are joined with no overlap. What is the area of the new shape in square m?"
    },
    "answerType": "numberPad"
   }
@@ -5878,7 +5887,7 @@ export const SEED_ITEMS = [
       31
      ]
     },
-    "promptText": "Mina's jar holds 27 seashells; Priya's jar holds 31. Poured together, how many seashells fill one jar? Sketch the bar if it helps."
+    "promptText": "Mina's jar holds 27 seashells; Priya's jar holds 31. Poured together, how many seashells fill one jar?"
    },
    "answerType": "numberPad"
   }
@@ -5905,7 +5914,7 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 64
     },
-    "promptText": "With 64 seashells against Leo's 39, how far ahead is Mina? Sketch the bar if it helps."
+    "promptText": "Mina has 64 seashells. Leo has 39 seashells. How many more seashells does Mina have than Leo?"
    },
    "answerType": "numberPad"
   }
@@ -5932,7 +5941,7 @@ export const SEED_ITEMS = [
      "u": 21,
      "kind": "timesOf"
     },
-    "promptText": "Mina's haul of seashells is 3 of Luca's piles of 21 stacked together. How many seashells is that? Sketch the bar if it helps."
+    "promptText": "Mina's haul of seashells is 3 of Luca's piles of 21 stacked together. How many seashells is that?"
    },
    "answerType": "numberPad"
   }
@@ -5960,7 +5969,7 @@ export const SEED_ITEMS = [
      "num": 1,
      "kind": "fracOf"
     },
-    "promptText": "Of Mina's 84-page comic, 1 of the 4 equal chapters are finished. How many pages are finished? Sketch the bar if it helps."
+    "promptText": "Of Mina's 84-page comic, 1 of the 4 equal chapters is finished. How many pages are finished?"
    },
    "answerType": "numberPad"
   }
@@ -5990,7 +5999,7 @@ export const SEED_ITEMS = [
      "kind": "countBack",
      "start": 77
     },
-    "promptText": "Of Zoe's 77 seashells, 49 get traded away. What number of seashells remains? Sketch the bar if it helps."
+    "promptText": "Of Zoe's 77 seashells, 49 get traded away. What number of seashells remains?"
    },
    "answerType": "barModel"
   }
@@ -6017,7 +6026,7 @@ export const SEED_ITEMS = [
      "more": 35,
      "start": 41
     },
-    "promptText": "Zoe beats Ida's pile of 41 seashells by 35. What is Zoe's pile of seashells? Sketch the bar if it helps."
+    "promptText": "Ida has a pile of 41 seashells. Zoe's pile has 35 more seashells than Ida's. How many seashells are in Zoe's pile?"
    },
    "answerType": "numberPad"
   }
@@ -6044,7 +6053,7 @@ export const SEED_ITEMS = [
      "w": 96,
      "kind": "unitOf"
     },
-    "promptText": "A crate of 96 seashells splits fairly across 3 tables for Zoe's party. How many seashells per table? Sketch the bar if it helps."
+    "promptText": "A crate of 96 seashells splits fairly across 3 tables for Zoe's party. How many seashells per table?"
    },
    "answerType": "numberPad"
   }
@@ -6072,7 +6081,7 @@ export const SEED_ITEMS = [
      "num": 1,
      "kind": "fracOf"
     },
-    "promptText": "Half of Zoe's 86 balloons float away. How many balloons drift off? Sketch the bar if it helps."
+    "promptText": "Half of Zoe's 86 balloons float away. How many balloons drift off?"
    },
    "answerType": "numberPad"
   }
@@ -6101,7 +6110,7 @@ export const SEED_ITEMS = [
       331
      ]
     },
-    "promptText": "Between them, Luca brings 227 seashells and Nia brings 331. What is their combined count of seashells? A bar model makes it clear."
+    "promptText": "Between them, Luca brings 227 seashells and Nia brings 331. What is their combined count of seashells?"
    },
    "answerType": "numberPad"
   }
@@ -6128,7 +6137,7 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 642
     },
-    "promptText": "Luca has 642 seashells and Theo has 397. What is the difference in their seashells? A bar model makes it clear."
+    "promptText": "Luca has 642 seashells and Theo has 397. What is the difference in their seashells?"
    },
    "answerType": "numberPad"
   }
@@ -6155,7 +6164,7 @@ export const SEED_ITEMS = [
      "u": 214,
      "kind": "timesOf"
     },
-    "promptText": "Whatever Omar collects, Luca collects 3 times over. Omar has 214 seashells. What does Luca have? A bar model makes it clear."
+    "promptText": "Omar has 214 seashells. Luca has 3 times as many seashells as Omar. How many seashells does Luca have?"
    },
    "answerType": "numberPad"
   }
@@ -6183,7 +6192,7 @@ export const SEED_ITEMS = [
      "num": 1,
      "kind": "fracOf"
     },
-    "promptText": "Luca pours a 848-cup batch into 4 equal jars and hands over 1. How many cups get handed over? A bar model makes it clear."
+    "promptText": "Luca's school pours 848 cups of lemonade into 4 equal coolers for field day. Luca's class gets 1 of the coolers. How many cups does the class get?"
    },
    "answerType": "numberPad"
   }
@@ -6213,7 +6222,7 @@ export const SEED_ITEMS = [
      "kind": "countBack",
      "start": 775
     },
-    "promptText": "A pouch of 775 seashells loses 491 through a hole. How many seashells stay in Omar's pouch? A bar model makes it clear."
+    "promptText": "Omar's big sack holds 775 seashells, and 491 of them fall out through a hole. How many seashells are still in the sack?"
    },
    "answerType": "barModel"
   }
@@ -6240,7 +6249,7 @@ export const SEED_ITEMS = [
      "more": 355,
      "start": 342
     },
-    "promptText": "Finn finds 342 trading cards. June finds 355 more than Finn. How many trading cards does June find? A bar model makes it clear."
+    "promptText": "Finn finds 342 trading cards. June finds 355 more than Finn. How many trading cards does June find?"
    },
    "answerType": "numberPad"
   }
@@ -6267,7 +6276,7 @@ export const SEED_ITEMS = [
      "w": 963,
      "kind": "unitOf"
     },
-    "promptText": "Omar lines up 963 seashells in 3 equal rows. How many seashells fill one row? A bar model makes it clear."
+    "promptText": "Omar lines up 963 seashells in 3 equal rows. How many seashells fill one row?"
    },
    "answerType": "numberPad"
   }
@@ -6295,7 +6304,7 @@ export const SEED_ITEMS = [
      "num": 1,
      "kind": "fracOf"
     },
-    "promptText": "Omar freezes half of 864 juice pops for later. How many pops go in the freezer? A bar model makes it clear."
+    "promptText": "Omar's school kitchen freezes half of its 864 juice pops for later. How many pops go in the freezer?"
    },
    "answerType": "numberPad"
   }
@@ -6328,7 +6337,7 @@ export const SEED_ITEMS = [
      "kind": "wholeSaid"
     },
     "truth": true,
-    "promptText": "Mina fills a bar: whole 13, parts 7 and 6. Is the bar right?"
+    "promptText": "Mina says parts of 7 and 6 make a whole of 13. Is Mina right?"
    }
   }
  },
@@ -6360,7 +6369,7 @@ export const SEED_ITEMS = [
      "d": 5,
      "kind": "fewerOf"
     },
-    "promptText": "Theo has 5 fewer stickers than Ava, who has 14. How many stickers does Theo have? Pick the number."
+    "promptText": "Theo has 5 fewer stickers than Ava, who has 14. How many stickers does Theo have?"
    }
   }
  },
@@ -6392,7 +6401,7 @@ export const SEED_ITEMS = [
      "u": 6,
      "kind": "timesOf"
     },
-    "promptText": "Mina has 2 times as many shells as Luca, who has 6. How many shells does Mina have? Pick the count."
+    "promptText": "Mina has 2 times as many shells as Luca. Luca has 6 shells. How many shells does Mina have?"
    }
   }
  },
@@ -6425,7 +6434,7 @@ export const SEED_ITEMS = [
      "said": 6
     },
     "truth": true,
-    "promptText": "Mina says half of a 12-bar is 6. Is Mina right?"
+    "promptText": "Mina folds a bar for 12 in half. Mina says each half is 6. Is Mina right?"
    }
   }
  },
@@ -6456,7 +6465,7 @@ export const SEED_ITEMS = [
      "w": 13,
      "kind": "eqPick"
     },
-    "promptText": "Nia must find the blank part of a whole-13, part-5 bar. Which sentence does the job?"
+    "promptText": "Nia has a bar with a whole of 13 and one part of 5. Which shows how to find the other part?"
    }
   }
  },
@@ -6488,7 +6497,7 @@ export const SEED_ITEMS = [
      "said": 7
     },
     "truth": false,
-    "promptText": "Between 11 and 3, Rosa measures a difference of 7. Is that right?"
+    "promptText": "Rosa says the bar for 11 is 7 longer than the bar for 3. Is that right?"
    }
   }
  },
@@ -6520,7 +6529,7 @@ export const SEED_ITEMS = [
      "kind": "equalSaid"
     },
     "truth": false,
-    "promptText": "2 parts of 6 each should rebuild Zoe's whole of 14. Do they?"
+    "promptText": "Zoe puts together 2 parts that are each 6. Do they make a whole of 14?"
    }
   }
  },
@@ -6548,7 +6557,7 @@ export const SEED_ITEMS = [
     "bar": {
      "kind": "biggerPiece"
     },
-    "promptText": "Theo picks a piece of a 20-bar: a half or a quarter. Which piece is bigger?"
+    "promptText": "Theo can take one half or one quarter of a bar for 20. Which piece is bigger?"
    }
   }
  },
@@ -6580,7 +6589,7 @@ export const SEED_ITEMS = [
      "kind": "wholeSaid"
     },
     "truth": true,
-    "promptText": "Omar sketches whole 58 over parts 27 and 31. Does the model check out?"
+    "promptText": "Omar says parts of 27 and 31 make a whole of 58. Is Omar right?"
    }
   }
  },
@@ -6677,7 +6686,7 @@ export const SEED_ITEMS = [
      "said": 42
     },
     "truth": true,
-    "promptText": "Omar halves a 84-bar and writes 42. Does the halving hold up?"
+    "promptText": "Omar draws a bar for 84 and cuts it in half. Omar says each half is 42. Is Omar right?"
    }
   }
  },
@@ -6740,7 +6749,7 @@ export const SEED_ITEMS = [
      "said": 34
     },
     "truth": false,
-    "promptText": "Sam figures 69 beats 34 by 34. Is the figure right?"
+    "promptText": "Sam says the difference between 69 and 34 is 34. Is Sam right?"
    }
   }
  },
@@ -6772,7 +6781,7 @@ export const SEED_ITEMS = [
      "kind": "equalSaid"
     },
     "truth": false,
-    "promptText": "A 87-bar divided by Priya into 3 sections of 28 — is the division exact?"
+    "promptText": "Priya lines up 3 equal parts of 28 each. Do they fill a bar for 87 exactly?"
    }
   }
  },
@@ -6800,7 +6809,7 @@ export const SEED_ITEMS = [
     "bar": {
      "kind": "biggerPiece"
     },
-    "promptText": "Ben weighs one third of 96 against one sixth of 96. Which share wins?"
+    "promptText": "Ben can choose one third of 96 or one sixth of 96. Which share is bigger?"
    }
   }
  },
@@ -6832,7 +6841,7 @@ export const SEED_ITEMS = [
      "kind": "wholeSaid"
     },
     "truth": true,
-    "promptText": "Finn audits a bar: whole 558, sections 227 and 331. Is the audit clean?"
+    "promptText": "Finn draws a tape diagram with parts of 227 and 331 and labels the whole 558. Is Finn right?"
    }
   }
  },
@@ -6929,7 +6938,7 @@ export const SEED_ITEMS = [
      "said": 424
     },
     "truth": true,
-    "promptText": "Finn computes half of 848 as 424. Is the computation right?"
+    "promptText": "Finn finds half of 848 and gets 424. Is Finn right?"
    }
   }
  },
@@ -6960,7 +6969,7 @@ export const SEED_ITEMS = [
      "w": 583,
      "kind": "eqPick"
     },
-    "promptText": "Diego translates a whole-583, part-246 bar into arithmetic. Which sentence is faithful?"
+    "promptText": "Diego's tape diagram has a whole of 583 and one part of 246. Which shows how to find the other part?"
    }
   }
  },
@@ -6992,7 +7001,7 @@ export const SEED_ITEMS = [
      "said": 354
     },
     "truth": false,
-    "promptText": "A spread of 354 between 697 and 342 — Kai signs off. Should Kai have?"
+    "promptText": "Kai draws a tape diagram with a bar for 697 and a bar for 342. Kai says the bar for 342 is 354 shorter than the bar for 697. Is Kai right?"
    }
   }
  },
@@ -7024,7 +7033,7 @@ export const SEED_ITEMS = [
      "kind": "equalSaid"
     },
     "truth": false,
-    "promptText": "3 units of 290 claim to total Nia's 873. Do they truly?"
+    "promptText": "Nia puts 3 equal parts together to make a bar. Each part is 290. Nia says the whole bar is 873. Is Nia right?"
    }
   }
  },
@@ -7052,7 +7061,7 @@ export const SEED_ITEMS = [
     "bar": {
      "kind": "biggerPiece"
     },
-    "promptText": "Priya contrasts a fourth of 960 with a fifth of 960. Which piece is larger?"
+    "promptText": "Priya can take one fourth of 960 or one fifth of 960. Which piece is larger?"
    }
   }
  },
@@ -7392,7 +7401,7 @@ export const SEED_ITEMS = [
      "num": 1,
      "kind": "fracOf"
     },
-    "promptText": "Shade 1 of the 4 equal parts of a 84-bar. What value is shaded?"
+    "promptText": "A bar for 84 is cut into 4 equal parts, and 1 of them is shaded. How much is shaded?"
    },
    "answerType": "numberPad"
   }
@@ -7475,7 +7484,7 @@ export const SEED_ITEMS = [
      "w": 84,
      "kind": "unitOf"
     },
-    "promptText": "Divide a 84-bar into 3 equal sections. One section = ?"
+    "promptText": "Divide a bar for 84 into 3 equal parts. How much is one part?"
    },
    "answerType": "numberPad"
   }
@@ -7535,7 +7544,7 @@ export const SEED_ITEMS = [
      "kind": "countBack",
      "start": 452
     },
-    "promptText": "The bar's whole reads 452; one section reads 267. Exactly what does the blank section hold?"
+    "promptText": "In the tape diagram, the whole is 452 and one part is 267. What is the missing part?"
    },
    "answerType": "barModel"
   }
@@ -7562,7 +7571,7 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 642
     },
-    "promptText": "Bars of 642 and 397: compute the exact difference. What is it?"
+    "promptText": "One bar is 642 long and another bar is 397 long. How much longer is the first bar?"
    },
    "answerType": "numberPad"
   }
@@ -7592,7 +7601,7 @@ export const SEED_ITEMS = [
       214
      ]
     },
-    "promptText": "A bar of 3 equal units, 214 apiece. Exactly what is the whole?"
+    "promptText": "A tape diagram has 3 equal parts. Each part is 214. What is the whole?"
    },
    "answerType": "numberPad"
   }
@@ -7620,7 +7629,7 @@ export const SEED_ITEMS = [
      "num": 1,
      "kind": "fracOf"
     },
-    "promptText": "Take exactly 1 of the 4 equal sections of a 848-bar. What amount is that?"
+    "promptText": "A tape diagram has a whole of 848 cut into 4 equal parts. How much is 1 part?"
    },
    "answerType": "numberPad"
   }
@@ -7649,7 +7658,7 @@ export const SEED_ITEMS = [
       331
      ]
     },
-    "promptText": "Sections of 227 and 331 complete one bar. Exactly what is the whole?"
+    "promptText": "A bar has two parts, 227 and 331. What is the whole bar?"
    },
    "answerType": "numberPad"
   }
@@ -7676,7 +7685,7 @@ export const SEED_ITEMS = [
      "more": 245,
      "start": 397
     },
-    "promptText": "A base bar of 397 extended by exactly 245. What does the extended bar total?"
+    "promptText": "Nia's bar is 397 units long. Omar's bar is 245 units longer than Nia's bar. How many units long is Omar's bar?"
    },
    "answerType": "numberPad"
   }
@@ -7733,7 +7742,7 @@ export const SEED_ITEMS = [
       282
      ]
     },
-    "promptText": "One of 3 identical sections carries 282. Exactly what is the whole?"
+    "promptText": "One of 3 equal parts of a bar is 282. What is the whole bar?"
    },
    "answerType": "numberPad"
   }
@@ -7755,7 +7764,7 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": "<",
    "display": {
-    "promptText": "Sam scored 246 points. Alex scored 264 points. Which symbol compares their scores?"
+    "promptText": "Sam scored 246 points. Alex scored 264 points. Which symbol goes in 246 __ 264?"
    }
   }
  },
@@ -7776,7 +7785,7 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": ">",
    "display": {
-    "promptText": "The top shelf has 510 books. The bottom shelf has 499 books. Which symbol compares them?"
+    "promptText": "The top shelf has 510 books. The bottom shelf has 499 books. Which sign fits in 510 __ 499?"
    }
   }
  },
@@ -7797,7 +7806,7 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": "=",
    "display": {
-    "promptText": "One class solved 380 puzzles. Another class solved 380 puzzles. Which symbol compares them?"
+    "promptText": "One class solved 380 puzzles. Another class solved 380 puzzles. Which symbol makes 380 __ 380 true?"
    }
   }
  },
@@ -7818,7 +7827,7 @@ export const SEED_ITEMS = [
    "op": "vs",
    "answer": "=",
    "display": {
-    "promptText": "Diego scores 700 points and Ben scores 700 points. Choose the symbol that compares 700 and 700."
+    "promptText": "Diego scores 700 points and Ben scores 700 points. Which symbol goes in 700 __ 700?"
    },
    "answerType": "symbolSelect"
   }
@@ -7949,7 +7958,7 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": "<",
    "display": {
-    "promptText": "Mia has 5 candies. Tom has 8 candies. Compare 5 to 8."
+    "promptText": "Mia has 5 candies. Tom has 8 candies. Which sign fits in 5 __ 8?"
    }
   }
  },
@@ -7970,7 +7979,7 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": "<",
    "display": {
-    "promptText": "A jar has 4 marbles. A full jar holds 5 marbles. Compare 4 to 5."
+    "promptText": "A jar has 4 marbles. A full jar holds 5 marbles. Which symbol makes 4 __ 5 true?"
    }
   }
  },
@@ -7991,7 +8000,7 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": ">",
    "display": {
-    "promptText": "Eli has 9 apples. Mia has 4 apples. Compare 9 to 4."
+    "promptText": "Eli has 9 apples. Mia has 4 apples. Which symbol goes in 9 __ 4?"
    }
   }
  },
@@ -8149,7 +8158,7 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": "<",
    "display": {
-    "promptText": "Ms. Lee's class has 23 books. Mr. Park's class has 45 books. Compare 23 to 45."
+    "promptText": "Room A has 23 books. Room B has 45 books. Which sign fits in 23 __ 45?"
    }
   }
  },
@@ -8200,7 +8209,7 @@ export const SEED_ITEMS = [
    ],
    "display": {
     "truth": true,
-    "promptText": "The craft takes 25 beads. Ava brings 30 beads. Did Ava bring enough beads?"
+    "promptText": "The craft takes 25 beads. Finn brings 30 beads. Did Finn bring enough beads?"
    }
   }
  },
@@ -8363,7 +8372,7 @@ export const SEED_ITEMS = [
      "b": 3,
      "kind": "counts"
     },
-    "promptText": "Row A: 🍎🍎🍎🍎🍎 Row B: 🍎🍎🍎 Choose the symbol that compares Row A to Row B counting apples."
+    "promptText": "Row A: 🍎🍎🍎🍎🍎 Row B: 🍎🍎🍎 Count the apples in each row. Which sign fits in Row A __ Row B?"
    },
    "answerType": "symbolSelect"
   }
@@ -8474,7 +8483,7 @@ export const SEED_ITEMS = [
     3
    ],
    "display": {
-    "promptText": "Sam hunts for a number bigger than 4 but smaller than 10. Pick it."
+    "promptText": "Which number is bigger than 4 but smaller than 10?"
    }
   }
  },
@@ -8582,7 +8591,7 @@ export const SEED_ITEMS = [
      "b": 14,
      "kind": "counts"
     },
-    "promptText": "Row A: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⭐⭐ Row B: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ Compare the two rows of stars and pick the sign."
+    "promptText": "Row A: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⭐⭐ Row B: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ Count the stars in each row. Which symbol goes in Row A __ Row B?"
    },
    "answerType": "symbolSelect"
   }
@@ -8660,7 +8669,7 @@ export const SEED_ITEMS = [
    "op": "vs",
    "answer": ">",
    "display": {
-    "promptText": "Help Ava pick the sign for 95 and 59. Remember which way the mouth opens!"
+    "promptText": "Help Ava pick the sign. The open mouth faces the bigger number. Which sign goes between 95 and 59?"
    },
    "answerType": "symbolSelect"
   }
@@ -8688,7 +8697,7 @@ export const SEED_ITEMS = [
     19
    ],
    "display": {
-    "promptText": "Ida needs a number greater than 20 and less than 30. Which one works?"
+    "promptText": "Which number is less than 30 and greater than 20?"
    }
   }
  },
@@ -8734,7 +8743,7 @@ export const SEED_ITEMS = [
    "op": "vs",
    "answer": "<",
    "display": {
-    "promptText": "To compare 38 and 61, Theo chose >. Check Theo's work — which symbol makes it true?"
+    "promptText": "To compare 38 and 61, Theo chose >. Check Theo's work — which symbol belongs in 38 __ 61?"
    },
    "answerType": "symbolSelect"
   }
@@ -8792,7 +8801,7 @@ export const SEED_ITEMS = [
      "205 > 250",
      "310 > 301"
     ],
-    "promptText": "Ida wrote four comparisons; two are true. Choose BOTH true ones.",
+    "promptText": "Ida wrote four comparisons. Which two comparisons are true?",
     "requiredCount": 2
    },
    "answerType": "multiSelect"
@@ -8871,7 +8880,7 @@ export const SEED_ITEMS = [
    "op": "vs",
    "answer": ">",
    "display": {
-    "promptText": "To compare 326 and 263, Omar chose <. Check Omar's work — which symbol makes it true?"
+    "promptText": "To compare 326 and 263, Omar chose <. Check Omar's work — which symbol makes 326 __ 263 true?"
    },
    "answerType": "symbolSelect"
   }
@@ -8899,7 +8908,7 @@ export const SEED_ITEMS = [
     749
    ],
    "display": {
-    "promptText": "Luca hunts for a number bigger than 750 but smaller than 770. Pick it."
+    "promptText": "Which number is bigger than 750 but smaller than 770?"
    }
   }
  },
@@ -8952,7 +8961,7 @@ export const SEED_ITEMS = [
    "op": "vs",
    "answer": "<",
    "display": {
-    "promptText": "Nora compared 235 and 253 and picked >. The hungry mouth should eat the bigger number! Which symbol is correct?"
+    "promptText": "Nora compared 235 and 253 and picked >. The hungry mouth should eat the bigger number! Which symbol is correct in 235 __ 253?"
    },
    "answerType": "symbolSelect"
   }
@@ -9146,9 +9155,8 @@ export const SEED_ITEMS = [
    ],
    "display": {
     "truth": true,
-    "promptText": "3 < 9"
-   },
-   "subPrompt": "Is this right?"
+    "promptText": "Is 3 < 9 true?"
+   }
   }
  },
  {
@@ -10409,7 +10417,7 @@ export const SEED_ITEMS = [
    ],
    "display": {
     "truth": false,
-    "promptText": "Zoe holds 7 turtles. A friend hands over 4 more. Zoe says 7, 8, 9, 10. Is Zoe counting on correctly?"
+    "promptText": "Zoe has 7 turtles and gets 4 more. Zoe counts on: 7, 8, 9, 10. Is that right?"
    }
   }
  },
@@ -10516,7 +10524,7 @@ export const SEED_ITEMS = [
     "🐤🐤🐤🐤🐤 🐤🐤"
    ],
    "display": {
-    "promptText": "Three of these show 6 dots. Which one does NOT?"
+    "promptText": "Which card does not show 6?"
    }
   }
  },
@@ -10702,7 +10710,7 @@ export const SEED_ITEMS = [
      "kind": "moreLess",
      "delta": -1
     },
-    "promptText": "Amara counted 37 butterflies. Then Amara noticed one butterflie got pointed at twice. What is the real number of butterflies?"
+    "promptText": "Amara counted 37 butterflies. Then Amara saw that one butterfly got counted twice. How many butterflies are there really?"
    },
    "answerType": "numberPad"
   }
@@ -11711,7 +11719,7 @@ export const SEED_ITEMS = [
     ],
     "figure": "pictograph",
     "keyValue": 1,
-    "promptText": "Each star picture on Sam's chart means 1 page. How many pages does this chart show?"
+    "promptText": "Each picture in the stars row of Sam's chart means 1 page. How many pages does this chart show?"
    },
    "answerType": "numberPad"
   }
@@ -11853,7 +11861,7 @@ export const SEED_ITEMS = [
     },
     "type": "barGraph",
     "figure": "barGraph",
-    "promptText": "If the recess games survey merged soccer with tag, how many votes would the pair have? Amara adds the bars."
+    "promptText": "In the recess games survey, how many votes did soccer and tag get in all?"
    },
    "answerType": "barGraph"
   }
@@ -12055,7 +12063,7 @@ export const SEED_ITEMS = [
     ],
     "figure": "pictograph",
     "keyValue": 5,
-    "promptText": "Each flower picture on Ida's chart means 5 seeds. How many seeds does this chart show?"
+    "promptText": "Each picture in the flowers row of Ida's chart means 5 seeds. How many seeds does this chart show?"
    },
    "answerType": "numberPad"
   }
@@ -12364,7 +12372,7 @@ export const SEED_ITEMS = [
     },
     "type": "barGraph",
     "figure": "barGraph",
-    "promptText": "Leo's pet fair report needs the precise spread between chicks and puppies. How many votes wide is it?"
+    "promptText": "Leo looks at the pet fair graph. How many more votes did chicks get than puppies?"
    },
    "answerType": "barGraph"
   }
@@ -12399,7 +12407,7 @@ export const SEED_ITEMS = [
     ],
     "figure": "pictograph",
     "keyValue": 10,
-    "promptText": "Each smiley picture on Rosa's chart means 10 points. How many points does this chart show?"
+    "promptText": "Each picture in the smileys row of Rosa's chart means 10 points. How many points does this chart show?"
    },
    "answerType": "numberPad"
   }
@@ -12757,7 +12765,7 @@ export const SEED_ITEMS = [
     "truth": true,
     "figure": "pictograph",
     "keyValue": 1,
-    "promptText": "Luca counts the puppies on this chart and says 2. Is Luca right?"
+    "promptText": "Luca counts the pictures in the puppies row of this chart and says 2. Is Luca right?"
    }
   }
  },
@@ -12807,7 +12815,7 @@ export const SEED_ITEMS = [
     "type": "barGraph",
     "truth": true,
     "figure": "barGraph",
-    "promptText": "Mina looks at the pet fair graph and says: \"chicks got the most.\" Is Mina right?"
+    "promptText": "Mina looks at the pet fair graph and says chicks got the most votes. Is Mina right?"
    }
   }
  },
@@ -13120,7 +13128,7 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": "No",
+   "answer": "Yes",
    "choices": [
     "Yes",
     "No"
@@ -13136,10 +13144,10 @@ export const SEED_ITEMS = [
       "symbols": 2
      }
     ],
-    "truth": false,
+    "truth": true,
     "figure": "pictograph",
     "keyValue": 5,
-    "promptText": "Omar says this chart shows 2 kittens. Is Omar right?"
+    "promptText": "Omar says this chart shows 10 kittens. Is Omar right?"
    }
   }
  },
@@ -13189,7 +13197,7 @@ export const SEED_ITEMS = [
     "type": "barGraph",
     "truth": true,
     "figure": "barGraph",
-    "promptText": "Omar looks at the pet fair graph and says: \"bunnies got the most.\" Is Omar right?"
+    "promptText": "Omar looks at the pet fair graph and says bunnies got the most votes. Is Omar right?"
    }
   }
  },
@@ -13311,7 +13319,7 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": "Yes",
+   "answer": "No",
    "choices": [
     "Yes",
     "No"
@@ -13328,10 +13336,10 @@ export const SEED_ITEMS = [
       "symbols": 2
      }
     ],
-    "truth": true,
+    "truth": false,
     "figure": "pictograph",
     "keyValue": 2,
-    "promptText": "A row on this chart ends in half a picture. Diego says the half counts as 1. Is Diego right?"
+    "promptText": "A row on this chart ends in half a picture. Diego says the half counts as 2. Is Diego right?"
    }
   }
  },
@@ -13570,7 +13578,7 @@ export const SEED_ITEMS = [
     "type": "barGraph",
     "truth": true,
     "figure": "barGraph",
-    "promptText": "Finn looks at the pet fair graph and says: \"chicks got the most.\" Is Finn right?"
+    "promptText": "Finn looks at the pet fair graph and says chicks got the most votes. Is Finn right?"
    }
   }
  },
@@ -13692,7 +13700,7 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": "Yes",
+   "answer": "No",
    "choices": [
     "Yes",
     "No"
@@ -13709,10 +13717,10 @@ export const SEED_ITEMS = [
       "symbols": 2
      }
     ],
-    "truth": true,
+    "truth": false,
     "figure": "pictograph",
     "keyValue": 10,
-    "promptText": "Luca sees the half picture at the end of this chart's row and counts it as 5. Is that right?"
+    "promptText": "Luca sees the half picture at the end of this chart's row and counts it as 10. Is that right?"
    }
   }
  },
@@ -13807,7 +13815,7 @@ export const SEED_ITEMS = [
     },
     "type": "barGraph",
     "figure": "barGraph",
-    "promptText": "The pet fair graph: how many kittens?"
+    "promptText": "Use the pet fair graph. How many kittens are there?"
    },
    "answerType": "barGraph"
   }
@@ -13854,7 +13862,7 @@ export const SEED_ITEMS = [
     },
     "type": "barGraph",
     "figure": "barGraph",
-    "promptText": "The pet fair graph: how many more chicks than kittens?"
+    "promptText": "Look at the pet fair graph. How many more chicks than kittens are there?"
    },
    "answerType": "barGraph"
   }
@@ -13892,7 +13900,7 @@ export const SEED_ITEMS = [
     ],
     "figure": "pictograph",
     "keyValue": 1,
-    "promptText": "The pet fair picture chart: each picture means 1. How many kittens?"
+    "promptText": "Look at the pet fair picture chart. Each picture means 1. How many kittens are there?"
    },
    "answerType": "numberPad"
   }
@@ -13929,7 +13937,7 @@ export const SEED_ITEMS = [
      }
     ],
     "figure": "tallyChart",
-    "promptText": "The pet fair tally chart: how many chose kittens?"
+    "promptText": "Look at the pet fair tally chart. How many kittens are there?"
    },
    "answerType": "numberPad"
   }
@@ -14022,17 +14030,17 @@ export const SEED_ITEMS = [
     },
     "type": "barGraph",
     "figure": "barGraph",
-    "promptText": "In the school ride graph, the bikes bar beats the vans bar by how many votes? Compare carefully."
+    "promptText": "Look at the school ride graph. How many more votes did bikes get than vans?"
    },
    "answerType": "barGraph"
   }
  },
  {
-  "itemId": "dataGraphs-proc-b0821-0380",
+  "itemId": "dataGraphs-proc-b0821-0322",
   "modeId": "dataGraphs",
   "itemFamily": "procedural",
   "subskill": "pictograph",
-  "structureType": "pictoBothRowsTeen",
+  "structureType": "pictoRead_band1",
   "levelRange": [
    1,
    3
@@ -14042,24 +14050,25 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 9,
+   "answer": 7,
    "display": {
     "data": {
-     "kind": "pictoBothRows"
+     "kind": "pictoRead",
+     "label": "blue"
     },
     "rows": [
      {
-      "label": "apples",
-      "symbols": 3
+      "label": "red",
+      "symbols": 5
      },
      {
-      "label": "pears",
-      "symbols": 6
+      "label": "blue",
+      "symbols": 7
      }
     ],
     "figure": "pictograph",
     "keyValue": 1,
-    "promptText": "The fruit stand picture chart, key of one: how many pictures in both rows together?"
+    "promptText": "Look at the favorite colors picture chart. How many pictures are in the blue row?"
    },
    "answerType": "numberPad"
   }
@@ -14095,7 +14104,7 @@ export const SEED_ITEMS = [
      }
     ],
     "figure": "tallyChart",
-    "promptText": "In the favorite colors tally chart, how many chose red or blue altogether?"
+    "promptText": "In the favorite colors tally chart, how many kids chose red or blue altogether?"
    },
    "answerType": "numberPad"
   }
@@ -14356,7 +14365,7 @@ export const SEED_ITEMS = [
     },
     "type": "barGraph",
     "figure": "barGraph",
-    "promptText": "From the school ride graph, find the gap between bikes and buses. What is the gap? Compare carefully."
+    "promptText": "From the school ride graph, find the gap between bikes and buses. How many more votes did bikes get than buses?"
    },
    "answerType": "barGraph"
   }
@@ -14521,7 +14530,7 @@ export const SEED_ITEMS = [
     },
     "type": "barGraph",
     "figure": "barGraph",
-    "promptText": "The scaled pet fair graph: exactly how many more chicks than puppies?"
+    "promptText": "Look at the scale on the pet fair graph. How many more chicks than puppies are there?"
    },
    "answerType": "barGraph"
   }
@@ -14604,7 +14613,7 @@ export const SEED_ITEMS = [
     },
     "type": "barGraph",
     "figure": "barGraph",
-    "promptText": "Sum the whole pet fair graph, bar by bar. What total does it hold?"
+    "promptText": "Add the bars of the pet fair graph one at a time. How many votes are there in all?"
    },
    "answerType": "barGraph"
   }
@@ -14650,7 +14659,7 @@ export const SEED_ITEMS = [
     },
     "type": "barGraph",
     "figure": "barGraph",
-    "promptText": "From the pet fair graph, find the precise count. How many chicks is that?"
+    "promptText": "Look closely at the pet fair graph. How many chicks are there?"
    },
    "answerType": "barGraph"
   }
@@ -14697,7 +14706,7 @@ export const SEED_ITEMS = [
     },
     "type": "barGraph",
     "figure": "barGraph",
-    "promptText": "Compute the exact buses-minus-scooters gap in the school ride graph. What is the gap? Compare carefully."
+    "promptText": "In the scaled school ride graph, how many more votes did buses get than scooters?"
    },
    "answerType": "barGraph"
   }
@@ -14818,7 +14827,7 @@ export const SEED_ITEMS = [
     "No"
    ],
    "display": {
-    "promptText": "Finn measures 3 and 9 tenths kilometers and writes down 3.9. Do you agree?"
+    "promptText": "Ben measures 3 and 9 tenths kilometers and writes down 3.9. Do you agree?"
    },
    "answerType": "choice"
   }
@@ -15102,7 +15111,7 @@ export const SEED_ITEMS = [
     "No"
    ],
    "display": {
-    "promptText": "The jump is 1 meters plus 7 tenths more. Maya records 7.1. Is Maya right?"
+    "promptText": "The jump is 1 meter plus 7 tenths more. Maya records 7.1. Is Maya right?"
    },
    "answerType": "choice"
   }
@@ -15670,7 +15679,7 @@ export const SEED_ITEMS = [
     "No"
    ],
    "display": {
-    "promptText": "Maya says 2.7 ÷ 10 gives a smaller number. Is that right?"
+    "promptText": "Ida says 2.7 ÷ 10 gives a smaller number. Is that right?"
    },
    "answerType": "choice"
   }
@@ -15856,7 +15865,7 @@ export const SEED_ITEMS = [
     "No"
    ],
    "display": {
-    "promptText": "Without working it out fully, Theo claims 3.36 + 3.83 stays under 8. Is Theo right?"
+    "promptText": "Without adding it all up, Theo thinks 3.36 + 3.83 stays under 8. Is Theo right?"
    },
    "answerType": "choice"
   }
@@ -15934,7 +15943,7 @@ export const SEED_ITEMS = [
     "No"
    ],
    "display": {
-    "promptText": "Without working it out fully, Zoe claims 2.94 + 3.06 stays under 6. Is Zoe right?"
+    "promptText": "Zoe says 2.94 + 3.06 is less than 6. Is Zoe right?"
    },
    "answerType": "choice"
   }
@@ -16076,11 +16085,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "decimalOps-proc-b0824-0104",
+  "itemId": "decimalOps-proc-b0824-0102",
   "modeId": "decimalOps",
   "itemFamily": "procedural",
   "subskill": "thousandthsSense",
-  "structureType": "tenthsSequence",
+  "structureType": "tenthsAsDecimal",
   "levelRange": [
    1,
    3
@@ -16090,9 +16099,9 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "decops",
-   "answer": "1.2",
+   "answer": "0.1",
    "display": {
-    "promptText": "0.6, 0.8, 1.0, ?"
+    "promptText": "1 tenth = ?"
    },
    "answerType": "decimal"
   }
@@ -16114,13 +16123,13 @@ export const SEED_ITEMS = [
    "op": "decops",
    "answer": "0.5",
    "display": {
-    "promptText": "Fill the blank: 0.3 + ? = 0.8."
+    "promptText": "What is the missing number in 0.3 + __ = 0.8?"
    },
    "answerType": "decimal"
   }
  },
  {
-  "itemId": "decimalOps-proc-b0824-0080",
+  "itemId": "decimalOps-proc-b0824-0078",
   "modeId": "decimalOps",
   "itemFamily": "procedural",
   "subskill": "thousandthsSense",
@@ -16134,9 +16143,9 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "decops",
-   "answer": "0.9",
+   "answer": "0.3",
    "display": {
-    "promptText": "Write 9 tenths as a decimal."
+    "promptText": "3 tenths = ?"
    },
    "answerType": "decimal"
   }
@@ -16514,7 +16523,7 @@ export const SEED_ITEMS = [
      "n": 1,
      "kind": "tenths"
     },
-    "promptText": "A dime is one tenth of a dollar. Mina carries 1 dimes and nothing else. Type Mina's money as a decimal part of a dollar."
+    "promptText": "A dime is one tenth of a dollar. Mina carries 1 dime and nothing else. What decimal part of a dollar does Mina have?"
    },
    "answerType": "decimal"
   }
@@ -16742,7 +16751,7 @@ export const SEED_ITEMS = [
      "n": 1,
      "kind": "tenths"
     },
-    "promptText": "Omar empties a piggy bank and finds exactly 1 dimes. Each dime is a tenth of a dollar. Type the total as a decimal part of a dollar."
+    "promptText": "Omar empties a piggy bank and finds just 1 dime. Each dime is a tenth of a dollar. What decimal part of a dollar did Omar find?"
    },
    "answerType": "decimal"
   }
@@ -16970,7 +16979,7 @@ export const SEED_ITEMS = [
      "n": 1,
      "kind": "tenths"
     },
-    "promptText": "Finn's coin pouch holds 1 dimes and no other coins; a dime is a tenth of a dollar. Type the amount as a decimal part of a dollar."
+    "promptText": "Finn's coin pouch holds 1 dime and no other coins. A dime is a tenth of a dollar. What decimal part of a dollar is in the pouch?"
    },
    "answerType": "decimal"
   }
@@ -17253,17 +17262,17 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "dec",
-   "answer": "No",
+   "answer": "Yes",
    "choices": [
     "Yes",
     "No"
    ],
    "display": {
     "dec": {
-     "kind": "trapNo"
+     "kind": "trapYes"
     },
-    "truth": false,
-    "promptText": "Mina says 0.15 must beat 0.7 because 15 is more than 7. Is Mina right?"
+    "truth": true,
+    "promptText": "Mina says 0.15 must beat 0.7 because 15 is more than 7. Is 0.7 greater than 0.15?"
    }
   }
  },
@@ -17292,7 +17301,7 @@ export const SEED_ITEMS = [
      "v": 0.1,
      "kind": "closerDec"
     },
-    "promptText": "Is the decimal 0.1 closer to 0 or to 1? Mina pictures the line."
+    "promptText": "Mina pictures a number line from 0 to 1. Is 0.1 closer to 0 or to 1?"
    }
   }
  },
@@ -17321,7 +17330,7 @@ export const SEED_ITEMS = [
      "kind": "authored"
     },
     "truth": true,
-    "promptText": "Kai says 0.10 names the same amount as 0.1. Is Kai right?"
+    "promptText": "Kai says 0.10 is the same amount as 0.1. Is Kai right?"
    }
   }
  },
@@ -17351,7 +17360,7 @@ export const SEED_ITEMS = [
      "kind": "halfSaid"
     },
     "truth": true,
-    "promptText": "Kai claims the decimal 0.5 is exactly one half. Is Kai right?"
+    "promptText": "Kai says 0.5 is exactly one half. Is Kai right?"
    }
   }
  },
@@ -17383,7 +17392,7 @@ export const SEED_ITEMS = [
      "kind": "cmpSaidDec"
     },
     "truth": true,
-    "promptText": "Kai writes 0.7 > 0.2. Is Kai right?"
+    "promptText": "Kai says 0.7 is greater than 0.2. Do you agree?"
    }
   }
  },
@@ -17413,7 +17422,7 @@ export const SEED_ITEMS = [
      "kind": "betweenSaid"
     },
     "truth": true,
-    "promptText": "Kai says the decimal 0.5 sits between 0 and 1 on the number line. Is Kai right?"
+    "promptText": "Kai marks 0.5 between 0 and 1 on a number line. Does 0.5 belong there?"
    }
   }
  },
@@ -17442,7 +17451,7 @@ export const SEED_ITEMS = [
      "kind": "trapNo"
     },
     "truth": false,
-    "promptText": "Omar turns one tenth into the decimal 0.01. Does the conversion hold?"
+    "promptText": "Omar says one tenth is written as 0.01. Do you agree?"
    }
   }
  },
@@ -17474,7 +17483,7 @@ export const SEED_ITEMS = [
      "said": "0.25"
     },
     "truth": true,
-    "promptText": "Omar converts 25/100 and gets 0.25. Does the conversion hold?"
+    "promptText": "Omar writes 25/100 as 0.25. Is that right?"
    }
   }
  },
@@ -17493,17 +17502,17 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "dec",
-   "answer": "No",
+   "answer": "Yes",
    "choices": [
     "Yes",
     "No"
    ],
    "display": {
     "dec": {
-     "kind": "trapNo"
+     "kind": "trapYes"
     },
-    "truth": false,
-    "promptText": "Omar claims 0.18 is greater than 0.6 since 18 beats 6. Does the claim hold?"
+    "truth": true,
+    "promptText": "Omar says 0.18 > 0.6 since 18 is more than 6. Is 0.6 greater than 0.18?"
    }
   }
  },
@@ -17532,7 +17541,7 @@ export const SEED_ITEMS = [
      "v": 0.15,
      "kind": "closerDec"
     },
-    "promptText": "Between 0 and 1, does 0.15 sit nearer 0 or nearer 1? Omar decides."
+    "promptText": "Omar looks at 0.15 on a number line from 0 to 1. Is 0.15 nearer 0 or nearer 1?"
    }
   }
  },
@@ -17561,7 +17570,7 @@ export const SEED_ITEMS = [
      "kind": "authored"
     },
     "truth": true,
-    "promptText": "Rosa marks 0.90 and 0.9 at the same point on a number line. Should they share the point?"
+    "promptText": "Rosa marks 0.90 and 0.9 at the same point on a number line. Is Rosa right?"
    }
   }
  },
@@ -17591,7 +17600,7 @@ export const SEED_ITEMS = [
      "kind": "halfSaid"
     },
     "truth": true,
-    "promptText": "Rosa marks 0.50 at the halfway point between 0 and 1. Does it belong there?"
+    "promptText": "Rosa marks 0.50 at the halfway point between 0 and 1. Does 0.50 belong there?"
    }
   }
  },
@@ -17623,7 +17632,7 @@ export const SEED_ITEMS = [
      "kind": "cmpSaidDec"
     },
     "truth": true,
-    "promptText": "Rosa records the comparison 0.75 > 0.57. Does it hold?"
+    "promptText": "Rosa says 0.75 > 0.57 because 75 is more than 57. Is Rosa right that 0.75 > 0.57?"
    }
   }
  },
@@ -17653,7 +17662,7 @@ export const SEED_ITEMS = [
      "kind": "betweenSaid"
     },
     "truth": true,
-    "promptText": "Rosa plots 0.25 strictly between 0 and 1. Does it belong there?"
+    "promptText": "Rosa says 0.25 is between 0 and 1 on the number line. Is 0.25 between 0 and 1?"
    }
   }
  },
@@ -17714,7 +17723,7 @@ export const SEED_ITEMS = [
      "said": "0.5"
     },
     "truth": true,
-    "promptText": "Finn certifies 1/2 = 0.5. Is the certification valid?"
+    "promptText": "Finn writes 1/2 = 0.5. Is Finn right?"
    }
   }
  },
@@ -17743,7 +17752,7 @@ export const SEED_ITEMS = [
      "kind": "trapNo"
     },
     "truth": false,
-    "promptText": "Finn's rule \"longer decimal, larger value\" puts 0.125 above 0.9. Is the rule sound here?"
+    "promptText": "Finn's rule says a longer decimal is bigger, so 0.125 > 0.9. Is 0.125 greater than 0.9?"
    }
   }
  },
@@ -17772,7 +17781,7 @@ export const SEED_ITEMS = [
      "v": 0.05,
      "kind": "closerDec"
     },
-    "promptText": "Locate 0.05 precisely: is it nearer 0 or nearer 1? Finn reasons it out."
+    "promptText": "Finn finds 0.05 on a number line from 0 to 1. Is 0.05 nearer 0 or nearer 1?"
    }
   }
  },
@@ -17801,7 +17810,7 @@ export const SEED_ITEMS = [
      "kind": "authored"
     },
     "truth": true,
-    "promptText": "Nora certifies that 0.90 = 0.9 exactly. Is the certification valid?"
+    "promptText": "Nora writes 0.90 = 0.9. Is that right?"
    }
   }
  },
@@ -17831,7 +17840,7 @@ export const SEED_ITEMS = [
      "kind": "halfSaid"
     },
     "truth": true,
-    "promptText": "Nora equates 0.50 with 1/2 exactly. Is the equation sound?"
+    "promptText": "Nora says 0.50 is the same as 1/2. Do you agree?"
    }
   }
  },
@@ -17863,7 +17872,7 @@ export const SEED_ITEMS = [
      "kind": "cmpSaidDec"
     },
     "truth": true,
-    "promptText": "Nora certifies 2.43 > 2.34. Is the certification valid?"
+    "promptText": "Nora writes 2.43 > 2.34. Is 2.43 greater than 2.34?"
    }
   }
  },
@@ -17893,7 +17902,7 @@ export const SEED_ITEMS = [
      "kind": "betweenSaid"
     },
     "truth": true,
-    "promptText": "Nora classifies 0.17 as lying between 0 and 1. Is the classification right?"
+    "promptText": "Is Nora right that 0.17 is between 0 and 1?"
    }
   }
  },
@@ -18030,7 +18039,7 @@ export const SEED_ITEMS = [
      "n": 7,
      "kind": "tenths"
     },
-    "promptText": "A strip has 10 equal parts. Exactly 7 parts are colored. The decimal for the colored amount = ?"
+    "promptText": "A strip is cut into 10 equal parts, and 7 parts are colored. What decimal names the colored part?"
    },
    "answerType": "decimal"
   }
@@ -18063,7 +18072,7 @@ export const SEED_ITEMS = [
      "n": 9,
      "kind": "toFraction"
     },
-    "promptText": "The decimal 0.9 equals which fraction? Pick it."
+    "promptText": "Which fraction is equal to the decimal 0.9?"
    }
   }
  },
@@ -18097,7 +18106,7 @@ export const SEED_ITEMS = [
       "0.7"
      ]
     },
-    "promptText": "Which decimal is larger: 0.5 or 0.7? Pick it."
+    "promptText": "Which decimal is larger, 0.5 or 0.7?"
    }
   }
  },
@@ -18123,7 +18132,7 @@ export const SEED_ITEMS = [
      "den": 10,
      "kind": "tickDec"
     },
-    "promptText": "Step 4 of 10 along a 0-1 line lands on which decimal? Type it."
+    "promptText": "A number line from 0 to 1 is split into 10 equal steps. Which decimal do you reach after 4 steps?"
    },
    "answerType": "decimal"
   }
@@ -18262,7 +18271,7 @@ export const SEED_ITEMS = [
      "h": 66,
      "kind": "gridShade"
     },
-    "promptText": "A 10-by-10 grid has exactly 66 of its 100 small squares colored. The decimal for the colored part = ?"
+    "promptText": "In a 10-by-10 grid, 66 of the 100 small squares are colored. What decimal names the colored part?"
    },
    "answerType": "decimal"
   }
@@ -18355,7 +18364,7 @@ export const SEED_ITEMS = [
      "den": 10,
      "kind": "tickDec"
     },
-    "promptText": "Between 0 and 1, mark 4 of 10 sits at which decimal? Type it."
+    "promptText": "It takes 10 equal jumps to get from 0 to 1 on a number line. What decimal are you on after 4 jumps?"
    },
    "answerType": "decimal"
   }
@@ -18588,7 +18597,7 @@ export const SEED_ITEMS = [
      "den": 100,
      "kind": "tickDec"
     },
-    "promptText": "Between 0 and 1, mark 35 of 100 corresponds to which decimal? Type it."
+    "promptText": "A number line from 0 to 1 has 100 equal steps. Which decimal do you reach after 35 steps?"
    },
    "answerType": "decimal"
   }
@@ -19120,7 +19129,7 @@ export const SEED_ITEMS = [
     "No"
    ],
    "display": {
-    "promptText": "Sam says 17 ÷ 3 leaves 2 left over. Is that right?"
+    "promptText": "Sam says 17 ÷ 3 leaves 2 left over. Is Sam right?"
    }
   }
  },
@@ -19208,7 +19217,7 @@ export const SEED_ITEMS = [
     "No"
    ],
    "display": {
-    "promptText": "Zoe says 37 ÷ 5 leaves 3 left over. Is that right?"
+    "promptText": "Finn says 37 ÷ 5 leaves 3 left over. Is Finn right?"
    }
   }
  },
@@ -19292,7 +19301,7 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 8,
    "display": {
-    "promptText": "Nina shared 32 stickers into 4 equal piles. She thought, \"4 times what makes 32?\" How many stickers are in each pile?"
+    "promptText": "Nina shared 32 stickers into 4 equal piles. She thought: 4 times what number makes 32? How many stickers are in each pile?"
    }
   }
  },
@@ -19313,7 +19322,7 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 7,
    "display": {
-    "promptText": "Split 21 crayons into 3 equal boxes. Each box has?"
+    "promptText": "Split 21 crayons into 3 equal boxes. How many crayons are in each box?"
    }
   }
  },
@@ -19355,7 +19364,7 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 9,
    "display": {
-    "promptText": "Owen dropped 81 acorns into 9 equal cups. He remembered that 9 × 9 = 81. How many acorns are in each cup?"
+    "promptText": "Owen dropped 81 acorns into 9 equal cups. He thought of 9 × __ = 81. How many acorns are in each cup?"
    }
   }
  },
@@ -19376,7 +19385,7 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 6,
    "display": {
-    "promptText": "Spread 42 books evenly onto 7 shelves. Each shelf holds?"
+    "promptText": "Put 42 books on 7 shelves so each shelf has the same number. How many books are on each shelf?"
    }
   }
  },
@@ -19439,7 +19448,7 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 12,
    "display": {
-    "promptText": "Divide 72 stamps evenly into 6 albums. Each album holds?"
+    "promptText": "Put 72 stamps into 6 albums so each album has the same number. How many stamps are in each album?"
    }
   }
  },
@@ -19460,7 +19469,7 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 4,
    "display": {
-    "promptText": "If 4 × 2 = 8, what is 8 ÷ 2?"
+    "promptText": "Think: 2 × __ = 8. What is 8 ÷ 2?"
    }
   }
  },
@@ -20792,7 +20801,7 @@ export const SEED_ITEMS = [
      "kind": "isFactor"
     },
     "truth": true,
-    "promptText": "Mina says 3 is a factor of 12. Is Mina right?"
+    "promptText": "Is Mina right that 3 is a factor of 12?"
    }
   }
  },
@@ -20823,7 +20832,7 @@ export const SEED_ITEMS = [
      "kind": "isMultiple"
     },
     "truth": true,
-    "promptText": "Mina says 8 is a multiple of 2. Is Mina right?"
+    "promptText": "Is Mina right that 8 is a multiple of 2?"
    }
   }
  },
@@ -20855,7 +20864,7 @@ export const SEED_ITEMS = [
      "kind": "pairSaid"
     },
     "truth": true,
-    "promptText": "Mina pairs 3 with 4 as a factor pair of 12. Is Mina right?"
+    "promptText": "Is Mina right that 3 and 4 make a factor pair of 12?"
    }
   }
  },
@@ -20916,7 +20925,7 @@ export const SEED_ITEMS = [
      "kind": "isFactor"
     },
     "truth": true,
-    "promptText": "Kai says 9 counters can make equal rows of 3 with none left over. Is Kai right?"
+    "promptText": "Kai says equal rows of 3 will use up all 9 counters. Is that true?"
    }
   }
  },
@@ -20948,7 +20957,7 @@ export const SEED_ITEMS = [
      "said": 10
     },
     "truth": true,
-    "promptText": "Kai says the 5th multiple of 2 is 10. Is Kai right?"
+    "promptText": "Is Kai right that the 5th multiple of 2 is 10?"
    }
   }
  },
@@ -21006,7 +21015,7 @@ export const SEED_ITEMS = [
      "kind": "authored"
     },
     "truth": true,
-    "promptText": "Kai says 2 is a prime number even though it is even. Is Kai right? Think about the factors of 2."
+    "promptText": "Is Kai right that 2 is a prime number even though it is even?"
    }
   }
  },
@@ -21037,7 +21046,7 @@ export const SEED_ITEMS = [
      "kind": "isFactor"
     },
     "truth": true,
-    "promptText": "Omar lists 7 among the factors of 14. Does it belong there?"
+    "promptText": "Omar says 14 counters make equal groups of 7 with none left over. Is that true?"
    }
   }
  },
@@ -21068,7 +21077,7 @@ export const SEED_ITEMS = [
      "kind": "isMultiple"
     },
     "truth": true,
-    "promptText": "Omar marks 24 on the count-by-6 list. Does it belong there?"
+    "promptText": "Omar counts by 6s, starting at 6. Will Omar land on 24?"
    }
   }
  },
@@ -21100,7 +21109,7 @@ export const SEED_ITEMS = [
      "kind": "pairSaid"
     },
     "truth": true,
-    "promptText": "Omar writes 2 x 7 in the factor-pair list for 14. Does it belong?"
+    "promptText": "Omar lists 2 and 7 as one factor pair of 14. Is that true?"
    }
   }
  },
@@ -21130,7 +21139,7 @@ export const SEED_ITEMS = [
      "kind": "primeSaid"
     },
     "truth": true,
-    "promptText": "Omar sorts 17 into the prime bin. Does it belong there?"
+    "promptText": "Omar says the only factors of 17 are 1 and 17. Is that true?"
    }
   }
  },
@@ -21161,7 +21170,7 @@ export const SEED_ITEMS = [
      "kind": "isFactor"
     },
     "truth": true,
-    "promptText": "Rosa arranges 20 chairs into equal rows of 5 and expects none left over. Will it work out?"
+    "promptText": "Rosa has 20 chairs to set up. Can Rosa make equal rows of 5 with no chairs left over?"
    }
   }
  },
@@ -21193,7 +21202,7 @@ export const SEED_ITEMS = [
      "said": 36
     },
     "truth": true,
-    "promptText": "Rosa records 36 as the 6th multiple of 6. Does the record hold?"
+    "promptText": "Is Rosa right that the 6th multiple of 6 is 36?"
    }
   }
  },
@@ -21222,7 +21231,7 @@ export const SEED_ITEMS = [
      "kind": "trapNo"
     },
     "truth": false,
-    "promptText": "Rosa adds 17 + 13 = 30 and declares (17, 13) a factor pair of 30. Does the logic hold?"
+    "promptText": "Rosa says two numbers that add to 30 make a factor pair of 30. Are 17 and 13 a factor pair of 30?"
    }
   }
  },
@@ -21251,7 +21260,7 @@ export const SEED_ITEMS = [
      "kind": "authored"
     },
     "truth": true,
-    "promptText": "Rosa claims 2 is the only even prime number. Is the claim right? Think about the factors of 2."
+    "promptText": "Rosa says 2 is the only even prime number. Is Rosa right?"
    }
   }
  },
@@ -21282,7 +21291,7 @@ export const SEED_ITEMS = [
      "kind": "isFactor"
     },
     "truth": true,
-    "promptText": "Finn certifies 8 as a factor of 32. Is the certification valid?"
+    "promptText": "Is Finn right that 8 is a factor of 32?"
    }
   }
  },
@@ -21313,7 +21322,7 @@ export const SEED_ITEMS = [
      "kind": "isMultiple"
     },
     "truth": true,
-    "promptText": "Finn certifies 55 as a multiple of 11. Is the certification valid?"
+    "promptText": "Is Finn right that 55 is a multiple of 11?"
    }
   }
  },
@@ -21345,7 +21354,7 @@ export const SEED_ITEMS = [
      "kind": "pairSaid"
     },
     "truth": true,
-    "promptText": "Finn certifies (4, 8) as a factor pair of 32. Valid?"
+    "promptText": "Is Finn right that 4 and 8 are a factor pair of 32?"
    }
   }
  },
@@ -21375,7 +21384,7 @@ export const SEED_ITEMS = [
      "kind": "primeSaid"
     },
     "truth": true,
-    "promptText": "Finn certifies 31 as prime. Is the certification valid?"
+    "promptText": "Is Finn right that 31 is a prime number?"
    }
   }
  },
@@ -21406,7 +21415,7 @@ export const SEED_ITEMS = [
      "kind": "isFactor"
     },
     "truth": true,
-    "promptText": "Nora plans equal rows of 9 from 45 tiles with zero remainder. Is the plan sound?"
+    "promptText": "Nora has 45 tiles. Can all 45 tiles go in equal rows of 9 with none left over?"
    }
   }
  },
@@ -21438,7 +21447,7 @@ export const SEED_ITEMS = [
      "said": 77
     },
     "truth": true,
-    "promptText": "Nora certifies the 7th multiple of 11 as 77. Valid?"
+    "promptText": "Nora counts by 11s, starting at 11. Is 77 the 7th number in the count?"
    }
   }
  },
@@ -21467,7 +21476,7 @@ export const SEED_ITEMS = [
      "kind": "trapNo"
     },
     "truth": false,
-    "promptText": "Nora's rule \"if they add to 60, they factor 60\" blesses (28, 32). Is the rule sound?"
+    "promptText": "Nora says two numbers that add to 60 make a factor pair of 60. Are 28 and 32 a factor pair of 60?"
    }
   }
  },
@@ -21496,7 +21505,7 @@ export const SEED_ITEMS = [
      "kind": "authored"
     },
     "truth": true,
-    "promptText": "Nora asserts that 2 belongs on the prime list as its only even member. Sound assertion? Think about the factors of 2."
+    "promptText": "Nora thinks 2 is not a composite number. Is that true?"
    }
   }
  },
@@ -21607,7 +21616,7 @@ export const SEED_ITEMS = [
     "fm": {
      "kind": "primePick"
     },
-    "promptText": "Which of these is a prime number: 9, 4, 6, 5? Pick it."
+    "promptText": "Which of these is a prime number: 9, 4, 6, 5?"
    }
   }
  },
@@ -21638,7 +21647,7 @@ export const SEED_ITEMS = [
      "n": 12,
      "kind": "pickFactor"
     },
-    "promptText": "Which of 7, 11, 5, 3 is a factor of 12? Pick it."
+    "promptText": "Which one is a factor of 12: 7, 11, 5, or 3?"
    }
   }
  },
@@ -21664,7 +21673,7 @@ export const SEED_ITEMS = [
      "m": 8,
      "kind": "nextMult"
     },
-    "promptText": "Which multiple of 2 comes right after 8? Type it."
+    "promptText": "Which multiple of 2 comes right after 8?"
    },
    "answerType": "numberPad"
   }
@@ -21696,7 +21705,7 @@ export const SEED_ITEMS = [
      "n": 12,
      "kind": "pairPick"
     },
-    "promptText": "Which pair multiplies to 12: 4 x 5, 2 x 5, 3 x 5, 3 x 4? Pick it."
+    "promptText": "Which pair multiplies to 12: 4 x 5, 2 x 5, 3 x 5, 3 x 4?"
    }
   }
  },
@@ -21722,7 +21731,7 @@ export const SEED_ITEMS = [
      "b": 3,
      "kind": "lcmOf"
     },
-    "promptText": "What is the smallest number that is a multiple of both 2 and 3? Type it."
+    "promptText": "What is the smallest number that is a multiple of both 2 and 3?"
    },
    "answerType": "numberPad"
   }
@@ -21834,7 +21843,7 @@ export const SEED_ITEMS = [
     "fm": {
      "kind": "primePick"
     },
-    "promptText": "Select the prime number: 16, 15, 18, 17. Which is it?"
+    "promptText": "Which of these is a prime number: 16, 15, 18, or 17?"
    }
   }
  },
@@ -21865,7 +21874,7 @@ export const SEED_ITEMS = [
      "n": 14,
      "kind": "pickFactor"
     },
-    "promptText": "Select the factor of 14 from 4, 3, 5, 7. Which is it?"
+    "promptText": "Which of these is a factor of 14: 4, 3, 5, or 7?"
    }
   }
  },
@@ -21891,7 +21900,7 @@ export const SEED_ITEMS = [
      "k": 6,
      "kind": "nthMult"
     },
-    "promptText": "The 6th entry in the multiples of 8 = ?"
+    "promptText": "Count by 8s, starting at 8. What is the 6th number you say?"
    },
    "answerType": "numberPad"
   }
@@ -21923,7 +21932,7 @@ export const SEED_ITEMS = [
      "n": 14,
      "kind": "pairPick"
     },
-    "promptText": "Select the factor pair of 14 from 4 x 4, 2 x 6, 2 x 7, 3 x 5. Which is it?"
+    "promptText": "Which of these is a factor pair of 14: 4 x 4, 2 x 6, 2 x 7, or 3 x 5?"
    }
   }
  },
@@ -22061,7 +22070,7 @@ export const SEED_ITEMS = [
     "fm": {
      "kind": "primePick"
     },
-    "promptText": "Identify the prime number in 31, 32, 34, 33. Which is it?"
+    "promptText": "Look at 31, 32, 34, and 33. Which one is a prime number?"
    }
   }
  },
@@ -22092,7 +22101,7 @@ export const SEED_ITEMS = [
      "n": 32,
      "kind": "pickFactor"
     },
-    "promptText": "Identify the factor of 32 within 8, 3, 6, 5. Which is it?"
+    "promptText": "Look at 8, 3, 6, and 5. Which one is a factor of 32?"
    }
   }
  },
@@ -22118,7 +22127,7 @@ export const SEED_ITEMS = [
      "k": 4,
      "kind": "nthMult"
     },
-    "promptText": "The multiples of 15 reach which value at position 4? Type it."
+    "promptText": "What is the 4th multiple of 15?"
    },
    "answerType": "numberPad"
   }
@@ -22150,7 +22159,7 @@ export const SEED_ITEMS = [
      "n": 32,
      "kind": "pairPick"
     },
-    "promptText": "Identify the factor pair of 32 within 5 x 6, 3 x 10, 4 x 8, 4 x 7. Which is it?"
+    "promptText": "Look at 5 x 6, 3 x 10, 4 x 8, and 4 x 7. Which one is a factor pair of 32?"
    }
   }
  },
@@ -22176,7 +22185,7 @@ export const SEED_ITEMS = [
      "b": 18,
      "kind": "lcmOf"
     },
-    "promptText": "Compute the least common multiple of 12 and 18 exactly."
+    "promptText": "What is the smallest number that is a multiple of both 12 and 18?"
    },
    "answerType": "numberPad"
   }
@@ -22772,13 +22781,13 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "fracops",
-   "answer": "Yes",
+   "answer": "No",
    "choices": [
     "Yes",
     "No"
    ],
    "display": {
-    "promptText": "Amara says 5/6 + 1/6 is less than one whole. Is that right?"
+    "promptText": "Is Amara right that 5/6 + 1/6 is less than one whole?"
    },
    "answerType": "choice"
   }
@@ -22919,7 +22928,7 @@ export const SEED_ITEMS = [
    "answer": 12,
    "choices": [
     18,
-    24,
+    6,
     12
    ],
    "display": {
@@ -22994,7 +23003,7 @@ export const SEED_ITEMS = [
    "answer": 6,
    "choices": [
     8,
-    12,
+    2,
     6
    ],
    "display": {
@@ -23070,7 +23079,7 @@ export const SEED_ITEMS = [
    "choices": [
     16,
     12,
-    24
+    4
    ],
    "display": {
     "promptText": "Before Diego can add 1/4 and 1/12, both need which denominator?"
@@ -23121,7 +23130,7 @@ export const SEED_ITEMS = [
    "op": "fracops",
    "answer": 12,
    "choices": [
-    24,
+    3,
     12,
     15
    ],
@@ -23178,7 +23187,7 @@ export const SEED_ITEMS = [
     "No"
    ],
    "display": {
-    "promptText": "Luca says 3 ÷ 1/4 asks how many 1/4s fit in 3, so it equals 12. Is Luca right?"
+    "promptText": "Luca counts how many 1/4s fit in 3 and gets 12. Is Luca right that 3 ÷ 1/4 = 12?"
    },
    "answerType": "choice"
   }
@@ -23200,7 +23209,7 @@ export const SEED_ITEMS = [
    "op": "fracops",
    "answer": 4,
    "choices": [
-    8,
+    2,
     6,
     4
    ],
@@ -23279,7 +23288,7 @@ export const SEED_ITEMS = [
    "op": "fracops",
    "answer": 6,
    "choices": [
-    12,
+    3,
     9,
     6
    ],
@@ -23376,7 +23385,7 @@ export const SEED_ITEMS = [
    "op": "fracops",
    "answer": 3,
    "display": {
-    "promptText": "3/8 + ?/8 = 6/8. What is the missing top number?"
+    "promptText": "3/8 + __/8 = 6/8. What is the missing top number?"
    },
    "answerType": "numberPad"
   }
@@ -23464,7 +23473,7 @@ export const SEED_ITEMS = [
    "op": "fracops",
    "answer": 1,
    "display": {
-    "promptText": "Fill the blank: 2/8 + ?/8 = 3/8."
+    "promptText": "Fill in the blank: 2/8 + __/8 = 3/8."
    },
    "answerType": "numberPad"
   }
@@ -24691,7 +24700,7 @@ export const SEED_ITEMS = [
      "kind": "trapNo"
     },
     "truth": false,
-    "promptText": "Mina says 1/3 beats 1/2 because 3 is bigger than 2. Is Mina right?"
+    "promptText": "Mina says 1/3 is bigger than 1/2 because 3 is bigger than 2. Is Mina right?"
    }
   }
  },
@@ -24753,7 +24762,7 @@ export const SEED_ITEMS = [
      "said": 6
     },
     "truth": true,
-    "promptText": "Mina figures 1/2 of 12 as 6. Is Mina right?"
+    "promptText": "Mina says 1/2 of 12 is 6. Is Mina right?"
    }
   }
  },
@@ -24782,7 +24791,7 @@ export const SEED_ITEMS = [
      "kind": "authored"
     },
     "truth": false,
-    "promptText": "June shares a pie into 2 wedges, one double the other. Do the pieces count as equal parts?"
+    "promptText": "June cuts a pie into 2 wedges, and one wedge is twice as big as the other. Is each wedge one half of the pie?"
    }
   }
  },
@@ -24841,7 +24850,7 @@ export const SEED_ITEMS = [
      "kind": "trapNo"
     },
     "truth": false,
-    "promptText": "Omar colors 2 of 5 pieces and labels it 2/3, counting only the blank pieces below the line. Is Omar right?"
+    "promptText": "Omar colors 2 of 5 equal pieces and writes 2/3, with the 3 blank pieces as the bottom number. Is Omar right?"
    }
   }
  },
@@ -24872,7 +24881,7 @@ export const SEED_ITEMS = [
      "kind": "wholeSaid"
     },
     "truth": true,
-    "promptText": "Omar marks 5/5 as exactly 1 on the line. Does the mark belong there?"
+    "promptText": "Omar marks 5/5 at exactly 1 on a number line. Does that mark belong there?"
    }
   }
  },
@@ -24934,7 +24943,7 @@ export const SEED_ITEMS = [
      "kind": "trapNo"
     },
     "truth": false,
-    "promptText": "Omar ranks 1/6 above 1/5 since 6 > 5. Does the ranking hold?"
+    "promptText": "Omar says 1/6 is greater than 1/5 because 6 is greater than 5. Is Omar right?"
    }
   }
  },
@@ -24963,7 +24972,7 @@ export const SEED_ITEMS = [
      "kind": "trapNo"
     },
     "truth": false,
-    "promptText": "Omar sums 2/5 and 2/5 as 4/10, doubling the denominator. Does the sum hold?"
+    "promptText": "Omar adds 2/5 + 2/5 and gets 4/10 by adding the bottom numbers too. Is Omar right?"
    }
   }
  },
@@ -24996,7 +25005,7 @@ export const SEED_ITEMS = [
      "said": 9
     },
     "truth": true,
-    "promptText": "Omar computes 1/5 of 45 and lands on 9. Does it check out?"
+    "promptText": "Omar says 1/5 of 45 is 9. Is Omar right?"
    }
   }
  },
@@ -25025,7 +25034,7 @@ export const SEED_ITEMS = [
      "kind": "authored"
     },
     "truth": false,
-    "promptText": "For fractions to apply, Diego's cut of a loaf into 6 slices thick and thin must give equal parts. Does it?"
+    "promptText": "Diego cuts a loaf into 6 slices, some thick and some thin. Is each slice 1/6 of the loaf?"
    }
   }
  },
@@ -25055,7 +25064,7 @@ export const SEED_ITEMS = [
      "n": 5,
      "kind": "closerEnd"
     },
-    "promptText": "Zoe slides a marker to 5/6. Toward which end does it lean?"
+    "promptText": "Is 5/6 nearer 0 or nearer 1?"
    }
   }
  },
@@ -25084,7 +25093,7 @@ export const SEED_ITEMS = [
      "kind": "trapNo"
     },
     "truth": false,
-    "promptText": "Shading 3 of 10 sections, Finn declares the fraction 3/7. Is the declaration right?"
+    "promptText": "Finn shades 3 of 10 equal sections and says the fraction is 3/7. Is Finn right?"
    }
   }
  },
@@ -25115,7 +25124,7 @@ export const SEED_ITEMS = [
      "kind": "wholeSaid"
     },
     "truth": true,
-    "promptText": "Finn equates 10/10 with the whole number 1. Is the equation sound?"
+    "promptText": "Finn puts 10/10 at the same point as 1 on a number line. Is Finn right?"
    }
   }
  },
@@ -25148,7 +25157,7 @@ export const SEED_ITEMS = [
      "kind": "equivSaid"
     },
     "truth": true,
-    "promptText": "Finn certifies 7/10 = 14/20. Is the certification valid?"
+    "promptText": "Finn says 7/10 = 14/20. Is Finn right?"
    }
   }
  },
@@ -25177,7 +25186,7 @@ export const SEED_ITEMS = [
      "kind": "trapNo"
     },
     "truth": false,
-    "promptText": "Finn's rule \"larger denominator, larger fraction\" makes 3/12 > 3/10. Is the rule sound here?"
+    "promptText": "Finn's rule is that a larger denominator means a larger fraction. So Finn says 3/12 > 3/10. Is Finn right?"
    }
   }
  },
@@ -25206,7 +25215,7 @@ export const SEED_ITEMS = [
      "kind": "trapNo"
     },
     "truth": false,
-    "promptText": "Finn's worked answer for 3/10 + 4/10 reads 7/20. Is the work sound?"
+    "promptText": "Finn's answer for 3/10 + 4/10 is 7/20. Is Finn right?"
    }
   }
  },
@@ -25239,7 +25248,7 @@ export const SEED_ITEMS = [
      "said": 24
     },
     "truth": true,
-    "promptText": "Finn certifies 1/10 of 240 = 24. Is the certification valid?"
+    "promptText": "Finn says 1/10 of 240 is 24. Is Finn right?"
    }
   }
  },
@@ -25268,7 +25277,7 @@ export const SEED_ITEMS = [
      "kind": "authored"
     },
     "truth": false,
-    "promptText": "Judge Luca's division of a mosaic into 12 tiles, borders varying: are the parts truly equal?"
+    "promptText": "Luca cuts a mosaic into 12 tiles of different sizes. Is each tile 1/12 of the mosaic?"
    }
   }
  },
@@ -25298,7 +25307,7 @@ export const SEED_ITEMS = [
      "n": 7,
      "kind": "closerEnd"
     },
-    "promptText": "Diego audits the position of 7/12. Which endpoint is closer?"
+    "promptText": "Is 7/12 closer to 0 or closer to 1?"
    }
   }
  },
@@ -25354,7 +25363,7 @@ export const SEED_ITEMS = [
      "d": 2,
      "kind": "unitCount"
     },
-    "promptText": "The fraction 1/2 means 1 of ? equal parts"
+    "promptText": "The fraction 1/2 means 1 of how many equal parts?"
    },
    "answerType": "numberPad"
   }
@@ -25382,7 +25391,7 @@ export const SEED_ITEMS = [
      "d2": 4,
      "kind": "equivNum"
     },
-    "promptText": "1/2 = ?/4. What is the missing top number?"
+    "promptText": "1/2 = __/4. What is the missing top number?"
    },
    "answerType": "numberPad"
   }
@@ -25416,7 +25425,7 @@ export const SEED_ITEMS = [
      "d": 3,
      "kind": "cmp"
     },
-    "promptText": "Which symbol fits: 1/3 ? 2/3 — pick <, >, or =."
+    "promptText": "Which sign fits in 1/3 __ 2/3: <, >, or =?"
    }
   }
  },
@@ -25449,7 +25458,7 @@ export const SEED_ITEMS = [
      "d": 2,
      "kind": "addLike"
     },
-    "promptText": "1/2 + 1/2 = ? Pick the sum."
+    "promptText": "What is 1/2 + 1/2?"
    }
   }
  },
@@ -25534,7 +25543,7 @@ export const SEED_ITEMS = [
      "n": 1,
      "kind": "name"
     },
-    "promptText": "Walk a 0-1 path in 3 equal steps. Where are you after step 1? Pick the fraction."
+    "promptText": "Walk from 0 to 1 in 3 equal steps. Which fraction are you at after step 1?"
    }
   }
  },
@@ -25619,7 +25628,7 @@ export const SEED_ITEMS = [
      "d2": 10,
      "kind": "equivNum"
     },
-    "promptText": "Scale 1/2 up to denominator 10. The numerator becomes ?"
+    "promptText": "Find the fraction equal to 1/2 that has a denominator of 10. What is its numerator?"
    },
    "answerType": "numberPad"
   }
@@ -25653,7 +25662,7 @@ export const SEED_ITEMS = [
      "d": 5,
      "kind": "cmp"
     },
-    "promptText": "Same bottoms: 2/5 versus 4/5. Choose <, >, or =."
+    "promptText": "Which sign makes 2/5 __ 4/5 true?"
    }
   }
  },
@@ -25686,7 +25695,7 @@ export const SEED_ITEMS = [
      "d": 5,
      "kind": "addLike"
     },
-    "promptText": "Sum the like fractions 2/5 + 2/5. What do you get?"
+    "promptText": "What is 2/5 + 2/5?"
    }
   }
  },
@@ -25771,7 +25780,7 @@ export const SEED_ITEMS = [
      "n": 1,
      "kind": "name"
     },
-    "promptText": "A ruler from 0 to 1 carries 6 equal steps. Step 1 points at which fraction?"
+    "promptText": "A ruler from 0 to 1 is split into 6 equal steps. Which fraction is at the mark after step 1?"
    }
   }
  },
@@ -25856,7 +25865,7 @@ export const SEED_ITEMS = [
      "d2": 20,
      "kind": "equivNum"
     },
-    "promptText": "Convert 7/10 exactly to ?/20. What numerator is required?"
+    "promptText": "7/10 = __/20. What is the missing numerator?"
    },
    "answerType": "numberPad"
   }
@@ -25890,7 +25899,7 @@ export const SEED_ITEMS = [
      "d": 10,
      "kind": "cmp"
     },
-    "promptText": "Precisely relate 3/10 to 7/10. Which of <, >, = is true?"
+    "promptText": "Which sign goes in 3/10 __ 7/10: <, >, or =?"
    }
   }
  },
@@ -25923,7 +25932,7 @@ export const SEED_ITEMS = [
      "d": 10,
      "kind": "addLike"
     },
-    "promptText": "Compute exactly: 3/10 + 4/10. Which fraction is the sum?"
+    "promptText": "What is 3/10 + 4/10?"
    }
   }
  },
@@ -25950,7 +25959,7 @@ export const SEED_ITEMS = [
      "w": 240,
      "kind": "ofSet"
     },
-    "promptText": "Compute exactly 1/10 of 240. What is the result?"
+    "promptText": "What is 1/10 of 240?"
    },
    "answerType": "numberPad"
   }
@@ -26009,7 +26018,7 @@ export const SEED_ITEMS = [
      "n": 11,
      "kind": "name"
     },
-    "promptText": "Of 12 evenly spaced marks between 0 and 1, mark 11 corresponds to which fraction?"
+    "promptText": "A number line from 0 to 1 has 13 marks with 12 equal steps between them. Which fraction is 11 steps from 0?"
    }
   }
  },
@@ -26197,7 +26206,7 @@ export const SEED_ITEMS = [
     "shapeC": {
      "kind": "authored"
     },
-    "promptText": "June paints a capital letter A and folds the paper down the middle while wet. June expects the halves to match. Will they?"
+    "promptText": "June cuts out a big paper letter A. Can June fold it so the two halves match exactly?"
    }
   }
  },
@@ -26248,7 +26257,7 @@ export const SEED_ITEMS = [
      "kind": "sidesByName",
      "name": "hexagon"
     },
-    "promptText": "To lay a hexagon garden border with one board per side, how many boards does Mina buy? Count carefully."
+    "promptText": "To lay a hexagon garden border with one board per side, how many boards does Mina buy?"
    },
    "answerType": "numberPad"
   }
@@ -26274,7 +26283,7 @@ export const SEED_ITEMS = [
      "kind": "symmetryByName",
      "name": "pentagon"
     },
-    "promptText": "A pentagon cookie cutter gets tested for matching-half folds. How many such folds does Mina count? Count carefully."
+    "promptText": "Mina's cookie cutter is shaped like a pentagon with all sides the same length and all corners the same size. How many lines of symmetry does that shape have?"
    },
    "answerType": "numberPad"
   }
@@ -26325,7 +26334,7 @@ export const SEED_ITEMS = [
     "shapeC": {
      "kind": "authoredCount"
     },
-    "promptText": "A sorting game asks Mina to keep only shapes with exactly 4 sides. Out of a rhombus, a trapezoid, and a hexagon, how many shapes are kept? Count carefully."
+    "promptText": "A sorting game asks Mina to keep only shapes with exactly 4 sides. Out of a rhombus, a trapezoid, and a hexagon, how many shapes are kept?"
    },
    "answerType": "numberPad"
   }
@@ -26381,7 +26390,7 @@ export const SEED_ITEMS = [
      "kind": "verticesByName",
      "name": "parallelogram"
     },
-    "promptText": "A parallelogram tile gets one dab of glue at each vertex. How many dabs does Zoe squeeze? Count carefully."
+    "promptText": "Zoe puts one dab of glue on each vertex of a parallelogram tile. How many dabs of glue does Zoe use?"
    },
    "answerType": "numberPad"
   }
@@ -26411,7 +26420,7 @@ export const SEED_ITEMS = [
     "shapeC": {
      "kind": "authored"
     },
-    "promptText": "For the mirror-art wall, Zoe submits a paper hexagon. Do its two halves match across the middle? Look closely."
+    "promptText": "For the mirror-art wall, Zoe cuts out a hexagon with all sides the same length and all corners the same size. Can Zoe fold it in half so the two halves match?"
    }
   }
  },
@@ -26432,13 +26441,16 @@ export const SEED_ITEMS = [
    "op": "count",
    "answer": 3,
    "display": {
+    "shape": "triangleEquilateral",
+    "rotate": 0,
     "shapeC": {
-     "kind": "symmetryByName",
-     "name": "triangle"
+     "kind": "symmetry",
+     "key": "triangleEquilateral"
     },
-    "promptText": "June paints every line of symmetry on a triangle mural stencil. How many painted lines is that?"
+    "promptText": "June paints every line of symmetry on this triangle mural stencil. How many painted lines is that?",
+    "shapeMode": "count"
    },
-   "answerType": "numberPad"
+   "answerType": "shapeFigure"
   }
  },
  {
@@ -26462,7 +26474,7 @@ export const SEED_ITEMS = [
      "kind": "sidesByName",
      "name": "octagon"
     },
-    "promptText": "Luca bends wire into a octagon, one straight piece per side. How many pieces is that? Double-check your count."
+    "promptText": "Luca bends pipe cleaners into an octagon, one pipe cleaner for each side. How many pipe cleaners does Luca use?"
    },
    "answerType": "numberPad"
   }
@@ -26488,7 +26500,7 @@ export const SEED_ITEMS = [
      "kind": "symmetryByName",
      "name": "octagon"
     },
-    "promptText": "Luca's octagon kite design must show every line of symmetry. How many lines does Luca draw? Double-check your count."
+    "promptText": "Luca's window tile is an octagon with all sides the same length and all corners the same size. How many lines of symmetry does the tile have?"
    },
    "answerType": "numberPad"
   }
@@ -26540,7 +26552,7 @@ export const SEED_ITEMS = [
     "shapeC": {
      "kind": "authoredCount"
     },
-    "promptText": "Luca's robot grabs every block with an even number of sides. Given a nonagon, a decagon, and an octagon, how many blocks does it grab? Double-check your count."
+    "promptText": "Luca's robot grabs every block with an even number of sides. Given a nonagon, a decagon, and an octagon, how many blocks does it grab?"
    },
    "answerType": "numberPad"
   }
@@ -26596,7 +26608,7 @@ export const SEED_ITEMS = [
      "kind": "verticesByName",
      "name": "nonagon"
     },
-    "promptText": "Omar sews a bead onto every corner of a nonagon patch. How many beads is that? Double-check your count."
+    "promptText": "Omar sews a bead onto every corner of a nonagon patch. How many beads is that?"
    },
    "answerType": "numberPad"
   }
@@ -26626,7 +26638,7 @@ export const SEED_ITEMS = [
     "shapeC": {
      "kind": "authored"
     },
-    "promptText": "Omar checks a square quilt block with a small mirror on its middle line. Does the mirror image match the hidden half? Study it before answering."
+    "promptText": "Omar checks a square quilt block with a small mirror on its middle line. Does the mirror image match the hidden half?"
    }
   }
  },
@@ -26783,7 +26795,7 @@ export const SEED_ITEMS = [
     "shapeC": {
      "kind": "authored"
     },
-    "promptText": "Mina argues: Every square has 4 sides. Is Mina right?"
+    "promptText": "Mina says every square has 4 sides. Is Mina right?"
    }
   }
  },
@@ -26812,7 +26824,7 @@ export const SEED_ITEMS = [
     "shapeC": {
      "kind": "authored"
     },
-    "promptText": "Theo explains: A straight path does not bend. Is Theo right?"
+    "promptText": "Theo says a straight path does not bend. Is Theo right?"
    }
   }
  },
@@ -26840,9 +26852,11 @@ export const SEED_ITEMS = [
     "truth": true,
     "shapeC": {
      "kind": "sideVertexEq",
-     "name": "square"
+     "name": "square",
+     "saidSides": 4,
+     "saidVertices": 4
     },
-    "promptText": "June claims a square's side count and vertex count are equal. Is that right?"
+    "promptText": "June counts 4 sides and 4 vertices on a square. Is that right?"
    }
   }
  },
@@ -26871,7 +26885,7 @@ export const SEED_ITEMS = [
     "shapeC": {
      "kind": "authored"
     },
-    "promptText": "Luca claims a capital letter B has two matching halves. Is that right?"
+    "promptText": "Luca claims a capital letter B folds into two matching halves. Is that right?"
    }
   }
  },
@@ -27051,7 +27065,7 @@ export const SEED_ITEMS = [
     "shapeC": {
      "kind": "authored"
     },
-    "promptText": "Ben explains: A line goes on forever in both directions. Is Ben right?"
+    "promptText": "Ben says a line goes on forever in both directions. Is Ben right?"
    }
   }
  },
@@ -27079,9 +27093,11 @@ export const SEED_ITEMS = [
     "truth": true,
     "shapeC": {
      "kind": "sideVertexEq",
-     "name": "hexagon"
+     "name": "hexagon",
+     "saidSides": 6,
+     "saidVertices": 6
     },
-    "promptText": "Nora claims a hexagon's side count and vertex count are equal. Is that right?"
+    "promptText": "Nora counts 6 sides and 6 vertices on a hexagon. Is that right?"
    }
   }
  },
@@ -27111,7 +27127,7 @@ export const SEED_ITEMS = [
      "b": "right triangle",
      "kind": "moreSym"
     },
-    "promptText": "Sam compares fold lines: a pentagon against a right triangle. Which shape has more?"
+    "promptText": "Sam compares a pentagon and a right triangle. The pentagon has all its sides and corners the same. Which shape has more lines of symmetry?"
    }
   }
  },
@@ -27140,7 +27156,7 @@ export const SEED_ITEMS = [
     "shapeC": {
      "kind": "authored"
     },
-    "promptText": "Theo tells the class: A trapezoid has 4 sides. Is that right?"
+    "promptText": "Theo says a trapezoid has 4 sides. Is that right?"
    }
   }
  },
@@ -27172,7 +27188,7 @@ export const SEED_ITEMS = [
      "prop": "sides",
      "said": 8
     },
-    "promptText": "Finn says a octagon has 8 sides. Is Finn right?"
+    "promptText": "Finn says an octagon has 8 sides. Is Finn right?"
    }
   }
  },
@@ -27203,7 +27219,7 @@ export const SEED_ITEMS = [
      "name": "octagon",
      "said": 8
     },
-    "promptText": "Leo says a octagon has 8 lines of symmetry. Is Leo right?"
+    "promptText": "Leo says a regular octagon has 8 lines of symmetry. Is Leo right?"
    }
   }
  },
@@ -27262,7 +27278,7 @@ export const SEED_ITEMS = [
     "shapeC": {
      "kind": "authored"
     },
-    "promptText": "Finn argues: Every square is a rhombus AND a rectangle. Is Finn right?"
+    "promptText": "In the shape debate, Finn says: Every square is both a rhombus and a rectangle. Is that right?"
    }
   }
  },
@@ -27319,9 +27335,11 @@ export const SEED_ITEMS = [
     "truth": true,
     "shapeC": {
      "kind": "sideVertexEq",
-     "name": "octagon"
+     "name": "octagon",
+     "saidSides": 8,
+     "saidVertices": 8
     },
-    "promptText": "Ava claims a octagon's side count and vertex count are equal. Is that right?"
+    "promptText": "Ava counts 8 sides and 8 vertices on an octagon. Is that right?"
    }
   }
  },
@@ -27351,7 +27369,7 @@ export const SEED_ITEMS = [
      "b": "parallelogram",
      "kind": "moreSym"
     },
-    "promptText": "Kai compares fold lines: a nonagon against a parallelogram. Which shape has more?"
+    "promptText": "Kai compares a regular nonagon and a parallelogram. Which shape has more lines of symmetry?"
    }
   }
  },
@@ -27380,7 +27398,7 @@ export const SEED_ITEMS = [
     "shapeC": {
      "kind": "authored"
     },
-    "promptText": "Rosa claims: A dodecagon has 12 sides. Is Rosa right?"
+    "promptText": "Rosa tells the class: A dodecagon has 12 sides. Is that right?"
    }
   }
  },
@@ -27525,11 +27543,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "linesShapes-proc-b0821-0630",
+  "itemId": "linesShapes-proc-b0821-0648",
   "modeId": "linesShapes",
   "itemFamily": "procedural",
   "subskill": "lineFigures",
-  "structureType": "endpoints_band1",
+  "structureType": "pathParts_band1",
   "levelRange": [
    1,
    3
@@ -27542,11 +27560,9 @@ export const SEED_ITEMS = [
    "answer": 2,
    "display": {
     "shapeC": {
-     "n": 2,
-     "kind": "endpoints",
-     "figure": "line segment"
+     "kind": "authoredCount"
     },
-    "promptText": "How many endpoints does a line segment have?"
+    "promptText": "A path goes straight, turns once, and goes straight again. How many straight parts does the path use?"
    },
    "answerType": "numberPad"
   }
@@ -27610,7 +27626,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "linesShapes-proc-b0821-0377",
+  "itemId": "linesShapes-proc-b0821-0383",
   "modeId": "linesShapes",
   "itemFamily": "procedural",
   "subskill": "shapeProperties",
@@ -27624,13 +27640,13 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 4,
+   "answer": 5,
    "display": {
     "shapeC": {
      "kind": "sidesByName",
-     "name": "square"
+     "name": "pentagon"
     },
-    "promptText": "A square has all its sides the same length. How many sides are the same?"
+    "promptText": "Nia cuts out a pentagon whose sides are all the same length. How many sides are the same length?"
    },
    "answerType": "numberPad"
   }
@@ -27688,11 +27704,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "linesShapes-proc-b0821-0344",
+  "itemId": "linesShapes-proc-b0821-0321",
   "modeId": "linesShapes",
   "itemFamily": "procedural",
   "subskill": "shapeProperties",
-  "structureType": "rightAngles_band2",
+  "structureType": "parallelPairs_band1",
   "levelRange": [
    4,
    6
@@ -27702,13 +27718,13 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 0,
+   "answer": 2,
    "display": {
     "shapeC": {
-     "kind": "rightAnglesByName",
-     "name": "trapezoid"
+     "kind": "parallelPairsByName",
+     "name": "square"
     },
-    "promptText": "Count the right angles of a trapezoid. How many right angles are there?"
+    "promptText": "How many pairs of parallel sides does a square have?"
    },
    "answerType": "numberPad"
   }
@@ -27773,11 +27789,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "linesShapes-proc-b0821-0636",
+  "itemId": "linesShapes-proc-b0821-0630",
   "modeId": "linesShapes",
   "itemFamily": "procedural",
   "subskill": "lineFigures",
-  "structureType": "endpoints_band2",
+  "structureType": "endpoints_band1",
   "levelRange": [
    4,
    6
@@ -27794,7 +27810,7 @@ export const SEED_ITEMS = [
      "kind": "endpoints",
      "figure": "line segment"
     },
-    "promptText": "How many endpoints does a line segment have? Think before typing."
+    "promptText": "How many endpoints does a line segment have?"
    },
    "answerType": "numberPad"
   }
@@ -27852,13 +27868,13 @@ export const SEED_ITEMS = [
       4
      ]
     },
-    "promptText": "Add the lines of symmetry of a hexagon and a square. What is the total?"
+    "promptText": "Add the lines of symmetry of a hexagon with all its sides and corners the same, and a square. How many lines of symmetry is that in all?"
    },
    "answerType": "numberPad"
   }
  },
  {
-  "itemId": "linesShapes-proc-b0821-0395",
+  "itemId": "linesShapes-proc-b0821-0389",
   "modeId": "linesShapes",
   "itemFamily": "procedural",
   "subskill": "shapeProperties",
@@ -27877,9 +27893,9 @@ export const SEED_ITEMS = [
     "shapeC": {
      "n": 2,
      "kind": "diagonals",
-     "name": "trapezoid"
+     "name": "rectangle"
     },
-    "promptText": "Count the diagonals of a trapezoid. How many diagonals are there?"
+    "promptText": "Count the diagonals of a rectangle. How many diagonals are there?"
    },
    "answerType": "numberPad"
   }
@@ -27931,7 +27947,7 @@ export const SEED_ITEMS = [
      "kind": "symmetryByName",
      "name": "octagon"
     },
-    "promptText": "Exactly how many lines of symmetry does a octagon have?"
+    "promptText": "Exactly how many lines of symmetry does a regular octagon have?"
    },
    "answerType": "numberPad"
   }
@@ -27953,13 +27969,16 @@ export const SEED_ITEMS = [
    "op": "count",
    "answer": 0,
    "display": {
+    "shape": "octagon",
+    "rotate": 0,
     "shapeC": {
      "kind": "rightAnglesByName",
      "name": "octagon"
     },
-    "promptText": "Exactly how many right angles does a octagon contain?"
+    "promptText": "How many right angles does this octagon have?",
+    "shapeMode": "count"
    },
-   "answerType": "numberPad"
+   "answerType": "shapeFigure"
   }
  },
  {
@@ -28016,7 +28035,7 @@ export const SEED_ITEMS = [
      }
     ],
     "shapeMode": "select",
-    "promptText": "Round 1: even turned around, one of these is a octagon. Which one?"
+    "promptText": "Round 1: even turned around, one of these is an octagon. Which one?"
    },
    "answerType": "shapeFigure"
   }
@@ -28043,7 +28062,7 @@ export const SEED_ITEMS = [
      "kind": "endpoints",
      "figure": "line segment"
     },
-    "promptText": "How many endpoints does a line segment have? Recall the exact definition."
+    "promptText": "How many endpoints does every line segment have?"
    },
    "answerType": "numberPad"
   }
@@ -28101,7 +28120,7 @@ export const SEED_ITEMS = [
       2
      ]
     },
-    "promptText": "Combine the symmetry lines of a octagon and a rectangle. Exactly how many lines is that?"
+    "promptText": "Combine the lines of symmetry of a regular octagon and a rectangle that is not a square. How many lines is that in all?"
    },
    "answerType": "numberPad"
   }
@@ -28155,7 +28174,7 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 12
     },
-    "promptText": "Sam's bean plant was 7 cm on Monday and 12 cm on Friday. How many centimetres did it grow?"
+    "promptText": "Sam's bean plant was 7 cm on Monday and 12 cm on Friday. How many centimeters did it grow?"
    },
    "answerType": "numberPad"
   }
@@ -28209,7 +28228,7 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 9
     },
-    "promptText": "Sam guessed a leaf at 6 cm; the ruler says 9 cm. By how many centimetres was the guess off?"
+    "promptText": "Sam guessed a leaf at 6 cm; the ruler says 9 cm. By how many centimeters was the guess off?"
    },
    "answerType": "numberPad"
   }
@@ -28270,7 +28289,7 @@ export const SEED_ITEMS = [
       4
      ]
     },
-    "promptText": "Sam builds a garden edge from strips of 5 cm, 7 cm, and 4 cm. How long is the edge in centimetres?"
+    "promptText": "Sam builds a garden edge from strips of 5 cm, 7 cm, and 4 cm. How long is the edge in centimeters?"
    },
    "answerType": "numberPad"
   }
@@ -28299,7 +28318,7 @@ export const SEED_ITEMS = [
       6
      ]
     },
-    "promptText": "Zoe glues a 11 cm strip of ribbon to a 6 cm strip for a card. How many centimetres of ribbon is that?"
+    "promptText": "Zoe glues an 11 cm strip of ribbon to a 6 cm strip for a card. How many centimeters of ribbon is that?"
    },
    "answerType": "numberPad"
   }
@@ -28328,7 +28347,7 @@ export const SEED_ITEMS = [
       6
      ]
     },
-    "promptText": "Two watering cans, 11 L and 6 L, both go onto June's garden. How many litres of water is that?"
+    "promptText": "Two watering cans, 11 L and 6 L, both go onto June's garden. How many liters of water is that?"
    },
    "answerType": "numberPad"
   }
@@ -28357,7 +28376,7 @@ export const SEED_ITEMS = [
     "measure": {
      "kind": "pickLabel"
     },
-    "promptText": "For a teabag, should June write 2 g or 2 kg? Pick the sensible label."
+    "promptText": "For a teabag, should June write 2 g or 2 kg?"
    }
   }
  },
@@ -28383,7 +28402,7 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 62
     },
-    "promptText": "The sunflower by Mina's window rose from 27 cm to 62 cm. How many centimetres taller is that?"
+    "promptText": "The sunflower by Mina's window rose from 27 cm to 62 cm. How many centimeters taller is that?"
    },
    "answerType": "numberPad"
   }
@@ -28410,7 +28429,7 @@ export const SEED_ITEMS = [
      "pair": "L>mL",
      "amount": 2
     },
-    "promptText": "A lemonade cooler of 2 L stands at Mina's stall. How many millilitres is that?"
+    "promptText": "A lemonade cooler of 2 L stands at Mina's stall. How many milliliters is that?"
    },
    "answerType": "numberPad"
   }
@@ -28437,7 +28456,7 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 92
     },
-    "promptText": "Before measuring a scooter, Mina guessed 70 cm. It is really 92 cm. How many centimetres off was the guess?"
+    "promptText": "Before measuring a scooter, Mina guessed 70 cm. It is really 92 cm. How many centimeters off was the guess?"
    },
    "answerType": "numberPad"
   }
@@ -28524,7 +28543,7 @@ export const SEED_ITEMS = [
      "pair": "km>m",
      "amount": 1
     },
-    "promptText": "The forest loop near June's camp is 1 km around. What is that in metres?"
+    "promptText": "The forest loop near June's camp is 1 km around. What is that in meters?"
    },
    "answerType": "numberPad"
   }
@@ -28577,7 +28596,7 @@ export const SEED_ITEMS = [
      "n": 312,
      "kind": "roundTen"
     },
-    "promptText": "Omar walks 312 m to school. Rounded to the nearest ten, how many metres is the walk?"
+    "promptText": "Omar walks 312 m to school. Rounded to the nearest ten, how many meters is the walk?"
    },
    "answerType": "numberPad"
   }
@@ -28606,7 +28625,7 @@ export const SEED_ITEMS = [
       34
      ]
     },
-    "promptText": "Sam sews a banner 2 m 34 cm long. The shop measures in centimetres. How many centimetres long is it?"
+    "promptText": "Sam sews a banner 2 m 34 cm long. The shop measures in centimeters. How many centimeters long is it?"
    },
    "answerType": "numberPad"
   }
@@ -28635,7 +28654,7 @@ export const SEED_ITEMS = [
       380
      ]
     },
-    "promptText": "Into the punch bowl Mina pours 250 mL and then 380 mL. What volume in millilitres is in the bowl?"
+    "promptText": "Into the punch bowl Mina pours 250 mL and then 380 mL. What volume in milliliters is in the bowl?"
    },
    "answerType": "numberPad"
   }
@@ -28661,7 +28680,7 @@ export const SEED_ITEMS = [
      "n": 534,
      "kind": "roundHundred"
     },
-    "promptText": "Mina reads that the pier is 534 m long. How many metres is that, to the nearest hundred?"
+    "promptText": "Mina reads that the pier is 534 m long. How many meters is that, to the nearest hundred?"
    },
    "answerType": "numberPad"
   }
@@ -28722,7 +28741,7 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 500
     },
-    "promptText": "A recipe of Sam's needs 500 mL of water, and the measuring cup already holds 320 mL. How many more millilitres must Sam add?"
+    "promptText": "A recipe of Sam's needs 500 mL of water, and the measuring cup already holds 320 mL. How many more milliliters must Sam add?"
    },
    "answerType": "numberPad"
   }
@@ -28749,7 +28768,7 @@ export const SEED_ITEMS = [
      "pair": "km>m",
      "total": 1000
     },
-    "promptText": "The charity walk June joins is 1000 m long. How many kilometres is that?"
+    "promptText": "The charity walk June joins is 1000 m long. How many kilometers is that?"
    },
    "answerType": "numberPad"
   }
@@ -28805,7 +28824,7 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 243
     },
-    "promptText": "Omar estimated the gym at 175 m; it measures 243 m. How many metres off was Omar's estimate?"
+    "promptText": "Omar estimated the path around the pond at 175 m; it measures 243 m. How many meters off was Omar's estimate?"
    },
    "answerType": "numberPad"
   }
@@ -29016,7 +29035,7 @@ export const SEED_ITEMS = [
     "measure": {
      "kind": "claim"
     },
-    "promptText": "Ida says a bag of rice holds about 2 kg. Is Ida right?"
+    "promptText": "Ida says a bag of rice weighs about 2 kg. Is Ida right?"
    }
   }
  },
@@ -29168,7 +29187,7 @@ export const SEED_ITEMS = [
      "kind": "cmpSaid",
      "saidLarger": true
     },
-    "promptText": "Luca says 300 cm must be more than 2 m because its number is bigger. Is Luca right?"
+    "promptText": "Luca says 300 cm is longer than 2 m. Is Luca right?"
    }
   }
  },
@@ -29201,7 +29220,7 @@ export const SEED_ITEMS = [
      "kind": "twoStepSaid",
      "said": 46
     },
-    "promptText": "Luca joins boards of 34 cm and 27 cm, then cuts off 15 cm, and reports 46 cm. Is Luca right?"
+    "promptText": "Luca joins boards of 34 cm and 27 cm, then cuts off 15 cm, and says 46 cm is left. Is Luca right?"
    }
   }
  },
@@ -29231,7 +29250,7 @@ export const SEED_ITEMS = [
      "b": 400,
      "kind": "cmp"
     },
-    "promptText": "Which stretch is longer, 420 cm or 4 m? Ava converts to check."
+    "promptText": "Which length is longer: 420 cm or 4 m?"
    }
   }
  },
@@ -29290,7 +29309,7 @@ export const SEED_ITEMS = [
     "measure": {
      "kind": "claim"
     },
-    "promptText": "Omar is judging how heavy a pumpkin feels. Does Omar need an EXACT measure, or is an estimate enough? Omar says an estimate is enough. Is Omar right?"
+    "promptText": "Omar is judging how heavy a pumpkin feels. Omar says an estimate is enough. Is Omar right?"
    }
   }
  },
@@ -29481,7 +29500,7 @@ export const SEED_ITEMS = [
      "pair": "km>m",
      "total": 3000
     },
-    "promptText": "How many km make 3000 m? June picks the amount."
+    "promptText": "3000 m is the same as how many kilometers?"
    }
   }
  },
@@ -29512,7 +29531,7 @@ export const SEED_ITEMS = [
      "need": 4600,
      "haveSmall": 4000
     },
-    "promptText": "June must pour 4600 mL, and the 4 L bottle is full. Does the bottle hold enough?"
+    "promptText": "A recipe needs 4600 mL of milk. June's carton holds 4 L. Is there enough milk?"
    }
   }
  },
@@ -29570,7 +29589,7 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 12
     },
-    "promptText": "A 12 cm ribbon and a 7 cm ribbon. The first is longer by ? cm"
+    "promptText": "A red ribbon is 12 cm long. A blue ribbon is 7 cm long. How much longer is the red ribbon?"
    },
    "answerType": "numberPad"
   }
@@ -29597,7 +29616,7 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 12
     },
-    "promptText": "A 12 kg box and a 7 kg box. The first is heavier by ? kg"
+    "promptText": "A red box weighs 12 kg. A blue box weighs 7 kg. How much heavier is the red box?"
    },
    "answerType": "numberPad"
   }
@@ -29685,7 +29704,7 @@ export const SEED_ITEMS = [
       6
      ]
     },
-    "promptText": "A 7 cm strip taped to a 6 cm strip = ? cm"
+    "promptText": "A 7 cm strip and a 6 cm strip are taped end to end. How many centimeters long are the two strips together?"
    },
    "answerType": "numberPad"
   }
@@ -29716,7 +29735,7 @@ export const SEED_ITEMS = [
       3
      ]
     },
-    "promptText": "4 paperclips, each 3 cm long, laid end to end = ? cm"
+    "promptText": "4 paperclips, each 3 cm long, are laid end to end. How many centimeters long is the row of paperclips?"
    },
    "answerType": "numberPad"
   }
@@ -29745,7 +29764,7 @@ export const SEED_ITEMS = [
       7
      ]
     },
-    "promptText": "Pour 8 L and 7 L into one tub. The tub holds ? L"
+    "promptText": "Pour 8 L of water and 7 L of water into one tub. How many liters of water are in the tub?"
    },
    "answerType": "numberPad"
   }
@@ -29856,7 +29875,7 @@ export const SEED_ITEMS = [
      "after": 5,
      "before": 3
     },
-    "promptText": "A rope is a bit longer than 3 m and a bit shorter than 5 m. A whole-number estimate = ? m"
+    "promptText": "A rope is longer than 3 m but shorter than 5 m. Its length is a whole number of meters. How many meters long is the rope?"
    },
    "answerType": "numberPad"
   }
@@ -29915,7 +29934,7 @@ export const SEED_ITEMS = [
       27
      ]
     },
-    "promptText": "A 34 cm board joined to a 27 cm board = ? cm"
+    "promptText": "A 34 cm board and a 27 cm board are joined end to end. How many centimeters long are the two boards together?"
    },
    "answerType": "numberPad"
   }
@@ -29999,7 +30018,7 @@ export const SEED_ITEMS = [
      "n": 23,
      "kind": "roundTen"
     },
-    "promptText": "A stick measures 23 cm. To the nearest ten, that is ? cm"
+    "promptText": "A stick is 23 cm long. How long is the stick to the nearest ten centimeters?"
    },
    "answerType": "numberPad"
   }
@@ -30079,7 +30098,7 @@ export const SEED_ITEMS = [
      "n": 234,
      "kind": "roundHundred"
     },
-    "promptText": "A trail measures 234 m. To the nearest hundred, that is ? m"
+    "promptText": "A trail is 234 m long. How long is the trail to the nearest hundred meters?"
    },
    "answerType": "numberPad"
   }
@@ -30143,7 +30162,7 @@ export const SEED_ITEMS = [
       45
      ]
     },
-    "promptText": "1 m 30 cm of rope plus 45 cm more = ? cm"
+    "promptText": "A rope is 1 m 30 cm long. Then 45 cm more rope is tied on. How many centimeters long is the rope now?"
    },
    "answerType": "numberPad"
   }
@@ -30228,7 +30247,7 @@ export const SEED_ITEMS = [
      "after": 210,
      "before": 190
     },
-    "promptText": "A path is between 190 m and 210 m long. The halfway estimate = ? m"
+    "promptText": "A path is between 190 m and 210 m long. For a good estimate, use the length halfway between. How many meters is that?"
    },
    "answerType": "numberPad"
   }
@@ -30425,7 +30444,7 @@ export const SEED_ITEMS = [
      "kind": "eq"
     },
     "truth": true,
-    "promptText": "June suggests swapping 3 nickels for 15 pennies, value for value. Is the trade fair?"
+    "promptText": "June wants to trade 3 nickels for 15 pennies. Is the trade fair?"
    }
   }
  },
@@ -30863,7 +30882,7 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": "Yes",
+   "answer": "No",
    "choices": [
     "Yes",
     "No"
@@ -30871,11 +30890,11 @@ export const SEED_ITEMS = [
    "display": {
     "money": {
      "av": 150,
-     "bv": 150,
+     "bv": 300,
      "kind": "eq"
     },
-    "truth": true,
-    "promptText": "At the trading post, Zoe offers $1 and 2 quarters for a friend's 6 quarters. Is that a fair trade?"
+    "truth": false,
+    "promptText": "At the trading post, Zoe offers $1 and 2 quarters for a friend's 12 quarters. Is that a fair trade?"
    }
   }
  },
@@ -30935,7 +30954,7 @@ export const SEED_ITEMS = [
      "said": 1
     },
     "truth": true,
-    "promptText": "Mina says one penny is worth 1 cents. Is Mina right?"
+    "promptText": "Mina says one penny is worth 1 cent. Is Mina right?"
    }
   }
  },
@@ -31062,7 +31081,7 @@ export const SEED_ITEMS = [
      }
     },
     "truth": false,
-    "promptText": "Ava counts 3 nickels as 3 cents — one cent per coin. Is that right?"
+    "promptText": "Ava counts 3 nickels as 3 cents, one cent for each coin. Is Ava right?"
    }
   }
  },
@@ -31094,7 +31113,7 @@ export const SEED_ITEMS = [
      "kind": "countBack",
      "start": 15
     },
-    "promptText": "Theo hands over 15 cents for a 11-cent eraser. Which change is right?"
+    "promptText": "Theo hands over 15 cents for an 11-cent eraser. Which change is right?"
    }
   }
  },
@@ -31217,7 +31236,7 @@ export const SEED_ITEMS = [
      "said": 7
     },
     "truth": true,
-    "promptText": "Ben pays 25 cents for a 18-cent snack and expects 7 cents back. Is Ben right?"
+    "promptText": "Ben pays 25 cents for an 18-cent snack and expects 7 cents back. Is Ben right?"
    }
   }
  },
@@ -31562,7 +31581,7 @@ export const SEED_ITEMS = [
      "kind": "notationPick",
      "cents": 280
     },
-    "promptText": "Which dollar form shows 280 cents? Ida is labeling a price tag."
+    "promptText": "How do you write 280 cents with a dollar sign?"
    }
   }
  },
@@ -31659,11 +31678,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "money-proc-b0821-0021",
+  "itemId": "money-proc-b0821-0001",
   "modeId": "money",
   "itemFamily": "procedural",
   "subskill": "countCoins",
-  "structureType": "trayCountTeen",
+  "structureType": "coinSumTeen",
   "levelRange": [
    1,
    3
@@ -31673,25 +31692,20 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 12,
+   "answer": 13,
    "display": {
-    "coins": [
-     "penny",
-     "dime",
-     "penny"
-    ],
-    "coinMode": "count",
     "counting": {
      "kind": "sum",
      "parts": [
       10,
       1,
+      1,
       1
      ]
     },
-    "promptText": "10 + 1 + 1 = ? c"
+    "promptText": "1 dime and 3 pennies = __ cents"
    },
-   "answerType": "coinTray"
+   "answerType": "numberPad"
   }
  },
  {
@@ -31716,7 +31730,7 @@ export const SEED_ITEMS = [
      "kind": "countBack",
      "start": 10
     },
-    "promptText": "Pay 10 cents for a 7-cent toy. Change = ? cents"
+    "promptText": "You pay 10 cents for a 7-cent toy. How many cents do you get back?"
    },
    "answerType": "numberPad"
   }
@@ -31743,17 +31757,17 @@ export const SEED_ITEMS = [
      "kind": "trade",
      "fromCents": 10
     },
-    "promptText": "1 dime = ? nickels"
+    "promptText": "1 dime = __ nickels"
    },
    "answerType": "numberPad"
   }
  },
  {
-  "itemId": "money-proc-b0821-0466",
+  "itemId": "money-proc-b0821-0486",
   "modeId": "money",
   "itemFamily": "procedural",
   "subskill": "moneyReasoning",
-  "structureType": "fewestTeen",
+  "structureType": "twoPriceTeen",
   "levelRange": [
    1,
    3
@@ -31763,48 +31777,60 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 3,
-   "display": {
-    "money": {
-     "kind": "fewest",
-     "cents": 7
-    },
-    "promptText": "Fewest coins for 7 cents = ?"
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "money-proc-b0821-0007",
-  "modeId": "money",
-  "itemFamily": "procedural",
-  "subskill": "countCoins",
-  "structureType": "coinSumTeen",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 19,
+   "answer": 13,
    "display": {
     "counting": {
      "kind": "sum",
      "parts": [
-      10,
-      5,
+      7,
+      6
+     ]
+    },
+    "promptText": "7¢ + 6¢ = __¢"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0027",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "countCoins",
+  "structureType": "trayCountTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "coins": [
+     "penny",
+     "penny",
+     "penny",
+     "penny",
+     "penny",
+     "penny"
+    ],
+    "coinMode": "count",
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      1,
+      1,
       1,
       1,
       1,
       1
      ]
     },
-    "promptText": "1 dime, 1 nickel and 4 pennies = ? cents"
+    "promptText": "How many cents are these coins worth?"
    },
-   "answerType": "numberPad"
+   "answerType": "coinTray"
   }
  },
  {
@@ -31829,7 +31855,7 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 10
     },
-    "promptText": "7 cents saved. ? more cents make 10 cents"
+    "promptText": "You have saved 7 cents. How many more cents do you need to have 10 cents?"
    },
    "answerType": "numberPad"
   }
@@ -31856,17 +31882,17 @@ export const SEED_ITEMS = [
      "kind": "trade",
      "fromCents": 10
     },
-    "promptText": "? nickels make 10 cents"
+    "promptText": "How many nickels make 10 cents?"
    },
    "answerType": "numberPad"
   }
  },
  {
-  "itemId": "money-proc-b0821-0491",
+  "itemId": "money-proc-b0821-0481",
   "modeId": "money",
   "itemFamily": "procedural",
   "subskill": "moneyReasoning",
-  "structureType": "twoPriceTeen",
+  "structureType": "fewestTeen",
   "levelRange": [
    1,
    3
@@ -31876,26 +31902,23 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 19,
+   "answer": 4,
    "display": {
-    "counting": {
-     "kind": "sum",
-     "parts": [
-      12,
-      7
-     ]
+    "money": {
+     "kind": "fewest",
+     "cents": 4
     },
-    "promptText": "12c toy + 7c toy = ? c"
+    "promptText": "What is the fewest number of coins that make 4 cents?"
    },
    "answerType": "numberPad"
   }
  },
  {
-  "itemId": "money-proc-b0821-0071",
+  "itemId": "money-proc-b0821-0053",
   "modeId": "money",
   "itemFamily": "procedural",
   "subskill": "countCoins",
-  "structureType": "trayCountMid",
+  "structureType": "coinSumMid",
   "levelRange": [
    4,
    6
@@ -31905,25 +31928,21 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 36,
+   "answer": 38,
    "display": {
-    "coins": [
-     "quarter",
-     "dime",
-     "penny"
-    ],
-    "coinMode": "count",
     "counting": {
      "kind": "sum",
      "parts": [
       25,
       10,
+      1,
+      1,
       1
      ]
     },
-    "promptText": "25 + 10 + 1 = ? c"
+    "promptText": "1 quarter, 1 dime and 3 pennies = __ cents"
    },
-   "answerType": "coinTray"
+   "answerType": "numberPad"
   }
  },
  {
@@ -31948,7 +31967,7 @@ export const SEED_ITEMS = [
      "kind": "countBack",
      "start": 25
     },
-    "promptText": "Pay 25 cents for a 18-cent toy. Change = ? cents"
+    "promptText": "You pay 25 cents for an 18-cent toy. How many cents do you get back?"
    },
    "answerType": "numberPad"
   }
@@ -31975,119 +31994,7 @@ export const SEED_ITEMS = [
      "kind": "trade",
      "fromCents": 25
     },
-    "promptText": "1 quarter = ? nickels"
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "money-proc-b0821-0516",
-  "modeId": "money",
-  "itemFamily": "procedural",
-  "subskill": "moneyReasoning",
-  "structureType": "fewestMid",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 2,
-   "display": {
-    "money": {
-     "kind": "fewest",
-     "cents": 26
-    },
-    "promptText": "Fewest coins for 26 cents = ?"
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "money-proc-b0821-0062",
-  "modeId": "money",
-  "itemFamily": "procedural",
-  "subskill": "countCoins",
-  "structureType": "coinSumMid",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 62,
-   "display": {
-    "counting": {
-     "kind": "sum",
-     "parts": [
-      25,
-      25,
-      10,
-      1,
-      1
-     ]
-    },
-    "promptText": "2 quarters, 1 dime and 2 pennies = ? cents"
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "money-proc-b0821-0233",
-  "modeId": "money",
-  "itemFamily": "procedural",
-  "subskill": "makeChange",
-  "structureType": "saveUpMid",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 7,
-   "display": {
-    "counting": {
-     "have": 18,
-     "kind": "gap",
-     "target": 25
-    },
-    "promptText": "18 cents saved. ? more cents make 25 cents"
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "money-proc-b0821-0388",
-  "modeId": "money",
-  "itemFamily": "procedural",
-  "subskill": "coinEquivalence",
-  "structureType": "coinsForAmountMid",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 5,
-   "display": {
-    "money": {
-     "per": 5,
-     "kind": "trade",
-     "fromCents": 25
-    },
-    "promptText": "? nickels make 25 cents"
+    "promptText": "How many nickels make 1 quarter?"
    },
    "answerType": "numberPad"
   }
@@ -32116,7 +32023,129 @@ export const SEED_ITEMS = [
       31
      ]
     },
-    "promptText": "26c toy + 31c toy = ? c"
+    "promptText": "26¢ + 31¢ = __¢"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0078",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "countCoins",
+  "structureType": "trayCountMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 50,
+   "display": {
+    "coins": [
+     "nickel",
+     "nickel",
+     "dime",
+     "dime",
+     "dime",
+     "dime"
+    ],
+    "coinMode": "count",
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      10,
+      10,
+      10,
+      10,
+      5,
+      5
+     ]
+    },
+    "promptText": "How many cents are these coins worth?"
+   },
+   "answerType": "coinTray"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0233",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "makeChange",
+  "structureType": "saveUpMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 7,
+   "display": {
+    "counting": {
+     "have": 18,
+     "kind": "gap",
+     "target": 25
+    },
+    "promptText": "You have saved 18 cents. How many more cents do you need to have 25 cents?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0388",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "coinEquivalence",
+  "structureType": "coinsForAmountMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "money": {
+     "per": 5,
+     "kind": "trade",
+     "fromCents": 25
+    },
+    "promptText": "How many nickels make 25 cents?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0533",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "moneyReasoning",
+  "structureType": "fewestMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "money": {
+     "kind": "fewest",
+     "cents": 41
+    },
+    "promptText": "What is the smallest number of coins you can use to make 41 cents?"
    },
    "answerType": "numberPad"
   }
@@ -32172,7 +32201,7 @@ export const SEED_ITEMS = [
      "kind": "countBack",
      "start": 100
     },
-    "promptText": "Pay 100 cents for a 67-cent toy. Change = ? cents"
+    "promptText": "You pay 100 cents for a 67-cent toy. How many cents do you get back?"
    },
    "answerType": "numberPad"
   }
@@ -32205,11 +32234,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "money-proc-b0821-0568",
+  "itemId": "money-proc-b0821-0594",
   "modeId": "money",
   "itemFamily": "procedural",
   "subskill": "moneyReasoning",
-  "structureType": "fewestBig",
+  "structureType": "twoPriceBig",
   "levelRange": [
    7,
    10
@@ -32219,13 +32248,16 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 6,
+   "answer": 257,
    "display": {
-    "money": {
-     "kind": "fewest",
-     "cents": 126
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      126,
+      131
+     ]
     },
-    "promptText": "Fewest coins for 126 cents = ?"
+    "promptText": "126¢ + 131¢ = __¢"
    },
    "answerType": "numberPad"
   }
@@ -32266,7 +32298,7 @@ export const SEED_ITEMS = [
       1
      ]
     },
-    "promptText": "6 quarters, 2 dimes and 6 pennies = ? cents"
+    "promptText": "6 quarters, 2 dimes and 6 pennies = __ cents"
    },
    "answerType": "numberPad"
   }
@@ -32293,7 +32325,7 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 100
     },
-    "promptText": "67 cents saved. ? more cents make 100 cents"
+    "promptText": "You have saved 67 cents. How many more cents do you need to have 100 cents?"
    },
    "answerType": "numberPad"
   }
@@ -32320,17 +32352,17 @@ export const SEED_ITEMS = [
      "kind": "trade",
      "fromCents": 125
     },
-    "promptText": "? quarters make 125 cents"
+    "promptText": "How many quarters make 125 cents?"
    },
    "answerType": "numberPad"
   }
  },
  {
-  "itemId": "money-proc-b0821-0594",
+  "itemId": "money-proc-b0821-0585",
   "modeId": "money",
   "itemFamily": "procedural",
   "subskill": "moneyReasoning",
-  "structureType": "twoPriceBig",
+  "structureType": "fewestBig",
   "levelRange": [
    7,
    10
@@ -32340,16 +32372,13 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 257,
+   "answer": 16,
    "display": {
-    "counting": {
-     "kind": "sum",
-     "parts": [
-      126,
-      131
-     ]
+    "money": {
+     "kind": "fewest",
+     "cents": 274
     },
-    "promptText": "126c item + 131c item = ? c"
+    "promptText": "Use only pennies, nickels, dimes, and quarters. What is the smallest number of coins you can use to make 274 cents?"
    },
    "answerType": "numberPad"
   }
@@ -32917,7 +32946,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 30,
    "display": {
-    "promptText": "If 6 × 5 = 30, what is 5 × 6?"
+    "promptText": "Turn 5 × 6 around to 6 × 5 if that fact is easier. What is 5 × 6?"
    }
   }
  },
@@ -32959,7 +32988,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 40,
    "display": {
-    "promptText": "8 groups, each with 5 items. Total items?"
+    "promptText": "Each of 8 groups has 5 counters. How many counters are there altogether?"
    }
   }
  },
@@ -33022,7 +33051,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 54,
    "display": {
-    "promptText": "Nine of 6 is the same as? Use multiplication."
+    "promptText": "Put 6 counters in each of 9 groups. How many counters is that in all?"
    }
   }
  },
@@ -33086,7 +33115,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 72,
    "display": {
-    "promptText": "If 9 × 8 = 72, what is 8 × 9?"
+    "promptText": "8 × 9 and 9 × 8 have the same answer. What is 8 × 9?"
    }
   }
  },
@@ -33171,7 +33200,7 @@ export const SEED_ITEMS = [
    "op": "x",
    "answer": 434,
    "display": {
-    "promptText": "First find 62 × 1, then 62 × 6, then add. What is 62 × 7?"
+    "promptText": "Start with 60 × 7 = 420. What is 62 × 7?"
    },
    "answerType": "numberPad"
   }
@@ -33193,7 +33222,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 80,
    "display": {
-    "promptText": "10 groups, each with 8 items. Total items?"
+    "promptText": "There are 10 groups of 8 counters. How many counters are there in all?"
    }
   }
  },
@@ -33240,7 +33269,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-conc-factFluency-K1-001",
+  "itemId": "multiplication-conc-factFluency-K1-032",
   "modeId": "multiplication",
   "itemFamily": "conceptual",
   "subskill": "factFluency",
@@ -33251,12 +33280,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 3,
-   "b": 2,
+   "a": 1,
+   "b": 3,
    "op": "×",
-   "answer": 6,
+   "answer": 3,
    "display": {
-    "promptText": "If 2 × 3 = 6, what is 3 × 2?"
+    "promptText": "1 × 3 = __"
    }
   }
  },
@@ -33298,12 +33327,12 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 8,
    "display": {
-    "promptText": "2 groups, each with 4 items. Total items?"
+    "promptText": "There are 2 groups of 4 counters. How many counters are there in all?"
    }
   }
  },
  {
-  "itemId": "multiplication-conc-factFluency-K1-018",
+  "itemId": "multiplication-conc-factFluency-K1-017",
   "modeId": "multiplication",
   "itemFamily": "conceptual",
   "subskill": "factFluency",
@@ -33315,11 +33344,11 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 2,
-   "b": 3,
+   "b": 2,
    "op": "×",
-   "answer": 6,
+   "answer": 4,
    "display": {
-    "promptText": "Multiplication fact: 2 × 3 = ?"
+    "promptText": "Multiplication fact: 2 × 2 = ?"
    }
   }
  },
@@ -33361,7 +33390,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 8,
    "display": {
-    "promptText": "Four of 2 is the same as? Use multiplication."
+    "promptText": "There are 4 groups with 2 counters in each group. How many counters are there in all?"
    }
   }
  },
@@ -33429,7 +33458,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-proc-arrayReasoning-23-008",
+  "itemId": "multiplication-proc-arrayReasoning-23-048",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "arrayReasoning",
@@ -33440,12 +33469,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 7,
-   "b": 2,
+   "a": 8,
+   "b": 6,
    "op": "×",
-   "answer": 14,
+   "answer": 48,
    "display": {
-    "promptText": "Compute 7 × 2."
+    "promptText": "8 by 6 = ?"
    }
   }
  },
@@ -33492,7 +33521,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-proc-arrayReasoning-23-025",
+  "itemId": "multiplication-proc-arrayReasoning-23-020",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "arrayReasoning",
@@ -33503,12 +33532,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 8,
-   "b": 3,
+   "a": 6,
+   "b": 6,
    "op": "×",
-   "answer": 24,
+   "answer": 36,
    "display": {
-    "promptText": "Multiply: 8 × 3."
+    "promptText": "Multiply: 6 × 6."
    }
   }
  },
@@ -33529,7 +33558,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 49,
    "display": {
-    "promptText": "Product of 7 and 7?"
+    "promptText": "What do you get when you multiply 7 and 7?"
    }
   }
  },
@@ -33598,7 +33627,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-proc-arrayReasoning-45-008",
+  "itemId": "multiplication-proc-arrayReasoning-45-048",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "arrayReasoning",
@@ -33609,12 +33638,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 10,
-   "b": 11,
+   "a": 13,
+   "b": 10,
    "op": "×",
-   "answer": 110,
+   "answer": 130,
    "display": {
-    "promptText": "Compute 10 × 11."
+    "promptText": "13 by 10 = ?"
    }
   }
  },
@@ -33662,7 +33691,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-proc-arrayReasoning-45-025",
+  "itemId": "multiplication-proc-arrayReasoning-45-021",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "arrayReasoning",
@@ -33673,12 +33702,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 14,
-   "b": 6,
+   "a": 11,
+   "b": 7,
    "op": "×",
-   "answer": 84,
+   "answer": 77,
    "display": {
-    "promptText": "Multiply: 14 × 6."
+    "promptText": "Multiply: 11 × 7."
    }
   }
  },
@@ -33768,7 +33797,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-proc-arrayReasoning-K1-008",
+  "itemId": "multiplication-proc-arrayReasoning-K1-049",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "arrayReasoning",
@@ -33779,12 +33808,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 3,
-   "b": 2,
+   "a": 4,
+   "b": 4,
    "op": "×",
-   "answer": 6,
+   "answer": 16,
    "display": {
-    "promptText": "Compute 3 × 2."
+    "promptText": "4 by 4 = ?"
    }
   }
  },
@@ -33831,7 +33860,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-proc-arrayReasoning-K1-025",
+  "itemId": "multiplication-proc-arrayReasoning-K1-021",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "arrayReasoning",
@@ -33842,12 +33871,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 4,
-   "b": 4,
+   "a": 3,
+   "b": 2,
    "op": "×",
-   "answer": 16,
+   "answer": 6,
    "display": {
-    "promptText": "Multiply: 4 × 4."
+    "promptText": "Multiply: 3 × 2."
    }
   }
  },
@@ -33868,7 +33897,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 9,
    "display": {
-    "promptText": "Product of 3 and 3?"
+    "promptText": "The product of 3 and 3 is what number?"
    }
   }
  },
@@ -34630,7 +34659,7 @@ export const SEED_ITEMS = [
     "9 and 1"
    ],
    "display": {
-    "promptText": "Which pair does NOT make 10?"
+    "promptText": "Which pair does not make 10?"
    }
   }
  },
@@ -34767,7 +34796,7 @@ export const SEED_ITEMS = [
      "8 and 6",
      "3 and 9"
     ],
-    "promptText": "Select BOTH pairs that bond to 12.",
+    "promptText": "Which two pairs bond to 12?",
     "requiredCount": 2
    },
    "answerType": "multiSelect"
@@ -34853,7 +34882,7 @@ export const SEED_ITEMS = [
      "13 − 4 = 4",
      "4 − 9 = 13"
     ],
-    "promptText": "A bond shows whole 13 with parts 4 and 9. Choose BOTH subtraction sentences it makes.",
+    "promptText": "A bond shows whole 13 with parts 4 and 9. Which two subtraction sentences does it make?",
     "requiredCount": 2
    },
    "answerType": "multiSelect"
@@ -36472,7 +36501,7 @@ export const SEED_ITEMS = [
      ],
      "kind": "core"
     },
-    "sequence": [
+    "terms": [
      "circle",
      "square",
      "circle",
@@ -36480,7 +36509,7 @@ export const SEED_ITEMS = [
      "circle",
      "square"
     ],
-    "promptText": "Lily made this pattern: circle, square, circle, square, circle, square. Which part repeats?"
+    "promptText": "Lily made this pattern: circle, square, circle, square, circle, square. Which part repeats from the start?"
    }
   }
  },
@@ -36553,7 +36582,7 @@ export const SEED_ITEMS = [
      "start": 1,
      "factor": 2
     },
-    "sequence": [
+    "terms": [
      1,
      2,
      4
@@ -36590,13 +36619,13 @@ export const SEED_ITEMS = [
      "after": 6,
      "before": 2
     },
-    "sequence": [
+    "terms": [
      2,
-     "?",
+     "__",
      6,
      8
     ],
-    "promptText": "Luca sees the pattern 2, ?, 6, 8. Which number fills the gap?"
+    "promptText": "Luca sees the pattern 2, __, 6, 8. Which number fills the gap?"
    }
   }
  },
@@ -36629,13 +36658,13 @@ export const SEED_ITEMS = [
      "start": 2
     },
     "counting": null,
-    "sequence": [
+    "terms": [
      2,
      4,
      6,
      8
     ],
-    "promptText": "Lily studies the pattern 2, 4, 6, 8. What is the rule?"
+    "promptText": "Lily studies the pattern 2, 4, 6, 8. Which rule gets you from each number to the one after it?"
    }
   }
  },
@@ -36670,7 +36699,7 @@ export const SEED_ITEMS = [
      "kind": "repeat",
      "said": "sun"
     },
-    "sequence": [
+    "terms": [
      "sun",
      "cloud",
      "sun",
@@ -36709,7 +36738,7 @@ export const SEED_ITEMS = [
      "step": 4,
      "start": 3
     },
-    "sequence": [
+    "terms": [
      3,
      7,
      11
@@ -36780,7 +36809,7 @@ export const SEED_ITEMS = [
      ],
      "kind": "core"
     },
-    "sequence": [
+    "terms": [
      "circle",
      "square",
      "triangle",
@@ -36791,7 +36820,7 @@ export const SEED_ITEMS = [
      "square",
      "triangle"
     ],
-    "promptText": "Sam made this pattern: circle, square, triangle, circle, square, triangle, circle, square, triangle. Which part repeats?"
+    "promptText": "Sam made this pattern: circle, square, triangle, circle, square, triangle, circle, square, triangle. Which part repeats from the start?"
    }
   }
  },
@@ -36864,7 +36893,7 @@ export const SEED_ITEMS = [
      "start": 14,
      "factor": 2
     },
-    "sequence": [
+    "terms": [
      14,
      28,
      56
@@ -36901,13 +36930,13 @@ export const SEED_ITEMS = [
      "after": 24,
      "before": 12
     },
-    "sequence": [
+    "terms": [
      12,
-     "?",
+     "__",
      24,
      30
     ],
-    "promptText": "Sam sees the pattern 12, ?, 24, 30. Which number fills the gap?"
+    "promptText": "Sam sees the pattern 12, __, 24, 30. Which number fills the gap?"
    }
   }
  },
@@ -36940,7 +36969,7 @@ export const SEED_ITEMS = [
      "start": 12
     },
     "counting": null,
-    "sequence": [
+    "terms": [
      12,
      18,
      24,
@@ -36982,7 +37011,7 @@ export const SEED_ITEMS = [
      "kind": "repeat",
      "said": "star"
     },
-    "sequence": [
+    "terms": [
      "star",
      "moon",
      "sun",
@@ -37023,7 +37052,7 @@ export const SEED_ITEMS = [
      "step": 5,
      "start": 51
     },
-    "sequence": [
+    "terms": [
      51,
      56,
      61
@@ -37058,7 +37087,7 @@ export const SEED_ITEMS = [
      "kind": "addOrMult",
      "additive": true
     },
-    "sequence": [
+    "terms": [
      16,
      23,
      30
@@ -37099,15 +37128,7 @@ export const SEED_ITEMS = [
      ],
      "kind": "core"
     },
-    "sequence": [
-     "circle",
-     "square",
-     "triangle",
-     "heart",
-     "circle",
-     "square",
-     "triangle",
-     "heart",
+    "terms": [
      "circle",
      "square",
      "triangle",
@@ -37117,7 +37138,7 @@ export const SEED_ITEMS = [
      "triangle",
      "heart"
     ],
-    "promptText": "Lily made this pattern: circle, square, triangle, heart, circle, square, triangle, heart, circle, square, triangle, heart, circle, square, triangle, heart. Which part repeats?"
+    "promptText": "Lily made this pattern: circle, square, triangle, heart, circle, square, triangle, heart, and so on. Which part repeats from the start?"
    }
   }
  },
@@ -37190,7 +37211,7 @@ export const SEED_ITEMS = [
      "start": 4,
      "factor": 5
     },
-    "sequence": [
+    "terms": [
      4,
      20,
      100
@@ -37227,13 +37248,13 @@ export const SEED_ITEMS = [
      "after": 134,
      "before": 112
     },
-    "sequence": [
+    "terms": [
      112,
-     "?",
+     "__",
      134,
      145
     ],
-    "promptText": "Leo sees the pattern 112, ?, 134, 145. Which number fills the gap?"
+    "promptText": "Leo sees the pattern 112, __, 134, 145. Which number fills the gap?"
    }
   }
  },
@@ -37266,7 +37287,7 @@ export const SEED_ITEMS = [
      "start": 112
     },
     "counting": null,
-    "sequence": [
+    "terms": [
      112,
      123,
      134,
@@ -37309,7 +37330,7 @@ export const SEED_ITEMS = [
      "kind": "repeat",
      "said": "moon"
     },
-    "sequence": [
+    "terms": [
      "star",
      "star",
      "moon",
@@ -37351,7 +37372,7 @@ export const SEED_ITEMS = [
      "step": 13,
      "start": 518
     },
-    "sequence": [
+    "terms": [
      518,
      531,
      544
@@ -37386,7 +37407,7 @@ export const SEED_ITEMS = [
      "kind": "addOrMult",
      "additive": true
     },
-    "sequence": [
+    "terms": [
      412,
      426,
      440
@@ -37494,11 +37515,11 @@ export const SEED_ITEMS = [
      "start": 1,
      "factor": 2
     },
-    "sequence": [
+    "terms": [
      1,
      2
     ],
-    "promptText": "Pattern: 1, 2, ? — each term is 2 times the one before."
+    "promptText": "Each number is 2 times the one before: 1, 2, __. What number comes next?"
    },
    "answerType": "numberPad"
   }
@@ -37526,13 +37547,13 @@ export const SEED_ITEMS = [
      "after": 6,
      "before": 2
     },
-    "sequence": [
+    "terms": [
      2,
-     "?",
+     "__",
      6,
      8
     ],
-    "promptText": "Fill the gap: 2, ?, 6, 8."
+    "promptText": "Pattern: 2, __, 6, 8. What number goes in the blank?"
    },
    "answerType": "numberPad"
   }
@@ -37559,12 +37580,12 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 4
     },
-    "sequence": [
+    "terms": [
      2,
      4,
      6
     ],
-    "promptText": "Pattern: 2, 4, 6. Rule: add ? each time."
+    "promptText": "Pattern: 2, 4, 6. What number is added each time?"
    },
    "answerType": "numberPad"
   }
@@ -37670,7 +37691,7 @@ export const SEED_ITEMS = [
      "times": 1,
      "factor": 2
     },
-    "promptText": "Double 1. What do you get?"
+    "promptText": "If you double 1, what number do you get?"
    },
    "answerType": "numberPad"
   }
@@ -37815,13 +37836,13 @@ export const SEED_ITEMS = [
      "after": 24,
      "before": 12
     },
-    "sequence": [
+    "terms": [
      12,
-     "?",
+     "__",
      24,
      30
     ],
-    "promptText": "Fill the gap: 12, ?, 24, 30."
+    "promptText": "Pattern: 12, __, 24, 30. What number goes in the blank?"
    },
    "answerType": "numberPad"
   }
@@ -37848,12 +37869,12 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 18
     },
-    "sequence": [
+    "terms": [
      12,
      18,
      24
     ],
-    "promptText": "Pattern: 12, 18, 24. Rule: add ? each time."
+    "promptText": "Pattern: 12, 18, 24. What number is added each time?"
    },
    "answerType": "numberPad"
   }
@@ -37889,7 +37910,7 @@ export const SEED_ITEMS = [
      ],
      "kind": "repeatPos"
     },
-    "sequence": [
+    "terms": [
      "red",
      "blue",
      "green",
@@ -37897,7 +37918,7 @@ export const SEED_ITEMS = [
      "blue",
      "green"
     ],
-    "promptText": "Pattern: red, blue, green, red, blue, green, … Keep going. Which shape lands at position 11?"
+    "promptText": "Pattern: red, blue, green, red, blue, green, and so on. Which color is in position 11?"
    }
   }
  },
@@ -37924,13 +37945,13 @@ export const SEED_ITEMS = [
      "kind": "countBack",
      "start": 45
     },
-    "sequence": [
-     "?",
+    "terms": [
+     "__",
      45,
      53,
      61
     ],
-    "promptText": "Pattern: ?, 45, 53, 61 — what comes first?"
+    "promptText": "Pattern: __, 45, 53, 61. What number comes first?"
    },
    "answerType": "numberPad"
   }
@@ -38112,13 +38133,13 @@ export const SEED_ITEMS = [
      "after": 134,
      "before": 112
     },
-    "sequence": [
+    "terms": [
      112,
-     "?",
+     "__",
      134,
      145
     ],
-    "promptText": "Fill the gap: 112, ?, 134, 145."
+    "promptText": "Pattern: 112, __, 134, 145. What number goes in the blank?"
    },
    "answerType": "numberPad"
   }
@@ -38145,12 +38166,12 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 123
     },
-    "sequence": [
+    "terms": [
      112,
      123,
      134
     ],
-    "promptText": "Pattern: 112, 123, 134. Rule: add ? each time."
+    "promptText": "Pattern: 112, 123, 134. What number is added each time?"
    },
    "answerType": "numberPad"
   }
@@ -38188,7 +38209,7 @@ export const SEED_ITEMS = [
      ],
      "kind": "repeatPos"
     },
-    "sequence": [
+    "terms": [
      "circle",
      "square",
      "triangle",
@@ -38198,7 +38219,7 @@ export const SEED_ITEMS = [
      "triangle",
      "heart"
     ],
-    "promptText": "Pattern: circle, square, triangle, heart, circle, square, triangle, heart, … Keep going. Which shape lands at position 21?"
+    "promptText": "Pattern: circle, square, triangle, heart, circle, square, triangle, heart, and so on. Which shape is in position 21?"
    }
   }
  },
@@ -38225,13 +38246,13 @@ export const SEED_ITEMS = [
      "kind": "countBack",
      "start": 545
     },
-    "sequence": [
-     "?",
+    "terms": [
+     "__",
      545,
      566,
      587
     ],
-    "promptText": "Pattern: ?, 545, 566, 587 — what comes first?"
+    "promptText": "Pattern: __, 545, 566, 587. What number comes first?"
    },
    "answerType": "numberPad"
   }
@@ -38980,7 +39001,7 @@ export const SEED_ITEMS = [
      "kind": "placeValueOf",
      "place": 1
     },
-    "promptText": "In 12, what is the value of the ones digit? Priya wants to know."
+    "promptText": "What is the ones digit of 12 worth?"
    }
   }
  },
@@ -39007,7 +39028,7 @@ export const SEED_ITEMS = [
     "10 + 4"
    ],
    "display": {
-    "promptText": "Which sum shows 14 the expanded way? Finn is checking."
+    "promptText": "Which sum shows 14 as a ten and some ones?"
    }
   }
  },
@@ -39033,7 +39054,7 @@ export const SEED_ITEMS = [
    ],
    "display": {
     "truth": false,
-    "promptText": "Diego writes 13 = 14 ones. Is that right?"
+    "promptText": "Diego says 13 is the same as 14 ones. Is Diego right?"
    }
   }
  },
@@ -39141,7 +39162,7 @@ export const SEED_ITEMS = [
     "50 + 2"
    ],
    "display": {
-    "promptText": "Which sum shows 25 the expanded way? Luca is checking."
+    "promptText": "Which sum shows what each digit in 25 is worth?"
    }
   }
  },
@@ -39192,7 +39213,7 @@ export const SEED_ITEMS = [
     20
    ],
    "display": {
-    "promptText": "11 sits between 10 and 20 on the number line. Which is it nearer to?"
+    "promptText": "Is 11 nearer to 10 or to 20?"
    }
   }
  },
@@ -39296,7 +39317,7 @@ export const SEED_ITEMS = [
     "No"
    ],
    "display": {
-    "promptText": "Ida rounds 13 to the nearest ten and gets 20. Is that right?"
+    "promptText": "Rosa rounds 13 to the nearest ten and gets 20. Is that right?"
    }
   }
  },
@@ -39355,7 +39376,7 @@ export const SEED_ITEMS = [
     "3 + 4 + 7"
    ],
    "display": {
-    "promptText": "Which sum shows 347 the expanded way? Luca is checking."
+    "promptText": "Which sum of hundreds, tens, and ones makes 347?"
    }
   }
  },
@@ -39486,7 +39507,7 @@ export const SEED_ITEMS = [
     "1 hundred 4 tens 8 ones"
    ],
    "display": {
-    "promptText": "One card is not a true name for 148. Ava must find it — which is it?"
+    "promptText": "Three cards are equal to 148. Which card is not equal to 148?"
    }
   }
  },
@@ -39511,7 +39532,7 @@ export const SEED_ITEMS = [
     "No"
    ],
    "display": {
-    "promptText": "Ida rounds 182887 to the nearest thousand and gets 182000. Is that right?"
+    "promptText": "Luca says 182887 rounded to the nearest thousand is 182000. Is that right?"
    }
   }
  },
@@ -39564,7 +39585,7 @@ export const SEED_ITEMS = [
      "kind": "digit",
      "place": 1
     },
-    "promptText": "11 → 10 + ? ones"
+    "promptText": "11 = 10 + __"
    },
    "answerType": "numberPad"
   }
@@ -39909,7 +39930,7 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 62
     },
-    "promptText": "62 = 5 tens + ? ones"
+    "promptText": "62 is 5 tens and __ ones."
    },
    "answerType": "numberPad"
   }
@@ -40013,7 +40034,7 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 34
     },
-    "promptText": "340 = ? tens"
+    "promptText": "340 = __ tens"
    },
    "answerType": "numberPad"
   }
@@ -40068,7 +40089,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placeValue-proc-b0821-0305",
+  "itemId": "placeValue-proc-b0821-0296",
   "modeId": "placeValue",
   "itemFamily": "procedural",
   "subskill": "expandedForm",
@@ -40082,24 +40103,24 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": "No",
+   "answer": "Yes",
    "choices": [
     "Yes",
     "No"
    ],
    "display": {
-    "truth": false,
-    "promptText": "300 + 50 + 8 = 357"
+    "truth": true,
+    "promptText": "300 + 40 + 6 = 346"
    },
    "subPrompt": "Is this right?"
   }
  },
  {
-  "itemId": "placeValue-proc-b0821-0426",
+  "itemId": "placeValue-proc-b0821-0436",
   "modeId": "placeValue",
   "itemFamily": "procedural",
   "subskill": "regroupingSense",
-  "structureType": "nonCanonicalComposeBig",
+  "structureType": "renameAsTens",
   "levelRange": [
    7,
    10
@@ -40109,15 +40130,14 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 720,
+   "answer": 47,
    "display": {
     "counting": {
-     "kind": "units",
-     "ones": 0,
-     "tens": 12,
-     "hundreds": 6
+     "have": 0,
+     "kind": "gap",
+     "target": 47
     },
-    "promptText": "6 hundreds 12 tens 0 ones = ?"
+    "promptText": "470 is the same as __ tens."
    },
    "answerType": "numberPad"
   }
@@ -40956,7 +40976,7 @@ export const SEED_ITEMS = [
    ],
    "display": {
     "truth": true,
-    "promptText": "Rosa holds 18 ones discs. Is there enough to trade ten of them for one tens disc?"
+    "promptText": "Rosa holds 18 ones discs. Are there enough to trade 10 of them for 1 tens disc?"
    }
   }
  },
@@ -41245,7 +41265,7 @@ export const SEED_ITEMS = [
    "display": {
     "truth": true,
     "subPrompt": "Decide without adding.",
-    "promptText": "Before adding 37 + 56 with discs, Lily checks the ones. Will they need to trade ones for a ten?"
+    "promptText": "Lily will add 37 + 56 with discs. Will the ones column need a trade?"
    }
   }
  },
@@ -41538,15 +41558,15 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": "Yes",
+   "answer": "No",
    "choices": [
     "Yes",
     "No"
    ],
    "display": {
-    "truth": true,
+    "truth": false,
     "subPrompt": "Decide without adding.",
-    "promptText": "Before adding 364 + 253 with discs, Finn checks the tens column. Will ten tens pile up there?"
+    "promptText": "Before adding 364 + 223 with discs, Finn checks the tens column. Will ten tens pile up there?"
    }
   }
  },
@@ -42117,7 +42137,7 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 52
     },
-    "promptText": "52 = 4 tens discs + ? ones discs"
+    "promptText": "52 = 4 tens discs + __ ones discs"
    },
    "answerType": "numberPad"
   }
@@ -42209,7 +42229,7 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 46
     },
-    "promptText": "460 = ? tens discs"
+    "promptText": "460 = __ tens discs"
    },
    "answerType": "numberPad"
   }
@@ -42417,7 +42437,7 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 61
     },
-    "promptText": "6100 = ? hundreds discs"
+    "promptText": "6100 is the same as __ hundreds discs."
    },
    "answerType": "numberPad"
   }
@@ -42601,14 +42621,14 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": "Yes",
+   "answer": "No",
    "choices": [
     "Yes",
     "No"
    ],
    "display": {
-    "truth": true,
-    "promptText": "Ida says 4 rows of 50 seats hold 200 seats when you count by 50s. Is Ida right?"
+    "truth": false,
+    "promptText": "Ida counts 4 hops of 50 on the number path and lands on 150. Is that right?"
    }
   }
  },
@@ -42726,7 +42746,7 @@ export const SEED_ITEMS = [
      "more": 36,
      "start": 0
     },
-    "promptText": "Omar climbs 6 rungs per move and makes 6 moves up the ladder. Which rung is Omar on?"
+    "promptText": "Omar puts a toy frog at 0 on a number line. The frog jumps 6 spaces at a time. What number is the frog on after 6 jumps?"
    },
    "answerType": "numberPad"
   }
@@ -42833,7 +42853,7 @@ export const SEED_ITEMS = [
    ],
    "display": {
     "truth": false,
-    "promptText": "Theo counts 2 hops of 5 on the number path and lands on 15. Is that right?"
+    "promptText": "Theo counts 2 hops of 5 on the number path and lands on 15. Is Theo right?"
    }
   }
  },
@@ -42946,7 +42966,7 @@ export const SEED_ITEMS = [
      "more": 20,
      "start": 0
     },
-    "promptText": "Nora hops along the path 10 tiles at a time and makes 2 hops from the start. Which tile does Nora land on?"
+    "promptText": "Nora starts at 0 on a number line and makes 2 jumps of 10. What number does Nora land on?"
    },
    "answerType": "numberPad"
   }
@@ -43047,14 +43067,14 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": "No",
+   "answer": "Yes",
    "choices": [
     "Yes",
     "No"
    ],
    "display": {
-    "truth": false,
-    "promptText": "Rosa says 4 rows of 4 seats hold 20 seats when you count by 4s. Is Rosa right?"
+    "truth": true,
+    "promptText": "Rosa counts 4 hops of 4 on the number path and lands on 16. Is that right?"
    }
   }
  },
@@ -43172,7 +43192,7 @@ export const SEED_ITEMS = [
      "more": 35,
      "start": 0
     },
-    "promptText": "Omar climbs 5 rungs per move and makes 7 moves up the ladder. Which rung is Omar on?"
+    "promptText": "Omar puts a toy frog at 0 on a number line. The frog jumps 5 spaces at a time. What number is the frog on after 7 jumps?"
    },
    "answerType": "numberPad"
   }
@@ -43282,7 +43302,7 @@ export const SEED_ITEMS = [
     10
    ],
    "display": {
-    "promptText": "Nora wrote 12, 13, 14, 10 while counting by 2s. Which number is NOT in that count?"
+    "promptText": "Nora wrote 12, 13, 14, 10 while counting by 2s. Which number is not in that count?"
    }
   }
  },
@@ -43367,7 +43387,7 @@ export const SEED_ITEMS = [
    ],
    "display": {
     "truth": true,
-    "promptText": "Finn counts 1, 3, 5 and says 7 comes next. Is Finn right?"
+    "promptText": "Finn counts 1, 3, 5, then says 7. Is that right?"
    }
   }
  },
@@ -43507,7 +43527,7 @@ export const SEED_ITEMS = [
     20
    ],
    "display": {
-    "promptText": "One of Luca's numbers 22, 24, 16, 20 does not belong to the 4s count. Which one?"
+    "promptText": "Which of Luca's numbers do you not say when you count by 4s: 22, 24, 16, 20?"
    }
   }
  },
@@ -43592,7 +43612,7 @@ export const SEED_ITEMS = [
    ],
    "display": {
     "truth": true,
-    "promptText": "Sam counts 18, 21, 24 and says 27 comes next. Is Sam right?"
+    "promptText": "Skip count: 18, 21, 24. Sam says 27 comes next. Is Sam right?"
    }
   }
  },
@@ -43726,7 +43746,7 @@ export const SEED_ITEMS = [
     112
    ],
    "display": {
-    "promptText": "One of Luca's numbers 125, 100, 75, 112 does not belong to the 25s count. Which one?"
+    "promptText": "Look at Luca's numbers: 125, 100, 75, 112. Which number does not belong when you count by 25s?"
    }
   }
  },
@@ -43811,7 +43831,7 @@ export const SEED_ITEMS = [
    ],
    "display": {
     "truth": true,
-    "promptText": "Sam counts 24, 30, 36 and says 42 comes next. Is Sam right?"
+    "promptText": "Skip count: 24, 30, 36. Sam says 42 comes next. Is Sam right?"
    }
   }
  },
@@ -45148,7 +45168,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 27,
    "display": {
-    "promptText": "50 is 23 + 27. What is 50 − 23?"
+    "promptText": "Add up from 23 to get to 50. What is 50 − 23?"
    }
   }
  },
@@ -45212,7 +45232,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 75,
    "display": {
-    "promptText": "Bar model: whole of 150 with one part 75. The other part is?"
+    "promptText": "What is the other part when the whole is 150 and one part is 75?"
    }
   }
  },
@@ -45233,7 +45253,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 53,
    "display": {
-    "promptText": "Compare 95 and 42. The difference is?"
+    "promptText": "What is the difference between 95 and 42?"
    }
   }
  },
@@ -45254,7 +45274,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 33,
    "display": {
-    "promptText": "Find the missing subtrahend: 60 − ? = 27"
+    "promptText": "What number goes in the blank: 60 − __ = 27?"
    }
   }
  },
@@ -45275,7 +45295,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 63,
    "display": {
-    "promptText": "Take 37 from 100. Result?"
+    "promptText": "If you take 37 from 100, how much is left?"
    }
   }
  },
@@ -45291,12 +45311,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 15,
-   "b": 7,
+   "a": 14,
+   "b": 8,
    "op": "−",
-   "answer": 8,
+   "answer": 6,
    "display": {
-    "promptText": "15 is 7 + 8. What is 15 − 7?"
+    "promptText": "Split 14 into 8 and the rest. What is 14 − 8?"
    }
   }
  },
@@ -45338,7 +45358,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 9,
    "display": {
-    "promptText": "Find the missing subtrahend: 20 − ? = 11"
+    "promptText": "What is the missing number in 20 − __ = 11?"
    }
   }
  },
@@ -45359,7 +45379,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 5,
    "display": {
-    "promptText": "Bar model: whole of 16 with one part 11. The other part is?"
+    "promptText": "If the whole is 16 and one part is 11, what is the other part?"
    }
   }
  },
@@ -45380,7 +45400,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 8,
    "display": {
-    "promptText": "Compare 13 and 5. The difference is?"
+    "promptText": "What is the difference between 13 and 5?"
    }
   }
  },
@@ -45422,7 +45442,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 7,
    "display": {
-    "promptText": "Take 7 from 14. Result?"
+    "promptText": "If you take 7 from 14, how much is left?"
    }
   }
  },
@@ -45464,7 +45484,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 6,
    "display": {
-    "promptText": "Think of 10 as 4 + 6. What is 10 − 4?"
+    "promptText": "Use 4 + __ = 10 to help. What is 10 − 4?"
    }
   }
  },
@@ -45527,7 +45547,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 4,
    "display": {
-    "promptText": "Bar model: whole of 10 with one part 6. The other part is?"
+    "promptText": "What part goes with 6 to make a whole of 10?"
    }
   }
  },
@@ -45548,7 +45568,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 4,
    "display": {
-    "promptText": "Compare 7 and 3. The difference is?"
+    "promptText": "What is the difference between 7 and 3?"
    }
   }
  },
@@ -45590,7 +45610,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 6,
    "display": {
-    "promptText": "Take 2 from 8. Result?"
+    "promptText": "If you take 2 from 8, how much is left?"
    }
   }
  },
@@ -46179,7 +46199,7 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 5
     },
-    "promptText": "swim practice starts at two o'clock and ends at five o'clock. Sam wants to know: how many hours is that?"
+    "promptText": "Soccer camp starts at two o'clock and ends at five o'clock. How many hours long is soccer camp?"
    },
    "answerType": "numberPad"
   }
@@ -46296,7 +46316,7 @@ export const SEED_ITEMS = [
      "kind": "hourLater",
      "delta": -2
     },
-    "promptText": "swim practice starts at six o'clock. Omar must leave home two hours earlier. What hour does Omar leave? Answer with the hour number."
+    "promptText": "Swim practice starts at six o'clock. Omar must leave home two hours earlier. What hour does Omar leave?"
    },
    "answerType": "numberPad"
   }
@@ -46327,7 +46347,7 @@ export const SEED_ITEMS = [
     "time": {
      "kind": "benchmark"
     },
-    "promptText": "About how long does it take June to zip a jacket? Pick the sensible time."
+    "promptText": "About how long does it take June to zip a jacket?"
    }
   }
  },
@@ -46759,7 +46779,7 @@ export const SEED_ITEMS = [
      "startH": 4,
      "startM": 45
     },
-    "promptText": "The trip to the museum starts at 4:45 and lasts 25 minutes. When does June arrive? Pick the time."
+    "promptText": "June's class leaves for the museum at 4:45. The bus ride takes 25 minutes. What time does June's class get to the museum?"
    }
   }
  },
@@ -46856,7 +46876,7 @@ export const SEED_ITEMS = [
     },
     "truth": true,
     "figure": "clockFace",
-    "promptText": "Luca calls the time on this clock one o'clock. Do you agree?"
+    "promptText": "Luca says the time on this clock is one o'clock. Do you agree?"
    }
   }
  },
@@ -46918,7 +46938,7 @@ export const SEED_ITEMS = [
     "time": {
      "kind": "benchmark"
     },
-    "promptText": "About how long does it take Mina to brush your teeth?"
+    "promptText": "About how long does it take to brush your teeth?"
    }
   }
  },
@@ -46978,7 +46998,7 @@ export const SEED_ITEMS = [
     "time": {
      "kind": "hourHand"
     },
-    "promptText": "June wants the hand that tells the HOUR. Which hand is it?"
+    "promptText": "June wants the hand that tells the hour. Which hand is it?"
    }
   }
  },
@@ -47139,7 +47159,7 @@ export const SEED_ITEMS = [
      "said": 85
     },
     "truth": false,
-    "promptText": "Ben subtracts the clock numbers to say 2:40 to 3:25 took 85 minutes. Is Ben right?"
+    "promptText": "From 2:40 to 3:25, Ben figures 85 minutes. Is Ben right?"
    }
   }
  },
@@ -47168,7 +47188,7 @@ export const SEED_ITEMS = [
      "kind": "amPm",
      "label": "a.m."
     },
-    "promptText": "Nia eats breakfast at 7:30. Is that a.m. or p.m.?"
+    "promptText": "Nia eats breakfast at 7:30. Which label goes with 7:30?"
    }
   }
  },
@@ -47230,7 +47250,7 @@ export const SEED_ITEMS = [
      "minute": 35
     },
     "truth": true,
-    "promptText": "At 7:35, is the time closer to the hour just passed or the hour coming next? Omar says the hour coming next. Is Omar right?"
+    "promptText": "Omar says 7:35 is closer to 8 o'clock than to 7 o'clock. Is Omar right?"
    }
   }
  },
@@ -47260,7 +47280,7 @@ export const SEED_ITEMS = [
      "lb": 15,
      "kind": "longer"
     },
-    "promptText": "Activity A goes 1:15 to 1:40; activity B goes 2:30 to 2:45. Which lasts longer? Lily checks the clock."
+    "promptText": "Which lasts longer: Activity A, from 1:15 to 1:40, or Activity B, from 2:30 to 2:45?"
    }
   }
  },
@@ -47319,7 +47339,7 @@ export const SEED_ITEMS = [
      "kind": "claim"
     },
     "truth": true,
-    "promptText": "Ava writes: May has 31 days. Is that right?"
+    "promptText": "Ava says May has 31 days. Is Ava right?"
    }
   }
  },
@@ -47389,7 +47409,7 @@ export const SEED_ITEMS = [
      "said": 75
     },
     "truth": false,
-    "promptText": "Ben subtracts the clock numbers to say 7:55 to 8:30 took 75 minutes. Is Ben right?"
+    "promptText": "From 7:55 to 8:30, Ben figures 75 minutes. Is Ben right?"
    }
   }
  },
@@ -47449,7 +47469,7 @@ export const SEED_ITEMS = [
      "b": 24,
      "kind": "weeksBetween"
     },
-    "promptText": "Omar marks March 3 and March 24 on the calendar. Exactly how many WEEKS apart are they?"
+    "promptText": "Omar marks March 3 and March 24 on the calendar. How many weeks apart are the two dates?"
    },
    "answerType": "numberPad"
   }
@@ -47476,7 +47496,7 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 60
     },
-    "promptText": "At 1:42, how many minutes are left before the next full hour? Ida counts on."
+    "promptText": "How many minutes are left from 1:42 until 2:00?"
    },
    "answerType": "numberPad"
   }
@@ -47570,7 +47590,7 @@ export const SEED_ITEMS = [
      "said": 19
     },
     "truth": false,
-    "promptText": "From September 3 to September 21, Zoe figures 19 days. Is that right?"
+    "promptText": "Zoe says it is 19 days from September 3 to September 21. Is Zoe right?"
    }
   }
  },
@@ -47652,7 +47672,7 @@ export const SEED_ITEMS = [
      "kind": "unit",
      "unit": "hour"
     },
-    "promptText": "1 hour = ? minutes"
+    "promptText": "1 hour = __ minutes"
    },
    "answerType": "numberPad"
   }
@@ -47680,7 +47700,7 @@ export const SEED_ITEMS = [
       7
      ]
     },
-    "promptText": "1 week = ? days"
+    "promptText": "1 week = __ days"
    },
    "answerType": "numberPad"
   }
@@ -47709,7 +47729,7 @@ export const SEED_ITEMS = [
     },
     "type": "clock",
     "minute": 30,
-    "promptText": "Look at the clock near one. How many minutes past the hour is it?"
+    "promptText": "Look at the clock face. How many minutes past one o'clock is it?"
    },
    "answerType": "clock"
   }
@@ -47736,13 +47756,13 @@ export const SEED_ITEMS = [
      "kind": "hourLater",
      "delta": 1
     },
-    "promptText": "It is two o'clock. What hour will it be one hour later? Answer with the hour number."
+    "promptText": "It is two o'clock. What hour will it be one hour later?"
    },
    "answerType": "numberPad"
   }
  },
  {
-  "itemId": "time-proc-b0821-0339",
+  "itemId": "time-proc-b0821-0342",
   "modeId": "time",
   "itemFamily": "procedural",
   "subskill": "timeConcepts",
@@ -47756,18 +47776,18 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 4,
+   "answer": 7,
    "display": {
     "counting": {
      "kind": "next",
      "step": 1,
      "sequence": [
-      1,
-      2,
-      3
+      4,
+      5,
+      6
      ]
     },
-    "promptText": "Clock chimes: one o'clock, two o'clock, three o'clock. Which hour chimes next?"
+    "promptText": "The bell rings each hour: four, five, six. What hour rings next?"
    },
    "answerType": "numberPad"
   }
@@ -47860,11 +47880,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "time-proc-b0821-0365",
+  "itemId": "time-proc-b0821-0316",
   "modeId": "time",
   "itemFamily": "procedural",
   "subskill": "timeConcepts",
-  "structureType": "mixedToMinutes",
+  "structureType": "unitFactTeen",
   "levelRange": [
    4,
    6
@@ -47874,16 +47894,14 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 75,
+   "answer": 120,
    "display": {
-    "counting": {
-     "kind": "sum",
-     "parts": [
-      60,
-      15
-     ]
+    "time": {
+     "n": 2,
+     "kind": "unit",
+     "unit": "hour"
     },
-    "promptText": "1 hour 15 minutes = ? minutes"
+    "promptText": "How many minutes are in 2 hours?"
    },
    "answerType": "numberPad"
   }
@@ -47913,7 +47931,7 @@ export const SEED_ITEMS = [
       7
      ]
     },
-    "promptText": "3 weeks = ? days"
+    "promptText": "3 weeks = __ days"
    },
    "answerType": "numberPad"
   }
@@ -47978,11 +47996,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "time-proc-b0821-0391",
+  "itemId": "time-proc-b0821-0386",
   "modeId": "time",
   "itemFamily": "procedural",
   "subskill": "timeConcepts",
-  "structureType": "minutesToMixed",
+  "structureType": "mixedToMinutes",
   "levelRange": [
    4,
    6
@@ -47992,14 +48010,16 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 15,
+   "answer": 230,
    "display": {
     "counting": {
-     "have": 60,
-     "kind": "gap",
-     "target": 75
+     "kind": "sum",
+     "parts": [
+      180,
+      50
+     ]
     },
-    "promptText": "75 minutes = 1 hour and ? minutes"
+    "promptText": "How many minutes are in 3 hours 50 minutes?"
    },
    "answerType": "numberPad"
   }
@@ -48098,11 +48118,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "time-proc-b0821-0417",
+  "itemId": "time-proc-b0821-0318",
   "modeId": "time",
   "itemFamily": "procedural",
   "subskill": "timeConcepts",
-  "structureType": "bigUnitCompose",
+  "structureType": "unitFactTeen",
   "levelRange": [
    7,
    10
@@ -48112,16 +48132,14 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 150,
+   "answer": 120,
    "display": {
-    "counting": {
-     "kind": "sum",
-     "parts": [
-      120,
-      30
-     ]
+    "time": {
+     "n": 2,
+     "kind": "unit",
+     "unit": "minute"
     },
-    "promptText": "2 minutes 30 seconds = ? seconds"
+    "promptText": "How many seconds are in 2 minutes?"
    },
    "answerType": "numberPad"
   }
@@ -48148,7 +48166,7 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 17
     },
-    "promptText": "From March 3 to March 17 = ? days"
+    "promptText": "How many days after March 3 is March 17?"
    },
    "answerType": "numberPad"
   }
@@ -48219,11 +48237,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "time-proc-b0821-0443",
+  "itemId": "time-proc-b0821-0430",
   "modeId": "time",
   "itemFamily": "procedural",
   "subskill": "timeConcepts",
-  "structureType": "bigUnitDecompose",
+  "structureType": "bigUnitCompose",
   "levelRange": [
    7,
    10
@@ -48233,14 +48251,16 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 30,
+   "answer": 235,
    "display": {
     "counting": {
-     "have": 120,
-     "kind": "gap",
-     "target": 150
+     "kind": "sum",
+     "parts": [
+      180,
+      55
+     ]
     },
-    "promptText": "150 seconds = 2 minutes and ? seconds"
+    "promptText": "How many seconds are in 3 minutes 55 seconds?"
    },
    "answerType": "numberPad"
   }
@@ -49501,7 +49521,7 @@ export const SEED_ITEMS = [
      "w": 3
     },
     "figure": "cubeGrid",
-    "promptText": "A floor of 9 cubes is copied 3 times going up. How many cubes is the whole stack?"
+    "promptText": "A layer of 9 cubes is stacked so there are 3 layers in all. How many cubes are in the whole stack?"
    },
    "answerType": "numberPad"
   }
@@ -49631,7 +49651,7 @@ export const SEED_ITEMS = [
    "op": "volume",
    "answer": 4,
    "display": {
-    "promptText": "3 × 3 × ? = 36. What is the missing side in units?"
+    "promptText": "The equation 3 × 3 × __ = 36 gives the volume of a box in cubic units. What is the missing side length in units?"
    },
    "answerType": "numberPad"
   }
@@ -49653,7 +49673,7 @@ export const SEED_ITEMS = [
    "op": "volume",
    "answer": 9,
    "display": {
-    "promptText": "From (2, 3), each new point is 2 right and 2 up. What is the y-coordinate of the 4th point?"
+    "promptText": "Point 1 is (2, 3). Each new point is 2 right and 2 up from the one before. What is the y-coordinate of point 4?"
    },
    "answerType": "numberPad"
   }
@@ -49679,7 +49699,7 @@ export const SEED_ITEMS = [
     "No"
    ],
    "display": {
-    "promptText": "Splitting the figure, Zoe gets 2 × 3 × 3 plus 2 × 2 × 2 and claims 25 in all. Do you agree?"
+    "promptText": "Zoe splits a shape into a 2 × 3 × 3 box and a 2 × 2 × 2 box. Is the volume of the whole shape 25 cubic units?"
    },
    "answerType": "choice"
   }
@@ -49723,7 +49743,7 @@ export const SEED_ITEMS = [
    "op": "volume",
    "answer": 4,
    "display": {
-    "promptText": "A dot hops from (2, 1) by (+1, +1) each time. Where is y after the 3rd hop?"
+    "promptText": "A dot sits at (2, 1). It hops 1 right and 1 up each time. What is the dot's y-coordinate after its 3rd hop?"
    },
    "answerType": "numberPad"
   }
@@ -49749,7 +49769,7 @@ export const SEED_ITEMS = [
     "No"
    ],
    "display": {
-    "promptText": "Splitting the figure, Nia gets 3 × 3 × 3 plus 2 × 2 × 1 and claims 30 in all. Do you agree?"
+    "promptText": "Nia splits a shape into a 3 × 3 × 3 box and a 2 × 2 × 1 box. Is the volume of the whole shape 30 cubic units?"
    },
    "answerType": "choice"
   }

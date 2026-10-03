@@ -129,11 +129,20 @@ for the full ladder: guide → structure templates → generator prompts → QC 
 `scripts/itemGen/structureRules.js` (`NARRATIVE_RULES` / `GOLD_EXAMPLES`) and
 `docs/word-problem-authoring-guide.md` — not just the one prompt that produced it.
 
-Two wording rules currently enforced as `fail` checks:
+Wording rules enforced as `fail` checks (the full list is in the authoring guide):
 - `nounlessQuestion` — the question must restate the counted noun. "How many toy
   cars does Lily have?", never "How many does Lily have?"
 - `decorativeContext` — context must *matter*. Never a story sentence on a
   bare-number question ("Emma has 53 pencils. How many tens are in 53?").
+- `workedStepGiveaway` — a strategy drill makes the kid do the step: "9 + 9 = 18.
+  What is 9 + 10?", never "Use compensation: 29 + 41 = 30 + 40. Compute the value."
+- `teacherVoice` — no test-maker words ("compute", "determine", "the value?",
+  "certifies", "audit", "Is the work sound?"); ask the way a K-5 textbook asks a kid.
+- `questionNotLast` — the card shows the last sentence big, so nothing follows
+  the question ("Diego checks.", "Pick one.").
+- `sequenceCardMismatch` — `display.sequence` draws a "What comes next?" card that
+  hides the prompt, so it is only for next-term questions; every other pattern
+  question carries its run as `display.terms` (blanks are `__`, never `?`).
 
 **A worktree needs BOTH `.env` and `.env.local` copied in.** `.env` holds
 `VITE_SUPABASE_URL`/`VITE_SUPABASE_ANON_KEY`; without it the Supabase client is
@@ -244,8 +253,7 @@ compare items through with swapped/mislabeled payloads. A strict
 payload-convention check is an open idea, not a shipped safeguard — don't trust
 the gate alone on compare structures.
 
-**Deliberately not done** (so don't "fix" them as oversights): conceptual and
-procedural drills were not swept by `rewordItems` (different register); noun-less
+**Deliberately not done** (so don't "fix" them as oversights): noun-less
 drills intentionally use "counters" (number) / "dots" (array); and
 `nounlessQuestion` is kept strict even though Sai's own examples sometimes drop
 the noun — revisit only if he raises it.

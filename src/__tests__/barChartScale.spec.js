@@ -1,6 +1,10 @@
 import { describe, it, expect } from "vitest";
 import { chartScale } from "../components/chartScale.js";
 import dataGraphs from "../modes/dataGraphs.js";
+import { createElement } from "react";
+import { renderToStaticMarkup } from "react-dom/server";
+import Pictograph from "../components/Pictograph.jsx";
+import { ITEMS as DATA_GRAPH_ITEMS } from "../itemBank/items/dataGraphs.js";
 
 // The chart no longer prints values on the bars, so the axis is the only way to
 // read one. That makes "is every value this mode generates actually readable
@@ -60,5 +64,30 @@ describe("every generated bar is readable off the axis", () => {
     }
     // Guard against the assertions above passing vacuously.
     expect(charts).toBeGreaterThan(100);
+  });
+});
+
+// Same property for the pictograph: every symbol of every bank row has to be
+// on the chart. A fixed 24-unit gap cut rows of 11 to 18 symbols off after 10
+// and a half, so 10 items keyed 110-180 could not be counted (2026-10-03).
+describe("Pictograph", () => {
+  const symbolsOutside = (rows) => {
+    const html = renderToStaticMarkup(createElement(Pictograph, { rows, keyValue: 10 }));
+    const width = Number(html.match(/viewBox="0 0 (\d+(?:\.\d+)?)/)[1]);
+    return [...html.matchAll(/<circle cx="([\d.]+)"[^>]* r="([\d.]+)"/g)].filter((m) => Number(m[1]) + Number(m[2]) > width).length;
+  };
+
+  it("keeps a long row inside the chart and leaves a short one as it was", () => {
+    expect(symbolsOutside([{ label: "Stars", symbols: 18 }])).toBe(0);
+    expect(symbolsOutside([{ label: "Stars", symbols: 17, half: true }])).toBe(0);
+    const short = renderToStaticMarkup(createElement(Pictograph, { rows: [{ label: "Cats", symbols: 4 }], keyValue: 2 }));
+    expect(short).toContain('r="9"');
+  });
+
+  it("draws every symbol of every bank pictograph", () => {
+    const charts = DATA_GRAPH_ITEMS.filter((x) => x.question.display?.figure === "pictograph");
+    expect(charts.length).toBeGreaterThan(0);
+    const cut = charts.filter((x) => symbolsOutside(x.question.display.rows) > 0).map((x) => x.itemId);
+    expect(cut).toEqual([]);
   });
 });

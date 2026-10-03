@@ -18,6 +18,9 @@ import { LEVEL_BANDS, levelRangeToBands, gradeToLegacyBand } from "../../bands.j
 import { findKidSafeHits } from "../../content/kidSafeList.js";
 import { objectMatchesInText, packFor, priceRangeFor } from "../../content/contextTable.js";
 import { hintContainsAnswer } from "../../hints/hintSchema.js";
+import { workedStepFinding } from "./workedStep.js";
+import { sequenceCardFinding } from "./sequenceCard.js";
+import { britishSpellingFinding, questionNotLastFinding, teacherVoiceFinding } from "./kidVoice.js";
 
 const fail = (id, message) => ({ id, severity: "fail", message });
 const warn = (id, message) => ({ id, severity: "warn", message });
@@ -465,6 +468,58 @@ export const CHECKS = [
       if (givens.includes(answer)) return null;
 
       return warn("answerGivenAway", `the answer ${answer} appears in the prompt — check it is not stated outright`);
+    },
+  },
+
+  {
+    // Every version, v1 included: the v1 drills that printed their own worked
+    // step were reworded in place on 2026-10-02, so the shipped bank passes
+    // (src/itemBank/qc/workedStep.js has the rule and its history).
+    id: "workedStepGiveaway",
+    run: (item) => {
+      const hit = workedStepFinding(item);
+      return hit ? fail("workedStepGiveaway", hit.message) : null;
+    },
+  },
+
+  {
+    // Every version: a `display.sequence` item is drawn as "What comes next?" +
+    // the terms + a blank, with no prompt, so its answer must be the next term.
+    // The 977 patterns items that broke this moved to `display.terms` on
+    // 2026-10-02 (src/itemBank/qc/sequenceCard.js).
+    id: "sequenceCardMismatch",
+    run: (item) => {
+      const hit = sequenceCardFinding(item);
+      return hit ? fail("sequenceCardMismatch", hit.message) : null;
+    },
+  },
+
+  {
+    // Every version (src/itemBank/qc/kidVoice.js): test-maker wording.
+    id: "teacherVoice",
+    run: (item) => {
+      const hit = teacherVoiceFinding(item);
+      return hit ? fail("teacherVoice", hit.message) : null;
+    },
+  },
+
+  {
+    // Every version (src/itemBank/qc/kidVoice.js): US spelling, "centimeter"
+    // and "liter", never "centimetre" or "litre" (Sai, 2026-10-03).
+    id: "britishSpelling",
+    run: (item) => {
+      const hit = britishSpellingFinding(item);
+      return hit ? fail("britishSpelling", hit.message) : null;
+    },
+  },
+
+  {
+    // Every version (src/itemBank/qc/kidVoice.js): the card shows the last
+    // sentence big, so nothing may come after the question.
+    id: "questionNotLast",
+    run: (item) => {
+      const hit = questionNotLastFinding(item);
+      return hit ? fail("questionNotLast", hit.message) : null;
     },
   },
 

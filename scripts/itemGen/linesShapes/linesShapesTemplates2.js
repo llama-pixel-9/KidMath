@@ -330,7 +330,7 @@ export function lineFiguresProcedural() {
   ];
   const ENDPOINTS = { "line segment": 2, ray: 1, line: 0 };
   const endBands = { band1: ["line segment", "ray", "line"], band2: ["line segment", "ray", "line"], band3: ["line segment", "ray", "line"] };
-  const endTag = { band1: "", band2: " Think before typing.", band3: " Recall the exact definition." };
+  const endTag = { band1: "", band2: "Think before typing. ", band3: "Recall the exact definition. " };
   for (const band of ["band1", "band2", "band3"]) {
     endBands[band].forEach((f) => {
       for (const p of [0, 1]) {
@@ -338,7 +338,7 @@ export function lineFiguresProcedural() {
           item("lineFigures", "procedural", `endpoints_${band}`, band, {
             answer: ENDPOINTS[f],
             answerType: "numberPad",
-            display: { shapeC: { kind: "endpoints", figure: f, n: ENDPOINTS[f] }, promptText: endPhr[p](f) + endTag[band] },
+            display: { shapeC: { kind: "endpoints", figure: f, n: ENDPOINTS[f] }, promptText: endTag[band] + endPhr[p](f) },
           })
         );
       }
@@ -521,7 +521,7 @@ export function lineFiguresConceptual() {
   // Real-world model picks.
   const modelPhr = [
     (nm, thing) => `${nm} spots ${thing}. Which math figure does it model best?`,
-    (nm, thing) => `Which figure best matches ${thing}? ${nm} decides.`,
+    (nm, thing) => `Help ${nm} decide. Which figure best matches ${thing}?`,
   ];
   const models = {
     band1: [
@@ -571,7 +571,7 @@ export function lineFiguresConceptual() {
   }
 
   const straightPickPhr = [
-    (nm, a, b) => `Which one is made of only straight parts: ${a} or ${b}? ${nm} decides.`,
+    (nm, a, b) => `Help ${nm} decide. Which one is made of only straight parts: ${a} or ${b}?`,
     (nm, a, b) => `${nm} sorts drawings. Between ${a} and ${b}, which uses only straight parts?`,
   ];
   [["the letter L", "the letter O", "the letter L"], ["the letter T", "the letter C", "the letter T"], ["the letter E", "the letter S", "the letter E"], ["the letter Z", "the letter U", "the letter Z"], ["the letter H", "the letter G", "the letter H"], ["the letter K", "the letter Q", "the letter K"], ["the letter W", "the letter B", "the letter W"], ["the letter X", "the letter D", "the letter X"], ["the letter V", "the letter P", "the letter V"], ["the letter N", "the letter R", "the letter N"], ["the letter F", "the letter J", "the letter F"]].forEach(([a, b, good], i) => {

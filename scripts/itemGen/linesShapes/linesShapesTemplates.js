@@ -224,7 +224,7 @@ export function shapeSidesConceptual() {
   // Which named shape has MORE sides.
   const morePhr = [
     (nm, a, b) => `${nm} compares a ${a} with a ${b}. Which shape has more sides?`,
-    (nm, a, b) => `Which has more sides, a ${a} or a ${b}? ${nm} counts to decide.`,
+    (nm, a, b) => `${nm} counts sides to decide. Which has more sides, a ${a} or a ${b}?`,
   ];
   const moreData = {
     band1: [["square", "triangle"], ["pentagon", "square"], ["pentagon", "triangle"], ["rectangle", "triangle"], ["square", "pentagon"], ["triangle", "rectangle"], ["pentagon", "rectangle"], ["triangle", "pentagon"], ["rectangle", "pentagon"], ["square", "triangle"], ["pentagon", "square"], ["triangle", "square"], ["rectangle", "triangle"], ["pentagon", "triangle"], ["square", "pentagon"], ["triangle", "rectangle"], ["pentagon", "rectangle"], ["rectangle", "square"]],
@@ -416,7 +416,7 @@ export function symmetryConceptual() {
 
   // Which shape has more lines of symmetry.
   const moreSymPhr = [
-    (nm, a, b) => `Which has more lines of symmetry, a ${a} or a ${b}? ${nm} pictures the folds.`,
+    (nm, a, b) => `${nm} pictures the folds. Which has more lines of symmetry, a ${a} or a ${b}?`,
     (nm, a, b) => `${nm} compares fold lines: a ${a} against a ${b}. Which shape has more?`,
   ];
   const moreData = {
@@ -464,7 +464,7 @@ export function symmetryConceptual() {
   });
   // Band 1 — which of two things folds into matching halves.
   const whichFoldPhr = [
-    (nm, a, b) => `Which folds into two matching halves: ${a} or ${b}? ${nm} imagines the fold.`,
+    (nm, a, b) => `${nm} imagines folding each one. Which folds into two matching halves: ${a} or ${b}?`,
     (nm, a, b) => `${nm} must pick the one with matching halves — ${a} or ${b}. Which is it?`,
   ];
   [["a heart", "a capital letter F", "a heart"], ["a square", "a capital letter J", "a square"], ["a butterfly", "a capital letter R", "a butterfly"], ["a circle", "a capital letter G", "a circle"], ["a snowflake", "a capital letter P", "a snowflake"], ["a capital letter A", "a capital letter Z", "a capital letter A"], ["a capital letter M", "a capital letter S", "a capital letter M"], ["a smiley face", "a capital letter K", "a smiley face"], ["a capital letter T", "a capital letter N", "a capital letter T"], ["a capital letter V", "a capital letter L", "a capital letter V"], ["a capital letter O", "a capital letter Q", "a capital letter O"], ["a capital letter H", "a capital letter B... wait", ""], ["a capital letter U", "a capital letter J", "a capital letter U"], ["a capital letter X", "a capital letter Z", "a capital letter X"], ["a capital letter W", "a capital letter S", "a capital letter W"], ["a heart", "a capital letter N", "a heart"], ["a butterfly", "a capital letter G", "a butterfly"], ["a snowflake", "a capital letter R", "a snowflake"]].filter((r) => r[2]).forEach(([a, b, good], i) => {
@@ -478,7 +478,7 @@ export function symmetryConceptual() {
   });
 
   const fewestPhr = [
-    (nm, a, b, c) => `Of a ${a}, a ${b}, and a ${c}, which has the FEWEST lines of symmetry? ${nm} compares them.`,
+    (nm, a, b, c) => `${nm} compares a ${a}, a ${b}, and a ${c}. Which has the FEWEST lines of symmetry?`,
     (nm, a, b, c) => `${nm} ranks a ${a}, a ${b}, and a ${c} by symmetry lines. Which has the fewest?`,
   ];
   const fewestData = {
@@ -724,7 +724,7 @@ export function shapePropertiesConceptual() {
   // Which shape fits the single property (choice).
   const fitPhr = [
     (nm, prop) => `${nm} hunts for a shape with ${prop}. Which shape works?`,
-    (nm, prop) => `Which shape has ${prop}? ${nm} checks each option.`,
+    (nm, prop) => `${nm} checks each option. Which shape has ${prop}?`,
   ];
   const fits = {
     band1: [["exactly 3 corners", "triangle", ["square", "pentagon", "hexagon"]], ["exactly 4 right angles and equal sides", "square", ["triangle", "pentagon", "trapezoid"]], ["exactly 5 corners", "pentagon", ["square", "hexagon", "triangle"]], ["exactly 6 sides", "hexagon", ["pentagon", "square", "triangle"]], ["exactly 4 right angles with sides not all equal", "rectangle", ["square", "triangle", "pentagon"]], ["one right angle and 3 sides", "right triangle", ["square", "hexagon", "pentagon"]], ["more corners than a pentagon", "hexagon", ["square", "triangle", "rectangle"]], ["fewer sides than a square", "triangle", ["pentagon", "hexagon", "rectangle"]]],

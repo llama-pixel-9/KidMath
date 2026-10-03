@@ -529,7 +529,7 @@ const VARIETIES = [
         answer: bagsA * perA > bagsB * perB ? optionA : optionB,
         choices: shuffleArray([optionA, optionB]),
         display: {
-          promptText: `Would you rather have ${optionA} marbles or ${optionB} marbles? Choose the one with more marbles.`,
+          promptText: `You want as many marbles as you can get. Would you rather have ${optionA} marbles or ${optionB} marbles?`,
         },
         representation: "verbalContext",
         cognitiveDemand: "DOK3",

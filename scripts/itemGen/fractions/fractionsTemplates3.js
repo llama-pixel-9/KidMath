@@ -26,14 +26,14 @@ export function partWholeExtraProcedural() {
     band2: [
       (n, d) => `The denominator of ${F(n, d)} = ?`,
       (n, d) => `In ${F(n, d)}, how many equal parts make the whole?`,
-      (n, d) => `Which number is the denominator of ${F(n, d)}? Type it.`,
+      (n, d) => `Which number is the denominator of ${F(n, d)}?`,
       (n, d) => `${F(n, d)} cuts its whole into how many equal parts?`,
     ],
     band3: [
       (n, d) => `What is the denominator of ${F(n, d)}?`,
       (n, d) => `Exactly how many equal parts does ${F(n, d)} declare in its denominator?`,
       (n, d) => `The bottom term of ${F(n, d)} equals what number?`,
-      (n, d) => `${F(n, d)} partitions its whole into how many parts? Type the denominator.`,
+      (n, d) => `${F(n, d)} partitions its whole into how many parts?`,
     ],
   };
   const numPhr = {
@@ -46,14 +46,14 @@ export function partWholeExtraProcedural() {
     band2: [
       (n, d) => `The numerator of ${F(n, d)} = ?`,
       (n, d) => `In ${F(n, d)}, how many parts are being counted?`,
-      (n, d) => `Which number is the numerator of ${F(n, d)}? Type it.`,
+      (n, d) => `Which number is the numerator of ${F(n, d)}?`,
       (n, d) => `${F(n, d)} claims how many of the equal parts?`,
     ],
     band3: [
       (n, d) => `What is the numerator of ${F(n, d)}?`,
       (n, d) => `Exactly how many parts does ${F(n, d)} count in its numerator?`,
       (n, d) => `The top term of ${F(n, d)} equals what number?`,
-      (n, d) => `Of the equal parts, ${F(n, d)} selects how many? Type the numerator.`,
+      (n, d) => `Of the equal parts, ${F(n, d)} selects how many?`,
     ],
   };
   for (const band of ["band1", "band2", "band3"]) {
@@ -88,7 +88,7 @@ export function fractionAsNumberExtraProcedural() {
   };
   const countPhr = {
     band1: [
-      (n, d) => `How many copies of ${F(1, d)} make ${F(n, d)}? Count them.`,
+      (n, d) => `How many copies of ${F(1, d)} make ${F(n, d)}?`,
       (n, d) => `${F(n, d)} is built from how many pieces of size ${F(1, d)}?`,
       (n, d) => `To build ${F(n, d)}, how many ${F(1, d)} pieces do you stack?`,
       (n, d) => `Break ${F(n, d)} into ${F(1, d)} pieces. How many pieces is that?`,
@@ -225,7 +225,7 @@ export function compareExtraProcedural() {
   const items = [];
   const phr = {
     band1: [
-      (x, y, z, d) => `Which is smallest: ${F(x, d)}, ${F(y, d)}, or ${F(z, d)}? Pick it.`,
+      (x, y, z, d) => `Which is smallest: ${F(x, d)}, ${F(y, d)}, or ${F(z, d)}?`,
       (x, y, z, d) => `Of ${F(x, d)}, ${F(y, d)}, and ${F(z, d)}, which fraction is the least?`,
     ],
     band2: [
@@ -276,9 +276,9 @@ export function addLikeExtraProcedural() {
       (a, b, c, d) => `Adding ${F(a, d)}, ${F(b, d)}, and ${F(c, d)} together gives which fraction?`,
     ],
     band3: [
-      (a, b, c, d) => `Compute exactly: ${F(a, d)} + ${F(b, d)} + ${F(c, d)}. Which fraction results?`,
+      (a, b, c, d) => `Add ${F(a, d)} + ${F(b, d)} + ${F(c, d)}. Which fraction do you get?`,
       (a, b, c, d) => `The precise total of ${F(a, d)} + ${F(b, d)} + ${F(c, d)} is which fraction?`,
-      (a, b, c, d) => `Evaluate the three-addend sum ${F(a, d)} + ${F(b, d)} + ${F(c, d)}.`,
+      (a, b, c, d) => `What is the sum ${F(a, d)} + ${F(b, d)} + ${F(c, d)}?`,
       (a, b, c, d) => `Combining ${F(a, d)}, ${F(b, d)}, and ${F(c, d)} yields exactly which fraction?`,
     ],
   };
@@ -313,7 +313,7 @@ export function addLikeExtraProcedural() {
       (a, d) => `A whole minus ${F(a, d)} leaves which fraction?`,
     ],
     band3: [
-      (a, d) => `Compute exactly: 1 - ${F(a, d)}. Which fraction remains?`,
+      (a, d) => `Take ${F(a, d)} away from 1. Which fraction remains?`,
       (a, d) => `Removing ${F(a, d)} from one whole leaves precisely which fraction?`,
     ],
   };
@@ -345,7 +345,7 @@ export function ofSetExtraProcedural() {
   let seed = 481;
   const phr = {
     band1: [
-      (n, d, w) => `Which number is ${F(n, d)} of ${w}? Pick it.`,
+      (n, d, w) => `Which number is ${F(n, d)} of ${w}?`,
       (n, d, w) => `Choose the value of ${F(n, d)} of ${w}.`,
     ],
     band2: [

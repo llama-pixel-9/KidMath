@@ -3,6 +3,7 @@
  * solution: the steps set the kid up and stop before the final answer.
  * Pure and dependency-free (bundleable for iOS).
  */
+import { hintContainsAnswer } from "./hintSchema.js";
 
 const num = (x) => (typeof x === "number" && Number.isFinite(x) ? x : null);
 const isPlus = (op) => op === "+";
@@ -56,7 +57,7 @@ function additionSteps(q, a, b) {
     return [`You know one part, ${known}, and the total, ${total}.`, `Start at ${known} and count up to ${total}.`, `The number of hops is the missing part.`];
   }
   if (known != null) {
-    return [`One part is ${known}. Find the total in the story.`, `Start at ${known} and count up to the total.`, `The number of hops is the missing part.`];
+    return [`One part is ${known}. Find the total in the question.`, `Start at ${known} and count up to the total.`, `The number of hops is the missing part.`];
   }
   return null;
 }
@@ -68,6 +69,13 @@ function subtractionSteps(q, a, b) {
     }
     if (b <= 5) {
       return [`Start at ${a}.`, `Count back ${b}, one hop at a time.`, `Where you land is what is left.`];
+    }
+    if (a <= 20 && b >= 10 && b < a) {
+      // Take the ten first. ("Take 8 away first to get down to 10" was the
+      // make-ten route run on 18 − 10, and named the answer, until 2026-10-03.)
+      return b === 10
+        ? [`Taking away 10 takes away 1 ten.`, `The ones stay the same.`, `Write what is left.`]
+        : [`Take away 10 first: ${a} − 10.`, `Then take away ${b - 10} more.`, `Where you land is what is left.`];
     }
     if (a > 10 && a <= 20 && b < a && a % 10 !== 0 && b > a % 10) {
       const toTen = a - 10;
@@ -83,16 +91,24 @@ function subtractionSteps(q, a, b) {
   if (left != null && start != null && start > left) {
     return [`You started with ${start} and have ${left} left.`, `Start at ${left} and count up to ${start}.`, `The hops are how many were taken away.`];
   }
-  return [`Find the starting amount and what is left in the story.`, `Count up from what is left to the start.`, `The hops are how many were taken away.`];
+  return [`Find the starting amount and what is left in the question.`, `Count up from what is left to the start.`, `The hops are how many were taken away.`];
 }
 
 function multiplicationSteps(q, a, b) {
   if (a != null && b != null) {
     if (a <= 10 && b <= 10) {
-      const seq = Array.from({ length: Math.min(a, 4) }, (_, i) => b * (i + 1)).join(", ");
-      return [`${a} groups with ${b} in each.`, `Skip count by ${b}, ${a} times: ${seq}${a > 4 ? ", …" : ""}.`, `The last number you say is the total.`];
+      // Start the count, never finish it: the last number said is the answer
+      // ("Skip count by 5, 3 times: 5, 10, 15." gave 3 × 5 away until 2026-10-03).
+      const seq = Array.from({ length: Math.min(a - 1, 3) }, (_, i) => b * (i + 1)).join(", ");
+      return [`${a} groups with ${b} in each.`, seq ? `Skip count by ${b}, ${a} times: ${seq}, …` : `Skip count by ${b}, ${a} times.`, `The last number you say is the total.`];
     }
-    return [`Break ${b} into tens and ones.`, `${a} × ${Math.floor(b / 10) * 10}, then ${a} × ${b % 10}.`, `Add the two pieces.`];
+    // Break the two-digit factor, not a one-digit one ("Break 3 into tens
+    // and ones. 34 × 0, then 34 × 3." shipped on every 34 × 3 until 2026-10-02).
+    const [big, small] = b >= 10 ? [b, a] : [a, b];
+    const tens = Math.floor(big / 10) * 10;
+    const ones = big % 10;
+    if (ones === 0) return [`${big} is ${tens / 10} tens.`, `Find ${small} × ${tens / 10}.`, `Then make it tens: put a 0 on the end.`];
+    return [`Break ${big} into ${tens} and ${ones}.`, `${small} × ${tens}, then ${small} × ${ones}.`, `Add the two pieces.`];
   }
   const total = num(q.distractorContext?.b);
   const known = a ?? b;
@@ -138,10 +154,22 @@ function skipSteps(q) {
 function placeValueSteps(q) {
   const n = num(q.display?.number ?? q.a);
   if (n == null) return null;
-  const s = String(n);
-  const names = ["ones", "tens", "hundreds", "thousands"];
-  const parts = [...s].reverse().map((d, i) => `${d} ${names[i] || ""}`.trim()).reverse();
-  return [`The number is ${n}.`, `Its places: ${parts.join(", ")}.`, `Use the place the question asks about.`];
+  const d = q.display || {};
+  if (d.type === "build" || String(q.answer) === String(n)) {
+    // The kid builds the number, so the steps must not say it ("The number
+    // is 64." on "6 tens and 4 ones make what number?" until 2026-10-03).
+    const parts = [["hundreds", d.hundreds], ["tens", d.tens], ["ones", d.ones]]
+      .filter(([, c]) => num(c) != null)
+      .map(([name, c]) => `${c} ${Number(c) === 1 ? name.slice(0, -1) : name}`);
+    return [
+      parts.length ? `You have ${parts.join(" and ")}.` : `Find each place's amount in the question.`,
+      num(d.tens) >= 10 ? `10 tens make 1 hundred.` : `Each ten is worth 10. Each hundred is worth 100.`,
+      `Find what each place is worth, then put them together.`,
+    ];
+  }
+  // Name the places, not the digits: "Its places: 6 tens, 4 ones." answered
+  // "What is the tens digit of 64?" until 2026-10-03.
+  return [`The number is ${n}.`, `From the right, the places are ones, tens, then hundreds.`, `Find the place the question asks about.`];
 }
 
 function moneySteps(q) {
@@ -180,6 +208,12 @@ function genericSteps(q) {
   return steps;
 }
 
+/** True when the prompt itself shows the key ("7:28" shows 28). */
+export function promptShowsAnswer(q) {
+  const key = q?.answer;
+  return hintContainsAnswer({ steps: [promptOf(q)] }, key) || numbersInPrompt(q).map(String).includes(String(key));
+}
+
 /** Steps for the live question. Always returns a non-empty array. */
 export function stepsFor(question) {
   if (!question) return genericSteps({});
@@ -202,5 +236,12 @@ export function stepsFor(question) {
   } catch {
     steps = null;
   }
-  return steps && steps.length ? steps : genericSteps(question);
+  if (!steps || !steps.length) return genericSteps(question);
+  // Safety net: steps built from the numbers never state the key the kid is
+  // asked for, unless the prompt already shows it (a strategy step such as
+  // "Take 2 away first" is the answer to "How many do you take away first?").
+  if (hintContainsAnswer({ steps }, question.answer) && !promptShowsAnswer(question)) {
+    return genericSteps(question);
+  }
+  return steps;
 }

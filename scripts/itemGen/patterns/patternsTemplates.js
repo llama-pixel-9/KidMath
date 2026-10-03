@@ -11,6 +11,16 @@
  * Registers: every numeric drill starts "Pattern:" — skipCounting owns
  * "Count by Ns:" and counting owns bare comma runs, so strings stay disjoint.
  * Band-1 prompts stay <= 20 (hard gate). Judged = "Is this right?" Yes/No.
+ *
+ * display.sequence vs display.terms: the app draws `display.sequence` as a
+ * fixed "What comes next?" card with a blank at the end and HIDES the prompt
+ * (src/itemBank/qc/sequenceCard.js, fail `sequenceCardMismatch`). So only a
+ * next-term question whose terms alone decide the answer carries `sequence`
+ * (three or more terms of a steady +/x run, or a repeating run). Every other
+ * question (a gap, the first term, the rule, a wrong number, the Nth position,
+ * a judged claim, a two-term run whose rule lives in the prompt) carries its
+ * run as `display.terms`, which nothing draws, so the kid reads the prompt.
+ * A blank inside the run is "__" in both the terms and the prompt, never "?".
  */
 
 import { rotor, shuffled, NAMES } from "../counting/countingTemplates.js";
@@ -33,6 +43,17 @@ const item = (subskill, family, structureType, band, question) => {
 };
 
 const nameAt = (i) => NAMES[i % NAMES.length];
+const ordinal = (n) => {
+  const t = n % 100;
+  if (t >= 11 && t <= 13) return `${n}th`;
+  return `${n}${{ 1: "st", 2: "nd", 3: "rd" }[n % 10] || "th"}`;
+};
+// What one entry of a repeating run is called in a prompt: "the 7th shape",
+// "a circle"; "the 7th color", "blue"; "the 7th one", "up".
+const COLORS = new Set(["red", "blue", "green", "gold", "silver", "yellow"]);
+const DIRECTIONS = new Set(["up", "down"]);
+const entryNoun = (core) => (core.every((s) => COLORS.has(s)) ? "color" : core.every((s) => DIRECTIONS.has(s)) ? "one" : "shape");
+const entryName = (core, s) => (entryNoun(core) === "shape" ? `a ${s}` : s);
 
 /* ================================================================== */
 /* repeatingPattern — shape/color sequences                            */
@@ -76,13 +97,15 @@ const extendItem = (family, structureType, band, core, len) => {
   });
 };
 
+// An Nth-position question: its run rides display.terms (the sequence card
+// would ask "What comes next?" instead).
 const positionItem = (family, structureType, band, core, pos, phr) => {
   const shown = cyc(core, core.length * 2);
   const answer = core[(pos - 1) % core.length];
   return item("repeatingPattern", family, structureType, band, {
     answer,
     choices: shuffled([...new Set(core)], pos),
-    display: { sequence: shown, pattern: { kind: "repeatPos", core, pos }, promptText: phr(shown, pos) },
+    display: { terms: shown, pattern: { kind: "repeatPos", core, pos }, promptText: phr(shown, pos, entryNoun(core)) },
   });
 };
 
@@ -112,8 +135,8 @@ export function repeatingProcedural() {
   for (const len of [6, 7, 8, 9, 10, 11]) items.push(extendItem("procedural", "extendABC", "band2", TRIOS[2], len));
   for (const core of QUADS) for (const len of [8, 9, 10, 11]) items.push(extendItem("procedural", "extendABCD", "band2", core, len));
   const posPhr = rotor([
-    (shown, pos) => `Pattern: ${shown.join(", ")}, … What is shape number ${pos}?`,
-    (shown, pos) => `Pattern: ${shown.join(", ")}, … Keep going. Which shape lands at position ${pos}?`,
+    (shown, pos, noun) => `Pattern: ${shown.join(", ")}, and so on. ${noun === "shape" ? `What is shape number ${pos}?` : `What ${noun} is number ${pos} in the pattern?`}`,
+    (shown, pos, noun) => `Pattern: ${shown.join(", ")}, and so on. Which ${noun} is in position ${pos}?`,
   ]);
   for (const core of TRIOS) for (const pos of [7, 8, 10, 11]) items.push(positionItem("procedural", "shapeAtPosition", "band2", core, pos, posPhr()));
   for (const core of TRIOS.slice(0, 2)) for (const len of [12, 13]) items.push(extendItem("procedural", "extendABC", "band2", core, len));
@@ -186,7 +209,7 @@ export function repeatingConceptual() {
         item("repeatingPattern", "conceptual", `coreIdentify_${band}`, band, {
           answer,
           choices: shuffled([answer, ...wrong.slice(0, 3)], (seed += 1)),
-          display: { sequence: shown, pattern: { kind: "core", core }, promptText: corePhr()(nameAt(i * 3 + seed), shown) },
+          display: { terms: shown, pattern: { kind: "core", core }, promptText: corePhr()(nameAt(i * 3 + seed), shown) },
         })
       );
     });
@@ -194,9 +217,18 @@ export function repeatingConceptual() {
   coreIdentify("band2", [...TRIOS, ...QUADS, ...PAIRS.slice(0, 3), ...AABB, ...ABB], 3);
   coreIdentify("band3", [...QUADS, ...AABB, ...TRIOS, ...ABB.slice(0, 1)], 4);
 
+  // A core that starts and ends on the same entry (red, blue, green, red)
+  // reads as a different chunk at the seam ("red, red"), so its prompt names
+  // the part that repeats.
   const judgePhr = rotor([
-    (nm, shown, said) => `${nm} continues the pattern ${shown.join(", ")} with ${said}. Is ${nm} right?`,
-    (nm, shown, said) => `The pattern goes ${shown.join(", ")}. ${nm} says ${said} comes next. Is that right?`,
+    (nm, shown, said, core) =>
+      core
+        ? `${nm}'s pattern repeats ${core.join(", ")} over and over: ${shown.join(", ")}. ${nm} says ${said} comes next. Is ${nm} right?`
+        : `${nm} continues the pattern ${shown.join(", ")} with ${said}. Is ${nm} right?`,
+    (nm, shown, said, core) =>
+      core
+        ? `The part ${core.join(", ")} repeats over and over: ${shown.join(", ")}. ${nm} says ${said} comes next. Is ${nm} right?`
+        : `The pattern goes ${shown.join(", ")}. ${nm} says ${said} comes next. Is that right?`,
   ]);
   const judgeExtend = (band, cores, lens) =>
     cores.forEach((core, i) =>
@@ -205,11 +237,12 @@ export function repeatingConceptual() {
         const truth = (i + j) % 2 === 0;
         const right = core[len % core.length];
         const said = truth ? right : [...new Set(core)].find((s) => s !== right) || right;
+        const named = core.length > 2 && core[0] === core[core.length - 1] ? core : null;
         items.push(
           item("repeatingPattern", "conceptual", `judgeExtend_${band}`, band, {
             answer: truth ? "Yes" : "No",
             choices: ["Yes", "No"],
-            display: { sequence: shown, pattern: { kind: "repeat", core, len, said }, promptText: judgePhr()(nameAt(i * 5 + j * 3 + seed), shown, said), truth },
+            display: { terms: shown, pattern: { kind: "repeat", core, len, said }, promptText: judgePhr()(nameAt(i * 5 + j * 3 + seed), shown, said, named), truth },
           })
         );
       })
@@ -219,8 +252,8 @@ export function repeatingConceptual() {
   judgeExtend("band3", [...QUADS, ...AABB], [8, 9, 10, 11, 12, 13]);
 
   const willBePhr = rotor([
-    (nm, shown, pos, target) => `${nm} looks at the pattern ${shown.join(", ")}, … Will shape number ${pos} be ${target}?`,
-    (nm, shown, pos, target) => `The pattern ${shown.join(", ")} keeps going. ${nm} guesses that position ${pos} holds ${target}. Is ${nm} right?`,
+    (nm, shown, pos, target, core) => `${nm} looks at the pattern ${shown.join(", ")}, and so on. Will the ${ordinal(pos)} ${entryNoun(core)} be ${entryName(core, target)}?`,
+    (nm, shown, pos, target, core) => `The pattern ${shown.join(", ")} keeps going. ${nm} guesses that the ${ordinal(pos)} ${entryNoun(core)} will be ${entryName(core, target)}. Is ${nm} right?`,
   ]);
   const willBe = (band, cores, positions) =>
     cores.forEach((core, i) =>
@@ -233,7 +266,7 @@ export function repeatingConceptual() {
           item("repeatingPattern", "conceptual", `willBeAt_${band}`, band, {
             answer: truth ? "Yes" : "No",
             choices: ["Yes", "No"],
-            display: { sequence: shown, pattern: { kind: "repeatPos", core, pos, target }, promptText: willBePhr()(nameAt(i * 7 + j * 3 + seed), shown, pos, target), truth },
+            display: { terms: shown, pattern: { kind: "repeatPos", core, pos, target }, promptText: willBePhr()(nameAt(i * 7 + j * 3 + seed), shown, pos, target, core), truth },
           })
         );
       })
@@ -260,6 +293,21 @@ const nextDrill = (structureType, band, start, step) => {
   });
 };
 
+// "What comes first?": the blank is the first term, so the run rides
+// display.terms ("__" for the blank) and the prompt asks the question.
+const FIRST_TERM_PHR = [
+  (terms) => `Pattern: ${terms.join(", ")}. What number comes first?`,
+  (terms) => `What number comes first in the pattern ${terms.join(", ")}?`,
+];
+const firstTermDrill = (structureType, band, first, step, i) => {
+  const terms = ["__", first, first + step, first + 2 * step];
+  return item("arithmeticNext", "procedural", structureType, band, {
+    answer: first - step,
+    answerType: "numberPad",
+    display: { terms, step, counting: { kind: "countBack", start: first, back: step }, promptText: FIRST_TERM_PHR[i % FIRST_TERM_PHR.length](terms) },
+  });
+};
+
 export function arithmeticProcedural() {
   const items = [];
 
@@ -282,15 +330,8 @@ export function arithmeticProcedural() {
   for (const [start, step] of [[12, 6], [25, 7], [31, 8], [14, 9], [42, 6], [23, 7], [35, 8], [16, 9], [51, 6], [27, 4], [33, 5], [45, 7], [18, 8], [62, 3], [29, 9], [37, 6], [44, 5], [56, 4], [21, 8], [39, 7]]) {
     items.push(nextDrill("nextMid", "band2", start, step));
   }
-  for (const [first, step] of [[23, 6], [35, 7], [41, 8], [27, 9], [52, 6], [33, 7], [45, 8], [26, 4], [61, 5], [38, 6], [47, 7], [55, 3], [29, 8], [64, 9], [31, 4], [43, 5]]) {
-    const seq = ["?", first, first + step, first + 2 * step];
-    items.push(
-      item("arithmeticNext", "procedural", "firstMid", "band2", {
-        answer: first - step,
-        answerType: "numberPad",
-        display: { sequence: seq, step, counting: { kind: "countBack", start: first, back: step }, promptText: `Pattern: ${seq.join(", ")} — what comes first?` },
-      })
-    );
+  for (const [i, [first, step]] of [[23, 6], [35, 7], [41, 8], [27, 9], [52, 6], [33, 7], [45, 8], [26, 4], [61, 5], [38, 6], [47, 7], [55, 3], [29, 8], [64, 9], [31, 4], [43, 5]].entries()) {
+    items.push(firstTermDrill("firstMid", "band2", first, step, i));
   }
   for (const [hi, step] of [[80, 6], [95, 7], [72, 8], [88, 9], [64, 5], [91, 6], [77, 7], [83, 8], [69, 4], [96, 9], [58, 6], [74, 5], [87, 3], [66, 7], [92, 4], [79, 9]]) {
     const seq = [hi, hi - step, hi - 2 * step];
@@ -307,15 +348,8 @@ export function arithmeticProcedural() {
   for (const [start, step] of [[112, 11], [235, 12], [341, 15], [124, 25], [452, 11], [223, 14], [335, 21], [146, 12], [518, 13], [247, 16], [333, 22], [415, 18], [128, 24], [622, 15], [289, 17], [317, 23], [434, 19], [526, 13], [211, 26], [349, 14]]) {
     items.push(nextDrill("nextBig", "band3", start, step));
   }
-  for (const [first, step] of [[123, 11], [235, 12], [341, 15], [227, 25], [352, 13], [433, 14], [545, 21], [226, 16], [361, 22], [238, 18], [447, 24], [555, 17], [329, 23], [364, 19], [231, 26], [443, 27]]) {
-    const seq = ["?", first, first + step, first + 2 * step];
-    items.push(
-      item("arithmeticNext", "procedural", "firstBig", "band3", {
-        answer: first - step,
-        answerType: "numberPad",
-        display: { sequence: seq, step, counting: { kind: "countBack", start: first, back: step }, promptText: `Pattern: ${seq.join(", ")} — what comes first?` },
-      })
-    );
+  for (const [i, [first, step]] of [[123, 11], [235, 12], [341, 15], [227, 25], [352, 13], [433, 14], [545, 21], [226, 16], [361, 22], [238, 18], [447, 24], [555, 17], [329, 23], [364, 19], [231, 26], [443, 27]].entries()) {
+    items.push(firstTermDrill("firstBig", "band3", first, step, i));
   }
   for (const [hi, step] of [[480, 16], [595, 17], [372, 18], [688, 19], [564, 15], [491, 26], [377, 27], [283, 28], [569, 14], [696, 29], [458, 16], [374, 25], [587, 13], [466, 17], [592, 24], [379, 19]]) {
     const seq = [hi, hi - step, hi - 2 * step];
@@ -368,7 +402,7 @@ export function arithmeticConceptual() {
         item("arithmeticNext", "conceptual", `judgeNext_${band}`, band, {
           answer: ok ? "Yes" : "No",
           choices: ["Yes", "No"],
-          display: { sequence: seq, pattern: { kind: "arith", start, step, said }, promptText: judgePhr()(nameAt(i * 3 + seed), seq, said), truth: ok },
+          display: { terms: seq, pattern: { kind: "arith", start, step, said }, promptText: judgePhr()(nameAt(i * 3 + seed), seq, said), truth: ok },
         })
       );
     });
@@ -408,12 +442,24 @@ const geoSeq = (start, factor, n) => Array.from({ length: n }, (_, i) => start *
 export function geometricProcedural() {
   const items = [];
 
+  // Two terms do not decide the next one ("3, 6": add 3 or double?), so a
+  // two-term run states its rule in the prompt and rides display.terms; three
+  // or more terms keep the "What comes next?" card.
+  const twoTermPhr = rotor([
+    (seq, factor) => `Each number is ${factor} times the one before: ${seq.join(", ")}, __. What number comes next?`,
+    (seq, factor) => `Each number is ${factor === 2 ? "double" : `${factor} times`} the one before: ${seq.join(", ")}, __. What number comes next?`,
+    (seq, factor) => `The pattern ${seq.join(", ")}, __ ${factor === 2 ? "doubles" : `multiplies by ${factor}`} each time. What number comes next?`,
+  ]);
   const doubleDrill = (structureType, band, start, factor, n) => {
     const seq = geoSeq(start, factor, n);
+    const promptText = `Pattern: ${seq.join(", ")}, ? — each term is ${factor} times the one before.`;
     return item("geometricNext", "procedural", structureType, band, {
       answer: seq[n - 1] * factor,
       answerType: "numberPad",
-      display: { sequence: seq, step: factor, pattern: { kind: "geo", start, factor }, promptText: `Pattern: ${seq.join(", ")}, ? — each term is ${factor} times the one before.` },
+      display:
+        n < 3
+          ? { terms: seq, step: factor, pattern: { kind: "geo", start, factor }, promptText: twoTermPhr()(seq, factor) }
+          : { sequence: seq, step: factor, pattern: { kind: "geo", start, factor }, promptText },
     });
   };
 
@@ -426,13 +472,18 @@ export function geometricProcedural() {
     items.push(doubleDrill("doubleTeen", "band1", s, 2, 4));
   }
   const halfPhr = (seq) => `Pattern: ${seq.join(", ")}, ? — each term is half the one before.`;
+  // Two terms: the halving rule lives in the prompt, so the run rides terms.
+  const halfTwoPhr = rotor([
+    (seq) => `Each number is half the one before: ${seq.join(", ")}, __. What number comes next?`,
+    (seq) => `In the pattern ${seq.join(", ")}, __, each number is half of the one before. What number comes next?`,
+  ]);
   for (const start of [16, 20, 8, 12]) {
     const seq = [start, start / 2];
     items.push(
       item("geometricNext", "procedural", "halfTeen", "band1", {
         answer: start / 4,
         answerType: "numberPad",
-        display: { sequence: seq, pattern: { kind: "geoDiv", start, factor: 2 }, promptText: halfPhr(seq) },
+        display: { terms: seq, pattern: { kind: "geoDiv", start, factor: 2 }, promptText: halfTwoPhr()(seq) },
       })
     );
   }
@@ -545,7 +596,7 @@ export function geometricConceptual() {
         item("geometricNext", "conceptual", `geoRulePick_${band}`, band, {
           answer,
           choices: shuffled([answer, ...wrong], (seed += 1)),
-          display: { sequence: seq, pattern: { kind: "geoRule", start, factor }, promptText: rulePhr()(nameAt(i * 3 + seed), seq) },
+          display: { terms: seq, pattern: { kind: "geoRule", start, factor }, promptText: rulePhr()(nameAt(i * 3 + seed), seq) },
         })
       );
     });
@@ -564,7 +615,7 @@ export function geometricConceptual() {
         item("geometricNext", "conceptual", `addOrMultJudge_${band}`, band, {
           answer: additive ? "Yes" : "No",
           choices: ["Yes", "No"],
-          display: { sequence: seq, pattern: { kind: "addOrMult", additive }, promptText: addOrMultPhr()(nameAt(i * 3 + seed), seq), truth: additive },
+          display: { terms: seq, pattern: { kind: "addOrMult", additive }, promptText: addOrMultPhr()(nameAt(i * 3 + seed), seq), truth: additive },
         })
       );
     });

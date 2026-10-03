@@ -1342,7 +1342,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Mina says 3 bikes with 2 wheels each make 6 wheels. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn skip counts the wheels on 3 bikes and gets 8. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0104",
@@ -1352,7 +1352,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Theo skip counts the fingers on 2 hands and gets 15. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Mina skip counts the fingers on 2 hands and gets 10. Is Mina right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0105",
@@ -1372,7 +1372,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe skip counts the socks on 4 pairs and gets 10. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Zoe says 4 pairs with 2 socks each make 8 socks. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0107",
@@ -1382,7 +1382,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa says 3 nickels with 5 cents each make 15 cents. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Sam says 3 nickels with 5 cents each make 15 cents. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0108",
@@ -1392,7 +1392,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Diego skip counts the mittens on 5 pairs and gets 12. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Diego skip counts the mittens in 5 pairs and gets 12. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0109",
@@ -1402,7 +1402,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nora says 4 flowers with 5 petals each make 20 petals. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Theo says 4 flowers with 5 petals each make 15 petals. Is Theo right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0110",
@@ -1412,7 +1412,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Luca skip counts the socks on 8 pairs and gets 18. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Luca says 8 pairs with 2 socks each make 18 socks. Is Luca right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0111",
@@ -1422,7 +1422,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ava says 6 bikes with 2 wheels each make 12 wheels. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ava skip counts the wheels on 6 bikes and gets 12. Is Ava right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0112",
@@ -1432,7 +1432,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Omar skip counts the socks on 2 pairs and gets 6. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Omar skip counts the socks in 2 pairs and gets 6. Is Omar right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0113",
@@ -1442,7 +1442,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ben says 2 flowers with 5 petals each make 10 petals. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ben says 2 flowers with 5 petals each make 10 petals. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0114",
@@ -1452,7 +1452,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn skip counts the mittens on 7 pairs and gets 16. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Rosa says 7 pairs with 2 mittens each make 16 mittens. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0115",
@@ -1462,7 +1462,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Priya says 7 pairs with 2 mittens each make 14 mittens. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Priya skip counts the mittens in 7 pairs and gets 14. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0116",
@@ -1472,7 +1472,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Sam skip counts the fingers on 3 hands and gets 20. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nora skip counts the fingers on 3 hands and gets 20. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0117",
@@ -1482,7 +1482,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nia says 8 bikes with 2 wheels each make 16 wheels. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Kai skip counts the wheels on 8 bikes and gets 16. Is Kai right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0118",
@@ -1492,7 +1492,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Kai skip counts the socks on 6 pairs and gets 14. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nia says 6 pairs with 2 socks each make 14 socks. Is Nia right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0119",
@@ -1512,7 +1512,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Theo skip counts the wheels on 3 tricycles and gets 9. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Theo skip counts the wheels on 3 tricycles and gets 12. Is Theo right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0121",
@@ -1522,7 +1522,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ida says 3 dogs with 4 legs each make 16 legs. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ida skip counts the legs on 3 dogs and gets 12. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0122",
@@ -1532,7 +1532,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Zoe skip counts the leaves on 4 clovers and gets 12. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Each clover has 3 leaves. Zoe skip counts the leaves on 4 clovers and gets 9. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0123",
@@ -1542,7 +1542,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Rosa says 4 wagons with 4 wheels each make 20 wheels. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa skip counts the wheels on 4 wagons and gets 16. Is Rosa right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0124",
@@ -1552,7 +1552,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Diego skip counts the fingers on 6 hands and gets 30. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Diego says 6 hands with 5 fingers each make 30 fingers. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0125",
@@ -1572,7 +1572,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Luca skip counts the wheels on 5 tricycles and gets 15. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Luca skip counts the wheels on 5 tricycles and gets 15. Is Luca right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0127",
@@ -1582,7 +1582,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ava says 5 dogs with 4 legs each make 24 legs. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ava says 5 dogs with 4 legs each make 24 legs. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0128",
@@ -1592,7 +1592,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Omar skip counts the beads on 5 strings and gets 50. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Omar says 5 strings with 10 beads each make 60 beads. Is Omar right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0129",
@@ -1602,7 +1602,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ben says 7 nickels with 5 cents each make 40 cents. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ben skip counts the cents in 7 nickels and gets 40. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0130",
@@ -1612,7 +1612,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Finn skip counts the leaves on 6 clovers and gets 18. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Finn says 6 clovers with 3 leaves each make 18 leaves. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0131",
@@ -1632,7 +1632,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Sam skip counts the cents on 6 dimes and gets 60. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Sam skip counts the cents in 6 dimes and gets 60. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0133",
@@ -1642,7 +1642,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nia says 8 flowers with 5 petals each make 45 petals. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nia says 8 flowers with 5 petals each make 45 petals. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0134",
@@ -1652,7 +1652,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Kai skip counts the wheels on 7 tricycles and gets 21. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Kai says 7 tricycles with 3 wheels each make 21 wheels. Is Kai right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0135",
@@ -1662,7 +1662,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"June says 7 dogs with 4 legs each make 32 legs. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"June skip counts the legs on 7 dogs and gets 32. Is June right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0136",
@@ -1672,7 +1672,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Lily skip counts the crayons on 7 boxes and gets 70. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Lily says 7 boxes with 10 crayons each make 70 crayons. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0137",
@@ -3222,7 +3222,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Theo counts 2 hops of 5 on the number path and lands on 15. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Theo counts 2 hops of 5 on the number path and lands on 15. Is Theo right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0292",
@@ -3232,7 +3232,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ida says 2 rows of 10 seats hold 20 seats when you count by 10s. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ida counts 2 hops of 10 on the number path and lands on 20. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0293",
@@ -3242,7 +3242,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe counts 4 hops of 2 on the number path and lands on 10. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe says 4 rows of 2 seats hold 10 seats when you count by 2s. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0294",
@@ -3252,7 +3252,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa says 3 rows of 5 seats hold 15 seats when you count by 5s. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Rosa says 3 rows of 5 seats hold 20 seats when you count by 5s. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0295",
@@ -3272,7 +3272,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nora says 4 rows of 5 seats hold 20 seats when you count by 5s. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nora counts 4 hops of 5 on the number path and lands on 20. Is Nora right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0297",
@@ -3282,7 +3282,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Luca counts 9 hops of 2 on the number path and lands on 20. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Luca says 9 rows of 2 seats hold 20 seats when you count by 2s. Is Luca right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0298",
@@ -3302,7 +3302,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Omar counts 2 hops of 2 on the number path and lands on 6. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Omar counts 2 hops of 2 on the number path and lands on 6. Is Omar right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0300",
@@ -3312,7 +3312,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ben says 8 rows of 2 seats hold 16 seats when you count by 2s. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ben counts 8 hops of 2 on the number path and lands on 16. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0301",
@@ -3322,7 +3322,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Finn counts 5 hops of 2 on the number path and lands on 10. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Finn says 5 rows of 2 seats hold 10 seats when you count by 2s. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0302",
@@ -3332,7 +3332,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Priya says 7 rows of 2 seats hold 14 seats when you count by 2s. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Priya counts 7 hops of 2 on the number path and lands on 14. Is Priya right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0303",
@@ -3342,7 +3342,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Sam counts 2 hops of 5 on the number path and lands on 10. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Sam says 2 rows of 5 seats hold 10 seats when you count by 5s. Is Sam right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0304",
@@ -3352,7 +3352,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nia says 8 rows of 2 seats hold 18 seats when you count by 2s. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nia says 8 rows of 2 seats hold 18 seats when you count by 2s. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0305",
@@ -3372,7 +3372,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"June says 9 rows of 2 seats hold 18 seats when you count by 2s. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"June counts 9 hops of 2 on the number path and lands on 18. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0307",
@@ -3382,7 +3382,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Theo counts 3 hops of 3 on the number path and lands on 9. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Theo counts 3 hops of 3 on the number path and lands on 12. Is Theo right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0308",
@@ -3392,7 +3392,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ida says 3 rows of 4 seats hold 16 seats when you count by 4s. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ida says 3 rows of 4 seats hold 12 seats when you count by 4s. Is Ida right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0309",
@@ -3402,7 +3402,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Zoe counts 4 hops of 3 on the number path and lands on 12. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe says 4 rows of 3 seats hold 9 seats when you count by 3s. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0310",
@@ -3412,7 +3412,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Rosa says 4 rows of 4 seats hold 20 seats when you count by 4s. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa counts 4 hops of 4 on the number path and lands on 16. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0311",
@@ -3422,7 +3422,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Diego counts 6 hops of 5 on the number path and lands on 30. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Diego counts 6 hops of 5 on the number path and lands on 35. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0312",
@@ -3432,7 +3432,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nora says 6 rows of 10 seats hold 70 seats when you count by 10s. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nora says 6 rows of 10 seats hold 60 seats when you count by 10s. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0313",
@@ -3442,7 +3442,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Luca counts 5 hops of 3 on the number path and lands on 15. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Luca says 5 rows of 3 seats hold 12 seats when you count by 3s. Is Luca right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0314",
@@ -3452,7 +3452,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ava says 5 rows of 4 seats hold 24 seats when you count by 4s. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ava counts 5 hops of 4 on the number path and lands on 20. Is Ava right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0315",
@@ -3462,7 +3462,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Omar counts 6 hops of 3 on the number path and lands on 18. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Omar counts 6 hops of 3 on the number path and lands on 18. Is Omar right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0316",
@@ -3482,7 +3482,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Finn counts 7 hops of 5 on the number path and lands on 35. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Finn says 7 rows of 5 seats hold 35 seats when you count by 5s. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0318",
@@ -3492,7 +3492,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Priya says 7 rows of 10 seats hold 80 seats when you count by 10s. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Priya counts 7 hops of 10 on the number path and lands on 80. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0319",
@@ -3512,7 +3512,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nia says 7 rows of 4 seats hold 32 seats when you count by 4s. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nia says 7 rows of 4 seats hold 32 seats when you count by 4s. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0321",
@@ -3522,7 +3522,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Kai counts 8 hops of 3 on the number path and lands on 24. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Kai says 8 rows of 3 seats hold 24 seats when you count by 3s. Is Kai right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0322",
@@ -3532,7 +3532,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"June says 8 rows of 4 seats hold 36 seats when you count by 4s. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"June counts 8 hops of 4 on the number path and lands on 36. Is June right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0323",
@@ -3542,7 +3542,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Lily counts 8 hops of 5 on the number path and lands on 40. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Lily counts 8 hops of 5 on the number path and lands on 40. Is Lily right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0324",
@@ -3552,7 +3552,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Mina says 4 rows of 6 seats hold 24 seats when you count by 6s. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Mina says 4 rows of 6 seats hold 30 seats when you count by 6s. Is Mina right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0325",
@@ -3562,7 +3562,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Theo counts 4 hops of 25 on the number path and lands on 125. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Theo says 4 rows of 25 seats hold 100 seats when you count by 25s. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0326",
@@ -3572,7 +3572,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ida says 4 rows of 50 seats hold 200 seats when you count by 50s. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ida counts 4 hops of 50 on the number path and lands on 150. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0327",
@@ -3582,7 +3582,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe counts 4 hops of 100 on the number path and lands on 500. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Zoe counts 4 hops of 100 on the number path and lands on 400. Is Zoe right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0328",
@@ -3592,7 +3592,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa says 5 rows of 6 seats hold 30 seats when you count by 6s. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Rosa says 5 rows of 6 seats hold 36 seats when you count by 6s. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0329",
@@ -3602,7 +3602,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Diego counts 5 hops of 25 on the number path and lands on 150. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Diego says 5 rows of 25 seats hold 125 seats when you count by 25s. Is Diego right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0330",
@@ -3612,7 +3612,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nora says 5 rows of 50 seats hold 250 seats when you count by 50s. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nora counts 5 hops of 50 on the number path and lands on 200. Is Nora right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0331",
@@ -3622,7 +3622,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Luca counts 5 hops of 100 on the number path and lands on 600. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Luca counts 5 hops of 100 on the number path and lands on 500. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0332",
@@ -3642,7 +3642,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Omar counts 6 hops of 25 on the number path and lands on 175. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Omar says 6 rows of 25 seats hold 175 seats when you count by 25s. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0334",
@@ -3652,7 +3652,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ben says 6 rows of 50 seats hold 300 seats when you count by 50s. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ben counts 6 hops of 50 on the number path and lands on 300. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0335",
@@ -3662,7 +3662,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn counts 6 hops of 100 on the number path and lands on 700. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn counts 6 hops of 100 on the number path and lands on 700. Is Finn right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0336",
@@ -3672,7 +3672,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Priya says 7 rows of 6 seats hold 42 seats when you count by 6s. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Priya says 7 rows of 6 seats hold 42 seats when you count by 6s. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0337",
@@ -3682,7 +3682,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Sam counts 7 hops of 25 on the number path and lands on 200. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Sam says 7 rows of 25 seats hold 200 seats when you count by 25s. Is Sam right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0338",
@@ -3692,7 +3692,7 @@ export const ITEMS = [
     structureType: "storyRuleClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nia says 7 rows of 50 seats hold 350 seats when you count by 50s. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nia counts 7 hops of 50 on the number path and lands on 350. Is Nia right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0339",
@@ -3852,7 +3852,7 @@ export const ITEMS = [
     structureType: "storyPerDay",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[10]},"promptText":"Sam plants 10 seeds each morning for 1 mornings. How many seeds does Sam plant in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"counting":{"kind":"sum","parts":[10,10,10]},"promptText":"Sam plants 10 seeds each morning for 3 mornings. How many seeds does Sam plant in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0355",
@@ -4232,7 +4232,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"countOn","more":6,"start":0},"promptText":"Theo climbs 2 rungs per move and makes 3 moves up the ladder. Which rung is Theo on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"countOn","more":6,"start":0},"promptText":"Theo's toy robot starts at 0 on a number line and moves 2 spaces at a time. What number is the robot on after 3 moves?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0393",
@@ -4242,7 +4242,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"countOn","more":10,"start":0},"promptText":"Ida hops along the path 5 tiles at a time and makes 2 hops from the start. Which tile does Ida land on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"countOn","more":10,"start":0},"promptText":"Ida starts at 0 on a number line and makes 2 jumps of 5. What number does Ida land on?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0394",
@@ -4252,7 +4252,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"countOn","more":8,"start":0},"promptText":"Zoe climbs 2 rungs per move and makes 4 moves up the ladder. Which rung is Zoe on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"countOn","more":8,"start":0},"promptText":"Zoe puts a toy frog at 0 on a number line. The frog jumps 2 spaces at a time. What number is the frog on after 4 jumps?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0395",
@@ -4262,7 +4262,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"countOn","more":15,"start":0},"promptText":"Rosa hops along the path 5 tiles at a time and makes 3 hops from the start. Which tile does Rosa land on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"countOn","more":15,"start":0},"promptText":"On a number line, Rosa starts at 0 and jumps 5 at a time. What number does Rosa land on after 3 jumps?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0396",
@@ -4272,7 +4272,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"countOn","more":10,"start":0},"promptText":"Diego climbs 2 rungs per move and makes 5 moves up the ladder. Which rung is Diego on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"countOn","more":10,"start":0},"promptText":"Diego's toy robot starts at 0 on a number line and moves 2 spaces at a time. What number is the robot on after 5 moves?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0397",
@@ -4282,7 +4282,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"countOn","more":20,"start":0},"promptText":"Nora hops along the path 10 tiles at a time and makes 2 hops from the start. Which tile does Nora land on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"countOn","more":20,"start":0},"promptText":"Nora starts at 0 on a number line and makes 2 jumps of 10. What number does Nora land on?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0398",
@@ -4292,7 +4292,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"countOn","more":12,"start":0},"promptText":"Luca climbs 2 rungs per move and makes 6 moves up the ladder. Which rung is Luca on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"countOn","more":12,"start":0},"promptText":"Luca puts a toy frog at 0 on a number line. The frog jumps 2 spaces at a time. What number is the frog on after 6 jumps?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0399",
@@ -4302,7 +4302,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"countOn","more":20,"start":0},"promptText":"Ava hops along the path 5 tiles at a time and makes 4 hops from the start. Which tile does Ava land on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"countOn","more":20,"start":0},"promptText":"On a number line, Ava starts at 0 and jumps 5 at a time. What number does Ava land on after 4 jumps?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0400",
@@ -4312,7 +4312,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"countOn","more":14,"start":0},"promptText":"Omar climbs 2 rungs per move and makes 7 moves up the ladder. Which rung is Omar on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"countOn","more":14,"start":0},"promptText":"Omar's toy robot starts at 0 on a number line and moves 2 spaces at a time. What number is the robot on after 7 moves?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0401",
@@ -4322,7 +4322,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"countOn","more":4,"start":0},"promptText":"Ben hops along the path 2 tiles at a time and makes 2 hops from the start. Which tile does Ben land on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"countOn","more":4,"start":0},"promptText":"Ben starts at 0 on a number line and makes 2 jumps of 2. What number does Ben land on?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0402",
@@ -4332,7 +4332,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"countOn","more":16,"start":0},"promptText":"Finn climbs 2 rungs per move and makes 8 moves up the ladder. Which rung is Finn on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"countOn","more":16,"start":0},"promptText":"Finn puts a toy frog at 0 on a number line. The frog jumps 2 spaces at a time. What number is the frog on after 8 jumps?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0403",
@@ -4342,7 +4342,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"kind":"countOn","more":25,"start":0},"promptText":"Priya hops along the path 5 tiles at a time and makes 5 hops from the start. Which tile does Priya land on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"kind":"countOn","more":25,"start":0},"promptText":"On a number line, Priya starts at 0 and jumps 5 at a time. What number does Priya land on after 5 jumps?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0404",
@@ -4352,7 +4352,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"countOn","more":18,"start":0},"promptText":"Sam climbs 2 rungs per move and makes 9 moves up the ladder. Which rung is Sam on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"countOn","more":18,"start":0},"promptText":"Sam's toy robot starts at 0 on a number line and moves 2 spaces at a time. What number is the robot on after 9 moves?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0405",
@@ -4362,7 +4362,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"countOn","more":10,"start":0},"promptText":"Nia hops along the path 10 tiles at a time and makes 1 hops from the start. Which tile does Nia land on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"counting":{"kind":"countOn","more":30,"start":0},"promptText":"Nia starts at 0 on a number line and makes 3 jumps of 10. What number does Nia land on?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0406",
@@ -4372,7 +4372,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"countOn","more":20,"start":0},"promptText":"Kai climbs 2 rungs per move and makes 10 moves up the ladder. Which rung is Kai on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"countOn","more":20,"start":0},"promptText":"Kai puts a toy frog at 0 on a number line. The frog jumps 2 spaces at a time. What number is the frog on after 10 jumps?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0407",
@@ -4382,7 +4382,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"kind":"countOn","more":9,"start":0},"promptText":"June hops along the path 3 tiles at a time and makes 3 hops from the start. Which tile does June land on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"kind":"countOn","more":9,"start":0},"promptText":"On a number line, June starts at 0 and jumps 3 at a time. What number does June land on after 3 jumps?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0408",
@@ -4392,7 +4392,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"countOn","more":12,"start":0},"promptText":"Lily climbs 4 rungs per move and makes 3 moves up the ladder. Which rung is Lily on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"countOn","more":12,"start":0},"promptText":"Lily's toy robot starts at 0 on a number line and moves 4 spaces at a time. What number is the robot on after 3 moves?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0409",
@@ -4402,7 +4402,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"kind":"countOn","more":9,"start":0},"promptText":"Mina hops along the path 3 tiles at a time and makes 3 hops from the start. Which tile does Mina land on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"kind":"countOn","more":9,"start":0},"promptText":"Mina starts at 0 on a number line and makes 3 jumps of 3. What number does Mina land on?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0410",
@@ -4412,7 +4412,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"countOn","more":12,"start":0},"promptText":"Theo climbs 4 rungs per move and makes 3 moves up the ladder. Which rung is Theo on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"countOn","more":12,"start":0},"promptText":"Theo puts a toy frog at 0 on a number line. The frog jumps 4 spaces at a time. What number is the frog on after 3 jumps?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0411",
@@ -4422,7 +4422,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"countOn","more":12,"start":0},"promptText":"Ida hops along the path 3 tiles at a time and makes 4 hops from the start. Which tile does Ida land on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"countOn","more":12,"start":0},"promptText":"On a number line, Ida starts at 0 and jumps 3 at a time. What number does Ida land on after 4 jumps?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0412",
@@ -4432,7 +4432,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"countOn","more":16,"start":0},"promptText":"Zoe climbs 4 rungs per move and makes 4 moves up the ladder. Which rung is Zoe on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"countOn","more":16,"start":0},"promptText":"Zoe's toy robot starts at 0 on a number line and moves 4 spaces at a time. What number is the robot on after 4 moves?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0413",
@@ -4442,7 +4442,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"counting":{"kind":"countOn","more":30,"start":0},"promptText":"Rosa hops along the path 5 tiles at a time and makes 6 hops from the start. Which tile does Rosa land on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"counting":{"kind":"countOn","more":30,"start":0},"promptText":"Rosa starts at 0 on a number line and makes 6 jumps of 5. What number does Rosa land on?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0414",
@@ -4452,7 +4452,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"kind":"countOn","more":40,"start":0},"promptText":"Diego climbs 10 rungs per move and makes 4 moves up the ladder. Which rung is Diego on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"kind":"countOn","more":40,"start":0},"promptText":"Diego puts a toy frog at 0 on a number line. The frog jumps 10 spaces at a time. What number is the frog on after 4 jumps?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0415",
@@ -4462,7 +4462,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"countOn","more":15,"start":0},"promptText":"Nora hops along the path 3 tiles at a time and makes 5 hops from the start. Which tile does Nora land on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"countOn","more":15,"start":0},"promptText":"On a number line, Nora starts at 0 and jumps 3 at a time. What number does Nora land on after 5 jumps?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0416",
@@ -4472,7 +4472,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"countOn","more":20,"start":0},"promptText":"Luca climbs 4 rungs per move and makes 5 moves up the ladder. Which rung is Luca on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"countOn","more":20,"start":0},"promptText":"Luca's toy robot starts at 0 on a number line and moves 4 spaces at a time. What number is the robot on after 5 moves?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0417",
@@ -4482,7 +4482,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"counting":{"kind":"countOn","more":50,"start":0},"promptText":"Ava hops along the path 10 tiles at a time and makes 5 hops from the start. Which tile does Ava land on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"counting":{"kind":"countOn","more":50,"start":0},"promptText":"Ava starts at 0 on a number line and makes 5 jumps of 10. What number does Ava land on?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0418",
@@ -4492,7 +4492,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"kind":"countOn","more":35,"start":0},"promptText":"Omar climbs 5 rungs per move and makes 7 moves up the ladder. Which rung is Omar on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"kind":"countOn","more":35,"start":0},"promptText":"Omar puts a toy frog at 0 on a number line. The frog jumps 5 spaces at a time. What number is the frog on after 7 jumps?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0419",
@@ -4502,7 +4502,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"countOn","more":18,"start":0},"promptText":"Ben hops along the path 3 tiles at a time and makes 6 hops from the start. Which tile does Ben land on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"countOn","more":18,"start":0},"promptText":"On a number line, Ben starts at 0 and jumps 3 at a time. What number does Ben land on after 6 jumps?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0420",
@@ -4512,7 +4512,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"kind":"countOn","more":24,"start":0},"promptText":"Finn climbs 4 rungs per move and makes 6 moves up the ladder. Which rung is Finn on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"kind":"countOn","more":24,"start":0},"promptText":"Finn's toy robot starts at 0 on a number line and moves 4 spaces at a time. What number is the robot on after 6 moves?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0421",
@@ -4522,7 +4522,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"counting":{"kind":"countOn","more":60,"start":0},"promptText":"Priya hops along the path 10 tiles at a time and makes 6 hops from the start. Which tile does Priya land on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"counting":{"kind":"countOn","more":60,"start":0},"promptText":"Priya starts at 0 on a number line and makes 6 jumps of 10. What number does Priya land on?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0422",
@@ -4532,7 +4532,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"kind":"countOn","more":40,"start":0},"promptText":"Sam climbs 5 rungs per move and makes 8 moves up the ladder. Which rung is Sam on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"kind":"countOn","more":40,"start":0},"promptText":"Sam puts a toy frog at 0 on a number line. The frog jumps 5 spaces at a time. What number is the frog on after 8 jumps?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0423",
@@ -4542,7 +4542,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"counting":{"kind":"countOn","more":21,"start":0},"promptText":"Nia hops along the path 3 tiles at a time and makes 7 hops from the start. Which tile does Nia land on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"counting":{"kind":"countOn","more":21,"start":0},"promptText":"On a number line, Nia starts at 0 and jumps 3 at a time. What number does Nia land on after 7 jumps?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0424",
@@ -4552,7 +4552,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"counting":{"kind":"countOn","more":28,"start":0},"promptText":"Kai climbs 4 rungs per move and makes 7 moves up the ladder. Which rung is Kai on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"counting":{"kind":"countOn","more":28,"start":0},"promptText":"Kai's toy robot starts at 0 on a number line and moves 4 spaces at a time. What number is the robot on after 7 moves?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0425",
@@ -4562,7 +4562,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"counting":{"kind":"countOn","more":70,"start":0},"promptText":"June hops along the path 10 tiles at a time and makes 7 hops from the start. Which tile does June land on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"counting":{"kind":"countOn","more":70,"start":0},"promptText":"June starts at 0 on a number line and makes 7 jumps of 10. What number does June land on?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0426",
@@ -4572,7 +4572,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"kind":"countOn","more":24,"start":0},"promptText":"Theo climbs 6 rungs per move and makes 4 moves up the ladder. Which rung is Theo on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"kind":"countOn","more":24,"start":0},"promptText":"Theo puts a toy frog at 0 on a number line. The frog jumps 6 spaces at a time. What number is the frog on after 4 jumps?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0427",
@@ -4582,7 +4582,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"counting":{"kind":"countOn","more":100,"start":0},"promptText":"Ida hops along the path 25 tiles at a time and makes 4 hops from the start. Which tile does Ida land on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"counting":{"kind":"countOn","more":100,"start":0},"promptText":"On a number line, Ida starts at 0 and jumps 25 at a time. What number does Ida land on after 4 jumps?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0428",
@@ -4592,7 +4592,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"counting":{"kind":"countOn","more":200,"start":0},"promptText":"Zoe climbs 50 rungs per move and makes 4 moves up the ladder. Which rung is Zoe on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"counting":{"kind":"countOn","more":200,"start":0},"promptText":"Zoe's toy robot starts at 0 on a number line and moves 50 spaces at a time. What number is the robot on after 4 moves?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0429",
@@ -4602,7 +4602,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":400,"display":{"counting":{"kind":"countOn","more":400,"start":0},"promptText":"Rosa hops along the path 100 tiles at a time and makes 4 hops from the start. Which tile does Rosa land on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":400,"display":{"counting":{"kind":"countOn","more":400,"start":0},"promptText":"Rosa starts at 0 on a number line and makes 4 jumps of 100. What number does Rosa land on?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0430",
@@ -4612,7 +4612,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"counting":{"kind":"countOn","more":30,"start":0},"promptText":"Diego climbs 6 rungs per move and makes 5 moves up the ladder. Which rung is Diego on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"counting":{"kind":"countOn","more":30,"start":0},"promptText":"Diego puts a toy frog at 0 on a number line. The frog jumps 6 spaces at a time. What number is the frog on after 5 jumps?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0431",
@@ -4622,7 +4622,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":125,"display":{"counting":{"kind":"countOn","more":125,"start":0},"promptText":"Nora hops along the path 25 tiles at a time and makes 5 hops from the start. Which tile does Nora land on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":125,"display":{"counting":{"kind":"countOn","more":125,"start":0},"promptText":"On a number line, Nora starts at 0 and jumps 25 at a time. What number does Nora land on after 5 jumps?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0432",
@@ -4632,7 +4632,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":250,"display":{"counting":{"kind":"countOn","more":250,"start":0},"promptText":"Luca climbs 50 rungs per move and makes 5 moves up the ladder. Which rung is Luca on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":250,"display":{"counting":{"kind":"countOn","more":250,"start":0},"promptText":"Luca's toy robot starts at 0 on a number line and moves 50 spaces at a time. What number is the robot on after 5 moves?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0433",
@@ -4642,7 +4642,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":500,"display":{"counting":{"kind":"countOn","more":500,"start":0},"promptText":"Ava hops along the path 100 tiles at a time and makes 5 hops from the start. Which tile does Ava land on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":500,"display":{"counting":{"kind":"countOn","more":500,"start":0},"promptText":"Ava starts at 0 on a number line and makes 5 jumps of 100. What number does Ava land on?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0434",
@@ -4652,7 +4652,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"counting":{"kind":"countOn","more":36,"start":0},"promptText":"Omar climbs 6 rungs per move and makes 6 moves up the ladder. Which rung is Omar on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"counting":{"kind":"countOn","more":36,"start":0},"promptText":"Omar puts a toy frog at 0 on a number line. The frog jumps 6 spaces at a time. What number is the frog on after 6 jumps?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0435",
@@ -4662,7 +4662,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":150,"display":{"counting":{"kind":"countOn","more":150,"start":0},"promptText":"Ben hops along the path 25 tiles at a time and makes 6 hops from the start. Which tile does Ben land on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":150,"display":{"counting":{"kind":"countOn","more":150,"start":0},"promptText":"On a number line, Ben starts at 0 and jumps 25 at a time. What number does Ben land on after 6 jumps?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0436",
@@ -4672,7 +4672,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":300,"display":{"counting":{"kind":"countOn","more":300,"start":0},"promptText":"Finn climbs 50 rungs per move and makes 6 moves up the ladder. Which rung is Finn on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":300,"display":{"counting":{"kind":"countOn","more":300,"start":0},"promptText":"Finn's toy robot starts at 0 on a number line and moves 50 spaces at a time. What number is the robot on after 6 moves?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0437",
@@ -4682,7 +4682,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":600,"display":{"counting":{"kind":"countOn","more":600,"start":0},"promptText":"Priya hops along the path 100 tiles at a time and makes 6 hops from the start. Which tile does Priya land on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":600,"display":{"counting":{"kind":"countOn","more":600,"start":0},"promptText":"Priya starts at 0 on a number line and makes 6 jumps of 100. What number does Priya land on?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0438",
@@ -4692,7 +4692,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"counting":{"kind":"countOn","more":42,"start":0},"promptText":"Sam climbs 6 rungs per move and makes 7 moves up the ladder. Which rung is Sam on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"counting":{"kind":"countOn","more":42,"start":0},"promptText":"Sam puts a toy frog at 0 on a number line. The frog jumps 6 spaces at a time. What number is the frog on after 7 jumps?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0439",
@@ -4702,7 +4702,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":175,"display":{"counting":{"kind":"countOn","more":175,"start":0},"promptText":"Nia hops along the path 25 tiles at a time and makes 7 hops from the start. Which tile does Nia land on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":175,"display":{"counting":{"kind":"countOn","more":175,"start":0},"promptText":"On a number line, Nia starts at 0 and jumps 25 at a time. What number does Nia land on after 7 jumps?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0440",
@@ -4712,7 +4712,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":350,"display":{"counting":{"kind":"countOn","more":350,"start":0},"promptText":"Kai climbs 50 rungs per move and makes 7 moves up the ladder. Which rung is Kai on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":350,"display":{"counting":{"kind":"countOn","more":350,"start":0},"promptText":"Kai's toy robot starts at 0 on a number line and moves 50 spaces at a time. What number is the robot on after 7 moves?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0441",
@@ -4722,7 +4722,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":700,"display":{"counting":{"kind":"countOn","more":700,"start":0},"promptText":"June hops along the path 100 tiles at a time and makes 7 hops from the start. Which tile does June land on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":700,"display":{"counting":{"kind":"countOn","more":700,"start":0},"promptText":"June starts at 0 on a number line and makes 7 jumps of 100. What number does June land on?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0442",
@@ -4732,7 +4732,7 @@ export const ITEMS = [
     structureType: "storyLandOn",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"counting":{"kind":"countOn","more":48,"start":0},"promptText":"Lily climbs 6 rungs per move and makes 8 moves up the ladder. Which rung is Lily on?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"counting":{"kind":"countOn","more":48,"start":0},"promptText":"Lily puts a toy frog at 0 on a number line. The frog jumps 6 spaces at a time. What number is the frog on after 8 jumps?"},"answerType":"numberPad"},
   },
   {
     itemId: "skipCounting-app-b0821-0443",
@@ -4742,7 +4742,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Mina says 4 ants with 6 legs each make 24 legs. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Mina says 4 ants with 6 legs each make 30 legs. Is Mina right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0444",
@@ -4752,7 +4752,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Theo skip counts the cents on 4 quarters and gets 125. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Theo skip counts the cents in 4 quarters and gets 100. Is Theo right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0445",
@@ -4762,7 +4762,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ida says 4 half-dollars with 50 cents each make 200 cents. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ida skip counts the cents in 4 half-dollars and gets 150. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0446",
@@ -4772,7 +4772,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe skip counts the cents on 4 dollar coins and gets 500. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Zoe says 4 dollar coins with 100 cents each make 400 cents. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0447",
@@ -4782,7 +4782,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa says 5 ants with 6 legs each make 30 legs. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Rosa says 5 ants with 6 legs each make 36 legs. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0448",
@@ -4792,7 +4792,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Diego skip counts the cents on 5 quarters and gets 150. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Diego skip counts the cents in 5 quarters and gets 125. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0449",
@@ -4802,7 +4802,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nora says 5 half-dollars with 50 cents each make 250 cents. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nora skip counts the cents in 5 half-dollars and gets 200. Is Nora right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0450",
@@ -4812,7 +4812,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Luca skip counts the cents on 5 dollar coins and gets 600. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Luca says 5 dollar coins with 100 cents each make 500 cents. Is Luca right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0451",
@@ -4832,7 +4832,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Omar skip counts the cents on 6 quarters and gets 175. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Omar skip counts the cents in 6 quarters and gets 175. Is Omar right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0453",
@@ -4842,7 +4842,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ben says 6 half-dollars with 50 cents each make 300 cents. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ben skip counts the cents in 6 half-dollars and gets 300. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0454",
@@ -4852,7 +4852,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn skip counts the cents on 6 dollar coins and gets 700. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn says 6 dollar coins with 100 cents each make 700 cents. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0455",
@@ -4862,7 +4862,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Priya says 7 ants with 6 legs each make 42 legs. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Priya says 7 ants with 6 legs each make 42 legs. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0456",
@@ -4872,7 +4872,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Sam skip counts the cents on 7 quarters and gets 200. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Sam skip counts the cents in 7 quarters and gets 200. Is that right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0457",
@@ -4882,7 +4882,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nia says 7 half-dollars with 50 cents each make 350 cents. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nia skip counts the cents in 7 half-dollars and gets 350. Is Nia right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0458",
@@ -4892,7 +4892,7 @@ export const ITEMS = [
     structureType: "storyGroupsClaim",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Kai skip counts the cents on 7 dollar coins and gets 800. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Kai says 7 dollar coins with 100 cents each make 800 cents. Is Kai right?"}},
   },
   {
     itemId: "skipCounting-app-b0821-0459",
@@ -6762,7 +6762,7 @@ export const ITEMS = [
     structureType: "oddOneOutNotMultiple",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[2,4,5,6],"display":{"promptText":"Ida wrote 2, 4, 5, 6 while counting by 2s. Which number is NOT in that count?"}},
+    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[2,4,5,6],"display":{"promptText":"Ida wrote 2, 4, 5, 6 while counting by 2s. Which number is not in that count?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0056",
@@ -6772,7 +6772,7 @@ export const ITEMS = [
     structureType: "oddOneOutNotMultiple",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[10,15,5,12],"display":{"promptText":"One of Zoe's numbers 10, 15, 5, 12 does not belong to the 5s count. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[10,15,5,12],"display":{"promptText":"Zoe wrote 10, 15, 5, 12. Which number is not in the count by 5s?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0057",
@@ -6782,7 +6782,7 @@ export const ITEMS = [
     structureType: "oddOneOutNotMultiple",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[8,10,9,6],"display":{"promptText":"Rosa wrote 8, 10, 9, 6 while counting by 2s. Which number is NOT in that count?"}},
+    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[8,10,9,6],"display":{"promptText":"Rosa wrote 8, 10, 9, 6 while counting by 2s. Which number is not in that count?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0058",
@@ -6792,7 +6792,7 @@ export const ITEMS = [
     structureType: "oddOneOutNotMultiple",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[15,17,10,20],"display":{"promptText":"One of Diego's numbers 15, 17, 10, 20 does not belong to the 5s count. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[15,17,10,20],"display":{"promptText":"Diego wrote 15, 17, 10, 20. Which number is not in the count by 5s?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0059",
@@ -6802,7 +6802,7 @@ export const ITEMS = [
     structureType: "oddOneOutNotMultiple",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[12,13,14,10],"display":{"promptText":"Nora wrote 12, 13, 14, 10 while counting by 2s. Which number is NOT in that count?"}},
+    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[12,13,14,10],"display":{"promptText":"Nora wrote 12, 13, 14, 10 while counting by 2s. Which number is not in that count?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0060",
@@ -6812,7 +6812,7 @@ export const ITEMS = [
     structureType: "oddOneOutNotMultiple",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[6,8,4,7],"display":{"promptText":"One of Luca's numbers 6, 8, 4, 7 does not belong to the 2s count. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[6,8,4,7],"display":{"promptText":"Luca wrote 6, 8, 4, 7. Which number is not in the count by 2s?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0061",
@@ -6822,7 +6822,7 @@ export const ITEMS = [
     structureType: "oddOneOutNotMultiple",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"choices":[10,8,12,11],"display":{"promptText":"Ava wrote 10, 8, 12, 11 while counting by 2s. Which number is NOT in that count?"}},
+    question: {"a":null,"b":null,"op":"count","answer":11,"choices":[10,8,12,11],"display":{"promptText":"Ava wrote 10, 8, 12, 11 while counting by 2s. Which number is not in that count?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0062",
@@ -6832,7 +6832,7 @@ export const ITEMS = [
     structureType: "oddOneOutNotMultiple",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"choices":[15,14,12,16],"display":{"promptText":"One of Omar's numbers 15, 14, 12, 16 does not belong to the 2s count. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":15,"choices":[15,14,12,16],"display":{"promptText":"Omar wrote 15, 14, 12, 16. Which number is not in the count by 2s?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0063",
@@ -6842,7 +6842,7 @@ export const ITEMS = [
     structureType: "oddOneOutNotMultiple",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[18,14,17,16],"display":{"promptText":"Ben wrote 18, 14, 17, 16 while counting by 2s. Which number is NOT in that count?"}},
+    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[18,14,17,16],"display":{"promptText":"Ben wrote 18, 14, 17, 16 while counting by 2s. Which number is not in that count?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0064",
@@ -6852,7 +6852,7 @@ export const ITEMS = [
     structureType: "oddOneOutNotMultiple",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"choices":[20,19,18,16],"display":{"promptText":"One of Finn's numbers 20, 19, 18, 16 does not belong to the 2s count. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":19,"choices":[20,19,18,16],"display":{"promptText":"Finn wrote 20, 19, 18, 16. Which number is not in the count by 2s?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0065",
@@ -6862,7 +6862,7 @@ export const ITEMS = [
     structureType: "oddOneOutNotMultiple",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[10,12,15,5],"display":{"promptText":"Priya wrote 10, 12, 15, 5 while counting by 5s. Which number is NOT in that count?"}},
+    question: {"a":null,"b":null,"op":"count","answer":12,"choices":[10,12,15,5],"display":{"promptText":"Priya wrote 10, 12, 15, 5 while counting by 5s. Which number is not in that count?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0066",
@@ -6872,7 +6872,7 @@ export const ITEMS = [
     structureType: "oddOneOutNotMultiple",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[2,5,6,4],"display":{"promptText":"One of Sam's numbers 2, 5, 6, 4 does not belong to the 2s count. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[2,5,6,4],"display":{"promptText":"Sam wrote 2, 5, 6, 4. Which number is not in the count by 2s?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0067",
@@ -6882,7 +6882,7 @@ export const ITEMS = [
     structureType: "oddOneOutNotMultiple",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[10,17,20,15],"display":{"promptText":"Nia wrote 10, 17, 20, 15 while counting by 5s. Which number is NOT in that count?"}},
+    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[10,17,20,15],"display":{"promptText":"Nia wrote 10, 17, 20, 15 while counting by 5s. Which number is not in that count?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0068",
@@ -6892,7 +6892,7 @@ export const ITEMS = [
     structureType: "oddOneOutNotMultiple",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[10,9,8,6],"display":{"promptText":"One of Kai's numbers 10, 9, 8, 6 does not belong to the 2s count. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[10,9,8,6],"display":{"promptText":"Kai wrote 10, 9, 8, 6. Which number is not in the count by 2s?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0069",
@@ -6902,7 +6902,7 @@ export const ITEMS = [
     structureType: "oddOneOutNotMultiple",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[13,12,14,10],"display":{"promptText":"June wrote 13, 12, 14, 10 while counting by 2s. Which number is NOT in that count?"}},
+    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[13,12,14,10],"display":{"promptText":"June wrote 13, 12, 14, 10 while counting by 2s. Which number is not in that count?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0070",
@@ -6912,7 +6912,7 @@ export const ITEMS = [
     structureType: "oddOneOutNotMultiple",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[18,14,16,17],"display":{"promptText":"One of Lily's numbers 18, 14, 16, 17 does not belong to the 2s count. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[18,14,16,17],"display":{"promptText":"Lily wrote 18, 14, 16, 17. Which number is not in the count by 2s?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0071",
@@ -6932,7 +6932,7 @@ export const ITEMS = [
     structureType: "oddOneOutThreesFours",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"choices":[12,16,8,14],"display":{"promptText":"One of Zoe's numbers 12, 16, 8, 14 does not belong to the 4s count. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":14,"choices":[12,16,8,14],"display":{"promptText":"Which of Zoe's numbers do you not say when you count by 4s: 12, 16, 8, 14?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0073",
@@ -6952,7 +6952,7 @@ export const ITEMS = [
     structureType: "oddOneOutThreesFours",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"choices":[16,18,20,12],"display":{"promptText":"One of Diego's numbers 16, 18, 20, 12 does not belong to the 4s count. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":18,"choices":[16,18,20,12],"display":{"promptText":"Which of Diego's numbers do you not say when you count by 4s: 16, 18, 20, 12?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0075",
@@ -6972,7 +6972,7 @@ export const ITEMS = [
     structureType: "oddOneOutThreesFours",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":22,"choices":[22,24,16,20],"display":{"promptText":"One of Luca's numbers 22, 24, 16, 20 does not belong to the 4s count. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":22,"choices":[22,24,16,20],"display":{"promptText":"Which of Luca's numbers do you not say when you count by 4s: 22, 24, 16, 20?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0077",
@@ -6992,7 +6992,7 @@ export const ITEMS = [
     structureType: "oddOneOutThreesFours",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":26,"choices":[28,24,20,26],"display":{"promptText":"One of Omar's numbers 28, 24, 20, 26 does not belong to the 4s count. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":26,"choices":[28,24,20,26],"display":{"promptText":"Which of Omar's numbers do you not say when you count by 4s: 28, 24, 20, 26?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0079",
@@ -7012,7 +7012,7 @@ export const ITEMS = [
     structureType: "oddOneOutThreesFours",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"choices":[32,30,28,24],"display":{"promptText":"One of Finn's numbers 32, 30, 28, 24 does not belong to the 4s count. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":30,"choices":[32,30,28,24],"display":{"promptText":"Which of Finn's numbers do you not say when you count by 4s: 32, 30, 28, 24?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0081",
@@ -7032,7 +7032,7 @@ export const ITEMS = [
     structureType: "oddOneOutThreesFours",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"choices":[36,34,32,28],"display":{"promptText":"One of Sam's numbers 36, 34, 32, 28 does not belong to the 4s count. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":34,"choices":[36,34,32,28],"display":{"promptText":"Which of Sam's numbers do you not say when you count by 4s: 36, 34, 32, 28?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0083",
@@ -7052,7 +7052,7 @@ export const ITEMS = [
     structureType: "oddOneOutThreesFours",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"choices":[36,32,38,40],"display":{"promptText":"One of Kai's numbers 36, 32, 38, 40 does not belong to the 4s count. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":38,"choices":[36,32,38,40],"display":{"promptText":"Which of Kai's numbers do you not say when you count by 4s: 36, 32, 38, 40?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0085",
@@ -7072,7 +7072,7 @@ export const ITEMS = [
     structureType: "oddOneOutThreesFours",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":42,"choices":[42,44,36,40],"display":{"promptText":"One of Lily's numbers 42, 44, 36, 40 does not belong to the 4s count. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":42,"choices":[42,44,36,40],"display":{"promptText":"Which of Lily's numbers do you not say when you count by 4s: 42, 44, 36, 40?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0087",
@@ -7092,7 +7092,7 @@ export const ITEMS = [
     structureType: "oddOneOutBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":87,"choices":[100,87,75,50],"display":{"promptText":"One of Zoe's numbers 100, 87, 75, 50 does not belong to the 25s count. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":87,"choices":[100,87,75,50],"display":{"promptText":"Look at Zoe's numbers: 100, 87, 75, 50. Which number does not belong when you count by 25s?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0089",
@@ -7112,7 +7112,7 @@ export const ITEMS = [
     structureType: "oddOneOutBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":350,"choices":[200,350,400,300],"display":{"promptText":"One of Diego's numbers 200, 350, 400, 300 does not belong to the 100s count. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":350,"choices":[200,350,400,300],"display":{"promptText":"Look at Diego's numbers: 200, 350, 400, 300. Which number does not belong when you count by 100s?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0091",
@@ -7132,7 +7132,7 @@ export const ITEMS = [
     structureType: "oddOneOutBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":112,"choices":[125,100,75,112],"display":{"promptText":"One of Luca's numbers 125, 100, 75, 112 does not belong to the 25s count. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":112,"choices":[125,100,75,112],"display":{"promptText":"Look at Luca's numbers: 125, 100, 75, 112. Which number does not belong when you count by 25s?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0093",
@@ -7152,7 +7152,7 @@ export const ITEMS = [
     structureType: "oddOneOutBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":450,"choices":[450,400,500,300],"display":{"promptText":"One of Omar's numbers 450, 400, 500, 300 does not belong to the 100s count. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":450,"choices":[450,400,500,300],"display":{"promptText":"Look at Omar's numbers: 450, 400, 500, 300. Which number does not belong when you count by 100s?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0095",
@@ -7172,7 +7172,7 @@ export const ITEMS = [
     structureType: "oddOneOutBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":137,"choices":[137,125,150,100],"display":{"promptText":"One of Finn's numbers 137, 125, 150, 100 does not belong to the 25s count. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":137,"choices":[137,125,150,100],"display":{"promptText":"Look at Finn's numbers: 137, 125, 150, 100. Which number does not belong when you count by 25s?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0097",
@@ -7192,7 +7192,7 @@ export const ITEMS = [
     structureType: "oddOneOutBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":550,"choices":[600,400,500,550],"display":{"promptText":"One of Sam's numbers 600, 400, 500, 550 does not belong to the 100s count. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":550,"choices":[600,400,500,550],"display":{"promptText":"Look at Sam's numbers: 600, 400, 500, 550. Which number does not belong when you count by 100s?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0099",
@@ -7212,7 +7212,7 @@ export const ITEMS = [
     structureType: "oddOneOutBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":162,"choices":[125,150,175,162],"display":{"promptText":"One of Kai's numbers 125, 150, 175, 162 does not belong to the 25s count. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":162,"choices":[125,150,175,162],"display":{"promptText":"Look at Kai's numbers: 125, 150, 175, 162. Which number does not belong when you count by 25s?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0101",
@@ -7232,7 +7232,7 @@ export const ITEMS = [
     structureType: "oddOneOutBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":650,"choices":[700,500,600,650],"display":{"promptText":"One of Lily's numbers 700, 500, 600, 650 does not belong to the 100s count. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":650,"choices":[700,500,600,650],"display":{"promptText":"Look at Lily's numbers: 700, 500, 600, 650. Which number does not belong when you count by 100s?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0103",
@@ -7242,7 +7242,7 @@ export const ITEMS = [
     structureType: "nextClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Theo counts 2, 4, 6 and says 8 comes next. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Skip count: 2, 4, 6. Theo says 8 comes next. Is Theo right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0104",
@@ -7252,7 +7252,7 @@ export const ITEMS = [
     structureType: "nextClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ida continues the count 4, 6, 8 with 11. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ida counts 4, 6, 8, then says 11. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0105",
@@ -7262,7 +7262,7 @@ export const ITEMS = [
     structureType: "nextClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Zoe counts 0, 5, 10 and says 15 comes next. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Zoe counts 0, 5, 10, then says 15. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0106",
@@ -7272,7 +7272,7 @@ export const ITEMS = [
     structureType: "nextClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Rosa continues the count 0, 5, 10 with 17. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Skip count: 0, 5, 10. Rosa says 17 comes next. Is Rosa right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0107",
@@ -7282,7 +7282,7 @@ export const ITEMS = [
     structureType: "nextClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Diego counts 0, 2, 4 and says 6 comes next. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Skip count: 0, 2, 4. Diego says 6 comes next. Is Diego right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0108",
@@ -7292,7 +7292,7 @@ export const ITEMS = [
     structureType: "nextClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nora continues the count 6, 8, 10 with 13. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nora counts 6, 8, 10, then says 13. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0109",
@@ -7302,7 +7302,7 @@ export const ITEMS = [
     structureType: "nextClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Luca counts 8, 10, 12 and says 14 comes next. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Luca counts 8, 10, 12, then says 14. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0110",
@@ -7312,7 +7312,7 @@ export const ITEMS = [
     structureType: "nextClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ava continues the count 10, 12, 14 with 17. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Skip count: 10, 12, 14. Ava says 17 comes next. Is Ava right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0111",
@@ -7322,7 +7322,7 @@ export const ITEMS = [
     structureType: "nextClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Omar counts 12, 14, 16 and says 18 comes next. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Skip count: 12, 14, 16. Omar says 18 comes next. Is Omar right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0112",
@@ -7332,7 +7332,7 @@ export const ITEMS = [
     structureType: "nextClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ben continues the count 3, 5, 7 with 10. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ben counts 3, 5, 7, then says 10. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0113",
@@ -7342,7 +7342,7 @@ export const ITEMS = [
     structureType: "nextClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Finn counts 1, 3, 5 and says 7 comes next. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Finn counts 1, 3, 5, then says 7. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0114",
@@ -7352,7 +7352,7 @@ export const ITEMS = [
     structureType: "nextClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Priya continues the count 5, 7, 9 with 12. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Skip count: 5, 7, 9. Priya says 12 comes next. Is Priya right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0115",
@@ -7362,7 +7362,7 @@ export const ITEMS = [
     structureType: "nextClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Sam counts 7, 9, 11 and says 13 comes next. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Skip count: 7, 9, 11. Sam says 13 comes next. Is Sam right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0116",
@@ -7372,7 +7372,7 @@ export const ITEMS = [
     structureType: "nextClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nia continues the count 9, 11, 13 with 16. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nia counts 9, 11, 13, then says 16. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0117",
@@ -7382,7 +7382,7 @@ export const ITEMS = [
     structureType: "nextClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Kai counts 11, 13, 15 and says 17 comes next. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Kai counts 11, 13, 15, then says 17. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0118",
@@ -7392,7 +7392,7 @@ export const ITEMS = [
     structureType: "nextClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"June continues the count 2, 7, 12 with 19. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Skip count: 2, 7, 12. June says 19 comes next. Is June right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0119",
@@ -7402,7 +7402,7 @@ export const ITEMS = [
     structureType: "nextClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Lily counts 13, 15, 17 and says 19 comes next. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Skip count: 13, 15, 17. Lily says 19 comes next. Is Lily right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0120",
@@ -7412,7 +7412,7 @@ export const ITEMS = [
     structureType: "nextClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Amara continues the count 12, 14, 16 with 19. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Amara counts 12, 14, 16, then says 19. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0121",
@@ -7422,7 +7422,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Theo counts 3, 6, 9 and says 12 comes next. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Skip count: 3, 6, 9. Theo says 13 comes next. Is Theo right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0122",
@@ -7432,7 +7432,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ida continues the count 6, 9, 12 with 17. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ida counts 6, 9, 12, then says 17. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0123",
@@ -7442,7 +7442,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Zoe counts 4, 8, 12 and says 16 comes next. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Zoe counts 4, 8, 12, then says 16. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0124",
@@ -7452,7 +7452,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Rosa continues the count 8, 12, 16 with 22. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Skip count: 8, 12, 16. Rosa says 20 comes next. Is Rosa right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0125",
@@ -7462,7 +7462,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Diego counts 9, 12, 15 and says 18 comes next. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Skip count: 9, 12, 15. Diego says 17 comes next. Is Diego right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0126",
@@ -7472,7 +7472,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nora continues the count 12, 16, 20 with 26. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nora counts 12, 16, 20, then says 24. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0127",
@@ -7482,7 +7482,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Luca counts 0, 3, 6 and says 9 comes next. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Luca counts 0, 3, 6, then says 10. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0128",
@@ -7492,7 +7492,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ava continues the count 0, 4, 8 with 14. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Skip count: 0, 4, 8. Ava says 12 comes next. Is Ava right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0129",
@@ -7502,7 +7502,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Omar counts 12, 15, 18 and says 21 comes next. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Skip count: 12, 15, 18. Omar says 21 comes next. Is Omar right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0130",
@@ -7512,7 +7512,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ben continues the count 16, 20, 24 with 30. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ben counts 16, 20, 24, then says 30. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0131",
@@ -7522,7 +7522,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Finn counts 15, 18, 21 and says 24 comes next. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Finn counts 15, 18, 21, then says 24. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0132",
@@ -7532,7 +7532,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Priya continues the count 20, 24, 28 with 34. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Skip count: 20, 24, 28. Priya says 34 comes next. Is Priya right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0133",
@@ -7542,7 +7542,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Sam counts 18, 21, 24 and says 27 comes next. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Skip count: 18, 21, 24. Sam says 27 comes next. Is Sam right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0134",
@@ -7552,7 +7552,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nia continues the count 24, 28, 32 with 38. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nia counts 24, 28, 32, then says 38. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0135",
@@ -7562,7 +7562,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Kai counts 21, 24, 27 and says 30 comes next. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Kai counts 21, 24, 27, then says 30. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0136",
@@ -7572,7 +7572,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"June continues the count 28, 32, 36 with 42. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Skip count: 28, 32, 36. June says 42 comes next. Is June right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0137",
@@ -7582,7 +7582,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Theo counts 6, 12, 18 and says 24 comes next. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Skip count: 6, 12, 18. Theo says 25 comes next. Is Theo right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0138",
@@ -7592,7 +7592,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ida continues the count 12, 18, 24 with 32. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ida counts 12, 18, 24, then says 32. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0139",
@@ -7602,7 +7602,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Zoe counts 25, 50, 75 and says 100 comes next. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Zoe counts 25, 50, 75, then says 100. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0140",
@@ -7612,7 +7612,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Rosa continues the count 50, 75, 100 with 127. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Skip count: 50, 75, 100. Rosa says 125 comes next. Is Rosa right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0141",
@@ -7622,7 +7622,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Diego counts 50, 100, 150 and says 200 comes next. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Skip count: 50, 100, 150. Diego says 250 comes next. Is Diego right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0142",
@@ -7632,7 +7632,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nora continues the count 100, 150, 200 with 252. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nora counts 100, 150, 200, then says 252. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0143",
@@ -7642,7 +7642,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Luca counts 100, 200, 300 and says 400 comes next. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Luca counts 100, 200, 300, then says 400. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0144",
@@ -7652,7 +7652,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ava continues the count 200, 300, 400 with 502. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Skip count: 200, 300, 400. Ava says 500 comes next. Is Ava right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0145",
@@ -7662,7 +7662,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Omar counts 18, 24, 30 and says 36 comes next. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Skip count: 18, 24, 30. Omar says 36 comes next. Is Omar right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0146",
@@ -7672,7 +7672,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ben continues the count 75, 100, 125 with 152. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ben counts 75, 100, 125, then says 152. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0147",
@@ -7682,7 +7682,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Finn counts 150, 200, 250 and says 300 comes next. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Finn counts 150, 200, 250, then says 300. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0148",
@@ -7692,7 +7692,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Priya continues the count 300, 400, 500 with 602. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Skip count: 300, 400, 500. Priya says 602 comes next. Is Priya right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0149",
@@ -7702,7 +7702,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Sam counts 24, 30, 36 and says 42 comes next. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Skip count: 24, 30, 36. Sam says 42 comes next. Is Sam right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0150",
@@ -7712,7 +7712,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nia continues the count 125, 150, 175 with 202. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nia counts 125, 150, 175, then says 202. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0151",
@@ -7722,7 +7722,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Kai counts 200, 250, 300 and says 350 comes next. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Kai counts 200, 250, 300, then says 350. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0152",
@@ -7732,7 +7732,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"June continues the count 400, 500, 600 with 702. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Skip count: 400, 500, 600. June says 702 comes next. Is June right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0153",
@@ -7742,7 +7742,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Lily counts 30, 36, 42 and says 48 comes next. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Skip count: 30, 36, 42. Lily says 48 comes next. Is Lily right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0154",
@@ -7752,7 +7752,7 @@ export const ITEMS = [
     structureType: "nextClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Amara continues the count 36, 42, 48 with 56. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Amara counts 36, 42, 48, then says 56. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0155",
@@ -8302,7 +8302,7 @@ export const ITEMS = [
     structureType: "errorSkipSlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[2,8,4,7],"display":{"pattern":{"step":2,"start":2,"badIdx":2},"promptText":"Kai skip-counts: 2, 4, 7, 8. One number is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[2,8,4,7],"display":{"pattern":{"step":2,"start":2,"badIdx":2},"promptText":"Kai skip-counts 2, 4, 7, 8, but one number is a mistake. Which number does not fit?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0210",
@@ -8322,7 +8322,7 @@ export const ITEMS = [
     structureType: "errorSkipSlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[2,4,7,0],"display":{"pattern":{"step":2,"start":0,"badIdx":3},"promptText":"Lily skip-counts: 0, 2, 4, 7. One number is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[2,4,7,0],"display":{"pattern":{"step":2,"start":0,"badIdx":3},"promptText":"Lily skip-counts 0, 2, 4, 7, but one number is a mistake. Which number does not fit?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0212",
@@ -8332,7 +8332,7 @@ export const ITEMS = [
     structureType: "errorSkipSlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[7,4,8,10],"display":{"pattern":{"step":2,"start":4,"badIdx":1},"promptText":"Something slipped in Amara's count: 4, 7, 8, 10. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[7,4,8,10],"display":{"pattern":{"step":2,"start":4,"badIdx":1},"promptText":"Something slipped in Amara's count: 4, 7, 8, 10, 12. Which number is wrong?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0213",
@@ -8342,7 +8342,7 @@ export const ITEMS = [
     structureType: "errorSkipSlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[5,17,20,10],"display":{"pattern":{"step":5,"start":5,"badIdx":2},"promptText":"Leo skip-counts: 5, 10, 17, 20. One number is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[5,17,20,10],"display":{"pattern":{"step":5,"start":5,"badIdx":2},"promptText":"Leo skip-counts 5, 10, 17, 20, but one number is a mistake. Which number does not fit?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0214",
@@ -8362,7 +8362,7 @@ export const ITEMS = [
     structureType: "errorSkipSlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"choices":[10,12,8,15],"display":{"pattern":{"step":2,"start":8,"badIdx":3},"promptText":"Theo skip-counts: 8, 10, 12, 15. One number is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":15,"choices":[10,12,8,15],"display":{"pattern":{"step":2,"start":8,"badIdx":3},"promptText":"Theo skip-counts 8, 10, 12, 15, but one number is a mistake. Which number does not fit?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0216",
@@ -8372,7 +8372,7 @@ export const ITEMS = [
     structureType: "errorSkipSlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[14,10,13,16],"display":{"pattern":{"step":2,"start":10,"badIdx":1},"promptText":"Something slipped in Ida's count: 10, 13, 14, 16. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[14,10,13,16],"display":{"pattern":{"step":2,"start":10,"badIdx":1},"promptText":"Something slipped in Ida's count: 10, 13, 14, 16, 18. Which number is wrong?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0217",
@@ -8382,7 +8382,7 @@ export const ITEMS = [
     structureType: "errorSkipSlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[17,14,18,12],"display":{"pattern":{"step":2,"start":12,"badIdx":2},"promptText":"Zoe skip-counts: 12, 14, 17, 18. One number is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[17,14,18,12],"display":{"pattern":{"step":2,"start":12,"badIdx":2},"promptText":"Zoe skip-counts 12, 14, 17, 18, but one number is a mistake. Which number does not fit?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0218",
@@ -8392,7 +8392,7 @@ export const ITEMS = [
     structureType: "errorSkipSlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[0,3,4,6],"display":{"pattern":{"step":2,"start":0,"badIdx":1},"promptText":"Something slipped in Rosa's count: 0, 3, 4, 6. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[0,3,4,6],"display":{"pattern":{"step":2,"start":0,"badIdx":1},"promptText":"Something slipped in Rosa's count: 0, 3, 4, 6, 8. Which number is wrong?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0219",
@@ -8402,7 +8402,7 @@ export const ITEMS = [
     structureType: "errorSkipSlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[6,9,4,2],"display":{"pattern":{"step":2,"start":2,"badIdx":3},"promptText":"Diego skip-counts: 2, 4, 6, 9. One number is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[6,9,4,2],"display":{"pattern":{"step":2,"start":2,"badIdx":3},"promptText":"Diego skip-counts: 2, 4, 6, 9. Which number is wrong?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0220",
@@ -8422,7 +8422,7 @@ export const ITEMS = [
     structureType: "errorSkipSlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[10,12,6,9],"display":{"pattern":{"step":2,"start":6,"badIdx":1},"promptText":"Luca skip-counts: 6, 9, 10, 12. One number is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[10,12,6,9],"display":{"pattern":{"step":2,"start":6,"badIdx":1},"promptText":"Luca skip-counts 6, 9, 10, 12, 14, but one number is a mistake. Which number does not fit?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0222",
@@ -8442,7 +8442,7 @@ export const ITEMS = [
     structureType: "errorSkipSlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[17,10,12,14],"display":{"pattern":{"step":2,"start":10,"badIdx":3},"promptText":"Omar skip-counts: 10, 12, 14, 17. One number is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[17,10,12,14],"display":{"pattern":{"step":2,"start":10,"badIdx":3},"promptText":"Omar skip-counts 10, 12, 14, 17, but one number is a mistake. Which number does not fit?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0224",
@@ -8462,7 +8462,7 @@ export const ITEMS = [
     structureType: "errorSkipSlipMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[8,9,12,3],"display":{"pattern":{"step":3,"start":3,"badIdx":1},"promptText":"Kai skip-counts: 3, 8, 9, 12. One number is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":8,"choices":[8,9,12,3],"display":{"pattern":{"step":3,"start":3,"badIdx":1},"promptText":"Kai skip-counts: 3, 8, 9, 12. Which number is wrong?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0226",
@@ -8482,7 +8482,7 @@ export const ITEMS = [
     structureType: "errorSkipSlipMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[12,17,6,9],"display":{"pattern":{"step":3,"start":6,"badIdx":3},"promptText":"Lily skip-counts: 6, 9, 12, 17. One number is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[12,17,6,9],"display":{"pattern":{"step":3,"start":6,"badIdx":3},"promptText":"Lily skip-counts: 6, 9, 12, 17. Which number is wrong?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0228",
@@ -8492,7 +8492,7 @@ export const ITEMS = [
     structureType: "errorSkipSlipMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"choices":[20,16,14,8],"display":{"pattern":{"step":4,"start":8,"badIdx":1},"promptText":"Something slipped in Amara's count: 8, 14, 16, 20. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":14,"choices":[20,16,14,8],"display":{"pattern":{"step":4,"start":8,"badIdx":1},"promptText":"Something slipped in Amara's count: 8, 14, 16, 20, 24. Which number is wrong?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0229",
@@ -8502,7 +8502,7 @@ export const ITEMS = [
     structureType: "errorSkipSlipMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[18,9,12,17],"display":{"pattern":{"step":3,"start":9,"badIdx":2},"promptText":"Leo skip-counts: 9, 12, 17, 18. One number is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":17,"choices":[18,9,12,17],"display":{"pattern":{"step":3,"start":9,"badIdx":2},"promptText":"Leo skip-counts: 9, 12, 17, 18. Which number is wrong?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0230",
@@ -8522,7 +8522,7 @@ export const ITEMS = [
     structureType: "errorSkipSlipMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[6,5,0,9],"display":{"pattern":{"step":3,"start":0,"badIdx":1},"promptText":"Theo skip-counts: 0, 5, 6, 9. One number is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[6,5,0,9],"display":{"pattern":{"step":3,"start":0,"badIdx":1},"promptText":"Theo skip-counts: 0, 5, 6, 9, 12. Which number is wrong?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0232",
@@ -8542,7 +8542,7 @@ export const ITEMS = [
     structureType: "errorSkipSlipMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":23,"choices":[18,12,15,23],"display":{"pattern":{"step":3,"start":12,"badIdx":3},"promptText":"Zoe skip-counts: 12, 15, 18, 23. One number is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":23,"choices":[18,12,15,23],"display":{"pattern":{"step":3,"start":12,"badIdx":3},"promptText":"Zoe skip-counts: 12, 15, 18, 23. Which number is wrong?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0234",
@@ -8552,7 +8552,7 @@ export const ITEMS = [
     structureType: "errorSkipSlipMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":22,"choices":[28,24,22,16],"display":{"pattern":{"step":4,"start":16,"badIdx":1},"promptText":"Something slipped in Rosa's count: 16, 22, 24, 28. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":22,"choices":[28,24,22,16],"display":{"pattern":{"step":4,"start":16,"badIdx":1},"promptText":"Something slipped in Rosa's count: 16, 22, 24, 28, 32. Which number is wrong?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0235",
@@ -8562,7 +8562,7 @@ export const ITEMS = [
     structureType: "errorSkipSlipMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":23,"choices":[24,23,15,18],"display":{"pattern":{"step":3,"start":15,"badIdx":2},"promptText":"Diego skip-counts: 15, 18, 23, 24. One number is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":23,"choices":[24,23,15,18],"display":{"pattern":{"step":3,"start":15,"badIdx":2},"promptText":"Which number is wrong in Diego's skip count: 15, 18, 23, 24?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0236",
@@ -8582,7 +8582,7 @@ export const ITEMS = [
     structureType: "errorSkipSlipMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":23,"choices":[18,23,27,24],"display":{"pattern":{"step":3,"start":18,"badIdx":1},"promptText":"Luca skip-counts: 18, 23, 24, 27. One number is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":23,"choices":[18,23,27,24],"display":{"pattern":{"step":3,"start":18,"badIdx":1},"promptText":"Luca skip-counts: 18, 23, 24, 27. Which number is wrong?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0238",
@@ -8602,7 +8602,7 @@ export const ITEMS = [
     structureType: "errorSkipSlipMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"choices":[32,21,24,27],"display":{"pattern":{"step":3,"start":21,"badIdx":3},"promptText":"Omar skip-counts: 21, 24, 27, 32. One number is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":32,"choices":[32,21,24,27],"display":{"pattern":{"step":3,"start":21,"badIdx":3},"promptText":"Omar skip-counts: 21, 24, 27, 32. Which number is wrong?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0240",
@@ -8612,7 +8612,7 @@ export const ITEMS = [
     structureType: "errorSkipSlipMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"choices":[36,34,28,40],"display":{"pattern":{"step":4,"start":28,"badIdx":1},"promptText":"Something slipped in Ben's count: 28, 34, 36, 40. Which number is wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":34,"choices":[36,34,28,40],"display":{"pattern":{"step":4,"start":28,"badIdx":1},"promptText":"Something slipped in Ben's count: 28, 34, 36, 40, 44. Which number is wrong?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0241",
@@ -8622,7 +8622,7 @@ export const ITEMS = [
     structureType: "errorSkipSlipMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":22,"choices":[15,10,25,22],"display":{"pattern":{"step":5,"start":10,"badIdx":2},"promptText":"Finn skip-counts: 10, 15, 22, 25. One number is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":22,"choices":[15,10,25,22],"display":{"pattern":{"step":5,"start":10,"badIdx":2},"promptText":"Finn skip-counts: 10, 15, 22, 25. Which number is wrong?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0242",
@@ -8642,7 +8642,7 @@ export const ITEMS = [
     structureType: "errorSkipSlipBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"choices":[6,20,12,24],"display":{"pattern":{"step":6,"start":6,"badIdx":2},"promptText":"Kai skip-counts: 6, 12, 20, 24. One number is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":20,"choices":[6,20,12,24],"display":{"pattern":{"step":6,"start":6,"badIdx":2},"promptText":"Which number is wrong in Kai's skip count: 6, 12, 20, 24?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0244",
@@ -8662,7 +8662,7 @@ export const ITEMS = [
     structureType: "errorSkipSlipBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":152,"choices":[200,152,100,50],"display":{"pattern":{"step":50,"start":50,"badIdx":2},"promptText":"Lily skip-counts: 50, 100, 152, 200. One number is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":152,"choices":[200,152,100,50],"display":{"pattern":{"step":50,"start":50,"badIdx":2},"promptText":"Which number is wrong in Lily's skip count: 50, 100, 152, 200?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0246",
@@ -8682,7 +8682,7 @@ export const ITEMS = [
     structureType: "errorSkipSlipBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"choices":[24,32,18,12],"display":{"pattern":{"step":6,"start":12,"badIdx":3},"promptText":"Leo skip-counts: 12, 18, 24, 32. One number is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":32,"choices":[24,32,18,12],"display":{"pattern":{"step":6,"start":12,"badIdx":3},"promptText":"Which number is wrong in Leo's skip count: 12, 18, 24, 32?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0248",
@@ -8702,7 +8702,7 @@ export const ITEMS = [
     structureType: "errorSkipSlipBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":252,"choices":[150,252,200,100],"display":{"pattern":{"step":50,"start":100,"badIdx":3},"promptText":"Theo skip-counts: 100, 150, 200, 252. One number is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":252,"choices":[150,252,200,100],"display":{"pattern":{"step":50,"start":100,"badIdx":3},"promptText":"Which number is wrong in Theo's skip count: 100, 150, 200, 252?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0250",
@@ -8722,7 +8722,7 @@ export const ITEMS = [
     structureType: "errorSkipSlipBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":26,"choices":[26,30,36,18],"display":{"pattern":{"step":6,"start":18,"badIdx":1},"promptText":"Zoe skip-counts: 18, 26, 30, 36. One number is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":26,"choices":[26,30,36,18],"display":{"pattern":{"step":6,"start":18,"badIdx":1},"promptText":"Which number is wrong in Zoe's skip count: 18, 26, 30, 36?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0252",
@@ -8742,7 +8742,7 @@ export const ITEMS = [
     structureType: "errorSkipSlipBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":52,"choices":[150,0,52,100],"display":{"pattern":{"step":50,"start":0,"badIdx":1},"promptText":"Diego skip-counts: 0, 52, 100, 150. One number is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":52,"choices":[150,0,52,100],"display":{"pattern":{"step":50,"start":0,"badIdx":1},"promptText":"Diego skip-counts 0, 52, 100, 150, but one number is a mistake. Which number does not fit?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0254",
@@ -8762,7 +8762,7 @@ export const ITEMS = [
     structureType: "errorSkipSlipBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"choices":[24,42,30,38],"display":{"pattern":{"step":6,"start":24,"badIdx":2},"promptText":"Luca skip-counts: 24, 30, 38, 42. One number is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":38,"choices":[24,42,30,38],"display":{"pattern":{"step":6,"start":24,"badIdx":2},"promptText":"Which number is wrong in Luca's skip count: 24, 30, 38, 42?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0256",
@@ -8782,7 +8782,7 @@ export const ITEMS = [
     structureType: "errorSkipSlipBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":252,"choices":[300,252,150,200],"display":{"pattern":{"step":50,"start":150,"badIdx":2},"promptText":"Omar skip-counts: 150, 200, 252, 300. One number is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":252,"choices":[300,252,150,200],"display":{"pattern":{"step":50,"start":150,"badIdx":2},"promptText":"Which number is wrong in Omar's skip count: 150, 200, 252, 300?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0258",
@@ -8802,7 +8802,7 @@ export const ITEMS = [
     structureType: "errorSkipSlipBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"choices":[50,36,42,30],"display":{"pattern":{"step":6,"start":30,"badIdx":3},"promptText":"Finn skip-counts: 30, 36, 42, 50. One number is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":50,"choices":[50,36,42,30],"display":{"pattern":{"step":6,"start":30,"badIdx":3},"promptText":"Which number is wrong in Finn's skip count: 30, 36, 42, 50?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0260",
@@ -10492,7 +10492,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn counts 4 jumps of 2 and lands on 10. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn counts 4 jumps of 2 and lands on 10. Is Finn right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0429",
@@ -10502,7 +10502,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Priya says 3 groups of 5 make 15 when you skip count. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Priya counts 3 jumps of 5 and lands on 15. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0430",
@@ -10512,7 +10512,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Sam counts 2 jumps of 5 and lands on 15. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Sam says 2 groups of 5 make 15 when you skip count. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0431",
@@ -10522,7 +10522,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nia says 2 groups of 10 make 20 when you skip count. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nia says 2 groups of 10 make 20 when you skip count. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0432",
@@ -10542,7 +10542,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"June says 6 groups of 2 make 12 when you skip count. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"June counts 6 jumps of 2 and lands on 12. Is June right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0434",
@@ -10552,7 +10552,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Lily counts 2 jumps of 2 and lands on 6. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Lily says 2 groups of 2 make 6 when you skip count. Is Lily right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0435",
@@ -10572,7 +10572,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Leo counts 3 jumps of 2 and lands on 8. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Leo counts 3 jumps of 2 and lands on 8. Is Leo right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0437",
@@ -10582,7 +10582,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Mina says 8 groups of 2 make 16 when you skip count. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Mina counts 8 jumps of 2 and lands on 16. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0438",
@@ -10592,7 +10592,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Theo counts 4 jumps of 2 and lands on 8. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Theo says 4 groups of 2 make 8 when you skip count. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0439",
@@ -10602,7 +10602,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ida says 9 groups of 2 make 18 when you skip count. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ida counts 9 jumps of 2 and lands on 18. Is Ida right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0440",
@@ -10612,7 +10612,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe counts 6 jumps of 2 and lands on 14. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe says 6 groups of 2 make 14 when you skip count. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0441",
@@ -10642,7 +10642,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nora says 4 groups of 5 make 20 when you skip count. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nora counts 4 jumps of 5 and lands on 20. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0444",
@@ -10652,7 +10652,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Luca counts 3 jumps of 5 and lands on 20. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Luca says 3 groups of 5 make 20 when you skip count. Is Luca right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0445",
@@ -10662,7 +10662,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ben says 3 groups of 3 make 9 when you skip count. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ben says 3 groups of 3 make 12 when you skip count. Is Ben right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0446",
@@ -10672,7 +10672,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn counts 4 jumps of 3 and lands on 15. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Finn counts 4 jumps of 3 and lands on 12. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0447",
@@ -10682,7 +10682,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Priya says 3 groups of 4 make 12 when you skip count. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Priya counts 3 jumps of 4 and lands on 8. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0448",
@@ -10692,7 +10692,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Sam counts 4 jumps of 4 and lands on 20. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Sam says 4 groups of 4 make 16 when you skip count. Is Sam right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0449",
@@ -10722,7 +10722,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"June says 3 groups of 5 make 15 when you skip count. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"June counts 3 jumps of 5 and lands on 15. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0452",
@@ -10732,7 +10732,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Lily counts 4 jumps of 5 and lands on 25. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Lily says 4 groups of 5 make 25 when you skip count. Is Lily right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0453",
@@ -10762,7 +10762,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Mina says 3 groups of 6 make 18 when you skip count. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Mina counts 3 jumps of 6 and lands on 18. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0456",
@@ -10772,7 +10772,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Theo counts 4 jumps of 6 and lands on 30. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Theo says 4 groups of 6 make 30 when you skip count. Is Theo right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0457",
@@ -10802,7 +10802,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa says 3 groups of 7 make 21 when you skip count. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa counts 3 jumps of 7 and lands on 21. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0460",
@@ -10812,7 +10812,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudgeMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Diego counts 4 jumps of 7 and lands on 35. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Diego says 4 groups of 7 make 35 when you skip count. Is Diego right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0461",
@@ -10862,7 +10862,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Priya says 4 groups of 25 make 100 when you skip count. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Priya counts 4 jumps of 25 and lands on 100. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0466",
@@ -10872,7 +10872,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Sam counts 5 jumps of 25 and lands on 150. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Sam says 5 groups of 25 make 150 when you skip count. Is Sam right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0467",
@@ -10902,7 +10902,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"June says 3 groups of 100 make 300 when you skip count. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"June counts 3 jumps of 100 and lands on 300. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0470",
@@ -10912,7 +10912,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Lily counts 4 jumps of 100 and lands on 500. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Lily says 4 groups of 100 make 500 when you skip count. Is Lily right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0471",
@@ -10942,7 +10942,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Mina says 6 groups of 25 make 150 when you skip count. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Mina counts 6 jumps of 25 and lands on 150. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0474",
@@ -10952,7 +10952,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Theo counts 3 jumps of 25 and lands on 100. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Theo says 3 groups of 25 make 100 when you skip count. Is Theo right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0475",
@@ -10982,7 +10982,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa says 5 groups of 100 make 500 when you skip count. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa counts 5 jumps of 100 and lands on 500. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0478",
@@ -10992,7 +10992,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Diego counts 6 jumps of 100 and lands on 700. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Diego says 6 groups of 100 make 700 when you skip count. Is Diego right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0479",
@@ -11022,7 +11022,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ava says 7 groups of 25 make 175 when you skip count. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ava counts 7 jumps of 25 and lands on 175. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0482",
@@ -11032,7 +11032,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Omar counts 8 jumps of 25 and lands on 225. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Omar says 8 groups of 25 make 225 when you skip count. Is Omar right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0483",
@@ -11062,7 +11062,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Priya says 7 groups of 100 make 700 when you skip count. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Priya counts 7 jumps of 100 and lands on 700. Is that right?"}},
   },
   {
     itemId: "skipCounting-conc-b0821-0486",
@@ -11072,7 +11072,7 @@ export const ITEMS = [
     structureType: "groupsClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Sam counts 8 jumps of 100 and lands on 900. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Sam says 8 groups of 100 make 900 when you skip count. Is Sam right?"}},
   },
   {
     itemId: "skipCounting-conc-groupsToProduct-2_3-001",
@@ -11102,7 +11102,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":32,"display":{"step":4,"sequence":[4,8,12,16,20,24,28],"promptText":"Keep skip-counting by 4s to reach 8 groups of 4 wheels."}},
+    question: {"a":null,"b":null,"op":"skip","answer":32,"display":{"step":4,"sequence":[4,8,12,16,20,24,28],"promptText":"Each group has 4 wheels. Skip count by 4s: 4, 8, 12, 16, 20, 24, 28. How many wheels are in 8 groups?"}},
   },
   {
     itemId: "skipCounting-conc-groupsToProduct-2_3-004",
@@ -11122,7 +11122,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":42,"display":{"step":6,"sequence":[6,12,18,24,30,36],"promptText":"Continue the pattern by 6s for 7 boxes of 6 muffins."}},
+    question: {"a":null,"b":null,"op":"skip","answer":42,"display":{"step":6,"sequence":[6,12,18,24,30,36],"promptText":"A box holds 6 muffins. Count by 6s: 6, 12, 18, 24, 30, 36. How many muffins are in 7 boxes?"}},
   },
   {
     itemId: "skipCounting-conc-groupsToProduct-2_3-006",
@@ -11142,7 +11142,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":48,"display":{"step":8,"sequence":[8,16,24,32,40],"promptText":"Skip-count by 8s for 6 cartons of 8 juice boxes."}},
+    question: {"a":null,"b":null,"op":"skip","answer":48,"display":{"step":8,"sequence":[8,16,24,32,40],"promptText":"Each carton has 8 juice boxes. Count by 8s: 8, 16, 24, 32, 40. How many juice boxes are in 6 cartons?"}},
   },
   {
     itemId: "skipCounting-conc-groupsToProduct-2_3-008",
@@ -11152,7 +11152,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":36,"display":{"step":9,"sequence":[9,18,27],"promptText":"Continue counting by 9s to reach 4 rows of 9 stamps."}},
+    question: {"a":null,"b":null,"op":"skip","answer":36,"display":{"step":9,"sequence":[9,18,27],"promptText":"Each row has 9 stamps. Count by 9s: 9, 18, 27. How many stamps are in 4 rows?"}},
   },
   {
     itemId: "skipCounting-conc-groupsToProduct-2_3-009",
@@ -11182,7 +11182,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":350,"display":{"step":50,"sequence":[50,100,150,200,250,300],"promptText":"Continue the pattern by 50s to find the total stickers in 7 rolls of 50."}},
+    question: {"a":null,"b":null,"op":"skip","answer":350,"display":{"step":50,"sequence":[50,100,150,200,250,300],"promptText":"Count by 50s: 50, 100, 150, 200, 250, 300. How many stickers are in 7 rolls of 50 stickers?"}},
   },
   {
     itemId: "skipCounting-conc-groupsToProduct-2_3-013",
@@ -11202,7 +11202,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":66,"display":{"step":11,"sequence":[11,22,33,44,55],"promptText":"Continue counting by 11s to reach 6 teams of 11 players."}},
+    question: {"a":null,"b":null,"op":"skip","answer":66,"display":{"step":11,"sequence":[11,22,33,44,55],"promptText":"There are 11 players on each team. Count by 11s: 11, 22, 33, 44, 55. How many players are on 6 teams?"}},
   },
   {
     itemId: "skipcounting-conc-groupsToProduct-23-001",
@@ -11212,7 +11212,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":20,"display":{"step":4,"sequence":[4,8,12,16],"promptText":"Use skip-counting by 4s for 5 groups of 4."}},
+    question: {"a":null,"b":null,"op":"skip","answer":20,"display":{"step":4,"sequence":[4,8,12,16],"promptText":"Count by 4s: 4, 8, 12, 16. What number do 5 groups of 4 make?"}},
   },
   {
     itemId: "skipcounting-conc-groupsToProduct-23-002",
@@ -11222,7 +11222,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":30,"display":{"step":5,"sequence":[5,10,15,20,25],"promptText":"Use skip-counting by 5s for 6 groups of 5."}},
+    question: {"a":null,"b":null,"op":"skip","answer":30,"display":{"step":5,"sequence":[5,10,15,20,25],"promptText":"Count by 5s to find 6 groups of 5: 5, 10, 15, 20, 25, __. What number goes in the blank?"}},
   },
   {
     itemId: "skipcounting-conc-groupsToProduct-23-003",
@@ -11232,7 +11232,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":24,"display":{"step":6,"sequence":[6,12,18],"promptText":"Use skip-counting by 6s for 4 groups of 6."}},
+    question: {"a":null,"b":null,"op":"skip","answer":24,"display":{"step":6,"sequence":[6,12,18],"promptText":"Skip count by 6s: 6, 12, 18. What do 4 groups of 6 make in all?"}},
   },
   {
     itemId: "skipCounting-conc-groupsToProduct-4_5-001",
@@ -11282,7 +11282,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":160,"display":{"step":40,"sequence":[40,80,120],"promptText":"Keep skip-counting by 40s until you reach 4 groups of 40."}},
+    question: {"a":null,"b":null,"op":"skip","answer":160,"display":{"step":40,"sequence":[40,80,120],"promptText":"Skip count by 40s: 40, 80, 120. What do 4 groups of 40 make in all?"}},
   },
   {
     itemId: "skipCounting-conc-groupsToProduct-4_5-006",
@@ -11302,7 +11302,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":52,"display":{"step":13,"sequence":[13,26,39],"promptText":"Continue the pattern by skip-counting 13s, then name the total for 4 groups of 13."}},
+    question: {"a":null,"b":null,"op":"skip","answer":52,"display":{"step":13,"sequence":[13,26,39],"promptText":"Skip count by 13s: 13, 26, 39. What do 4 groups of 13 make?"}},
   },
   {
     itemId: "skipCounting-conc-groupsToProduct-4_5-008",
@@ -11322,7 +11322,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":64,"display":{"step":16,"sequence":[16,32,48],"promptText":"Count on by 16s and give the total for 4 equal groups of 16."}},
+    question: {"a":null,"b":null,"op":"skip","answer":64,"display":{"step":16,"sequence":[16,32,48],"promptText":"Count by 16s: 16, 32, 48. What number do 4 groups of 16 make?"}},
   },
   {
     itemId: "skipCounting-conc-groupsToProduct-4_5-010",
@@ -11362,7 +11362,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":140,"display":{"step":35,"sequence":[35,70,105],"promptText":"Extend the skip-counting pattern of 35s and state the total for 4 groups of 35."}},
+    question: {"a":null,"b":null,"op":"skip","answer":140,"display":{"step":35,"sequence":[35,70,105],"promptText":"Count by 35s to find 4 groups of 35: 35, 70, 105, __. What number goes in the blank?"}},
   },
   {
     itemId: "skipCounting-conc-groupsToProduct-4_5-014",
@@ -11382,7 +11382,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":300,"display":{"step":75,"sequence":[75,150,225],"promptText":"Use repeated skip-counting by 75s to reach the total of 4 groups of 75."}},
+    question: {"a":null,"b":null,"op":"skip","answer":300,"display":{"step":75,"sequence":[75,150,225],"promptText":"Skip count by 75s: 75, 150, 225. What do 4 groups of 75 make?"}},
   },
   {
     itemId: "skipCounting-conc-groupsToProduct-4_5-016",
@@ -11402,7 +11402,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":48,"display":{"step":12,"sequence":[12,24,36],"promptText":"Use skip-counting by 12s for 4 groups of 12."}},
+    question: {"a":null,"b":null,"op":"skip","answer":48,"display":{"step":12,"sequence":[12,24,36],"promptText":"Skip count by 12s: 12, 24, 36. What do 4 groups of 12 make?"}},
   },
   {
     itemId: "skipcounting-conc-groupsToProduct-45-002",
@@ -11412,7 +11412,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":100,"display":{"step":25,"sequence":[25,50,75],"promptText":"Use skip-counting by 25s for 4 groups of 25."}},
+    question: {"a":null,"b":null,"op":"skip","answer":100,"display":{"step":25,"sequence":[25,50,75],"promptText":"Count by 25s: 25, 50, 75. What number do 4 groups of 25 make?"}},
   },
   {
     itemId: "skipcounting-conc-groupsToProduct-45-003",
@@ -11422,7 +11422,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":54,"display":{"step":9,"sequence":[9,18,27,36,45],"promptText":"Use skip-counting by 9s for 6 groups of 9."}},
+    question: {"a":null,"b":null,"op":"skip","answer":54,"display":{"step":9,"sequence":[9,18,27,36,45],"promptText":"Count by 9s to find 6 groups of 9: 9, 18, 27, 36, 45, __. What number goes in the blank?"}},
   },
   {
     itemId: "skipCounting-conc-groupsToProduct-K_1-001",
@@ -11582,7 +11582,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":15,"display":{"step":5,"sequence":[5,10],"promptText":"Use skip-counting by 5s to find 3 groups of 5."}},
+    question: {"a":null,"b":null,"op":"skip","answer":15,"display":{"step":5,"sequence":[5,10],"promptText":"Count by 5s: 5, 10. What number do 3 groups of 5 make?"}},
   },
   {
     itemId: "skipcounting-conc-groupsToProduct-K1-002",
@@ -11592,7 +11592,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":12,"display":{"step":3,"sequence":[3,6,9],"promptText":"Use skip-counting by 3s for 4 groups of 3."}},
+    question: {"a":null,"b":null,"op":"skip","answer":12,"display":{"step":3,"sequence":[3,6,9],"promptText":"Skip count by 3s: 3, 6, 9. What do 4 groups of 3 make in all?"}},
   },
   {
     itemId: "skipcounting-conc-groupsToProduct-K1-003",
@@ -11602,7 +11602,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":10,"display":{"step":2,"sequence":[2,4,6,8],"promptText":"Use skip-counting by 2s for 5 groups of 2."}},
+    question: {"a":null,"b":null,"op":"skip","answer":10,"display":{"step":2,"sequence":[2,4,6,8],"promptText":"Skip count by 2s: 2, 4, 6, 8. What do 5 groups of 2 make?"}},
   },
   {
     itemId: "skipCounting-conc-patternRule-2_3-001",
@@ -11682,7 +11682,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":54,"display":{"step":9,"sequence":[27,36,45],"promptText":"Work out the rule for 27, 36, 45, then extend the pattern one more term."}},
+    question: {"a":null,"b":null,"op":"skip","answer":54,"display":{"step":9,"sequence":[27,36,45],"promptText":"What number comes next in the pattern 27, 36, 45?"}},
   },
   {
     itemId: "skipCounting-conc-patternRule-2_3-009",
@@ -11722,7 +11722,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":80,"display":{"step":8,"sequence":[56,64,72],"promptText":"The pattern goes 56, 64, 72. Use the rule to find the term that follows."}},
+    question: {"a":null,"b":null,"op":"skip","answer":80,"display":{"step":8,"sequence":[56,64,72],"promptText":"What number comes next in the pattern 56, 64, 72?"}},
   },
   {
     itemId: "skipCounting-conc-patternRule-2_3-013",
@@ -11772,7 +11772,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":40,"display":{"step":10,"sequence":[10,20,30],"promptText":"Identify the rule in 10, 20, 30 and find the next term."}},
+    question: {"a":null,"b":null,"op":"skip","answer":40,"display":{"step":10,"sequence":[10,20,30],"promptText":"The numbers 10, 20, 30 go up by the same amount each time. What number comes after 30?"}},
   },
   {
     itemId: "skipcounting-conc-patternRule-23-002",
@@ -11782,7 +11782,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":24,"display":{"step":6,"sequence":[6,12,18],"promptText":"What pattern do 6, 12, 18 follow? Continue it."}},
+    question: {"a":null,"b":null,"op":"skip","answer":24,"display":{"step":6,"sequence":[6,12,18],"promptText":"Continue the pattern: 6, 12, 18, __. What number goes in the blank?"}},
   },
   {
     itemId: "skipcounting-conc-patternRule-23-003",
@@ -11802,7 +11802,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":90,"display":{"step":15,"sequence":[45,60,75],"promptText":"Study 45, 60, 75. Name the rule, then give the term that follows."}},
+    question: {"a":null,"b":null,"op":"skip","answer":90,"display":{"step":15,"sequence":[45,60,75],"promptText":"Which number comes after 75 in the pattern 45, 60, 75?"}},
   },
   {
     itemId: "skipCounting-conc-patternRule-4_5-002",
@@ -11832,7 +11832,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":200,"display":{"step":20,"sequence":[140,160,180],"promptText":"Examine 140, 160, 180. Once you know the rule, extend the pattern one term."}},
+    question: {"a":null,"b":null,"op":"skip","answer":200,"display":{"step":20,"sequence":[140,160,180],"promptText":"Which number comes after 180 in the pattern 140, 160, 180?"}},
   },
   {
     itemId: "skipCounting-conc-patternRule-4_5-005",
@@ -11842,7 +11842,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":144,"display":{"step":24,"sequence":[72,96,120],"promptText":"Each term of 72, 96, 120 sits the same distance apart. Give the term after 120."}},
+    question: {"a":null,"b":null,"op":"skip","answer":144,"display":{"step":24,"sequence":[72,96,120],"promptText":"The numbers 72, 96, 120 go up by the same amount each time. What number comes after 120?"}},
   },
   {
     itemId: "skipCounting-conc-patternRule-4_5-006",
@@ -11852,7 +11852,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":250,"display":{"step":25,"sequence":[175,200,225],"promptText":"Decide what rule turns 175 into 200 and 200 into 225, then apply it once more."}},
+    question: {"a":null,"b":null,"op":"skip","answer":250,"display":{"step":25,"sequence":[175,200,225],"promptText":"What number comes next in the pattern 175, 200, 225?"}},
   },
   {
     itemId: "skipCounting-conc-patternRule-4_5-007",
@@ -11862,7 +11862,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":300,"display":{"step":30,"sequence":[210,240,270],"promptText":"Describe the constant change in 210, 240, 270 and use it to extend the list."}},
+    question: {"a":null,"b":null,"op":"skip","answer":300,"display":{"step":30,"sequence":[210,240,270],"promptText":"Continue the pattern: 210, 240, 270, __. What number goes in the blank?"}},
   },
   {
     itemId: "skipCounting-conc-patternRule-4_5-008",
@@ -11872,7 +11872,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":210,"display":{"step":35,"sequence":[105,140,175],"promptText":"The list 105, 140, 175 follows one repeating rule. Continue it by one term."}},
+    question: {"a":null,"b":null,"op":"skip","answer":210,"display":{"step":35,"sequence":[105,140,175],"promptText":"Find the rule for 105, 140, 175. What number comes next?"}},
   },
   {
     itemId: "skipCounting-conc-patternRule-4_5-009",
@@ -11882,7 +11882,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":280,"display":{"step":40,"sequence":[160,200,240],"promptText":"Figure out the amount added each time in 160, 200, 240, then give the fourth term."}},
+    question: {"a":null,"b":null,"op":"skip","answer":280,"display":{"step":40,"sequence":[160,200,240],"promptText":"Find the rule for 160, 200, 240. What number comes next?"}},
   },
   {
     itemId: "skipCounting-conc-patternRule-4_5-010",
@@ -11902,7 +11902,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":400,"display":{"step":50,"sequence":[250,300,350],"promptText":"Find the rule joining 250, 300, and 350, then write the term that follows."}},
+    question: {"a":null,"b":null,"op":"skip","answer":400,"display":{"step":50,"sequence":[250,300,350],"promptText":"Continue the pattern: 250, 300, 350, __. What number goes in the blank?"}},
   },
   {
     itemId: "skipCounting-conc-patternRule-4_5-012",
@@ -11912,7 +11912,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":360,"display":{"step":60,"sequence":[180,240,300],"promptText":"State the size of each jump in 180, 240, 300 and extend the pattern once."}},
+    question: {"a":null,"b":null,"op":"skip","answer":360,"display":{"step":60,"sequence":[180,240,300],"promptText":"The numbers 180, 240, 300 go up by the same amount each time. What number comes after 300?"}},
   },
   {
     itemId: "skipCounting-conc-patternRule-4_5-013",
@@ -11932,7 +11932,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":750,"display":{"step":125,"sequence":[375,500,625],"promptText":"Work out the constant step in 375, 500, 625 and continue the sequence."}},
+    question: {"a":null,"b":null,"op":"skip","answer":750,"display":{"step":125,"sequence":[375,500,625],"promptText":"Find the rule for 375, 500, 625. What number comes next?"}},
   },
   {
     itemId: "skipCounting-conc-patternRule-4_5-015",
@@ -11952,7 +11952,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":100,"display":{"step":25,"sequence":[25,50,75],"promptText":"Identify the rule in 25, 50, 75 and find the next term."}},
+    question: {"a":null,"b":null,"op":"skip","answer":100,"display":{"step":25,"sequence":[25,50,75],"promptText":"Which number comes after 75 in the pattern 25, 50, 75?"}},
   },
   {
     itemId: "skipcounting-conc-patternRule-45-002",
@@ -11962,7 +11962,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":48,"display":{"step":12,"sequence":[12,24,36],"promptText":"What pattern do 12, 24, 36 follow? Continue it."}},
+    question: {"a":null,"b":null,"op":"skip","answer":48,"display":{"step":12,"sequence":[12,24,36],"promptText":"The numbers 12, 24, 36 go up by the same amount each time. What number comes after 36?"}},
   },
   {
     itemId: "skipcounting-conc-patternRule-45-003",
@@ -12012,7 +12012,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":7,"display":{"step":2,"sequence":[1,3,5],"promptText":"Figure out the rule behind 1, 3, 5 and keep the pattern going one more term."}},
+    question: {"a":null,"b":null,"op":"skip","answer":7,"display":{"step":2,"sequence":[1,3,5],"promptText":"What number comes next in the pattern 1, 3, 5?"}},
   },
   {
     itemId: "skipCounting-conc-patternRule-K_1-005",
@@ -12032,7 +12032,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":14,"display":{"step":2,"sequence":[8,10,12],"promptText":"Name the rule for 8, 10, 12 and give the term that follows."}},
+    question: {"a":null,"b":null,"op":"skip","answer":14,"display":{"step":2,"sequence":[8,10,12],"promptText":"What number comes next in the pattern 8, 10, 12?"}},
   },
   {
     itemId: "skipCounting-conc-patternRule-K_1-007",
@@ -12062,7 +12062,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":30,"display":{"step":10,"sequence":[0,10,20],"promptText":"Check the rule in 0, 10, 20 and extend the pattern by one term."}},
+    question: {"a":null,"b":null,"op":"skip","answer":30,"display":{"step":10,"sequence":[0,10,20],"promptText":"Find the rule for 0, 10, 20. What number comes next?"}},
   },
   {
     itemId: "skipCounting-conc-patternRule-K_1-015",
@@ -12092,7 +12092,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":8,"display":{"step":2,"sequence":[2,4,6],"promptText":"Identify the rule in 2, 4, 6 and find the next term."}},
+    question: {"a":null,"b":null,"op":"skip","answer":8,"display":{"step":2,"sequence":[2,4,6],"promptText":"Find the rule for 2, 4, 6. What number comes next?"}},
   },
   {
     itemId: "skipcounting-conc-patternRule-K1-002",
@@ -12102,7 +12102,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":20,"display":{"step":5,"sequence":[5,10,15],"promptText":"What pattern do 5, 10, 15 follow? Find the next term."}},
+    question: {"a":null,"b":null,"op":"skip","answer":20,"display":{"step":5,"sequence":[5,10,15],"promptText":"Which number comes after 15 in the pattern 5, 10, 15?"}},
   },
   {
     itemId: "skipcounting-conc-patternRule-K1-003",
@@ -12112,7 +12112,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":6,"display":{"step":2,"sequence":[0,2,4],"promptText":"Recognize the rule in 0, 2, 4 and continue the pattern."}},
+    question: {"a":null,"b":null,"op":"skip","answer":6,"display":{"step":2,"sequence":[0,2,4],"promptText":"Continue the pattern: 0, 2, 4, __. What number goes in the blank?"}},
   },
   {
     itemId: "skipCounting-conc-stepInference-2_3-001",
@@ -12122,7 +12122,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":36,"display":{"step":6,"sequence":[18,24,30],"promptText":"Find the step in 18, 24, 30, then name the next term."}},
+    question: {"a":null,"b":null,"op":"skip","answer":36,"display":{"step":6,"sequence":[18,24,30],"promptText":"Find the jump size, then keep skip counting: 18, 24, 30, __. What number goes in the blank?"}},
   },
   {
     itemId: "skipCounting-conc-stepInference-2_3-002",
@@ -12152,7 +12152,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":125,"display":{"step":25,"sequence":[50,75,100],"promptText":"Figure out the step in 50, 75, 100, then find the term that follows."}},
+    question: {"a":null,"b":null,"op":"skip","answer":125,"display":{"step":25,"sequence":[50,75,100],"promptText":"Skip count to finish the pattern: 50, 75, 100, __. What number goes in the blank?"}},
   },
   {
     itemId: "skipCounting-conc-stepInference-2_3-005",
@@ -12162,7 +12162,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":34,"display":{"step":4,"sequence":[22,26,30],"promptText":"Name the step used in 22, 26, 30 and the next term in the pattern."}},
+    question: {"a":null,"b":null,"op":"skip","answer":34,"display":{"step":4,"sequence":[22,26,30],"promptText":"The numbers 22, 26, 30 jump by the same amount. What number comes after 30?"}},
   },
   {
     itemId: "skipCounting-conc-stepInference-2_3-006",
@@ -12182,7 +12182,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":200,"display":{"step":20,"sequence":[140,160,180],"promptText":"Spot the step in 140, 160, 180, then keep the pattern going for one more term."}},
+    question: {"a":null,"b":null,"op":"skip","answer":200,"display":{"step":20,"sequence":[140,160,180],"promptText":"Skip count to finish the pattern: 140, 160, 180, __. What number goes in the blank?"}},
   },
   {
     itemId: "skipCounting-conc-stepInference-2_3-008",
@@ -12192,7 +12192,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":300,"display":{"step":50,"sequence":[150,200,250],"promptText":"Tell the step for 150, 200, 250 and the term that comes right after 250."}},
+    question: {"a":null,"b":null,"op":"skip","answer":300,"display":{"step":50,"sequence":[150,200,250],"promptText":"Find the jump size in 150, 200, 250. What number comes next?"}},
   },
   {
     itemId: "skipCounting-conc-stepInference-2_3-009",
@@ -12212,7 +12212,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":56,"display":{"step":7,"sequence":[35,42,49],"promptText":"What step turns 35 into 42 into 49? Use it to name the next term."}},
+    question: {"a":null,"b":null,"op":"skip","answer":56,"display":{"step":7,"sequence":[35,42,49],"promptText":"35, 42, 49 go up by the same jump each time. What number comes after 49?"}},
   },
   {
     itemId: "skipCounting-conc-stepInference-2_3-011",
@@ -12222,7 +12222,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":600,"display":{"step":100,"sequence":[300,400,500],"promptText":"Find the step in 300, 400, 500 and write the next term."}},
+    question: {"a":null,"b":null,"op":"skip","answer":600,"display":{"step":100,"sequence":[300,400,500],"promptText":"The numbers 300, 400, 500 jump by the same amount. What number comes after 500?"}},
   },
   {
     itemId: "skipCounting-conc-stepInference-2_3-012",
@@ -12232,7 +12232,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":105,"display":{"step":15,"sequence":[60,75,90],"promptText":"Decide the step for 60, 75, 90, then give the term that follows 90."}},
+    question: {"a":null,"b":null,"op":"skip","answer":105,"display":{"step":15,"sequence":[60,75,90],"promptText":"Each jump in 60, 75, 90 is the same size. What number comes after 90?"}},
   },
   {
     itemId: "skipCounting-conc-stepInference-2_3-013",
@@ -12252,7 +12252,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":180,"display":{"step":30,"sequence":[90,120,150],"promptText":"Count on from 90, 120, 150 by working out the step first. What is the next term?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":180,"display":{"step":30,"sequence":[90,120,150],"promptText":"Find the jump size in 90, 120, 150. What number comes next?"}},
   },
   {
     itemId: "skipCounting-conc-stepInference-2_3-015",
@@ -12262,7 +12262,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":80,"display":{"step":5,"sequence":[65,70,75],"promptText":"Find the step hiding in 65, 70, 75, then name the next term."}},
+    question: {"a":null,"b":null,"op":"skip","answer":80,"display":{"step":5,"sequence":[65,70,75],"promptText":"Each jump in 65, 70, 75 is the same size. What number comes after 75?"}},
   },
   {
     itemId: "skipCounting-conc-stepInference-2_3-016",
@@ -12282,7 +12282,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":28,"display":{"step":7,"sequence":[7,14,21],"promptText":"What is the step in 7, 14, 21? Use it to find the next term."}},
+    question: {"a":null,"b":null,"op":"skip","answer":28,"display":{"step":7,"sequence":[7,14,21],"promptText":"Find the jump from one number to the next in 7, 14, 21. What number comes after 21?"}},
   },
   {
     itemId: "skipcounting-conc-stepInference-23-002",
@@ -12302,7 +12302,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":60,"display":{"step":15,"sequence":[15,30,45],"promptText":"Identify the step for 15, 30, 45 and the next term."}},
+    question: {"a":null,"b":null,"op":"skip","answer":60,"display":{"step":15,"sequence":[15,30,45],"promptText":"The numbers 15, 30, 45 jump by the same amount. What number comes after 45?"}},
   },
   {
     itemId: "skipCounting-conc-stepInference-4_5-001",
@@ -12312,7 +12312,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":200,"display":{"step":25,"sequence":[125,150,175],"promptText":"Find the step in 125, 150, 175, then give the next term."}},
+    question: {"a":null,"b":null,"op":"skip","answer":200,"display":{"step":25,"sequence":[125,150,175],"promptText":"Skip count to finish the pattern: 125, 150, 175, __. What number goes in the blank?"}},
   },
   {
     itemId: "skipCounting-conc-stepInference-4_5-002",
@@ -12352,7 +12352,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":1750,"display":{"step":250,"sequence":[1000,1250,1500],"promptText":"Figure out the step used in 1000, 1250, 1500, then extend the pattern by one term."}},
+    question: {"a":null,"b":null,"op":"skip","answer":1750,"display":{"step":250,"sequence":[1000,1250,1500],"promptText":"Find the jump size, then keep skip counting: 1000, 1250, 1500, __. What number goes in the blank?"}},
   },
   {
     itemId: "skipCounting-conc-stepInference-4_5-006",
@@ -12372,7 +12372,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":480,"display":{"step":40,"sequence":[360,400,440],"promptText":"Name the step in 360, 400, 440 and use it to continue the pattern."}},
+    question: {"a":null,"b":null,"op":"skip","answer":480,"display":{"step":40,"sequence":[360,400,440],"promptText":"Each jump in 360, 400, 440 is the same size. What number comes after 440?"}},
   },
   {
     itemId: "skipCounting-conc-stepInference-4_5-008",
@@ -12382,7 +12382,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":150,"display":{"step":15,"sequence":[105,120,135],"promptText":"Decide what step links 105, 120, 135, then state the following term."}},
+    question: {"a":null,"b":null,"op":"skip","answer":150,"display":{"step":15,"sequence":[105,120,135],"promptText":"The numbers 105, 120, 135 jump by the same amount. What number comes after 135?"}},
   },
   {
     itemId: "skipCounting-conc-stepInference-4_5-009",
@@ -12432,7 +12432,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":4000,"display":{"step":500,"sequence":[2500,3000,3500],"promptText":"Identify the step for 2500, 3000, 3500 and extend the sequence one more term."}},
+    question: {"a":null,"b":null,"op":"skip","answer":4000,"display":{"step":500,"sequence":[2500,3000,3500],"promptText":"Each jump in 2500, 3000, 3500 is the same size. What number comes after 3500?"}},
   },
   {
     itemId: "skipCounting-conc-stepInference-4_5-015",
@@ -12452,7 +12452,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":80,"display":{"step":10,"sequence":[50,60,70],"promptText":"What is the step in 50, 60, 70? Use it to find the next term."}},
+    question: {"a":null,"b":null,"op":"skip","answer":80,"display":{"step":10,"sequence":[50,60,70],"promptText":"50, 60, 70 go up by the same jump each time. What number comes after 70?"}},
   },
   {
     itemId: "skipcounting-conc-stepInference-45-002",
@@ -12472,7 +12472,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":800,"display":{"step":200,"sequence":[200,400,600],"promptText":"Identify the step for 200, 400, 600 and the next term."}},
+    question: {"a":null,"b":null,"op":"skip","answer":800,"display":{"step":200,"sequence":[200,400,600],"promptText":"Skip count to finish the pattern: 200, 400, 600, __. What number goes in the blank?"}},
   },
   {
     itemId: "skipCounting-conc-stepInference-K_1-001",
@@ -12502,7 +12502,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":18,"display":{"step":5,"sequence":[3,8,13],"promptText":"Look at 3, 8, 13. How big is each jump, and what number comes after 13?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":18,"display":{"step":5,"sequence":[3,8,13],"promptText":"The numbers 3, 8, 13 jump by the same amount. What number comes after 13?"}},
   },
   {
     itemId: "skipCounting-conc-stepInference-K_1-004",
@@ -12512,7 +12512,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":13,"display":{"step":2,"sequence":[7,9,11],"promptText":"Find the amount added each time in 7, 9, 11, then give the next number."}},
+    question: {"a":null,"b":null,"op":"skip","answer":13,"display":{"step":2,"sequence":[7,9,11],"promptText":"Find the jump size in 7, 9, 11. What number comes next?"}},
   },
   {
     itemId: "skipCounting-conc-stepInference-K_1-005",
@@ -12572,7 +12572,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":15,"display":{"step":3,"sequence":[6,9,12],"promptText":"How much is added each time in 6, 9, 12? Use that to name the number after 12."}},
+    question: {"a":null,"b":null,"op":"skip","answer":15,"display":{"step":3,"sequence":[6,9,12],"promptText":"Each jump in 6, 9, 12 is the same size. What number comes after 12?"}},
   },
   {
     itemId: "skipCounting-conc-stepInference-K_1-011",
@@ -12622,7 +12622,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":18,"display":{"step":2,"sequence":[10,12,14,16],"promptText":"Tell how much the pattern 10, 12, 14, 16 grows by, then give the number after 16."}},
+    question: {"a":null,"b":null,"op":"skip","answer":18,"display":{"step":2,"sequence":[10,12,14,16],"promptText":"Find the jump size, then keep skip counting: 10, 12, 14, 16, __. What number goes in the blank?"}},
   },
   {
     itemId: "skipCounting-conc-stepInference-K_1-016",
@@ -12642,7 +12642,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":12,"display":{"step":3,"sequence":[3,6,9],"promptText":"What is the step in 3, 6, 9? Use it to find the next term."}},
+    question: {"a":null,"b":null,"op":"skip","answer":12,"display":{"step":3,"sequence":[3,6,9],"promptText":"Find the jump from one number to the next in 3, 6, 9. What number comes after 9?"}},
   },
   {
     itemId: "skipcounting-conc-stepInference-K1-002",
@@ -12662,7 +12662,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":16,"display":{"step":4,"sequence":[4,8,12],"promptText":"Identify the step for 4, 8, 12 and the next term."}},
+    question: {"a":null,"b":null,"op":"skip","answer":16,"display":{"step":4,"sequence":[4,8,12],"promptText":"Find the jump size, then keep skip counting: 4, 8, 12, __. What number goes in the blank?"}},
   },
   {
     itemId: "skipCounting-proc-b0821-0001",
@@ -17542,7 +17542,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":28,"display":{"step":7,"sequence":[7,14,21],"promptText":"Find the next term: 7, 14, 21, ?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":28,"display":{"step":7,"sequence":[7,14,21],"promptText":"What number comes next: 7, 14, 21, __?"}},
   },
   {
     itemId: "skipcounting-proc-stepInference-23-002",
@@ -17552,7 +17552,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":32,"display":{"step":8,"sequence":[8,16,24],"promptText":"Find the next term: 8, 16, 24, ?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":32,"display":{"step":8,"sequence":[8,16,24],"promptText":"What comes next: 8, 16, 24, __?"}},
   },
   {
     itemId: "skipcounting-proc-stepInference-23-003",
@@ -17562,7 +17562,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":60,"display":{"step":15,"sequence":[15,30,45],"promptText":"Find the next term: 15, 30, 45, ?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":60,"display":{"step":15,"sequence":[15,30,45],"promptText":"Skip count: 15, 30, 45, __. What number goes in the blank?"}},
   },
   {
     itemId: "skipcounting-proc-stepInference-45-001",
@@ -17572,7 +17572,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":80,"display":{"step":10,"sequence":[50,60,70],"promptText":"Find the next term: 50, 60, 70, ?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":80,"display":{"step":10,"sequence":[50,60,70],"promptText":"What number comes next: 50, 60, 70, __?"}},
   },
   {
     itemId: "skipcounting-proc-stepInference-45-002",
@@ -17582,7 +17582,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":140,"display":{"step":20,"sequence":[80,100,120],"promptText":"Find the next term: 80, 100, 120, ?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":140,"display":{"step":20,"sequence":[80,100,120],"promptText":"What comes next: 80, 100, 120, __?"}},
   },
   {
     itemId: "skipcounting-proc-stepInference-45-003",
@@ -17592,7 +17592,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":800,"display":{"step":200,"sequence":[200,400,600],"promptText":"Find the next term: 200, 400, 600, ?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":800,"display":{"step":200,"sequence":[200,400,600],"promptText":"Skip count: 200, 400, 600, __. What number goes in the blank?"}},
   },
   {
     itemId: "skipcounting-proc-stepInference-K1-001",
@@ -17602,7 +17602,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":12,"display":{"step":3,"sequence":[3,6,9],"promptText":"Find the next term: 3, 6, 9, ?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":12,"display":{"step":3,"sequence":[3,6,9],"promptText":"What number comes next: 3, 6, 9, __?"}},
   },
   {
     itemId: "skipcounting-proc-stepInference-K1-002",
@@ -17612,7 +17612,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":9,"display":{"step":2,"sequence":[1,3,5,7],"promptText":"Find the next term: 1, 3, 5, 7, ?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":9,"display":{"step":2,"sequence":[1,3,5,7],"promptText":"Skip count: 1, 3, 5, 7, __. What number goes in the blank?"}},
   },
   {
     itemId: "skipcounting-proc-stepInference-K1-003",
@@ -17622,6 +17622,6 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":16,"display":{"step":4,"sequence":[4,8,12],"promptText":"Find the next term: 4, 8, 12, ?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":16,"display":{"step":4,"sequence":[4,8,12],"promptText":"What comes next: 4, 8, 12, __?"}},
   },
 ];

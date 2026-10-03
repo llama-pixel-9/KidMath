@@ -249,7 +249,10 @@ const VARIETIES = [
       if (band === 1) {
         // Ordered-family pattern step: the previous decomposition is shown.
         const whole = randInt(5, 10);
-        const p = randInt(1, whole - 2);
+        let p = randInt(1, whole - 2);
+        // When the next bond is the turn-around (2 + 3 = 5, so 3 + ? = 5), the
+        // printed fact already holds the answer (workedStepGiveaway).
+        while (whole - p - 1 === p) p = randInt(1, whole - 2);
         return {
           answer: whole - p - 1,
           // The cherry diagram carries the second bond; ", so" joins the two

@@ -9202,7 +9202,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 1 shaded parts out of 4, Theo records 1/3. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 1 shaded part out of 4, Theo records 1/3. Is that right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0003",
@@ -9222,7 +9222,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 1 shaded parts out of 3, Zoe records 1/2. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 1 shaded part out of 3, Zoe records 1/2. Is that right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0005",
@@ -9262,7 +9262,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 1 shaded parts out of 4, Luca records 1/3. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 1 shaded part out of 4, Luca records 1/3. Is that right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0009",
@@ -9282,7 +9282,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 1 shaded parts out of 3, Omar records 1/2. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 1 shaded part out of 3, Omar records 1/2. Is that right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0011",
@@ -9322,7 +9322,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 1 shaded parts out of 4, Sam records 1/3. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 1 shaded part out of 4, Sam records 1/3. Is that right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0015",
@@ -9342,7 +9342,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 1 shaded parts out of 3, Kai records 1/2. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 1 shaded part out of 3, Kai records 1/2. Is that right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0017",
@@ -9372,7 +9372,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Omar colors 2 of 5 pieces and labels it 2/3, counting only the blank pieces below the line. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Omar colors 2 of 5 equal pieces and writes 2/3, with the 3 blank pieces as the bottom number. Is Omar right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0020",
@@ -9382,7 +9382,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ben's label for 3-of-5 shaded reads 3/2. Does the label hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ben shades 3 of 5 equal parts and writes 3/2. Is Ben right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0021",
@@ -9392,7 +9392,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Finn colors 1 of 5 pieces and labels it 1/4, counting only the blank pieces below the line. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Finn colors 1 of 5 equal pieces. Finn writes 1/4 because 4 pieces are not colored. Is Finn right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0022",
@@ -9402,7 +9402,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Priya's label for 1-of-6 shaded reads 1/5. Does the label hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Priya shades 1 of 6 equal parts and names the shaded part 1/5. Is Priya right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0023",
@@ -9412,7 +9412,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Sam colors 5 of 6 pieces and labels it 5/1, counting only the blank pieces below the line. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Sam colors 5 of 6 equal pieces and writes 5/1, with the 1 blank piece as the bottom number. Is Sam right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0024",
@@ -9422,7 +9422,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Nia's label for 3-of-8 shaded reads 3/5. Does the label hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Nia shades 3 of 8 equal parts and calls it 3/5. Is Nia right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0025",
@@ -9432,7 +9432,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Kai colors 5 of 8 pieces and labels it 5/3, counting only the blank pieces below the line. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Kai colors 5 of 8 equal pieces. Kai writes 5/3 because 3 pieces are not colored. Is Kai right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0026",
@@ -9442,7 +9442,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"June's label for 1-of-8 shaded reads 1/7. Does the label hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"June shades 1 of 8 equal parts. Is 1/7 the right fraction for the shaded part?"}},
   },
   {
     itemId: "fractions-conc-b0821-0027",
@@ -9452,7 +9452,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Lily colors 2 of 6 pieces and labels it 2/4, counting only the blank pieces below the line. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Lily colors 2 of 6 equal pieces and writes 2/4, with the 4 blank pieces as the bottom number. Is Lily right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0028",
@@ -9462,7 +9462,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Amara's label for 4-of-6 shaded reads 4/2. Does the label hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Amara shades 4 of 6 equal parts and writes 4/2. Is Amara right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0029",
@@ -9472,7 +9472,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Leo colors 2 of 5 pieces and labels it 2/3, counting only the blank pieces below the line. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Leo colors 2 of 5 equal pieces. Leo writes 2/3 because 3 pieces are not colored. Is Leo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0030",
@@ -9482,7 +9482,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Mina's label for 3-of-5 shaded reads 3/2. Does the label hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Mina shades 3 of 5 equal parts and names the shaded part 3/2. Is Mina right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0031",
@@ -9492,7 +9492,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Theo colors 1 of 5 pieces and labels it 1/4, counting only the blank pieces below the line. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Theo colors 1 of 5 equal pieces and writes 1/4, with the 4 blank pieces as the bottom number. Is Theo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0032",
@@ -9502,7 +9502,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ida's label for 1-of-6 shaded reads 1/5. Does the label hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ida shades 1 of 6 equal parts and calls it 1/5. Is Ida right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0033",
@@ -9512,7 +9512,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Zoe colors 5 of 6 pieces and labels it 5/1, counting only the blank pieces below the line. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Zoe colors 5 of 6 equal pieces. Zoe writes 5/1 because 1 piece is not colored. Is Zoe right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0034",
@@ -9522,7 +9522,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Rosa's label for 3-of-8 shaded reads 3/5. Does the label hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Rosa shades 3 of 8 equal parts. Is 3/5 the right fraction for the shaded part?"}},
   },
   {
     itemId: "fractions-conc-b0821-0035",
@@ -9532,7 +9532,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Diego colors 5 of 8 pieces and labels it 5/3, counting only the blank pieces below the line. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Diego colors 5 of 8 equal pieces and writes 5/3, with the 3 blank pieces as the bottom number. Is Diego right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0036",
@@ -9542,7 +9542,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Nora's label for 1-of-8 shaded reads 1/7. Does the label hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Nora shades 1 of 8 equal parts and writes 1/7. Is Nora right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0037",
@@ -9552,7 +9552,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Shading 3 of 10 sections, Finn declares the fraction 3/7. Is the declaration right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Finn shades 3 of 10 equal sections and says the fraction is 3/7. Is Finn right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0038",
@@ -9562,7 +9562,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Priya confuses part-to-part with part-to-whole and writes 7/3 for 7 of 10. Is Priya right anyway?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Priya shades 7 of 10 equal parts and names the shaded part 7/3. Is Priya right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0039",
@@ -9572,7 +9572,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Shading 1 of 10 sections, Sam declares the fraction 1/9. Is the declaration right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"A bar has 10 equal sections, and 1 is filled. Sam says 1/9 of the bar is filled. Is Sam right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0040",
@@ -9582,7 +9582,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Nia confuses part-to-part with part-to-whole and writes 5/7 for 5 of 12. Is Nia right anyway?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"A shape has 12 equal parts, and Nia shades 5 of them. Nia says 5/7 of the shape is shaded. Is Nia right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0041",
@@ -9592,7 +9592,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Shading 7 of 12 sections, Kai declares the fraction 7/5. Is the declaration right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Kai shades 7 of 12 equal sections and says the fraction is 7/5. Is Kai right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0042",
@@ -9602,7 +9602,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"June confuses part-to-part with part-to-whole and writes 1/11 for 1 of 12. Is June right anyway?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"1 of 12 equal parts of a rectangle is shaded. June writes 1/11 for the shaded part. Is June right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0043",
@@ -9612,7 +9612,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Shading 4 of 5 sections, Lily declares the fraction 4/1. Is the declaration right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Lily shades 4 of the 5 equal sections of a paper strip. Lily says 4/1 of the strip is shaded. Is Lily right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0044",
@@ -9622,7 +9622,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Amara confuses part-to-part with part-to-whole and writes 5/1 for 5 of 6. Is Amara right anyway?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"5 of 6 equal parts of a rectangle are shaded. Amara writes 5/1 for the shaded part. Is Amara right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0045",
@@ -9632,7 +9632,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Shading 5 of 8 sections, Leo declares the fraction 5/3. Is the declaration right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Leo fills 5 of 8 equal sections and writes 5/3. Is Leo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0046",
@@ -9642,7 +9642,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Mina confuses part-to-part with part-to-whole and writes 3/7 for 3 of 10. Is Mina right anyway?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Mina shades 3 of 10 equal parts and names the shaded part 3/7. Is Mina right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0047",
@@ -9652,7 +9652,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Shading 7 of 10 sections, Theo declares the fraction 7/3. Is the declaration right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"A bar has 10 equal sections, and 7 are filled. Theo says 7/3 of the bar is filled. Is Theo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0048",
@@ -9662,7 +9662,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ida confuses part-to-part with part-to-whole and writes 1/9 for 1 of 10. Is Ida right anyway?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"A shape has 10 equal parts, and Ida shades 1 of them. Ida says 1/9 of the shape is shaded. Is Ida right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0049",
@@ -9672,7 +9672,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Shading 5 of 12 sections, Zoe declares the fraction 5/7. Is the declaration right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Zoe colors 5 of 12 equal parts and writes the fraction 5/7. Is Zoe right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0050",
@@ -9682,7 +9682,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Rosa confuses part-to-part with part-to-whole and writes 7/5 for 7 of 12. Is Rosa right anyway?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"A shape has 12 equal parts, and Rosa shades 7 of them. Rosa says 7/5 of the shape is shaded. Is Rosa right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0051",
@@ -9692,7 +9692,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Shading 1 of 12 sections, Diego declares the fraction 1/11. Is the declaration right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Diego shades 1 of the 12 equal sections of a paper strip. Diego says 1/11 of the strip is shaded. Is Diego right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0052",
@@ -9702,7 +9702,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Nora confuses part-to-part with part-to-whole and writes 4/1 for 4 of 5. Is Nora right anyway?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"4 of 5 equal parts of a rectangle are shaded. Nora writes 4/1 for the shaded part. Is Nora right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0053",
@@ -9712,7 +9712,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Shading 5 of 6 sections, Luca declares the fraction 5/1. Is the declaration right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Luca shades 5 of 6 equal sections and says the fraction is 5/1. Is Luca right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0054",
@@ -9722,7 +9722,7 @@ export const ITEMS = [
     structureType: "partPartTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ava confuses part-to-part with part-to-whole and writes 5/3 for 5 of 8. Is Ava right anyway?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ava shades 5 of 8 equal parts and names the shaded part 5/3. Is Ava right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0055",
@@ -9732,7 +9732,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Luca cuts a sandwich into 2 matching halves. Can the pieces fairly be called equal parts?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Luca cuts a sandwich into 2 matching pieces. Is each piece one half of the sandwich?"}},
   },
   {
     itemId: "fractions-conc-b0821-0056",
@@ -9742,7 +9742,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Ava shares a cookie into one big piece and one crumb. Do the pieces count as equal parts?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Ava breaks a cookie into one big piece and one tiny crumb. Is each piece one half of the cookie?"}},
   },
   {
     itemId: "fractions-conc-b0821-0057",
@@ -9752,7 +9752,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Omar cuts a paper strip into 4 same-size parts. Can the pieces fairly be called equal parts?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Omar cuts a paper strip into 4 same-size parts. Is each part one fourth of the strip?"}},
   },
   {
     itemId: "fractions-conc-b0821-0058",
@@ -9762,7 +9762,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Ben shares a pizza into 3 slices of different sizes. Do the pieces count as equal parts?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Ben cuts a pizza into 3 slices of the same size. Is each slice 1/3 of the pizza?"}},
   },
   {
     itemId: "fractions-conc-b0821-0059",
@@ -9772,7 +9772,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Finn cuts an apple into 2 same-size halves. Can the pieces fairly be called equal parts?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Finn cuts an apple into 2 pieces that are the same size. Is each piece one half of the apple?"}},
   },
   {
     itemId: "fractions-conc-b0821-0060",
@@ -9782,7 +9782,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Priya shares a brownie into a huge piece and a sliver. Do the pieces count as equal parts?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Priya cuts a brownie into a huge piece and a thin sliver. Is each piece one half of the brownie?"}},
   },
   {
     itemId: "fractions-conc-b0821-0061",
@@ -9792,7 +9792,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Sam cuts a ribbon into 3 same-length parts. Can the pieces fairly be called equal parts?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Sam cuts a ribbon into 3 same-length parts. Is each part one third of the ribbon?"}},
   },
   {
     itemId: "fractions-conc-b0821-0062",
@@ -9802,7 +9802,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Nia shares a cracker into unequal chunks. Do the pieces count as equal parts?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Nia breaks a cracker into 4 equal chunks. Is each chunk 1/4 of the cracker?"}},
   },
   {
     itemId: "fractions-conc-b0821-0063",
@@ -9812,7 +9812,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Kai cuts a pancake into 4 matching wedges. Can the pieces fairly be called equal parts?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Kai cuts a pancake into 4 matching wedges. Is each wedge one fourth of the pancake?"}},
   },
   {
     itemId: "fractions-conc-b0821-0064",
@@ -9822,7 +9822,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"June shares a pie into 2 wedges, one double the other. Do the pieces count as equal parts?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"June cuts a pie into 2 wedges, and one wedge is twice as big as the other. Is each wedge one half of the pie?"}},
   },
   {
     itemId: "fractions-conc-b0821-0065",
@@ -9832,7 +9832,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Lily cuts a granola bar into 2 same-size pieces. Can the pieces fairly be called equal parts?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Lily cuts a granola bar into 2 same-size pieces. Is each piece 1/2 of the granola bar?"}},
   },
   {
     itemId: "fractions-conc-b0821-0066",
@@ -9842,7 +9842,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Amara shares a sheet into 4 wildly different scraps. Do the pieces count as equal parts?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Amara tears a sheet of paper into 4 scraps of very different sizes. Is each scrap 1/4 of the sheet?"}},
   },
   {
     itemId: "fractions-conc-b0821-0067",
@@ -9852,7 +9852,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Leo cuts a waffle into 4 equal squares. Can the pieces fairly be called equal parts?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Leo cuts a waffle into 4 equal squares. Is each square 1/4 of the waffle?"}},
   },
   {
     itemId: "fractions-conc-b0821-0068",
@@ -9862,7 +9862,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Mina shares a roll into 3 pieces where one is tiny. Do the pieces count as equal parts?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Mina breaks a roll into 3 pieces, and one piece is tiny. Is each piece 1/3 of the roll?"}},
   },
   {
     itemId: "fractions-conc-b0821-0069",
@@ -9872,7 +9872,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Theo cuts a fruit strip into 2 identical pieces. Can the pieces fairly be called equal parts?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Theo cuts a fruit strip into 2 identical pieces. Is each piece 1/2 of the fruit strip?"}},
   },
   {
     itemId: "fractions-conc-b0821-0070",
@@ -9882,7 +9882,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Ida shares a bagel into lopsided halves. Do the pieces count as equal parts?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Ida cuts a bagel into 2 pieces, one big and one small. Is each piece one half of the bagel?"}},
   },
   {
     itemId: "fractions-conc-b0821-0071",
@@ -9892,7 +9892,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Zoe cuts a cake into 4 equal slices. Can the pieces fairly be called equal parts?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Zoe cuts a cake into 4 equal slices. Is each slice 1/4 of the cake?"}},
   },
   {
     itemId: "fractions-conc-b0821-0072",
@@ -9902,7 +9902,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Rosa shares a tortilla into random shards. Do the pieces count as equal parts?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Rosa tears a tortilla into 3 pieces that are all different sizes. Is each piece 1/3 of the tortilla?"}},
   },
   {
     itemId: "fractions-conc-b0821-0073",
@@ -9912,7 +9912,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"June splits a garden into 5 same-size beds. Does the split make true equal parts?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"June splits a garden into 5 beds that are all the same size. Is each bed 1/5 of the garden?"}},
   },
   {
     itemId: "fractions-conc-b0821-0074",
@@ -9922,7 +9922,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"For fractions to apply, Lily's cut of a field into 6 beds where one is double must give equal parts. Does it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Lily splits a field into 6 beds, and one bed is twice as big as the others. Is each bed 1/6 of the field?"}},
   },
   {
     itemId: "fractions-conc-b0821-0075",
@@ -9932,7 +9932,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Amara splits a chocolate bar along its 8 identical squares. Does the split make true equal parts?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Amara breaks a chocolate bar into its 8 same-size squares. Is each square 1/8 of the bar?"}},
   },
   {
     itemId: "fractions-conc-b0821-0076",
@@ -9942,7 +9942,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"For fractions to apply, Leo's cut of a pan of bars into 6 uneven blocks must give equal parts. Does it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Leo cuts a pan of bars into 6 uneven blocks. Is each block one sixth of the pan?"}},
   },
   {
     itemId: "fractions-conc-b0821-0077",
@@ -9952,7 +9952,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Mina splits a poster into 5 equal columns. Does the split make true equal parts?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Mina splits a poster into 5 equal columns. Is each column one fifth of the poster?"}},
   },
   {
     itemId: "fractions-conc-b0821-0078",
@@ -9962,7 +9962,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"For fractions to apply, Theo's cut of a page into 8 columns of different widths must give equal parts. Does it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Theo splits a page into 8 columns of different widths. Is each column one eighth of the page?"}},
   },
   {
     itemId: "fractions-conc-b0821-0079",
@@ -9972,7 +9972,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Ida splits a rope into 6 equal jumps. Does the split make true equal parts?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Ida cuts a rope into 6 equal pieces. Is each piece 1/6 of the rope?"}},
   },
   {
     itemId: "fractions-conc-b0821-0080",
@@ -9982,7 +9982,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"For fractions to apply, Zoe's cut of a trail into 5 stretches, one far longer must give equal parts. Does it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Zoe splits a trail into 5 stretches, and one stretch is much longer than the others. Is each stretch 1/5 of the trail?"}},
   },
   {
     itemId: "fractions-conc-b0821-0081",
@@ -9992,7 +9992,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Rosa splits a tray into 8 matching brownies. Does the split make true equal parts?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Rosa cuts a tray of brownies into 8 matching pieces. Is each piece 1/8 of the tray?"}},
   },
   {
     itemId: "fractions-conc-b0821-0082",
@@ -10002,7 +10002,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"For fractions to apply, Diego's cut of a loaf into 6 slices thick and thin must give equal parts. Does it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Diego cuts a loaf into 6 slices, some thick and some thin. Is each slice 1/6 of the loaf?"}},
   },
   {
     itemId: "fractions-conc-b0821-0083",
@@ -10012,7 +10012,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Nora splits a banner into 5 identical panels. Does the split make true equal parts?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Nora splits a banner into 5 identical panels. Is each panel 1/5 of the banner?"}},
   },
   {
     itemId: "fractions-conc-b0821-0084",
@@ -10022,7 +10022,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"For fractions to apply, Luca's cut of a strip into 8 panels, edges uneven must give equal parts. Does it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Luca cuts a strip into 8 panels of different widths. Is each panel 1/8 of the strip?"}},
   },
   {
     itemId: "fractions-conc-b0821-0085",
@@ -10032,7 +10032,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Ava splits a pizza into 6 equal slices. Does the split make true equal parts?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Ava cuts a pizza into 6 equal slices. Is each slice one sixth of the pizza?"}},
   },
   {
     itemId: "fractions-conc-b0821-0086",
@@ -10042,7 +10042,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"For fractions to apply, Omar's cut of a quiche into 5 slices of mixed sizes must give equal parts. Does it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Omar cuts a quiche into 5 slices of mixed sizes. Is each slice 1/5 of the quiche?"}},
   },
   {
     itemId: "fractions-conc-b0821-0087",
@@ -10052,7 +10052,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Ben splits a board into 8 equal sections. Does the split make true equal parts?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Ben folds a paper strip into 8 equal sections. Is each section 1/8 of the strip?"}},
   },
   {
     itemId: "fractions-conc-b0821-0088",
@@ -10062,7 +10062,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"For fractions to apply, Finn's cut of a canvas into 6 sections eyeballed badly must give equal parts. Does it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Finn splits a canvas into 6 sections without measuring, and they come out different sizes. Is each section 1/6 of the canvas?"}},
   },
   {
     itemId: "fractions-conc-b0821-0089",
@@ -10072,7 +10072,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Priya splits a pie into 5 equal wedges. Does the split make true equal parts?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Priya cuts a pie into 5 equal wedges. Is each wedge 1/5 of the pie?"}},
   },
   {
     itemId: "fractions-conc-b0821-0090",
@@ -10082,7 +10082,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"For fractions to apply, Sam's cut of a flatbread into 8 wedges, one giant must give equal parts. Does it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Sam cuts a flatbread into 8 wedges, and one wedge is much bigger than the rest. Is each wedge 1/8 of the flatbread?"}},
   },
   {
     itemId: "fractions-conc-b0821-0091",
@@ -10092,7 +10092,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Amara cuts a mural into 10 panels. Are all the panels the same size?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Amara splits a mural into 10 equal panels. Is each panel 1/10 of the mural?"}},
   },
   {
     itemId: "fractions-conc-b0821-0092",
@@ -10102,7 +10102,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Judge Leo's division of a wall into 12 panels of drifting widths: are the parts truly equal?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Leo splits a wall into 12 panels that get wider and wider. Is each panel 1/12 of the wall?"}},
   },
   {
     itemId: "fractions-conc-b0821-0093",
@@ -10112,7 +10112,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Mina cuts a marathon route into 10 legs. Are all the legs the same size?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Mina splits a race route into 10 equal legs. Is each leg 1/10 of the route?"}},
   },
   {
     itemId: "fractions-conc-b0821-0094",
@@ -10122,7 +10122,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Judge Theo's division of a relay into 12 legs where anchors run less: are the parts truly equal?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Theo splits a relay race into 12 legs, and the last leg is shorter than the others. Is each leg 1/12 of the race?"}},
   },
   {
     itemId: "fractions-conc-b0821-0095",
@@ -10132,7 +10132,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Ida cuts a spreadsheet into 12 rows. Are all the rows the same size?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Ida draws a table with 12 equal rows. Is each row 1/12 of the table?"}},
   },
   {
     itemId: "fractions-conc-b0821-0096",
@@ -10142,7 +10142,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Judge Zoe's division of a chart into 10 rows squeezed at the end: are the parts truly equal?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Zoe splits a chart into 10 rows, and the last rows are squeezed thinner. Is each row 1/10 of the chart?"}},
   },
   {
     itemId: "fractions-conc-b0821-0097",
@@ -10152,7 +10152,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Rosa cuts a farm into 12 plots. Are all the plots the same size?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Rosa splits a farm into 12 equal plots. Is each plot 1/12 of the farm?"}},
   },
   {
     itemId: "fractions-conc-b0821-0098",
@@ -10162,7 +10162,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Judge Diego's division of an orchard into 10 plots minus a corner: are the parts truly equal?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Diego splits an orchard into 10 plots, and one plot is smaller than the rest. Is each plot 1/10 of the orchard?"}},
   },
   {
     itemId: "fractions-conc-b0821-0099",
@@ -10172,7 +10172,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Nora cuts a window into 10 panes. Are all the panes the same size?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Nora's window has 10 equal panes. Is each pane 1/10 of the window?"}},
   },
   {
     itemId: "fractions-conc-b0821-0100",
@@ -10182,7 +10182,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Judge Luca's division of a mosaic into 12 tiles, borders varying: are the parts truly equal?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Luca cuts a mosaic into 12 tiles of different sizes. Is each tile 1/12 of the mosaic?"}},
   },
   {
     itemId: "fractions-conc-b0821-0101",
@@ -10192,7 +10192,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Ava cuts a ruler into 12 marks. Are all the marks the same size?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Ava cuts a paper strip into 12 equal pieces. Is each piece 1/12 of the strip?"}},
   },
   {
     itemId: "fractions-conc-b0821-0102",
@@ -10202,7 +10202,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Judge Omar's division of a gauge into 10 marks crowding one side: are the parts truly equal?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Omar draws marks to split a strip into 10 parts, but the marks bunch up at one end. Is each part 1/10 of the strip?"}},
   },
   {
     itemId: "fractions-conc-b0821-0103",
@@ -10212,7 +10212,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Ben cuts a cake roll into 10 coins. Are all the coins the same size?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Ben cuts a cake roll into 10 equal slices. Is each slice 1/10 of the cake roll?"}},
   },
   {
     itemId: "fractions-conc-b0821-0104",
@@ -10222,7 +10222,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Judge Finn's division of a baguette into 12 slices, heels thick: are the parts truly equal?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Finn cuts a baguette into 12 slices, and the two end slices are extra thick. Is each slice 1/12 of the baguette?"}},
   },
   {
     itemId: "fractions-conc-b0821-0105",
@@ -10232,7 +10232,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Priya cuts a film strip into 12 frames. Are all the frames the same size?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Priya cuts a film strip into 12 equal frames. Is each frame 1/12 of the strip?"}},
   },
   {
     itemId: "fractions-conc-b0821-0106",
@@ -10242,7 +10242,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Judge Sam's division of a reel into 10 frames trimmed unevenly: are the parts truly equal?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Sam cuts a film reel into 10 frames, but the frames come out different lengths. Is each frame 1/10 of the reel?"}},
   },
   {
     itemId: "fractions-conc-b0821-0107",
@@ -10252,7 +10252,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Nia cuts a keyboard row into 10 keys. Are all the keys the same size?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Nia cuts a long ribbon into 10 equal pieces. Is each piece 1/10 of the ribbon?"}},
   },
   {
     itemId: "fractions-conc-b0821-0108",
@@ -10262,7 +10262,7 @@ export const ITEMS = [
     structureType: "equalPartsJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Judge Kai's division of a shelf into 12 slots, two doubled: are the parts truly equal?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":false,"promptText":"Kai splits a shelf into 12 slots, and two slots are twice as wide as the others. Is each slot 1/12 of the shelf?"}},
   },
   {
     itemId: "fractions-conc-b0821-0109",
@@ -10352,7 +10352,7 @@ export const ITEMS = [
     structureType: "nameJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":3,"n":2,"kind":"nameSaid","said":"3/2"},"truth":false,"promptText":"Ida shades 2 of 3 equal parts and names it 3/2. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":3,"n":2,"kind":"nameSaid","said":"2/3"},"truth":true,"promptText":"Ida shades 2 of 3 equal parts and names it 2/3. Is Ida right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0118",
@@ -10392,7 +10392,7 @@ export const ITEMS = [
     structureType: "nameJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":3,"n":1,"kind":"nameSaid","said":"1/2"},"truth":false,"promptText":"Nora shades 1 of 3 equal parts and names it 1/2. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":3,"n":1,"kind":"nameSaid","said":"1/3"},"truth":true,"promptText":"Nora shades 1 of 3 equal parts and names it 1/3. Is Nora right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0122",
@@ -10402,7 +10402,7 @@ export const ITEMS = [
     structureType: "nameJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":3,"n":2,"kind":"nameSaid","said":"2/4"},"truth":false,"promptText":"For 2 shaded out of 3, Luca writes 2/4. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":3,"n":2,"kind":"nameSaid","said":"2/3"},"truth":true,"promptText":"For 2 shaded out of 3, Luca writes 2/3. Is that right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0123",
@@ -10412,7 +10412,7 @@ export const ITEMS = [
     structureType: "nameJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":4,"n":1,"kind":"nameSaid","said":"1/3"},"truth":false,"promptText":"Ava shades 1 of 4 equal parts and names it 1/3. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":4,"n":1,"kind":"nameSaid","said":"1/4"},"truth":true,"promptText":"Ava shades 1 of 4 equal parts and names it 1/4. Is Ava right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0124",
@@ -10422,7 +10422,7 @@ export const ITEMS = [
     structureType: "nameJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":4,"n":3,"kind":"nameSaid","said":"2/4"},"truth":false,"promptText":"For 3 shaded out of 4, Omar writes 2/4. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":4,"n":3,"kind":"nameSaid","said":"3/4"},"truth":true,"promptText":"For 3 shaded out of 4, Omar writes 3/4. Is that right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0125",
@@ -10452,7 +10452,7 @@ export const ITEMS = [
     structureType: "nameJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":5,"n":2,"kind":"nameSaid","said":"2/5"},"truth":true,"promptText":"Zoe labels 2-of-5 shaded as 2/5. Does the label check out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":5,"n":2,"kind":"nameSaid","said":"2/5"},"truth":true,"promptText":"Zoe shades 2 of 5 equal parts and calls it 2/5. Is Zoe right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0128",
@@ -10462,7 +10462,7 @@ export const ITEMS = [
     structureType: "nameJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":5,"n":3,"kind":"nameSaid","said":"5/3"},"truth":false,"promptText":"Rosa's fraction for 3 shaded of 5 parts is 5/3. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":5,"n":3,"kind":"nameSaid","said":"5/3"},"truth":false,"promptText":"Rosa shades 3 of 5 equal parts and writes 5/3. Is Rosa right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0129",
@@ -10472,7 +10472,7 @@ export const ITEMS = [
     structureType: "nameJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":6,"n":1,"kind":"nameSaid","said":"1/6"},"truth":true,"promptText":"Diego labels 1-of-6 shaded as 1/6. Does the label check out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":6,"n":1,"kind":"nameSaid","said":"1/6"},"truth":true,"promptText":"Diego shades 1 of 6 equal parts. Is 1/6 the right fraction for the shaded part?"}},
   },
   {
     itemId: "fractions-conc-b0821-0130",
@@ -10492,7 +10492,7 @@ export const ITEMS = [
     structureType: "nameJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":8,"n":3,"kind":"nameSaid","said":"3/8"},"truth":true,"promptText":"Luca labels 3-of-8 shaded as 3/8. Does the label check out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":8,"n":3,"kind":"nameSaid","said":"3/8"},"truth":true,"promptText":"Luca shades 3 of 8 equal parts and writes 3/8. Is Luca right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0132",
@@ -10502,7 +10502,7 @@ export const ITEMS = [
     structureType: "nameJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":8,"n":5,"kind":"nameSaid","said":"8/5"},"truth":false,"promptText":"Ava's fraction for 5 shaded of 8 parts is 8/5. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":8,"n":5,"kind":"nameSaid","said":"8/5"},"truth":false,"promptText":"Ava shades 5 of 8 equal parts and calls it 8/5. Is Ava right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0133",
@@ -10512,7 +10512,7 @@ export const ITEMS = [
     structureType: "nameJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":5,"n":1,"kind":"nameSaid","said":"1/5"},"truth":true,"promptText":"Omar labels 1-of-5 shaded as 1/5. Does the label check out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":5,"n":1,"kind":"nameSaid","said":"1/5"},"truth":true,"promptText":"Omar shades 1 of 5 equal parts and names the shaded part 1/5. Is Omar right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0134",
@@ -10532,7 +10532,7 @@ export const ITEMS = [
     structureType: "nameJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":6,"n":2,"kind":"nameSaid","said":"2/6"},"truth":true,"promptText":"Finn labels 2-of-6 shaded as 2/6. Does the label check out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":6,"n":2,"kind":"nameSaid","said":"2/6"},"truth":true,"promptText":"Finn's fraction for 2 shaded of 6 parts is 2/6. Is Finn right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0136",
@@ -10542,7 +10542,7 @@ export const ITEMS = [
     structureType: "nameJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":6,"n":4,"kind":"nameSaid","said":"6/4"},"truth":false,"promptText":"Priya's fraction for 4 shaded of 6 parts is 6/4. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":6,"n":4,"kind":"nameSaid","said":"6/4"},"truth":false,"promptText":"Priya shades 4 of 6 equal parts and names the shaded part 6/4. Is Priya right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0137",
@@ -10552,7 +10552,7 @@ export const ITEMS = [
     structureType: "nameJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":8,"n":1,"kind":"nameSaid","said":"1/8"},"truth":true,"promptText":"Sam labels 1-of-8 shaded as 1/8. Does the label check out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":8,"n":1,"kind":"nameSaid","said":"1/8"},"truth":true,"promptText":"Sam shades 1 of 8 equal parts. Is 1/8 the right fraction for the shaded part?"}},
   },
   {
     itemId: "fractions-conc-b0821-0138",
@@ -10572,7 +10572,7 @@ export const ITEMS = [
     structureType: "nameJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":5,"n":3,"kind":"nameSaid","said":"3/5"},"truth":true,"promptText":"Kai labels 3-of-5 shaded as 3/5. Does the label check out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":5,"n":3,"kind":"nameSaid","said":"3/5"},"truth":true,"promptText":"Kai shades 3 of 5 equal parts and writes 3/5. Is Kai right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0140",
@@ -10582,7 +10582,7 @@ export const ITEMS = [
     structureType: "nameJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":5,"n":2,"kind":"nameSaid","said":"5/2"},"truth":false,"promptText":"June's fraction for 2 shaded of 5 parts is 5/2. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":5,"n":2,"kind":"nameSaid","said":"5/2"},"truth":false,"promptText":"June shades 2 of 5 equal parts. Is 5/2 the right fraction for the shaded part?"}},
   },
   {
     itemId: "fractions-conc-b0821-0141",
@@ -10592,7 +10592,7 @@ export const ITEMS = [
     structureType: "nameJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":6,"n":5,"kind":"nameSaid","said":"5/6"},"truth":true,"promptText":"Lily labels 5-of-6 shaded as 5/6. Does the label check out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":6,"n":5,"kind":"nameSaid","said":"5/6"},"truth":true,"promptText":"Lily shades 5 of 6 equal parts and names the shaded part 5/6. Is Lily right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0142",
@@ -10612,7 +10612,7 @@ export const ITEMS = [
     structureType: "nameJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":8,"n":5,"kind":"nameSaid","said":"5/8"},"truth":true,"promptText":"Leo labels 5-of-8 shaded as 5/8. Does the label check out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":8,"n":5,"kind":"nameSaid","said":"5/8"},"truth":true,"promptText":"Leo's fraction for 5 shaded of 8 parts is 5/8. Is Leo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0144",
@@ -10622,7 +10622,7 @@ export const ITEMS = [
     structureType: "nameJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":8,"n":3,"kind":"nameSaid","said":"8/3"},"truth":false,"promptText":"Mina's fraction for 3 shaded of 8 parts is 8/3. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":8,"n":3,"kind":"nameSaid","said":"8/3"},"truth":false,"promptText":"Mina shades 3 of 8 equal parts and writes 8/3. Is Mina right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0145",
@@ -10632,7 +10632,7 @@ export const ITEMS = [
     structureType: "nameJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":3,"kind":"nameSaid","said":"3/10"},"truth":true,"promptText":"Diego records 3/10 for 3 filled of 10 equal sections. Is the record right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":3,"kind":"nameSaid","said":"3/10"},"truth":true,"promptText":"Diego fills 3 of 10 equal sections and writes 3/10. Is Diego right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0146",
@@ -10642,7 +10642,7 @@ export const ITEMS = [
     structureType: "nameJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":7,"kind":"nameSaid","said":"10/7"},"truth":false,"promptText":"Auditing Nora's sheet: 7 of 10 shaded, written 10/7. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":7,"kind":"nameSaid","said":"10/7"},"truth":false,"promptText":"Nora colors 7 of 10 equal parts and writes the fraction 10/7. Is Nora right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0147",
@@ -10652,7 +10652,7 @@ export const ITEMS = [
     structureType: "nameJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":5,"kind":"nameSaid","said":"5/12"},"truth":true,"promptText":"Luca records 5/12 for 5 filled of 12 equal sections. Is the record right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":5,"kind":"nameSaid","said":"5/12"},"truth":true,"promptText":"A bar has 12 equal sections, and 5 are filled. Luca says 5/12 of the bar is filled. Is Luca right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0148",
@@ -10662,7 +10662,7 @@ export const ITEMS = [
     structureType: "nameJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":7,"kind":"nameSaid","said":"12/7"},"truth":false,"promptText":"Auditing Ava's sheet: 7 of 12 shaded, written 12/7. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":7,"kind":"nameSaid","said":"12/7"},"truth":false,"promptText":"A bar has 12 equal sections, and 7 are filled. Ava says 12/7 of the bar is filled. Is Ava right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0149",
@@ -10672,7 +10672,7 @@ export const ITEMS = [
     structureType: "nameJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":9,"kind":"nameSaid","said":"9/10"},"truth":true,"promptText":"Omar records 9/10 for 9 filled of 10 equal sections. Is the record right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":9,"kind":"nameSaid","said":"9/10"},"truth":true,"promptText":"Omar colors 9 of 10 equal parts and writes the fraction 9/10. Is Omar right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0150",
@@ -10682,7 +10682,7 @@ export const ITEMS = [
     structureType: "nameJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":1,"kind":"nameSaid","said":"10/1"},"truth":false,"promptText":"Auditing Ben's sheet: 1 of 10 shaded, written 10/1. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":1,"kind":"nameSaid","said":"10/1"},"truth":false,"promptText":"Ben fills 1 of 10 equal sections and writes 10/1. Is Ben right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0151",
@@ -10692,7 +10692,7 @@ export const ITEMS = [
     structureType: "nameJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":11,"kind":"nameSaid","said":"11/12"},"truth":true,"promptText":"Finn records 11/12 for 11 filled of 12 equal sections. Is the record right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":11,"kind":"nameSaid","said":"11/12"},"truth":true,"promptText":"Finn shades 11 of the 12 equal sections of a paper strip. Finn says 11/12 of the strip is shaded. Is Finn right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0152",
@@ -10702,7 +10702,7 @@ export const ITEMS = [
     structureType: "nameJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":1,"kind":"nameSaid","said":"12/1"},"truth":false,"promptText":"Auditing Priya's sheet: 1 of 12 shaded, written 12/1. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":1,"kind":"nameSaid","said":"12/1"},"truth":false,"promptText":"1 of 12 equal parts is colored. Priya writes 12/1 for the colored part. Is Priya right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0153",
@@ -10712,7 +10712,7 @@ export const ITEMS = [
     structureType: "nameJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":7,"kind":"nameSaid","said":"7/10"},"truth":true,"promptText":"Sam records 7/10 for 7 filled of 10 equal sections. Is the record right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":7,"kind":"nameSaid","said":"7/10"},"truth":true,"promptText":"Sam colors 7 of 10 equal parts and writes the fraction 7/10. Is Sam right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0154",
@@ -10722,7 +10722,7 @@ export const ITEMS = [
     structureType: "nameJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":3,"kind":"nameSaid","said":"10/3"},"truth":false,"promptText":"Auditing Nia's sheet: 3 of 10 shaded, written 10/3. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":3,"kind":"nameSaid","said":"10/3"},"truth":false,"promptText":"Nia shades 3 of the 10 equal sections of a paper strip. Nia says 10/3 of the strip is shaded. Is Nia right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0155",
@@ -10732,7 +10732,7 @@ export const ITEMS = [
     structureType: "nameJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":7,"kind":"nameSaid","said":"7/12"},"truth":true,"promptText":"Kai records 7/12 for 7 filled of 12 equal sections. Is the record right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":7,"kind":"nameSaid","said":"7/12"},"truth":true,"promptText":"7 of 12 equal parts are colored. Kai writes 7/12 for the colored part. Is Kai right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0156",
@@ -10742,7 +10742,7 @@ export const ITEMS = [
     structureType: "nameJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":5,"kind":"nameSaid","said":"12/5"},"truth":false,"promptText":"Auditing June's sheet: 5 of 12 shaded, written 12/5. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":5,"kind":"nameSaid","said":"12/5"},"truth":false,"promptText":"June fills 5 of 12 equal sections and writes 12/5. Is June right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0157",
@@ -10752,7 +10752,7 @@ export const ITEMS = [
     structureType: "nameJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":1,"kind":"nameSaid","said":"1/10"},"truth":true,"promptText":"Lily records 1/10 for 1 filled of 10 equal sections. Is the record right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":1,"kind":"nameSaid","said":"1/10"},"truth":true,"promptText":"1 of 10 equal parts is colored. Lily writes 1/10 for the colored part. Is Lily right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0158",
@@ -10762,7 +10762,7 @@ export const ITEMS = [
     structureType: "nameJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":9,"kind":"nameSaid","said":"10/9"},"truth":false,"promptText":"Auditing Amara's sheet: 9 of 10 shaded, written 10/9. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":9,"kind":"nameSaid","said":"10/9"},"truth":false,"promptText":"Amara shades 9 of 10 equal sections and says the fraction is 10/9. Is Amara right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0159",
@@ -10772,7 +10772,7 @@ export const ITEMS = [
     structureType: "nameJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":1,"kind":"nameSaid","said":"1/12"},"truth":true,"promptText":"Leo records 1/12 for 1 filled of 12 equal sections. Is the record right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":1,"kind":"nameSaid","said":"1/12"},"truth":true,"promptText":"Leo colors 1 of 12 equal parts and writes the fraction 1/12. Is Leo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0160",
@@ -10782,7 +10782,7 @@ export const ITEMS = [
     structureType: "nameJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":11,"kind":"nameSaid","said":"12/11"},"truth":false,"promptText":"Auditing Mina's sheet: 11 of 12 shaded, written 12/11. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":11,"kind":"nameSaid","said":"12/11"},"truth":false,"promptText":"11 of 12 equal parts are colored. Mina writes 12/11 for the colored part. Is Mina right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0161",
@@ -10792,7 +10792,7 @@ export const ITEMS = [
     structureType: "nameJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":5,"n":4,"kind":"nameSaid","said":"4/5"},"truth":true,"promptText":"Theo records 4/5 for 4 filled of 5 equal sections. Is the record right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":5,"n":4,"kind":"nameSaid","said":"4/5"},"truth":true,"promptText":"Theo shades 4 of 5 equal sections and says the fraction is 4/5. Is Theo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0162",
@@ -10802,7 +10802,7 @@ export const ITEMS = [
     structureType: "nameJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":8,"n":5,"kind":"nameSaid","said":"8/5"},"truth":false,"promptText":"Auditing Ida's sheet: 5 of 8 shaded, written 8/5. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":8,"n":5,"kind":"nameSaid","said":"8/5"},"truth":false,"promptText":"Ida colors 5 of 8 equal parts and writes the fraction 8/5. Is Ida right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0163",
@@ -10822,7 +10822,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":4,"n":3,"kind":"wholeSaid"},"truth":false,"promptText":"3/4 makes a full whole, claims Theo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":4,"n":3,"kind":"wholeSaid"},"truth":false,"promptText":"Theo says 3/4 equals exactly one whole. Is Theo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0165",
@@ -10832,7 +10832,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":3,"n":3,"kind":"wholeSaid"},"truth":true,"promptText":"Ida says 3/3 equals exactly one whole. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":3,"n":3,"kind":"wholeSaid"},"truth":true,"promptText":"Ida thinks 3/3 makes a full whole. Is Ida right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0166",
@@ -10842,7 +10842,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":4,"n":2,"kind":"wholeSaid"},"truth":false,"promptText":"2/4 makes a full whole, claims Zoe. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":4,"n":2,"kind":"wholeSaid"},"truth":false,"promptText":"Zoe thinks 2/4 makes a full whole. Is Zoe right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0167",
@@ -10862,7 +10862,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":2,"n":1,"kind":"wholeSaid"},"truth":false,"promptText":"1/2 makes a full whole, claims Diego. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":2,"n":1,"kind":"wholeSaid"},"truth":false,"promptText":"Diego says 1/2 equals exactly one whole. Is Diego right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0169",
@@ -10872,7 +10872,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":2,"n":2,"kind":"wholeSaid"},"truth":true,"promptText":"Nora says 2/2 equals exactly one whole. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":2,"n":2,"kind":"wholeSaid"},"truth":true,"promptText":"Nora thinks 2/2 makes a full whole. Is Nora right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0170",
@@ -10882,7 +10882,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":3,"n":2,"kind":"wholeSaid"},"truth":false,"promptText":"2/3 makes a full whole, claims Luca. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":3,"n":2,"kind":"wholeSaid"},"truth":false,"promptText":"Luca thinks 2/3 makes a full whole. Is Luca right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0171",
@@ -10902,7 +10902,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":4,"n":1,"kind":"wholeSaid"},"truth":false,"promptText":"1/4 makes a full whole, claims Omar. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":4,"n":1,"kind":"wholeSaid"},"truth":false,"promptText":"Omar says 1/4 equals exactly one whole. Is Omar right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0173",
@@ -10912,7 +10912,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":4,"n":4,"kind":"wholeSaid"},"truth":true,"promptText":"Ben says 4/4 equals exactly one whole. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":4,"n":4,"kind":"wholeSaid"},"truth":true,"promptText":"Ben thinks 4/4 makes a full whole. Is Ben right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0174",
@@ -10922,7 +10922,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":3,"n":1,"kind":"wholeSaid"},"truth":false,"promptText":"1/3 makes a full whole, claims Finn. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":3,"n":1,"kind":"wholeSaid"},"truth":false,"promptText":"Finn thinks 1/3 makes a full whole. Is Finn right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0175",
@@ -10942,7 +10942,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":4,"n":3,"kind":"wholeSaid"},"truth":false,"promptText":"3/4 makes a full whole, claims Sam. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":4,"n":3,"kind":"wholeSaid"},"truth":false,"promptText":"Sam says 3/4 equals exactly one whole. Is Sam right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0177",
@@ -10952,7 +10952,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":3,"n":3,"kind":"wholeSaid"},"truth":true,"promptText":"Nia says 3/3 equals exactly one whole. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":3,"n":3,"kind":"wholeSaid"},"truth":true,"promptText":"Nia thinks 3/3 makes a full whole. Is Nia right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0178",
@@ -10962,7 +10962,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":4,"n":2,"kind":"wholeSaid"},"truth":false,"promptText":"2/4 makes a full whole, claims Kai. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":4,"n":2,"kind":"wholeSaid"},"truth":false,"promptText":"Kai thinks 2/4 makes a full whole. Is Kai right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0179",
@@ -10982,7 +10982,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":3,"n":2,"kind":"wholeSaid"},"truth":false,"promptText":"2/3 makes a full whole, claims Lily. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":3,"n":2,"kind":"wholeSaid"},"truth":false,"promptText":"Lily thinks 2/3 makes a full whole. Is Lily right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0181",
@@ -10992,7 +10992,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":5,"n":5,"kind":"wholeSaid"},"truth":true,"promptText":"Omar marks 5/5 as exactly 1 on the line. Does the mark belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":5,"n":5,"kind":"wholeSaid"},"truth":true,"promptText":"Omar marks 5/5 at exactly 1 on a number line. Does that mark belong there?"}},
   },
   {
     itemId: "fractions-conc-b0821-0182",
@@ -11002,7 +11002,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":5,"n":4,"kind":"wholeSaid"},"truth":false,"promptText":"According to Ben, 4/5 and 1 are the same point. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":5,"n":4,"kind":"wholeSaid"},"truth":false,"promptText":"Ben says 4/5 and 1 are at the same point on a number line. Is Ben right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0183",
@@ -11012,7 +11012,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":6,"n":6,"kind":"wholeSaid"},"truth":true,"promptText":"Finn marks 6/6 as exactly 1 on the line. Does the mark belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":6,"n":6,"kind":"wholeSaid"},"truth":true,"promptText":"Finn says 6/6 and 1 are at the same point on a number line. Is Finn right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0184",
@@ -11022,7 +11022,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":6,"n":5,"kind":"wholeSaid"},"truth":false,"promptText":"According to Priya, 5/6 and 1 are the same point. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":6,"n":5,"kind":"wholeSaid"},"truth":false,"promptText":"Priya marks 5/6 at exactly 1 on a number line. Does that mark belong there?"}},
   },
   {
     itemId: "fractions-conc-b0821-0185",
@@ -11032,7 +11032,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":8,"n":8,"kind":"wholeSaid"},"truth":true,"promptText":"Sam marks 8/8 as exactly 1 on the line. Does the mark belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":8,"n":8,"kind":"wholeSaid"},"truth":true,"promptText":"Sam marks 8/8 at exactly 1 on a number line. Does that mark belong there?"}},
   },
   {
     itemId: "fractions-conc-b0821-0186",
@@ -11042,7 +11042,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":8,"n":7,"kind":"wholeSaid"},"truth":false,"promptText":"According to Nia, 7/8 and 1 are the same point. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":8,"n":7,"kind":"wholeSaid"},"truth":false,"promptText":"Nia says 7/8 and 1 are at the same point on a number line. Is Nia right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0187",
@@ -11052,7 +11052,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":5,"n":5,"kind":"wholeSaid"},"truth":true,"promptText":"Kai marks 5/5 as exactly 1 on the line. Does the mark belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":5,"n":5,"kind":"wholeSaid"},"truth":true,"promptText":"Kai says 5/5 and 1 are at the same point on a number line. Is Kai right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0188",
@@ -11062,7 +11062,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":5,"n":3,"kind":"wholeSaid"},"truth":false,"promptText":"According to June, 3/5 and 1 are the same point. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":5,"n":3,"kind":"wholeSaid"},"truth":false,"promptText":"June marks 3/5 at exactly 1 on a number line. Does that mark belong there?"}},
   },
   {
     itemId: "fractions-conc-b0821-0189",
@@ -11072,7 +11072,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":6,"n":6,"kind":"wholeSaid"},"truth":true,"promptText":"Lily marks 6/6 as exactly 1 on the line. Does the mark belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":6,"n":6,"kind":"wholeSaid"},"truth":true,"promptText":"Lily marks 6/6 at exactly 1 on a number line. Does that mark belong there?"}},
   },
   {
     itemId: "fractions-conc-b0821-0190",
@@ -11082,7 +11082,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":6,"n":1,"kind":"wholeSaid"},"truth":false,"promptText":"According to Amara, 1/6 and 1 are the same point. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":6,"n":1,"kind":"wholeSaid"},"truth":false,"promptText":"Amara says 1/6 and 1 are at the same point on a number line. Is Amara right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0191",
@@ -11092,7 +11092,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":8,"n":8,"kind":"wholeSaid"},"truth":true,"promptText":"Leo marks 8/8 as exactly 1 on the line. Does the mark belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":8,"n":8,"kind":"wholeSaid"},"truth":true,"promptText":"Leo says 8/8 and 1 are at the same point on a number line. Is Leo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0192",
@@ -11102,7 +11102,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":8,"n":3,"kind":"wholeSaid"},"truth":false,"promptText":"According to Mina, 3/8 and 1 are the same point. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":8,"n":3,"kind":"wholeSaid"},"truth":false,"promptText":"Mina marks 3/8 at exactly 1 on a number line. Does that mark belong there?"}},
   },
   {
     itemId: "fractions-conc-b0821-0193",
@@ -11112,7 +11112,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":5,"n":5,"kind":"wholeSaid"},"truth":true,"promptText":"Theo marks 5/5 as exactly 1 on the line. Does the mark belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":5,"n":5,"kind":"wholeSaid"},"truth":true,"promptText":"Theo marks 5/5 at exactly 1 on a number line. Does that mark belong there?"}},
   },
   {
     itemId: "fractions-conc-b0821-0194",
@@ -11122,7 +11122,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":5,"n":2,"kind":"wholeSaid"},"truth":false,"promptText":"According to Ida, 2/5 and 1 are the same point. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":5,"n":2,"kind":"wholeSaid"},"truth":false,"promptText":"Ida says 2/5 and 1 are at the same point on a number line. Is Ida right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0195",
@@ -11132,7 +11132,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":6,"n":6,"kind":"wholeSaid"},"truth":true,"promptText":"Zoe marks 6/6 as exactly 1 on the line. Does the mark belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":6,"n":6,"kind":"wholeSaid"},"truth":true,"promptText":"Zoe says 6/6 and 1 are at the same point on a number line. Is Zoe right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0196",
@@ -11142,7 +11142,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":6,"n":4,"kind":"wholeSaid"},"truth":false,"promptText":"According to Rosa, 4/6 and 1 are the same point. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":6,"n":4,"kind":"wholeSaid"},"truth":false,"promptText":"Rosa marks 4/6 at exactly 1 on a number line. Does that mark belong there?"}},
   },
   {
     itemId: "fractions-conc-b0821-0197",
@@ -11152,7 +11152,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":8,"n":8,"kind":"wholeSaid"},"truth":true,"promptText":"Diego marks 8/8 as exactly 1 on the line. Does the mark belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":8,"n":8,"kind":"wholeSaid"},"truth":true,"promptText":"Diego marks 8/8 at exactly 1 on a number line. Does that mark belong there?"}},
   },
   {
     itemId: "fractions-conc-b0821-0198",
@@ -11162,7 +11162,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":8,"n":5,"kind":"wholeSaid"},"truth":false,"promptText":"According to Nora, 5/8 and 1 are the same point. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":8,"n":5,"kind":"wholeSaid"},"truth":false,"promptText":"Nora says 5/8 and 1 are at the same point on a number line. Is Nora right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0199",
@@ -11172,7 +11172,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":10,"kind":"wholeSaid"},"truth":true,"promptText":"Finn equates 10/10 with the whole number 1. Is the equation sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":10,"kind":"wholeSaid"},"truth":true,"promptText":"Finn puts 10/10 at the same point as 1 on a number line. Is Finn right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0200",
@@ -11182,7 +11182,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":9,"kind":"wholeSaid"},"truth":false,"promptText":"On Priya's number line, 9/10 coincides with 1. Should it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":9,"kind":"wholeSaid"},"truth":false,"promptText":"Priya puts 9/10 at the same point as 1 on a number line. Is Priya right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0201",
@@ -11192,7 +11192,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":12,"kind":"wholeSaid"},"truth":true,"promptText":"Sam equates 12/12 with the whole number 1. Is the equation sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":12,"kind":"wholeSaid"},"truth":true,"promptText":"Sam says 12/12 = 1. Is Sam right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0202",
@@ -11202,7 +11202,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":11,"kind":"wholeSaid"},"truth":false,"promptText":"On Nia's number line, 11/12 coincides with 1. Should it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":11,"kind":"wholeSaid"},"truth":false,"promptText":"Nia says 11/12 is the same as 1 whole. Is Nia right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0203",
@@ -11212,7 +11212,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":10,"kind":"wholeSaid"},"truth":true,"promptText":"Kai equates 10/10 with the whole number 1. Is the equation sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":10,"kind":"wholeSaid"},"truth":true,"promptText":"Kai says 10/10 is the same as 1 whole. Is Kai right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0204",
@@ -11222,7 +11222,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":7,"kind":"wholeSaid"},"truth":false,"promptText":"On June's number line, 7/10 coincides with 1. Should it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":7,"kind":"wholeSaid"},"truth":false,"promptText":"June says 7/10 = 1. Is June right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0205",
@@ -11232,7 +11232,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":12,"kind":"wholeSaid"},"truth":true,"promptText":"Lily equates 12/12 with the whole number 1. Is the equation sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":12,"kind":"wholeSaid"},"truth":true,"promptText":"Lily puts 12/12 at the same point as 1 on a number line. Is Lily right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0206",
@@ -11242,7 +11242,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":5,"kind":"wholeSaid"},"truth":false,"promptText":"On Amara's number line, 5/12 coincides with 1. Should it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":5,"kind":"wholeSaid"},"truth":false,"promptText":"Amara says 5/12 = 1. Is Amara right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0207",
@@ -11252,7 +11252,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":10,"kind":"wholeSaid"},"truth":true,"promptText":"Leo equates 10/10 with the whole number 1. Is the equation sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":10,"kind":"wholeSaid"},"truth":true,"promptText":"Leo says 10/10 = 1. Is Leo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0208",
@@ -11262,7 +11262,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":3,"kind":"wholeSaid"},"truth":false,"promptText":"On Mina's number line, 3/10 coincides with 1. Should it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":3,"kind":"wholeSaid"},"truth":false,"promptText":"Mina puts 3/10 at the same point as 1 on a number line. Is Mina right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0209",
@@ -11272,7 +11272,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":12,"kind":"wholeSaid"},"truth":true,"promptText":"Theo equates 12/12 with the whole number 1. Is the equation sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":12,"kind":"wholeSaid"},"truth":true,"promptText":"Theo puts 12/12 at the same point as 1 on a number line. Is Theo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0210",
@@ -11282,7 +11282,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":7,"kind":"wholeSaid"},"truth":false,"promptText":"On Ida's number line, 7/12 coincides with 1. Should it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":7,"kind":"wholeSaid"},"truth":false,"promptText":"Ida says 7/12 is the same as 1 whole. Is Ida right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0211",
@@ -11292,7 +11292,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":10,"kind":"wholeSaid"},"truth":true,"promptText":"Zoe equates 10/10 with the whole number 1. Is the equation sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":10,"kind":"wholeSaid"},"truth":true,"promptText":"Zoe says 10/10 is the same as 1 whole. Is Zoe right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0212",
@@ -11302,7 +11302,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":1,"kind":"wholeSaid"},"truth":false,"promptText":"On Rosa's number line, 1/10 coincides with 1. Should it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":1,"kind":"wholeSaid"},"truth":false,"promptText":"Rosa says 1/10 is the same as 1 whole. Is Rosa right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0213",
@@ -11312,7 +11312,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":12,"kind":"wholeSaid"},"truth":true,"promptText":"Diego equates 12/12 with the whole number 1. Is the equation sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":12,"kind":"wholeSaid"},"truth":true,"promptText":"Diego says 12/12 = 1. Is Diego right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0214",
@@ -11322,7 +11322,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":1,"kind":"wholeSaid"},"truth":false,"promptText":"On Nora's number line, 1/12 coincides with 1. Should it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":1,"kind":"wholeSaid"},"truth":false,"promptText":"Nora says 1/12 = 1. Is Nora right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0215",
@@ -11332,7 +11332,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":10,"kind":"wholeSaid"},"truth":true,"promptText":"Luca equates 10/10 with the whole number 1. Is the equation sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":10,"kind":"wholeSaid"},"truth":true,"promptText":"Luca says 10/10 is the same as 1 whole. Is Luca right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0216",
@@ -11342,7 +11342,7 @@ export const ITEMS = [
     structureType: "wholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":9,"kind":"wholeSaid"},"truth":false,"promptText":"On Ava's number line, 9/10 coincides with 1. Should it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":9,"kind":"wholeSaid"},"truth":false,"promptText":"Ava puts 9/10 at the same point as 1 on a number line. Is Ava right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0217",
@@ -11352,7 +11352,7 @@ export const ITEMS = [
     structureType: "closerEnd_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["0","1"],"display":{"frac":{"d":4,"n":1,"kind":"closerEnd"},"promptText":"Is 1/4 closer to 0 or to 1? Luca pictures the line."}},
+    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["0","1"],"display":{"frac":{"d":4,"n":1,"kind":"closerEnd"},"promptText":"On a number line from 0 to 1, is 1/4 nearer to 0 or to 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0218",
@@ -11372,7 +11372,7 @@ export const ITEMS = [
     structureType: "closerEnd_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":3,"n":1,"kind":"closerEnd"},"promptText":"Is 1/3 closer to 0 or to 1? Omar pictures the line."}},
+    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":3,"n":1,"kind":"closerEnd"},"promptText":"Which whole number is 1/3 closer to, 0 or 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0220",
@@ -11392,7 +11392,7 @@ export const ITEMS = [
     structureType: "closerEnd_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":4,"n":1,"kind":"closerEnd"},"promptText":"Is 1/4 closer to 0 or to 1? Finn pictures the line."}},
+    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":4,"n":1,"kind":"closerEnd"},"promptText":"On a number line from 0 to 1, is 1/4 closer to 0 or to 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0222",
@@ -11412,7 +11412,7 @@ export const ITEMS = [
     structureType: "closerEnd_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["0","1"],"display":{"frac":{"d":3,"n":1,"kind":"closerEnd"},"promptText":"Is 1/3 closer to 0 or to 1? Sam pictures the line."}},
+    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["0","1"],"display":{"frac":{"d":3,"n":1,"kind":"closerEnd"},"promptText":"Is 1/3 closer to 0 or closer to 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0224",
@@ -11432,7 +11432,7 @@ export const ITEMS = [
     structureType: "closerEnd_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["0","1"],"display":{"frac":{"d":4,"n":1,"kind":"closerEnd"},"promptText":"Is 1/4 closer to 0 or to 1? Kai pictures the line."}},
+    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["0","1"],"display":{"frac":{"d":4,"n":1,"kind":"closerEnd"},"promptText":"Which is 1/4 closer to: 0 or 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0226",
@@ -11452,7 +11452,7 @@ export const ITEMS = [
     structureType: "closerEnd_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":3,"n":1,"kind":"closerEnd"},"promptText":"Is 1/3 closer to 0 or to 1? Lily pictures the line."}},
+    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":3,"n":1,"kind":"closerEnd"},"promptText":"Which is 1/3 nearer to, 0 or 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0228",
@@ -11472,7 +11472,7 @@ export const ITEMS = [
     structureType: "closerEnd_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":4,"n":1,"kind":"closerEnd"},"promptText":"Is 1/4 closer to 0 or to 1? Leo pictures the line."}},
+    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":4,"n":1,"kind":"closerEnd"},"promptText":"Think of a number line from 0 to 1. Is 1/4 closer to 0 or to 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0230",
@@ -11492,7 +11492,7 @@ export const ITEMS = [
     structureType: "closerEnd_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":3,"n":1,"kind":"closerEnd"},"promptText":"Is 1/3 closer to 0 or to 1? Theo pictures the line."}},
+    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":3,"n":1,"kind":"closerEnd"},"promptText":"Is 1/3 nearer 0 or nearer 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0232",
@@ -11512,7 +11512,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["0","1"],"display":{"frac":{"d":5,"n":1,"kind":"closerEnd"},"promptText":"Between 0 and 1, does 1/5 sit nearer 0 or nearer 1? June decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["0","1"],"display":{"frac":{"d":5,"n":1,"kind":"closerEnd"},"promptText":"Think of a number line from 0 to 1. Is 1/5 closer to 0 or to 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0234",
@@ -11522,7 +11522,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["0","1"],"display":{"frac":{"d":5,"n":4,"kind":"closerEnd"},"promptText":"Lily slides a marker to 4/5. Toward which end does it lean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["0","1"],"display":{"frac":{"d":5,"n":4,"kind":"closerEnd"},"promptText":"On a number line from 0 to 1, is 4/5 closer to 0 or to 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0235",
@@ -11532,7 +11532,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["0","1"],"display":{"frac":{"d":6,"n":1,"kind":"closerEnd"},"promptText":"Between 0 and 1, does 1/6 sit nearer 0 or nearer 1? Amara decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["0","1"],"display":{"frac":{"d":6,"n":1,"kind":"closerEnd"},"promptText":"Is 1/6 closer to 0 or to 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0236",
@@ -11542,7 +11542,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["0","1"],"display":{"frac":{"d":6,"n":5,"kind":"closerEnd"},"promptText":"Leo slides a marker to 5/6. Toward which end does it lean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["0","1"],"display":{"frac":{"d":6,"n":5,"kind":"closerEnd"},"promptText":"Is 5/6 nearer to 0 or to 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0237",
@@ -11552,7 +11552,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":8,"n":1,"kind":"closerEnd"},"promptText":"Between 0 and 1, does 1/8 sit nearer 0 or nearer 1? Mina decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":8,"n":1,"kind":"closerEnd"},"promptText":"Which is 1/8 nearer to, 0 or 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0238",
@@ -11562,7 +11562,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["0","1"],"display":{"frac":{"d":8,"n":7,"kind":"closerEnd"},"promptText":"Theo slides a marker to 7/8. Toward which end does it lean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["0","1"],"display":{"frac":{"d":8,"n":7,"kind":"closerEnd"},"promptText":"Which whole number is 7/8 closer to, 0 or 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0239",
@@ -11572,7 +11572,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["0","1"],"display":{"frac":{"d":5,"n":2,"kind":"closerEnd"},"promptText":"Between 0 and 1, does 2/5 sit nearer 0 or nearer 1? Ida decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["0","1"],"display":{"frac":{"d":5,"n":2,"kind":"closerEnd"},"promptText":"Which is 2/5 closer to: 0 or 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0240",
@@ -11582,7 +11582,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["0","1"],"display":{"frac":{"d":6,"n":5,"kind":"closerEnd"},"promptText":"Zoe slides a marker to 5/6. Toward which end does it lean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["0","1"],"display":{"frac":{"d":6,"n":5,"kind":"closerEnd"},"promptText":"Is 5/6 nearer 0 or nearer 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0241",
@@ -11592,7 +11592,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":8,"n":2,"kind":"closerEnd"},"promptText":"Between 0 and 1, does 2/8 sit nearer 0 or nearer 1? Rosa decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":8,"n":2,"kind":"closerEnd"},"promptText":"Which whole number is 2/8 closer to, 0 or 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0242",
@@ -11602,7 +11602,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["0","1"],"display":{"frac":{"d":8,"n":7,"kind":"closerEnd"},"promptText":"Diego slides a marker to 7/8. Toward which end does it lean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["0","1"],"display":{"frac":{"d":8,"n":7,"kind":"closerEnd"},"promptText":"Is 7/8 nearer 0 or nearer 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0243",
@@ -11612,7 +11612,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":5,"n":1,"kind":"closerEnd"},"promptText":"Between 0 and 1, does 1/5 sit nearer 0 or nearer 1? Nora decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":5,"n":1,"kind":"closerEnd"},"promptText":"On a number line from 0 to 1, is 1/5 nearer to 0 or to 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0244",
@@ -11622,7 +11622,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["1","0"],"display":{"frac":{"d":5,"n":4,"kind":"closerEnd"},"promptText":"Luca slides a marker to 4/5. Toward which end does it lean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["1","0"],"display":{"frac":{"d":5,"n":4,"kind":"closerEnd"},"promptText":"Which is 4/5 closer to: 0 or 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0245",
@@ -11632,7 +11632,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["0","1"],"display":{"frac":{"d":6,"n":1,"kind":"closerEnd"},"promptText":"Between 0 and 1, does 1/6 sit nearer 0 or nearer 1? Ava decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["0","1"],"display":{"frac":{"d":6,"n":1,"kind":"closerEnd"},"promptText":"Is 1/6 nearer to 0 or to 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0246",
@@ -11642,7 +11642,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["0","1"],"display":{"frac":{"d":6,"n":5,"kind":"closerEnd"},"promptText":"Omar slides a marker to 5/6. Toward which end does it lean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["0","1"],"display":{"frac":{"d":6,"n":5,"kind":"closerEnd"},"promptText":"Think of a number line from 0 to 1. Is 5/6 closer to 0 or to 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0247",
@@ -11652,7 +11652,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":8,"n":1,"kind":"closerEnd"},"promptText":"Between 0 and 1, does 1/8 sit nearer 0 or nearer 1? Ben decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":8,"n":1,"kind":"closerEnd"},"promptText":"On a number line from 0 to 1, is 1/8 closer to 0 or to 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0248",
@@ -11662,7 +11662,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["0","1"],"display":{"frac":{"d":8,"n":6,"kind":"closerEnd"},"promptText":"Finn slides a marker to 6/8. Toward which end does it lean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["0","1"],"display":{"frac":{"d":8,"n":6,"kind":"closerEnd"},"promptText":"Is 6/8 nearer to 0 or to 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0249",
@@ -11672,7 +11672,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":10,"n":1,"kind":"closerEnd"},"promptText":"Locate 1/10 precisely: is it nearer 0 or nearer 1? Amara reasons it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":10,"n":1,"kind":"closerEnd"},"promptText":"Which is 1/10 closer to: 0 or 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0250",
@@ -11682,7 +11682,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["1","0"],"display":{"frac":{"d":10,"n":9,"kind":"closerEnd"},"promptText":"Leo audits the position of 9/10. Which endpoint is closer?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["1","0"],"display":{"frac":{"d":10,"n":9,"kind":"closerEnd"},"promptText":"Is 9/10 closer to 0 or to 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0251",
@@ -11692,7 +11692,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":12,"n":1,"kind":"closerEnd"},"promptText":"Locate 1/12 precisely: is it nearer 0 or nearer 1? Mina reasons it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":12,"n":1,"kind":"closerEnd"},"promptText":"Which whole number is 1/12 closer to, 0 or 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0252",
@@ -11702,7 +11702,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["1","0"],"display":{"frac":{"d":12,"n":11,"kind":"closerEnd"},"promptText":"Theo audits the position of 11/12. Which endpoint is closer?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["1","0"],"display":{"frac":{"d":12,"n":11,"kind":"closerEnd"},"promptText":"On a number line from 0 to 1, is 11/12 nearer to 0 or to 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0253",
@@ -11712,7 +11712,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":10,"n":3,"kind":"closerEnd"},"promptText":"Locate 3/10 precisely: is it nearer 0 or nearer 1? Ida reasons it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":10,"n":3,"kind":"closerEnd"},"promptText":"On a number line from 0 to 1, is 3/10 nearer to 0 or to 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0254",
@@ -11722,7 +11722,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["1","0"],"display":{"frac":{"d":10,"n":7,"kind":"closerEnd"},"promptText":"Zoe audits the position of 7/10. Which endpoint is closer?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["1","0"],"display":{"frac":{"d":10,"n":7,"kind":"closerEnd"},"promptText":"Is 7/10 closer to 0 or closer to 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0255",
@@ -11732,7 +11732,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["0","1"],"display":{"frac":{"d":12,"n":5,"kind":"closerEnd"},"promptText":"Locate 5/12 precisely: is it nearer 0 or nearer 1? Rosa reasons it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["0","1"],"display":{"frac":{"d":12,"n":5,"kind":"closerEnd"},"promptText":"Is 5/12 closer to 0 or to 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0256",
@@ -11742,7 +11742,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["0","1"],"display":{"frac":{"d":12,"n":7,"kind":"closerEnd"},"promptText":"Diego audits the position of 7/12. Which endpoint is closer?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["0","1"],"display":{"frac":{"d":12,"n":7,"kind":"closerEnd"},"promptText":"Is 7/12 closer to 0 or closer to 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0257",
@@ -11752,7 +11752,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["0","1"],"display":{"frac":{"d":10,"n":2,"kind":"closerEnd"},"promptText":"Locate 2/10 precisely: is it nearer 0 or nearer 1? Nora reasons it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["0","1"],"display":{"frac":{"d":10,"n":2,"kind":"closerEnd"},"promptText":"Is 2/10 closer to 0 or closer to 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0258",
@@ -11762,7 +11762,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["1","0"],"display":{"frac":{"d":10,"n":9,"kind":"closerEnd"},"promptText":"Luca audits the position of 9/10. Which endpoint is closer?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["1","0"],"display":{"frac":{"d":10,"n":9,"kind":"closerEnd"},"promptText":"Is 9/10 nearer to 0 or to 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0259",
@@ -11772,7 +11772,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":12,"n":3,"kind":"closerEnd"},"promptText":"Locate 3/12 precisely: is it nearer 0 or nearer 1? Ava reasons it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":12,"n":3,"kind":"closerEnd"},"promptText":"Think of a number line from 0 to 1. Is 3/12 closer to 0 or to 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0260",
@@ -11782,7 +11782,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["0","1"],"display":{"frac":{"d":12,"n":11,"kind":"closerEnd"},"promptText":"Omar audits the position of 11/12. Which endpoint is closer?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["0","1"],"display":{"frac":{"d":12,"n":11,"kind":"closerEnd"},"promptText":"On a number line from 0 to 1, is 11/12 closer to 0 or to 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0261",
@@ -11792,7 +11792,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":10,"n":1,"kind":"closerEnd"},"promptText":"Locate 1/10 precisely: is it nearer 0 or nearer 1? Ben reasons it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":10,"n":1,"kind":"closerEnd"},"promptText":"Which is 1/10 nearer to, 0 or 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0262",
@@ -11802,7 +11802,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["1","0"],"display":{"frac":{"d":10,"n":8,"kind":"closerEnd"},"promptText":"Finn audits the position of 8/10. Which endpoint is closer?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["1","0"],"display":{"frac":{"d":10,"n":8,"kind":"closerEnd"},"promptText":"Is 8/10 closer to 0 or to 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0263",
@@ -11812,7 +11812,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":12,"n":1,"kind":"closerEnd"},"promptText":"Locate 1/12 precisely: is it nearer 0 or nearer 1? Priya reasons it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"0","choices":["1","0"],"display":{"frac":{"d":12,"n":1,"kind":"closerEnd"},"promptText":"Is 1/12 nearer 0 or nearer 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0264",
@@ -11822,7 +11822,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["0","1"],"display":{"frac":{"d":12,"n":9,"kind":"closerEnd"},"promptText":"Sam audits the position of 9/12. Which endpoint is closer?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1","choices":["0","1"],"display":{"frac":{"d":12,"n":9,"kind":"closerEnd"},"promptText":"Which is 9/12 nearer to, 0 or 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0265",
@@ -11832,7 +11832,7 @@ export const ITEMS = [
     structureType: "beyondOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":2,"n":3,"kind":"beyondSaid"},"truth":true,"promptText":"Nia claims 3/2 is MORE than one whole. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":2,"n":3,"kind":"beyondSaid"},"truth":true,"promptText":"Nia says 3/2 is more than one whole. Is Nia right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0266",
@@ -11842,7 +11842,7 @@ export const ITEMS = [
     structureType: "beyondOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":2,"n":1,"kind":"beyondSaid"},"truth":false,"promptText":"Is 1/2 bigger than 1, as Kai says?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":2,"n":1,"kind":"beyondSaid"},"truth":false,"promptText":"Kai thinks 1/2 is bigger than 1. Is Kai right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0267",
@@ -11852,7 +11852,7 @@ export const ITEMS = [
     structureType: "beyondOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":3,"n":4,"kind":"beyondSaid"},"truth":true,"promptText":"June claims 4/3 is MORE than one whole. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":3,"n":4,"kind":"beyondSaid"},"truth":true,"promptText":"June thinks 4/3 is bigger than 1. Is June right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0268",
@@ -11862,7 +11862,7 @@ export const ITEMS = [
     structureType: "beyondOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":3,"n":2,"kind":"beyondSaid"},"truth":false,"promptText":"Is 2/3 bigger than 1, as Lily says?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":3,"n":2,"kind":"beyondSaid"},"truth":false,"promptText":"Lily says 2/3 is more than one whole. Is Lily right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0269",
@@ -11872,7 +11872,7 @@ export const ITEMS = [
     structureType: "beyondOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":4,"n":5,"kind":"beyondSaid"},"truth":true,"promptText":"Amara claims 5/4 is MORE than one whole. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":4,"n":5,"kind":"beyondSaid"},"truth":true,"promptText":"Amara says 5/4 is more than one whole. Is Amara right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0270",
@@ -11882,7 +11882,7 @@ export const ITEMS = [
     structureType: "beyondOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":4,"n":3,"kind":"beyondSaid"},"truth":false,"promptText":"Is 3/4 bigger than 1, as Leo says?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":4,"n":3,"kind":"beyondSaid"},"truth":false,"promptText":"Leo thinks 3/4 is bigger than 1. Is Leo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0271",
@@ -11892,7 +11892,7 @@ export const ITEMS = [
     structureType: "beyondOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":2,"n":3,"kind":"beyondSaid"},"truth":true,"promptText":"Mina claims 3/2 is MORE than one whole. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":2,"n":3,"kind":"beyondSaid"},"truth":true,"promptText":"Mina thinks 3/2 is bigger than 1. Is Mina right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0272",
@@ -11902,7 +11902,7 @@ export const ITEMS = [
     structureType: "beyondOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":3,"n":1,"kind":"beyondSaid"},"truth":false,"promptText":"Is 1/3 bigger than 1, as Theo says?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":3,"n":1,"kind":"beyondSaid"},"truth":false,"promptText":"Theo says 1/3 is more than one whole. Is Theo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0273",
@@ -11912,7 +11912,7 @@ export const ITEMS = [
     structureType: "beyondOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":3,"n":4,"kind":"beyondSaid"},"truth":true,"promptText":"Ida claims 4/3 is MORE than one whole. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":3,"n":4,"kind":"beyondSaid"},"truth":true,"promptText":"Ida says 4/3 is more than one whole. Is Ida right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0274",
@@ -11922,7 +11922,7 @@ export const ITEMS = [
     structureType: "beyondOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":4,"n":1,"kind":"beyondSaid"},"truth":false,"promptText":"Is 1/4 bigger than 1, as Zoe says?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":4,"n":1,"kind":"beyondSaid"},"truth":false,"promptText":"Zoe thinks 1/4 is bigger than 1. Is Zoe right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0275",
@@ -11932,7 +11932,7 @@ export const ITEMS = [
     structureType: "beyondOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":4,"n":5,"kind":"beyondSaid"},"truth":true,"promptText":"Rosa claims 5/4 is MORE than one whole. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":4,"n":5,"kind":"beyondSaid"},"truth":true,"promptText":"Rosa thinks 5/4 is bigger than 1. Is Rosa right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0276",
@@ -11942,7 +11942,7 @@ export const ITEMS = [
     structureType: "beyondOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":4,"n":2,"kind":"beyondSaid"},"truth":false,"promptText":"Is 2/4 bigger than 1, as Diego says?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":4,"n":2,"kind":"beyondSaid"},"truth":false,"promptText":"Diego says 2/4 is more than one whole. Is Diego right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0277",
@@ -11952,7 +11952,7 @@ export const ITEMS = [
     structureType: "beyondOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":2,"n":3,"kind":"beyondSaid"},"truth":true,"promptText":"Nora claims 3/2 is MORE than one whole. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":2,"n":3,"kind":"beyondSaid"},"truth":true,"promptText":"Nora says 3/2 is more than one whole. Is Nora right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0278",
@@ -11962,7 +11962,7 @@ export const ITEMS = [
     structureType: "beyondOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":3,"n":2,"kind":"beyondSaid"},"truth":false,"promptText":"Is 2/3 bigger than 1, as Luca says?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":3,"n":2,"kind":"beyondSaid"},"truth":false,"promptText":"Luca thinks 2/3 is bigger than 1. Is Luca right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0279",
@@ -11972,7 +11972,7 @@ export const ITEMS = [
     structureType: "beyondOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":3,"n":4,"kind":"beyondSaid"},"truth":true,"promptText":"Ava claims 4/3 is MORE than one whole. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":3,"n":4,"kind":"beyondSaid"},"truth":true,"promptText":"Ava thinks 4/3 is bigger than 1. Is Ava right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0280",
@@ -11982,7 +11982,7 @@ export const ITEMS = [
     structureType: "beyondOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":4,"n":3,"kind":"beyondSaid"},"truth":false,"promptText":"Is 3/4 bigger than 1, as Omar says?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":4,"n":3,"kind":"beyondSaid"},"truth":false,"promptText":"Omar says 3/4 is more than one whole. Is Omar right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0281",
@@ -11992,7 +11992,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":5,"n":6,"kind":"beyondSaid"},"truth":true,"promptText":"Zoe plots 6/5 beyond the 1 mark. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":5,"n":6,"kind":"beyondSaid"},"truth":true,"promptText":"Zoe marks 6/5 past 1 on a number line. Does 6/5 belong there?"}},
   },
   {
     itemId: "fractions-conc-b0821-0282",
@@ -12002,7 +12002,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":5,"n":4,"kind":"beyondSaid"},"truth":false,"promptText":"4/5 outruns one whole, according to Rosa. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":5,"n":4,"kind":"beyondSaid"},"truth":false,"promptText":"Rosa says 4/5 is more than one whole. Is Rosa right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0283",
@@ -12012,7 +12012,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":6,"n":7,"kind":"beyondSaid"},"truth":true,"promptText":"Diego plots 7/6 beyond the 1 mark. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":6,"n":7,"kind":"beyondSaid"},"truth":true,"promptText":"Diego says 7/6 is more than one whole. Is Diego right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0284",
@@ -12022,7 +12022,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":6,"n":5,"kind":"beyondSaid"},"truth":false,"promptText":"5/6 outruns one whole, according to Nora. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":6,"n":5,"kind":"beyondSaid"},"truth":false,"promptText":"Nora marks 5/6 past 1 on a number line. Does 5/6 belong there?"}},
   },
   {
     itemId: "fractions-conc-b0821-0285",
@@ -12032,7 +12032,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":8,"n":9,"kind":"beyondSaid"},"truth":true,"promptText":"Luca plots 9/8 beyond the 1 mark. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":8,"n":9,"kind":"beyondSaid"},"truth":true,"promptText":"Luca marks 9/8 past 1 on a number line. Does 9/8 belong there?"}},
   },
   {
     itemId: "fractions-conc-b0821-0286",
@@ -12042,7 +12042,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":8,"n":7,"kind":"beyondSaid"},"truth":false,"promptText":"7/8 outruns one whole, according to Ava. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":8,"n":7,"kind":"beyondSaid"},"truth":false,"promptText":"Ava says 7/8 is more than one whole. Is Ava right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0287",
@@ -12052,7 +12052,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":5,"n":8,"kind":"beyondSaid"},"truth":true,"promptText":"Omar plots 8/5 beyond the 1 mark. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":5,"n":8,"kind":"beyondSaid"},"truth":true,"promptText":"Omar says 8/5 is greater than 1. Is Omar right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0288",
@@ -12062,7 +12062,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":5,"n":3,"kind":"beyondSaid"},"truth":false,"promptText":"3/5 outruns one whole, according to Ben. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":5,"n":3,"kind":"beyondSaid"},"truth":false,"promptText":"Ben marks 3/5 past 1 on a number line. Does 3/5 belong there?"}},
   },
   {
     itemId: "fractions-conc-b0821-0289",
@@ -12072,7 +12072,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":6,"n":8,"kind":"beyondSaid"},"truth":true,"promptText":"Finn plots 8/6 beyond the 1 mark. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":6,"n":8,"kind":"beyondSaid"},"truth":true,"promptText":"Finn marks 8/6 past 1 on a number line. Does 8/6 belong there?"}},
   },
   {
     itemId: "fractions-conc-b0821-0290",
@@ -12082,7 +12082,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":6,"n":1,"kind":"beyondSaid"},"truth":false,"promptText":"1/6 outruns one whole, according to Priya. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":6,"n":1,"kind":"beyondSaid"},"truth":false,"promptText":"Priya says 1/6 is greater than 1. Is Priya right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0291",
@@ -12092,7 +12092,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":8,"n":10,"kind":"beyondSaid"},"truth":true,"promptText":"Sam plots 10/8 beyond the 1 mark. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":8,"n":10,"kind":"beyondSaid"},"truth":true,"promptText":"Sam says 10/8 is more than one whole. Is Sam right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0292",
@@ -12102,7 +12102,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":8,"n":5,"kind":"beyondSaid"},"truth":false,"promptText":"5/8 outruns one whole, according to Nia. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":8,"n":5,"kind":"beyondSaid"},"truth":false,"promptText":"Nia marks 5/8 past 1 on a number line. Does 5/8 belong there?"}},
   },
   {
     itemId: "fractions-conc-b0821-0293",
@@ -12112,7 +12112,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":5,"n":7,"kind":"beyondSaid"},"truth":true,"promptText":"Kai plots 7/5 beyond the 1 mark. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":5,"n":7,"kind":"beyondSaid"},"truth":true,"promptText":"Kai marks 7/5 past 1 on a number line. Does 7/5 belong there?"}},
   },
   {
     itemId: "fractions-conc-b0821-0294",
@@ -12122,7 +12122,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":5,"n":2,"kind":"beyondSaid"},"truth":false,"promptText":"2/5 outruns one whole, according to June. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":5,"n":2,"kind":"beyondSaid"},"truth":false,"promptText":"June says 2/5 is greater than 1. Is June right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0295",
@@ -12132,7 +12132,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":6,"n":11,"kind":"beyondSaid"},"truth":true,"promptText":"Lily plots 11/6 beyond the 1 mark. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":6,"n":11,"kind":"beyondSaid"},"truth":true,"promptText":"Lily says 11/6 is greater than 1. Is Lily right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0296",
@@ -12142,7 +12142,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":6,"n":4,"kind":"beyondSaid"},"truth":false,"promptText":"4/6 outruns one whole, according to Amara. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":6,"n":4,"kind":"beyondSaid"},"truth":false,"promptText":"Amara marks 4/6 past 1 on a number line. Does 4/6 belong there?"}},
   },
   {
     itemId: "fractions-conc-b0821-0297",
@@ -12152,7 +12152,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":11,"kind":"beyondSaid"},"truth":true,"promptText":"Diego classifies 11/10 as greater than 1. Is the classification right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":11,"kind":"beyondSaid"},"truth":true,"promptText":"Diego says 11/10 is more than one whole. Is Diego right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0298",
@@ -12162,7 +12162,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":9,"kind":"beyondSaid"},"truth":false,"promptText":"Beyond 1 or not: Nora votes that 9/10 exceeds a whole. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":9,"kind":"beyondSaid"},"truth":false,"promptText":"Nora thinks 9/10 is bigger than 1 whole. Is Nora right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0299",
@@ -12172,7 +12172,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":13,"kind":"beyondSaid"},"truth":true,"promptText":"Luca classifies 13/12 as greater than 1. Is the classification right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":13,"kind":"beyondSaid"},"truth":true,"promptText":"Luca says 13/12 is greater than 1. Is Luca right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0300",
@@ -12182,7 +12182,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":11,"kind":"beyondSaid"},"truth":false,"promptText":"Beyond 1 or not: Ava votes that 11/12 exceeds a whole. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":11,"kind":"beyondSaid"},"truth":false,"promptText":"Ava says 11/12 is greater than 1. Is Ava right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0301",
@@ -12192,7 +12192,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":15,"kind":"beyondSaid"},"truth":true,"promptText":"Omar classifies 15/10 as greater than 1. Is the classification right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":15,"kind":"beyondSaid"},"truth":true,"promptText":"Omar says 15/10 is more than one whole. Is Omar right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0302",
@@ -12202,7 +12202,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":7,"kind":"beyondSaid"},"truth":false,"promptText":"Beyond 1 or not: Ben votes that 7/10 exceeds a whole. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":7,"kind":"beyondSaid"},"truth":false,"promptText":"Ben says 7/10 is more than one whole. Is Ben right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0303",
@@ -12212,7 +12212,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":17,"kind":"beyondSaid"},"truth":true,"promptText":"Finn classifies 17/12 as greater than 1. Is the classification right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":17,"kind":"beyondSaid"},"truth":true,"promptText":"Finn thinks 17/12 is bigger than 1 whole. Is Finn right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0304",
@@ -12222,7 +12222,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":5,"kind":"beyondSaid"},"truth":false,"promptText":"Beyond 1 or not: Priya votes that 5/12 exceeds a whole. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":5,"kind":"beyondSaid"},"truth":false,"promptText":"Priya says 5/12 is greater than 1. Is Priya right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0305",
@@ -12232,7 +12232,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":12,"kind":"beyondSaid"},"truth":true,"promptText":"Sam classifies 12/10 as greater than 1. Is the classification right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":12,"kind":"beyondSaid"},"truth":true,"promptText":"Sam thinks 12/10 is bigger than 1 whole. Is Sam right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0306",
@@ -12242,7 +12242,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":3,"kind":"beyondSaid"},"truth":false,"promptText":"Beyond 1 or not: Nia votes that 3/10 exceeds a whole. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":3,"kind":"beyondSaid"},"truth":false,"promptText":"Nia says 3/10 is more than one whole. Is Nia right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0307",
@@ -12252,7 +12252,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":14,"kind":"beyondSaid"},"truth":true,"promptText":"Kai classifies 14/12 as greater than 1. Is the classification right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":14,"kind":"beyondSaid"},"truth":true,"promptText":"Kai says 14/12 is greater than 1. Is Kai right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0308",
@@ -12262,7 +12262,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":7,"kind":"beyondSaid"},"truth":false,"promptText":"Beyond 1 or not: June votes that 7/12 exceeds a whole. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":7,"kind":"beyondSaid"},"truth":false,"promptText":"June thinks 7/12 is bigger than 1 whole. Is June right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0309",
@@ -12272,7 +12272,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":19,"kind":"beyondSaid"},"truth":true,"promptText":"Lily classifies 19/10 as greater than 1. Is the classification right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":19,"kind":"beyondSaid"},"truth":true,"promptText":"Lily thinks 19/10 is bigger than 1 whole. Is Lily right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0310",
@@ -12282,7 +12282,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":1,"kind":"beyondSaid"},"truth":false,"promptText":"Beyond 1 or not: Amara votes that 1/10 exceeds a whole. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":1,"kind":"beyondSaid"},"truth":false,"promptText":"Amara thinks 1/10 is bigger than 1 whole. Is Amara right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0311",
@@ -12292,7 +12292,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":23,"kind":"beyondSaid"},"truth":true,"promptText":"Leo classifies 23/12 as greater than 1. Is the classification right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":23,"kind":"beyondSaid"},"truth":true,"promptText":"Leo says 23/12 is more than one whole. Is Leo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0312",
@@ -12302,7 +12302,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":1,"kind":"beyondSaid"},"truth":false,"promptText":"Beyond 1 or not: Mina votes that 1/12 exceeds a whole. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":1,"kind":"beyondSaid"},"truth":false,"promptText":"Mina says 1/12 is greater than 1. Is Mina right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0313",
@@ -12322,7 +12322,7 @@ export const ITEMS = [
     structureType: "equivJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":2,"c":3,"d":4,"kind":"equivSaid"},"truth":false,"promptText":"1/2 equals 3/4, claims Theo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":2,"c":3,"d":4,"kind":"equivSaid"},"truth":false,"promptText":"Theo writes 1/2 = 3/4. Is Theo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0315",
@@ -12332,7 +12332,7 @@ export const ITEMS = [
     structureType: "equivJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":3,"c":2,"d":6,"kind":"equivSaid"},"truth":true,"promptText":"Ida says 1/3 and 2/6 are the same amount. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":3,"c":2,"d":6,"kind":"equivSaid"},"truth":true,"promptText":"Ida writes 1/3 = 2/6. Is Ida right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0316",
@@ -12342,7 +12342,7 @@ export const ITEMS = [
     structureType: "equivJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":2,"b":3,"c":3,"d":6,"kind":"equivSaid"},"truth":false,"promptText":"2/3 equals 3/6, claims Zoe. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":2,"b":3,"c":3,"d":6,"kind":"equivSaid"},"truth":false,"promptText":"Zoe says 2/3 and 3/6 are the same amount. Is Zoe right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0317",
@@ -12362,7 +12362,7 @@ export const ITEMS = [
     structureType: "equivJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":3,"b":4,"c":5,"d":8,"kind":"equivSaid"},"truth":false,"promptText":"3/4 equals 5/8, claims Diego. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":3,"b":4,"c":5,"d":8,"kind":"equivSaid"},"truth":false,"promptText":"Diego writes 3/4 = 5/8. Is Diego right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0319",
@@ -12372,7 +12372,7 @@ export const ITEMS = [
     structureType: "equivJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":2,"b":3,"c":4,"d":6,"kind":"equivSaid"},"truth":true,"promptText":"Nora says 2/3 and 4/6 are the same amount. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":2,"b":3,"c":4,"d":6,"kind":"equivSaid"},"truth":true,"promptText":"Nora writes 2/3 = 4/6. Is Nora right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0320",
@@ -12382,7 +12382,7 @@ export const ITEMS = [
     structureType: "equivJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":3,"c":2,"d":4,"kind":"equivSaid"},"truth":false,"promptText":"1/3 equals 2/4, claims Luca. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":3,"c":2,"d":4,"kind":"equivSaid"},"truth":false,"promptText":"Luca says 1/3 and 2/4 are the same amount. Is Luca right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0321",
@@ -12402,7 +12402,7 @@ export const ITEMS = [
     structureType: "equivJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":4,"c":2,"d":4,"kind":"equivSaid"},"truth":false,"promptText":"1/4 equals 2/4, claims Omar. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":4,"c":2,"d":4,"kind":"equivSaid"},"truth":false,"promptText":"Omar writes 1/4 = 2/4. Is Omar right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0323",
@@ -12412,7 +12412,7 @@ export const ITEMS = [
     structureType: "equivJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":3,"b":4,"c":6,"d":8,"kind":"equivSaid"},"truth":true,"promptText":"Ben says 3/4 and 6/8 are the same amount. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":3,"b":4,"c":6,"d":8,"kind":"equivSaid"},"truth":true,"promptText":"Ben writes 3/4 = 6/8. Is Ben right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0324",
@@ -12422,7 +12422,7 @@ export const ITEMS = [
     structureType: "equivJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":2,"b":4,"c":3,"d":8,"kind":"equivSaid"},"truth":false,"promptText":"2/4 equals 3/8, claims Finn. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":2,"b":4,"c":3,"d":8,"kind":"equivSaid"},"truth":false,"promptText":"Finn says 2/4 and 3/8 are the same amount. Is Finn right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0325",
@@ -12442,7 +12442,7 @@ export const ITEMS = [
     structureType: "equivJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":3,"c":3,"d":6,"kind":"equivSaid"},"truth":false,"promptText":"1/3 equals 3/6, claims Sam. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":3,"c":3,"d":6,"kind":"equivSaid"},"truth":false,"promptText":"Sam writes 1/3 = 3/6. Is Sam right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0327",
@@ -12452,7 +12452,7 @@ export const ITEMS = [
     structureType: "equivJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":2,"b":3,"c":4,"d":6,"kind":"equivSaid"},"truth":true,"promptText":"Nia says 2/3 and 4/6 are the same amount. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":2,"b":3,"c":4,"d":6,"kind":"equivSaid"},"truth":true,"promptText":"Nia writes 2/3 = 4/6. Is Nia right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0328",
@@ -12462,7 +12462,7 @@ export const ITEMS = [
     structureType: "equivJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":3,"b":4,"c":7,"d":8,"kind":"equivSaid"},"truth":false,"promptText":"3/4 equals 7/8, claims Kai. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":3,"b":4,"c":7,"d":8,"kind":"equivSaid"},"truth":false,"promptText":"Kai says 3/4 and 7/8 are the same amount. Is Kai right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0329",
@@ -12482,7 +12482,7 @@ export const ITEMS = [
     structureType: "equivJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":3,"b":5,"c":5,"d":10,"kind":"equivSaid"},"truth":false,"promptText":"On Ben's chart, 3/5 and 5/10 share one point. Should they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":3,"b":5,"c":5,"d":10,"kind":"equivSaid"},"truth":false,"promptText":"Ben says 3/5 and 5/10 are the same amount. Is Ben right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0331",
@@ -12492,7 +12492,7 @@ export const ITEMS = [
     structureType: "equivJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":6,"c":2,"d":12,"kind":"equivSaid"},"truth":true,"promptText":"Finn says 1/6 and 2/12 are the same amount. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":6,"c":2,"d":12,"kind":"equivSaid"},"truth":true,"promptText":"Finn puts 1/6 and 2/12 at the same point on a number line. Is Finn right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0332",
@@ -12502,7 +12502,7 @@ export const ITEMS = [
     structureType: "equivJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":5,"b":6,"c":9,"d":12,"kind":"equivSaid"},"truth":false,"promptText":"On Priya's chart, 5/6 and 9/12 share one point. Should they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":5,"b":6,"c":9,"d":12,"kind":"equivSaid"},"truth":false,"promptText":"Priya puts 5/6 and 9/12 at the same point on a number line. Is Priya right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0333",
@@ -12522,7 +12522,7 @@ export const ITEMS = [
     structureType: "equivJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":4,"c":4,"d":12,"kind":"equivSaid"},"truth":false,"promptText":"On Nia's chart, 1/4 and 4/12 share one point. Should they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":4,"c":4,"d":12,"kind":"equivSaid"},"truth":false,"promptText":"Nia says 1/4 and 4/12 belong at the same spot on a number line. Is Nia right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0335",
@@ -12542,7 +12542,7 @@ export const ITEMS = [
     structureType: "equivJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":4,"b":5,"c":7,"d":10,"kind":"equivSaid"},"truth":false,"promptText":"On June's chart, 4/5 and 7/10 share one point. Should they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":4,"b":5,"c":7,"d":10,"kind":"equivSaid"},"truth":false,"promptText":"June puts 4/5 and 7/10 at the same point on a number line. Is June right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0337",
@@ -12552,7 +12552,7 @@ export const ITEMS = [
     structureType: "equivJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":3,"c":4,"d":12,"kind":"equivSaid"},"truth":true,"promptText":"Lily says 1/3 and 4/12 are the same amount. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":3,"c":4,"d":12,"kind":"equivSaid"},"truth":true,"promptText":"Lily says 1/3 and 4/12 belong at the same spot on a number line. Is Lily right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0338",
@@ -12562,7 +12562,7 @@ export const ITEMS = [
     structureType: "equivJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":2,"b":3,"c":6,"d":12,"kind":"equivSaid"},"truth":false,"promptText":"On Amara's chart, 2/3 and 6/12 share one point. Should they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":2,"b":3,"c":6,"d":12,"kind":"equivSaid"},"truth":false,"promptText":"Amara puts 2/3 and 6/12 at the same point on a number line. Is Amara right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0339",
@@ -12582,7 +12582,7 @@ export const ITEMS = [
     structureType: "equivJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":3,"b":8,"c":5,"d":16,"kind":"equivSaid"},"truth":false,"promptText":"On Mina's chart, 3/8 and 5/16 share one point. Should they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":3,"b":8,"c":5,"d":16,"kind":"equivSaid"},"truth":false,"promptText":"Mina says 3/8 and 5/16 are the same amount. Is Mina right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0341",
@@ -12592,7 +12592,7 @@ export const ITEMS = [
     structureType: "equivJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":2,"b":6,"c":4,"d":12,"kind":"equivSaid"},"truth":true,"promptText":"Theo says 2/6 and 4/12 are the same amount. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":2,"b":6,"c":4,"d":12,"kind":"equivSaid"},"truth":true,"promptText":"Theo puts 2/6 and 4/12 at the same point on a number line. Is Theo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0342",
@@ -12602,7 +12602,7 @@ export const ITEMS = [
     structureType: "equivJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":4,"b":6,"c":6,"d":12,"kind":"equivSaid"},"truth":false,"promptText":"On Ida's chart, 4/6 and 6/12 share one point. Should they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":4,"b":6,"c":6,"d":12,"kind":"equivSaid"},"truth":false,"promptText":"Ida says 4/6 and 6/12 belong at the same spot on a number line. Is Ida right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0343",
@@ -12612,7 +12612,7 @@ export const ITEMS = [
     structureType: "equivJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":5,"b":8,"c":10,"d":16,"kind":"equivSaid"},"truth":true,"promptText":"Zoe says 5/8 and 10/16 are the same amount. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":5,"b":8,"c":10,"d":16,"kind":"equivSaid"},"truth":true,"promptText":"Zoe says 5/8 and 10/16 belong at the same spot on a number line. Is Zoe right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0344",
@@ -12622,7 +12622,7 @@ export const ITEMS = [
     structureType: "equivJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":8,"c":3,"d":16,"kind":"equivSaid"},"truth":false,"promptText":"On Rosa's chart, 1/8 and 3/16 share one point. Should they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":8,"c":3,"d":16,"kind":"equivSaid"},"truth":false,"promptText":"Rosa says 1/8 and 3/16 are the same amount. Is Rosa right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0345",
@@ -12632,7 +12632,7 @@ export const ITEMS = [
     structureType: "equivJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":7,"b":10,"c":14,"d":20,"kind":"equivSaid"},"truth":true,"promptText":"Finn certifies 7/10 = 14/20. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":7,"b":10,"c":14,"d":20,"kind":"equivSaid"},"truth":true,"promptText":"Finn says 7/10 = 14/20. Is Finn right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0346",
@@ -12642,7 +12642,7 @@ export const ITEMS = [
     structureType: "equivJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":9,"b":10,"c":17,"d":20,"kind":"equivSaid"},"truth":false,"promptText":"Cross-checking Priya's claim that 9/10 matches 17/20 — does it hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":9,"b":10,"c":17,"d":20,"kind":"equivSaid"},"truth":false,"promptText":"Priya says 9/10 = 17/20. Is Priya right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0347",
@@ -12652,7 +12652,7 @@ export const ITEMS = [
     structureType: "equivJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":5,"b":12,"c":10,"d":24,"kind":"equivSaid"},"truth":true,"promptText":"Sam certifies 5/12 = 10/24. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":5,"b":12,"c":10,"d":24,"kind":"equivSaid"},"truth":true,"promptText":"Sam says 5/12 and 10/24 are equal. Is Sam right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0348",
@@ -12662,7 +12662,7 @@ export const ITEMS = [
     structureType: "equivJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":7,"b":12,"c":15,"d":24,"kind":"equivSaid"},"truth":false,"promptText":"Cross-checking Nia's claim that 7/12 matches 15/24 — does it hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":7,"b":12,"c":15,"d":24,"kind":"equivSaid"},"truth":false,"promptText":"Nia says 7/12 and 15/24 are equal. Is Nia right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0349",
@@ -12672,7 +12672,7 @@ export const ITEMS = [
     structureType: "equivJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":3,"b":10,"c":6,"d":20,"kind":"equivSaid"},"truth":true,"promptText":"Kai certifies 3/10 = 6/20. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":3,"b":10,"c":6,"d":20,"kind":"equivSaid"},"truth":true,"promptText":"Kai says 3/10 and 6/20 are equal. Is Kai right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0350",
@@ -12682,7 +12682,7 @@ export const ITEMS = [
     structureType: "equivJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":10,"c":3,"d":20,"kind":"equivSaid"},"truth":false,"promptText":"Cross-checking June's claim that 1/10 matches 3/20 — does it hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":10,"c":3,"d":20,"kind":"equivSaid"},"truth":false,"promptText":"June thinks 1/10 is the same amount as 3/20. Is June right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0351",
@@ -12692,7 +12692,7 @@ export const ITEMS = [
     structureType: "equivJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":11,"b":12,"c":22,"d":24,"kind":"equivSaid"},"truth":true,"promptText":"Lily certifies 11/12 = 22/24. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":11,"b":12,"c":22,"d":24,"kind":"equivSaid"},"truth":true,"promptText":"Lily says 11/12 = 22/24. Is Lily right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0352",
@@ -12702,7 +12702,7 @@ export const ITEMS = [
     structureType: "equivJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":12,"c":3,"d":24,"kind":"equivSaid"},"truth":false,"promptText":"Cross-checking Amara's claim that 1/12 matches 3/24 — does it hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":12,"c":3,"d":24,"kind":"equivSaid"},"truth":false,"promptText":"Amara says 1/12 = 3/24. Is Amara right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0353",
@@ -12712,7 +12712,7 @@ export const ITEMS = [
     structureType: "equivJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":3,"b":8,"c":9,"d":24,"kind":"equivSaid"},"truth":true,"promptText":"Leo certifies 3/8 = 9/24. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":3,"b":8,"c":9,"d":24,"kind":"equivSaid"},"truth":true,"promptText":"Leo thinks 3/8 is the same amount as 9/24. Is Leo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0354",
@@ -12722,7 +12722,7 @@ export const ITEMS = [
     structureType: "equivJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":5,"b":8,"c":14,"d":24,"kind":"equivSaid"},"truth":false,"promptText":"Cross-checking Mina's claim that 5/8 matches 14/24 — does it hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":5,"b":8,"c":14,"d":24,"kind":"equivSaid"},"truth":false,"promptText":"Mina says 5/8 = 14/24. Is Mina right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0355",
@@ -12732,7 +12732,7 @@ export const ITEMS = [
     structureType: "equivJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":2,"b":3,"c":8,"d":12,"kind":"equivSaid"},"truth":true,"promptText":"Theo certifies 2/3 = 8/12. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":2,"b":3,"c":8,"d":12,"kind":"equivSaid"},"truth":true,"promptText":"Theo thinks 2/3 is the same amount as 8/12. Is Theo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0356",
@@ -12742,7 +12742,7 @@ export const ITEMS = [
     structureType: "equivJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":5,"b":6,"c":11,"d":12,"kind":"equivSaid"},"truth":false,"promptText":"Cross-checking Ida's claim that 5/6 matches 11/12 — does it hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":5,"b":6,"c":11,"d":12,"kind":"equivSaid"},"truth":false,"promptText":"Ida says 5/6 and 11/12 are equal. Is Ida right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0357",
@@ -12752,7 +12752,7 @@ export const ITEMS = [
     structureType: "equivJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":3,"b":4,"c":15,"d":20,"kind":"equivSaid"},"truth":true,"promptText":"Zoe certifies 3/4 = 15/20. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":3,"b":4,"c":15,"d":20,"kind":"equivSaid"},"truth":true,"promptText":"Zoe says 3/4 = 15/20. Is Zoe right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0358",
@@ -12762,7 +12762,7 @@ export const ITEMS = [
     structureType: "equivJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":4,"b":5,"c":15,"d":20,"kind":"equivSaid"},"truth":false,"promptText":"Cross-checking Rosa's claim that 4/5 matches 15/20 — does it hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":4,"b":5,"c":15,"d":20,"kind":"equivSaid"},"truth":false,"promptText":"Rosa says 4/5 and 15/20 are equal. Is Rosa right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0359",
@@ -12772,7 +12772,7 @@ export const ITEMS = [
     structureType: "equivJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":9,"b":10,"c":18,"d":20,"kind":"equivSaid"},"truth":true,"promptText":"Diego certifies 9/10 = 18/20. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":9,"b":10,"c":18,"d":20,"kind":"equivSaid"},"truth":true,"promptText":"Diego thinks 9/10 is the same amount as 18/20. Is Diego right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0360",
@@ -12782,7 +12782,7 @@ export const ITEMS = [
     structureType: "equivJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":7,"b":10,"c":15,"d":20,"kind":"equivSaid"},"truth":false,"promptText":"Cross-checking Nora's claim that 7/10 matches 15/20 — does it hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":7,"b":10,"c":15,"d":20,"kind":"equivSaid"},"truth":false,"promptText":"Nora thinks 7/10 is the same amount as 15/20. Is Nora right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0361",
@@ -12792,7 +12792,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/4","choices":["1/4","2/4","2/6","3/4"],"display":{"frac":{"a":1,"b":2,"c":2,"d":4,"kind":"equivPick"},"promptText":"Which fraction names the same amount as 1/2? Luca hunts for it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/4","choices":["1/4","2/4","2/6","3/4"],"display":{"frac":{"a":1,"b":2,"c":2,"d":4,"kind":"equivPick"},"promptText":"Which of these fractions is equal to 1/2?"}},
   },
   {
     itemId: "fractions-conc-b0821-0362",
@@ -12802,7 +12802,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/6","choices":["1/6","2/9","2/6","3/6"],"display":{"frac":{"a":1,"b":3,"c":2,"d":6,"kind":"equivPick"},"promptText":"Ava needs a twin for 1/3. Which fraction is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/6","choices":["1/6","2/9","2/6","3/6"],"display":{"frac":{"a":1,"b":3,"c":2,"d":6,"kind":"equivPick"},"promptText":"Which fraction names the same amount as 1/3?"}},
   },
   {
     itemId: "fractions-conc-b0821-0363",
@@ -12812,7 +12812,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4/6","choices":["2/6","4/6","4/9","5/6"],"display":{"frac":{"a":2,"b":3,"c":4,"d":6,"kind":"equivPick"},"promptText":"Which fraction names the same amount as 2/3? Omar hunts for it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"4/6","choices":["2/6","4/6","4/9","5/6"],"display":{"frac":{"a":2,"b":3,"c":4,"d":6,"kind":"equivPick"},"promptText":"Which fraction is another name for 2/3?"}},
   },
   {
     itemId: "fractions-conc-b0821-0364",
@@ -12822,7 +12822,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/8","choices":["2/12","3/8","2/8","1/8"],"display":{"frac":{"a":1,"b":4,"c":2,"d":8,"kind":"equivPick"},"promptText":"Ben needs a twin for 1/4. Which fraction is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/8","choices":["2/12","3/8","2/8","1/8"],"display":{"frac":{"a":1,"b":4,"c":2,"d":8,"kind":"equivPick"},"promptText":"Which fraction has the same value as 1/4?"}},
   },
   {
     itemId: "fractions-conc-b0821-0365",
@@ -12832,7 +12832,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"6/8","choices":["6/12","7/8","3/8","6/8"],"display":{"frac":{"a":3,"b":4,"c":6,"d":8,"kind":"equivPick"},"promptText":"Which fraction names the same amount as 3/4? Finn hunts for it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"6/8","choices":["6/12","7/8","3/8","6/8"],"display":{"frac":{"a":3,"b":4,"c":6,"d":8,"kind":"equivPick"},"promptText":"Which fraction means the same amount as 3/4?"}},
   },
   {
     itemId: "fractions-conc-b0821-0366",
@@ -12842,7 +12842,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4/8","choices":["4/10","4/8","5/8","1/8"],"display":{"frac":{"a":1,"b":2,"c":4,"d":8,"kind":"equivPick"},"promptText":"Priya needs a twin for 1/2. Which fraction is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"4/8","choices":["4/10","4/8","5/8","1/8"],"display":{"frac":{"a":1,"b":2,"c":4,"d":8,"kind":"equivPick"},"promptText":"Which fraction is the same size as 1/2?"}},
   },
   {
     itemId: "fractions-conc-b0821-0367",
@@ -12852,7 +12852,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/6","choices":["3/6","1/6","2/6","2/9"],"display":{"frac":{"a":1,"b":3,"c":2,"d":6,"kind":"equivPick"},"promptText":"Which fraction names the same amount as 1/3? Sam hunts for it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/6","choices":["3/6","1/6","2/6","2/9"],"display":{"frac":{"a":1,"b":3,"c":2,"d":6,"kind":"equivPick"},"promptText":"Which fraction shows the same amount as 1/3?"}},
   },
   {
     itemId: "fractions-conc-b0821-0368",
@@ -12862,7 +12862,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4/6","choices":["4/6","2/6","5/6","4/9"],"display":{"frac":{"a":2,"b":3,"c":4,"d":6,"kind":"equivPick"},"promptText":"Nia needs a twin for 2/3. Which fraction is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"4/6","choices":["4/6","2/6","5/6","4/9"],"display":{"frac":{"a":2,"b":3,"c":4,"d":6,"kind":"equivPick"},"promptText":"Which fraction has the same value as 2/3?"}},
   },
   {
     itemId: "fractions-conc-b0821-0369",
@@ -12872,7 +12872,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/8","choices":["3/8","2/12","2/8","1/8"],"display":{"frac":{"a":1,"b":4,"c":2,"d":8,"kind":"equivPick"},"promptText":"Which fraction names the same amount as 1/4? Kai hunts for it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/8","choices":["3/8","2/12","2/8","1/8"],"display":{"frac":{"a":1,"b":4,"c":2,"d":8,"kind":"equivPick"},"promptText":"Which fraction is equal to 1/4?"}},
   },
   {
     itemId: "fractions-conc-b0821-0370",
@@ -12882,7 +12882,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"6/8","choices":["7/8","6/8","6/12","3/8"],"display":{"frac":{"a":3,"b":4,"c":6,"d":8,"kind":"equivPick"},"promptText":"June needs a twin for 3/4. Which fraction is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"6/8","choices":["7/8","6/8","6/12","3/8"],"display":{"frac":{"a":3,"b":4,"c":6,"d":8,"kind":"equivPick"},"promptText":"Which fraction is the same size as 3/4?"}},
   },
   {
     itemId: "fractions-conc-b0821-0371",
@@ -12892,7 +12892,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/4","choices":["1/4","2/6","3/4","2/4"],"display":{"frac":{"a":1,"b":2,"c":2,"d":4,"kind":"equivPick"},"promptText":"Which fraction names the same amount as 1/2? Lily hunts for it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/4","choices":["1/4","2/6","3/4","2/4"],"display":{"frac":{"a":1,"b":2,"c":2,"d":4,"kind":"equivPick"},"promptText":"Which fraction has the same value as 1/2?"}},
   },
   {
     itemId: "fractions-conc-b0821-0372",
@@ -12902,7 +12902,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/6","choices":["3/6","1/6","2/6","2/9"],"display":{"frac":{"a":1,"b":3,"c":2,"d":6,"kind":"equivPick"},"promptText":"Amara needs a twin for 1/3. Which fraction is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/6","choices":["3/6","1/6","2/6","2/9"],"display":{"frac":{"a":1,"b":3,"c":2,"d":6,"kind":"equivPick"},"promptText":"Which fraction is equal to 1/3?"}},
   },
   {
     itemId: "fractions-conc-b0821-0373",
@@ -12912,7 +12912,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4/6","choices":["5/6","4/9","4/6","2/6"],"display":{"frac":{"a":2,"b":3,"c":4,"d":6,"kind":"equivPick"},"promptText":"Which fraction names the same amount as 2/3? Leo hunts for it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"4/6","choices":["5/6","4/9","4/6","2/6"],"display":{"frac":{"a":2,"b":3,"c":4,"d":6,"kind":"equivPick"},"promptText":"Which fraction names the same amount as 2/3?"}},
   },
   {
     itemId: "fractions-conc-b0821-0374",
@@ -12922,7 +12922,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/8","choices":["2/12","2/8","3/8","1/8"],"display":{"frac":{"a":1,"b":4,"c":2,"d":8,"kind":"equivPick"},"promptText":"Mina needs a twin for 1/4. Which fraction is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/8","choices":["2/12","2/8","3/8","1/8"],"display":{"frac":{"a":1,"b":4,"c":2,"d":8,"kind":"equivPick"},"promptText":"Which fraction is another name for 1/4?"}},
   },
   {
     itemId: "fractions-conc-b0821-0375",
@@ -12932,7 +12932,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"6/8","choices":["6/12","3/8","6/8","7/8"],"display":{"frac":{"a":3,"b":4,"c":6,"d":8,"kind":"equivPick"},"promptText":"Which fraction names the same amount as 3/4? Theo hunts for it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"6/8","choices":["6/12","3/8","6/8","7/8"],"display":{"frac":{"a":3,"b":4,"c":6,"d":8,"kind":"equivPick"},"promptText":"Which fraction names the same amount as 3/4?"}},
   },
   {
     itemId: "fractions-conc-b0821-0376",
@@ -12942,7 +12942,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4/8","choices":["1/8","5/8","4/8","4/10"],"display":{"frac":{"a":1,"b":2,"c":4,"d":8,"kind":"equivPick"},"promptText":"Ida needs a twin for 1/2. Which fraction is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"4/8","choices":["1/8","5/8","4/8","4/10"],"display":{"frac":{"a":1,"b":2,"c":4,"d":8,"kind":"equivPick"},"promptText":"Which fraction shows the same amount as 1/2?"}},
   },
   {
     itemId: "fractions-conc-b0821-0377",
@@ -12962,7 +12962,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"6/10","choices":["6/10","6/15","3/10","7/10"],"display":{"frac":{"a":3,"b":5,"c":6,"d":10,"kind":"equivPick"},"promptText":"Lily matches 3/5 to its equal. Which option matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"6/10","choices":["6/10","6/15","3/10","7/10"],"display":{"frac":{"a":3,"b":5,"c":6,"d":10,"kind":"equivPick"},"promptText":"Which fraction is equal to 3/5?"}},
   },
   {
     itemId: "fractions-conc-b0821-0379",
@@ -12982,7 +12982,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"10/12","choices":["11/12","10/12","10/18","5/12"],"display":{"frac":{"a":5,"b":6,"c":10,"d":12,"kind":"equivPick"},"promptText":"Leo matches 5/6 to its equal. Which option matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"10/12","choices":["11/12","10/12","10/18","5/12"],"display":{"frac":{"a":5,"b":6,"c":10,"d":12,"kind":"equivPick"},"promptText":"Which fraction means the same amount as 5/6?"}},
   },
   {
     itemId: "fractions-conc-b0821-0381",
@@ -13002,7 +13002,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/10","choices":["2/15","2/10","3/10","1/10"],"display":{"frac":{"a":1,"b":5,"c":2,"d":10,"kind":"equivPick"},"promptText":"Theo matches 1/5 to its equal. Which option matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/10","choices":["2/15","2/10","3/10","1/10"],"display":{"frac":{"a":1,"b":5,"c":2,"d":10,"kind":"equivPick"},"promptText":"Which fraction shows the same amount as 1/5?"}},
   },
   {
     itemId: "fractions-conc-b0821-0383",
@@ -13022,7 +13022,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4/12","choices":["1/12","4/12","4/15","5/12"],"display":{"frac":{"a":1,"b":3,"c":4,"d":12,"kind":"equivPick"},"promptText":"Zoe matches 1/3 to its equal. Which option matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"4/12","choices":["1/12","4/12","4/15","5/12"],"display":{"frac":{"a":1,"b":3,"c":4,"d":12,"kind":"equivPick"},"promptText":"Which fraction is the same size as 1/3?"}},
   },
   {
     itemId: "fractions-conc-b0821-0385",
@@ -13042,7 +13042,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5/10","choices":["1/10","5/12","6/10","5/10"],"display":{"frac":{"a":1,"b":2,"c":5,"d":10,"kind":"equivPick"},"promptText":"Diego matches 1/2 to its equal. Which option matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5/10","choices":["1/10","5/12","6/10","5/10"],"display":{"frac":{"a":1,"b":2,"c":5,"d":10,"kind":"equivPick"},"promptText":"Which fraction is another name for 1/2?"}},
   },
   {
     itemId: "fractions-conc-b0821-0387",
@@ -13062,7 +13062,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"10/16","choices":["5/16","10/24","11/16","10/16"],"display":{"frac":{"a":5,"b":8,"c":10,"d":16,"kind":"equivPick"},"promptText":"Luca matches 5/8 to its equal. Which option matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"10/16","choices":["5/16","10/24","11/16","10/16"],"display":{"frac":{"a":5,"b":8,"c":10,"d":16,"kind":"equivPick"},"promptText":"Which fraction names the same amount as 5/8?"}},
   },
   {
     itemId: "fractions-conc-b0821-0389",
@@ -13082,7 +13082,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"8/12","choices":["8/12","8/18","9/12","4/12"],"display":{"frac":{"a":4,"b":6,"c":8,"d":12,"kind":"equivPick"},"promptText":"Omar matches 4/6 to its equal. Which option matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"8/12","choices":["8/12","8/18","9/12","4/12"],"display":{"frac":{"a":4,"b":6,"c":8,"d":12,"kind":"equivPick"},"promptText":"Which of these fractions is equal to 4/6?"}},
   },
   {
     itemId: "fractions-conc-b0821-0391",
@@ -13102,7 +13102,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/16","choices":["1/16","2/24","3/16","2/16"],"display":{"frac":{"a":1,"b":8,"c":2,"d":16,"kind":"equivPick"},"promptText":"Finn matches 1/8 to its equal. Which option matches?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/16","choices":["1/16","2/24","3/16","2/16"],"display":{"frac":{"a":1,"b":8,"c":2,"d":16,"kind":"equivPick"},"promptText":"Which of these fractions is equal to 1/8?"}},
   },
   {
     itemId: "fractions-conc-b0821-0393",
@@ -13122,7 +13122,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"18/20","choices":["19/20","18/20","18/30","9/20"],"display":{"frac":{"a":9,"b":10,"c":18,"d":20,"kind":"equivPick"},"promptText":"Only one choice equals 9/10. Which does Leo certify?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"18/20","choices":["19/20","18/20","18/30","9/20"],"display":{"frac":{"a":9,"b":10,"c":18,"d":20,"kind":"equivPick"},"promptText":"Which fraction means the same amount as 9/10?"}},
   },
   {
     itemId: "fractions-conc-b0821-0395",
@@ -13142,7 +13142,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"14/24","choices":["14/36","15/24","7/24","14/24"],"display":{"frac":{"a":7,"b":12,"c":14,"d":24,"kind":"equivPick"},"promptText":"Only one choice equals 7/12. Which does Theo certify?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"14/24","choices":["14/36","15/24","7/24","14/24"],"display":{"frac":{"a":7,"b":12,"c":14,"d":24,"kind":"equivPick"},"promptText":"Which fraction is another name for 7/12?"}},
   },
   {
     itemId: "fractions-conc-b0821-0397",
@@ -13162,7 +13162,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"22/24","choices":["11/24","23/24","22/24","22/36"],"display":{"frac":{"a":11,"b":12,"c":22,"d":24,"kind":"equivPick"},"promptText":"Only one choice equals 11/12. Which does Zoe certify?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"22/24","choices":["11/24","23/24","22/24","22/36"],"display":{"frac":{"a":11,"b":12,"c":22,"d":24,"kind":"equivPick"},"promptText":"Which of these fractions is equal to 11/12?"}},
   },
   {
     itemId: "fractions-conc-b0821-0399",
@@ -13182,7 +13182,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"15/24","choices":["16/24","15/24","5/24","15/32"],"display":{"frac":{"a":5,"b":8,"c":15,"d":24,"kind":"equivPick"},"promptText":"Only one choice equals 5/8. Which does Diego certify?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"15/24","choices":["16/24","15/24","5/24","15/32"],"display":{"frac":{"a":5,"b":8,"c":15,"d":24,"kind":"equivPick"},"promptText":"Which fraction shows the same amount as 5/8?"}},
   },
   {
     itemId: "fractions-conc-b0821-0401",
@@ -13202,7 +13202,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"10/12","choices":["11/12","5/12","10/18","10/12"],"display":{"frac":{"a":5,"b":6,"c":10,"d":12,"kind":"equivPick"},"promptText":"Only one choice equals 5/6. Which does Luca certify?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"10/12","choices":["11/12","5/12","10/18","10/12"],"display":{"frac":{"a":5,"b":6,"c":10,"d":12,"kind":"equivPick"},"promptText":"Which fraction is equal to 5/6?"}},
   },
   {
     itemId: "fractions-conc-b0821-0403",
@@ -13222,7 +13222,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"16/20","choices":["4/20","16/20","17/20","16/25"],"display":{"frac":{"a":4,"b":5,"c":16,"d":20,"kind":"equivPick"},"promptText":"Only one choice equals 4/5. Which does Omar certify?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"16/20","choices":["4/20","16/20","17/20","16/25"],"display":{"frac":{"a":4,"b":5,"c":16,"d":20,"kind":"equivPick"},"promptText":"Which fraction names the same amount as 4/5?"}},
   },
   {
     itemId: "fractions-conc-b0821-0405",
@@ -13242,7 +13242,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"21/30","choices":["21/30","21/40","7/30","22/30"],"display":{"frac":{"a":7,"b":10,"c":21,"d":30,"kind":"equivPick"},"promptText":"Only one choice equals 7/10. Which does Finn certify?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"21/30","choices":["21/30","21/40","7/30","22/30"],"display":{"frac":{"a":7,"b":10,"c":21,"d":30,"kind":"equivPick"},"promptText":"Which fraction is the same size as 7/10?"}},
   },
   {
     itemId: "fractions-conc-b0821-0407",
@@ -13262,7 +13262,7 @@ export const ITEMS = [
     structureType: "pickEquiv_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/24","choices":["2/36","3/24","1/24","2/24"],"display":{"frac":{"a":1,"b":12,"c":2,"d":24,"kind":"equivPick"},"promptText":"Only one choice equals 1/12. Which does Sam certify?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/24","choices":["2/36","3/24","1/24","2/24"],"display":{"frac":{"a":1,"b":12,"c":2,"d":24,"kind":"equivPick"},"promptText":"Which fraction has the same value as 1/12?"}},
   },
   {
     itemId: "fractions-conc-b0821-0409",
@@ -13272,7 +13272,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Nia doubles the top AND bottom of 1/2 and says the value changed. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Nia doubles the top and bottom numbers of 1/2 and says the new fraction is equal to 1/2. Is Nia right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0410",
@@ -13282,7 +13282,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Doubling both numbers of 1/3, Kai expects a bigger fraction. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Kai doubles both numbers in 1/3 and says 2/6 is bigger than 1/3. Is Kai right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0411",
@@ -13292,7 +13292,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"June doubles the top AND bottom of 2/3 and says the value changed. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"June doubles the top and bottom numbers of 2/3 and says the new fraction is a different amount. Is June right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0412",
@@ -13302,7 +13302,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Doubling both numbers of 1/4, Lily expects a bigger fraction. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Lily doubles both numbers in 1/4 and says 2/8 is the same amount as 1/4. Is Lily right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0413",
@@ -13312,7 +13312,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Amara doubles the top AND bottom of 3/4 and says the value changed. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Amara doubles the top and bottom numbers of 3/4 and says the new fraction is the same amount as 3/4. Is Amara right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0414",
@@ -13322,7 +13322,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Doubling both numbers of 1/2, Leo expects a bigger fraction. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Leo doubles both numbers in 1/2 and says 2/4 is bigger than 1/2. Is Leo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0415",
@@ -13332,7 +13332,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Mina doubles the top AND bottom of 1/3 and says the value changed. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Mina doubles the top and bottom numbers of 1/3 and says the new fraction is bigger than 1/3. Is Mina right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0416",
@@ -13342,7 +13342,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Doubling both numbers of 2/3, Theo expects a bigger fraction. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Theo doubles both numbers in 2/3 and says 4/6 is equal to 2/3. Is Theo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0417",
@@ -13352,7 +13352,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ida doubles the top AND bottom of 1/4 and says the value changed. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Ida doubles the top and bottom numbers of 1/4 and says the new fraction is equal to 1/4. Is Ida right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0418",
@@ -13362,7 +13362,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Doubling both numbers of 3/4, Zoe expects a bigger fraction. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Zoe doubles both numbers in 3/4 and says 6/8 is bigger than 3/4. Is Zoe right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0419",
@@ -13372,7 +13372,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Rosa doubles the top AND bottom of 1/2 and says the value changed. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Rosa doubles the top and bottom numbers of 1/2 and says the new fraction is a different amount. Is Rosa right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0420",
@@ -13382,7 +13382,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Doubling both numbers of 1/3, Diego expects a bigger fraction. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Diego doubles both numbers in 1/3 and says 2/6 is the same amount as 1/3. Is Diego right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0421",
@@ -13392,7 +13392,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Nora doubles the top AND bottom of 2/3 and says the value changed. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Nora doubles the top and bottom numbers of 2/3 and says the new fraction is the same amount as 2/3. Is Nora right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0422",
@@ -13402,7 +13402,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Doubling both numbers of 1/4, Luca expects a bigger fraction. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Luca doubles both numbers in 1/4 and says 2/8 is smaller than 1/4. Is Luca right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0423",
@@ -13412,7 +13412,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ava doubles the top AND bottom of 3/4 and says the value changed. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ava doubles the top and bottom numbers of 3/4 and says the new fraction is more than 3/4. Is Ava right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0424",
@@ -13422,7 +13422,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Doubling both numbers of 1/2, Omar expects a bigger fraction. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Omar doubles both numbers in 1/2 and says 2/4 is equal to 1/2. Is Omar right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0425",
@@ -13432,7 +13432,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ben doubles the top AND bottom of 2/3 and says the value changed. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Ben doubles the top and bottom numbers of 2/3 and says the new fraction is equal to 2/3. Is Ben right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0426",
@@ -13442,7 +13442,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Doubling both numbers of 1/4, Finn expects a bigger fraction. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Finn doubles both numbers in 1/4 and says 2/8 is bigger than 1/4. Is Finn right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0427",
@@ -13452,7 +13452,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Zoe multiplies top and bottom of 2/5 by 2 and calls the result larger. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Zoe multiplies the top and bottom of 2/5 by 2 and says the new fraction is equal to 2/5. Is Zoe right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0428",
@@ -13462,7 +13462,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Scaling 3/5 by 2/2 should grow it, argues Rosa. Does it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Rosa multiplies the top and bottom of 3/5 by 2. Rosa says the new fraction is more than 3/5. Is Rosa right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0429",
@@ -13472,7 +13472,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Diego multiplies top and bottom of 1/6 by 2 and calls the result larger. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Diego multiplies the top and bottom of 1/6 by 2 and says the new fraction is larger than 1/6. Is Diego right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0430",
@@ -13482,7 +13482,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Scaling 5/6 by 2/2 should grow it, argues Nora. Does it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Nora multiplies the top and bottom of 5/6 by 2 and says the fraction got bigger. Is Nora right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0431",
@@ -13492,7 +13492,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Luca multiplies top and bottom of 3/8 by 2 and calls the result larger. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Luca multiplies the top and bottom of 3/8 by 2 and says the new fraction is the same amount as 3/8. Is Luca right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0432",
@@ -13502,7 +13502,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Scaling 5/8 by 2/2 should grow it, argues Ava. Does it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ava says multiplying the top and bottom of 5/8 by 2 makes a bigger fraction. Is Ava right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0433",
@@ -13512,7 +13512,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Omar multiplies top and bottom of 1/5 by 2 and calls the result larger. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Omar multiplies the top and bottom of 1/5 by 2 and says the new fraction is larger than 1/5. Is Omar right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0434",
@@ -13522,7 +13522,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Scaling 4/5 by 2/2 should grow it, argues Ben. Does it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Ben multiplies the top and bottom of 4/5 by 2. Ben says the new fraction is equal to 4/5. Is Ben right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0435",
@@ -13532,7 +13532,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Finn multiplies top and bottom of 1/8 by 2 and calls the result larger. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Finn multiplies the top and bottom of 1/8 by 2 and says the new fraction is equal to 1/8. Is Finn right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0436",
@@ -13542,7 +13542,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Scaling 4/6 by 2/2 should grow it, argues Priya. Does it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Priya says multiplying the top and bottom of 4/6 by 2 makes an equal fraction. Is Priya right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0437",
@@ -13552,7 +13552,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Sam multiplies top and bottom of 7/8 by 2 and calls the result larger. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Sam multiplies the top and bottom of 7/8 by 2 and says the new fraction is larger than 7/8. Is Sam right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0438",
@@ -13562,7 +13562,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Scaling 2/5 by 2/2 should grow it, argues Nia. Does it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Nia multiplies the top and bottom of 2/5 by 2. Nia says the new fraction is more than 2/5. Is Nia right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0439",
@@ -13572,7 +13572,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Kai multiplies top and bottom of 3/5 by 2 and calls the result larger. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Kai multiplies the top and bottom of 3/5 by 2 and says the new fraction is the same amount as 3/5. Is Kai right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0440",
@@ -13582,7 +13582,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Scaling 1/6 by 2/2 should grow it, argues June. Does it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"June multiplies the top and bottom of 1/6 by 2 and says the amount stayed the same. Is June right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0441",
@@ -13592,7 +13592,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Lily multiplies top and bottom of 5/6 by 2 and calls the result larger. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Lily multiplies the top and bottom of 5/6 by 2 and says the new fraction is a different amount. Is Lily right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0442",
@@ -13602,7 +13602,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Scaling 3/8 by 2/2 should grow it, argues Amara. Does it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Amara multiplies the top and bottom of 3/8 by 2 and says the fraction got bigger. Is Amara right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0443",
@@ -13612,7 +13612,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Leo multiplies top and bottom of 5/8 by 2 and calls the result larger. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Leo multiplies the top and bottom of 5/8 by 2 and says the new fraction is equal to 5/8. Is Leo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0444",
@@ -13622,7 +13622,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Scaling 1/5 by 2/2 should grow it, argues Mina. Does it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Mina says multiplying the top and bottom of 1/5 by 2 gives the same amount. Is Mina right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0445",
@@ -13632,7 +13632,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Diego asserts that 7/10 scaled by 2/2 lands at a different point on the line. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Diego multiplies the numerator and denominator of 7/10 by 2 and says the new fraction is the same amount. Is Diego right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0446",
@@ -13642,7 +13642,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Multiplying numerator and denominator of 9/10 by 2 moves the value, per Nora. Does it move?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Nora says multiplying the numerator and denominator of 9/10 by 2 changes how much it is. Is Nora right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0447",
@@ -13652,7 +13652,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Luca asserts that 5/12 scaled by 2/2 lands at a different point on the line. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Luca multiplies the top and bottom of 5/12 by 2. Luca says the new fraction is at the same point on a number line. Is Luca right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0448",
@@ -13662,7 +13662,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Multiplying numerator and denominator of 7/12 by 2 moves the value, per Ava. Does it move?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Ava says multiplying the numerator and denominator of 7/12 by 2 gives an equal fraction. Is Ava right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0449",
@@ -13672,7 +13672,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Omar asserts that 3/10 scaled by 2/2 lands at a different point on the line. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Omar multiplies the numerator and denominator of 3/10 by 2 and says the new fraction is a different amount. Is Omar right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0450",
@@ -13682,7 +13682,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Multiplying numerator and denominator of 11/12 by 2 moves the value, per Ben. Does it move?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ben multiplies the top and bottom of 11/12 by 2. Ben says the new fraction is at a different point on a number line. Is Ben right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0451",
@@ -13692,7 +13692,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Finn asserts that 1/10 scaled by 2/2 lands at a different point on the line. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Finn says multiplying the numerator and denominator of 1/10 by 2 gives an equal fraction. Is Finn right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0452",
@@ -13702,7 +13702,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Multiplying numerator and denominator of 1/12 by 2 moves the value, per Priya. Does it move?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Priya multiplies the top and bottom of 1/12 by 2. Priya says the new fraction is at the same point on a number line. Is Priya right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0453",
@@ -13712,7 +13712,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Sam asserts that 7/10 scaled by 2/2 lands at a different point on the line. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Sam says multiplying the numerator and denominator of 7/10 by 2 changes how much it is. Is Sam right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0454",
@@ -13722,7 +13722,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Multiplying numerator and denominator of 9/10 by 2 moves the value, per Nia. Does it move?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Nia multiplies the numerator and denominator of 9/10 by 2 and says the new fraction is the same amount. Is Nia right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0455",
@@ -13732,7 +13732,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Kai asserts that 5/12 scaled by 2/2 lands at a different point on the line. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Kai multiplies the top and bottom of 5/12 by 2. Kai says the new fraction is at a different point on a number line. Is Kai right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0456",
@@ -13742,7 +13742,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Multiplying numerator and denominator of 7/12 by 2 moves the value, per June. Does it move?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"June says multiplying the numerator and denominator of 7/12 by 2 changes how much it is. Is June right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0457",
@@ -13752,7 +13752,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Lily asserts that 3/10 scaled by 2/2 lands at a different point on the line. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Lily says multiplying the numerator and denominator of 3/10 by 2 gives an equal fraction. Is Lily right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0458",
@@ -13762,7 +13762,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Multiplying numerator and denominator of 11/12 by 2 moves the value, per Amara. Does it move?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Amara multiplies the numerator and denominator of 11/12 by 2 and says the new fraction is a different amount. Is Amara right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0459",
@@ -13772,7 +13772,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Leo asserts that 1/10 scaled by 2/2 lands at a different point on the line. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Leo multiplies the numerator and denominator of 1/10 by 2 and says the new fraction is a different amount. Is Leo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0460",
@@ -13782,7 +13782,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Multiplying numerator and denominator of 1/12 by 2 moves the value, per Mina. Does it move?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Mina multiplies the top and bottom of 1/12 by 2. Mina says the new fraction is at a different point on a number line. Is Mina right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0461",
@@ -13792,7 +13792,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Theo asserts that 9/10 scaled by 2/2 lands at a different point on the line. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Theo multiplies the top and bottom of 9/10 by 2. Theo says the new fraction is at the same point on a number line. Is Theo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0462",
@@ -13802,7 +13802,7 @@ export const ITEMS = [
     structureType: "doubleBothJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Multiplying numerator and denominator of 5/12 by 2 moves the value, per Ida. Does it move?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Ida multiplies the numerator and denominator of 5/12 by 2 and says the new fraction is equal to 5/12. Is Ida right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0463",
@@ -13812,7 +13812,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Mina says 1/3 beats 1/2 because 3 is bigger than 2. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Mina says 1/3 is bigger than 1/2 because 3 is bigger than 2. Is Mina right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0464",
@@ -13822,7 +13822,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Bigger bottom means bigger fraction, argues Theo, so 1/4 > 1/2. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Theo says a bigger bottom number means a bigger fraction, so 1/4 > 1/2. Is Theo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0465",
@@ -13832,7 +13832,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ida says 1/4 beats 1/3 because 4 is bigger than 3. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ida says 1/4 is bigger than 1/3 because fourths are bigger pieces than thirds. Is Ida right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0466",
@@ -13842,7 +13842,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Bigger bottom means bigger fraction, argues Zoe, so 2/4 > 2/3. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Zoe says a bigger bottom number means smaller pieces, so 2/3 > 2/4. Do you agree with Zoe?"}},
   },
   {
     itemId: "fractions-conc-b0821-0467",
@@ -13852,7 +13852,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Rosa says 1/3 beats 1/2 because 3 is bigger than 2. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Rosa says 1/2 is bigger than 1/3 because halves are bigger pieces than thirds. Is Rosa right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0468",
@@ -13862,7 +13862,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Bigger bottom means bigger fraction, argues Diego, so 1/4 > 1/2. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Diego says a bigger bottom number means a bigger fraction, so 1/4 > 1/2. Do you agree with Diego?"}},
   },
   {
     itemId: "fractions-conc-b0821-0469",
@@ -13872,7 +13872,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Nora says 1/4 beats 1/3 because 4 is bigger than 3. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Nora says 1/4 is bigger than 1/3 because fourths are bigger pieces than thirds. Do you agree with Nora?"}},
   },
   {
     itemId: "fractions-conc-b0821-0470",
@@ -13882,7 +13882,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Bigger bottom means bigger fraction, argues Luca, so 2/4 > 2/3. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Luca says a bigger bottom number means a bigger fraction, so 2/4 > 2/3. Is Luca right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0471",
@@ -13892,7 +13892,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ava says 1/3 beats 1/2 because 3 is bigger than 2. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ava says 1/3 is bigger than 1/2 because 3 is bigger than 2. Do you agree with Ava?"}},
   },
   {
     itemId: "fractions-conc-b0821-0472",
@@ -13902,7 +13902,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Bigger bottom means bigger fraction, argues Omar, so 1/4 > 1/2. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Omar says a bigger bottom number means smaller pieces, so 1/2 > 1/4. Is Omar right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0473",
@@ -13912,7 +13912,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ben says 1/4 beats 1/3 because 4 is bigger than 3. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Ben says 1/3 is bigger than 1/4 because thirds are bigger pieces than fourths. Do you agree with Ben?"}},
   },
   {
     itemId: "fractions-conc-b0821-0474",
@@ -13922,7 +13922,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Bigger bottom means bigger fraction, argues Finn, so 2/4 > 2/3. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Finn says a bigger bottom number means a bigger fraction, so 2/4 > 2/3. Do you agree with Finn?"}},
   },
   {
     itemId: "fractions-conc-b0821-0475",
@@ -13932,7 +13932,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Priya says 1/3 beats 1/2 because 3 is bigger than 2. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Priya says 1/3 is bigger than 1/2 because 3 is bigger than 2. Is Priya right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0476",
@@ -13942,7 +13942,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Bigger bottom means bigger fraction, argues Sam, so 1/4 > 1/2. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Is Sam right that 1/4 > 1/2 because a bigger bottom number means a bigger fraction?"}},
   },
   {
     itemId: "fractions-conc-b0821-0477",
@@ -13952,7 +13952,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Nia says 1/4 beats 1/3 because 4 is bigger than 3. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Is Nia right that 1/4 is bigger than 1/3 because 4 is bigger than 3?"}},
   },
   {
     itemId: "fractions-conc-b0821-0478",
@@ -13962,7 +13962,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Bigger bottom means bigger fraction, argues Kai, so 2/4 > 2/3. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Kai says a bigger bottom number means smaller pieces, so 2/3 > 2/4. Is Kai right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0479",
@@ -13972,7 +13972,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"June says 1/3 beats 1/2 because 3 is bigger than 2. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"June says 1/2 is bigger than 1/3 because halves are bigger pieces than thirds. Do you agree with June?"}},
   },
   {
     itemId: "fractions-conc-b0821-0480",
@@ -13982,7 +13982,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Bigger bottom means bigger fraction, argues Lily, so 1/4 > 1/2. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Lily says a bigger bottom number means a bigger fraction, so 1/4 > 1/2. Do you agree with Lily?"}},
   },
   {
     itemId: "fractions-conc-b0821-0481",
@@ -13992,7 +13992,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Omar ranks 1/6 above 1/5 since 6 > 5. Does the ranking hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Omar says 1/6 is greater than 1/5 because 6 is greater than 5. Is Omar right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0482",
@@ -14002,7 +14002,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Because denominators grew, Ben claims 2/8 outweighs 2/5. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ben says 2/8 is more than 2/5 since 8 is more than 5. Is Ben right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0483",
@@ -14012,7 +14012,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Finn ranks 3/8 above 3/6 since 8 > 6. Does the ranking hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Finn says 3/8 > 3/6 because 8 > 6. Is Finn right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0484",
@@ -14022,7 +14022,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Because denominators grew, Priya claims 1/8 outweighs 1/5. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Priya says 1/8 is more than 1/5 since 8 is more than 5. Is Priya right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0485",
@@ -14032,7 +14032,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Sam ranks 4/6 above 4/5 since 6 > 5. Does the ranking hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Sam thinks 4/6 is more than 4/5 since 6 is more than 5. Is Sam right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0486",
@@ -14042,7 +14042,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Because denominators grew, Nia claims 5/8 outweighs 5/6. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Nia says 5/8 is more than 5/6 since 8 is more than 6. Is Nia right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0487",
@@ -14052,7 +14052,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Kai ranks 1/6 above 1/5 since 6 > 5. Does the ranking hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Kai says 1/5 is greater than 1/6 because 5 is less than 6. Is Kai right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0488",
@@ -14062,7 +14062,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Because denominators grew, June claims 2/8 outweighs 2/5. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"June says 2/5 is more than 2/8 since 5 is less than 8. Is June right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0489",
@@ -14072,7 +14072,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Lily ranks 3/8 above 3/6 since 8 > 6. Does the ranking hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Lily says 3/6 > 3/8 because 6 < 8. Is Lily right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0490",
@@ -14082,7 +14082,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Because denominators grew, Amara claims 1/8 outweighs 1/5. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Amara says 1/8 > 1/5 because 8 > 5. Is Amara right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0491",
@@ -14092,7 +14092,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Leo ranks 4/6 above 4/5 since 6 > 5. Does the ranking hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Leo thinks 4/5 is more than 4/6 since 5 is less than 6. Is Leo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0492",
@@ -14102,7 +14102,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Because denominators grew, Mina claims 5/8 outweighs 5/6. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Mina says 5/8 > 5/6 because 8 > 6. Is Mina right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0493",
@@ -14112,7 +14112,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Theo ranks 1/6 above 1/5 since 6 > 5. Does the ranking hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Theo says 1/6 > 1/5 because 6 > 5. Is Theo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0494",
@@ -14122,7 +14122,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Because denominators grew, Ida claims 2/8 outweighs 2/5. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Ida says 2/5 > 2/8 because 5 < 8. Is Ida right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0495",
@@ -14132,7 +14132,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Zoe ranks 3/8 above 3/6 since 8 > 6. Does the ranking hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Zoe says 3/8 is greater than 3/6 because 8 is greater than 6. Is Zoe right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0496",
@@ -14142,7 +14142,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Because denominators grew, Rosa claims 1/8 outweighs 1/5. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Rosa says 1/8 > 1/5 because 8 > 5. Is Rosa right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0497",
@@ -14152,7 +14152,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Diego ranks 4/6 above 4/5 since 6 > 5. Does the ranking hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Diego says 4/6 > 4/5 because 6 > 5. Is Diego right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0498",
@@ -14162,7 +14162,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Because denominators grew, Nora claims 5/8 outweighs 5/6. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Nora says 5/6 > 5/8 because 6 < 8. Is Nora right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0499",
@@ -14172,7 +14172,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Finn's rule \"larger denominator, larger fraction\" makes 3/12 > 3/10. Is the rule sound here?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Finn's rule is that a larger denominator means a larger fraction. So Finn says 3/12 > 3/10. Is Finn right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0500",
@@ -14182,7 +14182,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Applying denominator-size logic, Priya puts 7/12 over 7/10. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Priya picks 7/12 as greater than 7/10 because its bottom number is bigger. Is Priya right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0501",
@@ -14192,7 +14192,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Sam's rule \"larger denominator, larger fraction\" makes 1/12 > 1/10. Is the rule sound here?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Sam says the fraction with the bigger denominator is bigger, so 1/12 > 1/10. Is Sam right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0502",
@@ -14202,7 +14202,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Applying denominator-size logic, Nia puts 5/12 over 5/10. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Nia picks 5/10 as greater than 5/12 because its bottom number is smaller. Is Nia right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0503",
@@ -14212,7 +14212,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Kai's rule \"larger denominator, larger fraction\" makes 9/12 > 9/10. Is the rule sound here?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Kai thinks a bigger denominator always makes a bigger fraction, so Kai says 9/12 > 9/10. Is Kai right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0504",
@@ -14222,7 +14222,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Applying denominator-size logic, June puts 2/12 over 2/10. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"June picks 2/12 as greater than 2/10 because its bottom number is bigger. Is June right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0505",
@@ -14232,7 +14232,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Lily's rule \"larger denominator, larger fraction\" makes 3/12 > 3/10. Is the rule sound here?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Lily's rule is that a larger denominator means smaller parts. So Lily says 3/10 > 3/12. Is Lily right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0506",
@@ -14242,7 +14242,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Applying denominator-size logic, Amara puts 7/12 over 7/10. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Amara says 7/12 is greater than 7/10 because 12 is bigger than 10. Is Amara right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0507",
@@ -14252,7 +14252,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Leo's rule \"larger denominator, larger fraction\" makes 1/12 > 1/10. Is the rule sound here?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Leo says the fraction with the bigger denominator has smaller parts, so 1/10 > 1/12. Is Leo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0508",
@@ -14262,7 +14262,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Applying denominator-size logic, Mina puts 5/12 over 5/10. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Mina says 5/12 is greater than 5/10 because 12 is bigger than 10. Is Mina right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0509",
@@ -14272,7 +14272,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Theo's rule \"larger denominator, larger fraction\" makes 9/12 > 9/10. Is the rule sound here?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Theo's rule is that a larger denominator means a larger fraction. So Theo says 9/12 > 9/10. Is Theo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0510",
@@ -14282,7 +14282,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Applying denominator-size logic, Ida puts 2/12 over 2/10. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Ida says 2/10 is greater than 2/12 because 10 is smaller than 12. Is Ida right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0511",
@@ -14292,7 +14292,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Zoe's rule \"larger denominator, larger fraction\" makes 3/12 > 3/10. Is the rule sound here?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Zoe thinks a bigger denominator always makes smaller parts, so Zoe says 3/10 > 3/12. Is Zoe right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0512",
@@ -14302,7 +14302,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Applying denominator-size logic, Rosa puts 7/12 over 7/10. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Rosa says 7/12 is greater than 7/10 because 12 is bigger than 10. Is Rosa right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0513",
@@ -14312,7 +14312,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Diego's rule \"larger denominator, larger fraction\" makes 1/12 > 1/10. Is the rule sound here?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Diego says the fraction with the bigger denominator is bigger, so 1/12 > 1/10. Is Diego right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0514",
@@ -14322,7 +14322,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Applying denominator-size logic, Nora puts 5/12 over 5/10. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Nora says 5/10 is greater than 5/12 because 10 is smaller than 12. Is Nora right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0515",
@@ -14332,7 +14332,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Luca's rule \"larger denominator, larger fraction\" makes 9/12 > 9/10. Is the rule sound here?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Luca thinks a bigger denominator always makes a bigger fraction, so Luca says 9/12 > 9/10. Is Luca right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0516",
@@ -14342,7 +14342,7 @@ export const ITEMS = [
     structureType: "bigDenTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Applying denominator-size logic, Ava puts 2/12 over 2/10. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ava picks 2/12 as greater than 2/10 because its bottom number is bigger. Is Ava right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0517",
@@ -14352,7 +14352,7 @@ export const ITEMS = [
     structureType: "whichBigger_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/3","choices":["1/3","2/3"],"display":{"frac":{"a":2,"b":3,"c":1,"d":3,"kind":"cmpPick"},"promptText":"Which is more pie: 2/3 of it or 1/3 of it? Luca decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/3","choices":["1/3","2/3"],"display":{"frac":{"a":2,"b":3,"c":1,"d":3,"kind":"cmpPick"},"promptText":"Which is more of the same pie, 2/3 or 1/3?"}},
   },
   {
     itemId: "fractions-conc-b0821-0518",
@@ -14372,7 +14372,7 @@ export const ITEMS = [
     structureType: "whichBigger_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["1/3","1/2"],"display":{"frac":{"a":1,"b":2,"c":1,"d":3,"kind":"cmpPick"},"promptText":"Which is more pie: 1/2 of it or 1/3 of it? Omar decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["1/3","1/2"],"display":{"frac":{"a":1,"b":2,"c":1,"d":3,"kind":"cmpPick"},"promptText":"Think of one pie. Which is more of it: 1/2 or 1/3?"}},
   },
   {
     itemId: "fractions-conc-b0821-0520",
@@ -14392,7 +14392,7 @@ export const ITEMS = [
     structureType: "whichBigger_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/3","choices":["2/4","2/3"],"display":{"frac":{"a":2,"b":3,"c":2,"d":4,"kind":"cmpPick"},"promptText":"Which is more pie: 2/3 of it or 2/4 of it? Finn decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/3","choices":["2/4","2/3"],"display":{"frac":{"a":2,"b":3,"c":2,"d":4,"kind":"cmpPick"},"promptText":"Which is more pie: 2/3 of a pie or 2/4 of the same pie?"}},
   },
   {
     itemId: "fractions-conc-b0821-0522",
@@ -14412,7 +14412,7 @@ export const ITEMS = [
     structureType: "whichBigger_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/4","choices":["1/4","2/4"],"display":{"frac":{"a":2,"b":4,"c":1,"d":4,"kind":"cmpPick"},"promptText":"Which is more pie: 2/4 of it or 1/4 of it? Sam decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/4","choices":["1/4","2/4"],"display":{"frac":{"a":2,"b":4,"c":1,"d":4,"kind":"cmpPick"},"promptText":"Which is more pie: 2/4 of a pie or 1/4 of the same pie?"}},
   },
   {
     itemId: "fractions-conc-b0821-0524",
@@ -14432,7 +14432,7 @@ export const ITEMS = [
     structureType: "whichBigger_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/3","choices":["2/3","1/2"],"display":{"frac":{"a":2,"b":3,"c":1,"d":2,"kind":"cmpPick"},"promptText":"Which is more pie: 2/3 of it or 1/2 of it? Kai decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/3","choices":["2/3","1/2"],"display":{"frac":{"a":2,"b":3,"c":1,"d":2,"kind":"cmpPick"},"promptText":"Which is more of the same pie, 2/3 or 1/2?"}},
   },
   {
     itemId: "fractions-conc-b0821-0526",
@@ -14452,7 +14452,7 @@ export const ITEMS = [
     structureType: "whichBigger_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/4","choices":["3/4","1/3"],"display":{"frac":{"a":3,"b":4,"c":1,"d":3,"kind":"cmpPick"},"promptText":"Which is more pie: 3/4 of it or 1/3 of it? Lily decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/4","choices":["3/4","1/3"],"display":{"frac":{"a":3,"b":4,"c":1,"d":3,"kind":"cmpPick"},"promptText":"Which is more pie: 3/4 of a pie or 1/3 of the same pie?"}},
   },
   {
     itemId: "fractions-conc-b0821-0528",
@@ -14472,7 +14472,7 @@ export const ITEMS = [
     structureType: "whichBigger_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/4","choices":["2/4","3/4"],"display":{"frac":{"a":3,"b":4,"c":2,"d":4,"kind":"cmpPick"},"promptText":"Which is more pie: 3/4 of it or 2/4 of it? Leo decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/4","choices":["2/4","3/4"],"display":{"frac":{"a":3,"b":4,"c":2,"d":4,"kind":"cmpPick"},"promptText":"Think of one pie. Which is more of it: 3/4 or 2/4?"}},
   },
   {
     itemId: "fractions-conc-b0821-0530",
@@ -14492,7 +14492,7 @@ export const ITEMS = [
     structureType: "whichBigger_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["1/4","1/2"],"display":{"frac":{"a":1,"b":2,"c":1,"d":4,"kind":"cmpPick"},"promptText":"Which is more pie: 1/2 of it or 1/4 of it? Theo decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["1/4","1/2"],"display":{"frac":{"a":1,"b":2,"c":1,"d":4,"kind":"cmpPick"},"promptText":"Which is more of the same pie, 1/2 or 1/4?"}},
   },
   {
     itemId: "fractions-conc-b0821-0532",
@@ -14502,7 +14502,7 @@ export const ITEMS = [
     structureType: "whichBigger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4/5","choices":["2/5","4/5"],"display":{"frac":{"a":4,"b":5,"c":2,"d":5,"kind":"cmpPick"},"promptText":"June compares 4/5 with 2/5. Which one wins?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"4/5","choices":["2/5","4/5"],"display":{"frac":{"a":4,"b":5,"c":2,"d":5,"kind":"cmpPick"},"promptText":"Which fraction is larger: 4/5 or 2/5?"}},
   },
   {
     itemId: "fractions-conc-b0821-0533",
@@ -14512,7 +14512,7 @@ export const ITEMS = [
     structureType: "whichBigger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5/6","choices":["1/6","5/6"],"display":{"frac":{"a":5,"b":6,"c":1,"d":6,"kind":"cmpPick"},"promptText":"Pick the larger of 5/6 and 1/6. Lily shows the work."}},
+    question: {"a":null,"b":null,"op":"count","answer":"5/6","choices":["1/6","5/6"],"display":{"frac":{"a":5,"b":6,"c":1,"d":6,"kind":"cmpPick"},"promptText":"Which fraction is bigger, 5/6 or 1/6?"}},
   },
   {
     itemId: "fractions-conc-b0821-0534",
@@ -14522,7 +14522,7 @@ export const ITEMS = [
     structureType: "whichBigger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5/8","choices":["5/8","3/8"],"display":{"frac":{"a":5,"b":8,"c":3,"d":8,"kind":"cmpPick"},"promptText":"Amara compares 5/8 with 3/8. Which one wins?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5/8","choices":["5/8","3/8"],"display":{"frac":{"a":5,"b":8,"c":3,"d":8,"kind":"cmpPick"},"promptText":"Which fraction is greater, 5/8 or 3/8?"}},
   },
   {
     itemId: "fractions-conc-b0821-0535",
@@ -14532,7 +14532,7 @@ export const ITEMS = [
     structureType: "whichBigger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/5","choices":["1/6","1/5"],"display":{"frac":{"a":1,"b":5,"c":1,"d":6,"kind":"cmpPick"},"promptText":"Pick the larger of 1/5 and 1/6. Leo shows the work."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/5","choices":["1/6","1/5"],"display":{"frac":{"a":1,"b":5,"c":1,"d":6,"kind":"cmpPick"},"promptText":"Which fraction is larger: 1/5 or 1/6?"}},
   },
   {
     itemId: "fractions-conc-b0821-0536",
@@ -14542,7 +14542,7 @@ export const ITEMS = [
     structureType: "whichBigger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/5","choices":["2/5","2/8"],"display":{"frac":{"a":2,"b":5,"c":2,"d":8,"kind":"cmpPick"},"promptText":"Mina compares 2/5 with 2/8. Which one wins?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/5","choices":["2/5","2/8"],"display":{"frac":{"a":2,"b":5,"c":2,"d":8,"kind":"cmpPick"},"promptText":"Which fraction is bigger, 2/5 or 2/8?"}},
   },
   {
     itemId: "fractions-conc-b0821-0537",
@@ -14552,7 +14552,7 @@ export const ITEMS = [
     structureType: "whichBigger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/6","choices":["3/6","3/8"],"display":{"frac":{"a":3,"b":6,"c":3,"d":8,"kind":"cmpPick"},"promptText":"Pick the larger of 3/6 and 3/8. Theo shows the work."}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/6","choices":["3/6","3/8"],"display":{"frac":{"a":3,"b":6,"c":3,"d":8,"kind":"cmpPick"},"promptText":"Which is larger: 3/6 or 3/8?"}},
   },
   {
     itemId: "fractions-conc-b0821-0538",
@@ -14562,7 +14562,7 @@ export const ITEMS = [
     structureType: "whichBigger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4/5","choices":["4/6","4/5"],"display":{"frac":{"a":4,"b":5,"c":4,"d":6,"kind":"cmpPick"},"promptText":"Ida compares 4/5 with 4/6. Which one wins?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"4/5","choices":["4/6","4/5"],"display":{"frac":{"a":4,"b":5,"c":4,"d":6,"kind":"cmpPick"},"promptText":"Which is larger: 4/5 or 4/6?"}},
   },
   {
     itemId: "fractions-conc-b0821-0539",
@@ -14572,7 +14572,7 @@ export const ITEMS = [
     structureType: "whichBigger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5/6","choices":["5/8","5/6"],"display":{"frac":{"a":5,"b":6,"c":5,"d":8,"kind":"cmpPick"},"promptText":"Pick the larger of 5/6 and 5/8. Zoe shows the work."}},
+    question: {"a":null,"b":null,"op":"count","answer":"5/6","choices":["5/8","5/6"],"display":{"frac":{"a":5,"b":6,"c":5,"d":8,"kind":"cmpPick"},"promptText":"Which fraction is larger: 5/6 or 5/8?"}},
   },
   {
     itemId: "fractions-conc-b0821-0540",
@@ -14582,7 +14582,7 @@ export const ITEMS = [
     structureType: "whichBigger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/5","choices":["3/5","1/2"],"display":{"frac":{"a":3,"b":5,"c":1,"d":2,"kind":"cmpPick"},"promptText":"Rosa compares 3/5 with 1/2. Which one wins?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/5","choices":["3/5","1/2"],"display":{"frac":{"a":3,"b":5,"c":1,"d":2,"kind":"cmpPick"},"promptText":"Which fraction is bigger, 3/5 or 1/2?"}},
   },
   {
     itemId: "fractions-conc-b0821-0541",
@@ -14592,7 +14592,7 @@ export const ITEMS = [
     structureType: "whichBigger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5/8","choices":["1/2","5/8"],"display":{"frac":{"a":5,"b":8,"c":1,"d":2,"kind":"cmpPick"},"promptText":"Pick the larger of 5/8 and 1/2. Diego shows the work."}},
+    question: {"a":null,"b":null,"op":"count","answer":"5/8","choices":["1/2","5/8"],"display":{"frac":{"a":5,"b":8,"c":1,"d":2,"kind":"cmpPick"},"promptText":"Which is more: 5/8 or 1/2?"}},
   },
   {
     itemId: "fractions-conc-b0821-0542",
@@ -14602,7 +14602,7 @@ export const ITEMS = [
     structureType: "whichBigger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["2/5","1/2"],"display":{"frac":{"a":1,"b":2,"c":2,"d":5,"kind":"cmpPick"},"promptText":"Nora compares 1/2 with 2/5. Which one wins?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["2/5","1/2"],"display":{"frac":{"a":1,"b":2,"c":2,"d":5,"kind":"cmpPick"},"promptText":"Which is the larger fraction, 1/2 or 2/5?"}},
   },
   {
     itemId: "fractions-conc-b0821-0543",
@@ -14612,7 +14612,7 @@ export const ITEMS = [
     structureType: "whichBigger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/4","choices":["3/4","5/8"],"display":{"frac":{"a":3,"b":4,"c":5,"d":8,"kind":"cmpPick"},"promptText":"Pick the larger of 3/4 and 5/8. Luca shows the work."}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/4","choices":["3/4","5/8"],"display":{"frac":{"a":3,"b":4,"c":5,"d":8,"kind":"cmpPick"},"promptText":"Which is the larger fraction, 3/4 or 5/8?"}},
   },
   {
     itemId: "fractions-conc-b0821-0544",
@@ -14622,7 +14622,7 @@ export const ITEMS = [
     structureType: "whichBigger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5/6","choices":["3/4","5/6"],"display":{"frac":{"a":5,"b":6,"c":3,"d":4,"kind":"cmpPick"},"promptText":"Ava compares 5/6 with 3/4. Which one wins?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5/6","choices":["3/4","5/6"],"display":{"frac":{"a":5,"b":6,"c":3,"d":4,"kind":"cmpPick"},"promptText":"Which is greater: 5/6 or 3/4?"}},
   },
   {
     itemId: "fractions-conc-b0821-0545",
@@ -14632,7 +14632,7 @@ export const ITEMS = [
     structureType: "whichBigger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/3","choices":["3/5","2/3"],"display":{"frac":{"a":2,"b":3,"c":3,"d":5,"kind":"cmpPick"},"promptText":"Pick the larger of 2/3 and 3/5. Omar shows the work."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/3","choices":["3/5","2/3"],"display":{"frac":{"a":2,"b":3,"c":3,"d":5,"kind":"cmpPick"},"promptText":"Which is more: 2/3 or 3/5?"}},
   },
   {
     itemId: "fractions-conc-b0821-0546",
@@ -14642,7 +14642,7 @@ export const ITEMS = [
     structureType: "whichBigger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7/8","choices":["7/8","5/6"],"display":{"frac":{"a":7,"b":8,"c":5,"d":6,"kind":"cmpPick"},"promptText":"Ben compares 7/8 with 5/6. Which one wins?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"7/8","choices":["7/8","5/6"],"display":{"frac":{"a":7,"b":8,"c":5,"d":6,"kind":"cmpPick"},"promptText":"Which fraction is bigger: 7/8 or 5/6?"}},
   },
   {
     itemId: "fractions-conc-b0821-0547",
@@ -14652,7 +14652,7 @@ export const ITEMS = [
     structureType: "whichBigger_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4/5","choices":["3/4","4/5"],"display":{"frac":{"a":4,"b":5,"c":3,"d":4,"kind":"cmpPick"},"promptText":"Pick the larger of 4/5 and 3/4. Finn shows the work."}},
+    question: {"a":null,"b":null,"op":"count","answer":"4/5","choices":["3/4","4/5"],"display":{"frac":{"a":4,"b":5,"c":3,"d":4,"kind":"cmpPick"},"promptText":"Which is larger: 4/5 or 3/4?"}},
   },
   {
     itemId: "fractions-conc-b0821-0548",
@@ -14662,7 +14662,7 @@ export const ITEMS = [
     structureType: "whichBigger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7/10","choices":["3/10","7/10"],"display":{"frac":{"a":7,"b":10,"c":3,"d":10,"kind":"cmpPick"},"promptText":"Exactly which is greater: 7/10 or 3/10? Amara cross-multiplies."}},
+    question: {"a":null,"b":null,"op":"count","answer":"7/10","choices":["3/10","7/10"],"display":{"frac":{"a":7,"b":10,"c":3,"d":10,"kind":"cmpPick"},"promptText":"Which is the greater fraction, 7/10 or 3/10?"}},
   },
   {
     itemId: "fractions-conc-b0821-0549",
@@ -14672,7 +14672,7 @@ export const ITEMS = [
     structureType: "whichBigger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"11/12","choices":["11/12","5/12"],"display":{"frac":{"a":11,"b":12,"c":5,"d":12,"kind":"cmpPick"},"promptText":"Leo settles 11/12 versus 5/12 for good. Which is greater?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"11/12","choices":["11/12","5/12"],"display":{"frac":{"a":11,"b":12,"c":5,"d":12,"kind":"cmpPick"},"promptText":"Which fraction is greater, 11/12 or 5/12?"}},
   },
   {
     itemId: "fractions-conc-b0821-0550",
@@ -14682,7 +14682,7 @@ export const ITEMS = [
     structureType: "whichBigger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["9/10","7/10"],"display":{"frac":{"a":9,"b":10,"c":7,"d":10,"kind":"cmpPick"},"promptText":"Exactly which is greater: 9/10 or 7/10? Mina cross-multiplies."}},
+    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["9/10","7/10"],"display":{"frac":{"a":9,"b":10,"c":7,"d":10,"kind":"cmpPick"},"promptText":"Which of these fractions is greater: 9/10 or 7/10?"}},
   },
   {
     itemId: "fractions-conc-b0821-0551",
@@ -14692,7 +14692,7 @@ export const ITEMS = [
     structureType: "whichBigger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/10","choices":["3/10","3/12"],"display":{"frac":{"a":3,"b":10,"c":3,"d":12,"kind":"cmpPick"},"promptText":"Theo settles 3/10 versus 3/12 for good. Which is greater?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/10","choices":["3/10","3/12"],"display":{"frac":{"a":3,"b":10,"c":3,"d":12,"kind":"cmpPick"},"promptText":"Which is greater: 3/10 or 3/12?"}},
   },
   {
     itemId: "fractions-conc-b0821-0552",
@@ -14702,7 +14702,7 @@ export const ITEMS = [
     structureType: "whichBigger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7/10","choices":["7/10","7/12"],"display":{"frac":{"a":7,"b":10,"c":7,"d":12,"kind":"cmpPick"},"promptText":"Exactly which is greater: 7/10 or 7/12? Ida cross-multiplies."}},
+    question: {"a":null,"b":null,"op":"count","answer":"7/10","choices":["7/10","7/12"],"display":{"frac":{"a":7,"b":10,"c":7,"d":12,"kind":"cmpPick"},"promptText":"Which fraction is larger, 7/10 or 7/12?"}},
   },
   {
     itemId: "fractions-conc-b0821-0553",
@@ -14712,7 +14712,7 @@ export const ITEMS = [
     structureType: "whichBigger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/10","choices":["1/10","1/12"],"display":{"frac":{"a":1,"b":10,"c":1,"d":12,"kind":"cmpPick"},"promptText":"Zoe settles 1/10 versus 1/12 for good. Which is greater?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/10","choices":["1/10","1/12"],"display":{"frac":{"a":1,"b":10,"c":1,"d":12,"kind":"cmpPick"},"promptText":"Which fraction is greater, 1/10 or 1/12?"}},
   },
   {
     itemId: "fractions-conc-b0821-0554",
@@ -14722,7 +14722,7 @@ export const ITEMS = [
     structureType: "whichBigger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["9/10","9/12"],"display":{"frac":{"a":9,"b":10,"c":9,"d":12,"kind":"cmpPick"},"promptText":"Exactly which is greater: 9/10 or 9/12? Rosa cross-multiplies."}},
+    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["9/10","9/12"],"display":{"frac":{"a":9,"b":10,"c":9,"d":12,"kind":"cmpPick"},"promptText":"Which is bigger, 9/10 or 9/12?"}},
   },
   {
     itemId: "fractions-conc-b0821-0555",
@@ -14732,7 +14732,7 @@ export const ITEMS = [
     structureType: "whichBigger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5/10","choices":["5/10","5/12"],"display":{"frac":{"a":5,"b":10,"c":5,"d":12,"kind":"cmpPick"},"promptText":"Diego settles 5/10 versus 5/12 for good. Which is greater?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5/10","choices":["5/10","5/12"],"display":{"frac":{"a":5,"b":10,"c":5,"d":12,"kind":"cmpPick"},"promptText":"Which is greater: 5/10 or 5/12?"}},
   },
   {
     itemId: "fractions-conc-b0821-0556",
@@ -14742,7 +14742,7 @@ export const ITEMS = [
     structureType: "whichBigger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7/10","choices":["1/2","7/10"],"display":{"frac":{"a":7,"b":10,"c":1,"d":2,"kind":"cmpPick"},"promptText":"Exactly which is greater: 7/10 or 1/2? Nora cross-multiplies."}},
+    question: {"a":null,"b":null,"op":"count","answer":"7/10","choices":["1/2","7/10"],"display":{"frac":{"a":7,"b":10,"c":1,"d":2,"kind":"cmpPick"},"promptText":"Which of these fractions is greater: 7/10 or 1/2?"}},
   },
   {
     itemId: "fractions-conc-b0821-0557",
@@ -14752,7 +14752,7 @@ export const ITEMS = [
     structureType: "whichBigger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7/12","choices":["7/12","1/2"],"display":{"frac":{"a":7,"b":12,"c":1,"d":2,"kind":"cmpPick"},"promptText":"Luca settles 7/12 versus 1/2 for good. Which is greater?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"7/12","choices":["7/12","1/2"],"display":{"frac":{"a":7,"b":12,"c":1,"d":2,"kind":"cmpPick"},"promptText":"Which is the greater fraction: 7/12 or 1/2?"}},
   },
   {
     itemId: "fractions-conc-b0821-0558",
@@ -14762,7 +14762,7 @@ export const ITEMS = [
     structureType: "whichBigger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/4","choices":["3/4","7/10"],"display":{"frac":{"a":3,"b":4,"c":7,"d":10,"kind":"cmpPick"},"promptText":"Exactly which is greater: 3/4 or 7/10? Ava cross-multiplies."}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/4","choices":["3/4","7/10"],"display":{"frac":{"a":3,"b":4,"c":7,"d":10,"kind":"cmpPick"},"promptText":"Which fraction is greater, 3/4 or 7/10?"}},
   },
   {
     itemId: "fractions-conc-b0821-0559",
@@ -14772,7 +14772,7 @@ export const ITEMS = [
     structureType: "whichBigger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5/6","choices":["5/6","9/12"],"display":{"frac":{"a":5,"b":6,"c":9,"d":12,"kind":"cmpPick"},"promptText":"Omar settles 5/6 versus 9/12 for good. Which is greater?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5/6","choices":["5/6","9/12"],"display":{"frac":{"a":5,"b":6,"c":9,"d":12,"kind":"cmpPick"},"promptText":"Which of these fractions is greater: 5/6 or 9/12?"}},
   },
   {
     itemId: "fractions-conc-b0821-0560",
@@ -14782,7 +14782,7 @@ export const ITEMS = [
     structureType: "whichBigger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"11/12","choices":["9/10","11/12"],"display":{"frac":{"a":11,"b":12,"c":9,"d":10,"kind":"cmpPick"},"promptText":"Exactly which is greater: 11/12 or 9/10? Ben cross-multiplies."}},
+    question: {"a":null,"b":null,"op":"count","answer":"11/12","choices":["9/10","11/12"],"display":{"frac":{"a":11,"b":12,"c":9,"d":10,"kind":"cmpPick"},"promptText":"Which is the greater fraction: 11/12 or 9/10?"}},
   },
   {
     itemId: "fractions-conc-b0821-0561",
@@ -14792,7 +14792,7 @@ export const ITEMS = [
     structureType: "whichBigger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/3","choices":["2/3","7/12"],"display":{"frac":{"a":2,"b":3,"c":7,"d":12,"kind":"cmpPick"},"promptText":"Finn settles 2/3 versus 7/12 for good. Which is greater?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/3","choices":["2/3","7/12"],"display":{"frac":{"a":2,"b":3,"c":7,"d":12,"kind":"cmpPick"},"promptText":"Which is greater: 2/3 or 7/12?"}},
   },
   {
     itemId: "fractions-conc-b0821-0562",
@@ -14802,7 +14802,7 @@ export const ITEMS = [
     structureType: "whichBigger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4/5","choices":["7/10","4/5"],"display":{"frac":{"a":4,"b":5,"c":7,"d":10,"kind":"cmpPick"},"promptText":"Exactly which is greater: 4/5 or 7/10? Priya cross-multiplies."}},
+    question: {"a":null,"b":null,"op":"count","answer":"4/5","choices":["7/10","4/5"],"display":{"frac":{"a":4,"b":5,"c":7,"d":10,"kind":"cmpPick"},"promptText":"Which is more, 4/5 or 7/10?"}},
   },
   {
     itemId: "fractions-conc-b0821-0563",
@@ -14812,7 +14812,7 @@ export const ITEMS = [
     structureType: "whichBigger_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5/8","choices":["7/12","5/8"],"display":{"frac":{"a":5,"b":8,"c":7,"d":12,"kind":"cmpPick"},"promptText":"Sam settles 5/8 versus 7/12 for good. Which is greater?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5/8","choices":["7/12","5/8"],"display":{"frac":{"a":5,"b":8,"c":7,"d":12,"kind":"cmpPick"},"promptText":"Which is more, 5/8 or 7/12?"}},
   },
   {
     itemId: "fractions-conc-b0821-0564",
@@ -14842,7 +14842,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"June compares half of a small cookie with half of a giant cookie and calls them equal amounts. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"June compares half of a cookie with half of a same-size cookie and calls them equal amounts. Is June right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0567",
@@ -14872,7 +14872,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Half of a big pizza and half of a tiny pizza are the same amount of food, says Leo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Half of a pizza and half of a same-size pizza are the same amount of food, says Leo. Is that right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0570",
@@ -14902,7 +14902,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ida compares half of a small cookie with half of a giant cookie and calls them equal amounts. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Ida compares half of a giant cookie with half of another giant cookie of the same size and calls them equal amounts. Is Ida right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0573",
@@ -14922,7 +14922,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Rosa compares half of a small cookie with half of a giant cookie and calls them equal amounts. Is Rosa right? Think about the wholes."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Rosa says half of a small cookie and half of a giant cookie are the same amount. Is Rosa right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0575",
@@ -14932,7 +14932,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Half of a big pizza and half of a tiny pizza are the same amount of food, says Diego. Is that right? Think about the wholes."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Diego says half of a tiny pizza and half of another tiny pizza of the same size are the same amount of food. Is Diego right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0576",
@@ -14942,7 +14942,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Nora compares half of a small cookie with half of a giant cookie and calls them equal amounts. Is Nora right? Think about the wholes."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Nora compares half of a small cookie with half of a giant cookie and calls them equal amounts. Is Nora right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0577",
@@ -14952,7 +14952,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Half of a big pizza and half of a tiny pizza are the same amount of food, says Luca. Is that right? Think about the wholes."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Half of a big pizza and half of another big pizza of the same size are the same amount of food, says Luca. Is that right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0578",
@@ -14962,7 +14962,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ava compares half of a small cookie with half of a giant cookie and calls them equal amounts. Is Ava right? Think about the wholes."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ava says half of a small cookie is the same amount as half of a giant cookie. Is Ava right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0579",
@@ -14972,7 +14972,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Half of a big pizza and half of a tiny pizza are the same amount of food, says Omar. Is that right? Think about the wholes."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Omar says half of a big pizza and half of a tiny pizza are the same amount of food. Is Omar right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0580",
@@ -14982,7 +14982,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ben compares half of a small cookie with half of a giant cookie and calls them equal amounts. Is Ben right? Think about the wholes."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Ben says half of a small cookie and half of another small cookie of the same size are the same amount. Is Ben right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0581",
@@ -15002,7 +15002,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"A third of a juice box matches a third of a jug, argues Rosa. Does the argument hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Rosa says 1/3 of a juice box and 1/3 of a big jug are the same amount. Is Rosa right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0583",
@@ -15012,7 +15012,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Diego claims 1/3 of a garden bed always equals 1/3 of a park. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Diego claims 1/3 of a garden bed always equals 1/3 of a same-size garden bed. Is Diego right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0584",
@@ -15022,7 +15022,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"A third of a juice box matches a third of a jug, argues Nora. Does the argument hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Nora says 1/3 of a juice box and 1/3 of a big jug are the same amount. Is Nora right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0585",
@@ -15042,7 +15042,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"A third of a juice box matches a third of a jug, argues Ava. Does the argument hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Ava says 1/3 of a juice box and 1/3 of a same-size juice box are the same amount. Is Ava right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0587",
@@ -15062,7 +15062,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"A third of a juice box matches a third of a jug, argues Ben. Does the argument hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ben says a third of a juice box is the same amount as a third of a jug. Is Ben right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0589",
@@ -15072,7 +15072,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Finn claims 1/3 of a garden bed always equals 1/3 of a park. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Finn claims 1/3 of a park always equals 1/3 of a same-size park. Is Finn right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0590",
@@ -15082,7 +15082,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"A third of a juice box matches a third of a jug, argues Priya. Does the argument hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Priya says a third of a juice box is the same amount as a third of a jug. Is Priya right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0591",
@@ -15092,7 +15092,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Sam claims 1/3 of a garden bed always equals 1/3 of a park. Is Sam right? Think about the wholes."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Sam says 1/3 of a garden bed is always the same amount as 1/3 of a park. Is Sam right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0592",
@@ -15102,7 +15102,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"A third of a juice box matches a third of a jug, argues Nia. Does the argument hold? Think about the wholes."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Nia says a third of a jug is the same amount as a third of a same-size jug. Is Nia right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0593",
@@ -15112,7 +15112,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Kai claims 1/3 of a garden bed always equals 1/3 of a park. Is Kai right? Think about the wholes."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Kai claims 1/3 of a garden bed always equals 1/3 of a park. Is Kai right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0594",
@@ -15122,7 +15122,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"A third of a juice box matches a third of a jug, argues June. Does the argument hold? Think about the wholes."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"June says 1/3 of a juice box and 1/3 of a big jug are the same amount. Is June right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0595",
@@ -15132,7 +15132,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Lily claims 1/3 of a garden bed always equals 1/3 of a park. Is Lily right? Think about the wholes."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Lily claims 1/3 of a soccer field always equals 1/3 of a same-size soccer field. Is Lily right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0596",
@@ -15142,7 +15142,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"A third of a juice box matches a third of a jug, argues Amara. Does the argument hold? Think about the wholes."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Amara says a third of a juice box is the same amount as a third of a jug. Is Amara right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0597",
@@ -15152,7 +15152,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Leo claims 1/3 of a garden bed always equals 1/3 of a park. Is Leo right? Think about the wholes."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Leo says 1/3 of a garden bed is always the same amount as 1/3 of a same-size garden bed. Is Leo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0598",
@@ -15182,7 +15182,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Luca states that 3/4 of any two different wholes are always equal amounts. Is the statement right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Luca states that 3/4 of any two same-size wholes are always equal amounts. Is the statement right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0601",
@@ -15212,7 +15212,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Comparing 3/4 of a small field to 3/4 of a stadium, Ben calls them identical areas. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Comparing 3/4 of a stadium to 3/4 of a same-size stadium, Ben calls them identical areas. Is that right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0604",
@@ -15242,7 +15242,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Sam states that 3/4 of any two different wholes are always equal amounts. Is the statement right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Sam states that 3/4 of two wholes of the same size are always equal amounts. Is the statement right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0607",
@@ -15262,7 +15262,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Kai states that 3/4 of any two different wholes are always equal amounts. Is the statement right? Think about the wholes."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Kai says 3/4 of a small whole and 3/4 of a big whole are always the same amount. Is Kai right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0609",
@@ -15272,7 +15272,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Comparing 3/4 of a small field to 3/4 of a stadium, June calls them identical areas. Is that right? Think about the wholes."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"June says 3/4 of a small field and 3/4 of a stadium cover the same area. Is June right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0610",
@@ -15282,7 +15282,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Lily states that 3/4 of any two different wholes are always equal amounts. Is the statement right? Think about the wholes."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Lily says 3/4 of a whole and 3/4 of a same-size whole are always the same amount. Is Lily right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0611",
@@ -15292,7 +15292,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Comparing 3/4 of a small field to 3/4 of a stadium, Amara calls them identical areas. Is that right? Think about the wholes."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Amara says 3/4 of a small field is the same area as 3/4 of a same-size field. Is Amara right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0612",
@@ -15302,7 +15302,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Leo states that 3/4 of any two different wholes are always equal amounts. Is the statement right? Think about the wholes."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Leo says that when two wholes are different sizes, 3/4 of each is still the same amount. Is Leo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0613",
@@ -15312,7 +15312,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Comparing 3/4 of a small field to 3/4 of a stadium, Mina calls them identical areas. Is that right? Think about the wholes."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Mina says 3/4 of a small field is the same area as 3/4 of a stadium. Is Mina right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0614",
@@ -15322,7 +15322,7 @@ export const ITEMS = [
     structureType: "sameWholeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Theo states that 3/4 of any two different wholes are always equal amounts. Is the statement right? Think about the wholes."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"kind":"authored"},"truth":true,"promptText":"Theo says that when two wholes are the same size, 3/4 of each is the same amount. Is Theo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0615",
@@ -15342,7 +15342,7 @@ export const ITEMS = [
     structureType: "denTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 1/4 + 2/4, Theo writes 3/8. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 1/4 + 2/4, Theo writes 3/8. Is Theo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0617",
@@ -15362,7 +15362,7 @@ export const ITEMS = [
     structureType: "denTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 2/4 + 1/4, Zoe writes 3/8. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 2/4 + 1/4, Zoe writes 3/8. Is Zoe right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0619",
@@ -15382,7 +15382,7 @@ export const ITEMS = [
     structureType: "denTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 1/4 + 2/4, Diego writes 3/8. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 1/4 + 2/4, Diego writes 3/8. Is Diego right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0621",
@@ -15402,7 +15402,7 @@ export const ITEMS = [
     structureType: "denTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 2/4 + 1/4, Luca writes 3/8. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 2/4 + 1/4, Luca writes 3/8. Is Luca right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0623",
@@ -15422,7 +15422,7 @@ export const ITEMS = [
     structureType: "denTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 1/4 + 2/4, Omar writes 3/8. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 1/4 + 2/4, Omar writes 3/8. Is Omar right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0625",
@@ -15442,7 +15442,7 @@ export const ITEMS = [
     structureType: "denTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 2/4 + 1/4, Finn writes 3/8. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 2/4 + 1/4, Finn writes 3/8. Is Finn right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0627",
@@ -15462,7 +15462,7 @@ export const ITEMS = [
     structureType: "denTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 1/4 + 2/4, Sam writes 3/8. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 1/4 + 2/4, Sam writes 3/8. Is Sam right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0629",
@@ -15482,7 +15482,7 @@ export const ITEMS = [
     structureType: "denTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 2/4 + 1/4, Kai writes 3/8. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 2/4 + 1/4, Kai writes 3/8. Is Kai right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0631",
@@ -15502,7 +15502,7 @@ export const ITEMS = [
     structureType: "denTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 1/4 + 2/4, Lily writes 3/8. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"For 1/4 + 2/4, Lily writes 3/8. Is Lily right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0633",
@@ -15512,7 +15512,7 @@ export const ITEMS = [
     structureType: "denTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Omar sums 2/5 and 2/5 as 4/10, doubling the denominator. Does the sum hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Omar adds 2/5 + 2/5 and gets 4/10 by adding the bottom numbers too. Is Omar right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0634",
@@ -15522,7 +15522,7 @@ export const ITEMS = [
     structureType: "denTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Adding tops AND bottoms, Ben turns 1/5 + 3/5 into 4/10. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"To add 1/5 + 3/5, Ben adds the top numbers and the bottom numbers and gets 4/10. Is Ben right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0635",
@@ -15532,7 +15532,7 @@ export const ITEMS = [
     structureType: "denTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Finn sums 2/6 and 3/6 as 5/12, doubling the denominator. Does the sum hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Finn adds 2/6 + 3/6 and gets 5/12 by adding the bottom numbers too. Is Finn right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0636",
@@ -15542,7 +15542,7 @@ export const ITEMS = [
     structureType: "denTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Adding tops AND bottoms, Priya turns 1/6 + 4/6 into 5/12. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"To add 1/6 + 4/6, Priya adds the top numbers and the bottom numbers and gets 5/12. Is Priya right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0637",
@@ -15552,7 +15552,7 @@ export const ITEMS = [
     structureType: "denTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Sam sums 3/8 and 4/8 as 7/16, doubling the denominator. Does the sum hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Sam adds 3/8 + 4/8 and gets 7/16 by adding the bottom numbers too. Is Sam right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0638",
@@ -15562,7 +15562,7 @@ export const ITEMS = [
     structureType: "denTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Adding tops AND bottoms, Nia turns 2/8 + 5/8 into 7/16. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"To add 2/8 + 5/8, Nia adds the top numbers and the bottom numbers and gets 7/16. Is Nia right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0639",
@@ -15572,7 +15572,7 @@ export const ITEMS = [
     structureType: "denTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Kai sums 1/5 and 2/5 as 3/10, doubling the denominator. Does the sum hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Kai adds 1/5 + 2/5 and gets 3/10 by adding the bottom numbers too. Is Kai right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0640",
@@ -15582,7 +15582,7 @@ export const ITEMS = [
     structureType: "denTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Adding tops AND bottoms, June turns 3/6 + 2/6 into 5/12. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"To add 3/6 + 2/6, June adds the top numbers and the bottom numbers and gets 5/12. Is June right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0641",
@@ -15592,7 +15592,7 @@ export const ITEMS = [
     structureType: "denTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Lily sums 5/8 and 2/8 as 7/16, doubling the denominator. Does the sum hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Lily adds 5/8 + 2/8 and gets 7/16 by adding the bottom numbers too. Is Lily right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0642",
@@ -15602,7 +15602,7 @@ export const ITEMS = [
     structureType: "denTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Adding tops AND bottoms, Amara turns 1/6 + 3/6 into 4/12. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"To add 1/6 + 3/6, Amara adds the top numbers and the bottom numbers and gets 4/12. Is Amara right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0643",
@@ -15612,7 +15612,7 @@ export const ITEMS = [
     structureType: "denTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Leo sums 3/5 and 1/5 as 4/10, doubling the denominator. Does the sum hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Leo adds 3/5 + 1/5 and gets 4/10 by adding the bottom numbers too. Is Leo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0644",
@@ -15622,7 +15622,7 @@ export const ITEMS = [
     structureType: "denTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Adding tops AND bottoms, Mina turns 4/8 + 3/8 into 7/16. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"To add 4/8 + 3/8, Mina adds the top numbers and the bottom numbers and gets 7/16. Is Mina right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0645",
@@ -15632,7 +15632,7 @@ export const ITEMS = [
     structureType: "denTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Theo sums 2/5 and 2/5 as 4/10, doubling the denominator. Does the sum hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Theo adds 2/5 + 2/5 and gets 4/10 by adding the bottom numbers too. Is Theo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0646",
@@ -15642,7 +15642,7 @@ export const ITEMS = [
     structureType: "denTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Adding tops AND bottoms, Ida turns 1/5 + 3/5 into 4/10. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"To add 1/5 + 3/5, Ida adds the top numbers and the bottom numbers and gets 4/10. Is Ida right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0647",
@@ -15652,7 +15652,7 @@ export const ITEMS = [
     structureType: "denTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Zoe sums 2/6 and 3/6 as 5/12, doubling the denominator. Does the sum hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Zoe adds 2/6 + 3/6 and gets 5/12 by adding the bottom numbers too. Is Zoe right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0648",
@@ -15662,7 +15662,7 @@ export const ITEMS = [
     structureType: "denTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Adding tops AND bottoms, Rosa turns 1/6 + 4/6 into 5/12. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"To add 1/6 + 4/6, Rosa adds the top numbers and the bottom numbers and gets 5/12. Is Rosa right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0649",
@@ -15672,7 +15672,7 @@ export const ITEMS = [
     structureType: "denTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Diego sums 3/8 and 4/8 as 7/16, doubling the denominator. Does the sum hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Diego adds 3/8 + 4/8 and gets 7/16 by adding the bottom numbers too. Is Diego right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0650",
@@ -15682,7 +15682,7 @@ export const ITEMS = [
     structureType: "denTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Adding tops AND bottoms, Nora turns 2/8 + 5/8 into 7/16. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"To add 2/8 + 5/8, Nora adds the top numbers and the bottom numbers and gets 7/16. Is Nora right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0651",
@@ -15692,7 +15692,7 @@ export const ITEMS = [
     structureType: "denTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Finn's worked answer for 3/10 + 4/10 reads 7/20. Is the work sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Finn's answer for 3/10 + 4/10 is 7/20. Is Finn right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0652",
@@ -15702,7 +15702,7 @@ export const ITEMS = [
     structureType: "denTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Priya defends 9/20 as the total of 2/10 + 7/10. Should the defense stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Priya says 2/10 + 7/10 = 9/20. Is Priya right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0653",
@@ -15712,7 +15712,7 @@ export const ITEMS = [
     structureType: "denTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Sam's worked answer for 5/12 + 4/12 reads 9/24. Is the work sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Sam's answer for 5/12 + 4/12 is 9/24. Is Sam right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0654",
@@ -15722,7 +15722,7 @@ export const ITEMS = [
     structureType: "denTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Nia defends 10/24 as the total of 3/12 + 7/12. Should the defense stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Nia says 3/12 + 7/12 = 10/24. Is Nia right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0655",
@@ -15732,7 +15732,7 @@ export const ITEMS = [
     structureType: "denTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Kai's worked answer for 1/10 + 8/10 reads 9/20. Is the work sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Kai's answer for 1/10 + 8/10 is 9/20. Is Kai right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0656",
@@ -15742,7 +15742,7 @@ export const ITEMS = [
     structureType: "denTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"June defends 11/24 as the total of 5/12 + 6/12. Should the defense stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"June says 5/12 + 6/12 = 11/24. Is June right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0657",
@@ -15752,7 +15752,7 @@ export const ITEMS = [
     structureType: "denTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Lily's worked answer for 4/10 + 5/10 reads 9/20. Is the work sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Lily's answer for 4/10 + 5/10 is 9/20. Is Lily right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0658",
@@ -15762,7 +15762,7 @@ export const ITEMS = [
     structureType: "denTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Amara defends 11/24 as the total of 7/12 + 4/12. Should the defense stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Amara says 7/12 + 4/12 = 11/24. Is Amara right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0659",
@@ -15772,7 +15772,7 @@ export const ITEMS = [
     structureType: "denTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Leo's worked answer for 2/10 + 6/10 reads 8/20. Is the work sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Leo's answer for 2/10 + 6/10 is 8/20. Is Leo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0660",
@@ -15782,7 +15782,7 @@ export const ITEMS = [
     structureType: "denTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Mina defends 10/24 as the total of 1/12 + 9/12. Should the defense stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Mina says 1/12 + 9/12 = 10/24. Is Mina right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0661",
@@ -15792,7 +15792,7 @@ export const ITEMS = [
     structureType: "denTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Theo's worked answer for 6/10 + 3/10 reads 9/20. Is the work sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Theo's answer for 6/10 + 3/10 is 9/20. Is Theo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0662",
@@ -15802,7 +15802,7 @@ export const ITEMS = [
     structureType: "denTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ida defends 11/24 as the total of 8/12 + 3/12. Should the defense stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ida says 8/12 + 3/12 = 11/24. Is Ida right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0663",
@@ -15812,7 +15812,7 @@ export const ITEMS = [
     structureType: "denTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Zoe's worked answer for 3/10 + 4/10 reads 7/20. Is the work sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Zoe's answer for 3/10 + 4/10 is 7/20. Is Zoe right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0664",
@@ -15822,7 +15822,7 @@ export const ITEMS = [
     structureType: "denTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Rosa defends 9/20 as the total of 2/10 + 7/10. Should the defense stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Rosa says 2/10 + 7/10 = 9/20. Is Rosa right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0665",
@@ -15832,7 +15832,7 @@ export const ITEMS = [
     structureType: "denTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Diego's worked answer for 5/12 + 4/12 reads 9/24. Is the work sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Diego's answer for 5/12 + 4/12 is 9/24. Is Diego right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0666",
@@ -15842,7 +15842,7 @@ export const ITEMS = [
     structureType: "denTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Nora defends 10/24 as the total of 3/12 + 7/12. Should the defense stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Nora says 3/12 + 7/12 = 10/24. Is Nora right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0667",
@@ -15852,7 +15852,7 @@ export const ITEMS = [
     structureType: "denTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Luca's worked answer for 1/10 + 8/10 reads 9/20. Is the work sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Luca's answer for 1/10 + 8/10 is 9/20. Is Luca right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0668",
@@ -15862,7 +15862,7 @@ export const ITEMS = [
     structureType: "denTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ava defends 11/24 as the total of 5/12 + 6/12. Should the defense stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"kind":"trapNo"},"truth":false,"promptText":"Ava says 5/12 + 6/12 = 11/24. Is Ava right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0669",
@@ -15872,7 +15872,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":1,"d":3,"kind":"sumSaid","saidN":2},"truth":true,"promptText":"Luca totals 1/3 + 1/3 as 2/3. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":1,"d":3,"kind":"sumSaid","saidN":2},"truth":true,"promptText":"Luca adds 1/3 + 1/3 and gets 2/3. Is Luca right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0670",
@@ -15882,7 +15882,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":2,"d":4,"kind":"sumSaid","saidN":4},"truth":false,"promptText":"The sum 1/4 + 2/4 equals 4/4, per Ava. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":2,"d":4,"kind":"sumSaid","saidN":4},"truth":false,"promptText":"Ava says the sum of 1/4 and 2/4 is 4/4. Is Ava right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0671",
@@ -15892,7 +15892,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":1,"d":4,"kind":"sumSaid","saidN":2},"truth":true,"promptText":"Omar totals 1/4 + 1/4 as 2/4. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":1,"d":4,"kind":"sumSaid","saidN":2},"truth":true,"promptText":"Omar says the sum of 1/4 and 1/4 is 2/4. Is Omar right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0672",
@@ -15902,7 +15902,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":2,"b":1,"d":4,"kind":"sumSaid","saidN":4},"truth":false,"promptText":"The sum 2/4 + 1/4 equals 4/4, per Ben. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":2,"b":1,"d":4,"kind":"sumSaid","saidN":3},"truth":true,"promptText":"Ben says the sum of 2/4 and 1/4 is 3/4. Is Ben right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0673",
@@ -15912,7 +15912,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":2,"d":4,"kind":"sumSaid","saidN":3},"truth":true,"promptText":"Finn totals 1/4 + 2/4 as 3/4. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":2,"d":4,"kind":"sumSaid","saidN":3},"truth":true,"promptText":"Finn says the sum of 1/4 and 2/4 is 3/4. Is Finn right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0674",
@@ -15922,7 +15922,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":1,"d":3,"kind":"sumSaid","saidN":3},"truth":false,"promptText":"The sum 1/3 + 1/3 equals 3/3, per Priya. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":1,"d":3,"kind":"sumSaid","saidN":3},"truth":false,"promptText":"Priya says the sum of 1/3 and 1/3 is 3/3. Is Priya right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0675",
@@ -15932,7 +15932,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":2,"b":1,"d":4,"kind":"sumSaid","saidN":3},"truth":true,"promptText":"Sam totals 2/4 + 1/4 as 3/4. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":2,"b":1,"d":4,"kind":"sumSaid","saidN":3},"truth":true,"promptText":"Sam adds 2/4 + 1/4 and gets 3/4. Is Sam right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0676",
@@ -15942,7 +15942,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":1,"d":4,"kind":"sumSaid","saidN":3},"truth":false,"promptText":"The sum 1/4 + 1/4 equals 3/4, per Nia. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":1,"d":4,"kind":"sumSaid","saidN":2},"truth":true,"promptText":"Nia says the sum of 1/4 and 1/4 is 2/4. Is Nia right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0677",
@@ -15952,7 +15952,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":1,"d":3,"kind":"sumSaid","saidN":2},"truth":true,"promptText":"Kai totals 1/3 + 1/3 as 2/3. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":1,"d":3,"kind":"sumSaid","saidN":2},"truth":true,"promptText":"Kai adds 1/3 + 1/3 and gets 2/3. Is Kai right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0678",
@@ -15962,7 +15962,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":2,"d":4,"kind":"sumSaid","saidN":2},"truth":false,"promptText":"The sum 1/4 + 2/4 equals 2/4, per June. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":2,"d":4,"kind":"sumSaid","saidN":3},"truth":true,"promptText":"June says the sum of 1/4 and 2/4 is 3/4. Is June right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0679",
@@ -15972,7 +15972,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":1,"d":4,"kind":"sumSaid","saidN":2},"truth":true,"promptText":"Lily totals 1/4 + 1/4 as 2/4. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":1,"d":4,"kind":"sumSaid","saidN":2},"truth":true,"promptText":"Lily adds 1/4 + 1/4 and gets 2/4. Is Lily right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0680",
@@ -15982,7 +15982,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":2,"b":1,"d":4,"kind":"sumSaid","saidN":2},"truth":false,"promptText":"The sum 2/4 + 1/4 equals 2/4, per Amara. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":2,"b":1,"d":4,"kind":"sumSaid","saidN":2},"truth":false,"promptText":"Amara adds 2/4 + 1/4 and gets 2/4. Is Amara right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0681",
@@ -15992,7 +15992,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":2,"d":4,"kind":"sumSaid","saidN":3},"truth":true,"promptText":"Leo totals 1/4 + 2/4 as 3/4. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":2,"d":4,"kind":"sumSaid","saidN":3},"truth":true,"promptText":"Leo adds 1/4 + 2/4 and gets 3/4. Is Leo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0682",
@@ -16002,7 +16002,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":1,"d":3,"kind":"sumSaid","saidN":1},"truth":false,"promptText":"The sum 1/3 + 1/3 equals 1/3, per Mina. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":1,"d":3,"kind":"sumSaid","saidN":2},"truth":true,"promptText":"Mina says the sum of 1/3 and 1/3 is 2/3. Is Mina right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0683",
@@ -16012,7 +16012,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":2,"b":1,"d":4,"kind":"sumSaid","saidN":3},"truth":true,"promptText":"Theo totals 2/4 + 1/4 as 3/4. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":2,"b":1,"d":4,"kind":"sumSaid","saidN":3},"truth":true,"promptText":"Theo adds 2/4 + 1/4 and gets 3/4. Is Theo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0684",
@@ -16022,7 +16022,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":1,"d":4,"kind":"sumSaid","saidN":1},"truth":false,"promptText":"The sum 1/4 + 1/4 equals 1/4, per Ida. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":1,"d":4,"kind":"sumSaid","saidN":1},"truth":false,"promptText":"Ida adds 1/4 + 1/4 and gets 1/4. Is Ida right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0685",
@@ -16032,7 +16032,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":1,"d":3,"kind":"sumSaid","saidN":2},"truth":true,"promptText":"Zoe totals 1/3 + 1/3 as 2/3. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":1,"d":3,"kind":"sumSaid","saidN":2},"truth":true,"promptText":"Zoe adds 1/3 + 1/3 and gets 2/3. Is Zoe right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0686",
@@ -16042,7 +16042,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":2,"d":4,"kind":"sumSaid","saidN":4},"truth":false,"promptText":"The sum 1/4 + 2/4 equals 4/4, per Rosa. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":2,"d":4,"kind":"sumSaid","saidN":3},"truth":true,"promptText":"Rosa says the sum of 1/4 and 2/4 is 3/4. Is Rosa right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0687",
@@ -16052,7 +16052,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":2,"b":2,"d":5,"kind":"sumSaid","saidN":4},"truth":true,"promptText":"June reports 4/5 for 2/5 + 2/5. Does the report hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":2,"b":2,"d":5,"kind":"sumSaid","saidN":4},"truth":true,"promptText":"June adds 2/5 + 2/5 and gets 4/5. Is June right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0688",
@@ -16062,7 +16062,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":3,"d":5,"kind":"sumSaid","saidN":5},"truth":false,"promptText":"Check Lily's sum: 1/5 + 3/5 = 5/5. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":3,"d":5,"kind":"sumSaid","saidN":4},"truth":true,"promptText":"Lily says 1/5 + 3/5 = 4/5. Is Lily right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0689",
@@ -16072,7 +16072,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":2,"b":3,"d":6,"kind":"sumSaid","saidN":5},"truth":true,"promptText":"Amara reports 5/6 for 2/6 + 3/6. Does the report hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":2,"b":3,"d":6,"kind":"sumSaid","saidN":5},"truth":true,"promptText":"Amara adds 2/6 + 3/6 and gets 5/6. Is Amara right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0690",
@@ -16082,7 +16082,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":4,"d":6,"kind":"sumSaid","saidN":6},"truth":false,"promptText":"Check Leo's sum: 1/6 + 4/6 = 6/6. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":4,"d":6,"kind":"sumSaid","saidN":6},"truth":false,"promptText":"Leo says 1/6 + 4/6 = 6/6. Is Leo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0691",
@@ -16092,7 +16092,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":3,"b":4,"d":8,"kind":"sumSaid","saidN":7},"truth":true,"promptText":"Mina reports 7/8 for 3/8 + 4/8. Does the report hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":3,"b":4,"d":8,"kind":"sumSaid","saidN":7},"truth":true,"promptText":"Mina adds 3/8 + 4/8 and gets 7/8. Is Mina right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0692",
@@ -16102,7 +16102,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":2,"b":5,"d":8,"kind":"sumSaid","saidN":8},"truth":false,"promptText":"Check Theo's sum: 2/8 + 5/8 = 8/8. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":2,"b":5,"d":8,"kind":"sumSaid","saidN":8},"truth":false,"promptText":"Theo says 2/8 + 5/8 = 8/8. Is Theo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0693",
@@ -16112,7 +16112,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":2,"d":5,"kind":"sumSaid","saidN":3},"truth":true,"promptText":"Ida reports 3/5 for 1/5 + 2/5. Does the report hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":2,"d":5,"kind":"sumSaid","saidN":3},"truth":true,"promptText":"Ida adds 1/5 + 2/5 and gets 3/5. Is Ida right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0694",
@@ -16122,7 +16122,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":3,"b":2,"d":6,"kind":"sumSaid","saidN":6},"truth":false,"promptText":"Check Zoe's sum: 3/6 + 2/6 = 6/6. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":3,"b":2,"d":6,"kind":"sumSaid","saidN":5},"truth":true,"promptText":"Zoe says 3/6 + 2/6 = 5/6. Is Zoe right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0695",
@@ -16132,7 +16132,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":5,"b":2,"d":8,"kind":"sumSaid","saidN":7},"truth":true,"promptText":"Rosa reports 7/8 for 5/8 + 2/8. Does the report hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":5,"b":2,"d":8,"kind":"sumSaid","saidN":7},"truth":true,"promptText":"Rosa adds 5/8 + 2/8 and gets 7/8. Is Rosa right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0696",
@@ -16142,7 +16142,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":3,"d":6,"kind":"sumSaid","saidN":5},"truth":false,"promptText":"Check Diego's sum: 1/6 + 3/6 = 5/6. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":3,"d":6,"kind":"sumSaid","saidN":4},"truth":true,"promptText":"Diego says 1/6 + 3/6 = 4/6. Is Diego right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0697",
@@ -16152,7 +16152,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":3,"b":1,"d":5,"kind":"sumSaid","saidN":4},"truth":true,"promptText":"Nora reports 4/5 for 3/5 + 1/5. Does the report hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":3,"b":1,"d":5,"kind":"sumSaid","saidN":4},"truth":true,"promptText":"Nora adds 3/5 + 1/5 and gets 4/5. Is Nora right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0698",
@@ -16162,7 +16162,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":4,"b":3,"d":8,"kind":"sumSaid","saidN":8},"truth":false,"promptText":"Check Luca's sum: 4/8 + 3/8 = 8/8. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":4,"b":3,"d":8,"kind":"sumSaid","saidN":7},"truth":true,"promptText":"Luca says 4/8 + 3/8 = 7/8. Is Luca right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0699",
@@ -16172,7 +16172,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":2,"b":2,"d":5,"kind":"sumSaid","saidN":5},"truth":false,"promptText":"Ava reports 5/5 for 2/5 + 2/5. Does the report hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":2,"b":2,"d":5,"kind":"sumSaid","saidN":5},"truth":false,"promptText":"Ava adds 2/5 + 2/5 and gets 5/5. Is Ava right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0700",
@@ -16182,7 +16182,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":3,"d":5,"kind":"sumSaid","saidN":4},"truth":true,"promptText":"Check Omar's sum: 1/5 + 3/5 = 4/5. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":3,"d":5,"kind":"sumSaid","saidN":4},"truth":true,"promptText":"Omar says 1/5 + 3/5 = 4/5. Is Omar right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0701",
@@ -16192,7 +16192,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":2,"b":3,"d":6,"kind":"sumSaid","saidN":6},"truth":false,"promptText":"Ben reports 6/6 for 2/6 + 3/6. Does the report hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":2,"b":3,"d":6,"kind":"sumSaid","saidN":5},"truth":true,"promptText":"Ben adds 2/6 + 3/6 and gets 5/6. Is Ben right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0702",
@@ -16202,7 +16202,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":4,"d":6,"kind":"sumSaid","saidN":5},"truth":true,"promptText":"Check Finn's sum: 1/6 + 4/6 = 5/6. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":4,"d":6,"kind":"sumSaid","saidN":5},"truth":true,"promptText":"Finn says 1/6 + 4/6 = 5/6. Is Finn right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0703",
@@ -16212,7 +16212,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":3,"b":4,"d":8,"kind":"sumSaid","saidN":8},"truth":false,"promptText":"Priya reports 8/8 for 3/8 + 4/8. Does the report hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":3,"b":4,"d":8,"kind":"sumSaid","saidN":8},"truth":false,"promptText":"Priya adds 3/8 + 4/8 and gets 8/8. Is Priya right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0704",
@@ -16222,7 +16222,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":2,"b":5,"d":8,"kind":"sumSaid","saidN":7},"truth":true,"promptText":"Check Sam's sum: 2/8 + 5/8 = 7/8. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":2,"b":5,"d":8,"kind":"sumSaid","saidN":7},"truth":true,"promptText":"Sam says 2/8 + 5/8 = 7/8. Is Sam right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0705",
@@ -16232,7 +16232,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":3,"b":4,"d":10,"kind":"sumSaid","saidN":7},"truth":true,"promptText":"Amara certifies 3/10 + 4/10 = 7/10. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":3,"b":4,"d":10,"kind":"sumSaid","saidN":7},"truth":true,"promptText":"Amara says 3/10 + 4/10 = 7/10. Is Amara right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0706",
@@ -16242,7 +16242,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":2,"b":7,"d":10,"kind":"sumSaid","saidN":10},"truth":false,"promptText":"Audit the sum 2/10 + 7/10 = 10/10 from Leo. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":2,"b":7,"d":10,"kind":"sumSaid","saidN":9},"truth":true,"promptText":"Leo writes 2/10 + 7/10 = 9/10. Is Leo correct?"}},
   },
   {
     itemId: "fractions-conc-b0821-0707",
@@ -16252,7 +16252,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":5,"b":4,"d":12,"kind":"sumSaid","saidN":9},"truth":true,"promptText":"Mina certifies 5/12 + 4/12 = 9/12. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":5,"b":4,"d":12,"kind":"sumSaid","saidN":9},"truth":true,"promptText":"Mina says 5/12 + 4/12 = 9/12. Is Mina right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0708",
@@ -16262,7 +16262,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":3,"b":7,"d":12,"kind":"sumSaid","saidN":11},"truth":false,"promptText":"Audit the sum 3/12 + 7/12 = 11/12 from Theo. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":3,"b":7,"d":12,"kind":"sumSaid","saidN":11},"truth":false,"promptText":"Theo writes 3/12 + 7/12 = 11/12. Is Theo correct?"}},
   },
   {
     itemId: "fractions-conc-b0821-0709",
@@ -16272,7 +16272,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":8,"d":10,"kind":"sumSaid","saidN":9},"truth":true,"promptText":"Ida certifies 1/10 + 8/10 = 9/10. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":8,"d":10,"kind":"sumSaid","saidN":9},"truth":true,"promptText":"Ida says 1/10 + 8/10 = 9/10. Is Ida right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0710",
@@ -16282,7 +16282,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":5,"b":6,"d":12,"kind":"sumSaid","saidN":12},"truth":false,"promptText":"Audit the sum 5/12 + 6/12 = 12/12 from Zoe. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":5,"b":6,"d":12,"kind":"sumSaid","saidN":12},"truth":false,"promptText":"Zoe writes 5/12 + 6/12 = 12/12. Is Zoe correct?"}},
   },
   {
     itemId: "fractions-conc-b0821-0711",
@@ -16292,7 +16292,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":4,"b":5,"d":10,"kind":"sumSaid","saidN":9},"truth":true,"promptText":"Rosa certifies 4/10 + 5/10 = 9/10. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":4,"b":5,"d":10,"kind":"sumSaid","saidN":9},"truth":true,"promptText":"Rosa says 4/10 + 5/10 = 9/10. Is Rosa right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0712",
@@ -16302,7 +16302,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":7,"b":4,"d":12,"kind":"sumSaid","saidN":12},"truth":false,"promptText":"Audit the sum 7/12 + 4/12 = 12/12 from Diego. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":7,"b":4,"d":12,"kind":"sumSaid","saidN":11},"truth":true,"promptText":"Diego writes 7/12 + 4/12 = 11/12. Is Diego correct?"}},
   },
   {
     itemId: "fractions-conc-b0821-0713",
@@ -16312,7 +16312,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":2,"b":6,"d":10,"kind":"sumSaid","saidN":8},"truth":true,"promptText":"Nora certifies 2/10 + 6/10 = 8/10. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":2,"b":6,"d":10,"kind":"sumSaid","saidN":8},"truth":true,"promptText":"Nora says 2/10 + 6/10 = 8/10. Is Nora right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0714",
@@ -16322,7 +16322,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":9,"d":12,"kind":"sumSaid","saidN":11},"truth":false,"promptText":"Audit the sum 1/12 + 9/12 = 11/12 from Luca. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":1,"b":9,"d":12,"kind":"sumSaid","saidN":10},"truth":true,"promptText":"Luca writes 1/12 + 9/12 = 10/12. Is Luca correct?"}},
   },
   {
     itemId: "fractions-conc-b0821-0715",
@@ -16332,7 +16332,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":6,"b":3,"d":10,"kind":"sumSaid","saidN":9},"truth":true,"promptText":"Ava certifies 6/10 + 3/10 = 9/10. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":6,"b":3,"d":10,"kind":"sumSaid","saidN":9},"truth":true,"promptText":"Ava says 6/10 + 3/10 = 9/10. Is Ava right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0716",
@@ -16342,7 +16342,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":8,"b":3,"d":12,"kind":"sumSaid","saidN":12},"truth":false,"promptText":"Audit the sum 8/12 + 3/12 = 12/12 from Omar. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":8,"b":3,"d":12,"kind":"sumSaid","saidN":11},"truth":true,"promptText":"Omar writes 8/12 + 3/12 = 11/12. Is Omar correct?"}},
   },
   {
     itemId: "fractions-conc-b0821-0717",
@@ -16352,7 +16352,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":3,"b":4,"d":10,"kind":"sumSaid","saidN":8},"truth":false,"promptText":"Ben certifies 3/10 + 4/10 = 8/10. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":3,"b":4,"d":10,"kind":"sumSaid","saidN":8},"truth":false,"promptText":"Ben says 3/10 + 4/10 = 8/10. Is Ben right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0718",
@@ -16362,7 +16362,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":2,"b":7,"d":10,"kind":"sumSaid","saidN":9},"truth":true,"promptText":"Audit the sum 2/10 + 7/10 = 9/10 from Finn. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":2,"b":7,"d":10,"kind":"sumSaid","saidN":9},"truth":true,"promptText":"Finn writes 2/10 + 7/10 = 9/10. Is Finn correct?"}},
   },
   {
     itemId: "fractions-conc-b0821-0719",
@@ -16372,7 +16372,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":5,"b":4,"d":12,"kind":"sumSaid","saidN":10},"truth":false,"promptText":"Priya certifies 5/12 + 4/12 = 10/12. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":5,"b":4,"d":12,"kind":"sumSaid","saidN":9},"truth":true,"promptText":"Priya says 5/12 + 4/12 = 9/12. Is Priya right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0720",
@@ -16382,7 +16382,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":3,"b":7,"d":12,"kind":"sumSaid","saidN":10},"truth":true,"promptText":"Audit the sum 3/12 + 7/12 = 10/12 from Sam. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":3,"b":7,"d":12,"kind":"sumSaid","saidN":10},"truth":true,"promptText":"Sam writes 3/12 + 7/12 = 10/12. Is Sam correct?"}},
   },
   {
     itemId: "fractions-conc-b0821-0721",
@@ -16392,7 +16392,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":8,"d":10,"kind":"sumSaid","saidN":8},"truth":false,"promptText":"Nia certifies 1/10 + 8/10 = 8/10. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"a":1,"b":8,"d":10,"kind":"sumSaid","saidN":8},"truth":false,"promptText":"Nia says 1/10 + 8/10 = 8/10. Is Nia right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0722",
@@ -16402,7 +16402,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":5,"b":6,"d":12,"kind":"sumSaid","saidN":11},"truth":true,"promptText":"Audit the sum 5/12 + 6/12 = 11/12 from Kai. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"a":5,"b":6,"d":12,"kind":"sumSaid","saidN":11},"truth":true,"promptText":"Kai writes 5/12 + 6/12 = 11/12. Is Kai correct?"}},
   },
   {
     itemId: "fractions-conc-b0821-0723",
@@ -16412,7 +16412,7 @@ export const ITEMS = [
     structureType: "completeWhole_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/3","choices":["1/3","2/6","2/3","3/3"],"display":{"frac":{"d":3,"n":1,"kind":"complement"},"promptText":"Nia has 1/3 of a sticker sheet. What fraction more makes one whole sheet? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/3","choices":["1/3","2/6","2/3","3/3"],"display":{"frac":{"d":3,"n":1,"kind":"complement"},"promptText":"Nia has 1/3 of a sticker sheet. Which fraction does Nia add to have one whole sheet?"}},
   },
   {
     itemId: "fractions-conc-b0821-0724",
@@ -16432,7 +16432,7 @@ export const ITEMS = [
     structureType: "completeWhole_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/4","choices":["3/8","1/4","4/4","3/4"],"display":{"frac":{"d":4,"n":1,"kind":"complement"},"promptText":"June has 1/4 of a sticker sheet. What fraction more makes one whole sheet? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/4","choices":["3/8","1/4","4/4","3/4"],"display":{"frac":{"d":4,"n":1,"kind":"complement"},"promptText":"June has 1/4 of a sticker sheet. Which fraction does June add to have one whole sheet?"}},
   },
   {
     itemId: "fractions-conc-b0821-0726",
@@ -16452,7 +16452,7 @@ export const ITEMS = [
     structureType: "completeWhole_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/4","choices":["3/4","2/8","2/4"],"display":{"frac":{"d":4,"n":2,"kind":"complement"},"promptText":"Amara has 2/4 of a sticker sheet. What fraction more makes one whole sheet? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/4","choices":["3/4","2/8","2/4"],"display":{"frac":{"d":4,"n":2,"kind":"complement"},"promptText":"Amara has 2/4 of a sticker sheet. What fraction more does Amara need to make one whole sheet?"}},
   },
   {
     itemId: "fractions-conc-b0821-0728",
@@ -16472,7 +16472,7 @@ export const ITEMS = [
     structureType: "completeWhole_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/3","choices":["2/3","1/3","2/6","3/3"],"display":{"frac":{"d":3,"n":1,"kind":"complement"},"promptText":"Mina has 1/3 of a sticker sheet. What fraction more makes one whole sheet? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/3","choices":["2/3","1/3","2/6","3/3"],"display":{"frac":{"d":3,"n":1,"kind":"complement"},"promptText":"Mina has 1/3 of a sticker sheet. What fraction more does Mina need to make one whole sheet?"}},
   },
   {
     itemId: "fractions-conc-b0821-0730",
@@ -16492,7 +16492,7 @@ export const ITEMS = [
     structureType: "completeWhole_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/4","choices":["4/4","3/4","3/8","1/4"],"display":{"frac":{"d":4,"n":1,"kind":"complement"},"promptText":"Ida has 1/4 of a sticker sheet. What fraction more makes one whole sheet? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/4","choices":["4/4","3/4","3/8","1/4"],"display":{"frac":{"d":4,"n":1,"kind":"complement"},"promptText":"Ida has 1/4 of a sticker sheet. What fraction more does Ida need to make one whole sheet?"}},
   },
   {
     itemId: "fractions-conc-b0821-0732",
@@ -16512,7 +16512,7 @@ export const ITEMS = [
     structureType: "completeWhole_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/4","choices":["3/4","2/8","2/4"],"display":{"frac":{"d":4,"n":2,"kind":"complement"},"promptText":"Rosa has 2/4 of a sticker sheet. What fraction more makes one whole sheet? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/4","choices":["3/4","2/8","2/4"],"display":{"frac":{"d":4,"n":2,"kind":"complement"},"promptText":"Rosa has 2/4 of a sticker sheet. Which fraction does Rosa add to have one whole sheet?"}},
   },
   {
     itemId: "fractions-conc-b0821-0734",
@@ -16532,7 +16532,7 @@ export const ITEMS = [
     structureType: "completeWhole_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/3","choices":["1/3","2/3","3/3","2/6"],"display":{"frac":{"d":3,"n":1,"kind":"complement"},"promptText":"Nora has 1/3 of a sticker sheet. What fraction more makes one whole sheet? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/3","choices":["1/3","2/3","3/3","2/6"],"display":{"frac":{"d":3,"n":1,"kind":"complement"},"promptText":"Nora has 1/3 of a sticker sheet. What fraction more does Nora need to make one whole sheet?"}},
   },
   {
     itemId: "fractions-conc-b0821-0736",
@@ -16552,7 +16552,7 @@ export const ITEMS = [
     structureType: "completeWhole_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/4","choices":["4/4","3/4","1/4","3/8"],"display":{"frac":{"d":4,"n":1,"kind":"complement"},"promptText":"Ava has 1/4 of a sticker sheet. What fraction more makes one whole sheet? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/4","choices":["4/4","3/4","1/4","3/8"],"display":{"frac":{"d":4,"n":1,"kind":"complement"},"promptText":"Ava has 1/4 of a sticker sheet. Which fraction does Ava add to have one whole sheet?"}},
   },
   {
     itemId: "fractions-conc-b0821-0738",
@@ -16572,7 +16572,7 @@ export const ITEMS = [
     structureType: "completeWhole_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/5","choices":["2/5","4/5","3/5","3/10"],"display":{"frac":{"d":5,"n":2,"kind":"complement"},"promptText":"Zoe sits at 2/5. Which like fraction lifts Zoe to one whole?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/5","choices":["2/5","4/5","3/5","3/10"],"display":{"frac":{"d":5,"n":2,"kind":"complement"},"promptText":"1 = 2/5 + __. What fraction goes in the blank?"}},
   },
   {
     itemId: "fractions-conc-b0821-0740",
@@ -16592,7 +16592,7 @@ export const ITEMS = [
     structureType: "completeWhole_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5/6","choices":["1/6","6/6","5/6","5/12"],"display":{"frac":{"d":6,"n":1,"kind":"complement"},"promptText":"Diego sits at 1/6. Which like fraction lifts Diego to one whole?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5/6","choices":["1/6","6/6","5/6","5/12"],"display":{"frac":{"d":6,"n":1,"kind":"complement"},"promptText":"What fraction is missing from 1/6 to make 1 whole?"}},
   },
   {
     itemId: "fractions-conc-b0821-0742",
@@ -16612,7 +16612,7 @@ export const ITEMS = [
     structureType: "completeWhole_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5/8","choices":["5/16","5/8","3/8","6/8"],"display":{"frac":{"d":8,"n":3,"kind":"complement"},"promptText":"Luca sits at 3/8. Which like fraction lifts Luca to one whole?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5/8","choices":["5/16","5/8","3/8","6/8"],"display":{"frac":{"d":8,"n":3,"kind":"complement"},"promptText":"3/8 and which fraction make 1 whole?"}},
   },
   {
     itemId: "fractions-conc-b0821-0744",
@@ -16632,7 +16632,7 @@ export const ITEMS = [
     structureType: "completeWhole_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4/5","choices":["1/5","5/5","4/5","4/10"],"display":{"frac":{"d":5,"n":1,"kind":"complement"},"promptText":"Omar sits at 1/5. Which like fraction lifts Omar to one whole?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"4/5","choices":["1/5","5/5","4/5","4/10"],"display":{"frac":{"d":5,"n":1,"kind":"complement"},"promptText":"Which fraction added to 1/5 makes 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0746",
@@ -16652,7 +16652,7 @@ export const ITEMS = [
     structureType: "completeWhole_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4/6","choices":["4/6","2/6","4/12","5/6"],"display":{"frac":{"d":6,"n":2,"kind":"complement"},"promptText":"Finn sits at 2/6. Which like fraction lifts Finn to one whole?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"4/6","choices":["4/6","2/6","4/12","5/6"],"display":{"frac":{"d":6,"n":2,"kind":"complement"},"promptText":"What fraction do you add to 2/6 to make 1 whole?"}},
   },
   {
     itemId: "fractions-conc-b0821-0748",
@@ -16672,7 +16672,7 @@ export const ITEMS = [
     structureType: "completeWhole_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7/8","choices":["7/16","1/8","8/8","7/8"],"display":{"frac":{"d":8,"n":1,"kind":"complement"},"promptText":"Sam sits at 1/8. Which like fraction lifts Sam to one whole?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"7/8","choices":["7/16","1/8","8/8","7/8"],"display":{"frac":{"d":8,"n":1,"kind":"complement"},"promptText":"1/8 and which fraction make 1 whole?"}},
   },
   {
     itemId: "fractions-conc-b0821-0750",
@@ -16692,7 +16692,7 @@ export const ITEMS = [
     structureType: "completeWhole_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/5","choices":["3/5","4/5","2/5","3/10"],"display":{"frac":{"d":5,"n":2,"kind":"complement"},"promptText":"Kai sits at 2/5. Which like fraction lifts Kai to one whole?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/5","choices":["3/5","4/5","2/5","3/10"],"display":{"frac":{"d":5,"n":2,"kind":"complement"},"promptText":"Which fraction added to 2/5 makes 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0752",
@@ -16712,7 +16712,7 @@ export const ITEMS = [
     structureType: "completeWhole_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5/6","choices":["1/6","5/6","5/12","6/6"],"display":{"frac":{"d":6,"n":1,"kind":"complement"},"promptText":"Lily sits at 1/6. Which like fraction lifts Lily to one whole?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5/6","choices":["1/6","5/6","5/12","6/6"],"display":{"frac":{"d":6,"n":1,"kind":"complement"},"promptText":"1/6 and which fraction make 1 whole?"}},
   },
   {
     itemId: "fractions-conc-b0821-0754",
@@ -16732,7 +16732,7 @@ export const ITEMS = [
     structureType: "completeWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7/10","choices":["3/10","8/10","7/10","7/20"],"display":{"frac":{"d":10,"n":3,"kind":"complement"},"promptText":"Exactly which fraction added to 3/10 produces 1? Diego works it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"7/10","choices":["3/10","8/10","7/10","7/20"],"display":{"frac":{"d":10,"n":3,"kind":"complement"},"promptText":"3/10 and which fraction make 1 whole?"}},
   },
   {
     itemId: "fractions-conc-b0821-0756",
@@ -16742,7 +16742,7 @@ export const ITEMS = [
     structureType: "completeWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/10","choices":["3/20","4/10","3/10","7/10"],"display":{"frac":{"d":10,"n":7,"kind":"complement"},"promptText":"Nora tops up 7/10 to a full whole. Which fraction is the top-up?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/10","choices":["3/20","4/10","3/10","7/10"],"display":{"frac":{"d":10,"n":7,"kind":"complement"},"promptText":"7/10 + __ = 1. Which fraction goes in the blank?"}},
   },
   {
     itemId: "fractions-conc-b0821-0757",
@@ -16752,7 +16752,7 @@ export const ITEMS = [
     structureType: "completeWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7/12","choices":["7/12","5/12","7/24","8/12"],"display":{"frac":{"d":12,"n":5,"kind":"complement"},"promptText":"Exactly which fraction added to 5/12 produces 1? Luca works it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"7/12","choices":["7/12","5/12","7/24","8/12"],"display":{"frac":{"d":12,"n":5,"kind":"complement"},"promptText":"What fraction is missing from 5/12 to make 1 whole?"}},
   },
   {
     itemId: "fractions-conc-b0821-0758",
@@ -16762,7 +16762,7 @@ export const ITEMS = [
     structureType: "completeWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5/12","choices":["5/24","5/12","7/12","6/12"],"display":{"frac":{"d":12,"n":7,"kind":"complement"},"promptText":"Ava tops up 7/12 to a full whole. Which fraction is the top-up?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5/12","choices":["5/24","5/12","7/12","6/12"],"display":{"frac":{"d":12,"n":7,"kind":"complement"},"promptText":"7/12 + __ = 1. Which fraction goes in the blank?"}},
   },
   {
     itemId: "fractions-conc-b0821-0759",
@@ -16772,7 +16772,7 @@ export const ITEMS = [
     structureType: "completeWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["10/10","9/10","9/20","1/10"],"display":{"frac":{"d":10,"n":1,"kind":"complement"},"promptText":"Exactly which fraction added to 1/10 produces 1? Omar works it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["10/10","9/10","9/20","1/10"],"display":{"frac":{"d":10,"n":1,"kind":"complement"},"promptText":"1/10 and which fraction make 1 whole?"}},
   },
   {
     itemId: "fractions-conc-b0821-0760",
@@ -16782,7 +16782,7 @@ export const ITEMS = [
     structureType: "completeWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/10","choices":["1/10","2/10","9/10","1/20"],"display":{"frac":{"d":10,"n":9,"kind":"complement"},"promptText":"Ben tops up 9/10 to a full whole. Which fraction is the top-up?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/10","choices":["1/10","2/10","9/10","1/20"],"display":{"frac":{"d":10,"n":9,"kind":"complement"},"promptText":"Which fraction added to 9/10 makes 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0761",
@@ -16792,7 +16792,7 @@ export const ITEMS = [
     structureType: "completeWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"11/12","choices":["11/24","12/12","1/12","11/12"],"display":{"frac":{"d":12,"n":1,"kind":"complement"},"promptText":"Exactly which fraction added to 1/12 produces 1? Finn works it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"11/12","choices":["11/24","12/12","1/12","11/12"],"display":{"frac":{"d":12,"n":1,"kind":"complement"},"promptText":"1 = 1/12 + __. What fraction goes in the blank?"}},
   },
   {
     itemId: "fractions-conc-b0821-0762",
@@ -16802,7 +16802,7 @@ export const ITEMS = [
     structureType: "completeWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/12","choices":["11/12","1/12","1/24","2/12"],"display":{"frac":{"d":12,"n":11,"kind":"complement"},"promptText":"Priya tops up 11/12 to a full whole. Which fraction is the top-up?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/12","choices":["11/12","1/12","1/24","2/12"],"display":{"frac":{"d":12,"n":11,"kind":"complement"},"promptText":"What fraction is missing from 11/12 to make 1 whole?"}},
   },
   {
     itemId: "fractions-conc-b0821-0763",
@@ -16812,7 +16812,7 @@ export const ITEMS = [
     structureType: "completeWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"8/10","choices":["2/10","9/10","8/20","8/10"],"display":{"frac":{"d":10,"n":2,"kind":"complement"},"promptText":"Exactly which fraction added to 2/10 produces 1? Sam works it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"8/10","choices":["2/10","9/10","8/20","8/10"],"display":{"frac":{"d":10,"n":2,"kind":"complement"},"promptText":"1 = 2/10 + __. What fraction goes in the blank?"}},
   },
   {
     itemId: "fractions-conc-b0821-0764",
@@ -16822,7 +16822,7 @@ export const ITEMS = [
     structureType: "completeWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/10","choices":["2/10","8/10","2/20","3/10"],"display":{"frac":{"d":10,"n":8,"kind":"complement"},"promptText":"Nia tops up 8/10 to a full whole. Which fraction is the top-up?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/10","choices":["2/10","8/10","2/20","3/10"],"display":{"frac":{"d":10,"n":8,"kind":"complement"},"promptText":"What fraction do you add to 8/10 to make 1 whole?"}},
   },
   {
     itemId: "fractions-conc-b0821-0765",
@@ -16832,7 +16832,7 @@ export const ITEMS = [
     structureType: "completeWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"8/12","choices":["9/12","4/12","8/24","8/12"],"display":{"frac":{"d":12,"n":4,"kind":"complement"},"promptText":"Exactly which fraction added to 4/12 produces 1? Kai works it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"8/12","choices":["9/12","4/12","8/24","8/12"],"display":{"frac":{"d":12,"n":4,"kind":"complement"},"promptText":"What fraction do you add to 4/12 to make 1 whole?"}},
   },
   {
     itemId: "fractions-conc-b0821-0766",
@@ -16842,7 +16842,7 @@ export const ITEMS = [
     structureType: "completeWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4/12","choices":["4/12","5/12","4/24","8/12"],"display":{"frac":{"d":12,"n":8,"kind":"complement"},"promptText":"June tops up 8/12 to a full whole. Which fraction is the top-up?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"4/12","choices":["4/12","5/12","4/24","8/12"],"display":{"frac":{"d":12,"n":8,"kind":"complement"},"promptText":"8/12 + __ = 1. Which fraction goes in the blank?"}},
   },
   {
     itemId: "fractions-conc-b0821-0767",
@@ -16852,7 +16852,7 @@ export const ITEMS = [
     structureType: "completeWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7/10","choices":["7/20","7/10","8/10","3/10"],"display":{"frac":{"d":10,"n":3,"kind":"complement"},"promptText":"Exactly which fraction added to 3/10 produces 1? Lily works it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"7/10","choices":["7/20","7/10","8/10","3/10"],"display":{"frac":{"d":10,"n":3,"kind":"complement"},"promptText":"Which fraction added to 3/10 makes 1?"}},
   },
   {
     itemId: "fractions-conc-b0821-0768",
@@ -16862,7 +16862,7 @@ export const ITEMS = [
     structureType: "completeWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/10","choices":["3/20","4/10","3/10","7/10"],"display":{"frac":{"d":10,"n":7,"kind":"complement"},"promptText":"Amara tops up 7/10 to a full whole. Which fraction is the top-up?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/10","choices":["3/20","4/10","3/10","7/10"],"display":{"frac":{"d":10,"n":7,"kind":"complement"},"promptText":"What fraction do you add to 7/10 to make 1 whole?"}},
   },
   {
     itemId: "fractions-conc-b0821-0769",
@@ -16872,7 +16872,7 @@ export const ITEMS = [
     structureType: "completeWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7/12","choices":["7/12","7/24","5/12","8/12"],"display":{"frac":{"d":12,"n":5,"kind":"complement"},"promptText":"Exactly which fraction added to 5/12 produces 1? Leo works it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"7/12","choices":["7/12","7/24","5/12","8/12"],"display":{"frac":{"d":12,"n":5,"kind":"complement"},"promptText":"5/12 + __ = 1. Which fraction goes in the blank?"}},
   },
   {
     itemId: "fractions-conc-b0821-0770",
@@ -16882,7 +16882,7 @@ export const ITEMS = [
     structureType: "completeWhole_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5/12","choices":["5/12","5/24","6/12","7/12"],"display":{"frac":{"d":12,"n":7,"kind":"complement"},"promptText":"Mina tops up 7/12 to a full whole. Which fraction is the top-up?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5/12","choices":["5/12","5/24","6/12","7/12"],"display":{"frac":{"d":12,"n":7,"kind":"complement"},"promptText":"1 = 7/12 + __. What fraction goes in the blank?"}},
   },
   {
     itemId: "fractions-conc-b0821-0771",
@@ -16892,7 +16892,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":2,"n":1,"w":12,"kind":"ofSetSaid","said":6},"truth":true,"promptText":"Mina figures 1/2 of 12 as 6. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":2,"n":1,"w":12,"kind":"ofSetSaid","said":6},"truth":true,"promptText":"Mina says 1/2 of 12 is 6. Is Mina right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0772",
@@ -16902,7 +16902,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":2,"n":1,"w":16,"kind":"ofSetSaid","said":7},"truth":false,"promptText":"1/2 of 16 comes to 7, says Theo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":2,"n":1,"w":16,"kind":"ofSetSaid","said":7},"truth":false,"promptText":"Theo finds 1/2 of 16 and gets 7. Is Theo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0773",
@@ -16912,7 +16912,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":3,"n":1,"w":12,"kind":"ofSetSaid","said":4},"truth":true,"promptText":"Ida figures 1/3 of 12 as 4. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":3,"n":1,"w":12,"kind":"ofSetSaid","said":4},"truth":true,"promptText":"Ida finds 1/3 of 12 and gets 4. Is Ida right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0774",
@@ -16922,7 +16922,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":3,"n":1,"w":15,"kind":"ofSetSaid","said":6},"truth":false,"promptText":"1/3 of 15 comes to 6, says Zoe. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":3,"n":1,"w":15,"kind":"ofSetSaid","said":6},"truth":false,"promptText":"Zoe says 1/3 of 15 is 6. Is Zoe right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0775",
@@ -16932,7 +16932,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":4,"n":1,"w":12,"kind":"ofSetSaid","said":3},"truth":true,"promptText":"Rosa figures 1/4 of 12 as 3. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":4,"n":1,"w":12,"kind":"ofSetSaid","said":3},"truth":true,"promptText":"Rosa says 1/4 of 12 is 3. Is Rosa right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0776",
@@ -16942,7 +16942,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":4,"n":1,"w":16,"kind":"ofSetSaid","said":5},"truth":false,"promptText":"1/4 of 16 comes to 5, says Diego. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":4,"n":1,"w":16,"kind":"ofSetSaid","said":5},"truth":false,"promptText":"Diego finds 1/4 of 16 and gets 5. Is Diego right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0777",
@@ -16952,7 +16952,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":2,"n":1,"w":20,"kind":"ofSetSaid","said":10},"truth":true,"promptText":"Nora figures 1/2 of 20 as 10. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":2,"n":1,"w":20,"kind":"ofSetSaid","said":10},"truth":true,"promptText":"Nora finds 1/2 of 20 and gets 10. Is Nora right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0778",
@@ -16962,7 +16962,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":2,"n":1,"w":10,"kind":"ofSetSaid","said":6},"truth":false,"promptText":"1/2 of 10 comes to 6, says Luca. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":2,"n":1,"w":10,"kind":"ofSetSaid","said":6},"truth":false,"promptText":"Luca says 1/2 of 10 is 6. Is Luca right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0779",
@@ -16972,7 +16972,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":3,"n":1,"w":18,"kind":"ofSetSaid","said":6},"truth":true,"promptText":"Ava figures 1/3 of 18 as 6. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":3,"n":1,"w":18,"kind":"ofSetSaid","said":6},"truth":true,"promptText":"Ava says 1/3 of 18 is 6. Is Ava right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0780",
@@ -16982,7 +16982,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":3,"n":1,"w":9,"kind":"ofSetSaid","said":4},"truth":false,"promptText":"1/3 of 9 comes to 4, says Omar. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":3,"n":1,"w":9,"kind":"ofSetSaid","said":4},"truth":false,"promptText":"Omar finds 1/3 of 9 and gets 4. Is Omar right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0781",
@@ -16992,7 +16992,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":4,"n":1,"w":20,"kind":"ofSetSaid","said":5},"truth":true,"promptText":"Ben figures 1/4 of 20 as 5. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":4,"n":1,"w":20,"kind":"ofSetSaid","said":5},"truth":true,"promptText":"Ben finds 1/4 of 20 and gets 5. Is Ben right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0782",
@@ -17002,7 +17002,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":4,"n":1,"w":8,"kind":"ofSetSaid","said":3},"truth":false,"promptText":"1/4 of 8 comes to 3, says Finn. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":4,"n":1,"w":8,"kind":"ofSetSaid","said":3},"truth":false,"promptText":"Finn says 1/4 of 8 is 3. Is Finn right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0783",
@@ -17012,7 +17012,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":2,"n":1,"w":18,"kind":"ofSetSaid","said":9},"truth":true,"promptText":"Priya figures 1/2 of 18 as 9. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":2,"n":1,"w":18,"kind":"ofSetSaid","said":9},"truth":true,"promptText":"Priya says 1/2 of 18 is 9. Is Priya right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0784",
@@ -17022,7 +17022,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":2,"n":1,"w":14,"kind":"ofSetSaid","said":8},"truth":false,"promptText":"1/2 of 14 comes to 8, says Sam. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":2,"n":1,"w":14,"kind":"ofSetSaid","said":8},"truth":false,"promptText":"Sam finds 1/2 of 14 and gets 8. Is Sam right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0785",
@@ -17032,7 +17032,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":3,"n":1,"w":6,"kind":"ofSetSaid","said":2},"truth":true,"promptText":"Nia figures 1/3 of 6 as 2. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":3,"n":1,"w":6,"kind":"ofSetSaid","said":2},"truth":true,"promptText":"Nia finds 1/3 of 6 and gets 2. Is Nia right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0786",
@@ -17042,7 +17042,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":4,"n":1,"w":4,"kind":"ofSetSaid","said":2},"truth":false,"promptText":"1/4 of 4 comes to 2, says Kai. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":4,"n":1,"w":4,"kind":"ofSetSaid","said":2},"truth":false,"promptText":"Kai says 1/4 of 4 is 2. Is Kai right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0787",
@@ -17052,7 +17052,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":2,"n":1,"w":8,"kind":"ofSetSaid","said":4},"truth":true,"promptText":"June figures 1/2 of 8 as 4. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":2,"n":1,"w":8,"kind":"ofSetSaid","said":4},"truth":true,"promptText":"June says 1/2 of 8 is 4. Is June right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0788",
@@ -17062,7 +17062,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":2,"n":1,"w":6,"kind":"ofSetSaid","said":2},"truth":false,"promptText":"1/2 of 6 comes to 2, says Lily. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":2,"n":1,"w":6,"kind":"ofSetSaid","said":2},"truth":false,"promptText":"Lily finds 1/2 of 6 and gets 2. Is Lily right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0789",
@@ -17072,7 +17072,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":5,"n":1,"w":45,"kind":"ofSetSaid","said":9},"truth":true,"promptText":"Omar computes 1/5 of 45 and lands on 9. Does it check out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":5,"n":1,"w":45,"kind":"ofSetSaid","said":9},"truth":true,"promptText":"Omar says 1/5 of 45 is 9. Is Omar right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0790",
@@ -17082,7 +17082,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":5,"n":2,"w":45,"kind":"ofSetSaid","said":20},"truth":false,"promptText":"Check Ben's value of 20 for 2/5 of 45. Right or wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":5,"n":2,"w":45,"kind":"ofSetSaid","said":20},"truth":false,"promptText":"Ben says 2/5 of 45 is 20. Is Ben right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0791",
@@ -17092,7 +17092,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":6,"n":1,"w":54,"kind":"ofSetSaid","said":9},"truth":true,"promptText":"Finn computes 1/6 of 54 and lands on 9. Does it check out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":6,"n":1,"w":54,"kind":"ofSetSaid","said":9},"truth":true,"promptText":"Finn works out 1/6 of 54 and gets 9. Is Finn right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0792",
@@ -17102,7 +17102,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":6,"n":5,"w":54,"kind":"ofSetSaid","said":44},"truth":false,"promptText":"Check Priya's value of 44 for 5/6 of 54. Right or wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":6,"n":5,"w":54,"kind":"ofSetSaid","said":44},"truth":false,"promptText":"Priya works out 5/6 of 54 and gets 44. Is Priya right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0793",
@@ -17112,7 +17112,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":8,"n":3,"w":64,"kind":"ofSetSaid","said":24},"truth":true,"promptText":"Sam computes 3/8 of 64 and lands on 24. Does it check out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":8,"n":3,"w":64,"kind":"ofSetSaid","said":24},"truth":true,"promptText":"Sam finds 3/8 of 64 and gets 24. Is Sam right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0794",
@@ -17122,7 +17122,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":8,"n":5,"w":64,"kind":"ofSetSaid","said":42},"truth":false,"promptText":"Check Nia's value of 42 for 5/8 of 64. Right or wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":8,"n":5,"w":64,"kind":"ofSetSaid","said":42},"truth":false,"promptText":"Nia finds 5/8 of 64 and gets 42. Is Nia right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0795",
@@ -17132,7 +17132,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":5,"n":1,"w":60,"kind":"ofSetSaid","said":12},"truth":true,"promptText":"Kai computes 1/5 of 60 and lands on 12. Does it check out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":5,"n":1,"w":60,"kind":"ofSetSaid","said":12},"truth":true,"promptText":"Kai thinks 1/5 of 60 is 12. Is Kai right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0796",
@@ -17142,7 +17142,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":5,"n":4,"w":60,"kind":"ofSetSaid","said":46},"truth":false,"promptText":"Check June's value of 46 for 4/5 of 60. Right or wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":5,"n":4,"w":60,"kind":"ofSetSaid","said":46},"truth":false,"promptText":"June thinks 4/5 of 60 is 46. Is June right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0797",
@@ -17152,7 +17152,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":8,"n":1,"w":96,"kind":"ofSetSaid","said":12},"truth":true,"promptText":"Lily computes 1/8 of 96 and lands on 12. Does it check out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":8,"n":1,"w":96,"kind":"ofSetSaid","said":12},"truth":true,"promptText":"Is 1/8 of 96 equal to 12, as Lily says?"}},
   },
   {
     itemId: "fractions-conc-b0821-0798",
@@ -17162,7 +17162,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":8,"n":7,"w":96,"kind":"ofSetSaid","said":82},"truth":false,"promptText":"Check Amara's value of 82 for 7/8 of 96. Right or wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":8,"n":7,"w":96,"kind":"ofSetSaid","said":82},"truth":false,"promptText":"Is 7/8 of 96 equal to 82, as Amara says?"}},
   },
   {
     itemId: "fractions-conc-b0821-0799",
@@ -17172,7 +17172,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":5,"n":2,"w":75,"kind":"ofSetSaid","said":30},"truth":true,"promptText":"Leo computes 2/5 of 75 and lands on 30. Does it check out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":5,"n":2,"w":75,"kind":"ofSetSaid","said":30},"truth":true,"promptText":"Leo says 30 is 2/5 of 75. Is Leo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0800",
@@ -17182,7 +17182,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":5,"n":3,"w":75,"kind":"ofSetSaid","said":46},"truth":false,"promptText":"Check Mina's value of 46 for 3/5 of 75. Right or wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":5,"n":3,"w":75,"kind":"ofSetSaid","said":46},"truth":false,"promptText":"Mina says 46 is 3/5 of 75. Is Mina right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0801",
@@ -17192,7 +17192,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":6,"n":1,"w":66,"kind":"ofSetSaid","said":11},"truth":true,"promptText":"Theo computes 1/6 of 66 and lands on 11. Does it check out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":6,"n":1,"w":66,"kind":"ofSetSaid","said":11},"truth":true,"promptText":"Theo says 1/6 of 66 is 11. Is Theo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0802",
@@ -17202,7 +17202,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":6,"n":5,"w":66,"kind":"ofSetSaid","said":54},"truth":false,"promptText":"Check Ida's value of 54 for 5/6 of 66. Right or wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":6,"n":5,"w":66,"kind":"ofSetSaid","said":54},"truth":false,"promptText":"Ida says 5/6 of 66 is 54. Is Ida right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0803",
@@ -17212,7 +17212,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":8,"n":3,"w":88,"kind":"ofSetSaid","said":33},"truth":true,"promptText":"Zoe computes 3/8 of 88 and lands on 33. Does it check out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":8,"n":3,"w":88,"kind":"ofSetSaid","said":33},"truth":true,"promptText":"Zoe works out 3/8 of 88 and gets 33. Is Zoe right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0804",
@@ -17222,7 +17222,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":8,"n":5,"w":88,"kind":"ofSetSaid","said":56},"truth":false,"promptText":"Check Rosa's value of 56 for 5/8 of 88. Right or wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":8,"n":5,"w":88,"kind":"ofSetSaid","said":56},"truth":false,"promptText":"Rosa works out 5/8 of 88 and gets 56. Is Rosa right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0805",
@@ -17232,7 +17232,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":5,"n":1,"w":85,"kind":"ofSetSaid","said":17},"truth":true,"promptText":"Diego computes 1/5 of 85 and lands on 17. Does it check out?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":5,"n":1,"w":85,"kind":"ofSetSaid","said":17},"truth":true,"promptText":"Diego finds 1/5 of 85 and gets 17. Is Diego right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0806",
@@ -17242,7 +17242,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":5,"n":4,"w":85,"kind":"ofSetSaid","said":70},"truth":false,"promptText":"Check Nora's value of 70 for 4/5 of 85. Right or wrong?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":5,"n":4,"w":85,"kind":"ofSetSaid","said":70},"truth":false,"promptText":"Nora finds 4/5 of 85 and gets 70. Is Nora right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0807",
@@ -17252,7 +17252,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":1,"w":240,"kind":"ofSetSaid","said":24},"truth":true,"promptText":"Finn certifies 1/10 of 240 = 24. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":1,"w":240,"kind":"ofSetSaid","said":24},"truth":true,"promptText":"Finn says 1/10 of 240 is 24. Is Finn right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0808",
@@ -17262,7 +17262,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":7,"w":240,"kind":"ofSetSaid","said":170},"truth":false,"promptText":"Audit: 7/10 of 240 recorded as 170 by Priya. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":7,"w":240,"kind":"ofSetSaid","said":170},"truth":false,"promptText":"Priya says 7/10 of 240 is 170. Is Priya right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0809",
@@ -17272,7 +17272,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":1,"w":240,"kind":"ofSetSaid","said":20},"truth":true,"promptText":"Sam certifies 1/12 of 240 = 20. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":1,"w":240,"kind":"ofSetSaid","said":20},"truth":true,"promptText":"Sam works out 1/12 of 240 and gets 20. Is Sam right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0810",
@@ -17282,7 +17282,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":5,"w":240,"kind":"ofSetSaid","said":105},"truth":false,"promptText":"Audit: 5/12 of 240 recorded as 105 by Nia. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":5,"w":240,"kind":"ofSetSaid","said":105},"truth":false,"promptText":"Nia works out 5/12 of 240 and gets 105. Is Nia right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0811",
@@ -17292,7 +17292,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":3,"w":460,"kind":"ofSetSaid","said":138},"truth":true,"promptText":"Kai certifies 3/10 of 460 = 138. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":3,"w":460,"kind":"ofSetSaid","said":138},"truth":true,"promptText":"Kai finds 3/10 of 460 and gets 138. Is Kai right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0812",
@@ -17302,7 +17302,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":9,"w":460,"kind":"ofSetSaid","said":410},"truth":false,"promptText":"Audit: 9/10 of 460 recorded as 410 by June. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":9,"w":460,"kind":"ofSetSaid","said":410},"truth":false,"promptText":"June finds 9/10 of 460 and gets 410. Is June right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0813",
@@ -17312,7 +17312,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":7,"w":360,"kind":"ofSetSaid","said":210},"truth":true,"promptText":"Lily certifies 7/12 of 360 = 210. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":7,"w":360,"kind":"ofSetSaid","said":210},"truth":true,"promptText":"Lily thinks 7/12 of 360 is 210. Is Lily right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0814",
@@ -17322,7 +17322,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":11,"w":360,"kind":"ofSetSaid","said":320},"truth":false,"promptText":"Audit: 11/12 of 360 recorded as 320 by Amara. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":11,"w":360,"kind":"ofSetSaid","said":320},"truth":false,"promptText":"Amara thinks 11/12 of 360 is 320. Is Amara right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0815",
@@ -17332,7 +17332,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":1,"w":550,"kind":"ofSetSaid","said":55},"truth":true,"promptText":"Leo certifies 1/10 of 550 = 55. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":1,"w":550,"kind":"ofSetSaid","said":55},"truth":true,"promptText":"Is 1/10 of 550 equal to 55, as Leo says?"}},
   },
   {
     itemId: "fractions-conc-b0821-0816",
@@ -17342,7 +17342,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":3,"w":550,"kind":"ofSetSaid","said":160},"truth":false,"promptText":"Audit: 3/10 of 550 recorded as 160 by Mina. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":3,"w":550,"kind":"ofSetSaid","said":160},"truth":false,"promptText":"Is 3/10 of 550 equal to 160, as Mina says?"}},
   },
   {
     itemId: "fractions-conc-b0821-0817",
@@ -17352,7 +17352,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":5,"w":480,"kind":"ofSetSaid","said":200},"truth":true,"promptText":"Theo certifies 5/12 of 480 = 200. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":5,"w":480,"kind":"ofSetSaid","said":200},"truth":true,"promptText":"Theo says 200 is 5/12 of 480. Is Theo right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0818",
@@ -17362,7 +17362,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":1,"w":480,"kind":"ofSetSaid","said":45},"truth":false,"promptText":"Audit: 1/12 of 480 recorded as 45 by Ida. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":1,"w":480,"kind":"ofSetSaid","said":45},"truth":false,"promptText":"Ida says 45 is 1/12 of 480. Is Ida right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0819",
@@ -17372,7 +17372,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":7,"w":620,"kind":"ofSetSaid","said":434},"truth":true,"promptText":"Zoe certifies 7/10 of 620 = 434. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":7,"w":620,"kind":"ofSetSaid","said":434},"truth":true,"promptText":"Zoe says 7/10 of 620 is 434. Is Zoe right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0820",
@@ -17382,7 +17382,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":9,"w":620,"kind":"ofSetSaid","said":552},"truth":false,"promptText":"Audit: 9/10 of 620 recorded as 552 by Rosa. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":9,"w":620,"kind":"ofSetSaid","said":552},"truth":false,"promptText":"Rosa says 9/10 of 620 is 552. Is Rosa right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0821",
@@ -17392,7 +17392,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":11,"w":600,"kind":"ofSetSaid","said":550},"truth":true,"promptText":"Diego certifies 11/12 of 600 = 550. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":12,"n":11,"w":600,"kind":"ofSetSaid","said":550},"truth":true,"promptText":"Diego works out 11/12 of 600 and gets 550. Is Diego right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0822",
@@ -17402,7 +17402,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":5,"w":600,"kind":"ofSetSaid","said":245},"truth":false,"promptText":"Audit: 5/12 of 600 recorded as 245 by Nora. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":12,"n":5,"w":600,"kind":"ofSetSaid","said":245},"truth":false,"promptText":"Nora works out 5/12 of 600 and gets 245. Is Nora right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0823",
@@ -17412,7 +17412,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":3,"w":730,"kind":"ofSetSaid","said":219},"truth":true,"promptText":"Luca certifies 3/10 of 730 = 219. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"frac":{"d":10,"n":3,"w":730,"kind":"ofSetSaid","said":219},"truth":true,"promptText":"Luca finds 3/10 of 730 and gets 219. Is Luca right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0824",
@@ -17422,7 +17422,7 @@ export const ITEMS = [
     structureType: "ofSetJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":1,"w":730,"kind":"ofSetSaid","said":78},"truth":false,"promptText":"Audit: 1/10 of 730 recorded as 78 by Ava. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"frac":{"d":10,"n":1,"w":730,"kind":"ofSetSaid","said":78},"truth":false,"promptText":"Ava finds 1/10 of 730 and gets 78. Is Ava right?"}},
   },
   {
     itemId: "fractions-conc-b0821-0825",
@@ -17432,7 +17432,7 @@ export const ITEMS = [
     structureType: "biggerShare_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["1/4","1/2"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Which is more of 12 things: half of them or a quarter of them? Luca decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["1/4","1/2"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Luca has 12 apples. Which is more: half of them or a quarter of them?"}},
   },
   {
     itemId: "fractions-conc-b0821-0826",
@@ -17452,7 +17452,7 @@ export const ITEMS = [
     structureType: "biggerShare_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["1/2","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Which is more of 20 things: half of them or a quarter of them? Omar decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["1/2","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Omar can eat half or a quarter of 20 grapes. Which share is bigger?"}},
   },
   {
     itemId: "fractions-conc-b0821-0828",
@@ -17472,7 +17472,7 @@ export const ITEMS = [
     structureType: "biggerShare_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["1/2","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Which is more of 4 things: half of them or a quarter of them? Finn decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["1/2","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Finn has 4 apples. Which is more: half of them or a quarter of them?"}},
   },
   {
     itemId: "fractions-conc-b0821-0830",
@@ -17492,7 +17492,7 @@ export const ITEMS = [
     structureType: "biggerShare_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["1/2","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Which is more of 16 things: half of them or a quarter of them? Sam decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["1/2","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Sam can eat half or a quarter of 16 grapes. Which share is bigger?"}},
   },
   {
     itemId: "fractions-conc-b0821-0832",
@@ -17512,7 +17512,7 @@ export const ITEMS = [
     structureType: "biggerShare_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["1/2","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Which is more of 8 things: half of them or a quarter of them? Kai decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["1/2","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Kai has 8 apples. Which is more: half of them or a quarter of them?"}},
   },
   {
     itemId: "fractions-conc-b0821-0834",
@@ -17532,7 +17532,7 @@ export const ITEMS = [
     structureType: "biggerShare_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["1/2","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Which is more of 12 things: half of them or a quarter of them? Lily decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["1/2","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Lily can eat half or a quarter of 12 grapes. Which share is bigger?"}},
   },
   {
     itemId: "fractions-conc-b0821-0836",
@@ -17552,7 +17552,7 @@ export const ITEMS = [
     structureType: "biggerShare_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["1/2","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Which is more of 20 things: half of them or a quarter of them? Leo decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["1/2","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Leo has 20 apples. Which is more: half of them or a quarter of them?"}},
   },
   {
     itemId: "fractions-conc-b0821-0838",
@@ -17572,7 +17572,7 @@ export const ITEMS = [
     structureType: "biggerShare_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["1/2","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Which is more of 4 things: half of them or a quarter of them? Theo decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["1/2","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Theo can eat half or a quarter of 4 grapes. Which share is bigger?"}},
   },
   {
     itemId: "fractions-conc-b0821-0840",
@@ -17592,7 +17592,7 @@ export const ITEMS = [
     structureType: "biggerShare_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["1/6","1/3"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Of 66 items, is 1/3 or 1/6 the larger take? June chooses."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["1/6","1/3"],"display":{"frac":{"kind":"biggerShare"},"promptText":"June has 66 crayons. Which is more: 1/3 of them or 1/6 of them?"}},
   },
   {
     itemId: "fractions-conc-b0821-0842",
@@ -17612,7 +17612,7 @@ export const ITEMS = [
     structureType: "biggerShare_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["1/3","1/6"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Of 78 items, is 1/3 or 1/6 the larger take? Amara chooses."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["1/3","1/6"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Amara can take 1/3 or 1/6 of 78 grapes. Which share is bigger?"}},
   },
   {
     itemId: "fractions-conc-b0821-0844",
@@ -17632,7 +17632,7 @@ export const ITEMS = [
     structureType: "biggerShare_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["1/3","1/6"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Of 96 items, is 1/3 or 1/6 the larger take? Mina chooses."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["1/3","1/6"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Mina has 96 crayons. Which is more: 1/3 of them or 1/6 of them?"}},
   },
   {
     itemId: "fractions-conc-b0821-0846",
@@ -17652,7 +17652,7 @@ export const ITEMS = [
     structureType: "biggerShare_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["1/3","1/6"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Of 66 items, is 1/3 or 1/6 the larger take? Ida chooses."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["1/3","1/6"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Ida can take 1/3 or 1/6 of 66 grapes. Which share is bigger?"}},
   },
   {
     itemId: "fractions-conc-b0821-0848",
@@ -17672,7 +17672,7 @@ export const ITEMS = [
     structureType: "biggerShare_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["1/3","1/6"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Of 78 items, is 1/3 or 1/6 the larger take? Rosa chooses."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["1/3","1/6"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Rosa has 78 crayons. Which is more: 1/3 of them or 1/6 of them?"}},
   },
   {
     itemId: "fractions-conc-b0821-0850",
@@ -17692,7 +17692,7 @@ export const ITEMS = [
     structureType: "biggerShare_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["1/6","1/3"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Of 96 items, is 1/3 or 1/6 the larger take? Nora chooses."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["1/6","1/3"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Nora can take 1/3 or 1/6 of 96 grapes. Which share is bigger?"}},
   },
   {
     itemId: "fractions-conc-b0821-0852",
@@ -17712,7 +17712,7 @@ export const ITEMS = [
     structureType: "biggerShare_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["1/6","1/3"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Of 66 items, is 1/3 or 1/6 the larger take? Ava chooses."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["1/6","1/3"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Ava has 66 crayons. Which is more: 1/3 of them or 1/6 of them?"}},
   },
   {
     itemId: "fractions-conc-b0821-0854",
@@ -17732,7 +17732,7 @@ export const ITEMS = [
     structureType: "biggerShare_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["1/6","1/3"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Of 78 items, is 1/3 or 1/6 the larger take? Ben chooses."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["1/6","1/3"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Ben can take 1/3 or 1/6 of 78 grapes. Which share is bigger?"}},
   },
   {
     itemId: "fractions-conc-b0821-0856",
@@ -17752,7 +17752,7 @@ export const ITEMS = [
     structureType: "biggerShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/5","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"From 640 things, which claim is bigger: 1/4 of them or 1/5 of them? Amara reasons."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/5","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Amara has 640 beads. Which is more: 1/4 of them or 1/5 of them?"}},
   },
   {
     itemId: "fractions-conc-b0821-0858",
@@ -17762,7 +17762,7 @@ export const ITEMS = [
     structureType: "biggerShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/5","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Leo contrasts a fourth of 960 with a fifth of 960. Which amount wins?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/5","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Leo can take 1/4 or 1/5 of 960 stickers. Which share is bigger?"}},
   },
   {
     itemId: "fractions-conc-b0821-0859",
@@ -17772,7 +17772,7 @@ export const ITEMS = [
     structureType: "biggerShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/5","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"From 720 things, which claim is bigger: 1/4 of them or 1/5 of them? Mina reasons."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/5","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Mina may keep 1/4 or 1/5 of 720 marbles. Which share is bigger?"}},
   },
   {
     itemId: "fractions-conc-b0821-0860",
@@ -17782,7 +17782,7 @@ export const ITEMS = [
     structureType: "biggerShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/5","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Theo contrasts a fourth of 660 with a fifth of 660. Which amount wins?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/5","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Which gives Theo more: 1/4 of 660 cards or 1/5 of 660 cards?"}},
   },
   {
     itemId: "fractions-conc-b0821-0861",
@@ -17792,7 +17792,7 @@ export const ITEMS = [
     structureType: "biggerShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/4","1/5"],"display":{"frac":{"kind":"biggerShare"},"promptText":"From 900 things, which claim is bigger: 1/4 of them or 1/5 of them? Ida reasons."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/4","1/5"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Ida has 900 beads. Which is more: 1/4 of them or 1/5 of them?"}},
   },
   {
     itemId: "fractions-conc-b0821-0862",
@@ -17802,7 +17802,7 @@ export const ITEMS = [
     structureType: "biggerShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/5","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Zoe contrasts a fourth of 780 with a fifth of 780. Which amount wins?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/5","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Zoe can take 1/4 or 1/5 of 780 stickers. Which share is bigger?"}},
   },
   {
     itemId: "fractions-conc-b0821-0863",
@@ -17812,7 +17812,7 @@ export const ITEMS = [
     structureType: "biggerShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/5","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"From 640 things, which claim is bigger: 1/4 of them or 1/5 of them? Rosa reasons."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/5","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Rosa may keep 1/4 or 1/5 of 640 marbles. Which share is bigger?"}},
   },
   {
     itemId: "fractions-conc-b0821-0864",
@@ -17822,7 +17822,7 @@ export const ITEMS = [
     structureType: "biggerShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/4","1/5"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Diego contrasts a fourth of 960 with a fifth of 960. Which amount wins?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/4","1/5"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Which gives Diego more: 1/4 of 960 cards or 1/5 of 960 cards?"}},
   },
   {
     itemId: "fractions-conc-b0821-0865",
@@ -17832,7 +17832,7 @@ export const ITEMS = [
     structureType: "biggerShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/5","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"From 720 things, which claim is bigger: 1/4 of them or 1/5 of them? Nora reasons."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/5","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Nora has 720 beads. Which is more: 1/4 of them or 1/5 of them?"}},
   },
   {
     itemId: "fractions-conc-b0821-0866",
@@ -17842,7 +17842,7 @@ export const ITEMS = [
     structureType: "biggerShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/4","1/5"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Luca contrasts a fourth of 660 with a fifth of 660. Which amount wins?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/4","1/5"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Luca can take 1/4 or 1/5 of 660 stickers. Which share is bigger?"}},
   },
   {
     itemId: "fractions-conc-b0821-0867",
@@ -17852,7 +17852,7 @@ export const ITEMS = [
     structureType: "biggerShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/4","1/5"],"display":{"frac":{"kind":"biggerShare"},"promptText":"From 900 things, which claim is bigger: 1/4 of them or 1/5 of them? Ava reasons."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/4","1/5"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Ava may keep 1/4 or 1/5 of 900 marbles. Which share is bigger?"}},
   },
   {
     itemId: "fractions-conc-b0821-0868",
@@ -17862,7 +17862,7 @@ export const ITEMS = [
     structureType: "biggerShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/4","1/5"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Omar contrasts a fourth of 780 with a fifth of 780. Which amount wins?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/4","1/5"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Which gives Omar more: 1/4 of 780 cards or 1/5 of 780 cards?"}},
   },
   {
     itemId: "fractions-conc-b0821-0869",
@@ -17872,7 +17872,7 @@ export const ITEMS = [
     structureType: "biggerShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/5","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"From 640 things, which claim is bigger: 1/4 of them or 1/5 of them? Ben reasons."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/5","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Ben has 640 beads. Which is more: 1/4 of them or 1/5 of them?"}},
   },
   {
     itemId: "fractions-conc-b0821-0870",
@@ -17882,7 +17882,7 @@ export const ITEMS = [
     structureType: "biggerShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/5","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Finn contrasts a fourth of 960 with a fifth of 960. Which amount wins?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/5","1/4"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Finn can take 1/4 or 1/5 of 960 stickers. Which share is bigger?"}},
   },
   {
     itemId: "fractions-conc-b0821-0871",
@@ -17892,7 +17892,7 @@ export const ITEMS = [
     structureType: "biggerShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/4","1/5"],"display":{"frac":{"kind":"biggerShare"},"promptText":"From 720 things, which claim is bigger: 1/4 of them or 1/5 of them? Priya reasons."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/4","1/5"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Priya may keep 1/4 or 1/5 of 720 marbles. Which share is bigger?"}},
   },
   {
     itemId: "fractions-conc-b0821-0872",
@@ -17902,7 +17902,7 @@ export const ITEMS = [
     structureType: "biggerShare_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/4","1/5"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Sam contrasts a fourth of 660 with a fifth of 660. Which amount wins?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/4","1/5"],"display":{"frac":{"kind":"biggerShare"},"promptText":"Which gives Sam more: 1/4 of 660 cards or 1/5 of 660 cards?"}},
   },
   {
     itemId: "fractions-conc-b0821-0873",
@@ -17912,7 +17912,7 @@ export const ITEMS = [
     structureType: "keepRest_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"d":2,"w":12,"kind":"keepRest"},"promptText":"Nia gives away 1/2 of 12 stickers. How many stickers does Nia KEEP?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"d":2,"w":12,"kind":"keepRest"},"promptText":"Nia gives away 1/2 of 12 stickers. How many stickers does Nia keep?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-conc-b0821-0874",
@@ -17932,7 +17932,7 @@ export const ITEMS = [
     structureType: "keepRest_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"frac":{"d":2,"w":20,"kind":"keepRest"},"promptText":"June gives away 1/2 of 20 stickers. How many stickers does June KEEP?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"frac":{"d":2,"w":20,"kind":"keepRest"},"promptText":"June gives away 1/2 of 20 stickers. How many stickers does June keep?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-conc-b0821-0876",
@@ -17952,7 +17952,7 @@ export const ITEMS = [
     structureType: "keepRest_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"frac":{"d":3,"w":15,"kind":"keepRest"},"promptText":"Amara gives away 1/3 of 15 stickers. How many stickers does Amara KEEP?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"frac":{"d":3,"w":15,"kind":"keepRest"},"promptText":"Amara gives away 1/3 of 15 stickers. How many stickers does Amara keep?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-conc-b0821-0878",
@@ -17972,7 +17972,7 @@ export const ITEMS = [
     structureType: "keepRest_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"frac":{"d":4,"w":12,"kind":"keepRest"},"promptText":"Mina gives away 1/4 of 12 stickers. How many stickers does Mina KEEP?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"frac":{"d":4,"w":12,"kind":"keepRest"},"promptText":"Mina gives away 1/4 of 12 stickers. How many stickers does Mina keep?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-conc-b0821-0880",
@@ -17992,7 +17992,7 @@ export const ITEMS = [
     structureType: "keepRest_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"frac":{"d":4,"w":20,"kind":"keepRest"},"promptText":"Ida gives away 1/4 of 20 stickers. How many stickers does Ida KEEP?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"frac":{"d":4,"w":20,"kind":"keepRest"},"promptText":"Ida gives away 1/4 of 20 stickers. How many stickers does Ida keep?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-conc-b0821-0882",
@@ -18012,7 +18012,7 @@ export const ITEMS = [
     structureType: "keepRest_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"frac":{"d":2,"w":18,"kind":"keepRest"},"promptText":"Rosa gives away 1/2 of 18 stickers. How many stickers does Rosa KEEP?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"frac":{"d":2,"w":18,"kind":"keepRest"},"promptText":"Rosa gives away 1/2 of 18 stickers. How many stickers does Rosa keep?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-conc-b0821-0884",
@@ -18032,7 +18032,7 @@ export const ITEMS = [
     structureType: "keepRest_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"d":3,"w":9,"kind":"keepRest"},"promptText":"Nora gives away 1/3 of 9 stickers. How many stickers does Nora KEEP?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"d":3,"w":9,"kind":"keepRest"},"promptText":"Nora gives away 1/3 of 9 stickers. How many stickers does Nora keep?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-conc-b0821-0886",
@@ -18052,7 +18052,7 @@ export const ITEMS = [
     structureType: "keepRest_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"d":2,"w":8,"kind":"keepRest"},"promptText":"Ava gives away 1/2 of 8 stickers. How many stickers does Ava KEEP?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"d":2,"w":8,"kind":"keepRest"},"promptText":"Ava gives away 1/2 of 8 stickers. How many stickers does Ava keep?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-conc-b0821-0888",
@@ -18232,7 +18232,7 @@ export const ITEMS = [
     structureType: "keepRest_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":216,"display":{"frac":{"d":10,"w":240,"kind":"keepRest"},"promptText":"Diego donates exactly 1/10 of 240 beads. How many beads does Diego retain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":216,"display":{"frac":{"d":10,"w":240,"kind":"keepRest"},"promptText":"Diego gives away 1/10 of 240 beads. How many beads does Diego have left?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-conc-b0821-0906",
@@ -18242,7 +18242,7 @@ export const ITEMS = [
     structureType: "keepRest_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":220,"display":{"frac":{"d":12,"w":240,"kind":"keepRest"},"promptText":"After releasing 1/12 of 240 entries, Nora holds how many entries?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":220,"display":{"frac":{"d":12,"w":240,"kind":"keepRest"},"promptText":"Nora has 240 tickets and gives away 1/12 of them. How many tickets does Nora have left?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-conc-b0821-0907",
@@ -18252,7 +18252,7 @@ export const ITEMS = [
     structureType: "keepRest_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":414,"display":{"frac":{"d":10,"w":460,"kind":"keepRest"},"promptText":"Luca donates exactly 1/10 of 460 beads. How many beads does Luca retain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":414,"display":{"frac":{"d":10,"w":460,"kind":"keepRest"},"promptText":"Luca has 460 beads and gives 1/10 of them to a friend. How many beads does Luca keep?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-conc-b0821-0908",
@@ -18262,7 +18262,7 @@ export const ITEMS = [
     structureType: "keepRest_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":330,"display":{"frac":{"d":12,"w":360,"kind":"keepRest"},"promptText":"After releasing 1/12 of 360 entries, Ava holds how many entries?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":330,"display":{"frac":{"d":12,"w":360,"kind":"keepRest"},"promptText":"Ava has 360 stickers. Ava gives 1/12 of them to a friend. How many stickers does Ava keep?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-conc-b0821-0909",
@@ -18272,7 +18272,7 @@ export const ITEMS = [
     structureType: "keepRest_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":495,"display":{"frac":{"d":10,"w":550,"kind":"keepRest"},"promptText":"Omar donates exactly 1/10 of 550 beads. How many beads does Omar retain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":495,"display":{"frac":{"d":10,"w":550,"kind":"keepRest"},"promptText":"Omar has 550 beads. Omar uses 1/10 of them on a bracelet. How many beads are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-conc-b0821-0910",
@@ -18282,7 +18282,7 @@ export const ITEMS = [
     structureType: "keepRest_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":440,"display":{"frac":{"d":12,"w":480,"kind":"keepRest"},"promptText":"After releasing 1/12 of 480 entries, Ben holds how many entries?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":440,"display":{"frac":{"d":12,"w":480,"kind":"keepRest"},"promptText":"Ben has 480 tickets and gives away 1/12 of them. How many tickets does Ben have left?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-conc-b0821-0911",
@@ -18292,7 +18292,7 @@ export const ITEMS = [
     structureType: "keepRest_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":558,"display":{"frac":{"d":10,"w":620,"kind":"keepRest"},"promptText":"Finn donates exactly 1/10 of 620 beads. How many beads does Finn retain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":558,"display":{"frac":{"d":10,"w":620,"kind":"keepRest"},"promptText":"Finn gives away 1/10 of 620 beads. How many beads does Finn have left?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-conc-b0821-0912",
@@ -18302,7 +18302,7 @@ export const ITEMS = [
     structureType: "keepRest_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":550,"display":{"frac":{"d":12,"w":600,"kind":"keepRest"},"promptText":"After releasing 1/12 of 600 entries, Priya holds how many entries?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":550,"display":{"frac":{"d":12,"w":600,"kind":"keepRest"},"promptText":"Priya has 600 tickets. Priya gives 1/12 of them to a friend. How many tickets does Priya have now?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-conc-b0821-0913",
@@ -18312,7 +18312,7 @@ export const ITEMS = [
     structureType: "keepRest_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":657,"display":{"frac":{"d":10,"w":730,"kind":"keepRest"},"promptText":"Sam donates exactly 1/10 of 730 beads. How many beads does Sam retain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":657,"display":{"frac":{"d":10,"w":730,"kind":"keepRest"},"promptText":"Sam has 730 beads and gives 1/10 of them to a friend. How many beads does Sam keep?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-conc-b0821-0914",
@@ -18322,7 +18322,7 @@ export const ITEMS = [
     structureType: "keepRest_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":770,"display":{"frac":{"d":12,"w":840,"kind":"keepRest"},"promptText":"After releasing 1/12 of 840 entries, Nia holds how many entries?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":770,"display":{"frac":{"d":12,"w":840,"kind":"keepRest"},"promptText":"Nia has 840 tickets and gives away 1/12 of them. How many tickets does Nia have left?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-conc-b0821-0915",
@@ -18332,7 +18332,7 @@ export const ITEMS = [
     structureType: "keepRest_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":729,"display":{"frac":{"d":10,"w":810,"kind":"keepRest"},"promptText":"Kai donates exactly 1/10 of 810 beads. How many beads does Kai retain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":729,"display":{"frac":{"d":10,"w":810,"kind":"keepRest"},"promptText":"Kai has 810 beads. Kai uses 1/10 of them on a bracelet. How many beads are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-conc-b0821-0916",
@@ -18342,7 +18342,7 @@ export const ITEMS = [
     structureType: "keepRest_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":880,"display":{"frac":{"d":12,"w":960,"kind":"keepRest"},"promptText":"After releasing 1/12 of 960 entries, June holds how many entries?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":880,"display":{"frac":{"d":12,"w":960,"kind":"keepRest"},"promptText":"June has 960 stickers. June gives 1/12 of them to a friend. How many stickers does June keep?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-conc-b0821-0917",
@@ -18352,7 +18352,7 @@ export const ITEMS = [
     structureType: "keepRest_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":891,"display":{"frac":{"d":10,"w":990,"kind":"keepRest"},"promptText":"Lily donates exactly 1/10 of 990 beads. How many beads does Lily retain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":891,"display":{"frac":{"d":10,"w":990,"kind":"keepRest"},"promptText":"Lily gives away 1/10 of 990 beads. How many beads does Lily have left?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-conc-b0821-0918",
@@ -18362,7 +18362,7 @@ export const ITEMS = [
     structureType: "keepRest_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":660,"display":{"frac":{"d":12,"w":720,"kind":"keepRest"},"promptText":"After releasing 1/12 of 720 entries, Amara holds how many entries?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":660,"display":{"frac":{"d":12,"w":720,"kind":"keepRest"},"promptText":"Amara has 720 tickets and gives away 1/12 of them. How many tickets does Amara have left?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-conc-b0821-0919",
@@ -18372,7 +18372,7 @@ export const ITEMS = [
     structureType: "keepRest_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":342,"display":{"frac":{"d":10,"w":380,"kind":"keepRest"},"promptText":"Leo donates exactly 1/10 of 380 beads. How many beads does Leo retain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":342,"display":{"frac":{"d":10,"w":380,"kind":"keepRest"},"promptText":"Leo has 380 beads and gives 1/10 of them to a friend. How many beads does Leo keep?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-conc-b0821-0920",
@@ -18382,7 +18382,7 @@ export const ITEMS = [
     structureType: "keepRest_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":242,"display":{"frac":{"d":12,"w":264,"kind":"keepRest"},"promptText":"After releasing 1/12 of 264 entries, Mina holds how many entries?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":242,"display":{"frac":{"d":12,"w":264,"kind":"keepRest"},"promptText":"Mina has 264 tickets. Mina gives 1/12 of them to a friend. How many tickets does Mina have now?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0001",
@@ -18752,7 +18752,7 @@ export const ITEMS = [
     structureType: "unshadeName_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["1/2","2/1","1/1"],"display":{"frac":{"d":2,"n":1,"kind":"complement"},"promptText":"1 of 2 equal parts is shaded. The UNSHADED fraction = ?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["1/2","2/1","1/1"],"display":{"frac":{"d":2,"n":1,"kind":"complement"},"promptText":"1 of 2 equal parts is shaded. What fraction is not shaded?"}},
   },
   {
     itemId: "fractions-proc-b0821-0038",
@@ -18762,7 +18762,7 @@ export const ITEMS = [
     structureType: "unshadeName_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/3","choices":["3/2","2/1","2/3","1/3"],"display":{"frac":{"d":3,"n":1,"kind":"complement"},"promptText":"1 of 3 equal parts is shaded. The UNSHADED fraction = ?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/3","choices":["3/2","2/1","2/3","1/3"],"display":{"frac":{"d":3,"n":1,"kind":"complement"},"promptText":"1 of 3 equal parts is shaded. What fraction is not shaded?"}},
   },
   {
     itemId: "fractions-proc-b0821-0039",
@@ -18772,7 +18772,7 @@ export const ITEMS = [
     structureType: "unshadeName_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["1/2","1/3","2/3","3/1"],"display":{"frac":{"d":3,"n":2,"kind":"complement"},"promptText":"2 of 3 equal parts are shaded. The UNSHADED fraction = ?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["1/2","1/3","2/3","3/1"],"display":{"frac":{"d":3,"n":2,"kind":"complement"},"promptText":"2 of 3 equal parts are shaded. What fraction is not shaded?"}},
   },
   {
     itemId: "fractions-proc-b0821-0040",
@@ -18782,7 +18782,7 @@ export const ITEMS = [
     structureType: "unshadeName_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/4","choices":["3/1","3/4","4/3","1/4"],"display":{"frac":{"d":4,"n":1,"kind":"complement"},"promptText":"1 of 4 equal parts is shaded. The UNSHADED fraction = ?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/4","choices":["3/1","3/4","4/3","1/4"],"display":{"frac":{"d":4,"n":1,"kind":"complement"},"promptText":"1 of 4 equal parts is shaded. What fraction is not shaded?"}},
   },
   {
     itemId: "fractions-proc-b0821-0041",
@@ -18792,7 +18792,7 @@ export const ITEMS = [
     structureType: "unshadeName_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/3","1/4","4/1","3/4"],"display":{"frac":{"d":4,"n":3,"kind":"complement"},"promptText":"3 of 4 equal parts are shaded. The UNSHADED fraction = ?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/3","1/4","4/1","3/4"],"display":{"frac":{"d":4,"n":3,"kind":"complement"},"promptText":"3 of 4 equal parts are shaded. What fraction is not shaded?"}},
   },
   {
     itemId: "fractions-proc-b0821-0042",
@@ -18802,7 +18802,7 @@ export const ITEMS = [
     structureType: "unshadeName_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/4","choices":["4/2","2/2","2/4"],"display":{"frac":{"d":4,"n":2,"kind":"complement"},"promptText":"2 of 4 equal parts are shaded. The UNSHADED fraction = ?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/4","choices":["4/2","2/2","2/4"],"display":{"frac":{"d":4,"n":2,"kind":"complement"},"promptText":"2 of 4 equal parts are shaded. What fraction is not shaded?"}},
   },
   {
     itemId: "fractions-proc-b0821-0043",
@@ -19022,7 +19022,7 @@ export const ITEMS = [
     structureType: "unshadeName_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["9/1","9/10","10/9","1/10"],"display":{"frac":{"d":10,"n":1,"kind":"complement"},"promptText":"If 1 of 10 equal sections are filled, exactly which fraction remains empty?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["9/1","9/10","10/9","1/10"],"display":{"frac":{"d":10,"n":1,"kind":"complement"},"promptText":"If 1 of 10 equal sections is filled, exactly which fraction remains empty?"}},
   },
   {
     itemId: "fractions-proc-b0821-0065",
@@ -19092,7 +19092,7 @@ export const ITEMS = [
     structureType: "unshadeName_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/8","choices":["8/3","3/8","5/8","3/5"],"display":{"frac":{"d":8,"n":5,"kind":"complement"},"promptText":"A 8-section figure with 5 filled leaves which fraction unfilled?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/8","choices":["8/3","3/8","5/8","3/5"],"display":{"frac":{"d":8,"n":5,"kind":"complement"},"promptText":"An 8-section figure with 5 filled leaves which fraction unfilled?"}},
   },
   {
     itemId: "fractions-proc-b0821-0072",
@@ -19282,7 +19282,7 @@ export const ITEMS = [
     structureType: "wholePartsExtra_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"d":6,"kind":"unitCount"},"promptText":"Cutting into sixths produces how many equal slices per whole? Count them."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"d":6,"kind":"unitCount"},"promptText":"A whole is cut into sixths. How many equal slices are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0091",
@@ -19792,7 +19792,7 @@ export const ITEMS = [
     structureType: "readDen_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"frac":{"d":10,"n":7,"kind":"denOf"},"promptText":"Exactly how many equal parts does 7/10 declare in its denominator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"frac":{"d":10,"n":7,"kind":"denOf"},"promptText":"How many equal parts does the denominator of 7/10 show?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0142",
@@ -19832,7 +19832,7 @@ export const ITEMS = [
     structureType: "readDen_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"frac":{"d":10,"n":1,"kind":"denOf"},"promptText":"Exactly how many equal parts does 1/10 declare in its denominator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"frac":{"d":10,"n":1,"kind":"denOf"},"promptText":"In the fraction 1/10, how many equal parts make the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0146",
@@ -19872,7 +19872,7 @@ export const ITEMS = [
     structureType: "readDen_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"frac":{"d":12,"n":7,"kind":"denOf"},"promptText":"Exactly how many equal parts does 7/12 declare in its denominator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"frac":{"d":12,"n":7,"kind":"denOf"},"promptText":"How many equal parts does the denominator of 7/12 show?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0150",
@@ -19912,7 +19912,7 @@ export const ITEMS = [
     structureType: "readDen_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"frac":{"d":12,"n":1,"kind":"denOf"},"promptText":"Exactly how many equal parts does 1/12 declare in its denominator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"frac":{"d":12,"n":1,"kind":"denOf"},"promptText":"In the fraction 1/12, how many equal parts make the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0154",
@@ -19952,7 +19952,7 @@ export const ITEMS = [
     structureType: "readDen_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"d":6,"n":5,"kind":"denOf"},"promptText":"Exactly how many equal parts does 5/6 declare in its denominator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"d":6,"n":5,"kind":"denOf"},"promptText":"How many equal parts does the denominator of 5/6 show?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0158",
@@ -19992,7 +19992,7 @@ export const ITEMS = [
     structureType: "readDen_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"d":4,"n":3,"kind":"denOf"},"promptText":"Exactly how many equal parts does 3/4 declare in its denominator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"d":4,"n":3,"kind":"denOf"},"promptText":"In the fraction 3/4, how many equal parts make the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0162",
@@ -20012,7 +20012,7 @@ export const ITEMS = [
     structureType: "unitMeaning_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"d":2,"kind":"unitCount"},"promptText":"The fraction 1/2 means 1 of ? equal parts"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"d":2,"kind":"unitCount"},"promptText":"The fraction 1/2 means 1 of how many equal parts?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0164",
@@ -20032,7 +20032,7 @@ export const ITEMS = [
     structureType: "unitMeaning_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"d":4,"kind":"unitCount"},"promptText":"The fraction 1/4 means 1 of ? equal parts"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"d":4,"kind":"unitCount"},"promptText":"The fraction 1/4 means 1 of how many equal parts?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0166",
@@ -20052,7 +20052,7 @@ export const ITEMS = [
     structureType: "unitMeaning_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"d":3,"kind":"unitCount"},"promptText":"The fraction 1/3 means 1 of ? equal parts"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"d":3,"kind":"unitCount"},"promptText":"The fraction 1/3 means 1 of how many equal parts?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0168",
@@ -20082,7 +20082,7 @@ export const ITEMS = [
     structureType: "unitMeaning_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"d":6,"kind":"unitCount"},"promptText":"In 1/6, the bottom number counts the equal parts. How many equal parts is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"d":6,"kind":"unitCount"},"promptText":"A whole is cut into equal parts. Each part is 1/6 of the whole. How many equal parts are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0171",
@@ -20102,7 +20102,7 @@ export const ITEMS = [
     structureType: "unitMeaning_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"d":5,"kind":"unitCount"},"promptText":"In 1/5, the bottom number counts the equal parts. How many equal parts is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"d":5,"kind":"unitCount"},"promptText":"One equal part of a whole is 1/5. How many equal parts make the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0173",
@@ -20122,7 +20122,7 @@ export const ITEMS = [
     structureType: "unitMeaning_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"frac":{"d":8,"kind":"unitCount"},"promptText":"In 1/8, the bottom number counts the equal parts. How many equal parts is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"frac":{"d":8,"kind":"unitCount"},"promptText":"A whole is split into equal parts, and 1 part is 1/8. How many equal parts make up the whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0175",
@@ -20192,7 +20192,7 @@ export const ITEMS = [
     structureType: "unitJumps_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"d":2,"n":1,"kind":"jumps"},"promptText":"Hop from 0 in jumps of 1/2. After 1 hops you land on ?/2. What is the top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"d":2,"n":1,"kind":"jumps"},"promptText":"Hop from 0 in jumps of 1/2. After 1 hop, you land on __/2. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0182",
@@ -20202,7 +20202,7 @@ export const ITEMS = [
     structureType: "unitJumps_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"d":3,"n":2,"kind":"jumps"},"promptText":"2 jumps of 1/3 starting at 0 reach which numerator over 3?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"d":3,"n":2,"kind":"jumps"},"promptText":"Start at 0 and make 2 jumps of 1/3. You land on __/3. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0183",
@@ -20212,7 +20212,7 @@ export const ITEMS = [
     structureType: "unitJumps_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"d":3,"n":1,"kind":"jumps"},"promptText":"Hop from 0 in jumps of 1/3. After 1 hops you land on ?/3. What is the top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"d":3,"n":1,"kind":"jumps"},"promptText":"Hop from 0 in jumps of 1/3. After 1 hop, you land on __/3. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0184",
@@ -20222,7 +20222,7 @@ export const ITEMS = [
     structureType: "unitJumps_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"d":4,"n":3,"kind":"jumps"},"promptText":"3 jumps of 1/4 starting at 0 reach which numerator over 4?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"d":4,"n":3,"kind":"jumps"},"promptText":"Start at 0 and make 3 jumps of 1/4. You land on __/4. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0185",
@@ -20232,7 +20232,7 @@ export const ITEMS = [
     structureType: "unitJumps_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"d":4,"n":1,"kind":"jumps"},"promptText":"Hop from 0 in jumps of 1/4. After 1 hops you land on ?/4. What is the top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"d":4,"n":1,"kind":"jumps"},"promptText":"Hop from 0 in jumps of 1/4. After 1 hop, you land on __/4. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0186",
@@ -20242,7 +20242,7 @@ export const ITEMS = [
     structureType: "unitJumps_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"d":4,"n":2,"kind":"jumps"},"promptText":"2 jumps of 1/4 starting at 0 reach which numerator over 4?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"d":4,"n":2,"kind":"jumps"},"promptText":"Start at 0 and make 2 jumps of 1/4. You land on __/4. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0187",
@@ -20252,7 +20252,7 @@ export const ITEMS = [
     structureType: "unitJumps_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"d":5,"n":2,"kind":"jumps"},"promptText":"Count 2 steps of 1/5 from 0. The landing fraction is ?/5 — top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"d":5,"n":2,"kind":"jumps"},"promptText":"Start at 0 and count 2 steps of 1/5. You land on __/5. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0188",
@@ -20262,7 +20262,7 @@ export const ITEMS = [
     structureType: "unitJumps_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"d":5,"n":4,"kind":"jumps"},"promptText":"Stacking 4 copies of 1/5 builds ?/5. What is the numerator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"d":5,"n":4,"kind":"jumps"},"promptText":"Stack 4 copies of 1/5. You get __/5. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0189",
@@ -20272,7 +20272,7 @@ export const ITEMS = [
     structureType: "unitJumps_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"d":6,"n":3,"kind":"jumps"},"promptText":"Count 3 steps of 1/6 from 0. The landing fraction is ?/6 — top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"d":6,"n":3,"kind":"jumps"},"promptText":"Start at 0 and count 3 steps of 1/6. You land on __/6. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0190",
@@ -20282,7 +20282,7 @@ export const ITEMS = [
     structureType: "unitJumps_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"d":6,"n":5,"kind":"jumps"},"promptText":"Stacking 5 copies of 1/6 builds ?/6. What is the numerator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"d":6,"n":5,"kind":"jumps"},"promptText":"Stack 5 copies of 1/6. You get __/6. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0191",
@@ -20292,7 +20292,7 @@ export const ITEMS = [
     structureType: "unitJumps_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"d":8,"n":5,"kind":"jumps"},"promptText":"Count 5 steps of 1/8 from 0. The landing fraction is ?/8 — top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"d":8,"n":5,"kind":"jumps"},"promptText":"Start at 0 and count 5 steps of 1/8. You land on __/8. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0192",
@@ -20302,7 +20302,7 @@ export const ITEMS = [
     structureType: "unitJumps_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"frac":{"d":8,"n":7,"kind":"jumps"},"promptText":"Stacking 7 copies of 1/8 builds ?/8. What is the numerator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"frac":{"d":8,"n":7,"kind":"jumps"},"promptText":"Stack 7 copies of 1/8. You get __/8. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0193",
@@ -20312,7 +20312,7 @@ export const ITEMS = [
     structureType: "unitJumps_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"frac":{"d":10,"n":7,"kind":"jumps"},"promptText":"Exactly 7 unit steps of 1/10 from 0 stop at ?/10. Which numerator is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"frac":{"d":10,"n":7,"kind":"jumps"},"promptText":"Take 7 steps of 1/10, starting at 0. You stop at __/10. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0194",
@@ -20322,7 +20322,7 @@ export const ITEMS = [
     structureType: "unitJumps_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"frac":{"d":10,"n":9,"kind":"jumps"},"promptText":"Accumulate 1/10 a total of 9 times. The numerator of the result = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"frac":{"d":10,"n":9,"kind":"jumps"},"promptText":"Add 9 copies of 1/10 together. The sum is __/10. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0195",
@@ -20332,7 +20332,7 @@ export const ITEMS = [
     structureType: "unitJumps_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"d":12,"n":5,"kind":"jumps"},"promptText":"Exactly 5 unit steps of 1/12 from 0 stop at ?/12. Which numerator is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"d":12,"n":5,"kind":"jumps"},"promptText":"Take 5 steps of 1/12, starting at 0. You stop at __/12. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0196",
@@ -20342,7 +20342,7 @@ export const ITEMS = [
     structureType: "unitJumps_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"frac":{"d":12,"n":11,"kind":"jumps"},"promptText":"Accumulate 1/12 a total of 11 times. The numerator of the result = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"frac":{"d":12,"n":11,"kind":"jumps"},"promptText":"Add 11 copies of 1/12 together. The sum is __/12. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0197",
@@ -20352,7 +20352,7 @@ export const ITEMS = [
     structureType: "unitJumps_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"d":10,"n":3,"kind":"jumps"},"promptText":"Exactly 3 unit steps of 1/10 from 0 stop at ?/10. Which numerator is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"d":10,"n":3,"kind":"jumps"},"promptText":"Take 3 steps of 1/10, starting at 0. You stop at __/10. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0198",
@@ -20362,7 +20362,7 @@ export const ITEMS = [
     structureType: "unitJumps_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"frac":{"d":12,"n":7,"kind":"jumps"},"promptText":"Accumulate 1/12 a total of 7 times. The numerator of the result = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"frac":{"d":12,"n":7,"kind":"jumps"},"promptText":"Add 7 copies of 1/12 together. The sum is __/12. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0199",
@@ -20372,7 +20372,7 @@ export const ITEMS = [
     structureType: "wholeAsFrac_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"d":2,"kind":"unitCount"},"promptText":"The whole number 1 written in halves is ?/2. What is the top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"d":2,"kind":"unitCount"},"promptText":"The whole number 1 written in halves is __/2. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0200",
@@ -20382,7 +20382,7 @@ export const ITEMS = [
     structureType: "wholeAsFrac_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"d":3,"kind":"unitCount"},"promptText":"How many thirds equal exactly 1? Give the count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"d":3,"kind":"unitCount"},"promptText":"How many thirds are in 1 whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0201",
@@ -20392,7 +20392,7 @@ export const ITEMS = [
     structureType: "wholeAsFrac_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"d":4,"kind":"unitCount"},"promptText":"The whole number 1 written in fourths is ?/4. What is the top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"d":4,"kind":"unitCount"},"promptText":"The whole number 1 written in fourths is __/4. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0202",
@@ -20402,7 +20402,7 @@ export const ITEMS = [
     structureType: "wholeAsFrac_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"d":2,"kind":"unitCount"},"promptText":"How many halves equal exactly 1? Give the count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"d":2,"kind":"unitCount"},"promptText":"How many halves are in 1 whole?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0203",
@@ -20412,7 +20412,7 @@ export const ITEMS = [
     structureType: "wholeAsFrac_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"d":5,"kind":"unitCount"},"promptText":"One whole equals ?/5. Which numerator completes it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"d":5,"kind":"unitCount"},"promptText":"One whole is the same as __/5. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0204",
@@ -20422,7 +20422,7 @@ export const ITEMS = [
     structureType: "wholeAsFrac_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"d":6,"kind":"unitCount"},"promptText":"Express 1 as a fraction over 6. What is the numerator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"d":6,"kind":"unitCount"},"promptText":"Write 1 as a fraction with a bottom number of 6. What is its top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0205",
@@ -20432,7 +20432,7 @@ export const ITEMS = [
     structureType: "wholeAsFrac_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"frac":{"d":8,"kind":"unitCount"},"promptText":"One whole equals ?/8. Which numerator completes it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"frac":{"d":8,"kind":"unitCount"},"promptText":"One whole is the same as __/8. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0206",
@@ -20442,7 +20442,7 @@ export const ITEMS = [
     structureType: "wholeAsFrac_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"d":5,"kind":"unitCount"},"promptText":"Express 1 as a fraction over 5. What is the numerator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"d":5,"kind":"unitCount"},"promptText":"Write 1 as a fraction with a bottom number of 5. What is its top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0207",
@@ -20452,7 +20452,7 @@ export const ITEMS = [
     structureType: "wholeAsFrac_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"d":6,"kind":"unitCount"},"promptText":"One whole equals ?/6. Which numerator completes it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"d":6,"kind":"unitCount"},"promptText":"One whole is the same as __/6. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0208",
@@ -20462,7 +20462,7 @@ export const ITEMS = [
     structureType: "wholeAsFrac_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"frac":{"d":8,"kind":"unitCount"},"promptText":"Express 1 as a fraction over 8. What is the numerator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"frac":{"d":8,"kind":"unitCount"},"promptText":"Write 1 as a fraction with a bottom number of 8. What is its top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0209",
@@ -20472,7 +20472,7 @@ export const ITEMS = [
     structureType: "wholeAsFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"frac":{"d":10,"kind":"unitCount"},"promptText":"Rewrite the number 1 with denominator 10. What numerator appears?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"frac":{"d":10,"kind":"unitCount"},"promptText":"Write 1 as a fraction with a denominator of 10. What is the numerator?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0210",
@@ -20482,7 +20482,7 @@ export const ITEMS = [
     structureType: "wholeAsFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"frac":{"d":12,"kind":"unitCount"},"promptText":"1 = ?/12 exactly. What is the missing top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"frac":{"d":12,"kind":"unitCount"},"promptText":"1 = __/12. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0211",
@@ -20492,7 +20492,7 @@ export const ITEMS = [
     structureType: "wholeAsFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"d":6,"kind":"unitCount"},"promptText":"Rewrite the number 1 with denominator 6. What numerator appears?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"d":6,"kind":"unitCount"},"promptText":"Write 1 as a fraction with a denominator of 6. What is the numerator?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0212",
@@ -20502,7 +20502,7 @@ export const ITEMS = [
     structureType: "wholeAsFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"frac":{"d":10,"kind":"unitCount"},"promptText":"1 = ?/10 exactly. What is the missing top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"frac":{"d":10,"kind":"unitCount"},"promptText":"1 = __/10. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0213",
@@ -20512,7 +20512,7 @@ export const ITEMS = [
     structureType: "wholeAsFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"frac":{"d":12,"kind":"unitCount"},"promptText":"Rewrite the number 1 with denominator 12. What numerator appears?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"frac":{"d":12,"kind":"unitCount"},"promptText":"Write 1 as a fraction with a denominator of 12. What is the numerator?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0214",
@@ -20522,7 +20522,7 @@ export const ITEMS = [
     structureType: "wholeAsFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"frac":{"d":8,"kind":"unitCount"},"promptText":"1 = ?/8 exactly. What is the missing top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"frac":{"d":8,"kind":"unitCount"},"promptText":"1 = __/8. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0215",
@@ -20592,7 +20592,7 @@ export const ITEMS = [
     structureType: "tickName_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["1/3","2/1","1/2"],"display":{"frac":{"d":2,"n":1,"kind":"name"},"promptText":"Walk a 0-1 path in 2 equal steps. Where are you after step 1? Pick the fraction."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["1/3","2/1","1/2"],"display":{"frac":{"d":2,"n":1,"kind":"name"},"promptText":"Walk from 0 to 1 in 2 equal steps. Which fraction are you at after step 1?"}},
   },
   {
     itemId: "fractions-proc-b0821-0222",
@@ -20612,7 +20612,7 @@ export const ITEMS = [
     structureType: "tickName_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/4","choices":["2/4","3/5","3/4","4/3"],"display":{"frac":{"d":4,"n":3,"kind":"name"},"promptText":"Walk a 0-1 path in 4 equal steps. Where are you after step 3? Pick the fraction."}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/4","choices":["2/4","3/5","3/4","4/3"],"display":{"frac":{"d":4,"n":3,"kind":"name"},"promptText":"Walk from 0 to 1 in 4 equal steps. Which fraction are you at after step 3?"}},
   },
   {
     itemId: "fractions-proc-b0821-0224",
@@ -20632,7 +20632,7 @@ export const ITEMS = [
     structureType: "tickName_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["3/1","1/3","1/4"],"display":{"frac":{"d":3,"n":1,"kind":"name"},"promptText":"Walk a 0-1 path in 3 equal steps. Where are you after step 1? Pick the fraction."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["3/1","1/3","1/4"],"display":{"frac":{"d":3,"n":1,"kind":"name"},"promptText":"Walk from 0 to 1 in 3 equal steps. Which fraction are you at after step 1?"}},
   },
   {
     itemId: "fractions-proc-b0821-0226",
@@ -20662,7 +20662,7 @@ export const ITEMS = [
     structureType: "tickName_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/5","choices":["5/3","3/5","2/5","3/6"],"display":{"frac":{"d":5,"n":3,"kind":"name"},"promptText":"The 5-step walk from 0 to 1 puts its mark number 3 at which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/5","choices":["5/3","3/5","2/5","3/6"],"display":{"frac":{"d":5,"n":3,"kind":"name"},"promptText":"A number line from 0 to 1 has 5 equal steps. Which fraction is at the end of step 3?"}},
   },
   {
     itemId: "fractions-proc-b0821-0229",
@@ -20682,7 +20682,7 @@ export const ITEMS = [
     structureType: "tickName_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/6","choices":["6/1","1/7","1/6"],"display":{"frac":{"d":6,"n":1,"kind":"name"},"promptText":"The 6-step walk from 0 to 1 puts its mark number 1 at which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/6","choices":["6/1","1/7","1/6"],"display":{"frac":{"d":6,"n":1,"kind":"name"},"promptText":"A number line from 0 to 1 has 6 equal steps. Which fraction is at the end of step 1?"}},
   },
   {
     itemId: "fractions-proc-b0821-0231",
@@ -20702,7 +20702,7 @@ export const ITEMS = [
     structureType: "tickName_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7/8","choices":["7/9","6/8","7/8","8/7"],"display":{"frac":{"d":8,"n":7,"kind":"name"},"promptText":"The 8-step walk from 0 to 1 puts its mark number 7 at which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"7/8","choices":["7/9","6/8","7/8","8/7"],"display":{"frac":{"d":8,"n":7,"kind":"name"},"promptText":"A number line from 0 to 1 has 8 equal steps. Which fraction is at the end of step 7?"}},
   },
   {
     itemId: "fractions-proc-b0821-0233",
@@ -20722,7 +20722,7 @@ export const ITEMS = [
     structureType: "tickName_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/5","choices":["2/5","3/5","3/6","5/3"],"display":{"frac":{"d":5,"n":3,"kind":"name"},"promptText":"A ruler from 0 to 1 carries 5 equal steps. Step 3 points at which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/5","choices":["2/5","3/5","3/6","5/3"],"display":{"frac":{"d":5,"n":3,"kind":"name"},"promptText":"A ruler from 0 to 1 is split into 5 equal steps. Which fraction is at the mark after step 3?"}},
   },
   {
     itemId: "fractions-proc-b0821-0235",
@@ -20742,7 +20742,7 @@ export const ITEMS = [
     structureType: "tickName_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/6","choices":["6/1","1/7","1/6"],"display":{"frac":{"d":6,"n":1,"kind":"name"},"promptText":"A ruler from 0 to 1 carries 6 equal steps. Step 1 points at which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/6","choices":["6/1","1/7","1/6"],"display":{"frac":{"d":6,"n":1,"kind":"name"},"promptText":"A ruler from 0 to 1 is split into 6 equal steps. Which fraction is at the mark after step 1?"}},
   },
   {
     itemId: "fractions-proc-b0821-0237",
@@ -20762,7 +20762,7 @@ export const ITEMS = [
     structureType: "tickName_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7/8","choices":["7/9","8/7","7/8","6/8"],"display":{"frac":{"d":8,"n":7,"kind":"name"},"promptText":"A ruler from 0 to 1 carries 8 equal steps. Step 7 points at which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"7/8","choices":["7/9","8/7","7/8","6/8"],"display":{"frac":{"d":8,"n":7,"kind":"name"},"promptText":"A ruler from 0 to 1 is split into 8 equal steps. Which fraction is at the mark after step 7?"}},
   },
   {
     itemId: "fractions-proc-b0821-0239",
@@ -20772,7 +20772,7 @@ export const ITEMS = [
     structureType: "tickName_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/10","choices":["3/11","10/3","2/10","3/10"],"display":{"frac":{"d":10,"n":3,"kind":"name"},"promptText":"Precisely where does mark 3 of 10 fall between 0 and 1? Name the fraction."}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/10","choices":["3/11","10/3","2/10","3/10"],"display":{"frac":{"d":10,"n":3,"kind":"name"},"promptText":"Split a number line from 0 to 1 into 10 equal steps. What fraction is at the mark after step 3?"}},
   },
   {
     itemId: "fractions-proc-b0821-0240",
@@ -20782,7 +20782,7 @@ export const ITEMS = [
     structureType: "tickName_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["9/11","9/10","10/9","8/10"],"display":{"frac":{"d":10,"n":9,"kind":"name"},"promptText":"Between 0 and 1, mark number 9 of 10 even marks names which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["9/11","9/10","10/9","8/10"],"display":{"frac":{"d":10,"n":9,"kind":"name"},"promptText":"A number line from 0 to 1 is cut into 10 equal steps. Which fraction is at the end of step 9?"}},
   },
   {
     itemId: "fractions-proc-b0821-0241",
@@ -20792,7 +20792,7 @@ export const ITEMS = [
     structureType: "tickName_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5/12","choices":["12/5","4/12","5/12","5/13"],"display":{"frac":{"d":12,"n":5,"kind":"name"},"promptText":"Precisely where does mark 5 of 12 fall between 0 and 1? Name the fraction."}},
+    question: {"a":null,"b":null,"op":"count","answer":"5/12","choices":["12/5","4/12","5/12","5/13"],"display":{"frac":{"d":12,"n":5,"kind":"name"},"promptText":"Split a number line from 0 to 1 into 12 equal steps. What fraction is at the mark after step 5?"}},
   },
   {
     itemId: "fractions-proc-b0821-0242",
@@ -20802,7 +20802,7 @@ export const ITEMS = [
     structureType: "tickName_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"11/12","choices":["11/12","10/12","12/11","11/13"],"display":{"frac":{"d":12,"n":11,"kind":"name"},"promptText":"Between 0 and 1, mark number 11 of 12 even marks names which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"11/12","choices":["11/12","10/12","12/11","11/13"],"display":{"frac":{"d":12,"n":11,"kind":"name"},"promptText":"A number line from 0 to 1 is cut into 12 equal steps. Which fraction is at the end of step 11?"}},
   },
   {
     itemId: "fractions-proc-b0821-0243",
@@ -20812,7 +20812,7 @@ export const ITEMS = [
     structureType: "tickName_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7/10","choices":["10/7","7/11","7/10","6/10"],"display":{"frac":{"d":10,"n":7,"kind":"name"},"promptText":"Precisely where does mark 7 of 10 fall between 0 and 1? Name the fraction."}},
+    question: {"a":null,"b":null,"op":"count","answer":"7/10","choices":["10/7","7/11","7/10","6/10"],"display":{"frac":{"d":10,"n":7,"kind":"name"},"promptText":"Split a number line from 0 to 1 into 10 equal steps. What fraction is at the mark after step 7?"}},
   },
   {
     itemId: "fractions-proc-b0821-0244",
@@ -20822,7 +20822,7 @@ export const ITEMS = [
     structureType: "tickName_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7/12","choices":["12/7","7/12","7/13","6/12"],"display":{"frac":{"d":12,"n":7,"kind":"name"},"promptText":"Between 0 and 1, mark number 7 of 12 even marks names which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"7/12","choices":["12/7","7/12","7/13","6/12"],"display":{"frac":{"d":12,"n":7,"kind":"name"},"promptText":"A number line from 0 to 1 is cut into 12 equal steps. Which fraction is at the end of step 7?"}},
   },
   {
     itemId: "fractions-proc-b0821-0245",
@@ -20842,7 +20842,7 @@ export const ITEMS = [
     structureType: "tickName_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["10/9","8/10","9/10","9/11"],"display":{"frac":{"d":10,"n":9,"kind":"name"},"promptText":"Of 10 evenly spaced marks between 0 and 1, mark 9 corresponds to which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["10/9","8/10","9/10","9/11"],"display":{"frac":{"d":10,"n":9,"kind":"name"},"promptText":"A number line from 0 to 1 has 11 marks with 10 equal steps between them. Which fraction is 9 steps from 0?"}},
   },
   {
     itemId: "fractions-proc-b0821-0247",
@@ -20862,7 +20862,7 @@ export const ITEMS = [
     structureType: "tickName_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"11/12","choices":["11/13","11/12","12/11","10/12"],"display":{"frac":{"d":12,"n":11,"kind":"name"},"promptText":"Of 12 evenly spaced marks between 0 and 1, mark 11 corresponds to which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"11/12","choices":["11/13","11/12","12/11","10/12"],"display":{"frac":{"d":12,"n":11,"kind":"name"},"promptText":"A number line from 0 to 1 has 13 marks with 12 equal steps between them. Which fraction is 11 steps from 0?"}},
   },
   {
     itemId: "fractions-proc-b0821-0249",
@@ -20882,7 +20882,7 @@ export const ITEMS = [
     structureType: "tickName_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7/12","choices":["6/12","12/7","7/12","7/13"],"display":{"frac":{"d":12,"n":7,"kind":"name"},"promptText":"Of 12 evenly spaced marks between 0 and 1, mark 7 corresponds to which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"7/12","choices":["6/12","12/7","7/12","7/13"],"display":{"frac":{"d":12,"n":7,"kind":"name"},"promptText":"A number line from 0 to 1 has 13 marks with 12 equal steps between them. Which fraction is 7 steps from 0?"}},
   },
   {
     itemId: "fractions-proc-b0821-0251",
@@ -20892,7 +20892,7 @@ export const ITEMS = [
     structureType: "countUnits_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"d":2,"n":2,"kind":"jumps"},"promptText":"How many copies of 1/2 make 2/2? Count them."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"d":2,"n":2,"kind":"jumps"},"promptText":"How many copies of 1/2 make 2/2?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0252",
@@ -20932,7 +20932,7 @@ export const ITEMS = [
     structureType: "countUnits_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"d":3,"n":3,"kind":"jumps"},"promptText":"How many copies of 1/3 make 3/3? Count them."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"d":3,"n":3,"kind":"jumps"},"promptText":"How many copies of 1/3 make 3/3?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0256",
@@ -20972,7 +20972,7 @@ export const ITEMS = [
     structureType: "countUnits_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"d":4,"n":3,"kind":"jumps"},"promptText":"How many copies of 1/4 make 3/4? Count them."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"d":4,"n":3,"kind":"jumps"},"promptText":"How many copies of 1/4 make 3/4?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0260",
@@ -21022,7 +21022,7 @@ export const ITEMS = [
     structureType: "unitsBuild_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/2","choices":["3/2","2/3","2/2"],"display":{"frac":{"d":2,"n":2,"kind":"name"},"promptText":"Put 2 of the 1/2 pieces together. Pick the fraction they form."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/2","choices":["3/2","2/3","2/2"],"display":{"frac":{"d":2,"n":2,"kind":"name"},"promptText":"What fraction do 2 pieces of 1/2 make together?"}},
   },
   {
     itemId: "fractions-proc-b0821-0265",
@@ -21062,7 +21062,7 @@ export const ITEMS = [
     structureType: "unitsBuild_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/3","choices":["3/3","3/4","4/3"],"display":{"frac":{"d":3,"n":3,"kind":"name"},"promptText":"Put 3 of the 1/3 pieces together. Pick the fraction they form."}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/3","choices":["3/3","3/4","4/3"],"display":{"frac":{"d":3,"n":3,"kind":"name"},"promptText":"What fraction do 3 pieces of 1/3 make together?"}},
   },
   {
     itemId: "fractions-proc-b0821-0269",
@@ -21102,7 +21102,7 @@ export const ITEMS = [
     structureType: "unitsBuild_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/4","choices":["4/3","3/4","4/4","3/5"],"display":{"frac":{"d":4,"n":3,"kind":"name"},"promptText":"Put 3 of the 1/4 pieces together. Pick the fraction they form."}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/4","choices":["4/3","3/4","4/4","3/5"],"display":{"frac":{"d":4,"n":3,"kind":"name"},"promptText":"What fraction do 3 pieces of 1/4 make together?"}},
   },
   {
     itemId: "fractions-proc-b0821-0273",
@@ -21372,7 +21372,7 @@ export const ITEMS = [
     structureType: "countUnits_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"frac":{"d":10,"n":7,"kind":"jumps"},"promptText":"Exactly how many copies of 1/10 sum to 7/10?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"frac":{"d":10,"n":7,"kind":"jumps"},"promptText":"How many copies of 1/10 add up to 7/10?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0300",
@@ -21382,7 +21382,7 @@ export const ITEMS = [
     structureType: "unitsBuild_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7/10","choices":["8/10","7/10","7/11","10/7"],"display":{"frac":{"d":10,"n":7,"kind":"name"},"promptText":"Exactly 7 copies of 1/10 compose which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"7/10","choices":["8/10","7/10","7/11","10/7"],"display":{"frac":{"d":10,"n":7,"kind":"name"},"promptText":"What fraction do 7 copies of 1/10 make?"}},
   },
   {
     itemId: "fractions-proc-b0821-0301",
@@ -21412,7 +21412,7 @@ export const ITEMS = [
     structureType: "countUnits_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"frac":{"d":10,"n":10,"kind":"jumps"},"promptText":"Exactly how many copies of 1/10 sum to 10/10?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"frac":{"d":10,"n":10,"kind":"jumps"},"promptText":"10/10 is made of how many copies of 1/10?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0304",
@@ -21422,7 +21422,7 @@ export const ITEMS = [
     structureType: "unitsBuild_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"10/10","choices":["10/10","11/10","10/11"],"display":{"frac":{"d":10,"n":10,"kind":"name"},"promptText":"Exactly 10 copies of 1/10 compose which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"10/10","choices":["10/10","11/10","10/11"],"display":{"frac":{"d":10,"n":10,"kind":"name"},"promptText":"10 copies of 1/10 make which fraction?"}},
   },
   {
     itemId: "fractions-proc-b0821-0305",
@@ -21452,7 +21452,7 @@ export const ITEMS = [
     structureType: "countUnits_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"frac":{"d":12,"n":7,"kind":"jumps"},"promptText":"Exactly how many copies of 1/12 sum to 7/12?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"frac":{"d":12,"n":7,"kind":"jumps"},"promptText":"How many copies of 1/12 add up to 7/12?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0308",
@@ -21462,7 +21462,7 @@ export const ITEMS = [
     structureType: "unitsBuild_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7/12","choices":["12/7","8/12","7/13","7/12"],"display":{"frac":{"d":12,"n":7,"kind":"name"},"promptText":"Exactly 7 copies of 1/12 compose which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"7/12","choices":["12/7","8/12","7/13","7/12"],"display":{"frac":{"d":12,"n":7,"kind":"name"},"promptText":"What fraction do 7 copies of 1/12 make?"}},
   },
   {
     itemId: "fractions-proc-b0821-0309",
@@ -21492,7 +21492,7 @@ export const ITEMS = [
     structureType: "countUnits_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"frac":{"d":12,"n":12,"kind":"jumps"},"promptText":"Exactly how many copies of 1/12 sum to 12/12?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"frac":{"d":12,"n":12,"kind":"jumps"},"promptText":"12/12 is made of how many copies of 1/12?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0312",
@@ -21502,7 +21502,7 @@ export const ITEMS = [
     structureType: "unitsBuild_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"12/12","choices":["13/12","12/12","12/13"],"display":{"frac":{"d":12,"n":12,"kind":"name"},"promptText":"Exactly 12 copies of 1/12 compose which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"12/12","choices":["13/12","12/12","12/13"],"display":{"frac":{"d":12,"n":12,"kind":"name"},"promptText":"12 copies of 1/12 make which fraction?"}},
   },
   {
     itemId: "fractions-proc-b0821-0313",
@@ -21532,7 +21532,7 @@ export const ITEMS = [
     structureType: "countUnits_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"d":12,"n":4,"kind":"jumps"},"promptText":"Exactly how many copies of 1/12 sum to 4/12?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"d":12,"n":4,"kind":"jumps"},"promptText":"How many copies of 1/12 add up to 4/12?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0316",
@@ -21542,7 +21542,7 @@ export const ITEMS = [
     structureType: "unitsBuild_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4/12","choices":["4/13","4/12","12/4","5/12"],"display":{"frac":{"d":12,"n":4,"kind":"name"},"promptText":"Exactly 4 copies of 1/12 compose which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"4/12","choices":["4/13","4/12","12/4","5/12"],"display":{"frac":{"d":12,"n":4,"kind":"name"},"promptText":"What fraction do 4 copies of 1/12 make?"}},
   },
   {
     itemId: "fractions-proc-b0821-0317",
@@ -21572,7 +21572,7 @@ export const ITEMS = [
     structureType: "countUnits_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"frac":{"d":12,"n":8,"kind":"jumps"},"promptText":"Exactly how many copies of 1/12 sum to 8/12?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"frac":{"d":12,"n":8,"kind":"jumps"},"promptText":"8/12 is made of how many copies of 1/12?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0320",
@@ -21582,7 +21582,7 @@ export const ITEMS = [
     structureType: "unitsBuild_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"8/12","choices":["9/12","8/13","12/8","8/12"],"display":{"frac":{"d":12,"n":8,"kind":"name"},"promptText":"Exactly 8 copies of 1/12 compose which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"8/12","choices":["9/12","8/13","12/8","8/12"],"display":{"frac":{"d":12,"n":8,"kind":"name"},"promptText":"8 copies of 1/12 make which fraction?"}},
   },
   {
     itemId: "fractions-proc-b0821-0321",
@@ -21612,7 +21612,7 @@ export const ITEMS = [
     structureType: "scaleUp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":1,"b":2,"d2":4,"kind":"equivNum"},"promptText":"1/2 = ?/4. What is the missing top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":1,"b":2,"d2":4,"kind":"equivNum"},"promptText":"1/2 = __/4. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0324",
@@ -21622,7 +21622,7 @@ export const ITEMS = [
     structureType: "scaleUp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":1,"b":2,"d2":8,"kind":"equivNum"},"promptText":"1/2 = ?/8. What is the missing top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":1,"b":2,"d2":8,"kind":"equivNum"},"promptText":"What top number makes 1/2 = __/8 true?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0325",
@@ -21632,7 +21632,7 @@ export const ITEMS = [
     structureType: "scaleUp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":1,"b":3,"d2":6,"kind":"equivNum"},"promptText":"1/3 = ?/6. What is the missing top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":1,"b":3,"d2":6,"kind":"equivNum"},"promptText":"1/3 = __/6. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0326",
@@ -21642,7 +21642,7 @@ export const ITEMS = [
     structureType: "scaleUp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":2,"b":3,"d2":6,"kind":"equivNum"},"promptText":"2/3 = ?/6. What is the missing top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":2,"b":3,"d2":6,"kind":"equivNum"},"promptText":"What top number makes 2/3 = __/6 true?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0327",
@@ -21652,7 +21652,7 @@ export const ITEMS = [
     structureType: "scaleUp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":1,"b":4,"d2":8,"kind":"equivNum"},"promptText":"1/4 = ?/8. What is the missing top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":1,"b":4,"d2":8,"kind":"equivNum"},"promptText":"1/4 = __/8. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0328",
@@ -21662,7 +21662,7 @@ export const ITEMS = [
     structureType: "scaleUp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"a":3,"b":4,"d2":8,"kind":"equivNum"},"promptText":"3/4 = ?/8. What is the missing top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"a":3,"b":4,"d2":8,"kind":"equivNum"},"promptText":"What top number makes 3/4 = __/8 true?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0329",
@@ -21732,7 +21732,7 @@ export const ITEMS = [
     structureType: "scaleUp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"a":1,"b":2,"d2":10,"kind":"equivNum"},"promptText":"Scale 1/2 up to denominator 10. The numerator becomes ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"a":1,"b":2,"d2":10,"kind":"equivNum"},"promptText":"Find the fraction equal to 1/2 that has a denominator of 10. What is its numerator?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0336",
@@ -21742,7 +21742,7 @@ export const ITEMS = [
     structureType: "scaleUp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":2,"b":5,"d2":10,"kind":"equivNum"},"promptText":"Scale 2/5 up to denominator 10. The numerator becomes ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":2,"b":5,"d2":10,"kind":"equivNum"},"promptText":"2/5 = __/10. What numerator goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0337",
@@ -21752,7 +21752,7 @@ export const ITEMS = [
     structureType: "scaleUp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"a":3,"b":5,"d2":10,"kind":"equivNum"},"promptText":"Scale 3/5 up to denominator 10. The numerator becomes ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"a":3,"b":5,"d2":10,"kind":"equivNum"},"promptText":"Find the fraction equal to 3/5 that has a denominator of 10. What is its numerator?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0338",
@@ -21762,7 +21762,7 @@ export const ITEMS = [
     structureType: "scaleUp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":1,"b":3,"d2":12,"kind":"equivNum"},"promptText":"Scale 1/3 up to denominator 12. The numerator becomes ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":1,"b":3,"d2":12,"kind":"equivNum"},"promptText":"1/3 = __/12. What numerator goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0339",
@@ -21772,7 +21772,7 @@ export const ITEMS = [
     structureType: "scaleUp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":1,"b":6,"d2":12,"kind":"equivNum"},"promptText":"Scale 1/6 up to denominator 12. The numerator becomes ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":1,"b":6,"d2":12,"kind":"equivNum"},"promptText":"Find the fraction equal to 1/6 that has a denominator of 12. What is its numerator?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0340",
@@ -21782,7 +21782,7 @@ export const ITEMS = [
     structureType: "scaleUp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"frac":{"a":5,"b":6,"d2":12,"kind":"equivNum"},"promptText":"Scale 5/6 up to denominator 12. The numerator becomes ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"frac":{"a":5,"b":6,"d2":12,"kind":"equivNum"},"promptText":"5/6 = __/12. What numerator goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0341",
@@ -21792,7 +21792,7 @@ export const ITEMS = [
     structureType: "scaleUp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"frac":{"a":3,"b":4,"d2":12,"kind":"equivNum"},"promptText":"3/4 = ?/12. What is the top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"frac":{"a":3,"b":4,"d2":12,"kind":"equivNum"},"promptText":"3/4 = __/12. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0342",
@@ -21802,7 +21802,7 @@ export const ITEMS = [
     structureType: "scaleUp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":1,"b":4,"d2":12,"kind":"equivNum"},"promptText":"1/4 = ?/12. What is the top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":1,"b":4,"d2":12,"kind":"equivNum"},"promptText":"Fill in the blank: 1/4 = __/12. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0343",
@@ -21812,7 +21812,7 @@ export const ITEMS = [
     structureType: "scaleUp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"frac":{"a":2,"b":3,"d2":12,"kind":"equivNum"},"promptText":"2/3 = ?/12. What is the top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"frac":{"a":2,"b":3,"d2":12,"kind":"equivNum"},"promptText":"2/3 = __/12. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0344",
@@ -21822,7 +21822,7 @@ export const ITEMS = [
     structureType: "scaleUp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"frac":{"a":4,"b":5,"d2":10,"kind":"equivNum"},"promptText":"4/5 = ?/10. What is the top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"frac":{"a":4,"b":5,"d2":10,"kind":"equivNum"},"promptText":"Fill in the blank: 4/5 = __/10. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0345",
@@ -21832,7 +21832,7 @@ export const ITEMS = [
     structureType: "scaleUp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":1,"b":5,"d2":10,"kind":"equivNum"},"promptText":"1/5 = ?/10. What is the top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":1,"b":5,"d2":10,"kind":"equivNum"},"promptText":"1/5 = __/10. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0346",
@@ -21842,7 +21842,7 @@ export const ITEMS = [
     structureType: "scaleUp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":1,"b":2,"d2":6,"kind":"equivNum"},"promptText":"1/2 = ?/6. What is the top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":1,"b":2,"d2":6,"kind":"equivNum"},"promptText":"Fill in the blank: 1/2 = __/6. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0347",
@@ -21852,7 +21852,7 @@ export const ITEMS = [
     structureType: "scaleUp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"frac":{"a":7,"b":10,"d2":20,"kind":"equivNum"},"promptText":"Convert 7/10 exactly to ?/20. What numerator is required?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"frac":{"a":7,"b":10,"d2":20,"kind":"equivNum"},"promptText":"7/10 = __/20. What is the missing numerator?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0348",
@@ -21862,7 +21862,7 @@ export const ITEMS = [
     structureType: "scaleUp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"a":3,"b":10,"d2":20,"kind":"equivNum"},"promptText":"Convert 3/10 exactly to ?/20. What numerator is required?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"a":3,"b":10,"d2":20,"kind":"equivNum"},"promptText":"What numerator makes 3/10 = __/20 true?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0349",
@@ -21872,7 +21872,7 @@ export const ITEMS = [
     structureType: "scaleUp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"frac":{"a":5,"b":12,"d2":24,"kind":"equivNum"},"promptText":"Convert 5/12 exactly to ?/24. What numerator is required?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"frac":{"a":5,"b":12,"d2":24,"kind":"equivNum"},"promptText":"5/12 = __/24. What is the missing numerator?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0350",
@@ -21882,7 +21882,7 @@ export const ITEMS = [
     structureType: "scaleUp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"frac":{"a":7,"b":12,"d2":24,"kind":"equivNum"},"promptText":"Convert 7/12 exactly to ?/24. What numerator is required?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"frac":{"a":7,"b":12,"d2":24,"kind":"equivNum"},"promptText":"What numerator makes 7/12 = __/24 true?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0351",
@@ -21892,7 +21892,7 @@ export const ITEMS = [
     structureType: "scaleUp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"frac":{"a":2,"b":3,"d2":12,"kind":"equivNum"},"promptText":"Convert 2/3 exactly to ?/12. What numerator is required?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"frac":{"a":2,"b":3,"d2":12,"kind":"equivNum"},"promptText":"2/3 = __/12. What is the missing numerator?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0352",
@@ -21902,7 +21902,7 @@ export const ITEMS = [
     structureType: "scaleUp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"frac":{"a":5,"b":6,"d2":12,"kind":"equivNum"},"promptText":"Convert 5/6 exactly to ?/12. What numerator is required?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"frac":{"a":5,"b":6,"d2":12,"kind":"equivNum"},"promptText":"What numerator makes 5/6 = __/12 true?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0353",
@@ -21912,7 +21912,7 @@ export const ITEMS = [
     structureType: "scaleUp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"frac":{"a":3,"b":8,"d2":24,"kind":"equivNum"},"promptText":"The fraction 3/8 restated over 24 takes which top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"frac":{"a":3,"b":8,"d2":24,"kind":"equivNum"},"promptText":"Write 3/8 as an equal fraction with a bottom number of 24. What is its top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0354",
@@ -21922,7 +21922,7 @@ export const ITEMS = [
     structureType: "scaleUp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"frac":{"a":5,"b":8,"d2":24,"kind":"equivNum"},"promptText":"The fraction 5/8 restated over 24 takes which top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"frac":{"a":5,"b":8,"d2":24,"kind":"equivNum"},"promptText":"5/8 = __/24. What top number fits in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0355",
@@ -21932,7 +21932,7 @@ export const ITEMS = [
     structureType: "scaleUp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"frac":{"a":3,"b":4,"d2":12,"kind":"equivNum"},"promptText":"The fraction 3/4 restated over 12 takes which top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"frac":{"a":3,"b":4,"d2":12,"kind":"equivNum"},"promptText":"Write 3/4 as an equal fraction with a bottom number of 12. What is its top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0356",
@@ -21942,7 +21942,7 @@ export const ITEMS = [
     structureType: "scaleUp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"frac":{"a":9,"b":10,"d2":20,"kind":"equivNum"},"promptText":"The fraction 9/10 restated over 20 takes which top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"frac":{"a":9,"b":10,"d2":20,"kind":"equivNum"},"promptText":"9/10 = __/20. What top number fits in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0357",
@@ -21952,7 +21952,7 @@ export const ITEMS = [
     structureType: "scaleUp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"frac":{"a":11,"b":12,"d2":24,"kind":"equivNum"},"promptText":"The fraction 11/12 restated over 24 takes which top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"frac":{"a":11,"b":12,"d2":24,"kind":"equivNum"},"promptText":"Write 11/12 as an equal fraction with a bottom number of 24. What is its top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0358",
@@ -21962,7 +21962,7 @@ export const ITEMS = [
     structureType: "scaleUp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":1,"b":8,"d2":24,"kind":"equivNum"},"promptText":"The fraction 1/8 restated over 24 takes which top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":1,"b":8,"d2":24,"kind":"equivNum"},"promptText":"1/8 = __/24. What top number fits in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0359",
@@ -21972,7 +21972,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":2,"b":4,"kind":"simplifyDen"},"promptText":"2/4 = 1/?. What is the missing bottom number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":2,"b":4,"kind":"simplifyDen"},"promptText":"2/4 = 1/__. What is the missing bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0360",
@@ -21982,7 +21982,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":2,"b":8,"kind":"simplifyDen"},"promptText":"2/8 = 1/?. What is the missing bottom number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":2,"b":8,"kind":"simplifyDen"},"promptText":"What bottom number makes 2/8 = 1/__ true?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0361",
@@ -21992,7 +21992,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":2,"b":6,"kind":"simplifyDen"},"promptText":"2/6 = 1/?. What is the missing bottom number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":2,"b":6,"kind":"simplifyDen"},"promptText":"2/6 = 1/__. What is the missing bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0362",
@@ -22002,7 +22002,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":3,"b":6,"kind":"simplifyDen"},"promptText":"3/6 = 1/?. What is the missing bottom number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":3,"b":6,"kind":"simplifyDen"},"promptText":"What bottom number makes 3/6 = 1/__ true?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0363",
@@ -22012,7 +22012,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":4,"b":8,"kind":"simplifyDen"},"promptText":"4/8 = 1/?. What is the missing bottom number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":4,"b":8,"kind":"simplifyDen"},"promptText":"4/8 = 1/__. What is the missing bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0364",
@@ -22022,7 +22022,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":3,"b":9,"kind":"simplifyDen"},"promptText":"3/9 = 1/?. What is the missing bottom number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":3,"b":9,"kind":"simplifyDen"},"promptText":"What bottom number makes 3/9 = 1/__ true?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0365",
@@ -22032,7 +22032,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":2,"b":4,"kind":"simplifyDen"},"promptText":"Shrink 2/4 to a unit fraction 1 over what?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":2,"b":4,"kind":"simplifyDen"},"promptText":"2/4 = 1/__. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0366",
@@ -22042,7 +22042,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":2,"b":8,"kind":"simplifyDen"},"promptText":"Shrink 2/8 to a unit fraction 1 over what?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":2,"b":8,"kind":"simplifyDen"},"promptText":"Write 2/8 as an equal fraction with a top number of 1. What is its bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0367",
@@ -22052,7 +22052,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":2,"b":6,"kind":"simplifyDen"},"promptText":"Shrink 2/6 to a unit fraction 1 over what?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":2,"b":6,"kind":"simplifyDen"},"promptText":"2/6 = 1/__. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0368",
@@ -22062,7 +22062,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":3,"b":6,"kind":"simplifyDen"},"promptText":"Shrink 3/6 to a unit fraction 1 over what?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":3,"b":6,"kind":"simplifyDen"},"promptText":"Write 3/6 as an equal fraction with a top number of 1. What is its bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0369",
@@ -22072,7 +22072,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":4,"b":8,"kind":"simplifyDen"},"promptText":"Shrink 4/8 to a unit fraction 1 over what?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":4,"b":8,"kind":"simplifyDen"},"promptText":"4/8 = 1/__. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0370",
@@ -22082,7 +22082,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":3,"b":9,"kind":"simplifyDen"},"promptText":"Shrink 3/9 to a unit fraction 1 over what?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":3,"b":9,"kind":"simplifyDen"},"promptText":"Write 3/9 as an equal fraction with a top number of 1. What is its bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0371",
@@ -22092,7 +22092,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"a":2,"b":10,"kind":"simplifyDen"},"promptText":"Simplify 2/10 to lowest terms 1/?. Which denominator remains?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"a":2,"b":10,"kind":"simplifyDen"},"promptText":"Write 2/10 as an equal fraction with a top number of 1. What is its bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0372",
@@ -22102,7 +22102,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":5,"b":10,"kind":"simplifyDen"},"promptText":"Simplify 5/10 to lowest terms 1/?. Which denominator remains?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":5,"b":10,"kind":"simplifyDen"},"promptText":"5/10 = 1/__. What is the missing bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0373",
@@ -22112,7 +22112,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"a":2,"b":12,"kind":"simplifyDen"},"promptText":"Simplify 2/12 to lowest terms 1/?. Which denominator remains?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"a":2,"b":12,"kind":"simplifyDen"},"promptText":"Write 2/12 as an equal fraction with a top number of 1. What is its bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0374",
@@ -22122,7 +22122,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":3,"b":12,"kind":"simplifyDen"},"promptText":"Simplify 3/12 to lowest terms 1/?. Which denominator remains?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":3,"b":12,"kind":"simplifyDen"},"promptText":"3/12 = 1/__. What is the missing bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0375",
@@ -22132,7 +22132,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":4,"b":12,"kind":"simplifyDen"},"promptText":"Simplify 4/12 to lowest terms 1/?. Which denominator remains?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":4,"b":12,"kind":"simplifyDen"},"promptText":"Write 4/12 as an equal fraction with a top number of 1. What is its bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0376",
@@ -22142,7 +22142,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":6,"b":12,"kind":"simplifyDen"},"promptText":"Simplify 6/12 to lowest terms 1/?. Which denominator remains?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":6,"b":12,"kind":"simplifyDen"},"promptText":"6/12 = 1/__. What is the missing bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0377",
@@ -22152,7 +22152,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"frac":{"a":2,"b":16,"kind":"simplifyDen"},"promptText":"2/16 reduces to one over which number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"frac":{"a":2,"b":16,"kind":"simplifyDen"},"promptText":"2/16 = 1/__. What is the missing denominator?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0378",
@@ -22162,7 +22162,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":4,"b":16,"kind":"simplifyDen"},"promptText":"4/16 reduces to one over which number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":4,"b":16,"kind":"simplifyDen"},"promptText":"Write 4/16 as an equal fraction with 1 on top. What is its bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0379",
@@ -22172,7 +22172,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":5,"b":15,"kind":"simplifyDen"},"promptText":"5/15 reduces to one over which number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":5,"b":15,"kind":"simplifyDen"},"promptText":"5/15 = 1/__. What is the missing denominator?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0380",
@@ -22182,7 +22182,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"a":3,"b":15,"kind":"simplifyDen"},"promptText":"3/15 reduces to one over which number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"a":3,"b":15,"kind":"simplifyDen"},"promptText":"Write 3/15 as an equal fraction with 1 on top. What is its bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0381",
@@ -22192,7 +22192,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"frac":{"a":2,"b":14,"kind":"simplifyDen"},"promptText":"2/14 reduces to one over which number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"frac":{"a":2,"b":14,"kind":"simplifyDen"},"promptText":"2/14 = 1/__. What is the missing denominator?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0382",
@@ -22202,7 +22202,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":7,"b":14,"kind":"simplifyDen"},"promptText":"7/14 reduces to one over which number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":7,"b":14,"kind":"simplifyDen"},"promptText":"Write 7/14 as an equal fraction with 1 on top. What is its bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0383",
@@ -22212,7 +22212,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"frac":{"a":2,"b":20,"kind":"simplifyDen"},"promptText":"In lowest terms 2/20 is 1/?. Exactly which denominator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"frac":{"a":2,"b":20,"kind":"simplifyDen"},"promptText":"Find the fraction equal to 2/20 that has 1 on top. What is its bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0384",
@@ -22222,7 +22222,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"a":4,"b":20,"kind":"simplifyDen"},"promptText":"In lowest terms 4/20 is 1/?. Exactly which denominator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"a":4,"b":20,"kind":"simplifyDen"},"promptText":"4/20 = 1/__. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0385",
@@ -22232,7 +22232,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":5,"b":20,"kind":"simplifyDen"},"promptText":"In lowest terms 5/20 is 1/?. Exactly which denominator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":5,"b":20,"kind":"simplifyDen"},"promptText":"Find the fraction equal to 5/20 that has 1 on top. What is its bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0386",
@@ -22242,7 +22242,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":10,"b":20,"kind":"simplifyDen"},"promptText":"In lowest terms 10/20 is 1/?. Exactly which denominator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":10,"b":20,"kind":"simplifyDen"},"promptText":"10/20 = 1/__. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0387",
@@ -22252,7 +22252,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"frac":{"a":2,"b":24,"kind":"simplifyDen"},"promptText":"In lowest terms 2/24 is 1/?. Exactly which denominator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"frac":{"a":2,"b":24,"kind":"simplifyDen"},"promptText":"Find the fraction equal to 2/24 that has 1 on top. What is its bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0388",
@@ -22262,7 +22262,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"frac":{"a":3,"b":24,"kind":"simplifyDen"},"promptText":"In lowest terms 3/24 is 1/?. Exactly which denominator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"frac":{"a":3,"b":24,"kind":"simplifyDen"},"promptText":"3/24 = 1/__. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0389",
@@ -22272,7 +22272,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"a":4,"b":24,"kind":"simplifyDen"},"promptText":"Fully reduce 4/24. The unit fraction's bottom number = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"a":4,"b":24,"kind":"simplifyDen"},"promptText":"4/24 = 1/__. What is the missing bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0390",
@@ -22282,7 +22282,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":6,"b":24,"kind":"simplifyDen"},"promptText":"Fully reduce 6/24. The unit fraction's bottom number = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":6,"b":24,"kind":"simplifyDen"},"promptText":"Write 6/24 as an equal fraction with 1 as the top number. What is its bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0391",
@@ -22292,7 +22292,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":8,"b":24,"kind":"simplifyDen"},"promptText":"Fully reduce 8/24. The unit fraction's bottom number = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":8,"b":24,"kind":"simplifyDen"},"promptText":"8/24 = 1/__. What is the missing bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0392",
@@ -22302,7 +22302,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":12,"b":24,"kind":"simplifyDen"},"promptText":"Fully reduce 12/24. The unit fraction's bottom number = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":12,"b":24,"kind":"simplifyDen"},"promptText":"Write 12/24 as an equal fraction with 1 as the top number. What is its bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0393",
@@ -22312,7 +22312,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"a":5,"b":25,"kind":"simplifyDen"},"promptText":"Fully reduce 5/25. The unit fraction's bottom number = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"a":5,"b":25,"kind":"simplifyDen"},"promptText":"5/25 = 1/__. What is the missing bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0394",
@@ -22322,7 +22322,7 @@ export const ITEMS = [
     structureType: "simplifyUnit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":10,"b":30,"kind":"simplifyDen"},"promptText":"Fully reduce 10/30. The unit fraction's bottom number = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":10,"b":30,"kind":"simplifyDen"},"promptText":"Write 10/30 as an equal fraction with 1 as the top number. What is its bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0395",
@@ -22332,7 +22332,7 @@ export const ITEMS = [
     structureType: "missingDen_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":1,"b":2,"c":2,"kind":"equivDen"},"promptText":"1/2 = 2/?. What is the missing bottom number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":1,"b":2,"c":2,"kind":"equivDen"},"promptText":"1/2 = 2/__. What is the missing bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0396",
@@ -22352,7 +22352,7 @@ export const ITEMS = [
     structureType: "missingDen_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"frac":{"a":1,"b":2,"c":4,"kind":"equivDen"},"promptText":"1/2 = 4/?. What is the missing bottom number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"frac":{"a":1,"b":2,"c":4,"kind":"equivDen"},"promptText":"What bottom number makes 1/2 = 4/__ true?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0398",
@@ -22372,7 +22372,7 @@ export const ITEMS = [
     structureType: "missingDen_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"frac":{"a":1,"b":4,"c":2,"kind":"equivDen"},"promptText":"1/4 = 2/?. What is the missing bottom number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"frac":{"a":1,"b":4,"c":2,"kind":"equivDen"},"promptText":"1/4 = 2/__. What is the missing bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0400",
@@ -22392,7 +22392,7 @@ export const ITEMS = [
     structureType: "missingDen_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"frac":{"a":3,"b":4,"c":6,"kind":"equivDen"},"promptText":"3/4 = 6/?. What is the missing bottom number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"frac":{"a":3,"b":4,"c":6,"kind":"equivDen"},"promptText":"What bottom number makes 3/4 = 6/__ true?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0402",
@@ -22412,7 +22412,7 @@ export const ITEMS = [
     structureType: "missingDen_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"frac":{"a":1,"b":3,"c":3,"kind":"equivDen"},"promptText":"1/3 = 3/?. What is the missing bottom number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"frac":{"a":1,"b":3,"c":3,"kind":"equivDen"},"promptText":"1/3 = 3/__. What is the missing bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0404",
@@ -22432,7 +22432,7 @@ export const ITEMS = [
     structureType: "missingDen_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"frac":{"a":1,"b":2,"c":6,"kind":"equivDen"},"promptText":"1/2 = 6/?. What is the missing bottom number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"frac":{"a":1,"b":2,"c":6,"kind":"equivDen"},"promptText":"What bottom number makes 1/2 = 6/__ true?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0406",
@@ -22452,7 +22452,7 @@ export const ITEMS = [
     structureType: "missingDen_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"frac":{"a":1,"b":2,"c":7,"kind":"equivDen"},"promptText":"1/2 = 7/?. What is the missing bottom number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"frac":{"a":1,"b":2,"c":7,"kind":"equivDen"},"promptText":"1/2 = 7/__. What is the missing bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0408",
@@ -22462,7 +22462,7 @@ export const ITEMS = [
     structureType: "missingDen_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"frac":{"a":2,"b":5,"c":4,"kind":"equivDen"},"promptText":"Fill in the denominator: 2/5 = 4/?."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"frac":{"a":2,"b":5,"c":4,"kind":"equivDen"},"promptText":"2/5 = 4/__. What is the missing denominator?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0409",
@@ -22482,7 +22482,7 @@ export const ITEMS = [
     structureType: "missingDen_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"frac":{"a":1,"b":6,"c":2,"kind":"equivDen"},"promptText":"Fill in the denominator: 1/6 = 2/?."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"frac":{"a":1,"b":6,"c":2,"kind":"equivDen"},"promptText":"What denominator makes 1/6 = 2/__ true?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0411",
@@ -22502,7 +22502,7 @@ export const ITEMS = [
     structureType: "missingDen_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"frac":{"a":3,"b":4,"c":9,"kind":"equivDen"},"promptText":"Fill in the denominator: 3/4 = 9/?."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"frac":{"a":3,"b":4,"c":9,"kind":"equivDen"},"promptText":"3/4 = 9/__. What is the missing denominator?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0413",
@@ -22522,7 +22522,7 @@ export const ITEMS = [
     structureType: "missingDen_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"frac":{"a":4,"b":5,"c":8,"kind":"equivDen"},"promptText":"Fill in the denominator: 4/5 = 8/?."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"frac":{"a":4,"b":5,"c":8,"kind":"equivDen"},"promptText":"What denominator makes 4/5 = 8/__ true?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0415",
@@ -22542,7 +22542,7 @@ export const ITEMS = [
     structureType: "missingDen_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"frac":{"a":1,"b":8,"c":2,"kind":"equivDen"},"promptText":"Fill in the denominator: 1/8 = 2/?."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"frac":{"a":1,"b":8,"c":2,"kind":"equivDen"},"promptText":"1/8 = 2/__. What is the missing denominator?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0417",
@@ -22562,7 +22562,7 @@ export const ITEMS = [
     structureType: "missingDen_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"frac":{"a":5,"b":8,"c":10,"kind":"equivDen"},"promptText":"Fill in the denominator: 5/8 = 10/?."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"frac":{"a":5,"b":8,"c":10,"kind":"equivDen"},"promptText":"What denominator makes 5/8 = 10/__ true?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0419",
@@ -22582,7 +22582,7 @@ export const ITEMS = [
     structureType: "missingDen_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"frac":{"a":2,"b":5,"c":6,"kind":"equivDen"},"promptText":"Fill in the denominator: 2/5 = 6/?."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"frac":{"a":2,"b":5,"c":6,"kind":"equivDen"},"promptText":"2/5 = 6/__. What is the missing denominator?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0421",
@@ -22592,7 +22592,7 @@ export const ITEMS = [
     structureType: "missingDen_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"frac":{"a":7,"b":10,"c":14,"kind":"equivDen"},"promptText":"Solve for the denominator: 7/10 = 14/? exactly."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"frac":{"a":7,"b":10,"c":14,"kind":"equivDen"},"promptText":"Write 7/10 as an equal fraction with a top number of 14. What is its bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0422",
@@ -22602,7 +22602,7 @@ export const ITEMS = [
     structureType: "missingDen_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"frac":{"a":3,"b":10,"c":9,"kind":"equivDen"},"promptText":"3/10 = 9/?. What is the bottom number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"frac":{"a":3,"b":10,"c":9,"kind":"equivDen"},"promptText":"3/10 = 9/__. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0423",
@@ -22612,7 +22612,7 @@ export const ITEMS = [
     structureType: "missingDen_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"frac":{"a":5,"b":12,"c":10,"kind":"equivDen"},"promptText":"Solve for the denominator: 5/12 = 10/? exactly."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"frac":{"a":5,"b":12,"c":10,"kind":"equivDen"},"promptText":"5/12 = 10/__. What is the missing bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0424",
@@ -22622,7 +22622,7 @@ export const ITEMS = [
     structureType: "missingDen_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"frac":{"a":7,"b":12,"c":21,"kind":"equivDen"},"promptText":"7/12 = 21/?. What is the bottom number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"frac":{"a":7,"b":12,"c":21,"kind":"equivDen"},"promptText":"What bottom number makes 7/12 = 21/__ true?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0425",
@@ -22632,7 +22632,7 @@ export const ITEMS = [
     structureType: "missingDen_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"frac":{"a":9,"b":10,"c":18,"kind":"equivDen"},"promptText":"Solve for the denominator: 9/10 = 18/? exactly."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"frac":{"a":9,"b":10,"c":18,"kind":"equivDen"},"promptText":"Write 9/10 as an equal fraction with a top number of 18. What is its bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0426",
@@ -22642,7 +22642,7 @@ export const ITEMS = [
     structureType: "missingDen_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"frac":{"a":11,"b":12,"c":22,"kind":"equivDen"},"promptText":"11/12 = 22/?. What is the bottom number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"frac":{"a":11,"b":12,"c":22,"kind":"equivDen"},"promptText":"11/12 = 22/__. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0427",
@@ -22652,7 +22652,7 @@ export const ITEMS = [
     structureType: "missingDen_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"frac":{"a":2,"b":3,"c":8,"kind":"equivDen"},"promptText":"Solve for the denominator: 2/3 = 8/? exactly."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"frac":{"a":2,"b":3,"c":8,"kind":"equivDen"},"promptText":"2/3 = 8/__. What is the missing bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0428",
@@ -22662,7 +22662,7 @@ export const ITEMS = [
     structureType: "missingDen_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"frac":{"a":5,"b":6,"c":15,"kind":"equivDen"},"promptText":"5/6 = 15/?. What is the bottom number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"frac":{"a":5,"b":6,"c":15,"kind":"equivDen"},"promptText":"What bottom number makes 5/6 = 15/__ true?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0429",
@@ -22672,7 +22672,7 @@ export const ITEMS = [
     structureType: "missingDen_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"frac":{"a":3,"b":8,"c":9,"kind":"equivDen"},"promptText":"Solve for the denominator: 3/8 = 9/? exactly."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"frac":{"a":3,"b":8,"c":9,"kind":"equivDen"},"promptText":"Write 3/8 as an equal fraction with a top number of 9. What is its bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0430",
@@ -22682,7 +22682,7 @@ export const ITEMS = [
     structureType: "missingDen_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"frac":{"a":5,"b":8,"c":15,"kind":"equivDen"},"promptText":"5/8 = 15/?. What is the bottom number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"frac":{"a":5,"b":8,"c":15,"kind":"equivDen"},"promptText":"5/8 = 15/__. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0431",
@@ -22692,7 +22692,7 @@ export const ITEMS = [
     structureType: "missingDen_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"frac":{"a":3,"b":4,"c":18,"kind":"equivDen"},"promptText":"Solve for the denominator: 3/4 = 18/? exactly."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"frac":{"a":3,"b":4,"c":18,"kind":"equivDen"},"promptText":"3/4 = 18/__. What is the missing bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0432",
@@ -22702,7 +22702,7 @@ export const ITEMS = [
     structureType: "missingDen_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"frac":{"a":4,"b":5,"c":16,"kind":"equivDen"},"promptText":"4/5 = 16/?. What is the bottom number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"frac":{"a":4,"b":5,"c":16,"kind":"equivDen"},"promptText":"What bottom number makes 4/5 = 16/__ true?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0433",
@@ -22712,7 +22712,7 @@ export const ITEMS = [
     structureType: "missingDen_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"frac":{"a":9,"b":10,"c":27,"kind":"equivDen"},"promptText":"Solve for the denominator: 9/10 = 27/? exactly."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"frac":{"a":9,"b":10,"c":27,"kind":"equivDen"},"promptText":"Write 9/10 as an equal fraction with a top number of 27. What is its bottom number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0434",
@@ -22722,7 +22722,7 @@ export const ITEMS = [
     structureType: "scaleDown_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":2,"b":4,"d2":2,"kind":"equivNum"},"promptText":"2/4 = ?/2. What top number fits the smaller bottom?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":2,"b":4,"d2":2,"kind":"equivNum"},"promptText":"2/4 = __/2. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0435",
@@ -22732,7 +22732,7 @@ export const ITEMS = [
     structureType: "scaleDown_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":2,"b":6,"d2":3,"kind":"equivNum"},"promptText":"Shrink 2/6 to a bottom number of 3. What is the top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":2,"b":6,"d2":3,"kind":"equivNum"},"promptText":"Write 2/6 as an equal fraction with a bottom number of 3. What is its top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0436",
@@ -22742,7 +22742,7 @@ export const ITEMS = [
     structureType: "scaleDown_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":4,"b":6,"d2":3,"kind":"equivNum"},"promptText":"4/6 = ?/3. What top number fits the smaller bottom?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":4,"b":6,"d2":3,"kind":"equivNum"},"promptText":"What top number makes 4/6 = __/3 true?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0437",
@@ -22752,7 +22752,7 @@ export const ITEMS = [
     structureType: "scaleDown_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":2,"b":8,"d2":4,"kind":"equivNum"},"promptText":"Shrink 2/8 to a bottom number of 4. What is the top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":2,"b":8,"d2":4,"kind":"equivNum"},"promptText":"2/8 = __/4. What top number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0438",
@@ -22762,7 +22762,7 @@ export const ITEMS = [
     structureType: "scaleDown_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":4,"b":8,"d2":4,"kind":"equivNum"},"promptText":"4/8 = ?/4. What top number fits the smaller bottom?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":4,"b":8,"d2":4,"kind":"equivNum"},"promptText":"4/8 = __/4. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0439",
@@ -22772,7 +22772,7 @@ export const ITEMS = [
     structureType: "scaleDown_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":6,"b":8,"d2":4,"kind":"equivNum"},"promptText":"Shrink 6/8 to a bottom number of 4. What is the top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":6,"b":8,"d2":4,"kind":"equivNum"},"promptText":"Write 6/8 as an equal fraction with a bottom number of 4. What is its top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0440",
@@ -22782,7 +22782,7 @@ export const ITEMS = [
     structureType: "scaleDown_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":4,"b":8,"d2":2,"kind":"equivNum"},"promptText":"4/8 = ?/2. What top number fits the smaller bottom?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":4,"b":8,"d2":2,"kind":"equivNum"},"promptText":"What top number makes 4/8 = __/2 true?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0441",
@@ -22792,7 +22792,7 @@ export const ITEMS = [
     structureType: "scaleDown_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":3,"b":9,"d2":3,"kind":"equivNum"},"promptText":"Shrink 3/9 to a bottom number of 3. What is the top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":3,"b":9,"d2":3,"kind":"equivNum"},"promptText":"3/9 = __/3. What top number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0442",
@@ -22802,7 +22802,7 @@ export const ITEMS = [
     structureType: "scaleDown_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":6,"b":9,"d2":3,"kind":"equivNum"},"promptText":"6/9 = ?/3. What top number fits the smaller bottom?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":6,"b":9,"d2":3,"kind":"equivNum"},"promptText":"6/9 = __/3. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0443",
@@ -22812,7 +22812,7 @@ export const ITEMS = [
     structureType: "scaleDown_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":2,"b":10,"d2":5,"kind":"equivNum"},"promptText":"Shrink 2/10 to a bottom number of 5. What is the top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":2,"b":10,"d2":5,"kind":"equivNum"},"promptText":"Write 2/10 as an equal fraction with a bottom number of 5. What is its top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0444",
@@ -22822,7 +22822,7 @@ export const ITEMS = [
     structureType: "scaleDown_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":4,"b":10,"d2":5,"kind":"equivNum"},"promptText":"4/10 = ?/5. What top number fits the smaller bottom?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":4,"b":10,"d2":5,"kind":"equivNum"},"promptText":"What top number makes 4/10 = __/5 true?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0445",
@@ -22832,7 +22832,7 @@ export const ITEMS = [
     structureType: "scaleDown_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":5,"b":10,"d2":2,"kind":"equivNum"},"promptText":"Shrink 5/10 to a bottom number of 2. What is the top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":5,"b":10,"d2":2,"kind":"equivNum"},"promptText":"5/10 = __/2. What top number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0446",
@@ -22842,7 +22842,7 @@ export const ITEMS = [
     structureType: "scaleDown_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":8,"b":10,"d2":5,"kind":"equivNum"},"promptText":"8/10 = ?/5. What top number fits the smaller bottom?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":8,"b":10,"d2":5,"kind":"equivNum"},"promptText":"8/10 = __/5. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0447",
@@ -22852,7 +22852,7 @@ export const ITEMS = [
     structureType: "scaleDown_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":4,"b":10,"d2":5,"kind":"equivNum"},"promptText":"Reduce 4/10 to denominator 5. The numerator becomes ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":4,"b":10,"d2":5,"kind":"equivNum"},"promptText":"Write 4/10 as an equal fraction with a denominator of 5. What is its numerator?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0448",
@@ -22862,7 +22862,7 @@ export const ITEMS = [
     structureType: "scaleDown_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":6,"b":10,"d2":5,"kind":"equivNum"},"promptText":"6/10 written over 5 carries which numerator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":6,"b":10,"d2":5,"kind":"equivNum"},"promptText":"6/10 = __/5. What is the missing numerator?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0449",
@@ -22872,7 +22872,7 @@ export const ITEMS = [
     structureType: "scaleDown_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":8,"b":10,"d2":5,"kind":"equivNum"},"promptText":"Reduce 8/10 to denominator 5. The numerator becomes ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":8,"b":10,"d2":5,"kind":"equivNum"},"promptText":"8/10 = __/5. What top number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0450",
@@ -22882,7 +22882,7 @@ export const ITEMS = [
     structureType: "scaleDown_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":2,"b":12,"d2":6,"kind":"equivNum"},"promptText":"2/12 written over 6 carries which numerator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":2,"b":12,"d2":6,"kind":"equivNum"},"promptText":"Write 2/12 as an equal fraction with a bottom number of 6. What is its top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0451",
@@ -22892,7 +22892,7 @@ export const ITEMS = [
     structureType: "scaleDown_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"a":10,"b":12,"d2":6,"kind":"equivNum"},"promptText":"Reduce 10/12 to denominator 6. The numerator becomes ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"a":10,"b":12,"d2":6,"kind":"equivNum"},"promptText":"Write 10/12 as an equal fraction with a denominator of 6. What is its numerator?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0452",
@@ -22902,7 +22902,7 @@ export const ITEMS = [
     structureType: "scaleDown_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":4,"b":12,"d2":6,"kind":"equivNum"},"promptText":"4/12 written over 6 carries which numerator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":4,"b":12,"d2":6,"kind":"equivNum"},"promptText":"4/12 = __/6. What is the missing numerator?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0453",
@@ -22912,7 +22912,7 @@ export const ITEMS = [
     structureType: "scaleDown_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":8,"b":12,"d2":6,"kind":"equivNum"},"promptText":"Reduce 8/12 to denominator 6. The numerator becomes ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":8,"b":12,"d2":6,"kind":"equivNum"},"promptText":"8/12 = __/6. What top number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0454",
@@ -22922,7 +22922,7 @@ export const ITEMS = [
     structureType: "scaleDown_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":6,"b":12,"d2":4,"kind":"equivNum"},"promptText":"6/12 written over 4 carries which numerator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":6,"b":12,"d2":4,"kind":"equivNum"},"promptText":"Write 6/12 as an equal fraction with a bottom number of 4. What is its top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0455",
@@ -22932,7 +22932,7 @@ export const ITEMS = [
     structureType: "scaleDown_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":9,"b":12,"d2":4,"kind":"equivNum"},"promptText":"Reduce 9/12 to denominator 4. The numerator becomes ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":9,"b":12,"d2":4,"kind":"equivNum"},"promptText":"Write 9/12 as an equal fraction with a denominator of 4. What is its numerator?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0456",
@@ -22942,7 +22942,7 @@ export const ITEMS = [
     structureType: "scaleDown_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"a":10,"b":16,"d2":8,"kind":"equivNum"},"promptText":"10/16 written over 8 carries which numerator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"a":10,"b":16,"d2":8,"kind":"equivNum"},"promptText":"10/16 = __/8. What is the missing numerator?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0457",
@@ -22952,7 +22952,7 @@ export const ITEMS = [
     structureType: "scaleDown_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":6,"b":16,"d2":8,"kind":"equivNum"},"promptText":"Reduce 6/16 to denominator 8. The numerator becomes ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":6,"b":16,"d2":8,"kind":"equivNum"},"promptText":"6/16 = __/8. What top number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0458",
@@ -22962,7 +22962,7 @@ export const ITEMS = [
     structureType: "scaleDown_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"frac":{"a":14,"b":16,"d2":8,"kind":"equivNum"},"promptText":"14/16 written over 8 carries which numerator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"frac":{"a":14,"b":16,"d2":8,"kind":"equivNum"},"promptText":"Write 14/16 as an equal fraction with a bottom number of 8. What is its top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0459",
@@ -22972,7 +22972,7 @@ export const ITEMS = [
     structureType: "scaleDown_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":12,"b":16,"d2":4,"kind":"equivNum"},"promptText":"Reduce 12/16 to denominator 4. The numerator becomes ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":12,"b":16,"d2":4,"kind":"equivNum"},"promptText":"Write 12/16 as an equal fraction with a denominator of 4. What is its numerator?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0460",
@@ -22982,7 +22982,7 @@ export const ITEMS = [
     structureType: "scaleDown_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"a":10,"b":20,"d2":10,"kind":"equivNum"},"promptText":"Scale 10/20 down to ?/10 exactly. Which numerator is required?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"a":10,"b":20,"d2":10,"kind":"equivNum"},"promptText":"10/20 = __/10. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0461",
@@ -22992,7 +22992,7 @@ export const ITEMS = [
     structureType: "scaleDown_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"frac":{"a":14,"b":20,"d2":10,"kind":"equivNum"},"promptText":"Rewriting 14/20 with denominator 10 gives which top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"frac":{"a":14,"b":20,"d2":10,"kind":"equivNum"},"promptText":"Find the fraction equal to 14/20 that has a bottom number of 10. What is its top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0462",
@@ -23002,7 +23002,7 @@ export const ITEMS = [
     structureType: "scaleDown_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":15,"b":20,"d2":4,"kind":"equivNum"},"promptText":"Scale 15/20 down to ?/4 exactly. Which numerator is required?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":15,"b":20,"d2":4,"kind":"equivNum"},"promptText":"Write 15/20 as an equal fraction with a denominator of 4. What is its numerator?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0463",
@@ -23012,7 +23012,7 @@ export const ITEMS = [
     structureType: "scaleDown_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":16,"b":20,"d2":5,"kind":"equivNum"},"promptText":"Rewriting 16/20 with denominator 5 gives which top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":16,"b":20,"d2":5,"kind":"equivNum"},"promptText":"Find the fraction equal to 16/20 that has a bottom number of 5. What is its top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0464",
@@ -23022,7 +23022,7 @@ export const ITEMS = [
     structureType: "scaleDown_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"frac":{"a":18,"b":24,"d2":12,"kind":"equivNum"},"promptText":"Scale 18/24 down to ?/12 exactly. Which numerator is required?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"frac":{"a":18,"b":24,"d2":12,"kind":"equivNum"},"promptText":"18/24 = __/12. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0465",
@@ -23032,7 +23032,7 @@ export const ITEMS = [
     structureType: "scaleDown_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"a":10,"b":24,"d2":12,"kind":"equivNum"},"promptText":"Rewriting 10/24 with denominator 12 gives which top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"a":10,"b":24,"d2":12,"kind":"equivNum"},"promptText":"Find the fraction equal to 10/24 that has a bottom number of 12. What is its top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0466",
@@ -23042,7 +23042,7 @@ export const ITEMS = [
     structureType: "scaleDown_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"frac":{"a":22,"b":24,"d2":12,"kind":"equivNum"},"promptText":"Scale 22/24 down to ?/12 exactly. Which numerator is required?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"frac":{"a":22,"b":24,"d2":12,"kind":"equivNum"},"promptText":"Write 22/24 as an equal fraction with a denominator of 12. What is its numerator?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0467",
@@ -23052,7 +23052,7 @@ export const ITEMS = [
     structureType: "scaleDown_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"a":20,"b":24,"d2":6,"kind":"equivNum"},"promptText":"Rewriting 20/24 with denominator 6 gives which top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"a":20,"b":24,"d2":6,"kind":"equivNum"},"promptText":"Find the fraction equal to 20/24 that has a bottom number of 6. What is its top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0468",
@@ -23062,7 +23062,7 @@ export const ITEMS = [
     structureType: "scaleDown_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":9,"b":24,"d2":8,"kind":"equivNum"},"promptText":"Scale 9/24 down to ?/8 exactly. Which numerator is required?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":9,"b":24,"d2":8,"kind":"equivNum"},"promptText":"9/24 = __/8. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0469",
@@ -23072,7 +23072,7 @@ export const ITEMS = [
     structureType: "scaleDown_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"frac":{"a":21,"b":24,"d2":8,"kind":"equivNum"},"promptText":"Rewriting 21/24 with denominator 8 gives which top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"frac":{"a":21,"b":24,"d2":8,"kind":"equivNum"},"promptText":"Find the fraction equal to 21/24 that has a bottom number of 8. What is its top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0470",
@@ -23082,7 +23082,7 @@ export const ITEMS = [
     structureType: "scaleDown_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"a":15,"b":24,"d2":8,"kind":"equivNum"},"promptText":"Scale 15/24 down to ?/8 exactly. Which numerator is required?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"a":15,"b":24,"d2":8,"kind":"equivNum"},"promptText":"Write 15/24 as an equal fraction with a denominator of 8. What is its numerator?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0471",
@@ -23092,7 +23092,7 @@ export const ITEMS = [
     structureType: "scaleDown_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"a":18,"b":30,"d2":10,"kind":"equivNum"},"promptText":"Rewriting 18/30 with denominator 10 gives which top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"a":18,"b":30,"d2":10,"kind":"equivNum"},"promptText":"Find the fraction equal to 18/30 that has a bottom number of 10. What is its top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0472",
@@ -23102,7 +23102,7 @@ export const ITEMS = [
     structureType: "scaleDown_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":24,"b":30,"d2":5,"kind":"equivNum"},"promptText":"Scale 24/30 down to ?/5 exactly. Which numerator is required?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":24,"b":30,"d2":5,"kind":"equivNum"},"promptText":"24/30 = __/5. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0473",
@@ -23112,7 +23112,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"<","choices":[">","=","<"],"display":{"frac":{"a":1,"b":3,"c":2,"d":3,"kind":"cmp"},"promptText":"Which symbol fits: 1/3 ? 2/3 — pick <, >, or =."}},
+    question: {"a":null,"b":null,"op":"count","answer":"<","choices":[">","=","<"],"display":{"frac":{"a":1,"b":3,"c":2,"d":3,"kind":"cmp"},"promptText":"Which sign fits in 1/3 __ 2/3: <, >, or =?"}},
   },
   {
     itemId: "fractions-proc-b0821-0474",
@@ -23132,7 +23132,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"=","choices":[">","<","="],"display":{"frac":{"a":1,"b":3,"c":1,"d":3,"kind":"cmp"},"promptText":"Which symbol fits: 1/3 ? 1/3 — pick <, >, or =."}},
+    question: {"a":null,"b":null,"op":"count","answer":"=","choices":[">","<","="],"display":{"frac":{"a":1,"b":3,"c":1,"d":3,"kind":"cmp"},"promptText":"Which sign makes 1/3 __ 1/3 true: <, >, or =?"}},
   },
   {
     itemId: "fractions-proc-b0821-0476",
@@ -23152,7 +23152,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"<","choices":["=","<",">"],"display":{"frac":{"a":1,"b":4,"c":3,"d":4,"kind":"cmp"},"promptText":"Which symbol fits: 1/4 ? 3/4 — pick <, >, or =."}},
+    question: {"a":null,"b":null,"op":"count","answer":"<","choices":["=","<",">"],"display":{"frac":{"a":1,"b":4,"c":3,"d":4,"kind":"cmp"},"promptText":"Which sign fits in 1/4 __ 3/4: <, >, or =?"}},
   },
   {
     itemId: "fractions-proc-b0821-0478",
@@ -23172,7 +23172,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"<","choices":[">","=","<"],"display":{"frac":{"a":2,"b":4,"c":3,"d":4,"kind":"cmp"},"promptText":"Which symbol fits: 2/4 ? 3/4 — pick <, >, or =."}},
+    question: {"a":null,"b":null,"op":"count","answer":"<","choices":[">","=","<"],"display":{"frac":{"a":2,"b":4,"c":3,"d":4,"kind":"cmp"},"promptText":"Which sign makes 2/4 __ 3/4 true: <, >, or =?"}},
   },
   {
     itemId: "fractions-proc-b0821-0480",
@@ -23192,7 +23192,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"<","choices":["<",">","="],"display":{"frac":{"a":1,"b":4,"c":2,"d":4,"kind":"cmp"},"promptText":"Which symbol fits: 1/4 ? 2/4 — pick <, >, or =."}},
+    question: {"a":null,"b":null,"op":"count","answer":"<","choices":["<",">","="],"display":{"frac":{"a":1,"b":4,"c":2,"d":4,"kind":"cmp"},"promptText":"Which sign fits in 1/4 __ 2/4: <, >, or =?"}},
   },
   {
     itemId: "fractions-proc-b0821-0482",
@@ -23212,7 +23212,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"=","choices":[">","=","<"],"display":{"frac":{"a":2,"b":4,"c":2,"d":4,"kind":"cmp"},"promptText":"Which symbol fits: 2/4 ? 2/4 — pick <, >, or =."}},
+    question: {"a":null,"b":null,"op":"count","answer":"=","choices":[">","=","<"],"display":{"frac":{"a":2,"b":4,"c":2,"d":4,"kind":"cmp"},"promptText":"Which sign makes 2/4 __ 2/4 true: <, >, or =?"}},
   },
   {
     itemId: "fractions-proc-b0821-0484",
@@ -23232,7 +23232,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"<","choices":["=","<",">"],"display":{"frac":{"a":2,"b":5,"c":4,"d":5,"kind":"cmp"},"promptText":"Same bottoms: 2/5 versus 4/5. Choose <, >, or =."}},
+    question: {"a":null,"b":null,"op":"count","answer":"<","choices":["=","<",">"],"display":{"frac":{"a":2,"b":5,"c":4,"d":5,"kind":"cmp"},"promptText":"Which sign makes 2/5 __ 4/5 true?"}},
   },
   {
     itemId: "fractions-proc-b0821-0486",
@@ -23242,7 +23242,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":">","choices":["<","=",">"],"display":{"frac":{"a":4,"b":5,"c":2,"d":5,"kind":"cmp"},"promptText":"Set the right symbol between 4/5 and 2/5. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":">","choices":["<","=",">"],"display":{"frac":{"a":4,"b":5,"c":2,"d":5,"kind":"cmp"},"promptText":"Which sign goes between 4/5 and 2/5: <, >, or =?"}},
   },
   {
     itemId: "fractions-proc-b0821-0487",
@@ -23252,7 +23252,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"<","choices":["=",">","<"],"display":{"frac":{"a":1,"b":6,"c":5,"d":6,"kind":"cmp"},"promptText":"Same bottoms: 1/6 versus 5/6. Choose <, >, or =."}},
+    question: {"a":null,"b":null,"op":"count","answer":"<","choices":["=",">","<"],"display":{"frac":{"a":1,"b":6,"c":5,"d":6,"kind":"cmp"},"promptText":"Which sign goes in 1/6 __ 5/6?"}},
   },
   {
     itemId: "fractions-proc-b0821-0488",
@@ -23262,7 +23262,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":">","choices":[">","=","<"],"display":{"frac":{"a":5,"b":6,"c":1,"d":6,"kind":"cmp"},"promptText":"Set the right symbol between 5/6 and 1/6. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":">","choices":[">","=","<"],"display":{"frac":{"a":5,"b":6,"c":1,"d":6,"kind":"cmp"},"promptText":"Which sign belongs between 5/6 and 1/6?"}},
   },
   {
     itemId: "fractions-proc-b0821-0489",
@@ -23272,7 +23272,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"<","choices":[">","=","<"],"display":{"frac":{"a":3,"b":8,"c":5,"d":8,"kind":"cmp"},"promptText":"Same bottoms: 3/8 versus 5/8. Choose <, >, or =."}},
+    question: {"a":null,"b":null,"op":"count","answer":"<","choices":[">","=","<"],"display":{"frac":{"a":3,"b":8,"c":5,"d":8,"kind":"cmp"},"promptText":"Which sign goes in 3/8 __ 5/8?"}},
   },
   {
     itemId: "fractions-proc-b0821-0490",
@@ -23282,7 +23282,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":">","choices":[">","=","<"],"display":{"frac":{"a":5,"b":8,"c":3,"d":8,"kind":"cmp"},"promptText":"Set the right symbol between 5/8 and 3/8. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":">","choices":[">","=","<"],"display":{"frac":{"a":5,"b":8,"c":3,"d":8,"kind":"cmp"},"promptText":"Which sign goes between 5/8 and 3/8: <, >, or =?"}},
   },
   {
     itemId: "fractions-proc-b0821-0491",
@@ -23292,7 +23292,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"=","choices":[">","<","="],"display":{"frac":{"a":2,"b":5,"c":2,"d":5,"kind":"cmp"},"promptText":"Same bottoms: 2/5 versus 2/5. Choose <, >, or =."}},
+    question: {"a":null,"b":null,"op":"count","answer":"=","choices":[">","<","="],"display":{"frac":{"a":2,"b":5,"c":2,"d":5,"kind":"cmp"},"promptText":"Which sign goes in 2/5 __ 2/5?"}},
   },
   {
     itemId: "fractions-proc-b0821-0492",
@@ -23302,7 +23302,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"=","choices":["<",">","="],"display":{"frac":{"a":3,"b":6,"c":3,"d":6,"kind":"cmp"},"promptText":"Set the right symbol between 3/6 and 3/6. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"=","choices":["<",">","="],"display":{"frac":{"a":3,"b":6,"c":3,"d":6,"kind":"cmp"},"promptText":"Which sign belongs between 3/6 and 3/6?"}},
   },
   {
     itemId: "fractions-proc-b0821-0493",
@@ -23312,7 +23312,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"<","choices":["<",">","="],"display":{"frac":{"a":1,"b":5,"c":4,"d":5,"kind":"cmp"},"promptText":"Same bottoms: 1/5 versus 4/5. Choose <, >, or =."}},
+    question: {"a":null,"b":null,"op":"count","answer":"<","choices":["<",">","="],"display":{"frac":{"a":1,"b":5,"c":4,"d":5,"kind":"cmp"},"promptText":"Which sign makes 1/5 __ 4/5 true?"}},
   },
   {
     itemId: "fractions-proc-b0821-0494",
@@ -23322,7 +23322,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"=","choices":["=",">","<"],"display":{"frac":{"a":4,"b":8,"c":4,"d":8,"kind":"cmp"},"promptText":"Set the right symbol between 4/8 and 4/8. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"=","choices":["=",">","<"],"display":{"frac":{"a":4,"b":8,"c":4,"d":8,"kind":"cmp"},"promptText":"Which sign goes between 4/8 and 4/8: <, >, or =?"}},
   },
   {
     itemId: "fractions-proc-b0821-0495",
@@ -23332,7 +23332,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"<","choices":[">","=","<"],"display":{"frac":{"a":2,"b":6,"c":5,"d":6,"kind":"cmp"},"promptText":"Same bottoms: 2/6 versus 5/6. Choose <, >, or =."}},
+    question: {"a":null,"b":null,"op":"count","answer":"<","choices":[">","=","<"],"display":{"frac":{"a":2,"b":6,"c":5,"d":6,"kind":"cmp"},"promptText":"Which sign goes in 2/6 __ 5/6?"}},
   },
   {
     itemId: "fractions-proc-b0821-0496",
@@ -23342,7 +23342,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":">","choices":["<",">","="],"display":{"frac":{"a":7,"b":8,"c":3,"d":8,"kind":"cmp"},"promptText":"Set the right symbol between 7/8 and 3/8. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":">","choices":["<",">","="],"display":{"frac":{"a":7,"b":8,"c":3,"d":8,"kind":"cmp"},"promptText":"Which sign belongs between 7/8 and 3/8?"}},
   },
   {
     itemId: "fractions-proc-b0821-0497",
@@ -23352,7 +23352,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"<","choices":[">","=","<"],"display":{"frac":{"a":3,"b":10,"c":7,"d":10,"kind":"cmp"},"promptText":"Precisely relate 3/10 to 7/10. Which of <, >, = is true?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"<","choices":[">","=","<"],"display":{"frac":{"a":3,"b":10,"c":7,"d":10,"kind":"cmp"},"promptText":"Which sign goes in 3/10 __ 7/10: <, >, or =?"}},
   },
   {
     itemId: "fractions-proc-b0821-0498",
@@ -23362,7 +23362,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":">","choices":[">","=","<"],"display":{"frac":{"a":7,"b":10,"c":3,"d":10,"kind":"cmp"},"promptText":"Between 7/10 and 3/10, exactly one symbol holds. Which?"}},
+    question: {"a":null,"b":null,"op":"count","answer":">","choices":[">","=","<"],"display":{"frac":{"a":7,"b":10,"c":3,"d":10,"kind":"cmp"},"promptText":"Which sign makes 7/10 __ 3/10 true?"}},
   },
   {
     itemId: "fractions-proc-b0821-0499",
@@ -23372,7 +23372,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"<","choices":[">","=","<"],"display":{"frac":{"a":5,"b":12,"c":11,"d":12,"kind":"cmp"},"promptText":"Precisely relate 5/12 to 11/12. Which of <, >, = is true?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"<","choices":[">","=","<"],"display":{"frac":{"a":5,"b":12,"c":11,"d":12,"kind":"cmp"},"promptText":"Which sign completes 5/12 __ 11/12: <, >, or =?"}},
   },
   {
     itemId: "fractions-proc-b0821-0500",
@@ -23382,7 +23382,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":">","choices":["=","<",">"],"display":{"frac":{"a":11,"b":12,"c":5,"d":12,"kind":"cmp"},"promptText":"Between 11/12 and 5/12, exactly one symbol holds. Which?"}},
+    question: {"a":null,"b":null,"op":"count","answer":">","choices":["=","<",">"],"display":{"frac":{"a":11,"b":12,"c":5,"d":12,"kind":"cmp"},"promptText":"Compare 11/12 and 5/12. Which sign goes in 11/12 __ 5/12?"}},
   },
   {
     itemId: "fractions-proc-b0821-0501",
@@ -23392,7 +23392,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":">","choices":["=",">","<"],"display":{"frac":{"a":9,"b":10,"c":1,"d":10,"kind":"cmp"},"promptText":"Precisely relate 9/10 to 1/10. Which of <, >, = is true?"}},
+    question: {"a":null,"b":null,"op":"count","answer":">","choices":["=",">","<"],"display":{"frac":{"a":9,"b":10,"c":1,"d":10,"kind":"cmp"},"promptText":"Which sign goes in 9/10 __ 1/10: <, >, or =?"}},
   },
   {
     itemId: "fractions-proc-b0821-0502",
@@ -23402,7 +23402,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"<","choices":["<","=",">"],"display":{"frac":{"a":1,"b":10,"c":9,"d":10,"kind":"cmp"},"promptText":"Between 1/10 and 9/10, exactly one symbol holds. Which?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"<","choices":["<","=",">"],"display":{"frac":{"a":1,"b":10,"c":9,"d":10,"kind":"cmp"},"promptText":"Which sign makes 1/10 __ 9/10 true?"}},
   },
   {
     itemId: "fractions-proc-b0821-0503",
@@ -23412,7 +23412,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"=","choices":[">","<","="],"display":{"frac":{"a":7,"b":12,"c":7,"d":12,"kind":"cmp"},"promptText":"Precisely relate 7/12 to 7/12. Which of <, >, = is true?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"=","choices":[">","<","="],"display":{"frac":{"a":7,"b":12,"c":7,"d":12,"kind":"cmp"},"promptText":"Which sign completes 7/12 __ 7/12: <, >, or =?"}},
   },
   {
     itemId: "fractions-proc-b0821-0504",
@@ -23422,7 +23422,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"=","choices":["=",">","<"],"display":{"frac":{"a":5,"b":10,"c":5,"d":10,"kind":"cmp"},"promptText":"Between 5/10 and 5/10, exactly one symbol holds. Which?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"=","choices":["=",">","<"],"display":{"frac":{"a":5,"b":10,"c":5,"d":10,"kind":"cmp"},"promptText":"Compare 5/10 and 5/10. Which sign goes in 5/10 __ 5/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0505",
@@ -23432,7 +23432,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":">","choices":["=",">","<"],"display":{"frac":{"a":11,"b":12,"c":1,"d":12,"kind":"cmp"},"promptText":"Precisely relate 11/12 to 1/12. Which of <, >, = is true?"}},
+    question: {"a":null,"b":null,"op":"count","answer":">","choices":["=",">","<"],"display":{"frac":{"a":11,"b":12,"c":1,"d":12,"kind":"cmp"},"promptText":"Which sign goes in 11/12 __ 1/12: <, >, or =?"}},
   },
   {
     itemId: "fractions-proc-b0821-0506",
@@ -23442,7 +23442,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"<","choices":["=","<",">"],"display":{"frac":{"a":3,"b":10,"c":9,"d":10,"kind":"cmp"},"promptText":"Between 3/10 and 9/10, exactly one symbol holds. Which?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"<","choices":["=","<",">"],"display":{"frac":{"a":3,"b":10,"c":9,"d":10,"kind":"cmp"},"promptText":"Which sign makes 3/10 __ 9/10 true?"}},
   },
   {
     itemId: "fractions-proc-b0821-0507",
@@ -23452,7 +23452,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"<","choices":[">","=","<"],"display":{"frac":{"a":5,"b":12,"c":7,"d":12,"kind":"cmp"},"promptText":"Precisely relate 5/12 to 7/12. Which of <, >, = is true?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"<","choices":[">","=","<"],"display":{"frac":{"a":5,"b":12,"c":7,"d":12,"kind":"cmp"},"promptText":"Which sign completes 5/12 __ 7/12: <, >, or =?"}},
   },
   {
     itemId: "fractions-proc-b0821-0508",
@@ -23462,7 +23462,7 @@ export const ITEMS = [
     structureType: "sameDenCmp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"=","choices":["<","=",">"],"display":{"frac":{"a":9,"b":10,"c":9,"d":10,"kind":"cmp"},"promptText":"Between 9/10 and 9/10, exactly one symbol holds. Which?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"=","choices":["<","=",">"],"display":{"frac":{"a":9,"b":10,"c":9,"d":10,"kind":"cmp"},"promptText":"Compare 9/10 and 9/10. Which sign goes in 9/10 __ 9/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0509",
@@ -23472,7 +23472,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":">","choices":["<",">","="],"display":{"frac":{"a":1,"b":2,"c":1,"d":3,"kind":"cmp"},"promptText":"Same tops: 1/2 ? 1/3. Pick <, >, or =."}},
+    question: {"a":null,"b":null,"op":"count","answer":">","choices":["<",">","="],"display":{"frac":{"a":1,"b":2,"c":1,"d":3,"kind":"cmp"},"promptText":"Which sign goes in 1/2 __ 1/3?"}},
   },
   {
     itemId: "fractions-proc-b0821-0510",
@@ -23482,7 +23482,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"<","choices":[">","=","<"],"display":{"frac":{"a":1,"b":3,"c":1,"d":2,"kind":"cmp"},"promptText":"Compare 1/3 with 1/2. Which symbol is right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"<","choices":[">","=","<"],"display":{"frac":{"a":1,"b":3,"c":1,"d":2,"kind":"cmp"},"promptText":"Which symbol goes in 1/3 __ 1/2?"}},
   },
   {
     itemId: "fractions-proc-b0821-0511",
@@ -23492,7 +23492,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":">","choices":["<","=",">"],"display":{"frac":{"a":1,"b":2,"c":1,"d":4,"kind":"cmp"},"promptText":"Same tops: 1/2 ? 1/4. Pick <, >, or =."}},
+    question: {"a":null,"b":null,"op":"count","answer":">","choices":["<","=",">"],"display":{"frac":{"a":1,"b":2,"c":1,"d":4,"kind":"cmp"},"promptText":"Which sign makes 1/2 __ 1/4 true?"}},
   },
   {
     itemId: "fractions-proc-b0821-0512",
@@ -23502,7 +23502,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"<","choices":["<","=",">"],"display":{"frac":{"a":1,"b":4,"c":1,"d":2,"kind":"cmp"},"promptText":"Compare 1/4 with 1/2. Which symbol is right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"<","choices":["<","=",">"],"display":{"frac":{"a":1,"b":4,"c":1,"d":2,"kind":"cmp"},"promptText":"Which symbol makes 1/4 __ 1/2 true?"}},
   },
   {
     itemId: "fractions-proc-b0821-0513",
@@ -23512,7 +23512,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":">","choices":[">","=","<"],"display":{"frac":{"a":1,"b":3,"c":1,"d":4,"kind":"cmp"},"promptText":"Same tops: 1/3 ? 1/4. Pick <, >, or =."}},
+    question: {"a":null,"b":null,"op":"count","answer":">","choices":[">","=","<"],"display":{"frac":{"a":1,"b":3,"c":1,"d":4,"kind":"cmp"},"promptText":"Which sign makes 1/3 __ 1/4 true?"}},
   },
   {
     itemId: "fractions-proc-b0821-0514",
@@ -23522,7 +23522,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"<","choices":["=",">","<"],"display":{"frac":{"a":1,"b":4,"c":1,"d":3,"kind":"cmp"},"promptText":"Compare 1/4 with 1/3. Which symbol is right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"<","choices":["=",">","<"],"display":{"frac":{"a":1,"b":4,"c":1,"d":3,"kind":"cmp"},"promptText":"Which symbol goes in 1/4 __ 1/3?"}},
   },
   {
     itemId: "fractions-proc-b0821-0515",
@@ -23532,7 +23532,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":">","choices":["<",">","="],"display":{"frac":{"a":2,"b":3,"c":2,"d":4,"kind":"cmp"},"promptText":"Same tops: 2/3 ? 2/4. Pick <, >, or =."}},
+    question: {"a":null,"b":null,"op":"count","answer":">","choices":["<",">","="],"display":{"frac":{"a":2,"b":3,"c":2,"d":4,"kind":"cmp"},"promptText":"Which sign makes 2/3 __ 2/4 true?"}},
   },
   {
     itemId: "fractions-proc-b0821-0516",
@@ -23542,7 +23542,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"<","choices":["<","=",">"],"display":{"frac":{"a":2,"b":4,"c":2,"d":3,"kind":"cmp"},"promptText":"Compare 2/4 with 2/3. Which symbol is right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"<","choices":["<","=",">"],"display":{"frac":{"a":2,"b":4,"c":2,"d":3,"kind":"cmp"},"promptText":"Which symbol makes 2/4 __ 2/3 true?"}},
   },
   {
     itemId: "fractions-proc-b0821-0517",
@@ -23552,7 +23552,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"=","choices":["<",">","="],"display":{"frac":{"a":1,"b":2,"c":1,"d":2,"kind":"cmp"},"promptText":"Same tops: 1/2 ? 1/2. Pick <, >, or =."}},
+    question: {"a":null,"b":null,"op":"count","answer":"=","choices":["<",">","="],"display":{"frac":{"a":1,"b":2,"c":1,"d":2,"kind":"cmp"},"promptText":"Which sign goes in 1/2 __ 1/2?"}},
   },
   {
     itemId: "fractions-proc-b0821-0518",
@@ -23562,7 +23562,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":">","choices":[">","<","="],"display":{"frac":{"a":2,"b":3,"c":2,"d":4,"kind":"cmp"},"promptText":"Compare 2/3 with 2/4. Which symbol is right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":">","choices":[">","<","="],"display":{"frac":{"a":2,"b":3,"c":2,"d":4,"kind":"cmp"},"promptText":"Which symbol makes 2/3 __ 2/4 true?"}},
   },
   {
     itemId: "fractions-proc-b0821-0519",
@@ -23572,7 +23572,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"<","choices":[">","<","="],"display":{"frac":{"a":1,"b":4,"c":1,"d":3,"kind":"cmp"},"promptText":"Same tops: 1/4 ? 1/3. Pick <, >, or =."}},
+    question: {"a":null,"b":null,"op":"count","answer":"<","choices":[">","<","="],"display":{"frac":{"a":1,"b":4,"c":1,"d":3,"kind":"cmp"},"promptText":"Which sign makes 1/4 __ 1/3 true?"}},
   },
   {
     itemId: "fractions-proc-b0821-0520",
@@ -23582,7 +23582,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":">","choices":["=","<",">"],"display":{"frac":{"a":1,"b":5,"c":1,"d":6,"kind":"cmp"},"promptText":"1/5 against 1/6 — bigger pieces win. Which symbol holds?"}},
+    question: {"a":null,"b":null,"op":"count","answer":">","choices":["=","<",">"],"display":{"frac":{"a":1,"b":5,"c":1,"d":6,"kind":"cmp"},"promptText":"Which sign goes in 1/5 __ 1/6?"}},
   },
   {
     itemId: "fractions-proc-b0821-0521",
@@ -23602,7 +23602,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":">","choices":["<","=",">"],"display":{"frac":{"a":2,"b":5,"c":2,"d":8,"kind":"cmp"},"promptText":"2/5 against 2/8 — bigger pieces win. Which symbol holds?"}},
+    question: {"a":null,"b":null,"op":"count","answer":">","choices":["<","=",">"],"display":{"frac":{"a":2,"b":5,"c":2,"d":8,"kind":"cmp"},"promptText":"Which sign makes 2/5 __ 2/8 true?"}},
   },
   {
     itemId: "fractions-proc-b0821-0523",
@@ -23622,7 +23622,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":">","choices":[">","<","="],"display":{"frac":{"a":3,"b":6,"c":3,"d":8,"kind":"cmp"},"promptText":"3/6 against 3/8 — bigger pieces win. Which symbol holds?"}},
+    question: {"a":null,"b":null,"op":"count","answer":">","choices":[">","<","="],"display":{"frac":{"a":3,"b":6,"c":3,"d":8,"kind":"cmp"},"promptText":"Which sign belongs in the blank: 3/6 __ 3/8?"}},
   },
   {
     itemId: "fractions-proc-b0821-0525",
@@ -23642,7 +23642,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":">","choices":[">","=","<"],"display":{"frac":{"a":1,"b":5,"c":1,"d":8,"kind":"cmp"},"promptText":"1/5 against 1/8 — bigger pieces win. Which symbol holds?"}},
+    question: {"a":null,"b":null,"op":"count","answer":">","choices":[">","=","<"],"display":{"frac":{"a":1,"b":5,"c":1,"d":8,"kind":"cmp"},"promptText":"Which sign goes in 1/5 __ 1/8?"}},
   },
   {
     itemId: "fractions-proc-b0821-0527",
@@ -23662,7 +23662,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":">","choices":["=",">","<"],"display":{"frac":{"a":4,"b":5,"c":4,"d":6,"kind":"cmp"},"promptText":"4/5 against 4/6 — bigger pieces win. Which symbol holds?"}},
+    question: {"a":null,"b":null,"op":"count","answer":">","choices":["=",">","<"],"display":{"frac":{"a":4,"b":5,"c":4,"d":6,"kind":"cmp"},"promptText":"Which sign makes 4/5 __ 4/6 true?"}},
   },
   {
     itemId: "fractions-proc-b0821-0529",
@@ -23682,7 +23682,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":">","choices":["=","<",">"],"display":{"frac":{"a":5,"b":6,"c":5,"d":8,"kind":"cmp"},"promptText":"5/6 against 5/8 — bigger pieces win. Which symbol holds?"}},
+    question: {"a":null,"b":null,"op":"count","answer":">","choices":["=","<",">"],"display":{"frac":{"a":5,"b":6,"c":5,"d":8,"kind":"cmp"},"promptText":"Which sign belongs in the blank: 5/6 __ 5/8?"}},
   },
   {
     itemId: "fractions-proc-b0821-0531",
@@ -23702,7 +23702,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":">","choices":["<",">","="],"display":{"frac":{"a":3,"b":10,"c":3,"d":12,"kind":"cmp"},"promptText":"Exactly relate 3/10 to 3/12. Which symbol is correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":">","choices":["<",">","="],"display":{"frac":{"a":3,"b":10,"c":3,"d":12,"kind":"cmp"},"promptText":"Which sign goes in 3/10 __ 3/12?"}},
   },
   {
     itemId: "fractions-proc-b0821-0533",
@@ -23712,7 +23712,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"<","choices":["<",">","="],"display":{"frac":{"a":3,"b":12,"c":3,"d":10,"kind":"cmp"},"promptText":"One symbol truly links 3/12 and 3/10. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"<","choices":["<",">","="],"display":{"frac":{"a":3,"b":12,"c":3,"d":10,"kind":"cmp"},"promptText":"Which sign belongs in 3/12 __ 3/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0534",
@@ -23722,7 +23722,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":">","choices":["<",">","="],"display":{"frac":{"a":7,"b":10,"c":7,"d":12,"kind":"cmp"},"promptText":"Exactly relate 7/10 to 7/12. Which symbol is correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":">","choices":["<",">","="],"display":{"frac":{"a":7,"b":10,"c":7,"d":12,"kind":"cmp"},"promptText":"Which sign completes 7/10 __ 7/12?"}},
   },
   {
     itemId: "fractions-proc-b0821-0535",
@@ -23732,7 +23732,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"<","choices":[">","<","="],"display":{"frac":{"a":7,"b":12,"c":7,"d":10,"kind":"cmp"},"promptText":"One symbol truly links 7/12 and 7/10. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"<","choices":[">","<","="],"display":{"frac":{"a":7,"b":12,"c":7,"d":10,"kind":"cmp"},"promptText":"Which sign is right for 7/12 __ 7/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0536",
@@ -23742,7 +23742,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":">","choices":[">","=","<"],"display":{"frac":{"a":1,"b":10,"c":1,"d":12,"kind":"cmp"},"promptText":"Exactly relate 1/10 to 1/12. Which symbol is correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":">","choices":[">","=","<"],"display":{"frac":{"a":1,"b":10,"c":1,"d":12,"kind":"cmp"},"promptText":"Which sign goes in 1/10 __ 1/12?"}},
   },
   {
     itemId: "fractions-proc-b0821-0537",
@@ -23752,7 +23752,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"<","choices":["<","=",">"],"display":{"frac":{"a":1,"b":12,"c":1,"d":10,"kind":"cmp"},"promptText":"One symbol truly links 1/12 and 1/10. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"<","choices":["<","=",">"],"display":{"frac":{"a":1,"b":12,"c":1,"d":10,"kind":"cmp"},"promptText":"Which sign belongs in 1/12 __ 1/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0538",
@@ -23762,7 +23762,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":">","choices":["<",">","="],"display":{"frac":{"a":5,"b":10,"c":5,"d":12,"kind":"cmp"},"promptText":"Exactly relate 5/10 to 5/12. Which symbol is correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":">","choices":["<",">","="],"display":{"frac":{"a":5,"b":10,"c":5,"d":12,"kind":"cmp"},"promptText":"Which sign completes 5/10 __ 5/12?"}},
   },
   {
     itemId: "fractions-proc-b0821-0539",
@@ -23772,7 +23772,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"<","choices":["<","=",">"],"display":{"frac":{"a":5,"b":12,"c":5,"d":10,"kind":"cmp"},"promptText":"One symbol truly links 5/12 and 5/10. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"<","choices":["<","=",">"],"display":{"frac":{"a":5,"b":12,"c":5,"d":10,"kind":"cmp"},"promptText":"Which sign is right for 5/12 __ 5/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0540",
@@ -23782,7 +23782,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":">","choices":[">","<","="],"display":{"frac":{"a":9,"b":10,"c":9,"d":12,"kind":"cmp"},"promptText":"Exactly relate 9/10 to 9/12. Which symbol is correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":">","choices":[">","<","="],"display":{"frac":{"a":9,"b":10,"c":9,"d":12,"kind":"cmp"},"promptText":"Which sign goes in 9/10 __ 9/12?"}},
   },
   {
     itemId: "fractions-proc-b0821-0541",
@@ -23792,7 +23792,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"<","choices":[">","=","<"],"display":{"frac":{"a":9,"b":12,"c":9,"d":10,"kind":"cmp"},"promptText":"One symbol truly links 9/12 and 9/10. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"<","choices":[">","=","<"],"display":{"frac":{"a":9,"b":12,"c":9,"d":10,"kind":"cmp"},"promptText":"Which sign belongs in 9/12 __ 9/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0542",
@@ -23802,7 +23802,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":">","choices":["<",">","="],"display":{"frac":{"a":2,"b":10,"c":2,"d":12,"kind":"cmp"},"promptText":"Exactly relate 2/10 to 2/12. Which symbol is correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":">","choices":["<",">","="],"display":{"frac":{"a":2,"b":10,"c":2,"d":12,"kind":"cmp"},"promptText":"Which sign completes 2/10 __ 2/12?"}},
   },
   {
     itemId: "fractions-proc-b0821-0543",
@@ -23812,7 +23812,7 @@ export const ITEMS = [
     structureType: "sameNumCmp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"<","choices":[">","=","<"],"display":{"frac":{"a":2,"b":12,"c":2,"d":10,"kind":"cmp"},"promptText":"One symbol truly links 2/12 and 2/10. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"<","choices":[">","=","<"],"display":{"frac":{"a":2,"b":12,"c":2,"d":10,"kind":"cmp"},"promptText":"Which sign is right for 2/12 __ 2/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0544",
@@ -23822,7 +23822,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"less than 1/2","choices":["less than 1/2","equal to 1/2","greater than 1/2"],"display":{"frac":{"a":1,"b":3,"kind":"halfCmp"},"promptText":"Is 1/3 less than, equal to, or greater than one half? Pick the answer."}},
+    question: {"a":null,"b":null,"op":"count","answer":"less than 1/2","choices":["less than 1/2","equal to 1/2","greater than 1/2"],"display":{"frac":{"a":1,"b":3,"kind":"halfCmp"},"promptText":"Is 1/3 less than, equal to, or greater than one half?"}},
   },
   {
     itemId: "fractions-proc-b0821-0545",
@@ -23832,7 +23832,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"greater than 1/2","choices":["equal to 1/2","greater than 1/2","less than 1/2"],"display":{"frac":{"a":2,"b":3,"kind":"halfCmp"},"promptText":"Is 2/3 less than, equal to, or greater than one half? Pick the answer."}},
+    question: {"a":null,"b":null,"op":"count","answer":"greater than 1/2","choices":["equal to 1/2","greater than 1/2","less than 1/2"],"display":{"frac":{"a":2,"b":3,"kind":"halfCmp"},"promptText":"Is 2/3 less than one half, equal to one half, or greater than one half?"}},
   },
   {
     itemId: "fractions-proc-b0821-0546",
@@ -23842,7 +23842,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"less than 1/2","choices":["less than 1/2","greater than 1/2","equal to 1/2"],"display":{"frac":{"a":1,"b":4,"kind":"halfCmp"},"promptText":"Is 1/4 less than, equal to, or greater than one half? Pick the answer."}},
+    question: {"a":null,"b":null,"op":"count","answer":"less than 1/2","choices":["less than 1/2","greater than 1/2","equal to 1/2"],"display":{"frac":{"a":1,"b":4,"kind":"halfCmp"},"promptText":"Is 1/4 less than, equal to, or greater than one half?"}},
   },
   {
     itemId: "fractions-proc-b0821-0547",
@@ -23852,7 +23852,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"greater than 1/2","choices":["less than 1/2","greater than 1/2","equal to 1/2"],"display":{"frac":{"a":3,"b":4,"kind":"halfCmp"},"promptText":"Is 3/4 less than, equal to, or greater than one half? Pick the answer."}},
+    question: {"a":null,"b":null,"op":"count","answer":"greater than 1/2","choices":["less than 1/2","greater than 1/2","equal to 1/2"],"display":{"frac":{"a":3,"b":4,"kind":"halfCmp"},"promptText":"Is 3/4 less than one half, equal to one half, or greater than one half?"}},
   },
   {
     itemId: "fractions-proc-b0821-0548",
@@ -23862,7 +23862,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"equal to 1/2","choices":["greater than 1/2","less than 1/2","equal to 1/2"],"display":{"frac":{"a":2,"b":4,"kind":"halfCmp"},"promptText":"Is 2/4 less than, equal to, or greater than one half? Pick the answer."}},
+    question: {"a":null,"b":null,"op":"count","answer":"equal to 1/2","choices":["greater than 1/2","less than 1/2","equal to 1/2"],"display":{"frac":{"a":2,"b":4,"kind":"halfCmp"},"promptText":"Is 2/4 less than, equal to, or greater than one half?"}},
   },
   {
     itemId: "fractions-proc-b0821-0549",
@@ -23872,7 +23872,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"equal to 1/2","choices":["less than 1/2","greater than 1/2","equal to 1/2"],"display":{"frac":{"a":1,"b":2,"kind":"halfCmp"},"promptText":"Is 1/2 less than, equal to, or greater than one half? Pick the answer."}},
+    question: {"a":null,"b":null,"op":"count","answer":"equal to 1/2","choices":["less than 1/2","greater than 1/2","equal to 1/2"],"display":{"frac":{"a":1,"b":2,"kind":"halfCmp"},"promptText":"Is 1/2 less than one half, equal to one half, or greater than one half?"}},
   },
   {
     itemId: "fractions-proc-b0821-0550",
@@ -23882,7 +23882,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"less than 1/2","choices":["less than 1/2","greater than 1/2","equal to 1/2"],"display":{"frac":{"a":1,"b":3,"kind":"halfCmp"},"promptText":"Place 1/3 against 1/2. Which relation is true?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"less than 1/2","choices":["less than 1/2","greater than 1/2","equal to 1/2"],"display":{"frac":{"a":1,"b":3,"kind":"halfCmp"},"promptText":"How does 1/3 compare to 1/2?"}},
   },
   {
     itemId: "fractions-proc-b0821-0551",
@@ -23892,7 +23892,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"greater than 1/2","choices":["greater than 1/2","equal to 1/2","less than 1/2"],"display":{"frac":{"a":2,"b":3,"kind":"halfCmp"},"promptText":"Place 2/3 against 1/2. Which relation is true?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"greater than 1/2","choices":["greater than 1/2","equal to 1/2","less than 1/2"],"display":{"frac":{"a":2,"b":3,"kind":"halfCmp"},"promptText":"Is 2/3 more than, less than, or the same as 1/2?"}},
   },
   {
     itemId: "fractions-proc-b0821-0552",
@@ -23902,7 +23902,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"less than 1/2","choices":["equal to 1/2","less than 1/2","greater than 1/2"],"display":{"frac":{"a":1,"b":4,"kind":"halfCmp"},"promptText":"Place 1/4 against 1/2. Which relation is true?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"less than 1/2","choices":["equal to 1/2","less than 1/2","greater than 1/2"],"display":{"frac":{"a":1,"b":4,"kind":"halfCmp"},"promptText":"How does 1/4 compare to 1/2?"}},
   },
   {
     itemId: "fractions-proc-b0821-0553",
@@ -23912,7 +23912,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"greater than 1/2","choices":["greater than 1/2","less than 1/2","equal to 1/2"],"display":{"frac":{"a":3,"b":4,"kind":"halfCmp"},"promptText":"Place 3/4 against 1/2. Which relation is true?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"greater than 1/2","choices":["greater than 1/2","less than 1/2","equal to 1/2"],"display":{"frac":{"a":3,"b":4,"kind":"halfCmp"},"promptText":"Is 3/4 more than, less than, or the same as 1/2?"}},
   },
   {
     itemId: "fractions-proc-b0821-0554",
@@ -23922,7 +23922,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"equal to 1/2","choices":["less than 1/2","equal to 1/2","greater than 1/2"],"display":{"frac":{"a":2,"b":4,"kind":"halfCmp"},"promptText":"Place 2/4 against 1/2. Which relation is true?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"equal to 1/2","choices":["less than 1/2","equal to 1/2","greater than 1/2"],"display":{"frac":{"a":2,"b":4,"kind":"halfCmp"},"promptText":"How does 2/4 compare to 1/2?"}},
   },
   {
     itemId: "fractions-proc-b0821-0555",
@@ -23932,7 +23932,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"equal to 1/2","choices":["less than 1/2","equal to 1/2","greater than 1/2"],"display":{"frac":{"a":1,"b":2,"kind":"halfCmp"},"promptText":"Place 1/2 against 1/2. Which relation is true?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"equal to 1/2","choices":["less than 1/2","equal to 1/2","greater than 1/2"],"display":{"frac":{"a":1,"b":2,"kind":"halfCmp"},"promptText":"Is 1/2 more than, less than, or the same as 1/2?"}},
   },
   {
     itemId: "fractions-proc-b0821-0556",
@@ -23942,7 +23942,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"less than 1/2","choices":["less than 1/2","equal to 1/2","greater than 1/2"],"display":{"frac":{"a":2,"b":5,"kind":"halfCmp"},"promptText":"Benchmark 2/5 against a half. Less, equal, or greater?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"less than 1/2","choices":["less than 1/2","equal to 1/2","greater than 1/2"],"display":{"frac":{"a":2,"b":5,"kind":"halfCmp"},"promptText":"Is 2/5 less than, equal to, or greater than 1/2?"}},
   },
   {
     itemId: "fractions-proc-b0821-0557",
@@ -23952,7 +23952,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"greater than 1/2","choices":["greater than 1/2","equal to 1/2","less than 1/2"],"display":{"frac":{"a":3,"b":5,"kind":"halfCmp"},"promptText":"Benchmark 3/5 against a half. Less, equal, or greater?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"greater than 1/2","choices":["greater than 1/2","equal to 1/2","less than 1/2"],"display":{"frac":{"a":3,"b":5,"kind":"halfCmp"},"promptText":"How does 3/5 compare to one half?"}},
   },
   {
     itemId: "fractions-proc-b0821-0558",
@@ -23962,7 +23962,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"less than 1/2","choices":["equal to 1/2","greater than 1/2","less than 1/2"],"display":{"frac":{"a":1,"b":6,"kind":"halfCmp"},"promptText":"Benchmark 1/6 against a half. Less, equal, or greater?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"less than 1/2","choices":["equal to 1/2","greater than 1/2","less than 1/2"],"display":{"frac":{"a":1,"b":6,"kind":"halfCmp"},"promptText":"Is 1/6 less than, equal to, or greater than 1/2?"}},
   },
   {
     itemId: "fractions-proc-b0821-0559",
@@ -23972,7 +23972,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"greater than 1/2","choices":["equal to 1/2","less than 1/2","greater than 1/2"],"display":{"frac":{"a":5,"b":6,"kind":"halfCmp"},"promptText":"Benchmark 5/6 against a half. Less, equal, or greater?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"greater than 1/2","choices":["equal to 1/2","less than 1/2","greater than 1/2"],"display":{"frac":{"a":5,"b":6,"kind":"halfCmp"},"promptText":"How does 5/6 compare to one half?"}},
   },
   {
     itemId: "fractions-proc-b0821-0560",
@@ -23982,7 +23982,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"less than 1/2","choices":["greater than 1/2","less than 1/2","equal to 1/2"],"display":{"frac":{"a":3,"b":8,"kind":"halfCmp"},"promptText":"Benchmark 3/8 against a half. Less, equal, or greater?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"less than 1/2","choices":["greater than 1/2","less than 1/2","equal to 1/2"],"display":{"frac":{"a":3,"b":8,"kind":"halfCmp"},"promptText":"Is 3/8 less than, equal to, or greater than 1/2?"}},
   },
   {
     itemId: "fractions-proc-b0821-0561",
@@ -23992,7 +23992,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"greater than 1/2","choices":["greater than 1/2","equal to 1/2","less than 1/2"],"display":{"frac":{"a":5,"b":8,"kind":"halfCmp"},"promptText":"Benchmark 5/8 against a half. Less, equal, or greater?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"greater than 1/2","choices":["greater than 1/2","equal to 1/2","less than 1/2"],"display":{"frac":{"a":5,"b":8,"kind":"halfCmp"},"promptText":"How does 5/8 compare to one half?"}},
   },
   {
     itemId: "fractions-proc-b0821-0562",
@@ -24002,7 +24002,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"equal to 1/2","choices":["equal to 1/2","less than 1/2","greater than 1/2"],"display":{"frac":{"a":4,"b":8,"kind":"halfCmp"},"promptText":"Where does 4/8 stand next to 1/2? Choose the relation."}},
+    question: {"a":null,"b":null,"op":"count","answer":"equal to 1/2","choices":["equal to 1/2","less than 1/2","greater than 1/2"],"display":{"frac":{"a":4,"b":8,"kind":"halfCmp"},"promptText":"How does 4/8 compare with 1/2?"}},
   },
   {
     itemId: "fractions-proc-b0821-0563",
@@ -24012,7 +24012,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"equal to 1/2","choices":["less than 1/2","greater than 1/2","equal to 1/2"],"display":{"frac":{"a":3,"b":6,"kind":"halfCmp"},"promptText":"Where does 3/6 stand next to 1/2? Choose the relation."}},
+    question: {"a":null,"b":null,"op":"count","answer":"equal to 1/2","choices":["less than 1/2","greater than 1/2","equal to 1/2"],"display":{"frac":{"a":3,"b":6,"kind":"halfCmp"},"promptText":"Is 3/6 less than, equal to, or greater than one half?"}},
   },
   {
     itemId: "fractions-proc-b0821-0564",
@@ -24022,7 +24022,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"less than 1/2","choices":["greater than 1/2","equal to 1/2","less than 1/2"],"display":{"frac":{"a":1,"b":5,"kind":"halfCmp"},"promptText":"Where does 1/5 stand next to 1/2? Choose the relation."}},
+    question: {"a":null,"b":null,"op":"count","answer":"less than 1/2","choices":["greater than 1/2","equal to 1/2","less than 1/2"],"display":{"frac":{"a":1,"b":5,"kind":"halfCmp"},"promptText":"How does 1/5 compare with 1/2?"}},
   },
   {
     itemId: "fractions-proc-b0821-0565",
@@ -24032,7 +24032,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"greater than 1/2","choices":["less than 1/2","equal to 1/2","greater than 1/2"],"display":{"frac":{"a":4,"b":5,"kind":"halfCmp"},"promptText":"Where does 4/5 stand next to 1/2? Choose the relation."}},
+    question: {"a":null,"b":null,"op":"count","answer":"greater than 1/2","choices":["less than 1/2","equal to 1/2","greater than 1/2"],"display":{"frac":{"a":4,"b":5,"kind":"halfCmp"},"promptText":"Is 4/5 less than, equal to, or greater than one half?"}},
   },
   {
     itemId: "fractions-proc-b0821-0566",
@@ -24042,7 +24042,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"less than 1/2","choices":["greater than 1/2","equal to 1/2","less than 1/2"],"display":{"frac":{"a":2,"b":6,"kind":"halfCmp"},"promptText":"Where does 2/6 stand next to 1/2? Choose the relation."}},
+    question: {"a":null,"b":null,"op":"count","answer":"less than 1/2","choices":["greater than 1/2","equal to 1/2","less than 1/2"],"display":{"frac":{"a":2,"b":6,"kind":"halfCmp"},"promptText":"How does 2/6 compare with 1/2?"}},
   },
   {
     itemId: "fractions-proc-b0821-0567",
@@ -24052,7 +24052,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"greater than 1/2","choices":["greater than 1/2","equal to 1/2","less than 1/2"],"display":{"frac":{"a":4,"b":6,"kind":"halfCmp"},"promptText":"Where does 4/6 stand next to 1/2? Choose the relation."}},
+    question: {"a":null,"b":null,"op":"count","answer":"greater than 1/2","choices":["greater than 1/2","equal to 1/2","less than 1/2"],"display":{"frac":{"a":4,"b":6,"kind":"halfCmp"},"promptText":"Is 4/6 less than, equal to, or greater than one half?"}},
   },
   {
     itemId: "fractions-proc-b0821-0568",
@@ -24062,7 +24062,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"less than 1/2","choices":["equal to 1/2","less than 1/2","greater than 1/2"],"display":{"frac":{"a":3,"b":10,"kind":"halfCmp"},"promptText":"Precisely benchmark 3/10 at the half mark. Which relation holds?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"less than 1/2","choices":["equal to 1/2","less than 1/2","greater than 1/2"],"display":{"frac":{"a":3,"b":10,"kind":"halfCmp"},"promptText":"How does 3/10 compare to 1/2?"}},
   },
   {
     itemId: "fractions-proc-b0821-0569",
@@ -24072,7 +24072,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"greater than 1/2","choices":["greater than 1/2","less than 1/2","equal to 1/2"],"display":{"frac":{"a":7,"b":10,"kind":"halfCmp"},"promptText":"Precisely benchmark 7/10 at the half mark. Which relation holds?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"greater than 1/2","choices":["greater than 1/2","less than 1/2","equal to 1/2"],"display":{"frac":{"a":7,"b":10,"kind":"halfCmp"},"promptText":"Is 7/10 less than, equal to, or greater than one half?"}},
   },
   {
     itemId: "fractions-proc-b0821-0570",
@@ -24082,7 +24082,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"less than 1/2","choices":["greater than 1/2","equal to 1/2","less than 1/2"],"display":{"frac":{"a":5,"b":12,"kind":"halfCmp"},"promptText":"Precisely benchmark 5/12 at the half mark. Which relation holds?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"less than 1/2","choices":["greater than 1/2","equal to 1/2","less than 1/2"],"display":{"frac":{"a":5,"b":12,"kind":"halfCmp"},"promptText":"How does 5/12 compare to 1/2?"}},
   },
   {
     itemId: "fractions-proc-b0821-0571",
@@ -24092,7 +24092,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"greater than 1/2","choices":["equal to 1/2","greater than 1/2","less than 1/2"],"display":{"frac":{"a":7,"b":12,"kind":"halfCmp"},"promptText":"Precisely benchmark 7/12 at the half mark. Which relation holds?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"greater than 1/2","choices":["equal to 1/2","greater than 1/2","less than 1/2"],"display":{"frac":{"a":7,"b":12,"kind":"halfCmp"},"promptText":"Is 7/12 less than, equal to, or greater than one half?"}},
   },
   {
     itemId: "fractions-proc-b0821-0572",
@@ -24102,7 +24102,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"equal to 1/2","choices":["greater than 1/2","less than 1/2","equal to 1/2"],"display":{"frac":{"a":5,"b":10,"kind":"halfCmp"},"promptText":"Precisely benchmark 5/10 at the half mark. Which relation holds?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"equal to 1/2","choices":["greater than 1/2","less than 1/2","equal to 1/2"],"display":{"frac":{"a":5,"b":10,"kind":"halfCmp"},"promptText":"How does 5/10 compare to 1/2?"}},
   },
   {
     itemId: "fractions-proc-b0821-0573",
@@ -24112,7 +24112,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"equal to 1/2","choices":["equal to 1/2","less than 1/2","greater than 1/2"],"display":{"frac":{"a":6,"b":12,"kind":"halfCmp"},"promptText":"Precisely benchmark 6/12 at the half mark. Which relation holds?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"equal to 1/2","choices":["equal to 1/2","less than 1/2","greater than 1/2"],"display":{"frac":{"a":6,"b":12,"kind":"halfCmp"},"promptText":"Is 6/12 less than, equal to, or greater than one half?"}},
   },
   {
     itemId: "fractions-proc-b0821-0574",
@@ -24122,7 +24122,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"less than 1/2","choices":["greater than 1/2","less than 1/2","equal to 1/2"],"display":{"frac":{"a":1,"b":10,"kind":"halfCmp"},"promptText":"Against the 1/2 benchmark, 1/10 lands where? Pick the relation."}},
+    question: {"a":null,"b":null,"op":"count","answer":"less than 1/2","choices":["greater than 1/2","less than 1/2","equal to 1/2"],"display":{"frac":{"a":1,"b":10,"kind":"halfCmp"},"promptText":"Is 1/10 less than, equal to, or greater than 1/2?"}},
   },
   {
     itemId: "fractions-proc-b0821-0575",
@@ -24132,7 +24132,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"greater than 1/2","choices":["less than 1/2","greater than 1/2","equal to 1/2"],"display":{"frac":{"a":9,"b":10,"kind":"halfCmp"},"promptText":"Against the 1/2 benchmark, 9/10 lands where? Pick the relation."}},
+    question: {"a":null,"b":null,"op":"count","answer":"greater than 1/2","choices":["less than 1/2","greater than 1/2","equal to 1/2"],"display":{"frac":{"a":9,"b":10,"kind":"halfCmp"},"promptText":"Compare 9/10 with 1/2. Is it less than, equal to, or greater than 1/2?"}},
   },
   {
     itemId: "fractions-proc-b0821-0576",
@@ -24142,7 +24142,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"less than 1/2","choices":["equal to 1/2","greater than 1/2","less than 1/2"],"display":{"frac":{"a":1,"b":12,"kind":"halfCmp"},"promptText":"Against the 1/2 benchmark, 1/12 lands where? Pick the relation."}},
+    question: {"a":null,"b":null,"op":"count","answer":"less than 1/2","choices":["equal to 1/2","greater than 1/2","less than 1/2"],"display":{"frac":{"a":1,"b":12,"kind":"halfCmp"},"promptText":"Is 1/12 less than, equal to, or greater than 1/2?"}},
   },
   {
     itemId: "fractions-proc-b0821-0577",
@@ -24152,7 +24152,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"greater than 1/2","choices":["greater than 1/2","less than 1/2","equal to 1/2"],"display":{"frac":{"a":11,"b":12,"kind":"halfCmp"},"promptText":"Against the 1/2 benchmark, 11/12 lands where? Pick the relation."}},
+    question: {"a":null,"b":null,"op":"count","answer":"greater than 1/2","choices":["greater than 1/2","less than 1/2","equal to 1/2"],"display":{"frac":{"a":11,"b":12,"kind":"halfCmp"},"promptText":"Compare 11/12 with 1/2. Is it less than, equal to, or greater than 1/2?"}},
   },
   {
     itemId: "fractions-proc-b0821-0578",
@@ -24162,7 +24162,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"less than 1/2","choices":["less than 1/2","equal to 1/2","greater than 1/2"],"display":{"frac":{"a":4,"b":10,"kind":"halfCmp"},"promptText":"Against the 1/2 benchmark, 4/10 lands where? Pick the relation."}},
+    question: {"a":null,"b":null,"op":"count","answer":"less than 1/2","choices":["less than 1/2","equal to 1/2","greater than 1/2"],"display":{"frac":{"a":4,"b":10,"kind":"halfCmp"},"promptText":"Is 4/10 less than, equal to, or greater than 1/2?"}},
   },
   {
     itemId: "fractions-proc-b0821-0579",
@@ -24172,7 +24172,7 @@ export const ITEMS = [
     structureType: "halfBenchmark_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"greater than 1/2","choices":["equal to 1/2","greater than 1/2","less than 1/2"],"display":{"frac":{"a":8,"b":12,"kind":"halfCmp"},"promptText":"Against the 1/2 benchmark, 8/12 lands where? Pick the relation."}},
+    question: {"a":null,"b":null,"op":"count","answer":"greater than 1/2","choices":["equal to 1/2","greater than 1/2","less than 1/2"],"display":{"frac":{"a":8,"b":12,"kind":"halfCmp"},"promptText":"Compare 8/12 with 1/2. Is it less than, equal to, or greater than 1/2?"}},
   },
   {
     itemId: "fractions-proc-b0821-0580",
@@ -24182,7 +24182,7 @@ export const ITEMS = [
     structureType: "smallestPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/4","2/4","3/4"],"display":{"frac":{"d":4,"ns":[1,2,3],"kind":"minPick"},"promptText":"Which is smallest: 1/4, 2/4, or 3/4? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/4","2/4","3/4"],"display":{"frac":{"d":4,"ns":[1,2,3],"kind":"minPick"},"promptText":"Which is smallest: 1/4, 2/4, or 3/4?"}},
   },
   {
     itemId: "fractions-proc-b0821-0581",
@@ -24202,7 +24202,7 @@ export const ITEMS = [
     structureType: "smallestPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["2/4","1/4","3/4"],"display":{"frac":{"d":4,"ns":[2,1,3],"kind":"minPick"},"promptText":"Which is smallest: 2/4, 1/4, or 3/4? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["2/4","1/4","3/4"],"display":{"frac":{"d":4,"ns":[2,1,3],"kind":"minPick"},"promptText":"Which fraction is the smallest of 2/4, 1/4, and 3/4?"}},
   },
   {
     itemId: "fractions-proc-b0821-0583",
@@ -24222,7 +24222,7 @@ export const ITEMS = [
     structureType: "smallestPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["3/4","1/4","2/4"],"display":{"frac":{"d":4,"ns":[3,1,2],"kind":"minPick"},"promptText":"Which is smallest: 3/4, 1/4, or 2/4? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["3/4","1/4","2/4"],"display":{"frac":{"d":4,"ns":[3,1,2],"kind":"minPick"},"promptText":"Which is smallest: 3/4, 1/4, or 2/4?"}},
   },
   {
     itemId: "fractions-proc-b0821-0585",
@@ -24242,7 +24242,7 @@ export const ITEMS = [
     structureType: "smallestPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["1/3","2/3","3/3"],"display":{"frac":{"d":3,"ns":[1,2,3],"kind":"minPick"},"promptText":"Which is smallest: 1/3, 2/3, or 3/3? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["1/3","2/3","3/3"],"display":{"frac":{"d":3,"ns":[1,2,3],"kind":"minPick"},"promptText":"Which fraction is the smallest of 1/3, 2/3, and 3/3?"}},
   },
   {
     itemId: "fractions-proc-b0821-0587",
@@ -24262,7 +24262,7 @@ export const ITEMS = [
     structureType: "smallestPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["2/3","1/3","3/3"],"display":{"frac":{"d":3,"ns":[2,1,3],"kind":"minPick"},"promptText":"Which is smallest: 2/3, 1/3, or 3/3? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["2/3","1/3","3/3"],"display":{"frac":{"d":3,"ns":[2,1,3],"kind":"minPick"},"promptText":"Which is smallest: 2/3, 1/3, or 3/3?"}},
   },
   {
     itemId: "fractions-proc-b0821-0589",
@@ -24282,7 +24282,7 @@ export const ITEMS = [
     structureType: "smallestPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["3/3","1/3","2/3"],"display":{"frac":{"d":3,"ns":[3,1,2],"kind":"minPick"},"promptText":"Which is smallest: 3/3, 1/3, or 2/3? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["3/3","1/3","2/3"],"display":{"frac":{"d":3,"ns":[3,1,2],"kind":"minPick"},"promptText":"Which fraction is the smallest of 3/3, 1/3, and 2/3?"}},
   },
   {
     itemId: "fractions-proc-b0821-0591",
@@ -24302,7 +24302,7 @@ export const ITEMS = [
     structureType: "smallestPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/4","choices":["2/4","3/4","4/4"],"display":{"frac":{"d":4,"ns":[2,3,4],"kind":"minPick"},"promptText":"Which is smallest: 2/4, 3/4, or 4/4? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/4","choices":["2/4","3/4","4/4"],"display":{"frac":{"d":4,"ns":[2,3,4],"kind":"minPick"},"promptText":"Which is smallest: 2/4, 3/4, or 4/4?"}},
   },
   {
     itemId: "fractions-proc-b0821-0593",
@@ -24322,7 +24322,7 @@ export const ITEMS = [
     structureType: "smallestPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/4","choices":["3/4","2/4","4/4"],"display":{"frac":{"d":4,"ns":[3,2,4],"kind":"minPick"},"promptText":"Which is smallest: 3/4, 2/4, or 4/4? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/4","choices":["3/4","2/4","4/4"],"display":{"frac":{"d":4,"ns":[3,2,4],"kind":"minPick"},"promptText":"Which fraction is the smallest of 3/4, 2/4, and 4/4?"}},
   },
   {
     itemId: "fractions-proc-b0821-0595",
@@ -24502,7 +24502,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/10","choices":["3/10","7/10","9/10"],"display":{"frac":{"d":10,"ns":[3,7,9],"kind":"minPick"},"promptText":"Exactly which of 3/10, 7/10, 9/10 is least?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/10","choices":["3/10","7/10","9/10"],"display":{"frac":{"d":10,"ns":[3,7,9],"kind":"minPick"},"promptText":"Which is the least: 3/10, 7/10, or 9/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0613",
@@ -24512,7 +24512,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/10","choices":["7/10","3/10","9/10"],"display":{"frac":{"d":10,"ns":[7,3,9],"kind":"minPick"},"promptText":"Rank 7/10, 3/10, 9/10: which one is the minimum?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/10","choices":["7/10","3/10","9/10"],"display":{"frac":{"d":10,"ns":[7,3,9],"kind":"minPick"},"promptText":"Which fraction is the smallest: 7/10, 3/10, or 9/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0614",
@@ -24522,7 +24522,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/10","choices":["9/10","7/10","3/10"],"display":{"frac":{"d":10,"ns":[9,7,3],"kind":"minPick"},"promptText":"Exactly which of 9/10, 7/10, 3/10 is least?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/10","choices":["9/10","7/10","3/10"],"display":{"frac":{"d":10,"ns":[9,7,3],"kind":"minPick"},"promptText":"Which fraction is least: 9/10, 7/10, or 3/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0615",
@@ -24532,7 +24532,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/10","choices":["1/10","5/10","9/10"],"display":{"frac":{"d":10,"ns":[1,5,9],"kind":"minPick"},"promptText":"Rank 1/10, 5/10, 9/10: which one is the minimum?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/10","choices":["1/10","5/10","9/10"],"display":{"frac":{"d":10,"ns":[1,5,9],"kind":"minPick"},"promptText":"Which of 1/10, 5/10, and 9/10 is the smallest?"}},
   },
   {
     itemId: "fractions-proc-b0821-0616",
@@ -24542,7 +24542,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/10","choices":["5/10","1/10","9/10"],"display":{"frac":{"d":10,"ns":[5,1,9],"kind":"minPick"},"promptText":"Exactly which of 5/10, 1/10, 9/10 is least?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/10","choices":["5/10","1/10","9/10"],"display":{"frac":{"d":10,"ns":[5,1,9],"kind":"minPick"},"promptText":"Which is the least: 5/10, 1/10, or 9/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0617",
@@ -24552,7 +24552,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/10","choices":["9/10","5/10","1/10"],"display":{"frac":{"d":10,"ns":[9,5,1],"kind":"minPick"},"promptText":"Rank 9/10, 5/10, 1/10: which one is the minimum?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/10","choices":["9/10","5/10","1/10"],"display":{"frac":{"d":10,"ns":[9,5,1],"kind":"minPick"},"promptText":"Which fraction is the smallest: 9/10, 5/10, or 1/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0618",
@@ -24562,7 +24562,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5/12","choices":["5/12","7/12","11/12"],"display":{"frac":{"d":12,"ns":[5,7,11],"kind":"minPick"},"promptText":"Exactly which of 5/12, 7/12, 11/12 is least?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5/12","choices":["5/12","7/12","11/12"],"display":{"frac":{"d":12,"ns":[5,7,11],"kind":"minPick"},"promptText":"Which fraction is least: 5/12, 7/12, or 11/12?"}},
   },
   {
     itemId: "fractions-proc-b0821-0619",
@@ -24572,7 +24572,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5/12","choices":["7/12","5/12","11/12"],"display":{"frac":{"d":12,"ns":[7,5,11],"kind":"minPick"},"promptText":"Rank 7/12, 5/12, 11/12: which one is the minimum?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5/12","choices":["7/12","5/12","11/12"],"display":{"frac":{"d":12,"ns":[7,5,11],"kind":"minPick"},"promptText":"Which of 7/12, 5/12, and 11/12 is the smallest?"}},
   },
   {
     itemId: "fractions-proc-b0821-0620",
@@ -24582,7 +24582,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5/12","choices":["11/12","7/12","5/12"],"display":{"frac":{"d":12,"ns":[11,7,5],"kind":"minPick"},"promptText":"Exactly which of 11/12, 7/12, 5/12 is least?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5/12","choices":["11/12","7/12","5/12"],"display":{"frac":{"d":12,"ns":[11,7,5],"kind":"minPick"},"promptText":"Which is the least: 11/12, 7/12, or 5/12?"}},
   },
   {
     itemId: "fractions-proc-b0821-0621",
@@ -24592,7 +24592,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/12","choices":["1/12","6/12","10/12"],"display":{"frac":{"d":12,"ns":[1,6,10],"kind":"minPick"},"promptText":"Rank 1/12, 6/12, 10/12: which one is the minimum?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/12","choices":["1/12","6/12","10/12"],"display":{"frac":{"d":12,"ns":[1,6,10],"kind":"minPick"},"promptText":"Which fraction is the smallest: 1/12, 6/12, or 10/12?"}},
   },
   {
     itemId: "fractions-proc-b0821-0622",
@@ -24602,7 +24602,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/12","choices":["6/12","1/12","10/12"],"display":{"frac":{"d":12,"ns":[6,1,10],"kind":"minPick"},"promptText":"Exactly which of 6/12, 1/12, 10/12 is least?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/12","choices":["6/12","1/12","10/12"],"display":{"frac":{"d":12,"ns":[6,1,10],"kind":"minPick"},"promptText":"Which fraction is least: 6/12, 1/12, or 10/12?"}},
   },
   {
     itemId: "fractions-proc-b0821-0623",
@@ -24612,7 +24612,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/12","choices":["10/12","6/12","1/12"],"display":{"frac":{"d":12,"ns":[10,6,1],"kind":"minPick"},"promptText":"Rank 10/12, 6/12, 1/12: which one is the minimum?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/12","choices":["10/12","6/12","1/12"],"display":{"frac":{"d":12,"ns":[10,6,1],"kind":"minPick"},"promptText":"Which of 10/12, 6/12, and 1/12 is the smallest?"}},
   },
   {
     itemId: "fractions-proc-b0821-0624",
@@ -24622,7 +24622,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/10","choices":["2/10","4/10","8/10"],"display":{"frac":{"d":10,"ns":[2,4,8],"kind":"minPick"},"promptText":"Exactly which of 2/10, 4/10, 8/10 is least?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/10","choices":["2/10","4/10","8/10"],"display":{"frac":{"d":10,"ns":[2,4,8],"kind":"minPick"},"promptText":"Which is the least: 2/10, 4/10, or 8/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0625",
@@ -24632,7 +24632,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/10","choices":["4/10","8/10","2/10"],"display":{"frac":{"d":10,"ns":[4,8,2],"kind":"minPick"},"promptText":"Rank 4/10, 8/10, 2/10: which one is the minimum?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/10","choices":["4/10","8/10","2/10"],"display":{"frac":{"d":10,"ns":[4,8,2],"kind":"minPick"},"promptText":"Which fraction is the smallest: 4/10, 8/10, or 2/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0626",
@@ -24642,7 +24642,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/12","choices":["3/12","9/12","6/12"],"display":{"frac":{"d":12,"ns":[3,9,6],"kind":"minPick"},"promptText":"Exactly which of 3/12, 9/12, 6/12 is least?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/12","choices":["3/12","9/12","6/12"],"display":{"frac":{"d":12,"ns":[3,9,6],"kind":"minPick"},"promptText":"Which fraction is least: 3/12, 9/12, or 6/12?"}},
   },
   {
     itemId: "fractions-proc-b0821-0627",
@@ -24652,7 +24652,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/12","choices":["9/12","3/12","6/12"],"display":{"frac":{"d":12,"ns":[9,3,6],"kind":"minPick"},"promptText":"Rank 9/12, 3/12, 6/12: which one is the minimum?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/12","choices":["9/12","3/12","6/12"],"display":{"frac":{"d":12,"ns":[9,3,6],"kind":"minPick"},"promptText":"Which of 9/12, 3/12, and 6/12 is the smallest?"}},
   },
   {
     itemId: "fractions-proc-b0821-0628",
@@ -24662,7 +24662,7 @@ export const ITEMS = [
     structureType: "addLike_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/2","choices":["3/2","2/2","2/4","4/2"],"display":{"frac":{"a":1,"b":1,"d":2,"kind":"addLike"},"promptText":"1/2 + 1/2 = ? Pick the sum."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/2","choices":["3/2","2/2","2/4","4/2"],"display":{"frac":{"a":1,"b":1,"d":2,"kind":"addLike"},"promptText":"What is 1/2 + 1/2?"}},
   },
   {
     itemId: "fractions-proc-b0821-0629",
@@ -24672,7 +24672,7 @@ export const ITEMS = [
     structureType: "addLike_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/3","choices":["4/3","3/3","2/6","2/3"],"display":{"frac":{"a":1,"b":1,"d":3,"kind":"addLike"},"promptText":"Add 1/3 and 1/3. Which fraction results?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/3","choices":["4/3","3/3","2/6","2/3"],"display":{"frac":{"a":1,"b":1,"d":3,"kind":"addLike"},"promptText":"What fraction do you get when you add 1/3 and 1/3?"}},
   },
   {
     itemId: "fractions-proc-b0821-0630",
@@ -24682,7 +24682,7 @@ export const ITEMS = [
     structureType: "addLike_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/3","choices":["3/6","4/3","1/3","3/3"],"display":{"frac":{"a":1,"b":2,"d":3,"kind":"addLike"},"promptText":"1/3 + 2/3 = ? Pick the sum."}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/3","choices":["3/6","4/3","1/3","3/3"],"display":{"frac":{"a":1,"b":2,"d":3,"kind":"addLike"},"promptText":"What is 1/3 plus 2/3?"}},
   },
   {
     itemId: "fractions-proc-b0821-0631",
@@ -24692,7 +24692,7 @@ export const ITEMS = [
     structureType: "addLike_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/3","choices":["3/6","3/3","4/3","1/3"],"display":{"frac":{"a":2,"b":1,"d":3,"kind":"addLike"},"promptText":"Add 2/3 and 1/3. Which fraction results?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/3","choices":["3/6","3/3","4/3","1/3"],"display":{"frac":{"a":2,"b":1,"d":3,"kind":"addLike"},"promptText":"What fraction do you get when you add 2/3 and 1/3?"}},
   },
   {
     itemId: "fractions-proc-b0821-0632",
@@ -24702,7 +24702,7 @@ export const ITEMS = [
     structureType: "addLike_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/4","choices":["2/8","3/4","4/4","2/4"],"display":{"frac":{"a":1,"b":1,"d":4,"kind":"addLike"},"promptText":"1/4 + 1/4 = ? Pick the sum."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/4","choices":["2/8","3/4","4/4","2/4"],"display":{"frac":{"a":1,"b":1,"d":4,"kind":"addLike"},"promptText":"What is 1/4 + 1/4?"}},
   },
   {
     itemId: "fractions-proc-b0821-0633",
@@ -24712,7 +24712,7 @@ export const ITEMS = [
     structureType: "addLike_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/4","choices":["4/4","3/8","1/4","3/4"],"display":{"frac":{"a":1,"b":2,"d":4,"kind":"addLike"},"promptText":"Add 1/4 and 2/4. Which fraction results?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/4","choices":["4/4","3/8","1/4","3/4"],"display":{"frac":{"a":1,"b":2,"d":4,"kind":"addLike"},"promptText":"What fraction do you get when you add 1/4 and 2/4?"}},
   },
   {
     itemId: "fractions-proc-b0821-0634",
@@ -24722,7 +24722,7 @@ export const ITEMS = [
     structureType: "addLike_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/4","choices":["4/4","1/4","3/8","3/4"],"display":{"frac":{"a":2,"b":1,"d":4,"kind":"addLike"},"promptText":"2/4 + 1/4 = ? Pick the sum."}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/4","choices":["4/4","1/4","3/8","3/4"],"display":{"frac":{"a":2,"b":1,"d":4,"kind":"addLike"},"promptText":"What is 2/4 plus 1/4?"}},
   },
   {
     itemId: "fractions-proc-b0821-0635",
@@ -24732,7 +24732,7 @@ export const ITEMS = [
     structureType: "addLike_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4/4","choices":["2/4","4/8","4/4","5/4"],"display":{"frac":{"a":1,"b":3,"d":4,"kind":"addLike"},"promptText":"Add 1/4 and 3/4. Which fraction results?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"4/4","choices":["2/4","4/8","4/4","5/4"],"display":{"frac":{"a":1,"b":3,"d":4,"kind":"addLike"},"promptText":"What fraction do you get when you add 1/4 and 3/4?"}},
   },
   {
     itemId: "fractions-proc-b0821-0636",
@@ -24742,7 +24742,7 @@ export const ITEMS = [
     structureType: "addLike_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4/4","choices":["4/8","2/4","5/4","4/4"],"display":{"frac":{"a":3,"b":1,"d":4,"kind":"addLike"},"promptText":"3/4 + 1/4 = ? Pick the sum."}},
+    question: {"a":null,"b":null,"op":"count","answer":"4/4","choices":["4/8","2/4","5/4","4/4"],"display":{"frac":{"a":3,"b":1,"d":4,"kind":"addLike"},"promptText":"What is 3/4 + 1/4?"}},
   },
   {
     itemId: "fractions-proc-b0821-0637",
@@ -24752,7 +24752,7 @@ export const ITEMS = [
     structureType: "addLike_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4/4","choices":["4/8","4/4","6/4","5/4"],"display":{"frac":{"a":2,"b":2,"d":4,"kind":"addLike"},"promptText":"Add 2/4 and 2/4. Which fraction results?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"4/4","choices":["4/8","4/4","6/4","5/4"],"display":{"frac":{"a":2,"b":2,"d":4,"kind":"addLike"},"promptText":"What fraction do you get when you add 2/4 and 2/4?"}},
   },
   {
     itemId: "fractions-proc-b0821-0638",
@@ -24772,7 +24772,7 @@ export const ITEMS = [
     structureType: "addLike_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/3","choices":["2/6","4/3","3/3","2/3"],"display":{"frac":{"a":1,"b":1,"d":3,"kind":"addLike"},"promptText":"Put 1/3 and 1/3 together. Pick the total fraction."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/3","choices":["2/6","4/3","3/3","2/3"],"display":{"frac":{"a":1,"b":1,"d":3,"kind":"addLike"},"promptText":"What fraction do 1/3 and 1/3 make together?"}},
   },
   {
     itemId: "fractions-proc-b0821-0640",
@@ -24782,7 +24782,7 @@ export const ITEMS = [
     structureType: "addLike_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4/5","choices":["6/5","4/10","5/5","4/5"],"display":{"frac":{"a":2,"b":2,"d":5,"kind":"addLike"},"promptText":"Sum the like fractions 2/5 + 2/5. What do you get?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"4/5","choices":["6/5","4/10","5/5","4/5"],"display":{"frac":{"a":2,"b":2,"d":5,"kind":"addLike"},"promptText":"What is 2/5 + 2/5?"}},
   },
   {
     itemId: "fractions-proc-b0821-0641",
@@ -24802,7 +24802,7 @@ export const ITEMS = [
     structureType: "addLike_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5/6","choices":["5/6","6/6","1/6","5/12"],"display":{"frac":{"a":2,"b":3,"d":6,"kind":"addLike"},"promptText":"Sum the like fractions 2/6 + 3/6. What do you get?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5/6","choices":["5/6","6/6","1/6","5/12"],"display":{"frac":{"a":2,"b":3,"d":6,"kind":"addLike"},"promptText":"What is 2/6 plus 3/6?"}},
   },
   {
     itemId: "fractions-proc-b0821-0643",
@@ -24822,7 +24822,7 @@ export const ITEMS = [
     structureType: "addLike_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7/8","choices":["7/8","7/16","1/8","8/8"],"display":{"frac":{"a":3,"b":4,"d":8,"kind":"addLike"},"promptText":"Sum the like fractions 3/8 + 4/8. What do you get?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"7/8","choices":["7/8","7/16","1/8","8/8"],"display":{"frac":{"a":3,"b":4,"d":8,"kind":"addLike"},"promptText":"What is 3/8 + 4/8?"}},
   },
   {
     itemId: "fractions-proc-b0821-0645",
@@ -24842,7 +24842,7 @@ export const ITEMS = [
     structureType: "addLike_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/5","choices":["4/5","3/5","1/5","3/10"],"display":{"frac":{"a":1,"b":2,"d":5,"kind":"addLike"},"promptText":"Sum the like fractions 1/5 + 2/5. What do you get?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/5","choices":["4/5","3/5","1/5","3/10"],"display":{"frac":{"a":1,"b":2,"d":5,"kind":"addLike"},"promptText":"What is 1/5 plus 2/5?"}},
   },
   {
     itemId: "fractions-proc-b0821-0647",
@@ -24862,7 +24862,7 @@ export const ITEMS = [
     structureType: "addLike_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7/8","choices":["7/16","8/8","3/8","7/8"],"display":{"frac":{"a":5,"b":2,"d":8,"kind":"addLike"},"promptText":"Sum the like fractions 5/8 + 2/8. What do you get?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"7/8","choices":["7/16","8/8","3/8","7/8"],"display":{"frac":{"a":5,"b":2,"d":8,"kind":"addLike"},"promptText":"What is 5/8 + 2/8?"}},
   },
   {
     itemId: "fractions-proc-b0821-0649",
@@ -24902,7 +24902,7 @@ export const ITEMS = [
     structureType: "addLike_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7/10","choices":["8/10","7/10","7/20","1/10"],"display":{"frac":{"a":3,"b":4,"d":10,"kind":"addLike"},"promptText":"Compute exactly: 3/10 + 4/10. Which fraction is the sum?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"7/10","choices":["8/10","7/10","7/20","1/10"],"display":{"frac":{"a":3,"b":4,"d":10,"kind":"addLike"},"promptText":"What is 3/10 + 4/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0653",
@@ -24912,7 +24912,7 @@ export const ITEMS = [
     structureType: "addLike_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["10/10","9/20","9/10","5/10"],"display":{"frac":{"a":2,"b":7,"d":10,"kind":"addLike"},"promptText":"The precise sum of 2/10 and 7/10 is which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["10/10","9/20","9/10","5/10"],"display":{"frac":{"a":2,"b":7,"d":10,"kind":"addLike"},"promptText":"What is the sum of 2/10 and 7/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0654",
@@ -24922,7 +24922,7 @@ export const ITEMS = [
     structureType: "addLike_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"9/12","choices":["9/24","10/12","9/12","1/12"],"display":{"frac":{"a":5,"b":4,"d":12,"kind":"addLike"},"promptText":"Compute exactly: 5/12 + 4/12. Which fraction is the sum?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"9/12","choices":["9/24","10/12","9/12","1/12"],"display":{"frac":{"a":5,"b":4,"d":12,"kind":"addLike"},"promptText":"How much is 5/12 + 4/12?"}},
   },
   {
     itemId: "fractions-proc-b0821-0655",
@@ -24932,7 +24932,7 @@ export const ITEMS = [
     structureType: "addLike_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"10/12","choices":["10/24","4/12","10/12","11/12"],"display":{"frac":{"a":3,"b":7,"d":12,"kind":"addLike"},"promptText":"The precise sum of 3/12 and 7/12 is which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"10/12","choices":["10/24","4/12","10/12","11/12"],"display":{"frac":{"a":3,"b":7,"d":12,"kind":"addLike"},"promptText":"What is the sum of 3/12 and 7/12?"}},
   },
   {
     itemId: "fractions-proc-b0821-0656",
@@ -24942,7 +24942,7 @@ export const ITEMS = [
     structureType: "addLike_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["9/20","10/10","9/10","7/10"],"display":{"frac":{"a":1,"b":8,"d":10,"kind":"addLike"},"promptText":"Compute exactly: 1/10 + 8/10. Which fraction is the sum?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["9/20","10/10","9/10","7/10"],"display":{"frac":{"a":1,"b":8,"d":10,"kind":"addLike"},"promptText":"What is 1/10 + 8/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0657",
@@ -24952,7 +24952,7 @@ export const ITEMS = [
     structureType: "addLike_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"11/12","choices":["11/12","12/12","1/12","11/24"],"display":{"frac":{"a":5,"b":6,"d":12,"kind":"addLike"},"promptText":"The precise sum of 5/12 and 6/12 is which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"11/12","choices":["11/12","12/12","1/12","11/24"],"display":{"frac":{"a":5,"b":6,"d":12,"kind":"addLike"},"promptText":"What is the sum of 5/12 and 6/12?"}},
   },
   {
     itemId: "fractions-proc-b0821-0658",
@@ -24962,7 +24962,7 @@ export const ITEMS = [
     structureType: "addLike_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["1/10","9/10","9/20","10/10"],"display":{"frac":{"a":4,"b":5,"d":10,"kind":"addLike"},"promptText":"Compute exactly: 4/10 + 5/10. Which fraction is the sum?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["1/10","9/10","9/20","10/10"],"display":{"frac":{"a":4,"b":5,"d":10,"kind":"addLike"},"promptText":"How much is 4/10 + 5/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0659",
@@ -24972,7 +24972,7 @@ export const ITEMS = [
     structureType: "addLike_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"11/12","choices":["11/24","3/12","11/12","12/12"],"display":{"frac":{"a":7,"b":4,"d":12,"kind":"addLike"},"promptText":"The precise sum of 7/12 and 4/12 is which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"11/12","choices":["11/24","3/12","11/12","12/12"],"display":{"frac":{"a":7,"b":4,"d":12,"kind":"addLike"},"promptText":"What is the sum of 7/12 and 4/12?"}},
   },
   {
     itemId: "fractions-proc-b0821-0660",
@@ -24982,7 +24982,7 @@ export const ITEMS = [
     structureType: "addLike_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"8/10","choices":["8/20","9/10","8/10","4/10"],"display":{"frac":{"a":2,"b":6,"d":10,"kind":"addLike"},"promptText":"Compute exactly: 2/10 + 6/10. Which fraction is the sum?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"8/10","choices":["8/20","9/10","8/10","4/10"],"display":{"frac":{"a":2,"b":6,"d":10,"kind":"addLike"},"promptText":"What is 2/10 + 6/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0661",
@@ -24992,7 +24992,7 @@ export const ITEMS = [
     structureType: "addLike_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"10/12","choices":["10/24","11/12","8/12","10/12"],"display":{"frac":{"a":1,"b":9,"d":12,"kind":"addLike"},"promptText":"The precise sum of 1/12 and 9/12 is which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"10/12","choices":["10/24","11/12","8/12","10/12"],"display":{"frac":{"a":1,"b":9,"d":12,"kind":"addLike"},"promptText":"What is the sum of 1/12 and 9/12?"}},
   },
   {
     itemId: "fractions-proc-b0821-0662",
@@ -25002,7 +25002,7 @@ export const ITEMS = [
     structureType: "addLike_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["9/10","9/20","3/10","10/10"],"display":{"frac":{"a":6,"b":3,"d":10,"kind":"addLike"},"promptText":"Evaluate 6/10 + 3/10 in one step. Which fraction results?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["9/10","9/20","3/10","10/10"],"display":{"frac":{"a":6,"b":3,"d":10,"kind":"addLike"},"promptText":"What fraction do you get when you add 6/10 and 3/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0663",
@@ -25012,7 +25012,7 @@ export const ITEMS = [
     structureType: "addLike_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"11/12","choices":["11/24","5/12","12/12","11/12"],"display":{"frac":{"a":8,"b":3,"d":12,"kind":"addLike"},"promptText":"Adding 8/12 to 3/12 yields exactly which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"11/12","choices":["11/24","5/12","12/12","11/12"],"display":{"frac":{"a":8,"b":3,"d":12,"kind":"addLike"},"promptText":"What do you get when you add 8/12 to 3/12?"}},
   },
   {
     itemId: "fractions-proc-b0821-0664",
@@ -25022,7 +25022,7 @@ export const ITEMS = [
     structureType: "subLike_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["2/2","1/4","3/2","1/2"],"display":{"frac":{"a":2,"b":1,"d":2,"kind":"subLike"},"promptText":"2/2 - 1/2 = ? Pick the difference."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["2/2","1/4","3/2","1/2"],"display":{"frac":{"a":2,"b":1,"d":2,"kind":"subLike"},"promptText":"What is 2/2 - 1/2?"}},
   },
   {
     itemId: "fractions-proc-b0821-0665",
@@ -25042,7 +25042,7 @@ export const ITEMS = [
     structureType: "subLike_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/3","choices":["2/3","4/3","2/6","3/3"],"display":{"frac":{"a":3,"b":1,"d":3,"kind":"subLike"},"promptText":"3/3 - 1/3 = ? Pick the difference."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/3","choices":["2/3","4/3","2/6","3/3"],"display":{"frac":{"a":3,"b":1,"d":3,"kind":"subLike"},"promptText":"What is 3/3 minus 1/3?"}},
   },
   {
     itemId: "fractions-proc-b0821-0667",
@@ -25062,7 +25062,7 @@ export const ITEMS = [
     structureType: "subLike_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/8","1/4","2/4","3/4"],"display":{"frac":{"a":2,"b":1,"d":4,"kind":"subLike"},"promptText":"2/4 - 1/4 = ? Pick the difference."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/8","1/4","2/4","3/4"],"display":{"frac":{"a":2,"b":1,"d":4,"kind":"subLike"},"promptText":"What is 2/4 - 1/4?"}},
   },
   {
     itemId: "fractions-proc-b0821-0669",
@@ -25082,7 +25082,7 @@ export const ITEMS = [
     structureType: "subLike_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/8","5/4","1/4","2/4"],"display":{"frac":{"a":3,"b":2,"d":4,"kind":"subLike"},"promptText":"3/4 - 2/4 = ? Pick the difference."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/4","choices":["1/8","5/4","1/4","2/4"],"display":{"frac":{"a":3,"b":2,"d":4,"kind":"subLike"},"promptText":"What is 3/4 minus 2/4?"}},
   },
   {
     itemId: "fractions-proc-b0821-0671",
@@ -25102,7 +25102,7 @@ export const ITEMS = [
     structureType: "subLike_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/4","choices":["2/4","2/8","3/4","6/4"],"display":{"frac":{"a":4,"b":2,"d":4,"kind":"subLike"},"promptText":"4/4 - 2/4 = ? Pick the difference."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/4","choices":["2/4","2/8","3/4","6/4"],"display":{"frac":{"a":4,"b":2,"d":4,"kind":"subLike"},"promptText":"What is 4/4 - 2/4?"}},
   },
   {
     itemId: "fractions-proc-b0821-0673",
@@ -25132,7 +25132,7 @@ export const ITEMS = [
     structureType: "subLike_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["1/3","3/3","1/6","2/3"],"display":{"frac":{"a":2,"b":1,"d":3,"kind":"subLike"},"promptText":"From 2/3, subtract 1/3. Pick what is left."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["1/3","3/3","1/6","2/3"],"display":{"frac":{"a":2,"b":1,"d":3,"kind":"subLike"},"promptText":"From 2/3, take away 1/3. What fraction is left?"}},
   },
   {
     itemId: "fractions-proc-b0821-0676",
@@ -25252,7 +25252,7 @@ export const ITEMS = [
     structureType: "subLike_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5/8","choices":["5/8","6/8","5/16","7/8"],"display":{"frac":{"a":6,"b":1,"d":8,"kind":"subLike"},"promptText":"Reduce 6/8 by 1/8. Which fraction is left over?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5/8","choices":["5/8","6/8","5/16","7/8"],"display":{"frac":{"a":6,"b":1,"d":8,"kind":"subLike"},"promptText":"What is 6/8 - 1/8?"}},
   },
   {
     itemId: "fractions-proc-b0821-0688",
@@ -25262,7 +25262,7 @@ export const ITEMS = [
     structureType: "subLike_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/10","choices":["11/10","4/10","3/10","3/20"],"display":{"frac":{"a":7,"b":4,"d":10,"kind":"subLike"},"promptText":"Compute exactly: 7/10 - 4/10. Which fraction remains?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/10","choices":["11/10","4/10","3/10","3/20"],"display":{"frac":{"a":7,"b":4,"d":10,"kind":"subLike"},"promptText":"What is 7/10 - 4/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0689",
@@ -25272,7 +25272,7 @@ export const ITEMS = [
     structureType: "subLike_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7/10","choices":["8/10","7/10","7/20","11/10"],"display":{"frac":{"a":9,"b":2,"d":10,"kind":"subLike"},"promptText":"The precise difference 9/10 - 2/10 is which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"7/10","choices":["8/10","7/10","7/20","11/10"],"display":{"frac":{"a":9,"b":2,"d":10,"kind":"subLike"},"promptText":"What is the difference between 9/10 and 2/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0690",
@@ -25282,7 +25282,7 @@ export const ITEMS = [
     structureType: "subLike_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5/12","choices":["13/12","5/12","5/24","6/12"],"display":{"frac":{"a":9,"b":4,"d":12,"kind":"subLike"},"promptText":"Compute exactly: 9/12 - 4/12. Which fraction remains?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5/12","choices":["13/12","5/12","5/24","6/12"],"display":{"frac":{"a":9,"b":4,"d":12,"kind":"subLike"},"promptText":"How much is 9/12 - 4/12?"}},
   },
   {
     itemId: "fractions-proc-b0821-0691",
@@ -25292,7 +25292,7 @@ export const ITEMS = [
     structureType: "subLike_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4/12","choices":["4/24","4/12","18/12","5/12"],"display":{"frac":{"a":11,"b":7,"d":12,"kind":"subLike"},"promptText":"The precise difference 11/12 - 7/12 is which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"4/12","choices":["4/24","4/12","18/12","5/12"],"display":{"frac":{"a":11,"b":7,"d":12,"kind":"subLike"},"promptText":"What is the difference between 11/12 and 7/12?"}},
   },
   {
     itemId: "fractions-proc-b0821-0692",
@@ -25302,7 +25302,7 @@ export const ITEMS = [
     structureType: "subLike_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7/10","choices":["8/10","9/10","7/20","7/10"],"display":{"frac":{"a":8,"b":1,"d":10,"kind":"subLike"},"promptText":"Compute exactly: 8/10 - 1/10. Which fraction remains?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"7/10","choices":["8/10","9/10","7/20","7/10"],"display":{"frac":{"a":8,"b":1,"d":10,"kind":"subLike"},"promptText":"What is 8/10 - 1/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0693",
@@ -25312,7 +25312,7 @@ export const ITEMS = [
     structureType: "subLike_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5/12","choices":["17/12","5/24","6/12","5/12"],"display":{"frac":{"a":11,"b":6,"d":12,"kind":"subLike"},"promptText":"The precise difference 11/12 - 6/12 is which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5/12","choices":["17/12","5/24","6/12","5/12"],"display":{"frac":{"a":11,"b":6,"d":12,"kind":"subLike"},"promptText":"What is the difference between 11/12 and 6/12?"}},
   },
   {
     itemId: "fractions-proc-b0821-0694",
@@ -25322,7 +25322,7 @@ export const ITEMS = [
     structureType: "subLike_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4/10","choices":["5/10","4/10","4/20","14/10"],"display":{"frac":{"a":9,"b":5,"d":10,"kind":"subLike"},"promptText":"Compute exactly: 9/10 - 5/10. Which fraction remains?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"4/10","choices":["5/10","4/10","4/20","14/10"],"display":{"frac":{"a":9,"b":5,"d":10,"kind":"subLike"},"promptText":"How much is 9/10 - 5/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0695",
@@ -25332,7 +25332,7 @@ export const ITEMS = [
     structureType: "subLike_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7/12","choices":["8/12","7/24","7/12","15/12"],"display":{"frac":{"a":11,"b":4,"d":12,"kind":"subLike"},"promptText":"The precise difference 11/12 - 4/12 is which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"7/12","choices":["8/12","7/24","7/12","15/12"],"display":{"frac":{"a":11,"b":4,"d":12,"kind":"subLike"},"promptText":"What is the difference between 11/12 and 4/12?"}},
   },
   {
     itemId: "fractions-proc-b0821-0696",
@@ -25342,7 +25342,7 @@ export const ITEMS = [
     structureType: "subLike_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4/10","choices":["5/10","4/10","8/10","4/20"],"display":{"frac":{"a":6,"b":2,"d":10,"kind":"subLike"},"promptText":"Compute exactly: 6/10 - 2/10. Which fraction remains?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"4/10","choices":["5/10","4/10","8/10","4/20"],"display":{"frac":{"a":6,"b":2,"d":10,"kind":"subLike"},"promptText":"What is 6/10 - 2/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0697",
@@ -25352,7 +25352,7 @@ export const ITEMS = [
     structureType: "subLike_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/12","choices":["19/12","1/24","1/12","2/12"],"display":{"frac":{"a":10,"b":9,"d":12,"kind":"subLike"},"promptText":"The precise difference 10/12 - 9/12 is which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/12","choices":["19/12","1/24","1/12","2/12"],"display":{"frac":{"a":10,"b":9,"d":12,"kind":"subLike"},"promptText":"What is the difference between 10/12 and 9/12?"}},
   },
   {
     itemId: "fractions-proc-b0821-0698",
@@ -25362,7 +25362,7 @@ export const ITEMS = [
     structureType: "subLike_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/10","choices":["4/10","3/10","15/10","3/20"],"display":{"frac":{"a":9,"b":6,"d":10,"kind":"subLike"},"promptText":"Evaluate 9/10 - 6/10 in one step. Which fraction results?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/10","choices":["4/10","3/10","15/10","3/20"],"display":{"frac":{"a":9,"b":6,"d":10,"kind":"subLike"},"promptText":"Take 6/10 away from 9/10. What fraction is left?"}},
   },
   {
     itemId: "fractions-proc-b0821-0699",
@@ -25372,7 +25372,7 @@ export const ITEMS = [
     structureType: "subLike_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/12","choices":["4/12","3/24","19/12","3/12"],"display":{"frac":{"a":11,"b":8,"d":12,"kind":"subLike"},"promptText":"Subtracting 8/12 from 11/12 yields exactly which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/12","choices":["4/12","3/24","19/12","3/12"],"display":{"frac":{"a":11,"b":8,"d":12,"kind":"subLike"},"promptText":"Take 8/12 away from 11/12. What fraction is left?"}},
   },
   {
     itemId: "fractions-proc-b0821-0700",
@@ -25382,7 +25382,7 @@ export const ITEMS = [
     structureType: "missingAddend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":1,"d":2,"s":2,"kind":"missingAddend"},"promptText":"1/2 + ?/2 = 2/2. What is the missing top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":1,"d":2,"s":2,"kind":"missingAddend"},"promptText":"1/2 + __/2 = 2/2. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0701",
@@ -25392,7 +25392,7 @@ export const ITEMS = [
     structureType: "missingAddend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":1,"d":3,"s":2,"kind":"missingAddend"},"promptText":"What numerator over 3 completes 1/3 + ?/3 = 2/3?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":1,"d":3,"s":2,"kind":"missingAddend"},"promptText":"1/3 + __/3 = 2/3. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0702",
@@ -25402,7 +25402,7 @@ export const ITEMS = [
     structureType: "missingAddend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":1,"d":3,"s":3,"kind":"missingAddend"},"promptText":"1/3 + ?/3 = 3/3. What is the missing top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":1,"d":3,"s":3,"kind":"missingAddend"},"promptText":"1/3 + __/3 = 3/3. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0703",
@@ -25412,7 +25412,7 @@ export const ITEMS = [
     structureType: "missingAddend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":2,"d":3,"s":3,"kind":"missingAddend"},"promptText":"What numerator over 3 completes 2/3 + ?/3 = 3/3?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":2,"d":3,"s":3,"kind":"missingAddend"},"promptText":"2/3 + __/3 = 3/3. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0704",
@@ -25422,7 +25422,7 @@ export const ITEMS = [
     structureType: "missingAddend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":1,"d":4,"s":2,"kind":"missingAddend"},"promptText":"1/4 + ?/4 = 2/4. What is the missing top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":1,"d":4,"s":2,"kind":"missingAddend"},"promptText":"1/4 + __/4 = 2/4. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0705",
@@ -25432,7 +25432,7 @@ export const ITEMS = [
     structureType: "missingAddend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":1,"d":4,"s":3,"kind":"missingAddend"},"promptText":"What numerator over 4 completes 1/4 + ?/4 = 3/4?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":1,"d":4,"s":3,"kind":"missingAddend"},"promptText":"1/4 + __/4 = 3/4. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0706",
@@ -25442,7 +25442,7 @@ export const ITEMS = [
     structureType: "missingAddend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":1,"d":4,"s":4,"kind":"missingAddend"},"promptText":"1/4 + ?/4 = 4/4. What is the missing top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":1,"d":4,"s":4,"kind":"missingAddend"},"promptText":"1/4 + __/4 = 4/4. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0707",
@@ -25452,7 +25452,7 @@ export const ITEMS = [
     structureType: "missingAddend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":2,"d":4,"s":3,"kind":"missingAddend"},"promptText":"What numerator over 4 completes 2/4 + ?/4 = 3/4?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":2,"d":4,"s":3,"kind":"missingAddend"},"promptText":"2/4 + __/4 = 3/4. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0708",
@@ -25462,7 +25462,7 @@ export const ITEMS = [
     structureType: "missingAddend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":2,"d":4,"s":4,"kind":"missingAddend"},"promptText":"2/4 + ?/4 = 4/4. What is the missing top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":2,"d":4,"s":4,"kind":"missingAddend"},"promptText":"2/4 + __/4 = 4/4. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0709",
@@ -25472,7 +25472,7 @@ export const ITEMS = [
     structureType: "missingAddend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":3,"d":4,"s":4,"kind":"missingAddend"},"promptText":"What numerator over 4 completes 3/4 + ?/4 = 4/4?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":3,"d":4,"s":4,"kind":"missingAddend"},"promptText":"3/4 + __/4 = 4/4. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0710",
@@ -25482,7 +25482,7 @@ export const ITEMS = [
     structureType: "missingAddend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":1,"d":2,"s":2,"kind":"missingAddend"},"promptText":"1/2 needs how many more halves to reach 2/2? Give the count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":1,"d":2,"s":2,"kind":"missingAddend"},"promptText":"How many more halves does 1/2 need to make 2/2?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0711",
@@ -25492,7 +25492,7 @@ export const ITEMS = [
     structureType: "missingAddend_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":1,"d":3,"s":2,"kind":"missingAddend"},"promptText":"Find the missing top number: 1/3 + ?/3 makes 2/3."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":1,"d":3,"s":2,"kind":"missingAddend"},"promptText":"What top number makes 1/3 + __/3 = 2/3 true?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0712",
@@ -25502,7 +25502,7 @@ export const ITEMS = [
     structureType: "missingAddend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":2,"d":5,"s":4,"kind":"missingAddend"},"promptText":"Fill the blank: 2/5 + ?/5 = 4/5. Which numerator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":2,"d":5,"s":4,"kind":"missingAddend"},"promptText":"Fill in the blank: 2/5 + __/5 = 4/5. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0713",
@@ -25512,7 +25512,7 @@ export const ITEMS = [
     structureType: "missingAddend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":1,"d":5,"s":4,"kind":"missingAddend"},"promptText":"1/5 needs ?/5 more to reach 4/5. What is the top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":1,"d":5,"s":4,"kind":"missingAddend"},"promptText":"1/5 needs __/5 more to make 4/5. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0714",
@@ -25522,7 +25522,7 @@ export const ITEMS = [
     structureType: "missingAddend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":3,"d":6,"s":5,"kind":"missingAddend"},"promptText":"Fill the blank: 3/6 + ?/6 = 5/6. Which numerator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":3,"d":6,"s":5,"kind":"missingAddend"},"promptText":"Fill in the blank: 3/6 + __/6 = 5/6. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0715",
@@ -25532,7 +25532,7 @@ export const ITEMS = [
     structureType: "missingAddend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":1,"d":6,"s":5,"kind":"missingAddend"},"promptText":"1/6 needs ?/6 more to reach 5/6. What is the top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":1,"d":6,"s":5,"kind":"missingAddend"},"promptText":"1/6 needs __/6 more to make 5/6. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0716",
@@ -25542,7 +25542,7 @@ export const ITEMS = [
     structureType: "missingAddend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":3,"d":8,"s":7,"kind":"missingAddend"},"promptText":"Fill the blank: 3/8 + ?/8 = 7/8. Which numerator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":3,"d":8,"s":7,"kind":"missingAddend"},"promptText":"Fill in the blank: 3/8 + __/8 = 7/8. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0717",
@@ -25552,7 +25552,7 @@ export const ITEMS = [
     structureType: "missingAddend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"a":2,"d":8,"s":7,"kind":"missingAddend"},"promptText":"2/8 needs ?/8 more to reach 7/8. What is the top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"a":2,"d":8,"s":7,"kind":"missingAddend"},"promptText":"2/8 needs __/8 more to make 7/8. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0718",
@@ -25562,7 +25562,7 @@ export const ITEMS = [
     structureType: "missingAddend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":1,"d":5,"s":3,"kind":"missingAddend"},"promptText":"Fill the blank: 1/5 + ?/5 = 3/5. Which numerator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":1,"d":5,"s":3,"kind":"missingAddend"},"promptText":"Fill in the blank: 1/5 + __/5 = 3/5. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0719",
@@ -25572,7 +25572,7 @@ export const ITEMS = [
     structureType: "missingAddend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":2,"d":6,"s":5,"kind":"missingAddend"},"promptText":"2/6 needs ?/6 more to reach 5/6. What is the top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":2,"d":6,"s":5,"kind":"missingAddend"},"promptText":"2/6 needs __/6 more to make 5/6. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0720",
@@ -25582,7 +25582,7 @@ export const ITEMS = [
     structureType: "missingAddend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":5,"d":8,"s":7,"kind":"missingAddend"},"promptText":"Fill the blank: 5/8 + ?/8 = 7/8. Which numerator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"frac":{"a":5,"d":8,"s":7,"kind":"missingAddend"},"promptText":"Fill in the blank: 5/8 + __/8 = 7/8. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0721",
@@ -25592,7 +25592,7 @@ export const ITEMS = [
     structureType: "missingAddend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":2,"d":6,"s":3,"kind":"missingAddend"},"promptText":"2/6 needs ?/6 more to reach 3/6. What is the top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":2,"d":6,"s":3,"kind":"missingAddend"},"promptText":"2/6 needs __/6 more to make 3/6. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0722",
@@ -25602,7 +25602,7 @@ export const ITEMS = [
     structureType: "missingAddend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":1,"d":8,"s":4,"kind":"missingAddend"},"promptText":"Which numerator over 8 bridges 1/8 up to 4/8?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":1,"d":8,"s":4,"kind":"missingAddend"},"promptText":"1/8 plus how many more eighths makes 4/8?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0723",
@@ -25612,7 +25612,7 @@ export const ITEMS = [
     structureType: "missingAddend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":3,"d":5,"s":4,"kind":"missingAddend"},"promptText":"Complete the equation 3/5 + ?/5 = 4/5 with the right numerator."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":3,"d":5,"s":4,"kind":"missingAddend"},"promptText":"3/5 + __/5 = 4/5. What numerator goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0724",
@@ -25622,7 +25622,7 @@ export const ITEMS = [
     structureType: "missingAddend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":4,"d":6,"s":5,"kind":"missingAddend"},"promptText":"Which numerator over 6 bridges 4/6 up to 5/6?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":4,"d":6,"s":5,"kind":"missingAddend"},"promptText":"4/6 plus how many more sixths makes 5/6?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0725",
@@ -25632,7 +25632,7 @@ export const ITEMS = [
     structureType: "missingAddend_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"a":1,"d":8,"s":6,"kind":"missingAddend"},"promptText":"Complete the equation 1/8 + ?/8 = 6/8 with the right numerator."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"a":1,"d":8,"s":6,"kind":"missingAddend"},"promptText":"1/8 + __/8 = 6/8. What numerator goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0726",
@@ -25642,7 +25642,7 @@ export const ITEMS = [
     structureType: "missingAddend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":3,"d":10,"s":7,"kind":"missingAddend"},"promptText":"Solve exactly: 3/10 + ?/10 = 7/10. The missing numerator = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":3,"d":10,"s":7,"kind":"missingAddend"},"promptText":"3/10 + __/10 = 7/10. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0727",
@@ -25652,7 +25652,7 @@ export const ITEMS = [
     structureType: "missingAddend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"frac":{"a":2,"d":10,"s":9,"kind":"missingAddend"},"promptText":"To climb from 2/10 to 9/10, add ?/10. Which numerator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"frac":{"a":2,"d":10,"s":9,"kind":"missingAddend"},"promptText":"To get from 2/10 to 9/10, add __/10. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0728",
@@ -25662,7 +25662,7 @@ export const ITEMS = [
     structureType: "missingAddend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":5,"d":12,"s":9,"kind":"missingAddend"},"promptText":"Solve exactly: 5/12 + ?/12 = 9/12. The missing numerator = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":5,"d":12,"s":9,"kind":"missingAddend"},"promptText":"5/12 + __/12 = 9/12. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0729",
@@ -25672,7 +25672,7 @@ export const ITEMS = [
     structureType: "missingAddend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":7,"d":12,"s":11,"kind":"missingAddend"},"promptText":"To climb from 7/12 to 11/12, add ?/12. Which numerator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":7,"d":12,"s":11,"kind":"missingAddend"},"promptText":"To get from 7/12 to 11/12, add __/12. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0730",
@@ -25682,7 +25682,7 @@ export const ITEMS = [
     structureType: "missingAddend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"frac":{"a":1,"d":10,"s":8,"kind":"missingAddend"},"promptText":"Solve exactly: 1/10 + ?/10 = 8/10. The missing numerator = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"frac":{"a":1,"d":10,"s":8,"kind":"missingAddend"},"promptText":"1/10 + __/10 = 8/10. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0731",
@@ -25692,7 +25692,7 @@ export const ITEMS = [
     structureType: "missingAddend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"a":5,"d":12,"s":11,"kind":"missingAddend"},"promptText":"To climb from 5/12 to 11/12, add ?/12. Which numerator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"a":5,"d":12,"s":11,"kind":"missingAddend"},"promptText":"To get from 5/12 to 11/12, add __/12. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0732",
@@ -25702,7 +25702,7 @@ export const ITEMS = [
     structureType: "missingAddend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"a":4,"d":10,"s":9,"kind":"missingAddend"},"promptText":"Solve exactly: 4/10 + ?/10 = 9/10. The missing numerator = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"frac":{"a":4,"d":10,"s":9,"kind":"missingAddend"},"promptText":"4/10 + __/10 = 9/10. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0733",
@@ -25712,7 +25712,7 @@ export const ITEMS = [
     structureType: "missingAddend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"frac":{"a":4,"d":12,"s":11,"kind":"missingAddend"},"promptText":"To climb from 4/12 to 11/12, add ?/12. Which numerator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"frac":{"a":4,"d":12,"s":11,"kind":"missingAddend"},"promptText":"To get from 4/12 to 11/12, add __/12. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0734",
@@ -25722,7 +25722,7 @@ export const ITEMS = [
     structureType: "missingAddend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":2,"d":10,"s":6,"kind":"missingAddend"},"promptText":"Solve exactly: 2/10 + ?/10 = 6/10. The missing numerator = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"frac":{"a":2,"d":10,"s":6,"kind":"missingAddend"},"promptText":"2/10 + __/10 = 6/10. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0735",
@@ -25732,7 +25732,7 @@ export const ITEMS = [
     structureType: "missingAddend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":9,"d":12,"s":10,"kind":"missingAddend"},"promptText":"To climb from 9/12 to 10/12, add ?/12. Which numerator?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"frac":{"a":9,"d":12,"s":10,"kind":"missingAddend"},"promptText":"To get from 9/12 to 10/12, add __/12. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0736",
@@ -25742,7 +25742,7 @@ export const ITEMS = [
     structureType: "missingAddend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":6,"d":10,"s":9,"kind":"missingAddend"},"promptText":"Determine the numerator: 6/10 + ?/10 lands exactly on 9/10."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":6,"d":10,"s":9,"kind":"missingAddend"},"promptText":"6/10 + __/10 = 9/10. What is the missing numerator?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0737",
@@ -25752,7 +25752,7 @@ export const ITEMS = [
     structureType: "missingAddend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":8,"d":12,"s":11,"kind":"missingAddend"},"promptText":"The gap between 8/12 and 11/12 is ?/12. What is the top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":8,"d":12,"s":11,"kind":"missingAddend"},"promptText":"The difference between 11/12 and 8/12 is __/12. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0738",
@@ -25762,7 +25762,7 @@ export const ITEMS = [
     structureType: "missingAddend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"a":3,"d":10,"s":9,"kind":"missingAddend"},"promptText":"Determine the numerator: 3/10 + ?/10 lands exactly on 9/10."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"frac":{"a":3,"d":10,"s":9,"kind":"missingAddend"},"promptText":"3/10 + __/10 = 9/10. What is the missing numerator?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0739",
@@ -25772,7 +25772,7 @@ export const ITEMS = [
     structureType: "missingAddend_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":7,"d":12,"s":10,"kind":"missingAddend"},"promptText":"The gap between 7/12 and 10/12 is ?/12. What is the top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"frac":{"a":7,"d":12,"s":10,"kind":"missingAddend"},"promptText":"The difference between 10/12 and 7/12 is __/12. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0740",
@@ -25782,7 +25782,7 @@ export const ITEMS = [
     structureType: "addThree_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/3","choices":["3/9","3/3","2/3","4/3"],"display":{"frac":{"a":1,"b":1,"c":1,"d":3,"kind":"addLike3"},"promptText":"1/3 + 1/3 + 1/3 = ? Pick the total."}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/3","choices":["3/9","3/3","2/3","4/3"],"display":{"frac":{"a":1,"b":1,"c":1,"d":3,"kind":"addLike3"},"promptText":"What is 1/3 + 1/3 + 1/3?"}},
   },
   {
     itemId: "fractions-proc-b0821-0741",
@@ -25802,7 +25802,7 @@ export const ITEMS = [
     structureType: "addThree_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4/4","choices":["4/12","5/4","4/4","3/4"],"display":{"frac":{"a":1,"b":1,"c":2,"d":4,"kind":"addLike3"},"promptText":"1/4 + 1/4 + 2/4 = ? Pick the total."}},
+    question: {"a":null,"b":null,"op":"count","answer":"4/4","choices":["4/12","5/4","4/4","3/4"],"display":{"frac":{"a":1,"b":1,"c":2,"d":4,"kind":"addLike3"},"promptText":"What is 1/4 + 1/4 + 2/4?"}},
   },
   {
     itemId: "fractions-proc-b0821-0743",
@@ -25822,7 +25822,7 @@ export const ITEMS = [
     structureType: "addThree_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4/4","choices":["4/4","4/12","3/4","5/4"],"display":{"frac":{"a":2,"b":1,"c":1,"d":4,"kind":"addLike3"},"promptText":"2/4 + 1/4 + 1/4 = ? Pick the total."}},
+    question: {"a":null,"b":null,"op":"count","answer":"4/4","choices":["4/4","4/12","3/4","5/4"],"display":{"frac":{"a":2,"b":1,"c":1,"d":4,"kind":"addLike3"},"promptText":"What is 2/4 + 1/4 + 1/4?"}},
   },
   {
     itemId: "fractions-proc-b0821-0745",
@@ -25842,7 +25842,7 @@ export const ITEMS = [
     structureType: "addThree_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/4","choices":["4/4","3/4","2/4","3/12"],"display":{"frac":{"a":1,"b":1,"c":1,"d":4,"kind":"addLike3"},"promptText":"Join 1/4, 1/4, and 1/4 into one fraction. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/4","choices":["4/4","3/4","2/4","3/12"],"display":{"frac":{"a":1,"b":1,"c":1,"d":4,"kind":"addLike3"},"promptText":"Join 1/4, 1/4, and 1/4. What fraction do they make?"}},
   },
   {
     itemId: "fractions-proc-b0821-0747",
@@ -25862,7 +25862,7 @@ export const ITEMS = [
     structureType: "addThree_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4/4","choices":["3/4","5/4","4/12","4/4"],"display":{"frac":{"a":1,"b":2,"c":1,"d":4,"kind":"addLike3"},"promptText":"Join 1/4, 2/4, and 1/4 into one fraction. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"4/4","choices":["3/4","5/4","4/12","4/4"],"display":{"frac":{"a":1,"b":2,"c":1,"d":4,"kind":"addLike3"},"promptText":"Join 1/4, 2/4, and 1/4. What fraction do they make?"}},
   },
   {
     itemId: "fractions-proc-b0821-0749",
@@ -25882,7 +25882,7 @@ export const ITEMS = [
     structureType: "addThree_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4/5","choices":["4/15","5/5","3/5","4/5"],"display":{"frac":{"a":1,"b":2,"c":1,"d":5,"kind":"addLike3"},"promptText":"Sum all three: 1/5 + 2/5 + 1/5. What do you get?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"4/5","choices":["4/15","5/5","3/5","4/5"],"display":{"frac":{"a":1,"b":2,"c":1,"d":5,"kind":"addLike3"},"promptText":"What is 1/5 + 2/5 + 1/5?"}},
   },
   {
     itemId: "fractions-proc-b0821-0751",
@@ -25902,7 +25902,7 @@ export const ITEMS = [
     structureType: "addThree_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4/5","choices":["5/5","4/15","3/5","4/5"],"display":{"frac":{"a":1,"b":1,"c":2,"d":5,"kind":"addLike3"},"promptText":"Sum all three: 1/5 + 1/5 + 2/5. What do you get?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"4/5","choices":["5/5","4/15","3/5","4/5"],"display":{"frac":{"a":1,"b":1,"c":2,"d":5,"kind":"addLike3"},"promptText":"How much do 1/5, 1/5, and 2/5 make in all?"}},
   },
   {
     itemId: "fractions-proc-b0821-0753",
@@ -25922,7 +25922,7 @@ export const ITEMS = [
     structureType: "addThree_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5/6","choices":["4/6","5/6","6/6","5/18"],"display":{"frac":{"a":1,"b":2,"c":2,"d":6,"kind":"addLike3"},"promptText":"Sum all three: 1/6 + 2/6 + 2/6. What do you get?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5/6","choices":["4/6","5/6","6/6","5/18"],"display":{"frac":{"a":1,"b":2,"c":2,"d":6,"kind":"addLike3"},"promptText":"What is 1/6 + 2/6 + 2/6?"}},
   },
   {
     itemId: "fractions-proc-b0821-0755",
@@ -25942,7 +25942,7 @@ export const ITEMS = [
     structureType: "addThree_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5/6","choices":["5/6","4/6","5/18","6/6"],"display":{"frac":{"a":1,"b":3,"c":1,"d":6,"kind":"addLike3"},"promptText":"Sum all three: 1/6 + 3/6 + 1/6. What do you get?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5/6","choices":["5/6","4/6","5/18","6/6"],"display":{"frac":{"a":1,"b":3,"c":1,"d":6,"kind":"addLike3"},"promptText":"How much do 1/6, 3/6, and 1/6 make in all?"}},
   },
   {
     itemId: "fractions-proc-b0821-0757",
@@ -25962,7 +25962,7 @@ export const ITEMS = [
     structureType: "addThree_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"6/8","choices":["6/24","5/8","7/8","6/8"],"display":{"frac":{"a":2,"b":3,"c":1,"d":8,"kind":"addLike3"},"promptText":"Sum all three: 2/8 + 3/8 + 1/8. What do you get?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"6/8","choices":["6/24","5/8","7/8","6/8"],"display":{"frac":{"a":2,"b":3,"c":1,"d":8,"kind":"addLike3"},"promptText":"What is 2/8 + 3/8 + 1/8?"}},
   },
   {
     itemId: "fractions-proc-b0821-0759",
@@ -25982,7 +25982,7 @@ export const ITEMS = [
     structureType: "addThree_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7/8","choices":["8/8","6/8","7/8","7/24"],"display":{"frac":{"a":4,"b":1,"c":2,"d":8,"kind":"addLike3"},"promptText":"Sum all three: 4/8 + 1/8 + 2/8. What do you get?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"7/8","choices":["8/8","6/8","7/8","7/24"],"display":{"frac":{"a":4,"b":1,"c":2,"d":8,"kind":"addLike3"},"promptText":"How much do 4/8, 1/8, and 2/8 make in all?"}},
   },
   {
     itemId: "fractions-proc-b0821-0761",
@@ -26002,7 +26002,7 @@ export const ITEMS = [
     structureType: "addThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["10/10","9/10","9/30","8/10"],"display":{"frac":{"a":2,"b":3,"c":4,"d":10,"kind":"addLike3"},"promptText":"Compute exactly: 2/10 + 3/10 + 4/10. Which fraction results?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["10/10","9/10","9/30","8/10"],"display":{"frac":{"a":2,"b":3,"c":4,"d":10,"kind":"addLike3"},"promptText":"What is the sum of 2/10, 3/10, and 4/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0763",
@@ -26012,7 +26012,7 @@ export const ITEMS = [
     structureType: "addThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["9/30","9/10","10/10","8/10"],"display":{"frac":{"a":3,"b":2,"c":4,"d":10,"kind":"addLike3"},"promptText":"The precise total of 3/10 + 2/10 + 4/10 is which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["9/30","9/10","10/10","8/10"],"display":{"frac":{"a":3,"b":2,"c":4,"d":10,"kind":"addLike3"},"promptText":"3/10 + 2/10 + 4/10 = __. What fraction goes in the blank?"}},
   },
   {
     itemId: "fractions-proc-b0821-0764",
@@ -26022,7 +26022,7 @@ export const ITEMS = [
     structureType: "addThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["8/10","10/10","9/30","9/10"],"display":{"frac":{"a":4,"b":3,"c":2,"d":10,"kind":"addLike3"},"promptText":"Compute exactly: 4/10 + 3/10 + 2/10. Which fraction results?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["8/10","10/10","9/30","9/10"],"display":{"frac":{"a":4,"b":3,"c":2,"d":10,"kind":"addLike3"},"promptText":"How much is 4/10 + 3/10 + 2/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0765",
@@ -26032,7 +26032,7 @@ export const ITEMS = [
     structureType: "addThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["10/10","9/30","8/10","9/10"],"display":{"frac":{"a":1,"b":5,"c":3,"d":10,"kind":"addLike3"},"promptText":"The precise total of 1/10 + 5/10 + 3/10 is which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["10/10","9/30","8/10","9/10"],"display":{"frac":{"a":1,"b":5,"c":3,"d":10,"kind":"addLike3"},"promptText":"What do 1/10, 5/10, and 3/10 add up to?"}},
   },
   {
     itemId: "fractions-proc-b0821-0766",
@@ -26042,7 +26042,7 @@ export const ITEMS = [
     structureType: "addThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"8/10","choices":["7/10","8/10","8/30","9/10"],"display":{"frac":{"a":5,"b":1,"c":2,"d":10,"kind":"addLike3"},"promptText":"Compute exactly: 5/10 + 1/10 + 2/10. Which fraction results?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"8/10","choices":["7/10","8/10","8/30","9/10"],"display":{"frac":{"a":5,"b":1,"c":2,"d":10,"kind":"addLike3"},"promptText":"What is the sum of 5/10, 1/10, and 2/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0767",
@@ -26052,7 +26052,7 @@ export const ITEMS = [
     structureType: "addThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["8/10","9/30","9/10","10/10"],"display":{"frac":{"a":3,"b":3,"c":3,"d":10,"kind":"addLike3"},"promptText":"The precise total of 3/10 + 3/10 + 3/10 is which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"9/10","choices":["8/10","9/30","9/10","10/10"],"display":{"frac":{"a":3,"b":3,"c":3,"d":10,"kind":"addLike3"},"promptText":"3/10 + 3/10 + 3/10 = __. What fraction goes in the blank?"}},
   },
   {
     itemId: "fractions-proc-b0821-0768",
@@ -26062,7 +26062,7 @@ export const ITEMS = [
     structureType: "addThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"11/12","choices":["10/12","11/12","12/12","11/36"],"display":{"frac":{"a":2,"b":4,"c":5,"d":12,"kind":"addLike3"},"promptText":"Compute exactly: 2/12 + 4/12 + 5/12. Which fraction results?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"11/12","choices":["10/12","11/12","12/12","11/36"],"display":{"frac":{"a":2,"b":4,"c":5,"d":12,"kind":"addLike3"},"promptText":"How much is 2/12 + 4/12 + 5/12?"}},
   },
   {
     itemId: "fractions-proc-b0821-0769",
@@ -26072,7 +26072,7 @@ export const ITEMS = [
     structureType: "addThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"11/12","choices":["12/12","11/36","11/12","10/12"],"display":{"frac":{"a":4,"b":2,"c":5,"d":12,"kind":"addLike3"},"promptText":"The precise total of 4/12 + 2/12 + 5/12 is which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"11/12","choices":["12/12","11/36","11/12","10/12"],"display":{"frac":{"a":4,"b":2,"c":5,"d":12,"kind":"addLike3"},"promptText":"What do 4/12, 2/12, and 5/12 add up to?"}},
   },
   {
     itemId: "fractions-proc-b0821-0770",
@@ -26082,7 +26082,7 @@ export const ITEMS = [
     structureType: "addThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"11/12","choices":["10/12","11/12","12/12","11/36"],"display":{"frac":{"a":5,"b":4,"c":2,"d":12,"kind":"addLike3"},"promptText":"Compute exactly: 5/12 + 4/12 + 2/12. Which fraction results?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"11/12","choices":["10/12","11/12","12/12","11/36"],"display":{"frac":{"a":5,"b":4,"c":2,"d":12,"kind":"addLike3"},"promptText":"What is the sum of 5/12, 4/12, and 2/12?"}},
   },
   {
     itemId: "fractions-proc-b0821-0771",
@@ -26092,7 +26092,7 @@ export const ITEMS = [
     structureType: "addThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"11/12","choices":["10/12","11/36","12/12","11/12"],"display":{"frac":{"a":1,"b":6,"c":4,"d":12,"kind":"addLike3"},"promptText":"The precise total of 1/12 + 6/12 + 4/12 is which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"11/12","choices":["10/12","11/36","12/12","11/12"],"display":{"frac":{"a":1,"b":6,"c":4,"d":12,"kind":"addLike3"},"promptText":"1/12 + 6/12 + 4/12 = __. What fraction goes in the blank?"}},
   },
   {
     itemId: "fractions-proc-b0821-0772",
@@ -26102,7 +26102,7 @@ export const ITEMS = [
     structureType: "addThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"10/12","choices":["10/12","10/36","11/12","9/12"],"display":{"frac":{"a":6,"b":1,"c":3,"d":12,"kind":"addLike3"},"promptText":"Compute exactly: 6/12 + 1/12 + 3/12. Which fraction results?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"10/12","choices":["10/12","10/36","11/12","9/12"],"display":{"frac":{"a":6,"b":1,"c":3,"d":12,"kind":"addLike3"},"promptText":"How much is 6/12 + 1/12 + 3/12?"}},
   },
   {
     itemId: "fractions-proc-b0821-0773",
@@ -26112,7 +26112,7 @@ export const ITEMS = [
     structureType: "addThree_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"11/12","choices":["10/12","11/36","12/12","11/12"],"display":{"frac":{"a":3,"b":5,"c":3,"d":12,"kind":"addLike3"},"promptText":"The precise total of 3/12 + 5/12 + 3/12 is which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"11/12","choices":["10/12","11/36","12/12","11/12"],"display":{"frac":{"a":3,"b":5,"c":3,"d":12,"kind":"addLike3"},"promptText":"What do 3/12, 5/12, and 3/12 add up to?"}},
   },
   {
     itemId: "fractions-proc-b0821-0774",
@@ -26122,7 +26122,7 @@ export const ITEMS = [
     structureType: "subFromOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["1/4","2/2","1/2"],"display":{"frac":{"d":2,"n":1,"kind":"complement"},"promptText":"1 - 1/2 = ? Pick the difference."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/2","choices":["1/4","2/2","1/2"],"display":{"frac":{"d":2,"n":1,"kind":"complement"},"promptText":"What is 1 minus 1/2?"}},
   },
   {
     itemId: "fractions-proc-b0821-0775",
@@ -26142,7 +26142,7 @@ export const ITEMS = [
     structureType: "subFromOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["1/6","1/3","2/3"],"display":{"frac":{"d":3,"n":2,"kind":"complement"},"promptText":"1 - 2/3 = ? Pick the difference."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/3","choices":["1/6","1/3","2/3"],"display":{"frac":{"d":3,"n":2,"kind":"complement"},"promptText":"What is 1 - 2/3?"}},
   },
   {
     itemId: "fractions-proc-b0821-0777",
@@ -26162,7 +26162,7 @@ export const ITEMS = [
     structureType: "subFromOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2/4","choices":["3/4","2/8","2/4"],"display":{"frac":{"d":4,"n":2,"kind":"complement"},"promptText":"1 - 2/4 = ? Pick the difference."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2/4","choices":["3/4","2/8","2/4"],"display":{"frac":{"d":4,"n":2,"kind":"complement"},"promptText":"What is 1 minus 2/4?"}},
   },
   {
     itemId: "fractions-proc-b0821-0779",
@@ -26242,7 +26242,7 @@ export const ITEMS = [
     structureType: "subFromOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7/10","choices":["8/10","7/20","3/10","7/10"],"display":{"frac":{"d":10,"n":3,"kind":"complement"},"promptText":"Compute exactly: 1 - 3/10. Which fraction remains?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"7/10","choices":["8/10","7/20","3/10","7/10"],"display":{"frac":{"d":10,"n":3,"kind":"complement"},"promptText":"How much is 1 - 3/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0787",
@@ -26252,7 +26252,7 @@ export const ITEMS = [
     structureType: "subFromOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3/10","choices":["3/20","4/10","3/10","7/10"],"display":{"frac":{"d":10,"n":7,"kind":"complement"},"promptText":"Removing 7/10 from one whole leaves precisely which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3/10","choices":["3/20","4/10","3/10","7/10"],"display":{"frac":{"d":10,"n":7,"kind":"complement"},"promptText":"What is left when you take 7/10 away from 1 whole?"}},
   },
   {
     itemId: "fractions-proc-b0821-0788",
@@ -26262,7 +26262,7 @@ export const ITEMS = [
     structureType: "subFromOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7/12","choices":["7/12","8/12","5/12","7/24"],"display":{"frac":{"d":12,"n":5,"kind":"complement"},"promptText":"Compute exactly: 1 - 5/12. Which fraction remains?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"7/12","choices":["7/12","8/12","5/12","7/24"],"display":{"frac":{"d":12,"n":5,"kind":"complement"},"promptText":"What is 1 - 5/12?"}},
   },
   {
     itemId: "fractions-proc-b0821-0789",
@@ -26272,7 +26272,7 @@ export const ITEMS = [
     structureType: "subFromOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5/12","choices":["5/12","5/24","7/12","6/12"],"display":{"frac":{"d":12,"n":7,"kind":"complement"},"promptText":"Removing 7/12 from one whole leaves precisely which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5/12","choices":["5/12","5/24","7/12","6/12"],"display":{"frac":{"d":12,"n":7,"kind":"complement"},"promptText":"What is left when you take 7/12 away from 1 whole?"}},
   },
   {
     itemId: "fractions-proc-b0821-0790",
@@ -26282,7 +26282,7 @@ export const ITEMS = [
     structureType: "subFromOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/10","choices":["1/20","1/10","9/10","2/10"],"display":{"frac":{"d":10,"n":9,"kind":"complement"},"promptText":"Compute exactly: 1 - 9/10. Which fraction remains?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/10","choices":["1/20","1/10","9/10","2/10"],"display":{"frac":{"d":10,"n":9,"kind":"complement"},"promptText":"How much is 1 - 9/10?"}},
   },
   {
     itemId: "fractions-proc-b0821-0791",
@@ -26292,7 +26292,7 @@ export const ITEMS = [
     structureType: "subFromOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1/12","choices":["1/24","1/12","2/12","11/12"],"display":{"frac":{"d":12,"n":11,"kind":"complement"},"promptText":"Removing 11/12 from one whole leaves precisely which fraction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1/12","choices":["1/24","1/12","2/12","11/12"],"display":{"frac":{"d":12,"n":11,"kind":"complement"},"promptText":"What is left when you take 11/12 away from 1 whole?"}},
   },
   {
     itemId: "fractions-proc-b0821-0792",
@@ -26802,7 +26802,7 @@ export const ITEMS = [
     structureType: "ofSet_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"frac":{"d":10,"n":1,"w":240,"kind":"ofSet"},"promptText":"Compute exactly 1/10 of 240. What is the result?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"frac":{"d":10,"n":1,"w":240,"kind":"ofSet"},"promptText":"What is 1/10 of 240?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0843",
@@ -26812,7 +26812,7 @@ export const ITEMS = [
     structureType: "ofSet_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":168,"display":{"frac":{"d":10,"n":7,"w":240,"kind":"ofSet"},"promptText":"The precise value of 7/10 of 240 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":168,"display":{"frac":{"d":10,"n":7,"w":240,"kind":"ofSet"},"promptText":"What number is 7/10 of 240?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0844",
@@ -26822,7 +26822,7 @@ export const ITEMS = [
     structureType: "ofSet_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"frac":{"d":12,"n":1,"w":240,"kind":"ofSet"},"promptText":"Compute exactly 1/12 of 240. What is the result?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"frac":{"d":12,"n":1,"w":240,"kind":"ofSet"},"promptText":"How much is 1/12 of 240?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0845",
@@ -26832,7 +26832,7 @@ export const ITEMS = [
     structureType: "ofSet_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"frac":{"d":12,"n":5,"w":240,"kind":"ofSet"},"promptText":"The precise value of 5/12 of 240 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"frac":{"d":12,"n":5,"w":240,"kind":"ofSet"},"promptText":"5/12 of 240 = __. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0846",
@@ -26842,7 +26842,7 @@ export const ITEMS = [
     structureType: "ofSet_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":138,"display":{"frac":{"d":10,"n":3,"w":460,"kind":"ofSet"},"promptText":"Compute exactly 3/10 of 460. What is the result?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":138,"display":{"frac":{"d":10,"n":3,"w":460,"kind":"ofSet"},"promptText":"What is 3/10 of 460?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0847",
@@ -26852,7 +26852,7 @@ export const ITEMS = [
     structureType: "ofSet_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":414,"display":{"frac":{"d":10,"n":9,"w":460,"kind":"ofSet"},"promptText":"The precise value of 9/10 of 460 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":414,"display":{"frac":{"d":10,"n":9,"w":460,"kind":"ofSet"},"promptText":"What number is 9/10 of 460?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0848",
@@ -26862,7 +26862,7 @@ export const ITEMS = [
     structureType: "ofSet_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":210,"display":{"frac":{"d":12,"n":7,"w":360,"kind":"ofSet"},"promptText":"Compute exactly 7/12 of 360. What is the result?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":210,"display":{"frac":{"d":12,"n":7,"w":360,"kind":"ofSet"},"promptText":"How much is 7/12 of 360?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0849",
@@ -26872,7 +26872,7 @@ export const ITEMS = [
     structureType: "ofSet_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":330,"display":{"frac":{"d":12,"n":11,"w":360,"kind":"ofSet"},"promptText":"The precise value of 11/12 of 360 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":330,"display":{"frac":{"d":12,"n":11,"w":360,"kind":"ofSet"},"promptText":"11/12 of 360 = __. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0850",
@@ -26882,7 +26882,7 @@ export const ITEMS = [
     structureType: "ofSet_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"frac":{"d":10,"n":1,"w":550,"kind":"ofSet"},"promptText":"Compute exactly 1/10 of 550. What is the result?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"frac":{"d":10,"n":1,"w":550,"kind":"ofSet"},"promptText":"What is 1/10 of 550?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0851",
@@ -26892,7 +26892,7 @@ export const ITEMS = [
     structureType: "ofSet_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":165,"display":{"frac":{"d":10,"n":3,"w":550,"kind":"ofSet"},"promptText":"The precise value of 3/10 of 550 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":165,"display":{"frac":{"d":10,"n":3,"w":550,"kind":"ofSet"},"promptText":"What number is 3/10 of 550?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0852",
@@ -26902,7 +26902,7 @@ export const ITEMS = [
     structureType: "ofSet_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"frac":{"d":12,"n":5,"w":480,"kind":"ofSet"},"promptText":"Compute exactly 5/12 of 480. What is the result?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"frac":{"d":12,"n":5,"w":480,"kind":"ofSet"},"promptText":"How much is 5/12 of 480?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0853",
@@ -26912,7 +26912,7 @@ export const ITEMS = [
     structureType: "ofSet_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"frac":{"d":12,"n":1,"w":480,"kind":"ofSet"},"promptText":"The precise value of 1/12 of 480 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"frac":{"d":12,"n":1,"w":480,"kind":"ofSet"},"promptText":"1/12 of 480 = __. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0854",
@@ -26922,7 +26922,7 @@ export const ITEMS = [
     structureType: "ofSet_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":434,"display":{"frac":{"d":10,"n":7,"w":620,"kind":"ofSet"},"promptText":"Compute exactly 7/10 of 620. What is the result?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":434,"display":{"frac":{"d":10,"n":7,"w":620,"kind":"ofSet"},"promptText":"What is 7/10 of 620?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0855",
@@ -26932,7 +26932,7 @@ export const ITEMS = [
     structureType: "ofSet_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":558,"display":{"frac":{"d":10,"n":9,"w":620,"kind":"ofSet"},"promptText":"The precise value of 9/10 of 620 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":558,"display":{"frac":{"d":10,"n":9,"w":620,"kind":"ofSet"},"promptText":"What number is 9/10 of 620?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0856",
@@ -26942,7 +26942,7 @@ export const ITEMS = [
     structureType: "ofSet_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":550,"display":{"frac":{"d":12,"n":11,"w":600,"kind":"ofSet"},"promptText":"Compute exactly 11/12 of 600. What is the result?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":550,"display":{"frac":{"d":12,"n":11,"w":600,"kind":"ofSet"},"promptText":"How much is 11/12 of 600?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0857",
@@ -26952,7 +26952,7 @@ export const ITEMS = [
     structureType: "ofSet_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":250,"display":{"frac":{"d":12,"n":5,"w":600,"kind":"ofSet"},"promptText":"The precise value of 5/12 of 600 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":250,"display":{"frac":{"d":12,"n":5,"w":600,"kind":"ofSet"},"promptText":"5/12 of 600 = __. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0858",
@@ -26962,7 +26962,7 @@ export const ITEMS = [
     structureType: "ofSet_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":219,"display":{"frac":{"d":10,"n":3,"w":730,"kind":"ofSet"},"promptText":"Compute exactly 3/10 of 730. What is the result?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":219,"display":{"frac":{"d":10,"n":3,"w":730,"kind":"ofSet"},"promptText":"What is 3/10 of 730?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0859",
@@ -26972,7 +26972,7 @@ export const ITEMS = [
     structureType: "ofSet_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":73,"display":{"frac":{"d":10,"n":1,"w":730,"kind":"ofSet"},"promptText":"The precise value of 1/10 of 730 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":73,"display":{"frac":{"d":10,"n":1,"w":730,"kind":"ofSet"},"promptText":"What number is 1/10 of 730?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0860",
@@ -26982,7 +26982,7 @@ export const ITEMS = [
     structureType: "ofSet_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":490,"display":{"frac":{"d":12,"n":7,"w":840,"kind":"ofSet"},"promptText":"Compute exactly 7/12 of 840. What is the result?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":490,"display":{"frac":{"d":12,"n":7,"w":840,"kind":"ofSet"},"promptText":"How much is 7/12 of 840?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0861",
@@ -26992,7 +26992,7 @@ export const ITEMS = [
     structureType: "ofSet_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"frac":{"d":12,"n":1,"w":840,"kind":"ofSet"},"promptText":"The precise value of 1/12 of 840 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"frac":{"d":12,"n":1,"w":840,"kind":"ofSet"},"promptText":"1/12 of 840 = __. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0862",
@@ -27002,7 +27002,7 @@ export const ITEMS = [
     structureType: "ofSet_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":729,"display":{"frac":{"d":10,"n":9,"w":810,"kind":"ofSet"},"promptText":"Compute exactly 9/10 of 810. What is the result?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":729,"display":{"frac":{"d":10,"n":9,"w":810,"kind":"ofSet"},"promptText":"What is 9/10 of 810?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0863",
@@ -27012,7 +27012,7 @@ export const ITEMS = [
     structureType: "ofSet_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":567,"display":{"frac":{"d":10,"n":7,"w":810,"kind":"ofSet"},"promptText":"The precise value of 7/10 of 810 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":567,"display":{"frac":{"d":10,"n":7,"w":810,"kind":"ofSet"},"promptText":"What number is 7/10 of 810?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0864",
@@ -27022,7 +27022,7 @@ export const ITEMS = [
     structureType: "ofSet_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":880,"display":{"frac":{"d":12,"n":11,"w":960,"kind":"ofSet"},"promptText":"Compute exactly 11/12 of 960. What is the result?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":880,"display":{"frac":{"d":12,"n":11,"w":960,"kind":"ofSet"},"promptText":"How much is 11/12 of 960?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0865",
@@ -27032,7 +27032,7 @@ export const ITEMS = [
     structureType: "ofSet_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":400,"display":{"frac":{"d":12,"n":5,"w":960,"kind":"ofSet"},"promptText":"The precise value of 5/12 of 960 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":400,"display":{"frac":{"d":12,"n":5,"w":960,"kind":"ofSet"},"promptText":"5/12 of 960 = __. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0866",
@@ -27042,7 +27042,7 @@ export const ITEMS = [
     structureType: "ofSet_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":297,"display":{"frac":{"d":10,"n":3,"w":990,"kind":"ofSet"},"promptText":"Compute exactly 3/10 of 990. What is the result?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":297,"display":{"frac":{"d":10,"n":3,"w":990,"kind":"ofSet"},"promptText":"What is 3/10 of 990?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0867",
@@ -27052,7 +27052,7 @@ export const ITEMS = [
     structureType: "ofSet_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":891,"display":{"frac":{"d":10,"n":9,"w":990,"kind":"ofSet"},"promptText":"The precise value of 9/10 of 990 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":891,"display":{"frac":{"d":10,"n":9,"w":990,"kind":"ofSet"},"promptText":"What number is 9/10 of 990?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0868",
@@ -27072,7 +27072,7 @@ export const ITEMS = [
     structureType: "wholeFromUnit_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"frac":{"d":2,"kind":"wholeFromUnit","part":7},"promptText":"If one halve of a number is 7, what is the number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"frac":{"d":2,"kind":"wholeFromUnit","part":7},"promptText":"If one half of a number is 7, what is the number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0870",
@@ -27092,7 +27092,7 @@ export const ITEMS = [
     structureType: "wholeFromUnit_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"frac":{"d":2,"kind":"wholeFromUnit","part":9},"promptText":"If one halve of a number is 9, what is the number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"frac":{"d":2,"kind":"wholeFromUnit","part":9},"promptText":"If one half of a number is 9, what is the number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0872",
@@ -27172,7 +27172,7 @@ export const ITEMS = [
     structureType: "wholeFromUnit_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"frac":{"d":2,"kind":"wholeFromUnit","part":5},"promptText":"If one halve of a number is 5, what is the number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"frac":{"d":2,"kind":"wholeFromUnit","part":5},"promptText":"If one half of a number is 5, what is the number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0880",
@@ -27242,7 +27242,7 @@ export const ITEMS = [
     structureType: "wholeFromUnit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"frac":{"d":5,"kind":"wholeFromUnit","part":12},"promptText":"1/5 of ? = 12. Find the missing whole."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"frac":{"d":5,"kind":"wholeFromUnit","part":12},"promptText":"1/5 of __ = 12. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0887",
@@ -27262,7 +27262,7 @@ export const ITEMS = [
     structureType: "wholeFromUnit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":66,"display":{"frac":{"d":6,"kind":"wholeFromUnit","part":11},"promptText":"1/6 of ? = 11. Find the missing whole."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":66,"display":{"frac":{"d":6,"kind":"wholeFromUnit","part":11},"promptText":"1/6 of what number is 11?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0889",
@@ -27282,7 +27282,7 @@ export const ITEMS = [
     structureType: "wholeFromUnit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"frac":{"d":8,"kind":"wholeFromUnit","part":11},"promptText":"1/8 of ? = 11. Find the missing whole."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"frac":{"d":8,"kind":"wholeFromUnit","part":11},"promptText":"1/8 of __ = 11. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0891",
@@ -27302,7 +27302,7 @@ export const ITEMS = [
     structureType: "wholeFromUnit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":78,"display":{"frac":{"d":6,"kind":"wholeFromUnit","part":13},"promptText":"1/6 of ? = 13. Find the missing whole."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":78,"display":{"frac":{"d":6,"kind":"wholeFromUnit","part":13},"promptText":"1/6 of what number is 13?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0893",
@@ -27322,7 +27322,7 @@ export const ITEMS = [
     structureType: "wholeFromUnit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"frac":{"d":5,"kind":"wholeFromUnit","part":16},"promptText":"1/5 of ? = 16. Find the missing whole."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"frac":{"d":5,"kind":"wholeFromUnit","part":16},"promptText":"1/5 of __ = 16. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0895",
@@ -27342,7 +27342,7 @@ export const ITEMS = [
     structureType: "wholeFromUnit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"frac":{"d":8,"kind":"wholeFromUnit","part":9},"promptText":"1/8 of ? = 9. Find the missing whole."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"frac":{"d":8,"kind":"wholeFromUnit","part":9},"promptText":"1/8 of what number is 9?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0897",
@@ -27362,7 +27362,7 @@ export const ITEMS = [
     structureType: "wholeFromUnit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"frac":{"d":6,"kind":"wholeFromUnit","part":15},"promptText":"1/6 of ? = 15. Find the missing whole."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"frac":{"d":6,"kind":"wholeFromUnit","part":15},"promptText":"1/6 of __ = 15. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0899",
@@ -27382,7 +27382,7 @@ export const ITEMS = [
     structureType: "wholeFromUnit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":95,"display":{"frac":{"d":5,"kind":"wholeFromUnit","part":19},"promptText":"1/5 of ? = 19. Find the missing whole."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":95,"display":{"frac":{"d":5,"kind":"wholeFromUnit","part":19},"promptText":"1/5 of what number is 19?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0901",
@@ -27412,7 +27412,7 @@ export const ITEMS = [
     structureType: "wholeFromUnit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":460,"display":{"frac":{"d":10,"kind":"wholeFromUnit","part":46},"promptText":"Reverse it: 1/10 of the mystery number gives 46. The number = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":460,"display":{"frac":{"d":10,"kind":"wholeFromUnit","part":46},"promptText":"1/10 of a number is 46. What is the number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0904",
@@ -27432,7 +27432,7 @@ export const ITEMS = [
     structureType: "wholeFromUnit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"frac":{"d":12,"kind":"wholeFromUnit","part":30},"promptText":"Reverse it: 1/12 of the mystery number gives 30. The number = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"frac":{"d":12,"kind":"wholeFromUnit","part":30},"promptText":"If 1/12 of a number is 30, what is the number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0906",
@@ -27452,7 +27452,7 @@ export const ITEMS = [
     structureType: "wholeFromUnit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":480,"display":{"frac":{"d":12,"kind":"wholeFromUnit","part":40},"promptText":"Reverse it: 1/12 of the mystery number gives 40. The number = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":480,"display":{"frac":{"d":12,"kind":"wholeFromUnit","part":40},"promptText":"1/12 of a number is 40. What is the number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0908",
@@ -27472,7 +27472,7 @@ export const ITEMS = [
     structureType: "wholeFromUnit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":600,"display":{"frac":{"d":12,"kind":"wholeFromUnit","part":50},"promptText":"Reverse it: 1/12 of the mystery number gives 50. The number = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":600,"display":{"frac":{"d":12,"kind":"wholeFromUnit","part":50},"promptText":"If 1/12 of a number is 50, what is the number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0910",
@@ -27492,7 +27492,7 @@ export const ITEMS = [
     structureType: "wholeFromUnit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":840,"display":{"frac":{"d":12,"kind":"wholeFromUnit","part":70},"promptText":"Reverse it: 1/12 of the mystery number gives 70. The number = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":840,"display":{"frac":{"d":12,"kind":"wholeFromUnit","part":70},"promptText":"1/12 of a number is 70. What is the number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0912",
@@ -27512,7 +27512,7 @@ export const ITEMS = [
     structureType: "wholeFromUnit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":960,"display":{"frac":{"d":12,"kind":"wholeFromUnit","part":80},"promptText":"Reverse it: 1/12 of the mystery number gives 80. The number = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":960,"display":{"frac":{"d":12,"kind":"wholeFromUnit","part":80},"promptText":"If 1/12 of a number is 80, what is the number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0914",
@@ -27532,7 +27532,7 @@ export const ITEMS = [
     structureType: "wholeFromUnit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":540,"display":{"frac":{"d":12,"kind":"wholeFromUnit","part":45},"promptText":"Reverse it: 1/12 of the mystery number gives 45. The number = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":540,"display":{"frac":{"d":12,"kind":"wholeFromUnit","part":45},"promptText":"1/12 of a number is 45. What is the number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0916",
@@ -27552,7 +27552,7 @@ export const ITEMS = [
     structureType: "wholeFromUnit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":420,"display":{"frac":{"d":12,"kind":"wholeFromUnit","part":35},"promptText":"Reverse it: 1/12 of the mystery number gives 35. The number = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":420,"display":{"frac":{"d":12,"kind":"wholeFromUnit","part":35},"promptText":"If 1/12 of a number is 35, what is the number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0918",
@@ -27572,7 +27572,7 @@ export const ITEMS = [
     structureType: "wholeFromUnit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":780,"display":{"frac":{"d":12,"kind":"wholeFromUnit","part":65},"promptText":"Reverse it: 1/12 of the mystery number gives 65. The number = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":780,"display":{"frac":{"d":12,"kind":"wholeFromUnit","part":65},"promptText":"1/12 of a number is 65. What is the number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractions-proc-b0821-0920",
@@ -27582,7 +27582,7 @@ export const ITEMS = [
     structureType: "ofSetPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[10,8,11,9],"display":{"frac":{"d":2,"n":1,"w":18,"kind":"ofSet"},"promptText":"Which number is 1/2 of 18? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":9,"choices":[10,8,11,9],"display":{"frac":{"d":2,"n":1,"w":18,"kind":"ofSet"},"promptText":"Which number is 1/2 of 18?"}},
   },
   {
     itemId: "fractions-proc-b0821-0921",
@@ -27602,7 +27602,7 @@ export const ITEMS = [
     structureType: "ofSetPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[3,5,6,4],"display":{"frac":{"d":4,"n":1,"w":16,"kind":"ofSet"},"promptText":"Which number is 1/4 of 16? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[3,5,6,4],"display":{"frac":{"d":4,"n":1,"w":16,"kind":"ofSet"},"promptText":"Which number is 1/4 of 16?"}},
   },
   {
     itemId: "fractions-proc-b0821-0923",
@@ -27622,7 +27622,7 @@ export const ITEMS = [
     structureType: "ofSetPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[7,5,4,6],"display":{"frac":{"d":3,"n":1,"w":15,"kind":"ofSet"},"promptText":"Which number is 1/3 of 15? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[7,5,4,6],"display":{"frac":{"d":3,"n":1,"w":15,"kind":"ofSet"},"promptText":"Which number is 1/3 of 15?"}},
   },
   {
     itemId: "fractions-proc-b0821-0925",
@@ -27642,7 +27642,7 @@ export const ITEMS = [
     structureType: "ofSetPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[10,12,11,9],"display":{"frac":{"d":2,"n":1,"w":20,"kind":"ofSet"},"promptText":"Which number is 1/2 of 20? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[10,12,11,9],"display":{"frac":{"d":2,"n":1,"w":20,"kind":"ofSet"},"promptText":"Which number is 1/2 of 20?"}},
   },
   {
     itemId: "fractions-proc-b0821-0927",
@@ -27662,7 +27662,7 @@ export const ITEMS = [
     structureType: "ofSetPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[4,5,2,3],"display":{"frac":{"d":4,"n":1,"w":12,"kind":"ofSet"},"promptText":"Which number is 1/4 of 12? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":3,"choices":[4,5,2,3],"display":{"frac":{"d":4,"n":1,"w":12,"kind":"ofSet"},"promptText":"Which number is 1/4 of 12?"}},
   },
   {
     itemId: "fractions-proc-b0821-0929",
@@ -27782,7 +27782,7 @@ export const ITEMS = [
     structureType: "ofSetPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"choices":[37,35,34,36],"display":{"frac":{"d":10,"n":1,"w":350,"kind":"ofSet"},"promptText":"Identify exactly 1/10 of 350 among the choices."}},
+    question: {"a":null,"b":null,"op":"count","answer":35,"choices":[37,35,34,36],"display":{"frac":{"d":10,"n":1,"w":350,"kind":"ofSet"},"promptText":"What is 1/10 of 350?"}},
   },
   {
     itemId: "fractions-proc-b0821-0941",
@@ -27792,7 +27792,7 @@ export const ITEMS = [
     structureType: "ofSetPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":105,"choices":[107,106,104,105],"display":{"frac":{"d":10,"n":3,"w":350,"kind":"ofSet"},"promptText":"Which choice equals 3/10 of 350 precisely?"}},
+    question: {"a":null,"b":null,"op":"count","answer":105,"choices":[107,106,104,105],"display":{"frac":{"d":10,"n":3,"w":350,"kind":"ofSet"},"promptText":"Which of these numbers is 3/10 of 350?"}},
   },
   {
     itemId: "fractions-proc-b0821-0942",
@@ -27802,7 +27802,7 @@ export const ITEMS = [
     structureType: "ofSetPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"choices":[25,26,24,27],"display":{"frac":{"d":12,"n":1,"w":300,"kind":"ofSet"},"promptText":"Identify exactly 1/12 of 300 among the choices."}},
+    question: {"a":null,"b":null,"op":"count","answer":25,"choices":[25,26,24,27],"display":{"frac":{"d":12,"n":1,"w":300,"kind":"ofSet"},"promptText":"What is 1/12 of 300?"}},
   },
   {
     itemId: "fractions-proc-b0821-0943",
@@ -27812,7 +27812,7 @@ export const ITEMS = [
     structureType: "ofSetPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":125,"choices":[127,126,124,125],"display":{"frac":{"d":12,"n":5,"w":300,"kind":"ofSet"},"promptText":"Which choice equals 5/12 of 300 precisely?"}},
+    question: {"a":null,"b":null,"op":"count","answer":125,"choices":[127,126,124,125],"display":{"frac":{"d":12,"n":5,"w":300,"kind":"ofSet"},"promptText":"Which of these numbers is 5/12 of 300?"}},
   },
   {
     itemId: "fractions-proc-b0821-0944",
@@ -27822,7 +27822,7 @@ export const ITEMS = [
     structureType: "ofSetPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":294,"choices":[296,295,293,294],"display":{"frac":{"d":10,"n":7,"w":420,"kind":"ofSet"},"promptText":"Identify exactly 7/10 of 420 among the choices."}},
+    question: {"a":null,"b":null,"op":"count","answer":294,"choices":[296,295,293,294],"display":{"frac":{"d":10,"n":7,"w":420,"kind":"ofSet"},"promptText":"What is 7/10 of 420?"}},
   },
   {
     itemId: "fractions-proc-b0821-0945",
@@ -27832,7 +27832,7 @@ export const ITEMS = [
     structureType: "ofSetPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":378,"choices":[379,377,378,380],"display":{"frac":{"d":10,"n":9,"w":420,"kind":"ofSet"},"promptText":"Which choice equals 9/10 of 420 precisely?"}},
+    question: {"a":null,"b":null,"op":"count","answer":378,"choices":[379,377,378,380],"display":{"frac":{"d":10,"n":9,"w":420,"kind":"ofSet"},"promptText":"Which of these numbers is 9/10 of 420?"}},
   },
   {
     itemId: "fractions-proc-b0821-0946",
@@ -27842,7 +27842,7 @@ export const ITEMS = [
     structureType: "ofSetPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":350,"choices":[350,352,351,349],"display":{"frac":{"d":12,"n":7,"w":600,"kind":"ofSet"},"promptText":"Identify exactly 7/12 of 600 among the choices."}},
+    question: {"a":null,"b":null,"op":"count","answer":350,"choices":[350,352,351,349],"display":{"frac":{"d":12,"n":7,"w":600,"kind":"ofSet"},"promptText":"What is 7/12 of 600?"}},
   },
   {
     itemId: "fractions-proc-b0821-0947",
@@ -27852,7 +27852,7 @@ export const ITEMS = [
     structureType: "ofSetPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":43,"choices":[42,45,44,43],"display":{"frac":{"d":10,"n":1,"w":430,"kind":"ofSet"},"promptText":"Which choice equals 1/10 of 430 precisely?"}},
+    question: {"a":null,"b":null,"op":"count","answer":43,"choices":[42,45,44,43],"display":{"frac":{"d":10,"n":1,"w":430,"kind":"ofSet"},"promptText":"Which of these numbers is 1/10 of 430?"}},
   },
   {
     itemId: "fractions-proc-b0821-0948",
@@ -27862,7 +27862,7 @@ export const ITEMS = [
     structureType: "ofSetPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":267,"choices":[266,268,269,267],"display":{"frac":{"d":10,"n":3,"w":890,"kind":"ofSet"},"promptText":"Identify exactly 3/10 of 890 among the choices."}},
+    question: {"a":null,"b":null,"op":"count","answer":267,"choices":[266,268,269,267],"display":{"frac":{"d":10,"n":3,"w":890,"kind":"ofSet"},"promptText":"What is 3/10 of 890?"}},
   },
   {
     itemId: "fractions-proc-b0821-0949",
@@ -27872,6 +27872,6 @@ export const ITEMS = [
     structureType: "ofSetPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":121,"choices":[120,123,121,122],"display":{"frac":{"d":12,"n":11,"w":132,"kind":"ofSet"},"promptText":"Which choice equals 11/12 of 132 precisely?"}},
+    question: {"a":null,"b":null,"op":"count","answer":121,"choices":[120,123,121,122],"display":{"frac":{"d":12,"n":11,"w":132,"kind":"ofSet"},"promptText":"Which of these numbers is 11/12 of 132?"}},
   },
 ];

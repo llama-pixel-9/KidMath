@@ -456,7 +456,7 @@ const VARIETIES = [
         answer: fmt(earliest),
         answerType: "choice",
         choices: shuffleArray(totals.map(fmt)),
-        promptText: `Which time is earliest? ${totals.map(fmt).join(", ")}`,
+        promptText: `Here are three times from one morning: ${totals.map(fmt).join(", ")}. Which time is earliest?`,
         representation: "symbolic",
         cognitiveDemand: "DOK2",
         misconceptionTags: ["hourMinuteSwap"],

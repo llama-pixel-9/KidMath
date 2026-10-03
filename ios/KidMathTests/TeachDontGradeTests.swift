@@ -29,8 +29,8 @@ final class TeachDontGradeTests: XCTestCase {
     func testSpeakableTextReadsEmojiAndOperators() throws {
         let engine = try EngineBridge()
         XCTAssertEqual(engine.speakableText("3 × 4 = ?"), "3 times 4 equals what")
-        XCTAssertEqual(engine.speakableText("🍪🍪🍪🍪🍪 How many?", noun: "cookies"), "5 cookies How many what")
-        XCTAssertEqual(engine.speakableText("What is 1/2 of 8?"), "What is 1 over 2 of 8 what")
+        XCTAssertEqual(engine.speakableText("🍪🍪🍪🍪🍪 How many?", noun: "cookies"), "5 cookies How many?")
+        XCTAssertEqual(engine.speakableText("What is 1/2 of 8?"), "What is 1 over 2 of 8?")
     }
 
     func testAutoReadOnlyForKAndFirstGrade() {

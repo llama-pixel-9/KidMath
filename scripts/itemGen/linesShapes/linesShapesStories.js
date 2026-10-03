@@ -25,8 +25,8 @@ const mk = (subskill, structureType, band, question) => {
   };
 };
 
-const BAND_TAG = { band1: "", band2: " Count carefully.", band3: " Double-check your count." };
-const JUDGE_TAG = { band1: "", band2: " Look closely.", band3: " Study it before answering." };
+const BAND_TAG = { band1: "", band2: "Count carefully. ", band3: "Count twice to be sure. " };
+const JUDGE_TAG = { band1: "", band2: "Look closely. ", band3: "Study it before answering. " };
 
 function cycle(count, space, skeletons, offset, emit) {
   const items = [];
@@ -50,7 +50,7 @@ export function buildStoryItems() {
     mk("shapeSides", `storySticks_${band}`, band, {
       answer: byName(shape).sides,
       answerType: "numberPad",
-      display: { shapeC: { kind: "sidesByName", name: shape }, promptText: sk(nm, shape) + BAND_TAG[band] },
+      display: { shapeC: { kind: "sidesByName", name: shape }, promptText: BAND_TAG[band] + sk(nm, shape) },
     });
   items.push(...cycle(17, [["triangle"], ["square"], ["pentagon"], ["rectangle"], ["hexagon"], ["triangle"], ["square"], ["pentagon"], ["rectangle"], ["hexagon"], ["triangle"], ["square"], ["pentagon"], ["rectangle"], ["hexagon"], ["triangle"], ["square"]], STICKS_SKELETONS, 0, sticksEmit(B1)));
   items.push(...cycle(17, [["hexagon"], ["trapezoid"], ["heptagon"], ["rhombus"], ["parallelogram"], ["hexagon"], ["trapezoid"], ["heptagon"], ["rhombus"], ["parallelogram"], ["hexagon"], ["trapezoid"], ["heptagon"], ["rhombus"], ["parallelogram"], ["hexagon"], ["trapezoid"]], STICKS_SKELETONS, 1, sticksEmit(B2)));
@@ -65,7 +65,7 @@ export function buildStoryItems() {
     mk("shapeSides", `storyCorners_${band}`, band, {
       answer: byName(shape).vertices,
       answerType: "numberPad",
-      display: { shapeC: { kind: "verticesByName", name: shape }, promptText: sk(nm, shape) + BAND_TAG[band] },
+      display: { shapeC: { kind: "verticesByName", name: shape }, promptText: BAND_TAG[band] + sk(nm, shape) },
     });
   items.push(...cycle(17, [["square"], ["triangle"], ["rectangle"], ["pentagon"], ["hexagon"], ["square"], ["triangle"], ["rectangle"], ["pentagon"], ["hexagon"], ["square"], ["triangle"], ["rectangle"], ["pentagon"], ["hexagon"], ["square"], ["triangle"]], CORNER_SKELETONS, 1, cornersEmit(B1)));
   items.push(...cycle(17, [["trapezoid"], ["rhombus"], ["hexagon"], ["parallelogram"], ["heptagon"], ["trapezoid"], ["rhombus"], ["hexagon"], ["parallelogram"], ["heptagon"], ["trapezoid"], ["rhombus"], ["hexagon"], ["parallelogram"], ["heptagon"], ["trapezoid"], ["rhombus"]], CORNER_SKELETONS, 2, cornersEmit(B2)));
@@ -80,7 +80,7 @@ export function buildStoryItems() {
     mk("shapeSides", `storyTwoShapes_${band}`, band, {
       answer: byName(a).sides + byName(b).sides,
       answerType: "numberPad",
-      display: { counting: { kind: "sum", parts: [byName(a).sides, byName(b).sides] }, promptText: sk(nm, a, b) + BAND_TAG[band] },
+      display: { counting: { kind: "sum", parts: [byName(a).sides, byName(b).sides] }, promptText: BAND_TAG[band] + sk(nm, a, b) },
     });
   items.push(...cycle(17, [["triangle", "square"], ["square", "pentagon"], ["triangle", "pentagon"], ["rectangle", "triangle"], ["pentagon", "rectangle"], ["square", "rectangle"], ["triangle", "hexagon"], ["hexagon", "square"], ["pentagon", "hexagon"], ["triangle", "square"], ["square", "pentagon"], ["rectangle", "hexagon"], ["triangle", "rectangle"], ["pentagon", "square"], ["hexagon", "triangle"], ["rectangle", "pentagon"], ["square", "hexagon"]], TWO_SHAPES_SKELETONS, 2, twoShapesEmit(B1)));
   items.push(...cycle(17, [["hexagon", "trapezoid"], ["heptagon", "rhombus"], ["hexagon", "parallelogram"], ["heptagon", "trapezoid"], ["rhombus", "hexagon"], ["parallelogram", "heptagon"], ["trapezoid", "hexagon"], ["heptagon", "hexagon"], ["rhombus", "trapezoid"], ["parallelogram", "hexagon"], ["heptagon", "parallelogram"], ["hexagon", "hexagon"], ["trapezoid", "heptagon"], ["rhombus", "parallelogram"], ["heptagon", "heptagon"], ["hexagon", "rhombus"], ["trapezoid", "parallelogram"]], TWO_SHAPES_SKELETONS, 0, twoShapesEmit(B2)));
@@ -96,7 +96,7 @@ export function buildStoryItems() {
     mk("symmetryLines", `storyFolds_${band}`, band, {
       answer: byName(shape).symmetry,
       answerType: "numberPad",
-      display: { shapeC: { kind: "symmetryByName", name: shape }, promptText: sk(nm, shape) + BAND_TAG[band] },
+      display: { shapeC: { kind: "symmetryByName", name: shape }, promptText: BAND_TAG[band] + sk(nm, shape) },
     });
   items.push(...cycle(17, [["square"], ["rectangle"], ["triangle"], ["trapezoid"], ["square"], ["rectangle"], ["triangle"], ["trapezoid"], ["square"], ["rectangle"], ["triangle"], ["trapezoid"], ["square"], ["rectangle"], ["triangle"], ["trapezoid"], ["square"]], FOLD_SKELETONS, 0, foldEmit(B1)));
   items.push(...cycle(17, [["pentagon"], ["hexagon"], ["right triangle"], ["square"], ["heptagon"], ["pentagon"], ["hexagon"], ["right triangle"], ["square"], ["heptagon"], ["pentagon"], ["hexagon"], ["right triangle"], ["square"], ["heptagon"], ["pentagon"], ["hexagon"]], FOLD_SKELETONS, 1, foldEmit(B2)));
@@ -111,7 +111,7 @@ export function buildStoryItems() {
     mk("symmetryLines", `storyMirror_${band}`, band, {
       answer: ok ? "Yes" : "No",
       choices: ["Yes", "No"],
-      display: { shapeC: { kind: "authored" }, promptText: sk(nm, thing, ok) + JUDGE_TAG[band], truth: ok },
+      display: { shapeC: { kind: "authored" }, promptText: JUDGE_TAG[band] + sk(nm, thing, ok), truth: ok },
     });
   items.push(...cycle(17, [["a butterfly with matching wings", true], ["a capital letter F", false], ["a heart", true], ["a capital letter J", false], ["a snowflake", true], ["a capital letter R", false], ["a smiley face", true], ["a capital letter G", false], ["a capital letter A", true], ["a capital letter P", false], ["a capital letter M", true], ["a capital letter Z", false], ["a capital letter T", true], ["a capital letter S", false], ["a capital letter V", true], ["a capital letter K", false], ["a capital letter U", true]], MIRROR_SKELETONS, 1, mirrorEmit(B1)));
   items.push(...cycle(17, [["a paper square", true], ["a paper parallelogram", false], ["a paper rectangle", true], ["a paper scalene triangle", false], ["a paper equilateral triangle", true], ["a letter N banner", false], ["a paper pentagon", true], ["a letter Q flag", false], ["a paper hexagon", true], ["a letter L pennant", false], ["a paper heart", true], ["a letter Z streamer", false], ["a paper circle", true], ["a letter G card", false], ["a paper trapezoid", true], ["a letter R poster", false], ["a paper star", true]], MIRROR_SKELETONS, 2, mirrorEmit(B2)));
@@ -205,7 +205,7 @@ export function buildStoryItems() {
     mk("shapeClassification", `storyBins_${band}`, band, {
       answer: n,
       answerType: "numberPad",
-      display: { shapeC: { kind: "authoredCount" }, promptText: sk(nm, list, prop, n) + BAND_TAG[band] },
+      display: { shapeC: { kind: "authoredCount" }, promptText: BAND_TAG[band] + sk(nm, list, prop, n) },
     });
   items.push(...cycle(17, [
     ["a triangle, a square, and a circle", "straight sides only", 2],
@@ -274,7 +274,7 @@ export function buildStoryItems() {
     mk("shapeClassification", `storyRename_${band}`, band, {
       answer: ok ? "Yes" : "No",
       choices: ["Yes", "No"],
-      display: { shapeC: { kind: "authored" }, promptText: sk(nm, claim, ok) + JUDGE_TAG[band], truth: ok },
+      display: { shapeC: { kind: "authored" }, promptText: JUDGE_TAG[band] + sk(nm, claim, ok), truth: ok },
     });
   items.push(...cycle(17, [["Every square window is a four-sided shape.", true], ["Every triangle flag has four corners.", false], ["Every rectangular door has 4 right angles.", true], ["Every pentagon sign has 6 sides.", false], ["Every hexagonal tile has 6 corners.", true], ["Every square napkin has unequal sides.", false], ["Every triangular slice has 3 sides.", true], ["Every rectangular rug has 3 corners.", false], ["Every pentagon badge has 5 corners.", true], ["Every hexagonal bolt has 5 sides.", false], ["Every square sticky note has equal sides.", true], ["Every triangle ramp has a curved side.", false], ["Every rectangle poster has 4 corners.", true], ["Every pentagon patio stone has 4 sides.", false], ["Every hexagon honeycomb cell has 6 sides.", true], ["Every square cracker has 5 corners.", false], ["Every triangle tent face has 3 corners.", true]], RENAME_SKELETONS, 1, renameEmit(B1)));
   items.push(...cycle(17, [["This square picture frame is also a rectangle.", true], ["This rectangular tabletop is also a square.", false], ["This square coaster is also a rhombus.", true], ["This trapezoid lampshade is also a parallelogram.", false], ["This rhombus kite is also a parallelogram.", true], ["This parallelogram banner is also a rectangle.", false], ["This rectangular window is also a parallelogram.", true], ["This rhombus tile is also a square.", false], ["This square garden bed is also a parallelogram.", true], ["This trapezoid roof face is also a rectangle.", false], ["This right-triangle ramp is still a triangle.", true], ["This hexagonal gazebo floor is a quadrilateral.", false], ["This square chess board is a quadrilateral.", true], ["This heptagon coin is a hexagon.", false], ["This rectangular field is a quadrilateral.", true], ["This scalene-triangle sail is a quadrilateral.", false], ["This rhombus charm is a quadrilateral.", true]], RENAME_SKELETONS, 2, renameEmit(B2)));
@@ -377,7 +377,7 @@ export function buildStoryItems() {
     mk("lineFigures", `storyChalk_${band}`, band, {
       answer: ENDPOINTS2[f],
       answerType: "numberPad",
-      display: { shapeC: { kind: "endpoints", figure: f, n: ENDPOINTS2[f] }, promptText: sk(nm, f) + BAND_TAG[band] },
+      display: { shapeC: { kind: "endpoints", figure: f, n: ENDPOINTS2[f] }, promptText: BAND_TAG[band] + sk(nm, f) },
     });
   for (const band of [B1, B2, B3]) {
     items.push(...cycle(17, [["line segment"], ["ray"], ["line"], ["line segment"], ["ray"], ["line"], ["line segment"], ["ray"], ["line"], ["line segment"], ["ray"], ["line"], ["line segment"], ["ray"], ["line"], ["line segment"], ["ray"]], CHALK_SKELETONS, OFF[band] % 3, chalkEmit(band)));
@@ -421,7 +421,7 @@ export function buildStoryItems() {
     mk("symmetryLines", `storyStencil_${band}`, band, {
       answer: byName(a).symmetry + byName(b).symmetry,
       answerType: "numberPad",
-      display: { counting: { kind: "sum", parts: [byName(a).symmetry, byName(b).symmetry] }, promptText: sk(nm, a, b) + BAND_TAG[band] },
+      display: { counting: { kind: "sum", parts: [byName(a).symmetry, byName(b).symmetry] }, promptText: BAND_TAG[band] + sk(nm, a, b) },
     });
   items.push(...cycle(17, [["square", "rectangle"], ["triangle", "square"], ["rectangle", "triangle"], ["square", "trapezoid"], ["triangle", "trapezoid"], ["rectangle", "trapezoid"], ["square", "triangle"], ["square", "square"], ["rectangle", "rectangle"], ["triangle", "triangle"], ["trapezoid", "trapezoid"], ["square", "rectangle"], ["triangle", "square"], ["rectangle", "triangle"], ["square", "trapezoid"], ["triangle", "trapezoid"], ["rectangle", "trapezoid"]], STENCIL_SKELETONS, 0, stencilEmit(B1)));
   items.push(...cycle(17, [["pentagon", "square"], ["hexagon", "rectangle"], ["pentagon", "triangle"], ["hexagon", "square"], ["pentagon", "rectangle"], ["hexagon", "triangle"], ["right triangle", "square"], ["heptagon", "rectangle"], ["right triangle", "pentagon"], ["heptagon", "triangle"], ["pentagon", "hexagon"], ["hexagon", "trapezoid"], ["right triangle", "hexagon"], ["heptagon", "square"], ["pentagon", "trapezoid"], ["heptagon", "hexagon"], ["right triangle", "rectangle"]], STENCIL_SKELETONS, 1, stencilEmit(B2)));
@@ -437,7 +437,7 @@ export function buildStoryItems() {
     mk("shapeProperties", `storyCheck_${band}`, band, {
       answer: ok ? "Yes" : "No",
       choices: ["Yes", "No"],
-      display: { shapeC: { kind, name, said }, promptText: sk(nm, name, prop, said, ok) + JUDGE_TAG[band], truth: ok },
+      display: { shapeC: { kind, name, said }, promptText: JUDGE_TAG[band] + sk(nm, name, prop, said, ok), truth: ok },
     });
   items.push(...cycle(17, [["square", 4, true], ["rectangle", 3, false], ["right triangle", 1, true], ["square", 2, false], ["rectangle", 4, true], ["right triangle", 4, false], ["triangle", 0, true], ["square", 3, false], ["rectangle", 2, false], ["right triangle", 2, false], ["triangle", 1, false], ["square", 4, true], ["rectangle", 4, true], ["right triangle", 1, true], ["triangle", 0, true], ["square", 1, false], ["rectangle", 0, false]], CHECK_SKELETONS, 0, (p2, sk, nm) => checkEmit(B1, "right angles", "rightSaid")(p2, sk, nm)));
   items.push(...cycle(17, [["trapezoid", 1, true], ["rhombus", 1, false], ["parallelogram", 2, true], ["trapezoid", 2, false], ["rhombus", 2, true], ["parallelogram", 1, false], ["hexagon", 3, true], ["trapezoid", 0, false], ["rhombus", 0, false], ["parallelogram", 0, false], ["hexagon", 2, false], ["square", 2, true], ["rectangle", 2, true], ["square", 1, false], ["rectangle", 3, false], ["hexagon", 1, false], ["trapezoid", 1, true]], CHECK_SKELETONS, 1, (p2, sk, nm) => checkEmit(B2, "pairs of parallel sides", "parallelSaid")(p2, sk, nm)));

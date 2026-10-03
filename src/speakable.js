@@ -11,7 +11,7 @@ const EMOJI_RE = /(\p{Extended_Pictographic}[️‍]*)/gu;
 /**
  * Turn a prompt into something that sounds right when spoken: emoji runs
  * become counts ("5 cookies" rather than silence), operators become words,
- * and a bare "?" becomes "what".
+ * a bare "?" becomes "what", and a written blank ("__") becomes "blank".
  */
 export function speakableText(promptText, { noun = "things" } = {}) {
   if (!promptText) return "";
@@ -30,7 +30,12 @@ export function speakableText(promptText, { noun = "things" } = {}) {
     .replace(/\s*\+\s*/g, " plus ")
     .replace(/\s*=\s*\?/g, " equals what")
     .replace(/\s*=\s*/g, " equals ")
-    .replace(/\?(?=\s|$)/g, " what ")
+    // Only a "?" standing alone is a blank. The "?" that ends a question
+    // ("How many apples now?") is not, and was read as "now what" until
+    // 2026-10-03.
+    .replace(/(^|\s)\?(?=\s|$)/g, "$1what ")
+    // A written blank ("A hexagon has __ sides.") is read as "blank".
+    .replace(/_{2,}|□/g, " blank ")
     .replace(/\b(\d+)\/(\d+)\b/g, "$1 over $2")
     .replace(/\s+/g, " ")
     .trim();

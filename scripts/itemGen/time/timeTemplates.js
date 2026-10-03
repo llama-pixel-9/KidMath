@@ -293,7 +293,7 @@ export function readClockConceptual() {
   });
   const betweenPhr = rotor([
     (nm, t) => `${nm} looks at a clock showing ${t}. Which two o'clock hours is that time between?`,
-    (nm, t) => `The time is ${t}. Between which two hours does it sit? ${nm} wants to know.`,
+    (nm, t) => `${nm} reads the time: ${t}. Between which two hours does it sit?`,
   ]);
   [[3, 20], [8, 40], [2, 15], [6, 50], [11, 25], [5, 35], [9, 10], [1, 45], [7, 55], [4, 30], [10, 5], [12, 40], [3, 35], [8, 25], [2, 55], [6, 15], [11, 45], [5, 20]].forEach(([h, m], i) => {
     const next = (h % 12) + 1;
@@ -320,7 +320,7 @@ export function readClockConceptual() {
   });
   const minutesLeftPhr = rotor([
     (nm, t) => `The clock reads ${t}. ${nm} wonders: how many minutes until the next o'clock?`,
-    (nm, t) => `At ${t}, how many minutes are left before the next full hour? ${nm} counts on.`,
+    (nm, t) => `${nm} counts on. At ${t}, how many minutes are left before the next full hour?`,
   ]);
   [[3, 47], [8, 23], [2, 51], [6, 12], [11, 38], [5, 55], [9, 17], [1, 42], [7, 29], [12, 56], [4, 8], [10, 24], [3, 36], [8, 14], [2, 41], [6, 53]].forEach(([h, m], i) => {
     items.push(
@@ -370,7 +370,7 @@ export function elapsedProcedural() {
     );
   }
   const laterPhr = rotor([
-    (hw, k) => `It is ${hw} o'clock. What hour will it be ${k === 1 ? "one hour" : `${HOUR_WORDS[k]} hours`} later? Answer with the hour number.`,
+    (hw, k) => `It is ${hw} o'clock. What hour will it be ${k === 1 ? "one hour" : `${HOUR_WORDS[k]} hours`} later?`,
     (hw, k) => `${k === 1 ? "One hour" : `${HOUR_WORDS[k]} hours`} after ${hw} o'clock, the clock shows ? o'clock`,
   ]);
   for (const [h, k] of [[2, 1], [5, 1], [9, 1], [11, 1], [3, 2], [7, 2], [10, 2], [1, 3], [4, 3], [8, 3], [6, 1], [12, 2], [2, 3], [5, 2], [9, 3], [3, 1], [7, 1], [10, 3], [1, 2], [4, 1], [8, 2], [6, 3], [12, 1], [11, 2], [4, 2], [6, 2]]) {
@@ -532,7 +532,7 @@ export function elapsedConceptual() {
   // Band 1: which takes longer (whole-hour spans).
   const longerPhr = rotor([
     (nm, a1, a2, b1, b2) => `${nm} compares two events: A runs ${HOUR_WORDS[a1]} to ${HOUR_WORDS[a2]} o'clock, B runs ${HOUR_WORDS[b1]} to ${HOUR_WORDS[b2]} o'clock. Which event lasts longer?`,
-    (nm, a1, a2, b1, b2) => `Event A: ${HOUR_WORDS[a1]} o'clock to ${HOUR_WORDS[a2]} o'clock. Event B: ${HOUR_WORDS[b1]} o'clock to ${HOUR_WORDS[b2]} o'clock. Which is longer? ${nm} checks.`,
+    (nm, a1, a2, b1, b2) => `${nm} compares two events. Event A: ${HOUR_WORDS[a1]} o'clock to ${HOUR_WORDS[a2]} o'clock. Event B: ${HOUR_WORDS[b1]} o'clock to ${HOUR_WORDS[b2]} o'clock. Which is longer?`,
   ]);
   [[2, 5, 1, 3], [1, 4, 2, 7], [3, 7, 6, 8], [6, 9, 1, 6], [2, 8, 4, 7], [4, 6, 1, 5], [1, 3, 5, 6], [5, 11, 7, 10], [7, 10, 2, 4], [3, 4, 8, 12], [2, 6, 3, 5], [1, 7, 4, 8], [4, 9, 6, 8], [6, 10, 2, 5], [3, 8, 5, 8], [5, 7, 1, 6], [9, 12, 2, 3], [2, 3, 4, 10]].forEach(([a1, a2, b1, b2], i) => {
     const la = a2 - a1;
@@ -564,7 +564,7 @@ export function elapsedConceptual() {
   // Band 2: which activity runs longer (within-hour spans).
   const longerMidPhr = rotor([
     (nm, a1, a2, b1, b2) => `${nm} compares two activities. A: ${a1} to ${a2}. B: ${b1} to ${b2}. Which one runs longer?`,
-    (nm, a1, a2, b1, b2) => `Activity A goes ${a1} to ${a2}; activity B goes ${b1} to ${b2}. Which lasts longer? ${nm} checks the clock.`,
+    (nm, a1, a2, b1, b2) => `${nm} checks the clock. Activity A goes ${a1} to ${a2}; activity B goes ${b1} to ${b2}. Which lasts longer?`,
   ]);
   [[3, 10, 3, 45, 4, 20, 4, 40], [8, 5, 8, 30, 9, 10, 9, 45], [2, 15, 2, 50, 5, 30, 5, 50], [6, 20, 6, 55, 7, 5, 7, 30], [11, 10, 11, 40, 1, 25, 1, 45], [5, 25, 5, 45, 6, 5, 6, 40], [9, 5, 9, 35, 10, 15, 10, 35], [1, 15, 1, 40, 2, 30, 2, 45], [7, 10, 7, 25, 8, 20, 8, 55], [4, 30, 4, 55, 3, 5, 3, 20], [10, 5, 10, 50, 11, 15, 11, 40], [12, 20, 12, 45, 1, 10, 1, 50], [3, 15, 3, 35, 4, 5, 4, 55], [8, 25, 8, 50, 9, 30, 9, 40], [2, 5, 2, 20, 6, 15, 6, 50], [6, 10, 6, 50, 7, 20, 7, 40], [11, 30, 11, 45, 12, 5, 12, 40]].forEach(([a1, a2, a3, a4, b1, b2, b3, b4], i) => {
     const la = a3 * 60 + a4 - (a1 * 60 + a2);
@@ -581,7 +581,7 @@ export function elapsedConceptual() {
   // Band 2/3: pick the duration (choice with the decimal distractor).
   const pickDurPhr = rotor([
     (nm, s, e) => `${nm} times an activity from ${s} to ${e}. Which duration is right?`,
-    (nm, s, e) => `From ${s} to ${e} — which number of minutes fits? ${nm} counts up to check.`,
+    (nm, s, e) => `${nm} counts up to check. From ${s} to ${e}, which number of minutes fits?`,
   ]);
   const pickDur = (band, data) =>
     data.forEach(([h1, m1, h2, m2], i) => {
@@ -602,7 +602,7 @@ export function elapsedConceptual() {
   // Band 3: reasoning about crossing the hour.
   const crossPhr = rotor([
     (nm, s, d) => `${nm} starts at ${s} and works for ${d} minutes. Will the clock pass the next o'clock before ${nm} stops?`,
-    (nm, s, d) => `Starting at ${s} for ${d} minutes — does the time cross into the next hour? ${nm} thinks it over.`,
+    (nm, s, d) => `${nm} thinks it over. Starting at ${s} for ${d} minutes, does the time cross into the next hour?`,
   ]);
   [[2, 40, 45], [3, 10, 20], [5, 50, 30], [8, 5, 40], [8, 35, 40], [2, 15, 30], [11, 45, 50], [6, 20, 25], [3, 55, 25], [11, 10, 35], [6, 40, 35], [5, 25, 20], [9, 30, 55], [9, 5, 40], [1, 50, 45], [1, 15, 30], [4, 45, 40], [7, 10, 35]].forEach(([h, m, d], i) => {
     const truth = m + d >= 60;

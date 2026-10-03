@@ -50,12 +50,12 @@ export function areaProcedural() {
       (w, h) => `A rectangle is ${w} cm long and ${h} cm wide. What is its area in square cm?`,
       (w, h) => `Find the area of a ${w} cm by ${h} cm rectangle in square cm.`,
       (w, h) => `A card measures ${w} cm by ${h} cm. How many square cm is its area?`,
-      (w, h) => `Compute the area in square cm of a rectangle ${w} cm by ${h} cm.`,
+      (w, h) => `What is the area in square cm of a rectangle ${w} cm by ${h} cm?`,
     ],
     band3: [
-      (w, h) => `A rectangle measures ${w} m by ${h} m. Compute its area in square m.`,
+      (w, h) => `A rectangle measures ${w} m by ${h} m. What is its area in square m?`,
       (w, h) => `Exactly how many square m cover a ${w} m by ${h} m rectangle?`,
-      (w, h) => `Determine the area of a ${w} m by ${h} m rectangle in square m.`,
+      (w, h) => `Find the area of a ${w} m by ${h} m rectangle in square m.`,
       (w, h) => `The area of a rectangle ${w} m long and ${h} m wide is how many square m?`,
     ],
   };
@@ -101,12 +101,12 @@ export function areaProcedural() {
       (s) => `A square has ${s} cm sides. What is its area in square cm?`,
       (s) => `Find the area of a square with side ${s} cm in square cm.`,
       (s) => `A square sticker measures ${s} cm on a side. How many square cm is its area?`,
-      (s) => `Compute the area in square cm of a ${s} cm square.`,
+      (s) => `What is the area in square cm of a ${s} cm square?`,
     ],
     band3: [
-      (s) => `A square measures ${s} m on each side. Compute its area in square m.`,
+      (s) => `A square measures ${s} m on each side. What is its area in square m?`,
       (s) => `Exactly how many square m fill a square of side ${s} m?`,
-      (s) => `Determine the area of a square with ${s} m sides in square m.`,
+      (s) => `Find the area of a square with ${s} m sides in square m.`,
       (s) => `The area of a ${s} m square is how many square m?`,
     ],
   };
@@ -140,7 +140,7 @@ export function areaProcedural() {
       (w, h) => `Identify the area in square m of a ${w} m by ${h} m rectangle.`,
       (w, h) => `Which value is the area of a ${w} m by ${h} m rectangle?`,
       (w, h) => `Precisely which choice equals the area of a ${w} by ${h} rectangle?`,
-      (w, h) => `Determine the area of the ${w} m by ${h} m rectangle from the choices.`,
+      (w, h) => `Which choice is the area of the ${w} m by ${h} m rectangle?`,
     ],
   };
   const pickData = {
@@ -174,11 +174,11 @@ export function areaConceptual() {
       (nm, w, h) => `For a ${w}-by-${h} grid rectangle, ${nm} says the area is ${w} + ${h} = ${w + h}. Is that right?`,
     ],
     band2: [
-      (nm, w, h) => `${nm} computes the area of a ${w} cm by ${h} cm rectangle as ${w} + ${h} = ${w + h} square cm. Does the work hold?`,
+      (nm, w, h) => `${nm} finds the area of a ${w} cm by ${h} cm rectangle as ${w} + ${h} = ${w + h} square cm. Is ${nm} right?`,
       (nm, w, h) => `Adding the sides, ${nm} reports ${w + h} square cm for a ${w} by ${h} rectangle's area. Is ${nm} right?`,
     ],
     band3: [
-      (nm, w, h) => `${nm}'s worked area for a ${w} m by ${h} m rectangle reads ${w} + ${h} = ${w + h} square m. Is the work sound?`,
+      (nm, w, h) => `${nm} writes the area of a ${w} m by ${h} m rectangle as ${w} + ${h} = ${w + h} square m. Is ${nm} right?`,
       (nm, w, h) => `${nm} defends ${w + h} square m as the area of a ${w} by ${h} rectangle. Should the defense stand?`,
     ],
   };
@@ -209,8 +209,8 @@ export function areaConceptual() {
       (nm, w, h, said) => `Check ${nm}'s area of ${said} square cm for a ${w} by ${h} rectangle. Right or not?`,
     ],
     band3: [
-      (nm, w, h, said) => `${nm} certifies ${said} square m as the area of a ${w} m by ${h} m rectangle. Valid?`,
-      (nm, w, h, said) => `Audit ${nm}'s sheet: a ${w} by ${h} rectangle, area written ${said}. Clean audit?`,
+      (nm, w, h, said) => `${nm} says the area of a ${w} m by ${h} m rectangle is ${said} square m. Is ${nm} right?`,
+      (nm, w, h, said) => `On ${nm}'s sheet, a ${w} by ${h} rectangle has its area written as ${said}. Is that right?`,
     ],
   };
   const saidData = {
@@ -240,7 +240,7 @@ export function areaConceptual() {
       (nm, w, h) => `A ${w} by ${h} rectangle covers more after a quarter turn, argues ${nm}. Is ${nm} right?`,
     ],
     band3: [
-      (nm, w, h) => `${nm} asserts a ${w} m by ${h} m rectangle's area shifts when the rectangle is rotated. Is the assertion right?`,
+      (nm, w, h) => `${nm} says a ${w} m by ${h} m rectangle's area changes when the rectangle is turned. Is ${nm} right?`,
       (nm, w, h) => `Rotation changes area, per ${nm}, so a ${w} by ${h} rectangle covers differently on its side. Correct?`,
     ],
   };
@@ -283,12 +283,12 @@ export function perimeterProcedural() {
       (w, h) => `A rectangle is ${w} cm long and ${h} cm wide. What is its perimeter in cm?`,
       (w, h) => `Find the perimeter of a ${w} cm by ${h} cm rectangle in cm.`,
       (w, h) => `A frame measures ${w} cm by ${h} cm. How many cm is its perimeter?`,
-      (w, h) => `Compute the perimeter in cm of a rectangle ${w} cm by ${h} cm.`,
+      (w, h) => `What is the perimeter in cm of a rectangle ${w} cm by ${h} cm?`,
     ],
     band3: [
-      (w, h) => `A rectangle measures ${w} m by ${h} m. Compute its perimeter in m.`,
+      (w, h) => `A rectangle measures ${w} m by ${h} m. What is its perimeter in m?`,
       (w, h) => `Exactly how many m is the perimeter of a ${w} m by ${h} m rectangle?`,
-      (w, h) => `Determine the perimeter of a ${w} m by ${h} m rectangle in m.`,
+      (w, h) => `Find the perimeter of a ${w} m by ${h} m rectangle in m.`,
       (w, h) => `The perimeter of a rectangle ${w} m long and ${h} m wide is how many m?`,
     ],
   };
@@ -334,12 +334,12 @@ export function perimeterProcedural() {
       (s) => `A square has ${s} cm sides. What is its perimeter in cm?`,
       (s) => `Find the perimeter of a square with side ${s} cm in cm.`,
       (s) => `A square coaster measures ${s} cm on a side. How many cm is its perimeter?`,
-      (s) => `Compute the perimeter in cm of a ${s} cm square.`,
+      (s) => `What is the perimeter in cm of a ${s} cm square?`,
     ],
     band3: [
-      (s) => `A square measures ${s} m on each side. Compute its perimeter in m.`,
+      (s) => `A square measures ${s} m on each side. What is its perimeter in m?`,
       (s) => `Exactly how many m is the perimeter of a square of side ${s} m?`,
-      (s) => `Determine the perimeter of a square with ${s} m sides in m.`,
+      (s) => `Find the perimeter of a square with ${s} m sides in m.`,
       (s) => `The perimeter of a ${s} m square is how many m?`,
     ],
   };
@@ -370,9 +370,9 @@ export function perimeterProcedural() {
       (p, w) => `A ${p} cm perimeter wraps a rectangle with one ${w} cm side. Type the other side in cm.`,
     ],
     band3: [
-      (p, w) => `A rectangle has perimeter ${p} m and one side of ${w} m. Compute the other side in m.`,
+      (p, w) => `A rectangle has perimeter ${p} m and one side of ${w} m. How long is the other side in m?`,
       (p, w) => `Exactly how many m is the other side of a rectangle with perimeter ${p} m and a ${w} m side?`,
-      (p, w) => `Determine the missing side of a rectangle: perimeter ${p} m, known side ${w} m.`,
+      (p, w) => `Find the missing side of a rectangle: perimeter ${p} m, known side ${w} m.`,
       (p, w) => `Solve for the other side: perimeter ${p} m, one side ${w} m.`,
     ],
   };
@@ -405,11 +405,11 @@ export function perimeterConceptual() {
       (nm, w, h) => `For a ${w}-unit by ${h}-unit rectangle, ${nm} says the border is ${w} + ${h} = ${w + h} units. Is that right?`,
     ],
     band2: [
-      (nm, w, h) => `${nm} computes the perimeter of a ${w} cm by ${h} cm rectangle as ${w} + ${h} = ${w + h} cm. Does the work hold?`,
+      (nm, w, h) => `${nm} finds the perimeter of a ${w} cm by ${h} cm rectangle as ${w} + ${h} = ${w + h} cm. Is ${nm} right?`,
       (nm, w, h) => `Adding one length and one width, ${nm} reports ${w + h} cm of perimeter for a ${w} by ${h} rectangle. Is ${nm} right?`,
     ],
     band3: [
-      (nm, w, h) => `${nm}'s perimeter for a ${w} m by ${h} m rectangle reads ${w} + ${h} = ${w + h} m. Is the work sound?`,
+      (nm, w, h) => `${nm} writes the perimeter of a ${w} m by ${h} m rectangle as ${w} + ${h} = ${w + h} m. Is ${nm} right?`,
       (nm, w, h) => `${nm} defends ${w + h} m as the perimeter of a ${w} by ${h} rectangle. Should the defense stand?`,
     ],
   };
@@ -440,8 +440,8 @@ export function perimeterConceptual() {
       (nm, w, h, said) => `Check ${nm}'s perimeter of ${said} cm for a ${w} by ${h} rectangle. Right or not?`,
     ],
     band3: [
-      (nm, w, h, said) => `${nm} certifies ${said} m as the perimeter of a ${w} m by ${h} m rectangle. Valid?`,
-      (nm, w, h, said) => `Audit ${nm}'s sheet: a ${w} by ${h} rectangle, perimeter written ${said}. Clean audit?`,
+      (nm, w, h, said) => `${nm} says the perimeter of a ${w} m by ${h} m rectangle is ${said} m. Is ${nm} right?`,
+      (nm, w, h, said) => `On ${nm}'s sheet, a ${w} by ${h} rectangle has its perimeter written as ${said}. Is that right?`,
     ],
   };
   const saidData = {

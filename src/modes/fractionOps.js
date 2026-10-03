@@ -226,7 +226,11 @@ const VARIETIES = [
     build() {
       const d = pick([4, 5, 6, 8]);
       const a = randInt(1, d - 1);
-      const b = randInt(1, d - 1);
+      // A sum of exactly one whole is neither more nor less than one, so
+      // either claim is false; the old draw keyed "less than one" Yes there
+      // (five shipped items, fixed 2026-10-02). Never draw it.
+      let b = randInt(1, d - 1);
+      while (a + b === d) b = randInt(1, d - 1);
       const overOne = a + b > d;
       const claimOver = Math.random() < 0.5;
       return {

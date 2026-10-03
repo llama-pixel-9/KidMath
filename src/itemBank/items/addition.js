@@ -6592,7 +6592,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":17,"b":null,"op":"+","answer":8,"display":{"promptText":"A whole of 25 has parts 17 and ?. Find the missing part."}},
+    question: {"a":17,"b":null,"op":"+","answer":8,"display":{"promptText":"25 is made of 17 and what other part?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-009",
@@ -6602,7 +6602,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":null,"op":"+","answer":12,"display":{"promptText":"A whole of 30 has parts 18 and ?. Find the missing part."}},
+    question: {"a":18,"b":null,"op":"+","answer":12,"display":{"promptText":"30 is made of 18 and what other part?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-010",
@@ -6612,7 +6612,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":22,"b":null,"op":"+","answer":8,"display":{"promptText":"A whole of 30 has parts 22 and ?. Find the missing part."}},
+    question: {"a":22,"b":null,"op":"+","answer":8,"display":{"promptText":"30 is made of 22 and what other part?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-011",
@@ -6622,7 +6622,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":24,"b":null,"op":"+","answer":16,"display":{"promptText":"A whole of 40 has parts 24 and ?. Find the missing part."}},
+    question: {"a":24,"b":null,"op":"+","answer":16,"display":{"promptText":"40 is made of 24 and what other part?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-012",
@@ -6632,7 +6632,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":19,"b":null,"op":"+","answer":11,"display":{"promptText":"A whole of 30 has parts 19 and ?. Find the missing part."}},
+    question: {"a":19,"b":null,"op":"+","answer":11,"display":{"promptText":"30 is made of 19 and what other part?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-013",
@@ -6642,7 +6642,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":26,"b":null,"op":"+","answer":14,"display":{"promptText":"A whole of 40 has parts 26 and ?. Find the missing part."}},
+    question: {"a":26,"b":null,"op":"+","answer":14,"display":{"promptText":"26 and what number make 40?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-014",
@@ -6652,7 +6652,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":33,"b":null,"op":"+","answer":17,"display":{"promptText":"A whole of 50 has parts 33 and ?. Find the missing part."}},
+    question: {"a":33,"b":null,"op":"+","answer":17,"display":{"promptText":"33 and what number make 50?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-015",
@@ -6662,7 +6662,7 @@ export const ITEMS = [
     structureType: "putTogetherAddendUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":null,"op":"+","answer":5,"display":{"promptText":"Write 15 as a sum of 10 and another whole number. The other number is?"}},
+    question: {"a":10,"b":null,"op":"+","answer":5,"display":{"promptText":"If 15 is split into 10 and another part, what is the other part?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-016",
@@ -6672,7 +6672,7 @@ export const ITEMS = [
     structureType: "putTogetherAddendUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":null,"op":"+","answer":8,"display":{"promptText":"Write 18 as a sum of 10 and another whole number. The other number is?"}},
+    question: {"a":10,"b":null,"op":"+","answer":8,"display":{"promptText":"What number goes in the blank: 18 = 10 + __?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-017",
@@ -6682,7 +6682,7 @@ export const ITEMS = [
     structureType: "putTogetherAddendUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":null,"op":"+","answer":5,"display":{"promptText":"Write 20 as a sum of 15 and another whole number. The other number is?"}},
+    question: {"a":15,"b":null,"op":"+","answer":5,"display":{"promptText":"If 20 is split into 15 and another part, what is the other part?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-018",
@@ -6692,7 +6692,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":13,"op":"+","answer":25,"display":{"promptText":"Two groups combine to show 25. The groups are 12 and 13. Total is?"}},
+    question: {"a":12,"b":13,"op":"+","answer":25,"display":{"promptText":"What number do 12 and 13 make together?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-019",
@@ -6702,7 +6702,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":17,"op":"+","answer":33,"display":{"promptText":"Two groups combine to show 33. The groups are 16 and 17. Total is?"}},
+    question: {"a":16,"b":17,"op":"+","answer":33,"display":{"promptText":"What whole do the parts 16 and 17 make?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-020",
@@ -6712,7 +6712,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":20,"b":25,"op":"+","answer":45,"display":{"promptText":"Two groups combine to show 45. The groups are 20 and 25. Total is?"}},
+    question: {"a":20,"b":25,"op":"+","answer":45,"display":{"promptText":"What do you get when you put 20 and 25 together?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-021",
@@ -6772,7 +6772,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":17,"b":13,"op":"+","answer":30,"display":{"promptText":"Add by place value: 10 + 10 = 20, and 7 + 3 = 10, so 17 + 13 equals?"}},
+    question: {"a":17,"b":13,"op":"+","answer":30,"display":{"promptText":"Add the tens, then add the ones. What is 17 + 13?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-027",
@@ -6782,7 +6782,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":25,"b":15,"op":"+","answer":40,"display":{"promptText":"Add by place value: 20 + 10 = 30, and 5 + 5 = 10, so 25 + 15 equals?"}},
+    question: {"a":25,"b":15,"op":"+","answer":40,"display":{"promptText":"Add tens to tens and ones to ones. What is 25 + 15?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-028",
@@ -6792,7 +6792,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":34,"b":26,"op":"+","answer":60,"display":{"promptText":"Add by place value: 30 + 20 = 50, and 4 + 6 = 10, so 34 + 26 equals?"}},
+    question: {"a":34,"b":26,"op":"+","answer":60,"display":{"promptText":"Think tens and ones. What is 34 + 26?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-029",
@@ -6802,7 +6802,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":26,"op":"+","answer":40,"display":{"promptText":"Use compensation: 14 + 26 = 15 + 25. Compute the value."}},
+    question: {"a":10,"b":null,"op":"+","answer":30,"distractorContext":{"a":10,"b":40},"display":{"promptText":"14 + 26 is the same as 10 + what number?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-030",
@@ -6812,7 +6812,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":23,"b":37,"op":"+","answer":60,"display":{"promptText":"Use compensation: 23 + 37 = 25 + 35. Compute the value."}},
+    question: {"a":20,"b":null,"op":"+","answer":40,"distractorContext":{"a":20,"b":60},"display":{"promptText":"Move 3 from 23 to 37. What number goes in the blank: 23 + 37 = 20 + __?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-031",
@@ -6822,7 +6822,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":38,"b":42,"op":"+","answer":80,"display":{"promptText":"Use compensation: 38 + 42 = 40 + 40. Compute the value."}},
+    question: {"a":38,"b":42,"op":"+","answer":80,"display":{"promptText":"Move 2 from 42 to 38. What is 38 + 42?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-032",
@@ -6832,7 +6832,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":18,"op":"+","answer":33,"display":{"promptText":"Open number sentence: 15 + 18 equals what?"}},
+    question: {"a":15,"b":18,"op":"+","answer":33,"display":{"promptText":"What is 15 + 18?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-033",
@@ -6842,7 +6842,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":29,"b":14,"op":"+","answer":43,"display":{"promptText":"Open number sentence: 29 + 14 equals what?"}},
+    question: {"a":29,"b":14,"op":"+","answer":43,"display":{"promptText":"What is the sum of 29 and 14?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-034",
@@ -6852,7 +6852,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":36,"b":27,"op":"+","answer":63,"display":{"promptText":"Open number sentence: 36 + 27 equals what?"}},
+    question: {"a":36,"b":27,"op":"+","answer":63,"display":{"promptText":"What do you get when you add 36 and 27?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-035",
@@ -6862,7 +6862,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":45,"b":38,"op":"+","answer":83,"display":{"promptText":"Open number sentence: 45 + 38 equals what?"}},
+    question: {"a":45,"b":38,"op":"+","answer":83,"display":{"promptText":"What is 45 + 38?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-036",
@@ -6872,7 +6872,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":52,"b":49,"op":"+","answer":101,"display":{"promptText":"Open number sentence: 52 + 49 equals what?"}},
+    question: {"a":52,"b":49,"op":"+","answer":101,"display":{"promptText":"What is the sum of 52 and 49?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-037",
@@ -7062,7 +7062,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":420,"b":null,"op":"+","answer":80,"display":{"promptText":"A whole of 500 has parts 420 and ?. Find the missing part."}},
+    question: {"a":420,"b":null,"op":"+","answer":80,"display":{"promptText":"420 and what number make 500?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-008",
@@ -7072,7 +7072,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":550,"b":null,"op":"+","answer":150,"display":{"promptText":"A whole of 700 has parts 550 and ?. Find the missing part."}},
+    question: {"a":550,"b":null,"op":"+","answer":150,"display":{"promptText":"550 and what number make 700?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-009",
@@ -7082,7 +7082,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":650,"b":null,"op":"+","answer":250,"display":{"promptText":"A whole of 900 has parts 650 and ?. Find the missing part."}},
+    question: {"a":650,"b":null,"op":"+","answer":250,"display":{"promptText":"650 and what number make 900?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-010",
@@ -7092,7 +7092,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":175,"b":null,"op":"+","answer":125,"display":{"promptText":"A whole of 300 has parts 175 and ?. Find the missing part."}},
+    question: {"a":175,"b":null,"op":"+","answer":125,"display":{"promptText":"What number goes with 175 to make 300?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-011",
@@ -7102,7 +7102,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":234,"b":null,"op":"+","answer":66,"display":{"promptText":"A whole of 300 has parts 234 and ?. Find the missing part."}},
+    question: {"a":234,"b":null,"op":"+","answer":66,"display":{"promptText":"What number goes with 234 to make 300?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-012",
@@ -7112,7 +7112,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":456,"b":null,"op":"+","answer":44,"display":{"promptText":"A whole of 500 has parts 456 and ?. Find the missing part."}},
+    question: {"a":456,"b":null,"op":"+","answer":44,"display":{"promptText":"What number goes with 456 to make 500?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-013",
@@ -7122,7 +7122,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":275,"b":null,"op":"+","answer":325,"display":{"promptText":"A whole of 600 has parts 275 and ?. Find the missing part."}},
+    question: {"a":275,"b":null,"op":"+","answer":325,"display":{"promptText":"What number goes with 275 to make 600?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-014",
@@ -7132,7 +7132,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":388,"b":null,"op":"+","answer":212,"display":{"promptText":"A whole of 600 has parts 388 and ?. Find the missing part."}},
+    question: {"a":388,"b":null,"op":"+","answer":212,"display":{"promptText":"What number goes with 388 to make 600?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-015",
@@ -7142,7 +7142,7 @@ export const ITEMS = [
     structureType: "putTogetherAddendUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":100,"b":null,"op":"+","answer":150,"display":{"promptText":"Write 250 as a sum of 100 and another whole number. The other number is?"}},
+    question: {"a":100,"b":null,"op":"+","answer":150,"display":{"promptText":"What number goes in the blank: 250 = 100 + __?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-016",
@@ -7152,7 +7152,7 @@ export const ITEMS = [
     structureType: "putTogetherAddendUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":200,"b":null,"op":"+","answer":150,"display":{"promptText":"Write 350 as a sum of 200 and another whole number. The other number is?"}},
+    question: {"a":200,"b":null,"op":"+","answer":150,"display":{"promptText":"If 350 is split into 200 and another part, what is the other part?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-017",
@@ -7162,7 +7162,7 @@ export const ITEMS = [
     structureType: "putTogetherAddendUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":300,"b":null,"op":"+","answer":200,"display":{"promptText":"Write 500 as a sum of 300 and another whole number. The other number is?"}},
+    question: {"a":300,"b":null,"op":"+","answer":200,"display":{"promptText":"What number goes in the blank: 500 = 300 + __?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-018",
@@ -7172,7 +7172,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":125,"b":375,"op":"+","answer":500,"display":{"promptText":"Two groups combine to show 500. The groups are 125 and 375. Total is?"}},
+    question: {"a":125,"b":375,"op":"+","answer":500,"display":{"promptText":"What number do 125 and 375 make together?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-019",
@@ -7182,7 +7182,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":240,"b":360,"op":"+","answer":600,"display":{"promptText":"Two groups combine to show 600. The groups are 240 and 360. Total is?"}},
+    question: {"a":240,"b":360,"op":"+","answer":600,"display":{"promptText":"What whole do the parts 240 and 360 make?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-020",
@@ -7192,7 +7192,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":450,"b":550,"op":"+","answer":1000,"display":{"promptText":"Two groups combine to show 1000. The groups are 450 and 550. Total is?"}},
+    question: {"a":450,"b":550,"op":"+","answer":1000,"display":{"promptText":"What do you get when you put 450 and 550 together?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-021",
@@ -7252,7 +7252,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":145,"b":255,"op":"+","answer":400,"display":{"promptText":"Add by place value: 100 + 200 = 300, 40 + 50 = 90, 5 + 5 = 10. So 145 + 255 equals?"}},
+    question: {"a":145,"b":255,"op":"+","answer":400,"display":{"promptText":"Add the hundreds, then the tens, then the ones. What is 145 + 255?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-027",
@@ -7262,7 +7262,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":238,"b":362,"op":"+","answer":600,"display":{"promptText":"Add by place value: 200 + 300 = 500, 30 + 60 = 90, 8 + 2 = 10. So 238 + 362 equals?"}},
+    question: {"a":238,"b":362,"op":"+","answer":600,"display":{"promptText":"Add hundreds to hundreds, tens to tens, and ones to ones. What is 238 + 362?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-028",
@@ -7272,7 +7272,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":156,"b":244,"op":"+","answer":400,"display":{"promptText":"Add by place value: 100 + 200 = 300, 50 + 40 = 90, 6 + 4 = 10. So 156 + 244 equals?"}},
+    question: {"a":156,"b":244,"op":"+","answer":400,"display":{"promptText":"Think in hundreds, tens, and ones. What is 156 + 244?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-029",
@@ -7282,7 +7282,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":199,"b":201,"op":"+","answer":400,"display":{"promptText":"Use compensation: 199 + 201 = 200 + 200. Compute the value."}},
+    question: {"a":199,"b":201,"op":"+","answer":400,"display":{"promptText":"Move 1 from 201 to 199. What is 199 + 201?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-030",
@@ -7292,7 +7292,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":298,"b":302,"op":"+","answer":600,"display":{"promptText":"Use compensation: 298 + 302 = 300 + 300. Compute the value."}},
+    question: {"a":298,"b":302,"op":"+","answer":600,"display":{"promptText":"Move 2 from 302 to 298. What is 298 + 302?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-031",
@@ -7302,7 +7302,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":397,"b":403,"op":"+","answer":800,"display":{"promptText":"Use compensation: 397 + 403 = 400 + 400. Compute the value."}},
+    question: {"a":397,"b":403,"op":"+","answer":800,"display":{"promptText":"Move 3 from 403 to 397. What is 397 + 403?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-032",
@@ -7312,7 +7312,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":250,"b":250,"op":"+","answer":500,"display":{"promptText":"Halve and double reasoning: double 250 is 250 + 250. What is the total?"}},
+    question: {"a":250,"b":250,"op":"+","answer":500,"display":{"promptText":"What is double 250?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-033",
@@ -7322,7 +7322,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":375,"b":375,"op":"+","answer":750,"display":{"promptText":"Halve and double reasoning: double 375 is 375 + 375. What is the total?"}},
+    question: {"a":375,"b":375,"op":"+","answer":750,"display":{"promptText":"What number is double 375?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-034",
@@ -7332,7 +7332,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":500,"b":500,"op":"+","answer":1000,"display":{"promptText":"Halve and double reasoning: double 500 is 500 + 500. What is the total?"}},
+    question: {"a":500,"b":500,"op":"+","answer":1000,"display":{"promptText":"What is double 500?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-035",
@@ -7342,7 +7342,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":125,"b":275,"op":"+","answer":400,"display":{"promptText":"Open number sentence: 125 + 275 equals what?"}},
+    question: {"a":125,"b":275,"op":"+","answer":400,"display":{"promptText":"What do you get when you add 125 and 275?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-036",
@@ -7352,7 +7352,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":425,"b":175,"op":"+","answer":600,"display":{"promptText":"Open number sentence: 425 + 175 equals what?"}},
+    question: {"a":425,"b":175,"op":"+","answer":600,"display":{"promptText":"What is 425 + 175?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-037",
@@ -7542,7 +7542,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":null,"op":"+","answer":2,"display":{"promptText":"A whole of 6 has two parts: 4 and ?. Find the missing part."}},
+    question: {"a":4,"b":null,"op":"+","answer":2,"display":{"promptText":"What part goes with 4 to make 6?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-008",
@@ -7552,7 +7552,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":null,"op":"+","answer":5,"display":{"promptText":"A whole of 7 has two parts: 2 and ?. Find the missing part."}},
+    question: {"a":2,"b":null,"op":"+","answer":5,"display":{"promptText":"If 7 has two parts and one is 2, what is the other part?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-009",
@@ -7562,7 +7562,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":null,"op":"+","answer":5,"display":{"promptText":"A whole of 8 has two parts: 3 and ?. Find the missing part."}},
+    question: {"a":3,"b":null,"op":"+","answer":5,"display":{"promptText":"What part goes with 3 to make 8?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-010",
@@ -7622,7 +7622,7 @@ export const ITEMS = [
     structureType: "putTogetherAddendUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":null,"op":"+","answer":3,"display":{"promptText":"Write 10 as a sum of 7 and another whole number. The other number is?"}},
+    question: {"a":7,"b":null,"op":"+","answer":3,"display":{"promptText":"If 10 is split into 7 and another part, what is the other part?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-016",
@@ -7632,7 +7632,7 @@ export const ITEMS = [
     structureType: "putTogetherAddendUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":null,"op":"+","answer":2,"display":{"promptText":"Write 10 as a sum of 8 and another whole number. The other number is?"}},
+    question: {"a":8,"b":null,"op":"+","answer":2,"display":{"promptText":"What number goes in the blank: 10 = 8 + __?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-017",
@@ -7642,7 +7642,7 @@ export const ITEMS = [
     structureType: "putTogetherAddendUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":null,"op":"+","answer":5,"display":{"promptText":"Write 10 as a sum of 5 and another whole number. The other number is?"}},
+    question: {"a":5,"b":null,"op":"+","answer":5,"display":{"promptText":"If 10 is split into 5 and another part, what is the other part?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-018",
@@ -7652,7 +7652,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":5,"op":"+","answer":7,"display":{"promptText":"Two groups combine to show 7. The groups are 2 and 5. Total is?"}},
+    question: {"a":2,"b":5,"op":"+","answer":7,"display":{"promptText":"What number do 2 and 5 make together?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-019",
@@ -7662,7 +7662,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":5,"op":"+","answer":8,"display":{"promptText":"Two groups combine to show 8. The groups are 3 and 5. Total is?"}},
+    question: {"a":3,"b":5,"op":"+","answer":8,"display":{"promptText":"What whole do the parts 3 and 5 make?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-020",
@@ -7672,7 +7672,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":5,"op":"+","answer":9,"display":{"promptText":"Two groups combine to show 9. The groups are 4 and 5. Total is?"}},
+    question: {"a":4,"b":5,"op":"+","answer":9,"display":{"promptText":"What do you get when you put 4 and 5 together?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-021",
@@ -7732,7 +7732,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":2,"op":"+","answer":7,"display":{"promptText":"Sum path: starting at 5, jump 2. Where do you land?"}},
+    question: {"a":5,"b":2,"op":"+","answer":7,"display":{"promptText":"If you start at 5 on a number line and jump forward 2, where do you land?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-027",
@@ -7742,7 +7742,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":3,"op":"+","answer":7,"display":{"promptText":"Sum path: starting at 4, jump 3. Where do you land?"}},
+    question: {"a":4,"b":3,"op":"+","answer":7,"display":{"promptText":"Where do you land on a number line if you start at 4 and jump forward 3?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-028",
@@ -7752,7 +7752,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":2,"op":"+","answer":5,"display":{"promptText":"Sum path: starting at 3, jump 2. Where do you land?"}},
+    question: {"a":3,"b":2,"op":"+","answer":5,"display":{"promptText":"If you start at 3 on a number line and jump forward 2, where do you land?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-029",
@@ -7762,7 +7762,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":2,"op":"+","answer":8,"display":{"promptText":"Sum path: starting at 6, jump 2. Where do you land?"}},
+    question: {"a":6,"b":2,"op":"+","answer":8,"display":{"promptText":"Where do you land on a number line if you start at 6 and jump forward 2?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-030",
@@ -7772,7 +7772,7 @@ export const ITEMS = [
     structureType: "putTogetherTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":4,"op":"+","answer":9,"display":{"promptText":"Sum path: starting at 5, jump 4. Where do you land?"}},
+    question: {"a":5,"b":4,"op":"+","answer":9,"display":{"promptText":"If you start at 5 on a number line and jump forward 4, where do you land?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-034",
@@ -7782,7 +7782,7 @@ export const ITEMS = [
     structureType: "putTogetherAddendUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":3,"op":"+","answer":9,"display":{"promptText":"Fingers: show 6 on one hand and 3 on the other. How many fingers?"}},
+    question: {"a":5,"b":3,"op":"+","answer":8,"display":{"promptText":"Hold up 5 fingers. Then hold up 3 more. How many fingers are up now?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-035",
@@ -7942,7 +7942,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":5,"op":"+","answer":13,"display":{"promptText":"Add 8 + 5 by making ten: 8 + 2 = 10, then 10 + 3 = ?"}},
+    question: {"a":10,"b":null,"op":"+","answer":2,"distractorContext":{"a":10,"b":12},"display":{"promptText":"Make a ten: 7 + 5 = 10 + __"}},
   },
   {
     itemId: "addition-conc-makeTen-23-003",
@@ -7952,7 +7952,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":null,"op":"+","answer":3,"display":{"promptText":"To compute 7 + 6, what do you add to 7 first to make 10?"}},
+    question: {"a":7,"b":null,"op":"+","answer":3,"distractorContext":{"a":7,"b":10},"display":{"promptText":"To add 7 + 6, what do you add to 7 first to make 10?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-004",
@@ -7972,7 +7972,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":4,"op":"+","answer":12,"display":{"promptText":"Add 8 + 4 by making ten: 8 + 2 = 10, then 10 + 2 = ?"}},
+    question: {"a":10,"b":null,"op":"+","answer":2,"distractorContext":{"a":10,"b":12},"display":{"promptText":"8 + 4 is the same as 10 + what number?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-006",
@@ -7982,7 +7982,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":7,"op":"+","answer":16,"display":{"promptText":"Add 9 + 7 by making ten: 9 + 1 = 10, then 10 + 6 = ?"}},
+    question: {"a":10,"b":null,"op":"+","answer":6,"distractorContext":{"a":10,"b":16},"display":{"promptText":"Make a ten to add 9 + 7. What number goes in the blank: 9 + 7 = 10 + __?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-007",
@@ -7992,7 +7992,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":9,"op":"+","answer":15,"display":{"promptText":"Add 6 + 9 by making ten: take 1 from 6 to give 9. What is 5 + 10?"}},
+    question: {"a":10,"b":null,"op":"+","answer":5,"distractorContext":{"a":10,"b":15},"display":{"promptText":"Move 1 from 6 to 9. What number goes in the blank: 6 + 9 = 10 + __?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-008",
@@ -8002,7 +8002,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":7,"op":"+","answer":14,"display":{"promptText":"Add 7 + 7 by making ten: 7 + 3 = 10, then 10 + 4 = ?"}},
+    question: {"a":10,"b":null,"op":"+","answer":4,"distractorContext":{"a":10,"b":14},"display":{"promptText":"Make a ten: 7 + 7 = 10 + __"}},
   },
   {
     itemId: "addition-conc-makeTen-23-009",
@@ -8062,7 +8062,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":8,"op":"+","answer":16,"display":{"promptText":"Use doubles: 8 + 8 equals?"}},
+    question: {"a":8,"b":8,"op":"+","answer":16,"display":{"promptText":"What is double 8?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-016",
@@ -8092,7 +8092,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":9,"op":"+","answer":18,"display":{"promptText":"Use doubles: 9 + 9 equals?"}},
+    question: {"a":9,"b":9,"op":"+","answer":18,"display":{"promptText":"It is a doubles fact. What is 9 + 9?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-019",
@@ -8112,7 +8112,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":9,"op":"+","answer":17,"display":{"promptText":"If 9 + 8 = 17, what is 8 + 9?"}},
+    question: {"a":10,"b":null,"op":"+","answer":7,"distractorContext":{"a":10,"b":17},"display":{"promptText":"8 + 9 is the same as 10 + what number?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-021",
@@ -8122,7 +8122,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":5,"op":"+","answer":15,"display":{"promptText":"Adding to ten: 10 + 5 equals?"}},
+    question: {"a":10,"b":5,"op":"+","answer":15,"display":{"promptText":"What is 10 + 5?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-022",
@@ -8132,7 +8132,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":6,"op":"+","answer":16,"display":{"promptText":"Adding to ten: 10 + 6 equals?"}},
+    question: {"a":10,"b":6,"op":"+","answer":16,"display":{"promptText":"What number is 6 more than 10?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-023",
@@ -8142,7 +8142,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":8,"op":"+","answer":18,"display":{"promptText":"Adding to ten: 10 + 8 equals?"}},
+    question: {"a":10,"b":8,"op":"+","answer":18,"display":{"promptText":"10 and 8 more make what number?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-024",
@@ -8162,7 +8162,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":7,"op":"+","answer":11,"display":{"promptText":"Use compensation: 4 + 7 = 3 + 8. Compute the value."}},
+    question: {"a":10,"b":null,"op":"+","answer":1,"distractorContext":{"a":10,"b":11},"display":{"promptText":"Make a ten: 4 + 7 = 10 + __"}},
   },
   {
     itemId: "addition-conc-makeTen-23-026",
@@ -8172,7 +8172,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":6,"op":"+","answer":13,"display":{"promptText":"Rewrite 7 + 6 as (7 + 3) + 3. What is the total?"}},
+    question: {"a":10,"b":null,"op":"+","answer":3,"distractorContext":{"a":10,"b":13},"display":{"promptText":"Break apart 6 to make a ten. What number goes in the blank: 7 + 6 = 10 + __?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-027",
@@ -8182,7 +8182,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":6,"op":"+","answer":14,"display":{"promptText":"Rewrite 8 + 6 as (8 + 2) + 4. What is the total?"}},
+    question: {"a":10,"b":null,"op":"+","answer":4,"distractorContext":{"a":10,"b":14},"display":{"promptText":"Break apart 6 to make a ten: 8 + 6 = 8 + 2 + what number?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-028",
@@ -8192,7 +8192,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":5,"op":"+","answer":14,"display":{"promptText":"Rewrite 9 + 5 as (9 + 1) + 4. What is the total?"}},
+    question: {"a":10,"b":null,"op":"+","answer":4,"distractorContext":{"a":10,"b":14},"display":{"promptText":"Make a ten: 9 + 5 = 10 + __"}},
   },
   {
     itemId: "addition-conc-makeTen-23-029",
@@ -8202,7 +8202,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":6,"op":"+","answer":12,"display":{"promptText":"Halve and double reasoning: double 6 is 6 + 6. What is the total?"}},
+    question: {"a":6,"b":7,"op":"+","answer":13,"display":{"promptText":"6 + 6 = 12. What is 6 + 7?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-030",
@@ -8212,7 +8212,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":7,"op":"+","answer":14,"display":{"promptText":"Halve and double reasoning: double 7 is 7 + 7. What is the total?"}},
+    question: {"a":7,"b":6,"op":"+","answer":13,"display":{"promptText":"7 + 7 = 14. What is 7 + 6?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-031",
@@ -8222,7 +8222,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":8,"op":"+","answer":16,"display":{"promptText":"Halve and double reasoning: double 8 is 8 + 8. What is the total?"}},
+    question: {"a":8,"b":9,"op":"+","answer":17,"display":{"promptText":"Use 8 + 8 = 16 to help. What is 8 + 9?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-032",
@@ -8232,7 +8232,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":9,"op":"+","answer":18,"display":{"promptText":"Halve and double reasoning: double 9 is 9 + 9. What is the total?"}},
+    question: {"a":9,"b":10,"op":"+","answer":19,"display":{"promptText":"9 + 9 = 18. What is 9 + 10?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-033",
@@ -8242,7 +8242,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":8,"op":"+","answer":13,"display":{"promptText":"Open number sentence: 5 + 8 equals what?"}},
+    question: {"a":7,"b":8,"op":"+","answer":15,"display":{"promptText":"Make a ten to help. What is 7 + 8?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-034",
@@ -8252,7 +8252,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":9,"op":"+","answer":13,"display":{"promptText":"Open number sentence: 4 + 9 equals what?"}},
+    question: {"a":4,"b":9,"op":"+","answer":13,"display":{"promptText":"What is the sum of 4 and 9?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-035",
@@ -8262,7 +8262,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":9,"op":"+","answer":12,"display":{"promptText":"Open number sentence: 3 + 9 equals what?"}},
+    question: {"a":3,"b":9,"op":"+","answer":12,"display":{"promptText":"What do you get when you add 3 and 9?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-036",
@@ -8272,7 +8272,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":8,"op":"+","answer":10,"display":{"promptText":"Open number sentence: 2 + 8 equals what?"}},
+    question: {"a":2,"b":8,"op":"+","answer":10,"display":{"promptText":"Make a ten to help. What is 2 + 8?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-037",
@@ -8422,7 +8422,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":65,"b":null,"op":"+","answer":5,"display":{"promptText":"How much do you add to 65 to bridge to 70?"}},
+    question: {"a":65,"b":null,"op":"+","answer":5,"display":{"promptText":"How much do you add to 65 to get to 70?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-004",
@@ -8502,7 +8502,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":45,"b":7,"op":"+","answer":52,"display":{"promptText":"Use make-ten: 45 + 7 = 45 + 5 + 2. Compute the sum."}},
+    question: {"a":50,"b":null,"op":"+","answer":2,"distractorContext":{"a":50,"b":52},"display":{"promptText":"Make the next ten: 45 + 7 = 50 + __"}},
   },
   {
     itemId: "addition-conc-makeTen-45-012",
@@ -8512,7 +8512,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":68,"b":5,"op":"+","answer":73,"display":{"promptText":"Use make-ten: 68 + 5 = 68 + 2 + 3. Compute the sum."}},
+    question: {"a":70,"b":null,"op":"+","answer":3,"distractorContext":{"a":70,"b":73},"display":{"promptText":"68 + 5 is the same as 70 + what number?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-013",
@@ -8522,7 +8522,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":76,"b":8,"op":"+","answer":84,"display":{"promptText":"Use make-ten: 76 + 8 = 76 + 4 + 4. Compute the sum."}},
+    question: {"a":80,"b":null,"op":"+","answer":4,"distractorContext":{"a":80,"b":84},"display":{"promptText":"Get to 80 first. What number goes in the blank: 76 + 8 = 80 + __?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-014",
@@ -8532,7 +8532,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":89,"b":6,"op":"+","answer":95,"display":{"promptText":"Use make-ten: 89 + 6 = 89 + 1 + 5. Compute the sum."}},
+    question: {"a":90,"b":null,"op":"+","answer":5,"distractorContext":{"a":90,"b":95},"display":{"promptText":"Make the next ten: 89 + 6 = 90 + __"}},
   },
   {
     itemId: "addition-conc-makeTen-45-015",
@@ -8542,7 +8542,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":25,"b":25,"op":"+","answer":50,"display":{"promptText":"Use doubles: 25 + 25 equals?"}},
+    question: {"a":25,"b":25,"op":"+","answer":50,"display":{"promptText":"What is double 25?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-016",
@@ -8552,7 +8552,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":30,"b":30,"op":"+","answer":60,"display":{"promptText":"Use doubles: 30 + 30 equals?"}},
+    question: {"a":30,"b":30,"op":"+","answer":60,"display":{"promptText":"What number is double 30?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-017",
@@ -8562,7 +8562,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":40,"b":40,"op":"+","answer":80,"display":{"promptText":"Use doubles: 40 + 40 equals?"}},
+    question: {"a":40,"b":40,"op":"+","answer":80,"display":{"promptText":"It is a doubles fact. What is 40 + 40?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-018",
@@ -8592,7 +8592,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":35,"b":65,"op":"+","answer":100,"display":{"promptText":"If 65 + 35 = 100, what is 35 + 65?"}},
+    question: {"a":70,"b":null,"op":"+","answer":30,"distractorContext":{"a":70,"b":100},"display":{"promptText":"Make the next ten. What number goes in the blank: 65 + 35 = 70 + __?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-021",
@@ -8602,7 +8602,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":19,"b":31,"op":"+","answer":50,"display":{"promptText":"Use compensation: 19 + 31 = 20 + 30. Compute the value."}},
+    question: {"a":20,"b":null,"op":"+","answer":30,"distractorContext":{"a":20,"b":50},"display":{"promptText":"19 + 31 is the same as 20 + what number?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-022",
@@ -8612,7 +8612,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":29,"b":41,"op":"+","answer":70,"display":{"promptText":"Use compensation: 29 + 41 = 30 + 40. Compute the value."}},
+    question: {"a":30,"b":null,"op":"+","answer":40,"distractorContext":{"a":30,"b":70},"display":{"promptText":"Move 1 from 41 to 29. What number goes in the blank: 29 + 41 = 30 + __?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-023",
@@ -8622,7 +8622,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":100,"b":50,"op":"+","answer":150,"display":{"promptText":"Adding to 100: 100 + 50 equals?"}},
+    question: {"a":100,"b":50,"op":"+","answer":150,"display":{"promptText":"What is 100 + 50?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-024",
@@ -8632,7 +8632,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":100,"b":75,"op":"+","answer":175,"display":{"promptText":"Adding to 100: 100 + 75 equals?"}},
+    question: {"a":100,"b":75,"op":"+","answer":175,"display":{"promptText":"What number is 75 more than 100?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-025",
@@ -8642,7 +8642,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":200,"b":200,"op":"+","answer":400,"display":{"promptText":"Use doubles: 200 + 200 equals?"}},
+    question: {"a":200,"b":200,"op":"+","answer":400,"display":{"promptText":"What is double 200?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-026",
@@ -8652,7 +8652,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":35,"b":25,"op":"+","answer":60,"display":{"promptText":"Add by place value: 30 + 20 = 50, and 5 + 5 = 10, so 35 + 25 equals?"}},
+    question: {"a":35,"b":25,"op":"+","answer":60,"display":{"promptText":"Add the tens, then add the ones. What is 35 + 25?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-027",
@@ -8662,7 +8662,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":48,"b":22,"op":"+","answer":70,"display":{"promptText":"Add by place value: 40 + 20 = 60, and 8 + 2 = 10, so 48 + 22 equals?"}},
+    question: {"a":48,"b":22,"op":"+","answer":70,"display":{"promptText":"The ones make a ten. What is 48 + 22?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-028",
@@ -8672,7 +8672,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":57,"b":13,"op":"+","answer":70,"display":{"promptText":"Add by place value: 50 + 10 = 60, and 7 + 3 = 10, so 57 + 13 equals?"}},
+    question: {"a":57,"b":13,"op":"+","answer":70,"display":{"promptText":"Add tens to tens and ones to ones. What is 57 + 13?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-029",
@@ -8682,7 +8682,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":36,"b":24,"op":"+","answer":60,"display":{"promptText":"Add by place value: 30 + 20 = 50, and 6 + 4 = 10, so 36 + 24 equals?"}},
+    question: {"a":36,"b":24,"op":"+","answer":60,"display":{"promptText":"Add the tens, then add the ones. What is 36 + 24?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-030",
@@ -8692,7 +8692,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":44,"b":16,"op":"+","answer":60,"display":{"promptText":"Add by place value: 40 + 10 = 50, and 4 + 6 = 10, so 44 + 16 equals?"}},
+    question: {"a":44,"b":16,"op":"+","answer":60,"display":{"promptText":"The ones make a ten. What is 44 + 16?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-031",
@@ -8702,7 +8702,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":50,"b":50,"op":"+","answer":100,"display":{"promptText":"Halve and double reasoning: double 50 is 50 + 50. What is the total?"}},
+    question: {"a":50,"b":51,"op":"+","answer":101,"display":{"promptText":"You know 50 + 50 = 100. What is 50 + 51?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-032",
@@ -8712,7 +8712,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":45,"b":45,"op":"+","answer":90,"display":{"promptText":"Halve and double reasoning: double 45 is 45 + 45. What is the total?"}},
+    question: {"a":45,"b":44,"op":"+","answer":89,"display":{"promptText":"Use 45 + 45 = 90 to help. What is 45 + 44?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-033",
@@ -8722,7 +8722,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":35,"b":35,"op":"+","answer":70,"display":{"promptText":"Halve and double reasoning: double 35 is 35 + 35. What is the total?"}},
+    question: {"a":35,"b":36,"op":"+","answer":71,"display":{"promptText":"35 + 35 = 70. What is 35 + 36?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-034",
@@ -8732,7 +8732,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":65,"b":35,"op":"+","answer":100,"display":{"promptText":"Open number sentence: 65 + 35 equals what?"}},
+    question: {"a":65,"b":35,"op":"+","answer":100,"display":{"promptText":"What is the sum of 65 and 35?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-035",
@@ -8742,7 +8742,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":75,"b":25,"op":"+","answer":100,"display":{"promptText":"Open number sentence: 75 + 25 equals what?"}},
+    question: {"a":75,"b":25,"op":"+","answer":100,"display":{"promptText":"What do you get when you add 75 and 25?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-036",
@@ -8752,7 +8752,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":85,"b":15,"op":"+","answer":100,"display":{"promptText":"Open number sentence: 85 + 15 equals what?"}},
+    question: {"a":85,"b":15,"op":"+","answer":100,"display":{"promptText":"What is 85 + 15?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-037",
@@ -8972,7 +8972,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":null,"op":"+","answer":7,"display":{"promptText":"Fill the number bond for 9: one part is 2, the other is?"}},
+    question: {"a":2,"b":null,"op":"+","answer":7,"display":{"promptText":"What is the other part of 9 if one part is 2?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-013",
@@ -8982,7 +8982,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":null,"op":"+","answer":6,"display":{"promptText":"Fill the number bond for 9: one part is 3, the other is?"}},
+    question: {"a":3,"b":null,"op":"+","answer":6,"display":{"promptText":"In a number bond for 9, what part goes with 3?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-014",
@@ -8992,7 +8992,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":1,"b":null,"op":"+","answer":8,"display":{"promptText":"Fill the number bond for 9: one part is 1, the other is?"}},
+    question: {"a":1,"b":null,"op":"+","answer":8,"display":{"promptText":"9 is made of 1 and what other part?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-015",
@@ -9002,7 +9002,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":5,"op":"+","answer":10,"display":{"promptText":"Use doubles: 5 + 5 equals?"}},
+    question: {"a":5,"b":5,"op":"+","answer":10,"display":{"promptText":"What number is double 5?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-016",
@@ -9012,7 +9012,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":5,"op":"+","answer":9,"display":{"promptText":"Use near-doubles: 4 + 5 equals?"}},
+    question: {"a":4,"b":5,"op":"+","answer":9,"display":{"promptText":"Use 4 + 4 = 8 to help. What is 4 + 5?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-017",
@@ -9022,7 +9022,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":0,"op":"+","answer":9,"display":{"promptText":"Adding zero keeps a number the same. What is 9 + 0?"}},
+    question: {"a":9,"b":0,"op":"+","answer":9,"display":{"promptText":"What do you get when you add 0 to 9?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-018",
@@ -9032,7 +9032,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":7,"op":"+","answer":10,"display":{"promptText":"If 3 + 7 equals 10, what is 7 + 3?"}},
+    question: {"a":7,"b":null,"op":"+","answer":3,"distractorContext":{"a":7,"b":10},"display":{"promptText":"3 + 7 is the same as 7 + what number?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-019",
@@ -9062,7 +9062,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":4,"op":"+","answer":8,"display":{"promptText":"Doubles fact: 4 + 4 equals?"}},
+    question: {"a":4,"b":4,"op":"+","answer":8,"display":{"promptText":"What is double 4?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-022",
@@ -9072,7 +9072,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":4,"op":"+","answer":7,"display":{"promptText":"Near-doubles fact: 3 + 4 equals?"}},
+    question: {"a":3,"b":4,"op":"+","answer":7,"display":{"promptText":"3 + 3 = 6. What is 3 + 4?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-023",
@@ -9102,7 +9102,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":3,"op":"+","answer":6,"display":{"promptText":"Doubles: 3 + 3 equals?"}},
+    question: {"a":3,"b":3,"op":"+","answer":6,"display":{"promptText":"What number is double 3?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-026",
@@ -9112,7 +9112,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":4,"op":"+","answer":10,"display":{"promptText":"Sum path: starting at 6, jump 4. Where do you land?"}},
+    question: {"a":6,"b":4,"op":"+","answer":10,"display":{"promptText":"If you start at 6 on a number line and jump forward 4, where do you land?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-027",
@@ -9122,7 +9122,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":3,"op":"+","answer":10,"display":{"promptText":"Sum path: starting at 7, jump 3. Where do you land?"}},
+    question: {"a":7,"b":3,"op":"+","answer":10,"display":{"promptText":"Where do you land on a number line if you start at 7 and jump forward 3?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-028",
@@ -9132,7 +9132,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":2,"op":"+","answer":10,"display":{"promptText":"Sum path: starting at 8, jump 2. Where do you land?"}},
+    question: {"a":8,"b":2,"op":"+","answer":10,"display":{"promptText":"On a number line, what number do you land on if you start at 8 and jump forward 2?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-032",
@@ -9142,7 +9142,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":6,"op":"+","answer":10,"display":{"promptText":"Fingers: show 4 on one hand and 6 on the other. How many fingers?"}},
+    question: {"a":4,"b":6,"op":"+","answer":10,"display":{"promptText":"Hold up 4 fingers, then 6 more. How many fingers are up in all?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-033",
@@ -9162,7 +9162,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":6,"op":"+","answer":8,"display":{"promptText":"Fingers: show 2 on one hand and 6 on the other. How many fingers?"}},
+    question: {"a":2,"b":6,"op":"+","answer":8,"display":{"promptText":"Hold up 6 fingers. Then hold up 2 more. How many fingers are up now?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-035",
@@ -9252,7 +9252,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":5,"op":"+","answer":10,"display":{"promptText":"Think of 10 as five fives: 10 = 5 + 5. Sum equals?"}},
+    question: {"a":5,"b":5,"op":"+","answer":10,"display":{"promptText":"What number do 5 and 5 make?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-044",
@@ -9332,7 +9332,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":null,"op":"+","answer":9,"display":{"promptText":"Solve for the unknown: ? + 8 = 17"}},
+    question: {"a":8,"b":null,"op":"+","answer":9,"display":{"promptText":"What number plus 8 makes 17?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-004",
@@ -9342,7 +9342,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":null,"op":"+","answer":7,"display":{"promptText":"An equation hides a number: 5 + [] = 12. Find the hidden number."}},
+    question: {"a":5,"b":null,"op":"+","answer":7,"display":{"promptText":"What number makes 5 + __ = 12 true?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-005",
@@ -9352,7 +9352,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":null,"op":"+","answer":8,"display":{"promptText":"An equation hides a number: 6 + [] = 14. Find the hidden number."}},
+    question: {"a":6,"b":null,"op":"+","answer":8,"display":{"promptText":"What number makes 6 + __ = 14 true?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-006",
@@ -9362,7 +9362,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":null,"op":"+","answer":9,"display":{"promptText":"An equation hides a number: 7 + [] = 16. Find the hidden number."}},
+    question: {"a":7,"b":null,"op":"+","answer":9,"display":{"promptText":"What number makes 7 + __ = 16 true?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-007",
@@ -9402,7 +9402,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":null,"op":"+","answer":5,"display":{"promptText":"A balance shows 15 on one side and 20 on the other. What weight equalizes them?"}},
+    question: {"a":15,"b":null,"op":"+","answer":5,"display":{"promptText":"A balance has 15 on one side and 20 on the other. How much do you add to the 15 side to make it balance?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-011",
@@ -9412,7 +9412,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":null,"op":"+","answer":6,"display":{"promptText":"A balance shows 14 on one side and 20 on the other. What weight equalizes them?"}},
+    question: {"a":14,"b":null,"op":"+","answer":6,"display":{"promptText":"What number do you add to 14 to balance it with 20?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-012",
@@ -9422,7 +9422,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":null,"op":"+","answer":4,"display":{"promptText":"A balance shows 16 on one side and 20 on the other. What weight equalizes them?"}},
+    question: {"a":16,"b":null,"op":"+","answer":4,"display":{"promptText":"One side of a balance has 16 and the other side has 20. What do you add to 16 to make both sides equal?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-013",
@@ -9432,7 +9432,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":null,"op":"+","answer":11,"display":{"promptText":"A bar model shows a total of 20 with one bar at 9. Find the length of the other bar."}},
+    question: {"a":9,"b":null,"op":"+","answer":11,"display":{"promptText":"If the whole is 20 and one part is 9, what is the other part?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-014",
@@ -9442,7 +9442,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":null,"op":"+","answer":7,"display":{"promptText":"A bar model shows a total of 20 with one bar at 13. Find the length of the other bar."}},
+    question: {"a":13,"b":null,"op":"+","answer":7,"display":{"promptText":"What is the other part when the whole is 20 and one part is 13?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-015",
@@ -9482,7 +9482,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":null,"op":"+","answer":8,"display":{"promptText":"If sum is 14 and first addend is 6, second addend is?"}},
+    question: {"a":6,"b":null,"op":"+","answer":8,"display":{"promptText":"What number added to 6 gives 14?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-019",
@@ -9492,7 +9492,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":null,"op":"+","answer":9,"display":{"promptText":"If sum is 16 and first addend is 7, second addend is?"}},
+    question: {"a":7,"b":null,"op":"+","answer":9,"display":{"promptText":"If the sum is 16 and one number is 7, what is the other number?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-020",
@@ -9502,7 +9502,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":null,"op":"+","answer":10,"display":{"promptText":"If sum is 20 and first addend is 10, second addend is?"}},
+    question: {"a":10,"b":null,"op":"+","answer":10,"display":{"promptText":"What number added to 10 gives 20?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-021",
@@ -9512,7 +9512,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":null,"op":"+","answer":12,"display":{"promptText":"Complete the pattern: 4 + A = 16. A equals?"}},
+    question: {"a":4,"b":null,"op":"+","answer":12,"display":{"promptText":"What number goes in the blank: 4 + __ = 16?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-022",
@@ -9522,7 +9522,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":null,"op":"+","answer":15,"display":{"promptText":"Complete the pattern: 3 + A = 18. A equals?"}},
+    question: {"a":3,"b":null,"op":"+","answer":15,"display":{"promptText":"What number is missing in 3 + __ = 18?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-023",
@@ -9532,7 +9532,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":null,"op":"+","answer":17,"display":{"promptText":"Complete the pattern: 2 + A = 19. A equals?"}},
+    question: {"a":2,"b":null,"op":"+","answer":17,"display":{"promptText":"What number is missing in 2 + __ = 19?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-024",
@@ -9562,7 +9562,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":null,"op":"+","answer":6,"display":{"promptText":"Open the equation: 8 + __ = 14. What goes in the blank?"}},
+    question: {"a":8,"b":null,"op":"+","answer":6,"display":{"promptText":"What number can go in the blank to make 8 + __ = 14?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-027",
@@ -9572,7 +9572,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":null,"op":"+","answer":6,"display":{"promptText":"Open the equation: 9 + __ = 15. What goes in the blank?"}},
+    question: {"a":9,"b":null,"op":"+","answer":6,"display":{"promptText":"What number can go in the blank to make 9 + __ = 15?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-028",
@@ -9582,7 +9582,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":null,"op":"+","answer":6,"display":{"promptText":"Open the equation: 11 + __ = 17. What goes in the blank?"}},
+    question: {"a":11,"b":null,"op":"+","answer":6,"display":{"promptText":"Which number fills the blank in 11 + __ = 17?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-029",
@@ -9592,7 +9592,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":null,"op":"+","answer":6,"display":{"promptText":"Open the equation: 13 + __ = 19. What goes in the blank?"}},
+    question: {"a":13,"b":null,"op":"+","answer":6,"display":{"promptText":"Which number fills the blank in 13 + __ = 19?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-030",
@@ -9602,7 +9602,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":null,"op":"+","answer":8,"display":{"promptText":"Count-on from 10 by some amount to reach 18. The amount is?"}},
+    question: {"a":10,"b":null,"op":"+","answer":8,"display":{"promptText":"Count on from 10 to 18. What number goes in the blank: 10 + __ = 18?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-031",
@@ -9612,7 +9612,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":null,"op":"+","answer":7,"display":{"promptText":"Count-on from 12 by some amount to reach 19. The amount is?"}},
+    question: {"a":12,"b":null,"op":"+","answer":7,"display":{"promptText":"Start at 12 on a number line. How many hops of 1 does it take to get to 19?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-032",
@@ -9622,7 +9622,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":null,"op":"+","answer":6,"display":{"promptText":"Count-on from 14 by some amount to reach 20. The amount is?"}},
+    question: {"a":14,"b":null,"op":"+","answer":6,"display":{"promptText":"How much do you count on from 14 to get to 20?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-033",
@@ -9632,7 +9632,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":null,"op":"+","answer":11,"display":{"promptText":"Bar model: a total of 16 with one bar at 5. Length of the other bar?"}},
+    question: {"a":5,"b":null,"op":"+","answer":11,"display":{"promptText":"16 is made of 5 and what other part?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-034",
@@ -9642,7 +9642,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":null,"op":"+","answer":10,"display":{"promptText":"Bar model: a total of 17 with one bar at 7. Length of the other bar?"}},
+    question: {"a":7,"b":null,"op":"+","answer":10,"display":{"promptText":"If the whole is 17 and one part is 7, what is the other part?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-035",
@@ -9652,7 +9652,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":null,"op":"+","answer":17,"display":{"promptText":"Bar model: a total of 20 with one bar at 3. Length of the other bar?"}},
+    question: {"a":3,"b":null,"op":"+","answer":17,"display":{"promptText":"What is the other part when the whole is 20 and one part is 3?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-036",
@@ -9662,7 +9662,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":null,"op":"+","answer":14,"display":{"promptText":"Bar model: a total of 20 with one bar at 6. Length of the other bar?"}},
+    question: {"a":6,"b":null,"op":"+","answer":14,"display":{"promptText":"What part goes with 6 to make a whole of 20?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-037",
@@ -9672,7 +9672,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":null,"op":"+","answer":9,"display":{"promptText":"If 11 and some number make 20, the number is?"}},
+    question: {"a":11,"b":null,"op":"+","answer":9,"display":{"promptText":"11 and what number make 20?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-038",
@@ -9682,7 +9682,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":null,"op":"+","answer":8,"display":{"promptText":"If 12 and some number make 20, the number is?"}},
+    question: {"a":12,"b":null,"op":"+","answer":8,"display":{"promptText":"12 and what number make 20?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-039",
@@ -9692,7 +9692,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":null,"op":"+","answer":6,"display":{"promptText":"If 14 and some number make 20, the number is?"}},
+    question: {"a":14,"b":null,"op":"+","answer":6,"display":{"promptText":"14 and what number make 20?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-040",
@@ -9702,7 +9702,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":null,"op":"+","answer":5,"display":{"promptText":"If 15 and some number make 20, the number is?"}},
+    question: {"a":15,"b":null,"op":"+","answer":5,"display":{"promptText":"15 and what number make 20?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-041",
@@ -9712,7 +9712,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":null,"op":"+","answer":4,"display":{"promptText":"If 16 and some number make 20, the number is?"}},
+    question: {"a":16,"b":null,"op":"+","answer":4,"display":{"promptText":"16 and what number make 20?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-042",
@@ -9722,7 +9722,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":17,"b":null,"op":"+","answer":3,"display":{"promptText":"If 17 and some number make 20, the number is?"}},
+    question: {"a":17,"b":null,"op":"+","answer":3,"display":{"promptText":"What number goes with 17 to make 20?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-043",
@@ -9732,7 +9732,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":null,"op":"+","answer":2,"display":{"promptText":"If 18 and some number make 20, the number is?"}},
+    question: {"a":18,"b":null,"op":"+","answer":2,"display":{"promptText":"What number goes with 18 to make 20?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-044",
@@ -9742,7 +9742,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":19,"b":null,"op":"+","answer":1,"display":{"promptText":"If 19 and some number make 20, the number is?"}},
+    question: {"a":19,"b":null,"op":"+","answer":1,"display":{"promptText":"What number goes with 19 to make 20?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-001",
@@ -9772,7 +9772,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":27,"b":null,"op":"+","answer":33,"display":{"promptText":"Solve for the unknown: ? + 27 = 60"}},
+    question: {"a":27,"b":null,"op":"+","answer":33,"display":{"promptText":"What number goes in the blank: __ + 27 = 60?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-004",
@@ -9782,7 +9782,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":45,"b":null,"op":"+","answer":55,"display":{"promptText":"A bar model shows a total of 100 with one bar at 45. Find the length of the other bar."}},
+    question: {"a":45,"b":null,"op":"+","answer":55,"display":{"promptText":"What part goes with 45 to make a whole of 100?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-005",
@@ -9792,7 +9792,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":62,"b":null,"op":"+","answer":38,"display":{"promptText":"A bar model shows a total of 100 with one bar at 62. Find the length of the other bar."}},
+    question: {"a":62,"b":null,"op":"+","answer":38,"display":{"promptText":"If the whole is 100 and one part is 62, what is the other part?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-006",
@@ -9802,7 +9802,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":150,"b":null,"op":"+","answer":50,"display":{"promptText":"A bar model shows a total of 200 with one bar at 150. Find the length of the other bar."}},
+    question: {"a":150,"b":null,"op":"+","answer":50,"display":{"promptText":"What is the other part when the whole is 200 and one part is 150?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-007",
@@ -9812,7 +9812,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":275,"b":null,"op":"+","answer":125,"display":{"promptText":"A bar model shows a total of 400 with one bar at 275. Find the length of the other bar."}},
+    question: {"a":275,"b":null,"op":"+","answer":125,"display":{"promptText":"What part goes with 275 to make a whole of 400?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-008",
@@ -9822,7 +9822,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":89,"b":null,"op":"+","answer":11,"display":{"promptText":"An equation hides a number: 89 + [] = 100. Find the hidden number."}},
+    question: {"a":89,"b":null,"op":"+","answer":11,"display":{"promptText":"What number makes 89 + __ = 100 true?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-009",
@@ -9832,7 +9832,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":56,"b":null,"op":"+","answer":44,"display":{"promptText":"An equation hides a number: 56 + [] = 100. Find the hidden number."}},
+    question: {"a":56,"b":null,"op":"+","answer":44,"display":{"promptText":"What number makes 56 + __ = 100 true?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-010",
@@ -9842,7 +9842,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":73,"b":null,"op":"+","answer":27,"display":{"promptText":"An equation hides a number: 73 + [] = 100. Find the hidden number."}},
+    question: {"a":73,"b":null,"op":"+","answer":27,"display":{"promptText":"What number goes in the blank: 73 + __ = 100?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-011",
@@ -9922,7 +9922,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":25,"b":null,"op":"+","answer":50,"display":{"promptText":"If sum is 75 and first addend is 25, second addend is?"}},
+    question: {"a":25,"b":null,"op":"+","answer":50,"display":{"promptText":"If the sum is 75 and one number is 25, what is the other number?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-019",
@@ -9932,7 +9932,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":40,"b":null,"op":"+","answer":60,"display":{"promptText":"If sum is 100 and first addend is 40, second addend is?"}},
+    question: {"a":40,"b":null,"op":"+","answer":60,"display":{"promptText":"What number added to 40 gives 100?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-020",
@@ -9942,7 +9942,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":85,"b":null,"op":"+","answer":65,"display":{"promptText":"If sum is 150 and first addend is 85, second addend is?"}},
+    question: {"a":85,"b":null,"op":"+","answer":65,"display":{"promptText":"If the sum is 150 and one number is 85, what is the other number?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-021",
@@ -9952,7 +9952,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":20,"b":null,"op":"+","answer":80,"display":{"promptText":"Complete the pattern: 20 + A = 100. A equals?"}},
+    question: {"a":20,"b":null,"op":"+","answer":80,"display":{"promptText":"What number is missing in 20 + __ = 100?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-022",
@@ -9962,7 +9962,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":60,"b":null,"op":"+","answer":140,"display":{"promptText":"Complete the pattern: 60 + A = 200. A equals?"}},
+    question: {"a":60,"b":null,"op":"+","answer":140,"display":{"promptText":"What number is missing in 60 + __ = 200?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-023",
@@ -9972,7 +9972,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":110,"b":null,"op":"+","answer":90,"display":{"promptText":"Complete the pattern: 110 + A = 200. A equals?"}},
+    question: {"a":110,"b":null,"op":"+","answer":90,"display":{"promptText":"What number is missing in 110 + __ = 200?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-024",
@@ -10002,7 +10002,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":55,"b":null,"op":"+","answer":45,"display":{"promptText":"Open the equation: 55 + __ = 100. What goes in the blank?"}},
+    question: {"a":55,"b":null,"op":"+","answer":45,"display":{"promptText":"Which number fills the blank in 55 + __ = 100?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-027",
@@ -10012,7 +10012,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":65,"b":null,"op":"+","answer":35,"display":{"promptText":"Open the equation: 65 + __ = 100. What goes in the blank?"}},
+    question: {"a":65,"b":null,"op":"+","answer":35,"display":{"promptText":"Which number fills the blank in 65 + __ = 100?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-028",
@@ -10022,7 +10022,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":78,"b":null,"op":"+","answer":22,"display":{"promptText":"Open the equation: 78 + __ = 100. What goes in the blank?"}},
+    question: {"a":78,"b":null,"op":"+","answer":22,"display":{"promptText":"Which number fills the blank in 78 + __ = 100?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-029",
@@ -10032,7 +10032,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":25,"b":null,"op":"+","answer":75,"display":{"promptText":"Count-on from 25 by some amount to reach 100. The amount is?"}},
+    question: {"a":25,"b":null,"op":"+","answer":75,"display":{"promptText":"How much do you count on from 25 to get to 100?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-030",
@@ -10042,7 +10042,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":50,"b":null,"op":"+","answer":50,"display":{"promptText":"Count-on from 50 by some amount to reach 100. The amount is?"}},
+    question: {"a":50,"b":null,"op":"+","answer":50,"display":{"promptText":"How much do you count on from 50 to get to 100?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-031",
@@ -10052,7 +10052,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":75,"b":null,"op":"+","answer":25,"display":{"promptText":"Count-on from 75 by some amount to reach 100. The amount is?"}},
+    question: {"a":75,"b":null,"op":"+","answer":25,"display":{"promptText":"How much do you count on from 75 to get to 100?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-032",
@@ -10062,7 +10062,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":120,"b":null,"op":"+","answer":80,"display":{"promptText":"Bar model: a total of 200 with one bar at 120. Length of the other bar?"}},
+    question: {"a":120,"b":null,"op":"+","answer":80,"display":{"promptText":"200 is made of 120 and what other part?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-033",
@@ -10072,7 +10072,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":180,"b":null,"op":"+","answer":120,"display":{"promptText":"Bar model: a total of 300 with one bar at 180. Length of the other bar?"}},
+    question: {"a":180,"b":null,"op":"+","answer":120,"display":{"promptText":"If the whole is 300 and one part is 180, what is the other part?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-034",
@@ -10082,7 +10082,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":250,"b":null,"op":"+","answer":250,"display":{"promptText":"Bar model: a total of 500 with one bar at 250. Length of the other bar?"}},
+    question: {"a":250,"b":null,"op":"+","answer":250,"display":{"promptText":"What is the other part when the whole is 500 and one part is 250?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-035",
@@ -10092,7 +10092,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":360,"b":null,"op":"+","answer":140,"display":{"promptText":"Bar model: a total of 500 with one bar at 360. Length of the other bar?"}},
+    question: {"a":360,"b":null,"op":"+","answer":140,"display":{"promptText":"What part goes with 360 to make a whole of 500?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-036",
@@ -10102,7 +10102,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":475,"b":null,"op":"+","answer":125,"display":{"promptText":"Bar model: a total of 600 with one bar at 475. Length of the other bar?"}},
+    question: {"a":475,"b":null,"op":"+","answer":125,"display":{"promptText":"600 is made of 475 and what other part?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-037",
@@ -10112,7 +10112,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":100,"b":null,"op":"+","answer":100,"display":{"promptText":"If 100 and some number make 200, the number is?"}},
+    question: {"a":100,"b":null,"op":"+","answer":100,"display":{"promptText":"What number goes with 100 to make 200?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-038",
@@ -10122,7 +10122,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":150,"b":null,"op":"+","answer":150,"display":{"promptText":"If 150 and some number make 300, the number is?"}},
+    question: {"a":150,"b":null,"op":"+","answer":150,"display":{"promptText":"What number goes with 150 to make 300?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-039",
@@ -10132,7 +10132,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":200,"b":null,"op":"+","answer":100,"display":{"promptText":"If 200 and some number make 300, the number is?"}},
+    question: {"a":200,"b":null,"op":"+","answer":100,"display":{"promptText":"What number do you add to 200 to make 300?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-040",
@@ -10142,7 +10142,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":250,"b":null,"op":"+","answer":150,"display":{"promptText":"If 250 and some number make 400, the number is?"}},
+    question: {"a":250,"b":null,"op":"+","answer":150,"display":{"promptText":"What number do you add to 250 to make 400?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-041",
@@ -10152,7 +10152,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":300,"b":null,"op":"+","answer":200,"display":{"promptText":"If 300 and some number make 500, the number is?"}},
+    question: {"a":300,"b":null,"op":"+","answer":200,"display":{"promptText":"What number do you add to 300 to make 500?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-042",
@@ -10162,7 +10162,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":400,"b":null,"op":"+","answer":200,"display":{"promptText":"If 400 and some number make 600, the number is?"}},
+    question: {"a":400,"b":null,"op":"+","answer":200,"display":{"promptText":"What number do you add to 400 to make 600?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-043",
@@ -10172,7 +10172,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":500,"b":null,"op":"+","answer":500,"display":{"promptText":"If 500 and some number make 1000, the number is?"}},
+    question: {"a":500,"b":null,"op":"+","answer":500,"display":{"promptText":"What number do you add to 500 to make 1000?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-45-044",
@@ -10182,7 +10182,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":700,"b":null,"op":"+","answer":300,"display":{"promptText":"If 700 and some number make 1000, the number is?"}},
+    question: {"a":700,"b":null,"op":"+","answer":300,"display":{"promptText":"700 plus what number makes 1000?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-001",
@@ -10212,7 +10212,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":null,"op":"+","answer":4,"display":{"promptText":"Solve for the unknown: ? + 5 = 9"}},
+    question: {"a":5,"b":null,"op":"+","answer":4,"display":{"promptText":"What number plus 5 makes 9?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-004",
@@ -10252,7 +10252,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":null,"op":"+","answer":2,"display":{"promptText":"An equation hides a number: 6 + [] = 8. Find the hidden number."}},
+    question: {"a":6,"b":null,"op":"+","answer":2,"display":{"promptText":"What number goes in the blank: 6 + __ = 8?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-008",
@@ -10262,7 +10262,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":null,"op":"+","answer":4,"display":{"promptText":"An equation hides a number: 2 + [] = 6. Find the hidden number."}},
+    question: {"a":2,"b":null,"op":"+","answer":4,"display":{"promptText":"What number goes in the blank: 2 + __ = 6?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-009",
@@ -10272,7 +10272,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":1,"b":null,"op":"+","answer":6,"display":{"promptText":"An equation hides a number: 1 + [] = 7. Find the hidden number."}},
+    question: {"a":1,"b":null,"op":"+","answer":6,"display":{"promptText":"What number goes in the blank: 1 + __ = 7?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-010",
@@ -10312,7 +10312,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":null,"op":"+","answer":4,"display":{"promptText":"A teeter-totter is balanced by 6 on one side plus a weight equaling 10. The weight is?"}},
+    question: {"a":6,"b":null,"op":"+","answer":4,"display":{"promptText":"A seesaw has 10 on one side and 6 on the other. How much more does the 6 side need to balance?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-014",
@@ -10322,7 +10322,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":null,"op":"+","answer":3,"display":{"promptText":"A teeter-totter is balanced by 7 on one side plus a weight equaling 10. The weight is?"}},
+    question: {"a":7,"b":null,"op":"+","answer":3,"display":{"promptText":"One side of a seesaw has 10 and the other side has 7. What do you add to the 7 side to make it balance?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-015",
@@ -10362,7 +10362,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":null,"op":"+","answer":4,"display":{"promptText":"If sum is 6 and first addend is 2, second addend is?"}},
+    question: {"a":2,"b":null,"op":"+","answer":4,"display":{"promptText":"What number added to 2 gives 6?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-019",
@@ -10372,7 +10372,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":null,"op":"+","answer":5,"display":{"promptText":"If sum is 8 and first addend is 3, second addend is?"}},
+    question: {"a":3,"b":null,"op":"+","answer":5,"display":{"promptText":"If the sum is 8 and one number is 3, what is the other number?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-020",
@@ -10382,7 +10382,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":1,"b":null,"op":"+","answer":8,"display":{"promptText":"If sum is 9 and first addend is 1, second addend is?"}},
+    question: {"a":1,"b":null,"op":"+","answer":8,"display":{"promptText":"What number added to 1 gives 9?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-021",
@@ -10392,7 +10392,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":null,"op":"+","answer":2,"display":{"promptText":"Complete the pattern: 7 + A = 9. A equals?"}},
+    question: {"a":7,"b":null,"op":"+","answer":2,"display":{"promptText":"What number can go in the blank to make 7 + __ = 9?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-022",
@@ -10402,7 +10402,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":null,"op":"+","answer":3,"display":{"promptText":"Complete the pattern: 4 + A = 7. A equals?"}},
+    question: {"a":4,"b":null,"op":"+","answer":3,"display":{"promptText":"What number can go in the blank to make 4 + __ = 7?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-023",
@@ -10412,7 +10412,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":null,"op":"+","answer":7,"display":{"promptText":"Complete the pattern: 2 + A = 9. A equals?"}},
+    question: {"a":2,"b":null,"op":"+","answer":7,"display":{"promptText":"What number can go in the blank to make 2 + __ = 9?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-024",
@@ -10442,7 +10442,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":null,"op":"+","answer":3,"display":{"promptText":"Open the equation: 3 + __ = 6. What goes in the blank?"}},
+    question: {"a":3,"b":null,"op":"+","answer":3,"display":{"promptText":"What is the missing number in 3 + __ = 6?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-027",
@@ -10452,7 +10452,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":null,"op":"+","answer":3,"display":{"promptText":"Open the equation: 4 + __ = 7. What goes in the blank?"}},
+    question: {"a":4,"b":null,"op":"+","answer":3,"display":{"promptText":"What is the missing number in 4 + __ = 7?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-028",
@@ -10462,7 +10462,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":null,"op":"+","answer":3,"display":{"promptText":"Open the equation: 5 + __ = 8. What goes in the blank?"}},
+    question: {"a":5,"b":null,"op":"+","answer":3,"display":{"promptText":"What is the missing number in 5 + __ = 8?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-029",
@@ -10472,7 +10472,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":null,"op":"+","answer":2,"display":{"promptText":"Open the equation: 6 + __ = 8. What goes in the blank?"}},
+    question: {"a":6,"b":null,"op":"+","answer":2,"display":{"promptText":"What is the missing number in 6 + __ = 8?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-030",
@@ -10482,7 +10482,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":null,"op":"+","answer":3,"display":{"promptText":"Open the equation: 7 + __ = 10. What goes in the blank?"}},
+    question: {"a":7,"b":null,"op":"+","answer":3,"display":{"promptText":"What is the missing number in 7 + __ = 10?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-031",
@@ -10492,7 +10492,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":null,"op":"+","answer":3,"display":{"promptText":"Count-on from 2 by some amount to reach 5. The amount is?"}},
+    question: {"a":2,"b":null,"op":"+","answer":3,"display":{"promptText":"Count on from 2 to 5. What number goes in the blank: 2 + __ = 5?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-032",
@@ -10502,7 +10502,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":null,"op":"+","answer":4,"display":{"promptText":"Count-on from 3 by some amount to reach 7. The amount is?"}},
+    question: {"a":3,"b":null,"op":"+","answer":4,"display":{"promptText":"Count on from 3 to get to 7. What number makes 3 + __ = 7 true?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-033",
@@ -10512,7 +10512,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":null,"op":"+","answer":5,"display":{"promptText":"Count-on from 4 by some amount to reach 9. The amount is?"}},
+    question: {"a":4,"b":null,"op":"+","answer":5,"display":{"promptText":"Count on from 4 to 9. What number goes in the blank: 4 + __ = 9?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-034",
@@ -10522,7 +10522,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":null,"op":"+","answer":4,"display":{"promptText":"Count-on from 5 by some amount to reach 9. The amount is?"}},
+    question: {"a":5,"b":null,"op":"+","answer":4,"display":{"promptText":"Start at 5 on a number line and hop 1 at a time. How many hops does it take to get to 9?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-035",
@@ -10532,7 +10532,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":null,"op":"+","answer":4,"display":{"promptText":"Count-on from 6 by some amount to reach 10. The amount is?"}},
+    question: {"a":6,"b":null,"op":"+","answer":4,"display":{"promptText":"Start at 6 on a number line. How many hops of 1 does it take to get to 10?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-036",
@@ -10542,7 +10542,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":null,"op":"+","answer":2,"display":{"promptText":"Count-on from 8 by some amount to reach 10. The amount is?"}},
+    question: {"a":8,"b":null,"op":"+","answer":2,"display":{"promptText":"Start at 8 on a number line and hop 1 at a time. How many hops does it take to get to 10?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-037",
@@ -10552,7 +10552,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":1,"b":null,"op":"+","answer":4,"display":{"promptText":"If 1 and some number make 5, the number is?"}},
+    question: {"a":1,"b":null,"op":"+","answer":4,"display":{"promptText":"1 plus what number makes 5?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-038",
@@ -10562,7 +10562,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":null,"op":"+","answer":4,"display":{"promptText":"If 2 and some number make 6, the number is?"}},
+    question: {"a":2,"b":null,"op":"+","answer":4,"display":{"promptText":"2 plus what number makes 6?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-039",
@@ -10572,7 +10572,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":null,"op":"+","answer":4,"display":{"promptText":"If 3 and some number make 7, the number is?"}},
+    question: {"a":3,"b":null,"op":"+","answer":4,"display":{"promptText":"3 plus what number makes 7?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-040",
@@ -10582,7 +10582,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":null,"op":"+","answer":2,"display":{"promptText":"If 4 and some number make 6, the number is?"}},
+    question: {"a":4,"b":null,"op":"+","answer":2,"display":{"promptText":"4 plus what number makes 6?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-041",
@@ -10592,7 +10592,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":null,"op":"+","answer":2,"display":{"promptText":"If 5 and some number make 7, the number is?"}},
+    question: {"a":5,"b":null,"op":"+","answer":2,"display":{"promptText":"What number and 5 make 7?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-042",
@@ -10602,7 +10602,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":null,"op":"+","answer":1,"display":{"promptText":"If 6 and some number make 7, the number is?"}},
+    question: {"a":6,"b":null,"op":"+","answer":1,"display":{"promptText":"What number and 6 make 7?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-043",
@@ -10612,7 +10612,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":null,"op":"+","answer":1,"display":{"promptText":"If 7 and some number make 8, the number is?"}},
+    question: {"a":7,"b":null,"op":"+","answer":1,"display":{"promptText":"What number and 7 make 8?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-044",
@@ -10622,7 +10622,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":null,"op":"+","answer":1,"display":{"promptText":"If 8 and some number make 9, the number is?"}},
+    question: {"a":8,"b":null,"op":"+","answer":1,"display":{"promptText":"What number and 8 make 9?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-K1-045",
@@ -10632,7 +10632,7 @@ export const ITEMS = [
     structureType: "joinChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":null,"op":"+","answer":1,"display":{"promptText":"If 9 and some number make 10, the number is?"}},
+    question: {"a":9,"b":null,"op":"+","answer":1,"display":{"promptText":"What number and 9 make 10?"}},
   },
   {
     itemId: "addition-proc-b0823-0001",

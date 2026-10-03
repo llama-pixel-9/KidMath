@@ -5762,7 +5762,7 @@ export const ITEMS = [
     structureType: "baseTimesHeight",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":24,"display":{"cube":{"h":2,"l":3,"w":4},"figure":"cubeGrid","promptText":"Think layers: 12 cubes per layer, 2 layers. What is the cube count?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":24,"display":{"cube":{"h":2,"l":3,"w":4},"figure":"cubeGrid","promptText":"A box is built from 2 layers of cubes. Each layer has 12 cubes. How many cubes make up the box?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0161",
@@ -5792,7 +5792,7 @@ export const ITEMS = [
     structureType: "baseTimesHeight",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":12,"display":{"cube":{"h":2,"l":2,"w":3},"figure":"cubeGrid","promptText":"A floor of 6 cubes is copied 2 times going up. How many cubes is the whole stack?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":12,"display":{"cube":{"h":2,"l":2,"w":3},"figure":"cubeGrid","promptText":"A layer of 6 cubes is stacked so there are 2 layers in all. How many cubes are in the whole stack?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0164",
@@ -5812,7 +5812,7 @@ export const ITEMS = [
     structureType: "baseTimesHeight",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":12,"display":{"cube":{"h":3,"l":2,"w":2},"figure":"cubeGrid","promptText":"Multiply the layer of 4 cubes by 3 floors. How many cubes in the box?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":12,"display":{"cube":{"h":3,"l":2,"w":2},"figure":"cubeGrid","promptText":"A box has 3 layers with 4 cubes in each layer. How many cubes are in the box?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0166",
@@ -5862,7 +5862,7 @@ export const ITEMS = [
     structureType: "baseTimesHeight",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":60,"display":{"cube":{"h":3,"l":5,"w":4},"figure":"cubeGrid","promptText":"A floor of 20 cubes is copied 3 times going up. How many cubes is the whole stack?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":60,"display":{"cube":{"h":3,"l":5,"w":4},"figure":"cubeGrid","promptText":"Each layer of a stack has 20 cubes, and there are 3 layers in all. How many cubes are in the whole stack?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0171",
@@ -5872,7 +5872,7 @@ export const ITEMS = [
     structureType: "baseTimesHeight",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":16,"display":{"cube":{"h":2,"l":4,"w":2},"figure":"cubeGrid","promptText":"Think layers: 8 cubes per layer, 2 layers. What is the cube count?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":16,"display":{"cube":{"h":2,"l":4,"w":2},"figure":"cubeGrid","promptText":"There are 8 cubes in each layer of a box and 2 layers in all. What is the total number of cubes in the box?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0172",
@@ -5902,7 +5902,7 @@ export const ITEMS = [
     structureType: "baseTimesHeight",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":27,"display":{"cube":{"h":3,"l":3,"w":3},"figure":"cubeGrid","promptText":"A floor of 9 cubes is copied 3 times going up. How many cubes is the whole stack?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":27,"display":{"cube":{"h":3,"l":3,"w":3},"figure":"cubeGrid","promptText":"A layer of 9 cubes is stacked so there are 3 layers in all. How many cubes are in the whole stack?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0175",
@@ -5912,7 +5912,7 @@ export const ITEMS = [
     structureType: "baseTimesHeight",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":48,"display":{"cube":{"h":4,"l":3,"w":4},"figure":"cubeGrid","promptText":"Multiply the layer of 12 cubes by 4 floors. How many cubes in the box?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":48,"display":{"cube":{"h":4,"l":3,"w":4},"figure":"cubeGrid","promptText":"One layer of a box holds 12 cubes. The box is 4 layers tall. How many cubes fill the box?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0176",
@@ -5952,7 +5952,7 @@ export const ITEMS = [
     structureType: "baseTimesHeight",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":64,"display":{"cube":{"h":4,"l":4,"w":4},"figure":"cubeGrid","promptText":"Multiply the layer of 16 cubes by 4 floors. How many cubes in the box?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":64,"display":{"cube":{"h":4,"l":4,"w":4},"figure":"cubeGrid","promptText":"A box has 4 layers with 16 cubes in each layer. How many cubes are in the box?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0180",
@@ -5972,7 +5972,7 @@ export const ITEMS = [
     structureType: "baseTimesHeight",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":36,"display":{"cube":{"h":3,"l":4,"w":3},"figure":"cubeGrid","promptText":"A floor of 12 cubes is copied 3 times going up. How many cubes is the whole stack?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":36,"display":{"cube":{"h":3,"l":4,"w":3},"figure":"cubeGrid","promptText":"Each layer of a stack has 12 cubes, and there are 3 layers in all. How many cubes are in the whole stack?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0182",
@@ -5982,7 +5982,7 @@ export const ITEMS = [
     structureType: "baseTimesHeight",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":16,"display":{"cube":{"h":4,"l":2,"w":2},"figure":"cubeGrid","promptText":"Think layers: 4 cubes per layer, 4 layers. What is the cube count?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":16,"display":{"cube":{"h":4,"l":2,"w":2},"figure":"cubeGrid","promptText":"A box is built from 4 layers of cubes. Each layer has 4 cubes. How many cubes make up the box?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0183",
@@ -5992,7 +5992,7 @@ export const ITEMS = [
     structureType: "baseTimesHeight",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":36,"display":{"cube":{"h":4,"l":3,"w":3},"figure":"cubeGrid","promptText":"A floor of 9 cubes is copied 4 times going up. How many cubes is the whole stack?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":36,"display":{"cube":{"h":4,"l":3,"w":3},"figure":"cubeGrid","promptText":"A layer of 9 cubes is stacked so there are 4 layers in all. How many cubes are in the whole stack?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0184",
@@ -6002,7 +6002,7 @@ export const ITEMS = [
     structureType: "baseTimesHeight",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":48,"display":{"cube":{"h":4,"l":3,"w":4},"figure":"cubeGrid","promptText":"Think layers: 12 cubes per layer, 4 layers. What is the cube count?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":48,"display":{"cube":{"h":4,"l":3,"w":4},"figure":"cubeGrid","promptText":"There are 12 cubes in each layer of a box and 4 layers in all. What is the total number of cubes in the box?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0185",
@@ -6042,7 +6042,7 @@ export const ITEMS = [
     structureType: "baseTimesHeight",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":45,"display":{"cube":{"h":3,"l":5,"w":3},"figure":"cubeGrid","promptText":"Multiply the layer of 15 cubes by 3 floors. How many cubes in the box?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":45,"display":{"cube":{"h":3,"l":5,"w":3},"figure":"cubeGrid","promptText":"One layer of a box holds 15 cubes. The box is 3 layers tall. How many cubes fill the box?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0189",
@@ -6092,7 +6092,7 @@ export const ITEMS = [
     structureType: "baseTimesHeight",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":20,"display":{"cube":{"h":2,"l":5,"w":2},"figure":"cubeGrid","promptText":"Think layers: 10 cubes per layer, 2 layers. What is the cube count?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":20,"display":{"cube":{"h":2,"l":5,"w":2},"figure":"cubeGrid","promptText":"A box is built from 2 layers of cubes. Each layer has 10 cubes. How many cubes make up the box?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0194",
@@ -6192,7 +6192,7 @@ export const ITEMS = [
     structureType: "baseTimesHeight",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":16,"display":{"cube":{"h":4,"l":2,"w":2},"figure":"cubeGrid","promptText":"Multiply the layer of 4 cubes by 4 floors. How many cubes in the box?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":16,"display":{"cube":{"h":4,"l":2,"w":2},"figure":"cubeGrid","promptText":"A box has 4 layers with 4 cubes in each layer. How many cubes are in the box?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0204",
@@ -6772,7 +6772,7 @@ export const ITEMS = [
     structureType: "missingDimension",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":4,"display":{"promptText":"3 × 3 × ? = 36. What is the missing side in units?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":4,"display":{"promptText":"The equation 3 × 3 × __ = 36 gives the volume of a box in cubic units. What is the missing side length in units?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0262",
@@ -6782,7 +6782,7 @@ export const ITEMS = [
     structureType: "missingDimension",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":3,"display":{"promptText":"Height check: volume 30, base 2 × 5. How tall in units?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":3,"display":{"promptText":"The volume of a box is 30 cubic units. Its base is 2 × 5. What is the height of the box in units?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0263",
@@ -6792,7 +6792,7 @@ export const ITEMS = [
     structureType: "missingDimension",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":1,"display":{"promptText":"Height check: volume 18, base 6 × 3. How tall in units?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":1,"display":{"promptText":"A box with a 6 × 3 base has a volume of 18 cubic units. How many units high is the box?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0264",
@@ -6872,7 +6872,7 @@ export const ITEMS = [
     structureType: "missingDimension",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":3,"display":{"promptText":"Divide 24 by the 4 × 2 base. How many units tall is the box?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":3,"display":{"promptText":"A box has a volume of 24 cubic units and a 4 × 2 base. How many units tall is the box?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0272",
@@ -6962,7 +6962,7 @@ export const ITEMS = [
     structureType: "missingDimension",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":3,"display":{"promptText":"Divide 36 by the 6 × 2 base. How many units tall is the box?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":3,"display":{"promptText":"A box holds 36 unit cubes. Its base is 6 × 2. How many units tall is the box?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0281",
@@ -7032,7 +7032,7 @@ export const ITEMS = [
     structureType: "missingDimension",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":6,"display":{"promptText":"Height check: volume 60, base 5 × 2. How tall in units?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":6,"display":{"promptText":"The volume of a box is 60 cubic units. Its base is 5 × 2. What is the height of the box in units?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0288",
@@ -7042,7 +7042,7 @@ export const ITEMS = [
     structureType: "missingDimension",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":4,"display":{"promptText":"Divide 48 by the 6 × 2 base. How many units tall is the box?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":4,"display":{"promptText":"A box has a volume of 48 cubic units and a 6 × 2 base. How many units tall is the box?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0289",
@@ -7052,7 +7052,7 @@ export const ITEMS = [
     structureType: "missingDimension",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":4,"display":{"promptText":"Divide 24 by the 3 × 2 base. How many units tall is the box?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":4,"display":{"promptText":"A box holds 24 unit cubes. Its base is 3 × 2. How many units tall is the box?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0290",
@@ -7092,7 +7092,7 @@ export const ITEMS = [
     structureType: "missingDimension",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":6,"display":{"promptText":"Height check: volume 150, base 5 × 5. How tall in units?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":6,"display":{"promptText":"A box with a 5 × 5 base has a volume of 150 cubic units. How many units high is the box?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0294",
@@ -7122,7 +7122,7 @@ export const ITEMS = [
     structureType: "missingDimension",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":6,"display":{"promptText":"Height check: volume 90, base 5 × 3. How tall in units?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":6,"display":{"promptText":"The volume of a box is 90 cubic units. Its base is 5 × 3. What is the height of the box in units?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0297",
@@ -7212,7 +7212,7 @@ export const ITEMS = [
     structureType: "missingDimension",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":2,"display":{"promptText":"Divide 60 by the 6 × 5 base. How many units tall is the box?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":2,"display":{"promptText":"A box has a volume of 60 cubic units and a 6 × 5 base. How many units tall is the box?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0306",
@@ -7242,7 +7242,7 @@ export const ITEMS = [
     structureType: "missingDimension",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":2,"display":{"promptText":"4 × 4 × ? = 32. What is the missing side in units?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":2,"display":{"promptText":"A box is 4 units by 4 units by __ units, with a volume of 32 cubic units. How many units long is the missing side?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0309",
@@ -7292,7 +7292,7 @@ export const ITEMS = [
     structureType: "coordinatePattern",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":9,"display":{"promptText":"From (2, 3), each new point is 2 right and 2 up. What is the y-coordinate of the 4th point?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":9,"display":{"promptText":"Point 1 is (2, 3). Each new point is 2 right and 2 up from the one before. What is the y-coordinate of point 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0314",
@@ -7332,7 +7332,7 @@ export const ITEMS = [
     structureType: "coordinatePattern",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":6,"display":{"promptText":"A dot hops from (2, 3) by (+2, +1) each time. Where is y after the 3rd hop?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":6,"display":{"promptText":"A dot starts at (2, 3). Each hop moves it 2 right and 1 up. What is the dot's y-coordinate after 3 hops?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0318",
@@ -7342,7 +7342,7 @@ export const ITEMS = [
     structureType: "coordinatePattern",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":7,"display":{"promptText":"From (0, 1), each new point is 1 right and 2 up. What is the y-coordinate of the 4th point?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":7,"display":{"promptText":"The 1st point is (0, 1). Each next point is 1 right and 2 up from the last one. What is the y-coordinate of the 4th point?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0319",
@@ -7352,7 +7352,7 @@ export const ITEMS = [
     structureType: "coordinatePattern",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":5,"display":{"promptText":"A dot hops from (2, 2) by (+1, +1) each time. Where is y after the 3rd hop?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":5,"display":{"promptText":"A dot sits at (2, 2). It hops 1 right and 1 up each time. What is the dot's y-coordinate after its 3rd hop?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0320",
@@ -7362,7 +7362,7 @@ export const ITEMS = [
     structureType: "coordinatePattern",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":5,"display":{"promptText":"Third jump of (+2, +1) from (2, 2) — what is the y-value there?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":5,"display":{"promptText":"A point starts at (2, 2). Each jump moves it 2 right and 1 up. What is its y-coordinate after the third jump?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0321",
@@ -7372,7 +7372,7 @@ export const ITEMS = [
     structureType: "coordinatePattern",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":10,"display":{"promptText":"Third jump of (+1, +3) from (1, 1) — what is the y-value there?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":10,"display":{"promptText":"A point jumps 1 right and 3 up each time, starting at (1, 1). What is its y-coordinate after 3 jumps?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0322",
@@ -7382,7 +7382,7 @@ export const ITEMS = [
     structureType: "coordinatePattern",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":8,"display":{"promptText":"A pattern of points starts at (1, 2) and each next point adds 1 to x and 2 to y. The 4th point is (4, ?). What is its y-coordinate?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":8,"display":{"promptText":"Point 1 of a pattern is (1, 2). Each next point adds 1 to x and 2 to y. Point 4 is (4, __). What is the y-coordinate of point 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0323",
@@ -7392,7 +7392,7 @@ export const ITEMS = [
     structureType: "coordinatePattern",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":3,"display":{"promptText":"A pattern of points starts at (0, 0) and each next point adds 1 to x and 1 to y. The 4th point is (3, ?). What is its y-coordinate?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":3,"display":{"promptText":"A pattern of points starts with point 1 at (0, 0). Each next point adds 1 to x and 1 to y. What is the y-coordinate of point 4, at x = 3?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0324",
@@ -7412,7 +7412,7 @@ export const ITEMS = [
     structureType: "coordinatePattern",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":3,"display":{"promptText":"From (2, 0), each new point is 2 right and 1 up. What is the y-coordinate of the 4th point?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":3,"display":{"promptText":"Point 1 is (2, 0). Each new point is 2 right and 1 up from the one before. What is the y-coordinate of point 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0326",
@@ -7432,7 +7432,7 @@ export const ITEMS = [
     structureType: "coordinatePattern",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":4,"display":{"promptText":"A pattern of points starts at (2, 1) and each next point adds 2 to x and 1 to y. The 4th point is (8, ?). What is its y-coordinate?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":4,"display":{"promptText":"Point 1 of a pattern is (2, 1). Each next point adds 2 to x and 1 to y. Point 4 is (8, __). What is the y-coordinate of point 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0328",
@@ -7442,7 +7442,7 @@ export const ITEMS = [
     structureType: "coordinatePattern",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":9,"display":{"promptText":"A dot hops from (0, 3) by (+2, +2) each time. Where is y after the 3rd hop?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":9,"display":{"promptText":"A dot starts at (0, 3). Each hop moves it 2 right and 2 up. What is the dot's y-coordinate after 3 hops?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0329",
@@ -7452,7 +7452,7 @@ export const ITEMS = [
     structureType: "coordinatePattern",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":4,"display":{"promptText":"A dot hops from (2, 1) by (+1, +1) each time. Where is y after the 3rd hop?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":4,"display":{"promptText":"A dot sits at (2, 1). It hops 1 right and 1 up each time. What is the dot's y-coordinate after its 3rd hop?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0330",
@@ -7472,7 +7472,7 @@ export const ITEMS = [
     structureType: "coordinatePattern",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":6,"display":{"promptText":"From (2, 3), each new point is 2 right and 1 up. What is the y-coordinate of the 4th point?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":6,"display":{"promptText":"The 1st point is (2, 3). Each next point is 2 right and 1 up from the last one. What is the y-coordinate of the 4th point?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0332",
@@ -7482,7 +7482,7 @@ export const ITEMS = [
     structureType: "coordinatePattern",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":6,"display":{"promptText":"A pattern of points starts at (0, 3) and each next point adds 1 to x and 1 to y. The 4th point is (3, ?). What is its y-coordinate?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":6,"display":{"promptText":"A pattern of points starts with point 1 at (0, 3). Each next point adds 1 to x and 1 to y. What is the y-coordinate of point 4, at x = 3?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0333",
@@ -7492,7 +7492,7 @@ export const ITEMS = [
     structureType: "coordinatePattern",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":12,"display":{"promptText":"Following (+1, +3) three times from (2, 3), the point is (5, ?). Find the y."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":12,"display":{"promptText":"Start at (2, 3). Move 1 right and 3 up, 3 times in a row. You end at (5, __). What is the y-coordinate where you end?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0334",
@@ -7502,7 +7502,7 @@ export const ITEMS = [
     structureType: "coordinatePattern",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":6,"display":{"promptText":"Third jump of (+2, +2) from (2, 0) — what is the y-value there?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":6,"display":{"promptText":"A point starts at (2, 0). Each jump moves it 2 right and 2 up. What is its y-coordinate after the third jump?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0335",
@@ -7512,7 +7512,7 @@ export const ITEMS = [
     structureType: "coordinatePattern",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":6,"display":{"promptText":"Following (+2, +2) three times from (1, 0), the point is (7, ?). Find the y."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":6,"display":{"promptText":"Start at (1, 0) and make 3 moves. Each move is 2 right and 2 up. What is the y-coordinate of the point where you stop?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0336",
@@ -7522,7 +7522,7 @@ export const ITEMS = [
     structureType: "coordinatePattern",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":4,"display":{"promptText":"Following (+1, +1) three times from (2, 1), the point is (5, ?). Find the y."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":4,"display":{"promptText":"Start at (2, 1). Move 1 right and 1 up, 3 times in a row. You end at (5, __). What is the y-coordinate where you end?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0337",
@@ -7562,7 +7562,7 @@ export const ITEMS = [
     structureType: "coordinatePattern",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":6,"display":{"promptText":"From (0, 0), each new point is 1 right and 2 up. What is the y-coordinate of the 4th point?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":6,"display":{"promptText":"Point 1 is (0, 0). Each new point is 1 right and 2 up from the one before. What is the y-coordinate of point 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0341",
@@ -7582,7 +7582,7 @@ export const ITEMS = [
     structureType: "coordinatePattern",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":8,"display":{"promptText":"A pattern of points starts at (0, 2) and each next point adds 1 to x and 2 to y. The 4th point is (3, ?). What is its y-coordinate?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":8,"display":{"promptText":"Point 1 of a pattern is (0, 2). Each next point adds 1 to x and 2 to y. Point 4 is (3, __). What is the y-coordinate of point 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0343",
@@ -7652,7 +7652,7 @@ export const ITEMS = [
     structureType: "coordinatePattern",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":7,"display":{"promptText":"Following (+1, +2) three times from (2, 1), the point is (5, ?). Find the y."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":7,"display":{"promptText":"Start at (2, 1) and make 3 moves. Each move is 1 right and 2 up. What is the y-coordinate of the point where you stop?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0350",
@@ -7662,7 +7662,7 @@ export const ITEMS = [
     structureType: "coordinatePattern",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":10,"display":{"promptText":"A dot hops from (1, 1) by (+1, +3) each time. Where is y after the 3rd hop?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":10,"display":{"promptText":"A dot starts at (1, 1). Each hop moves it 1 right and 3 up. What is the dot's y-coordinate after 3 hops?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0351",
@@ -7682,7 +7682,7 @@ export const ITEMS = [
     structureType: "coordinatePattern",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":8,"display":{"promptText":"Following (+1, +2) three times from (1, 2), the point is (4, ?). Find the y."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":8,"display":{"promptText":"Start at (1, 2). Move 1 right and 2 up, 3 times in a row. You end at (4, __). What is the y-coordinate where you end?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0353",
@@ -7712,7 +7712,7 @@ export const ITEMS = [
     structureType: "coordinatePattern",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":6,"display":{"promptText":"Third jump of (+2, +2) from (1, 0) — what is the y-value there?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":6,"display":{"promptText":"A point jumps 2 right and 2 up each time, starting at (1, 0). What is its y-coordinate after 3 jumps?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0356",
@@ -7782,7 +7782,7 @@ export const ITEMS = [
     structureType: "coordinatePattern",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":12,"display":{"promptText":"Third jump of (+2, +3) from (2, 3) — what is the y-value there?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"volume","answer":12,"display":{"promptText":"A point starts at (2, 3). Each jump moves it 2 right and 3 up. What is its y-coordinate after the third jump?"},"answerType":"numberPad"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0363",
@@ -7792,7 +7792,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Splitting the figure, Zoe gets 2 × 3 × 3 plus 2 × 2 × 2 and claims 25 in all. Do you agree?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Zoe splits a shape into a 2 × 3 × 3 box and a 2 × 2 × 2 box. Is the volume of the whole shape 25 cubic units?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0364",
@@ -7802,7 +7802,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Diego adds 32 and 4 for the two parts of a shape and writes 36 cubic units. Is Diego right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Diego builds a shape from two boxes with volumes of 32 cubic units and 4 cubic units. Is the volume of Diego's whole shape 36 cubic units?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0365",
@@ -7812,7 +7812,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ben adds 12 and 3 for the two parts of a shape and writes 16 cubic units. Is Ben right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ben builds a shape from two boxes with volumes of 12 cubic units and 3 cubic units. Is the volume of Ben's whole shape 16 cubic units?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0366",
@@ -7852,7 +7852,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Splitting the figure, Finn gets 3 × 2 × 3 plus 1 × 1 × 1 and claims 18 in all. Do you agree?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"A shape is made of a 3 × 2 × 3 box and a 1 × 1 × 1 box. Finn says its volume is 18 cubic units. Is Finn right?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0370",
@@ -7862,7 +7862,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Theo adds 24 and 2 for the two parts of a shape and writes 27 cubic units. Is Theo right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Theo's shape has two parts. One part is 24 cubic units and the other is 2 cubic units. Is the volume of the whole shape 27 cubic units?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0371",
@@ -7872,7 +7872,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Amara adds 12 and 12 for the two parts of a shape and writes 26 cubic units. Is Amara right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Amara's shape has two parts, and each part is 12 cubic units. Is the volume of the whole shape 26 cubic units?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0372",
@@ -7882,7 +7882,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Splitting the figure, Theo gets 4 × 2 × 3 plus 1 × 2 × 1 and claims 27 in all. Do you agree?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"A shape is made of a 4 × 2 × 3 box and a 1 × 2 × 1 box. Theo says its volume is 27 cubic units. Is Theo right?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0373",
@@ -7902,7 +7902,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ben adds 12 and 18 for the two parts of a shape and writes 28 cubic units. Is Ben right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ben's shape has two parts. One part is 12 cubic units and the other is 18 cubic units. Is the volume of the whole shape 28 cubic units?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0375",
@@ -7912,7 +7912,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Zoe adds 12 and 4 for the two parts of a shape and writes 16 cubic units. Is Zoe right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Zoe's shape has two parts. One part is 12 cubic units and the other is 4 cubic units. Is the volume of the whole shape 16 cubic units?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0376",
@@ -7942,7 +7942,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Leo adds 16 and 4 for the two parts of a shape and writes 22 cubic units. Is Leo right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Leo builds a shape from two boxes with volumes of 16 cubic units and 4 cubic units. Is the volume of Leo's whole shape 22 cubic units?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0379",
@@ -7952,7 +7952,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Splitting the figure, Luca gets 4 × 2 × 3 plus 3 × 2 × 3 and claims 42 in all. Do you agree?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"A shape is made of a 4 × 2 × 3 box and a 3 × 2 × 3 box. Luca says its volume is 42 cubic units. Is Luca right?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0380",
@@ -7962,7 +7962,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Splitting the figure, Nia gets 3 × 3 × 3 plus 2 × 2 × 1 and claims 30 in all. Do you agree?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Nia splits a shape into a 3 × 3 × 3 box and a 2 × 2 × 1 box. Is the volume of the whole shape 30 cubic units?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0381",
@@ -7982,7 +7982,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Priya adds 12 and 12 for the two parts of a shape and writes 25 cubic units. Is Priya right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Priya's shape is made of two parts that are each 12 cubic units. Is the volume of the whole shape 25 cubic units?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0383",
@@ -8002,7 +8002,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Priya adds 12 and 12 for the two parts of a shape and writes 24 cubic units. Is Priya right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Priya builds a shape from two boxes that each have a volume of 12 cubic units. Is the volume of Priya's whole shape 24 cubic units?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0385",
@@ -8022,7 +8022,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Luca adds 18 and 4 for the two parts of a shape and writes 21 cubic units. Is Luca right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Luca's shape has two parts. One part is 18 cubic units and the other is 4 cubic units. Is the volume of the whole shape 21 cubic units?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0387",
@@ -8042,7 +8042,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Nora adds 12 and 4 for the two parts of a shape and writes 18 cubic units. Is Nora right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Nora's shape has two parts. One part is 12 cubic units and the other is 4 cubic units. Is the volume of the whole shape 18 cubic units?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0389",
@@ -8052,7 +8052,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Splitting the figure, Finn gets 3 × 3 × 4 plus 1 × 2 × 1 and claims 37 in all. Do you agree?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Finn splits a shape into a 3 × 3 × 4 box and a 1 × 2 × 1 box. Is the volume of the whole shape 37 cubic units?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0390",
@@ -8062,7 +8062,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Splitting the figure, Zoe gets 2 × 2 × 3 plus 3 × 2 × 1 and claims 18 in all. Do you agree?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"A shape is made of a 2 × 2 × 3 box and a 3 × 2 × 1 box. Zoe says its volume is 18 cubic units. Is Zoe right?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0391",
@@ -8072,7 +8072,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Finn adds 24 and 2 for the two parts of a shape and writes 26 cubic units. Is Finn right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Finn's shape has two parts. One part is 24 cubic units and the other is 2 cubic units. Is the volume of the whole shape 26 cubic units?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0392",
@@ -8082,7 +8082,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Nora adds 36 and 2 for the two parts of a shape and writes 38 cubic units. Is Nora right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Nora builds a shape from two boxes with volumes of 36 cubic units and 2 cubic units. Is the volume of Nora's whole shape 38 cubic units?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0393",
@@ -8092,7 +8092,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Maya adds 24 and 12 for the two parts of a shape and writes 34 cubic units. Is Maya right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Maya builds a shape from two boxes with volumes of 24 cubic units and 12 cubic units. Is the volume of Maya's whole shape 34 cubic units?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0394",
@@ -8102,7 +8102,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Splitting the figure, Nia gets 2 × 2 × 3 plus 1 × 1 × 1 and claims 13 in all. Do you agree?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"A shape is made of a 2 × 2 × 3 box and a 1 × 1 × 1 box. Nia says its volume is 13 cubic units. Is Nia right?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0395",
@@ -8142,7 +8142,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Splitting the figure, June gets 3 × 2 × 4 plus 3 × 2 × 3 and claims 42 in all. Do you agree?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"A shape is made of a 3 × 2 × 4 box and a 3 × 2 × 3 box. June says its volume is 42 cubic units. Is June right?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0399",
@@ -8192,7 +8192,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Splitting the figure, Nora gets 3 × 3 × 4 plus 3 × 1 × 2 and claims 44 in all. Do you agree?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Nora splits a shape into a 3 × 3 × 4 box and a 3 × 1 × 2 box. Is the volume of the whole shape 44 cubic units?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0404",
@@ -8202,7 +8202,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Ida adds 24 and 6 for the two parts of a shape and writes 30 cubic units. Is Ida right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Ida builds a shape from two boxes with volumes of 24 cubic units and 6 cubic units. Is the volume of Ida's whole shape 30 cubic units?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0405",
@@ -8212,7 +8212,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Splitting the figure, June gets 3 × 2 × 4 plus 3 × 2 × 1 and claims 30 in all. Do you agree?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"June splits a shape into a 3 × 2 × 4 box and a 3 × 2 × 1 box. Is the volume of the whole shape 30 cubic units?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0406",
@@ -8222,7 +8222,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Splitting the figure, Amara gets 3 × 2 × 4 plus 3 × 2 × 2 and claims 35 in all. Do you agree?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Amara splits a shape into a 3 × 2 × 4 box and a 3 × 2 × 2 box. Is the volume of the whole shape 35 cubic units?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0407",
@@ -8232,7 +8232,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Theo adds 18 and 2 for the two parts of a shape and writes 20 cubic units. Is Theo right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Theo builds a shape from two boxes with volumes of 18 cubic units and 2 cubic units. Is the volume of Theo's whole shape 20 cubic units?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0408",
@@ -8242,7 +8242,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Priya adds 8 and 4 for the two parts of a shape and writes 12 cubic units. Is Priya right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Priya's shape has two parts. One part is 8 cubic units and the other is 4 cubic units. Is the volume of the whole shape 12 cubic units?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0409",
@@ -8262,7 +8262,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Kai adds 48 and 8 for the two parts of a shape and writes 58 cubic units. Is Kai right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Kai's shape has two parts. One part is 48 cubic units and the other is 8 cubic units. Is the volume of the whole shape 58 cubic units?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0411",
@@ -8272,7 +8272,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Priya adds 24 and 6 for the two parts of a shape and writes 28 cubic units. Is Priya right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Priya builds a shape from two boxes with volumes of 24 cubic units and 6 cubic units. Is the volume of Priya's whole shape 28 cubic units?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0412",
@@ -8282,7 +8282,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"Splitting the figure, Maya gets 3 × 3 × 4 plus 1 × 2 × 2 and claims 42 in all. Do you agree?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"No","choices":["Yes","No"],"display":{"promptText":"A shape is made of a 3 × 3 × 4 box and a 1 × 2 × 2 box. Maya says its volume is 42 cubic units. Is Maya right?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-conc-b0824-0413",
@@ -8302,7 +8302,7 @@ export const ITEMS = [
     structureType: "compositePlanJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"volume","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Splitting the figure, Luca gets 4 × 2 × 3 plus 3 × 1 × 2 and claims 30 in all. Do you agree?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"volume","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Luca splits a shape into a 4 × 2 × 3 box and a 3 × 1 × 2 box. Is the volume of the whole shape 30 cubic units?"},"answerType":"choice"},
   },
   {
     itemId: "volumeCoordinates-proc-b0824-0001",

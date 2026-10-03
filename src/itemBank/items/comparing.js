@@ -12,7 +12,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":246,"b":264,"op":"?","answer":"<","display":{"promptText":"Sam scored 246 points. Alex scored 264 points. Which symbol compares their scores?"}},
+    question: {"a":246,"b":264,"op":"?","answer":"<","display":{"promptText":"Sam scored 246 points. Alex scored 264 points. Which symbol goes in 246 __ 264?"}},
   },
   {
     itemId: "comparing-app-002",
@@ -22,7 +22,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":178,"b":187,"op":"?","answer":"<","display":{"promptText":"Ms. Lee's class read 178 books. Mr. Park's class read 187 books. Which symbol compares their totals?"}},
+    question: {"a":178,"b":187,"op":"?","answer":"<","display":{"promptText":"Room A read 178 books. Room B read 187 books. Which sign fits in 178 __ 187?"}},
   },
   {
     itemId: "comparing-app-003",
@@ -32,7 +32,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":510,"b":499,"op":"?","answer":">","display":{"promptText":"The top shelf has 510 books. The bottom shelf has 499 books. Which symbol compares them?"}},
+    question: {"a":510,"b":499,"op":"?","answer":">","display":{"promptText":"The top shelf has 510 books. The bottom shelf has 499 books. Which sign fits in 510 __ 499?"}},
   },
   {
     itemId: "comparing-app-004",
@@ -42,7 +42,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [9,10],
     reviewStatus: APPROVED,
-    question: {"a":805,"b":850,"op":"?","answer":"<","display":{"promptText":"The stadium seats 805 fans. The theater seats 850 fans. Which symbol compares them?"}},
+    question: {"a":805,"b":850,"op":"?","answer":"<","display":{"promptText":"The stadium seats 805 fans. The theater seats 850 fans. Which symbol makes 805 __ 850 true?"}},
   },
   {
     itemId: "comparing-app-005",
@@ -52,7 +52,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":380,"b":380,"op":"?","answer":"=","display":{"promptText":"One class solved 380 puzzles. Another class solved 380 puzzles. Which symbol compares them?"}},
+    question: {"a":380,"b":380,"op":"?","answer":"=","display":{"promptText":"One class solved 380 puzzles. Another class solved 380 puzzles. Which symbol makes 380 __ 380 true?"}},
   },
   {
     itemId: "comparing-app-006",
@@ -62,7 +62,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [9,10],
     reviewStatus: APPROVED,
-    question: {"a":612,"b":612,"op":"?","answer":"=","display":{"promptText":"Springfield has 612 students. Maple Town has 612 students. Which symbol compares them?"}},
+    question: {"a":612,"b":612,"op":"?","answer":"=","display":{"promptText":"Springfield has 612 students. Maple Town has 612 students. Which symbol goes in 612 __ 612?"}},
   },
   {
     itemId: "comparing-app-007",
@@ -72,7 +72,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":84,"b":79,"op":"?","answer":">","display":{"promptText":"One class read 84 books. Another class read 79 books. Which symbol compares how many they read?"}},
+    question: {"a":84,"b":79,"op":"?","answer":">","display":{"promptText":"One class read 84 books. Another class read 79 books. Which symbol makes 84 __ 79 true?"}},
   },
   {
     itemId: "comparing-app-008",
@@ -82,7 +82,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":999,"b":1001,"op":"?","answer":"<","display":{"promptText":"One counter shows 999. Another counter shows 1001. Which symbol compares them?"}},
+    question: {"a":999,"b":1001,"op":"?","answer":"<","display":{"promptText":"One counter shows 999. Another counter shows 1001. Which symbol goes in 999 __ 1001?"}},
   },
   {
     itemId: "comparing-app-009",
@@ -92,7 +92,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":145,"b":145,"op":"?","answer":"=","display":{"promptText":"One food drive collected 145 cans. Another collected 145 cans. Which symbol compares them?"}},
+    question: {"a":145,"b":145,"op":"?","answer":"=","display":{"promptText":"One food drive collected 145 cans. Another collected 145 cans. Which sign fits in 145 __ 145?"}},
   },
   {
     itemId: "comparing-app-010",
@@ -102,7 +102,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [9,10],
     reviewStatus: APPROVED,
-    question: {"a":432,"b":423,"op":"?","answer":">","display":{"promptText":"A movie sold 432 tickets. A play sold 423 tickets. Which symbol compares their sales?"}},
+    question: {"a":432,"b":423,"op":"?","answer":">","display":{"promptText":"A movie sold 432 tickets. A play sold 423 tickets. Which symbol goes in 432 __ 423?"}},
   },
   {
     itemId: "comparing-app-011",
@@ -112,7 +112,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":250,"b":205,"op":"?","answer":">","display":{"promptText":"One pool logged 250 laps. Another pool logged 205 laps. Which symbol compares them?"}},
+    question: {"a":250,"b":205,"op":"?","answer":">","display":{"promptText":"One pool logged 250 laps. Another pool logged 205 laps. Which sign fits in 250 __ 205?"}},
   },
   {
     itemId: "comparing-app-012",
@@ -122,7 +122,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":720,"b":720,"op":"?","answer":"=","display":{"promptText":"Lincoln School has 720 students. Oak School has 720 students. Which symbol compares them?"}},
+    question: {"a":720,"b":720,"op":"?","answer":"=","display":{"promptText":"Lincoln School has 720 students. Oak School has 720 students. Which symbol makes 720 __ 720 true?"}},
   },
   {
     itemId: "comparing-app-013",
@@ -132,7 +132,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":304,"b":340,"op":"?","answer":"<","display":{"promptText":"Ms. Lee planted 304 red tulips and 340 white daisies. Compare 304 to 340."}},
+    question: {"a":304,"b":340,"op":"?","answer":"<","display":{"promptText":"Grandma planted 304 red tulips and 340 white daisies. Which symbol goes in 304 __ 340?"}},
   },
   {
     itemId: "comparing-app-014",
@@ -142,7 +142,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":8,"op":"?","answer":"<","display":{"promptText":"Mia has 5 candies. Tom has 8 candies. Compare 5 to 8."}},
+    question: {"a":5,"b":8,"op":"?","answer":"<","display":{"promptText":"Mia has 5 candies. Tom has 8 candies. Which sign fits in 5 __ 8?"}},
   },
   {
     itemId: "comparing-app-015",
@@ -152,7 +152,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":4,"op":"?","answer":">","display":{"promptText":"Sara counted 7 cars. Eli counted 4 cars. Compare 7 to 4."}},
+    question: {"a":7,"b":4,"op":"?","answer":">","display":{"promptText":"Sara counted 7 cars. Eli counted 4 cars. Which sign fits in 7 __ 4?"}},
   },
   {
     itemId: "comparing-app-016",
@@ -162,7 +162,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":6,"op":"?","answer":"=","display":{"promptText":"Kyle's box has 6 toys. Lisa's box has 6 toys. Compare 6 to 6."}},
+    question: {"a":6,"b":6,"op":"?","answer":"=","display":{"promptText":"Kyle's box has 6 toys. Lisa's box has 6 toys. Which symbol makes 6 __ 6 true?"}},
   },
   {
     itemId: "comparing-app-017",
@@ -172,7 +172,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":5,"op":"?","answer":"<","display":{"promptText":"A jar has 4 marbles. A full jar holds 5 marbles. Compare 4 to 5."}},
+    question: {"a":4,"b":5,"op":"?","answer":"<","display":{"promptText":"A jar has 4 marbles. A full jar holds 5 marbles. Which symbol makes 4 __ 5 true?"}},
   },
   {
     itemId: "comparing-app-018",
@@ -182,7 +182,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":5,"op":"?","answer":">","display":{"promptText":"Lia collected 7 stickers. Her friend has 5 stickers. Compare 7 to 5."}},
+    question: {"a":7,"b":5,"op":"?","answer":">","display":{"promptText":"Lia collected 7 stickers. Her friend has 5 stickers. Which symbol makes 7 __ 5 true?"}},
   },
   {
     itemId: "comparing-app-019",
@@ -192,7 +192,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":10,"op":"?","answer":"=","display":{"promptText":"Sam picked 10 grapes. Pat picked 10 grapes. Compare 10 to 10."}},
+    question: {"a":10,"b":10,"op":"?","answer":"=","display":{"promptText":"Sam picked 10 grapes. Pat picked 10 grapes. Which symbol goes in 10 __ 10?"}},
   },
   {
     itemId: "comparing-app-020",
@@ -202,7 +202,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":4,"op":"?","answer":">","display":{"promptText":"Eli has 9 apples. Mia has 4 apples. Compare 9 to 4."}},
+    question: {"a":9,"b":4,"op":"?","answer":">","display":{"promptText":"Eli has 9 apples. Mia has 4 apples. Which symbol goes in 9 __ 4?"}},
   },
   {
     itemId: "comparing-app-021",
@@ -212,7 +212,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":8,"op":"?","answer":"<","display":{"promptText":"Min has 3 pens. Tom has 8 pens. Compare 3 to 8."}},
+    question: {"a":3,"b":8,"op":"?","answer":"<","display":{"promptText":"Min has 3 pens. Tom has 8 pens. Which symbol goes in 3 __ 8?"}},
   },
   {
     itemId: "comparing-app-022",
@@ -222,7 +222,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":6,"op":"?","answer":"=","display":{"promptText":"Jin has 6 hats. Pat has 6 hats. Compare 6 to 6."}},
+    question: {"a":6,"b":6,"op":"?","answer":"=","display":{"promptText":"Jin has 6 hats. Pat has 6 hats. Which sign fits in 6 __ 6?"}},
   },
   {
     itemId: "comparing-app-023",
@@ -232,7 +232,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":23,"b":45,"op":"?","answer":"<","display":{"promptText":"Ms. Lee's class has 23 books. Mr. Park's class has 45 books. Compare 23 to 45."}},
+    question: {"a":23,"b":45,"op":"?","answer":"<","display":{"promptText":"Room A has 23 books. Room B has 45 books. Which sign fits in 23 __ 45?"}},
   },
   {
     itemId: "comparing-app-024",
@@ -242,7 +242,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":67,"b":32,"op":"?","answer":">","display":{"promptText":"Pat scored 67 points. Min scored 32 points. Compare 67 to 32."}},
+    question: {"a":67,"b":32,"op":"?","answer":">","display":{"promptText":"Pat scored 67 points. Min scored 32 points. Which sign fits in 67 __ 32?"}},
   },
   {
     itemId: "comparing-app-b0821-0001",
@@ -1822,7 +1822,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Finn needs 9 stamps for the game. Finn has 12 stamps. Does Finn have enough stamps?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nia needs 9 stamps for the game. Nia has 12 stamps. Does Nia have enough stamps?"}},
   },
   {
     itemId: "comparing-app-b0821-0159",
@@ -1852,7 +1852,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"The craft takes 4 marbles. Nia brings 7 marbles. Did Nia bring enough marbles?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"The craft takes 4 marbles. Finn brings 7 marbles. Did Finn bring enough marbles?"}},
   },
   {
     itemId: "comparing-app-b0821-0162",
@@ -1892,7 +1892,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"The craft takes 8 acorns. Amara brings 11 acorns. Did Amara bring enough acorns?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"The craft takes 8 acorns. Ida brings 11 acorns. Did Ida bring enough acorns?"}},
   },
   {
     itemId: "comparing-app-b0821-0166",
@@ -1902,7 +1902,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Leo needs 14 stickers for the game. Leo has 12 stickers. Does Leo have enough stickers?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Diego needs 14 stickers for the game. Diego has 12 stickers. Does Diego have enough stickers?"}},
   },
   {
     itemId: "comparing-app-b0821-0167",
@@ -1932,7 +1932,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"The craft takes 16 shells. Ida brings 14 shells. Did Ida bring enough shells?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"The craft takes 16 shells. Rosa brings 14 shells. Did Rosa bring enough shells?"}},
   },
   {
     itemId: "comparing-app-b0821-0170",
@@ -1942,7 +1942,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Zoe needs 9 stamps for the game. Zoe has 9 stamps. Does Zoe have enough stamps?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Zoe needs 9 cards for the game. Zoe has 9 cards. Does Zoe have enough cards?"}},
   },
   {
     itemId: "comparing-app-b0821-0171",
@@ -1952,7 +1952,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"The craft takes 25 beads. Ava brings 30 beads. Did Ava bring enough beads?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"The craft takes 25 beads. Finn brings 30 beads. Did Finn bring enough beads?"}},
   },
   {
     itemId: "comparing-app-b0821-0172",
@@ -1962,7 +1962,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Omar needs 40 leaves for the game. Omar has 35 leaves. Does Omar have enough leaves?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Mina needs 40 leaves for the game. Mina has 35 leaves. Does Mina have enough leaves?"}},
   },
   {
     itemId: "comparing-app-b0821-0173",
@@ -1972,7 +1972,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"The craft takes 32 shells. Ben brings 32 shells. Did Ben bring enough shells?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"The craft takes 32 shells. Kai brings 32 shells. Did Kai bring enough shells?"}},
   },
   {
     itemId: "comparing-app-b0821-0174",
@@ -1982,7 +1982,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Finn needs 48 stamps for the game. Finn has 51 stamps. Does Finn have enough stamps?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"The craft takes 48 stamps. Ava brings 51 stamps. Did Ava bring enough stamps?"}},
   },
   {
     itemId: "comparing-app-b0821-0175",
@@ -1992,7 +1992,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"The craft takes 55 blocks. Priya brings 49 blocks. Did Priya bring enough blocks?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"The craft takes 55 blocks. Theo brings 49 blocks. Did Theo bring enough blocks?"}},
   },
   {
     itemId: "comparing-app-b0821-0176",
@@ -2002,7 +2002,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Sam needs 63 buttons for the game. Sam has 70 buttons. Does Sam have enough buttons?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Omar needs 63 buttons for the game. Omar has 70 buttons. Does Omar have enough buttons?"}},
   },
   {
     itemId: "comparing-app-b0821-0177",
@@ -2022,7 +2022,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Kai needs 80 cards for the game. Kai has 80 cards. Does Kai have enough cards?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nora needs 80 cards for the game. Nora has 80 cards. Does Nora have enough cards?"}},
   },
   {
     itemId: "comparing-app-b0821-0179",
@@ -2032,7 +2032,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"The craft takes 37 coins. June brings 42 coins. Did June bring enough coins?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ben needs 37 coins for the game. Ben has 42 coins. Does Ben have enough coins?"}},
   },
   {
     itemId: "comparing-app-b0821-0180",
@@ -2042,7 +2042,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Lily needs 59 crayons for the game. Lily has 54 crayons. Does Lily have enough crayons?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ida needs 59 crayons for the game. Ida has 54 crayons. Does Ida have enough crayons?"}},
   },
   {
     itemId: "comparing-app-b0821-0181",
@@ -2052,7 +2052,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"The craft takes 66 acorns. Amara brings 71 acorns. Did Amara bring enough acorns?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Amara needs 66 acorns for the game. Amara has 71 acorns. Does Amara have enough acorns?"}},
   },
   {
     itemId: "comparing-app-b0821-0182",
@@ -2072,7 +2072,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"The craft takes 78 beads. Mina brings 83 beads. Did Mina bring enough beads?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"The craft takes 78 beads. Priya brings 83 beads. Did Priya bring enough beads?"}},
   },
   {
     itemId: "comparing-app-b0821-0184",
@@ -2082,7 +2082,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Theo needs 84 leaves for the game. Theo has 79 leaves. Does Theo have enough leaves?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Lily needs 84 leaves for the game. Lily has 79 leaves. Does Lily have enough leaves?"}},
   },
   {
     itemId: "comparing-app-b0821-0185",
@@ -2092,7 +2092,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"The craft takes 29 shells. Ida brings 33 shells. Did Ida bring enough shells?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"The craft takes 29 shells. June brings 33 shells. Did June bring enough shells?"}},
   },
   {
     itemId: "comparing-app-b0821-0186",
@@ -2102,7 +2102,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Zoe needs 52 stamps for the game. Zoe has 52 stamps. Does Zoe have enough stamps?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Zoe needs 52 buttons for the game. Zoe has 52 buttons. Does Zoe have enough buttons?"}},
   },
   {
     itemId: "comparing-app-b0821-0187",
@@ -2122,7 +2122,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Luca needs 250 stickers for the game. Luca has 300 stickers. Does Luca have enough stickers?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ben needs 250 stickers for the game. Ben has 300 stickers. Does Ben have enough stickers?"}},
   },
   {
     itemId: "comparing-app-b0821-0189",
@@ -2132,7 +2132,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"The craft takes 400 beads. Ava brings 385 beads. Did Ava bring enough beads?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"The craft takes 400 beads. Leo brings 385 beads. Did Leo bring enough beads?"}},
   },
   {
     itemId: "comparing-app-b0821-0190",
@@ -2142,7 +2142,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Omar needs 520 leaves for the game. Omar has 520 leaves. Does Omar have enough leaves?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Kai needs 520 leaves for the game. Kai has 520 leaves. Does Kai have enough leaves?"}},
   },
   {
     itemId: "comparing-app-b0821-0191",
@@ -2152,7 +2152,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"The craft takes 610 shells. Ben brings 640 shells. Did Ben bring enough shells?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"The craft takes 610 shells. Ida brings 640 shells. Did Ida bring enough shells?"}},
   },
   {
     itemId: "comparing-app-b0821-0192",
@@ -2172,7 +2172,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"The craft takes 845 blocks. Priya brings 860 blocks. Did Priya bring enough blocks?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"The craft takes 845 blocks. Amara brings 860 blocks. Did Amara bring enough blocks?"}},
   },
   {
     itemId: "comparing-app-b0821-0194",
@@ -2182,7 +2182,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Sam needs 910 buttons for the game. Sam has 905 buttons. Does Sam have enough buttons?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"June needs 910 buttons for the game. June has 905 buttons. Does June have enough buttons?"}},
   },
   {
     itemId: "comparing-app-b0821-0195",
@@ -2192,7 +2192,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"The craft takes 180 marbles. Nia brings 210 marbles. Did Nia bring enough marbles?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Mina needs 180 marbles for the game. Mina has 210 marbles. Does Mina have enough marbles?"}},
   },
   {
     itemId: "comparing-app-b0821-0196",
@@ -2202,7 +2202,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Kai needs 340 cards for the game. Kai has 335 cards. Does Kai have enough cards?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nia needs 340 cards for the game. Nia has 335 cards. Does Nia have enough cards?"}},
   },
   {
     itemId: "comparing-app-b0821-0197",
@@ -2212,7 +2212,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"The craft takes 465 coins. June brings 480 coins. Did June bring enough coins?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"The craft takes 465 coins. Luca brings 480 coins. Did Luca bring enough coins?"}},
   },
   {
     itemId: "comparing-app-b0821-0198",
@@ -2222,7 +2222,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Lily needs 575 crayons for the game. Lily has 570 crayons. Does Lily have enough crayons?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"The craft takes 575 crayons. Zoe brings 570 crayons. Did Zoe bring enough crayons?"}},
   },
   {
     itemId: "comparing-app-b0821-0199",
@@ -2232,7 +2232,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"The craft takes 690 acorns. Amara brings 705 acorns. Did Amara bring enough acorns?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"The craft takes 690 acorns. Diego brings 705 acorns. Did Diego bring enough acorns?"}},
   },
   {
     itemId: "comparing-app-b0821-0200",
@@ -2242,7 +2242,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Leo needs 820 stickers for the game. Leo has 810 stickers. Does Leo have enough stickers?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ava needs 820 stickers for the game. Ava has 810 stickers. Does Ava have enough stickers?"}},
   },
   {
     itemId: "comparing-app-b0821-0201",
@@ -2252,7 +2252,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"The craft takes 935 beads. Mina brings 950 beads. Did Mina bring enough beads?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"The craft takes 935 beads. Sam brings 950 beads. Did Sam bring enough beads?"}},
   },
   {
     itemId: "comparing-app-b0821-0202",
@@ -2262,7 +2262,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Theo needs 290 leaves for the game. Theo has 285 leaves. Does Theo have enough leaves?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Priya needs 290 leaves for the game. Priya has 285 leaves. Does Priya have enough leaves?"}},
   },
   {
     itemId: "comparing-app-b0821-0203",
@@ -2272,7 +2272,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"The craft takes 415 shells. Ida brings 430 shells. Did Ida bring enough shells?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa needs 415 shells for the game. Rosa has 430 shells. Does Rosa have enough shells?"}},
   },
   {
     itemId: "comparing-app-b0821-0204",
@@ -2282,7 +2282,7 @@ export const ITEMS = [
     structureType: "storyEnough",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Zoe needs 560 stamps for the game. Zoe has 560 stamps. Does Zoe have enough stamps?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"The craft takes 560 stamps. Lily brings 560 stamps. Did Lily bring enough stamps?"}},
   },
   {
     itemId: "comparing-app-b0821-0205",
@@ -3312,7 +3312,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":8,"op":"vs","answer":"<","display":{"promptText":"Luca scores 5 points and Ava scores 8 points. Choose the symbol that compares 5 and 8."},"answerType":"symbolSelect"},
+    question: {"a":5,"b":8,"op":"vs","answer":"<","display":{"promptText":"Luca scores 5 points and Ava scores 8 points. Which symbol goes in 5 __ 8?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0308",
@@ -3332,7 +3332,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":7,"op":"vs","answer":"=","display":{"promptText":"Omar stacks 7 leaves and Nora stacks 7 leaves. Pick the sign comparing 7 to 7."},"answerType":"symbolSelect"},
+    question: {"a":7,"b":7,"op":"vs","answer":"=","display":{"promptText":"Omar stacks 7 leaves and Nora stacks 7 leaves. Which sign makes 7 __ 7 true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0310",
@@ -3342,7 +3342,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":6,"op":"vs","answer":"<","display":{"promptText":"Ben scores 3 points and Kai scores 6 points. Choose the symbol that compares 3 and 6."},"answerType":"symbolSelect"},
+    question: {"a":3,"b":6,"op":"vs","answer":"<","display":{"promptText":"Ben scores 3 points and Kai scores 6 points. Which sign fits in 3 __ 6?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0311",
@@ -3362,7 +3362,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":9,"op":"vs","answer":"<","display":{"promptText":"Priya stacks 6 blocks and Sam stacks 9 blocks. Pick the sign comparing 6 to 9."},"answerType":"symbolSelect"},
+    question: {"a":6,"b":9,"op":"vs","answer":"<","display":{"promptText":"Priya stacks 6 blocks and Sam stacks 9 blocks. Which sign goes in 6 __ 9?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0313",
@@ -3372,7 +3372,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":8,"op":"vs","answer":"=","display":{"promptText":"Sam scores 8 points and Ida scores 8 points. Choose the symbol that compares 8 and 8."},"answerType":"symbolSelect"},
+    question: {"a":8,"b":8,"op":"vs","answer":"=","display":{"promptText":"Sam scores 8 points and Ida scores 8 points. Which symbol makes 8 __ 8 true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0314",
@@ -3382,7 +3382,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":1,"op":"vs","answer":">","display":{"promptText":"Nia reads 4 pages; Finn reads 1 pages. Which symbol goes between 4 and 1?"},"answerType":"symbolSelect"},
+    question: {"a":4,"b":1,"op":"vs","answer":">","display":{"promptText":"Nia reads 4 pages; Finn reads 1 page. Which symbol goes between 4 and 1?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0315",
@@ -3392,7 +3392,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":15,"op":"vs","answer":"<","display":{"promptText":"Kai stacks 12 cards and Mina stacks 15 cards. Pick the sign comparing 12 to 15."},"answerType":"symbolSelect"},
+    question: {"a":12,"b":15,"op":"vs","answer":"<","display":{"promptText":"Kai stacks 12 cards and Mina stacks 15 cards. Which sign fits in 12 __ 15?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0316",
@@ -3402,7 +3402,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":13,"op":"vs","answer":">","display":{"promptText":"June scores 16 points and Omar scores 13 points. Choose the symbol that compares 16 and 13."},"answerType":"symbolSelect"},
+    question: {"a":16,"b":13,"op":"vs","answer":">","display":{"promptText":"June scores 16 points and Omar scores 13 points. Which sign fits in 16 __ 13?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0317",
@@ -3422,7 +3422,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":14,"op":"vs","answer":">","display":{"promptText":"Amara stacks 18 acorns and Luca stacks 14 acorns. Pick the sign comparing 18 to 14."},"answerType":"symbolSelect"},
+    question: {"a":18,"b":14,"op":"vs","answer":">","display":{"promptText":"Amara stacks 18 acorns and Luca stacks 14 acorns. Which sign fits in 18 __ 14?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0319",
@@ -3432,7 +3432,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":19,"op":"vs","answer":"<","display":{"promptText":"Leo scores 13 points and June scores 19 points. Choose the symbol that compares 13 and 19."},"answerType":"symbolSelect"},
+    question: {"a":13,"b":19,"op":"vs","answer":"<","display":{"promptText":"Leo scores 13 points and June scores 19 points. Which symbol makes 13 __ 19 true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0320",
@@ -3452,7 +3452,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":10,"op":"vs","answer":">","display":{"promptText":"Theo stacks 15 leaves and Nia stacks 10 leaves. Pick the sign comparing 15 to 10."},"answerType":"symbolSelect"},
+    question: {"a":15,"b":10,"op":"vs","answer":">","display":{"promptText":"Theo stacks 15 leaves and Nia stacks 10 leaves. Which sign makes 15 __ 10 true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0322",
@@ -3462,7 +3462,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":19,"b":16,"op":"vs","answer":">","display":{"promptText":"Ida scores 19 points and Zoe scores 16 points. Choose the symbol that compares 19 and 16."},"answerType":"symbolSelect"},
+    question: {"a":19,"b":16,"op":"vs","answer":">","display":{"promptText":"Ida scores 19 points and Zoe scores 16 points. Which symbol makes 19 __ 16 true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0323",
@@ -3492,7 +3492,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":35,"b":53,"op":"vs","answer":"<","display":{"promptText":"Omar stacks 35 leaves and Nora stacks 53 leaves. Pick the sign comparing 35 to 53."},"answerType":"symbolSelect"},
+    question: {"a":35,"b":53,"op":"vs","answer":"<","display":{"promptText":"Omar stacks 35 leaves and Nora stacks 53 leaves. Which sign makes 35 __ 53 true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0326",
@@ -3502,7 +3502,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":67,"b":27,"op":"vs","answer":">","display":{"promptText":"Ben scores 67 points and Kai scores 27 points. Choose the symbol that compares 67 and 27."},"answerType":"symbolSelect"},
+    question: {"a":67,"b":27,"op":"vs","answer":">","display":{"promptText":"Ben scores 67 points and Kai scores 27 points. Which symbol goes in 67 __ 27?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0327",
@@ -3522,7 +3522,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":46,"b":46,"op":"vs","answer":"=","display":{"promptText":"Priya stacks 46 blocks and Sam stacks 46 blocks. Pick the sign comparing 46 to 46."},"answerType":"symbolSelect"},
+    question: {"a":46,"b":46,"op":"vs","answer":"=","display":{"promptText":"Priya stacks 46 blocks and Sam stacks 46 blocks. Which sign goes in 46 __ 46?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0329",
@@ -3532,7 +3532,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":79,"b":82,"op":"vs","answer":"<","display":{"promptText":"Sam scores 79 points and Ida scores 82 points. Choose the symbol that compares 79 and 82."},"answerType":"symbolSelect"},
+    question: {"a":79,"b":82,"op":"vs","answer":"<","display":{"promptText":"Sam scores 79 points and Ida scores 82 points. Which symbol goes in 79 __ 82?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0330",
@@ -3552,7 +3552,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":63,"b":66,"op":"vs","answer":"<","display":{"promptText":"Kai stacks 63 cards and Mina stacks 66 cards. Pick the sign comparing 63 to 66."},"answerType":"symbolSelect"},
+    question: {"a":63,"b":66,"op":"vs","answer":"<","display":{"promptText":"Kai stacks 63 cards and Mina stacks 66 cards. Which sign goes in 63 __ 66?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0332",
@@ -3562,7 +3562,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":88,"b":84,"op":"vs","answer":">","display":{"promptText":"June scores 88 points and Omar scores 84 points. Choose the symbol that compares 88 and 84."},"answerType":"symbolSelect"},
+    question: {"a":88,"b":84,"op":"vs","answer":">","display":{"promptText":"June scores 88 points and Omar scores 84 points. Which sign fits in 88 __ 84?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0333",
@@ -3582,7 +3582,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":50,"b":50,"op":"vs","answer":"=","display":{"promptText":"Amara stacks 50 acorns and Luca stacks 50 acorns. Pick the sign comparing 50 to 50."},"answerType":"symbolSelect"},
+    question: {"a":50,"b":50,"op":"vs","answer":"=","display":{"promptText":"Amara stacks 50 acorns and Luca stacks 50 acorns. Which sign fits in 50 __ 50?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0335",
@@ -3592,7 +3592,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":29,"b":92,"op":"vs","answer":"<","display":{"promptText":"Leo scores 29 points and June scores 92 points. Choose the symbol that compares 29 and 92."},"answerType":"symbolSelect"},
+    question: {"a":29,"b":92,"op":"vs","answer":"<","display":{"promptText":"Leo scores 29 points and June scores 92 points. Which sign fits in 29 __ 92?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0336",
@@ -3612,7 +3612,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":44,"b":47,"op":"vs","answer":"<","display":{"promptText":"Theo stacks 44 leaves and Nia stacks 47 leaves. Pick the sign comparing 44 to 47."},"answerType":"symbolSelect"},
+    question: {"a":44,"b":47,"op":"vs","answer":"<","display":{"promptText":"Theo stacks 44 leaves and Nia stacks 47 leaves. Which sign fits in 44 __ 47?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0338",
@@ -3622,7 +3622,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":82,"b":82,"op":"vs","answer":"=","display":{"promptText":"Ida scores 82 points and Zoe scores 82 points. Choose the symbol that compares 82 and 82."},"answerType":"symbolSelect"},
+    question: {"a":82,"b":82,"op":"vs","answer":"=","display":{"promptText":"Ida scores 82 points and Zoe scores 82 points. Which symbol goes in 82 __ 82?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0339",
@@ -3642,7 +3642,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":96,"b":69,"op":"vs","answer":">","display":{"promptText":"Rosa stacks 96 blocks and Theo stacks 69 blocks. Pick the sign comparing 96 to 69."},"answerType":"symbolSelect"},
+    question: {"a":96,"b":69,"op":"vs","answer":">","display":{"promptText":"Rosa stacks 96 blocks and Theo stacks 69 blocks. Which sign goes in 96 __ 69?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0341",
@@ -3652,7 +3652,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":203,"b":302,"op":"vs","answer":"<","display":{"promptText":"Omar stacks 203 leaves and Nora stacks 302 leaves. Pick the sign comparing 203 to 302."},"answerType":"symbolSelect"},
+    question: {"a":203,"b":302,"op":"vs","answer":"<","display":{"promptText":"Omar stacks 203 leaves and Nora stacks 302 leaves. Which sign makes 203 __ 302 true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0342",
@@ -3662,7 +3662,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":415,"b":451,"op":"vs","answer":"<","display":{"promptText":"Ben scores 415 points and Kai scores 451 points. Choose the symbol that compares 415 and 451."},"answerType":"symbolSelect"},
+    question: {"a":415,"b":451,"op":"vs","answer":"<","display":{"promptText":"Ben scores 415 points and Kai scores 451 points. Which symbol makes 415 __ 451 true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0343",
@@ -3682,7 +3682,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":540,"b":504,"op":"vs","answer":">","display":{"promptText":"Priya stacks 540 blocks and Sam stacks 504 blocks. Pick the sign comparing 540 to 504."},"answerType":"symbolSelect"},
+    question: {"a":540,"b":504,"op":"vs","answer":">","display":{"promptText":"Priya stacks 540 blocks and Sam stacks 504 blocks. Which sign fits in 540 __ 504?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0345",
@@ -3692,7 +3692,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":667,"b":667,"op":"vs","answer":"=","display":{"promptText":"Sam scores 667 points and Ida scores 667 points. Choose the symbol that compares 667 and 667."},"answerType":"symbolSelect"},
+    question: {"a":667,"b":667,"op":"vs","answer":"=","display":{"promptText":"Sam scores 667 points and Ida scores 667 points. Which sign fits in 667 __ 667?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0346",
@@ -3712,7 +3712,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":730,"b":703,"op":"vs","answer":">","display":{"promptText":"Kai stacks 730 cards and Mina stacks 703 cards. Pick the sign comparing 730 to 703."},"answerType":"symbolSelect"},
+    question: {"a":730,"b":703,"op":"vs","answer":">","display":{"promptText":"Kai stacks 730 cards and Mina stacks 703 cards. Which sign makes 730 __ 703 true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0348",
@@ -3722,7 +3722,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":152,"b":125,"op":"vs","answer":">","display":{"promptText":"June scores 152 points and Omar scores 125 points. Choose the symbol that compares 152 and 125."},"answerType":"symbolSelect"},
+    question: {"a":152,"b":125,"op":"vs","answer":">","display":{"promptText":"June scores 152 points and Omar scores 125 points. Which symbol makes 152 __ 125 true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0349",
@@ -3742,7 +3742,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":479,"b":497,"op":"vs","answer":"<","display":{"promptText":"Amara stacks 479 acorns and Luca stacks 497 acorns. Pick the sign comparing 479 to 497."},"answerType":"symbolSelect"},
+    question: {"a":479,"b":497,"op":"vs","answer":"<","display":{"promptText":"Amara stacks 479 acorns and Luca stacks 497 acorns. Which sign goes in 479 __ 497?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0351",
@@ -3752,7 +3752,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":925,"b":925,"op":"vs","answer":"=","display":{"promptText":"Leo scores 925 points and June scores 925 points. Choose the symbol that compares 925 and 925."},"answerType":"symbolSelect"},
+    question: {"a":925,"b":925,"op":"vs","answer":"=","display":{"promptText":"Leo scores 925 points and June scores 925 points. Which symbol makes 925 __ 925 true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0352",
@@ -3772,7 +3772,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":583,"b":538,"op":"vs","answer":">","display":{"promptText":"Theo stacks 583 leaves and Nia stacks 538 leaves. Pick the sign comparing 583 to 538."},"answerType":"symbolSelect"},
+    question: {"a":583,"b":538,"op":"vs","answer":">","display":{"promptText":"Theo stacks 583 leaves and Nia stacks 538 leaves. Which sign goes in 583 __ 538?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0354",
@@ -3782,7 +3782,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":190,"b":109,"op":"vs","answer":">","display":{"promptText":"Ida scores 190 points and Zoe scores 109 points. Choose the symbol that compares 190 and 109."},"answerType":"symbolSelect"},
+    question: {"a":190,"b":109,"op":"vs","answer":">","display":{"promptText":"Ida scores 190 points and Zoe scores 109 points. Which symbol goes in 190 __ 109?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0355",
@@ -3802,7 +3802,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":455,"b":545,"op":"vs","answer":"<","display":{"promptText":"Rosa stacks 455 blocks and Theo stacks 545 blocks. Pick the sign comparing 455 to 545."},"answerType":"symbolSelect"},
+    question: {"a":455,"b":545,"op":"vs","answer":"<","display":{"promptText":"Rosa stacks 455 blocks and Theo stacks 545 blocks. Which sign fits in 455 __ 545?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0357",
@@ -3812,7 +3812,7 @@ export const ITEMS = [
     structureType: "storyChooseSymbol",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":700,"b":700,"op":"vs","answer":"=","display":{"promptText":"Diego scores 700 points and Ben scores 700 points. Choose the symbol that compares 700 and 700."},"answerType":"symbolSelect"},
+    question: {"a":700,"b":700,"op":"vs","answer":"=","display":{"promptText":"Diego scores 700 points and Ben scores 700 points. Which symbol goes in 700 __ 700?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-app-b0821-0358",
@@ -4542,7 +4542,7 @@ export const ITEMS = [
     structureType: "storyWroteSign",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Theo writes 560 > 506 on the board. Is that right?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Theo writes 560 < 506 on the board. Is that right?"}},
   },
   {
     itemId: "comparing-app-b0821-0431",
@@ -4602,7 +4602,7 @@ export const ITEMS = [
     structureType: "storyWroteSign",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Luca writes 999 < 1000 on the board. Is that right?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Luca writes 999 > 1000 on the board. Is that right?"}},
   },
   {
     itemId: "comparing-app-b0821-0437",
@@ -4692,7 +4692,7 @@ export const ITEMS = [
     structureType: "storyWroteSign",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Leo checks a card that says 479 < 497. Is the card right?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Leo checks a card that says 479 > 497. Is the card right?"}},
   },
   {
     itemId: "comparing-app-b0821-0446",
@@ -4722,7 +4722,7 @@ export const ITEMS = [
     structureType: "storyWroteSign",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ida compares and writes down 214 < 241. Did Ida get it right?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ida compares and writes down 214 > 241. Did Ida get it right?"}},
   },
   {
     itemId: "comparing-app-b0821-0449",
@@ -4732,7 +4732,7 @@ export const ITEMS = [
     structureType: "storyWroteSign",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Zoe checks a card that says 583 > 538. Is the card right?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe checks a card that says 583 < 538. Is the card right?"}},
   },
   {
     itemId: "comparing-app-b0821-0450",
@@ -4762,7 +4762,7 @@ export const ITEMS = [
     structureType: "storyWroteSign",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nora compares and writes down 312 < 321. Did Nora get it right?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nora compares and writes down 312 > 321. Did Nora get it right?"}},
   },
   {
     itemId: "comparing-app-b0821-0453",
@@ -4772,7 +4772,7 @@ export const ITEMS = [
     structureType: "storyWroteSign",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Luca checks a card that says 640 > 604. Is the card right?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Luca checks a card that says 640 < 604. Is the card right?"}},
   },
   {
     itemId: "comparing-app-b0821-0454",
@@ -4802,7 +4802,7 @@ export const ITEMS = [
     structureType: "storyWroteSign",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ben compares and writes down 409 < 490. Did Ben get it right?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ben compares and writes down 409 > 490. Did Ben get it right?"}},
   },
   {
     itemId: "comparing-app-b0821-0457",
@@ -4812,7 +4812,7 @@ export const ITEMS = [
     structureType: "storyWroteSign",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Finn checks a card that says 128 < 182. Is the card right?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn checks a card that says 128 > 182. Is the card right?"}},
   },
   {
     itemId: "comparing-app-b0821-0458",
@@ -4842,7 +4842,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":4750,"b":4705,"op":"?","answer":">","display":{"promptText":"The fall drive collected 4750 cans. The spring drive collected 4705 cans. Which symbol compares them?"}},
+    question: {"a":4750,"b":4705,"op":"?","answer":">","display":{"promptText":"The fall drive collected 4750 cans. The spring drive collected 4705 cans. Which symbol makes 4750 __ 4705 true?"}},
   },
   {
     itemId: "comparing-app-benchmarkCompare-4_5-002",
@@ -4852,7 +4852,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":6089,"b":6098,"op":"?","answer":"<","display":{"promptText":"Monday's count was 6089 steps. Tuesday's count was 6098 steps. Which symbol compares them?"}},
+    question: {"a":6089,"b":6098,"op":"?","answer":"<","display":{"promptText":"Monday's count was 6089 steps. Tuesday's count was 6098 steps. Which sign fits in 6089 __ 6098?"}},
   },
   {
     itemId: "comparing-app-benchmarkCompare-4_5-003",
@@ -4862,7 +4862,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":2500,"b":2500,"op":"?","answer":"=","display":{"promptText":"The game app got 2500 downloads. The music app got 2500 downloads. Which symbol compares them?"}},
+    question: {"a":2500,"b":2500,"op":"?","answer":"=","display":{"promptText":"The game app got 2500 downloads. The music app got 2500 downloads. Which symbol goes in 2500 __ 2500?"}},
   },
   {
     itemId: "comparing-app-benchmarkCompare-4_5-004",
@@ -4872,7 +4872,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":8140,"b":8104,"op":"?","answer":">","display":{"promptText":"The first plane flew 8140 miles. The second plane flew 8104 miles. Which symbol compares them?"}},
+    question: {"a":8140,"b":8104,"op":"?","answer":">","display":{"promptText":"The first plane flew 8140 miles. The second plane flew 8104 miles. Which symbol goes in 8140 __ 8104?"}},
   },
   {
     itemId: "comparing-app-benchmarkCompare-4_5-005",
@@ -4882,7 +4882,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":1899,"b":1900,"op":"?","answer":"<","display":{"promptText":"The concert sold 1899 tickets. The fair sold 1900 tickets. Which symbol compares them?"}},
+    question: {"a":1899,"b":1900,"op":"?","answer":"<","display":{"promptText":"The concert sold 1899 tickets. The fair sold 1900 tickets. Which symbol makes 1899 __ 1900 true?"}},
   },
   {
     itemId: "comparing-app-benchmarkCompare-4_5-006",
@@ -4892,7 +4892,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":7020,"b":7002,"op":"?","answer":">","display":{"promptText":"The first wall took 7020 bricks. The second wall took 7002 bricks. Which symbol compares them?"}},
+    question: {"a":7020,"b":7002,"op":"?","answer":">","display":{"promptText":"The first wall took 7020 bricks. The second wall took 7002 bricks. Which sign fits in 7020 __ 7002?"}},
   },
   {
     itemId: "comparing-app-benchmarkCompare-4_5-010",
@@ -4902,7 +4902,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":45600,"b":45060,"op":"?","answer":">","display":{"promptText":"The video got 45600 views. The photo got 45060 views. Which symbol compares them?"}},
+    question: {"a":45600,"b":45060,"op":"?","answer":">","display":{"promptText":"The video got 45600 views. The photo got 45060 views. Which symbol makes 45600 __ 45060 true?"}},
   },
   {
     itemId: "comparing-app-benchmarkCompare-4_5-011",
@@ -4912,7 +4912,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10520,"b":10250,"op":"?","answer":">","display":{"promptText":"Friday brought 10520 fans. Saturday brought 10250 fans. Which symbol compares them?"}},
+    question: {"a":10520,"b":10250,"op":"?","answer":">","display":{"promptText":"Friday brought 10520 fans. Saturday brought 10250 fans. Which symbol goes in 10520 __ 10250?"}},
   },
   {
     itemId: "comparing-app-benchmarkCompare-4_5-012",
@@ -4922,7 +4922,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":3999,"b":4001,"op":"?","answer":"<","display":{"promptText":"The jar has 3999 pennies. The box has 4001 pennies. Which symbol compares them?"}},
+    question: {"a":3999,"b":4001,"op":"?","answer":"<","display":{"promptText":"The jar has 3999 pennies. The box has 4001 pennies. Which symbol goes in 3999 __ 4001?"}},
   },
   {
     itemId: "comparing-app-benchmarkCompare-4_5-013",
@@ -4932,7 +4932,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":6500,"b":6500,"op":"?","answer":"=","display":{"promptText":"The truck weighs 6500 pounds. The trailer weighs 6500 pounds. Which symbol compares them?"}},
+    question: {"a":6500,"b":6500,"op":"?","answer":"=","display":{"promptText":"The truck weighs 6500 pounds. The trailer weighs 6500 pounds. Which sign fits in 6500 __ 6500?"}},
   },
   {
     itemId: "comparing-app-benchmarkCompare-4_5-015",
@@ -4942,7 +4942,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":8898,"b":8888,"op":"?","answer":">","display":{"promptText":"This season the team scored 8898 points. Last season it scored 8888 points. Which symbol compares them?"}},
+    question: {"a":8898,"b":8888,"op":"?","answer":">","display":{"promptText":"This season the team scored 8898 points. Last season it scored 8888 points. Which sign fits in 8898 __ 8888?"}},
   },
   {
     itemId: "comparing-app-benchmarkCompare-4_5-016",
@@ -4952,7 +4952,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":15030,"b":15300,"op":"?","answer":"<","display":{"promptText":"May had 15030 books lent out. June had 15300 books lent out. Which symbol compares them?"}},
+    question: {"a":15030,"b":15300,"op":"?","answer":"<","display":{"promptText":"May had 15030 books lent out. June had 15300 books lent out. Which sign fits in 15030 __ 15300?"}},
   },
   {
     itemId: "comparing-app-benchmarkCompare-K_1-001",
@@ -4962,7 +4962,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":5,"op":"?","answer":"<","display":{"promptText":"Noah used 3 crayons today. A full box holds 5 crayons. Compare 3 to 5."}},
+    question: {"a":3,"b":5,"op":"?","answer":"<","display":{"promptText":"Noah used 3 crayons today. A full box holds 5 crayons. Which symbol makes 3 __ 5 true?"}},
   },
   {
     itemId: "comparing-app-benchmarkCompare-K_1-002",
@@ -4972,7 +4972,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":5,"op":"?","answer":">","display":{"promptText":"Zara picked up 8 shells by the water. Her brother picked up 5 shells. Compare 8 to 5."}},
+    question: {"a":8,"b":5,"op":"?","answer":">","display":{"promptText":"Zara picked up 8 shells by the water. Her brother picked up 5 shells. Which symbol makes 8 __ 5 true?"}},
   },
   {
     itemId: "comparing-app-benchmarkCompare-K_1-003",
@@ -4982,7 +4982,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":5,"op":"?","answer":"=","display":{"promptText":"Owen built a tower with 5 blocks. His sister built a tower with 5 blocks. Compare 5 to 5."}},
+    question: {"a":5,"b":5,"op":"?","answer":"=","display":{"promptText":"Owen built a tower with 5 blocks. His sister built a tower with 5 blocks. Which symbol makes 5 __ 5 true?"}},
   },
   {
     itemId: "comparing-app-benchmarkCompare-K_1-004",
@@ -4992,7 +4992,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":10,"op":"?","answer":">","display":{"promptText":"Priya strung 12 beads. Her friend strung 10 beads. Compare 12 to 10."}},
+    question: {"a":12,"b":10,"op":"?","answer":">","display":{"promptText":"Priya strung 12 beads. Her friend strung 10 beads. Which symbol goes in 12 __ 10?"}},
   },
   {
     itemId: "comparing-app-benchmarkCompare-K_1-005",
@@ -5002,7 +5002,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":10,"op":"?","answer":"<","display":{"promptText":"Miguel put 6 buttons in a jar. A full jar holds 10 buttons. Compare 6 to 10."}},
+    question: {"a":6,"b":10,"op":"?","answer":"<","display":{"promptText":"Miguel put 6 buttons in a jar. A full jar holds 10 buttons. Which symbol goes in 6 __ 10?"}},
   },
   {
     itemId: "comparing-app-benchmarkCompare-K_1-006",
@@ -5012,7 +5012,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":10,"op":"?","answer":"=","display":{"promptText":"Ava ate 10 apple slices. Theo ate 10 apple slices too. Compare 10 to 10."}},
+    question: {"a":10,"b":10,"op":"?","answer":"=","display":{"promptText":"Ava ate 10 apple slices. Theo ate 10 apple slices too. Which symbol goes in 10 __ 10?"}},
   },
   {
     itemId: "comparing-app-benchmarkCompare-K_1-007",
@@ -5022,7 +5022,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":5,"op":"?","answer":">","display":{"promptText":"Ruby carried home 9 pinecones. Her cousin carried home 5 pinecones. Compare 9 to 5."}},
+    question: {"a":9,"b":5,"op":"?","answer":">","display":{"promptText":"Ruby carried home 9 pinecones. Her cousin carried home 5 pinecones. Which sign fits in 9 __ 5?"}},
   },
   {
     itemId: "comparing-app-benchmarkCompare-K_1-008",
@@ -5032,7 +5032,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":5,"op":"?","answer":"<","display":{"promptText":"Dev made 2 paper stars. His friend made 5 paper stars. Compare 2 to 5."}},
+    question: {"a":2,"b":5,"op":"?","answer":"<","display":{"promptText":"Dev made 2 paper stars. His friend made 5 paper stars. Which sign fits in 2 __ 5?"}},
   },
   {
     itemId: "comparing-app-benchmarkCompare-K_1-009",
@@ -5042,7 +5042,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":10,"op":"?","answer":">","display":{"promptText":"Hana had 14 crackers. Her brother had 10 crackers. Compare 14 to 10."}},
+    question: {"a":14,"b":10,"op":"?","answer":">","display":{"promptText":"Hana had 14 crackers. Her brother had 10 crackers. Which symbol makes 14 __ 10 true?"}},
   },
   {
     itemId: "comparing-app-benchmarkCompare-K_1-010",
@@ -5052,7 +5052,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":10,"op":"?","answer":"<","display":{"promptText":"Leo counted 8 raisins in his snack cup. A full cup holds 10 raisins. Compare 8 to 10."}},
+    question: {"a":8,"b":10,"op":"?","answer":"<","display":{"promptText":"Leo counted 8 raisins in his snack cup. A full cup holds 10 raisins. Which symbol makes 8 __ 10 true?"}},
   },
   {
     itemId: "comparing-app-benchmarkCompare-K_1-011",
@@ -5062,7 +5062,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":20,"b":20,"op":"?","answer":"=","display":{"promptText":"Nina owns 20 toy cars. Jack owns 20 toy cars. Compare 20 to 20."}},
+    question: {"a":20,"b":20,"op":"?","answer":"=","display":{"promptText":"Nina owns 20 toy cars. Jack owns 20 toy cars. Which sign fits in 20 __ 20?"}},
   },
   {
     itemId: "comparing-app-benchmarkCompare-K_1-012",
@@ -5072,7 +5072,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":5,"op":"?","answer":"<","display":{"promptText":"Sofia used 4 ribbons. Her aunt used 5 ribbons. Compare 4 to 5."}},
+    question: {"a":4,"b":5,"op":"?","answer":"<","display":{"promptText":"Sofia used 4 ribbons. Her aunt used 5 ribbons. Which symbol goes in 4 __ 5?"}},
   },
   {
     itemId: "comparing-app-benchmarkCompare-K_1-013",
@@ -5082,7 +5082,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":5,"op":"?","answer":">","display":{"promptText":"Kai found 7 acorns. His neighbor found 5 acorns. Compare 7 to 5."}},
+    question: {"a":7,"b":5,"op":"?","answer":">","display":{"promptText":"Kai found 7 acorns. His neighbor found 5 acorns. Which symbol goes in 7 __ 5?"}},
   },
   {
     itemId: "comparing-app-benchmarkCompare-K_1-014",
@@ -5092,7 +5092,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":10,"op":"?","answer":">","display":{"promptText":"Mia saved 11 pennies. Her sister saved 10 pennies. Compare 11 to 10."}},
+    question: {"a":11,"b":10,"op":"?","answer":">","display":{"promptText":"Mia saved 11 pennies. Her sister saved 10 pennies. Which sign fits in 11 __ 10?"}},
   },
   {
     itemId: "comparing-app-benchmarkCompare-K_1-015",
@@ -5102,7 +5102,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":10,"op":"?","answer":"<","display":{"promptText":"Eli has 3 markers. A full box holds 10 markers. Compare 3 to 10."}},
+    question: {"a":3,"b":10,"op":"?","answer":"<","display":{"promptText":"Eli has 3 markers. A full box holds 10 markers. Which sign fits in 3 __ 10?"}},
   },
   {
     itemId: "comparing-app-benchmarkCompare-K_1-016",
@@ -5112,7 +5112,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":5,"op":"?","answer":"=","display":{"promptText":"Beto used 5 chalk sticks. Rosa used 5 chalk sticks. Compare 5 to 5."}},
+    question: {"a":5,"b":5,"op":"?","answer":"=","display":{"promptText":"Beto used 5 chalk sticks. Rosa used 5 chalk sticks. Which symbol makes 5 __ 5 true?"}},
   },
   {
     itemId: "comparing-app-distanceCompare-4_5-003",
@@ -5122,7 +5122,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":845,"b":845,"op":"?","answer":"=","display":{"promptText":"Nora jogged 845 laps. Theo jogged 845 laps. Which symbol compares their laps?"}},
+    question: {"a":845,"b":845,"op":"?","answer":"=","display":{"promptText":"Nora jogged 845 laps. Theo jogged 845 laps. Which symbol makes 845 __ 845 true?"}},
   },
   {
     itemId: "comparing-app-distanceCompare-4_5-008",
@@ -5132,7 +5132,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":915,"b":951,"op":"?","answer":"<","display":{"promptText":"Sofia went up 915 feet. Marcus went up 951 feet. Which symbol compares Sofia's height to Marcus's?"}},
+    question: {"a":915,"b":951,"op":"?","answer":"<","display":{"promptText":"Sofia went up 915 feet. Marcus went up 951 feet. Which symbol makes 915 __ 951 true?"}},
   },
   {
     itemId: "comparing-app-distanceCompare-4_5-012",
@@ -5142,7 +5142,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":489,"b":498,"op":"?","answer":"<","display":{"promptText":"Devon's boat went 489 yards. Lila's boat went 498 yards. Which symbol compares Devon's yards to Lila's?"}},
+    question: {"a":489,"b":498,"op":"?","answer":"<","display":{"promptText":"Devon's boat went 489 yards. Lila's boat went 498 yards. Which symbol goes in 489 __ 498?"}},
   },
   {
     itemId: "comparing-app-distanceCompare-4_5-015",
@@ -5152,7 +5152,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":278,"b":287,"op":"?","answer":"<","display":{"promptText":"Nadia went 278 meters on skates. Cole went 287 meters on skates. Which symbol compares Nadia's meters to Cole's?"}},
+    question: {"a":278,"b":287,"op":"?","answer":"<","display":{"promptText":"Nadia went 278 meters on skates. Cole went 287 meters on skates. Which sign fits in 278 __ 287?"}},
   },
   {
     itemId: "comparing-app-distanceCompare-K_1-001",
@@ -5162,7 +5162,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":5,"op":"?","answer":">","display":{"promptText":"Nia has 12 stickers. Rosa has 5 stickers. Compare 12 to 5."}},
+    question: {"a":12,"b":5,"op":"?","answer":">","display":{"promptText":"Nia has 12 stickers. Rosa has 5 stickers. Which symbol makes 12 __ 5 true?"}},
   },
   {
     itemId: "comparing-app-distanceCompare-K_1-002",
@@ -5172,7 +5172,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":11,"op":"?","answer":"<","display":{"promptText":"Luca packed 4 crayons. Priya packed 11 crayons. Compare 4 to 11."}},
+    question: {"a":4,"b":11,"op":"?","answer":"<","display":{"promptText":"Luca packed 4 crayons. Priya packed 11 crayons. Which symbol makes 4 __ 11 true?"}},
   },
   {
     itemId: "comparing-app-distanceCompare-K_1-003",
@@ -5182,7 +5182,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":8,"op":"?","answer":"=","display":{"promptText":"Ava has 8 shells. Milo has 8 shells. Compare 8 to 8."}},
+    question: {"a":8,"b":8,"op":"?","answer":"=","display":{"promptText":"Ava has 8 shells. Milo has 8 shells. Which symbol goes in 8 __ 8?"}},
   },
   {
     itemId: "comparing-app-distanceCompare-K_1-004",
@@ -5192,7 +5192,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":14,"op":"?","answer":">","display":{"promptText":"Theo has 15 marbles. Hana has 14 marbles. Compare 15 to 14."}},
+    question: {"a":15,"b":14,"op":"?","answer":">","display":{"promptText":"Theo has 15 marbles. Hana has 14 marbles. Which symbol goes in 15 __ 14?"}},
   },
   {
     itemId: "comparing-app-distanceCompare-K_1-005",
@@ -5202,7 +5202,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":13,"op":"?","answer":"<","display":{"promptText":"Omar counted 3 books. Lena counted 13 books. Compare 3 to 13."}},
+    question: {"a":3,"b":13,"op":"?","answer":"<","display":{"promptText":"Omar counted 3 books. Lena counted 13 books. Which symbol goes in 3 __ 13?"}},
   },
   {
     itemId: "comparing-app-distanceCompare-K_1-006",
@@ -5212,7 +5212,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":17,"b":9,"op":"?","answer":">","display":{"promptText":"Sam has 17 buttons. Kai has 9 buttons. Compare 17 to 9."}},
+    question: {"a":17,"b":9,"op":"?","answer":">","display":{"promptText":"Sam has 17 buttons. Kai has 9 buttons. Which sign fits in 17 __ 9?"}},
   },
   {
     itemId: "comparing-app-distanceCompare-K_1-007",
@@ -5222,7 +5222,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":7,"op":"?","answer":"<","display":{"promptText":"June has 6 pencils. Dev has 7 pencils. Compare 6 to 7."}},
+    question: {"a":6,"b":7,"op":"?","answer":"<","display":{"promptText":"June has 6 pencils. Dev has 7 pencils. Which sign fits in 6 __ 7?"}},
   },
   {
     itemId: "comparing-app-distanceCompare-K_1-008",
@@ -5232,7 +5232,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":10,"op":"?","answer":"=","display":{"promptText":"Noor has 10 coins. Beck has 10 coins. Compare 10 to 10."}},
+    question: {"a":10,"b":10,"op":"?","answer":"=","display":{"promptText":"Noor has 10 coins. Beck has 10 coins. Which sign fits in 10 __ 10?"}},
   },
   {
     itemId: "comparing-app-distanceCompare-K_1-009",
@@ -5242,7 +5242,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":19,"b":2,"op":"?","answer":">","display":{"promptText":"Ivy stacked 19 blocks. Zane stacked 2 blocks. Compare 19 to 2."}},
+    question: {"a":19,"b":2,"op":"?","answer":">","display":{"promptText":"Ivy stacked 19 blocks. Zane stacked 2 blocks. Which symbol makes 19 __ 2 true?"}},
   },
   {
     itemId: "comparing-app-distanceCompare-K_1-010",
@@ -5252,7 +5252,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":16,"op":"?","answer":"<","display":{"promptText":"Cleo has 13 cards. Rafi has 16 cards. Compare 13 to 16."}},
+    question: {"a":13,"b":16,"op":"?","answer":"<","display":{"promptText":"Cleo has 13 cards. Rafi has 16 cards. Which symbol makes 13 __ 16 true?"}},
   },
   {
     itemId: "comparing-app-distanceCompare-K_1-011",
@@ -5262,7 +5262,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":7,"op":"?","answer":"=","display":{"promptText":"Tessa has 7 muffins. Jonah has 7 muffins. Compare 7 to 7."}},
+    question: {"a":7,"b":7,"op":"?","answer":"=","display":{"promptText":"Tessa has 7 muffins. Jonah has 7 muffins. Which symbol makes 7 __ 7 true?"}},
   },
   {
     itemId: "comparing-app-distanceCompare-K_1-012",
@@ -5272,7 +5272,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":6,"op":"?","answer":">","display":{"promptText":"Oscar has 11 balloons. Mina has 6 balloons. Compare 11 to 6."}},
+    question: {"a":11,"b":6,"op":"?","answer":">","display":{"promptText":"Oscar has 11 balloons. Mina has 6 balloons. Which symbol goes in 11 __ 6?"}},
   },
   {
     itemId: "comparing-app-distanceCompare-K_1-013",
@@ -5282,7 +5282,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":12,"op":"?","answer":"<","display":{"promptText":"Pilar has 5 ribbons. Nico has 12 ribbons. Compare 5 to 12."}},
+    question: {"a":5,"b":12,"op":"?","answer":"<","display":{"promptText":"Pilar has 5 ribbons. Nico has 12 ribbons. Which symbol goes in 5 __ 12?"}},
   },
   {
     itemId: "comparing-app-distanceCompare-K_1-014",
@@ -5292,7 +5292,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":14,"op":"?","answer":"=","display":{"promptText":"Gia has 14 stamps. Emre has 14 stamps. Compare 14 to 14."}},
+    question: {"a":14,"b":14,"op":"?","answer":"=","display":{"promptText":"Gia has 14 stamps. Emre has 14 stamps. Which symbol goes in 14 __ 14?"}},
   },
   {
     itemId: "comparing-app-distanceCompare-K_1-015",
@@ -5302,7 +5302,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":18,"op":"?","answer":"<","display":{"promptText":"Bo has 9 eggs. Suri has 18 eggs. Compare 9 to 18."}},
+    question: {"a":9,"b":18,"op":"?","answer":"<","display":{"promptText":"Bo has 9 eggs. Suri has 18 eggs. Which sign fits in 9 __ 18?"}},
   },
   {
     itemId: "comparing-app-distanceCompare-K_1-016",
@@ -5312,7 +5312,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":8,"op":"?","answer":">","display":{"promptText":"Wren counted 16 leaves. Toby counted 8 leaves. Compare 16 to 8."}},
+    question: {"a":16,"b":8,"op":"?","answer":">","display":{"promptText":"Wren counted 16 leaves. Toby counted 8 leaves. Which sign fits in 16 __ 8?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-2_3-001",
@@ -5322,7 +5322,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":142,"b":124,"op":"?","answer":">","display":{"promptText":"Diego saved 142 bottle caps. Nora saved 124 bottle caps. Compare 142 to 124."}},
+    question: {"a":142,"b":124,"op":"?","answer":">","display":{"promptText":"Diego saved 142 bottle caps. Nora saved 124 bottle caps. Which symbol makes 142 __ 124 true?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-2_3-002",
@@ -5332,7 +5332,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":308,"b":380,"op":"?","answer":"<","display":{"promptText":"Rosa finished 308 pages. Her brother finished 380 pages. Compare 308 to 380."}},
+    question: {"a":308,"b":380,"op":"?","answer":"<","display":{"promptText":"Rosa finished 308 pages. Her brother finished 380 pages. Which symbol makes 308 __ 380 true?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-2_3-003",
@@ -5342,7 +5342,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":265,"b":265,"op":"?","answer":"=","display":{"promptText":"Tomas counted 265 steps. Ella counted 265 steps. Compare 265 to 265."}},
+    question: {"a":265,"b":265,"op":"?","answer":"=","display":{"promptText":"Tomas counted 265 steps. Ella counted 265 steps. Which sign fits in 265 __ 265?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-2_3-004",
@@ -5352,7 +5352,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":491,"b":419,"op":"?","answer":">","display":{"promptText":"Amina made 491 paper cranes. Ben made 419 paper cranes. Compare 491 to 419."}},
+    question: {"a":491,"b":419,"op":"?","answer":">","display":{"promptText":"Amina made 491 paper cranes. Ben made 419 paper cranes. Which symbol goes in 491 __ 419?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-2_3-005",
@@ -5362,7 +5362,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":507,"b":570,"op":"?","answer":"<","display":{"promptText":"The school sold 507 tickets on Friday and 570 tickets on Saturday. Compare 507 to 570."}},
+    question: {"a":507,"b":570,"op":"?","answer":"<","display":{"promptText":"The school sold 507 tickets on Friday and 570 tickets on Saturday. Which symbol goes in 507 __ 570?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-2_3-006",
@@ -5372,7 +5372,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":736,"b":673,"op":"?","answer":">","display":{"promptText":"Kaya counted 736 beads. Owen counted 673 beads. Compare 736 to 673."}},
+    question: {"a":736,"b":673,"op":"?","answer":">","display":{"promptText":"Kaya counted 736 beads. Owen counted 673 beads. Which sign fits in 736 __ 673?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-2_3-007",
@@ -5382,7 +5382,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":90,"b":109,"op":"?","answer":"<","display":{"promptText":"Priya put 90 apples in her basket. Sam put 109 apples in his basket. Compare 90 to 109."}},
+    question: {"a":90,"b":109,"op":"?","answer":"<","display":{"promptText":"Priya put 90 apples in her basket. Sam put 109 apples in his basket. Which sign fits in 90 __ 109?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-2_3-008",
@@ -5392,7 +5392,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":284,"b":248,"op":"?","answer":">","display":{"promptText":"Luis found 284 acorns under the tree. Mia found 248 acorns. Compare 284 to 248."}},
+    question: {"a":284,"b":248,"op":"?","answer":">","display":{"promptText":"Luis found 284 acorns under the tree. Mia found 248 acorns. Which symbol makes 284 __ 248 true?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-2_3-009",
@@ -5402,7 +5402,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":615,"b":651,"op":"?","answer":"<","display":{"promptText":"Hana helped plant 615 tulips. Her cousin helped plant 651 tulips. Compare 615 to 651."}},
+    question: {"a":615,"b":651,"op":"?","answer":"<","display":{"promptText":"Hana helped plant 615 tulips. Her cousin helped plant 651 tulips. Which symbol makes 615 __ 651 true?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-2_3-010",
@@ -5412,7 +5412,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":803,"b":830,"op":"?","answer":"<","display":{"promptText":"Jonah saved 803 pennies. Ruth saved 830 pennies. Compare 803 to 830."}},
+    question: {"a":803,"b":830,"op":"?","answer":"<","display":{"promptText":"Jonah saved 803 pennies. Ruth saved 830 pennies. Which symbol goes in 803 __ 830?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-2_3-011",
@@ -5422,7 +5422,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":174,"b":174,"op":"?","answer":"=","display":{"promptText":"Nina baked 174 muffins on Monday. She baked 174 muffins on Tuesday. Compare 174 to 174."}},
+    question: {"a":174,"b":174,"op":"?","answer":"=","display":{"promptText":"Nina baked 174 muffins on Monday. She baked 174 muffins on Tuesday. Which symbol makes 174 __ 174 true?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-2_3-012",
@@ -5432,7 +5432,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":962,"b":926,"op":"?","answer":">","display":{"promptText":"Ravi's team counted 962 laps. Cleo's team counted 926 laps. Compare 962 to 926."}},
+    question: {"a":962,"b":926,"op":"?","answer":">","display":{"promptText":"Ravi's team counted 962 laps. Cleo's team counted 926 laps. Which symbol goes in 962 __ 926?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-2_3-013",
@@ -5442,7 +5442,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":358,"b":385,"op":"?","answer":"<","display":{"promptText":"Grace collected 358 stamps. Theo collected 385 stamps. Compare 358 to 385."}},
+    question: {"a":358,"b":385,"op":"?","answer":"<","display":{"promptText":"Grace collected 358 stamps. Theo collected 385 stamps. Which sign fits in 358 __ 385?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-2_3-014",
@@ -5452,7 +5452,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":640,"b":604,"op":"?","answer":">","display":{"promptText":"Felix used 640 blocks to build a tower. Dara used 604 blocks. Compare 640 to 604."}},
+    question: {"a":640,"b":604,"op":"?","answer":">","display":{"promptText":"Felix used 640 blocks to build a tower. Dara used 604 blocks. Which sign fits in 640 __ 604?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-2_3-015",
@@ -5462,7 +5462,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":429,"b":429,"op":"?","answer":"=","display":{"promptText":"Ivy packed 429 water bottles. Marco packed 429 water bottles. Compare 429 to 429."}},
+    question: {"a":429,"b":429,"op":"?","answer":"=","display":{"promptText":"Ivy packed 429 water bottles. Marco packed 429 water bottles. Which symbol goes in 429 __ 429?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-2_3-016",
@@ -5472,7 +5472,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":706,"b":760,"op":"?","answer":"<","display":{"promptText":"Zane checked the log and saw 706 books lent in May and 760 books lent in June. Compare 706 to 760."}},
+    question: {"a":706,"b":760,"op":"?","answer":"<","display":{"promptText":"Zane checked the log and saw 706 books lent in May and 760 books lent in June. Which symbol makes 706 __ 760 true?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-4_5-001",
@@ -5482,7 +5482,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":3058,"b":3085,"op":"?","answer":"<","display":{"promptText":"Jayden counted 3058 steps on Monday. He counted 3085 steps on Tuesday. Which symbol compares his two step counts?"}},
+    question: {"a":3058,"b":3085,"op":"?","answer":"<","display":{"promptText":"Jayden counted 3058 steps on Monday. He counted 3085 steps on Tuesday. Which symbol makes 3058 __ 3085 true?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-4_5-002",
@@ -5492,7 +5492,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12470,"b":12407,"op":"?","answer":">","display":{"promptText":"Priya's family drove 12470 miles. Her uncle drove 12407 miles. Which symbol compares their mileage?"}},
+    question: {"a":12470,"b":12407,"op":"?","answer":">","display":{"promptText":"Priya's family drove 12470 miles. Her uncle drove 12407 miles. Which symbol makes 12470 __ 12407 true?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-4_5-005",
@@ -5502,7 +5502,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":8240,"b":8204,"op":"?","answer":">","display":{"promptText":"The fifth grade collected 8240 bottle caps. The fourth grade collected 8204 caps. Which symbol compares their piles?"}},
+    question: {"a":8240,"b":8204,"op":"?","answer":">","display":{"promptText":"The fifth grade collected 8240 bottle caps. The fourth grade collected 8204 caps. Which symbol goes in 8240 __ 8204?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-4_5-006",
@@ -5512,7 +5512,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":1998,"b":2013,"op":"?","answer":"<","display":{"promptText":"Coach Ruiz sold 1998 tickets on Friday. He sold 2013 tickets on Saturday. Which symbol compares the two nights?"}},
+    question: {"a":1998,"b":2013,"op":"?","answer":"<","display":{"promptText":"Coach Ruiz sold 1998 tickets on Friday. He sold 2013 tickets on Saturday. Which symbol goes in 1998 __ 2013?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-4_5-008",
@@ -5522,7 +5522,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":7009,"b":7090,"op":"?","answer":"<","display":{"promptText":"Omar's building set has 7009 bricks. His cousin's set has 7090 bricks. Which symbol compares the two sets?"}},
+    question: {"a":7009,"b":7090,"op":"?","answer":"<","display":{"promptText":"Omar's building set has 7009 bricks. His cousin's set has 7090 bricks. Which sign fits in 7009 __ 7090?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-4_5-010",
@@ -5532,7 +5532,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":90300,"b":90030,"op":"?","answer":">","display":{"promptText":"Riverton's population is 90300. Oakfield's population is 90030. Which symbol compares the two towns?"}},
+    question: {"a":90300,"b":90030,"op":"?","answer":">","display":{"promptText":"Riverton's population is 90300. Oakfield's population is 90030. Which sign fits in 90300 __ 90030?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-4_5-012",
@@ -5542,7 +5542,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":23806,"b":23860,"op":"?","answer":"<","display":{"promptText":"Captain Ortiz flew 23806 miles. Captain Blake flew 23860 miles. Which symbol compares their flying?"}},
+    question: {"a":23806,"b":23860,"op":"?","answer":"<","display":{"promptText":"Captain Ortiz flew 23806 miles. Captain Blake flew 23860 miles. Which symbol makes 23806 __ 23860 true?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-4_5-013",
@@ -5552,7 +5552,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":60004,"b":60040,"op":"?","answer":"<","display":{"promptText":"Nora's video got 60004 views. Her friend's video got 60040 views. Which symbol compares the two videos?"}},
+    question: {"a":60004,"b":60040,"op":"?","answer":"<","display":{"promptText":"Nora's video got 60004 views. Her friend's video got 60040 views. Which symbol goes in 60004 __ 60040?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-4_5-015",
@@ -5562,7 +5562,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":5074,"b":5047,"op":"?","answer":">","display":{"promptText":"Mr. Fields's team collected 5074 cans. Ms. Yang's team collected 5047 cans. Which symbol compares their totals?"}},
+    question: {"a":5074,"b":5047,"op":"?","answer":">","display":{"promptText":"Coach Fields's team collected 5074 cans. Coach Yang's team collected 5047 cans. Which symbol makes 5074 __ 5047 true?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-K_1-001",
@@ -5572,7 +5572,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":9,"op":"?","answer":"<","display":{"promptText":"Jonah picked 3 apples. Priya picked 9 apples. Compare 3 to 9."}},
+    question: {"a":3,"b":9,"op":"?","answer":"<","display":{"promptText":"Jonah picked 3 apples. Priya picked 9 apples. Which symbol goes in 3 __ 9?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-K_1-002",
@@ -5582,7 +5582,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":6,"op":"?","answer":">","display":{"promptText":"Nina packed 10 crayons. Owen packed 6 crayons. Compare 10 to 6."}},
+    question: {"a":10,"b":6,"op":"?","answer":">","display":{"promptText":"Nina packed 10 crayons. Owen packed 6 crayons. Which symbol makes 10 __ 6 true?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-K_1-003",
@@ -5592,7 +5592,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":8,"op":"?","answer":"=","display":{"promptText":"Ava's shelf has 8 books. Leo's shelf has 8 books. Compare 8 to 8."}},
+    question: {"a":8,"b":8,"op":"?","answer":"=","display":{"promptText":"Ava's shelf has 8 books. Leo's shelf has 8 books. Which sign fits in 8 __ 8?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-K_1-004",
@@ -5602,7 +5602,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":7,"op":"?","answer":"<","display":{"promptText":"Mateo found 2 shells. Ruby found 7 shells. Compare 2 to 7."}},
+    question: {"a":2,"b":7,"op":"?","answer":"<","display":{"promptText":"Mateo found 2 shells. Ruby found 7 shells. Which sign fits in 2 __ 7?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-K_1-005",
@@ -5612,7 +5612,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":5,"op":"?","answer":">","display":{"promptText":"Ezra has 9 marbles. Zoe has 5 marbles. Compare 9 to 5."}},
+    question: {"a":9,"b":5,"op":"?","answer":">","display":{"promptText":"Ezra has 9 marbles. Zoe has 5 marbles. Which symbol goes in 9 __ 5?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-K_1-006",
@@ -5622,7 +5622,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":11,"op":"?","answer":"<","display":{"promptText":"Omar stacked 4 blocks. Hana stacked 11 blocks. Compare 4 to 11."}},
+    question: {"a":4,"b":11,"op":"?","answer":"<","display":{"promptText":"Omar stacked 4 blocks. Hana stacked 11 blocks. Which symbol makes 4 __ 11 true?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-K_1-007",
@@ -5632,7 +5632,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":7,"op":"?","answer":">","display":{"promptText":"Isla sorted 12 buttons. Nadia sorted 7 buttons. Compare 12 to 7."}},
+    question: {"a":12,"b":7,"op":"?","answer":">","display":{"promptText":"Isla sorted 12 buttons. Nadia sorted 7 buttons. Which sign fits in 12 __ 7?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-K_1-008",
@@ -5642,7 +5642,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":5,"op":"?","answer":"=","display":{"promptText":"Theo raked 5 leaves. Kai raked 5 leaves. Compare 5 to 5."}},
+    question: {"a":5,"b":5,"op":"?","answer":"=","display":{"promptText":"Theo raked 5 leaves. Kai raked 5 leaves. Which symbol makes 5 __ 5 true?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-K_1-009",
@@ -5652,7 +5652,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":13,"op":"?","answer":"<","display":{"promptText":"June folded 6 socks. Dev folded 13 socks. Compare 6 to 13."}},
+    question: {"a":6,"b":13,"op":"?","answer":"<","display":{"promptText":"June folded 6 socks. Dev folded 13 socks. Which symbol goes in 6 __ 13?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-K_1-010",
@@ -5662,7 +5662,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":3,"op":"?","answer":">","display":{"promptText":"Rosa washed 11 grapes. Milo washed 3 grapes. Compare 11 to 3."}},
+    question: {"a":11,"b":3,"op":"?","answer":">","display":{"promptText":"Rosa washed 11 grapes. Milo washed 3 grapes. Which symbol makes 11 __ 3 true?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-K_1-011",
@@ -5672,7 +5672,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":10,"op":"?","answer":"<","display":{"promptText":"Sana sharpened 7 pencils. Felix sharpened 10 pencils. Compare 7 to 10."}},
+    question: {"a":7,"b":10,"op":"?","answer":"<","display":{"promptText":"Sana sharpened 7 pencils. Felix sharpened 10 pencils. Which sign fits in 7 __ 10?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-K_1-012",
@@ -5682,7 +5682,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":9,"op":"?","answer":">","display":{"promptText":"Nora cut 14 ribbons. Amir cut 9 ribbons. Compare 14 to 9."}},
+    question: {"a":14,"b":9,"op":"?","answer":">","display":{"promptText":"Nora cut 14 ribbons. Amir cut 9 ribbons. Which symbol goes in 14 __ 9?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-K_1-013",
@@ -5692,7 +5692,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":10,"op":"?","answer":"=","display":{"promptText":"Lila gathered 10 acorns. Gus gathered 10 acorns. Compare 10 to 10."}},
+    question: {"a":10,"b":10,"op":"?","answer":"=","display":{"promptText":"Lila gathered 10 acorns. Gus gathered 10 acorns. Which symbol goes in 10 __ 10?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-K_1-014",
@@ -5702,7 +5702,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":12,"op":"?","answer":"<","display":{"promptText":"Tess earned 5 stickers. Beckett earned 12 stickers. Compare 5 to 12."}},
+    question: {"a":5,"b":12,"op":"?","answer":"<","display":{"promptText":"Tess earned 5 stickers. Beckett earned 12 stickers. Which symbol makes 5 __ 12 true?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-K_1-015",
@@ -5712,7 +5712,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":6,"op":"?","answer":">","display":{"promptText":"Wren counted 13 ducks. Silas counted 6 ducks. Compare 13 to 6."}},
+    question: {"a":13,"b":6,"op":"?","answer":">","display":{"promptText":"Wren counted 13 ducks. Silas counted 6 ducks. Which sign fits in 13 __ 6?"}},
   },
   {
     itemId: "comparing-app-symbolSelection-K_1-016",
@@ -5722,7 +5722,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":12,"op":"?","answer":"=","display":{"promptText":"Pilar strung 12 beads. Cruz strung 12 beads. Compare 12 to 12."}},
+    question: {"a":12,"b":12,"op":"?","answer":"=","display":{"promptText":"Pilar strung 12 beads. Cruz strung 12 beads. Which sign fits in 12 __ 12?"}},
   },
   {
     itemId: "comparing-conc-b0821-0001",
@@ -5732,7 +5732,7 @@ export const ITEMS = [
     structureType: "rowsChooseSymbol",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":">","display":{"compare":{"a":5,"b":3,"kind":"counts"},"promptText":"Row A: 🍎🍎🍎🍎🍎 Row B: 🍎🍎🍎 Choose the symbol that compares Row A to Row B counting apples."},"answerType":"symbolSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":">","display":{"compare":{"a":5,"b":3,"kind":"counts"},"promptText":"Row A: 🍎🍎🍎🍎🍎 Row B: 🍎🍎🍎 Count the apples in each row. Which sign fits in Row A __ Row B?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0002",
@@ -5752,7 +5752,7 @@ export const ITEMS = [
     structureType: "rowsChooseSymbol",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":">","display":{"compare":{"a":8,"b":6,"kind":"counts"},"promptText":"Row A: 🐟🐟🐟🐟🐟🐟🐟🐟 Row B: 🐟🐟🐟🐟🐟🐟 Compare the two rows of fish and pick the sign."},"answerType":"symbolSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":">","display":{"compare":{"a":8,"b":6,"kind":"counts"},"promptText":"Row A: 🐟🐟🐟🐟🐟🐟🐟🐟 Row B: 🐟🐟🐟🐟🐟🐟 Count the fish in each row. Which sign fits in Row A __ Row B?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0004",
@@ -5772,7 +5772,7 @@ export const ITEMS = [
     structureType: "rowsChooseSymbol",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":">","display":{"compare":{"a":9,"b":7,"kind":"counts"},"promptText":"Row A: 🍪🍪🍪🍪🍪🍪🍪🍪🍪 Row B: 🍪🍪🍪🍪🍪🍪🍪 Choose the symbol that compares Row A to Row B counting cookies."},"answerType":"symbolSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":">","display":{"compare":{"a":9,"b":7,"kind":"counts"},"promptText":"Row A: 🍪🍪🍪🍪🍪🍪🍪🍪🍪 Row B: 🍪🍪🍪🍪🍪🍪🍪 Count the cookies in each row. Which symbol makes Row A __ Row B true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0006",
@@ -5792,7 +5792,7 @@ export const ITEMS = [
     structureType: "rowsChooseSymbol",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"<","display":{"compare":{"a":7,"b":9,"kind":"counts"},"promptText":"Row A: 🎈🎈🎈🎈🎈🎈🎈 Row B: 🎈🎈🎈🎈🎈🎈🎈🎈🎈 Compare the two rows of balloons and pick the sign."},"answerType":"symbolSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":"<","display":{"compare":{"a":7,"b":9,"kind":"counts"},"promptText":"Row A: 🎈🎈🎈🎈🎈🎈🎈 Row B: 🎈🎈🎈🎈🎈🎈🎈🎈🎈 Count the balloons in each row. Which symbol goes in Row A __ Row B?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0008",
@@ -5812,7 +5812,7 @@ export const ITEMS = [
     structureType: "rowsChooseSymbol",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":">","display":{"compare":{"a":10,"b":8,"kind":"counts"},"promptText":"Row A: 🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎 Row B: 🍎🍎🍎🍎🍎🍎🍎🍎 Choose the symbol that compares Row A to Row B counting apples."},"answerType":"symbolSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":">","display":{"compare":{"a":10,"b":8,"kind":"counts"},"promptText":"Row A: 🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎 Row B: 🍎🍎🍎🍎🍎🍎🍎🍎 Count the apples in each row. Which symbol goes in Row A __ Row B?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0010",
@@ -5832,7 +5832,7 @@ export const ITEMS = [
     structureType: "rowsChooseSymbol",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"<","display":{"compare":{"a":6,"b":9,"kind":"counts"},"promptText":"Row A: 🐟🐟🐟🐟🐟🐟 Row B: 🐟🐟🐟🐟🐟🐟🐟🐟🐟 Compare the two rows of fish and pick the sign."},"answerType":"symbolSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":"<","display":{"compare":{"a":6,"b":9,"kind":"counts"},"promptText":"Row A: 🐟🐟🐟🐟🐟🐟 Row B: 🐟🐟🐟🐟🐟🐟🐟🐟🐟 Count the fish in each row. Which sign fits in Row A __ Row B?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0012",
@@ -5852,7 +5852,7 @@ export const ITEMS = [
     structureType: "rowsChooseSymbol",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"<","display":{"compare":{"a":3,"b":5,"kind":"counts"},"promptText":"Row A: 🍪🍪🍪 Row B: 🍪🍪🍪🍪🍪 Choose the symbol that compares Row A to Row B counting cookies."},"answerType":"symbolSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":"<","display":{"compare":{"a":3,"b":5,"kind":"counts"},"promptText":"Row A: 🍪🍪🍪 Row B: 🍪🍪🍪🍪🍪 Count the cookies in each row. Which symbol goes in Row A __ Row B?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0014",
@@ -5872,7 +5872,7 @@ export const ITEMS = [
     structureType: "rowsChooseSymbol",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":">","display":{"compare":{"a":7,"b":4,"kind":"counts"},"promptText":"Row A: 🎈🎈🎈🎈🎈🎈🎈 Row B: 🎈🎈🎈🎈 Compare the two rows of balloons and pick the sign."},"answerType":"symbolSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":">","display":{"compare":{"a":7,"b":4,"kind":"counts"},"promptText":"Row A: 🎈🎈🎈🎈🎈🎈🎈 Row B: 🎈🎈🎈🎈 Count the balloons in each row. Which symbol makes Row A __ Row B true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0016",
@@ -5892,7 +5892,7 @@ export const ITEMS = [
     structureType: "rowsChooseSymbol",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":">","display":{"compare":{"a":8,"b":3,"kind":"counts"},"promptText":"Row A: 🍎🍎🍎🍎🍎🍎🍎🍎 Row B: 🍎🍎🍎 Choose the symbol that compares Row A to Row B counting apples."},"answerType":"symbolSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":">","display":{"compare":{"a":8,"b":3,"kind":"counts"},"promptText":"Row A: 🍎🍎🍎🍎🍎🍎🍎🍎 Row B: 🍎🍎🍎 Count the apples in each row. Which sign fits in Row A __ Row B?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0018",
@@ -5912,7 +5912,7 @@ export const ITEMS = [
     structureType: "rowsChooseSymbol",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":">","display":{"compare":{"a":10,"b":7,"kind":"counts"},"promptText":"Row A: 🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟 Row B: 🐟🐟🐟🐟🐟🐟🐟 Compare the two rows of fish and pick the sign."},"answerType":"symbolSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":">","display":{"compare":{"a":10,"b":7,"kind":"counts"},"promptText":"Row A: 🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟 Row B: 🐟🐟🐟🐟🐟🐟🐟 Count the fish in each row. Which symbol goes in Row A __ Row B?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0020",
@@ -5932,7 +5932,7 @@ export const ITEMS = [
     structureType: "rowsChooseSymbol",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"=","display":{"compare":{"a":9,"b":9,"kind":"counts"},"promptText":"Row A: 🍪🍪🍪🍪🍪🍪🍪🍪🍪 Row B: 🍪🍪🍪🍪🍪🍪🍪🍪🍪 Choose the symbol that compares Row A to Row B counting cookies."},"answerType":"symbolSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":"=","display":{"compare":{"a":9,"b":9,"kind":"counts"},"promptText":"Row A: 🍪🍪🍪🍪🍪🍪🍪🍪🍪 Row B: 🍪🍪🍪🍪🍪🍪🍪🍪🍪 Count the cookies in each row. Which symbol makes Row A __ Row B true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0022",
@@ -5952,7 +5952,7 @@ export const ITEMS = [
     structureType: "rowsChooseSymbol",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"<","display":{"compare":{"a":7,"b":10,"kind":"counts"},"promptText":"Row A: 🎈🎈🎈🎈🎈🎈🎈 Row B: 🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈 Compare the two rows of balloons and pick the sign."},"answerType":"symbolSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":"<","display":{"compare":{"a":7,"b":10,"kind":"counts"},"promptText":"Row A: 🎈🎈🎈🎈🎈🎈🎈 Row B: 🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈 Count the balloons in each row. Which symbol makes Row A __ Row B true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0024",
@@ -5972,7 +5972,7 @@ export const ITEMS = [
     structureType: "rowsChooseSymbol",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"=","display":{"compare":{"a":6,"b":6,"kind":"counts"},"promptText":"Row A: 🍎🍎🍎🍎🍎🍎 Row B: 🍎🍎🍎🍎🍎🍎 Choose the symbol that compares Row A to Row B counting apples."},"answerType":"symbolSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":"=","display":{"compare":{"a":6,"b":6,"kind":"counts"},"promptText":"Row A: 🍎🍎🍎🍎🍎🍎 Row B: 🍎🍎🍎🍎🍎🍎 Count the apples in each row. Which symbol goes in Row A __ Row B?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0026",
@@ -5992,7 +5992,7 @@ export const ITEMS = [
     structureType: "rowsChooseSymbolTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"<","display":{"compare":{"a":12,"b":14,"kind":"counts"},"promptText":"Row A: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⭐⭐ Row B: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ Compare the two rows of stars and pick the sign."},"answerType":"symbolSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":"<","display":{"compare":{"a":12,"b":14,"kind":"counts"},"promptText":"Row A: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⭐⭐ Row B: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ Count the stars in each row. Which symbol goes in Row A __ Row B?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0028",
@@ -6012,7 +6012,7 @@ export const ITEMS = [
     structureType: "rowsChooseSymbolTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"<","display":{"compare":{"a":11,"b":16,"kind":"counts"},"promptText":"Row A: 🍓🍓🍓🍓🍓🍓🍓🍓🍓🍓 | 🍓 Row B: 🍓🍓🍓🍓🍓🍓🍓🍓🍓🍓 | 🍓🍓🍓🍓🍓🍓 Choose the symbol that compares Row A to Row B counting berries."},"answerType":"symbolSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":"<","display":{"compare":{"a":11,"b":16,"kind":"counts"},"promptText":"Row A: 🍓🍓🍓🍓🍓🍓🍓🍓🍓🍓 | 🍓 Row B: 🍓🍓🍓🍓🍓🍓🍓🍓🍓🍓 | 🍓🍓🍓🍓🍓🍓 Count the berries in each row. Which sign fits in Row A __ Row B?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0030",
@@ -6032,7 +6032,7 @@ export const ITEMS = [
     structureType: "rowsChooseSymbolTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"=","display":{"compare":{"a":13,"b":13,"kind":"counts"},"promptText":"Row A: 🐢🐢🐢🐢🐢🐢🐢🐢🐢🐢 | 🐢🐢🐢 Row B: 🐢🐢🐢🐢🐢🐢🐢🐢🐢🐢 | 🐢🐢🐢 Compare the two rows of turtles and pick the sign."},"answerType":"symbolSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":"=","display":{"compare":{"a":13,"b":13,"kind":"counts"},"promptText":"Row A: 🐢🐢🐢🐢🐢🐢🐢🐢🐢🐢 | 🐢🐢🐢 Row B: 🐢🐢🐢🐢🐢🐢🐢🐢🐢🐢 | 🐢🐢🐢 Count the turtles in each row. Which symbol makes Row A __ Row B true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0032",
@@ -6052,7 +6052,7 @@ export const ITEMS = [
     structureType: "rowsChooseSymbolTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"<","display":{"compare":{"a":14,"b":15,"kind":"counts"},"promptText":"Row A: 🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸 | 🌸🌸🌸🌸 Row B: 🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸 | 🌸🌸🌸🌸🌸 Choose the symbol that compares Row A to Row B counting flowers."},"answerType":"symbolSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":"<","display":{"compare":{"a":14,"b":15,"kind":"counts"},"promptText":"Row A: 🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸 | 🌸🌸🌸🌸 Row B: 🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸 | 🌸🌸🌸🌸🌸 Count the flowers in each row. Which symbol makes Row A __ Row B true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0034",
@@ -6072,7 +6072,7 @@ export const ITEMS = [
     structureType: "rowsChooseSymbolTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":">","display":{"compare":{"a":17,"b":11,"kind":"counts"},"promptText":"Row A: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐⭐⭐ Row B: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⭐ Compare the two rows of stars and pick the sign."},"answerType":"symbolSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":">","display":{"compare":{"a":17,"b":11,"kind":"counts"},"promptText":"Row A: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐⭐⭐ Row B: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⭐ Count the stars in each row. Which sign fits in Row A __ Row B?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0036",
@@ -6092,7 +6092,7 @@ export const ITEMS = [
     structureType: "rowsChooseSymbolTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"<","display":{"compare":{"a":15,"b":18,"kind":"counts"},"promptText":"Row A: 🍓🍓🍓🍓🍓🍓🍓🍓🍓🍓 | 🍓🍓🍓🍓🍓 Row B: 🍓🍓🍓🍓🍓🍓🍓🍓🍓🍓 | 🍓🍓🍓🍓🍓🍓🍓🍓 Choose the symbol that compares Row A to Row B counting berries."},"answerType":"symbolSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":"<","display":{"compare":{"a":15,"b":18,"kind":"counts"},"promptText":"Row A: 🍓🍓🍓🍓🍓🍓🍓🍓🍓🍓 | 🍓🍓🍓🍓🍓 Row B: 🍓🍓🍓🍓🍓🍓🍓🍓🍓🍓 | 🍓🍓🍓🍓🍓🍓🍓🍓 Count the berries in each row. Which symbol goes in Row A __ Row B?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0038",
@@ -6112,7 +6112,7 @@ export const ITEMS = [
     structureType: "rowsChooseSymbolTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"<","display":{"compare":{"a":16,"b":19,"kind":"counts"},"promptText":"Row A: 🐢🐢🐢🐢🐢🐢🐢🐢🐢🐢 | 🐢🐢🐢🐢🐢🐢 Row B: 🐢🐢🐢🐢🐢🐢🐢🐢🐢🐢 | 🐢🐢🐢🐢🐢🐢🐢🐢🐢 Compare the two rows of turtles and pick the sign."},"answerType":"symbolSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":"<","display":{"compare":{"a":16,"b":19,"kind":"counts"},"promptText":"Row A: 🐢🐢🐢🐢🐢🐢🐢🐢🐢🐢 | 🐢🐢🐢🐢🐢🐢 Row B: 🐢🐢🐢🐢🐢🐢🐢🐢🐢🐢 | 🐢🐢🐢🐢🐢🐢🐢🐢🐢 Count the turtles in each row. Which sign fits in Row A __ Row B?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0040",
@@ -6132,7 +6132,7 @@ export const ITEMS = [
     structureType: "mouthReasoning",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":2,"op":"vs","answer":">","display":{"promptText":"Theo draws the hungry mouth facing the larger number. Comparing 8 and 2, which symbol is it?"},"answerType":"symbolSelect"},
+    question: {"a":8,"b":2,"op":"vs","answer":">","display":{"promptText":"Theo draws the hungry mouth facing the larger number. Which symbol should Theo draw in 8 __ 2?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0042",
@@ -6142,7 +6142,7 @@ export const ITEMS = [
     structureType: "mouthReasoning",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":10,"op":"vs","answer":"<","display":{"promptText":"Help Ida pick the sign for 4 and 10. Remember which way the mouth opens!"},"answerType":"symbolSelect"},
+    question: {"a":4,"b":10,"op":"vs","answer":"<","display":{"promptText":"Remember which way the mouth opens. Which sign should Ida put between 4 and 10?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0043",
@@ -6162,7 +6162,7 @@ export const ITEMS = [
     structureType: "mouthReasoning",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":6,"op":"vs","answer":"<","display":{"promptText":"Rosa draws the hungry mouth facing the larger number. Comparing 3 and 6, which symbol is it?"},"answerType":"symbolSelect"},
+    question: {"a":3,"b":6,"op":"vs","answer":"<","display":{"promptText":"Rosa draws the hungry mouth facing the larger number. Which symbol does Rosa draw in 3 __ 6?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0045",
@@ -6172,7 +6172,7 @@ export const ITEMS = [
     structureType: "mouthReasoning",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":1,"op":"vs","answer":">","display":{"promptText":"Help Diego pick the sign for 9 and 1. Remember which way the mouth opens!"},"answerType":"symbolSelect"},
+    question: {"a":9,"b":1,"op":"vs","answer":">","display":{"promptText":"Remember which way the mouth opens. Which sign should Diego put between 9 and 1?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0046",
@@ -6192,7 +6192,7 @@ export const ITEMS = [
     structureType: "mouthReasoning",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":4,"op":"vs","answer":">","display":{"promptText":"Luca draws the hungry mouth facing the larger number. Comparing 10 and 4, which symbol is it?"},"answerType":"symbolSelect"},
+    question: {"a":10,"b":4,"op":"vs","answer":">","display":{"promptText":"Luca draws the hungry mouth facing the larger number. Which symbol does Luca draw in 10 __ 4?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0048",
@@ -6202,7 +6202,7 @@ export const ITEMS = [
     structureType: "mouthReasoning",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":7,"op":"vs","answer":"<","display":{"promptText":"Help Ava pick the sign for 2 and 7. Remember which way the mouth opens!"},"answerType":"symbolSelect"},
+    question: {"a":2,"b":7,"op":"vs","answer":"<","display":{"promptText":"Remember which way the mouth opens. Which sign should Ava put between 2 and 7?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0049",
@@ -6222,7 +6222,7 @@ export const ITEMS = [
     structureType: "mouthReasoning",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":10,"op":"vs","answer":"<","display":{"promptText":"Ben draws the hungry mouth facing the larger number. Comparing 8 and 10, which symbol is it?"},"answerType":"symbolSelect"},
+    question: {"a":8,"b":10,"op":"vs","answer":"<","display":{"promptText":"Ben draws the hungry mouth facing the larger number. Which symbol should Ben draw in 8 __ 10?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0051",
@@ -6232,7 +6232,7 @@ export const ITEMS = [
     structureType: "mouthReasoning",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":1,"b":4,"op":"vs","answer":"<","display":{"promptText":"Help Finn pick the sign for 1 and 4. Remember which way the mouth opens!"},"answerType":"symbolSelect"},
+    question: {"a":1,"b":4,"op":"vs","answer":"<","display":{"promptText":"Remember which way the mouth opens. Which sign should Finn put between 1 and 4?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0052",
@@ -6252,7 +6252,7 @@ export const ITEMS = [
     structureType: "mouthReasoning",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":8,"op":"vs","answer":"<","display":{"promptText":"Sam draws the hungry mouth facing the larger number. Comparing 4 and 8, which symbol is it?"},"answerType":"symbolSelect"},
+    question: {"a":4,"b":8,"op":"vs","answer":"<","display":{"promptText":"Sam draws the hungry mouth facing the larger number. Which symbol does Sam draw in 4 __ 8?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0054",
@@ -6262,7 +6262,7 @@ export const ITEMS = [
     structureType: "mouthReasoning",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":2,"op":"vs","answer":">","display":{"promptText":"Help Nia pick the sign for 7 and 2. Remember which way the mouth opens!"},"answerType":"symbolSelect"},
+    question: {"a":7,"b":2,"op":"vs","answer":">","display":{"promptText":"Remember which way the mouth opens. Which sign should Nia put between 7 and 2?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0055",
@@ -6282,7 +6282,7 @@ export const ITEMS = [
     structureType: "mouthReasoningTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":26,"b":19,"op":"vs","answer":">","display":{"promptText":"Theo draws the hungry mouth facing the larger number. Comparing 26 and 19, which symbol is it?"},"answerType":"symbolSelect"},
+    question: {"a":26,"b":19,"op":"vs","answer":">","display":{"promptText":"Theo draws the hungry mouth facing the larger number. Which symbol should Theo draw in 26 __ 19?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0057",
@@ -6292,7 +6292,7 @@ export const ITEMS = [
     structureType: "mouthReasoningTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":40,"b":44,"op":"vs","answer":"<","display":{"promptText":"Help Ida pick the sign for 40 and 44. Remember which way the mouth opens!"},"answerType":"symbolSelect"},
+    question: {"a":40,"b":44,"op":"vs","answer":"<","display":{"promptText":"Help Ida pick the sign. The open mouth faces the bigger number. Which sign goes between 40 and 44?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0058",
@@ -6312,7 +6312,7 @@ export const ITEMS = [
     structureType: "mouthReasoningTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":62,"b":26,"op":"vs","answer":">","display":{"promptText":"Rosa draws the hungry mouth facing the larger number. Comparing 62 and 26, which symbol is it?"},"answerType":"symbolSelect"},
+    question: {"a":62,"b":26,"op":"vs","answer":">","display":{"promptText":"Rosa draws the hungry mouth facing the larger number. Which symbol does Rosa draw in 62 __ 26?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0060",
@@ -6322,7 +6322,7 @@ export const ITEMS = [
     structureType: "mouthReasoningTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":37,"b":41,"op":"vs","answer":"<","display":{"promptText":"Help Diego pick the sign for 37 and 41. Remember which way the mouth opens!"},"answerType":"symbolSelect"},
+    question: {"a":37,"b":41,"op":"vs","answer":"<","display":{"promptText":"Help Diego pick the sign. The open mouth faces the bigger number. Which sign goes between 37 and 41?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0061",
@@ -6342,7 +6342,7 @@ export const ITEMS = [
     structureType: "mouthReasoningTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":24,"b":20,"op":"vs","answer":">","display":{"promptText":"Luca draws the hungry mouth facing the larger number. Comparing 24 and 20, which symbol is it?"},"answerType":"symbolSelect"},
+    question: {"a":24,"b":20,"op":"vs","answer":">","display":{"promptText":"Luca draws the hungry mouth facing the larger number. Which symbol should Luca draw in 24 __ 20?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0063",
@@ -6352,7 +6352,7 @@ export const ITEMS = [
     structureType: "mouthReasoningTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":95,"b":59,"op":"vs","answer":">","display":{"promptText":"Help Ava pick the sign for 95 and 59. Remember which way the mouth opens!"},"answerType":"symbolSelect"},
+    question: {"a":95,"b":59,"op":"vs","answer":">","display":{"promptText":"Help Ava pick the sign. The open mouth faces the bigger number. Which sign goes between 95 and 59?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0064",
@@ -6372,7 +6372,7 @@ export const ITEMS = [
     structureType: "mouthReasoningTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":51,"b":15,"op":"vs","answer":">","display":{"promptText":"Ben draws the hungry mouth facing the larger number. Comparing 51 and 15, which symbol is it?"},"answerType":"symbolSelect"},
+    question: {"a":51,"b":15,"op":"vs","answer":">","display":{"promptText":"Ben draws the hungry mouth facing the larger number. Which symbol does Ben draw in 51 __ 15?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0066",
@@ -6382,7 +6382,7 @@ export const ITEMS = [
     structureType: "mouthReasoningTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":68,"b":86,"op":"vs","answer":"<","display":{"promptText":"Help Finn pick the sign for 68 and 86. Remember which way the mouth opens!"},"answerType":"symbolSelect"},
+    question: {"a":68,"b":86,"op":"vs","answer":"<","display":{"promptText":"Help Finn pick the sign. The open mouth faces the bigger number. Which sign goes between 68 and 86?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0067",
@@ -6402,7 +6402,7 @@ export const ITEMS = [
     structureType: "mouthReasoningTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":83,"b":88,"op":"vs","answer":"<","display":{"promptText":"Sam draws the hungry mouth facing the larger number. Comparing 83 and 88, which symbol is it?"},"answerType":"symbolSelect"},
+    question: {"a":83,"b":88,"op":"vs","answer":"<","display":{"promptText":"Sam draws the hungry mouth facing the larger number. Which symbol should Sam draw in 83 __ 88?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0069",
@@ -6412,7 +6412,7 @@ export const ITEMS = [
     structureType: "mouthReasoningTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":94,"b":49,"op":"vs","answer":">","display":{"promptText":"Help Nia pick the sign for 94 and 49. Remember which way the mouth opens!"},"answerType":"symbolSelect"},
+    question: {"a":94,"b":49,"op":"vs","answer":">","display":{"promptText":"Help Nia pick the sign. The open mouth faces the bigger number. Which sign goes between 94 and 49?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0070",
@@ -6422,7 +6422,7 @@ export const ITEMS = [
     structureType: "bothTrueWithin10",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":["3 < 5","9 > 4"],"display":{"options":["6 > 8","9 > 4","3 < 5","2 > 7"],"promptText":"Kai wrote four comparisons; two are true. Choose BOTH true ones.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":["3 < 5","9 > 4"],"display":{"options":["6 > 8","9 > 4","3 < 5","2 > 7"],"promptText":"Kai wrote four comparisons, and two of them are true. Which two are true?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0071",
@@ -6452,7 +6452,7 @@ export const ITEMS = [
     structureType: "bothTrueWithin10",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":["2 < 6","10 > 7"],"display":{"options":["4 > 9","2 < 6","10 > 7","1 > 8"],"promptText":"Amara wrote four comparisons; two are true. Choose BOTH true ones.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":["2 < 6","10 > 7"],"display":{"options":["4 > 9","2 < 6","10 > 7","1 > 8"],"promptText":"Amara wrote four comparisons, and two of them are true. Which two are true?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0074",
@@ -6482,7 +6482,7 @@ export const ITEMS = [
     structureType: "bothTrueWithin10",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":["9 > 6","2 < 8"],"display":{"options":["7 > 10","2 < 8","9 > 6","5 < 1"],"promptText":"Theo wrote four comparisons; two are true. Choose BOTH true ones.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":["9 > 6","2 < 8"],"display":{"options":["7 > 10","2 < 8","9 > 6","5 < 1"],"promptText":"Theo wrote four comparisons, and two of them are true. Which two are true?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0077",
@@ -6512,7 +6512,7 @@ export const ITEMS = [
     structureType: "bothTrueWithin10",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":["1 < 6","7 > 3"],"display":{"options":["2 > 9","7 > 3","1 < 6","8 < 4"],"promptText":"Rosa wrote four comparisons; two are true. Choose BOTH true ones.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":["1 < 6","7 > 3"],"display":{"options":["2 > 9","7 > 3","1 < 6","8 < 4"],"promptText":"Rosa wrote four comparisons, and two of them are true. Which two are true?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0080",
@@ -6542,7 +6542,7 @@ export const ITEMS = [
     structureType: "bothTrueWithin10",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":["2 < 5","6 > 1"],"display":{"options":["2 < 5","7 < 3","9 > 10","6 > 1"],"promptText":"Luca wrote four comparisons; two are true. Choose BOTH true ones.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":["2 < 5","6 > 1"],"display":{"options":["2 < 5","7 < 3","9 > 10","6 > 1"],"promptText":"Luca wrote four comparisons, and two of them are true. Which two are true?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0083",
@@ -6572,7 +6572,7 @@ export const ITEMS = [
     structureType: "bothTrueBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":["98 < 102","310 > 301"],"display":{"options":["98 < 102","467 < 447","205 > 250","310 > 301"],"promptText":"Ida wrote four comparisons; two are true. Choose BOTH true ones.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":["98 < 102","310 > 301"],"display":{"options":["98 < 102","467 < 447","205 > 250","310 > 301"],"promptText":"Ida wrote four comparisons. Which two comparisons are true?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0086",
@@ -6602,7 +6602,7 @@ export const ITEMS = [
     structureType: "bothTrueBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":["102 > 89","556 < 565"],"display":{"options":["930 < 903","102 > 89","241 > 421","556 < 565"],"promptText":"Diego wrote four comparisons; two are true. Choose BOTH true ones.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":["102 > 89","556 < 565"],"display":{"options":["930 < 903","102 > 89","241 > 421","556 < 565"],"promptText":"Diego wrote four comparisons. Which two comparisons are true?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0089",
@@ -6632,7 +6632,7 @@ export const ITEMS = [
     structureType: "bothTrueBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":["300 > 289","715 < 751"],"display":{"options":["928 < 892","715 < 751","300 > 289","460 > 640"],"promptText":"Ava wrote four comparisons; two are true. Choose BOTH true ones.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":["300 > 289","715 < 751"],"display":{"options":["928 < 892","715 < 751","300 > 289","460 > 640"],"promptText":"Ava wrote four comparisons. Which two comparisons are true?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0092",
@@ -6662,7 +6662,7 @@ export const ITEMS = [
     structureType: "bothTrueBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":["489 < 498","820 > 802"],"display":{"options":["603 < 360","489 < 498","157 > 175","820 > 802"],"promptText":"Finn wrote four comparisons; two are true. Choose BOTH true ones.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":["489 < 498","820 > 802"],"display":{"options":["603 < 360","489 < 498","157 > 175","820 > 802"],"promptText":"Finn wrote four comparisons. Which two comparisons are true?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0095",
@@ -6692,7 +6692,7 @@ export const ITEMS = [
     structureType: "bothTrueBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":["350 < 503","692 > 629"],"display":{"options":["692 > 629","148 > 184","775 < 757","350 < 503"],"promptText":"Nia wrote four comparisons; two are true. Choose BOTH true ones.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"vs","answer":["350 < 503","692 > 629"],"display":{"options":["692 > 629","148 > 184","775 < 757","350 < 503"],"promptText":"Nia wrote four comparisons. Which two comparisons are true?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0098",
@@ -6732,7 +6732,7 @@ export const ITEMS = [
     structureType: "symbolFlipFix",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":57,"b":39,"op":"vs","answer":">","display":{"promptText":"Ava compared 57 and 39 and picked <. The hungry mouth should eat the bigger number! Which symbol is correct?"},"answerType":"symbolSelect"},
+    question: {"a":57,"b":39,"op":"vs","answer":">","display":{"promptText":"Ava compared 57 and 39 and picked <. The hungry mouth should eat the bigger number! Which symbol should go in 57 __ 39?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0102",
@@ -6742,7 +6742,7 @@ export const ITEMS = [
     structureType: "symbolFlipFix",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":63,"b":81,"op":"vs","answer":"<","display":{"promptText":"To compare 63 and 81, Omar chose >. Check Omar's work — which symbol makes it true?"},"answerType":"symbolSelect"},
+    question: {"a":63,"b":81,"op":"vs","answer":"<","display":{"promptText":"To compare 63 and 81, Omar chose >. Check Omar's work — which symbol makes 63 __ 81 true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0103",
@@ -6762,7 +6762,7 @@ export const ITEMS = [
     structureType: "symbolFlipFix",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":76,"b":58,"op":"vs","answer":">","display":{"promptText":"Finn compared 76 and 58 and picked <. The hungry mouth should eat the bigger number! Which symbol is correct?"},"answerType":"symbolSelect"},
+    question: {"a":76,"b":58,"op":"vs","answer":">","display":{"promptText":"Finn compared 76 and 58 and picked <. The hungry mouth should eat the bigger number! Which symbol is correct in 76 __ 58?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0105",
@@ -6772,7 +6772,7 @@ export const ITEMS = [
     structureType: "symbolFlipFix",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":31,"b":47,"op":"vs","answer":"<","display":{"promptText":"To compare 31 and 47, Priya chose >. Check Priya's work — which symbol makes it true?"},"answerType":"symbolSelect"},
+    question: {"a":31,"b":47,"op":"vs","answer":"<","display":{"promptText":"To compare 31 and 47, Priya chose >. Check Priya's work — which symbol belongs in 31 __ 47?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0106",
@@ -6792,7 +6792,7 @@ export const ITEMS = [
     structureType: "symbolFlipFix",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":49,"b":71,"op":"vs","answer":"<","display":{"promptText":"Nia compared 49 and 71 and picked >. The hungry mouth should eat the bigger number! Which symbol is correct?"},"answerType":"symbolSelect"},
+    question: {"a":49,"b":71,"op":"vs","answer":"<","display":{"promptText":"Nia compared 49 and 71 and picked >. The hungry mouth should eat the bigger number! Which symbol is correct in 49 __ 71?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0108",
@@ -6802,7 +6802,7 @@ export const ITEMS = [
     structureType: "symbolFlipFix",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":85,"b":53,"op":"vs","answer":">","display":{"promptText":"To compare 85 and 53, Kai chose <. Check Kai's work — which symbol makes it true?"},"answerType":"symbolSelect"},
+    question: {"a":85,"b":53,"op":"vs","answer":">","display":{"promptText":"To compare 85 and 53, Kai chose <. Check Kai's work — which symbol belongs in 85 __ 53?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0109",
@@ -6822,7 +6822,7 @@ export const ITEMS = [
     structureType: "symbolFlipFix",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":54,"b":36,"op":"vs","answer":">","display":{"promptText":"Lily compared 54 and 36 and picked <. The hungry mouth should eat the bigger number! Which symbol is correct?"},"answerType":"symbolSelect"},
+    question: {"a":54,"b":36,"op":"vs","answer":">","display":{"promptText":"Lily compared 54 and 36 and picked <. The hungry mouth should eat the bigger number! Which symbol should go in 54 __ 36?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0111",
@@ -6832,7 +6832,7 @@ export const ITEMS = [
     structureType: "symbolFlipFix",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":66,"b":90,"op":"vs","answer":"<","display":{"promptText":"To compare 66 and 90, Amara chose >. Check Amara's work — which symbol makes it true?"},"answerType":"symbolSelect"},
+    question: {"a":66,"b":90,"op":"vs","answer":"<","display":{"promptText":"To compare 66 and 90, Amara chose >. Check Amara's work — which symbol makes 66 __ 90 true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0112",
@@ -6852,7 +6852,7 @@ export const ITEMS = [
     structureType: "symbolFlipFix",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":70,"b":82,"op":"vs","answer":"<","display":{"promptText":"Mina compared 70 and 82 and picked >. The hungry mouth should eat the bigger number! Which symbol is correct?"},"answerType":"symbolSelect"},
+    question: {"a":70,"b":82,"op":"vs","answer":"<","display":{"promptText":"Mina compared 70 and 82 and picked >. The hungry mouth should eat the bigger number! Which symbol should go in 70 __ 82?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0114",
@@ -6862,7 +6862,7 @@ export const ITEMS = [
     structureType: "symbolFlipFix",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":38,"b":61,"op":"vs","answer":"<","display":{"promptText":"To compare 38 and 61, Theo chose >. Check Theo's work — which symbol makes it true?"},"answerType":"symbolSelect"},
+    question: {"a":38,"b":61,"op":"vs","answer":"<","display":{"promptText":"To compare 38 and 61, Theo chose >. Check Theo's work — which symbol belongs in 38 __ 61?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0115",
@@ -6882,7 +6882,7 @@ export const ITEMS = [
     structureType: "symbolFlipFix",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":34,"op":"vs","answer":"<","display":{"promptText":"Zoe compared 12 and 34 and picked >. The hungry mouth should eat the bigger number! Which symbol is correct?"},"answerType":"symbolSelect"},
+    question: {"a":12,"b":34,"op":"vs","answer":"<","display":{"promptText":"Zoe compared 12 and 34 and picked >. The hungry mouth should eat the bigger number! Which symbol is correct in 12 __ 34?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0117",
@@ -6892,7 +6892,7 @@ export const ITEMS = [
     structureType: "symbolFlipFix",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":59,"b":88,"op":"vs","answer":"<","display":{"promptText":"To compare 59 and 88, Rosa chose >. Check Rosa's work — which symbol makes it true?"},"answerType":"symbolSelect"},
+    question: {"a":59,"b":88,"op":"vs","answer":"<","display":{"promptText":"To compare 59 and 88, Rosa chose >. Check Rosa's work — which symbol makes 59 __ 88 true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0118",
@@ -6912,7 +6912,7 @@ export const ITEMS = [
     structureType: "symbolFlipFix",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":23,"b":50,"op":"vs","answer":"<","display":{"promptText":"Nora compared 23 and 50 and picked >. The hungry mouth should eat the bigger number! Which symbol is correct?"},"answerType":"symbolSelect"},
+    question: {"a":23,"b":50,"op":"vs","answer":"<","display":{"promptText":"Nora compared 23 and 50 and picked >. The hungry mouth should eat the bigger number! Which symbol should go in 23 __ 50?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0120",
@@ -6922,7 +6922,7 @@ export const ITEMS = [
     structureType: "symbolFlipFix",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":67,"b":41,"op":"vs","answer":">","display":{"promptText":"To compare 67 and 41, Luca chose <. Check Luca's work — which symbol makes it true?"},"answerType":"symbolSelect"},
+    question: {"a":67,"b":41,"op":"vs","answer":">","display":{"promptText":"To compare 67 and 41, Luca chose <. Check Luca's work — which symbol makes 67 __ 41 true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0121",
@@ -6942,7 +6942,7 @@ export const ITEMS = [
     structureType: "symbolFlipFix",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":35,"b":19,"op":"vs","answer":">","display":{"promptText":"Omar compared 35 and 19 and picked <. The hungry mouth should eat the bigger number! Which symbol is correct?"},"answerType":"symbolSelect"},
+    question: {"a":35,"b":19,"op":"vs","answer":">","display":{"promptText":"Omar compared 35 and 19 and picked <. The hungry mouth should eat the bigger number! Which symbol is correct in 35 __ 19?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0123",
@@ -6952,7 +6952,7 @@ export const ITEMS = [
     structureType: "symbolFlipFix",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":88,"b":62,"op":"vs","answer":">","display":{"promptText":"To compare 88 and 62, Ben chose <. Check Ben's work — which symbol makes it true?"},"answerType":"symbolSelect"},
+    question: {"a":88,"b":62,"op":"vs","answer":">","display":{"promptText":"To compare 88 and 62, Ben chose <. Check Ben's work — which symbol belongs in 88 __ 62?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0124",
@@ -6972,7 +6972,7 @@ export const ITEMS = [
     structureType: "symbolFlipFix",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":42,"b":24,"op":"vs","answer":">","display":{"promptText":"Priya compared 42 and 24 and picked <. The hungry mouth should eat the bigger number! Which symbol is correct?"},"answerType":"symbolSelect"},
+    question: {"a":42,"b":24,"op":"vs","answer":">","display":{"promptText":"Priya compared 42 and 24 and picked <. The hungry mouth should eat the bigger number! Which symbol should go in 42 __ 24?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0126",
@@ -6982,7 +6982,7 @@ export const ITEMS = [
     structureType: "symbolFlipFix",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":39,"b":57,"op":"vs","answer":"<","display":{"promptText":"To compare 39 and 57, Sam chose >. Check Sam's work — which symbol makes it true?"},"answerType":"symbolSelect"},
+    question: {"a":39,"b":57,"op":"vs","answer":"<","display":{"promptText":"To compare 39 and 57, Sam chose >. Check Sam's work — which symbol belongs in 39 __ 57?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0127",
@@ -7002,7 +7002,7 @@ export const ITEMS = [
     structureType: "symbolFlipFixBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":415,"b":451,"op":"vs","answer":"<","display":{"promptText":"Ava compared 415 and 451 and picked >. The hungry mouth should eat the bigger number! Which symbol is correct?"},"answerType":"symbolSelect"},
+    question: {"a":415,"b":451,"op":"vs","answer":"<","display":{"promptText":"Ava compared 415 and 451 and picked >. The hungry mouth should eat the bigger number! Which symbol is correct in 415 __ 451?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0129",
@@ -7012,7 +7012,7 @@ export const ITEMS = [
     structureType: "symbolFlipFixBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":326,"b":263,"op":"vs","answer":">","display":{"promptText":"To compare 326 and 263, Omar chose <. Check Omar's work — which symbol makes it true?"},"answerType":"symbolSelect"},
+    question: {"a":326,"b":263,"op":"vs","answer":">","display":{"promptText":"To compare 326 and 263, Omar chose <. Check Omar's work — which symbol makes 326 __ 263 true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0130",
@@ -7032,7 +7032,7 @@ export const ITEMS = [
     structureType: "symbolFlipFixBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":617,"b":671,"op":"vs","answer":"<","display":{"promptText":"Finn compared 617 and 671 and picked >. The hungry mouth should eat the bigger number! Which symbol is correct?"},"answerType":"symbolSelect"},
+    question: {"a":617,"b":671,"op":"vs","answer":"<","display":{"promptText":"Finn compared 617 and 671 and picked >. The hungry mouth should eat the bigger number! Which symbol should go in 617 __ 671?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0132",
@@ -7042,7 +7042,7 @@ export const ITEMS = [
     structureType: "symbolFlipFixBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":289,"b":298,"op":"vs","answer":"<","display":{"promptText":"To compare 289 and 298, Priya chose >. Check Priya's work — which symbol makes it true?"},"answerType":"symbolSelect"},
+    question: {"a":289,"b":298,"op":"vs","answer":"<","display":{"promptText":"To compare 289 and 298, Priya chose >. Check Priya's work — which symbol makes 289 __ 298 true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0133",
@@ -7062,7 +7062,7 @@ export const ITEMS = [
     structureType: "symbolFlipFixBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":98,"b":102,"op":"vs","answer":"<","display":{"promptText":"Nia compared 98 and 102 and picked >. The hungry mouth should eat the bigger number! Which symbol is correct?"},"answerType":"symbolSelect"},
+    question: {"a":98,"b":102,"op":"vs","answer":"<","display":{"promptText":"Nia compared 98 and 102 and picked >. The hungry mouth should eat the bigger number! Which symbol is correct in 98 __ 102?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0135",
@@ -7072,7 +7072,7 @@ export const ITEMS = [
     structureType: "symbolFlipFixBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":846,"b":864,"op":"vs","answer":"<","display":{"promptText":"To compare 846 and 864, Kai chose >. Check Kai's work — which symbol makes it true?"},"answerType":"symbolSelect"},
+    question: {"a":846,"b":864,"op":"vs","answer":"<","display":{"promptText":"To compare 846 and 864, Kai chose >. Check Kai's work — which symbol belongs in 846 __ 864?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0136",
@@ -7092,7 +7092,7 @@ export const ITEMS = [
     structureType: "symbolFlipFixBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":479,"b":497,"op":"vs","answer":"<","display":{"promptText":"Lily compared 479 and 497 and picked >. The hungry mouth should eat the bigger number! Which symbol is correct?"},"answerType":"symbolSelect"},
+    question: {"a":479,"b":497,"op":"vs","answer":"<","display":{"promptText":"Lily compared 479 and 497 and picked >. The hungry mouth should eat the bigger number! Which symbol should go in 479 __ 497?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0138",
@@ -7102,7 +7102,7 @@ export const ITEMS = [
     structureType: "symbolFlipFixBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":368,"b":386,"op":"vs","answer":"<","display":{"promptText":"To compare 368 and 386, Amara chose >. Check Amara's work — which symbol makes it true?"},"answerType":"symbolSelect"},
+    question: {"a":368,"b":386,"op":"vs","answer":"<","display":{"promptText":"To compare 368 and 386, Amara chose >. Check Amara's work — which symbol makes 368 __ 386 true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0139",
@@ -7122,7 +7122,7 @@ export const ITEMS = [
     structureType: "symbolFlipFixBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":214,"b":241,"op":"vs","answer":"<","display":{"promptText":"Mina compared 214 and 241 and picked >. The hungry mouth should eat the bigger number! Which symbol is correct?"},"answerType":"symbolSelect"},
+    question: {"a":214,"b":241,"op":"vs","answer":"<","display":{"promptText":"Mina compared 214 and 241 and picked >. The hungry mouth should eat the bigger number! Which symbol is correct in 214 __ 241?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0141",
@@ -7132,7 +7132,7 @@ export const ITEMS = [
     structureType: "symbolFlipFixBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":583,"b":538,"op":"vs","answer":">","display":{"promptText":"To compare 583 and 538, Theo chose <. Check Theo's work — which symbol makes it true?"},"answerType":"symbolSelect"},
+    question: {"a":583,"b":538,"op":"vs","answer":">","display":{"promptText":"To compare 583 and 538, Theo chose <. Check Theo's work — which symbol belongs in 583 __ 538?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0142",
@@ -7152,7 +7152,7 @@ export const ITEMS = [
     structureType: "symbolFlipFixBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":455,"b":545,"op":"vs","answer":"<","display":{"promptText":"Zoe compared 455 and 545 and picked >. The hungry mouth should eat the bigger number! Which symbol is correct?"},"answerType":"symbolSelect"},
+    question: {"a":455,"b":545,"op":"vs","answer":"<","display":{"promptText":"Zoe compared 455 and 545 and picked >. The hungry mouth should eat the bigger number! Which symbol should go in 455 __ 545?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0144",
@@ -7162,7 +7162,7 @@ export const ITEMS = [
     structureType: "symbolFlipFixBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":312,"b":321,"op":"vs","answer":"<","display":{"promptText":"To compare 312 and 321, Rosa chose >. Check Rosa's work — which symbol makes it true?"},"answerType":"symbolSelect"},
+    question: {"a":312,"b":321,"op":"vs","answer":"<","display":{"promptText":"To compare 312 and 321, Rosa chose >. Check Rosa's work — which symbol belongs in 312 __ 321?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0145",
@@ -7182,7 +7182,7 @@ export const ITEMS = [
     structureType: "symbolFlipFixBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":235,"b":253,"op":"vs","answer":"<","display":{"promptText":"Nora compared 235 and 253 and picked >. The hungry mouth should eat the bigger number! Which symbol is correct?"},"answerType":"symbolSelect"},
+    question: {"a":235,"b":253,"op":"vs","answer":"<","display":{"promptText":"Nora compared 235 and 253 and picked >. The hungry mouth should eat the bigger number! Which symbol is correct in 235 __ 253?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0147",
@@ -7192,7 +7192,7 @@ export const ITEMS = [
     structureType: "digitCountTrap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":98,"b":102,"op":"vs","answer":"<","display":{"promptText":"Ava says 98 must be greater because it starts with a bigger digit. Compare 98 and 102 — which symbol is right?"},"answerType":"symbolSelect"},
+    question: {"a":98,"b":102,"op":"vs","answer":"<","display":{"promptText":"Ava says 98 must be greater because it starts with a bigger digit. Which symbol is right for 98 __ 102?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0148",
@@ -7202,7 +7202,7 @@ export const ITEMS = [
     structureType: "digitCountTrap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":95,"b":105,"op":"vs","answer":"<","display":{"promptText":"Omar thinks a number that starts with 9 always wins. Choose the true symbol for 95 and 105."},"answerType":"symbolSelect"},
+    question: {"a":95,"b":105,"op":"vs","answer":"<","display":{"promptText":"Omar thinks a number that starts with 9 always wins. Which symbol makes 95 __ 105 true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0149",
@@ -7212,7 +7212,7 @@ export const ITEMS = [
     structureType: "digitCountTrap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":89,"b":111,"op":"vs","answer":"<","display":{"promptText":"Ben says 89 must be greater because it starts with a bigger digit. Compare 89 and 111 — which symbol is right?"},"answerType":"symbolSelect"},
+    question: {"a":89,"b":111,"op":"vs","answer":"<","display":{"promptText":"Ben says 89 must be greater because it starts with a bigger digit. Which symbol is right in 89 __ 111?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0150",
@@ -7222,7 +7222,7 @@ export const ITEMS = [
     structureType: "digitCountTrap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":97,"b":103,"op":"vs","answer":"<","display":{"promptText":"Finn thinks a number that starts with 9 always wins. Choose the true symbol for 97 and 103."},"answerType":"symbolSelect"},
+    question: {"a":97,"b":103,"op":"vs","answer":"<","display":{"promptText":"Finn thinks a number that starts with 9 always wins. Which sign makes 97 __ 103 true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0151",
@@ -7232,7 +7232,7 @@ export const ITEMS = [
     structureType: "digitCountTrap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":96,"b":106,"op":"vs","answer":"<","display":{"promptText":"Priya says 96 must be greater because it starts with a bigger digit. Compare 96 and 106 — which symbol is right?"},"answerType":"symbolSelect"},
+    question: {"a":96,"b":106,"op":"vs","answer":"<","display":{"promptText":"Priya says 96 must be greater because it starts with a bigger digit. Which symbol is right for 96 __ 106?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0152",
@@ -7242,7 +7242,7 @@ export const ITEMS = [
     structureType: "digitCountTrap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":99,"b":100,"op":"vs","answer":"<","display":{"promptText":"Sam thinks a number that starts with 9 always wins. Choose the true symbol for 99 and 100."},"answerType":"symbolSelect"},
+    question: {"a":99,"b":100,"op":"vs","answer":"<","display":{"promptText":"Sam thinks a number that starts with 9 always wins. Which symbol makes 99 __ 100 true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0153",
@@ -7252,7 +7252,7 @@ export const ITEMS = [
     structureType: "digitCountTrap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":92,"b":120,"op":"vs","answer":"<","display":{"promptText":"Nia says 92 must be greater because it starts with a bigger digit. Compare 92 and 120 — which symbol is right?"},"answerType":"symbolSelect"},
+    question: {"a":92,"b":120,"op":"vs","answer":"<","display":{"promptText":"Nia says 92 must be greater because it starts with a bigger digit. Which symbol is right in 92 __ 120?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0154",
@@ -7262,7 +7262,7 @@ export const ITEMS = [
     structureType: "digitCountTrap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":94,"b":104,"op":"vs","answer":"<","display":{"promptText":"Kai thinks a number that starts with 9 always wins. Choose the true symbol for 94 and 104."},"answerType":"symbolSelect"},
+    question: {"a":94,"b":104,"op":"vs","answer":"<","display":{"promptText":"Kai thinks a number that starts with 9 always wins. Which sign makes 94 __ 104 true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0155",
@@ -7272,7 +7272,7 @@ export const ITEMS = [
     structureType: "digitCountTrap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":91,"b":110,"op":"vs","answer":"<","display":{"promptText":"June says 91 must be greater because it starts with a bigger digit. Compare 91 and 110 — which symbol is right?"},"answerType":"symbolSelect"},
+    question: {"a":91,"b":110,"op":"vs","answer":"<","display":{"promptText":"June says 91 must be greater because it starts with a bigger digit. Which symbol is right for 91 __ 110?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0156",
@@ -7282,7 +7282,7 @@ export const ITEMS = [
     structureType: "digitCountTrap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":93,"b":130,"op":"vs","answer":"<","display":{"promptText":"Lily thinks a number that starts with 9 always wins. Choose the true symbol for 93 and 130."},"answerType":"symbolSelect"},
+    question: {"a":93,"b":130,"op":"vs","answer":"<","display":{"promptText":"Lily thinks a number that starts with 9 always wins. Which symbol makes 93 __ 130 true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0157",
@@ -7292,7 +7292,7 @@ export const ITEMS = [
     structureType: "digitCountTrap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":88,"b":108,"op":"vs","answer":"<","display":{"promptText":"Amara says 88 must be greater because it starts with a bigger digit. Compare 88 and 108 — which symbol is right?"},"answerType":"symbolSelect"},
+    question: {"a":88,"b":108,"op":"vs","answer":"<","display":{"promptText":"Amara says 88 must be greater because it starts with a bigger digit. Which symbol is right in 88 __ 108?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0158",
@@ -7302,7 +7302,7 @@ export const ITEMS = [
     structureType: "digitCountTrap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":90,"b":101,"op":"vs","answer":"<","display":{"promptText":"Leo thinks a number that starts with 9 always wins. Choose the true symbol for 90 and 101."},"answerType":"symbolSelect"},
+    question: {"a":90,"b":101,"op":"vs","answer":"<","display":{"promptText":"Leo thinks a number that starts with 9 always wins. Which sign makes 90 __ 101 true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0159",
@@ -7312,7 +7312,7 @@ export const ITEMS = [
     structureType: "digitCountTrap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":87,"b":107,"op":"vs","answer":"<","display":{"promptText":"Mina says 87 must be greater because it starts with a bigger digit. Compare 87 and 107 — which symbol is right?"},"answerType":"symbolSelect"},
+    question: {"a":87,"b":107,"op":"vs","answer":"<","display":{"promptText":"Mina says 87 must be greater because it starts with a bigger digit. Which symbol is right for 87 __ 107?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0160",
@@ -7322,7 +7322,7 @@ export const ITEMS = [
     structureType: "digitCountTrap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":86,"b":112,"op":"vs","answer":"<","display":{"promptText":"Theo thinks a number that starts with 9 always wins. Choose the true symbol for 86 and 112."},"answerType":"symbolSelect"},
+    question: {"a":86,"b":112,"op":"vs","answer":"<","display":{"promptText":"Theo thinks a number that starts with 9 always wins. Which symbol makes 86 __ 112 true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0161",
@@ -7332,7 +7332,7 @@ export const ITEMS = [
     structureType: "digitCountTrap",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":85,"b":115,"op":"vs","answer":"<","display":{"promptText":"Ida says 85 must be greater because it starts with a bigger digit. Compare 85 and 115 — which symbol is right?"},"answerType":"symbolSelect"},
+    question: {"a":85,"b":115,"op":"vs","answer":"<","display":{"promptText":"Ida says 85 must be greater because it starts with a bigger digit. Which symbol is right in 85 __ 115?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-conc-b0821-0162",
@@ -7882,7 +7882,7 @@ export const ITEMS = [
     structureType: "fitsBetween",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":5,"choices":[5,8,10,2],"display":{"promptText":"Ida needs a number greater than 3 and less than 7. Which one works?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":5,"choices":[5,8,10,2],"display":{"promptText":"Which number is more than 3 and less than 7?"}},
   },
   {
     itemId: "comparing-conc-b0821-0217",
@@ -7902,7 +7902,7 @@ export const ITEMS = [
     structureType: "fitsBetween",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":4,"choices":[4,7,9,1],"display":{"promptText":"Rosa hunts for a number bigger than 2 but smaller than 6. Pick it."}},
+    question: {"a":null,"b":null,"op":"vs","answer":4,"choices":[4,7,9,1],"display":{"promptText":"Which number comes after 2 but before 6?"}},
   },
   {
     itemId: "comparing-conc-b0821-0219",
@@ -7912,7 +7912,7 @@ export const ITEMS = [
     structureType: "fitsBetween",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":8,"choices":[5,8,11,13],"display":{"promptText":"Diego needs a number greater than 6 and less than 10. Which one works?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":8,"choices":[5,8,11,13],"display":{"promptText":"Which of these numbers is between 6 and 10?"}},
   },
   {
     itemId: "comparing-conc-b0821-0220",
@@ -7932,7 +7932,7 @@ export const ITEMS = [
     structureType: "fitsBetween",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":9,"choices":[12,9,6,14],"display":{"promptText":"Luca hunts for a number bigger than 7 but smaller than 11. Pick it."}},
+    question: {"a":null,"b":null,"op":"vs","answer":9,"choices":[12,9,6,14],"display":{"promptText":"Which number is smaller than 11 but bigger than 7?"}},
   },
   {
     itemId: "comparing-conc-b0821-0222",
@@ -7942,7 +7942,7 @@ export const ITEMS = [
     structureType: "fitsBetween",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":6,"choices":[10,12,2,6],"display":{"promptText":"Ava needs a number greater than 3 and less than 9. Which one works?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":6,"choices":[10,12,2,6],"display":{"promptText":"Which number is greater than 3 and less than 9?"}},
   },
   {
     itemId: "comparing-conc-b0821-0223",
@@ -7962,7 +7962,7 @@ export const ITEMS = [
     structureType: "fitsBetween",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":10,"choices":[7,13,10,15],"display":{"promptText":"Ben hunts for a number bigger than 8 but smaller than 12. Pick it."}},
+    question: {"a":null,"b":null,"op":"vs","answer":10,"choices":[7,13,10,15],"display":{"promptText":"Which number is bigger than 8 but smaller than 12?"}},
   },
   {
     itemId: "comparing-conc-b0821-0225",
@@ -7972,7 +7972,7 @@ export const ITEMS = [
     structureType: "fitsBetween",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":5,"choices":[5,1,9,11],"display":{"promptText":"Finn needs a number greater than 2 and less than 8. Which one works?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":5,"choices":[5,1,9,11],"display":{"promptText":"Which number is less than 8 and greater than 2?"}},
   },
   {
     itemId: "comparing-conc-b0821-0226",
@@ -7992,7 +7992,7 @@ export const ITEMS = [
     structureType: "fitsBetween",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":7,"choices":[13,11,7,3],"display":{"promptText":"Sam hunts for a number bigger than 4 but smaller than 10. Pick it."}},
+    question: {"a":null,"b":null,"op":"vs","answer":7,"choices":[13,11,7,3],"display":{"promptText":"Which number is bigger than 4 but smaller than 10?"}},
   },
   {
     itemId: "comparing-conc-b0821-0228",
@@ -8002,7 +8002,7 @@ export const ITEMS = [
     structureType: "fitsBetween",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":3,"choices":[8,6,0,3],"display":{"promptText":"Nia needs a number greater than 1 and less than 5. Which one works?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":3,"choices":[8,6,0,3],"display":{"promptText":"Which number is greater than 1 and less than 5?"}},
   },
   {
     itemId: "comparing-conc-b0821-0229",
@@ -8022,7 +8022,7 @@ export const ITEMS = [
     structureType: "fitsBetween",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":10,"choices":[14,16,10,6],"display":{"promptText":"June hunts for a number bigger than 7 but smaller than 13. Pick it."}},
+    question: {"a":null,"b":null,"op":"vs","answer":10,"choices":[14,16,10,6],"display":{"promptText":"Which number fits between 7 and 13?"}},
   },
   {
     itemId: "comparing-conc-b0821-0231",
@@ -8032,7 +8032,7 @@ export const ITEMS = [
     structureType: "fitsBetweenTwoDigit",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":25,"choices":[25,31,33,19],"display":{"promptText":"Ida needs a number greater than 20 and less than 30. Which one works?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":25,"choices":[25,31,33,19],"display":{"promptText":"Which number is less than 30 and greater than 20?"}},
   },
   {
     itemId: "comparing-conc-b0821-0232",
@@ -8052,7 +8052,7 @@ export const ITEMS = [
     structureType: "fitsBetweenTwoDigit",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":65,"choices":[73,65,71,59],"display":{"promptText":"Rosa hunts for a number bigger than 60 but smaller than 70. Pick it."}},
+    question: {"a":null,"b":null,"op":"vs","answer":65,"choices":[73,65,71,59],"display":{"promptText":"Which number is smaller than 70 but bigger than 60?"}},
   },
   {
     itemId: "comparing-conc-b0821-0234",
@@ -8062,7 +8062,7 @@ export const ITEMS = [
     structureType: "fitsBetweenTwoDigit",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":20,"choices":[28,26,14,20],"display":{"promptText":"Diego needs a number greater than 15 and less than 25. Which one works?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":20,"choices":[28,26,14,20],"display":{"promptText":"Which number is greater than 15 and less than 25?"}},
   },
   {
     itemId: "comparing-conc-b0821-0235",
@@ -8082,7 +8082,7 @@ export const ITEMS = [
     structureType: "fitsBetweenTwoDigit",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":35,"choices":[35,29,41,43],"display":{"promptText":"Luca hunts for a number bigger than 30 but smaller than 40. Pick it."}},
+    question: {"a":null,"b":null,"op":"vs","answer":35,"choices":[35,29,41,43],"display":{"promptText":"Which number fits between 30 and 40?"}},
   },
   {
     itemId: "comparing-conc-b0821-0237",
@@ -8092,7 +8092,7 @@ export const ITEMS = [
     structureType: "fitsBetweenTwoDigit",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":90,"choices":[84,90,98,96],"display":{"promptText":"Ava needs a number greater than 85 and less than 95. Which one works?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":90,"choices":[84,90,98,96],"display":{"promptText":"Which number is more than 85 and less than 95?"}},
   },
   {
     itemId: "comparing-conc-b0821-0238",
@@ -8112,7 +8112,7 @@ export const ITEMS = [
     structureType: "fitsBetweenTwoDigit",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":15,"choices":[15,9,23,21],"display":{"promptText":"Ben hunts for a number bigger than 10 but smaller than 20. Pick it."}},
+    question: {"a":null,"b":null,"op":"vs","answer":15,"choices":[15,9,23,21],"display":{"promptText":"Which number comes after 10 but before 20?"}},
   },
   {
     itemId: "comparing-conc-b0821-0240",
@@ -8122,7 +8122,7 @@ export const ITEMS = [
     structureType: "fitsBetweenTwoDigit",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":70,"choices":[78,76,64,70],"display":{"promptText":"Finn needs a number greater than 65 and less than 75. Which one works?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":70,"choices":[78,76,64,70],"display":{"promptText":"Which of these numbers is between 65 and 75?"}},
   },
   {
     itemId: "comparing-conc-b0821-0241",
@@ -8142,7 +8142,7 @@ export const ITEMS = [
     structureType: "fitsBetweenTwoDigit",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":45,"choices":[51,45,53,39],"display":{"promptText":"Sam hunts for a number bigger than 40 but smaller than 50. Pick it."}},
+    question: {"a":null,"b":null,"op":"vs","answer":45,"choices":[51,45,53,39],"display":{"promptText":"Which number comes after 40 but before 50?"}},
   },
   {
     itemId: "comparing-conc-b0821-0243",
@@ -8152,7 +8152,7 @@ export const ITEMS = [
     structureType: "fitsBetweenTwoDigit",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":75,"choices":[83,81,75,69],"display":{"promptText":"Nia needs a number greater than 70 and less than 80. Which one works?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":75,"choices":[83,81,75,69],"display":{"promptText":"Which number is more than 70 and less than 80?"}},
   },
   {
     itemId: "comparing-conc-b0821-0244",
@@ -8172,7 +8172,7 @@ export const ITEMS = [
     structureType: "fitsBetweenTwoDigit",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":40,"choices":[48,46,40,34],"display":{"promptText":"June hunts for a number bigger than 35 but smaller than 45. Pick it."}},
+    question: {"a":null,"b":null,"op":"vs","answer":40,"choices":[48,46,40,34],"display":{"promptText":"Which number is bigger than 35 but smaller than 45?"}},
   },
   {
     itemId: "comparing-conc-b0821-0246",
@@ -8182,7 +8182,7 @@ export const ITEMS = [
     structureType: "fitsBetweenBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":110,"choices":[121,123,99,110],"display":{"promptText":"Ida needs a number greater than 100 and less than 120. Which one works?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":110,"choices":[121,123,99,110],"display":{"promptText":"Which of these numbers is between 100 and 120?"}},
   },
   {
     itemId: "comparing-conc-b0821-0247",
@@ -8202,7 +8202,7 @@ export const ITEMS = [
     structureType: "fitsBetweenBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":490,"choices":[479,503,501,490],"display":{"promptText":"Rosa hunts for a number bigger than 480 but smaller than 500. Pick it."}},
+    question: {"a":null,"b":null,"op":"vs","answer":490,"choices":[479,503,501,490],"display":{"promptText":"Which number fits between 480 and 500?"}},
   },
   {
     itemId: "comparing-conc-b0821-0249",
@@ -8212,7 +8212,7 @@ export const ITEMS = [
     structureType: "fitsBetweenBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":350,"choices":[350,339,363,361],"display":{"promptText":"Diego needs a number greater than 340 and less than 360. Which one works?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":350,"choices":[350,339,363,361],"display":{"promptText":"Which number is more than 340 and less than 360?"}},
   },
   {
     itemId: "comparing-conc-b0821-0250",
@@ -8232,7 +8232,7 @@ export const ITEMS = [
     structureType: "fitsBetweenBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":760,"choices":[771,773,760,749],"display":{"promptText":"Luca hunts for a number bigger than 750 but smaller than 770. Pick it."}},
+    question: {"a":null,"b":null,"op":"vs","answer":760,"choices":[771,773,760,749],"display":{"promptText":"Which number is bigger than 750 but smaller than 770?"}},
   },
   {
     itemId: "comparing-conc-b0821-0252",
@@ -8242,7 +8242,7 @@ export const ITEMS = [
     structureType: "fitsBetweenBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":200,"choices":[211,213,189,200],"display":{"promptText":"Ava needs a number greater than 190 and less than 210. Which one works?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":200,"choices":[211,213,189,200],"display":{"promptText":"Which number is less than 210 and greater than 190?"}},
   },
   {
     itemId: "comparing-conc-b0821-0253",
@@ -8262,7 +8262,7 @@ export const ITEMS = [
     structureType: "fitsBetweenBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":830,"choices":[830,843,819,841],"display":{"promptText":"Ben hunts for a number bigger than 820 but smaller than 840. Pick it."}},
+    question: {"a":null,"b":null,"op":"vs","answer":830,"choices":[830,843,819,841],"display":{"promptText":"Which number is smaller than 840 but bigger than 820?"}},
   },
   {
     itemId: "comparing-conc-b0821-0255",
@@ -8272,7 +8272,7 @@ export const ITEMS = [
     structureType: "fitsBetweenBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":420,"choices":[431,409,420,433],"display":{"promptText":"Finn needs a number greater than 410 and less than 430. Which one works?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":420,"choices":[431,409,420,433],"display":{"promptText":"Which number is greater than 410 and less than 430?"}},
   },
   {
     itemId: "comparing-conc-b0821-0256",
@@ -8292,7 +8292,7 @@ export const ITEMS = [
     structureType: "fitsBetweenBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":910,"choices":[921,899,923,910],"display":{"promptText":"Sam hunts for a number bigger than 900 but smaller than 920. Pick it."}},
+    question: {"a":null,"b":null,"op":"vs","answer":910,"choices":[921,899,923,910],"display":{"promptText":"Which number is smaller than 920 but bigger than 900?"}},
   },
   {
     itemId: "comparing-conc-b0821-0258",
@@ -8302,7 +8302,7 @@ export const ITEMS = [
     structureType: "fitsBetweenBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":150,"choices":[161,150,163,139],"display":{"promptText":"Nia needs a number greater than 140 and less than 160. Which one works?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":150,"choices":[161,150,163,139],"display":{"promptText":"Which number is less than 160 and greater than 140?"}},
   },
   {
     itemId: "comparing-conc-b0821-0259",
@@ -8322,7 +8322,7 @@ export const ITEMS = [
     structureType: "fitsBetweenBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":580,"choices":[591,569,580,593],"display":{"promptText":"June hunts for a number bigger than 570 but smaller than 590. Pick it."}},
+    question: {"a":null,"b":null,"op":"vs","answer":580,"choices":[591,569,580,593],"display":{"promptText":"Which number comes after 570 but before 590?"}},
   },
   {
     itemId: "comparing-conc-b0821-0261",
@@ -9782,7 +9782,7 @@ export const ITEMS = [
     structureType: "closerToTarget",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":99,"choices":[99,91],"display":{"promptText":"Finn aims for 95. Which is closer to 95: 91 or 99?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":99,"choices":[99,90],"display":{"promptText":"Finn aims for 95. Which is closer to 95: 90 or 99?"}},
   },
   {
     itemId: "comparing-conc-b0821-0407",
@@ -9952,7 +9952,7 @@ export const ITEMS = [
     structureType: "closerToTargetBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":870,"choices":[830,870],"display":{"promptText":"Ben compares 830 and 870. Which one sits nearer 850?"}},
+    question: {"a":null,"b":null,"op":"vs","answer":870,"choices":[820,870],"display":{"promptText":"Ben compares 820 and 870. Which one sits nearer 850?"}},
   },
   {
     itemId: "comparing-conc-b0821-0424",
@@ -10622,7 +10622,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":83,"b":100,"op":"?","answer":"<","display":{"promptText":"Use 100 as a benchmark: is 83 less than 100?"}},
+    question: {"a":83,"b":100,"op":"?","answer":"<","display":{"promptText":"Which symbol fits in 83 __ 100?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-2_3-002",
@@ -10632,7 +10632,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":126,"b":100,"op":"?","answer":">","display":{"promptText":"Use 100 as a benchmark: is 126 greater than 100?"}},
+    question: {"a":126,"b":100,"op":"?","answer":">","display":{"promptText":"Which sign goes between 126 and 100?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-2_3-003",
@@ -10642,7 +10642,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":500,"b":500,"op":"?","answer":"=","display":{"promptText":"Use 500 as a benchmark: how does 500 compare to 500?"}},
+    question: {"a":500,"b":500,"op":"?","answer":"=","display":{"promptText":"Which symbol makes 500 __ 500 true?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-2_3-004",
@@ -10652,7 +10652,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":340,"b":250,"op":"?","answer":">","display":{"promptText":"Rosa read 340 pages this summer. Use 250 as a benchmark: how does 340 compare to 250?"}},
+    question: {"a":340,"b":250,"op":"?","answer":">","display":{"promptText":"Which sign makes 340 __ 250 true?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-2_3-005",
@@ -10662,7 +10662,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":175,"b":200,"op":"?","answer":"<","display":{"promptText":"Use 200 as a benchmark: is 175 less than 200?"}},
+    question: {"a":175,"b":200,"op":"?","answer":"<","display":{"promptText":"Which symbol goes between 175 and 200?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-2_3-008",
@@ -10672,7 +10672,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":91,"b":100,"op":"?","answer":"<","display":{"promptText":"Ben counted 91 marbles in his jar. Use 100 as a benchmark: how does 91 compare to 100?"}},
+    question: {"a":91,"b":100,"op":"?","answer":"<","display":{"promptText":"Which symbol makes 91 __ 100 true?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-2_3-014",
@@ -10682,7 +10682,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":520,"b":500,"op":"?","answer":">","display":{"promptText":"Maya's class collected 520 cans. Use 500 as a benchmark: how does 520 compare to 500?"}},
+    question: {"a":520,"b":500,"op":"?","answer":">","display":{"promptText":"Which symbol should go between 520 and 500?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-23-001",
@@ -10692,7 +10692,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":47,"b":50,"op":"?","answer":"<","display":{"promptText":"Use 50 as a benchmark: is 47 less than 50?"}},
+    question: {"a":47,"b":50,"op":"?","answer":"<","display":{"promptText":"Which symbol makes 47 __ 50 true?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-23-002",
@@ -10702,7 +10702,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":65,"b":50,"op":"?","answer":">","display":{"promptText":"Use 50 as a benchmark: is 65 greater than 50?"}},
+    question: {"a":65,"b":50,"op":"?","answer":">","display":{"promptText":"Which symbol should go between 65 and 50?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-23-003",
@@ -10712,7 +10712,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":30,"b":30,"op":"?","answer":"=","display":{"promptText":"Use 30 as a benchmark: how does 30 compare to 30?"}},
+    question: {"a":30,"b":30,"op":"?","answer":"=","display":{"promptText":"Which symbol goes between 30 and 30?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-4_5-007",
@@ -10722,7 +10722,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":1.25,"b":1,"op":"?","answer":">","display":{"promptText":"One whole is the benchmark here. How does 1.25 compare to 1?"}},
+    question: {"a":1.25,"b":1,"op":"?","answer":">","display":{"promptText":"One whole is the benchmark here. Which sign fits in 1.25 __ 1?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-4_5-009",
@@ -10732,7 +10732,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":750,"b":750,"op":"?","answer":"=","display":{"promptText":"A library sets 750 books as its benchmark for the month. How does 750 compare to 750?"}},
+    question: {"a":750,"b":750,"op":"?","answer":"=","display":{"promptText":"A library sets 750 books as its benchmark for the month. Which symbol makes 750 __ 750 true?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-4_5-012",
@@ -10742,7 +10742,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":3.75,"b":4,"op":"?","answer":"<","display":{"promptText":"Round number 4 is the benchmark. How does 3.75 compare to 4?"}},
+    question: {"a":3.75,"b":4,"op":"?","answer":"<","display":{"promptText":"Round number 4 is the benchmark. Which symbol goes in 3.75 __ 4?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-45-001",
@@ -10752,7 +10752,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":487,"b":500,"op":"?","answer":"<","display":{"promptText":"Use 500 as a benchmark: is 487 less than 500?"}},
+    question: {"a":487,"b":500,"op":"?","answer":"<","display":{"promptText":"Which sign goes in 487 __ 500?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-45-002",
@@ -10762,7 +10762,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":678,"b":500,"op":"?","answer":">","display":{"promptText":"Use 500 as a benchmark: is 678 greater than 500?"}},
+    question: {"a":678,"b":500,"op":"?","answer":">","display":{"promptText":"Which symbol belongs in 678 __ 500?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-45-003",
@@ -10772,7 +10772,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":100,"b":100,"op":"?","answer":"=","display":{"promptText":"Use 100 as a benchmark: how does 100 compare to 100?"}},
+    question: {"a":100,"b":100,"op":"?","answer":"=","display":{"promptText":"Which symbol makes 100 __ 100 true?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-K_1-001",
@@ -10782,7 +10782,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":5,"op":"?","answer":"<","display":{"promptText":"Mia found 3 shells. Use 5 as the benchmark: how does 3 compare to 5?"}},
+    question: {"a":3,"b":5,"op":"?","answer":"<","display":{"promptText":"Which symbol belongs in 3 __ 5?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-K_1-002",
@@ -10792,7 +10792,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":1,"b":5,"op":"?","answer":"<","display":{"promptText":"The benchmark number is 5. Is 1 less than 5?"}},
+    question: {"a":1,"b":5,"op":"?","answer":"<","display":{"promptText":"Which symbol should go between 1 and 5?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-K_1-003",
@@ -10802,7 +10802,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":5,"op":"?","answer":">","display":{"promptText":"Leo clapped 9 times. Compare 9 to the benchmark 5."}},
+    question: {"a":9,"b":5,"op":"?","answer":">","display":{"promptText":"Which sign goes between 9 and 5?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-K_1-004",
@@ -10812,7 +10812,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":5,"op":"?","answer":">","display":{"promptText":"Use 5 as the benchmark. How does 6 compare to 5?"}},
+    question: {"a":6,"b":5,"op":"?","answer":">","display":{"promptText":"Which symbol should go between 6 and 5?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-K_1-005",
@@ -10822,7 +10822,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":5,"op":"?","answer":">","display":{"promptText":"The benchmark is 5. Is 8 greater than 5?"}},
+    question: {"a":8,"b":5,"op":"?","answer":">","display":{"promptText":"Which sign goes in 8 __ 5?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-K_1-006",
@@ -10832,7 +10832,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":5,"op":"?","answer":"=","display":{"promptText":"Ava has 5 buttons. Using 5 as the benchmark, how does 5 compare to 5?"}},
+    question: {"a":5,"b":5,"op":"?","answer":"=","display":{"promptText":"Which symbol goes between 5 and 5?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-K_1-007",
@@ -10842,7 +10842,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":10,"op":"?","answer":"<","display":{"promptText":"Think of 10 as your benchmark. Is 4 less than 10?"}},
+    question: {"a":4,"b":10,"op":"?","answer":"<","display":{"promptText":"Which symbol belongs in 4 __ 10?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-K_1-008",
@@ -10852,7 +10852,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":10,"op":"?","answer":"<","display":{"promptText":"The benchmark is 10. How does 8 compare to 10?"}},
+    question: {"a":8,"b":10,"op":"?","answer":"<","display":{"promptText":"Which symbol makes 8 __ 10 true?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-K_1-009",
@@ -10862,7 +10862,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":10,"op":"?","answer":"<","display":{"promptText":"Sam picked 6 leaves. Compare 6 to the benchmark 10."}},
+    question: {"a":6,"b":10,"op":"?","answer":"<","display":{"promptText":"Which symbol goes between 6 and 10?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-K_1-010",
@@ -10872,7 +10872,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":10,"op":"?","answer":"<","display":{"promptText":"Ben lined up 9 blocks. Using 10 as the benchmark, is 9 less than 10?"}},
+    question: {"a":9,"b":10,"op":"?","answer":"<","display":{"promptText":"Which symbol fits in 9 __ 10?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-K_1-011",
@@ -10882,7 +10882,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":10,"op":"?","answer":">","display":{"promptText":"The benchmark number is 10. Is 11 greater than 10?"}},
+    question: {"a":11,"b":10,"op":"?","answer":">","display":{"promptText":"Which sign goes between 11 and 10?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-K_1-012",
@@ -10892,7 +10892,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":10,"op":"?","answer":">","display":{"promptText":"Rosa stacked 12 cubes. Compare 12 to the benchmark 10."}},
+    question: {"a":12,"b":10,"op":"?","answer":">","display":{"promptText":"Which symbol fits in 12 __ 10?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-K_1-013",
@@ -10902,7 +10902,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":17,"b":10,"op":"?","answer":">","display":{"promptText":"Using 10 as a benchmark, how does 17 compare to 10?"}},
+    question: {"a":17,"b":10,"op":"?","answer":">","display":{"promptText":"Which symbol belongs in 17 __ 10?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-K_1-014",
@@ -10912,7 +10912,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":20,"b":10,"op":"?","answer":">","display":{"promptText":"Tomas strung 20 beads. Use 10 as the benchmark: how does 20 compare to 10?"}},
+    question: {"a":20,"b":10,"op":"?","answer":">","display":{"promptText":"Which sign makes 20 __ 10 true?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-K_1-016",
@@ -10922,7 +10922,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":20,"b":20,"op":"?","answer":"=","display":{"promptText":"Zoe counted 20 stickers. Using 20 as the benchmark, how does 20 compare to 20?"}},
+    question: {"a":20,"b":20,"op":"?","answer":"=","display":{"promptText":"Which sign makes 20 __ 20 true?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-K1-001",
@@ -10932,7 +10932,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":5,"op":"?","answer":"<","display":{"promptText":"Use 5 as a benchmark: is 4 less than 5?"}},
+    question: {"a":4,"b":5,"op":"?","answer":"<","display":{"promptText":"Which sign goes between 4 and 5?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-K1-002",
@@ -10942,7 +10942,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":5,"op":"?","answer":">","display":{"promptText":"Use 5 as a benchmark: is 7 greater than 5?"}},
+    question: {"a":7,"b":5,"op":"?","answer":">","display":{"promptText":"Which sign makes 7 __ 5 true?"}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-K1-003",
@@ -10952,7 +10952,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":10,"op":"?","answer":"=","display":{"promptText":"Use 10 as a benchmark: how does 10 compare to 10?"}},
+    question: {"a":10,"b":10,"op":"?","answer":"=","display":{"promptText":"Which symbol fits in 10 __ 10?"}},
   },
   {
     itemId: "comparing-conc-distanceCompare-2_3-001",
@@ -10962,7 +10962,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":145,"b":178,"op":"?","answer":"<","display":{"promptText":"A number line starts at 0. The mark for 145 lands closer to 0 than the mark for 178. Compare 145 and 178."}},
+    question: {"a":145,"b":178,"op":"?","answer":"<","display":{"promptText":"A number line starts at 0. The mark for 145 lands closer to 0 than the mark for 178. Which symbol fits in 145 __ 178?"}},
   },
   {
     itemId: "comparing-conc-distanceCompare-2_3-002",
@@ -10972,7 +10972,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":306,"b":290,"op":"?","answer":">","display":{"promptText":"Walking out from 0 along a number line, you pass 290 before you get to 306. Compare 306 and 290."}},
+    question: {"a":306,"b":290,"op":"?","answer":">","display":{"promptText":"Walking out from 0 along a number line, you pass 290 before you get to 306. Which sign goes in 306 __ 290?"}},
   },
   {
     itemId: "comparing-conc-distanceCompare-2_3-003",
@@ -10982,7 +10982,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":250,"b":250,"op":"?","answer":"=","display":{"promptText":"Two frogs hop out from 0 on a number line. Both frogs land on 250. Compare 250 and 250."}},
+    question: {"a":250,"b":250,"op":"?","answer":"=","display":{"promptText":"Two frogs hop out from 0 on a number line. Both frogs land on 250. Which symbol makes 250 __ 250 true?"}},
   },
   {
     itemId: "comparing-conc-distanceCompare-2_3-004",
@@ -10992,7 +10992,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":412,"b":421,"op":"?","answer":"<","display":{"promptText":"Rosa points to 412 on a number line. That spot sits nearer to 0 than 421 does. Compare 412 and 421."}},
+    question: {"a":412,"b":421,"op":"?","answer":"<","display":{"promptText":"Rosa points to 412 on a number line. That spot sits nearer to 0 than 421 does. Which sign goes in 412 __ 421?"}},
   },
   {
     itemId: "comparing-conc-distanceCompare-2_3-005",
@@ -11002,7 +11002,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":537,"b":498,"op":"?","answer":">","display":{"promptText":"On a number line, the jump from 0 to 537 is longer than the jump from 0 to 498. Compare 537 and 498."}},
+    question: {"a":537,"b":498,"op":"?","answer":">","display":{"promptText":"On a number line, the jump from 0 to 537 is longer than the jump from 0 to 498. Which symbol makes 537 __ 498 true?"}},
   },
   {
     itemId: "comparing-conc-distanceCompare-2_3-006",
@@ -11012,7 +11012,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":180,"b":180,"op":"?","answer":"=","display":{"promptText":"Ken marks 180 on a number line. Lila marks 180 as well. Both marks sit the same distance from 0. Compare 180 and 180."}},
+    question: {"a":180,"b":180,"op":"?","answer":"=","display":{"promptText":"Ken marks 180 on a number line. Lila marks 180 as well. Both marks sit the same distance from 0. Which symbol fits in 180 __ 180?"}},
   },
   {
     itemId: "comparing-conc-distanceCompare-2_3-007",
@@ -11022,7 +11022,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":99,"b":101,"op":"?","answer":"<","display":{"promptText":"A bug crawls from 0 along a number line and stops at 99. It has not reached 101 yet. Compare 99 and 101."}},
+    question: {"a":99,"b":101,"op":"?","answer":"<","display":{"promptText":"A bug crawls from 0 along a number line and stops at 99. It has not reached 101 yet. Which symbol makes 99 __ 101 true?"}},
   },
   {
     itemId: "comparing-conc-distanceCompare-2_3-008",
@@ -11032,7 +11032,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":760,"b":706,"op":"?","answer":">","display":{"promptText":"The spot for 760 sits to the right of 706 on a number line, so it is farther from 0. Compare 760 and 706."}},
+    question: {"a":760,"b":706,"op":"?","answer":">","display":{"promptText":"The spot for 760 sits to the right of 706 on a number line, so it is farther from 0. Which symbol fits in 760 __ 706?"}},
   },
   {
     itemId: "comparing-conc-distanceCompare-2_3-009",
@@ -11042,7 +11042,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":333,"b":333,"op":"?","answer":"=","display":{"promptText":"Two beads slide out from 0 on a number line. Each bead stops at 333. Compare 333 and 333."}},
+    question: {"a":333,"b":333,"op":"?","answer":"=","display":{"promptText":"Two beads slide out from 0 on a number line. Each bead stops at 333. Which sign goes in 333 __ 333?"}},
   },
   {
     itemId: "comparing-conc-distanceCompare-2_3-010",
@@ -11052,7 +11052,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":204,"b":240,"op":"?","answer":"<","display":{"promptText":"Tomas draws a number line. The distance from 0 to 204 is shorter than the distance from 0 to 240. Compare 204 and 240."}},
+    question: {"a":204,"b":240,"op":"?","answer":"<","display":{"promptText":"Tomas draws a number line. The distance from 0 to 204 is shorter than the distance from 0 to 240. Which symbol fits in 204 __ 240?"}},
   },
   {
     itemId: "comparing-conc-distanceCompare-2_3-011",
@@ -11062,7 +11062,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":615,"b":561,"op":"?","answer":">","display":{"promptText":"A toy car rolls from 0 to 615 on a number line. A second car rolls from 0 to 561 and stops sooner. Compare 615 and 561."}},
+    question: {"a":615,"b":561,"op":"?","answer":">","display":{"promptText":"A toy car rolls from 0 to 615 on a number line. A second car rolls from 0 to 561 and stops sooner. Which sign goes in 615 __ 561?"}},
   },
   {
     itemId: "comparing-conc-distanceCompare-2_3-012",
@@ -11072,7 +11072,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":489,"b":498,"op":"?","answer":"<","display":{"promptText":"Counting away from 0 on a number line, you reach 489 first and 498 after that. Compare 489 and 498."}},
+    question: {"a":489,"b":498,"op":"?","answer":"<","display":{"promptText":"Counting away from 0 on a number line, you reach 489 first and 498 after that. Which sign goes in 489 __ 498?"}},
   },
   {
     itemId: "comparing-conc-distanceCompare-2_3-013",
@@ -11082,7 +11082,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":825,"b":852,"op":"?","answer":"<","display":{"promptText":"Nina hops from 0 to 825 on a number line. Her friend hops from 0 to 852 and lands a little farther out. Compare 825 and 852."}},
+    question: {"a":825,"b":852,"op":"?","answer":"<","display":{"promptText":"Nina hops from 0 to 825 on a number line. Her friend hops from 0 to 852 and lands a little farther out. Which symbol makes 825 __ 852 true?"}},
   },
   {
     itemId: "comparing-conc-distanceCompare-2_3-014",
@@ -11092,7 +11092,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":970,"b":907,"op":"?","answer":">","display":{"promptText":"On a number line, the mark for 970 is farther from 0 than the mark for 907. Compare 970 and 907."}},
+    question: {"a":970,"b":907,"op":"?","answer":">","display":{"promptText":"On a number line, the mark for 970 is farther from 0 than the mark for 907. Which symbol makes 970 __ 907 true?"}},
   },
   {
     itemId: "comparing-conc-distanceCompare-2_3-015",
@@ -11102,7 +11102,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":444,"b":444,"op":"?","answer":"=","display":{"promptText":"Two ants start at 0 on a number line, and each one walks to 444. They stop the same distance from the start. Compare 444 and 444."}},
+    question: {"a":444,"b":444,"op":"?","answer":"=","display":{"promptText":"Two ants start at 0 on a number line, and each one walks to 444. They stop the same distance from the start. Which symbol makes 444 __ 444 true?"}},
   },
   {
     itemId: "comparing-conc-distanceCompare-2_3-016",
@@ -11112,7 +11112,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":118,"b":181,"op":"?","answer":"<","display":{"promptText":"Sam finds 118 on a number line. It sits much closer to 0 than 181 does. Compare 118 and 181."}},
+    question: {"a":118,"b":181,"op":"?","answer":"<","display":{"promptText":"Sam finds 118 on a number line. It sits much closer to 0 than 181 does. Which symbol fits in 118 __ 181?"}},
   },
   {
     itemId: "comparing-conc-distanceCompare-23-001",
@@ -11122,7 +11122,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":25,"op":"?","answer":"<","display":{"promptText":"On a number line, 18 is closer to 0 than 25. Compare 18 and 25."}},
+    question: {"a":18,"b":25,"op":"?","answer":"<","display":{"promptText":"On a number line, 18 is closer to 0 than 25. Which sign goes in 18 __ 25?"}},
   },
   {
     itemId: "comparing-conc-distanceCompare-23-002",
@@ -11132,7 +11132,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":75,"b":42,"op":"?","answer":">","display":{"promptText":"On a number line, 75 is farther from 0 than 42. Compare 75 and 42."}},
+    question: {"a":75,"b":42,"op":"?","answer":">","display":{"promptText":"On a number line, 75 is farther from 0 than 42. Which symbol fits in 75 __ 42?"}},
   },
   {
     itemId: "comparing-conc-distanceCompare-23-003",
@@ -11142,7 +11142,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":60,"b":60,"op":"?","answer":"=","display":{"promptText":"60 and 60 sit at the same point on a number line. Compare them."}},
+    question: {"a":60,"b":60,"op":"?","answer":"=","display":{"promptText":"60 and 60 sit at the same point on a number line. Which symbol goes between 60 and 60?"}},
   },
   {
     itemId: "comparing-conc-distanceCompare-45-001",
@@ -11152,7 +11152,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":156,"b":412,"op":"?","answer":"<","display":{"promptText":"On a number line, 156 is to the left of 412. Compare 156 and 412."}},
+    question: {"a":156,"b":412,"op":"?","answer":"<","display":{"promptText":"On a number line, 156 is to the left of 412. Which symbol makes 156 __ 412 true?"}},
   },
   {
     itemId: "comparing-conc-distanceCompare-45-002",
@@ -11162,7 +11162,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":789,"b":321,"op":"?","answer":">","display":{"promptText":"On a number line, 789 is farther right than 321. Compare 789 and 321."}},
+    question: {"a":789,"b":321,"op":"?","answer":">","display":{"promptText":"On a number line, 789 is farther right than 321. Which sign goes in 789 __ 321?"}},
   },
   {
     itemId: "comparing-conc-distanceCompare-45-003",
@@ -11172,7 +11172,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":200,"b":200,"op":"?","answer":"=","display":{"promptText":"200 and 200 sit at the same point on a number line. Compare them."}},
+    question: {"a":200,"b":200,"op":"?","answer":"=","display":{"promptText":"200 and 200 land on the same spot on a number line. Which sign goes in 200 __ 200?"}},
   },
   {
     itemId: "comparing-conc-distanceCompare-K_1-003",
@@ -11182,7 +11182,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":6,"op":"?","answer":"=","display":{"promptText":"Two puppies each walked 6 steps from 0 on the number line. They stopped on the same tick. Compare 6 and 6."}},
+    question: {"a":6,"b":6,"op":"?","answer":"=","display":{"promptText":"Two puppies each walked 6 steps from 0 on the number line. They stopped on the same tick. Which symbol fits in 6 __ 6?"}},
   },
   {
     itemId: "comparing-conc-distanceCompare-K_1-007",
@@ -11192,7 +11192,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":10,"op":"?","answer":"=","display":{"promptText":"Two bees flew 10 hops from 0 and landed on the very same spot. Compare 10 and 10."}},
+    question: {"a":10,"b":10,"op":"?","answer":"=","display":{"promptText":"Two bees flew 10 hops from 0 and landed on the very same spot. Which sign goes in 10 __ 10?"}},
   },
   {
     itemId: "comparing-conc-distanceCompare-K_1-008",
@@ -11202,7 +11202,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":11,"op":"?","answer":"<","display":{"promptText":"Counting up from 0 on the number line, you reach 3 before you reach 11. Compare 3 and 11."}},
+    question: {"a":3,"b":11,"op":"?","answer":"<","display":{"promptText":"Counting up from 0 on the number line, you reach 3 before you reach 11. Which symbol fits in 3 __ 11?"}},
   },
   {
     itemId: "comparing-conc-distanceCompare-K_1-010",
@@ -11212,7 +11212,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":0,"b":7,"op":"?","answer":"<","display":{"promptText":"0 sits right at the start of the number line. 7 sits far down the line. Compare 0 and 7."}},
+    question: {"a":0,"b":7,"op":"?","answer":"<","display":{"promptText":"0 sits right at the start of the number line. 7 sits far down the line. Which sign goes in 0 __ 7?"}},
   },
   {
     itemId: "comparing-conc-distanceCompare-K_1-011",
@@ -11222,7 +11222,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":13,"op":"?","answer":"=","display":{"promptText":"Two kites flew to the 13 mark on the number line, so they are the same distance from 0. Compare 13 and 13."}},
+    question: {"a":13,"b":13,"op":"?","answer":"=","display":{"promptText":"Two kites flew to the 13 mark on the number line, so they are the same distance from 0. Which symbol makes 13 __ 13 true?"}},
   },
   {
     itemId: "comparing-conc-distanceCompare-K1-003",
@@ -11232,7 +11232,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":5,"op":"?","answer":"=","display":{"promptText":"5 and 5 sit at the same point on a number line. Compare them."}},
+    question: {"a":5,"b":5,"op":"?","answer":"=","display":{"promptText":"5 and 5 are at the same point on a number line. Which symbol makes 5 __ 5 true?"}},
   },
   {
     itemId: "comparing-conc-symbolSelection-2_3-001",
@@ -11262,7 +11262,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":275,"b":275,"op":"?","answer":"=","display":{"promptText":"Jada counted 275 stickers. Omar counted 275 stickers. Are these two numbers equal?"}},
+    question: {"a":275,"b":275,"op":"?","answer":"=","display":{"promptText":"Jada counted 275 stickers. Omar counted 275 stickers. Which symbol goes in 275 __ 275?"}},
   },
   {
     itemId: "comparing-conc-symbolSelection-2_3-005",
@@ -11292,7 +11292,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":619,"b":619,"op":"?","answer":"=","display":{"promptText":"Ella strung 619 beads. Theo strung 619 beads. Do these two numbers match exactly?"}},
+    question: {"a":619,"b":619,"op":"?","answer":"=","display":{"promptText":"Ella strung 619 beads. Theo strung 619 beads. Which sign fits in 619 __ 619?"}},
   },
   {
     itemId: "comparing-conc-symbolSelection-2_3-012",
@@ -11312,7 +11312,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":168,"b":168,"op":"?","answer":"=","display":{"promptText":"Kai stacked 168 blocks. Rosa stacked 168 blocks. Are the two numbers the same?"}},
+    question: {"a":168,"b":168,"op":"?","answer":"=","display":{"promptText":"Kai stacked 168 blocks. Rosa stacked 168 blocks. Which symbol makes 168 __ 168 true?"}},
   },
   {
     itemId: "comparing-conc-symbolSelection-23-003",
@@ -11322,7 +11322,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":50,"b":50,"op":"?","answer":"=","display":{"promptText":"Looking at 50 and 50, are they equal?"}},
+    question: {"a":50,"b":50,"op":"?","answer":"=","display":{"promptText":"Which symbol makes 50 __ 50 true?"}},
   },
   {
     itemId: "comparing-conc-symbolSelection-4_5-003",
@@ -11332,7 +11332,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":3090,"b":3090,"op":"?","answer":"=","display":{"promptText":"Are 3090 and 3090 equal in value?"}},
+    question: {"a":3090,"b":3090,"op":"?","answer":"=","display":{"promptText":"Which symbol goes between 3090 and 3090?"}},
   },
   {
     itemId: "comparing-conc-symbolSelection-4_5-008",
@@ -11342,7 +11342,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":45600,"b":45600,"op":"?","answer":"=","display":{"promptText":"Do 45600 and 45600 name the same number?"}},
+    question: {"a":45600,"b":45600,"op":"?","answer":"=","display":{"promptText":"Which symbol makes 45600 __ 45600 true?"}},
   },
   {
     itemId: "comparing-conc-symbolSelection-45-003",
@@ -11352,7 +11352,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":345,"b":345,"op":"?","answer":"=","display":{"promptText":"Looking at 345 and 345, are they equal?"}},
+    question: {"a":345,"b":345,"op":"?","answer":"=","display":{"promptText":"Which sign goes between 345 and 345?"}},
   },
   {
     itemId: "comparing-conc-symbolSelection-K_1-001",
@@ -11392,7 +11392,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":5,"op":"?","answer":">","display":{"promptText":"Choose the symbol that makes this true: 14 ? 5"}},
+    question: {"a":14,"b":5,"op":"?","answer":">","display":{"promptText":"Which symbol makes 14 __ 5 true?"}},
   },
   {
     itemId: "comparing-conc-symbolSelection-K_1-005",
@@ -11472,7 +11472,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":8,"op":"?","answer":"<","display":{"promptText":"Looking at 5 and 8, which symbol shows that 5 is smaller?"}},
+    question: {"a":5,"b":8,"op":"?","answer":"<","display":{"promptText":"Which symbol goes in 5 __ 8 to show that 5 is smaller?"}},
   },
   {
     itemId: "comparing-conc-symbolSelection-K1-002",
@@ -11482,7 +11482,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":4,"op":"?","answer":">","display":{"promptText":"Looking at 7 and 4, which symbol shows that 7 is greater?"}},
+    question: {"a":7,"b":4,"op":"?","answer":">","display":{"promptText":"Which symbol goes in 7 __ 4 to show that 7 is greater?"}},
   },
   {
     itemId: "comparing-conc-symbolSelection-K1-003",
@@ -11492,7 +11492,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":6,"op":"?","answer":"=","display":{"promptText":"Looking at 6 and 6, are they equal?"}},
+    question: {"a":6,"b":6,"op":"?","answer":"=","display":{"promptText":"Which symbol should go between 6 and 6?"}},
   },
   {
     itemId: "comparing-proc-b0821-0001",
@@ -12032,7 +12032,7 @@ export const ITEMS = [
     structureType: "symbolClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"7 > 4"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Is 7 > 4 true?"}},
   },
   {
     itemId: "comparing-proc-b0821-0055",
@@ -12042,7 +12042,7 @@ export const ITEMS = [
     structureType: "symbolClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"3 < 9"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Is 3 < 9 true?"}},
   },
   {
     itemId: "comparing-proc-b0821-0056",
@@ -12052,7 +12052,7 @@ export const ITEMS = [
     structureType: "symbolClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"5 = 5"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Is it true that 5 = 5?"}},
   },
   {
     itemId: "comparing-proc-b0821-0057",
@@ -12062,7 +12062,7 @@ export const ITEMS = [
     structureType: "symbolClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"8 < 6"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Is it true that 8 < 6?"}},
   },
   {
     itemId: "comparing-proc-b0821-0058",
@@ -12072,7 +12072,7 @@ export const ITEMS = [
     structureType: "symbolClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"2 > 7"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Is it true that 2 > 7?"}},
   },
   {
     itemId: "comparing-proc-b0821-0059",
@@ -12082,7 +12082,7 @@ export const ITEMS = [
     structureType: "symbolClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"10 > 4"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Is 10 > 4 right?"}},
   },
   {
     itemId: "comparing-proc-b0821-0060",
@@ -12092,7 +12092,7 @@ export const ITEMS = [
     structureType: "symbolClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"6 = 9"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Is 6 = 9 right?"}},
   },
   {
     itemId: "comparing-proc-b0821-0061",
@@ -12102,7 +12102,7 @@ export const ITEMS = [
     structureType: "symbolClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"4 < 8"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Is 4 < 8 right?"}},
   },
   {
     itemId: "comparing-proc-b0821-0062",
@@ -12112,7 +12112,7 @@ export const ITEMS = [
     structureType: "symbolClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"9 > 9"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Is 9 > 9 true?"}},
   },
   {
     itemId: "comparing-proc-b0821-0063",
@@ -12122,7 +12122,7 @@ export const ITEMS = [
     structureType: "symbolClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"1 < 5"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Is 1 < 5 true?"}},
   },
   {
     itemId: "comparing-proc-b0821-0064",
@@ -12132,7 +12132,7 @@ export const ITEMS = [
     structureType: "symbolClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"7 = 7"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Is 7 = 7 true?"}},
   },
   {
     itemId: "comparing-proc-b0821-0065",
@@ -12142,7 +12142,7 @@ export const ITEMS = [
     structureType: "symbolClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"10 < 3"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Is it true that 10 < 3?"}},
   },
   {
     itemId: "comparing-proc-b0821-0066",
@@ -12152,7 +12152,7 @@ export const ITEMS = [
     structureType: "symbolClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"6 > 2"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Is it true that 6 > 2?"}},
   },
   {
     itemId: "comparing-proc-b0821-0067",
@@ -12162,7 +12162,7 @@ export const ITEMS = [
     structureType: "symbolClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"3 = 8"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Is it true that 3 = 8?"}},
   },
   {
     itemId: "comparing-proc-b0821-0068",
@@ -12172,7 +12172,7 @@ export const ITEMS = [
     structureType: "symbolClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"5 < 10"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Is 5 < 10 right?"}},
   },
   {
     itemId: "comparing-proc-b0821-0069",
@@ -12182,7 +12182,7 @@ export const ITEMS = [
     structureType: "symbolClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"8 > 8"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Is 8 > 8 right?"}},
   },
   {
     itemId: "comparing-proc-b0821-0070",
@@ -12192,7 +12192,7 @@ export const ITEMS = [
     structureType: "symbolClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"2 < 4"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Is 2 < 4 true?"}},
   },
   {
     itemId: "comparing-proc-b0821-0071",
@@ -12202,7 +12202,7 @@ export const ITEMS = [
     structureType: "symbolClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"12 = 12"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Is 12 = 12 right?"}},
   },
   {
     itemId: "comparing-proc-b0821-0072",
@@ -12212,7 +12212,7 @@ export const ITEMS = [
     structureType: "symbolClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"4 > 6"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Is 4 > 6 true?"}},
   },
   {
     itemId: "comparing-proc-b0821-0073",
@@ -12222,7 +12222,7 @@ export const ITEMS = [
     structureType: "symbolClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"10 = 10"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Is 10 = 10 true?"}},
   },
   {
     itemId: "comparing-proc-b0821-0074",
@@ -12232,7 +12232,7 @@ export const ITEMS = [
     structureType: "symbolClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"1 > 3"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Is it true that 1 > 3?"}},
   },
   {
     itemId: "comparing-proc-b0821-0075",
@@ -12242,7 +12242,7 @@ export const ITEMS = [
     structureType: "symbolClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"6 < 7"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Is it true that 6 < 7?"}},
   },
   {
     itemId: "comparing-proc-b0821-0076",
@@ -12252,7 +12252,7 @@ export const ITEMS = [
     structureType: "symbolClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"8 = 5"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Is it true that 8 = 5?"}},
   },
   {
     itemId: "comparing-proc-b0821-0077",
@@ -12262,7 +12262,7 @@ export const ITEMS = [
     structureType: "symbolClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"3 > 2"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Is 3 > 2 right?"}},
   },
   {
     itemId: "comparing-proc-b0821-0078",
@@ -12272,7 +12272,7 @@ export const ITEMS = [
     structureType: "symbolClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"7 < 5"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Is 7 < 5 right?"}},
   },
   {
     itemId: "comparing-proc-b0821-0079",
@@ -12282,7 +12282,7 @@ export const ITEMS = [
     structureType: "symbolClaimJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"5 > 1"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Is 5 > 1 true?"}},
   },
   {
     itemId: "comparing-proc-b0821-0080",
@@ -13052,7 +13052,7 @@ export const ITEMS = [
     structureType: "placeValueCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":"2 tens 5 ones","b":"3 tens 1 one","op":"?","answer":"<","display":{"promptText":"2 tens 5 ones ? 3 tens 1 one"},"answerType":"symbolSelect"},
+    question: {"a":"2 tens 5 ones","b":"3 tens 1 one","op":"?","answer":"<","display":{"promptText":"Which symbol goes between 2 tens 5 ones and 3 tens 1 one?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-proc-b0821-0157",
@@ -13062,7 +13062,7 @@ export const ITEMS = [
     structureType: "placeValueCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":"4 tens 0 ones","b":"3 tens 9 ones","op":"?","answer":">","display":{"promptText":"4 tens 0 ones ? 3 tens 9 ones"},"answerType":"symbolSelect"},
+    question: {"a":"4 tens 0 ones","b":"3 tens 9 ones","op":"?","answer":">","display":{"promptText":"Which symbol makes 4 tens 0 ones __ 3 tens 9 ones true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-proc-b0821-0158",
@@ -13072,7 +13072,7 @@ export const ITEMS = [
     structureType: "placeValueCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":"5 tens 2 ones","b":"5 tens 7 ones","op":"?","answer":"<","display":{"promptText":"5 tens 2 ones ? 5 tens 7 ones"},"answerType":"symbolSelect"},
+    question: {"a":"5 tens 2 ones","b":"5 tens 7 ones","op":"?","answer":"<","display":{"promptText":"Which symbol fits in 5 tens 2 ones __ 5 tens 7 ones?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-proc-b0821-0159",
@@ -13082,7 +13082,7 @@ export const ITEMS = [
     structureType: "placeValueCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":"1 ten 8 ones","b":"2 tens 3 ones","op":"?","answer":"<","display":{"promptText":"1 ten 8 ones ? 2 tens 3 ones"},"answerType":"symbolSelect"},
+    question: {"a":"1 ten 8 ones","b":"2 tens 3 ones","op":"?","answer":"<","display":{"promptText":"Which symbol makes 1 ten 8 ones __ 2 tens 3 ones true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-proc-b0821-0160",
@@ -13092,7 +13092,7 @@ export const ITEMS = [
     structureType: "placeValueCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":"6 tens 4 ones","b":"6 tens 4 ones","op":"?","answer":"=","display":{"promptText":"6 tens 4 ones ? 6 tens 4 ones"},"answerType":"symbolSelect"},
+    question: {"a":"6 tens 4 ones","b":"6 tens 4 ones","op":"?","answer":"=","display":{"promptText":"Which sign goes between 6 tens 4 ones and 6 tens 4 ones?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-proc-b0821-0161",
@@ -13102,7 +13102,7 @@ export const ITEMS = [
     structureType: "placeValueCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":"7 tens 1 one","b":"1 ten 7 ones","op":"?","answer":">","display":{"promptText":"7 tens 1 one ? 1 ten 7 ones"},"answerType":"symbolSelect"},
+    question: {"a":"7 tens 1 one","b":"1 ten 7 ones","op":"?","answer":">","display":{"promptText":"Which symbol fits in 7 tens 1 one __ 1 ten 7 ones?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-proc-b0821-0162",
@@ -13112,7 +13112,7 @@ export const ITEMS = [
     structureType: "placeValueCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":"3 tens 6 ones","b":"6 tens 3 ones","op":"?","answer":"<","display":{"promptText":"3 tens 6 ones ? 6 tens 3 ones"},"answerType":"symbolSelect"},
+    question: {"a":"3 tens 6 ones","b":"6 tens 3 ones","op":"?","answer":"<","display":{"promptText":"Which symbol goes between 3 tens 6 ones and 6 tens 3 ones?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-proc-b0821-0163",
@@ -13122,7 +13122,7 @@ export const ITEMS = [
     structureType: "placeValueCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":"8 tens 2 ones","b":"8 tens 5 ones","op":"?","answer":"<","display":{"promptText":"8 tens 2 ones ? 8 tens 5 ones"},"answerType":"symbolSelect"},
+    question: {"a":"8 tens 2 ones","b":"8 tens 5 ones","op":"?","answer":"<","display":{"promptText":"Which symbol makes 8 tens 2 ones __ 8 tens 5 ones true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-proc-b0821-0164",
@@ -13132,7 +13132,7 @@ export const ITEMS = [
     structureType: "placeValueCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":"4 tens 9 ones","b":"5 tens 0 ones","op":"?","answer":"<","display":{"promptText":"4 tens 9 ones ? 5 tens 0 ones"},"answerType":"symbolSelect"},
+    question: {"a":"4 tens 9 ones","b":"5 tens 0 ones","op":"?","answer":"<","display":{"promptText":"Which sign goes in 4 tens 9 ones __ 5 tens 0 ones?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-proc-b0821-0165",
@@ -13142,7 +13142,7 @@ export const ITEMS = [
     structureType: "placeValueCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":"2 tens 2 ones","b":"2 tens 2 ones","op":"?","answer":"=","display":{"promptText":"2 tens 2 ones ? 2 tens 2 ones"},"answerType":"symbolSelect"},
+    question: {"a":"2 tens 2 ones","b":"2 tens 2 ones","op":"?","answer":"=","display":{"promptText":"Which sign goes between 2 tens 2 ones and 2 tens 2 ones?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-proc-b0821-0166",
@@ -13152,7 +13152,7 @@ export const ITEMS = [
     structureType: "placeValueCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":"9 tens 3 ones","b":"3 tens 9 ones","op":"?","answer":">","display":{"promptText":"9 tens 3 ones ? 3 tens 9 ones"},"answerType":"symbolSelect"},
+    question: {"a":"9 tens 3 ones","b":"3 tens 9 ones","op":"?","answer":">","display":{"promptText":"Which symbol goes between 9 tens 3 ones and 3 tens 9 ones?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-proc-b0821-0167",
@@ -13162,7 +13162,7 @@ export const ITEMS = [
     structureType: "placeValueCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":"5 tens 5 ones","b":"4 tens 8 ones","op":"?","answer":">","display":{"promptText":"5 tens 5 ones ? 4 tens 8 ones"},"answerType":"symbolSelect"},
+    question: {"a":"5 tens 5 ones","b":"4 tens 8 ones","op":"?","answer":">","display":{"promptText":"Which symbol makes 5 tens 5 ones __ 4 tens 8 ones true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-proc-b0821-0168",
@@ -13172,7 +13172,7 @@ export const ITEMS = [
     structureType: "placeValueCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":"6 tens 0 ones","b":"5 tens 9 ones","op":"?","answer":">","display":{"promptText":"6 tens 0 ones ? 5 tens 9 ones"},"answerType":"symbolSelect"},
+    question: {"a":"6 tens 0 ones","b":"5 tens 9 ones","op":"?","answer":">","display":{"promptText":"Which sign goes in 6 tens 0 ones __ 5 tens 9 ones?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-proc-b0821-0169",
@@ -13182,7 +13182,7 @@ export const ITEMS = [
     structureType: "placeValueCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":"1 ten 4 ones","b":"4 tens 1 one","op":"?","answer":"<","display":{"promptText":"1 ten 4 ones ? 4 tens 1 one"},"answerType":"symbolSelect"},
+    question: {"a":"1 ten 4 ones","b":"4 tens 1 one","op":"?","answer":"<","display":{"promptText":"Which symbol goes between 1 ten 4 ones and 4 tens 1 one?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-proc-b0821-0170",
@@ -13192,7 +13192,7 @@ export const ITEMS = [
     structureType: "placeValueCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":"7 tens 7 ones","b":"7 tens 3 ones","op":"?","answer":">","display":{"promptText":"7 tens 7 ones ? 7 tens 3 ones"},"answerType":"symbolSelect"},
+    question: {"a":"7 tens 7 ones","b":"7 tens 3 ones","op":"?","answer":">","display":{"promptText":"Which sign goes between 7 tens 7 ones and 7 tens 3 ones?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-proc-b0821-0171",
@@ -13202,7 +13202,7 @@ export const ITEMS = [
     structureType: "placeValueCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":"3 tens 3 ones","b":"3 tens 8 ones","op":"?","answer":"<","display":{"promptText":"3 tens 3 ones ? 3 tens 8 ones"},"answerType":"symbolSelect"},
+    question: {"a":"3 tens 3 ones","b":"3 tens 8 ones","op":"?","answer":"<","display":{"promptText":"Which symbol goes between 3 tens 3 ones and 3 tens 8 ones?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-proc-b0821-0172",
@@ -13212,7 +13212,7 @@ export const ITEMS = [
     structureType: "placeValueCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":"8 tens 6 ones","b":"6 tens 8 ones","op":"?","answer":">","display":{"promptText":"8 tens 6 ones ? 6 tens 8 ones"},"answerType":"symbolSelect"},
+    question: {"a":"8 tens 6 ones","b":"6 tens 8 ones","op":"?","answer":">","display":{"promptText":"Which symbol makes 8 tens 6 ones __ 6 tens 8 ones true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-proc-b0821-0173",
@@ -13222,7 +13222,7 @@ export const ITEMS = [
     structureType: "placeValueCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":"2 tens 9 ones","b":"9 tens 2 ones","op":"?","answer":"<","display":{"promptText":"2 tens 9 ones ? 9 tens 2 ones"},"answerType":"symbolSelect"},
+    question: {"a":"2 tens 9 ones","b":"9 tens 2 ones","op":"?","answer":"<","display":{"promptText":"Which symbol makes 2 tens 9 ones __ 9 tens 2 ones true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-proc-b0821-0174",
@@ -13232,7 +13232,7 @@ export const ITEMS = [
     structureType: "placeValueCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":"4 tens 4 ones","b":"4 tens 4 ones","op":"?","answer":"=","display":{"promptText":"4 tens 4 ones ? 4 tens 4 ones"},"answerType":"symbolSelect"},
+    question: {"a":"4 tens 4 ones","b":"4 tens 4 ones","op":"?","answer":"=","display":{"promptText":"Which sign goes between 4 tens 4 ones and 4 tens 4 ones?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-proc-b0821-0175",
@@ -13242,7 +13242,7 @@ export const ITEMS = [
     structureType: "placeValueCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":"6 tens 7 ones","b":"7 tens 6 ones","op":"?","answer":"<","display":{"promptText":"6 tens 7 ones ? 7 tens 6 ones"},"answerType":"symbolSelect"},
+    question: {"a":"6 tens 7 ones","b":"7 tens 6 ones","op":"?","answer":"<","display":{"promptText":"Which symbol goes between 6 tens 7 ones and 7 tens 6 ones?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-proc-b0821-0176",
@@ -13252,7 +13252,7 @@ export const ITEMS = [
     structureType: "placeValueCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":"5 tens 1 one","b":"1 ten 5 ones","op":"?","answer":">","display":{"promptText":"5 tens 1 one ? 1 ten 5 ones"},"answerType":"symbolSelect"},
+    question: {"a":"5 tens 1 one","b":"1 ten 5 ones","op":"?","answer":">","display":{"promptText":"Which sign goes between 5 tens 1 one and 1 ten 5 ones?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-proc-b0821-0177",
@@ -13262,7 +13262,7 @@ export const ITEMS = [
     structureType: "placeValueCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":"9 tens 0 ones","b":"8 tens 9 ones","op":"?","answer":">","display":{"promptText":"9 tens 0 ones ? 8 tens 9 ones"},"answerType":"symbolSelect"},
+    question: {"a":"9 tens 0 ones","b":"8 tens 9 ones","op":"?","answer":">","display":{"promptText":"Which symbol makes 9 tens 0 ones __ 8 tens 9 ones true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-proc-b0821-0178",
@@ -13272,7 +13272,7 @@ export const ITEMS = [
     structureType: "placeValueCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":"3 tens 2 ones","b":"2 tens 8 ones","op":"?","answer":">","display":{"promptText":"3 tens 2 ones ? 2 tens 8 ones"},"answerType":"symbolSelect"},
+    question: {"a":"3 tens 2 ones","b":"2 tens 8 ones","op":"?","answer":">","display":{"promptText":"Which symbol makes 3 tens 2 ones __ 2 tens 8 ones true?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-proc-b0821-0179",
@@ -13282,7 +13282,7 @@ export const ITEMS = [
     structureType: "placeValueCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":"7 tens 5 ones","b":"5 tens 7 ones","op":"?","answer":">","display":{"promptText":"7 tens 5 ones ? 5 tens 7 ones"},"answerType":"symbolSelect"},
+    question: {"a":"7 tens 5 ones","b":"5 tens 7 ones","op":"?","answer":">","display":{"promptText":"Which sign goes between 7 tens 5 ones and 5 tens 7 ones?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-proc-b0821-0180",
@@ -13292,7 +13292,7 @@ export const ITEMS = [
     structureType: "placeValueCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":"8 tens 8 ones","b":"8 tens 8 ones","op":"?","answer":"=","display":{"promptText":"8 tens 8 ones ? 8 tens 8 ones"},"answerType":"symbolSelect"},
+    question: {"a":"8 tens 8 ones","b":"8 tens 8 ones","op":"?","answer":"=","display":{"promptText":"Which symbol goes between 8 tens 8 ones and 8 tens 8 ones?"},"answerType":"symbolSelect"},
   },
   {
     itemId: "comparing-proc-b0821-0181",
@@ -13902,7 +13902,7 @@ export const ITEMS = [
     structureType: "bigSymbolClaimJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"98 < 102"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Is 98 < 102 true?"}},
   },
   {
     itemId: "comparing-proc-b0821-0242",
@@ -13912,7 +13912,7 @@ export const ITEMS = [
     structureType: "bigSymbolClaimJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"230 > 203"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Is it true that 230 > 203?"}},
   },
   {
     itemId: "comparing-proc-b0821-0243",
@@ -13922,7 +13922,7 @@ export const ITEMS = [
     structureType: "bigSymbolClaimJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"415 = 415"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Is 415 = 415 right?"}},
   },
   {
     itemId: "comparing-proc-b0821-0244",
@@ -13932,7 +13932,7 @@ export const ITEMS = [
     structureType: "bigSymbolClaimJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"199 > 200"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Is 199 > 200 right?"}},
   },
   {
     itemId: "comparing-proc-b0821-0245",
@@ -13942,7 +13942,7 @@ export const ITEMS = [
     structureType: "bigSymbolClaimJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"560 < 506"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Is it true that 560 < 506?"}},
   },
   {
     itemId: "comparing-proc-b0821-0246",
@@ -13952,7 +13952,7 @@ export const ITEMS = [
     structureType: "bigSymbolClaimJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"321 > 312"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Is 321 > 312 true?"}},
   },
   {
     itemId: "comparing-proc-b0821-0247",
@@ -13962,7 +13962,7 @@ export const ITEMS = [
     structureType: "bigSymbolClaimJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"644 = 646"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Is 644 = 646 true?"}},
   },
   {
     itemId: "comparing-proc-b0821-0248",
@@ -13972,7 +13972,7 @@ export const ITEMS = [
     structureType: "bigSymbolClaimJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"105 < 95"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Is 105 < 95 right?"}},
   },
   {
     itemId: "comparing-proc-b0821-0249",
@@ -13982,7 +13982,7 @@ export const ITEMS = [
     structureType: "bigSymbolClaimJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"780 > 78"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Is it true that 780 > 78?"}},
   },
   {
     itemId: "comparing-proc-b0821-0250",
@@ -13992,7 +13992,7 @@ export const ITEMS = [
     structureType: "bigSymbolClaimJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"432 < 423"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Is 432 < 423 true?"}},
   },
   {
     itemId: "comparing-proc-b0821-0251",
@@ -14002,7 +14002,7 @@ export const ITEMS = [
     structureType: "bigSymbolClaimJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"999 < 1000"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Is it true that 999 < 1000?"}},
   },
   {
     itemId: "comparing-proc-b0821-0252",
@@ -14012,7 +14012,7 @@ export const ITEMS = [
     structureType: "bigSymbolClaimJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"217 = 217"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Is it true that 217 = 217?"}},
   },
   {
     itemId: "comparing-proc-b0821-0253",
@@ -14022,7 +14022,7 @@ export const ITEMS = [
     structureType: "bigSymbolClaimJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"853 > 858"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Is 853 > 858 right?"}},
   },
   {
     itemId: "comparing-proc-b0821-0254",
@@ -14032,7 +14032,7 @@ export const ITEMS = [
     structureType: "bigSymbolClaimJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"364 < 436"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Is 364 < 436 right?"}},
   },
   {
     itemId: "comparing-proc-b0821-0255",
@@ -14042,7 +14042,7 @@ export const ITEMS = [
     structureType: "bigSymbolClaimJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"508 > 580"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Is 508 > 580 true?"}},
   },
   {
     itemId: "comparing-proc-b0821-0256",
@@ -14052,7 +14052,7 @@ export const ITEMS = [
     structureType: "bigSymbolClaimJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"129 < 192"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Is 129 < 192 true?"}},
   },
   {
     itemId: "comparing-proc-b0821-0257",
@@ -14062,7 +14062,7 @@ export const ITEMS = [
     structureType: "bigSymbolClaimJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"676 = 667"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Is 676 = 667 right?"}},
   },
   {
     itemId: "comparing-proc-b0821-0258",
@@ -14072,7 +14072,7 @@ export const ITEMS = [
     structureType: "bigSymbolClaimJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"945 > 495"},"subPrompt":"Is this right?"},
+    question: {"a":null,"b":null,"op":"vs","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Is it true that 945 > 495?"}},
   },
   {
     itemId: "comparing-proc-b0821-0259",
@@ -17132,7 +17132,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":47,"b":50,"op":"?","answer":"<","display":{"promptText":"Compare 47 and 50."}},
+    question: {"a":47,"b":50,"op":"?","answer":"<","display":{"promptText":"Which symbol fits in 47 __ 50?"}},
   },
   {
     itemId: "comparing-proc-benchmarkCompare-23-002",
@@ -17142,7 +17142,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":65,"b":50,"op":"?","answer":">","display":{"promptText":"Compare 65 and 50."}},
+    question: {"a":65,"b":50,"op":"?","answer":">","display":{"promptText":"Which symbol makes 65 __ 50 true?"}},
   },
   {
     itemId: "comparing-proc-benchmarkCompare-23-003",
@@ -17152,7 +17152,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":30,"b":30,"op":"?","answer":"=","display":{"promptText":"Compare 30 and 30."}},
+    question: {"a":30,"b":30,"op":"?","answer":"=","display":{"promptText":"Which symbol fits in 30 __ 30?"}},
   },
   {
     itemId: "comparing-proc-benchmarkCompare-45-001",
@@ -17162,7 +17162,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":487,"b":500,"op":"?","answer":"<","display":{"promptText":"Compare 487 and 500."}},
+    question: {"a":487,"b":500,"op":"?","answer":"<","display":{"promptText":"Which symbol fits in 487 __ 500?"}},
   },
   {
     itemId: "comparing-proc-benchmarkCompare-45-002",
@@ -17172,7 +17172,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":678,"b":500,"op":"?","answer":">","display":{"promptText":"Compare 678 and 500."}},
+    question: {"a":678,"b":500,"op":"?","answer":">","display":{"promptText":"Which symbol fits in 678 __ 500?"}},
   },
   {
     itemId: "comparing-proc-benchmarkCompare-45-003",
@@ -17182,7 +17182,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":100,"b":100,"op":"?","answer":"=","display":{"promptText":"Compare 100 and 100."}},
+    question: {"a":100,"b":100,"op":"?","answer":"=","display":{"promptText":"Which sign goes in 100 __ 100?"}},
   },
   {
     itemId: "comparing-proc-benchmarkCompare-K1-001",
@@ -17192,7 +17192,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":5,"op":"?","answer":"<","display":{"promptText":"Compare 4 and 5."}},
+    question: {"a":4,"b":5,"op":"?","answer":"<","display":{"promptText":"Which sign goes in 4 __ 5?"}},
   },
   {
     itemId: "comparing-proc-benchmarkCompare-K1-002",
@@ -17202,7 +17202,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":5,"op":"?","answer":">","display":{"promptText":"Compare 7 and 5."}},
+    question: {"a":7,"b":5,"op":"?","answer":">","display":{"promptText":"Which sign goes in 7 __ 5?"}},
   },
   {
     itemId: "comparing-proc-benchmarkCompare-K1-003",
@@ -17212,7 +17212,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":10,"op":"?","answer":"=","display":{"promptText":"Compare 10 and 10."}},
+    question: {"a":10,"b":10,"op":"?","answer":"=","display":{"promptText":"Which symbol makes 10 __ 10 true?"}},
   },
   {
     itemId: "comparing-proc-distanceCompare-23-001",
@@ -17222,7 +17222,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":25,"op":"?","answer":"<","display":{"promptText":"Compare 18 and 25."}},
+    question: {"a":18,"b":25,"op":"?","answer":"<","display":{"promptText":"Which symbol makes 18 __ 25 true?"}},
   },
   {
     itemId: "comparing-proc-distanceCompare-23-002",
@@ -17232,7 +17232,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":75,"b":42,"op":"?","answer":">","display":{"promptText":"Compare 75 and 42."}},
+    question: {"a":75,"b":42,"op":"?","answer":">","display":{"promptText":"Which symbol makes 75 __ 42 true?"}},
   },
   {
     itemId: "comparing-proc-distanceCompare-23-003",
@@ -17242,7 +17242,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":60,"b":60,"op":"?","answer":"=","display":{"promptText":"Compare 60 and 60."}},
+    question: {"a":60,"b":60,"op":"?","answer":"=","display":{"promptText":"Which symbol fits in 60 __ 60?"}},
   },
   {
     itemId: "comparing-proc-distanceCompare-45-001",
@@ -17252,7 +17252,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":156,"b":412,"op":"?","answer":"<","display":{"promptText":"Compare 156 and 412."}},
+    question: {"a":156,"b":412,"op":"?","answer":"<","display":{"promptText":"Which symbol fits in 156 __ 412?"}},
   },
   {
     itemId: "comparing-proc-distanceCompare-45-002",
@@ -17262,7 +17262,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":789,"b":321,"op":"?","answer":">","display":{"promptText":"Compare 789 and 321."}},
+    question: {"a":789,"b":321,"op":"?","answer":">","display":{"promptText":"Which symbol fits in 789 __ 321?"}},
   },
   {
     itemId: "comparing-proc-distanceCompare-45-003",
@@ -17272,7 +17272,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":200,"b":200,"op":"?","answer":"=","display":{"promptText":"Compare 200 and 200."}},
+    question: {"a":200,"b":200,"op":"?","answer":"=","display":{"promptText":"Which sign goes in 200 __ 200?"}},
   },
   {
     itemId: "comparing-proc-distanceCompare-K1-001",
@@ -17282,7 +17282,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":9,"op":"?","answer":"<","display":{"promptText":"Compare 2 and 9."}},
+    question: {"a":2,"b":9,"op":"?","answer":"<","display":{"promptText":"Which sign goes in 2 __ 9?"}},
   },
   {
     itemId: "comparing-proc-distanceCompare-K1-002",
@@ -17292,7 +17292,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":1,"op":"?","answer":">","display":{"promptText":"Compare 8 and 1."}},
+    question: {"a":8,"b":1,"op":"?","answer":">","display":{"promptText":"Which sign goes in 8 __ 1?"}},
   },
   {
     itemId: "comparing-proc-distanceCompare-K1-003",
@@ -17302,7 +17302,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":5,"op":"?","answer":"=","display":{"promptText":"Compare 5 and 5."}},
+    question: {"a":5,"b":5,"op":"?","answer":"=","display":{"promptText":"Which symbol makes 5 __ 5 true?"}},
   },
   {
     itemId: "comparing-proc-symbolSelection-23-001",
@@ -17312,7 +17312,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":23,"b":45,"op":"?","answer":"<","display":{"promptText":"Compare 23 and 45 with <, >, or =."}},
+    question: {"a":23,"b":45,"op":"?","answer":"<","display":{"promptText":"Which symbol goes in 23 __ 45: <, >, or =?"}},
   },
   {
     itemId: "comparing-proc-symbolSelection-23-002",
@@ -17322,7 +17322,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":67,"b":32,"op":"?","answer":">","display":{"promptText":"Compare 67 and 32 with <, >, or =."}},
+    question: {"a":67,"b":32,"op":"?","answer":">","display":{"promptText":"Which sign fits in 67 __ 32: <, >, or =?"}},
   },
   {
     itemId: "comparing-proc-symbolSelection-23-003",
@@ -17332,7 +17332,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":50,"b":50,"op":"?","answer":"=","display":{"promptText":"Compare 50 and 50 with <, >, or =."}},
+    question: {"a":50,"b":50,"op":"?","answer":"=","display":{"promptText":"Which symbol makes 50 __ 50 true: <, >, or =?"}},
   },
   {
     itemId: "comparing-proc-symbolSelection-45-001",
@@ -17342,7 +17342,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":234,"b":567,"op":"?","answer":"<","display":{"promptText":"Compare 234 and 567 with <, >, or =."}},
+    question: {"a":234,"b":567,"op":"?","answer":"<","display":{"promptText":"Which sign fits in 234 __ 567: <, >, or =?"}},
   },
   {
     itemId: "comparing-proc-symbolSelection-45-002",
@@ -17352,7 +17352,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":891,"b":234,"op":"?","answer":">","display":{"promptText":"Compare 891 and 234 with <, >, or =."}},
+    question: {"a":891,"b":234,"op":"?","answer":">","display":{"promptText":"Which symbol makes 891 __ 234 true: <, >, or =?"}},
   },
   {
     itemId: "comparing-proc-symbolSelection-45-003",
@@ -17362,7 +17362,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":345,"b":345,"op":"?","answer":"=","display":{"promptText":"Compare 345 and 345 with <, >, or =."}},
+    question: {"a":345,"b":345,"op":"?","answer":"=","display":{"promptText":"Which symbol goes in 345 __ 345: <, >, or =?"}},
   },
   {
     itemId: "comparing-proc-symbolSelection-K1-001",
@@ -17372,7 +17372,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":8,"op":"?","answer":"<","display":{"promptText":"Compare 5 and 8 with <, >, or =."}},
+    question: {"a":5,"b":8,"op":"?","answer":"<","display":{"promptText":"Which symbol makes 5 __ 8 true: <, >, or =?"}},
   },
   {
     itemId: "comparing-proc-symbolSelection-K1-002",
@@ -17382,7 +17382,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":4,"op":"?","answer":">","display":{"promptText":"Compare 7 and 4 with <, >, or =."}},
+    question: {"a":7,"b":4,"op":"?","answer":">","display":{"promptText":"Which symbol goes in 7 __ 4: <, >, or =?"}},
   },
   {
     itemId: "comparing-proc-symbolSelection-K1-003",
@@ -17392,6 +17392,6 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":6,"op":"?","answer":"=","display":{"promptText":"Compare 6 and 6 with <, >, or =."}},
+    question: {"a":6,"b":6,"op":"?","answer":"=","display":{"promptText":"Which sign fits in 6 __ 6: <, >, or =?"}},
   },
 ];

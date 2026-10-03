@@ -53,21 +53,21 @@ export function factorCountProcedural() {
 
   const countPhr = {
     band1: [
-      (n) => `How many factors does ${n} have? Count every one.`,
+      (n) => `How many factors does ${n} have?`,
       (n) => `Count all the factors of ${n}. How many factors is that?`,
       (n) => `The number ${n} has how many factors in all?`,
       (n) => `Find every factor of ${n}. Type how many factors you find.`,
     ],
     band2: [
       (n) => `Count the complete factor list of ${n}. How many factors are there?`,
-      (n) => `How many factors belong to ${n}? Type the count.`,
+      (n) => `How many factors belong to ${n}?`,
       (n) => `List the factors of ${n} in your head. How many factors did you list?`,
       (n) => `The full factor list of ${n} holds how many numbers?`,
     ],
     band3: [
       (n) => `Exactly how many factors does ${n} have?`,
-      (n) => `Determine the total number of factors of ${n}.`,
-      (n) => `The factor list of ${n} contains how many entries? Type it.`,
+      (n) => `What is the total number of factors of ${n}?`,
+      (n) => `The factor list of ${n} contains how many entries?`,
       (n) => `Count precisely: how many factors divide ${n}?`,
     ],
   };
@@ -109,7 +109,7 @@ export function factorCountProcedural() {
 
   const pickPhr = {
     band1: [
-      (n, list) => `Which of ${list} is a factor of ${n}? Pick it.`,
+      (n, list) => `Which of ${list} is a factor of ${n}?`,
       (n, list) => `From ${list}, pick the number that is a factor of ${n}. Which is it?`,
       (n, list) => `One of ${list} divides ${n} evenly. Which factor is it?`,
       (n, list) => `Choose the factor of ${n} from ${list}. Which do you choose?`,
@@ -124,7 +124,7 @@ export function factorCountProcedural() {
       (n, list) => `Identify the factor of ${n} within ${list}. Which is it?`,
       (n, list) => `Of ${list}, which number is a factor of ${n}?`,
       (n, list) => `Precisely one of ${list} is a factor of ${n}. Which one is it?`,
-      (n, list) => `Determine which of ${list} divides ${n} evenly. Which does?`,
+      (n, list) => `Which of ${list} divides ${n} evenly?`,
     ],
   };
   const pickData = {
@@ -147,7 +147,7 @@ export function factorCountProcedural() {
 
   const notPhr = {
     band1: [
-      (n, list) => `Which of ${list} is NOT a factor of ${n}? Pick it.`,
+      (n, list) => `Which of ${list} is NOT a factor of ${n}?`,
       (n, list) => `From ${list}, pick the number that is NOT a factor of ${n}. Which is it?`,
       (n, list) => `One of ${list} does NOT divide ${n} evenly. Which is it?`,
       (n, list) => `Choose the number in ${list} that fails to be a factor of ${n}. Which fails?`,
@@ -162,7 +162,7 @@ export function factorCountProcedural() {
       (n, list) => `Identify which of ${list} is NOT a factor of ${n}. Which is it?`,
       (n, list) => `Of ${list}, which number is NOT a factor of ${n}?`,
       (n, list) => `Precisely one of ${list} is not a factor of ${n}. Which one is it?`,
-      (n, list) => `Determine which of ${list} does NOT divide ${n} evenly. Which does not?`,
+      (n, list) => `Which of ${list} does NOT divide ${n} evenly?`,
     ],
   };
   const notData = {
@@ -199,8 +199,8 @@ export function factorCountConceptual() {
       (nm, k, n) => `According to ${nm}, ${n} divides evenly by ${k}. Is ${nm} right?`,
     ],
     band3: [
-      (nm, k, n) => `${nm} certifies ${k} as a factor of ${n}. Is the certification valid?`,
-      (nm, k, n) => `Auditing ${nm}'s factor list for ${n}: it includes ${k}. Clean audit?`,
+      (nm, k, n) => `${nm} says ${k} is a factor of ${n}. Is ${nm} right?`,
+      (nm, k, n) => `${nm}'s factor list for ${n} includes ${k}. Does ${k} belong on the list?`,
     ],
   };
   const isFactorData = {
@@ -230,8 +230,8 @@ export function factorCountConceptual() {
       (nm, n, r) => `Rows of ${r} will exactly use ${n} chairs, says ${nm}. Is ${nm} right?`,
     ],
     band3: [
-      (nm, n, r) => `${nm} plans equal rows of ${r} from ${n} tiles with zero remainder. Is the plan sound?`,
-      (nm, n, r) => `Splitting ${n} tiles into rows of ${r} leaves nothing over, asserts ${nm}. Correct?`,
+      (nm, n, r) => `${nm} plans to put ${n} tiles in equal rows of ${r} with none left over. Will that work?`,
+      (nm, n, r) => `Splitting ${n} tiles into rows of ${r} leaves nothing over, says ${nm}. Is that right?`,
     ],
   };
   const rowsData = {
@@ -262,7 +262,7 @@ export function factorCountConceptual() {
     ],
     band3: [
       (nm, n) => `${nm} writes both 1 and ${n} into the factor list of ${n}. Do both belong?`,
-      (nm, n) => `The factor list of ${n} must include ${n} itself, argues ${nm}. Sound argument?`,
+      (nm, n) => `The factor list of ${n} must include ${n} itself, says ${nm}. Is that right?`,
     ],
   };
   const oneData = { band1: [4, 6, 8, 9, 10, 12, 4, 6, 8, 9, 10, 12, 4, 6, 8, 9], band2: [14, 15, 16, 18, 20, 24, 25, 28, 30, 21, 27, 22, 14, 15, 16, 18], band3: [32, 36, 40, 42, 45, 48, 50, 54, 60, 44, 56, 32, 36, 40, 42, 45] };
@@ -293,22 +293,22 @@ export function nthMultipleProcedural() {
 
   const nthPhr = {
     band1: [
-      (b, k) => `The ${ORD[k]} multiple of ${b} = ? Type it.`,
+      (b, k) => `The ${ORD[k]} multiple of ${b} = ?`,
       (b, k) => `Count multiples of ${b}. What is the ${ORD[k]} multiple?`,
       (b, k) => `Type the ${ORD[k]} multiple of ${b}.`,
       (b, k) => `Skip along the multiples of ${b}. Where is the ${ORD[k]} one?`,
     ],
     band2: [
       (b, k) => `Find the ${ORD[k]} multiple of ${b}.`,
-      (b, k) => `What number is the ${ORD[k]} multiple of ${b}? Type it.`,
+      (b, k) => `What number is the ${ORD[k]} multiple of ${b}?`,
       (b, k) => `Counting by ${b}, the ${ORD[k]} count lands on which number?`,
       (b, k) => `The ${ORD[k]} entry in the multiples of ${b} = ?`,
     ],
     band3: [
-      (b, k) => `Compute the ${ORD[k]} multiple of ${b} exactly.`,
+      (b, k) => `What is the ${ORD[k]} multiple of ${b}, exactly?`,
       (b, k) => `Exactly which number is the ${ORD[k]} multiple of ${b}?`,
-      (b, k) => `Determine the ${ORD[k]} multiple of ${b} and type it.`,
-      (b, k) => `The multiples of ${b} reach which value at position ${k}? Type it.`,
+      (b, k) => `Type the ${ORD[k]} multiple of ${b}.`,
+      (b, k) => `The multiples of ${b} reach which value at position ${k}?`,
     ],
   };
   const nthData = {
@@ -366,22 +366,22 @@ export function nthMultipleProcedural() {
 
   const nextPhr = {
     band1: [
-      (b, m) => `Which multiple of ${b} comes right after ${m}? Type it.`,
+      (b, m) => `Which multiple of ${b} comes right after ${m}?`,
       (b, m) => `Counting by ${b}, the number after ${m} = ?`,
       (b, m) => `Type the next multiple of ${b} after ${m}.`,
       (b, m) => `After ${m}, where does the count-by-${b} land next?`,
     ],
     band2: [
       (b, m) => `Find the next multiple of ${b} after ${m}.`,
-      (b, m) => `The multiple of ${b} just past ${m} = ? Type it.`,
+      (b, m) => `The multiple of ${b} just past ${m} = ?`,
       (b, m) => `Continuing by ${b} from ${m}, which number comes next?`,
       (b, m) => `Which multiple of ${b} follows ${m} directly?`,
     ],
     band3: [
-      (b, m) => `Compute the next multiple of ${b} beyond ${m}.`,
+      (b, m) => `What is the next multiple of ${b} after ${m}?`,
       (b, m) => `Exactly which multiple of ${b} follows ${m}?`,
-      (b, m) => `Determine the multiple of ${b} that comes right after ${m}.`,
-      (b, m) => `Past ${m}, the multiples of ${b} continue with which number? Type it.`,
+      (b, m) => `Find the multiple of ${b} that comes right after ${m}.`,
+      (b, m) => `Past ${m}, the multiples of ${b} continue with which number?`,
     ],
   };
   const nextData = {
@@ -403,7 +403,7 @@ export function nthMultipleProcedural() {
 
   const multPickPhr = {
     band1: [
-      (b, list) => `Which of ${list} is a multiple of ${b}? Pick it.`,
+      (b, list) => `Which of ${list} is a multiple of ${b}?`,
       (b, list) => `From ${list}, pick the multiple of ${b}. Which is it?`,
       (b, list) => `One of ${list} appears when you count by ${b}. Which is it?`,
       (b, list) => `Choose the multiple of ${b} from ${list}. Which do you choose?`,
@@ -418,7 +418,7 @@ export function nthMultipleProcedural() {
       (b, list) => `Identify the multiple of ${b} within ${list}. Which is it?`,
       (b, list) => `Of ${list}, which number is a multiple of ${b}?`,
       (b, list) => `Precisely one of ${list} is a multiple of ${b}. Which one is it?`,
-      (b, list) => `Determine which of ${list} belongs to the multiples of ${b}. Which does?`,
+      (b, list) => `Which of ${list} belongs to the multiples of ${b}?`,
     ],
   };
   const multPickData = {
@@ -455,8 +455,8 @@ export function nthMultipleConceptual() {
       (nm, k, b) => `According to ${nm}, ${k} is one of the multiples of ${b}. Is ${nm} right?`,
     ],
     band3: [
-      (nm, k, b) => `${nm} certifies ${k} as a multiple of ${b}. Is the certification valid?`,
-      (nm, k, b) => `Auditing ${nm}'s multiples-of-${b} list: it includes ${k}. Clean audit?`,
+      (nm, k, b) => `${nm} says ${k} is a multiple of ${b}. Is ${nm} right?`,
+      (nm, k, b) => `${nm}'s list of multiples of ${b} includes ${k}. Does ${k} belong on the list?`,
     ],
   };
   const isMultData = {
@@ -486,8 +486,8 @@ export function nthMultipleConceptual() {
       (nm, b, k, said) => `Check ${nm}'s claim: the ${ORD[k]} multiple of ${b} is ${said}. Right or not?`,
     ],
     band3: [
-      (nm, b, k, said) => `${nm} certifies the ${ORD[k]} multiple of ${b} as ${said}. Valid?`,
-      (nm, b, k, said) => `Audit: ${ORD[k]} multiple of ${b}, recorded ${said} by ${nm}. Clean?`,
+      (nm, b, k, said) => `${nm} says the ${ORD[k]} multiple of ${b} is ${said}. Is ${nm} right?`,
+      (nm, b, k, said) => `${nm} writes ${said} as the ${ORD[k]} multiple of ${b}. Is that right?`,
     ],
   };
   const nthSaidData = {
@@ -518,7 +518,7 @@ export function nthMultipleConceptual() {
     ],
     band3: [
       (nm, b) => `${nm} includes ${b} in the multiples of ${b}. Does it belong?`,
-      (nm, b) => `The multiples of ${b} begin with ${b}, asserts ${nm}. Sound assertion?`,
+      (nm, b) => `The multiples of ${b} begin with ${b}, says ${nm}. Is that right?`,
     ],
   };
   const selfData = { band1: [2, 3, 4, 5, 2, 3, 4, 5, 2, 3, 4, 5, 2, 3, 4, 5], band2: [6, 7, 8, 9, 6, 7, 8, 9, 6, 7, 8, 9, 6, 7, 8, 9], band3: [11, 12, 15, 20, 11, 12, 15, 20, 11, 12, 15, 20, 11, 12, 15, 20] };

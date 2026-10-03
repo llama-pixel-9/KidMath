@@ -75,7 +75,7 @@ const WORTH_STORY_SKELETONS = [
   (nm, n, word) =>
     `${nm}'s locker number is ${n}. How much is the ${word} digit of ${n} worth?`,
   (nm, n, word) =>
-    `Ticket ${n} wins! What is the value of the ${word} digit in ${n}? ${nm} checks.`,
+    `${nm}'s ticket ${n} wins! What is the value of the ${word} digit on the ticket?`,
 ];
 
 const SCOREBOARD_SKELETONS = [

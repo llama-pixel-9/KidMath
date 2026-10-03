@@ -276,7 +276,7 @@ export function timeConceptsConceptual() {
   });
   const unitComparePhr = rotor([
     (nm, a, b) => `${nm} compares ${a} with ${b}. Which is longer?`,
-    (nm, a, b) => `Which lasts longer, ${a} or ${b}? ${nm} thinks it through.`,
+    (nm, a, b) => `${nm} thinks it through. Which lasts longer, ${a} or ${b}?`,
   ]);
   const UNIT_CMP = [
     ["90 minutes", 90, "1 hour", 60], ["1 hour", 60, "70 minutes", 70], ["2 hours", 120, "100 minutes", 100],
@@ -330,7 +330,7 @@ export function timeConceptsConceptual() {
   // Band 3 top-up: which duration is longest (mixed units).
   const longestPhr = rotor([
     (nm, a, b, c) => `${nm} lines up three durations: ${a}, ${b}, ${c}. Which one is the longest?`,
-    (nm, a, b, c) => `Of ${a}, ${b}, and ${c}, which lasts the longest? ${nm} converts to check.`,
+    (nm, a, b, c) => `${nm} converts to check. Of ${a}, ${b}, and ${c}, which lasts the longest?`,
   ]);
   [[["2 hours", 120], ["100 minutes", 100], ["90 minutes", 90]], [["1 day", 1440], ["20 hours", 1200], ["1000 minutes", 1000]], [["3 hours", 180], ["190 minutes", 190], ["2 hours 50 minutes", 170]], [["150 minutes", 150], ["2 hours", 120], ["2 hours 20 minutes", 140]], [["4 hours", 240], ["250 minutes", 250], ["3 hours 55 minutes", 235]], [["1 day", 1440], ["23 hours", 1380], ["1500 minutes", 1500]], [["2 hours 30 minutes", 150], ["145 minutes", 145], ["2 hours", 120]], [["5 hours", 300], ["290 minutes", 290], ["4 hours 55 minutes", 295]], [["180 minutes", 180], ["3 hours 10 minutes", 190], ["2 hours 50 minutes", 170]], [["6 hours", 360], ["350 minutes", 350], ["5 hours 45 minutes", 345]], [["2 days", 2880], ["45 hours", 2700], ["2800 minutes", 2800]], [["1 hour 55 minutes", 115], ["110 minutes", 110], ["2 hours", 120]], [["7 hours", 420], ["430 minutes", 430], ["6 hours 50 minutes", 410]], [["240 minutes", 240], ["4 hours 5 minutes", 245], ["3 hours 58 minutes", 238]], [["8 hours", 480], ["470 minutes", 470], ["7 hours 55 minutes", 475]], [["3 days", 4320], ["70 hours", 4200], ["4300 minutes", 4300]], [["1 hour 25 minutes", 85], ["80 minutes", 80], ["1 hour 20 minutes", 80? 0 : 0]]].slice(0, 16).forEach(([A, B, C], i) => {
     const trio = [A, B, C];
@@ -597,7 +597,7 @@ export function calendarConceptual() {
   });
   const countWeekdaysPhr = rotor([
     (nm) => `${nm} counts the days in one whole week. How many days does ${nm} count?`,
-    (nm) => `How many days are in a week? ${nm} checks the calendar row.`,
+    (nm) => `${nm} checks the calendar row. How many days are in a week?`,
   ]);
   for (let i = 0; i < 13; i += 1) {
     items.push(
@@ -627,7 +627,7 @@ export function calendarConceptual() {
   // Band 2 — month order and season-ish reasoning.
   const nextMonthPhr = rotor([
     (nm, m) => `${nm} crosses off ${m}. Which month comes next?`,
-    (nm, m) => `After ${m} ends, which month begins? ${nm} turns the page.`,
+    (nm, m) => `${nm} turns the calendar page. After ${m} ends, which month begins?`,
   ]);
   MONTHS.forEach((m, i) => {
     const good = MONTHS[(i + 1) % 12];
@@ -669,7 +669,7 @@ export function calendarConceptual() {
   });
 
   const prevMonthPhr = rotor([
-    (nm, m) => `Which month comes just before ${m}? ${nm} flips back one page.`,
+    (nm, m) => `${nm} flips back one page. Which month comes just before ${m}?`,
     (nm, m) => `${nm} looks one month earlier than ${m}. Which month is that?`,
   ]);
   MONTHS.forEach((m, i) => {
@@ -685,8 +685,8 @@ export function calendarConceptual() {
     );
   });
   const monthsLeftPhr = rotor([
-    (nm, m) => `It is ${m}. How many months are left after it until the year ends? ${nm} counts on the calendar.`,
-    (nm, m) => `After ${m} finishes, how many months of the year remain? ${nm} wants to know.`,
+    (nm, m) => `It is ${m}. ${nm} counts on the calendar. How many months are left after it until the year ends?`,
+    (nm, m) => `Help ${nm}: after ${m} finishes, how many months of the year remain?`,
   ]);
   [["October"], ["April"]].forEach(([m], i) => {
     const idx = MONTHS.indexOf(m);
@@ -702,7 +702,7 @@ export function calendarConceptual() {
   // Band 3 — span reasoning with weeks.
   const weeksBetweenPhr = rotor([
     (nm, a, b, m) => `${nm} marks ${m} ${a} and ${m} ${b} on the calendar. Exactly how many WEEKS apart are they?`,
-    (nm, a, b, m) => `From ${m} ${a} to ${m} ${b} — how many whole weeks is that? ${nm} counts by sevens.`,
+    (nm, a, b, m) => `${nm} counts by sevens. From ${m} ${a} to ${m} ${b}, how many whole weeks is that?`,
   ]);
   [["March", 3, 24], ["June", 5, 26], ["October", 1, 29], ["April", 2, 23], ["August", 6, 27], ["January", 4, 25], ["May", 2, 30], ["September", 7, 21], ["November", 5, 26], ["July", 1, 22], ["February", 5, 19], ["December", 3, 31], ["March", 10, 24], ["June", 9, 30], ["October", 8, 22], ["April", 6, 20], ["August", 3, 31], ["January", 13, 27]].forEach(([m, a, b], i) => {
     items.push(
@@ -729,7 +729,7 @@ export function calendarConceptual() {
     );
   });
   const whichFartherPhr = rotor([
-    (nm, m1, a, m2, b) => `Which is farther away from the 1st of its month: ${m1} ${a} or ${m2} ${b}? ${nm} compares.`,
+    (nm, m1, a, m2, b) => `${nm} compares two dates. Which is farther away from the 1st of its month: ${m1} ${a} or ${m2} ${b}?`,
     (nm, m1, a, m2, b) => `${nm} compares two dates: ${m1} ${a} and ${m2} ${b}. Which sits deeper into its month?`,
   ]);
   [["March", 17, "June", 9], ["April", 6, "October", 21], ["August", 27, "January", 14], ["May", 8, "September", 23], ["November", 19, "July", 4], ["February", 24, "December", 11], ["March", 5, "June", 28], ["April", 22, "October", 7], ["August", 3, "January", 30], ["May", 26, "September", 12], ["November", 2, "July", 18], ["February", 15, "December", 29], ["March", 20, "June", 6], ["April", 11, "October", 25], ["August", 16, "January", 8]].forEach(([m1, a, m2, b], i) => {

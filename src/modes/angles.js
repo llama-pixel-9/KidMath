@@ -104,7 +104,7 @@ const VARIETIES = [
         answer: benchmark,
         answerType: "angle",
         display: { type: "angle", degrees },
-        promptText: "About how many degrees is this angle? Answer 30, 90 or 150.",
+        promptText: "About how many degrees is this angle: 30, 90 or 150?",
         representation: "visual",
         cognitiveDemand: "DOK2",
         misconceptionTags: ["rayLengthIsSize", "offBy10"],

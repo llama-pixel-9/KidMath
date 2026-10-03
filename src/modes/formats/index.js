@@ -182,7 +182,7 @@ export const FORMATS = {
       const d = truthy ? q.b + shift : q.b + shift + 2;
       return {
         display: { promptText: `${q.a} + ${q.b} = ${q.a - shift} + ${d}` },
-        subPrompt: "Is this right? Try not to add.",
+        subPrompt: "Try not to add. Is this right?",
         answer: truthy ? "Yes" : "No",
         choices: [...TF],
         answerType: "choice",

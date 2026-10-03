@@ -14,7 +14,7 @@
  * engine can bundle it.
  */
 import { CONCEPTS, MODE_TITLES } from "./concepts.js";
-import { stepsFor } from "./steps.js";
+import { stepsFor, numbersInPrompt } from "./steps.js";
 import { usableHintFields } from "./hintSchema.js";
 import { scaffoldFor } from "../scaffold.js";
 
@@ -34,6 +34,21 @@ export function conceptFor(mode, subskill) {
   };
 }
 
+const numbersIn = (s) => (String(s ?? "").match(/\d+(?:\.\d+)?/g) || []).map(Number);
+
+/** True when a worked example is the live question itself: every number in
+ * its problem is on screen and its answer is the key ("8 + 5 = 13" shown as
+ * the worked example on the item 8 + 5). Then the entry's `alt` is shown. */
+export function exampleIsLiveQuestion(example, question) {
+  const shownNums = numbersIn(example?.problem);
+  if (!shownNums.length || !question) return false;
+  const onScreen = new Set([...numbersIn(question.display?.promptText ?? question.prompt), ...numbersInPrompt(question).map(Number)]);
+  const a = question.answer;
+  const keyNums = a && typeof a === "object" && "num" in a ? [Number(a.num), Number(a.den)] : numbersIn(a);
+  const exampleAnswer = numbersIn(example.answer);
+  return shownNums.every((n) => onScreen.has(n)) && keyNums.length > 0 && exampleAnswer[0] === keyNums[0];
+}
+
 export function hintFor(question) {
   const mode = question?.mode || question?.metadata?.modeId || "";
   const subskill = question?.metadata?.subskill || "";
@@ -45,7 +60,7 @@ export function hintFor(question) {
     modeTitle: MODE_TITLES[mode] || "Math",
     idea: own.nudge ?? concept.idea,
     steps: own.steps ?? stepsFor(question),
-    example: own.example ?? concept.example,
+    example: own.example ?? (concept.alt && exampleIsLiveQuestion(concept.example, question) ? concept.alt : concept.example),
     // The item's picture passes through as { kind, ...fields }; the pane
     // decides whether it can draw that kind.
     visual: own.picture ? { ...own.picture } : scaffold && scaffold.kind !== "look" ? scaffold : null,

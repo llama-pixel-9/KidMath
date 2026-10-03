@@ -152,7 +152,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":null,"op":"place","answer":2,"display":{"ones":2,"tens":1,"type":"ones_in","number":12,"promptText":"How many ones are in 12?"}},
+    question: {"a":12,"b":null,"op":"place","answer":2,"display":{"ones":2,"tens":1,"type":"ones_in","number":12,"promptText":"12 is 1 ten and how many ones?"}},
   },
   {
     itemId: "placevalue-app-016",
@@ -182,7 +182,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":36,"b":null,"op":"place","answer":6,"display":{"ones":6,"tens":3,"type":"ones_in","number":36,"promptText":"How many ones are in 36?"}},
+    question: {"a":36,"b":null,"op":"place","answer":6,"display":{"ones":6,"tens":3,"type":"ones_in","number":36,"promptText":"Make 36 with 3 tens and some ones. How many ones do you need?"}},
   },
   {
     itemId: "placevalue-app-019",
@@ -212,7 +212,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":374,"b":null,"op":"place","answer":4,"display":{"ones":4,"tens":37,"type":"ones_in","number":374,"promptText":"How many ones are in 374?"}},
+    question: {"a":374,"b":null,"op":"place","answer":4,"display":{"ones":4,"tens":37,"type":"ones_in","number":374,"promptText":"Which digit of 374 is in the ones place?"}},
   },
   {
     itemId: "placevalue-app-022",
@@ -1222,7 +1222,7 @@ export const ITEMS = [
     structureType: "storyDigitWorth",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"n":347,"kind":"placeValueOf","place":10},"promptText":"Ticket 347 wins! What is the value of the tens digit in 347? Theo checks."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"n":347,"kind":"placeValueOf","place":10},"promptText":"Theo packs 347 stickers onto sheets of 100, then strips of 10, then single stickers. How many stickers end up on strips?"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-app-b0821-0087",
@@ -1242,7 +1242,7 @@ export const ITEMS = [
     structureType: "storyDigitWorth",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"n":816,"kind":"placeValueOf","place":10},"promptText":"Ticket 816 wins! What is the value of the tens digit in 816? Zoe checks."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"n":816,"kind":"placeValueOf","place":10},"promptText":"Mina packs 816 beads into bags of 100, then boxes of 10, then single beads. How many beads end up in boxes?"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-app-b0821-0089",
@@ -1262,7 +1262,7 @@ export const ITEMS = [
     structureType: "storyDigitWorth",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"counting":{"n":265,"kind":"placeValueOf","place":100},"promptText":"Ticket 265 wins! What is the value of the hundreds digit in 265? Diego checks."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"counting":{"n":265,"kind":"placeValueOf","place":100},"promptText":"Ava puts 265 stamps into as many full books of 100 as she can. How many stamps go into the books?"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-app-b0821-0091",
@@ -1282,7 +1282,7 @@ export const ITEMS = [
     structureType: "storyDigitWorth",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":900,"display":{"counting":{"n":904,"kind":"placeValueOf","place":100},"promptText":"Ticket 904 wins! What is the value of the hundreds digit in 904? Luca checks."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":900,"display":{"counting":{"n":904,"kind":"placeValueOf","place":100},"promptText":"Omar puts 904 trading cards into as many full boxes of 100 as he can. How many cards go into the boxes?"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-app-b0821-0093",
@@ -1302,7 +1302,7 @@ export const ITEMS = [
     structureType: "storyDigitWorth",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"counting":{"n":128,"kind":"placeValueOf","place":100},"promptText":"Ticket 128 wins! What is the value of the hundreds digit in 128? Omar checks."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"counting":{"n":128,"kind":"placeValueOf","place":100},"promptText":"Lily puts 128 marbles into as many full bags of 100 as she can. How many marbles go into the bags?"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-app-b0821-0095",
@@ -1322,7 +1322,7 @@ export const ITEMS = [
     structureType: "storyDigitWorth",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":700,"display":{"counting":{"n":741,"kind":"placeValueOf","place":100},"promptText":"Ticket 741 wins! What is the value of the hundreds digit in 741? Finn checks."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":700,"display":{"counting":{"n":741,"kind":"placeValueOf","place":100},"promptText":"Kai puts 741 stickers onto as many full sheets of 100 as he can. How many stickers go on the sheets?"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-app-b0821-0097",
@@ -1342,7 +1342,7 @@ export const ITEMS = [
     structureType: "storyDigitWorth",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"n":235,"kind":"placeValueOf","place":1},"promptText":"Ticket 235 wins! What is the value of the ones digit in 235? Sam checks."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"n":235,"kind":"placeValueOf","place":1},"promptText":"Nora packs 235 beads into bags of 100 and boxes of 10. How many beads are left over?"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-app-b0821-0099",
@@ -1362,7 +1362,7 @@ export const ITEMS = [
     structureType: "storyDigitWorth",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"counting":{"n":682,"kind":"placeValueOf","place":10},"promptText":"Ticket 682 wins! What is the value of the tens digit in 682? Kai checks."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"counting":{"n":682,"kind":"placeValueOf","place":10},"promptText":"Diego packs 682 cards into boxes of 100, then packs of 10, then single cards. How many cards end up in packs?"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-app-b0821-0101",
@@ -1382,7 +1382,7 @@ export const ITEMS = [
     structureType: "storyDigitWorth",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"n":408,"kind":"placeValueOf","place":1},"promptText":"Ticket 408 wins! What is the value of the ones digit in 408? Lily checks."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"n":408,"kind":"placeValueOf","place":1},"promptText":"Zoe packs 408 stamps into books of 100 and strips of 10. How many stamps are left over?"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-app-b0821-0103",
@@ -7082,7 +7082,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":46,"b":null,"op":"place","answer":6,"display":{"ones":6,"tens":4,"type":"ones_in","number":46,"promptText":"How many ones are in 46?"}},
+    question: {"a":46,"b":null,"op":"place","answer":6,"display":{"ones":6,"tens":4,"type":"ones_in","number":46,"promptText":"46 is 4 tens and how many ones?"}},
   },
   {
     itemId: "placeValue-app-tensOnes-2_3-010",
@@ -7092,7 +7092,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":63,"b":null,"op":"place","answer":3,"display":{"ones":3,"tens":6,"type":"ones_in","number":63,"promptText":"How many ones are in 63?"}},
+    question: {"a":63,"b":null,"op":"place","answer":3,"display":{"ones":3,"tens":6,"type":"ones_in","number":63,"promptText":"Make 63 with 6 tens and some ones. How many ones do you need?"}},
   },
   {
     itemId: "placeValue-app-tensOnes-2_3-011",
@@ -7102,7 +7102,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":91,"b":null,"op":"place","answer":1,"display":{"ones":1,"tens":9,"type":"ones_in","number":91,"promptText":"How many ones are in 91?"}},
+    question: {"a":91,"b":null,"op":"place","answer":1,"display":{"ones":1,"tens":9,"type":"ones_in","number":91,"promptText":"91 = 9 tens and __ ones. How many ones go in the blank?"}},
   },
   {
     itemId: "placeValue-app-tensOnes-2_3-012",
@@ -7112,7 +7112,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":27,"b":null,"op":"place","answer":7,"display":{"ones":7,"tens":2,"type":"ones_in","number":27,"promptText":"How many ones are in 27?"}},
+    question: {"a":27,"b":null,"op":"place","answer":7,"display":{"ones":7,"tens":2,"type":"ones_in","number":27,"promptText":"27 is 2 tens and how many ones?"}},
   },
   {
     itemId: "placeValue-app-tensOnes-2_3-013",
@@ -7122,7 +7122,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":185,"b":null,"op":"place","answer":5,"display":{"ones":5,"tens":18,"type":"ones_in","number":185,"promptText":"How many ones are in 185?"}},
+    question: {"a":185,"b":null,"op":"place","answer":5,"display":{"ones":5,"tens":18,"type":"ones_in","number":185,"promptText":"What digit is in the ones place in 185?"}},
   },
   {
     itemId: "placeValue-app-tensOnes-2_3-014",
@@ -7132,7 +7132,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":392,"b":null,"op":"place","answer":2,"display":{"ones":2,"tens":39,"type":"ones_in","number":392,"promptText":"How many ones are in 392?"}},
+    question: {"a":392,"b":null,"op":"place","answer":2,"display":{"ones":2,"tens":39,"type":"ones_in","number":392,"promptText":"Look at the number 392. Which digit is in the ones place?"}},
   },
   {
     itemId: "placeValue-app-tensOnes-2_3-015",
@@ -7142,7 +7142,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":574,"b":null,"op":"place","answer":4,"display":{"ones":4,"tens":57,"type":"ones_in","number":574,"promptText":"How many ones are in 574?"}},
+    question: {"a":574,"b":null,"op":"place","answer":4,"display":{"ones":4,"tens":57,"type":"ones_in","number":574,"promptText":"Which digit of 574 is in the ones place?"}},
   },
   {
     itemId: "placeValue-app-tensOnes-2_3-016",
@@ -7152,7 +7152,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":806,"b":null,"op":"place","answer":6,"display":{"ones":6,"tens":80,"type":"ones_in","number":806,"promptText":"How many ones are in 806?"}},
+    question: {"a":806,"b":null,"op":"place","answer":6,"display":{"ones":6,"tens":80,"type":"ones_in","number":806,"promptText":"What digit is in the ones place in 806?"}},
   },
   {
     itemId: "placeValue-app-tensOnes-4_5-001",
@@ -7282,7 +7282,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":4193,"b":null,"op":"place","answer":3,"display":{"ones":3,"tens":419,"type":"ones_in","number":4193,"promptText":"How many ones are in 4193?"}},
+    question: {"a":4193,"b":null,"op":"place","answer":3,"display":{"ones":3,"tens":419,"type":"ones_in","number":4193,"promptText":"Look at the number 4193. Which digit is in the ones place?"}},
   },
   {
     itemId: "placeValue-app-tensOnes-4_5-014",
@@ -7292,7 +7292,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":5867,"b":null,"op":"place","answer":7,"display":{"ones":7,"tens":586,"type":"ones_in","number":5867,"promptText":"How many ones are in 5867?"}},
+    question: {"a":5867,"b":null,"op":"place","answer":7,"display":{"ones":7,"tens":586,"type":"ones_in","number":5867,"promptText":"Which digit of 5867 is in the ones place?"}},
   },
   {
     itemId: "placeValue-app-tensOnes-4_5-015",
@@ -7302,7 +7302,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":7014,"b":null,"op":"place","answer":4,"display":{"ones":4,"tens":701,"type":"ones_in","number":7014,"promptText":"How many ones are in 7014?"}},
+    question: {"a":7014,"b":null,"op":"place","answer":4,"display":{"ones":4,"tens":701,"type":"ones_in","number":7014,"promptText":"What digit is in the ones place in 7014?"}},
   },
   {
     itemId: "placeValue-app-tensOnes-4_5-016",
@@ -7312,7 +7312,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":8259,"b":null,"op":"place","answer":9,"display":{"ones":9,"tens":825,"type":"ones_in","number":8259,"promptText":"How many ones are in 8259?"}},
+    question: {"a":8259,"b":null,"op":"place","answer":9,"display":{"ones":9,"tens":825,"type":"ones_in","number":8259,"promptText":"Look at the number 8259. Which digit is in the ones place?"}},
   },
   {
     itemId: "placeValue-app-tensOnes-K_1-001",
@@ -7392,7 +7392,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":null,"op":"place","answer":1,"display":{"ones":1,"tens":1,"type":"ones_in","number":11,"promptText":"How many ones are in 11?"}},
+    question: {"a":11,"b":null,"op":"place","answer":1,"display":{"ones":1,"tens":1,"type":"ones_in","number":11,"promptText":"Make 11 with 1 ten and some ones. How many ones do you need?"}},
   },
   {
     itemId: "placeValue-app-tensOnes-K_1-010",
@@ -7402,7 +7402,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":null,"op":"place","answer":3,"display":{"ones":3,"tens":1,"type":"ones_in","number":13,"promptText":"How many ones are in 13?"}},
+    question: {"a":13,"b":null,"op":"place","answer":3,"display":{"ones":3,"tens":1,"type":"ones_in","number":13,"promptText":"13 = 1 ten and __ ones. How many ones go in the blank?"}},
   },
   {
     itemId: "placeValue-app-tensOnes-K_1-011",
@@ -7412,7 +7412,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":null,"op":"place","answer":4,"display":{"ones":4,"tens":1,"type":"ones_in","number":14,"promptText":"How many ones are in 14?"}},
+    question: {"a":14,"b":null,"op":"place","answer":4,"display":{"ones":4,"tens":1,"type":"ones_in","number":14,"promptText":"14 is 1 ten and how many ones?"}},
   },
   {
     itemId: "placeValue-app-tensOnes-K_1-012",
@@ -7422,7 +7422,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":null,"op":"place","answer":5,"display":{"ones":5,"tens":1,"type":"ones_in","number":15,"promptText":"How many ones are in 15?"}},
+    question: {"a":15,"b":null,"op":"place","answer":5,"display":{"ones":5,"tens":1,"type":"ones_in","number":15,"promptText":"Make 15 with 1 ten and some ones. How many ones do you need?"}},
   },
   {
     itemId: "placeValue-app-tensOnes-K_1-013",
@@ -7432,7 +7432,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":null,"op":"place","answer":6,"display":{"ones":6,"tens":1,"type":"ones_in","number":16,"promptText":"How many ones are in 16?"}},
+    question: {"a":16,"b":null,"op":"place","answer":6,"display":{"ones":6,"tens":1,"type":"ones_in","number":16,"promptText":"16 = 1 ten and __ ones. How many ones go in the blank?"}},
   },
   {
     itemId: "placeValue-app-tensOnes-K_1-014",
@@ -7442,7 +7442,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":17,"b":null,"op":"place","answer":7,"display":{"ones":7,"tens":1,"type":"ones_in","number":17,"promptText":"How many ones are in 17?"}},
+    question: {"a":17,"b":null,"op":"place","answer":7,"display":{"ones":7,"tens":1,"type":"ones_in","number":17,"promptText":"17 is 1 ten and how many ones?"}},
   },
   {
     itemId: "placeValue-app-tensOnes-K_1-015",
@@ -7452,7 +7452,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":null,"op":"place","answer":8,"display":{"ones":8,"tens":1,"type":"ones_in","number":18,"promptText":"How many ones are in 18?"}},
+    question: {"a":18,"b":null,"op":"place","answer":8,"display":{"ones":8,"tens":1,"type":"ones_in","number":18,"promptText":"Make 18 with 1 ten and some ones. How many ones do you need?"}},
   },
   {
     itemId: "placeValue-app-tensOnes-K_1-016",
@@ -7462,7 +7462,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":19,"b":null,"op":"place","answer":9,"display":{"ones":9,"tens":1,"type":"ones_in","number":19,"promptText":"How many ones are in 19?"}},
+    question: {"a":19,"b":null,"op":"place","answer":9,"display":{"ones":9,"tens":1,"type":"ones_in","number":19,"promptText":"19 = 1 ten and __ ones. How many ones go in the blank?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0001",
@@ -7822,7 +7822,7 @@ export const ITEMS = [
     structureType: "digitWorthTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[1,10,7,20],"display":{"counting":{"n":17,"kind":"placeValueOf","place":10},"promptText":"In 17, what is the value of the tens digit? Ida wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[1,10,7,20],"display":{"counting":{"n":17,"kind":"placeValueOf","place":10},"promptText":"What is the tens digit of 17 worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0037",
@@ -7842,7 +7842,7 @@ export const ITEMS = [
     structureType: "digitWorthTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[1,20,10,9],"display":{"counting":{"n":19,"kind":"placeValueOf","place":10},"promptText":"In 19, what is the value of the tens digit? Rosa wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[1,20,10,9],"display":{"counting":{"n":19,"kind":"placeValueOf","place":10},"promptText":"What is the tens digit of 19 worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0039",
@@ -7862,7 +7862,7 @@ export const ITEMS = [
     structureType: "digitWorthTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[6,10,7],"display":{"counting":{"n":16,"kind":"placeValueOf","place":1},"promptText":"In 16, what is the value of the ones digit? Nora wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":6,"choices":[6,10,7],"display":{"counting":{"n":16,"kind":"placeValueOf","place":1},"promptText":"In 16, what is the ones digit worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0041",
@@ -7882,7 +7882,7 @@ export const ITEMS = [
     structureType: "digitWorthTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[10,5,6],"display":{"counting":{"n":15,"kind":"placeValueOf","place":1},"promptText":"In 15, what is the value of the ones digit? Ava wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":5,"choices":[10,5,6],"display":{"counting":{"n":15,"kind":"placeValueOf","place":1},"promptText":"What is the ones digit of 15 worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0043",
@@ -7902,7 +7902,7 @@ export const ITEMS = [
     structureType: "digitWorthTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[5,4,10],"display":{"counting":{"n":14,"kind":"placeValueOf","place":1},"promptText":"In 14, what is the value of the ones digit? Ben wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":4,"choices":[5,4,10],"display":{"counting":{"n":14,"kind":"placeValueOf","place":1},"promptText":"How much is the ones digit in 14 worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0045",
@@ -7922,7 +7922,7 @@ export const ITEMS = [
     structureType: "digitWorthTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[3,2,10],"display":{"counting":{"n":12,"kind":"placeValueOf","place":1},"promptText":"In 12, what is the value of the ones digit? Priya wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[3,2,10],"display":{"counting":{"n":12,"kind":"placeValueOf","place":1},"promptText":"What is the ones digit of 12 worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0047",
@@ -7942,7 +7942,7 @@ export const ITEMS = [
     structureType: "digitWorthTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[3,1,10,20],"display":{"counting":{"n":13,"kind":"placeValueOf","place":10},"promptText":"In 13, what is the value of the tens digit? Nia wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[3,1,10,20],"display":{"counting":{"n":13,"kind":"placeValueOf","place":10},"promptText":"How much is the tens digit in 13 worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0049",
@@ -7962,7 +7962,7 @@ export const ITEMS = [
     structureType: "digitWorthTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[10,20,1,5],"display":{"counting":{"n":15,"kind":"placeValueOf","place":10},"promptText":"In 15, what is the value of the tens digit? June wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":10,"choices":[10,20,1,5],"display":{"counting":{"n":15,"kind":"placeValueOf","place":10},"promptText":"In 15, what is the tens digit worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0051",
@@ -7982,7 +7982,7 @@ export const ITEMS = [
     structureType: "digitWorth",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"choices":[8,80,3,90],"display":{"counting":{"n":83,"kind":"placeValueOf","place":10},"promptText":"In 83, what is the value of the tens digit? Ida wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":80,"choices":[8,80,3,90],"display":{"counting":{"n":83,"kind":"placeValueOf","place":10},"promptText":"How much is the tens digit in 83 worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0053",
@@ -8002,7 +8002,7 @@ export const ITEMS = [
     structureType: "digitWorth",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"choices":[60,6,5,70],"display":{"counting":{"n":65,"kind":"placeValueOf","place":10},"promptText":"In 65, what is the value of the tens digit? Rosa wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":60,"choices":[60,6,5,70],"display":{"counting":{"n":65,"kind":"placeValueOf","place":10},"promptText":"How much is the tens digit in 65 worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0055",
@@ -8022,7 +8022,7 @@ export const ITEMS = [
     structureType: "digitWorth",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"choices":[30,3,40,8],"display":{"counting":{"n":38,"kind":"placeValueOf","place":10},"promptText":"In 38, what is the value of the tens digit? Nora wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":30,"choices":[30,3,40,8],"display":{"counting":{"n":38,"kind":"placeValueOf","place":10},"promptText":"What is the tens digit of 38 worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0057",
@@ -8042,7 +8042,7 @@ export const ITEMS = [
     structureType: "digitWorth",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"choices":[5,60,6,50],"display":{"counting":{"n":56,"kind":"placeValueOf","place":10},"promptText":"In 56, what is the value of the tens digit? Ava wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":50,"choices":[5,60,6,50],"display":{"counting":{"n":56,"kind":"placeValueOf","place":10},"promptText":"In 56, what is the tens digit worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0059",
@@ -8062,7 +8062,7 @@ export const ITEMS = [
     structureType: "digitWorth",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"choices":[80,8,90,5],"display":{"counting":{"n":85,"kind":"placeValueOf","place":10},"promptText":"In 85, what is the value of the tens digit? Ben wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":80,"choices":[80,8,90,5],"display":{"counting":{"n":85,"kind":"placeValueOf","place":10},"promptText":"How much is the tens digit in 85 worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0061",
@@ -8082,7 +8082,7 @@ export const ITEMS = [
     structureType: "digitWorth",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"choices":[9,6,90,100],"display":{"counting":{"n":96,"kind":"placeValueOf","place":10},"promptText":"In 96, what is the value of the tens digit? Priya wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":90,"choices":[9,6,90,100],"display":{"counting":{"n":96,"kind":"placeValueOf","place":10},"promptText":"How much is the tens digit in 96 worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0063",
@@ -8102,7 +8102,7 @@ export const ITEMS = [
     structureType: "digitWorth",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":70,"choices":[8,70,7,80],"display":{"counting":{"n":78,"kind":"placeValueOf","place":10},"promptText":"In 78, what is the value of the tens digit? Nia wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":70,"choices":[8,70,7,80],"display":{"counting":{"n":78,"kind":"placeValueOf","place":10},"promptText":"In 78, what is the tens digit worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0065",
@@ -8122,7 +8122,7 @@ export const ITEMS = [
     structureType: "digitWorth",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"choices":[40,30,3,4],"display":{"counting":{"n":34,"kind":"placeValueOf","place":10},"promptText":"In 34, what is the value of the tens digit? June wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":30,"choices":[40,30,3,4],"display":{"counting":{"n":34,"kind":"placeValueOf","place":10},"promptText":"What is the tens digit of 34 worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0067",
@@ -8142,7 +8142,7 @@ export const ITEMS = [
     structureType: "digitWorth",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[2,80,3],"display":{"counting":{"n":82,"kind":"placeValueOf","place":1},"promptText":"In 82, what is the value of the ones digit? Amara wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":2,"choices":[2,80,3],"display":{"counting":{"n":82,"kind":"placeValueOf","place":1},"promptText":"In 82, what is the ones digit worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0069",
@@ -8162,7 +8162,7 @@ export const ITEMS = [
     structureType: "digitWorthBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":500,"choices":[82,5,500,600],"display":{"counting":{"n":582,"kind":"placeValueOf","place":100},"promptText":"In 582, what is the value of the hundreds digit? Ida wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":500,"choices":[82,5,500,600],"display":{"counting":{"n":582,"kind":"placeValueOf","place":100},"promptText":"What is the hundreds digit of 582 worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0071",
@@ -8182,7 +8182,7 @@ export const ITEMS = [
     structureType: "digitWorthBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":400,"choices":[4,500,93,400],"display":{"counting":{"n":493,"kind":"placeValueOf","place":100},"promptText":"In 493, what is the value of the hundreds digit? Rosa wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":400,"choices":[4,500,93,400],"display":{"counting":{"n":493,"kind":"placeValueOf","place":100},"promptText":"How much is the hundreds digit in 493 worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0073",
@@ -8202,7 +8202,7 @@ export const ITEMS = [
     structureType: "digitWorthBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":700,"choices":[700,800,39,7],"display":{"counting":{"n":739,"kind":"placeValueOf","place":100},"promptText":"In 739, what is the value of the hundreds digit? Nora wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":700,"choices":[700,800,39,7],"display":{"counting":{"n":739,"kind":"placeValueOf","place":100},"promptText":"What is the hundreds digit of 739 worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0075",
@@ -8222,7 +8222,7 @@ export const ITEMS = [
     structureType: "digitWorthBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":70,"choices":[80,7,600,70],"display":{"counting":{"n":670,"kind":"placeValueOf","place":10},"promptText":"In 670, what is the value of the tens digit? Ava wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":70,"choices":[80,7,600,70],"display":{"counting":{"n":670,"kind":"placeValueOf","place":10},"promptText":"What is the tens digit of 670 worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0077",
@@ -8242,7 +8242,7 @@ export const ITEMS = [
     structureType: "digitWorthBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"choices":[306,5,60,50],"display":{"counting":{"n":356,"kind":"placeValueOf","place":10},"promptText":"In 356, what is the value of the tens digit? Ben wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":50,"choices":[306,5,60,50],"display":{"counting":{"n":356,"kind":"placeValueOf","place":10},"promptText":"In 356, what is the tens digit worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0079",
@@ -8262,7 +8262,7 @@ export const ITEMS = [
     structureType: "digitWorthBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"choices":[6,809,60,70],"display":{"counting":{"n":869,"kind":"placeValueOf","place":10},"promptText":"In 869, what is the value of the tens digit? Priya wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":60,"choices":[6,809,60,70],"display":{"counting":{"n":869,"kind":"placeValueOf","place":10},"promptText":"In 869, what is the tens digit worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0081",
@@ -8282,7 +8282,7 @@ export const ITEMS = [
     structureType: "digitWorthBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":500,"choices":[5,17,600,500],"display":{"counting":{"n":517,"kind":"placeValueOf","place":100},"promptText":"In 517, what is the value of the hundreds digit? Nia wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":500,"choices":[5,17,600,500],"display":{"counting":{"n":517,"kind":"placeValueOf","place":100},"promptText":"In 517, what is the hundreds digit worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0083",
@@ -8302,7 +8302,7 @@ export const ITEMS = [
     structureType: "digitWorthBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":900,"choices":[1000,900,51,9],"display":{"counting":{"n":951,"kind":"placeValueOf","place":100},"promptText":"In 951, what is the value of the hundreds digit? June wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":900,"choices":[1000,900,51,9],"display":{"counting":{"n":951,"kind":"placeValueOf","place":100},"promptText":"How much is the hundreds digit in 951 worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0085",
@@ -8322,7 +8322,7 @@ export const ITEMS = [
     structureType: "digitWorthBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":100,"choices":[1,100,63,200],"display":{"counting":{"n":163,"kind":"placeValueOf","place":100},"promptText":"In 163, what is the value of the hundreds digit? Amara wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":100,"choices":[1,100,63,200],"display":{"counting":{"n":163,"kind":"placeValueOf","place":100},"promptText":"In 163, what is the hundreds digit worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0087",
@@ -8532,7 +8532,7 @@ export const ITEMS = [
     structureType: "unitClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ben says 8 hundreds 1 ten 6 ones makes 816. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ben reads 8 hundreds 1 ten 6 ones as 816. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0108",
@@ -8542,7 +8542,7 @@ export const ITEMS = [
     structureType: "unitClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn reads 4 hundreds 9 tens 3 ones as 439. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn says 4 hundreds 9 tens 3 ones makes 439. Is Finn right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0109",
@@ -8572,7 +8572,7 @@ export const ITEMS = [
     structureType: "unitClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nia says 9 hundreds 2 tens 4 ones makes 924. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nia reads 9 hundreds 2 tens 4 ones as 924. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0112",
@@ -8582,7 +8582,7 @@ export const ITEMS = [
     structureType: "unitClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Kai reads 6 hundreds 7 tens 5 ones as 657. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Kai says 6 hundreds 7 tens 5 ones makes 657. Is Kai right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0113",
@@ -8612,7 +8612,7 @@ export const ITEMS = [
     structureType: "unitClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Amara says 7 hundreds 4 tens 1 one makes 741. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Amara reads 7 hundreds 4 tens 1 one as 741. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0116",
@@ -8622,7 +8622,7 @@ export const ITEMS = [
     structureType: "unitClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Leo reads 8 hundreds 6 tens 9 ones as 896. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Leo says 8 hundreds 6 tens 9 ones makes 896. Is Leo right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0117",
@@ -8652,7 +8652,7 @@ export const ITEMS = [
     structureType: "unitClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ida says 6 hundreds 8 tens 2 ones makes 682. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ida reads 6 hundreds 8 tens 2 ones as 682. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0120",
@@ -8662,7 +8662,7 @@ export const ITEMS = [
     structureType: "unitClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe reads 9 hundreds 5 tens 1 one as 915. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe says 9 hundreds 5 tens 1 one makes 915. Is Zoe right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0121",
@@ -8682,7 +8682,7 @@ export const ITEMS = [
     structureType: "reversalJudgeTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe writes 18 for 1 ten and 7 ones. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe writes 18 for 1 ten and 7 ones. Is Zoe right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0123",
@@ -8692,7 +8692,7 @@ export const ITEMS = [
     structureType: "reversalJudgeTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa says 1 ten 5 ones make 15. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa writes 15 for 1 ten and 5 ones. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0124",
@@ -8702,7 +8702,7 @@ export const ITEMS = [
     structureType: "reversalJudgeTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Diego writes 13 for 1 ten and 2 ones. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Diego says 1 ten 2 ones make 13. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0125",
@@ -8712,7 +8712,7 @@ export const ITEMS = [
     structureType: "reversalJudgeTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nora says 1 ten 8 ones make 18. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nora says 1 ten 8 ones make 18. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0126",
@@ -8732,7 +8732,7 @@ export const ITEMS = [
     structureType: "reversalJudgeTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ava says 1 ten 9 ones make 19. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ava writes 19 for 1 ten and 9 ones. Is Ava right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0128",
@@ -8742,7 +8742,7 @@ export const ITEMS = [
     structureType: "reversalJudgeTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Omar writes 17 for 1 ten and 6 ones. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Omar says 1 ten 6 ones make 17. Is Omar right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0129",
@@ -8762,7 +8762,7 @@ export const ITEMS = [
     structureType: "reversalJudgeTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn writes 14 for 1 ten and 3 ones. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn writes 14 for 1 ten and 3 ones. Is Finn right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0131",
@@ -8772,7 +8772,7 @@ export const ITEMS = [
     structureType: "reversalJudgeTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Priya says 1 ten 4 ones make 14. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Priya writes 14 for 1 ten and 4 ones. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0132",
@@ -8782,7 +8782,7 @@ export const ITEMS = [
     structureType: "reversalJudgeTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Sam writes 16 for 1 ten and 5 ones. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Sam says 1 ten 5 ones make 16. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0133",
@@ -8792,7 +8792,7 @@ export const ITEMS = [
     structureType: "reversalJudgeTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nia says 1 ten 6 ones make 16. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nia says 1 ten 6 ones make 16. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0134",
@@ -8802,7 +8802,7 @@ export const ITEMS = [
     structureType: "reversalJudgeTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Kai writes 17 for 1 ten and 7 ones. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Kai writes 17 for 1 ten and 7 ones. Is Kai right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0135",
@@ -8812,7 +8812,7 @@ export const ITEMS = [
     structureType: "reversalJudgeTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"June says 1 ten 8 ones make 19. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"June writes 19 for 1 ten and 8 ones. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0136",
@@ -8822,7 +8822,7 @@ export const ITEMS = [
     structureType: "reversalJudgeTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Lily writes 20 for 1 ten and 9 ones. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Lily says 1 ten 9 ones make 20. Is Lily right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0137",
@@ -8852,7 +8852,7 @@ export const ITEMS = [
     structureType: "reversalJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa says 4 tens 1 one make 41. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa writes 41 for 4 tens and 1 one. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0140",
@@ -8862,7 +8862,7 @@ export const ITEMS = [
     structureType: "reversalJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Diego writes 65 for 5 tens and 6 ones. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Diego says 5 tens 6 ones make 65. Is Diego right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0141",
@@ -8892,7 +8892,7 @@ export const ITEMS = [
     structureType: "reversalJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ava says 8 tens 2 ones make 82. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ava writes 82 for 8 tens and 2 ones. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0144",
@@ -8902,7 +8902,7 @@ export const ITEMS = [
     structureType: "reversalJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Omar writes 79 for 9 tens and 7 ones. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Omar says 9 tens 7 ones make 79. Is Omar right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0145",
@@ -8932,7 +8932,7 @@ export const ITEMS = [
     structureType: "reversalJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Priya says 4 tens 6 ones make 46. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Priya writes 46 for 4 tens and 6 ones. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0148",
@@ -8942,7 +8942,7 @@ export const ITEMS = [
     structureType: "reversalJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Sam writes 95 for 5 tens and 9 ones. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Sam says 5 tens 9 ones make 95. Is Sam right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0149",
@@ -8972,7 +8972,7 @@ export const ITEMS = [
     structureType: "reversalJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"June says 8 tens 5 ones make 85. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"June writes 85 for 8 tens and 5 ones. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0152",
@@ -8982,7 +8982,7 @@ export const ITEMS = [
     structureType: "reversalJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Lily writes 39 for 9 tens and 3 ones. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Lily says 9 tens 3 ones make 39. Is Lily right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0153",
@@ -9022,7 +9022,7 @@ export const ITEMS = [
     structureType: "lineLocateTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"max":20,"min":0,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where on the number line does 17 live? Tap it for Lily."},"answerType":"numberLine"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"max":20,"min":0,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where does 17 belong on the number line?"},"answerType":"numberLine"},
   },
   {
     itemId: "placeValue-conc-b0821-0157",
@@ -9042,7 +9042,7 @@ export const ITEMS = [
     structureType: "lineLocateTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"max":20,"min":0,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where on the number line does 19 live? Tap it for Leo."},"answerType":"numberLine"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"max":20,"min":0,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where does 19 go on the number line?"},"answerType":"numberLine"},
   },
   {
     itemId: "placeValue-conc-b0821-0159",
@@ -9062,7 +9062,7 @@ export const ITEMS = [
     structureType: "lineLocateTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"max":20,"min":0,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where on the number line does 16 live? Tap it for Theo."},"answerType":"numberLine"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"max":20,"min":0,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where is 16 on the number line?"},"answerType":"numberLine"},
   },
   {
     itemId: "placeValue-conc-b0821-0161",
@@ -9082,7 +9082,7 @@ export const ITEMS = [
     structureType: "lineLocateTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"max":20,"min":0,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where on the number line does 18 live? Tap it for Zoe."},"answerType":"numberLine"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"max":20,"min":0,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where should 18 go on the number line?"},"answerType":"numberLine"},
   },
   {
     itemId: "placeValue-conc-b0821-0163",
@@ -9102,7 +9102,7 @@ export const ITEMS = [
     structureType: "lineLocateTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"max":20,"min":0,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where on the number line does 12 live? Tap it for Diego."},"answerType":"numberLine"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"max":20,"min":0,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where does 12 go on the number line?"},"answerType":"numberLine"},
   },
   {
     itemId: "placeValue-conc-b0821-0165",
@@ -9122,7 +9122,7 @@ export const ITEMS = [
     structureType: "lineLocateTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"max":20,"min":0,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where on the number line does 14 live? Tap it for Luca."},"answerType":"numberLine"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"max":20,"min":0,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where does 14 go on the number line?"},"answerType":"numberLine"},
   },
   {
     itemId: "placeValue-conc-b0821-0167",
@@ -9142,7 +9142,7 @@ export const ITEMS = [
     structureType: "lineLocateTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"max":20,"min":0,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where on the number line does 16 live? Tap it for Omar."},"answerType":"numberLine"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"max":20,"min":0,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where does 16 belong on the number line?"},"answerType":"numberLine"},
   },
   {
     itemId: "placeValue-conc-b0821-0169",
@@ -9162,7 +9162,7 @@ export const ITEMS = [
     structureType: "lineLocateTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"max":20,"min":0,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where on the number line does 13 live? Tap it for Finn."},"answerType":"numberLine"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"max":20,"min":0,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where does 13 belong on the number line?"},"answerType":"numberLine"},
   },
   {
     itemId: "placeValue-conc-b0821-0171",
@@ -9182,7 +9182,7 @@ export const ITEMS = [
     structureType: "lineLocate",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":47,"display":{"max":50,"min":40,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where on the number line does 47 live? Tap it for Lily."},"answerType":"numberLine"},
+    question: {"a":null,"b":null,"op":"count","answer":47,"display":{"max":50,"min":40,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where should 47 go on the number line?"},"answerType":"numberLine"},
   },
   {
     itemId: "placeValue-conc-b0821-0173",
@@ -9202,7 +9202,7 @@ export const ITEMS = [
     structureType: "lineLocate",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"max":90,"min":80,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where on the number line does 88 live? Tap it for Leo."},"answerType":"numberLine"},
+    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"max":90,"min":80,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where is 88 on the number line?"},"answerType":"numberLine"},
   },
   {
     itemId: "placeValue-conc-b0821-0175",
@@ -9222,7 +9222,7 @@ export const ITEMS = [
     structureType: "lineLocate",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"max":80,"min":70,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where on the number line does 72 live? Tap it for Theo."},"answerType":"numberLine"},
+    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"max":80,"min":70,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where does 72 belong on the number line?"},"answerType":"numberLine"},
   },
   {
     itemId: "placeValue-conc-b0821-0177",
@@ -9242,7 +9242,7 @@ export const ITEMS = [
     structureType: "lineLocate",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"max":100,"min":90,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where on the number line does 91 live? Tap it for Zoe."},"answerType":"numberLine"},
+    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"max":100,"min":90,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where does 91 go on the number line?"},"answerType":"numberLine"},
   },
   {
     itemId: "placeValue-conc-b0821-0179",
@@ -9262,7 +9262,7 @@ export const ITEMS = [
     structureType: "lineLocate",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":63,"display":{"max":70,"min":60,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where on the number line does 63 live? Tap it for Diego."},"answerType":"numberLine"},
+    question: {"a":null,"b":null,"op":"count","answer":63,"display":{"max":70,"min":60,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where is 63 on the number line?"},"answerType":"numberLine"},
   },
   {
     itemId: "placeValue-conc-b0821-0181",
@@ -9282,7 +9282,7 @@ export const ITEMS = [
     structureType: "lineLocate",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":79,"display":{"max":80,"min":70,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where on the number line does 79 live? Tap it for Luca."},"answerType":"numberLine"},
+    question: {"a":null,"b":null,"op":"count","answer":79,"display":{"max":80,"min":70,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where is 79 on the number line?"},"answerType":"numberLine"},
   },
   {
     itemId: "placeValue-conc-b0821-0183",
@@ -9302,7 +9302,7 @@ export const ITEMS = [
     structureType: "lineLocate",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"max":90,"min":80,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where on the number line does 84 live? Tap it for Omar."},"answerType":"numberLine"},
+    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"max":90,"min":80,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where should 84 go on the number line?"},"answerType":"numberLine"},
   },
   {
     itemId: "placeValue-conc-b0821-0185",
@@ -9322,7 +9322,7 @@ export const ITEMS = [
     structureType: "lineLocate",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":96,"display":{"max":100,"min":90,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where on the number line does 96 live? Tap it for Finn."},"answerType":"numberLine"},
+    question: {"a":null,"b":null,"op":"count","answer":96,"display":{"max":100,"min":90,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where should 96 go on the number line?"},"answerType":"numberLine"},
   },
   {
     itemId: "placeValue-conc-b0821-0187",
@@ -9342,7 +9342,7 @@ export const ITEMS = [
     structureType: "lineLocate",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":68,"display":{"max":70,"min":60,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where on the number line does 68 live? Tap it for Sam."},"answerType":"numberLine"},
+    question: {"a":null,"b":null,"op":"count","answer":68,"display":{"max":70,"min":60,"step":1,"lineMode":"locate","labelEvery":5,"promptText":"Where does 68 go on the number line?"},"answerType":"numberLine"},
   },
   {
     itemId: "placeValue-conc-b0821-0189",
@@ -9362,7 +9362,7 @@ export const ITEMS = [
     structureType: "wordClaimJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Kai writes \"seventeen\" as 16. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Kai writes \"seventeen\" as 16. Is Kai right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0191",
@@ -9372,7 +9372,7 @@ export const ITEMS = [
     structureType: "wordClaimJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"June reads \"twelve\" and writes 12. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"June writes \"twelve\" as 12. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0192",
@@ -9382,7 +9382,7 @@ export const ITEMS = [
     structureType: "wordClaimJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Lily writes \"nineteen\" as 18. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Lily reads \"nineteen\" and writes 18. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0193",
@@ -9392,7 +9392,7 @@ export const ITEMS = [
     structureType: "wordClaimJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Amara reads \"fourteen\" and writes 14. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Amara reads \"fourteen\" and writes 14. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0194",
@@ -9412,7 +9412,7 @@ export const ITEMS = [
     structureType: "wordClaimJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Mina reads \"eleven\" and writes 11. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Mina writes \"eleven\" as 11. Is Mina right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0196",
@@ -9422,7 +9422,7 @@ export const ITEMS = [
     structureType: "wordClaimJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Theo writes \"eighteen\" as 19. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Theo reads \"eighteen\" and writes 19. Is Theo right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0197",
@@ -9442,7 +9442,7 @@ export const ITEMS = [
     structureType: "wordClaimJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe writes \"twenty\" as 19. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe writes \"twenty\" as 19. Is Zoe right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0199",
@@ -9452,7 +9452,7 @@ export const ITEMS = [
     structureType: "wordClaimJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa reads \"sixteen\" and writes 16. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa writes \"sixteen\" as 16. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0200",
@@ -9462,7 +9462,7 @@ export const ITEMS = [
     structureType: "wordClaimJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Diego writes \"twelve\" as 13. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Diego reads \"twelve\" and writes 13. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0201",
@@ -9472,7 +9472,7 @@ export const ITEMS = [
     structureType: "wordClaimJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nora reads \"eighteen\" and writes 18. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nora reads \"eighteen\" and writes 18. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0202",
@@ -9492,7 +9492,7 @@ export const ITEMS = [
     structureType: "wordClaimJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ava reads \"nineteen\" and writes 19. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ava writes \"nineteen\" as 19. Is Ava right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0204",
@@ -9502,7 +9502,7 @@ export const ITEMS = [
     structureType: "wordClaimJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Omar writes \"thirteen\" as 12. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Omar reads \"thirteen\" and writes 12. Is Omar right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0205",
@@ -9522,7 +9522,7 @@ export const ITEMS = [
     structureType: "wordClaimJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn writes \"eleven\" as 12. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn writes \"eleven\" as 12. Is Finn right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0207",
@@ -9532,7 +9532,7 @@ export const ITEMS = [
     structureType: "wordClaimJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Priya reads \"fourteen\" and writes 15. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Priya reads \"fourteen\" and writes 15. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0208",
@@ -9542,7 +9542,7 @@ export const ITEMS = [
     structureType: "pickExpansionTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"10 + 3","choices":["30 + 1","1 + 3","10 + 3","20 + 3"],"display":{"promptText":"Luca wants the expanded form of 13. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"10 + 3","choices":["30 + 1","1 + 3","10 + 3","20 + 3"],"display":{"promptText":"Which is the same as 13?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0209",
@@ -9552,7 +9552,7 @@ export const ITEMS = [
     structureType: "pickExpansionTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"10 + 7","choices":["70 + 1","10 + 7","20 + 7","1 + 7"],"display":{"promptText":"Which sum shows 17 the expanded way? Ava is checking."}},
+    question: {"a":null,"b":null,"op":"count","answer":"10 + 7","choices":["70 + 1","10 + 7","20 + 7","1 + 7"],"display":{"promptText":"Which sum makes 17 using a ten and some ones?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0210",
@@ -9562,7 +9562,7 @@ export const ITEMS = [
     structureType: "pickExpansionTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"10 + 2","choices":["10 + 2","1 + 2","20 + 2","20 + 1"],"display":{"promptText":"Help Omar pick the expansion that makes 12."}},
+    question: {"a":null,"b":null,"op":"count","answer":"10 + 2","choices":["10 + 2","1 + 2","20 + 2","20 + 1"],"display":{"promptText":"Which two numbers add up to 12?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0211",
@@ -9572,7 +9572,7 @@ export const ITEMS = [
     structureType: "pickExpansionTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"10 + 9","choices":["1 + 9","90 + 1","20 + 9","10 + 9"],"display":{"promptText":"Ben wants the expanded form of 19. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"10 + 9","choices":["1 + 9","90 + 1","20 + 9","10 + 9"],"display":{"promptText":"Which is the same as 19?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0212",
@@ -9582,7 +9582,7 @@ export const ITEMS = [
     structureType: "pickExpansionTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"10 + 4","choices":["1 + 4","20 + 4","40 + 1","10 + 4"],"display":{"promptText":"Which sum shows 14 the expanded way? Finn is checking."}},
+    question: {"a":null,"b":null,"op":"count","answer":"10 + 4","choices":["1 + 4","20 + 4","40 + 1","10 + 4"],"display":{"promptText":"Which sum shows 14 as a ten and some ones?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0213",
@@ -9592,7 +9592,7 @@ export const ITEMS = [
     structureType: "pickExpansionTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"10 + 6","choices":["20 + 6","1 + 6","10 + 6","60 + 1"],"display":{"promptText":"Help Priya pick the expansion that makes 16."}},
+    question: {"a":null,"b":null,"op":"count","answer":"10 + 6","choices":["20 + 6","1 + 6","10 + 6","60 + 1"],"display":{"promptText":"Which one adds up to 16?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0214",
@@ -9602,7 +9602,7 @@ export const ITEMS = [
     structureType: "pickExpansionTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"10 + 8","choices":["20 + 8","10 + 8","80 + 1","1 + 8"],"display":{"promptText":"Sam wants the expanded form of 18. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"10 + 8","choices":["20 + 8","10 + 8","80 + 1","1 + 8"],"display":{"promptText":"Which is the same as 18?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0215",
@@ -9612,7 +9612,7 @@ export const ITEMS = [
     structureType: "pickExpansionTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"10 + 5","choices":["50 + 1","10 + 5","20 + 5","1 + 5"],"display":{"promptText":"Which sum shows 15 the expanded way? Nia is checking."}},
+    question: {"a":null,"b":null,"op":"count","answer":"10 + 5","choices":["50 + 1","10 + 5","20 + 5","1 + 5"],"display":{"promptText":"Which sum shows 15 as a ten and some ones?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0216",
@@ -9622,7 +9622,7 @@ export const ITEMS = [
     structureType: "pickExpansionTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"10 + 3","choices":["10 + 3","20 + 3","1 + 3","30 + 1"],"display":{"promptText":"Help Kai pick the expansion that makes 13."}},
+    question: {"a":null,"b":null,"op":"count","answer":"10 + 3","choices":["10 + 3","20 + 3","1 + 3","30 + 1"],"display":{"promptText":"Which sum makes 13?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0217",
@@ -9632,7 +9632,7 @@ export const ITEMS = [
     structureType: "pickExpansionTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"10 + 7","choices":["20 + 7","70 + 1","10 + 7","1 + 7"],"display":{"promptText":"June wants the expanded form of 17. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"10 + 7","choices":["20 + 7","70 + 1","10 + 7","1 + 7"],"display":{"promptText":"Which is the same as 17?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0218",
@@ -9642,7 +9642,7 @@ export const ITEMS = [
     structureType: "pickExpansionTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"10 + 2","choices":["20 + 2","20 + 1","10 + 2","1 + 2"],"display":{"promptText":"Which sum shows 12 the expanded way? Lily is checking."}},
+    question: {"a":null,"b":null,"op":"count","answer":"10 + 2","choices":["20 + 2","20 + 1","10 + 2","1 + 2"],"display":{"promptText":"Which sum makes 12 using 1 ten and some ones?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0219",
@@ -9652,7 +9652,7 @@ export const ITEMS = [
     structureType: "pickExpansionTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"10 + 9","choices":["1 + 9","10 + 9","90 + 1","20 + 9"],"display":{"promptText":"Help Amara pick the expansion that makes 19."}},
+    question: {"a":null,"b":null,"op":"count","answer":"10 + 9","choices":["1 + 9","10 + 9","90 + 1","20 + 9"],"display":{"promptText":"Which one adds up to 19?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0220",
@@ -9662,7 +9662,7 @@ export const ITEMS = [
     structureType: "pickExpansionTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"10 + 6","choices":["10 + 6","1 + 6","20 + 6","60 + 1"],"display":{"promptText":"Leo wants the expanded form of 16. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"10 + 6","choices":["10 + 6","1 + 6","20 + 6","60 + 1"],"display":{"promptText":"Which shows 16 as 1 ten and some ones?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0221",
@@ -9672,7 +9672,7 @@ export const ITEMS = [
     structureType: "pickExpansionTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"10 + 4","choices":["20 + 4","1 + 4","10 + 4","40 + 1"],"display":{"promptText":"Which sum shows 14 the expanded way? Mina is checking."}},
+    question: {"a":null,"b":null,"op":"count","answer":"10 + 4","choices":["20 + 4","1 + 4","10 + 4","40 + 1"],"display":{"promptText":"Which sum uses a ten and some ones to make 14?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0222",
@@ -9682,7 +9682,7 @@ export const ITEMS = [
     structureType: "pickExpansionTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"10 + 5","choices":["50 + 1","10 + 5","20 + 5","1 + 5"],"display":{"promptText":"Help Theo pick the expansion that makes 15."}},
+    question: {"a":null,"b":null,"op":"count","answer":"10 + 5","choices":["50 + 1","10 + 5","20 + 5","1 + 5"],"display":{"promptText":"Which two numbers add up to 15?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0223",
@@ -9692,7 +9692,7 @@ export const ITEMS = [
     structureType: "pickExpansionTeens",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"10 + 8","choices":["20 + 8","80 + 1","10 + 8","1 + 8"],"display":{"promptText":"Ida wants the expanded form of 18. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"10 + 8","choices":["20 + 8","80 + 1","10 + 8","1 + 8"],"display":{"promptText":"Which shows 18 as 1 ten and some ones?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0224",
@@ -9702,7 +9702,7 @@ export const ITEMS = [
     structureType: "pickExpansion",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"20 + 5","choices":["20 + 5","30 + 5","2 + 5","50 + 2"],"display":{"promptText":"Which sum shows 25 the expanded way? Luca is checking."}},
+    question: {"a":null,"b":null,"op":"count","answer":"20 + 5","choices":["20 + 5","30 + 5","2 + 5","50 + 2"],"display":{"promptText":"Which sum shows what each digit in 25 is worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0225",
@@ -9712,7 +9712,7 @@ export const ITEMS = [
     structureType: "pickExpansion",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"30 + 8","choices":["40 + 8","80 + 3","30 + 8","3 + 8"],"display":{"promptText":"Help Ava pick the expansion that makes 38."}},
+    question: {"a":null,"b":null,"op":"count","answer":"30 + 8","choices":["40 + 8","80 + 3","30 + 8","3 + 8"],"display":{"promptText":"Which sum makes 38?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0226",
@@ -9722,7 +9722,7 @@ export const ITEMS = [
     structureType: "pickExpansion",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"40 + 1","choices":["4 + 1","50 + 1","10 + 4","40 + 1"],"display":{"promptText":"Omar wants the expanded form of 41. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"40 + 1","choices":["4 + 1","50 + 1","10 + 4","40 + 1"],"display":{"promptText":"What is 41 in expanded form?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0227",
@@ -9732,7 +9732,7 @@ export const ITEMS = [
     structureType: "pickExpansion",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"50 + 6","choices":["50 + 6","5 + 6","60 + 6","60 + 5"],"display":{"promptText":"Which sum shows 56 the expanded way? Ben is checking."}},
+    question: {"a":null,"b":null,"op":"count","answer":"50 + 6","choices":["50 + 6","5 + 6","60 + 6","60 + 5"],"display":{"promptText":"Which sum makes 56 from its tens and ones?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0228",
@@ -9742,7 +9742,7 @@ export const ITEMS = [
     structureType: "pickExpansion",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"60 + 3","choices":["30 + 6","6 + 3","60 + 3","70 + 3"],"display":{"promptText":"Help Finn pick the expansion that makes 63."}},
+    question: {"a":null,"b":null,"op":"count","answer":"60 + 3","choices":["30 + 6","6 + 3","60 + 3","70 + 3"],"display":{"promptText":"Which sum is equal to 63?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0229",
@@ -9752,7 +9752,7 @@ export const ITEMS = [
     structureType: "pickExpansion",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"70 + 9","choices":["70 + 9","7 + 9","90 + 7","80 + 9"],"display":{"promptText":"Priya wants the expanded form of 79. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"70 + 9","choices":["70 + 9","7 + 9","90 + 7","80 + 9"],"display":{"promptText":"Which is the expanded form of 79?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0230",
@@ -9762,7 +9762,7 @@ export const ITEMS = [
     structureType: "pickExpansion",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"80 + 2","choices":["80 + 2","90 + 2","20 + 8","8 + 2"],"display":{"promptText":"Which sum shows 82 the expanded way? Sam is checking."}},
+    question: {"a":null,"b":null,"op":"count","answer":"80 + 2","choices":["80 + 2","90 + 2","20 + 8","8 + 2"],"display":{"promptText":"Which sum shows 82 in expanded form?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0231",
@@ -9772,7 +9772,7 @@ export const ITEMS = [
     structureType: "pickExpansion",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"90 + 7","choices":["100 + 7","9 + 7","70 + 9","90 + 7"],"display":{"promptText":"Help Nia pick the expansion that makes 97."}},
+    question: {"a":null,"b":null,"op":"count","answer":"90 + 7","choices":["100 + 7","9 + 7","70 + 9","90 + 7"],"display":{"promptText":"Which sum is equal to 97?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0232",
@@ -9782,7 +9782,7 @@ export const ITEMS = [
     structureType: "pickExpansion",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"20 + 4","choices":["20 + 4","30 + 4","40 + 2","2 + 4"],"display":{"promptText":"Kai wants the expanded form of 24. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"20 + 4","choices":["20 + 4","30 + 4","40 + 2","2 + 4"],"display":{"promptText":"Which shows 24 in expanded form?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0233",
@@ -9792,7 +9792,7 @@ export const ITEMS = [
     structureType: "pickExpansion",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"30 + 3","choices":["30 + 3","3 + 3","40 + 3"],"display":{"promptText":"Which sum shows 33 the expanded way? June is checking."}},
+    question: {"a":null,"b":null,"op":"count","answer":"30 + 3","choices":["30 + 3","3 + 3","40 + 3"],"display":{"promptText":"Which sum shows 33 in expanded form?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0234",
@@ -9802,7 +9802,7 @@ export const ITEMS = [
     structureType: "pickExpansion",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"40 + 9","choices":["40 + 9","4 + 9","90 + 4","50 + 9"],"display":{"promptText":"Help Lily pick the expansion that makes 49."}},
+    question: {"a":null,"b":null,"op":"count","answer":"40 + 9","choices":["40 + 9","4 + 9","90 + 4","50 + 9"],"display":{"promptText":"Which one adds up to 49?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0235",
@@ -9812,7 +9812,7 @@ export const ITEMS = [
     structureType: "pickExpansion",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"50 + 1","choices":["5 + 1","10 + 5","50 + 1","60 + 1"],"display":{"promptText":"Amara wants the expanded form of 51. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"50 + 1","choices":["5 + 1","10 + 5","50 + 1","60 + 1"],"display":{"promptText":"Which is the expanded form of 51?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0236",
@@ -9822,7 +9822,7 @@ export const ITEMS = [
     structureType: "pickExpansion",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"60 + 8","choices":["6 + 8","80 + 6","70 + 8","60 + 8"],"display":{"promptText":"Which sum shows 68 the expanded way? Leo is checking."}},
+    question: {"a":null,"b":null,"op":"count","answer":"60 + 8","choices":["6 + 8","80 + 6","70 + 8","60 + 8"],"display":{"promptText":"Which sum of tens and ones makes 68?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0237",
@@ -9832,7 +9832,7 @@ export const ITEMS = [
     structureType: "pickExpansion",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"70 + 2","choices":["7 + 2","80 + 2","20 + 7","70 + 2"],"display":{"promptText":"Help Mina pick the expansion that makes 72."}},
+    question: {"a":null,"b":null,"op":"count","answer":"70 + 2","choices":["7 + 2","80 + 2","20 + 7","70 + 2"],"display":{"promptText":"Which sum makes 72?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0238",
@@ -9842,7 +9842,7 @@ export const ITEMS = [
     structureType: "pickExpansion",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"80 + 6","choices":["80 + 6","60 + 8","90 + 6","8 + 6"],"display":{"promptText":"Theo wants the expanded form of 86. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"80 + 6","choices":["80 + 6","60 + 8","90 + 6","8 + 6"],"display":{"promptText":"What is 86 in expanded form?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0239",
@@ -9852,7 +9852,7 @@ export const ITEMS = [
     structureType: "pickExpansion",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"90 + 4","choices":["90 + 4","9 + 4","40 + 9","100 + 4"],"display":{"promptText":"Which sum shows 94 the expanded way? Ida is checking."}},
+    question: {"a":null,"b":null,"op":"count","answer":"90 + 4","choices":["90 + 4","9 + 4","40 + 9","100 + 4"],"display":{"promptText":"Which sum shows what each digit in 94 is worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0240",
@@ -9862,7 +9862,7 @@ export const ITEMS = [
     structureType: "pickExpansion",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"40 + 7","choices":["40 + 7","70 + 4","50 + 7","4 + 7"],"display":{"promptText":"Help Zoe pick the expansion that makes 47."}},
+    question: {"a":null,"b":null,"op":"count","answer":"40 + 7","choices":["40 + 7","70 + 4","50 + 7","4 + 7"],"display":{"promptText":"Which sum is equal to 47?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0241",
@@ -9872,7 +9872,7 @@ export const ITEMS = [
     structureType: "pickExpansion",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"60 + 5","choices":["50 + 6","6 + 5","70 + 5","60 + 5"],"display":{"promptText":"Rosa wants the expanded form of 65. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"60 + 5","choices":["50 + 6","6 + 5","70 + 5","60 + 5"],"display":{"promptText":"Which shows 65 in expanded form?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0242",
@@ -9882,7 +9882,7 @@ export const ITEMS = [
     structureType: "pickExpansionBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"300 + 40 + 7","choices":["300 + 40 + 7","700 + 40 + 3","300 + 50 + 7","3 + 4 + 7"],"display":{"promptText":"Which sum shows 347 the expanded way? Luca is checking."}},
+    question: {"a":null,"b":null,"op":"count","answer":"300 + 40 + 7","choices":["300 + 40 + 7","700 + 40 + 3","300 + 50 + 7","3 + 4 + 7"],"display":{"promptText":"Which sum of hundreds, tens, and ones makes 347?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0243",
@@ -9892,7 +9892,7 @@ export const ITEMS = [
     structureType: "pickExpansionBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"500 + 80 + 2","choices":["5 + 8 + 2","500 + 80 + 2","200 + 80 + 5","500 + 90 + 2"],"display":{"promptText":"Help Ava pick the expansion that makes 582."}},
+    question: {"a":null,"b":null,"op":"count","answer":"500 + 80 + 2","choices":["5 + 8 + 2","500 + 80 + 2","200 + 80 + 5","500 + 90 + 2"],"display":{"promptText":"Which one adds up to 582?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0244",
@@ -9902,7 +9902,7 @@ export const ITEMS = [
     structureType: "pickExpansionBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"800 + 10 + 6","choices":["600 + 10 + 8","800 + 10 + 6","800 + 20 + 6","8 + 1 + 6"],"display":{"promptText":"Omar wants the expanded form of 816. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"800 + 10 + 6","choices":["600 + 10 + 8","800 + 10 + 6","800 + 20 + 6","8 + 1 + 6"],"display":{"promptText":"Which shows 816 in expanded form?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0245",
@@ -9912,7 +9912,7 @@ export const ITEMS = [
     structureType: "pickExpansionBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"400 + 90 + 3","choices":["400 + 100 + 3","400 + 90 + 3","300 + 90 + 4","4 + 9 + 3"],"display":{"promptText":"Which sum shows 493 the expanded way? Ben is checking."}},
+    question: {"a":null,"b":null,"op":"count","answer":"400 + 90 + 3","choices":["400 + 100 + 3","400 + 90 + 3","300 + 90 + 4","4 + 9 + 3"],"display":{"promptText":"Which sum shows 493 in expanded form?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0246",
@@ -9922,7 +9922,7 @@ export const ITEMS = [
     structureType: "pickExpansionBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"200 + 60 + 5","choices":["500 + 60 + 2","2 + 6 + 5","200 + 70 + 5","200 + 60 + 5"],"display":{"promptText":"Help Finn pick the expansion that makes 265."}},
+    question: {"a":null,"b":null,"op":"count","answer":"200 + 60 + 5","choices":["500 + 60 + 2","2 + 6 + 5","200 + 70 + 5","200 + 60 + 5"],"display":{"promptText":"Which sum makes 265?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0247",
@@ -9932,7 +9932,7 @@ export const ITEMS = [
     structureType: "pickExpansionBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"700 + 30 + 9","choices":["700 + 40 + 9","700 + 30 + 9","900 + 30 + 7","7 + 3 + 9"],"display":{"promptText":"Priya wants the expanded form of 739. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"700 + 30 + 9","choices":["700 + 40 + 9","700 + 30 + 9","900 + 30 + 7","7 + 3 + 9"],"display":{"promptText":"What is 739 in expanded form?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0248",
@@ -9942,7 +9942,7 @@ export const ITEMS = [
     structureType: "pickExpansionBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"100 + 20 + 8","choices":["800 + 20 + 1","100 + 30 + 8","1 + 2 + 8","100 + 20 + 8"],"display":{"promptText":"Which sum shows 128 the expanded way? Sam is checking."}},
+    question: {"a":null,"b":null,"op":"count","answer":"100 + 20 + 8","choices":["800 + 20 + 1","100 + 30 + 8","1 + 2 + 8","100 + 20 + 8"],"display":{"promptText":"Which sum shows what each digit in 128 is worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0249",
@@ -9952,7 +9952,7 @@ export const ITEMS = [
     structureType: "pickExpansionBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"300 + 50 + 6","choices":["3 + 5 + 6","300 + 60 + 6","600 + 50 + 3","300 + 50 + 6"],"display":{"promptText":"Help Nia pick the expansion that makes 356."}},
+    question: {"a":null,"b":null,"op":"count","answer":"300 + 50 + 6","choices":["3 + 5 + 6","300 + 60 + 6","600 + 50 + 3","300 + 50 + 6"],"display":{"promptText":"Which sum makes 356?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0250",
@@ -9962,7 +9962,7 @@ export const ITEMS = [
     structureType: "pickExpansionBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"700 + 40 + 1","choices":["100 + 40 + 7","700 + 40 + 1","7 + 4 + 1","700 + 50 + 1"],"display":{"promptText":"Kai wants the expanded form of 741. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"700 + 40 + 1","choices":["100 + 40 + 7","700 + 40 + 1","7 + 4 + 1","700 + 50 + 1"],"display":{"promptText":"Which is the expanded form of 741?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0251",
@@ -9972,7 +9972,7 @@ export const ITEMS = [
     structureType: "pickExpansionBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"800 + 60 + 9","choices":["800 + 60 + 9","800 + 70 + 9","8 + 6 + 9","900 + 60 + 8"],"display":{"promptText":"Which sum shows 869 the expanded way? June is checking."}},
+    question: {"a":null,"b":null,"op":"count","answer":"800 + 60 + 9","choices":["800 + 60 + 9","800 + 70 + 9","8 + 6 + 9","900 + 60 + 8"],"display":{"promptText":"Which sum shows what each digit in 869 is worth?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0252",
@@ -9982,7 +9982,7 @@ export const ITEMS = [
     structureType: "pickExpansionBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"200 + 30 + 5","choices":["2 + 3 + 5","500 + 30 + 2","200 + 30 + 5","200 + 40 + 5"],"display":{"promptText":"Help Lily pick the expansion that makes 235."}},
+    question: {"a":null,"b":null,"op":"count","answer":"200 + 30 + 5","choices":["2 + 3 + 5","500 + 30 + 2","200 + 30 + 5","200 + 40 + 5"],"display":{"promptText":"Which sum is equal to 235?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0253",
@@ -9992,7 +9992,7 @@ export const ITEMS = [
     structureType: "pickExpansionBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"500 + 10 + 7","choices":["5 + 1 + 7","700 + 10 + 5","500 + 10 + 7","500 + 20 + 7"],"display":{"promptText":"Amara wants the expanded form of 517. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"500 + 10 + 7","choices":["5 + 1 + 7","700 + 10 + 5","500 + 10 + 7","500 + 20 + 7"],"display":{"promptText":"What is 517 in expanded form?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0254",
@@ -10002,7 +10002,7 @@ export const ITEMS = [
     structureType: "pickExpansionBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"600 + 80 + 2","choices":["600 + 90 + 2","6 + 8 + 2","200 + 80 + 6","600 + 80 + 2"],"display":{"promptText":"Which sum shows 682 the expanded way? Leo is checking."}},
+    question: {"a":null,"b":null,"op":"count","answer":"600 + 80 + 2","choices":["600 + 90 + 2","6 + 8 + 2","200 + 80 + 6","600 + 80 + 2"],"display":{"promptText":"Which sum shows 682 in expanded form?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0255",
@@ -10012,7 +10012,7 @@ export const ITEMS = [
     structureType: "pickExpansionBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"900 + 50 + 1","choices":["900 + 60 + 1","900 + 50 + 1","100 + 50 + 9","9 + 5 + 1"],"display":{"promptText":"Help Mina pick the expansion that makes 951."}},
+    question: {"a":null,"b":null,"op":"count","answer":"900 + 50 + 1","choices":["900 + 60 + 1","900 + 50 + 1","100 + 50 + 9","9 + 5 + 1"],"display":{"promptText":"Which one adds up to 951?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0256",
@@ -10022,7 +10022,7 @@ export const ITEMS = [
     structureType: "pickExpansionBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"100 + 60 + 3","choices":["100 + 70 + 3","100 + 60 + 3","300 + 60 + 1","1 + 6 + 3"],"display":{"promptText":"Theo wants the expanded form of 163. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"100 + 60 + 3","choices":["100 + 70 + 3","100 + 60 + 3","300 + 60 + 1","1 + 6 + 3"],"display":{"promptText":"Which shows 163 in expanded form?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0257",
@@ -10032,7 +10032,7 @@ export const ITEMS = [
     structureType: "pickExpansionBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"400 + 20 + 8","choices":["400 + 30 + 8","800 + 20 + 4","4 + 2 + 8","400 + 20 + 8"],"display":{"promptText":"Which sum shows 428 the expanded way? Ida is checking."}},
+    question: {"a":null,"b":null,"op":"count","answer":"400 + 20 + 8","choices":["400 + 30 + 8","800 + 20 + 4","4 + 2 + 8","400 + 20 + 8"],"display":{"promptText":"Which sum makes 428 from its hundreds, tens, and ones?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0258",
@@ -10042,7 +10042,7 @@ export const ITEMS = [
     structureType: "pickExpansionBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"500 + 90 + 4","choices":["500 + 100 + 4","400 + 90 + 5","5 + 9 + 4","500 + 90 + 4"],"display":{"promptText":"Help Zoe pick the expansion that makes 594."}},
+    question: {"a":null,"b":null,"op":"count","answer":"500 + 90 + 4","choices":["500 + 100 + 4","400 + 90 + 5","5 + 9 + 4","500 + 90 + 4"],"display":{"promptText":"Which sum is equal to 594?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0259",
@@ -10052,7 +10052,7 @@ export const ITEMS = [
     structureType: "pickExpansionBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"300 + 70 + 6","choices":["600 + 70 + 3","300 + 70 + 6","3 + 7 + 6","300 + 80 + 6"],"display":{"promptText":"Rosa wants the expanded form of 376. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"300 + 70 + 6","choices":["600 + 70 + 3","300 + 70 + 6","3 + 7 + 6","300 + 80 + 6"],"display":{"promptText":"Which is the expanded form of 376?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0260",
@@ -10082,7 +10082,7 @@ export const ITEMS = [
     structureType: "expandClaimJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ben writes 41 = 40 + 1. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ben expands 41 as 40 + 1. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0263",
@@ -10092,7 +10092,7 @@ export const ITEMS = [
     structureType: "expandClaimJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn expands 56 as 5 + 6. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn writes 56 = 5 + 6. Is Finn right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0264",
@@ -10122,7 +10122,7 @@ export const ITEMS = [
     structureType: "expandClaimJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nia writes 82 = 80 + 2. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nia expands 82 as 80 + 2. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0267",
@@ -10132,7 +10132,7 @@ export const ITEMS = [
     structureType: "expandClaimJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Kai expands 97 as 9 + 7. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Kai writes 97 = 9 + 7. Is Kai right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0268",
@@ -10162,7 +10162,7 @@ export const ITEMS = [
     structureType: "expandClaimJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Amara writes 49 = 40 + 9. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Amara expands 49 as 40 + 9. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0271",
@@ -10172,7 +10172,7 @@ export const ITEMS = [
     structureType: "expandClaimJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Leo expands 51 as 5 + 1. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Leo writes 51 = 5 + 1. Is Leo right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0272",
@@ -10202,7 +10202,7 @@ export const ITEMS = [
     structureType: "expandClaimJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ida writes 86 = 80 + 6. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ida expands 86 as 80 + 6. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0275",
@@ -10212,7 +10212,7 @@ export const ITEMS = [
     structureType: "expandClaimJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe expands 94 as 9 + 4. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe writes 94 = 9 + 4. Is Zoe right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0276",
@@ -10262,7 +10262,7 @@ export const ITEMS = [
     structureType: "expandClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ben writes 816 = 800 + 10 + 6. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ben expands 816 as 800 + 10 + 6. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0281",
@@ -10272,7 +10272,7 @@ export const ITEMS = [
     structureType: "expandClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn expands 493 as 400 + 9 + 3. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn writes 493 = 400 + 9 + 3. Is Finn right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0282",
@@ -10302,7 +10302,7 @@ export const ITEMS = [
     structureType: "expandClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nia writes 128 = 100 + 20 + 8. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nia expands 128 as 100 + 20 + 8. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0285",
@@ -10312,7 +10312,7 @@ export const ITEMS = [
     structureType: "expandClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Kai expands 356 as 300 + 5 + 6. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Kai writes 356 = 300 + 5 + 6. Is Kai right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0286",
@@ -10342,7 +10342,7 @@ export const ITEMS = [
     structureType: "expandClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Amara writes 235 = 200 + 30 + 5. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Amara expands 235 as 200 + 30 + 5. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0289",
@@ -10352,7 +10352,7 @@ export const ITEMS = [
     structureType: "expandClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Leo expands 517 as 500 + 1 + 7. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Leo writes 517 = 500 + 1 + 7. Is Leo right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0290",
@@ -10382,7 +10382,7 @@ export const ITEMS = [
     structureType: "expandClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ida writes 163 = 100 + 60 + 3. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ida expands 163 as 100 + 60 + 3. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0293",
@@ -10392,7 +10392,7 @@ export const ITEMS = [
     structureType: "expandClaimJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe expands 428 as 400 + 2 + 8. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe writes 428 = 400 + 2 + 8. Is Zoe right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0294",
@@ -10432,7 +10432,7 @@ export const ITEMS = [
     structureType: "oddOneOutForms",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"80 + 3","choices":["80 + 3","30 + 8","38","3 tens 8 ones"],"display":{"promptText":"Ben sorted cards for 38, but one is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"80 + 3","choices":["80 + 3","30 + 8","38","3 tens 8 ones"],"display":{"promptText":"Which card does not show 38?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0298",
@@ -10452,7 +10452,7 @@ export const ITEMS = [
     structureType: "oddOneOutForms",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"60 + 5","choices":["5 tens 6 ones","56","50 + 6","60 + 5"],"display":{"promptText":"Priya sorted cards for 56, but one is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"60 + 5","choices":["5 tens 6 ones","56","50 + 6","60 + 5"],"display":{"promptText":"Which card does not show 56?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0300",
@@ -10472,7 +10472,7 @@ export const ITEMS = [
     structureType: "oddOneOutForms",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"90 + 7","choices":["79","90 + 7","70 + 9","7 tens 9 ones"],"display":{"promptText":"Nia sorted cards for 79, but one is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"90 + 7","choices":["79","90 + 7","70 + 9","7 tens 9 ones"],"display":{"promptText":"Three cards show 79. Which card does not show 79?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0302",
@@ -10492,7 +10492,7 @@ export const ITEMS = [
     structureType: "oddOneOutForms",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"70 + 9","choices":["97","90 + 7","70 + 9","9 tens 7 ones"],"display":{"promptText":"June sorted cards for 97, but one is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"70 + 9","choices":["97","90 + 7","70 + 9","9 tens 7 ones"],"display":{"promptText":"Three cards show 97. Which card does not show 97?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0304",
@@ -10512,7 +10512,7 @@ export const ITEMS = [
     structureType: "oddOneOutForms",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"90 + 4","choices":["40 + 9","49","4 tens 9 ones","90 + 4"],"display":{"promptText":"Amara sorted cards for 49, but one is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"90 + 4","choices":["40 + 9","49","4 tens 9 ones","90 + 4"],"display":{"promptText":"Three cards show 49. Which card does not show 49?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0306",
@@ -10532,7 +10532,7 @@ export const ITEMS = [
     structureType: "oddOneOutForms",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"60 + 8","choices":["86","60 + 8","80 + 6","8 tens 6 ones"],"display":{"promptText":"Mina sorted cards for 86, but one is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"60 + 8","choices":["86","60 + 8","80 + 6","8 tens 6 ones"],"display":{"promptText":"Which card does not show 86?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0308",
@@ -10552,7 +10552,7 @@ export const ITEMS = [
     structureType: "oddOneOutForms",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"50 + 6","choices":["6 tens 5 ones","65","60 + 5","50 + 6"],"display":{"promptText":"Ida sorted cards for 65, but one is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"50 + 6","choices":["6 tens 5 ones","65","60 + 5","50 + 6"],"display":{"promptText":"Ida made cards for 65, but one card is wrong. Which card does not match 65?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0310",
@@ -10572,7 +10572,7 @@ export const ITEMS = [
     structureType: "oddOneOutForms",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"20 + 7","choices":["72","20 + 7","70 + 2","7 tens 2 ones"],"display":{"promptText":"Rosa sorted cards for 72, but one is wrong. Which one?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"20 + 7","choices":["72","20 + 7","70 + 2","7 tens 2 ones"],"display":{"promptText":"Rosa made cards for 72, but one card is wrong. Which card does not match 72?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0312",
@@ -10592,7 +10592,7 @@ export const ITEMS = [
     structureType: "oddOneOutFormsBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"500 + 20 + 8","choices":["500 + 20 + 8","582","500 + 80 + 2","5 hundreds 8 tens 2 ones"],"display":{"promptText":"June sorted cards for 582, but one is wrong. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"500 + 20 + 8","choices":["500 + 20 + 8","582","500 + 80 + 2","5 hundreds 8 tens 2 ones"],"display":{"promptText":"Which card does not show 582?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0314",
@@ -10612,7 +10612,7 @@ export const ITEMS = [
     structureType: "oddOneOutFormsBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"400 + 30 + 9","choices":["400 + 30 + 9","4 hundreds 9 tens 3 ones","400 + 90 + 3","493"],"display":{"promptText":"Amara sorted cards for 493, but one is wrong. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"400 + 30 + 9","choices":["400 + 30 + 9","4 hundreds 9 tens 3 ones","400 + 90 + 3","493"],"display":{"promptText":"Which card does not show 493?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0316",
@@ -10632,7 +10632,7 @@ export const ITEMS = [
     structureType: "oddOneOutFormsBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"700 + 90 + 3","choices":["7 hundreds 3 tens 9 ones","739","700 + 90 + 3","700 + 30 + 9"],"display":{"promptText":"Mina sorted cards for 739, but one is wrong. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"700 + 90 + 3","choices":["7 hundreds 3 tens 9 ones","739","700 + 90 + 3","700 + 30 + 9"],"display":{"promptText":"Mina made cards for 739, but one card is wrong. Which card does not match 739?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0318",
@@ -10652,7 +10652,7 @@ export const ITEMS = [
     structureType: "oddOneOutFormsBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"300 + 60 + 5","choices":["3 hundreds 5 tens 6 ones","300 + 50 + 6","300 + 60 + 5","356"],"display":{"promptText":"Ida sorted cards for 356, but one is wrong. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"300 + 60 + 5","choices":["3 hundreds 5 tens 6 ones","300 + 50 + 6","300 + 60 + 5","356"],"display":{"promptText":"Three cards show 356. Which card does not show 356?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0320",
@@ -10672,7 +10672,7 @@ export const ITEMS = [
     structureType: "oddOneOutFormsBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"800 + 90 + 6","choices":["800 + 90 + 6","8 hundreds 6 tens 9 ones","800 + 60 + 9","869"],"display":{"promptText":"Rosa sorted cards for 869, but one is wrong. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"800 + 90 + 6","choices":["800 + 90 + 6","8 hundreds 6 tens 9 ones","800 + 60 + 9","869"],"display":{"promptText":"Three cards show 869. Which card does not show 869?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0322",
@@ -10692,7 +10692,7 @@ export const ITEMS = [
     structureType: "oddOneOutFormsBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"500 + 70 + 1","choices":["517","500 + 70 + 1","500 + 10 + 7","5 hundreds 1 ten 7 ones"],"display":{"promptText":"Nora sorted cards for 517, but one is wrong. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"500 + 70 + 1","choices":["517","500 + 70 + 1","500 + 10 + 7","5 hundreds 1 ten 7 ones"],"display":{"promptText":"Nora made cards for 517, but one card is wrong. Which card does not match 517?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0324",
@@ -10712,7 +10712,7 @@ export const ITEMS = [
     structureType: "oddOneOutFormsBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"900 + 10 + 5","choices":["9 hundreds 5 tens 1 one","900 + 10 + 5","900 + 50 + 1","951"],"display":{"promptText":"Ava sorted cards for 951, but one is wrong. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"900 + 10 + 5","choices":["9 hundreds 5 tens 1 one","900 + 10 + 5","900 + 50 + 1","951"],"display":{"promptText":"Ava made cards for 951, but one card is wrong. Which card does not match 951?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0326",
@@ -10732,7 +10732,7 @@ export const ITEMS = [
     structureType: "teenFramePlan",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"n":13,"kind":"digit","place":1},"promptText":"Ben needs frames showing 13. Which build works: a full ten and how many more?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"n":13,"kind":"digit","place":1},"promptText":"Ben builds 13 with cubes. He makes a tower of 10 cubes first. How many more cubes does Ben need?"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-conc-b0821-0328",
@@ -10752,7 +10752,7 @@ export const ITEMS = [
     structureType: "teenFramePlan",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"n":12,"kind":"digit","place":1},"promptText":"Priya needs frames showing 12. Which build works: a full ten and how many more?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"n":12,"kind":"digit","place":1},"promptText":"Priya wants to show 12 with counters. She has 10 counters so far. How many more counters does Priya need?"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-conc-b0821-0330",
@@ -10772,7 +10772,7 @@ export const ITEMS = [
     structureType: "teenFramePlan",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"n":14,"kind":"digit","place":1},"promptText":"Nia needs frames showing 14. Which build works: a full ten and how many more?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"n":14,"kind":"digit","place":1},"promptText":"Nia makes 14 with 1 ten and some ones. How many ones does Nia need?"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-conc-b0821-0332",
@@ -10792,7 +10792,7 @@ export const ITEMS = [
     structureType: "teenFramePlan",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"n":11,"kind":"digit","place":1},"promptText":"June needs frames showing 11. Which build works: a full ten and how many more?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"n":11,"kind":"digit","place":1},"promptText":"June wants to show 11 with counters. She has 10 counters so far. How many more counters does June need?"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-conc-b0821-0334",
@@ -10812,7 +10812,7 @@ export const ITEMS = [
     structureType: "teenFramePlan",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"n":15,"kind":"digit","place":1},"promptText":"Amara needs frames showing 15. Which build works: a full ten and how many more?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"n":15,"kind":"digit","place":1},"promptText":"Amara wants to show 15 with counters. She has 10 counters so far. How many more counters does Amara need?"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-conc-b0821-0336",
@@ -10832,7 +10832,7 @@ export const ITEMS = [
     structureType: "teenFramePlan",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"n":16,"kind":"digit","place":1},"promptText":"Mina needs frames showing 16. Which build works: a full ten and how many more?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"n":16,"kind":"digit","place":1},"promptText":"Mina builds 16 with cubes. She makes a tower of 10 cubes first. How many more cubes does Mina need?"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-conc-b0821-0338",
@@ -10852,7 +10852,7 @@ export const ITEMS = [
     structureType: "teenFramePlan",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"n":18,"kind":"digit","place":1},"promptText":"Ida needs frames showing 18. Which build works: a full ten and how many more?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"n":18,"kind":"digit","place":1},"promptText":"Ida makes 18 with 1 ten and some ones. How many ones does Ida need?"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-conc-b0821-0340",
@@ -10872,7 +10872,7 @@ export const ITEMS = [
     structureType: "teenFramePlan",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"n":19,"kind":"digit","place":1},"promptText":"Rosa needs frames showing 19. Which build works: a full ten and how many more?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"n":19,"kind":"digit","place":1},"promptText":"Rosa builds 19 with cubes. She makes a tower of 10 cubes first. How many more cubes does Rosa need?"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-conc-b0821-0342",
@@ -10902,7 +10902,7 @@ export const ITEMS = [
     structureType: "equivalenceJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Kai claims 1 ten 7 ones makes 18. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Kai thinks 1 ten 7 ones makes 18. Is Kai right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0345",
@@ -10912,7 +10912,7 @@ export const ITEMS = [
     structureType: "equivalenceJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"June says 1 ten 2 ones is the same as 12. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"June thinks 1 ten 2 ones makes 12. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0346",
@@ -10922,7 +10922,7 @@ export const ITEMS = [
     structureType: "equivalenceJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Lily claims 1 ten 5 ones makes 16. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Lily says 1 ten 5 ones is the same as 16. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0347",
@@ -10932,7 +10932,7 @@ export const ITEMS = [
     structureType: "equivalenceJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Amara says 1 ten 8 ones is the same as 18. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Amara says 1 ten 8 ones is the same as 18. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0348",
@@ -10942,7 +10942,7 @@ export const ITEMS = [
     structureType: "equivalenceJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Leo claims 1 ten 3 ones makes 14. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Leo thinks 1 ten 3 ones makes 14. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0349",
@@ -10952,7 +10952,7 @@ export const ITEMS = [
     structureType: "equivalenceJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Mina says 1 ten 6 ones is the same as 16. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Mina thinks 1 ten 6 ones makes 16. Is Mina right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0350",
@@ -10962,7 +10962,7 @@ export const ITEMS = [
     structureType: "equivalenceJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Theo claims 1 ten 9 ones makes 20. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Theo says 1 ten 9 ones is the same as 20. Is Theo right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0351",
@@ -10982,7 +10982,7 @@ export const ITEMS = [
     structureType: "equivalenceJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe claims 1 ten 4 ones makes 15. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe thinks 1 ten 4 ones makes 15. Is Zoe right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0353",
@@ -10992,7 +10992,7 @@ export const ITEMS = [
     structureType: "equivalenceJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa says 1 ten 5 ones is the same as 15. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa thinks 1 ten 5 ones makes 15. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0354",
@@ -11002,7 +11002,7 @@ export const ITEMS = [
     structureType: "equivalenceJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Diego claims 1 ten 2 ones makes 13. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Diego says 1 ten 2 ones is the same as 13. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0355",
@@ -11012,7 +11012,7 @@ export const ITEMS = [
     structureType: "equivalenceJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nora says 1 ten 6 ones is the same as 17. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nora thinks 1 ten 6 ones makes 17. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0356",
@@ -11022,7 +11022,7 @@ export const ITEMS = [
     structureType: "equivalenceJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Luca claims 1 ten 8 ones makes 19. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Luca says 1 ten 8 ones is the same as 19. Is Luca right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0357",
@@ -11032,7 +11032,7 @@ export const ITEMS = [
     structureType: "equivalenceJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ava says 1 ten 3 ones is the same as 13. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ava says 1 ten 3 ones is the same as 13. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0358",
@@ -11042,7 +11042,7 @@ export const ITEMS = [
     structureType: "equivalenceJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Omar claims 1 ten 7 ones makes 17. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Omar thinks 1 ten 7 ones makes 17. Is Omar right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0359",
@@ -11062,7 +11062,7 @@ export const ITEMS = [
     structureType: "equivalenceJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Kai claims 3 tens 12 ones makes 52. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Kai says 3 tens 12 ones makes 52. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0361",
@@ -11072,7 +11072,7 @@ export const ITEMS = [
     structureType: "equivalenceJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"June says 1 ten 16 ones is the same as 26. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"June says 1 ten 16 ones makes 26. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0362",
@@ -11082,7 +11082,7 @@ export const ITEMS = [
     structureType: "equivalenceJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Lily claims 4 tens 13 ones makes 63. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Lily says 4 tens 13 ones is the same as 63. Is Lily right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0363",
@@ -11102,7 +11102,7 @@ export const ITEMS = [
     structureType: "equivalenceJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Leo claims 5 tens 11 ones makes 71. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Leo says 5 tens 11 ones makes 71. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0365",
@@ -11112,7 +11112,7 @@ export const ITEMS = [
     structureType: "equivalenceJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Mina says 3 tens 15 ones is the same as 45. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Mina says 3 tens 15 ones makes 45. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0366",
@@ -11122,7 +11122,7 @@ export const ITEMS = [
     structureType: "equivalenceJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Theo claims 1 ten 19 ones makes 39. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Theo says 1 ten 19 ones is the same as 39. Is Theo right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0367",
@@ -11142,7 +11142,7 @@ export const ITEMS = [
     structureType: "equivalenceJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe claims 6 tens 12 ones makes 82. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe says 6 tens 12 ones makes 82. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0369",
@@ -11152,7 +11152,7 @@ export const ITEMS = [
     structureType: "equivalenceJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa says 2 tens 11 ones is the same as 31. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa says 2 tens 11 ones makes 31. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0370",
@@ -11162,7 +11162,7 @@ export const ITEMS = [
     structureType: "equivalenceJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Diego claims 5 tens 14 ones makes 74. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Diego says 5 tens 14 ones is the same as 74. Is Diego right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0371",
@@ -11182,7 +11182,7 @@ export const ITEMS = [
     structureType: "equivalenceJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Luca claims 7 tens 13 ones makes 93. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Luca says 7 tens 13 ones makes 93. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0373",
@@ -11192,7 +11192,7 @@ export const ITEMS = [
     structureType: "equivalenceJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ava says 1 ten 15 ones is the same as 25. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ava says 1 ten 15 ones makes 25. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0374",
@@ -11202,7 +11202,7 @@ export const ITEMS = [
     structureType: "equivalenceJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Omar claims 6 tens 16 ones makes 86. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Omar says 6 tens 16 ones is the same as 86. Is Omar right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0375",
@@ -11222,7 +11222,7 @@ export const ITEMS = [
     structureType: "equivalenceJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn claims 8 tens 11 ones makes 101. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn says 8 tens 11 ones makes 101. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0377",
@@ -11252,7 +11252,7 @@ export const ITEMS = [
     structureType: "onesNameJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Mina says 12 is the same as 12 ones. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Mina writes 12 = 12 ones. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0380",
@@ -11262,7 +11262,7 @@ export const ITEMS = [
     structureType: "onesNameJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Theo writes 19 = 18 ones. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Theo says 19 is the same as 18 ones. Is Theo right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0381",
@@ -11292,7 +11292,7 @@ export const ITEMS = [
     structureType: "onesNameJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa says 16 is the same as 16 ones. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa writes 16 = 16 ones. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0384",
@@ -11302,7 +11302,7 @@ export const ITEMS = [
     structureType: "onesNameJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Diego writes 13 = 14 ones. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Diego says 13 is the same as 14 ones. Is Diego right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0385",
@@ -11332,7 +11332,7 @@ export const ITEMS = [
     structureType: "onesNameJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ava says 17 is the same as 17 ones. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ava writes 17 = 17 ones. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0388",
@@ -11342,7 +11342,7 @@ export const ITEMS = [
     structureType: "onesNameJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Omar writes 12 = 13 ones. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Omar says 12 is the same as 13 ones. Is Omar right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0389",
@@ -11372,7 +11372,7 @@ export const ITEMS = [
     structureType: "onesNameJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Priya says 11 is the same as 11 ones. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Priya writes 11 = 11 ones. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0392",
@@ -11382,7 +11382,7 @@ export const ITEMS = [
     structureType: "onesNameJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Sam writes 18 = 17 ones. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Sam says 18 is the same as 17 ones. Is Sam right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0393",
@@ -11412,7 +11412,7 @@ export const ITEMS = [
     structureType: "onesNameJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"June says 20 is the same as 20 ones. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"June writes 20 = 20 ones. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0396",
@@ -11432,7 +11432,7 @@ export const ITEMS = [
     structureType: "pickRename",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3 tens 17 ones","choices":["4 tens 17 ones","3 tens 7 ones","3 tens 17 ones","5 tens 17 ones"],"display":{"promptText":"Which of these is another true name for 47? June is stuck."}},
+    question: {"a":null,"b":null,"op":"count","answer":"3 tens 17 ones","choices":["4 tens 17 ones","3 tens 7 ones","3 tens 17 ones","5 tens 17 ones"],"display":{"promptText":"Which is another name for 47?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0398",
@@ -11452,7 +11452,7 @@ export const ITEMS = [
     structureType: "pickRename",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5 tens 18 ones","choices":["5 tens 8 ones","6 tens 18 ones","5 tens 18 ones","7 tens 18 ones"],"display":{"promptText":"Which of these is another true name for 68? Amara is stuck."}},
+    question: {"a":null,"b":null,"op":"count","answer":"5 tens 18 ones","choices":["5 tens 8 ones","6 tens 18 ones","5 tens 18 ones","7 tens 18 ones"],"display":{"promptText":"Which is another way to show 68?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0400",
@@ -11472,7 +11472,7 @@ export const ITEMS = [
     structureType: "pickRename",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7 tens 16 ones","choices":["8 tens 16 ones","9 tens 16 ones","7 tens 16 ones","7 tens 6 ones"],"display":{"promptText":"Which of these is another true name for 86? Mina is stuck."}},
+    question: {"a":null,"b":null,"op":"count","answer":"7 tens 16 ones","choices":["8 tens 16 ones","9 tens 16 ones","7 tens 16 ones","7 tens 6 ones"],"display":{"promptText":"Which one also makes 86?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0402",
@@ -11492,7 +11492,7 @@ export const ITEMS = [
     structureType: "pickRename",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3 tens 15 ones","choices":["5 tens 15 ones","4 tens 15 ones","3 tens 5 ones","3 tens 15 ones"],"display":{"promptText":"Which of these is another true name for 45? Ida is stuck."}},
+    question: {"a":null,"b":null,"op":"count","answer":"3 tens 15 ones","choices":["5 tens 15 ones","4 tens 15 ones","3 tens 5 ones","3 tens 15 ones"],"display":{"promptText":"Which is another way to show 45?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0404",
@@ -11512,7 +11512,7 @@ export const ITEMS = [
     structureType: "pickRename",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5 tens 12 ones","choices":["6 tens 12 ones","5 tens 12 ones","5 tens 2 ones","7 tens 12 ones"],"display":{"promptText":"Which of these is another true name for 62? Rosa is stuck."}},
+    question: {"a":null,"b":null,"op":"count","answer":"5 tens 12 ones","choices":["6 tens 12 ones","5 tens 12 ones","5 tens 2 ones","7 tens 12 ones"],"display":{"promptText":"Which one also makes 62?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0406",
@@ -11532,7 +11532,7 @@ export const ITEMS = [
     structureType: "pickRename",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7 tens 13 ones","choices":["8 tens 13 ones","7 tens 13 ones","9 tens 13 ones","7 tens 3 ones"],"display":{"promptText":"Which of these is another true name for 83? Nora is stuck."}},
+    question: {"a":null,"b":null,"op":"count","answer":"7 tens 13 ones","choices":["8 tens 13 ones","7 tens 13 ones","9 tens 13 ones","7 tens 3 ones"],"display":{"promptText":"Which is another way to show 83?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0408",
@@ -11552,7 +11552,7 @@ export const ITEMS = [
     structureType: "pickRename",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2 tens 19 ones","choices":["4 tens 19 ones","2 tens 9 ones","3 tens 19 ones","2 tens 19 ones"],"display":{"promptText":"Which of these is another true name for 39? Ava is stuck."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2 tens 19 ones","choices":["4 tens 19 ones","2 tens 9 ones","3 tens 19 ones","2 tens 19 ones"],"display":{"promptText":"Which is another name for 39?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0410",
@@ -11572,7 +11572,7 @@ export const ITEMS = [
     structureType: "pickRename",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5 tens 16 ones","choices":["7 tens 16 ones","5 tens 6 ones","6 tens 16 ones","5 tens 16 ones"],"display":{"promptText":"Which of these is another true name for 66? Ben is stuck."}},
+    question: {"a":null,"b":null,"op":"count","answer":"5 tens 16 ones","choices":["7 tens 16 ones","5 tens 6 ones","6 tens 16 ones","5 tens 16 ones"],"display":{"promptText":"Which one also makes 66?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0412",
@@ -11592,7 +11592,7 @@ export const ITEMS = [
     structureType: "pickRename",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7 tens 18 ones","choices":["7 tens 18 ones","8 tens 18 ones","9 tens 18 ones","7 tens 8 ones"],"display":{"promptText":"Which of these is another true name for 88? Priya is stuck."}},
+    question: {"a":null,"b":null,"op":"count","answer":"7 tens 18 ones","choices":["7 tens 18 ones","8 tens 18 ones","9 tens 18 ones","7 tens 8 ones"],"display":{"promptText":"Which is another name for 88?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0414",
@@ -11962,7 +11962,7 @@ export const ITEMS = [
     structureType: "tensRenameJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Leo says 24 tens is the same as 240. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Leo writes 24 tens = 240. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0451",
@@ -11972,7 +11972,7 @@ export const ITEMS = [
     structureType: "tensRenameJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Mina writes 32 tens = 302. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Mina says 32 tens is the same as 302. Is Mina right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0452",
@@ -12002,7 +12002,7 @@ export const ITEMS = [
     structureType: "tensRenameJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Zoe says 62 tens is the same as 620. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Zoe writes 62 tens = 620. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0455",
@@ -12012,7 +12012,7 @@ export const ITEMS = [
     structureType: "tensRenameJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Rosa writes 78 tens = 708. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Rosa says 78 tens is the same as 708. Is Rosa right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0456",
@@ -12042,7 +12042,7 @@ export const ITEMS = [
     structureType: "tensRenameJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Luca says 17 tens is the same as 170. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Luca writes 17 tens = 170. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0459",
@@ -12052,7 +12052,7 @@ export const ITEMS = [
     structureType: "tensRenameJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ava writes 29 tens = 209. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ava says 29 tens is the same as 209. Is Ava right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0460",
@@ -12082,7 +12082,7 @@ export const ITEMS = [
     structureType: "tensRenameJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Finn says 58 tens is the same as 580. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Finn writes 58 tens = 580. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0463",
@@ -12092,7 +12092,7 @@ export const ITEMS = [
     structureType: "tensRenameJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Priya writes 67 tens = 607. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Priya says 67 tens is the same as 607. Is Priya right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0464",
@@ -12132,7 +12132,7 @@ export const ITEMS = [
     structureType: "notANameBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4 hundreds 8 tens 1 one","choices":["400 + 10 + 8","4 hundreds 1 ten 8 ones","4 hundreds 8 tens 1 one","3 hundreds 11 tens 8 ones"],"display":{"promptText":"One card is not a true name for 418. Priya must find it — which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"4 hundreds 8 tens 1 one","choices":["400 + 10 + 8","4 hundreds 1 ten 8 ones","4 hundreds 8 tens 1 one","3 hundreds 11 tens 8 ones"],"display":{"promptText":"Three cards are equal to 418. Which card is not equal to 418?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0468",
@@ -12152,7 +12152,7 @@ export const ITEMS = [
     structureType: "notANameBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5 hundreds 1 ten 6 ones","choices":["500 + 60 + 1","4 hundreds 16 tens 1 one","5 hundreds 6 tens 1 one","5 hundreds 1 ten 6 ones"],"display":{"promptText":"One card is not a true name for 561. Nia must find it — which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5 hundreds 1 ten 6 ones","choices":["500 + 60 + 1","4 hundreds 16 tens 1 one","5 hundreds 6 tens 1 one","5 hundreds 1 ten 6 ones"],"display":{"promptText":"Which card does not equal 561?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0470",
@@ -12172,7 +12172,7 @@ export const ITEMS = [
     structureType: "notANameBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"6 hundreds 3 tens 8 ones","choices":["600 + 80 + 3","6 hundreds 3 tens 8 ones","6 hundreds 8 tens 3 ones","5 hundreds 18 tens 3 ones"],"display":{"promptText":"One card is not a true name for 683. June must find it — which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"6 hundreds 3 tens 8 ones","choices":["600 + 80 + 3","6 hundreds 3 tens 8 ones","6 hundreds 8 tens 3 ones","5 hundreds 18 tens 3 ones"],"display":{"promptText":"Which card is not another name for 683?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0472",
@@ -12192,7 +12192,7 @@ export const ITEMS = [
     structureType: "notANameBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7 hundreds 6 tens 2 ones","choices":["7 hundreds 2 tens 6 ones","700 + 20 + 6","7 hundreds 6 tens 2 ones","6 hundreds 12 tens 6 ones"],"display":{"promptText":"One card is not a true name for 726. Amara must find it — which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"7 hundreds 6 tens 2 ones","choices":["7 hundreds 2 tens 6 ones","700 + 20 + 6","7 hundreds 6 tens 2 ones","6 hundreds 12 tens 6 ones"],"display":{"promptText":"Which card is not another name for 726?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0474",
@@ -12212,7 +12212,7 @@ export const ITEMS = [
     structureType: "notANameBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5 hundreds 2 tens 4 ones","choices":["5 hundreds 4 tens 2 ones","500 + 40 + 2","5 hundreds 2 tens 4 ones","4 hundreds 14 tens 2 ones"],"display":{"promptText":"One card is not a true name for 542. Mina must find it — which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5 hundreds 2 tens 4 ones","choices":["5 hundreds 4 tens 2 ones","500 + 40 + 2","5 hundreds 2 tens 4 ones","4 hundreds 14 tens 2 ones"],"display":{"promptText":"Three cards are equal to 542. Which card is not equal to 542?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0476",
@@ -12232,7 +12232,7 @@ export const ITEMS = [
     structureType: "notANameBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"6 hundreds 7 tens 5 ones","choices":["600 + 50 + 7","6 hundreds 5 tens 7 ones","6 hundreds 7 tens 5 ones","5 hundreds 15 tens 7 ones"],"display":{"promptText":"One card is not a true name for 657. Ida must find it — which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"6 hundreds 7 tens 5 ones","choices":["600 + 50 + 7","6 hundreds 5 tens 7 ones","6 hundreds 7 tens 5 ones","5 hundreds 15 tens 7 ones"],"display":{"promptText":"Which card does not equal 657?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0478",
@@ -12252,7 +12252,7 @@ export const ITEMS = [
     structureType: "notANameBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5 hundreds 4 tens 9 ones","choices":["5 hundreds 9 tens 4 ones","5 hundreds 4 tens 9 ones","500 + 90 + 4","4 hundreds 19 tens 4 ones"],"display":{"promptText":"One card is not a true name for 594. Rosa must find it — which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"5 hundreds 4 tens 9 ones","choices":["5 hundreds 9 tens 4 ones","5 hundreds 4 tens 9 ones","500 + 90 + 4","4 hundreds 19 tens 4 ones"],"display":{"promptText":"Which card does not equal 594?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0480",
@@ -12272,7 +12272,7 @@ export const ITEMS = [
     structureType: "notANameBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"8 hundreds 6 tens 2 ones","choices":["7 hundreds 12 tens 6 ones","800 + 20 + 6","8 hundreds 6 tens 2 ones","8 hundreds 2 tens 6 ones"],"display":{"promptText":"One card is not a true name for 826. Nora must find it — which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"8 hundreds 6 tens 2 ones","choices":["7 hundreds 12 tens 6 ones","800 + 20 + 6","8 hundreds 6 tens 2 ones","8 hundreds 2 tens 6 ones"],"display":{"promptText":"Which card is not another name for 826?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0482",
@@ -12292,7 +12292,7 @@ export const ITEMS = [
     structureType: "notANameBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1 hundred 8 tens 4 ones","choices":["0 hundreds 14 tens 8 ones","100 + 40 + 8","1 hundred 8 tens 4 ones","1 hundred 4 tens 8 ones"],"display":{"promptText":"One card is not a true name for 148. Ava must find it — which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"1 hundred 8 tens 4 ones","choices":["0 hundreds 14 tens 8 ones","100 + 40 + 8","1 hundred 8 tens 4 ones","1 hundred 4 tens 8 ones"],"display":{"promptText":"Three cards are equal to 148. Which card is not equal to 148?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0484",
@@ -12302,7 +12302,7 @@ export const ITEMS = [
     structureType: "onesNameJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Priya says 200 ones make 200. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Priya counts 200 ones and writes the number 200. Is Priya right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0485",
@@ -12312,7 +12312,7 @@ export const ITEMS = [
     structureType: "onesNameJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Sam trades 300 ones and claims they equal 30. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Sam counts 300 ones and writes the number 30. Is Sam right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0486",
@@ -12322,7 +12322,7 @@ export const ITEMS = [
     structureType: "onesNameJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nia says 400 ones make 400. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nia says 400 ones make the number 400. Is Nia right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0487",
@@ -12332,7 +12332,7 @@ export const ITEMS = [
     structureType: "onesNameJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Kai trades 500 ones and claims they equal 50. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Kai says 500 ones make the number 50. Is Kai right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0488",
@@ -12342,7 +12342,7 @@ export const ITEMS = [
     structureType: "onesNameJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"June says 600 ones make 600. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"June writes 600 for 600 ones. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0489",
@@ -12352,7 +12352,7 @@ export const ITEMS = [
     structureType: "onesNameJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Lily trades 700 ones and claims they equal 70. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Lily counts 700 ones and writes the number 70. Is Lily right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0490",
@@ -12362,7 +12362,7 @@ export const ITEMS = [
     structureType: "onesNameJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Amara says 800 ones make 800. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Amara counts 800 ones and writes the number 800. Is Amara right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0491",
@@ -12372,7 +12372,7 @@ export const ITEMS = [
     structureType: "onesNameJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Leo trades 900 ones and claims they equal 90. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Leo writes 90 for 900 ones. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0492",
@@ -12382,7 +12382,7 @@ export const ITEMS = [
     structureType: "onesNameJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Mina says 250 ones make 250. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Mina says 250 ones make the number 250. Is Mina right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0493",
@@ -12392,7 +12392,7 @@ export const ITEMS = [
     structureType: "onesNameJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Theo trades 350 ones and claims they equal 35. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Theo writes 35 for 350 ones. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0494",
@@ -12402,7 +12402,7 @@ export const ITEMS = [
     structureType: "onesNameJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ida says 450 ones make 450. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ida writes 450 for 450 ones. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0495",
@@ -12412,7 +12412,7 @@ export const ITEMS = [
     structureType: "onesNameJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe trades 550 ones and claims they equal 55. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe counts 550 ones and writes the number 55. Is Zoe right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0496",
@@ -12422,7 +12422,7 @@ export const ITEMS = [
     structureType: "onesNameJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa says 650 ones make 650. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa counts 650 ones and writes the number 650. Is Rosa right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0497",
@@ -12432,7 +12432,7 @@ export const ITEMS = [
     structureType: "onesNameJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Diego trades 750 ones and claims they equal 75. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Diego says 750 ones make the number 75. Is Diego right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0498",
@@ -12442,7 +12442,7 @@ export const ITEMS = [
     structureType: "onesNameJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nora says 850 ones make 850. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nora says 850 ones make the number 850. Is Nora right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0001",
@@ -12452,7 +12452,7 @@ export const ITEMS = [
     structureType: "roundNeighborPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":null,"op":"place","answer":10,"choices":[10,20],"display":{"promptText":"11 sits between 10 and 20 on the number line. Which is it nearer to?"}},
+    question: {"a":11,"b":null,"op":"place","answer":10,"choices":[10,20],"display":{"promptText":"Is 11 nearer to 10 or to 20?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0002",
@@ -12462,7 +12462,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":24,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Mina rounds 24 to the nearest ten and gets 20. Is that right?"}},
+    question: {"a":24,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Mina says 24 rounded to the nearest ten is 20. Is Mina right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0003",
@@ -12472,7 +12472,7 @@ export const ITEMS = [
     structureType: "roundNeighborPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":37,"b":null,"op":"place","answer":40,"choices":[40,30],"display":{"promptText":"On a number line, 37 lands between 30 and 40. Which one is it closer to?"}},
+    question: {"a":37,"b":null,"op":"place","answer":40,"choices":[40,30],"display":{"promptText":"On a number line, is 37 closer to 30 or 40?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0004",
@@ -12482,7 +12482,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":63,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Nia rounds 63 to the nearest ten and gets 70. Is that right?"}},
+    question: {"a":63,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Mina rounds 63 to the nearest ten and gets 70. Is Mina right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0005",
@@ -12502,7 +12502,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":89,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Ava rounds 89 to the nearest ten and gets 90. Is that right?"}},
+    question: {"a":89,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Nia rounds 89 to the nearest ten and gets 90. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0007",
@@ -12522,7 +12522,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":27,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ida rounds 27 to the nearest ten and gets 20. Is that right?"}},
+    question: {"a":27,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Nia says 27 rounded to the nearest ten is 20. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0009",
@@ -12542,7 +12542,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":66,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"June rounds 66 to the nearest ten and gets 70. Is that right?"}},
+    question: {"a":66,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Ava says 66 rounded to the nearest ten is 70. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0011",
@@ -12562,7 +12562,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":92,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ben rounds 92 to the nearest ten and gets 100. Is that right?"}},
+    question: {"a":92,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ava rounds 92 to the nearest ten and gets 100. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0013",
@@ -12582,7 +12582,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":43,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Rosa rounds 43 to the nearest ten and gets 40. Is that right?"}},
+    question: {"a":43,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Ida rounds 43 to the nearest ten and gets 40. Is Ida right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0015",
@@ -12592,7 +12592,7 @@ export const ITEMS = [
     structureType: "roundNeighborPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":56,"b":null,"op":"place","answer":60,"choices":[60,50],"display":{"promptText":"The number 56 falls between 50 and 60. Which one is closer?"}},
+    question: {"a":56,"b":null,"op":"place","answer":60,"choices":[60,50],"display":{"promptText":"Is 56 closer to 50 or to 60?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0016",
@@ -12602,7 +12602,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":69,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Amara rounds 69 to the nearest ten and gets 60. Is that right?"}},
+    question: {"a":69,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ida says 69 rounded to the nearest ten is 60. Is Ida right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0017",
@@ -12622,7 +12622,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":33,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Priya rounds 33 to the nearest ten and gets 30. Is that right?"}},
+    question: {"a":33,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"June says 33 rounded to the nearest ten is 30. Is June right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0019",
@@ -12642,7 +12642,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":59,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Nora rounds 59 to the nearest ten and gets 50. Is that right?"}},
+    question: {"a":59,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"June rounds 59 to the nearest ten and gets 50. Is June right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0021",
@@ -12662,7 +12662,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":98,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Mina rounds 98 to the nearest ten and gets 100. Is that right?"}},
+    question: {"a":98,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Ben rounds 98 to the nearest ten and gets 100. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0023",
@@ -12682,7 +12682,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":36,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Nia rounds 36 to the nearest ten and gets 30. Is that right?"}},
+    question: {"a":36,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ben says 36 rounded to the nearest ten is 30. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0025",
@@ -12692,7 +12692,7 @@ export const ITEMS = [
     structureType: "roundNeighborPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":49,"b":null,"op":"place","answer":50,"choices":[40,50],"display":{"promptText":"49 sits between 40 and 50 on the number line. Which is it nearer to?"}},
+    question: {"a":49,"b":null,"op":"place","answer":50,"choices":[40,50],"display":{"promptText":"Is 49 closer to 40 or to 50?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0026",
@@ -12702,7 +12702,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":62,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Ava rounds 62 to the nearest ten and gets 60. Is that right?"}},
+    question: {"a":62,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Rosa says 62 rounded to the nearest ten is 60. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0027",
@@ -12712,7 +12712,7 @@ export const ITEMS = [
     structureType: "roundNeighborPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":88,"b":null,"op":"place","answer":90,"choices":[90,80],"display":{"promptText":"On a number line, 88 lands between 80 and 90. Which one is it closer to?"}},
+    question: {"a":88,"b":null,"op":"place","answer":90,"choices":[90,80],"display":{"promptText":"Is 88 nearer to 80 or to 90?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0028",
@@ -12722,7 +12722,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ida rounds 13 to the nearest ten and gets 20. Is that right?"}},
+    question: {"a":13,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Rosa rounds 13 to the nearest ten and gets 20. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0029",
@@ -12742,7 +12742,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":39,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"June rounds 39 to the nearest ten and gets 40. Is that right?"}},
+    question: {"a":39,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Amara rounds 39 to the nearest ten and gets 40. Is Amara right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0031",
@@ -12762,7 +12762,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":78,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ben rounds 78 to the nearest ten and gets 70. Is that right?"}},
+    question: {"a":78,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Amara says 78 rounded to the nearest ten is 70. Is Amara right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0033",
@@ -12782,7 +12782,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Rosa rounds 16 to the nearest ten and gets 20. Is that right?"}},
+    question: {"a":16,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Priya says 16 rounded to the nearest ten is 20. Is Priya right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0035",
@@ -12802,7 +12802,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":42,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Amara rounds 42 to the nearest ten and gets 50. Is that right?"}},
+    question: {"a":42,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Priya rounds 42 to the nearest ten and gets 50. Is Priya right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0037",
@@ -12822,7 +12822,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":81,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Priya rounds 81 to the nearest ten and gets 80. Is that right?"}},
+    question: {"a":81,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Nora rounds 81 to the nearest ten and gets 80. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0039",
@@ -12832,7 +12832,7 @@ export const ITEMS = [
     structureType: "roundNeighborPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":94,"b":null,"op":"place","answer":90,"choices":[100,90],"display":{"promptText":"The number 94 falls between 90 and 100. Which one is closer?"}},
+    question: {"a":94,"b":null,"op":"place","answer":90,"choices":[100,90],"display":{"promptText":"On a number line, is 94 closer to 90 or 100?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0040",
@@ -12842,7 +12842,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":19,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Nora rounds 19 to the nearest ten and gets 10. Is that right?"}},
+    question: {"a":19,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Nora says 19 rounded to the nearest ten is 10. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0041",
@@ -12862,7 +12862,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":58,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Mina rounds 58 to the nearest ten and gets 60. Is that right?"}},
+    question: {"a":58,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Maya says 58 rounded to the nearest ten is 60. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0043",
@@ -12882,7 +12882,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":84,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Nia rounds 84 to the nearest ten and gets 90. Is that right?"}},
+    question: {"a":84,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Maya rounds 84 to the nearest ten and gets 90. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0045",
@@ -12902,7 +12902,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":22,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Ava rounds 22 to the nearest ten and gets 20. Is that right?"}},
+    question: {"a":22,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Eli rounds 22 to the nearest ten and gets 20. Is Eli right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0047",
@@ -12922,7 +12922,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":61,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ida rounds 61 to the nearest ten and gets 70. Is that right?"}},
+    question: {"a":61,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Eli says 61 rounded to the nearest ten is 70. Is Eli right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0049",
@@ -12932,7 +12932,7 @@ export const ITEMS = [
     structureType: "roundNeighborPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":74,"b":null,"op":"place","answer":70,"choices":[70,80],"display":{"promptText":"74 sits between 70 and 80 on the number line. Which is it nearer to?"}},
+    question: {"a":74,"b":null,"op":"place","answer":70,"choices":[70,80],"display":{"promptText":"On a number line, is 74 closer to 70 or 80?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0050",
@@ -12942,7 +12942,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":87,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"June rounds 87 to the nearest ten and gets 90. Is that right?"}},
+    question: {"a":87,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Ruby says 87 rounded to the nearest ten is 90. Is Ruby right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0051",
@@ -12952,7 +12952,7 @@ export const ITEMS = [
     structureType: "roundNeighborPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":null,"op":"place","answer":10,"choices":[20,10],"display":{"promptText":"On a number line, 12 lands between 10 and 20. Which one is it closer to?"}},
+    question: {"a":12,"b":null,"op":"place","answer":10,"choices":[20,10],"display":{"promptText":"Is 12 closer to 10 or to 20?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0052",
@@ -12962,7 +12962,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":38,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ben rounds 38 to the nearest ten and gets 30. Is that right?"}},
+    question: {"a":38,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ruby rounds 38 to the nearest ten and gets 30. Is Ruby right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0053",
@@ -12982,7 +12982,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":64,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Rosa rounds 64 to the nearest ten and gets 60. Is that right?"}},
+    question: {"a":64,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Zara rounds 64 to the nearest ten and gets 60. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0055",
@@ -13002,7 +13002,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":4674,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Mina rounds 4674 to the nearest hundred and gets 4700. Is that right?"}},
+    question: {"a":4674,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Theo rounds 4674 to the nearest hundred and gets 4700. Is Theo right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0057",
@@ -13022,7 +13022,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":428,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Nia rounds 428 to the nearest ten and gets 420. Is that right?"}},
+    question: {"a":428,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Theo says 428 rounded to the nearest ten is 420. Is Theo right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0059",
@@ -13042,7 +13042,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":82639,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Ava rounds 82639 to the nearest thousand and gets 83000. Is that right?"}},
+    question: {"a":82639,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Zoe says 82639 rounded to the nearest thousand is 83000. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0061",
@@ -13062,7 +13062,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":7020,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ida rounds 7020 to the nearest hundred and gets 7100. Is that right?"}},
+    question: {"a":7020,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Zoe rounds 7020 to the nearest hundred and gets 7100. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0063",
@@ -13072,7 +13072,7 @@ export const ITEMS = [
     structureType: "roundNeighborPick",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":95170,"b":null,"op":"place","answer":95000,"choices":[95000,96000],"display":{"promptText":"The number 95170 falls between 95000 and 96000. Which one is closer?"}},
+    question: {"a":95170,"b":null,"op":"place","answer":95000,"choices":[95000,96000],"display":{"promptText":"Is 95170 nearer to 95000 or to 96000?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0064",
@@ -13082,7 +13082,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":8193,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"June rounds 8193 to the nearest hundred and gets 8200. Is that right?"}},
+    question: {"a":8193,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Diego rounds 8193 to the nearest hundred and gets 8200. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0065",
@@ -13102,7 +13102,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":761,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ben rounds 761 to the nearest ten and gets 770. Is that right?"}},
+    question: {"a":761,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Diego says 761 rounded to the nearest ten is 770. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0067",
@@ -13122,7 +13122,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":120232,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Rosa rounds 120232 to the nearest thousand and gets 120000. Is that right?"}},
+    question: {"a":120232,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Kai says 120232 rounded to the nearest thousand is 120000. Is Kai right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0069",
@@ -13142,7 +13142,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10539,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Amara rounds 10539 to the nearest hundred and gets 10600. Is that right?"}},
+    question: {"a":10539,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Kai rounds 10539 to the nearest hundred and gets 10600. Is Kai right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0071",
@@ -13162,7 +13162,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":983,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Priya rounds 983 to the nearest ten and gets 980. Is that right?"}},
+    question: {"a":983,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Lily rounds 983 to the nearest ten and gets 980. Is Lily right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0073",
@@ -13172,7 +13172,7 @@ export const ITEMS = [
     structureType: "roundNeighborPick",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11712,"b":null,"op":"place","answer":11700,"choices":[11800,11700],"display":{"promptText":"11712 sits between 11700 and 11800 on the number line. Which is it nearer to?"}},
+    question: {"a":11712,"b":null,"op":"place","answer":11700,"choices":[11800,11700],"display":{"promptText":"Is 11712 nearer to 11700 or to 11800?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0074",
@@ -13182,7 +13182,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":145294,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Nora rounds 145294 to the nearest thousand and gets 146000. Is that right?"}},
+    question: {"a":145294,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Lily says 145294 rounded to the nearest thousand is 146000. Is Lily right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0075",
@@ -13192,7 +13192,7 @@ export const ITEMS = [
     structureType: "roundNeighborPick",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":1094,"b":null,"op":"place","answer":1090,"choices":[1090,1100],"display":{"promptText":"On a number line, 1094 lands between 1090 and 1100. Which one is it closer to?"}},
+    question: {"a":1094,"b":null,"op":"place","answer":1090,"choices":[1090,1100],"display":{"promptText":"On a number line, is 1094 closer to 1090 or 1100?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0076",
@@ -13202,7 +13202,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12885,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Mina rounds 12885 to the nearest hundred and gets 12900. Is that right?"}},
+    question: {"a":12885,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Leo says 12885 rounded to the nearest hundred is 12900. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0077",
@@ -13222,7 +13222,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":14058,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Nia rounds 14058 to the nearest hundred and gets 14000. Is that right?"}},
+    question: {"a":14058,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Leo rounds 14058 to the nearest hundred and gets 14000. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0079",
@@ -13242,7 +13242,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":1316,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Ava rounds 1316 to the nearest ten and gets 1320. Is that right?"}},
+    question: {"a":1316,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Luca rounds 1316 to the nearest ten and gets 1320. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0081",
@@ -13262,7 +13262,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":182887,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ida rounds 182887 to the nearest thousand and gets 182000. Is that right?"}},
+    question: {"a":182887,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Luca says 182887 rounded to the nearest thousand is 182000. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0083",
@@ -13282,7 +13282,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":16404,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"June rounds 16404 to the nearest hundred and gets 16400. Is that right?"}},
+    question: {"a":16404,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Sam says 16404 rounded to the nearest hundred is 16400. Is Sam right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0085",
@@ -13302,7 +13302,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":1538,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ben rounds 1538 to the nearest ten and gets 1530. Is that right?"}},
+    question: {"a":1538,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Sam rounds 1538 to the nearest ten and gets 1530. Is Sam right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0087",
@@ -13312,7 +13312,7 @@ export const ITEMS = [
     structureType: "roundNeighborPick",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":17577,"b":null,"op":"place","answer":17600,"choices":[17500,17600],"display":{"promptText":"The number 17577 falls between 17500 and 17600. Which one is closer?"}},
+    question: {"a":17577,"b":null,"op":"place","answer":17600,"choices":[17500,17600],"display":{"promptText":"Is 17577 closer to 17500 or to 17600?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0088",
@@ -13322,7 +13322,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":207949,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Rosa rounds 207949 to the nearest thousand and gets 208000. Is that right?"}},
+    question: {"a":207949,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Omar rounds 207949 to the nearest thousand and gets 208000. Is Omar right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0089",
@@ -13342,7 +13342,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":220480,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Amara rounds 220480 to the nearest thousand and gets 221000. Is that right?"}},
+    question: {"a":220480,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Omar says 220480 rounded to the nearest thousand is 221000. Is Omar right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0091",
@@ -13362,7 +13362,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":233011,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Priya rounds 233011 to the nearest thousand and gets 233000. Is that right?"}},
+    question: {"a":233011,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Finn says 233011 rounded to the nearest thousand is 233000. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0093",
@@ -13382,7 +13382,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":21096,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Nora rounds 21096 to the nearest hundred and gets 21000. Is that right?"}},
+    question: {"a":21096,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Finn rounds 21096 to the nearest hundred and gets 21000. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0095",
@@ -13402,7 +13402,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":1982,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Mina rounds 1982 to the nearest ten and gets 1980. Is that right?"}},
+    question: {"a":1982,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Ravi rounds 1982 to the nearest ten and gets 1980. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0097",
@@ -13412,7 +13412,7 @@ export const ITEMS = [
     structureType: "roundNeighborPick",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":22269,"b":null,"op":"place","answer":22300,"choices":[22300,22200],"display":{"promptText":"22269 sits between 22200 and 22300 on the number line. Which is it nearer to?"}},
+    question: {"a":22269,"b":null,"op":"place","answer":22300,"choices":[22300,22200],"display":{"promptText":"Is 22269 closer to 22200 or to 22300?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0098",
@@ -13422,7 +13422,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":258073,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Nia rounds 258073 to the nearest thousand and gets 259000. Is that right?"}},
+    question: {"a":258073,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ravi says 258073 rounded to the nearest thousand is 259000. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0099",
@@ -13432,7 +13432,7 @@ export const ITEMS = [
     structureType: "roundNeighborPick",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":2093,"b":null,"op":"place","answer":2090,"choices":[2090,2100],"display":{"promptText":"On a number line, 2093 lands between 2090 and 2100. Which one is it closer to?"}},
+    question: {"a":2093,"b":null,"op":"place","answer":2090,"choices":[2090,2100],"display":{"promptText":"Is 2093 nearer to 2090 or to 2100?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0100",
@@ -13442,7 +13442,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":23442,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Ava rounds 23442 to the nearest hundred and gets 23400. Is that right?"}},
+    question: {"a":23442,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Noah says 23442 rounded to the nearest hundred is 23400. Is Noah right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0101",
@@ -13462,7 +13462,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":2204,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ida rounds 2204 to the nearest ten and gets 2210. Is that right?"}},
+    question: {"a":2204,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Noah rounds 2204 to the nearest ten and gets 2210. Is Noah right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0103",
@@ -13482,7 +13482,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":283135,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"June rounds 283135 to the nearest thousand and gets 283000. Is that right?"}},
+    question: {"a":283135,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Ivy rounds 283135 to the nearest thousand and gets 283000. Is Ivy right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0105",
@@ -13502,7 +13502,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":295666,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ben rounds 295666 to the nearest thousand and gets 295000. Is that right?"}},
+    question: {"a":295666,"b":null,"op":"place","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ivy says 295666 rounded to the nearest thousand is 295000. Is Ivy right?"}},
   },
   {
     itemId: "placeValue-conc-b0823-0107",
@@ -13522,7 +13522,7 @@ export const ITEMS = [
     structureType: "roundJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":26961,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Rosa rounds 26961 to the nearest hundred and gets 27000. Is that right?"}},
+    question: {"a":26961,"b":null,"op":"place","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Milo says 26961 rounded to the nearest hundred is 27000. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-expandedForm-2_3-001",
@@ -14252,7 +14252,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":35,"b":null,"op":"place","answer":35,"display":{"ones":5,"tens":3,"type":"build","number":35,"promptText":"Regroup 30 + 5 to a single number."}},
+    question: {"a":35,"b":null,"op":"place","answer":35,"display":{"ones":5,"tens":3,"type":"build","number":35,"promptText":"Write 30 + 5 as one number."}},
   },
   {
     itemId: "placevalue-conc-regroupingSense-23-002",
@@ -14262,7 +14262,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":63,"b":null,"op":"place","answer":63,"display":{"ones":3,"tens":6,"type":"build","number":63,"promptText":"Regroup 60 + 3 to a single number."}},
+    question: {"a":63,"b":null,"op":"place","answer":63,"display":{"ones":3,"tens":6,"type":"build","number":63,"promptText":"What number is 60 + 3?"}},
   },
   {
     itemId: "placevalue-conc-regroupingSense-23-003",
@@ -14272,7 +14272,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":87,"b":null,"op":"place","answer":87,"display":{"ones":7,"tens":8,"type":"build","number":87,"promptText":"Regroup 80 + 7 to a single number."}},
+    question: {"a":87,"b":null,"op":"place","answer":87,"display":{"ones":7,"tens":8,"type":"build","number":87,"promptText":"What number does 80 + 7 make?"}},
   },
   {
     itemId: "placeValue-conc-regroupingSense-4_5-001",
@@ -14282,7 +14282,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":3482,"b":null,"op":"place","answer":3482,"display":{"ones":2,"tens":348,"type":"build","number":3482,"promptText":"Regroup 3,000 + 400 + 80 + 2 into one number."}},
+    question: {"a":3482,"b":null,"op":"place","answer":3482,"display":{"ones":2,"tens":348,"type":"build","number":3482,"promptText":"What number is 3,000 + 400 + 80 + 2?"}},
   },
   {
     itemId: "placeValue-conc-regroupingSense-4_5-002",
@@ -14352,7 +14352,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":7428,"b":null,"op":"place","answer":7428,"display":{"ones":8,"tens":742,"type":"build","number":7428,"promptText":"Regroup 7,000 + 400 + 20 + 8 into standard form."}},
+    question: {"a":7428,"b":null,"op":"place","answer":7428,"display":{"ones":8,"tens":742,"type":"build","number":7428,"promptText":"Write 7,000 + 400 + 20 + 8 in standard form."}},
   },
   {
     itemId: "placeValue-conc-regroupingSense-4_5-009",
@@ -14442,7 +14442,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":234,"b":null,"op":"place","answer":234,"display":{"ones":4,"tens":23,"type":"build","number":234,"promptText":"Regroup 200 + 30 + 4 to a single number."}},
+    question: {"a":234,"b":null,"op":"place","answer":234,"display":{"ones":4,"tens":23,"type":"build","number":234,"promptText":"What number is 200 + 30 + 4?"}},
   },
   {
     itemId: "placevalue-conc-regroupingSense-45-002",
@@ -14452,7 +14452,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":580,"b":null,"op":"place","answer":580,"display":{"ones":0,"tens":58,"type":"build","number":580,"promptText":"Regroup 500 + 80 to a single number."}},
+    question: {"a":580,"b":null,"op":"place","answer":580,"display":{"ones":0,"tens":58,"type":"build","number":580,"promptText":"Write 500 + 80 as one number."}},
   },
   {
     itemId: "placevalue-conc-regroupingSense-45-003",
@@ -14462,7 +14462,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":374,"b":null,"op":"place","answer":374,"display":{"ones":4,"tens":37,"type":"build","number":374,"promptText":"Regroup 300 + 70 + 4 to a single number."}},
+    question: {"a":374,"b":null,"op":"place","answer":374,"display":{"ones":4,"tens":37,"type":"build","number":374,"promptText":"What number does 300 + 70 + 4 make?"}},
   },
   {
     itemId: "placeValue-conc-regroupingSense-K_1-001",
@@ -14632,7 +14632,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":null,"op":"place","answer":14,"display":{"ones":4,"tens":1,"type":"build","number":14,"promptText":"Regroup 10 + 4 to a single number."}},
+    question: {"a":14,"b":null,"op":"place","answer":14,"display":{"ones":4,"tens":1,"type":"build","number":14,"promptText":"What number is 10 + 4?"}},
   },
   {
     itemId: "placevalue-conc-regroupingSense-K1-002",
@@ -14642,7 +14642,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":null,"op":"place","answer":18,"display":{"ones":8,"tens":1,"type":"build","number":18,"promptText":"Regroup 10 + 8 to a single number."}},
+    question: {"a":18,"b":null,"op":"place","answer":18,"display":{"ones":8,"tens":1,"type":"build","number":18,"promptText":"What number does 10 + 8 make?"}},
   },
   {
     itemId: "placevalue-conc-regroupingSense-K1-003",
@@ -14652,7 +14652,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":25,"b":null,"op":"place","answer":25,"display":{"ones":5,"tens":2,"type":"build","number":25,"promptText":"Regroup 20 + 5 to a single number."}},
+    question: {"a":25,"b":null,"op":"place","answer":25,"display":{"ones":5,"tens":2,"type":"build","number":25,"promptText":"Write 20 + 5 as one number."}},
   },
   {
     itemId: "placeValue-conc-tensOnes-2_3-001",
@@ -14822,7 +14822,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":47,"b":null,"op":"place","answer":4,"display":{"ones":7,"tens":4,"type":"tens_in","number":47,"promptText":"Identify the tens digit of 47."}},
+    question: {"a":47,"b":null,"op":"place","answer":4,"display":{"ones":7,"tens":4,"type":"tens_in","number":47,"promptText":"In 47, what digit is in the tens place?"}},
   },
   {
     itemId: "placevalue-conc-tensOnes-23-002",
@@ -14832,7 +14832,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":53,"b":null,"op":"place","answer":5,"display":{"ones":3,"tens":5,"type":"tens_in","number":53,"promptText":"Identify the tens digit of 53."}},
+    question: {"a":53,"b":null,"op":"place","answer":5,"display":{"ones":3,"tens":5,"type":"tens_in","number":53,"promptText":"What is the tens digit of 53?"}},
   },
   {
     itemId: "placevalue-conc-tensOnes-23-003",
@@ -14842,7 +14842,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":36,"b":null,"op":"place","answer":6,"display":{"ones":6,"tens":3,"type":"ones_in","number":36,"promptText":"Identify the ones digit of 36."}},
+    question: {"a":36,"b":null,"op":"place","answer":6,"display":{"ones":6,"tens":3,"type":"ones_in","number":36,"promptText":"What is the ones digit of 36?"}},
   },
   {
     itemId: "placeValue-conc-tensOnes-4_5-001",
@@ -14922,7 +14922,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":891,"b":null,"op":"place","answer":89,"display":{"ones":1,"tens":89,"type":"tens_in","number":891,"promptText":"State the total number of tens in 891."}},
+    question: {"a":891,"b":null,"op":"place","answer":89,"display":{"ones":1,"tens":89,"type":"tens_in","number":891,"promptText":"891 has how many tens in all?"}},
   },
   {
     itemId: "placeValue-conc-tensOnes-4_5-009",
@@ -15012,7 +15012,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":234,"b":null,"op":"place","answer":23,"display":{"ones":4,"tens":23,"type":"tens_in","number":234,"promptText":"Determine the total tens in 234."}},
+    question: {"a":234,"b":null,"op":"place","answer":23,"display":{"ones":4,"tens":23,"type":"tens_in","number":234,"promptText":"How many tens are in 234 in all?"}},
   },
   {
     itemId: "placevalue-conc-tensOnes-45-002",
@@ -15022,7 +15022,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":580,"b":null,"op":"place","answer":58,"display":{"ones":0,"tens":58,"type":"tens_in","number":580,"promptText":"Determine the total tens in 580."}},
+    question: {"a":580,"b":null,"op":"place","answer":58,"display":{"ones":0,"tens":58,"type":"tens_in","number":580,"promptText":"What is the total number of tens in 580?"}},
   },
   {
     itemId: "placevalue-conc-tensOnes-45-003",
@@ -15032,7 +15032,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":374,"b":null,"op":"place","answer":4,"display":{"ones":4,"tens":37,"type":"ones_in","number":374,"promptText":"Determine the units digit of 374."}},
+    question: {"a":374,"b":null,"op":"place","answer":4,"display":{"ones":4,"tens":37,"type":"ones_in","number":374,"promptText":"In 374, what digit is in the ones place?"}},
   },
   {
     itemId: "placeValue-conc-tensOnes-K_1-001",
@@ -15082,7 +15082,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":31,"b":null,"op":"place","answer":31,"display":{"ones":1,"tens":3,"type":"build","number":31,"promptText":"Lena stacks cubes into towers. She builds 3 towers of ten and holds 1 single cube. What number of cubes did Lena stack?"}},
+    question: {"a":31,"b":null,"op":"place","answer":31,"display":{"ones":1,"tens":3,"type":"build","number":31,"promptText":"Lena builds 3 towers of ten cubes. She has 1 more cube. How many cubes does Lena have in all?"}},
   },
   {
     itemId: "placeValue-conc-tensOnes-K_1-006",
@@ -15102,7 +15102,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":42,"b":null,"op":"place","answer":42,"display":{"ones":2,"tens":4,"type":"build","number":42,"promptText":"Jade packs eggs into cartons of ten. She fills 4 cartons and still holds 2 eggs. What number of eggs did Jade pack?"}},
+    question: {"a":42,"b":null,"op":"place","answer":42,"display":{"ones":2,"tens":4,"type":"build","number":42,"promptText":"Jade packs eggs into cartons of ten. She fills 4 cartons and has 2 eggs left over. How many eggs does Jade have in all?"}},
   },
   {
     itemId: "placeValue-conc-tensOnes-K_1-008",
@@ -15202,7 +15202,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":null,"op":"place","answer":1,"display":{"ones":2,"tens":1,"type":"tens_in","number":12,"promptText":"Identify the tens digit of 12."}},
+    question: {"a":12,"b":null,"op":"place","answer":1,"display":{"ones":2,"tens":1,"type":"tens_in","number":12,"promptText":"What digit is in the tens place of 12?"}},
   },
   {
     itemId: "placevalue-conc-tensOnes-K1-002",
@@ -15212,7 +15212,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":null,"op":"place","answer":1,"display":{"ones":5,"tens":1,"type":"tens_in","number":15,"promptText":"Identify the tens digit of 15."}},
+    question: {"a":15,"b":null,"op":"place","answer":1,"display":{"ones":5,"tens":1,"type":"tens_in","number":15,"promptText":"In 15, what digit is in the tens place?"}},
   },
   {
     itemId: "placevalue-conc-tensOnes-K1-003",
@@ -15222,7 +15222,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":null,"op":"place","answer":2,"display":{"ones":2,"tens":1,"type":"ones_in","number":12,"promptText":"Identify the ones digit of 12."}},
+    question: {"a":12,"b":null,"op":"place","answer":2,"display":{"ones":2,"tens":1,"type":"ones_in","number":12,"promptText":"What digit is in the ones place of 12?"}},
   },
   {
     itemId: "placeValue-proc-b0821-0001",
@@ -15292,7 +15292,7 @@ export const ITEMS = [
     structureType: "teenFrameRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"filled":17,"frames":2,"counting":{"kind":"groups","ones":7,"tens":1},"frameMode":"count","promptText":"The frames show a teen number. Which one?"},"answerType":"tenFrame"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"filled":17,"frames":2,"counting":{"kind":"groups","ones":7,"tens":1},"frameMode":"count","promptText":"What teen number do the ten frames show?"},"answerType":"tenFrame"},
   },
   {
     itemId: "placeValue-proc-b0821-0008",
@@ -16782,7 +16782,7 @@ export const ITEMS = [
     structureType: "teenExpandComplete",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"n":11,"kind":"digit","place":1},"promptText":"11 → 10 + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"n":11,"kind":"digit","place":1},"promptText":"11 = 10 + __"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0157",
@@ -16792,7 +16792,7 @@ export const ITEMS = [
     structureType: "teenExpandComplete",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"n":12,"kind":"digit","place":1},"promptText":"12 → 10 + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"n":12,"kind":"digit","place":1},"promptText":"10 + __ = 12"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0158",
@@ -16802,7 +16802,7 @@ export const ITEMS = [
     structureType: "teenExpandComplete",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"n":13,"kind":"digit","place":1},"promptText":"13 → 10 + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"n":13,"kind":"digit","place":1},"promptText":"13 = 10 + __"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0159",
@@ -16812,7 +16812,7 @@ export const ITEMS = [
     structureType: "teenExpandComplete",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"n":14,"kind":"digit","place":1},"promptText":"14 → 10 + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"n":14,"kind":"digit","place":1},"promptText":"10 + __ = 14"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0160",
@@ -16822,7 +16822,7 @@ export const ITEMS = [
     structureType: "teenExpandComplete",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"n":15,"kind":"digit","place":1},"promptText":"15 → 10 + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"n":15,"kind":"digit","place":1},"promptText":"15 = 10 + __"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0161",
@@ -16832,7 +16832,7 @@ export const ITEMS = [
     structureType: "teenExpandComplete",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"n":16,"kind":"digit","place":1},"promptText":"16 → 10 + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"n":16,"kind":"digit","place":1},"promptText":"10 + __ = 16"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0162",
@@ -16842,7 +16842,7 @@ export const ITEMS = [
     structureType: "teenExpandComplete",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"n":17,"kind":"digit","place":1},"promptText":"17 → 10 + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"n":17,"kind":"digit","place":1},"promptText":"17 = 10 + __"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0163",
@@ -16852,7 +16852,7 @@ export const ITEMS = [
     structureType: "teenExpandComplete",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"n":18,"kind":"digit","place":1},"promptText":"18 → 10 + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"n":18,"kind":"digit","place":1},"promptText":"10 + __ = 18"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0164",
@@ -16862,7 +16862,7 @@ export const ITEMS = [
     structureType: "teenExpandComplete",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"n":19,"kind":"digit","place":1},"promptText":"19 → 10 + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"n":19,"kind":"digit","place":1},"promptText":"19 = 10 + __"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0165",
@@ -18002,7 +18002,7 @@ export const ITEMS = [
     structureType: "expandPartBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"n":347,"kind":"placeValueOf","place":10},"promptText":"347 → ? from the tens place"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"n":347,"kind":"placeValueOf","place":10},"promptText":"Complete the expanded form: 347 = 300 + __ + 7"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0279",
@@ -18012,7 +18012,7 @@ export const ITEMS = [
     structureType: "expandPartBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":500,"display":{"counting":{"n":582,"kind":"placeValueOf","place":100},"promptText":"582 → ? from the hundreds place"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":500,"display":{"counting":{"n":582,"kind":"placeValueOf","place":100},"promptText":"582 = __ + 80 + 2"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0280",
@@ -18022,7 +18022,7 @@ export const ITEMS = [
     structureType: "expandPartBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"n":816,"kind":"placeValueOf","place":1},"promptText":"816 → ? from the ones place"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"n":816,"kind":"placeValueOf","place":1},"promptText":"816 = 800 + 10 + __"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0281",
@@ -18032,7 +18032,7 @@ export const ITEMS = [
     structureType: "expandPartBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"counting":{"n":493,"kind":"placeValueOf","place":10},"promptText":"493 → ? from the tens place"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"counting":{"n":493,"kind":"placeValueOf","place":10},"promptText":"493 = 400 + __ + 3"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0282",
@@ -18042,7 +18042,7 @@ export const ITEMS = [
     structureType: "expandPartBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"counting":{"n":265,"kind":"placeValueOf","place":100},"promptText":"265 → ? from the hundreds place"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"counting":{"n":265,"kind":"placeValueOf","place":100},"promptText":"Complete the expanded form: 265 = __ + 60 + 5"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0283",
@@ -18052,7 +18052,7 @@ export const ITEMS = [
     structureType: "expandPartBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"n":739,"kind":"placeValueOf","place":1},"promptText":"739 → ? from the ones place"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"n":739,"kind":"placeValueOf","place":1},"promptText":"Complete the expanded form: 739 = 700 + 30 + __"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0284",
@@ -18062,7 +18062,7 @@ export const ITEMS = [
     structureType: "expandPartBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"n":924,"kind":"placeValueOf","place":10},"promptText":"924 → ? from the tens place"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"n":924,"kind":"placeValueOf","place":10},"promptText":"Complete the expanded form: 924 = 900 + __ + 4"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0285",
@@ -18072,7 +18072,7 @@ export const ITEMS = [
     structureType: "expandPartBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":600,"display":{"counting":{"n":675,"kind":"placeValueOf","place":100},"promptText":"675 → ? from the hundreds place"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":600,"display":{"counting":{"n":675,"kind":"placeValueOf","place":100},"promptText":"675 = __ + 70 + 5"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0286",
@@ -18082,7 +18082,7 @@ export const ITEMS = [
     structureType: "expandPartBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"n":128,"kind":"placeValueOf","place":10},"promptText":"128 → ? from the tens place"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"n":128,"kind":"placeValueOf","place":10},"promptText":"128 = 100 + __ + 8"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0287",
@@ -18092,7 +18092,7 @@ export const ITEMS = [
     structureType: "expandPartBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"n":356,"kind":"placeValueOf","place":1},"promptText":"356 → ? from the ones place"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"n":356,"kind":"placeValueOf","place":1},"promptText":"356 = 300 + 50 + __"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0288",
@@ -18102,7 +18102,7 @@ export const ITEMS = [
     structureType: "expandPartBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":700,"display":{"counting":{"n":741,"kind":"placeValueOf","place":100},"promptText":"741 → ? from the hundreds place"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":700,"display":{"counting":{"n":741,"kind":"placeValueOf","place":100},"promptText":"Complete the expanded form: 741 = __ + 40 + 1"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0289",
@@ -18112,7 +18112,7 @@ export const ITEMS = [
     structureType: "expandPartBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"counting":{"n":869,"kind":"placeValueOf","place":10},"promptText":"869 → ? from the tens place"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"counting":{"n":869,"kind":"placeValueOf","place":10},"promptText":"Complete the expanded form: 869 = 800 + __ + 9"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0290",
@@ -18122,7 +18122,7 @@ export const ITEMS = [
     structureType: "expandPartBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"n":235,"kind":"placeValueOf","place":1},"promptText":"235 → ? from the ones place"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"n":235,"kind":"placeValueOf","place":1},"promptText":"Complete the expanded form: 235 = 200 + 30 + __"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0291",
@@ -18132,7 +18132,7 @@ export const ITEMS = [
     structureType: "expandPartBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":500,"display":{"counting":{"n":517,"kind":"placeValueOf","place":100},"promptText":"517 → ? from the hundreds place"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":500,"display":{"counting":{"n":517,"kind":"placeValueOf","place":100},"promptText":"517 = __ + 10 + 7"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0292",
@@ -18142,7 +18142,7 @@ export const ITEMS = [
     structureType: "expandPartBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"counting":{"n":682,"kind":"placeValueOf","place":10},"promptText":"682 → ? from the tens place"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"counting":{"n":682,"kind":"placeValueOf","place":10},"promptText":"682 = 600 + __ + 2"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0293",
@@ -18152,7 +18152,7 @@ export const ITEMS = [
     structureType: "expandPartBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"n":951,"kind":"placeValueOf","place":1},"promptText":"951 → ? from the ones place"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"n":951,"kind":"placeValueOf","place":1},"promptText":"951 = 900 + 50 + __"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0294",
@@ -18162,7 +18162,7 @@ export const ITEMS = [
     structureType: "expandPartBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":400,"display":{"counting":{"n":438,"kind":"placeValueOf","place":100},"promptText":"438 → ? from the hundreds place"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":400,"display":{"counting":{"n":438,"kind":"placeValueOf","place":100},"promptText":"Complete the expanded form: 438 = __ + 30 + 8"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0295",
@@ -18172,7 +18172,7 @@ export const ITEMS = [
     structureType: "expandPartBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"counting":{"n":163,"kind":"placeValueOf","place":10},"promptText":"163 → ? from the tens place"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"counting":{"n":163,"kind":"placeValueOf","place":10},"promptText":"Complete the expanded form: 163 = 100 + __ + 3"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0296",
@@ -18602,7 +18602,7 @@ export const ITEMS = [
     structureType: "teenDecompose",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"n":11,"kind":"digit","place":1},"promptText":"11 = 1 ten + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"n":11,"kind":"digit","place":1},"promptText":"11 = 1 ten + __ ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0339",
@@ -18612,7 +18612,7 @@ export const ITEMS = [
     structureType: "teenDecompose",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"n":12,"kind":"digit","place":1},"promptText":"12 = 1 ten + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"n":12,"kind":"digit","place":1},"promptText":"12 is 1 ten and __ ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0340",
@@ -18622,7 +18622,7 @@ export const ITEMS = [
     structureType: "teenDecompose",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"n":13,"kind":"digit","place":1},"promptText":"13 = 1 ten + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"n":13,"kind":"digit","place":1},"promptText":"13 = 1 ten + __ ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0341",
@@ -18632,7 +18632,7 @@ export const ITEMS = [
     structureType: "teenDecompose",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"n":14,"kind":"digit","place":1},"promptText":"14 = 1 ten + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"n":14,"kind":"digit","place":1},"promptText":"14 is 1 ten and __ ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0342",
@@ -18642,7 +18642,7 @@ export const ITEMS = [
     structureType: "teenDecompose",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"n":15,"kind":"digit","place":1},"promptText":"15 = 1 ten + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"n":15,"kind":"digit","place":1},"promptText":"15 = 1 ten + __ ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0343",
@@ -18652,7 +18652,7 @@ export const ITEMS = [
     structureType: "teenDecompose",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"n":16,"kind":"digit","place":1},"promptText":"16 = 1 ten + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"n":16,"kind":"digit","place":1},"promptText":"16 is 1 ten and __ ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0344",
@@ -18662,7 +18662,7 @@ export const ITEMS = [
     structureType: "teenDecompose",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"n":17,"kind":"digit","place":1},"promptText":"17 = 1 ten + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"n":17,"kind":"digit","place":1},"promptText":"17 = 1 ten + __ ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0345",
@@ -18672,7 +18672,7 @@ export const ITEMS = [
     structureType: "teenDecompose",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"n":18,"kind":"digit","place":1},"promptText":"18 = 1 ten + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"n":18,"kind":"digit","place":1},"promptText":"18 is 1 ten and __ ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0346",
@@ -18682,7 +18682,7 @@ export const ITEMS = [
     structureType: "teenDecompose",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"n":19,"kind":"digit","place":1},"promptText":"19 = 1 ten + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"n":19,"kind":"digit","place":1},"promptText":"19 = 1 ten + __ ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0347",
@@ -18692,7 +18692,7 @@ export const ITEMS = [
     structureType: "teenAsOnes",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"n":11,"kind":"digit","place":1},"promptText":"11 → 10 ones + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"n":11,"kind":"digit","place":1},"promptText":"11 = 10 ones + __ ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0348",
@@ -18702,7 +18702,7 @@ export const ITEMS = [
     structureType: "teenAsOnes",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"n":12,"kind":"digit","place":1},"promptText":"12 → 10 ones + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"n":12,"kind":"digit","place":1},"promptText":"12 is 10 ones and __ more ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0349",
@@ -18712,7 +18712,7 @@ export const ITEMS = [
     structureType: "teenAsOnes",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"n":13,"kind":"digit","place":1},"promptText":"13 → 10 ones + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"n":13,"kind":"digit","place":1},"promptText":"13 = 10 ones + __ ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0350",
@@ -18722,7 +18722,7 @@ export const ITEMS = [
     structureType: "teenAsOnes",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"n":14,"kind":"digit","place":1},"promptText":"14 → 10 ones + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"n":14,"kind":"digit","place":1},"promptText":"14 is 10 ones and __ more ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0351",
@@ -18732,7 +18732,7 @@ export const ITEMS = [
     structureType: "teenAsOnes",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"n":15,"kind":"digit","place":1},"promptText":"15 → 10 ones + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"n":15,"kind":"digit","place":1},"promptText":"15 = 10 ones + __ ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0352",
@@ -18742,7 +18742,7 @@ export const ITEMS = [
     structureType: "teenAsOnes",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"n":16,"kind":"digit","place":1},"promptText":"16 → 10 ones + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"n":16,"kind":"digit","place":1},"promptText":"16 is 10 ones and __ more ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0353",
@@ -18752,7 +18752,7 @@ export const ITEMS = [
     structureType: "teenAsOnes",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"n":17,"kind":"digit","place":1},"promptText":"17 → 10 ones + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"n":17,"kind":"digit","place":1},"promptText":"17 = 10 ones + __ ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0354",
@@ -18762,7 +18762,7 @@ export const ITEMS = [
     structureType: "teenAsOnes",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"n":18,"kind":"digit","place":1},"promptText":"18 → 10 ones + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"n":18,"kind":"digit","place":1},"promptText":"18 is 10 ones and __ more ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0355",
@@ -18772,7 +18772,7 @@ export const ITEMS = [
     structureType: "teenAsOnes",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"n":19,"kind":"digit","place":1},"promptText":"19 → 10 ones + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"n":19,"kind":"digit","place":1},"promptText":"19 = 10 ones + __ ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0356",
@@ -19062,7 +19062,7 @@ export const ITEMS = [
     structureType: "renameTens",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"have":20,"kind":"gap","target":34},"promptText":"34 = 2 tens + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"have":20,"kind":"gap","target":34},"promptText":"34 = 2 tens + __ ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0385",
@@ -19072,7 +19072,7 @@ export const ITEMS = [
     structureType: "renameTens",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"have":30,"kind":"gap","target":47},"promptText":"47 = 3 tens + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"have":30,"kind":"gap","target":47},"promptText":"47 is 3 tens and __ ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0386",
@@ -19082,7 +19082,7 @@ export const ITEMS = [
     structureType: "renameTens",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"have":40,"kind":"gap","target":52},"promptText":"52 = 4 tens + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"have":40,"kind":"gap","target":52},"promptText":"52 = 4 tens + __ ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0387",
@@ -19092,7 +19092,7 @@ export const ITEMS = [
     structureType: "renameTens",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"have":50,"kind":"gap","target":68},"promptText":"68 = 5 tens + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"have":50,"kind":"gap","target":68},"promptText":"68 is 5 tens and __ ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0388",
@@ -19102,7 +19102,7 @@ export const ITEMS = [
     structureType: "renameTens",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":60,"kind":"gap","target":73},"promptText":"73 = 6 tens + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":60,"kind":"gap","target":73},"promptText":"73 = 6 tens + __ ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0389",
@@ -19112,7 +19112,7 @@ export const ITEMS = [
     structureType: "renameTens",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"have":70,"kind":"gap","target":86},"promptText":"86 = 7 tens + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"have":70,"kind":"gap","target":86},"promptText":"86 is 7 tens and __ ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0390",
@@ -19122,7 +19122,7 @@ export const ITEMS = [
     structureType: "renameTens",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":80,"kind":"gap","target":91},"promptText":"91 = 8 tens + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":80,"kind":"gap","target":91},"promptText":"91 = 8 tens + __ ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0391",
@@ -19132,7 +19132,7 @@ export const ITEMS = [
     structureType: "renameTens",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"have":30,"kind":"gap","target":45},"promptText":"45 = 3 tens + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"have":30,"kind":"gap","target":45},"promptText":"45 is 3 tens and __ ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0392",
@@ -19142,7 +19142,7 @@ export const ITEMS = [
     structureType: "renameTens",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"have":40,"kind":"gap","target":57},"promptText":"57 = 4 tens + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"have":40,"kind":"gap","target":57},"promptText":"57 = 4 tens + __ ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0393",
@@ -19152,7 +19152,7 @@ export const ITEMS = [
     structureType: "renameTens",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"have":50,"kind":"gap","target":62},"promptText":"62 = 5 tens + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"have":50,"kind":"gap","target":62},"promptText":"62 is 5 tens and __ ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0394",
@@ -19162,7 +19162,7 @@ export const ITEMS = [
     structureType: "renameTens",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"have":60,"kind":"gap","target":78},"promptText":"78 = 6 tens + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"have":60,"kind":"gap","target":78},"promptText":"78 = 6 tens + __ ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0395",
@@ -19172,7 +19172,7 @@ export const ITEMS = [
     structureType: "renameTens",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":70,"kind":"gap","target":83},"promptText":"83 = 7 tens + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"have":70,"kind":"gap","target":83},"promptText":"83 is 7 tens and __ ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0396",
@@ -19182,7 +19182,7 @@ export const ITEMS = [
     structureType: "renameTens",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"have":80,"kind":"gap","target":96},"promptText":"96 = 8 tens + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"have":80,"kind":"gap","target":96},"promptText":"96 = 8 tens + __ ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0397",
@@ -19192,7 +19192,7 @@ export const ITEMS = [
     structureType: "renameTens",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"have":20,"kind":"gap","target":39},"promptText":"39 = 2 tens + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"have":20,"kind":"gap","target":39},"promptText":"39 is 2 tens and __ ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0398",
@@ -19202,7 +19202,7 @@ export const ITEMS = [
     structureType: "renameTens",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"have":40,"kind":"gap","target":54},"promptText":"54 = 4 tens + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"have":40,"kind":"gap","target":54},"promptText":"54 = 4 tens + __ ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0399",
@@ -19212,7 +19212,7 @@ export const ITEMS = [
     structureType: "renameTens",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"have":50,"kind":"gap","target":66},"promptText":"66 = 5 tens + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"have":50,"kind":"gap","target":66},"promptText":"66 is 5 tens and __ ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0400",
@@ -19222,7 +19222,7 @@ export const ITEMS = [
     structureType: "renameTens",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":60,"kind":"gap","target":71},"promptText":"71 = 6 tens + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":60,"kind":"gap","target":71},"promptText":"71 = 6 tens + __ ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0401",
@@ -19232,7 +19232,7 @@ export const ITEMS = [
     structureType: "renameTens",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"have":70,"kind":"gap","target":88},"promptText":"88 = 7 tens + ? ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"have":70,"kind":"gap","target":88},"promptText":"88 is 7 tens and __ ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0402",
@@ -19242,7 +19242,7 @@ export const ITEMS = [
     structureType: "renameTensDigit",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"n":47,"kind":"digit","place":10},"promptText":"47 = ? tens 7 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"n":47,"kind":"digit","place":10},"promptText":"47 = __ tens 7 ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0403",
@@ -19252,7 +19252,7 @@ export const ITEMS = [
     structureType: "renameTensDigit",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"n":83,"kind":"digit","place":10},"promptText":"83 = ? tens 3 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"n":83,"kind":"digit","place":10},"promptText":"83 is __ tens and 3 ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0404",
@@ -19262,7 +19262,7 @@ export const ITEMS = [
     structureType: "renameTensDigit",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"n":29,"kind":"digit","place":10},"promptText":"29 = ? tens 9 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"n":29,"kind":"digit","place":10},"promptText":"29 = __ tens 9 ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0405",
@@ -19272,7 +19272,7 @@ export const ITEMS = [
     structureType: "renameTensDigit",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"n":65,"kind":"digit","place":10},"promptText":"65 = ? tens 5 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"n":65,"kind":"digit","place":10},"promptText":"65 is __ tens and 5 ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0406",
@@ -19282,7 +19282,7 @@ export const ITEMS = [
     structureType: "renameTensDigit",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"n":38,"kind":"digit","place":10},"promptText":"38 = ? tens 8 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"n":38,"kind":"digit","place":10},"promptText":"38 = __ tens 8 ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0407",
@@ -19292,7 +19292,7 @@ export const ITEMS = [
     structureType: "renameTensDigit",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"n":74,"kind":"digit","place":10},"promptText":"74 = ? tens 4 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"n":74,"kind":"digit","place":10},"promptText":"74 is __ tens and 4 ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0408",
@@ -19302,7 +19302,7 @@ export const ITEMS = [
     structureType: "renameTensDigit",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"n":56,"kind":"digit","place":10},"promptText":"56 = ? tens 6 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"n":56,"kind":"digit","place":10},"promptText":"56 = __ tens 6 ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0409",
@@ -19312,7 +19312,7 @@ export const ITEMS = [
     structureType: "renameTensDigit",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"n":91,"kind":"digit","place":10},"promptText":"91 = ? tens 1 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"n":91,"kind":"digit","place":10},"promptText":"91 is __ tens and 1 one."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0410",
@@ -19322,7 +19322,7 @@ export const ITEMS = [
     structureType: "renameTensDigit",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"n":23,"kind":"digit","place":10},"promptText":"23 = ? tens 3 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"n":23,"kind":"digit","place":10},"promptText":"23 = __ tens 3 ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0411",
@@ -19332,7 +19332,7 @@ export const ITEMS = [
     structureType: "renameTensDigit",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"n":88,"kind":"digit","place":10},"promptText":"88 = ? tens 8 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"n":88,"kind":"digit","place":10},"promptText":"88 is __ tens and 8 ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0412",
@@ -19342,7 +19342,7 @@ export const ITEMS = [
     structureType: "renameTensDigit",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"n":35,"kind":"digit","place":10},"promptText":"35 = ? tens 5 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"n":35,"kind":"digit","place":10},"promptText":"35 = __ tens 5 ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0413",
@@ -19352,7 +19352,7 @@ export const ITEMS = [
     structureType: "renameTensDigit",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"n":62,"kind":"digit","place":10},"promptText":"62 = ? tens 2 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"n":62,"kind":"digit","place":10},"promptText":"62 is __ tens and 2 ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0414",
@@ -19362,7 +19362,7 @@ export const ITEMS = [
     structureType: "renameTensDigit",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"n":49,"kind":"digit","place":10},"promptText":"49 = ? tens 9 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"n":49,"kind":"digit","place":10},"promptText":"49 = __ tens 9 ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0415",
@@ -19372,7 +19372,7 @@ export const ITEMS = [
     structureType: "renameTensDigit",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"n":77,"kind":"digit","place":10},"promptText":"77 = ? tens 7 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"n":77,"kind":"digit","place":10},"promptText":"77 is __ tens and 7 ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0416",
@@ -19382,7 +19382,7 @@ export const ITEMS = [
     structureType: "renameTensDigit",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"n":51,"kind":"digit","place":10},"promptText":"51 = ? tens 1 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"n":51,"kind":"digit","place":10},"promptText":"51 = __ tens 1 one"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0417",
@@ -19572,7 +19572,7 @@ export const ITEMS = [
     structureType: "renameAsTens",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"counting":{"have":0,"kind":"gap","target":34},"promptText":"340 = ? tens"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"counting":{"have":0,"kind":"gap","target":34},"promptText":"340 = __ tens"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0436",
@@ -19582,7 +19582,7 @@ export const ITEMS = [
     structureType: "renameAsTens",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":47,"display":{"counting":{"have":0,"kind":"gap","target":47},"promptText":"470 = ? tens"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":47,"display":{"counting":{"have":0,"kind":"gap","target":47},"promptText":"470 is the same as __ tens."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0437",
@@ -19592,7 +19592,7 @@ export const ITEMS = [
     structureType: "renameAsTens",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":52,"display":{"counting":{"have":0,"kind":"gap","target":52},"promptText":"520 = ? tens"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":52,"display":{"counting":{"have":0,"kind":"gap","target":52},"promptText":"520 = __ tens"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0438",
@@ -19602,7 +19602,7 @@ export const ITEMS = [
     structureType: "renameAsTens",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":68,"display":{"counting":{"have":0,"kind":"gap","target":68},"promptText":"680 = ? tens"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":68,"display":{"counting":{"have":0,"kind":"gap","target":68},"promptText":"680 is the same as __ tens."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0439",
@@ -19612,7 +19612,7 @@ export const ITEMS = [
     structureType: "renameAsTens",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":73,"display":{"counting":{"have":0,"kind":"gap","target":73},"promptText":"730 = ? tens"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":73,"display":{"counting":{"have":0,"kind":"gap","target":73},"promptText":"730 = __ tens"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0440",
@@ -19622,7 +19622,7 @@ export const ITEMS = [
     structureType: "renameAsTens",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":86,"display":{"counting":{"have":0,"kind":"gap","target":86},"promptText":"860 = ? tens"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":86,"display":{"counting":{"have":0,"kind":"gap","target":86},"promptText":"860 is the same as __ tens."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0441",
@@ -19632,7 +19632,7 @@ export const ITEMS = [
     structureType: "renameAsTens",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"counting":{"have":0,"kind":"gap","target":91},"promptText":"910 = ? tens"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"counting":{"have":0,"kind":"gap","target":91},"promptText":"910 = __ tens"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0442",
@@ -19642,7 +19642,7 @@ export const ITEMS = [
     structureType: "renameAsTens",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"have":0,"kind":"gap","target":45},"promptText":"450 = ? tens"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"have":0,"kind":"gap","target":45},"promptText":"450 is the same as __ tens."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0443",
@@ -19652,7 +19652,7 @@ export const ITEMS = [
     structureType: "renameAsTens",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"counting":{"have":0,"kind":"gap","target":57},"promptText":"570 = ? tens"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"counting":{"have":0,"kind":"gap","target":57},"promptText":"570 = __ tens"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0444",
@@ -19662,7 +19662,7 @@ export const ITEMS = [
     structureType: "renameAsTens",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":62,"display":{"counting":{"have":0,"kind":"gap","target":62},"promptText":"620 = ? tens"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":62,"display":{"counting":{"have":0,"kind":"gap","target":62},"promptText":"620 is the same as __ tens."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0445",
@@ -19672,7 +19672,7 @@ export const ITEMS = [
     structureType: "renameAsTens",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":78,"display":{"counting":{"have":0,"kind":"gap","target":78},"promptText":"780 = ? tens"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":78,"display":{"counting":{"have":0,"kind":"gap","target":78},"promptText":"780 = __ tens"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0446",
@@ -19682,7 +19682,7 @@ export const ITEMS = [
     structureType: "renameAsTens",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":83,"display":{"counting":{"have":0,"kind":"gap","target":83},"promptText":"830 = ? tens"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":83,"display":{"counting":{"have":0,"kind":"gap","target":83},"promptText":"830 is the same as __ tens."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0447",
@@ -19692,7 +19692,7 @@ export const ITEMS = [
     structureType: "renameAsTens",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":96,"display":{"counting":{"have":0,"kind":"gap","target":96},"promptText":"960 = ? tens"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":96,"display":{"counting":{"have":0,"kind":"gap","target":96},"promptText":"960 = __ tens"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0448",
@@ -19702,7 +19702,7 @@ export const ITEMS = [
     structureType: "renameAsTens",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"counting":{"have":0,"kind":"gap","target":39},"promptText":"390 = ? tens"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"counting":{"have":0,"kind":"gap","target":39},"promptText":"390 is the same as __ tens."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0449",
@@ -19712,7 +19712,7 @@ export const ITEMS = [
     structureType: "renameAsTens",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":54,"display":{"counting":{"have":0,"kind":"gap","target":54},"promptText":"540 = ? tens"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":54,"display":{"counting":{"have":0,"kind":"gap","target":54},"promptText":"540 = __ tens"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0450",
@@ -19722,7 +19722,7 @@ export const ITEMS = [
     structureType: "renameAsTens",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":66,"display":{"counting":{"have":0,"kind":"gap","target":66},"promptText":"660 = ? tens"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":66,"display":{"counting":{"have":0,"kind":"gap","target":66},"promptText":"660 is the same as __ tens."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0451",
@@ -19732,7 +19732,7 @@ export const ITEMS = [
     structureType: "renameAsTens",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":71,"display":{"counting":{"have":0,"kind":"gap","target":71},"promptText":"710 = ? tens"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":71,"display":{"counting":{"have":0,"kind":"gap","target":71},"promptText":"710 = __ tens"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0452",
@@ -19742,7 +19742,7 @@ export const ITEMS = [
     structureType: "renameAsTens",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"counting":{"have":0,"kind":"gap","target":88},"promptText":"880 = ? tens"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":88,"display":{"counting":{"have":0,"kind":"gap","target":88},"promptText":"880 is the same as __ tens."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0453",
@@ -19752,7 +19752,7 @@ export const ITEMS = [
     structureType: "renameHundredsDigit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"n":347,"kind":"digit","place":100},"promptText":"347 = ? hundreds 4 tens 7 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"n":347,"kind":"digit","place":100},"promptText":"347 = __ hundreds 4 tens 7 ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0454",
@@ -19762,7 +19762,7 @@ export const ITEMS = [
     structureType: "renameHundredsDigit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"n":582,"kind":"digit","place":100},"promptText":"582 = ? hundreds 8 tens 2 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"n":582,"kind":"digit","place":100},"promptText":"582 is __ hundreds, 8 tens, and 2 ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0455",
@@ -19772,7 +19772,7 @@ export const ITEMS = [
     structureType: "renameHundredsDigit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"n":816,"kind":"digit","place":100},"promptText":"816 = ? hundreds 1 tens 6 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"n":816,"kind":"digit","place":100},"promptText":"816 = __ hundreds 1 ten 6 ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0456",
@@ -19782,7 +19782,7 @@ export const ITEMS = [
     structureType: "renameHundredsDigit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"n":493,"kind":"digit","place":100},"promptText":"493 = ? hundreds 9 tens 3 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"n":493,"kind":"digit","place":100},"promptText":"493 is __ hundreds, 9 tens, and 3 ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0457",
@@ -19792,7 +19792,7 @@ export const ITEMS = [
     structureType: "renameHundredsDigit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"n":265,"kind":"digit","place":100},"promptText":"265 = ? hundreds 6 tens 5 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"n":265,"kind":"digit","place":100},"promptText":"265 = __ hundreds 6 tens 5 ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0458",
@@ -19802,7 +19802,7 @@ export const ITEMS = [
     structureType: "renameHundredsDigit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"n":739,"kind":"digit","place":100},"promptText":"739 = ? hundreds 3 tens 9 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"n":739,"kind":"digit","place":100},"promptText":"739 is __ hundreds, 3 tens, and 9 ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0459",
@@ -19812,7 +19812,7 @@ export const ITEMS = [
     structureType: "renameHundredsDigit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"n":904,"kind":"digit","place":100},"promptText":"904 = ? hundreds 0 tens 4 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"n":904,"kind":"digit","place":100},"promptText":"904 = __ hundreds 0 tens 4 ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0460",
@@ -19822,7 +19822,7 @@ export const ITEMS = [
     structureType: "renameHundredsDigit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"n":670,"kind":"digit","place":100},"promptText":"670 = ? hundreds 7 tens 0 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"n":670,"kind":"digit","place":100},"promptText":"670 is __ hundreds, 7 tens, and 0 ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0461",
@@ -19832,7 +19832,7 @@ export const ITEMS = [
     structureType: "renameHundredsDigit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"n":128,"kind":"digit","place":100},"promptText":"128 = ? hundreds 2 tens 8 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"n":128,"kind":"digit","place":100},"promptText":"128 = __ hundreds 2 tens 8 ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0462",
@@ -19842,7 +19842,7 @@ export const ITEMS = [
     structureType: "renameHundredsDigit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"n":356,"kind":"digit","place":100},"promptText":"356 = ? hundreds 5 tens 6 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"n":356,"kind":"digit","place":100},"promptText":"356 is __ hundreds, 5 tens, and 6 ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0463",
@@ -19852,7 +19852,7 @@ export const ITEMS = [
     structureType: "renameHundredsDigit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"n":741,"kind":"digit","place":100},"promptText":"741 = ? hundreds 4 tens 1 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"n":741,"kind":"digit","place":100},"promptText":"741 = __ hundreds 4 tens 1 one"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0464",
@@ -19862,7 +19862,7 @@ export const ITEMS = [
     structureType: "renameHundredsDigit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"n":869,"kind":"digit","place":100},"promptText":"869 = ? hundreds 6 tens 9 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"n":869,"kind":"digit","place":100},"promptText":"869 is __ hundreds, 6 tens, and 9 ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0465",
@@ -19872,7 +19872,7 @@ export const ITEMS = [
     structureType: "renameHundredsDigit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"n":235,"kind":"digit","place":100},"promptText":"235 = ? hundreds 3 tens 5 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"n":235,"kind":"digit","place":100},"promptText":"235 = __ hundreds 3 tens 5 ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0466",
@@ -19882,7 +19882,7 @@ export const ITEMS = [
     structureType: "renameHundredsDigit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"n":517,"kind":"digit","place":100},"promptText":"517 = ? hundreds 1 tens 7 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"n":517,"kind":"digit","place":100},"promptText":"517 is __ hundreds, 1 ten, and 7 ones."},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0821-0467",
@@ -19892,7 +19892,7 @@ export const ITEMS = [
     structureType: "renameHundredsDigit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"n":682,"kind":"digit","place":100},"promptText":"682 = ? hundreds 8 tens 2 ones"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"n":682,"kind":"digit","place":100},"promptText":"682 = __ hundreds 8 tens 2 ones"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-proc-b0823-0001",
@@ -21182,7 +21182,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":36,"b":null,"op":"place","answer":6,"display":{"ones":6,"tens":3,"type":"ones_in","number":36,"promptText":"How many ones in 36?"}},
+    question: {"a":36,"b":null,"op":"place","answer":6,"display":{"ones":6,"tens":3,"type":"ones_in","number":36,"promptText":"36 is 3 tens and __ ones."}},
   },
   {
     itemId: "placevalue-proc-tensOnes-45-001",
@@ -21212,7 +21212,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":374,"b":null,"op":"place","answer":4,"display":{"ones":4,"tens":37,"type":"ones_in","number":374,"promptText":"How many ones in 374?"}},
+    question: {"a":374,"b":null,"op":"place","answer":4,"display":{"ones":4,"tens":37,"type":"ones_in","number":374,"promptText":"374 is 37 tens and __ ones."}},
   },
   {
     itemId: "placevalue-proc-tensOnes-K1-001",
@@ -21242,6 +21242,6 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":null,"op":"place","answer":2,"display":{"ones":2,"tens":1,"type":"ones_in","number":12,"promptText":"How many ones in 12?"}},
+    question: {"a":12,"b":null,"op":"place","answer":2,"display":{"ones":2,"tens":1,"type":"ones_in","number":12,"promptText":"Make a ten from 12 ones. How many ones are left over?"}},
   },
 ];

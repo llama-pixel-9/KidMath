@@ -61,6 +61,30 @@ final class FigureRenderTests: XCTestCase {
         XCTAssertNil(SequenceNumberLineView.eligible(sequence: [1, 2, 3], step: 1, answer: 40), "span over ten ticks")
     }
 
+    /// The tappable disc mat (display.mode "build") at the 360pt and 400pt
+    /// phone columns (minus the 16pt gutters), with 9, 12 and 19 discs in a
+    /// place, plus a four-place mat; the read mode still renders its pad.
+    func testPlaceValueDiscsBuildMatRenders() throws {
+        func cols(_ h: Int, _ t: Int, _ o: Int) -> [[String: Any]] {
+            [["place": 100, "count": h], ["place": 10, "count": t], ["place": 1, "count": o]]
+        }
+        for (name, h, t, o) in [("9", 9, 2, 9), ("12", 1, 12, 4), ("19", 9, 19, 19)] {
+            for width: CGFloat in [328, 368] {
+                try render(
+                    "discmat-build-\(name)-\(Int(width))",
+                    PlaceValueDiscsWidget(display: ["mode": "build", "cols": cols(h, t, o)], disabled: false) { _ in },
+                    width: width
+                )
+            }
+        }
+        let thousands: [[String: Any]] = [
+            ["place": 1000, "count": 2], ["place": 100, "count": 19], ["place": 10, "count": 19], ["place": 1, "count": 19],
+        ]
+        try render("discmat-build-thousands-328", PlaceValueDiscsWidget(display: ["mode": "build", "cols": thousands], disabled: false) { _ in }, width: 328)
+        try render("discmat-build-correct", PlaceValueDiscsWidget(display: ["mode": "build", "cols": cols(9, 2, 1)], disabled: true, feedback: true) { _ in }, width: 328)
+        try render("discmat-read", PlaceValueDiscsWidget(display: ["cols": cols(1, 1, 4)], disabled: false) { _ in })
+    }
+
     func testTenFrameRenders() throws {
         try render("tenframe-count", TenFrameWidget(display: ["filled": 5, "filledB": 3, "frames": 1, "frameMode": "count"], disabled: false) { _ in })
         try render("tenframe-build2", TenFrameWidget(display: ["filled": 10, "filledB": 3, "frames": 2, "frameMode": "build"], disabled: false) { _ in })

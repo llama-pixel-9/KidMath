@@ -37,7 +37,12 @@ export const WIDGETS = {
     props: (q) => ({ hour: q.display?.hour, minute: q.display?.minute }),
   },
   fractionSet: { Component: FractionSet, props: (q) => ({ set: q.display?.set }) },
-  placeValueDiscs: { Component: PlaceValueDiscs, props: (q) => ({ cols: q.display?.cols }) },
+  placeValueDiscs: {
+    Component: PlaceValueDiscs,
+    // read (default): a fixed mat and the digit pad. build: the kid changes
+    // the mat (start mat = cols) and the number it shows is the answer.
+    props: (q) => ({ cols: q.display?.cols, mode: q.display?.mode === "build" ? "build" : "read" }),
+  },
   barModel: { Component: BarModel, props: (q) => ({ spec: q.display }) },
   numberBond: {
     Component: NumberBond,

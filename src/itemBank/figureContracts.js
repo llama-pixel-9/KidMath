@@ -217,7 +217,12 @@ const DISCS_RENDERED = [
 // the item's blueprint row id first (byRowThenStructure below). Every row id
 // is declared, from the row's `picture` field; modeFigures.spec ties the
 // lists to the rows, so a new row with no line fails CI.
-const DISC_MAT = { satisfiedBy: ["figure:discMat"] };
+// One disc mat: drawn with the question (figure discMat) or as the mat the
+// kid answers through (the placeValueDiscs widget draws `display.cols`, and
+// in build mode the kid changes it: Sai's 2026-10-03 "make it interactive").
+// Two mats side by side exist only as the figure.
+const DISC_MAT = { satisfiedBy: ["figure:discMat", "widget:placeValueDiscs"] };
+const TWO_DISC_MATS = { satisfiedBy: ["figure:discMat"] };
 const BAR_MODEL = { satisfiedBy: ["widget:barModel"] };
 const NUMBER_LINE = { satisfiedBy: ["widget:numberLine"] };
 // "Choose the tape diagram": the four choices ARE the pictures. No choice
@@ -281,7 +286,7 @@ const CALC_ROW_CLASSES = {
   "calc-g2-add-discs": DISC_MAT,
   "calc-g2-across-zero-discs": DISC_MAT,
   "calc-g2-ten-hundred-discs": DISC_MAT,
-  "calc-g2-equal-mats": DISC_MAT,
+  "calc-g2-equal-mats": TWO_DISC_MATS,
   // a number line answered in the widget. Row 9 (several hops, the landing
   // point typed) needs build work first (calc decision 7); row 10 works today.
   "calc-g2-add-number-line": NUMBER_LINE,
@@ -306,7 +311,7 @@ const CALC_STRUCTURES = {
   addWithDiscs: DISC_MAT,
   subtractWithDiscs: DISC_MAT,
   tenOrHundredOnMat: DISC_MAT,
-  sameValueTwoMats: DISC_MAT,
+  sameValueTwoMats: TWO_DISC_MATS,
 };
 // Every words-only row's structure; the fallback generator writes only these
 // (the script rows' types, tenOrHundredMoreLess and balanceEquation).

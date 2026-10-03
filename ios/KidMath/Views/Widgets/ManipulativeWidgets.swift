@@ -264,10 +264,22 @@ struct FractionSetWidget: View {
 
 // MARK: - Place-value discs (columns of 1000/100/10/1 discs; type the number)
 
+/// Two modes, like the coin tray (mirror of PlaceValueDiscs.jsx):
+///
+///   read  — (no `display.mode`, or "read") the mat is a picture; the child
+///           reads it and types the number on the digit pad. The v1 bank.
+///   build — (`display.mode == "build"`) the tappable mat in DiscMatBuild.swift:
+///           the child adds, takes away and trades discs, then Checks the
+///           number the mat shows.
 struct PlaceValueDiscsWidget: View {
     @Environment(\.theme) private var theme
     let display: [String: Any]
     let disabled: Bool
+    /// Session feedback (true correct, false wrong, nil answering). Only the
+    /// build mat reads it, for its "The mat shows 921." line and ring.
+    var feedback: Bool? = nil
+    /// The app's calm mode — with Reduce Motion it stills the build mat.
+    var calmMode = false
     let submit: (Any) -> Void
 
     @State private var entry = ""
@@ -279,7 +291,26 @@ struct PlaceValueDiscsWidget: View {
         1: Theme.sunLight,
     ]
 
+    private var isBuild: Bool { (display["mode"] as? String) == "build" }
+
+    @ViewBuilder
     var body: some View {
+        if isBuild {
+            DiscMatBuildView(
+                cols: display["cols"] as? [[String: Any]] ?? [],
+                disabled: disabled,
+                feedback: feedback,
+                calmMode: calmMode,
+                submit: submit
+            )
+        } else {
+            readMat
+        }
+    }
+
+    /// Read mode, unchanged: the mat as a picture plus the digit pad.
+    @ViewBuilder
+    private var readMat: some View {
         let cols = (display["cols"] as? [[String: Any]] ?? []).map { col in
             (place: (col["place"] as? NSNumber)?.intValue ?? 1,
              count: (col["count"] as? NSNumber)?.intValue ?? 0)

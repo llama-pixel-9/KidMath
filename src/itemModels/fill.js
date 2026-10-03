@@ -472,6 +472,8 @@ function fillOnce(model, { seed, state, grade, depth }) {
     source: { generator: "itemModels", itemModelId: model.id, seed },
     version: 2,
     itemModelId: model.id,
+    // The blueprint row the model was written for (item_bank.blueprint_id).
+    blueprintId: model.blueprintId ?? null,
     difficulty: model.difficulty,
     hint,
     tags: {

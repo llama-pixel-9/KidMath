@@ -12,6 +12,7 @@ import { validateBankItem } from "../itemBank/index.js";
 import { hintContainsAnswer, validateHint } from "../hints/hintSchema.js";
 import { findObjectsInText } from "../content/contextTable.js";
 import { findKidSafeHits } from "../content/kidSafeList.js";
+import { blueprintById } from "../blueprints/index.js";
 import { ANSWER_TYPES } from "../components/widgetRegistry.js";
 
 /**
@@ -226,6 +227,78 @@ describe("validateModel", () => {
   it("refuses a slot form on a non-object slot", () => {
     const { errors } = validateModel({ ...base, template: { prompt: "{name_plural} buy {object_a} for {price}. How much change?" } });
     expect(errors[0]).toMatch(/only an object slot has a plural form/);
+  });
+});
+
+describe("a model written for a blueprint row", () => {
+  // Any model body will do; what is under test is the row it points at.
+  const row = blueprintById("wp-g2-add-to-result");
+  const model = {
+    ...changeFromOneDollar,
+    id: "wp-g2-add-to-result-test",
+    modeId: "wordProblems",
+    subskill: row.spec.subskill,
+    family: row.spec.family,
+    structureType: row.spec.structureType,
+    levelRange: [4, 6],
+    standards: structuredClone(row.standards),
+    blueprintId: row.id,
+  };
+  const errorsOf = (extra) => validateModel({ ...model, ...extra }).errors.join("; ");
+
+  it("validates when it agrees with its row", () => {
+    expect(validateModel(model)).toEqual({ ok: true, errors: [] });
+    // A narrower band inside the row's is fine.
+    expect(validateModel({ ...model, levelRange: [5, 6] }).ok).toBe(true);
+  });
+
+  it("is refused for a row that does not exist or is not an item row", () => {
+    expect(errorsOf({ blueprintId: "wp-g2-nope" })).toMatch(/not a blueprint row/);
+    expect(errorsOf({ blueprintId: "facts-add-zero-to5" })).toMatch(/fluency row/);
+    expect(errorsOf({ blueprintId: "" })).toMatch(/blueprintId must be/);
+  });
+
+  it("is refused when its grade, topic, subskill or family is not the row's", () => {
+    expect(errorsOf({ grade: "3" })).toMatch(/is Grade 2, but the model is Grade 3/);
+    expect(errorsOf({ modeId: "money", subskill: "countCoins" })).toMatch(/filed under wordProblems/);
+    expect(errorsOf({ subskill: "compareStories" })).toMatch(/subskill must be the row's \(changeStories\)/);
+    expect(errorsOf({ family: "conceptual" })).toMatch(/family must be the row's \(application\)/);
+  });
+
+  it("copies the row's structureType", () => {
+    expect(errorsOf({ structureType: "joinResultUnknown" })).toMatch(/structureType must be the row's \(addToResultUnknown\)/);
+    expect(errorsOf({ structureType: undefined })).toMatch(/structureType must be the row's/);
+  });
+
+  it("sets a levelRange inside the row's", () => {
+    expect(errorsOf({ levelRange: undefined })).toMatch(/sets levelRange/);
+    expect(errorsOf({ levelRange: [3, 6] })).toMatch(/inside the row's \[4, 6\]/);
+    expect(errorsOf({ levelRange: [4, 7] })).toMatch(/inside the row's \[4, 6\]/);
+  });
+
+  it("carries the row's codes in every framework, no more and no fewer", () => {
+    expect(errorsOf({ standards: { ...row.standards, ccss: ["2.MD.C.8"] } })).toMatch(/standards\.ccss must be the row's codes \(2\.OA\.A\.1\)/);
+    expect(errorsOf({ standards: { ...row.standards, tx: [row.standards.tx[0]] } })).toMatch(/standards\.tx/);
+    expect(errorsOf({ standards: { ...row.standards, ga: [] } })).toMatch(/standards\.ga/);
+    // Order does not matter.
+    expect(validateModel({ ...model, standards: { ...row.standards, tx: [...row.standards.tx].reverse() } }).ok).toBe(true);
+  });
+
+  it("passes its row's id to every item it fills; a model with none passes null", () => {
+    for (const seed of [1, 2, 3]) {
+      const item = fill(model, { seed });
+      expect(item.blueprintId).toBe(row.id);
+      expect(item.structureType).toBe(row.spec.structureType);
+      expect(item.levelRange).toEqual([4, 6]);
+    }
+    expect(fill(changeFromOneDollar, { seed: 1 }).blueprintId).toBeNull();
+  });
+
+  it("leaves every model written before rows existed valid without one", () => {
+    for (const m of [...GRADE2_MONEY_MODELS, ...PILOT_MODELS, ...GRADE5_MODELS]) {
+      expect(m.blueprintId, m.id).toBeUndefined();
+      expect(validateModel(m).ok, m.id).toBe(true);
+    }
   });
 });
 

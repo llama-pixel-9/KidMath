@@ -172,3 +172,15 @@ Sai's K-5 money framework puts purchase-and-change, multi-step budgets, price li
 - **Budget verdicts** ("Does {name} have enough money?") are text choices such as "Yes, $1.55 is left over" / "No, $1.55 short"; the hint lines then avoid every digit of the amount, so they speak in words ("the difference tells how much is extra or how much is missing").
 - **`tens(c)` is everything above the ones** (tens(345) = 340), so use `c % 100` for a cents part and `c % 10` for the ones digit.
 - **Sentence starts.** No slot capitalizes, so never open a sentence with `{object_plural}` or a bare `{n}`; write "Each {object} costs …" or a words slot ("Two friends").
+
+## Models written for a blueprint row (added 2026-10-02)
+
+From the Grade 2 add and subtract lists on, every model is written for one approved blueprint row (`src/blueprints/g2AddsubWp.json`, `src/blueprints/g2AddsubCalc.json`; the rows are also `blueprint_rows` in the database). The row is the contract and the model points back at it:
+
+- **`blueprintId`** is the row's `id` (`"wp-g2-add-to-result"`). `validateModel` then holds the model to the row: the row must be an `item` row of the same grade and topic (`modeId` is the row's `mode_id`), and the model must use the row's `subskill` and `family`.
+- **`structureType`** is copied from the row's `spec.structureType`, never invented, so every item a model fills is tagged the way its row is (figure contracts and coverage read it).
+- **`levelRange`** is required and sits inside the row's `spec.levelRange` (Grade 2 is `[4, 6]`; a model may narrow it).
+- **`standards`** are the row's codes in every framework, exactly: the same lists, no code added or dropped. A row with no Common Core code (a state-only line, `ccss: []`) gives a model with `ccss: []`.
+- The items it fills carry `blueprintId` (`item_bank.blueprint_id`), and `npm run models:load` writes it to `item_models.blueprint_id`, a foreign key: the rows are loaded before the models.
+
+One model per variant the row names (`spec.variants`), at the tier the variant gives in brackets, with the variant's mistakes (`spec.variantMistakes`) where it has its own.

@@ -75,7 +75,14 @@
  * @property {string} modeId        a key of TOPIC_LABELS (src/skills/catalog.js)
  * @property {string} subskill      one of the mode's subskills
  * @property {"application"|"conceptual"|"procedural"} [family]  default application
- * @property {string} [structureType]  bank structure tag; default the model id
+ * @property {string} [blueprintId]  the approved blueprint row the model was
+ *   written for (src/blueprints/, `blueprint_rows.id`). A model for a v2
+ *   skill names one; validateModel then holds it to the row: same grade,
+ *   topic, subskill and family, the row's structureType, a levelRange inside
+ *   the row's, and the row's codes exactly. Its items carry it, and
+ *   loadModels writes it to item_models.blueprint_id.
+ * @property {string} [structureType]  bank structure tag; default the model id.
+ *   A model with a blueprintId copies its row's.
  * @property {Grade} grade
  * @property {Standards} standards
  * @property {Difficulty} difficulty
@@ -91,7 +98,8 @@
  *   ($0.75) for the prompt and choices; default "auto" (see MONEY_STYLES)
  * @property {[number, number]} [levelRange]  the app levels (1-10) the items
  *   serve at, when the grade's default band is too wide: grade 3 items sit
- *   at [6, 7], grade 4 at [7, 9], grade 5 at [9, 10]
+ *   at [6, 7], grade 4 at [7, 9], grade 5 at [9, 10]. Grade 2's default is
+ *   [4, 6]. A model with a blueprintId sets it, inside its row's range.
  * @property {Object<string, NameSlot|ObjectSlot|SettingSlot|MoneySlot|IntSlot|CoinsSlot|ExprSlot>} slots
  * @property {string[]} [constraints]  expressions that must all hold; the
  *   fill re-rolls until they do (a slot may also carry its own)

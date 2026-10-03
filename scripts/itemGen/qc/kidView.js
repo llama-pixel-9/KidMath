@@ -359,6 +359,10 @@ export function describeFigure(q) {
     case "cubeGrid":
       parts.push(`A solid built from unit cubes, ${d.cube?.l} long, ${d.cube?.w} wide and ${d.cube?.h} high (no numbers shown).`);
       break;
+    case "array":
+      // Math Facts times tables draw rows of dots with the fact.
+      parts.push(`An array of dots: ${plural(d.array?.rows ?? 0, "row")} of ${d.array?.cols ?? 0} dots each.`);
+      break;
     case "coordGrid":
       parts.push(`A coordinate grid from 0 to ${d.coord?.max} on both axes with points ${(d.coord?.points || []).map((p) => `${p.label ?? ""} at (${p.x}, ${p.y})`.trim()).join(", ")}.`);
       break;
@@ -405,7 +409,10 @@ export function describeFigure(q) {
       parts.push(`A tray of coins: ${list(d.coins || [])}.`);
       break;
     case "tenFrame":
-      parts.push(`${plural(d.frames ?? 1, "ten frame")} with ${plural(d.filled ?? 0, "red counter")}${d.filledB ? ` and ${plural(d.filledB, "blue counter")}` : ""}.`);
+      // A take-away frame crosses out the last `takeAway` counters (Math
+      // Facts, 2026-10-01). Without this line the blind solver saw "7 red
+      // counters" under "How many are left?" and could not know 3 were gone.
+      parts.push(`${plural(d.frames ?? 1, "ten frame")} with ${plural(d.filled ?? 0, "red counter")}${d.filledB ? ` and ${plural(d.filledB, "blue counter")}` : ""}${d.takeAway ? `; the last ${d.takeAway} of those counters ${d.takeAway === 1 ? "is" : "are"} crossed out with an X` : ""}.`);
       break;
     default:
       break;

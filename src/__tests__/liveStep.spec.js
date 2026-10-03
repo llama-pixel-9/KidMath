@@ -41,6 +41,8 @@ import { corruptKey, disagreement, judgeFacts, modelFlags, passedAll, runPanels,
 import { diffRows, withoutRetired } from "../../scripts/live/readiness.mjs";
 import { retireRunSql, retireV1Sql } from "../../scripts/live/retire.mjs";
 import { unapproveSql } from "../../scripts/live/unapprove.mjs";
+import { buildSeed, seedCellKey, subskillSeedModes } from "../../scripts/lib/seedBank.js";
+import { SEED_ITEMS } from "../itemBank/bundle.js";
 
 /**
  * The live step (scripts/live/, plan C.2): approved item models become
@@ -405,6 +407,23 @@ describe("manifests and the bundle", () => {
     expect(problems).toHaveLength(2);
   });
 
+  it("keys a filled topic's seed cells by subskill too, and no other topic's", () => {
+    expect(subskillSeedModes({ manifests: [] })).toEqual(new Set());
+    const modes = subskillSeedModes({ manifests: [{ topic: "wordProblems" }, { topic: "money" }] });
+    expect(modes).toEqual(new Set(["wordProblems"])); // money is not v2-only; Math Facts has no manifest
+    const item = (subskill, i) => ({ itemId: `wp-${subskill}-${i}`, modeId: "wordProblems", itemFamily: "application", subskill, levelRange: [4, 6], question: { display: { promptText: `Story ${subskill} ${i}` } } });
+    const items = [...Array.from({ length: 10 }, (_, i) => item("changeStories", i)), item("compareStories", 0)];
+    expect(seedCellKey(items[0])).toBe("wordProblems::application::2-3");
+    expect(seedCellKey(items[0], modes)).toBe("wordProblems::application::2-3::changeStories");
+    const flat = buildSeed(items, 8).seed;
+    const keyed = buildSeed(items, 8, { subskillModes: modes }).seed;
+    // One cell shared by two subskills: 8 split between them (every other change story, the compare story).
+    expect(flat.filter((i) => i.subskill === "changeStories")).toHaveLength(5);
+    // A cell per subskill: 8 change stories, and the one compare story.
+    expect(keyed.filter((i) => i.subskill === "changeStories")).toHaveLength(8);
+    expect(keyed.filter((i) => i.subskill === "compareStories")).toHaveLength(1);
+  });
+
   it("adds nothing to the bank while no manifest is committed", () => {
     expect(Array.isArray(MANIFESTS)).toBe(true);
     expect(MODEL_ITEMS).toHaveLength(MANIFESTS.reduce((n, m) => n + m.rows, 0));
@@ -452,6 +471,13 @@ describe("manifests and the bundle", () => {
         const { rows: cov } = rowCoverage({ rows, items });
         const open = cov.flatMap((r) => r.tiers.filter((t) => t.state !== "covered" && t.state !== "deferred" && !waiting.has(`${r.rowId}|${t.tier}`)).map((t) => `${r.rowId} ${t.tier} ${t.state} (${t.count})`));
         expect(open).toEqual([]);
+      });
+
+      it("is in the seed: every cell of its rows (by subskill) has seed rows (rerun npm run bank:seed:build)", () => {
+        const modes = subskillSeedModes();
+        const seeded = new Set(SEED_ITEMS.map((i) => seedCellKey(i, modes)));
+        const missing = [...new Set(items.map((i) => seedCellKey(i, modes)))].filter((k) => !seeded.has(k));
+        expect(missing).toEqual([]);
       });
 
       it("carries no canary and no model beside its fix", () => {

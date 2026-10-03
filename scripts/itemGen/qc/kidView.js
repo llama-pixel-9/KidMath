@@ -313,6 +313,9 @@ export function describeFigure(q) {
     if (line) parts.push(line);
   }
 
+  // A price list or menu under the story (QuestionDisplay's PriceList).
+  if (Array.isArray(d.priceList?.rows) && d.priceList.rows.length) parts.push(priceListText(d.priceList));
+
   // The figure the card draws with the question (figureRegistry).
   const mode = q.mode || q.metadata?.modeId;
   const figure = d.figure || (mode === "areaPerimeter" && areaFigureSpec(q) ? "areaFigure" : null);
@@ -369,6 +372,8 @@ export function describeFigure(q) {
       break;
     case "barModel":
       if (d.whole != null) parts.push(`A bar model: the whole bar is labeled ${d.whole}; one part is labeled ${d.part}, the other part is blank.`);
+      else if (d.a != null && (d.labelA || d.labelB))
+        parts.push(`A comparison bar model: the bar named ${d.labelA || "A"} is labeled ${d.a}; the longer bar named ${d.labelB || "B"} is labeled ${d.a} plus a segment labeled ${d.diff}, and its total is blank.`);
       else if (d.a != null) parts.push(`A comparison bar model: one bar labeled ${d.a}, a longer bar labeled ${d.a} plus a segment labeled ${d.diff}.`);
       break;
     case "numberBond":
@@ -395,6 +400,13 @@ export function describeFigure(q) {
 
   const text = parts.filter(Boolean).join(" ");
   return text || null;
+}
+
+// Every row in one style, as QuestionDisplay's formatListPrice prints it.
+function priceListText(list) {
+  const dollars = list.style === "dollars" || list.rows.some((r) => Number(r.cents) >= 100);
+  const price = (cents) => (dollars ? `$${(Number(cents) / 100).toFixed(2)}` : `${cents}¢`);
+  return `A table${list.title ? ` titled "${list.title}"` : ""}: ${list.rows.map((r) => `${r.item} ${price(r.cents)}`).join("; ")}.`;
 }
 
 // BarChart shows the values only after the answer is judged; before that the

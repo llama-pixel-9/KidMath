@@ -1574,7 +1574,7 @@
   "widget": "coinTray",
   "representationType": "objectSet",
   "template": {
-   "prompt": "{name} buys {object_a} {setting}. How can {name} make {price} with the coins on the tray? Tap the coins to show it."
+   "prompt": "How can {name} make {price} with the coins on the tray? Tap the coins to show it."
   },
   "slots": {
    "name": {
@@ -28028,7 +28028,7 @@
   "format": "number",
   "widget": "numberPad",
   "representationType": "symbolic",
-  "promptVariants": 24,
+  "promptVariants": 15,
   "template": {
    "prompt": "{ask}"
   },
@@ -28145,7 +28145,10 @@
     "GA K-12 2021"
    ],
    "shape": "picture-first or bare item, the textbook drill form (2026-09-28)"
-  }
+  },
+  "constraints": [
+   "pair != 0 && pair != 1 && pair != 4"
+  ]
  },
  {
   "id": "money-g2-bareWhichCoinWorth-easy",
@@ -29267,6 +29270,920 @@
     "GA K-12 2021"
    ],
    "shape": "bare item from the K-5 money framework Sai shared (2026-09-28): equivalent sets, missing addend to a dollar, relational comparison"
+  }
+ },
+ {
+  "id": "money-g2-equivFewestCoinsForPrice-moderate-2",
+  "modeId": "money",
+  "subskill": "coinEquivalence",
+  "family": "conceptual",
+  "structureType": "fewestCoinsCount",
+  "grade": "2",
+  "standards": {
+   "ccss": [
+    "2.MD.C.8"
+   ],
+   "tx": [
+    "2.5A",
+    "2.5B"
+   ],
+   "fl": [
+    "MA.2.M.2.2"
+   ],
+   "va": [
+    "2.NS.4c"
+   ],
+   "ga": [
+    "2.MDR.6.2"
+   ]
+  },
+  "difficulty": "moderate",
+  "format": "number",
+  "widget": "numberPad",
+  "representationType": "verbalContext",
+  "template": {
+   "prompt": "{name} buys {object_a} for {amountMoney} {setting}. {name} pays with quarters, dimes, nickels and pennies, using the fewest coins possible. How many coins does {name} use?"
+  },
+  "slots": {
+   "name": {
+    "kind": "name"
+   },
+   "object": {
+    "kind": "object",
+    "skill": "money",
+    "band": "2-3",
+    "minAppeal": 3,
+    "excludeCategories": [
+     "screens-media",
+     "pets-animals",
+     "measurement-objects",
+     "time-events",
+     "travel-places"
+    ],
+    "exclude": [
+     "arcade-game",
+     "claw-machine",
+     "lost-tooth",
+     "family-photo",
+     "chore",
+     "weekly-allowance",
+     "birthday-money-gift",
+     "field-trip",
+     "pressed-penny",
+     "school-lunch",
+     "train-ticket",
+     "museum-ticket",
+     "worm",
+     "tomato",
+     "ear-of-corn",
+     "postage-stamp",
+     "seedling",
+     "party-invitation",
+     "birthday-candle",
+     "bandage",
+     "flash-card",
+     "photo-print",
+     "valentine-card",
+     "carton-of-milk",
+     "cheese-stick",
+     "waffle",
+     "graham-cracker",
+     "arcade-token",
+     "gemstone",
+     "marker"
+    ],
+    "priceCents": [
+     30,
+     95
+    ]
+   },
+   "setting": {
+    "kind": "setting",
+    "startsWith": "at ",
+    "words": [
+     "store",
+     "shop",
+     "sale",
+     "stand",
+     "market",
+     "fair",
+     "booth",
+     "counter",
+     "cafeteria",
+     "truck",
+     "bakery",
+     "deli",
+     "carnival",
+     "arcade",
+     "boardwalk",
+     "mall",
+     "place",
+     "restaurant",
+     "orchard",
+     "patch",
+     "movies",
+     "ball game"
+    ],
+    "fallback": [
+     "at the school store",
+     "at the fair",
+     "at the dollar store",
+     "at the corner store"
+    ],
+    "of": "object"
+   },
+   "amount": {
+    "kind": "money",
+    "of": "object",
+    "step": 5
+   },
+   "amountMoney": {
+    "kind": "expr",
+    "expr": "amount",
+    "format": "money"
+   },
+   "fewest": {
+    "kind": "expr",
+    "expr": "len(fewestCoins(amount))",
+    "format": "int"
+   },
+   "nQuarters": {
+    "kind": "expr",
+    "expr": "floor(amount / 25)",
+    "format": "int"
+   },
+   "quarterWord": {
+    "kind": "expr",
+    "expr": "nQuarters == 1 ? 'quarter' : 'quarters'",
+    "format": "text"
+   },
+   "quartersPart": {
+    "kind": "expr",
+    "expr": "nQuarters * 25",
+    "format": "money"
+   },
+   "rest": {
+    "kind": "expr",
+    "expr": "amount - nQuarters * 25",
+    "format": "int"
+   },
+   "restMoney": {
+    "kind": "expr",
+    "expr": "rest",
+    "format": "money"
+   },
+   "restCoins": {
+    "kind": "expr",
+    "expr": "fewestCoins(rest)",
+    "format": "coins"
+   },
+   "nRest": {
+    "kind": "expr",
+    "expr": "len(fewestCoins(rest))",
+    "format": "int"
+   },
+   "noQuarters": {
+    "kind": "expr",
+    "expr": "floor(amount / 10) + (amount % 10 == 5 ? 1 : 0)",
+    "format": "int"
+   },
+   "restAdvice": {
+    "kind": "expr",
+    "expr": "rest == 5 ? 'One nickel makes that.' : rest == 10 ? 'One dime makes that.' : rest == 15 ? 'One dime and one nickel make that.' : 'Two dimes make that.'",
+    "format": "text"
+   },
+   "quartersList": {
+    "kind": "expr",
+    "expr": "nQuarters == 1 ? 'the quarter' : 'the quarters'",
+    "format": "text"
+   },
+   "restList": {
+    "kind": "expr",
+    "expr": "rest == 5 ? 'the nickel' : rest == 10 ? 'the dime' : rest == 15 ? 'the dime and the nickel' : 'the dimes'",
+    "format": "text"
+   },
+   "quartersLine": {
+    "kind": "expr",
+    "expr": "nQuarters == 1 ? 'One quarter makes 25¢.' : nQuarters == 2 ? 'Two quarters make 50¢.' : 'Three quarters make 75¢.'",
+    "format": "text"
+   }
+  },
+  "constraints": [
+   "amount >= 30",
+   "amount % 25 != 0",
+   "fewest + 1 != noQuarters"
+  ],
+  "answer": {
+   "expr": "fewest",
+   "type": "int"
+  },
+  "distractors": [
+   {
+    "expr": "amount",
+    "mistake": "gaveCentsNotCoins"
+   },
+   {
+    "expr": "noQuarters",
+    "mistake": "usedNoQuarters"
+   },
+   {
+    "expr": "fewest + 1",
+    "mistake": "countedACoinTwice"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks how many coins, using as few as possible. Start with the coin worth the most, the quarter.",
+   "steps": [
+    "Use quarters first. Count by 25s, but stop before you pass {amountMoney}. {quartersLine}",
+    "You still need {restMoney} more. {restAdvice}",
+    "Count every coin you used: {quartersList}, then {restList}."
+   ],
+   "picture": {
+    "kind": "numberLine",
+    "min": "0",
+    "max": "amount",
+    "mark": "quartersPart",
+    "step": "5"
+   },
+   "example": "auto",
+   "feedback": {
+    "gaveCentsNotCoins": "That is how many cents, not how many coins. Count the coins that make {amountMoney}, starting with quarters.",
+    "usedNoQuarters": "Dimes and nickels alone take more coins. A quarter is worth 25¢, so use quarters first to use fewer coins.",
+    "countedACoinTwice": "That is one coin too many. Touch each coin once: {quartersList}, then {restList}."
+   },
+   "solution": {
+    "steps": [
+     "Use {nQuarters} {quarterWord} for {quartersPart}.",
+     "Add {restCoins} for the last {restMoney}.",
+     "{nQuarters} + {nRest} = {fewest} coins."
+    ],
+    "answer": "fewest"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS 2.MD.C.8",
+    "TEKS 2.5A-B",
+    "FL B.E.S.T. MA.2.M.2.2",
+    "VA SOL 2023",
+    "GA K-12 2021"
+   ]
+  }
+ },
+ {
+  "id": "money-g2-reasonWhoSpendsMore-hard-2",
+  "modeId": "money",
+  "subskill": "moneyReasoning",
+  "family": "application",
+  "structureType": "compareTwoShoppersTotals",
+  "grade": "2",
+  "standards": {
+   "ccss": [
+    "2.MD.C.8"
+   ],
+   "tx": [
+    "2.5A",
+    "2.5B"
+   ],
+   "fl": [
+    "MA.2.M.2.2"
+   ],
+   "va": [
+    "2.CE.1c"
+   ],
+   "ga": [
+    "2.MDR.6.2"
+   ]
+  },
+  "difficulty": "hard",
+  "format": "choice",
+  "widget": null,
+  "representationType": "verbalContext",
+  "template": {
+   "prompt": "{name1} buys {object1_a} for {price1} and {object2_a} for {price2} {setting}. {name2} buys {object3_a} for {price3}. Who spends more money?"
+  },
+  "slots": {
+   "name1": {
+    "kind": "name"
+   },
+   "name2": {
+    "kind": "name"
+   },
+   "object1": {
+    "kind": "object",
+    "skill": "money",
+    "band": "2-3",
+    "minAppeal": 2,
+    "excludeCategories": [
+     "screens-media"
+    ],
+    "exclude": [
+     "arcade-game",
+     "claw-machine",
+     "lost-tooth",
+     "family-photo",
+     "chore",
+     "weekly-allowance",
+     "birthday-money-gift",
+     "field-trip",
+     "pressed-penny",
+     "school-lunch",
+     "train-ticket",
+     "museum-ticket",
+     "worm",
+     "goldfish",
+     "can-of-cat-food",
+     "postage-stamp",
+     "flash-card",
+     "bandage",
+     "birthday-candle",
+     "party-invitation",
+     "prize-box-toy",
+     "graham-cracker",
+     "tomato",
+     "milk-carton",
+     "clementine",
+     "ear-of-corn",
+     "stick-of-butter",
+     "measuring-cup",
+     "cup-of-animal-feed",
+     "seedling",
+     "flower-pot",
+     "cone",
+     "shoelace",
+     "ribbon",
+     "roll-of-tape",
+     "dry-erase-marker",
+     "toothbrush",
+     "loaf-of-bread",
+     "carton-of-eggs",
+     "jug-of-milk",
+     "wheel",
+     "medal",
+     "chick",
+     "guppy",
+     "carousel-horse",
+     "bumper-car",
+     "ferris-wheel-car",
+     "picture-frame",
+     "roll-of-wrapping-paper",
+     "seed-packet",
+     "trading-pin",
+     "carnival-game",
+     "box-of-cereal",
+     "cheeseburger",
+     "arcade-token",
+     "carnival-ticket",
+     "ride-ticket",
+     "dog-treat",
+     "cup-of-lemonade",
+     "vending-machine-snack"
+    ],
+    "priceCents": [
+     50,
+     95
+    ]
+   },
+   "object2": {
+    "kind": "object",
+    "skill": "money",
+    "band": "2-3",
+    "minAppeal": 2,
+    "excludeCategories": [
+     "screens-media"
+    ],
+    "exclude": [
+     "arcade-game",
+     "claw-machine",
+     "lost-tooth",
+     "family-photo",
+     "chore",
+     "weekly-allowance",
+     "birthday-money-gift",
+     "field-trip",
+     "pressed-penny",
+     "school-lunch",
+     "train-ticket",
+     "museum-ticket",
+     "worm",
+     "goldfish",
+     "can-of-cat-food",
+     "postage-stamp",
+     "flash-card",
+     "bandage",
+     "birthday-candle",
+     "party-invitation",
+     "prize-box-toy",
+     "graham-cracker",
+     "tomato",
+     "milk-carton",
+     "clementine",
+     "ear-of-corn",
+     "stick-of-butter",
+     "measuring-cup",
+     "cup-of-animal-feed",
+     "seedling",
+     "flower-pot",
+     "cone",
+     "shoelace",
+     "ribbon",
+     "roll-of-tape",
+     "dry-erase-marker",
+     "toothbrush",
+     "loaf-of-bread",
+     "carton-of-eggs",
+     "jug-of-milk",
+     "wheel",
+     "medal",
+     "chick",
+     "guppy",
+     "carousel-horse",
+     "bumper-car",
+     "ferris-wheel-car",
+     "picture-frame",
+     "roll-of-wrapping-paper",
+     "seed-packet",
+     "trading-pin",
+     "carnival-game",
+     "box-of-cereal",
+     "cheeseburger",
+     "arcade-token",
+     "carnival-ticket",
+     "ride-ticket",
+     "dog-treat",
+     "cup-of-lemonade",
+     "vending-machine-snack"
+    ],
+    "priceCents": [
+     50,
+     95
+    ]
+   },
+   "object3": {
+    "kind": "object",
+    "skill": "money",
+    "band": "2-3",
+    "minAppeal": 2,
+    "excludeCategories": [
+     "screens-media"
+    ],
+    "exclude": [
+     "arcade-game",
+     "claw-machine",
+     "lost-tooth",
+     "family-photo",
+     "chore",
+     "weekly-allowance",
+     "birthday-money-gift",
+     "field-trip",
+     "pressed-penny",
+     "school-lunch",
+     "train-ticket",
+     "museum-ticket",
+     "worm",
+     "goldfish",
+     "can-of-cat-food",
+     "postage-stamp",
+     "flash-card",
+     "bandage",
+     "birthday-candle",
+     "party-invitation",
+     "prize-box-toy",
+     "graham-cracker",
+     "tomato",
+     "milk-carton",
+     "clementine",
+     "ear-of-corn",
+     "stick-of-butter",
+     "measuring-cup",
+     "cup-of-animal-feed",
+     "seedling",
+     "flower-pot",
+     "cone",
+     "shoelace",
+     "ribbon",
+     "roll-of-tape",
+     "dry-erase-marker",
+     "toothbrush",
+     "loaf-of-bread",
+     "carton-of-eggs",
+     "jug-of-milk",
+     "wheel",
+     "medal",
+     "chick",
+     "guppy",
+     "carousel-horse",
+     "bumper-car",
+     "ferris-wheel-car",
+     "picture-frame",
+     "roll-of-wrapping-paper",
+     "seed-packet",
+     "trading-pin",
+     "carnival-game",
+     "box-of-cereal",
+     "cheeseburger",
+     "arcade-token",
+     "carnival-ticket",
+     "ride-ticket",
+     "dog-treat",
+     "cup-of-lemonade",
+     "vending-machine-snack"
+    ],
+    "priceCents": [
+     105,
+     185
+    ]
+   },
+   "setting": {
+    "kind": "setting",
+    "startsWith": "at ",
+    "words": [
+     "store",
+     "shop",
+     "sale",
+     "stand",
+     "market",
+     "fair",
+     "booth",
+     "counter",
+     "cafeteria",
+     "truck",
+     "bakery",
+     "deli",
+     "carnival",
+     "arcade",
+     "boardwalk",
+     "mall",
+     "place",
+     "restaurant",
+     "orchard",
+     "patch",
+     "movies",
+     "ball game"
+    ],
+    "fallback": [
+     "at the school store",
+     "at the fair",
+     "at the dollar store",
+     "at a yard sale",
+     "at the craft fair"
+    ],
+    "of": "object1"
+   },
+   "price1": {
+    "kind": "money",
+    "of": "object1",
+    "step": 5
+   },
+   "price2": {
+    "kind": "money",
+    "of": "object2",
+    "step": 5
+   },
+   "price3": {
+    "kind": "money",
+    "of": "object3",
+    "step": 5
+   },
+   "total1": {
+    "kind": "expr",
+    "expr": "price1 + price2",
+    "format": "money"
+   },
+   "bigger": {
+    "kind": "expr",
+    "expr": "max(price1 + price2, price3)",
+    "format": "money"
+   },
+   "smaller": {
+    "kind": "expr",
+    "expr": "min(price1 + price2, price3)",
+    "format": "money"
+   },
+   "winner": {
+    "kind": "expr",
+    "expr": "price1 + price2 > price3 ? name1 : name2",
+    "format": "text"
+   },
+   "otherStart": {
+    "kind": "expr",
+    "expr": "price1 + price2 > price3 ? 'One price is bigger, but two prices together can add up to more.' : 'Two things do not always cost more than one thing.'",
+    "format": "text"
+   }
+  },
+  "constraints": [
+   "price1 != price2",
+   "price1 + price2 != price3",
+   "price1 + price2 >= 100",
+   "object1.plural != 'dice'",
+   "object2.plural != 'dice'",
+   "object3.plural != 'dice'"
+  ],
+  "answer": {
+   "expr": "price1 + price2 > price3 ? name1 : name2",
+   "type": "text"
+  },
+  "distractors": [
+   {
+    "expr": "price1 + price2 > price3 ? name2 : name1",
+    "mistake": "pickedTheOtherKid"
+   },
+   {
+    "expr": "'They spend the same amount'",
+    "mistake": "calledThemEqual"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks who spends more money in all. One kid buys two things, so find that kid's total first.",
+   "steps": [
+    "Add {price1} and {price2} to find the total for the two things.",
+    "Compare that total with {price3}.",
+    "The kid with the bigger total spends more money."
+   ],
+   "picture": {
+    "kind": "barModel",
+    "parts": [
+     "price1",
+     "price2"
+    ]
+   },
+   "example": "auto",
+   "feedback": {
+    "pickedTheOtherKid": "{otherStart} Add {price1} and {price2}, then compare that total with {price3}.",
+    "calledThemEqual": "The two totals are not the same. Add {price1} and {price2}, then compare that total with {price3}."
+   },
+   "solution": {
+    "steps": [
+     "{name1} spends {price1} + {price2} = {total1}.",
+     "{name2} spends {price3}.",
+     "{bigger} is more than {smaller}, so {winner} spends more money."
+    ],
+    "answer": "price1 + price2 > price3 ? name1 : name2"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS 2.MD.C.8",
+    "TEKS 2.5A-B",
+    "FL B.E.S.T. MA.2.M.2.2",
+    "VA SOL 2023",
+    "GA K-12 2021"
+   ]
+  }
+ },
+ {
+  "id": "money-g2-equivBuildOverDollar-hard-2",
+  "modeId": "money",
+  "subskill": "coinEquivalence",
+  "family": "conceptual",
+  "structureType": "buildAmountOverDollar",
+  "grade": "2",
+  "standards": {
+   "ccss": [
+    "2.MD.C.8"
+   ],
+   "tx": [
+    "2.5A",
+    "2.5B"
+   ],
+   "fl": [
+    "MA.2.M.2.2"
+   ],
+   "va": [
+    "2.NS.4c"
+   ],
+   "ga": [
+    "2.MDR.6.2"
+   ]
+  },
+  "difficulty": "hard",
+  "format": "number",
+  "widget": "coinTray",
+  "representationType": "objectSet",
+  "template": {
+   "prompt": "How can {name} make {price} with the coins on the tray? Tap the coins to show it."
+  },
+  "slots": {
+   "name": {
+    "kind": "name"
+   },
+   "object": {
+    "kind": "object",
+    "skill": "money",
+    "band": "2-3",
+    "minAppeal": 2,
+    "excludeCategories": [
+     "screens-media"
+    ],
+    "exclude": [
+     "arcade-game",
+     "claw-machine",
+     "lost-tooth",
+     "family-photo",
+     "chore",
+     "weekly-allowance",
+     "birthday-money-gift",
+     "field-trip",
+     "pressed-penny",
+     "school-lunch",
+     "train-ticket",
+     "museum-ticket",
+     "worm",
+     "cone",
+     "medal",
+     "tomato",
+     "ear-of-corn",
+     "stick-of-butter",
+     "milk-carton",
+     "carton-of-milk",
+     "can-of-cat-food",
+     "measuring-cup",
+     "postage-stamp",
+     "seedling",
+     "flower-pot",
+     "loaf-of-bread",
+     "carton-of-eggs",
+     "toothbrush",
+     "bandage",
+     "photo-print",
+     "graham-cracker",
+     "party-invitation",
+     "birthday-candle",
+     "valentine-card",
+     "flash-card",
+     "cup-of-animal-feed",
+     "microwave-popcorn-bag",
+     "arcade-token",
+     "banana",
+     "clementine",
+     "waffle",
+     "corn-dog",
+     "pair-of-scissors",
+     "dry-erase-marker",
+     "ruler"
+    ],
+    "priceCents": [
+     105,
+     175
+    ]
+   },
+   "setting": {
+    "kind": "setting",
+    "of": "object",
+    "startsWith": "at ",
+    "words": [
+     "store",
+     "shop",
+     "sale",
+     "stand",
+     "market",
+     "fair",
+     "booth",
+     "counter",
+     "cafeteria",
+     "truck",
+     "bakery",
+     "deli",
+     "carnival",
+     "boardwalk",
+     "mall",
+     "place",
+     "restaurant",
+     "orchard",
+     "patch",
+     "movies",
+     "ball game"
+    ],
+    "fallback": [
+     "at the store",
+     "at the school store",
+     "at the dollar store"
+    ]
+   },
+   "price": {
+    "kind": "money",
+    "of": "object",
+    "step": 5
+   },
+   "extras": {
+    "kind": "coins",
+    "count": [
+     1,
+     2
+    ],
+    "kinds": [
+     "quarter",
+     "dime",
+     "nickel",
+     "penny"
+    ]
+   },
+   "tray": {
+    "kind": "expr",
+    "expr": "concat(fewestCoins(price), extras)",
+    "format": "coins"
+   },
+   "nQ": {
+    "kind": "expr",
+    "expr": "floor(price / 25)",
+    "format": "int"
+   },
+   "nQWord": {
+    "kind": "expr",
+    "expr": "nQ == 4 ? 'four' : nQ == 5 ? 'five' : nQ == 6 ? 'six' : 'seven'",
+    "format": "text"
+   },
+   "nQWordCap": {
+    "kind": "expr",
+    "expr": "nQ == 4 ? 'Four' : nQ == 5 ? 'Five' : nQ == 6 ? 'Six' : 'Seven'",
+    "format": "text"
+   },
+   "qValue": {
+    "kind": "expr",
+    "expr": "floor(price / 25) * 25",
+    "format": "money"
+   },
+   "restCoins": {
+    "kind": "expr",
+    "expr": "fewestCoins(price % 25)",
+    "format": "coins"
+   },
+   "howMany": {
+    "kind": "expr",
+    "expr": "len(fewestCoins(price))",
+    "format": "int"
+   },
+   "c100": {
+    "kind": "money",
+    "of": 100
+   }
+  },
+  "constraints": [
+   "price % 25 != 0",
+   "len(tray) <= 8",
+   "object.plural != 'dice'"
+  ],
+  "display": {
+   "coins": "tray",
+   "coinMode": "'build'"
+  },
+  "answer": {
+   "expr": "price",
+   "type": "int"
+  },
+  "distractors": [
+   {
+    "expr": "price - 100",
+    "mistake": "droppedTheDollar"
+   },
+   {
+    "expr": "price - 25",
+    "mistake": "skippedACoin"
+   },
+   {
+    "expr": "len(tray)",
+    "mistake": "countedCoinsNotValue"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks {name} to make the price with coins from the tray. Start with quarters, the coin worth the most.",
+   "steps": [
+    "Four quarters make {c100}. Count by 25s: 25, 50, 75, 100, and keep going past a dollar.",
+    "Tap {nQWord} quarters first. Together they make {qValue}.",
+    "Then count on from {qValue} with dimes, then nickels, then pennies, until the tray shows the price."
+   ],
+   "picture": {
+    "kind": "numberLine",
+    "min": "qValue - 25",
+    "max": "price",
+    "mark": "qValue"
+   },
+   "example": "auto",
+   "feedback": {
+    "droppedTheDollar": "The price is more than one dollar. Four quarters make {c100}, and the tray still needs more coins after that.",
+    "skippedACoin": "The total is one quarter short. Count the quarters again by 25s, then add the smaller coins.",
+    "countedCoinsNotValue": "That is how many coins are on the tray, not what they are worth. Tap coins until their value matches the price."
+   },
+   "solution": {
+    "steps": [
+     "{nQWordCap} quarters make {qValue}.",
+     "{qValue} and {restCoins} more makes {price}.",
+     "That is {howMany} coins that make {price}."
+    ],
+    "answer": "price"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS 2.MD.C.8",
+    "TEKS 2.5A-B",
+    "FL B.E.S.T. MA.2.M.2.2",
+    "VA SOL 2023",
+    "GA K-12 2021"
+   ]
   }
  }
 ]

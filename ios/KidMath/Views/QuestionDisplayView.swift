@@ -210,7 +210,50 @@ struct QuestionDisplayView: View {
                     .foregroundStyle(theme.textPrimary)
                     .multilineTextAlignment(.center)
             }
+            priceList
         }
+    }
+
+    // MARK: - 3a. Price list under a story (mirror of PriceList in
+    // QuestionDisplay.jsx): `display.priceList = {title?, style?, rows:
+    // [{item, cents}]}`. Every row in one style: dollars when any price
+    // reaches a dollar or the list says so, else cents. Before this, the
+    // iPhone drew the story without its list and the question could not be
+    // answered.
+
+    @ViewBuilder
+    private var priceList: some View {
+        if let list = display["priceList"] as? [String: Any],
+           let rows = list["rows"] as? [[String: Any]], !rows.isEmpty {
+            let dollars = list["style"] as? String == "dollars"
+                || rows.contains { (($0["cents"] as? NSNumber)?.doubleValue ?? 0) >= 100 }
+            VStack(spacing: 4) {
+                if let title = list["title"] as? String, !title.isEmpty {
+                    caption(title)
+                }
+                Grid(alignment: .leading, horizontalSpacing: 24, verticalSpacing: 2) {
+                    ForEach(Array(rows.enumerated()), id: \.offset) { _, row in
+                        GridRow {
+                            Text(row["item"].map(AnswerFormatting.text) ?? "")
+                            Text(Self.listPrice(row["cents"], dollars: dollars))
+                                .monospacedDigit()
+                        }
+                    }
+                }
+                .font(.system(size: 20, weight: .heavy, design: .rounded))
+                .foregroundStyle(theme.textPrimary)
+            }
+            .padding(.top, 4)
+        }
+    }
+
+    /// "$1.25" or "85¢", as formatListPrice in QuestionDisplay.jsx.
+    static func listPrice(_ value: Any?, dollars: Bool) -> String {
+        guard let cents = (value as? NSNumber)?.doubleValue ?? (value as? String).flatMap({ Double($0) }) else {
+            return value.map(AnswerFormatting.text) ?? ""
+        }
+        if dollars || cents >= 100 { return String(format: "$%.2f", cents / 100) }
+        return "\(Int(cents.rounded()))¢"
     }
 
     static func sentences(of text: String) -> [String] {

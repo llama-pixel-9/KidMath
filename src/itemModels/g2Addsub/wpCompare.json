@@ -2224,5 +2224,353 @@
         "GA K-12 2021 2.NR.2.3, 2.MDR.5.5"
       ]
     }
+  },
+  {
+    "id": "wp-g2-compare-difference-fewer-2",
+    "blueprintId": "wp-g2-compare-difference-fewer",
+    "modeId": "wordProblems",
+    "subskill": "compareStories",
+    "family": "application",
+    "structureType": "compareDifferenceFewer",
+    "grade": "2",
+    "standards": {
+      "ccss": [
+        "2.OA.A.1"
+      ],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [
+        "MA.2.AR.1.1"
+      ],
+      "va": [
+        "2.CE.1c"
+      ],
+      "ga": [
+        "2.NR.2.3"
+      ]
+    },
+    "difficulty": "moderate",
+    "levelRange": [
+      4,
+      6
+    ],
+    "format": "number",
+    "widget": null,
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name1} has {big} {object_plural}. {name2} has {small} {object_plural}. How many fewer {object_plural} does {name2} have than {name1}?"
+    },
+    "slots": {
+      "name1": {
+        "kind": "name"
+      },
+      "name2": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "addition",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "school-art"
+        ]
+      },
+      "small": {
+        "kind": "int",
+        "min": 11,
+        "max": 94
+      },
+      "diff": {
+        "kind": "int",
+        "min": 5,
+        "max": 49
+      },
+      "cap": {
+        "kind": "expr",
+        "expr": "object.count_one_kid ? sum(drop(object.count_one_kid, 1)) : 0",
+        "format": "int"
+      },
+      "big": {
+        "kind": "expr",
+        "expr": "small + diff",
+        "format": "int"
+      },
+      "tensBig": {
+        "kind": "expr",
+        "expr": "tens(small + diff)",
+        "format": "int"
+      },
+      "nextTenS": {
+        "kind": "expr",
+        "expr": "nextTen(small)",
+        "format": "int"
+      },
+      "hop1": {
+        "kind": "expr",
+        "expr": "nextTen(small) - small",
+        "format": "int"
+      },
+      "hop2": {
+        "kind": "expr",
+        "expr": "small + diff - nextTen(small)",
+        "format": "int"
+      },
+      "onesBig": {
+        "kind": "expr",
+        "expr": "ones(small + diff)",
+        "format": "int"
+      },
+      "onesSmall": {
+        "kind": "expr",
+        "expr": "ones(small)",
+        "format": "int"
+      },
+      "howHop": {
+        "kind": "expr",
+        "expr": "small + diff - nextTen(small) >= 10 ? (ones(small + diff) > 0 ? ', tens first and then ones' : ' by tens') : ' by ones'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "(object.id == 'marble' || object.id == 'bead' || object.id == 'button' || object.id == 'pom-pom' || object.id == 'loom-band' || object.id == 'crayon' || object.id == 'building-brick' || object.id == 'toy-car' || object.id == 'magnetic-tile' || object.id == 'trading-card' || object.id == 'sticker' || object.id == 'snap-cube' || object.id == 'wooden-block' || object.id == 'train-track-piece')",
+      "small + diff <= 99",
+      "small + diff <= cap",
+      "ones(small) > 0",
+      "nextTen(small) < small + diff",
+      "diff != small",
+      "diff != nextTen(small)",
+      "ones(small + diff) >= ones(small) || (diff != ones(small) && diff != ones(small + diff) && diff + 2 * (ones(small) - ones(small + diff)) != small)",
+      "ones(small + diff) < ones(small) || diff + 10 != small"
+    ],
+    "operation": {
+      "a": "big",
+      "b": "small",
+      "op": "-"
+    },
+    "answer": {
+      "expr": "big - small",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "big + small",
+        "mistake": "addedInsteadOfSubtracted"
+      },
+      {
+        "expr": "small",
+        "mistake": "answeredWithAGiven"
+      },
+      {
+        "expr": "tens(big) - tens(small) + ones(small) - ones(big)",
+        "mistake": "smallerFromLarger",
+        "when": "ones(big) < ones(small)",
+        "otherwise": {
+          "expr": "big - small + 10",
+          "mistake": "offByTen"
+        }
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many fewer {object_plural} {name2} has than {name1}. Find how far apart {small} and {big} are.",
+      "steps": [
+        "Think: {small} plus what number makes {big}.",
+        "Count up from {small} to {nextTenS}.",
+        "Then count up from {nextTenS} to {big}{howHop}. Add up the jumps."
+      ],
+      "picture": {
+        "kind": "numberLine",
+        "min": "floorTen(small)",
+        "max": "nextTen(big)",
+        "mark": "small",
+        "step": 10
+      },
+      "example": "auto",
+      "feedback": {
+        "addedInsteadOfSubtracted": "That adds the two amounts together. \"How many fewer\" asks how far apart {small} and {big} are, so count up from {small} to {big}.",
+        "answeredWithAGiven": "That is how many {object_plural} {name2} has. The question asks how many fewer {name2} has than {name1}.",
+        "offByTen": "That is one ten too many. Count up from {small} to {big} again and check how many tens you jump.",
+        "smallerFromLarger": "Look at the ones. It is {onesBig} take away {onesSmall}, not {onesSmall} take away {onesBig}. Trade one ten for ten ones first, or count up from {small} to {big}."
+      },
+      "solution": {
+        "steps": [
+          "From {small} up to {nextTenS} is {hop1}.",
+          "From {nextTenS} up to {big} is {hop2}.",
+          "{hop1} + {hop2} = {diff}. {name2} has {diff} fewer {object_plural} than {name1}."
+        ],
+        "answer": "big - small"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.OA.A.1",
+        "CCSS Table 1 (OA Progressions K-5)",
+        "TEKS 2.4C, 2.7C",
+        "FL B.E.S.T. MA.2.AR.1.1",
+        "VA SOL 2023 2.CE.1c",
+        "GA K-12 2021 2.NR.2.3"
+      ]
+    }
+  },
+  {
+    "id": "wp-g2-tape-compare-bigger-fewer-2",
+    "blueprintId": "wp-g2-tape-compare-bigger-fewer",
+    "modeId": "wordProblems",
+    "subskill": "compareStories",
+    "family": "application",
+    "structureType": "compareBiggerFewer",
+    "grade": "2",
+    "standards": {
+      "ccss": [
+        "2.OA.A.1"
+      ],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [
+        "MA.2.AR.1.1"
+      ],
+      "va": [
+        "2.CE.1c"
+      ],
+      "ga": [
+        "2.NR.2.3"
+      ]
+    },
+    "difficulty": "hard",
+    "levelRange": [
+      4,
+      6
+    ],
+    "format": "number",
+    "widget": "barModel",
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name1} has {small} {object_plural}. {name1} has {diff} fewer {object_plural} than {name2}. How many {object_plural} does {name2} have?"
+    },
+    "slots": {
+      "name1": {
+        "kind": "name"
+      },
+      "name2": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "addition",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "school-art"
+        ]
+      },
+      "small": {
+        "kind": "int",
+        "min": 11,
+        "max": 69
+      },
+      "diff": {
+        "kind": "int",
+        "min": 5,
+        "max": 29
+      },
+      "cap": {
+        "kind": "expr",
+        "expr": "object.count_one_kid ? sum(drop(object.count_one_kid, 1)) : 0",
+        "format": "int"
+      },
+      "big": {
+        "kind": "expr",
+        "expr": "small + diff",
+        "format": "int"
+      },
+      "countStep": {
+        "kind": "expr",
+        "expr": "ones(small) + ones(diff) >= 10 ? 'Hop ' + (nextTen(small) - small) + ' to get to ' + nextTen(small) + '. Then count on the rest of the ' + diff + '.' : ones(diff) == 0 ? 'Count on ' + diff + ' by tens.' : diff >= 10 ? 'Count on ' + tens(diff) + ' by tens. Then count on ' + ones(diff) + ' more.' : 'Count on ' + diff + ' by ones.'",
+        "format": "text"
+      },
+      "solWork": {
+        "kind": "expr",
+        "expr": "ones(small) + ones(diff) >= 10 ? small + ' + ' + (nextTen(small) - small) + ' = ' + nextTen(small) + '. ' + diff + ' is ' + (nextTen(small) - small) + ' and ' + (small + diff - nextTen(small)) + ', so ' + nextTen(small) + ' + ' + (small + diff - nextTen(small)) + ' = ' + (small + diff) + '.' : diff >= 10 && ones(diff) > 0 ? small + ' + ' + tens(diff) + ' = ' + (small + tens(diff)) + '. Then ' + (small + tens(diff)) + ' + ' + ones(diff) + ' = ' + (small + diff) + '.' : small + ' + ' + diff + ' = ' + (small + diff) + '.'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "(object.id == 'marble' || object.id == 'bead' || object.id == 'button' || object.id == 'pom-pom' || object.id == 'loom-band' || object.id == 'crayon' || object.id == 'building-brick' || object.id == 'toy-car' || object.id == 'magnetic-tile' || object.id == 'trading-card' || object.id == 'sticker' || object.id == 'snap-cube' || object.id == 'wooden-block' || object.id == 'train-track-piece')",
+      "small + diff <= cap",
+      "small + diff != nextTen(small)",
+      "small > diff",
+      "ones(small) + ones(diff) >= 10 || (ones(small) > 0 && ones(diff) > 0)"
+    ],
+    "operation": {
+      "a": "small",
+      "b": "diff",
+      "op": "+"
+    },
+    "display": {
+      "type": "'barCompare'",
+      "a": "small",
+      "diff": "diff",
+      "labelA": "name1",
+      "labelB": "name2"
+    },
+    "answer": {
+      "expr": "small + diff",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "small - diff",
+        "mistake": "keywordTrap"
+      },
+      {
+        "expr": "small",
+        "mistake": "answeredWithAGiven"
+      },
+      {
+        "expr": "small + diff - 10",
+        "mistake": "forgotToCarry",
+        "when": "ones(small) + ones(diff) >= 10"
+      }
+    ],
+    "hint": {
+      "nudge": "{name2}'s bar is the same {small} as {name1}'s bar and {diff} more.",
+      "steps": [
+        "{name1} has fewer, so {name2} has more. {name2}'s bar is the longer bar.",
+        "{name2}'s bar is {small} and {diff} put together. Add {small} + {diff}.",
+        "Start at {small}. {countStep}"
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "keywordTrap": "The word \"fewer\" tells who has fewer: {name1}. {name2}'s bar is longer, so add {diff} to {small}.",
+        "answeredWithAGiven": "That is {name1}'s bar, the {object_plural} {name1} has. {name2}'s bar is {diff} more than that.",
+        "forgotToCarry": "The ones add up to ten or more. Make a new ten and add it to the tens before you finish."
+      },
+      "solution": {
+        "steps": [
+          "{solWork}",
+          "{name2}'s bar is {big}. {name2} has {big} {object_plural}."
+        ],
+        "answer": "small + diff"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.OA.A.1",
+        "CCSS Table 1 (OA Progressions K-5)",
+        "TEKS 2.4C, 2.7C",
+        "FL B.E.S.T. MA.2.AR.1.1",
+        "VA SOL 2023 2.CE.1c",
+        "GA K-12 2021 2.NR.2.3"
+      ]
+    }
   }
 ]

@@ -10,6 +10,12 @@
  * its session would fall to the template generator. Computation drills
  * build their own questions, so they never gap.
  *
+ * The same question is asked of this build's bundle (withBundle): the seed
+ * is what signed-out and offline kids play, so a topic whose rows are in
+ * the database but whose manifest and seed are not deployed yet is not
+ * ready either. Flipped then, signed-in kids would get the rows and every
+ * other kid the generator: the bundle and the database would disagree.
+ *
  * Pure (catalog data and the rows passed in): no network, no storage.
  * liveCoverage.skillServing counts with the same matcher.
  */
@@ -44,4 +50,20 @@ export function topicReadiness(modeId, items, { skills = playSkills() } = {}) {
   else if (gaps.length) reason = `${gaps.length} of ${perSkill.length} skills have nothing to serve: ${gaps.join(", ")}`;
   else reason = `${mine.length} approved version-2 rows; ${perSkill.length ? `every skill serves (${perSkill.length})` : "no bank skills"}`;
   return { modeId, rows: mine.length, skills: perSkill, gaps, ready: mine.length > 0 && gaps.length === 0, reason };
+}
+
+/**
+ * A database readiness result held to this build's bundle as well
+ * (`bundleItems`: the seed the app ships, src/itemBank/bundle.js): ready
+ * only when the bundle also has approved version-2 rows for every bank
+ * skill of the topic. Adds `bundle: { rows, gaps, ready }`.
+ */
+export function withBundle(result, bundleItems, { skills } = {}) {
+  const b = topicReadiness(result.modeId, bundleItems, skills ? { skills } : undefined);
+  const bundle = { rows: b.rows, gaps: b.gaps, ready: b.ready };
+  if (!result.ready || b.ready) return { ...result, bundle };
+  const why = !b.rows
+    ? "this build's bundle has no approved version-2 rows for the topic (deploy its manifest and seed first)"
+    : `this build's bundle has nothing to serve for ${b.gaps.length} skills: ${b.gaps.join(", ")} (deploy its manifest and seed first)`;
+  return { ...result, ready: false, bundle, reason: `${result.reason}; but ${why}` };
 }

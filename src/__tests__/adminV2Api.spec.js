@@ -24,7 +24,7 @@ vi.mock("../itemBank/cloudLoader.js", () => ({
 
 import { listItemModels, setModelReview, saveModelSpec, MODEL_REVIEW_STATUSES } from "../admin/itemModelsApi.js";
 import { listApprovedV2Rows, listVersionSwitch, readTopicReadiness, setLiveVersion, LIVE_VERSIONS } from "../admin/versionSwitchApi.js";
-import { isBankSkill, topicReadiness } from "../itemBank/v2/topicReadiness.js";
+import { isBankSkill, topicReadiness, withBundle } from "../itemBank/v2/topicReadiness.js";
 import { factBankItems } from "../facts/factItems.js";
 import { calcBankItems } from "../multiDigit/calcItems.js";
 import { playSkillById } from "../skills/play.js";
@@ -362,6 +362,32 @@ describe("v2 readiness (the switch panel's line)", () => {
     const result = await readTopicReadiness("multiDigit");
     expect(result).toMatchObject({ rows: calc.length, ready: false, unreadable: 1 });
     expect(result.reason).toMatch(/1 rows the app cannot read$/);
+  });
+
+  it("keeps v2 off until this build's bundle serves every skill too", async () => {
+    const pages = (chain) => {
+      chain.range.mockResolvedValueOnce({ data: facts.slice(0, 1000).map((i) => toRow(i)), error: null });
+      chain.range.mockResolvedValueOnce({ data: facts.slice(1000).map((i) => toRow(i)), error: null });
+    };
+    // Math Facts: rows in the database and in the shipped seed.
+    let chain = installClient();
+    pages(chain);
+    expect(await readTopicReadiness("mathFacts")).toMatchObject({ ready: true, bundle: { ready: true, gaps: [] } });
+    // The same rows in the database, a bundle without them: the manifest and seed are not deployed yet.
+    chain = installClient();
+    pages(chain);
+    const notDeployed = await readTopicReadiness("mathFacts", { bundleItems: [] });
+    expect(notDeployed).toMatchObject({ rows: facts.length, ready: false, bundle: { rows: 0, ready: false } });
+    expect(notDeployed.reason).toMatch(/bundle has no approved version-2 rows/);
+    // A bundle that serves some skills only names the others.
+    const db = topicReadiness("mathFacts", facts);
+    const oneSubskill = facts.filter((i) => i.subskill === facts[0].subskill);
+    const partial = withBundle(db, oneSubskill);
+    expect(partial.ready).toBe(false);
+    expect(partial.bundle.gaps.length).toBeGreaterThan(0);
+    expect(partial.reason).toMatch(/bundle has nothing to serve for \d+ skills/);
+    // A topic not ready in the database keeps its own reason.
+    expect(withBundle(topicReadiness("wordProblems", []), [])).toMatchObject({ ready: false, reason: "no approved version-2 rows" });
   });
 
   it("throws when a page fails, so the panel can say why and keep v2 off", async () => {

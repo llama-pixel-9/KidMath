@@ -1,7 +1,8 @@
 import { supabase } from "../supabaseClient.js";
 import { refreshBankFromCloud } from "../itemBank/cloudLoader.js";
 import { normalizeBankRow } from "../itemBank/normalize.js";
-import { topicReadiness } from "../itemBank/v2/topicReadiness.js";
+import { SEED_ITEMS } from "../itemBank/bundle.js";
+import { topicReadiness, withBundle } from "../itemBank/v2/topicReadiness.js";
 
 /**
  * Admin side of the per-skill version switch (plan section 10). The app's
@@ -112,11 +113,14 @@ export async function listApprovedV2Rows(modeId) {
 
 /**
  * The readiness line for one topic (src/itemBank/v2/topicReadiness.js), from
- * its approved version-2 rows in the database. Throws when the read fails.
+ * its approved version-2 rows in the database, held to this build's bundle
+ * too (`bundleItems`, default the shipped seed): v2 stays off until the
+ * deployed seed also serves every skill, so a flip can never come before
+ * the manifest's deploy. Throws when the read fails.
  */
-export async function readTopicReadiness(modeId) {
+export async function readTopicReadiness(modeId, { bundleItems = SEED_ITEMS } = {}) {
   const { items, fetched } = await listApprovedV2Rows(modeId);
-  const result = topicReadiness(modeId, items);
+  const result = withBundle(topicReadiness(modeId, items), bundleItems);
   const unreadable = fetched - items.length;
   if (!unreadable) return { ...result, unreadable };
   return { ...result, unreadable, reason: `${result.reason}; ${unreadable} rows the app cannot read` };

@@ -18,8 +18,10 @@ import { V2_ONLY_MODE_IDS } from "../modes/index.js";
  *
  * Each topic carries a readiness line, read from its approved version-2 rows
  * (a paged read filtered by mode, version 2 and approved): v2 stays disabled
- * until the topic has rows and every catalog skill serves from its own cell
- * (src/itemBank/v2/topicReadiness.js). When that read fails the line says
+ * until the topic has rows and every catalog skill serves from its own cell,
+ * in the database and in this build's bundle (the seed signed-out and
+ * offline kids play, so the manifest is deployed before the flip;
+ * src/itemBank/v2/topicReadiness.js). When that read fails the line says
  * why and v2 stays disabled; v1 and preview work either way.
  */
 
@@ -226,7 +228,8 @@ export default function VersionSwitchPanel() {
         A flip reaches the next session of every kid, with no deploy: <b>v1</b> serves today&apos;s rows,{" "}
         <b>preview</b> serves version-2 rows only to browsers with the preview marker, <b>v2</b> serves
         version-2 rows to everyone. Rolling back is flipping the skill to v1. <b>v2</b> stays off until the
-        topic&apos;s readiness line says every skill has approved version-2 rows to serve.
+        topic&apos;s readiness line says every skill has approved version-2 rows to serve, in the database and in
+        this build&apos;s bundle.
       </p>
 
       <div className="rounded-2xl border border-gray-200 bg-white p-3 flex flex-wrap items-center gap-3">

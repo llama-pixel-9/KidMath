@@ -17,6 +17,7 @@
 import { readFileSync } from "node:fs";
 import { levelToGradeBand } from "../../../src/bands.js";
 import { areaFigureSpec } from "../../../src/figures/areaFigureSpec.js";
+import { placeName, startMat } from "../../../src/components/discMatBuild.js";
 import { normalizeBankRow } from "../../../src/itemBank/normalize.js";
 import { buildBankQuestion, questionAnswerType } from "../../../src/mathEngine.js";
 import { skillForModeLevel } from "../../../src/skills/index.js";
@@ -225,6 +226,10 @@ export function answerFormat(q) {
       return "tap a bar on the graph; answer with that bar's value as a number";
     case "coinTray":
       return d.coinMode === "build" ? "tap coins to build the amount; answer with the total in cents" : "answer with the amount in cents as a whole number";
+    case "placeValueDiscs":
+      // Build mode: the mat is changed, then checked — the answer is what it
+      // shows, and Check stays off while any place holds 10 or more.
+      return d.mode === "build" ? "the number your finished mat shows (each place 9 discs or fewer), as a whole number" : "type a whole number (digits only, no units)";
     default:
       return "type a whole number (digits only, no units)";
   }
@@ -247,6 +252,14 @@ function clockText(hour, minute) {
 function discsText(cols) {
   if (!Array.isArray(cols) || !cols.length) return null;
   return `Place-value discs: ${cols.map((c) => `${plural(c.count, "disc")} worth ${c.place}`).join(", ")}.`;
+}
+
+// The tappable mat (placeValueDiscs build mode) starts from `cols`, read the
+// way the widget reads them (discMatBuild.startMat), in the column's words.
+function buildMatText(cols) {
+  const mat = startMat(cols);
+  const discs = mat.map((c) => `${c.count} ${placeName(c.place, 1)} disc${c.count === 1 ? "" : "s"}`).join(", ");
+  return `A disc mat you can change: ${discs}. You can add or take away discs and trade 10 of a place for 1 of the next.`;
 }
 
 function areaText(q) {
@@ -365,7 +378,7 @@ export function describeFigure(q) {
       parts.push(`A set of fraction pieces: ${JSON.stringify(d.set)}.`);
       break;
     case "placeValueDiscs":
-      parts.push(discsText(d.cols));
+      parts.push(d.mode === "build" ? buildMatText(d.cols) : discsText(d.cols));
       break;
     case "barModel":
       if (d.whole != null) parts.push(`A bar model: the whole bar is labeled ${d.whole}; one part is labeled ${d.part}, the other part is blank.`);

@@ -312,8 +312,9 @@ export function findPromptOveruse(items = currentBank, options = {}) {
  * with a hop on a number line), and its topic: "8 + 5 = ?" is the same fact
  * in Addition and in Math Facts, and each topic may ask it. The disc mat is
  * a picture too: "Read the mat. What number is it?" over 3 tens and 4 ones
- * is not the same question over 5 tens and 2 ones. The item-model harness
- * counts distinct fills with this key.
+ * is not the same question over 5 tens and 2 ones, and neither is "Add 2
+ * tens. What number does your mat show?" over two different start mats. The
+ * item-model harness counts distinct fills with this key.
  */
 const matKey = (cols) => (Array.isArray(cols) ? cols.map((c) => `${c?.place}x${c?.count}`).join(",") : "");
 
@@ -325,6 +326,8 @@ export function promptIdentity(item, promptText) {
     const mats = Array.isArray(d.discMat.mats) ? d.discMat.mats : null;
     parts.push(mats ? `mats:${mats.map((m) => `${m?.label ?? ""}=${matKey(m?.cols)}`).join("|")}` : `mat:${matKey(d.discMat.cols)}`);
   }
+  // The tappable mat's start mat (placeValueDiscs build mode) is its picture.
+  if (d.mode === "build" && item?.question?.answerType === "placeValueDiscs") parts.push(`build:${matKey(d.cols)}`);
   if (d.filled != null) parts.push(`frame:${d.filled}/${d.filledB ?? 0}/${d.takeAway ?? 0}`);
   if (d.array) parts.push(`array:${d.array.rows}x${d.array.cols}`);
   if (d.layout) parts.push(`layout:${d.layout}`);

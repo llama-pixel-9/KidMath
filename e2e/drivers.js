@@ -73,6 +73,45 @@ async function clickChoice(page, valueStr, { wasOverride = false } = {}) {
 }
 
 /**
+ * The tappable disc mat (placeValueDiscs build mode): from the start mat,
+ * press − or + on each place until it holds the answer's digit, then Check.
+ */
+async function buildDiscMat(page, display, value) {
+  // The tappable mat: from the start mat (display.cols, read like the
+  // widget's startMat: numeric places, biggest first), press − or + on
+  // each place until it holds the answer's digit, then Check. No trades:
+  // a start mat holds at most 19 per place, so − alone always gets there.
+  const PLACE_ONE = { 1000: "thousand", 100: "hundred", 10: "ten", 1: "one" };
+  const given = new Map();
+  for (const c of display.cols || []) {
+    const place = Number(c.place);
+    if (PLACE_ONE[place] && !given.has(place)) given.set(place, Math.min(Math.max(Math.trunc(Number(c.count)) || 0, 0), 19));
+  }
+  // A skipped place in between comes up with 0 discs, and no usable place
+  // at all gives an empty hundreds/tens/ones mat, as in startMat.
+  if (!given.size) for (const place of [100, 10, 1]) given.set(place, 0);
+  const cols = [];
+  for (let place = Math.max(...given.keys()); place >= Math.min(...given.keys()); place /= 10) {
+    cols.push({ place, count: given.get(place) ?? 0 });
+  }
+  const target = Number(value);
+  const biggest = cols[0].place;
+  const digitFor = (place) => (place === biggest ? Math.floor(target / place) : Math.floor(target / place) % 10);
+  // The mat cannot write a number with a digit beyond its biggest place (or
+  // below its smallest): then any checkable mat keeps the session moving.
+  const reachable =
+    Number.isInteger(target) && target >= 0 && target % cols[cols.length - 1].place === 0 && digitFor(biggest) <= 9;
+  for (const { place, count } of cols) {
+    const diff = (reachable ? digitFor(place) : Math.min(count, 9)) - count;
+    const name = `${diff > 0 ? "Add" : "Take away"} a ${PLACE_ONE[place]} disc`;
+    const btn = page.getByRole("button", { name, exact: true }).first();
+    for (let k = 0; k < Math.abs(diff); k++) await btn.click();
+  }
+  await clickSubmit(page);
+  return { blind: !reachable };
+}
+
+/**
  * Answer the on-screen question through its real widget.
  * `overrideValue` is the kid-computed answer (from the rendered DOM); when
  * given, it is submitted INSTEAD of the engine's answer — the spec then
@@ -84,6 +123,8 @@ export async function answerQuestion(page, question, overrideValue) {
   const value = wasOverride ? overrideValue : correctValue(question);
   const valueStr = String(value);
   const display = question.display || {};
+
+  if (type === "placeValueDiscs" && display.mode === "build") return buildDiscMat(page, display, value);
 
   switch (type) {
     case "choice":
@@ -206,8 +247,8 @@ export async function answerQuestion(page, question, overrideValue) {
     }
 
     // Everything else is a digit pad: numberPad, fillBlank, decimal, angle,
-    // clock, barGraph (DataGraph), numberBond, barModel, placeValueDiscs,
-    // fractionSet — all type digits and press Submit.
+    // clock, barGraph (DataGraph), numberBond, barModel, read-mode
+    // placeValueDiscs, fractionSet — all type digits and press Submit.
     default: {
       const ok = await digitPath(page, valueStr);
       if (ok) return { blind: false };

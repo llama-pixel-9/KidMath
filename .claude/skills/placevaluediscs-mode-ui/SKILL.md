@@ -9,8 +9,21 @@ prose ≤20; 2-3 = hundreds; 4-5 = thousands.
 
 - The disc mat renders via `answerType: "placeValueDiscs"` +
   `display.cols: [{place, count}, …]` (`src/components/PlaceValueDiscs.jsx`
-  through `widgetRegistry.js`). The widget is READ-ONLY — the child types
-  the value; there is no drag interaction.
+  through `widgetRegistry.js`). Two modes, like CoinTray's count/build:
+  - read (default, every v1 row): the mat is fixed and the child types the
+    value on the digit pad.
+  - build (`display.mode: "build"`, added 2026-10-03 after Sai asked "what are
+    kids supposed to do with this?"): the tappable mat. `cols` is the start
+    mat. The kid adds or takes away discs (cap 19 a place), trades 10 of a
+    place for 1 of the next, or breaks 1 into 10 of the place to its right,
+    then Checks. The answer is the number the mat shows, submitted as a
+    Number, so scoring is the same numeric check. Check stays off while any
+    place holds 10+, and a status line names the trade instead. No running
+    number. Rules and strings live in `src/components/discMatBuild.js`, and
+    iOS mirrors them in `DiscMatBuild.swift`. On paper the start mat prints
+    as a `discMat` figure (`paperBuildMat` in generateWorksheet.js). A build
+    item satisfies the single-mat blueprint rows (`widget:placeValueDiscs`
+    in figureContracts.js), but not the two-mat row.
 - Visual mat items use the letter-free caption register
   (`10 10 | 1 1 = ?`) so they pass `isVerbalPrompt` (<6 letters) and serve
   when word problems are filtered out (the numbers-only early levels).

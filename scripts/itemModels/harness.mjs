@@ -2,6 +2,10 @@
  * Item model harness: validates a JSON file of item models the way the repo's
  * itemModels.spec does, and prints what a reviewer would see.
  *
+ * Each model's topic, anchor code and id prefix come from its blueprint row,
+ * else the --mode, --code and --prefix flags, else money's pilot rules
+ * (scripts/itemModels/harnessRules.js). The coin checks run for money only.
+ *
  * Run from the repo root:
  *   npm run models:harness -- path/to/models.json
  * Options:
@@ -11,6 +15,9 @@
  *   --items path     also write filled items (first --per seeds per model) for the QC scripts
  *   --per N          items per model in --items (default 5)
  *   --quiet          only the summary lines
+ *   --mode ID        the topic of models with no blueprint row (default money)
+ *   --code CODE      a code those models must carry, in any framework
+ *   --prefix P       the id those models start with (P-<shape>...)
  * Exit 1 when any model fails.
  */
 import fs from "node:fs";
@@ -24,6 +31,8 @@ const { runChecks } = await imp("src/itemBank/qc/checks.js");
 const { validateBankItem } = await imp("src/itemBank/index.js");
 const { hintContainsAnswer, validateHint } = await imp("src/hints/hintSchema.js");
 const { findKidSafeHits } = await imp("src/content/kidSafeList.js");
+const { promptIdentity } = await imp("src/itemBank/index.js");
+const { modelRules } = await imp("scripts/itemModels/harnessRules.js");
 
 const args = process.argv.slice(2);
 const opt = (name, dflt) => {
@@ -33,7 +42,7 @@ const opt = (name, dflt) => {
 const flag = (name) => args.includes(name);
 const file = args.find((a) => !a.startsWith("--") && !args[args.indexOf(a) - 1]?.startsWith("--"));
 if (!file) {
-  console.error("usage: harness.mjs <models.json> [--seeds N] [--samples N] [--report path] [--items path] [--per N] [--quiet]");
+  console.error("usage: harness.mjs <models.json> [--seeds N] [--samples N] [--report path] [--items path] [--per N] [--quiet] [--mode ID] [--code CODE] [--prefix P]");
   process.exit(2);
 }
 const SEEDS = Number(opt("--seeds", 200));
@@ -42,6 +51,9 @@ const PER = Number(opt("--per", 5));
 const reportPath = opt("--report", file.replace(/\.json$/, "") + ".report.json");
 const itemsPath = opt("--items", null);
 const quiet = flag("--quiet");
+const MODE = opt("--mode", null);
+const CODE = opt("--code", null);
+const PREFIX = opt("--prefix", null);
 
 let models = JSON.parse(fs.readFileSync(file, "utf8"));
 if (!Array.isArray(models)) models = models.models || Object.values(models);
@@ -64,13 +76,12 @@ for (const model of models) {
   }
   if (seenIds.has(model.id)) err(`duplicate id ${model.id}`);
   seenIds.add(model.id);
-  const grade = String(model.grade);
-  const idPattern = new RegExp(`^money-g${grade}-[a-z0-9]+(?:-[a-z0-9]+)*-(easy|moderate|hard)(?:-\\d+)?$`, "i");
-  if (!idPattern.test(String(model.id))) warn(`id "${model.id}" does not follow money-g${grade}-<shape>-<difficulty>[-n]`);
-  if (model.modeId !== "money") err(`modeId must be "money"`);
-  if (!["2", "3", "4", "5"].includes(grade)) err(`grade must be "2", "3", "4" or "5"`);
-  if (grade === "2" && !model.standards?.ccss?.includes("2.MD.C.8")) err("standards.ccss must include 2.MD.C.8");
-  if (grade !== "2" && !(model.standards?.ccss?.length > 0)) err("standards.ccss must name at least one standard");
+  // Topic, codes and id: from the model's blueprint row, the flags, or money's.
+  const rules = modelRules(model, { mode: MODE, code: CODE, prefix: PREFIX });
+  r.topic = rules.topic;
+  for (const w of rules.warnings) warn(w);
+  for (const e of rules.errors) err(e);
+  const isMoney = rules.coinChecks;
   const v = validateModel(model);
   if (!v.ok) {
     for (const e of v.errors) err(`validateModel: ${e}`);
@@ -99,9 +110,9 @@ for (const model of models) {
     filled += 1;
     const q = item.question;
     const prompt = q.display.promptText;
-    // A picture-first item repeats its text; the pictured coins make it a
-    // different question (validateBank keys duplicates the same way).
-    if (seed <= 40) prompts.add(Array.isArray(q.display.coins) && q.display.coins.length ? `${prompt}|${q.display.coins.join(",")}` : prompt);
+    // A picture-first item repeats its text; the picture (the coins, the
+    // disc mat) makes it a different question. validateBank's own key.
+    if (seed <= 40) prompts.add(promptIdentity(item, prompt));
     answers.add(String(q.answer));
     const bv = validateBankItem(item);
     if (bv.errors?.length) err(`seed ${seed}: validateBankItem: ${bv.errors.join("; ")}`);
@@ -125,8 +136,8 @@ for (const model of models) {
     if (item.tags.notes.length) dropped += 1;
     if (item.hint.example == null && model.hint.example != null) noExample += 1;
     const coins = q.display.coins;
-    if (Array.isArray(coins) && coins.length > 8) err(`seed ${seed}: ${coins.length} coins pictured (limit 8)`);
-    if (Array.isArray(coins) && coins.length === 0 && q.answerType === "coinTray") err(`seed ${seed}: coinTray widget with an empty tray`);
+    if (isMoney && Array.isArray(coins) && coins.length > 8) err(`seed ${seed}: ${coins.length} coins pictured (limit 8)`);
+    if (isMoney && Array.isArray(coins) && coins.length === 0 && q.answerType === "coinTray") err(`seed ${seed}: coinTray widget with an empty tray`);
     if (prompt.length > 220) err(`seed ${seed}: prompt ${prompt.length} chars`);
     if (seed <= SAMPLES) {
       r.samples.push({ seed, prompt, answer: q.answer, choices: q.choices, answerType: q.answerType, coins: coins ?? null, mistakes: item.tags.mistakes, objects: item.tags.objects, setting: item.tags.setting });

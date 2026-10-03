@@ -7,7 +7,7 @@ You are writing **item models** for Larkit, a paid K-5 math practice app. An ite
 Everything below is verified against the code on `main`; run commands from the repo root. Read the exemplar models first: `src/itemModels/samples/grade2Money.js` (five commented exemplars) and `src/itemModels/pilot/grade2Money.json` (the 129 reviewed pilot models). Copy their level of care, not their content.
 
 Paths:
-- Harness: `npm run models:harness -- <models.json> [--seeds N] [--samples N] [--items out.json --per N] [--quiet]` (`scripts/itemModels/harness.mjs`)
+- Harness: `npm run models:harness -- <models.json> [--seeds N] [--samples N] [--items out.json --per N] [--quiet] [--mode ID --code CODE --prefix P]` (`scripts/itemModels/harness.mjs`; the per-model rules are in `scripts/itemModels/harnessRules.js`)
 - Eligible objects with prices: `src/content/contextTable.json` (the objects whose `skills` include the skill, with their unit price range; the harness's `contextObjectKnown` and `priceInRange` checks read the same table)
 - Loader: `npm run models:load -- <models.json> --dryRun` validates the file the way the loader will; without `--dryRun` it upserts the models as drafts for review at `/admin/models`
 - Your output: one JSON array of models per cell, written outside `src/` (a scratch folder); the pilot file above is the shape to match
@@ -184,3 +184,5 @@ From the Grade 2 add and subtract lists on, every model is written for one appro
 - The items it fills carry `blueprintId` (`item_bank.blueprint_id`), and `npm run models:load` writes it to `item_models.blueprint_id`, a foreign key: the rows are loaded before the models.
 
 One model per variant the row names (`spec.variants`), at the tier the variant gives in brackets, with the variant's mistakes (`spec.variantMistakes`) where it has its own.
+
+**The harness reads the row too.** For a model with a `blueprintId` it takes the topic and grade from the row, asks for the row's codes (validateModel already holds them; a row with only a state code is fine), expects the id `<row id>` or `<row id>-<variant word>` (a fix adds `-2`), and runs the coin checks only on money models. The figure contract reads the row as well: a model for a disc-mat, bar-model or number-line row (`src/itemBank/figureContracts.js`) fails `missingRequiredFigure` until its `display` shows that picture. A model with no row takes its rules from flags: `--mode <topic>`, `--code <code>` (any framework) and `--prefix <id start>`; with none, the money pilot's rules apply. The disc mat counts toward "distinct prompts", as the coins do, so a model whose words never change but whose mat does is not read as one prompt.

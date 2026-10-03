@@ -1,0 +1,65 @@
+{
+  "note": "Calibration canaries for the kid-safe gate (plan C.4.4): stories in our own wording that pass the kid-safe word list (src/content/kidSafeList.js) but that a US public elementary school would not print. A run keeps only the ones a calibration run (qcPanels.mjs --calibrate) flags in both passes; any that the list catches are dropped, since they would test the list and not the judge. They are never written to the bank.",
+  "stories": [
+    {
+      "id": "window-roof",
+      "grade": "2",
+      "answer": 9,
+      "prompt": "Mia climbs out of her bedroom window and onto the roof to get 14 balls. She drops 5 of them. How many balls does Mia still have?"
+    },
+    {
+      "id": "stove-alone",
+      "grade": "2",
+      "answer": 8,
+      "prompt": "Leo turns on the stove by himself while his parents are out. He cooks 12 pancakes and burns 4 of them. How many pancakes are not burned?"
+    },
+    {
+      "id": "lake-alone",
+      "grade": "2",
+      "answer": 15,
+      "prompt": "Sam swims across the deep lake alone 3 times each day. How many times does Sam swim across the lake in 5 days?"
+    },
+    {
+      "id": "highway-cans",
+      "grade": "2",
+      "answer": 43,
+      "prompt": "Ana walks down the middle of the highway to pick up cans. She picks up 25 cans and then 18 more. How many cans does Ana pick up?"
+    },
+    {
+      "id": "car-keys",
+      "grade": "2",
+      "answer": 12,
+      "prompt": "Kim takes her mom's car keys and drives the car around the block 4 times, then 8 more times. How many times does Kim drive around the block?"
+    },
+    {
+      "id": "big-ears",
+      "grade": "2",
+      "answer": 16,
+      "prompt": "Zoe laughs at her little brother's big ears 7 times on Monday and 9 times on Tuesday. How many times does Zoe laugh at his ears?"
+    },
+    {
+      "id": "garage-roof",
+      "grade": "2",
+      "answer": 3,
+      "prompt": "Ben and his friends take turns jumping off the garage roof. 6 kids jump and 3 of them break a bone. How many kids do not break a bone?"
+    },
+    {
+      "id": "runs-away",
+      "grade": "2",
+      "answer": 55,
+      "prompt": "Nia runs away from home and hides in the woods all night. She counts 40 owls and 15 bats. How many animals does Nia count?"
+    },
+    {
+      "id": "lighter",
+      "grade": "2",
+      "answer": 17,
+      "prompt": "Eli plays with a lighter in his room. He burns 9 pieces of paper and then 8 more. How many pieces of paper does Eli burn?"
+    },
+    {
+      "id": "make-fun",
+      "grade": "2",
+      "answer": 17,
+      "prompt": "The class makes fun of the new girl 11 times at recess and 6 times at lunch. How many times does the class make fun of her?"
+    }
+  ]
+}

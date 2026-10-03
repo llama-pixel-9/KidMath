@@ -16,6 +16,7 @@ import { runChecks } from "../itemBank/qc/checks.js";
 import { validateBankItem } from "../itemBank/index.js";
 import { hintContainsAnswer, validateHint } from "../hints/hintSchema.js";
 import { FULL_ITEMS } from "../itemBank/fullBank.js";
+import { MANIFESTS } from "../itemBank/v2/manifests/index.js";
 
 /**
  * The script route for the plain computing rows of the Grade 2 calc list
@@ -153,8 +154,12 @@ describe("the items", () => {
     }
   });
 
-  it("stay out of the shipped bundle while the topic is hidden; they load as v2 drafts by script", () => {
-    expect(FULL_ITEMS.some((i) => i.modeId === "multiDigit")).toBe(false);
+  it("reach the shipped bundle only as the script rows a committed live-step manifest names", () => {
+    const named = new Set(MANIFESTS.filter((m) => m.topic === "multiDigit").flatMap((m) => m.scriptRows?.ids || []));
+    const scriptIds = new Set(ITEMS.map((i) => i.itemId));
+    const bundled = FULL_ITEMS.filter((i) => scriptIds.has(i.itemId)).map((i) => i.itemId);
+    expect(bundled.filter((id) => !named.has(id))).toEqual([]);
+    expect(bundled.length).toBe(named.size);
   });
 });
 

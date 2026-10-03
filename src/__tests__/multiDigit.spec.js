@@ -8,7 +8,8 @@ import "../engine/nativeEntry.js";
 import multiDigit, { GRADE2_LEVELS, SUBSKILLS } from "../modes/multiDigit.js";
 import { MODE_GROUPS, MODE_IDS, V2_ONLY_MODE_IDS, getModeConfig } from "../modes/index.js";
 import { DEFAULT_LIVE_VERSION, isServable, topicVisible } from "../itemBank/versionRules.js";
-import { FULL_ITEMS } from "../itemBank/fullBank.js";
+import { FULL_ITEMS, MODEL_ITEMS } from "../itemBank/fullBank.js";
+import { MANIFESTS } from "../itemBank/v2/manifests/index.js";
 import { PLAY_ONLY_SKILLS, TOPIC_LABELS, WORKSHEET_SKILLS } from "../skills/catalog.js";
 import { levelForSkill, playSkills, skillsForPlay, topicGrades } from "../skills/play.js";
 import { BLUEPRINT_ROWS } from "../blueprints/index.js";
@@ -85,8 +86,10 @@ describe("the Multi-Digit Math topic", () => {
     expect(REGIONS.find((r) => r.id === "pond").signpost.groups).toContain("multiDigit");
   });
 
-  it("has no bank rows in the bundle yet (the script rows load as v2 drafts)", () => {
-    expect(FULL_ITEMS.some((item) => item.modeId === "multiDigit")).toBe(false);
+  it("has bank rows in the bundle only from its committed live-step manifests (none until a run is committed)", () => {
+    const ids = (list) => list.filter((item) => item.modeId === "multiDigit").map((item) => item.itemId);
+    expect(ids(FULL_ITEMS)).toEqual(ids(MODEL_ITEMS));
+    expect(ids(FULL_ITEMS).length > 0).toBe(MANIFESTS.some((m) => m.topic === "multiDigit"));
   });
 });
 

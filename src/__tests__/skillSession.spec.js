@@ -1,5 +1,6 @@
 import { beforeAll, describe, expect, it, vi } from "vitest";
 import { FULL_ITEMS } from "../itemBank/fullBank";
+import { MANIFESTS } from "../itemBank/v2/manifests/index.js";
 import { DEFAULT_LIVE_VERSION } from "../itemBank/versionRules";
 import { getModeConfig } from "../modes";
 import { setBankItems } from "../itemBank";
@@ -164,11 +165,13 @@ describe("mixed session — Larkit picks", () => {
 // bundle to serve yet. No screen
 // gates on skillServable, so a preview viewer can start any of its skills;
 // each is held to what a session must still do, below, instead of to serving
-// from its cell. The
-// guard fails the moment a listed topic gains a bundled row, goes live by
-// default, or stops being v2-only; it then comes off this list and passes
-// the gate like every topic. Same list as bankCellCoverage.spec.
-const UNSHIPPED_V2_TOPICS = ["wordProblems", "multiDigit"];
+// from its cell. A topic comes off this list by itself once the live step
+// commits its manifest (src/itemBank/v2/manifests/), and then passes the
+// gate like every topic. The guard fails if a listed topic gains a bundled
+// row any other way, goes live by default, or stops being v2-only. Same list
+// as bankCellCoverage.spec.
+const V2_TOPICS_AWAITING_ROWS = ["wordProblems", "multiDigit"];
+const UNSHIPPED_V2_TOPICS = V2_TOPICS_AWAITING_ROWS.filter((modeId) => !MANIFESTS.some((m) => m.topic === modeId));
 
 // What each unshipped topic's fallback generator serves: a bare number
 // sentence, never a story. Word Problems' is always a box sentence

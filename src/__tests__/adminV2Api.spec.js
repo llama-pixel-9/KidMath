@@ -23,7 +23,11 @@ vi.mock("../itemBank/cloudLoader.js", () => ({
 }));
 
 import { listItemModels, setModelReview, saveModelSpec, MODEL_REVIEW_STATUSES } from "../admin/itemModelsApi.js";
-import { listVersionSwitch, setLiveVersion, LIVE_VERSIONS } from "../admin/versionSwitchApi.js";
+import { listApprovedV2Rows, listVersionSwitch, readTopicReadiness, setLiveVersion, LIVE_VERSIONS } from "../admin/versionSwitchApi.js";
+import { isBankSkill, topicReadiness, withBundle } from "../itemBank/v2/topicReadiness.js";
+import { factBankItems } from "../facts/factItems.js";
+import { calcBankItems } from "../multiDigit/calcItems.js";
+import { playSkillById } from "../skills/play.js";
 
 const UID = "11111111-2222-3333-4444-555555555555";
 
@@ -284,5 +288,112 @@ describe("versionSwitchApi", () => {
     chain.single.mockResolvedValueOnce({ data: null, error: { message: "new row violates row-level security policy" } });
     await expect(setLiveVersion("money", "v2")).rejects.toMatchObject({ message: /row-level security/ });
     expect(refreshBankFromCloud).not.toHaveBeenCalled();
+  });
+});
+
+/** A bank item as the item_bank row the readiness read selects. */
+const toRow = (item, extra = {}) => ({
+  item_id: item.itemId,
+  mode_id: item.modeId,
+  item_family: item.itemFamily,
+  subskill: item.subskill,
+  structure_type: item.structureType,
+  level_min: item.levelRange[0],
+  level_max: item.levelRange[1],
+  review_status: "approved",
+  payload: item.question,
+  version: 2,
+  difficulty: item.difficulty ?? null,
+  ...extra,
+});
+
+describe("v2 readiness (the switch panel's line)", () => {
+  const facts = factBankItems();
+  const calc = calcBankItems().map((i) => ({ ...i, reviewStatus: "approved", version: 2 }));
+
+  it("calls a topic ready only when it has approved v2 rows and every bank skill serves", () => {
+    const ready = topicReadiness("mathFacts", facts);
+    expect(ready).toMatchObject({ modeId: "mathFacts", rows: facts.length, gaps: [], ready: true });
+    expect(ready.skills.length).toBe(10);
+    expect(ready.skills.every((s) => s.count > 0)).toBe(true);
+
+    expect(topicReadiness("wordProblems", facts)).toMatchObject({ rows: 0, ready: false, reason: "no approved version-2 rows" });
+    // Rows, but three skills with none of their own: those sessions would fall to the generator.
+    const partial = topicReadiness("multiDigit", calc);
+    expect(partial.ready).toBe(false);
+    expect(partial.gaps).toEqual(["md-g2-ten-hundred", "md-g2-equal-sign", "md-g2-ten-hundred-1200"]);
+    expect(partial.reason).toMatch(/^3 of 6 skills have nothing to serve/);
+  });
+
+  it("counts only approved version-2 rows, and never gaps a computation drill", () => {
+    expect(topicReadiness("mathFacts", facts.map((i) => ({ ...i, version: 1 }))).rows).toBe(0);
+    expect(topicReadiness("mathFacts", facts.map((i) => ({ ...i, reviewStatus: "draft" }))).rows).toBe(0);
+    const drill = playSkillById("add-within-20");
+    expect(drill.source.kind).toBe("computation");
+    expect(isBankSkill(drill)).toBe(false);
+    const addition = topicReadiness("addition", []);
+    expect(addition.skills.length).toBeGreaterThan(0);
+    expect(addition.skills.map((s) => s.skillId)).not.toContain("add-within-20");
+  });
+
+  it("reads a topic's approved v2 rows page by page, filtered by mode, version and status", async () => {
+    const chain = installClient();
+    const firstPage = Array.from({ length: 1000 }, (_, i) => toRow(facts[i]));
+    const rest = facts.slice(1000).map((i) => toRow(i));
+    chain.range.mockResolvedValueOnce({ data: firstPage, error: null });
+    chain.range.mockResolvedValueOnce({ data: [...rest, toRow(facts[0], { item_id: "broken", payload: null })], error: null });
+
+    const { items, fetched } = await listApprovedV2Rows("mathFacts");
+
+    expect(state.client.from).toHaveBeenCalledWith("item_bank");
+    expect(chain.eq).toHaveBeenCalledWith("mode_id", "mathFacts");
+    expect(chain.eq).toHaveBeenCalledWith("version", 2);
+    expect(chain.eq).toHaveBeenCalledWith("review_status", "approved");
+    expect(chain.range).toHaveBeenNthCalledWith(1, 0, 999);
+    expect(chain.range).toHaveBeenNthCalledWith(2, 1000, 1999);
+    expect(fetched).toBe(facts.length + 1);
+    // The app's normalizer drops a row it cannot read; the panel says so.
+    expect(items).toHaveLength(facts.length);
+  });
+
+  it("gives the panel the readiness of what it read, and names unreadable rows", async () => {
+    const chain = installClient();
+    chain.range.mockResolvedValueOnce({ data: [...calc.map((i) => toRow(i)), toRow(calc[0], { item_id: "broken", payload: null })], error: null });
+    const result = await readTopicReadiness("multiDigit");
+    expect(result).toMatchObject({ rows: calc.length, ready: false, unreadable: 1 });
+    expect(result.reason).toMatch(/1 rows the app cannot read$/);
+  });
+
+  it("keeps v2 off until this build's bundle serves every skill too", async () => {
+    const pages = (chain) => {
+      chain.range.mockResolvedValueOnce({ data: facts.slice(0, 1000).map((i) => toRow(i)), error: null });
+      chain.range.mockResolvedValueOnce({ data: facts.slice(1000).map((i) => toRow(i)), error: null });
+    };
+    // Math Facts: rows in the database and in the shipped seed.
+    let chain = installClient();
+    pages(chain);
+    expect(await readTopicReadiness("mathFacts")).toMatchObject({ ready: true, bundle: { ready: true, gaps: [] } });
+    // The same rows in the database, a bundle without them: the manifest and seed are not deployed yet.
+    chain = installClient();
+    pages(chain);
+    const notDeployed = await readTopicReadiness("mathFacts", { bundleItems: [] });
+    expect(notDeployed).toMatchObject({ rows: facts.length, ready: false, bundle: { rows: 0, ready: false } });
+    expect(notDeployed.reason).toMatch(/bundle has no approved version-2 rows/);
+    // A bundle that serves some skills only names the others.
+    const db = topicReadiness("mathFacts", facts);
+    const oneSubskill = facts.filter((i) => i.subskill === facts[0].subskill);
+    const partial = withBundle(db, oneSubskill);
+    expect(partial.ready).toBe(false);
+    expect(partial.bundle.gaps.length).toBeGreaterThan(0);
+    expect(partial.reason).toMatch(/bundle has nothing to serve for \d+ skills/);
+    // A topic not ready in the database keeps its own reason.
+    expect(withBundle(topicReadiness("wordProblems", []), [])).toMatchObject({ ready: false, reason: "no approved version-2 rows" });
+  });
+
+  it("throws when a page fails, so the panel can say why and keep v2 off", async () => {
+    await expect(listApprovedV2Rows("mathFacts")).rejects.toThrow(/not configured/);
+    const chain = installClient();
+    chain.range.mockResolvedValueOnce({ data: null, error: { message: "column item_bank.version does not exist" } });
+    await expect(readTopicReadiness("mathFacts")).rejects.toMatchObject({ message: /does not exist/ });
   });
 });

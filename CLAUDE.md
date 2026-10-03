@@ -310,6 +310,7 @@ Product IDs: `io.larkit.app.premium.{monthly,annual}`.
 | Why we skipped RevenueCat (billing decision) | `billing-revenuecat-decision.md` |
 | Source licensing / attribution | `bank-sources.md`, `resources/README.md` |
 | Item bank v2 groundwork: migration, switch + preview, hints, checks, item models, kid state, CI | `item-bank-v2-groundwork.md` |
+| The live step: approved models → v2 rows (export, prepare, write, play, flip, rollback; the held and deferred rows) | `live-step.md` |
 | Standards codes per framework, blueprint rows, coverage view + admin Standards tab, the code gate | `standards-coverage.md` |
 
 ## Skills

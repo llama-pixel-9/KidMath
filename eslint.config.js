@@ -45,6 +45,22 @@ export default defineConfig([
       },
     },
   },
+  // The live-step scripts are Node ES modules (.mjs, which the blocks above
+  // do not match): the same rules, Node globals.
+  {
+    files: ['scripts/live/**/*.mjs'],
+    extends: [js.configs.recommended],
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+      globals: {
+        ...globals.node,
+      },
+    },
+    rules: {
+      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]|^motion$' }],
+    },
+  },
   // Playwright config and specs run under Node (process.env for ports/paths).
   {
     files: ['e2e/**/*.js', 'playwright.config.js'],

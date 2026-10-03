@@ -9,7 +9,8 @@ import wordProblems, { BLANK, GRADE2_LEVELS, HINT_EXAMPLE, SHAPES, SUBSKILLS, bu
 import { MODE_IDS, V2_ONLY_MODE_IDS, getModeConfig, visibleModeGroups } from "../modes/index.js";
 import { generateChoices, generateQuestion, createAdaptiveSession, getNextQuestion, isSessionComplete, recordAnswer } from "../mathEngine.js";
 import { DEFAULT_LIVE_VERSION, isServable, topicVisible } from "../itemBank/versionRules.js";
-import { FULL_ITEMS } from "../itemBank/fullBank.js";
+import { FULL_ITEMS, MODEL_ITEMS } from "../itemBank/fullBank.js";
+import { MANIFESTS } from "../itemBank/v2/manifests/index.js";
 import { getBankItems, setBankItems } from "../itemBank/index.js";
 import { FREE_MODE_IDS, isFreeMode } from "../premium.js";
 import { PLAY_ONLY_SKILLS, TOPIC_LABELS, WORKSHEET_SKILLS } from "../skills/catalog.js";
@@ -150,8 +151,10 @@ describe("the Word Problems topic", () => {
     expect(isFreeMode("wordProblems")).toBe(true);
   });
 
-  it("has no bank rows yet", () => {
-    expect(FULL_ITEMS.some((item) => item.modeId === "wordProblems")).toBe(false);
+  it("has bank rows only from its committed live-step manifests (none until a run is committed)", () => {
+    const ids = (list) => list.filter((item) => item.modeId === "wordProblems").map((item) => item.itemId);
+    expect(ids(FULL_ITEMS)).toEqual(ids(MODEL_ITEMS));
+    expect(ids(FULL_ITEMS).length > 0).toBe(MANIFESTS.some((m) => m.topic === "wordProblems"));
   });
 });
 
@@ -209,10 +212,20 @@ describe("the fallback generator", () => {
   });
 
   it("is always missingNumber / conceptual with full metadata, whatever it is asked for", () => {
+    // The engine reaches the generator only for a cell with no row, so ask it
+    // with no Word Problems rows in memory (a committed manifest adds some).
+    const before = getBankItems();
+    let viaEngine;
+    try {
+      setBankItems(before.filter((item) => item.modeId !== "wordProblems"), "test");
+      viaEngine = generateQuestion("wordProblems", 5, { itemFamily: "application", targetSubskill: "changeStories" });
+    } finally {
+      setBankItems(before, "test");
+    }
     const asked = [
       ...sample,
       wordProblems.generate(5, { itemFamily: "application", targetSubskill: "compareStories", allowWordProblems: true }),
-      generateQuestion("wordProblems", 5, { itemFamily: "application", targetSubskill: "changeStories" }),
+      viaEngine,
     ];
     for (const q of asked) {
       const m = q.metadata;

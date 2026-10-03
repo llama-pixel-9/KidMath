@@ -24,6 +24,7 @@
 
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
+import { pathToFileURL } from "node:url";
 import { checkAnswer, questionAnswerType } from "../../../src/mathEngine.js";
 import { kidView, loadItems } from "./kidView.js";
 import { askInBatches, BATCH_SIZE, claudeAvailable, DEFAULT_MODEL, parseArgs } from "./qcCli.js";
@@ -50,7 +51,9 @@ Options:
 Report: { source, model, total, disagreed, ambiguous, skipped, items: [{ itemId, agreed, modelAnswer, ambiguous, reason, expected, prompt }] }
 Exit code 1 when any item disagrees. Needs \`claude\` (Claude Code) on PATH; skips loudly otherwise.`;
 
-const SYSTEM = `You are a careful student solving math practice items exactly as a US K-5 kid sees them on screen. For each item you get only what the kid gets: the question text, a plain description of any picture, the answer choices if there are any, and the answer format.
+// Exported (with itemBlock, buildPrompt and judge) for the live step's QC
+// panels (scripts/live/qcPanels.mjs), which ask the same judge the same way.
+export const SYSTEM = `You are a careful student solving math practice items exactly as a US K-5 kid sees them on screen. For each item you get only what the kid gets: the question text, a plain description of any picture, the answer choices if there are any, and the answer format.
 
 Solve each item on its own. Do not assume there is an answer key, do not look for a trick, and do not use one item to answer another. Read the question literally, the way a child would.
 
@@ -62,7 +65,7 @@ Reply with JSON only: an array with one object per item, in the order given:
 - reason: one sentence saying why the item is ambiguous, or "" when it is not.
 Include EVERY item you were given.`;
 
-function itemBlock(view) {
+export function itemBlock(view) {
   const lines = [`itemId: ${view.itemId}`, `grade: ${view.grade}`, `question: ${view.prompt}`];
   if (view.subPrompt) lines.push(`below the question: ${view.subPrompt}`);
   if (view.figure) lines.push(`picture: ${view.figure}`);
@@ -71,7 +74,7 @@ function itemBlock(view) {
   return lines.join("\n");
 }
 
-const buildPrompt = (views) => views.map(itemBlock).join("\n\n");
+export const buildPrompt = (views) => views.map(itemBlock).join("\n\n");
 
 // --- Comparing the reply with the key -------------------------------------
 
@@ -115,7 +118,7 @@ function coerceAnswer(question, raw) {
   return typeof raw === "string" ? bareNumber(raw) : raw;
 }
 
-function judge(view, reply) {
+export function judge(view, reply) {
   const submitted = coerceAnswer(view.served, reply.answer);
   const agreed = checkAnswer(view.served, submitted);
   const ambiguous = Boolean(reply.ambiguous);
@@ -203,9 +206,13 @@ function writeReport(outPath, report) {
   writeFileSync(outPath, json);
 }
 
-main()
-  .then((code) => process.exit(code))
-  .catch((err) => {
-    process.stderr.write(`blindSolve: ${err.message}\n`);
-    process.exit(2);
-  });
+// Run only as a script: an import (scripts/live/qcPanels.mjs) takes the
+// prompt and the judging without starting a run.
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main()
+    .then((code) => process.exit(code))
+    .catch((err) => {
+      process.stderr.write(`blindSolve: ${err.message}\n`);
+      process.exit(2);
+    });
+}

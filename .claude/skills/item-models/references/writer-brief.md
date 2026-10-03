@@ -40,6 +40,9 @@ you: no edits, no commits, no Supabase. Write only in $G = [scratch folder].
    display (`grep -rl` in `src/itemBank/items/`); copy its display shape.
 
 ## Write
+- The bar (Sai, 2026-10-03): every item your models fill must look at home
+  on a practice page of Math in Focus or another premier K-5 textbook. Write
+  to that standard in our own words; never copy or paraphrase a book's item.
 - Output `$G/<your group>.json`: a JSON array of models. One model per variant
   in `spec.variants` (at the tier in brackets), else `spec.models` models.
   Ids: `<row id>` or `<row id>-<variant word>`.
@@ -69,7 +72,8 @@ Run from the repo:
 `npm run models:harness -- $G/<group>.json --items $G/<group>.items.json --per 5`.
 It must end with 0 failures. Then read the printed samples and hint samples as
 a seven-year-old would, and fix anything stiff, ambiguous, unrealistic or
-repetitive. Count, in 40 fills: the different objects (a story should show
+repetitive. Read them once more as that textbook's editor would: an item that
+would look out of place on its page is not done. Count, in 40 fills: the different objects (a story should show
 many), the different keys (a choice key that never changes is not a
 question), and whether each distractor is a mistake a kid really makes.
 Rerun until clean.

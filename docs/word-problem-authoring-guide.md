@@ -11,6 +11,15 @@ Procedural items live in `src/itemBank/proceduralItems.js`.
 All three are aggregated by `src/itemBank/bundle.js` and delivered through
 the same Supabase table (`public.item_bank`).
 
+## The quality bar
+
+Every item that ships should look at home in Math in Focus or another premier
+K-5 textbook (Sai, 2026-10-03). If an item would stand out on one of that
+book's practice pages, because it is stiffer, more repetitive, less realistic
+or harder to read than the items around it, it is not ready, whatever the
+checks say. This is a bar for quality only: the wording stays original (see
+Sourcing Principles).
+
 ## Sourcing Principles
 
 - Use public framework structures as a reference (CCSS Math Progressions,

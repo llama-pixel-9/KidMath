@@ -129,6 +129,11 @@ for the full ladder: guide → structure templates → generator prompts → QC 
 `scripts/itemGen/structureRules.js` (`NARRATIVE_RULES` / `GOLD_EXAMPLES`) and
 `docs/word-problem-authoring-guide.md` — not just the one prompt that produced it.
 
+**The textbook bar.** An item or model is ready only when it would look at home
+in Math in Focus or another premier K-5 textbook (Sai, 2026-10-03). Passing QC
+is the floor, not the bar. It is a bar for quality, never a source: wording
+stays original.
+
 Two wording rules currently enforced as `fail` checks:
 - `nounlessQuestion` — the question must restate the counted noun. "How many toy
   cars does Lily have?", never "How many does Lily have?"

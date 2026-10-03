@@ -17,6 +17,28 @@ list. Each row is a real, distinct item type that a test justifies.
 **Never invent a shape list. Never write a model for a row Sai has not
 approved.**
 
+## The bar
+
+**A model is ready only when every item it fills would look at home in Math
+in Focus or another premier K-5 textbook** (Sai, 2026-10-03). Picture the
+item printed on one of that book's practice pages. If its wording, numbers,
+context, picture or answer format would stand out as weaker than the items
+around it, the model is not ready, whatever the checks say. The harness,
+blind solve and kid-safe are the floor, not the bar.
+
+What has stood out in Sai's reviews so far:
+- the same context in every fill ("read books on Saturday"), or a count no
+  kid would really own
+- stiff teacher or test-maker voice ("Compute the value"), or a prompt that
+  gives the answer away
+- a picture the kid can't use or that needs explaining (a disc mat showing
+  only the first number; bars labelled A and B)
+- numbers no real situation has: prices no store charges, or a key that
+  barely changes from fill to fill
+
+It is a bar for quality, never a source: our wording stays our own, and no
+textbook item is copied or closely paraphrased (see Sources).
+
 ## The whole process at a glance
 
 The Grade 2 add/subtract pass (Oct 1-3, 2026) is the worked example: it ran
@@ -30,7 +52,7 @@ step ends at a gate.
 | 3 | Rows into the repo (PR) and the database | Claude; **Sai merges** | standards spec green; `--check` returns nothing |
 | 4 | App pieces the rows need (widgets, topic, harness rules) | Claude; Mac build; **Sai merges** | web CI green, iPhone tests pass on Sai's Mac |
 | 5 | Write models: one writer per group of rows, closed brief | Claude (writer agents) | harness 0 failures |
-| 6 | Cheap checks: harness, blind solve, kid-safe, screenshots, a teacher's read | Claude | every flag fixed or explained |
+| 6 | Cheap checks: harness, blind solve, kid-safe, screenshots, the textbook test | Claude | every flag fixed or explained; every model meets the bar |
 | 7 | Load models as drafts; commit the model files (PR) | Claude; **Sai merges** | counts match; no draft overwrote a reviewed row |
 | 8 | Review at larkit.io/admin/models | **Sai** | approve, reject with a note, flag, edit |
 | 9 | Fix rejects from the notes; record each lesson | Claude | fix reloaded as a draft; lesson in the kit |
@@ -204,8 +226,13 @@ lines are the exceptions. Leave them out of every writer excerpt.
      list under "Rules learned from the Grade 2 add/subtract review" in the
      kit (object variety, a key that changes, real mistakes, names on
      pictures, pictures the kid can use).
+   - **The textbook test** (The bar, above): read ten fills of each model as
+     if they were printed on a practice page of Math in Focus or another
+     premier K-5 textbook. Anything that would look out of place there is a
+     fix, not a note.
    - Then at most **one AI review per subskill**: one reviewer reads that
-     subskill's models against their rows. No checker swarms.
+     subskill's models against their rows and puts the textbook test to each.
+     No checker swarms.
 5. **Load drafts.**
    - Run `set -a && source .env.local && set +a && npm run models:load -- f.json --dryRun`, then the same without `--dryRun`.
      - The script loads neither env file itself.

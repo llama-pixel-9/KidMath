@@ -2,7 +2,7 @@
 
 Written for the Grade 2 money pilot (2026-09-28) and kept as the kit for every skill after it: the spec and difficulty sections below are the money worked example; replace them with the next skill's approved plan section and keep everything else.
 
-You are writing **item models** for Larkit, a paid K-5 math practice app. An item model is one well-written question with its numbers and context left as slots; the app fills a model into many concrete items with computed keys. Sai (the owner, a tutor) reviews every model on a review screen, so each model must be something a careful Grade 2 teacher would be proud to print.
+You are writing **item models** for Larkit, a paid K-5 math practice app. An item model is one well-written question with its numbers and context left as slots; the app fills a model into many concrete items with computed keys. Sai (the owner, a tutor) reviews every model on a review screen, so each model must be something a careful Grade 2 teacher would be proud to print. Sai's bar (2026-10-03): every item a model fills should look at home in Math in Focus or another premier K-5 textbook, so that dropped onto one of its practice pages nothing about it stands out. That is a bar for quality only; the wording is always our own.
 
 Everything below is verified against the code on `main`; run commands from the repo root. Read the exemplar models first: `src/itemModels/samples/grade2Money.js` (five commented exemplars) and `src/itemModels/pilot/grade2Money.json` (the 141 pilot models). Copy their level of care, not their content.
 

@@ -225,7 +225,7 @@ export function buildStoryItems() {
 
   const SENSIBLE_SKELETONS = [
     (nm, obj, a, b) => `${nm} is labeling ${obj}. Which label makes sense: ${a} or ${b}?`,
-    (nm, obj, a, b) => `For ${obj}, should ${nm} write ${a} or ${b}? Pick the sensible label.`,
+    (nm, obj, a, b) => `For ${obj}, should ${nm} write ${a} or ${b}?`,
   ];
   const sensibleEmit = (band, structureType) => ([obj, a, b, good], sk, nm, i) =>
     mk("benchmarkEstimate", structureType, band, {
@@ -450,7 +450,7 @@ export function buildStoryItems() {
   items.push(...cycle(17, [["2 km", 2000, "1700 m", 1700], ["1800 m", 1800, "2 km", 2000], ["1 km", 1000, "1200 m", 1200], ["900 m", 900, "1 km", 1000], ["3 km", 3000, "2600 m", 2600], ["3300 m", 3300, "3 km", 3000], ["2 km", 2000, "2400 m", 2400], ["1600 m", 1600, "2 km", 2000], ["4 km", 4000, "3700 m", 3700], ["4300 m", 4300, "4 km", 4000], ["1 km", 1000, "800 m", 800], ["1100 m", 1100, "1 km", 1000], ["5 km", 5000, "4600 m", 4600], ["5500 m", 5500, "5 km", 5000], ["3 km", 3000, "3100 m", 3100], ["2900 m", 2900, "3 km", 3000], ["6 km", 6000, "5800 m", 5800]], PATH_CMP_SKELETONS, 1, pathCmpEmit));
   const MELON_SKELETONS = [
     (nm, a, b, diff) => `${nm}'s pumpkin weighs ${a} g and a friend's weighs ${b} g. How many grams heavier is the heavier pumpkin?`,
-    (nm, a, b, diff) => `Two melons weigh in at ${a} g and ${b} g. What is the difference in grams? ${nm} does the subtraction.`,
+    (nm, a, b, diff) => `Two melons weigh in at ${a} g and ${b} g. ${nm} does the subtraction. What is the difference in grams?`,
   ];
   const melonEmit = ([a, b], sk, nm) =>
     mk("compareOrder", "storyMelonDiff", B3, {

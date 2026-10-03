@@ -24,12 +24,12 @@ export function compositeProcedural() {
       (a, b, c, d) => `A figure is a ${a} cm by ${b} cm rectangle joined to a ${c} cm by ${d} cm rectangle, no overlap. What is its total area in square cm?`,
       (a, b, c, d) => `Two rectangles, ${a} by ${b} and ${c} by ${d}, combine into one figure without overlapping. Find the total area in square cm.`,
       (a, b, c, d) => `An L-shaped floor is a ${a} by ${b} part plus a ${c} by ${d} part. How many square cm does the floor cover?`,
-      (a, b, c, d) => `Compute the combined area of non-overlapping rectangles ${a} by ${b} and ${c} by ${d}, in square cm.`,
+      (a, b, c, d) => `What is the combined area of non-overlapping rectangles ${a} by ${b} and ${c} by ${d}, in square cm?`,
     ],
     band3: [
-      (a, b, c, d) => `A composite figure is a ${a} m by ${b} m rectangle plus a ${c} m by ${d} m rectangle, no overlap. Compute its area in square m.`,
+      (a, b, c, d) => `A composite figure is a ${a} m by ${b} m rectangle plus a ${c} m by ${d} m rectangle, no overlap. What is its area in square m?`,
       (a, b, c, d) => `Exactly how many square m cover a figure made of ${a} by ${b} and ${c} by ${d} rectangles with no overlap?`,
-      (a, b, c, d) => `Determine the total area of the non-overlapping pieces ${a} by ${b} and ${c} by ${d}, in square m.`,
+      (a, b, c, d) => `What is the total area of the non-overlapping pieces ${a} by ${b} and ${c} by ${d}, in square m?`,
       (a, b, c, d) => `An L-shaped park is a ${a} m by ${b} m field joined to a ${c} m by ${d} m field. What is the park's area in square m?`,
     ],
   };
@@ -61,12 +61,12 @@ export function compositeProcedural() {
       (W, H, w, h) => `A ${W} cm by ${H} cm sheet has a ${w} cm by ${h} cm corner cut away. What area remains, in square cm?`,
       (W, H, w, h) => `Cutting a ${w} by ${h} notch from a ${W} by ${H} sheet leaves how many square cm?`,
       (W, H, w, h) => `A ${W} by ${H} panel loses a ${w} by ${h} rectangle. Find the remaining area in square cm.`,
-      (W, H, w, h) => `Compute the leftover area when a ${w} cm by ${h} cm piece is removed from a ${W} cm by ${H} cm sheet.`,
+      (W, H, w, h) => `A ${w} cm by ${h} cm piece is removed from a ${W} cm by ${H} cm sheet. How many square cm are left over?`,
     ],
     band3: [
-      (W, H, w, h) => `A ${W} m by ${H} m plot has a ${w} m by ${h} m corner excluded. Compute the remaining area in square m.`,
+      (W, H, w, h) => `A ${W} m by ${H} m plot has a ${w} m by ${h} m corner excluded. What is the remaining area in square m?`,
       (W, H, w, h) => `Excluding a ${w} by ${h} section from a ${W} by ${H} plot leaves exactly how many square m?`,
-      (W, H, w, h) => `Determine the area left when a ${w} m by ${h} m patch is removed from a ${W} m by ${H} m field.`,
+      (W, H, w, h) => `What area is left when a ${w} m by ${h} m patch is removed from a ${W} m by ${H} m field?`,
       (W, H, w, h) => `An L-shaped lot is a ${W} m by ${H} m rectangle minus a ${w} m by ${h} m corner. What is its area in square m?`,
     ],
   };
@@ -98,12 +98,12 @@ export function compositeProcedural() {
       (s, t) => `Two squares with sides ${s} cm and ${t} cm combine without overlap. What is the total area in square cm?`,
       (s, t) => `Find the combined area of squares of side ${s} cm and side ${t} cm, in square cm.`,
       (s, t) => `A ${s} cm square joins a ${t} cm square, no overlap. How many square cm together?`,
-      (s, t) => `Compute the total area of two squares, sides ${s} cm and ${t} cm.`,
+      (s, t) => `What is the total area of two squares with sides ${s} cm and ${t} cm?`,
     ],
     band3: [
-      (s, t) => `Squares of side ${s} m and side ${t} m form one non-overlapping figure. Compute its area in square m.`,
+      (s, t) => `Squares of side ${s} m and side ${t} m form one non-overlapping figure. What is its area in square m?`,
       (s, t) => `Exactly how many square m do squares of sides ${s} m and ${t} m cover together?`,
-      (s, t) => `Determine the combined area of a ${s} m square and a ${t} m square.`,
+      (s, t) => `What is the combined area of a ${s} m square and a ${t} m square?`,
       (s, t) => `The total area of two squares, sides ${s} m and ${t} m, is how many square m?`,
     ],
   };
@@ -140,12 +140,12 @@ export function compositeProcedural() {
       (T, a, b) => `A composite figure of ${T} square cm splits into a ${a} by ${b} rectangle and one other piece. What is the other piece's area in square cm?`,
       (T, a, b) => `Two rectangles total ${T} square cm; one is ${a} cm by ${b} cm. Find the other's area in square cm.`,
       (T, a, b) => `A ${T} square cm floor is a ${a} by ${b} section plus one more section. How many square cm is the other section?`,
-      (T, a, b) => `Compute the missing part: total area ${T} square cm, known part ${a} by ${b}.`,
+      (T, a, b) => `Find the missing part: total area ${T} square cm, known part ${a} by ${b}.`,
     ],
     band3: [
-      (T, a, b) => `A composite region of ${T} square m contains a ${a} m by ${b} m rectangle and one other rectangle. Compute the other rectangle's area.`,
+      (T, a, b) => `A composite region of ${T} square m contains a ${a} m by ${b} m rectangle and one other rectangle. What is the other rectangle's area?`,
       (T, a, b) => `Two rectangles cover ${T} square m in all; one measures ${a} by ${b}. Exactly how many square m is the other?`,
-      (T, a, b) => `Determine the second piece's area when a ${T} square m figure includes a ${a} m by ${b} m piece.`,
+      (T, a, b) => `A ${T} square m figure includes a ${a} m by ${b} m piece. What is the second piece's area?`,
       (T, a, b) => `Of ${T} square m total, a ${a} by ${b} rectangle is one part. The remaining part covers how many square m?`,
     ],
   };
@@ -182,7 +182,7 @@ export function compositeConceptual() {
       (nm) => `With two overlapping posters, ${nm} adds the two areas for the covered wall space. Is ${nm} right?`,
     ],
     band3: [
-      (nm) => `${nm} computes covered ground for two overlapping tarps by simple addition of their areas. Is the computation sound?`,
+      (nm) => `${nm} finds how much ground two overlapping tarps cover by adding their areas. Is ${nm} right?`,
       (nm) => `Two overlapping fields are fenced as one; ${nm} adds both areas for the enclosed ground. Should the addition stand?`,
     ],
   };
@@ -192,7 +192,7 @@ export function compositeConceptual() {
         item("compositeFigures", "conceptual", `overlapTrap_${band}`, band, {
           answer: "No",
           choices: ["Yes", "No"],
-          display: { ap: { kind: "trapNo" }, promptText: overlapPhr[band][i % 2](nameAt(i * 3 + 1 + OFF[band])) + (i >= 12 ? " Think about the doubled part." : i >= 6 ? " The overlap counts once." : ""), truth: false },
+          display: { ap: { kind: "trapNo" }, promptText: (i >= 12 ? "Think about the doubled part. " : i >= 6 ? "The overlap counts once. " : "") + overlapPhr[band][i % 2](nameAt(i * 3 + 1 + OFF[band])), truth: false },
         })
       );
     }
@@ -208,7 +208,7 @@ export function compositeConceptual() {
       (nm) => `Dividing a floor plan into two rooms keeps the total floor area, argues ${nm}. Is ${nm} right?`,
     ],
     band3: [
-      (nm) => `${nm} partitions a field into two plots and asserts the combined area equals the original. Is the assertion sound?`,
+      (nm) => `${nm} splits a field into two plots and says the two areas add up to the whole field. Is ${nm} right?`,
       (nm) => `A region cut into two non-overlapping parts keeps its total area, states ${nm}. Should the statement stand?`,
     ],
   };
@@ -218,7 +218,7 @@ export function compositeConceptual() {
         item("compositeFigures", "conceptual", `splitJudge_${band}`, band, {
           answer: "Yes",
           choices: ["Yes", "No"],
-          display: { ap: { kind: "authoredYes" }, promptText: splitPhr[band][i % 2](nameAt(i * 3 + 2 + OFF[band])) + (i >= 8 ? " No paper is lost in the cut." : ""), truth: true },
+          display: { ap: { kind: "authoredYes" }, promptText: (i >= 8 ? "No paper is lost in the cut. " : "") + splitPhr[band][i % 2](nameAt(i * 3 + 2 + OFF[band])), truth: true },
         })
       );
     }
@@ -234,8 +234,8 @@ export function compositeConceptual() {
       (nm, a, b, c, d, said) => `Check ${nm}'s combined area of ${said} square cm for ${a} by ${b} plus ${c} by ${d}. Right or not?`,
     ],
     band3: [
-      (nm, a, b, c, d, said) => `${nm} certifies ${said} square m for the union of non-overlapping ${a} by ${b} and ${c} by ${d} rectangles. Valid?`,
-      (nm, a, b, c, d, said) => `Audit the composite total: ${a} by ${b} plus ${c} by ${d}, recorded ${said} by ${nm}. Clean?`,
+      (nm, a, b, c, d, said) => `${nm} says non-overlapping ${a} by ${b} and ${c} by ${d} rectangles cover ${said} square m together. Is ${nm} right?`,
+      (nm, a, b, c, d, said) => `${nm} adds the areas of a ${a} by ${b} and a ${c} by ${d} rectangle and writes ${said}. Is that right?`,
     ],
   };
   const sumJudgeData = {
@@ -268,7 +268,7 @@ export function measureProcedural() {
 
   const whichPhr = {
     band1: [
-      (task) => `To ${task}, do you need the trip AROUND the shape or the space INSIDE it? Pick one.`,
+      (task) => `To ${task}, do you need the trip AROUND the shape or the space INSIDE it?`,
       (task) => `Which do you measure to ${task}: around the edge, or inside the shape?`,
     ],
     band2: [
@@ -300,7 +300,7 @@ export function measureProcedural() {
 
   const unitPhr = {
     band1: [
-      (which, noun) => `You measured the ${which === "area" ? "space inside" : "trip around"} a ${noun}. Is the answer counted in unit squares or in units? Pick one.`,
+      (which, noun) => `You measured the ${which === "area" ? "space inside" : "trip around"} a ${noun}. Is the answer counted in unit squares or in units?`,
       (which, noun) => `Counting the ${which === "area" ? "inside" : "border"} of a ${noun} uses which count: unit squares or units?`,
     ],
     band2: [
@@ -333,8 +333,8 @@ export function measureProcedural() {
 
   const labelPhr = {
     band1: [
-      (w, h) => `A rectangle is ${w} units by ${h} units. Its area is ${w * h} of which count: unit squares or units? Pick one.`,
-      (w, h) => `The border of a ${w}-by-${h} rectangle is ${2 * (w + h)} of which count: units or unit squares? Pick one.`,
+      (w, h) => `A rectangle is ${w} units by ${h} units. Its area is ${w * h} of which count: unit squares or units?`,
+      (w, h) => `The border of a ${w}-by-${h} rectangle is ${2 * (w + h)} of which count: units or unit squares?`,
     ],
     band2: [
       (w, h) => `A ${w} cm by ${h} cm rectangle has area ${w * h}. Which unit finishes that: square cm or cm?`,
@@ -379,8 +379,8 @@ export function measureProcedural() {
       (w, h) => `A rectangle is ${w} cm by ${h} cm. Type its perimeter in cm only, no label.`,
     ],
     band3: [
-      (w, h) => `Compute and type the area of a ${w} m by ${h} m rectangle (number only).`,
-      (w, h) => `Compute and type the perimeter of a ${w} m by ${h} m rectangle (number only).`,
+      (w, h) => `Type the area of a ${w} m by ${h} m rectangle as a number only.`,
+      (w, h) => `Type the perimeter of a ${w} m by ${h} m rectangle as a number only.`,
     ],
   };
   for (const band of ["band1", "band2", "band3"]) {
@@ -413,7 +413,7 @@ export function measureConceptual() {
     ],
     band3: [
       (nm, job) => `${nm} prepares to ${job} by computing the area. Does the job call for area?`,
-      (nm, job) => `Area is what ${nm} computes before starting to ${job}. Is that the measure required?`,
+      (nm, job) => `${nm} finds the area before starting to ${job}. Is area the measure ${nm} needs?`,
     ],
   };
   const purposeData = {
@@ -474,7 +474,7 @@ export function measureConceptual() {
       (nm, w, h, s) => `Equal perimeter, unequal area — ${nm} offers the ${w} by ${h} rectangle and the ${s} by ${s} square. Is ${nm} right?`,
     ],
     band3: [
-      (nm, w, h, s) => `${nm} presents the ${w} m by ${h} m rectangle and the ${s} m square as equal-perimeter, unequal-area shapes. Is the presentation sound?`,
+      (nm, w, h, s) => `${nm} says the ${w} m by ${h} m rectangle and the ${s} m square have the same perimeter but different areas. Is ${nm} right?`,
       (nm, w, h, s) => `Same fence, different field: ${nm} cites the ${w} by ${h} rectangle versus the ${s} by ${s} square. Correct example?`,
     ],
   };

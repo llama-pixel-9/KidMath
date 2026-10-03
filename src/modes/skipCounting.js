@@ -188,7 +188,7 @@ const VARIETIES = [
       return {
         answer: `add ${step}`,
         choices: shuffleArray([...new Set(options)]),
-        display: { promptText: `What is the rule? ${sequence.join(", ")}` },
+        display: { promptText: `A skip count goes ${sequence.join(", ")}. What is the rule?` },
         representation: "symbolic",
         cognitiveDemand: "DOK2",
         misconceptions: ["wrongStep"],

@@ -44,6 +44,20 @@ When the reviewer flags a wording pattern, the fix is never one edit:
 - **Never self-answering** — the prompt's only number must not BE the answer
   ("Jordan hung 47 photos. How many photos?"). Visual payloads are exempt —
   there the prose count is a caption. (`selfAnswering`, fail)
+- **Make the kid do the step** — a strategy drill shows the known fact and asks
+  for the step: "9 + 9 = 18. What is 9 + 10?", "Make a ten: 8 + 5 = 10 + __".
+  Never write out the strategy's answer ("29 + 41 = 30 + 40. Compute the value.")
+  (`workedStepGiveaway`, fail)
+- **Kid voice, not test-maker voice** — no "compute / determine / evaluate",
+  "the value?", "certifies", "audit", "Is the work sound?", "Express it as";
+  a claim item reads "Nia says 7 × 8 = 54. Is Nia right?" (`teacherVoice`, fail)
+- **End on the question** — the card shows the last sentence big, so no tag after
+  it ("Diego checks.", "Pick one.", "Choose them."). A picture row (🍎🍎🍎) may
+  follow. (`questionNotLast`, fail)
+- **The sequence card is only for "what comes next"** — `display.sequence` hides
+  the prompt behind a "What comes next?" card; a gap, first-term, rule or
+  wrong-number question carries `display.terms`. Blanks are `__`, never `?`
+  (`?` splits the card). (`sequenceCardMismatch`, fail)
 - **Drills are drills** — sequence continuation is bare fluency form
   ("Count by 4s: 16, 20, 24. What number comes next?"), never narrated.
   Stories are only for questions about real quantities.

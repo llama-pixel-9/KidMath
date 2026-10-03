@@ -39,7 +39,7 @@ function cycle(count, space, skeletons, offset, emit) {
 export function buildStoryItems() {
   const items = [];
   const OFF = { band1: 0, band2: 7, band3: 13 };
-  const TAG = { band1: "", band2: " Sketch the bar if it helps.", band3: " A bar model makes it clear." };
+  const TAG = { band1: "", band2: "Sketch the bar if it helps. ", band3: "A bar model makes it clear. " };
 
   /* partWhole stories: join, missing part, three parts. */
   const JOIN_SKELETONS = [
@@ -52,7 +52,7 @@ export function buildStoryItems() {
     return mk("partWhole", `storyJoin_${band}`, band, {
       answer: a + b,
       answerType: "numberPad",
-      display: { counting: { kind: "sum", parts: [a, b] }, promptText: sk(nm, other, a, b, THINGS[ti % 4]) + TAG[band] },
+      display: { counting: { kind: "sum", parts: [a, b] }, promptText: TAG[band] + sk(nm, other, a, b, THINGS[ti % 4]) },
     });
   };
   items.push(...cycle(17, [[7, 6, 0], [8, 9, 1], [5, 12, 2], [6, 11, 3], [9, 4, 0], [12, 7, 1], [3, 14, 2], [8, 5, 3], [11, 6, 0], [4, 13, 1], [7, 9, 2], [15, 3, 3], [6, 8, 0], [9, 8, 1], [12, 5, 2], [2, 16, 3], [10, 7, 0]], JOIN_SKELETONS, 0, joinEmit(B1)));
@@ -68,7 +68,7 @@ export function buildStoryItems() {
     mk("partWhole", `storyLeft_${band}`, band, {
       answer: w - p,
       answerType: "barModel",
-      display: { type: "barPartWhole", whole: w, part: p, counting: { kind: "countBack", start: w, back: p }, promptText: sk(nm, w, p, THINGS[ti % 4]) + TAG[band] },
+      display: { type: "barPartWhole", whole: w, part: p, counting: { kind: "countBack", start: w, back: p }, promptText: TAG[band] + sk(nm, w, p, THINGS[ti % 4]) },
     });
   items.push(...cycle(17, [[12, 7, 0], [15, 9, 1], [18, 6, 2], [14, 8, 3], [20, 13, 0], [11, 4, 1], [16, 9, 2], [13, 5, 3], [19, 12, 0], [17, 8, 1], [10, 3, 2], [20, 6, 3], [15, 7, 0], [18, 11, 1], [12, 5, 2], [14, 9, 3], [16, 7, 0]], LEFT_SKELETONS, 1, leftEmit(B1)));
   items.push(...cycle(17, [[45, 27, 0], [62, 38, 1], [71, 46, 2], [53, 29, 3], [84, 57, 0], [66, 31, 1], [92, 68, 2], [58, 24, 3], [77, 49, 0], [63, 36, 1], [85, 52, 2], [49, 18, 3], [96, 73, 0], [67, 42, 1], [74, 28, 2], [88, 61, 3], [55, 33, 0]], LEFT_SKELETONS, 2, leftEmit(B2)));
@@ -83,7 +83,7 @@ export function buildStoryItems() {
     mk("partWhole", `storyThree_${band}`, band, {
       answer: a + b + c,
       answerType: "numberPad",
-      display: { counting: { kind: "sum", parts: [a, b, c] }, promptText: sk(nm, a, b, c, THINGS[ti % 4]) + TAG[band] },
+      display: { counting: { kind: "sum", parts: [a, b, c] }, promptText: TAG[band] + sk(nm, a, b, c, THINGS[ti % 4]) },
     });
   items.push(...cycle(17, [[4, 5, 6, 0], [5, 6, 4, 1], [6, 5, 7, 2], [4, 6, 8, 3], [3, 4, 5, 0], [5, 5, 6, 1], [6, 7, 7, 2], [5, 6, 7, 3], [3, 4, 6, 0], [5, 5, 7, 1], [5, 6, 6, 2], [5, 7, 8, 3], [4, 5, 7, 0], [5, 6, 6, 1], [6, 6, 7, 2], [4, 4, 5, 3], [2, 5, 6, 0]], THREE_SKELETONS, 2, threeEmit(B1)));
   items.push(...cycle(17, [[24, 25, 26, 0], [25, 26, 24, 1], [26, 25, 37, 2], [24, 26, 38, 3], [13, 24, 25, 0], [25, 15, 25, 1], [26, 27, 37, 2], [25, 26, 37, 3], [13, 24, 26, 0], [25, 15, 26, 1], [25, 26, 26, 2], [25, 27, 39, 3], [14, 25, 27, 0], [25, 26, 26, 1], [26, 26, 37, 2], [14, 24, 25, 3], [12, 25, 26, 0]], THREE_SKELETONS, 0, threeEmit(B2)));
@@ -100,7 +100,7 @@ export function buildStoryItems() {
     return mk("comparison", `storyDiff_${band}`, band, {
       answer: a - b,
       answerType: "numberPad",
-      display: { counting: { kind: "gap", have: b, target: a }, promptText: sk(nm, other, a, b, THINGS[ti % 4]) + TAG[band] },
+      display: { counting: { kind: "gap", have: b, target: a }, promptText: TAG[band] + sk(nm, other, a, b, THINGS[ti % 4]) },
     });
   };
   items.push(...cycle(17, [[14, 9, 0], [17, 8, 1], [12, 5, 2], [19, 11, 3], [16, 7, 0], [15, 6, 1], [20, 12, 2], [13, 4, 3], [18, 9, 0], [11, 3, 1], [20, 14, 2], [16, 9, 3], [14, 6, 0], [19, 13, 1], [12, 7, 2], [17, 4, 3], [15, 8, 0]], DIFF_SKELETONS, 0, diffEmit(B1)));
@@ -117,7 +117,7 @@ export function buildStoryItems() {
     return mk("comparison", `storyMore_${band}`, band, {
       answer: b + d,
       answerType: "numberPad",
-      display: { counting: { kind: "countOn", start: b, more: d }, promptText: sk(nm, other, b, d, THINGS[ti % 4]) + TAG[band] },
+      display: { counting: { kind: "countOn", start: b, more: d }, promptText: TAG[band] + sk(nm, other, b, d, THINGS[ti % 4]) },
     });
   };
   items.push(...cycle(17, [[9, 5, 0], [8, 7, 1], [5, 9, 2], [11, 6, 3], [7, 8, 0], [6, 9, 1], [12, 5, 2], [4, 9, 3], [9, 8, 0], [3, 8, 1], [14, 5, 2], [9, 7, 3], [6, 7, 0], [13, 6, 1], [7, 5, 2], [4, 12, 3], [8, 9, 0]], MORE_SKELETONS, 1, moreEmit(B1)));
@@ -134,7 +134,7 @@ export function buildStoryItems() {
     return mk("comparison", `storyFewer_${band}`, band, {
       answer: a - d,
       answerType: "numberPad",
-      display: { counting: { kind: "countBack", start: a, back: d }, promptText: sk(nm, other, a, d, THINGS[ti % 4]) + TAG[band] },
+      display: { counting: { kind: "countBack", start: a, back: d }, promptText: TAG[band] + sk(nm, other, a, d, THINGS[ti % 4]) },
     });
   };
   items.push(...cycle(17, [[14, 5, 0], [17, 8, 1], [12, 4, 2], [19, 6, 3], [16, 7, 0], [15, 9, 1], [20, 8, 2], [13, 6, 3], [18, 5, 0], [11, 4, 1], [20, 11, 2], [16, 8, 3], [14, 7, 0], [19, 12, 1], [12, 3, 2], [17, 9, 3], [15, 4, 0]], FEWER_SKELETONS, 2, fewerEmit(B1)));
@@ -152,7 +152,7 @@ export function buildStoryItems() {
     return mk("multiplicative", `storyTimes_${band}`, band, {
       answer: k * u,
       answerType: "numberPad",
-      display: { bar: { kind: "timesOf", k, u }, promptText: sk(nm, other, k, u, THINGS[ti % 4]) + TAG[band] },
+      display: { bar: { kind: "timesOf", k, u }, promptText: TAG[band] + sk(nm, other, k, u, THINGS[ti % 4]) },
     });
   };
   items.push(...cycle(17, [[2, 6, 0], [3, 4, 1], [2, 7, 2], [3, 5, 3], [2, 8, 0], [4, 3, 1], [2, 9, 2], [3, 6, 3], [4, 4, 0], [2, 5, 1], [5, 3, 2], [3, 3, 3], [4, 5, 0], [2, 10, 1], [5, 4, 2], [6, 3, 3], [2, 4, 0]], TIMES_SKELETONS, 0, timesEmit(B1)));
@@ -168,7 +168,7 @@ export function buildStoryItems() {
     mk("multiplicative", `storyShare_${band}`, band, {
       answer: w / k,
       answerType: "numberPad",
-      display: { bar: { kind: "unitOf", w, k }, promptText: sk(nm, w, k, THINGS[ti % 4]) + TAG[band] },
+      display: { bar: { kind: "unitOf", w, k }, promptText: TAG[band] + sk(nm, w, k, THINGS[ti % 4]) },
     });
   items.push(...cycle(17, [[12, 2, 0], [12, 3, 1], [12, 4, 2], [15, 3, 3], [16, 2, 0], [16, 4, 1], [18, 2, 2], [18, 3, 3], [20, 2, 0], [20, 4, 1], [14, 2, 2], [10, 2, 3], [9, 3, 0], [8, 2, 1], [8, 4, 2], [6, 2, 3], [20, 5, 0]], SHARE_SKELETONS, 1, shareEmit(B1)));
   items.push(...cycle(17, [[84, 3, 0], [76, 4, 1], [95, 5, 2], [72, 6, 3], [87, 3, 0], [92, 4, 1], [85, 5, 2], [78, 6, 3], [96, 3, 0], [88, 4, 1], [75, 5, 2], [84, 6, 3], [93, 3, 0], [68, 4, 1], [90, 5, 2], [66, 6, 3], [81, 3, 0]], SHARE_SKELETONS, 2, shareEmit(B2)));
@@ -183,7 +183,7 @@ export function buildStoryItems() {
     mk("multiplicative", `storyRows_${band}`, band, {
       answer: k * u,
       answerType: "numberPad",
-      display: { counting: { kind: "sum", parts: Array.from({ length: k }, () => u) }, promptText: sk(nm, k, u, null) + TAG[band] },
+      display: { counting: { kind: "sum", parts: Array.from({ length: k }, () => u) }, promptText: TAG[band] + sk(nm, k, u, null) },
     });
   items.push(...cycle(17, [[2, 6], [3, 4], [2, 7], [3, 5], [2, 8], [4, 3], [2, 9], [3, 6], [4, 4], [2, 5], [5, 3], [3, 3], [4, 5], [2, 10], [5, 4], [6, 3], [5, 2]], ROWS_SKELETONS, 2, rowsEmit(B1)));
   items.push(...cycle(17, [[3, 21], [4, 17], [5, 14], [6, 12], [3, 26], [4, 19], [5, 16], [6, 13], [3, 24], [4, 22], [5, 18], [7, 11], [3, 29], [4, 23], [5, 19], [7, 12], [8, 11]], ROWS_SKELETONS, 0, rowsEmit(B2)));
@@ -199,7 +199,7 @@ export function buildStoryItems() {
     mk("fractionBar", `storyFrac_${band}`, band, {
       answer: (w / den) * num,
       answerType: "numberPad",
-      display: { bar: { kind: "fracOf", num, den, w }, promptText: sk(nm, num, den, w, null) + TAG[band] },
+      display: { bar: { kind: "fracOf", num, den, w }, promptText: TAG[band] + sk(nm, num, den, w, null) },
     });
   items.push(...cycle(17, [[1, 2, 12], [1, 2, 16], [1, 4, 12], [1, 4, 16], [1, 2, 20], [1, 3, 12], [1, 3, 15], [3, 4, 12], [2, 3, 12], [1, 2, 10], [1, 4, 20], [1, 3, 18], [3, 4, 16], [2, 3, 15], [1, 2, 18], [1, 2, 14], [1, 4, 8]], FRAC_SKELETONS, 0, fracEmit(B1)));
   items.push(...cycle(17, [[1, 4, 84], [3, 4, 76], [2, 5, 95], [5, 6, 72], [1, 3, 87], [3, 4, 92], [4, 5, 85], [1, 6, 78], [2, 3, 96], [1, 4, 88], [3, 5, 75], [5, 6, 84], [1, 3, 93], [1, 4, 68], [2, 5, 90], [1, 6, 66], [2, 3, 81]], FRAC_SKELETONS, 1, fracEmit(B2)));
@@ -214,7 +214,7 @@ export function buildStoryItems() {
     mk("fractionBar", `storyHalf_${band}`, band, {
       answer: w / 2,
       answerType: "numberPad",
-      display: { bar: { kind: "fracOf", num: 1, den: 2, w }, promptText: sk(nm, w, null) + TAG[band] },
+      display: { bar: { kind: "fracOf", num: 1, den: 2, w }, promptText: TAG[band] + sk(nm, w, null) },
     });
   items.push(...cycle(17, [[12], [16], [20], [14], [18], [10], [8], [6], [4], [12], [16], [20], [14], [18], [10], [8], [6]], HALFLEFT_SKELETONS, 1, halfEmit(B1)));
   items.push(...cycle(17, [[84], [76], [94], [68], [92], [88], [96], [72], [86], [78], [90], [64], [82], [98], [74], [66], [80]], HALFLEFT_SKELETONS, 2, halfEmit(B2)));
@@ -229,7 +229,7 @@ export function buildStoryItems() {
     mk("fractionBar", `storyRebuild_${band}`, band, {
       answer: den * piece,
       answerType: "numberPad",
-      display: { counting: { kind: "sum", parts: Array.from({ length: den }, () => piece) }, promptText: sk(nm, den, piece, null) + TAG[band] },
+      display: { counting: { kind: "sum", parts: Array.from({ length: den }, () => piece) }, promptText: TAG[band] + sk(nm, den, piece, null) },
     });
   items.push(...cycle(17, [[2, 6], [2, 7], [2, 8], [3, 4], [3, 5], [3, 6], [4, 3], [4, 4], [4, 5], [5, 2], [5, 3], [2, 9], [2, 10], [3, 3], [4, 2], [5, 4], [6, 2]], REBUILD_SKELETONS, 0, rebuildEmit(B1)));
   items.push(...cycle(17, [[3, 28], [4, 19], [5, 19], [6, 12], [3, 29], [4, 23], [5, 17], [6, 13], [3, 32], [4, 22], [5, 15], [6, 14], [3, 31], [4, 17], [5, 18], [6, 11], [3, 27]], REBUILD_SKELETONS, 1, rebuildEmit(B2)));

@@ -52,20 +52,20 @@ export function tenthsProcedural() {
     band1: [
       (n) => `Write ${TENTH_WORDS[n]} ${n === 1 ? "tenth" : "tenths"} as a decimal.`,
       (n) => `${TENTH_WORDS[n]} ${n === 1 ? "tenth" : "tenths"}, written as a decimal = ?`,
-      (n) => `The number ${TENTH_WORDS[n]} ${n === 1 ? "tenth" : "tenths"} looks like which decimal? Type it.`,
+      (n) => `The number ${TENTH_WORDS[n]} ${n === 1 ? "tenth" : "tenths"} looks like which decimal?`,
       (n) => `Type the decimal that means ${TENTH_WORDS[n]} ${n === 1 ? "tenth" : "tenths"}.`,
     ],
     band2: [
       (t, h) => `Write ${t} tenths and ${h} hundredths as one decimal.`,
       (t, h) => `${t} tenths plus ${h} hundredths, as a decimal = ?`,
       (t, h) => `Combine ${t} tenths with ${h} hundredths. Type the decimal.`,
-      (t, h) => `Which decimal holds ${t} in the tenths place and ${h} in the hundredths place? Type it.`,
+      (t, h) => `Which decimal holds ${t} in the tenths place and ${h} in the hundredths place?`,
     ],
     band3: [
       (w, t, h) => `Write ${w} ones, ${t} tenths, and ${h} hundredths as a decimal.`,
-      (w, t, h) => `${w} ones + ${t} tenths + ${h} hundredths = ? Type the decimal.`,
+      (w, t, h) => `${w} ones + ${t} tenths + ${h} hundredths = ?`,
       (w, t, h) => `Compose the decimal with ${w} in the ones place, ${t} in the tenths, ${h} in the hundredths.`,
-      (w, t, h) => `Which decimal has ones digit ${w}, tenths digit ${t}, and hundredths digit ${h}? Type it.`,
+      (w, t, h) => `Which decimal has ones digit ${w}, tenths digit ${t}, and hundredths digit ${h}?`,
     ],
   };
   const writeData = {
@@ -106,19 +106,19 @@ export function tenthsProcedural() {
     band1: [
       (n) => `A strip has 10 equal parts. Exactly ${n} ${n === 1 ? "part is" : "parts are"} colored. The decimal for the colored amount = ?`,
       (n) => `Out of 10 equal pieces, ${n} ${n === 1 ? "is" : "are"} colored in. Type that amount as a decimal.`,
-      (n) => `${n} of 10 equal sections ${n === 1 ? "is" : "are"} colored. Which decimal is that? Type it.`,
+      (n) => `${n} of 10 equal sections ${n === 1 ? "is" : "are"} colored. Which decimal is that?`,
       (n) => `Color ${n} of 10 equal boxes. Type the decimal the coloring shows.`,
     ],
     band2: [
       (h) => `A 10-by-10 grid has exactly ${h} of its 100 small squares colored. The decimal for the colored part = ?`,
       (h) => `Out of 100 grid squares, ${h} ${h === 1 ? "is" : "are"} colored. Type that as a decimal.`,
-      (h) => `${h} of the 100 squares in a grid are colored. Which decimal is that? Type it.`,
+      (h) => `${h} of the 100 squares in a grid are colored. Which decimal is that?`,
       (h) => `Color ${h} squares on a 100-square grid. Type the decimal the coloring shows.`,
     ],
     band3: [
       (h) => `A hundred-square chart shows ${h} of 100 squares filled. Type the filled amount as a decimal.`,
       (h) => `Exactly ${h} of a chart's 100 equal squares are filled. The decimal = ?`,
-      (h) => `Filling ${h} squares out of 100 represents which decimal? Type it.`,
+      (h) => `Filling ${h} squares out of 100 represents which decimal?`,
       (h) => `A grid of 100 squares has ${h} filled. Type the decimal for the filled part.`,
     ],
   };
@@ -146,19 +146,19 @@ export function tenthsProcedural() {
   const digitPhr = {
     band1: [
       (v, n) => `In the decimal 0.${n}, the tenths digit = ?`,
-      (v, n) => `Look at 0.${n}. Which digit sits in the tenths place? Type it.`,
+      (v, n) => `Look at 0.${n}. Which digit sits in the tenths place?`,
       (v, n) => `The decimal 0.${n} keeps which digit in its tenths place?`,
       (v, n) => `Read 0.${n}: the digit right after the decimal point = ?`,
     ],
     band2: [
       (t, h, which) => `In the decimal 0.${t}${h}, the ${which} digit = ?`,
-      (t, h, which) => `Look at 0.${t}${h}. Which digit is in the ${which} place? Type it.`,
+      (t, h, which) => `Look at 0.${t}${h}. Which digit is in the ${which} place?`,
       (t, h, which) => `The decimal 0.${t}${h} carries which digit in its ${which} place?`,
       (t, h, which) => `Read 0.${t}${h} and type its ${which} digit.`,
     ],
     band3: [
       (w, t, h, which) => `In the decimal ${w}.${t}${h}, the ${which} digit = ?`,
-      (w, t, h, which) => `Look at ${w}.${t}${h}. Which digit fills the ${which} place? Type it.`,
+      (w, t, h, which) => `Look at ${w}.${t}${h}. Which digit fills the ${which} place?`,
       (w, t, h, which) => `The decimal ${w}.${t}${h} holds which digit in its ${which} place?`,
       (w, t, h, which) => `Read ${w}.${t}${h} and type the ${which} digit.`,
     ],
@@ -199,13 +199,13 @@ export function tenthsProcedural() {
 
   const countTenthsPhr = {
     band1: [
-      (n) => `How many tenths are in the decimal 0.${n}? Type the count.`,
+      (n) => `How many tenths are in the decimal 0.${n}?`,
       (n) => `The decimal 0.${n} is made of how many tenths?`,
       (n) => `Count the tenths that build 0.${n}. How many tenths is that?`,
       (n) => `0.${n} equals how many tenths?`,
     ],
     band2: [
-      (t, h) => `How many hundredths are in the decimal 0.0${h > 9 ? h : h}? Type the count.`,
+      (t, h) => `How many hundredths are in the decimal 0.0${h > 9 ? h : h}?`,
       (t, h) => `The decimal 0.${t}${h} equals how many hundredths in all?`,
       (t, h) => `Count 0.${t}${h} in hundredths. How many hundredths is that?`,
       (t, h) => `0.${t}${h} is built from how many hundredths?`,
@@ -213,7 +213,7 @@ export function tenthsProcedural() {
     band3: [
       (t, h) => `Express 0.${t}${h} entirely in hundredths. How many hundredths is that?`,
       (t, h) => `The decimal 0.${t}${h} decomposes into how many hundredths?`,
-      (t, h) => `How many hundredths make 0.${t}${h}? Type the count.`,
+      (t, h) => `How many hundredths make 0.${t}${h}?`,
       (t, h) => `Counting by hundredths, how many counts reach 0.${t}${h}?`,
     ],
   };
@@ -333,7 +333,7 @@ export function tenthsConceptual() {
       (nm, n) => `According to ${nm}, adding a zero at the end turns 0.${n} into a different number: 0.${n}0. Is ${nm} right?`,
     ],
     band3: [
-      (nm, n) => `${nm} certifies that 0.${n}0 = 0.${n} exactly. Is the certification valid?`,
+      (nm, n) => `${nm} says 0.${n}0 = 0.${n} exactly. Is ${nm} right?`,
       (nm, n) => `${nm} argues 0.${n}0 must beat 0.${n} because it has more digits. Is ${nm} right?`,
     ],
   };
@@ -370,7 +370,7 @@ export function tenthsConceptual() {
     ],
     band3: [
       (nm, n, said) => `${nm} records ${said} for ${n} filled squares on a hundred-grid. Is the record right?`,
-      (nm, n, said) => `Auditing ${nm}'s chart: ${n} of 100 filled, decimal written ${said}. Clean audit?`,
+      (nm, n, said) => `${nm} fills ${n} of 100 squares and writes the decimal ${said}. Is that right?`,
     ],
   };
   const shadeJudgeData = {
@@ -405,15 +405,15 @@ export function fracToDecProcedural() {
   const toDecPhr = {
     band1: [
       (n, d) => `${n}/${d} = ?`,
-      (n, d) => `${n}/${d} as a decimal = ? Type it.`,
+      (n, d) => `${n}/${d} as a decimal = ?`,
       (n, d) => `Turn ${n}/${d} into decimal form. What do you type?`,
-      (n, d) => `The fraction ${n}/${d} names which decimal? Type it.`,
+      (n, d) => `The fraction ${n}/${d} names which decimal?`,
     ],
     band2: [
       (n, d) => `${n}/${d} = ?`,
-      (n, d) => `As a decimal, ${n}/${d} = ? Type it.`,
+      (n, d) => `As a decimal, ${n}/${d} = ?`,
       (n, d) => `Rewrite the fraction ${n}/${d} in decimal notation.`,
-      (n, d) => `Which decimal equals ${n}/${d}? Type it.`,
+      (n, d) => `Which decimal equals ${n}/${d}?`,
     ],
     band3: [
       (n, d) => `${n}/${d} = ?`,
@@ -441,7 +441,7 @@ export function fracToDecProcedural() {
 
   const toFracPhr = {
     band1: [
-      (v) => `The decimal ${v} equals which fraction? Pick it.`,
+      (v) => `The decimal ${v} equals which fraction?`,
       (v) => `Pick the fraction that names the same amount as ${v}.`,
       (v) => `Which fraction matches the decimal ${v}?`,
       (v) => `${v} written as a fraction is which choice?`,
@@ -492,14 +492,14 @@ export function fracToDecProcedural() {
 
   const decPickPhr = {
     band1: [
-      (n, d) => `Which decimal equals ${n}/${d}? Pick it.`,
+      (n, d) => `Which decimal equals ${n}/${d}?`,
       (n, d) => `Pick the decimal that names ${n}/${d}.`,
       (n, d) => `${n}/${d} matches which decimal below?`,
       (n, d) => `Choose the decimal form of ${n}/${d}.`,
     ],
     band2: [
       (n, d) => `Select the decimal equal to ${n}/${d}.`,
-      (n, d) => `${n}/${d} is which decimal? Choose it.`,
+      (n, d) => `${n}/${d} is which decimal?`,
       (n, d) => `Which decimal expresses ${n}/${d}?`,
       (n, d) => `Find the decimal that equals ${n}/${d}.`,
     ],
@@ -546,7 +546,7 @@ export function fracToDecConceptual() {
       (nm, n, d, said) => `On ${nm}'s card, ${n}/${d} is matched with ${said}. Is the match right?`,
     ],
     band3: [
-      (nm, n, d, said) => `${nm} certifies ${n}/${d} = ${said}. Is the certification valid?`,
+      (nm, n, d, said) => `${nm} says ${n}/${d} = ${said}. Is ${nm} right?`,
       (nm, n, d, said) => `Cross-checking ${nm}'s claim that ${n}/${d} equals ${said} — does it hold?`,
     ],
   };
@@ -577,7 +577,7 @@ export function fracToDecConceptual() {
       (nm, v, ok) => `According to ${nm}, ${v} and 1/2 are the same number. Is ${nm} right?`,
     ],
     band3: [
-      (nm, v, ok) => `${nm} equates ${v} with 1/2 exactly. Is the equation sound?`,
+      (nm, v, ok) => `${nm} says ${v} is exactly 1/2. Is ${nm} right?`,
       (nm, v, ok) => `On ${nm}'s number line, ${v} sits exactly at 1/2. Should it?`,
     ],
   };
@@ -608,7 +608,7 @@ export function fracToDecConceptual() {
       (nm, n) => `${nm} says ${n}/10 is MORE than ${n * 10}/100 because hundredths are smaller. Is ${nm} right?`,
     ],
     band3: [
-      (nm, n) => `${nm} certifies ${n}/10 = ${n * 10}/100 = 0.${n}0. Is the chain valid?`,
+      (nm, n) => `${nm} writes ${n}/10 = ${n * 10}/100 = 0.${n}0. Is every step right?`,
       (nm, n) => `${nm} insists ${n * 10}/100 must beat ${n}/10 since ${n * 10} > ${n}. Is ${nm} right?`,
     ],
   };

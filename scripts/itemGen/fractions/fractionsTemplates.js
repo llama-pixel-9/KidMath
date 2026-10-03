@@ -145,7 +145,7 @@ export function partWholeProcedural() {
         item("partWhole", "procedural", `wholePartsExtra_${band}`, band, {
           answer: d,
           answerType: "numberPad",
-          display: { frac: { kind: "unitCount", d }, promptText: band === "band1" ? `A pie in ${DEN_WORDS[d]}: how many slices make the whole pie?` : `Cutting into ${DEN_WORDS[d]} produces how many equal slices per whole?${i ? " Count them." : ""}` },
+          display: { frac: { kind: "unitCount", d }, promptText: band === "band1" ? `A pie in ${DEN_WORDS[d]}: how many slices make the whole pie?` : `${i ? "Count them. " : ""}Cutting into ${DEN_WORDS[d]} produces how many equal slices per whole?` },
         })
       );
     });
@@ -237,7 +237,7 @@ export function partWholeConceptual() {
     ],
     band3: [
       (nm, n, d, said) => `${nm} records ${said} for ${n} filled of ${d} equal sections. Is the record right?`,
-      (nm, n, d, said) => `Auditing ${nm}'s sheet: ${n} of ${d} shaded, written ${said}. Clean audit?`,
+      (nm, n, d, said) => `${nm} shades ${n} of ${d} equal parts and writes ${said}. Is that right?`,
     ],
   };
   const nameJudgeData = {
@@ -328,7 +328,7 @@ export function fractionAsNumberProcedural() {
   const wholeEqPhr = {
     band1: [
       (d) => `The whole number 1 written in ${DEN_WORDS[d]} is ?/${d}. What is the top number?`,
-      (d) => `How many ${DEN_WORDS[d]} equal exactly 1? Give the count.`,
+      (d) => `How many ${DEN_WORDS[d]} equal exactly 1?`,
     ],
     band2: [
       (d) => `One whole equals ?/${d}. Which numerator completes it?`,
@@ -357,7 +357,7 @@ export function fractionAsNumberProcedural() {
     band1: [
       (k, d) => `A 0-to-1 line has ${d} equal steps. The mark after step ${k} shows which fraction?`,
       (k, d) => `Step ${k} of ${d} along a 0-1 line lands on which fraction?`,
-      (k, d) => `Walk a 0-1 path in ${d} equal steps. Where are you after step ${k}? Pick the fraction.`,
+      (k, d) => `Walk a 0-1 path in ${d} equal steps. Where are you after step ${k}?`,
       (k, d) => `On a line cut into ${d} equal steps, which fraction sits at step ${k}?`,
     ],
     band2: [
@@ -367,7 +367,7 @@ export function fractionAsNumberProcedural() {
       (k, d) => `A ruler from 0 to 1 carries ${d} equal steps. Step ${k} points at which fraction?`,
     ],
     band3: [
-      (k, d) => `Precisely where does mark ${k} of ${d} fall between 0 and 1? Name the fraction.`,
+      (k, d) => `Which fraction names mark ${k} of ${d} between 0 and 1?`,
       (k, d) => `Between 0 and 1, mark number ${k} of ${d} even marks names which fraction?`,
       (k, d) => `Partition the unit interval into ${d} equal steps. Which fraction is mark ${k}?`,
       (k, d) => `Of ${d} evenly spaced marks between 0 and 1, mark ${k} corresponds to which fraction?`,
@@ -410,7 +410,7 @@ export function fractionAsNumberConceptual() {
       (nm, n, d) => `According to ${nm}, ${F(n, d)} and 1 are the same point. Is ${nm} right?`,
     ],
     band3: [
-      (nm, n, d) => `${nm} equates ${F(n, d)} with the whole number 1. Is the equation sound?`,
+      (nm, n, d) => `${nm} says ${F(n, d)} is the same as the whole number 1. Is ${nm} right?`,
       (nm, n, d) => `On ${nm}'s number line, ${F(n, d)} coincides with 1. Should it?`,
     ],
   };
@@ -433,16 +433,16 @@ export function fractionAsNumberConceptual() {
 
   const zeroOnePhr = {
     band1: [
-      (nm, n, d) => `Is ${F(n, d)} closer to 0 or to 1? ${nm} pictures the line.`,
+      (nm, n, d) => `${nm} pictures a number line. Is ${F(n, d)} closer to 0 or to 1?`,
       (nm, n, d) => `${nm} places ${F(n, d)} on a 0-1 line. Which end is it nearer?`,
     ],
     band2: [
-      (nm, n, d) => `Between 0 and 1, does ${F(n, d)} sit nearer 0 or nearer 1? ${nm} decides.`,
+      (nm, n, d) => `Help ${nm} decide. Between 0 and 1, does ${F(n, d)} sit nearer 0 or nearer 1?`,
       (nm, n, d) => `${nm} slides a marker to ${F(n, d)}. Toward which end does it lean?`,
     ],
     band3: [
-      (nm, n, d) => `Locate ${F(n, d)} precisely: is it nearer 0 or nearer 1? ${nm} reasons it out.`,
-      (nm, n, d) => `${nm} audits the position of ${F(n, d)}. Which endpoint is closer?`,
+      (nm, n, d) => `${nm} finds ${F(n, d)} on a number line. Is it nearer 0 or nearer 1?`,
+      (nm, n, d) => `${nm} checks where ${F(n, d)} sits on a 0-1 line. Which end is closer?`,
     ],
   };
   const zeroOneData = {
@@ -597,7 +597,7 @@ export function equivalenceConceptual() {
       (nm, a, b, c, d) => `On ${nm}'s chart, ${F(a, b)} and ${F(c, d)} share one point. Should they?`,
     ],
     band3: [
-      (nm, a, b, c, d) => `${nm} certifies ${F(a, b)} = ${F(c, d)}. Is the certification valid?`,
+      (nm, a, b, c, d) => `${nm} says ${F(a, b)} = ${F(c, d)}. Is ${nm} right?`,
       (nm, a, b, c, d) => `Cross-checking ${nm}'s claim that ${F(a, b)} matches ${F(c, d)} — does it hold?`,
     ],
   };
@@ -620,7 +620,7 @@ export function equivalenceConceptual() {
 
   const pickEqPhr = {
     band1: [
-      (nm, a, b) => `Which fraction names the same amount as ${F(a, b)}? ${nm} hunts for it.`,
+      (nm, a, b) => `${nm} hunts for a fraction equal to ${F(a, b)}. Which fraction names the same amount?`,
       (nm, a, b) => `${nm} needs a twin for ${F(a, b)}. Which fraction is it?`,
     ],
     band2: [
@@ -629,7 +629,7 @@ export function equivalenceConceptual() {
     ],
     band3: [
       (nm, a, b) => `Identify the exact equivalent of ${F(a, b)}. ${nm} cross-multiplies to verify.`,
-      (nm, a, b) => `Only one choice equals ${F(a, b)}. Which does ${nm} certify?`,
+      (nm, a, b) => `Only one choice equals ${F(a, b)}. Which one should ${nm} pick?`,
     ],
   };
   const pickEqData = {
@@ -661,7 +661,7 @@ export function equivalenceConceptual() {
       (nm, a, b) => `Scaling ${F(a, b)} by 2/2 should grow it, argues ${nm}. Does it?`,
     ],
     band3: [
-      (nm, a, b) => `${nm} asserts that ${F(a, b)} scaled by 2/2 lands at a different point on the line. Is that right?`,
+      (nm, a, b) => `${nm} says that multiplying ${F(a, b)} by 2/2 moves it to a different point on the line. Is that right?`,
       (nm, a, b) => `Multiplying numerator and denominator of ${F(a, b)} by 2 moves the value, per ${nm}. Does it move?`,
     ],
   };

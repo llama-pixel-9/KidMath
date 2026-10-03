@@ -352,7 +352,7 @@ const VARIETIES = [
         answer: n1 * e1 > n2 * e2 ? optA : optB,
         answerType: "choice",
         choices: shuffleArray([optA, optB]),
-        promptText: `Would you rather have ${optA}, or ${optB}? Pick the one with more ribbon in all.`,
+        promptText: `You want as much ribbon as you can get. Would you rather have ${optA} or ${optB}?`,
         representation: "verbalContext",
         cognitiveDemand: "DOK3",
         misconceptionTags: ["compareAsAdditive"],

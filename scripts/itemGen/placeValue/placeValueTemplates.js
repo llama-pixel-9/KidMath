@@ -194,7 +194,7 @@ export function tensOnesConceptual() {
   // What does the digit stand for (choice: value vs digit confusion).
   const standsPhr = rotor([
     (nm, n, place) => `${nm} looks at the ${place} digit of ${n}. What is that digit worth?`,
-    (nm, n, place) => `In ${n}, what is the value of the ${place} digit? ${nm} wants to know.`,
+    (nm, n, place) => `Help ${nm}: in ${n}, what is the value of the ${place} digit?`,
   ]);
   const stands = (structureType, band, cases) => {
     cases.forEach(([n, place, word], i) => {
@@ -271,7 +271,7 @@ export function tensOnesConceptual() {
   // Number-line locate (widget) — where does n live between the decades?
   const linePhr = rotor([
     (nm, n) => `${nm} hunts for ${n}. Where does ${n} sit on the line?`,
-    (nm, n) => `Where on the number line does ${n} live? Tap it for ${nm}.`,
+    (nm, n) => `Help ${nm} find it: where on the number line does ${n} live?`,
   ]);
   const line = (structureType, band, values, span, stepSize) => {
     values.forEach((n, i) => {
@@ -451,7 +451,7 @@ export function expandedFormConceptual() {
   // Which expansion matches (choice; digit-swap distractors).
   const matchPhr = rotor([
     (nm, n) => `${nm} wants the expanded form of ${n}. Which is it?`,
-    (nm, n) => `Which sum shows ${n} the expanded way? ${nm} is checking.`,
+    (nm, n) => `Help ${nm} check: which sum shows ${n} the expanded way?`,
     (nm, n) => `Help ${nm} pick the expansion that makes ${n}.`,
   ]);
   const match = (structureType, band, values, expand) => {
@@ -728,7 +728,7 @@ export function regroupingSenseConceptual() {
   // Which rename is correct (choice).
   const renamePhr = rotor([
     (nm, n) => `${nm} wants to rename ${n} with extra ones. Which way is right?`,
-    (nm, n) => `Which of these is another true name for ${n}? ${nm} is stuck.`,
+    (nm, n) => `${nm} is stuck. Which of these is another true name for ${n}?`,
   ]);
   const rename = (structureType, band, values) => {
     values.forEach((n, i) => {

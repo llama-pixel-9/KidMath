@@ -7,6 +7,9 @@
  * torn raffle tickets; patternRule = plants growing, ladders, book pages.
  * Numeric additive claims ride countMath (between/gap); the rest carry
  * display.pattern claims verified by authorPatterns.js. Band-1 <= 20.
+ * Only a next-term story whose terms decide the answer may carry
+ * display.sequence (the app draws it as a "What comes next?" card and hides
+ * the prompt); any other run rides display.terms (see patternsTemplates.js).
  */
 
 import { rotor, shuffled, NAMES } from "../counting/countingTemplates.js";
@@ -200,12 +203,15 @@ function geometricStories() {
     (nm, ctx, seq) => `${nm} watches the ${ctx.thing} in the ${ctx.place} double each day: ${seq.join(", ")}. How many ${ctx.thing} come next?`,
     (nm, ctx, seq) => `Every day the ${ctx.thing} double. ${nm} counts ${seq.join(", ")}. What is the next count of ${ctx.thing}?`,
   ];
+  // Two terms do not decide the next one on their own (add or double?): the
+  // doubling lives in the prompt, so a two-term run rides display.terms.
   const doubleEmit = (band) => ([start, n, ci], sk, nm) => {
     const seq = Array.from({ length: n }, (_, i) => start * 2 ** i);
+    const run = n < 3 ? { terms: seq } : { sequence: seq };
     return mk("geometricNext", `storyDouble_${band}`, band, {
       answer: seq[n - 1] * 2,
       answerType: "numberPad",
-      display: { sequence: seq, pattern: { kind: "geo", start, factor: 2 }, promptText: sk(nm, DOUBLE_CONTEXTS[ci % 4], seq) },
+      display: { ...run, pattern: { kind: "geo", start, factor: 2 }, promptText: sk(nm, DOUBLE_CONTEXTS[ci % 4], seq) },
     });
   };
   items.push(...cycle(17, [[1, 3, 0], [2, 3, 1], [1, 4, 2], [3, 2, 3], [4, 2, 0], [5, 2, 1], [2, 2, 2], [1, 2, 3], [3, 3, 0], [2, 4, 1], [3, 2, 2], [4, 3, 3], [6, 2, 0], [7, 2, 1], [8, 2, 2], [9, 2, 3], [10, 2, 0]], DOUBLE_SKELETONS, 0, doubleEmit(B1)));
@@ -308,11 +314,13 @@ function missingTermStories() {
 
 /* ---------------- patternRule stories ---------------- */
 
+// grows/counted: the wrong-entry stories state the rule, since one broken
+// entry in four terms can read two ways.
 const RULE_CONTEXTS = [
-  { thing: "bean plant", unit: "leaves" },
-  { thing: "brick path", unit: "bricks" },
-  { thing: "puzzle", unit: "pieces placed" },
-  { thing: "scarf", unit: "rows knitted" },
+  { thing: "bean plant", unit: "leaves", counted: "leaves", grows: (nm, step) => `The bean plant gets ${step} more leaves each day.` },
+  { thing: "brick path", unit: "bricks", counted: "bricks", grows: (nm, step) => `The brick path gets ${step} more bricks each day.` },
+  { thing: "puzzle", unit: "pieces placed", counted: "pieces placed", grows: (nm, step) => `${nm} places ${step} more puzzle pieces each day.` },
+  { thing: "scarf", unit: "rows knitted", counted: "rows", grows: (nm, step) => `${nm} knits ${step} more rows on the scarf each day.` },
 ];
 
 function patternRuleStories() {
@@ -348,9 +356,10 @@ function patternRuleStories() {
   items.push(...cycle(17, [[112, 11, 6, 0], [235, 12, 7, 1], [341, 15, 6, 2], [124, 25, 7, 3], [452, 11, 8, 0], [223, 14, 6, 1], [335, 21, 7, 2], [146, 12, 8, 3], [518, 13, 6, 0], [247, 16, 7, 1], [333, 22, 8, 2], [415, 18, 6, 3], [128, 24, 7, 0], [622, 15, 8, 1], [289, 17, 6, 2], [317, 23, 7, 3], [434, 19, 8, 0]], PROJECT_SKELETONS, 0, projEmit(B3)));
 
   const WRONG_SKELETONS = [
-    (nm, ctx, shown) => `${nm} logged the ${ctx.unit} on the ${ctx.thing} as ${shown.join(", ")}, but one entry breaks the even pattern. Which entry is wrong?`,
-    (nm, ctx, shown) => `The log for ${nm}'s ${ctx.thing} reads ${shown.join(", ")} ${ctx.unit}. One number does not follow the rule. Which number is it?`,
+    (nm, ctx, shown, step) => `${ctx.grows(nm, step)} ${nm} counted the ${ctx.counted}: ${shown.join(", ")}. Which number is wrong?`,
+    (nm, ctx, shown, step) => `${ctx.grows(nm, step)} ${nm} kept a list: ${shown.join(", ")} ${ctx.unit}. Which number does not follow the pattern?`,
   ];
+  // "Which number is wrong?" is not "What comes next?": the run rides terms.
   const wrongEmit = (band) => ([start, step, badIdx, drift, ci], sk, nm) => {
     const full = seqUp(start, step, 4);
     const broken = full[badIdx] + drift;
@@ -358,7 +367,7 @@ function patternRuleStories() {
     return mk("patternRule", `storyWrongEntry_${band}`, band, {
       answer: broken,
       answerType: "numberPad",
-      display: { sequence: shown, pattern: { kind: "slip", start, step, badIdx }, promptText: sk(nm, RULE_CONTEXTS[ci % 4], shown) },
+      display: { terms: shown, pattern: { kind: "slip", start, step, badIdx }, promptText: sk(nm, RULE_CONTEXTS[ci % 4], shown, step) },
     });
   };
   items.push(...cycle(17, [[2, 2, 1, 1, 0], [3, 2, 2, -1, 1], [1, 3, 1, 1, 2], [2, 3, 2, -1, 3], [4, 2, 3, 1, 0], [1, 4, 1, -1, 1], [3, 4, 2, 1, 2], [2, 5, 1, -1, 3], [5, 2, 3, 1, 0], [4, 3, 2, -1, 1], [1, 5, 2, 1, 2], [6, 2, 1, -1, 3], [5, 3, 3, 1, 0], [3, 5, 1, -1, 1], [7, 2, 2, 1, 2], [2, 4, 3, -1, 3], [6, 3, 2, 1, 0]], WRONG_SKELETONS, 2, wrongEmit(B1)));

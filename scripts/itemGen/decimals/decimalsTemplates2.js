@@ -29,7 +29,7 @@ export function compareProcedural() {
     band3: [
       (a, b) => `${a} ? ${b}`,
       (a, b) => `Exactly one symbol links ${a} and ${b}. Which one?`,
-      (a, b) => `Determine the true relation between ${a} and ${b}.`,
+      (a, b) => `Which sign goes between ${a} and ${b}?`,
       (a, b) => `Judge ${a} against ${b} and pick the symbol that holds.`,
     ],
   };
@@ -55,21 +55,21 @@ export function compareProcedural() {
 
   const bigPhr = {
     band1: [
-      (a, b) => `Which decimal is larger: ${a} or ${b}? Pick it.`,
+      (a, b) => `Which decimal is larger: ${a} or ${b}?`,
       (a, b) => `Of ${a} and ${b}, pick the bigger decimal.`,
       (a, b) => `Choose the greater decimal: ${a} or ${b}.`,
-      (a, b) => `Between ${a} and ${b}, which is more? Pick it.`,
+      (a, b) => `Between ${a} and ${b}, which is more?`,
     ],
     band2: [
       (a, b) => `Select the larger of ${a} and ${b}.`,
-      (a, b) => `Which is greater, ${a} or ${b}? Choose it.`,
+      (a, b) => `Which is greater, ${a} or ${b}?`,
       (a, b) => `Pick whichever of ${a} and ${b} is bigger.`,
       (a, b) => `Find the greater decimal: ${a} versus ${b}.`,
     ],
     band3: [
       (a, b) => `Identify the larger decimal: ${a} or ${b}.`,
       (a, b) => `Exactly which is greater — ${a} or ${b}?`,
-      (a, b) => `Determine the bigger of ${a} and ${b}.`,
+      (a, b) => `Which is bigger, ${a} or ${b}?`,
       (a, b) => `Of the pair ${a} and ${b}, choose the larger.`,
     ],
   };
@@ -93,7 +93,7 @@ export function compareProcedural() {
 
   const smallPhr = {
     band1: [
-      (x, y, z) => `Which is smallest: ${x}, ${y}, or ${z}? Pick it.`,
+      (x, y, z) => `Which is smallest: ${x}, ${y}, or ${z}?`,
       (x, y, z) => `Of ${x}, ${y}, and ${z}, which decimal is least?`,
       (x, y, z) => `Pick the least of ${x}, ${y}, ${z}.`,
       (x, y, z) => `Among ${x}, ${y}, ${z}, choose the smallest decimal.`,
@@ -107,7 +107,7 @@ export function compareProcedural() {
     band3: [
       (x, y, z) => `Exactly which of ${x}, ${y}, ${z} is least?`,
       (x, y, z) => `Rank ${x}, ${y}, ${z}: which one is the minimum?`,
-      (x, y, z) => `Determine the smallest among ${x}, ${y}, and ${z}.`,
+      (x, y, z) => `Which is the smallest of ${x}, ${y}, and ${z}?`,
       (x, y, z) => `Of the three decimals ${x}, ${y}, ${z}, pick the least.`,
     ],
   };
@@ -146,7 +146,7 @@ export function compareConceptual() {
       (nm) => `More digits means a bigger number, argues ${nm}, so 0.18 > 0.6. Is ${nm} right?`,
     ],
     band3: [
-      (nm) => `${nm}'s rule "longer decimal, larger value" puts 0.125 above 0.9. Is the rule sound here?`,
+      (nm) => `${nm}'s rule "longer decimal, larger value" puts 0.125 above 0.9. Does the rule work here?`,
       (nm) => `Applying digit-count logic, ${nm} places 0.125 over 0.9. Is that right?`,
     ],
   };
@@ -156,7 +156,7 @@ export function compareConceptual() {
         item("compareDecimals", "conceptual", `longerTrap_${band}`, band, {
           answer: "No",
           choices: ["Yes", "No"],
-          display: { dec: { kind: "trapNo" }, promptText: longerTrapPhr[band][i % 2](nameAt(i * 3 + 1 + OFF[band])) + (i >= 12 ? " Think about place value." : i >= 6 ? " Check the tenths place first." : ""), truth: false },
+          display: { dec: { kind: "trapNo" }, promptText: (i >= 12 ? "Think about place value. " : i >= 6 ? "Check the tenths place first. " : "") + longerTrapPhr[band][i % 2](nameAt(i * 3 + 1 + OFF[band])), truth: false },
         })
       );
     }
@@ -172,8 +172,8 @@ export function compareConceptual() {
       (nm, a, rel, b) => `Check ${nm}'s claim: ${a} ${rel} ${b}. Right or not?`,
     ],
     band3: [
-      (nm, a, rel, b) => `${nm} certifies ${a} ${rel} ${b}. Is the certification valid?`,
-      (nm, a, rel, b) => `Audit the statement ${a} ${rel} ${b} from ${nm}. Clean?`,
+      (nm, a, rel, b) => `${nm} says ${a} ${rel} ${b}. Is ${nm} right?`,
+      (nm, a, rel, b) => `${nm} writes ${a} ${rel} ${b}. Is that true?`,
     ],
   };
   const cmpSaidData = {
@@ -204,7 +204,7 @@ export function compareConceptual() {
     ],
     band3: [
       (nm, n) => `${nm} insists 0.${n}0 outranks 0.${n} on digit count alone. Is the insistence right?`,
-      (nm, n) => `Digit-count logic tells ${nm} that 0.${n}0 exceeds 0.${n}. Sound logic?`,
+      (nm, n) => `${nm} counts digits and says 0.${n}0 is more than 0.${n}. Is ${nm} right?`,
     ],
   };
   const padNs = {
@@ -238,20 +238,20 @@ export function asNumberProcedural() {
     band1: [
       (a, b, c) => `${a}, ${b}, ${c}, ?`,
       (a, b, c) => `The pattern ${a}, ${b}, ${c} climbs by one tenth. Type the next decimal.`,
-      (a, b, c) => `Continue counting: ${a}, ${b}, ${c}, ? Type the next number.`,
-      (a, b, c) => `After ${a}, ${b}, ${c}, which decimal comes next? Type it.`,
+      (a, b, c) => `Continue counting: ${a}, ${b}, ${c}. What number comes next?`,
+      (a, b, c) => `After ${a}, ${b}, ${c}, which decimal comes next?`,
     ],
     band2: [
       (a, b, c) => `${a}, ${b}, ${c}, ?`,
       (a, b, c) => `Extend the tenths count ${a}, ${b}, ${c}. Type what follows.`,
       (a, b, c) => `${a}, ${b}, ${c} — keep counting by one tenth. Next = ?`,
-      (a, b, c) => `Which decimal continues ${a}, ${b}, ${c}? Type it.`,
+      (a, b, c) => `Which decimal continues ${a}, ${b}, ${c}?`,
     ],
     band3: [
       (a, b, c) => `${a}, ${b}, ${c}, ?`,
       (a, b, c) => `The sequence ${a}, ${b}, ${c} steps by one hundredth. Type the next term.`,
-      (a, b, c) => `Continue by hundredths: ${a}, ${b}, ${c}, ? Type it.`,
-      (a, b, c) => `After ${a}, ${b}, ${c}, the hundredths count reaches which decimal? Type it.`,
+      (a, b, c) => `Count on by hundredths: ${a}, ${b}, ${c}. What comes next?`,
+      (a, b, c) => `After ${a}, ${b}, ${c}, the hundredths count reaches which decimal?`,
     ],
   };
   const nextData = {
@@ -277,22 +277,22 @@ export function asNumberProcedural() {
 
   const tickPhr = {
     band1: [
-      (k) => `A number line runs 0 to 1 in 10 equal steps. Mark ${k} shows which decimal? Type it.`,
-      (k) => `Step ${k} of 10 along a 0-1 line lands on which decimal? Type it.`,
+      (k) => `A number line runs 0 to 1 in 10 equal steps. Mark ${k} shows which decimal?`,
+      (k) => `Step ${k} of 10 along a 0-1 line lands on which decimal?`,
       (k) => `On a 0-to-1 line with 10 equal steps, type the decimal at mark ${k}.`,
-      (k) => `The mark after step ${k} on a 10-step 0-1 line names which decimal? Type it.`,
+      (k) => `The mark after step ${k} on a 10-step 0-1 line names which decimal?`,
     ],
     band2: [
       (k) => `A 0-1 number line is cut into 10 equal steps. Type the decimal at step ${k}.`,
-      (k) => `Between 0 and 1, mark ${k} of 10 sits at which decimal? Type it.`,
-      (k) => `Walking 0 to 1 in 10 steps, where are you after step ${k}? Type the decimal.`,
-      (k) => `Which decimal labels step ${k} on a ten-step 0-1 line? Type it.`,
+      (k) => `Between 0 and 1, mark ${k} of 10 sits at which decimal?`,
+      (k) => `Walking 0 to 1 in 10 steps, where are you after step ${k}?`,
+      (k) => `Which decimal labels step ${k} on a ten-step 0-1 line?`,
     ],
     band3: [
       (k) => `A unit line is split into 100 equal steps. Type the decimal at mark ${k}.`,
-      (k) => `Between 0 and 1, mark ${k} of 100 corresponds to which decimal? Type it.`,
-      (k) => `Precisely which decimal sits at step ${k} of 100 on a 0-1 line? Type it.`,
-      (k) => `On a hundred-step unit line, step ${k} names which decimal? Type it.`,
+      (k) => `Between 0 and 1, mark ${k} of 100 corresponds to which decimal?`,
+      (k) => `Precisely which decimal sits at step ${k} of 100 on a 0-1 line?`,
+      (k) => `On a hundred-step unit line, step ${k} names which decimal?`,
     ],
   };
   const tickData = {
@@ -317,20 +317,20 @@ export function asNumberProcedural() {
     band1: [
       (a, s) => `${a} + ${s} = ?`,
       (a, s) => `Add ${s} to ${a}. Type the result.`,
-      (a, s) => `Start at ${a} and go up by ${s}. Where do you land? Type it.`,
-      (a, s) => `The sum ${a} + ${s} equals which decimal? Type it.`,
+      (a, s) => `Start at ${a} and go up by ${s}. Where do you land?`,
+      (a, s) => `The sum ${a} + ${s} equals which decimal?`,
     ],
     band2: [
       (a, s) => `${a} + ${s} = ?`,
       (a, s) => `Increase ${a} by ${s}. Type the new decimal.`,
-      (a, s) => `${a} moved up by ${s} lands on which decimal? Type it.`,
-      (a, s) => `Compute ${a} + ${s} and type the result.`,
+      (a, s) => `${a} moved up by ${s} lands on which decimal?`,
+      (a, s) => `What is ${a} + ${s}?`,
     ],
     band3: [
       (a, s) => `${a} + ${s} = ?`,
-      (a, s) => `The precise sum ${a} + ${s} = ? Type it.`,
-      (a, s) => `Evaluate ${a} + ${s} in one step. Type the result.`,
-      (a, s) => `Adding ${s} to ${a} yields which decimal? Type it.`,
+      (a, s) => `The precise sum ${a} + ${s} = ?`,
+      (a, s) => `Add ${a} and ${s} in one step. What sum do you get?`,
+      (a, s) => `Adding ${s} to ${a} yields which decimal?`,
     ],
   };
   const addData = {
@@ -359,16 +359,16 @@ export function asNumberConceptual() {
 
   const closerPhr = {
     band1: [
-      (nm, v) => `Is the decimal ${v} closer to 0 or to 1? ${nm} pictures the line.`,
+      (nm, v) => `${nm} pictures a number line. Is the decimal ${v} closer to 0 or to 1?`,
       (nm, v) => `${nm} places ${v} on a 0-1 line. Which end is it nearer?`,
     ],
     band2: [
-      (nm, v) => `Between 0 and 1, does ${v} sit nearer 0 or nearer 1? ${nm} decides.`,
+      (nm, v) => `Help ${nm} decide. Between 0 and 1, does ${v} sit nearer 0 or nearer 1?`,
       (nm, v) => `${nm} slides a marker to ${v}. Toward which end does it lean?`,
     ],
     band3: [
-      (nm, v) => `Locate ${v} precisely: is it nearer 0 or nearer 1? ${nm} reasons it out.`,
-      (nm, v) => `${nm} audits the position of ${v}. Which endpoint is closer?`,
+      (nm, v) => `${nm} finds ${v} on a number line. Is it nearer 0 or nearer 1?`,
+      (nm, v) => `${nm} checks where ${v} sits on a 0-1 line. Which end is closer?`,
     ],
   };
   const closerData = {

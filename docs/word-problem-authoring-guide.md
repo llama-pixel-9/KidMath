@@ -92,6 +92,19 @@ Use the closest matching `structureType` when authoring an item:
   count-bys, `resources/engageny/math-g2-m3-full-module.pdf` L1). Never wrap a
   sequence in a story ("A timer beeps every 4 seconds…"); reserve stories for
   questions about real quantities.
+- **Strategy drills make the kid do the step.** Show the known fact and ask for
+  the next step: "9 + 9 = 18. What is 9 + 10?", "Make a ten: 8 + 5 = 10 + __".
+  Never write out the strategy's result ("Use compensation: 29 + 41 = 30 + 40.
+  Compute the value." gives the work away). Enforced by `workedStepGiveaway`.
+- **Kid voice in drills too.** Ask the way a K-5 textbook asks a kid, not the way
+  a test-maker writes: no "compute", "determine", "evaluate", "the value?",
+  "certifies", "audit", "Is the work sound?". A claim to judge reads
+  "Nia says 7 × 8 = 54. Is Nia right?". Enforced by `teacherVoice`.
+- **End on the question.** The card shows the last sentence big, so nothing
+  follows the question ("Diego checks.", "Pick one."). Enforced by
+  `questionNotLast`.
+- **Blanks are `__`.** A `?` inside the prompt splits the card into sentences
+  and reads aloud as a question; use `__` for a missing number.
 - Avoid culturally narrow contexts. Prefer school, garden, library, kitchen,
   sports, and library settings.
 - Numbers in the prompt must match the question payload (`a`, `b`, `answer`).
@@ -207,8 +220,10 @@ Phase 2 healthy threshold:
   - numeric consistency when `a`, `b`, `op` are present
   - no duplicate `itemId` or `promptText`
 - `src/itemBank/qc/checks.js` (the gate in `bank:qc` and the Review queue) adds
-  `nounlessQuestion`, `decorativeContext`, `selfAnswering`, `teacherJargon`
-  and `figurelessQuantity` as `fail` findings — approval is blocked on any of them.
+  `nounlessQuestion`, `decorativeContext`, `selfAnswering`, `teacherJargon`,
+  `figurelessQuantity`, `workedStepGiveaway`, `teacherVoice`, `questionNotLast`
+  and `sequenceCardMismatch` as `fail` findings — approval is blocked on any of
+  them, and `src/__tests__/bankQcGate.spec.js` fails CI if any shipped item has one.
 - The draft pipeline (`scripts/itemGen/validateDrafts.js`) adds:
   - license allowlist check against the exemplar source,
   - batch-local duplicate prompt detection,

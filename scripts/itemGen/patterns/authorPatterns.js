@@ -8,6 +8,11 @@
  * (applyRule), broken terms (slip), gap fills (fill), parity (parity),
  * judged continuations (arith), growth comparisons (faster).
  *
+ * The shown run is `display.sequence` only on a next-term question (the app
+ * draws it as a "What comes next?" card and hides the prompt; the gate's
+ * sequenceCardMismatch check holds that). Every other run is `display.terms`,
+ * with "__" for a blank. The geo and slip checks below read whichever is set.
+ *
  * Usage:
  *   node --import ./scripts/lib/registerResolve.js scripts/itemGen/authorPatterns.js
  *   node --import ./scripts/lib/registerResolve.js scripts/itemGen/authorPatterns.js --write --tag b0821
@@ -107,11 +112,18 @@ function extraProblems(item) {
     if (new Set(q.choices.map(String)).size !== q.choices.length) problems.push("duplicate choices");
   }
 
+  // The run: `sequence` (next-term card) or `terms` (prompt shown), never both;
+  // a blank is "__", and a blank never sits on a sequence card.
+  if (Array.isArray(d.sequence) && Array.isArray(d.terms)) problems.push("display carries both sequence and terms");
+  if ((d.terms || []).some((t) => t === "?")) problems.push('display.terms blank is "?" (use "__")');
+  if ((d.sequence || []).some((t) => t === "?" || t === "__")) problems.push("display.sequence has a blank: a gap/first-term run belongs in display.terms");
+  const run = d.sequence || d.terms || [];
+
   const p = d.pattern;
   if (p) {
     if (p.kind === "geo") {
       // Geometric extends: last shown term x factor, ratio constant.
-      const seq = d.sequence || [];
+      const seq = run;
       if (seq.length >= 2) {
         for (let i = 1; i < seq.length; i += 1) {
           if (seq[i] !== seq[i - 1] * p.factor) problems.push(`geo sequence breaks at index ${i}`);
@@ -120,7 +132,7 @@ function extraProblems(item) {
       } else problems.push("geo item missing sequence");
     } else if (p.kind === "slip") {
       const truth = Array.from({ length: 5 }, (_, k) => p.start + p.step * k);
-      const nums = (d.sequence || []).filter((v) => typeof v === "number");
+      const nums = run.filter((v) => typeof v === "number");
       if (nums.length >= 4) {
         for (let k = 0; k < nums.length; k += 1) {
           if (k === p.badIdx) {

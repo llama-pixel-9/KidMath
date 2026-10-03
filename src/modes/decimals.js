@@ -63,13 +63,14 @@ export const DECIMAL_VARIETIES = [
     misconceptions: ["decimalPointDrift", "decimalAsWholeNumber"],
     build() {
       const shaded = randInt(1, 9);
-      // Every stem keeps the literal "and N are shaded" fragment: the pinned
+      // Every stem keeps the literal "and N is/are shaded" fragment: the pinned
       // recomputation in m4Fractions.spec.js reads the count from exactly it.
+      const areShaded = `${shaded} ${shaded === 1 ? "is" : "are"} shaded`;
       const prompt = pick([
-        `A strip is split into 10 equal parts and ${shaded} are shaded. Write that as a decimal.`,
-        `A ribbon is folded into 10 equal parts and ${shaded} are shaded. Write the shaded part as a decimal.`,
-        `A poster is divided into 10 equal panels and ${shaded} are shaded. Write the shaded amount as a decimal.`,
-        `A bar shows 10 equal pieces and ${shaded} are shaded. Which decimal does the shading show? Write it.`,
+        `A strip is split into 10 equal parts and ${areShaded}. Write that as a decimal.`,
+        `A ribbon is folded into 10 equal parts and ${areShaded}. Write the shaded part as a decimal.`,
+        `A poster is divided into 10 equal panels and ${areShaded}. Write the shaded amount as a decimal.`,
+        `A bar shows 10 equal pieces and ${areShaded}. What decimal does the shading show?`,
       ]);
       return {
         answer: dec2(shaded / 10),

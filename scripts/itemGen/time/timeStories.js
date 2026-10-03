@@ -134,7 +134,7 @@ export function buildStoryItems() {
 
   const BUS_SKELETONS = [
     (nm, s, d) => `${nm}'s bus leaves at ${s} and the ride takes ${d} minutes. Which time does the bus arrive?`,
-    (nm, s, d) => `The trip to the museum starts at ${s} and lasts ${d} minutes. When does ${nm} arrive? Pick the time.`,
+    (nm, s, d) => `The trip to the museum starts at ${s} and lasts ${d} minutes. When does ${nm} arrive?`,
   ];
   const busEmit = ([h, m, d], sk, nm, i) => {
     const total = h * 60 + m + d;
@@ -153,8 +153,8 @@ export function buildStoryItems() {
 
   // Band 1/2 fill: hour-later plans.
   const PLAN_SKELETONS = [
-    (nm, ev, hw, k) => `${ev} starts at ${hw} o'clock. ${nm} must leave home ${HOUR_WORDS[k]} ${k === 1 ? "hour" : "hours"} earlier. What hour does ${nm} leave? Answer with the hour number.`,
-    (nm, ev, hw, k) => `${nm} finishes ${ev} ${HOUR_WORDS[k]} ${k === 1 ? "hour" : "hours"} after it starts at ${hw} o'clock. What hour does it finish? Answer with the hour number.`,
+    (nm, ev, hw, k) => `${ev} starts at ${hw} o'clock. ${nm} must leave home ${HOUR_WORDS[k]} ${k === 1 ? "hour" : "hours"} earlier. What hour does ${nm} leave?`,
+    (nm, ev, hw, k) => `${nm} finishes ${ev} ${HOUR_WORDS[k]} ${k === 1 ? "hour" : "hours"} after it starts at ${hw} o'clock. What hour does it finish?`,
   ];
   const planEmit = ([h, k, ei], sk, nm, i) => {
     const later = (i + ei) % 2 === 1;
@@ -201,7 +201,7 @@ export function buildStoryItems() {
 
   const GUESS_SKELETONS = [
     (nm, task, good) => `${nm} guesses how long it takes to ${task}. Which guess makes sense?`,
-    (nm, task, good) => `About how long does it take ${nm} to ${task}? Pick the sensible time.`,
+    (nm, task, good) => `About how long does it take ${nm} to ${task}?`,
   ];
   const guessEmit = ([task, good, wrong], sk, nm, i) =>
     mk("timeConcepts", "storyBenchmark", B1, {
@@ -236,7 +236,7 @@ export function buildStoryItems() {
 
   const DUE_SKELETONS = [
     (nm, d, k) => `${nm} borrows a library book on ${d}. It is due ${k} days later. On which day is it due?`,
-    (nm, d, k) => `A book checked out on ${d} must come back after ${k} days. Which weekday is that? ${nm} checks.`,
+    (nm, d, k) => `${nm} checks out a book on ${d}. It must come back after ${k} days. Which weekday is that?`,
   ];
   const dueEmit = (band) => ([d, k], sk, nm, i) => {
     const idx = WEEKDAYS.indexOf(d);
@@ -438,7 +438,7 @@ export function buildStoryItems() {
     });
   }));
   const LEAVE_SKELETONS = [
-    (nm, e, d) => `The movie ends at ${e} after running ${d} minutes. Which time did it start? ${nm} works backward.`,
+    (nm, e, d) => `${nm} works backward. The movie ends at ${e} after running ${d} minutes. Which time did it start?`,
     (nm, e, d) => `${nm}'s train pulls in at ${e} after a ${d}-minute ride. Pick the departure time.`,
   ];
   const leaveEmit = ([h, m, d], sk, nm, i) => {

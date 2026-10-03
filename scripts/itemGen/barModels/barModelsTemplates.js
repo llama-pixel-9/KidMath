@@ -118,7 +118,7 @@ export function partWholeConceptual() {
       (nm, w, a, b) => `In ${nm}'s bar model, ${a} plus ${b} should equal ${w}. Is that right?`,
     ],
     band3: [
-      (nm, w, a, b) => `${nm} audits a bar: whole ${w}, sections ${a} and ${b}. Is the audit clean?`,
+      (nm, w, a, b) => `${nm} checks a bar: whole ${w}, sections ${a} and ${b}. Do the parts make the whole?`,
       (nm, w, a, b) => `${nm} balances sections ${a} and ${b} against a whole of ${w}. Is the balance right?`,
     ],
   };
@@ -141,7 +141,7 @@ export function partWholeConceptual() {
 
   const eqPickPhr = {
     band1: [
-      (nm, w, p) => `A bar shows whole ${w} and part ${p}. Which number sentence finds the missing part? ${nm} picks one.`,
+      (nm, w, p) => `${nm} looks at a bar with whole ${w} and part ${p}. Which number sentence finds the missing part?`,
       (nm, w, p) => `${nm} must find the blank part of a whole-${w}, part-${p} bar. Which sentence does the job?`,
     ],
     band2: [
@@ -149,7 +149,7 @@ export function partWholeConceptual() {
       (nm, w, p) => `${nm}'s bar model: whole ${w}, part ${p}, blank part. Which equation matches?`,
     ],
     band3: [
-      (nm, w, p) => `For a bar of ${w} holding a section of ${p} and a blank, which computation does ${nm} run?`,
+      (nm, w, p) => `For a bar of ${w} holding a section of ${p} and a blank, which number sentence should ${nm} use?`,
       (nm, w, p) => `${nm} translates a whole-${w}, part-${p} bar into arithmetic. Which sentence is faithful?`,
     ],
   };
@@ -181,7 +181,7 @@ export function partWholeConceptual() {
       (nm, w, a, b, c) => `Parts ${a}, ${b}, and ${c} fill ${nm}'s bar of ${w} with nothing left over. Is that right?`,
     ],
     band3: [
-      (nm, w, a, b, c) => `${nm} partitions ${w} into sections ${a}, ${b}, and ${c}. Is the partition sound?`,
+      (nm, w, a, b, c) => `${nm} splits ${w} into sections ${a}, ${b}, and ${c}. Is that right?`,
       (nm, w, a, b, c) => `Sections ${a}, ${b}, and ${c} claim to total ${nm}'s whole of ${w}. Do they truly?`,
     ],
   };
@@ -222,7 +222,7 @@ export function comparisonProcedural() {
       (a, b) => `Bars ${a} and ${b} stand side by side. The gap between them = ?`,
     ],
     band3: [
-      (a, b) => `Bars of ${a} and ${b}: compute the exact difference. What is it?`,
+      (a, b) => `What is the exact difference between bars of ${a} and ${b}?`,
       (a, b) => `Subtract the shorter bar ${b} from the longer bar ${a}. What remains?`,
     ],
   };
@@ -283,12 +283,12 @@ export function comparisonConceptual() {
 
   const trapPhr = {
     band1: [
-      (nm, a, other, d) => `${nm} has ${d} fewer stickers than ${other}, who has ${a}. How many stickers does ${nm} have? Pick the number.`,
+      (nm, a, other, d) => `${nm} has ${d} fewer stickers than ${other}, who has ${a}. How many stickers does ${nm} have?`,
       (nm, a, other, d) => `${other} holds ${a} marbles; ${nm} holds ${d} fewer. Which count is ${nm}'s?`,
     ],
     band2: [
       (nm, a, other, d) => `${other} scored ${a}; ${nm} scored ${d} fewer. Which is ${nm}'s score?`,
-      (nm, a, other, d) => `With ${other} at ${a} and ${nm} trailing by ${d}, what is ${nm}'s count? Pick it.`,
+      (nm, a, other, d) => `With ${other} at ${a} and ${nm} trailing by ${d}, what is ${nm}'s count?`,
     ],
     band3: [
       (nm, a, other, d) => `${other} collected ${a} points and ${nm} collected ${d} fewer. Which total is ${nm}'s?`,
@@ -325,7 +325,7 @@ export function comparisonConceptual() {
       (nm, a, b, said) => `${nm} figures ${a} beats ${b} by ${said}. Is the figure right?`,
     ],
     band3: [
-      (nm, a, b, said) => `${nm} computes the spread between ${a} and ${b} as ${said}. Is the computation right?`,
+      (nm, a, b, said) => `${nm} says the difference between ${a} and ${b} is ${said}. Is ${nm} right?`,
       (nm, a, b, said) => `A spread of ${said} between ${a} and ${b} — ${nm} signs off. Should ${nm} have?`,
     ],
   };

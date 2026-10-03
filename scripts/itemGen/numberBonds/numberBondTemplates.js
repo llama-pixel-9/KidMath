@@ -286,39 +286,56 @@ const TF = (claim, truthy, band, structureType) =>
     display: { promptText: claim },
   });
 
+// A worked step must never print the answer (workedStepGiveaway,
+// src/itemBank/qc/workedStep.js): when the neighbour bond is the turn-around
+// of the shown one ("5 = 2 + 3. 5 = 3 + ?"), the shown bond already holds the
+// answer. Show a different bond of the same whole instead, two (or one) moved
+// across, and let the kid move them back: "4 + 1 = 5, so 2 + __ = 5".
+const otherBondStep = (w, asked) => {
+  const ans = w - asked;
+  const k = ans - 2 >= 1 ? 2 : 1;
+  return `${asked + k} + ${ans - k} = ${w}, so ${asked} + __ = ${w}`;
+};
+
 export function decomposeProcedural() {
   const items = [];
 
   // Band 1 — ordered-family pattern pairs (G1-M1 L6: bonds of one whole in
-  // order): the previous decomposition is shown, the neighbour is asked.
+  // order): the previous decomposition is shown, the neighbour is asked —
+  // unless the neighbour is its turn-around (w = 2p ± 1), see otherBondStep.
   for (let w = 5; w <= 10; w += 1) {
     for (let p = 1; p <= w - 2; p += 1) {
+      const turnAround = w - p - 1 === p;
       items.push(
         item("decompose", "procedural", "bondPatternStep", "band1", {
           answer: w - p - 1,
           answerType: "numberPad",
-          display: { whole: w, part: p + 1, promptText: `${w} = ${p} + ${w - p}. ${w} = ${p + 1} + ?` },
+          display: { whole: w, part: p + 1, promptText: turnAround ? otherBondStep(w, p + 1) : `${w} = ${p} + ${w - p}. ${w} = ${p + 1} + ?` },
         })
       );
     }
     for (let p = 2; p <= w - 2; p += 1) {
+      const turnAround = w - p + 1 === p;
       items.push(
         item("decompose", "procedural", "bondPatternStep", "band1", {
           answer: w - p + 1,
           answerType: "numberPad",
-          display: { whole: w, part: p - 1, promptText: `${w} = ${p} + ${w - p}. ${w} = ${p - 1} + ?` },
+          display: { whole: w, part: p - 1, promptText: turnAround ? otherBondStep(w, p - 1) : `${w} = ${p} + ${w - p}. ${w} = ${p - 1} + ?` },
         })
       );
     }
   }
-  // Commutative flips: same bond, parts swapped (G1-M1 D1). Pairs where
-  // w = 2p + 1 are excluded — their flip collides with a bondPatternStep item.
-  for (const [w, p] of [[6, 2], [8, 5], [8, 3], [9, 2], [10, 7], [10, 3], [10, 4], [8, 1], [7, 2], [6, 1], [10, 1], [9, 1]]) {
+  // Commutative flips: same parts, new order (G1-M1 D1). One equation with
+  // the blank in it, so the kid uses the turn-around fact instead of reading
+  // a printed one. Pairs where w = 2p + 1 are excluded — their flip collides
+  // with a bondPatternStep item.
+  const flipPhr = ["Turn it around:", "Same parts, new order:"];
+  for (const [i, [w, p]] of [[6, 2], [8, 5], [8, 3], [9, 2], [10, 7], [10, 3], [10, 4], [8, 1], [7, 2], [6, 1], [10, 1], [9, 1]].entries()) {
     items.push(
       item("decompose", "procedural", "commutativeFlip", "band1", {
         answer: p,
         answerType: "numberPad",
-        display: { whole: w, part: w - p, promptText: `${w} = ${p} + ${w - p}. ${w} = ${w - p} + ?` },
+        display: { whole: w, part: w - p, promptText: `${flipPhr[i % 2]} ${p} + ${w - p} = ${w - p} + __` },
       })
     );
   }
@@ -354,12 +371,14 @@ export function decomposeProcedural() {
       );
     }
   }
+  // 19 = 10 + 9 is the turn-around of 19 = 9 + 10, so 19 bridges from the
+  // double instead (9 + 9 = 18, one more).
   for (let t = 11; t <= 19; t += 1) {
     items.push(
       item("decompose", "procedural", "teenBridgePair", "band2", {
         answer: t - 9,
         answerType: "numberPad",
-        display: { whole: t, part: 9, promptText: `${t} = 10 + ${t - 10}. ${t} = 9 + ?` },
+        display: { whole: t, part: 9, promptText: t - 9 === 10 ? `9 + 9 = 18, so 9 + __ = ${t}` : `${t} = 10 + ${t - 10}. ${t} = 9 + ?` },
       })
     );
   }
@@ -901,7 +920,7 @@ export function decomposeConceptual() {
   // Band 2a — open decomposition, teens.
   const openTeenPhr = rotor([
     (w) => `Select BOTH pairs that bond to ${w}.`,
-    (w) => `Which two pairs both make ${w}? Choose them.`,
+    (w) => `Which two pairs both make ${w}?`,
     (w) => `Exactly two pairs here total ${w}. Tap both of them.`,
   ]);
   for (const [w, p1, p2] of [[12, 3, 8], [13, 4, 9], [14, 5, 8], [15, 6, 9], [16, 7, 9], [11, 2, 8], [12, 5, 10], [14, 4, 11], [13, 6, 10], [15, 2, 8], [16, 4, 10], [11, 5, 9], [17, 8, 12], [18, 9, 13], [12, 2, 6]]) {

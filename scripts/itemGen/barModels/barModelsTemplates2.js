@@ -83,12 +83,12 @@ export function multiplicativeConceptual() {
 
   const timesPhr = {
     band1: [
-      (nm, other, k, u) => `${nm} has ${k} times as many shells as ${other}, who has ${u}. How many shells does ${nm} have? Pick the count.`,
+      (nm, other, k, u) => `${nm} has ${k} times as many shells as ${other}, who has ${u}. How many shells does ${nm} have?`,
       (nm, other, k, u) => `${other} keeps ${u} stamps; ${nm} keeps ${k} times as many. Which count is ${nm}'s?`,
     ],
     band2: [
       (nm, other, k, u) => `${other} saved ${u}; ${nm} saved ${k} times as much. Which amount is ${nm}'s?`,
-      (nm, other, k, u) => `${nm}'s collection is ${k} of ${other}'s bars of ${u} laid end to end. What does it total? Pick it.`,
+      (nm, other, k, u) => `${nm}'s collection is ${k} of ${other}'s bars of ${u} laid end to end. What does it total?`,
     ],
     band3: [
       (nm, other, k, u) => `${other} logged ${u} points; ${nm} logged ${k} times that. Which total is ${nm}'s?`,
@@ -149,7 +149,7 @@ export function multiplicativeConceptual() {
   const howManyUnitsPhr = {
     band1: [
       (nm, w, u) => `${nm} tiles a ${w}-bar with equal parts of ${u}. How many parts fit?`,
-      (nm, w, u) => `How many ${u}-parts fill ${nm}'s bar of ${w}? Count the units.`,
+      (nm, w, u) => `How many ${u}-parts fill ${nm}'s bar of ${w}?`,
     ],
     band2: [
       (nm, w, u) => `${nm} lays units of ${u} along a ${w}-bar. How many units complete it?`,
@@ -266,7 +266,7 @@ export function fractionBarConceptual() {
       (nm, w, said) => `A ${w}-bar folded in half should show ${said}, says ${nm}. Is ${nm} right?`,
     ],
     band3: [
-      (nm, w, said) => `${nm} computes half of ${w} as ${said}. Is the computation right?`,
+      (nm, w, said) => `${nm} says half of ${w} is ${said}. Is ${nm} right?`,
       (nm, w, said) => `Half of a ${w}-bar equals ${said} — ${nm} stakes the claim. Does it stand?`,
     ],
   };
@@ -293,11 +293,11 @@ export function fractionBarConceptual() {
       (nm, w) => `${nm} picks a piece of a ${w}-bar: a half or a quarter. Which piece is bigger?`,
     ],
     band2: [
-      (nm, w) => `Cutting a ${w}-bar, is one third or one sixth the larger share? ${nm} chooses.`,
+      (nm, w) => `${nm} cuts a ${w}-bar. Is one third or one sixth the larger share?`,
       (nm, w) => `${nm} weighs one third of ${w} against one sixth of ${w}. Which share wins?`,
     ],
     band3: [
-      (nm, w) => `Of a ${w}-bar, which is larger: one fourth or one fifth? ${nm} reasons it out.`,
+      (nm, w) => `${nm} has a ${w}-bar. Which is larger: one fourth of it or one fifth of it?`,
       (nm, w) => `${nm} contrasts a fourth of ${w} with a fifth of ${w}. Which piece is larger?`,
     ],
   };
@@ -326,7 +326,7 @@ export function fractionBarConceptual() {
   const sharePickPhr = {
     band1: [
       (nm, w, den) => `${nm} shares a ${w}-bar equally among ${den} friends. Which amount does each friend get?`,
-      (nm, w, den) => `A ${w}-bar split fairly ${den} ways gives each of ${nm}'s friends how much? Pick the amount.`,
+      (nm, w, den) => `A ${w}-bar split fairly ${den} ways gives each of ${nm}'s friends how much?`,
     ],
     band2: [
       (nm, w, den) => `${nm} deals a ${w}-bar into ${den} fair shares. Which value is one share?`,
@@ -334,7 +334,7 @@ export function fractionBarConceptual() {
     ],
     band3: [
       (nm, w, den) => `${nm} allocates a ${w}-bar across ${den} equal claims. Which amount is one claim?`,
-      (nm, w, den) => `A fair ${den}-way split of ${w} hands ${nm} which amount? Choose it.`,
+      (nm, w, den) => `A fair ${den}-way split of ${w} hands ${nm} which amount?`,
     ],
   };
   const shareData = {

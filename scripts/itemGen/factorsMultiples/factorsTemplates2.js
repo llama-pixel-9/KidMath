@@ -19,20 +19,20 @@ export function factorPairsProcedural() {
 
   const completePhr = {
     band1: [
-      (n, a) => `${a} pairs with which number to make ${n}? Type its partner.`,
+      (n, a) => `${a} pairs with which number to make ${n}?`,
       (n, a) => `In a factor pair for ${n}, ${a}'s partner = ?`,
       (n, a) => `${a} times its partner makes ${n}. Type the partner.`,
-      (n, a) => `Complete the factor pair for ${n}: ${a} and ? Type the missing number.`,
+      (n, a) => `Complete the factor pair for ${n}: ${a} and __.`,
     ],
     band2: [
       (n, a) => `Find ${a}'s partner in a factor pair of ${n}.`,
-      (n, a) => `The factor pair of ${n} containing ${a} also contains which number? Type it.`,
+      (n, a) => `The factor pair of ${n} containing ${a} also contains which number?`,
       (n, a) => `${a} and ? multiply to ${n}. Type the missing factor.`,
       (n, a) => `Which number joins ${a} to form a factor pair of ${n}?`,
     ],
     band3: [
-      (n, a) => `Determine ${a}'s partner in the factor pair of ${n}.`,
-      (n, a) => `Exactly which number pairs with ${a} to produce ${n}? Type it.`,
+      (n, a) => `What is ${a}'s partner in the factor pair of ${n}?`,
+      (n, a) => `Exactly which number pairs with ${a} to produce ${n}?`,
       (n, a) => `Solve the pair: ${a} x ? = ${n}. Type the factor.`,
       (n, a) => `In ${n}'s factor pairs, ${a} sits beside which number?`,
     ],
@@ -75,7 +75,7 @@ export function factorPairsProcedural() {
 
   const pairPickPhr = {
     band1: [
-      (n, list) => `Which pair multiplies to ${n}: ${list}? Pick it.`,
+      (n, list) => `Which pair multiplies to ${n}: ${list}?`,
       (n, list) => `From ${list}, pick the factor pair of ${n}. Which is it?`,
       (n, list) => `One pair in ${list} makes ${n}. Which pair is it?`,
       (n, list) => `Choose the pair from ${list} whose product is ${n}. Which do you choose?`,
@@ -90,7 +90,7 @@ export function factorPairsProcedural() {
       (n, list) => `Identify the factor pair of ${n} within ${list}. Which is it?`,
       (n, list) => `Of the pairs ${list}, which has the product ${n}?`,
       (n, list) => `Precisely one of ${list} multiplies to ${n}. Which one is it?`,
-      (n, list) => `Determine which of ${list} has a product equal to ${n}. Which does?`,
+      (n, list) => `Which of ${list} has a product equal to ${n}?`,
     ],
   };
   const pairPickData = {
@@ -114,22 +114,22 @@ export function factorPairsProcedural() {
 
   const pairCountPhr = {
     band1: [
-      (n) => `How many different factor pairs make ${n}? Count them.`,
+      (n) => `How many different factor pairs make ${n}?`,
       (n) => `Count the factor pairs of ${n}. How many pairs are there?`,
       (n) => `${n} can be built from how many different factor pairs?`,
       (n) => `Type the number of factor pairs that produce ${n}.`,
     ],
     band2: [
       (n) => `Count every factor pair of ${n}. How many pairs is that?`,
-      (n) => `How many factor pairs does ${n} have? Type the count.`,
+      (n) => `How many factor pairs does ${n} have?`,
       (n) => `The complete set of factor pairs for ${n} holds how many pairs?`,
       (n) => `Find all factor pairs of ${n}. How many pairs did you find?`,
     ],
     band3: [
       (n) => `Exactly how many factor pairs does ${n} have?`,
-      (n) => `Determine the total count of factor pairs of ${n}.`,
+      (n) => `What is the total count of factor pairs of ${n}?`,
       (n) => `Counting each pair once, how many factor pairs make ${n}?`,
-      (n) => `The factor pairs of ${n} come to how many pairs? Type the count.`,
+      (n) => `The factor pairs of ${n} come to how many pairs?`,
     ],
   };
   const pairCountData = {
@@ -165,8 +165,8 @@ export function factorPairsConceptual() {
       (nm, a, b, n) => `According to ${nm}, ${a} and ${b} multiply to ${n}. Is ${nm} right?`,
     ],
     band3: [
-      (nm, a, b, n) => `${nm} certifies (${a}, ${b}) as a factor pair of ${n}. Valid?`,
-      (nm, a, b, n) => `Audit ${nm}'s pair (${a}, ${b}) for ${n}. Clean audit?`,
+      (nm, a, b, n) => `${nm} says (${a}, ${b}) is a factor pair of ${n}. Is ${nm} right?`,
+      (nm, a, b, n) => `${nm} lists (${a}, ${b}) as a factor pair of ${n}. Is that right?`,
     ],
   };
   const pairJudgeData = {
@@ -196,7 +196,7 @@ export function factorPairsConceptual() {
       (nm, a, b, n) => `Adding to ${n} makes a factor pair, argues ${nm}, pointing at ${a} and ${b}. Is ${nm} right?`,
     ],
     band3: [
-      (nm, a, b, n) => `${nm}'s rule "if they add to ${n}, they factor ${n}" blesses (${a}, ${b}). Is the rule sound?`,
+      (nm, a, b, n) => `${nm}'s rule "if they add to ${n}, they factor ${n}" picks (${a}, ${b}). Does the rule work?`,
       (nm, a, b, n) => `Because ${a} + ${b} = ${n}, ${nm} lists (${a}, ${b}) under ${n}'s factor pairs. Correct?`,
     ],
   };
@@ -227,7 +227,7 @@ export function factorPairsConceptual() {
       (nm, a, b, n) => `One pair or two? ${nm} says ${a} x ${b} and ${b} x ${a} are one pair of ${n}. Is ${nm} right?`,
     ],
     band3: [
-      (nm, a, b, n) => `${nm} treats (${a}, ${b}) and (${b}, ${a}) as the same factor pair of ${n}. Sound treatment?`,
+      (nm, a, b, n) => `${nm} treats (${a}, ${b}) and (${b}, ${a}) as the same factor pair of ${n}. Is ${nm} right?`,
       (nm, a, b, n) => `In ${nm}'s tally of ${n}'s factor pairs, (${a}, ${b}) equals (${b}, ${a}). Should it?`,
     ],
   };
@@ -261,7 +261,7 @@ export function primesProcedural() {
 
   const primePickPhr = {
     band1: [
-      (list) => `Which of these is a prime number: ${list}? Pick it.`,
+      (list) => `Which of these is a prime number: ${list}?`,
       (list) => `Pick the prime number from ${list}. Which is it?`,
       (list) => `One of ${list} is prime. Which one?`,
       (list) => `Choose the prime number among ${list}. Which do you choose?`,
@@ -276,7 +276,7 @@ export function primesProcedural() {
       (list) => `Identify the prime number in ${list}. Which is it?`,
       (list) => `Of ${list}, which is prime?`,
       (list) => `Precisely one of ${list} is prime. Which one is it?`,
-      (list) => `Determine the prime within ${list}. Which do you pick?`,
+      (list) => `Which number in ${list} is prime?`,
     ],
   };
   const primePickData = {
@@ -299,7 +299,7 @@ export function primesProcedural() {
 
   const classifyPhr = {
     band1: [
-      (n) => `Is ${n} prime or composite? Pick the label.`,
+      (n) => `Is ${n} prime or composite?`,
       (n) => `Pick the label for ${n}: prime or composite.`,
       (n) => `Classify the number ${n}: prime or composite?`,
       (n) => `The number ${n} is which kind: prime or composite?`,
@@ -312,7 +312,7 @@ export function primesProcedural() {
     ],
     band3: [
       (n) => `Classify ${n} precisely: prime or composite?`,
-      (n) => `Determine whether ${n} is prime or composite.`,
+      (n) => `Is ${n} prime, or is it composite?`,
       (n) => `Judge the number ${n}: prime or composite?`,
       (n) => `Assign ${n} its label: prime or composite.`,
     ],
@@ -336,21 +336,21 @@ export function primesProcedural() {
 
   const commonMultPhr = {
     band1: [
-      (a, b) => `What is the smallest number that is a multiple of both ${a} and ${b}? Type it.`,
+      (a, b) => `What is the smallest number that is a multiple of both ${a} and ${b}?`,
       (a, b) => `Count by ${a} and count by ${b}. Type the first number both counts share.`,
       (a, b) => `The lowest shared multiple of ${a} and ${b} = ?`,
       (a, b) => `Type the first number that appears in both the ${a}s count and the ${b}s count.`,
     ],
     band2: [
       (a, b) => `Find the least common multiple of ${a} and ${b}.`,
-      (a, b) => `The smallest multiple shared by ${a} and ${b} = ? Type it.`,
+      (a, b) => `The smallest multiple shared by ${a} and ${b} = ?`,
       (a, b) => `Which number is the lowest common multiple of ${a} and ${b}?`,
       (a, b) => `Type the first common multiple of ${a} and ${b}.`,
     ],
     band3: [
-      (a, b) => `Compute the least common multiple of ${a} and ${b} exactly.`,
-      (a, b) => `Exactly which number is the LCM of ${a} and ${b}? Type it.`,
-      (a, b) => `Determine the least common multiple of ${a} and ${b}.`,
+      (a, b) => `What is the least common multiple of ${a} and ${b}?`,
+      (a, b) => `Exactly which number is the LCM of ${a} and ${b}?`,
+      (a, b) => `Find the least common multiple of ${a} and ${b}.`,
       (a, b) => `The multiples of ${a} and of ${b} first meet at which number?`,
     ],
   };
@@ -375,21 +375,21 @@ export function primesProcedural() {
 
   const commonFacPhr = {
     band1: [
-      (a, b) => `What is the greatest number that is a factor of both ${a} and ${b}? Type it.`,
+      (a, b) => `What is the greatest number that is a factor of both ${a} and ${b}?`,
       (a, b) => `Type the biggest factor shared by ${a} and ${b}.`,
       (a, b) => `The largest shared factor of ${a} and ${b} = ?`,
-      (a, b) => `Which number is the greatest factor of both ${a} and ${b}? Type it.`,
+      (a, b) => `Which number is the greatest factor of both ${a} and ${b}?`,
     ],
     band2: [
       (a, b) => `Find the greatest common factor of ${a} and ${b}.`,
-      (a, b) => `The largest factor shared by ${a} and ${b} = ? Type it.`,
+      (a, b) => `The largest factor shared by ${a} and ${b} = ?`,
       (a, b) => `Which number is the greatest common factor of ${a} and ${b}?`,
       (a, b) => `Type the biggest common factor of ${a} and ${b}.`,
     ],
     band3: [
-      (a, b) => `Compute the greatest common factor of ${a} and ${b} exactly.`,
-      (a, b) => `Exactly which number is the GCF of ${a} and ${b}? Type it.`,
-      (a, b) => `Determine the greatest common factor of ${a} and ${b}.`,
+      (a, b) => `What is the greatest common factor of ${a} and ${b}?`,
+      (a, b) => `Exactly which number is the GCF of ${a} and ${b}?`,
+      (a, b) => `Find the greatest common factor of ${a} and ${b}.`,
       (a, b) => `The factor lists of ${a} and ${b} share which largest entry?`,
     ],
   };
@@ -427,8 +427,8 @@ export function primesConceptual() {
       (nm, n) => `According to ${nm}, ${n} has exactly two factors. Is ${nm} right?`,
     ],
     band3: [
-      (nm, n) => `${nm} certifies ${n} as prime. Is the certification valid?`,
-      (nm, n) => `Auditing ${nm}'s prime list: it includes ${n}. Clean audit?`,
+      (nm, n) => `${nm} says ${n} is prime. Is ${nm} right?`,
+      (nm, n) => `${nm}'s prime list includes ${n}. Does ${n} belong on the list?`,
     ],
   };
   const primeJudgeData = {
@@ -458,7 +458,7 @@ export function primesConceptual() {
       (nm) => `Evens can never be prime, argues ${nm}, so 2 is composite. Is ${nm} right?`,
     ],
     band3: [
-      (nm) => `${nm} asserts that 2 belongs on the prime list as its only even member. Sound assertion?`,
+      (nm) => `${nm} says 2 belongs on the prime list as its only even number. Is ${nm} right?`,
       (nm) => `${nm} strikes 2 from the primes for being even. Should it be struck?`,
     ],
   };
@@ -469,7 +469,7 @@ export function primesConceptual() {
         item("primesAndCommon", "conceptual", `evenPrimeJudge_${band}`, band, {
           answer: ok ? "Yes" : "No",
           choices: ["Yes", "No"],
-          display: { fm: { kind: "authored" }, promptText: twoPhr[band][i % 2](nameAt(i * 3 + 2 + OFF[band])) + (i >= 8 ? " Think about the factors of 2." : ""), truth: ok },
+          display: { fm: { kind: "authored" }, promptText: (i >= 8 ? "Think about the factors of 2. " : "") + twoPhr[band][i % 2](nameAt(i * 3 + 2 + OFF[band])), truth: ok },
         })
       );
     }
@@ -485,7 +485,7 @@ export function primesConceptual() {
       (nm) => `According to ${nm}, 1 counts as prime. Is ${nm} right?`,
     ],
     band3: [
-      (nm) => `${nm} defends 1 as prime since its only factor is 1. Is the defense sound?`,
+      (nm) => `${nm} says 1 is prime because its only factor is 1. Is ${nm} right?`,
       (nm) => `On ${nm}'s chart, 1 sits among the primes. Should it?`,
     ],
   };
@@ -495,7 +495,7 @@ export function primesConceptual() {
         item("primesAndCommon", "conceptual", `oneNotPrime_${band}`, band, {
           answer: "No",
           choices: ["Yes", "No"],
-          display: { fm: { kind: "trapNo" }, promptText: oneTrapPhr[band][i % 2](nameAt(i * 3 + 3 + OFF[band])) + (i >= 12 ? " Primes need exactly two factors." : i >= 6 ? " Count the factors of 1." : ""), truth: false },
+          display: { fm: { kind: "trapNo" }, promptText: (i >= 12 ? "Primes need exactly two factors. " : i >= 6 ? "Count the factors of 1. " : "") + oneTrapPhr[band][i % 2](nameAt(i * 3 + 3 + OFF[band])), truth: false },
         })
       );
     }

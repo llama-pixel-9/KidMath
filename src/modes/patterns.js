@@ -121,7 +121,9 @@ export const PATTERN_VARIETIES = [
           core[0],
         ]),
         prompt: `Pattern: ${shown.join(", ")}. Which part repeats?`,
-        display: { sequence: shown },
+        // `terms`, not `sequence`: a sequence draws the "What comes next?" card
+        // and hides the prompt (src/itemBank/qc/sequenceCard.js).
+        display: { terms: shown },
       };
     },
   },
@@ -160,12 +162,12 @@ export const PATTERN_VARIETIES = [
     build(band) {
       const step = stepFor(band);
       const first = randInt(1, 9) + step; // keeps the hidden term positive
-      const sequence = ["?", first, first + step, first + 2 * step, first + 3 * step];
+      const sequence = ["__", first, first + step, first + 2 * step, first + 3 * step];
       return {
         answer: first - step,
         answerType: "fillBlank",
-        prompt: `Pattern: ${sequence.join(", ")} — what comes first?`,
-        display: { sequence, step },
+        prompt: `Pattern: ${sequence.join(", ")}. What number comes first?`,
+        display: { terms: sequence, step },
         step,
       };
     },
@@ -207,12 +209,12 @@ export const PATTERN_VARIETIES = [
       const step = stepFor(band);
       const full = [start, start + step, start + 2 * step, start + 3 * step];
       const gap = randInt(1, 2); // never the first or last term
-      const sequence = full.map((v, i) => (i === gap ? "?" : v));
+      const sequence = full.map((v, i) => (i === gap ? "__" : v));
       return {
         answer: full[gap],
         answerType: "fillBlank",
-        prompt: `Fill the gap: ${sequence.join(", ")}.`,
-        display: { sequence, step },
+        prompt: `${sequence.join(", ")}. What number goes in the blank?`,
+        display: { terms: sequence, step },
         step,
       };
     },
@@ -268,7 +270,7 @@ export const PATTERN_VARIETIES = [
             `subtract ${factor}`,
           ]),
           prompt: `Pattern: ${sequence.join(", ")}. What is the rule?`,
-          display: { sequence },
+          display: { terms: sequence },
         };
       }
       const step = stepFor(band);
@@ -285,7 +287,7 @@ export const PATTERN_VARIETIES = [
           `add ${step - 1 > 0 ? step - 1 : step + 2}`,
         ]),
         prompt: `Pattern: ${sequence.join(", ")}. What is the rule?`,
-        display: { sequence },
+        display: { terms: sequence },
       };
     },
   },
@@ -336,7 +338,7 @@ export const PATTERN_VARIETIES = [
           ? shuffleArray([...new Set(shown.slice(0, 4))])
           : shuffleArray([...new Set([broken, ...shown.slice(0, 3)])]),
         prompt: `${who} wrote ${shown.join(", ")}. Which number is wrong?`,
-        display: { sequence: shown },
+        display: { terms: shown },
       };
     },
   },
@@ -387,7 +389,7 @@ export const PATTERN_VARIETIES = [
         prompt: `The pattern ${sequence.join(
           ", "
         )} keeps adding ${step}. Will the ${ordinal(term)} number be even?`,
-        display: { sequence },
+        display: { terms: sequence },
       };
     },
   },

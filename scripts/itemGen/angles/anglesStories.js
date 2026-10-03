@@ -14,7 +14,7 @@ export function anglesStories() {
   /* ---------------- classifyAngle ---------------- */
 
   const doorPhr = {
-    band1: (nm, state, kind) => `${nm} opens a door ${state}. Which kind of angle does the door make with the wall? Pick it.`,
+    band1: (nm, state, kind) => `${nm} opens a door ${state}. Which kind of angle does the door make with the wall?`,
     band2: (nm, state, kind) => `${nm} swings a locker door ${state}. Pick the kind of angle between door and frame.`,
     band3: (nm, state, kind) => `${nm} props a hatch ${state}. Which kind of angle does the hatch form with its frame?`,
   };
@@ -25,7 +25,7 @@ export function anglesStories() {
     ["flat against the wall", "straight"],
   ];
   const clockPhr = {
-    band1: (nm, time, kind) => `${nm} looks at the clock at ${time}. Which kind of angle do the two hands make? Pick it.`,
+    band1: (nm, time, kind) => `${nm} looks at the clock at ${time}. Which kind of angle do the two hands make?`,
     band2: (nm, time, kind) => `At ${time}, ${nm} checks the clock hands. Pick the kind of angle between them.`,
     band3: (nm, time, kind) => `${nm} reads the clock at ${time}. Classify the angle between the hands.`,
   };
@@ -36,7 +36,7 @@ export function anglesStories() {
     ["5:00", "obtuse", 150],
   ];
   const scissorPhr = {
-    band1: (nm, state, kind) => `${nm} holds scissors open ${state}. Which kind of angle is between the blades? Pick it.`,
+    band1: (nm, state, kind) => `${nm} holds scissors open ${state}. Which kind of angle is between the blades?`,
     band2: (nm, state, kind) => `${nm} spreads compasses ${state}. Pick the kind of angle between the arms.`,
     band3: (nm, state, kind) => `${nm} sets calipers ${state}. Which kind of angle sits between the jaws?`,
   };
@@ -78,8 +78,8 @@ export function anglesStories() {
   /* ---------------- measureAngle ---------------- */
 
   const robotPhr = {
-    band1: (nm, whole, unit, W, U) => `${nm}'s toy robot makes ${whole}. How many ${unit} is that? Type it.`,
-    band2: (nm, name, d) => `${nm}'s drone rotates through ${name}. How many degrees does it rotate? Type it.`,
+    band1: (nm, whole, unit, W, U) => `${nm}'s toy robot makes ${whole}. How many ${unit} is that?`,
+    band2: (nm, name, d) => `${nm}'s drone rotates through ${name}. How many degrees does it rotate?`,
     band3: (nm, name, d) => `${nm} programs a camera to sweep ${name}. Exactly how many degrees is the sweep?`,
   };
   const B1_TURNS = [
@@ -97,12 +97,12 @@ export function anglesStories() {
   const dialPhr = {
     band1: (nm, whole, unit, W, U) => `${nm} twists a jar lid through ${whole}. Count it in ${unit}: how many ${unit} is the twist?`,
     band2: (nm, name, d) => `${nm} turns an oven dial through ${name}. Type the turn in degrees.`,
-    band3: (nm, name, d) => `${nm} rotates a telescope mount through ${name}. Determine the rotation in degrees.`,
+    band3: (nm, name, d) => `${nm} turns a telescope through ${name}. How many degrees does the telescope turn?`,
   };
   const wheelPhr = {
-    band1: (nm, whole, unit, W, U) => `${nm} spins a game wheel through ${whole}. How many ${unit} does the wheel pass? Type it.`,
+    band1: (nm, whole, unit, W, U) => `${nm} spins a game wheel through ${whole}. How many ${unit} does the wheel pass?`,
     band2: (nm, name, d) => `${nm} swings a gate through ${name}. How many degrees does the gate swing?`,
-    band3: (nm, name, d) => `${nm} steers a robot arm through ${name}. Compute the swing in degrees.`,
+    band3: (nm, name, d) => `${nm} swings a robot arm through ${name}. How many degrees does the arm swing?`,
   };
   for (const band of ["band1", "band2", "band3"]) {
     for (let i = 0; i < N; i += 1) {
@@ -147,7 +147,7 @@ export function anglesStories() {
   const dancePhr = {
     band1: (nm, a, b) => `In a dance move, ${nm} turns ${a} half turn${a === 1 ? "" : "s"} and then ${b} more. How many half turns is the whole move?`,
     band2: (nm, a, b) => `${nm} swings a golf club back ${a} degrees and follows through ${b} degrees. How many degrees does the club travel in all?`,
-    band3: (nm, a, b) => `${nm} rotates a stage light ${a} degrees, then ${b} degrees further. Compute the total rotation in degrees.`,
+    band3: (nm, a, b) => `${nm} turns a stage light ${a} degrees, then ${b} degrees more. How many degrees does the light turn in all?`,
   };
   const b1Sums = [[1, 1], [1, 2], [2, 1], [2, 2], [1, 3], [3, 1], [1, 1], [1, 2], [2, 1], [2, 2], [1, 3], [3, 1], [1, 1], [1, 2], [2, 1], [2, 2], [1, 3]];
   const degSums = {
@@ -185,7 +185,7 @@ export function anglesStories() {
   const gatePhr = {
     band1: (nm, k) => `${nm}'s music box crank takes 4 quarter turns per song. ${nm} cranks ${k}. How many quarter turns are missing for the song?`,
     band2: (nm, t, a, tn) => `A gate swings ${a} of the ${t} degrees to ${tn}. How many more degrees must ${nm} push it?`,
-    band3: (nm, t, a, tn) => `${nm}'s telescope has panned ${a} degrees of a ${t}-degree sweep. Compute the degrees still to pan.`,
+    band3: (nm, t, a, tn) => `${nm}'s telescope has turned ${a} degrees of a ${t}-degree sweep. How many more degrees does it need to turn?`,
   };
   const b1Miss = [1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2];
   const degMiss = {

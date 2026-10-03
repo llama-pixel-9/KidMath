@@ -105,23 +105,23 @@ export function readBarProcedural() {
       // max/min typed reads, phrasing switched by pass.
       const maxPhr = pass(vi) === 0
         ? `Find the tallest bar of the ${t} graph. How many votes does it show?`
-        : `Which count does the ${t} graph's tallest bar reach? Type the number.`;
+        : `Which count does the ${t} graph's tallest bar reach?`;
       const minPhr = pass(vi) === 0
         ? `Find the shortest bar of the ${t} graph. How many votes does it show?`
-        : `Which count does the ${t} graph's shortest bar reach? Type the number.`;
-      const bandTag = band === "band1" ? "" : band === "band2" ? " Check the scale." : " Read to the exact line.";
+        : `Which count does the ${t} graph's shortest bar reach?`;
+      const bandTag = band === "band1" ? "" : band === "band2" ? "Check the scale. " : "Read to the exact line. ";
       items.push(
         item("readBar", "procedural", `barMax_${band}`, band, {
           answer: Math.max(...values),
           answerType: "barGraph",
-          display: { ...barDisplay(bars), data: { kind: "barMaxValue" }, promptText: maxPhr + bandTag },
+          display: { ...barDisplay(bars), data: { kind: "barMaxValue" }, promptText: bandTag + maxPhr },
         })
       );
       items.push(
         item("readBar", "procedural", `barMin_${band}`, band, {
           answer: Math.min(...values),
           answerType: "barGraph",
-          display: { ...barDisplay(bars), data: { kind: "barMinValue" }, promptText: minPhr + bandTag },
+          display: { ...barDisplay(bars), data: { kind: "barMinValue" }, promptText: bandTag + minPhr },
         })
       );
     });
@@ -151,11 +151,11 @@ export function readBarConceptual() {
 
   const mostPhrs = [
     (nm, t) => `${nm} checks the ${t} graph. Which one was chosen the most?`,
-    (nm, t) => `In the ${t} graph, which bar is tallest? ${nm} looks for the winner.`,
+    (nm, t) => `${nm} looks for the winner in the ${t} graph. Which bar is tallest?`,
   ];
   const leastPhrs = [
     (nm, t) => `${nm} checks the ${t} graph. Which one was chosen the fewest?`,
-    (nm, t) => `In the ${t} graph, which bar is shortest? ${nm} hunts for it.`,
+    (nm, t) => `${nm} hunts through the ${t} graph. Which bar is shortest?`,
   ];
   const judgePhrs = [
     (nm, t, l, said) => `${nm} reads the ${l} bar of the ${t} graph as ${said}. Is ${nm} right?`,
@@ -163,7 +163,7 @@ export function readBarConceptual() {
   ];
   const secondPhrs = [
     (nm, t) => `${nm} wants the SECOND tallest bar of the ${t} graph. Which one is it?`,
-    (nm, t) => `Ordering the ${t} graph's bars tallest to shortest, which comes second? ${nm} decides.`,
+    (nm, t) => `${nm} orders the ${t} graph's bars from tallest to shortest. Which bar comes second?`,
   ];
   for (const band of ["band1", "band2", "band3"]) {
     BAND_VALUES[band].forEach((values, vi) => {
@@ -237,7 +237,7 @@ export function compareBarsProcedural() {
     ],
     band3: [
       (t, a, b) => `The scaled ${t} graph: exactly how many more ${a} than ${b}?`,
-      (t, a, b) => `Compute the exact ${a}-minus-${b} gap in the ${t} graph. What is the gap?`,
+      (t, a, b) => `What is the exact gap between ${a} and ${b} in the ${t} graph?`,
     ],
   };
   const sumPhrs = {
@@ -287,7 +287,7 @@ export function compareBarsProcedural() {
         item("compareBars", "procedural", `barDiffAlt_${band}`, band, {
           answer: big.value - small.value,
           answerType: "barGraph",
-          display: { ...barDisplay(bars), data: { kind: "barDiff", a: big.label, b: small.label }, promptText: `${diffPhrs[band][1 - p](t, big.label, small.label)} Compare carefully.` },
+          display: { ...barDisplay(bars), data: { kind: "barDiff", a: big.label, b: small.label }, promptText: `Compare carefully. ${diffPhrs[band][1 - p](t, big.label, small.label)}` },
         })
       );
       if (vi < 3) {
@@ -295,7 +295,7 @@ export function compareBarsProcedural() {
           item("compareBars", "procedural", `barDiffExtra_${band}`, band, {
             answer: a.value - b.value,
             answerType: "barGraph",
-            display: { ...barDisplay(bars), data: { kind: "barDiff", a: a.label, b: b.label }, promptText: `${diffPhrs[band][1 - p](t, a.label, b.label)} Look twice.` },
+            display: { ...barDisplay(bars), data: { kind: "barDiff", a: a.label, b: b.label }, promptText: `Look twice. ${diffPhrs[band][1 - p](t, a.label, b.label)}` },
           })
         );
       }
@@ -304,7 +304,7 @@ export function compareBarsProcedural() {
         item("compareBars", "procedural", `barSumAlt_${band}`, band, {
           answer: c.value + d.value,
           answerType: "barGraph",
-          display: { ...barDisplay(bars), data: { kind: "barSum", a: c.label, b: d.label }, promptText: `${sumPhrs[band][1 - p](t, c.label, d.label)} Count both bars.` },
+          display: { ...barDisplay(bars), data: { kind: "barSum", a: c.label, b: d.label }, promptText: `Count both bars. ${sumPhrs[band][1 - p](t, c.label, d.label)}` },
         })
       );
     });
@@ -321,7 +321,7 @@ export function compareBarsConceptual() {
     (nm, t, a, b) => `Looking at the ${t} graph, ${nm} claims ${a} beat ${b}. Is that right?`,
   ];
   const whichPhrs = [
-    (nm, t, a, b) => `In the ${t} graph, which bar shows more: ${a} or ${b}? ${nm} compares them.`,
+    (nm, t, a, b) => `${nm} compares two bars in the ${t} graph. Which bar shows more: ${a} or ${b}?`,
     (nm, t, a, b) => `${nm} studies the ${t} graph. Between ${a} and ${b}, which is taller?`,
   ];
   const diffPhrs = [
@@ -456,7 +456,7 @@ export function pictographProcedural() {
       item("pictograph", "procedural", "pictoBothRowsTeen", "band1", {
         answer: s1 + s2,
         answerType: "numberPad",
-        display: { ...pictoDisplay(rows, 1), data: { kind: "pictoBothRows" }, promptText: `The ${set.title} picture chart, key of one: how many pictures in both rows together?${vi >= SETS.length ? " Count them all." : ""}` },
+        display: { ...pictoDisplay(rows, 1), data: { kind: "pictoBothRows" }, promptText: `${vi >= SETS.length ? "Count them all. " : ""}The ${set.title} picture chart, key of one: how many pictures in both rows together?` },
       })
     );
   }
@@ -529,7 +529,7 @@ export function pictographConceptual() {
   }
   const rowMorePhrs = [
     (nm, t, a, b) => `${nm} compares the ${t} chart's picture rows for ${a} and ${b}. Which row shows more?`,
-    (nm, t, a, b) => `In the ${t} picture chart, which row has more pictures: ${a} or ${b}? ${nm} looks closely.`,
+    (nm, t, a, b) => `${nm} looks closely at the ${t} picture chart. Which row has more pictures: ${a} or ${b}?`,
   ];
   let made = 0;
   for (let vi = 0; made < 29; vi += 1) {
@@ -796,7 +796,7 @@ export function dataAnalysisConceptual() {
   ];
   const truePickPhrs = [
     (nm, t) => `${nm} must pick the TRUE statement about the ${t} graph. Which is it?`,
-    (nm, t) => `Which statement matches the ${t} graph? ${nm} checks each bar.`,
+    (nm, t) => `${nm} checks each bar of the ${t} graph. Which statement matches the graph?`,
   ];
   const totalJudgePhrs = [
     (nm, t, said) => `${nm} adds all the ${t} bars and announces ${said} in total. Is ${nm} right?`,
@@ -859,7 +859,7 @@ export function dataAnalysisConceptual() {
         item("dataAnalysis", "conceptual", `tieGap_${band}`, band, {
           answer: hi.value - lo.value,
           answerType: "numberPad",
-          display: { ...barDisplay(bars), data: { kind: "barDiff", a: hi.label, b: lo.label }, promptText: `${nameAt(vi * 3 + 7 + off)} wonders how many more ${lo.label} the ${t} graph would need to tie with ${hi.label}. How many more votes?${p === 0 ? "" : " Count the gap."}` },
+          display: { ...barDisplay(bars), data: { kind: "barDiff", a: hi.label, b: lo.label }, promptText: `${nameAt(vi * 3 + 7 + off)} wonders how many more ${lo.label} the ${t} graph would need to tie with ${hi.label}.${p === 0 ? "" : " Count the gap."} How many more votes?` },
         })
       );
     });

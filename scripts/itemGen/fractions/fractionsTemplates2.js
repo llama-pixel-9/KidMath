@@ -84,16 +84,16 @@ export function compareProcedural() {
 
   const halfPhr = {
     band1: [
-      (a, b) => `Is ${F(a, b)} less than, equal to, or greater than one half? Pick the answer.`,
+      (a, b) => `Is ${F(a, b)} less than, equal to, or greater than one half?`,
       (a, b) => `Place ${F(a, b)} against 1/2. Which relation is true?`,
     ],
     band2: [
       (a, b) => `Benchmark ${F(a, b)} against a half. Less, equal, or greater?`,
-      (a, b) => `Where does ${F(a, b)} stand next to 1/2? Choose the relation.`,
+      (a, b) => `Where does ${F(a, b)} stand next to 1/2?`,
     ],
     band3: [
       (a, b) => `Precisely benchmark ${F(a, b)} at the half mark. Which relation holds?`,
-      (a, b) => `Against the 1/2 benchmark, ${F(a, b)} lands where? Pick the relation.`,
+      (a, b) => `Against the 1/2 benchmark, ${F(a, b)} lands where?`,
     ],
   };
   const halfLists = {
@@ -132,7 +132,7 @@ export function compareConceptual() {
       (nm, n, b, d) => `Because denominators grew, ${nm} claims ${F(n, d)} outweighs ${F(n, b)}. Is ${nm} right?`,
     ],
     band3: [
-      (nm, n, b, d) => `${nm}'s rule "larger denominator, larger fraction" makes ${F(n, d)} > ${F(n, b)}. Is the rule sound here?`,
+      (nm, n, b, d) => `${nm}'s rule "larger denominator, larger fraction" makes ${F(n, d)} > ${F(n, b)}. Does the rule work here?`,
       (nm, n, b, d) => `Applying denominator-size logic, ${nm} puts ${F(n, d)} over ${F(n, b)}. Is that right?`,
     ],
   };
@@ -155,7 +155,7 @@ export function compareConceptual() {
 
   const whichBiggerPhr = {
     band1: [
-      (nm, a, b, c, d) => `Which is more pie: ${F(a, b)} of it or ${F(c, d)} of it? ${nm} decides.`,
+      (nm, a, b, c, d) => `Help ${nm} decide. Which is more pie: ${F(a, b)} of it or ${F(c, d)} of it?`,
       (nm, a, b, c, d) => `${nm} weighs ${F(a, b)} against ${F(c, d)}. Which fraction is larger?`,
     ],
     band2: [
@@ -163,7 +163,7 @@ export function compareConceptual() {
       (nm, a, b, c, d) => `Pick the larger of ${F(a, b)} and ${F(c, d)}. ${nm} shows the work.`,
     ],
     band3: [
-      (nm, a, b, c, d) => `Exactly which is greater: ${F(a, b)} or ${F(c, d)}? ${nm} cross-multiplies.`,
+      (nm, a, b, c, d) => `${nm} cross-multiplies to compare. Exactly which is greater: ${F(a, b)} or ${F(c, d)}?`,
       (nm, a, b, c, d) => `${nm} settles ${F(a, b)} versus ${F(c, d)} for good. Which is greater?`,
     ],
   };
@@ -206,7 +206,7 @@ export function compareConceptual() {
         item("compareFractions", "conceptual", `sameWholeTrap_${band}`, band, {
           answer: "No",
           choices: ["Yes", "No"],
-          display: { frac: { kind: "trapNo" }, promptText: sameWholePhr[band][i % 2](nameAt(i * 3 + 3 + OFF[band])) + (i >= 10 ? " Think about the wholes." : ""), truth: false },
+          display: { frac: { kind: "trapNo" }, promptText: (i >= 10 ? "Think about the wholes. " : "") + sameWholePhr[band][i % 2](nameAt(i * 3 + 3 + OFF[band])), truth: false },
         })
       );
     }
@@ -237,9 +237,9 @@ export function addLikeProcedural() {
       (a, b, d) => `Combine ${F(a, d)} and ${F(b, d)}. Which fraction is the combined amount?`,
     ],
     band3: [
-      (a, b, d) => `Compute exactly: ${F(a, d)} + ${F(b, d)}. Which fraction is the sum?`,
+      (a, b, d) => `Find ${F(a, d)} + ${F(b, d)} exactly. Which fraction is the sum?`,
       (a, b, d) => `The precise sum of ${F(a, d)} and ${F(b, d)} is which fraction?`,
-      (a, b, d) => `Evaluate ${F(a, d)} + ${F(b, d)} in one step. Which fraction results?`,
+      (a, b, d) => `Add ${F(a, d)} + ${F(b, d)} in one step. Which fraction do you get?`,
       (a, b, d) => `Adding ${F(a, d)} to ${F(b, d)} yields exactly which fraction?`,
     ],
   };
@@ -276,9 +276,9 @@ export function addLikeProcedural() {
       (a, b, d) => `Reduce ${F(a, d)} by ${F(b, d)}. Which fraction is left over?`,
     ],
     band3: [
-      (a, b, d) => `Compute exactly: ${F(a, d)} - ${F(b, d)}. Which fraction remains?`,
+      (a, b, d) => `Find ${F(a, d)} - ${F(b, d)} exactly. Which fraction remains?`,
       (a, b, d) => `The precise difference ${F(a, d)} - ${F(b, d)} is which fraction?`,
-      (a, b, d) => `Evaluate ${F(a, d)} - ${F(b, d)} in one step. Which fraction results?`,
+      (a, b, d) => `Work out ${F(a, d)} - ${F(b, d)} in one step. Which fraction do you get?`,
       (a, b, d) => `Subtracting ${F(b, d)} from ${F(a, d)} yields exactly which fraction?`,
     ],
   };
@@ -305,7 +305,7 @@ export function addLikeProcedural() {
     band1: [
       (a, s, d) => `${F(a, d)} + ?/${d} = ${F(s, d)}. What is the missing top number?`,
       (a, s, d) => `What numerator over ${d} completes ${F(a, d)} + ?/${d} = ${F(s, d)}?`,
-      (a, s, d) => `${F(a, d)} needs how many more ${DEN_WORDS[d]} to reach ${F(s, d)}? Give the count.`,
+      (a, s, d) => `${F(a, d)} needs how many more ${DEN_WORDS[d]} to reach ${F(s, d)}?`,
       (a, s, d) => `Find the missing top number: ${F(a, d)} + ?/${d} makes ${F(s, d)}.`,
     ],
     band2: [
@@ -317,7 +317,7 @@ export function addLikeProcedural() {
     band3: [
       (a, s, d) => `Solve exactly: ${F(a, d)} + ?/${d} = ${F(s, d)}. The missing numerator = ?`,
       (a, s, d) => `To climb from ${F(a, d)} to ${F(s, d)}, add ?/${d}. Which numerator?`,
-      (a, s, d) => `Determine the numerator: ${F(a, d)} + ?/${d} lands exactly on ${F(s, d)}.`,
+      (a, s, d) => `${F(a, d)} + ?/${d} lands exactly on ${F(s, d)}. What is the missing numerator?`,
       (a, s, d) => `The gap between ${F(a, d)} and ${F(s, d)} is ?/${d}. What is the top number?`,
     ],
   };
@@ -355,7 +355,7 @@ export function addLikeConceptual() {
       (nm, a, b, d) => `Adding tops AND bottoms, ${nm} turns ${F(a, d)} + ${F(b, d)} into ${F(a + b, d + d)}. Is ${nm} right?`,
     ],
     band3: [
-      (nm, a, b, d) => `${nm}'s worked answer for ${F(a, d)} + ${F(b, d)} reads ${F(a + b, d + d)}. Is the work sound?`,
+      (nm, a, b, d) => `${nm} adds ${F(a, d)} + ${F(b, d)} and gets ${F(a + b, d + d)}. Is ${nm} right?`,
       (nm, a, b, d) => `${nm} defends ${F(a + b, d + d)} as the total of ${F(a, d)} + ${F(b, d)}. Should the defense stand?`,
     ],
   };
@@ -386,8 +386,8 @@ export function addLikeConceptual() {
       (nm, a, b, d, saidN) => `Check ${nm}'s sum: ${F(a, d)} + ${F(b, d)} = ${F(saidN, d)}. Right or not?`,
     ],
     band3: [
-      (nm, a, b, d, saidN) => `${nm} certifies ${F(a, d)} + ${F(b, d)} = ${F(saidN, d)}. Is the certification valid?`,
-      (nm, a, b, d, saidN) => `Audit the sum ${F(a, d)} + ${F(b, d)} = ${F(saidN, d)} from ${nm}. Clean?`,
+      (nm, a, b, d, saidN) => `${nm} says ${F(a, d)} + ${F(b, d)} = ${F(saidN, d)}. Is ${nm} right?`,
+      (nm, a, b, d, saidN) => `${nm} writes ${F(a, d)} + ${F(b, d)} = ${F(saidN, d)}. Is the sum right?`,
     ],
   };
   const sumJudgeData = {
@@ -409,7 +409,7 @@ export function addLikeConceptual() {
 
   const buildWholePhr = {
     band1: [
-      (nm, a, d) => `${nm} has ${F(a, d)} of a sticker sheet. What fraction more makes one whole sheet? Pick it.`,
+      (nm, a, d) => `${nm} has ${F(a, d)} of a sticker sheet. What fraction more makes one whole sheet?`,
       (nm, a, d) => `From ${F(a, d)}, which fraction must ${nm} add to reach exactly 1?`,
     ],
     band2: [
@@ -417,7 +417,7 @@ export function addLikeConceptual() {
       (nm, a, d) => `To complete the whole from ${F(a, d)}, which fraction does ${nm} need?`,
     ],
     band3: [
-      (nm, a, d) => `Exactly which fraction added to ${F(a, d)} produces 1? ${nm} works it out.`,
+      (nm, a, d) => `${nm} works it out. Exactly which fraction added to ${F(a, d)} makes 1?`,
       (nm, a, d) => `${nm} tops up ${F(a, d)} to a full whole. Which fraction is the top-up?`,
     ],
   };
@@ -460,7 +460,7 @@ export function ofSetProcedural() {
       (n, d, w) => `${F(n, d)} of ${w} works out to what number?`,
     ],
     band3: [
-      (n, d, w) => `Compute exactly ${F(n, d)} of ${w}. What is the result?`,
+      (n, d, w) => `What is ${F(n, d)} of ${w}, exactly?`,
       (n, d, w) => `The precise value of ${F(n, d)} of ${w} = ?`,
     ],
   };
@@ -525,12 +525,12 @@ export function ofSetConceptual() {
       (nm, n, d, w, said) => `${F(n, d)} of ${w} comes to ${said}, says ${nm}. Is that right?`,
     ],
     band2: [
-      (nm, n, d, w, said) => `${nm} computes ${F(n, d)} of ${w} and lands on ${said}. Does it check out?`,
+      (nm, n, d, w, said) => `${nm} finds ${F(n, d)} of ${w} and gets ${said}. Is ${nm} right?`,
       (nm, n, d, w, said) => `Check ${nm}'s value of ${said} for ${F(n, d)} of ${w}. Right or wrong?`,
     ],
     band3: [
-      (nm, n, d, w, said) => `${nm} certifies ${F(n, d)} of ${w} = ${said}. Is the certification valid?`,
-      (nm, n, d, w, said) => `Audit: ${F(n, d)} of ${w} recorded as ${said} by ${nm}. Clean audit?`,
+      (nm, n, d, w, said) => `${nm} says ${F(n, d)} of ${w} = ${said}. Is ${nm} right?`,
+      (nm, n, d, w, said) => `${nm} writes ${said} for ${F(n, d)} of ${w}. Is that right?`,
     ],
   };
   const judgeData = {
@@ -552,15 +552,15 @@ export function ofSetConceptual() {
 
   const morePhr = {
     band1: [
-      (nm, w) => `Which is more of ${w} things: half of them or a quarter of them? ${nm} decides.`,
+      (nm, w) => `Help ${nm} decide. Which is more of ${w} things: half of them or a quarter of them?`,
       (nm, w) => `${nm} may take 1/2 or 1/4 of ${w} marbles. Which share is bigger?`,
     ],
     band2: [
-      (nm, w) => `Of ${w} items, is 1/3 or 1/6 the larger take? ${nm} chooses.`,
+      (nm, w) => `Help ${nm} choose. Of ${w} items, is 1/3 or 1/6 the larger share?`,
       (nm, w) => `${nm} weighs 1/3 of ${w} against 1/6 of ${w}. Which is larger?`,
     ],
     band3: [
-      (nm, w) => `From ${w} things, which claim is bigger: 1/4 of them or 1/5 of them? ${nm} reasons.`,
+      (nm, w) => `${nm} thinks it through. From ${w} things, which is bigger: 1/4 of them or 1/5 of them?`,
       (nm, w) => `${nm} contrasts a fourth of ${w} with a fifth of ${w}. Which amount wins?`,
     ],
   };

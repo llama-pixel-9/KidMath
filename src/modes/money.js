@@ -201,7 +201,7 @@ const VARIETIES = [
         answer,
         answerType: "choice",
         choices: shuffleArray([a.label, b.label, same].filter((v, i, arr) => arr.indexOf(v) === i)),
-        promptText: `Would you rather have ${a.label} or ${b.label}? Pick the one worth more.`,
+        promptText: `You want as much money as you can get. Would you rather have ${a.label} or ${b.label}?`,
         representation: "verbalContext",
         cognitiveDemand: "DOK3",
         misconceptionTags: ["sizeMeansValue", "coinValueSlip"],
@@ -244,7 +244,7 @@ const VARIETIES = [
       return {
         answer: fewestCoins(cents),
         answerType: "numberPad",
-        promptText: `What is the fewest number of coins that make ${cents}c? Use quarters, dimes, nickels and pennies.`,
+        promptText: `You can use quarters, dimes, nickels and pennies. What is the fewest number of coins that make ${cents}c?`,
         representation: "symbolic",
         cognitiveDemand: "DOK3",
         misconceptionTags: ["coinValueSlip", "offByOne"],

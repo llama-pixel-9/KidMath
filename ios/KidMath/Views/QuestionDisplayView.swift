@@ -22,8 +22,31 @@ struct QuestionDisplayView: View {
 
     private var display: [String: Any] { question["display"] as? [String: Any] ?? [:] }
     private var promptText: String? { display["promptText"] as? String }
+    /// The judgment instruction ("Is this right?") a format transform adds,
+    /// top-level or inside `display`, as on the web. Until 2026-10-02 the
+    /// iPhone dropped it, so a claim like "8 + 5 = 13" showed Yes/No buttons
+    /// with no question.
+    private var subPrompt: String? {
+        let text = (question["subPrompt"] as? String) ?? (display["subPrompt"] as? String)
+        return text?.isEmpty == false ? text : nil
+    }
 
     var body: some View {
+        VStack(spacing: 10) {
+            content
+            if let subPrompt {
+                Text(subPrompt)
+                    .font(.subheadline.weight(.bold))
+                    .textCase(.uppercase)
+                    .kerning(1)
+                    .foregroundStyle(theme.textMuted)
+                    .multilineTextAlignment(.center)
+            }
+        }
+    }
+
+    @ViewBuilder
+    private var content: some View {
         if display["bars"] != nil && question["answerType"] as? String != "barGraph" {
             // A chart the question asks about, answered through another widget
             // (choice, multiSelect). When the answer widget IS the graph, it
@@ -213,15 +236,39 @@ struct QuestionDisplayView: View {
         }
     }
 
+    /// Mirrors `promptSentences` in src/promptLayout.js: a sentence ends at
+    /// . ! or ? that closes a word or number and is followed by whitespace and
+    /// then something other than a lowercase letter or a math sign. So a "?"
+    /// blank ("A hexagon has ? sides.", "7 ? 4", "? + 27 = 61") and a decimal
+    /// point ("1.5", "$1.50") never split a line. A title ("Ms. Lee") never
+    /// ends a sentence.
     static func sentences(of text: String) -> [String] {
+        let chars = Array(text)
+        let noBreakAfter: Set<Character> = ["+", "-", "−", "×", "÷", "=", "<", ">", ",", ")", "]"]
+        let titles: Set<String> = ["Mr.", "Mrs.", "Ms.", "Dr."]
         var lines: [String] = []
         var current = ""
-        for character in text {
+        var i = 0
+        while i < chars.count {
+            let character = chars[i]
             current.append(character)
-            if ".!?".contains(character) {
-                lines.append(current.trimmingCharacters(in: .whitespaces))
-                current = ""
+            if ".!?".contains(character), i > 0, !chars[i - 1].isWhitespace,
+               i + 1 < chars.count, chars[i + 1].isWhitespace {
+                var j = i + 1
+                while j < chars.count, chars[j].isWhitespace { j += 1 }
+                let next: Character? = j < chars.count ? chars[j] : nil
+                let lastWord = current.split(whereSeparator: { $0.isWhitespace }).last.map(String.init) ?? ""
+                let continues = titles.contains(lastWord)
+                    || (next.map { ($0.isLowercase && $0.isLetter) || noBreakAfter.contains($0) } ?? false)
+                if !continues {
+                    let line = current.trimmingCharacters(in: .whitespaces)
+                    if !line.isEmpty { lines.append(line) }
+                    current = ""
+                    i = j
+                    continue
+                }
             }
+            i += 1
         }
         let rest = current.trimmingCharacters(in: .whitespaces)
         if !rest.isEmpty { lines.append(rest) }

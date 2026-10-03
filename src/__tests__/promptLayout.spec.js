@@ -1,5 +1,6 @@
 import { describe, it, expect } from "vitest";
-import { emojiPromptLines, chunkEmojiRun } from "../promptLayout";
+import fs from "node:fs";
+import { emojiPromptLines, chunkEmojiRun, promptSentences } from "../promptLayout";
 import countingMode from "../modes/counting";
 
 // Issue #29: "Group A: 🍪… Group B: 🍪…" rendered as one wrapping inline line,
@@ -107,5 +108,26 @@ describe("sentence-long labels", () => {
   it("keeps a short label inline with a single-row run", () => {
     const lines = emojiPromptLines("Group A: 🍪🍪🍪 How many?");
     expect(lines[0]).toMatchObject({ isRun: true, label: "Group A:" });
+  });
+});
+
+// The question card shows each sentence on its own line and the last one
+// large. A "?" blank or a decimal point must not end a sentence, or "A hexagon
+// has ? sides." shows "sides." as the question. The cases are shared with the
+// iPhone app's QuestionDisplayView.sentences(of:) test, so both platforms split
+// a prompt the same way.
+describe("promptSentences", () => {
+  const { cases } = JSON.parse(
+    fs.readFileSync(new URL("../../ios/KidMathTests/Fixtures/promptSentences.json", import.meta.url), "utf8")
+  );
+  for (const { prompt, lines } of cases) {
+    it(`splits ${JSON.stringify(prompt)}`, () => {
+      expect(promptSentences(prompt)).toEqual(lines);
+    });
+  }
+
+  it("returns no lines for an empty prompt", () => {
+    expect(promptSentences("")).toEqual([]);
+    expect(promptSentences(null)).toEqual([]);
   });
 });

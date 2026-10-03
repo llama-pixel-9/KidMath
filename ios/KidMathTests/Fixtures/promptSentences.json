@@ -1,0 +1,113 @@
+{
+  "_comment": "One sentence rule for both platforms: src/promptLayout.js promptSentences and QuestionDisplayView.sentences(of:). Read by src/__tests__/promptLayout.spec.js and ios/KidMathTests/PromptSentencesTests.swift.",
+  "cases": [
+    {
+      "prompt": "Mia has 12 shells. She finds 5 more. How many shells does Mia have now?",
+      "lines": [
+        "Mia has 12 shells.",
+        "She finds 5 more.",
+        "How many shells does Mia have now?"
+      ]
+    },
+    {
+      "prompt": "A hexagon has ? sides. What number goes in the blank?",
+      "lines": [
+        "A hexagon has ? sides.",
+        "What number goes in the blank?"
+      ]
+    },
+    {
+      "prompt": "? + 27 = 61",
+      "lines": [
+        "? + 27 = 61"
+      ]
+    },
+    {
+      "prompt": "Make a ten: 8 + 5 = 10 + ?",
+      "lines": [
+        "Make a ten: 8 + 5 = 10 + ?"
+      ]
+    },
+    {
+      "prompt": "29 + 41 = 30 + ? What number goes in the box?",
+      "lines": [
+        "29 + 41 = 30 + ? What number goes in the box?"
+      ]
+    },
+    {
+      "prompt": "Ana pays $1.50 for a pen. How much change does she get from $2.00?",
+      "lines": [
+        "Ana pays $1.50 for a pen.",
+        "How much change does she get from $2.00?"
+      ]
+    },
+    {
+      "prompt": "What is 0.5 + 0.25?",
+      "lines": [
+        "What is 0.5 + 0.25?"
+      ]
+    },
+    {
+      "prompt": "Is 9 + 8 = 17? Tap yes or no.",
+      "lines": [
+        "Is 9 + 8 = 17?",
+        "Tap yes or no."
+      ]
+    },
+    {
+      "prompt": "Wow! 6 birds sit on a wire. 2 fly away. How many birds are left?",
+      "lines": [
+        "Wow!",
+        "6 birds sit on a wire.",
+        "2 fly away.",
+        "How many birds are left?"
+      ]
+    },
+    {
+      "prompt": "What is 7 + ?, if the total is 12?",
+      "lines": [
+        "What is 7 + ?, if the total is 12?"
+      ]
+    },
+    {
+      "prompt": "7 ? 4",
+      "lines": [
+        "7 ? 4"
+      ]
+    },
+    {
+      "prompt": "3 x 4 = ? (area)",
+      "lines": [
+        "3 x 4 = ? (area)"
+      ]
+    },
+    {
+      "prompt": "Pattern: 1, 2, ? — each term is 2 times the one before.",
+      "lines": [
+        "Pattern: 1, 2, ? — each term is 2 times the one before."
+      ]
+    },
+    {
+      "prompt": "Which bar is tallest? Nora looks for the winner.",
+      "lines": [
+        "Which bar is tallest?",
+        "Nora looks for the winner."
+      ]
+    },
+    {
+      "prompt": "Ms. Lee's class has 24 students. Mr. Ortiz's class has 19. How many more students are in Ms. Lee's class?",
+      "lines": [
+        "Ms. Lee's class has 24 students.",
+        "Mr. Ortiz's class has 19.",
+        "How many more students are in Ms. Lee's class?"
+      ]
+    },
+    {
+      "prompt": "Dr. Patel sees 8 kids. How many kids does Dr. Patel see in 2 days?",
+      "lines": [
+        "Dr. Patel sees 8 kids.",
+        "How many kids does Dr. Patel see in 2 days?"
+      ]
+    }
+  ]
+}

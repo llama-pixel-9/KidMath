@@ -16,7 +16,24 @@
 const EMOJI_GROUP = "(?:\\p{Extended_Pictographic}[\\uFE0F\\u200D]*)+";
 const EMOJI_RUN_RE = new RegExp(`${EMOJI_GROUP}(?:[ ]+${EMOJI_GROUP})*`, "gu");
 const glyphCount = (s) => Array.from(s.replace(/[\s\uFE0F\u200D]/g, "")).length;
-const SENTENCE_SPLIT_RE = /(?<=[.!?])\s+/;
+// A sentence ends at . ! or ? that closes a word or number ("4?", "right?")
+// and is followed by a space and a new sentence. A "?" used as a blank stands
+// alone ("A hexagon has ? sides.", "7 ? 4", "3 x 4 = ? (area)") or is followed
+// by a lowercase word or a math sign ("? + 27 = 61"), so it never ends a
+// sentence; a decimal point ("1.5", "$1.50") has no space after it. The
+// iPhone app mirrors this rule in QuestionDisplayView.sentences(of:), and the
+// QC gate (src/itemBank/qc) reads prompts through promptSentences too. A
+// title ("Ms. Lee", "Dr. Patel") never ends a sentence.
+const SENTENCE_SPLIT_RE = /(?<=[^\s][.!?])(?<!\b(?:Mr|Mrs|Ms|Dr)\.)\s+(?=[^a-z+\-−×÷=<>,)\]])/;
+
+/** The prompt's sentences, in order: the renderer shows the last one large. */
+export function promptSentences(text) {
+  if (!text || typeof text !== "string") return [];
+  return text
+    .split(SENTENCE_SPLIT_RE)
+    .map((line) => line.trim())
+    .filter(Boolean);
+}
 const RUN_ROW_GLYPHS = 10;
 const LABEL_INLINE_MAX = 22;
 

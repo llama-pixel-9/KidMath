@@ -224,6 +224,34 @@ describe("validateModel", () => {
     expect(validateModel({ ...changeFromOneDollar, moneyStyle: "dollars", levelRange: [6, 7], promptVariants: 9 }).ok).toBe(true);
   });
 
+  it("swaps a slip that only exists on some numbers for its stand-in, without re-rolling", () => {
+    // Stand-in rule: "stoppedAfterFirstHop" only on prices whose first hop is
+    // longer than 5; on the rest, an off-by-ten slip shows instead.
+    const model = {
+      ...changeFromOneDollar,
+      distractors: [
+        changeFromOneDollar.distractors[0],
+        changeFromOneDollar.distractors[1],
+        { expr: "nextTen(price) - price", mistake: "stoppedAfterFirstHop", when: "nextTen(price) - price > 5", otherwise: { expr: "paid - price + 10", mistake: "offByTen" } },
+      ],
+      hint: { ...changeFromOneDollar.hint, feedback: undefined },
+    };
+    expect(validateModel(model).errors).toEqual([]);
+    const seen = new Set();
+    for (const seed of SEEDS) {
+      const { question, tags } = fill(model, { seed });
+      expect(question.choices).toHaveLength(4);
+      const hop = Math.ceil(Number(question.display.money.price) / 10) * 10 - question.display.money.price;
+      const tag = hop > 5 ? "stoppedAfterFirstHop" : "offByTen";
+      expect(Object.values(tags.mistakes), `seed ${seed}`).toContain(tag);
+      seen.add(tag);
+    }
+    // Both kinds of draw happen: nothing re-rolled the short first hops away.
+    expect([...seen].sort()).toEqual(["offByTen", "stoppedAfterFirstHop"]);
+    const orphan = { ...model, distractors: [...model.distractors.slice(0, 2), { expr: "price", mistake: "answeredWithAGiven", otherwise: { expr: "paid", mistake: "x" } }] };
+    expect(validateModel(orphan).errors).toContain("distractors[2].otherwise needs a when");
+  });
+
   it("refuses a slot form on a non-object slot", () => {
     const { errors } = validateModel({ ...base, template: { prompt: "{name_plural} buy {object_a} for {price}. How much change?" } });
     expect(errors[0]).toMatch(/only an object slot has a plural form/);

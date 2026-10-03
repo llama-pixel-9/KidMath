@@ -53,6 +53,10 @@
  * @property {string} expr      the wrong value, over the slots
  * @property {string} mistake   the mistake it represents (a tag the parent
  *   report and the feedback layer key on)
+ * @property {string} [when]    the numbers on which this slip exists (an
+ *   expression); on other draws `otherwise` stands in, or the choice drops
+ * @property {{expr: string, mistake: string}} [otherwise]  the slip shown when
+ *   `when` is false, so a choice item keeps its number of choices
  *
  * @typedef {Object} HintTemplate  The four hint layers (plan section 9),
  *   every string templated with the same slots as the prompt:

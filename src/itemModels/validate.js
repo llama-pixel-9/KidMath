@@ -197,6 +197,19 @@ export function validateModel(model) {
       if (!isText(d.mistake)) err(`distractors[${i}] needs a mistake tag`);
       else if (tags.has(d.mistake)) err(`distractors[${i}] repeats the mistake tag "${d.mistake}"`);
       tags.add(d.mistake);
+      // `when`: the numbers on which this slip exists; `otherwise`: the slip
+      // shown on the other numbers (omit it to drop the choice there).
+      if (d.when != null) checkExpr(d.when, `distractors[${i}].when`);
+      if (d.otherwise != null) {
+        if (d.when == null) err(`distractors[${i}].otherwise needs a when`);
+        if (!isRecord(d.otherwise)) err(`distractors[${i}].otherwise must be { expr, mistake }`);
+        else {
+          checkExpr(d.otherwise.expr, `distractors[${i}].otherwise.expr`);
+          if (!isText(d.otherwise.mistake)) err(`distractors[${i}].otherwise needs a mistake tag`);
+          else if (tags.has(d.otherwise.mistake)) err(`distractors[${i}].otherwise repeats the mistake tag "${d.otherwise.mistake}"`);
+          tags.add(d.otherwise.mistake);
+        }
+      }
     });
 
     // Hint: nudge and steps always; the other layers when present.

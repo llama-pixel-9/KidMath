@@ -118,6 +118,23 @@ describe("the disc mat in a prompt's identity", () => {
     expect(dupes([one, mat(3, pair([[10, 4], [1, 14]], [[10, 5], [1, 4]]))])).toHaveLength(1);
   });
 
+  it("tells two which-is-true items apart by their choices", () => {
+    const pick = (n, choices) => ({
+      itemId: `calc-which-${n}`,
+      modeId: "multiDigit",
+      itemFamily: "conceptual",
+      subskill: "equalSign",
+      structureType: "chooseTrueEquation",
+      levelRange: [4, 6],
+      reviewStatus: "approved",
+      question: { answer: choices[0], choices, display: { promptText: "Which equation is true?" } },
+    });
+    const a = ["70 = 46 + 24", "54 = 36 + 28", "63 − 27 = 46", "82 − 45 = 43"];
+    const b = ["86 = 48 + 38", "23 = 16 + 17", "83 − 67 = 26", "54 − 35 = 21"];
+    expect(dupes([pick(1, a), pick(2, b)])).toEqual([]);
+    expect(dupes([pick(1, a), pick(2, [...a].reverse())])).toHaveLength(1);
+  });
+
   it("counts a fixed-words disc-mat model's fills as different questions", () => {
     // Calc row 27's shape: the words never change, only the mat does.
     const model = {

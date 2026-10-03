@@ -219,7 +219,8 @@ export function answerFormat(q) {
     case "decimal":
       return "type a decimal number";
     case "numberLine":
-      return "tap a number on the number line; answer with that number";
+      // Jump mode draws one hop; the kid types its length on the keypad.
+      return d.lineMode === "jump" ? "type the length of the drawn hop on the keypad under the line (a whole number)" : "tap a number on the number line; answer with that number";
     case "barGraph":
       return "tap a bar on the graph; answer with that bar's value as a number";
     case "coinTray":
@@ -332,7 +333,9 @@ export function describeFigure(q) {
       parts.push(areaText(q));
       break;
     case "discMat":
-      parts.push(discsText(d.discMat?.cols));
+      // One mat ({cols}) or labelled mats side by side ({mats: [{label, cols}]}).
+      if (Array.isArray(d.discMat?.mats)) parts.push(d.discMat.mats.map((m) => `${m?.label ?? "Mat"}: ${discsText(m?.cols) ?? "empty"}`).join(" "));
+      else parts.push(discsText(d.discMat?.cols));
       break;
     case "clockFace":
       parts.push(clockText(d.clock?.hour ?? d.time?.hour, d.clock?.minute ?? d.time?.minute));
@@ -373,7 +376,7 @@ export function describeFigure(q) {
       else parts.push(`A number bond: the whole is ${d.whole}, one part is ${d.part} and the other part is blank.`);
       break;
     case "numberLine": {
-      const jump = d.from != null && d.to != null ? ` An arrow jumps from ${d.from} to ${d.to}.` : "";
+      const jump = d.from != null && d.to != null ? (d.lineMode === "jump" ? ` One hop is drawn from ${d.from} to ${d.to}, with a keypad under the line.` : ` An arrow jumps from ${d.from} to ${d.to}.`) : "";
       parts.push(`A number line from ${d.min ?? 0} to ${d.max ?? 10}, a tick every ${d.step ?? 1}, a label every ${d.labelEvery ?? 1}.${jump}`);
       break;
     }

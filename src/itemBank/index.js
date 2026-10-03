@@ -329,6 +329,11 @@ export function promptIdentity(item, promptText) {
   if (d.array) parts.push(`array:${d.array.rows}x${d.array.cols}`);
   if (d.layout) parts.push(`layout:${d.layout}`);
   if (d.lineMode === "jump") parts.push(`hop:${d.from}-${d.to}`);
+  // "Which equation is true?" carries its numbers in the choices, so every
+  // fill has the same words; the choice set is what makes two fills differ.
+  if (item?.structureType === "chooseTrueEquation" && Array.isArray(item?.question?.choices)) {
+    parts.push(`choices:${item.question.choices.map(String).sort().join("|")}`);
+  }
   if (!/[a-z]/i.test(promptText)) parts.unshift(item.modeId || "");
   return parts.join("\u0000");
 }

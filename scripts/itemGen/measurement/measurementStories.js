@@ -43,8 +43,8 @@ export function buildStoryItems() {
   /* ---------------- lengthConvert stories ---------------- */
 
   const GROW_SKELETONS = [
-    (nm, t, a, b) => `${nm}'s bean plant was ${a} cm on Monday and ${b} cm on Friday. How many centimetres did it grow?`,
-    (nm, t, a, b) => `The sunflower by ${nm}'s window rose from ${a} cm to ${b} cm. How many centimetres taller is that?`,
+    (nm, t, a, b) => `${nm}'s bean plant was ${a} cm on Monday and ${b} cm on Friday. How many centimeters did it grow?`,
+    (nm, t, a, b) => `The sunflower by ${nm}'s window rose from ${a} cm to ${b} cm. How many centimeters taller is that?`,
   ];
   const growEmit = (band) => ([a, b], sk, nm) =>
     mk("lengthConvert", `storyGrow_${band}`, band, {
@@ -56,8 +56,8 @@ export function buildStoryItems() {
   items.push(...cycle(17, [[27, 62], [34, 71], [45, 88], [23, 56], [38, 79], [41, 94], [29, 63], [52, 97], [36, 75], [24, 58], [47, 86], [31, 69], [43, 91], [26, 54], [49, 83], [33, 77], [39, 82]], GROW_SKELETONS, 1, growEmit(B2)));
 
   const TRAIL_SKELETONS = [
-    (nm, km) => `${nm} hikes a trail marked ${km} km. How many metres is the trail?`,
-    (nm, km) => `The forest loop near ${nm}'s camp is ${km} km around. What is that in metres?`,
+    (nm, km) => `${nm} hikes a trail marked ${km} km. How many meters is the trail?`,
+    (nm, km) => `The forest loop near ${nm}'s camp is ${km} km around. What is that in meters?`,
   ];
   const trailEmit = ([km], sk, nm) =>
     mk("lengthConvert", "storyTrailMetres", B2, {
@@ -68,8 +68,8 @@ export function buildStoryItems() {
   items.push(...cycle(17, [[2], [3], [5], [4], [7], [6], [8], [9], [1], [10], [12], [11], [15], [13], [14], [16], [18]], TRAIL_SKELETONS, 1, trailEmit));
 
   const BANNER_SKELETONS = [
-    (nm, m, cm) => `${nm} sews a banner ${m} m ${cm} cm long. The shop measures in centimetres. How many centimetres long is it?`,
-    (nm, m, cm) => `A parade streamer of ${nm}'s measures ${m} m ${cm} cm. How many centimetres is that?`,
+    (nm, m, cm) => `${nm} sews a banner ${m} m ${cm} cm long. The shop measures in centimeters. How many centimeters long is it?`,
+    (nm, m, cm) => `A parade streamer of ${nm}'s measures ${m} m ${cm} cm. How many centimeters is that?`,
   ];
   const bannerEmit = ([m, cm], sk, nm) =>
     mk("lengthConvert", "storyBannerCm", B3, {
@@ -79,8 +79,8 @@ export function buildStoryItems() {
     });
   items.push(...cycle(17, [[2, 34], [3, 12], [1, 48], [4, 21], [2, 55], [5, 13], [3, 37], [1, 64], [4, 49], [2, 70], [5, 26], [3, 81], [6, 14], [1, 93], [4, 38], [2, 26], [6, 41]], BANNER_SKELETONS, 0, bannerEmit));
   const RACE_SKELETONS = [
-    (nm, total) => `${nm}'s relay covers ${total} m in all. How many kilometres is the relay?`,
-    (nm, total) => `The charity walk ${nm} joins is ${total} m long. How many kilometres is that?`,
+    (nm, total) => `${nm}'s relay covers ${total} m in all. How many kilometers is the relay?`,
+    (nm, total) => `The charity walk ${nm} joins is ${total} m long. How many kilometers is that?`,
   ];
   const raceEmit = ([total], sk, nm) =>
     mk("lengthConvert", "storyRaceKm", B3, {
@@ -91,8 +91,8 @@ export function buildStoryItems() {
   items.push(...cycle(17, [[2000], [3000], [5000], [4000], [7000], [6000], [8000], [9000], [1000], [10000], [12000], [11000], [15000], [13000], [14000], [16000], [18000]], RACE_SKELETONS, 1, raceEmit));
   // Band 1: cm strip joins in craft.
   const STRIP_SKELETONS = [
-    (nm, t, a, b) => `${nm} glues a ${a} cm strip of ${t} to a ${b} cm strip for a card. How many centimetres of ${t} is that?`,
-    (nm, t, a, b) => `For the art wall, ${nm} lines up ${a} cm of ${t} and then ${b} cm more. How long is the ${t} line in centimetres?`,
+    (nm, t, a, b) => `${nm} glues a ${a} cm strip of ${t} to a ${b} cm strip for a card. How many centimeters of ${t} is that?`,
+    (nm, t, a, b) => `For the art wall, ${nm} lines up ${a} cm of ${t} and then ${b} cm more. How long is the ${t} line in centimeters?`,
   ];
   const stripEmit = ([a, b, ti], sk, nm) =>
     mk("lengthConvert", "storyStripJoin", B1, {
@@ -102,7 +102,7 @@ export function buildStoryItems() {
     });
   items.push(...cycle(17, [[7, 6, 0], [8, 9, 1], [5, 12, 2], [6, 11, 3], [9, 4, 0], [12, 7, 1], [3, 14, 2], [8, 5, 3], [11, 6, 0], [4, 13, 1], [7, 9, 2], [15, 3, 3], [6, 8, 0], [9, 8, 1], [12, 5, 2], [2, 16, 3], [10, 7, 0]], STRIP_SKELETONS, 2, stripEmit));
   const SNIP_SKELETONS = [
-    (nm, t, start, cut) => `${nm} snips ${cut} cm off ${start} cm of ${t}. How many centimetres of ${t} are left?`,
+    (nm, t, start, cut) => `${nm} snips ${cut} cm off ${start} cm of ${t}. How many centimeters of ${t} are left?`,
     (nm, t, start, cut) => `From ${start} cm of ${t}, ${nm} trims away ${cut} cm. What length of ${t} remains?`,
   ];
   const snipEmit = ([start, cut, ti], sk, nm) =>
@@ -112,10 +112,10 @@ export function buildStoryItems() {
       display: { counting: { kind: "countBack", start, back: cut }, promptText: sk(nm, THINGS[ti % 4], start, cut) },
     });
   items.push(...cycle(17, [[15, 8, 0], [18, 9, 1], [12, 5, 2], [20, 11, 3], [16, 7, 0], [14, 6, 1], [19, 12, 2], [17, 8, 3], [13, 4, 0], [11, 2, 1], [20, 14, 2], [18, 13, 3], [16, 9, 0], [15, 4, 1], [19, 6, 2], [12, 7, 3], [17, 10, 0]], SNIP_SKELETONS, 1, snipEmit));
-  // Band 2 filler: metre walls in cm.
+  // Band 2 filler: meter walls in cm.
   const WALL_SKELETONS = [
-    (nm, m) => `${nm} paints a wall ${m} m wide. The tape measure reads centimetres. How many centimetres wide is the wall?`,
-    (nm, m) => `A mural ${m} m across gets a border from ${nm}. How many centimetres across is the mural?`,
+    (nm, m) => `${nm} paints a wall ${m} m wide. The tape measure reads centimeters. How many centimeters wide is the wall?`,
+    (nm, m) => `A mural ${m} m across gets a border from ${nm}. How many centimeters across is the mural?`,
   ];
   const wallEmit = ([m], sk, nm) =>
     mk("lengthConvert", "storyWallCm", B2, {
@@ -140,8 +140,8 @@ export function buildStoryItems() {
   items.push(...cycle(17, [[3, 7], [4, 9], [2, 8], [5, 11], [6, 13], [3, 10], [7, 15], [4, 12], [8, 17], [5, 14], [2, 6], [9, 18], [6, 16], [3, 9], [10, 19], [7, 13], [4, 11]], PET_SKELETONS, 0, petEmit(B1)));
 
   const SOUP_SKELETONS = [
-    (nm, L) => `${nm}'s soup pot holds ${L} L. The ladle chart uses millilitres. How many millilitres does the pot hold?`,
-    (nm, L) => `A lemonade cooler of ${L} L stands at ${nm}'s stall. How many millilitres is that?`,
+    (nm, L) => `${nm}'s soup pot holds ${L} L. The ladle chart uses milliliters. How many milliliters does the pot hold?`,
+    (nm, L) => `A lemonade cooler of ${L} L stands at ${nm}'s stall. How many milliliters is that?`,
   ];
   const soupEmit = ([L], sk, nm) =>
     mk("massVolumeConvert", "storySoupML", B2, {
@@ -163,8 +163,8 @@ export function buildStoryItems() {
   items.push(...cycle(17, [[2], [3], [5], [4], [7], [6], [8], [9], [1], [10], [12], [11], [15], [13], [14], [16], [18]], FLOUR_SKELETONS, 0, flourEmit));
 
   const JUICE_SKELETONS = [
-    (nm, a, b) => `${nm} mixes ${a} mL of mango juice with ${b} mL of orange juice. How many millilitres of punch is that?`,
-    (nm, a, b) => `Into the punch bowl ${nm} pours ${a} mL and then ${b} mL. What volume in millilitres is in the bowl?`,
+    (nm, a, b) => `${nm} mixes ${a} mL of mango juice with ${b} mL of orange juice. How many milliliters of punch is that?`,
+    (nm, a, b) => `Into the punch bowl ${nm} pours ${a} mL and then ${b} mL. What volume in milliliters is in the bowl?`,
   ];
   const juiceEmit = (band) => ([a, b], sk, nm) =>
     mk("massVolumeConvert", `storyJuiceMix_${band}`, band, {
@@ -186,8 +186,8 @@ export function buildStoryItems() {
   items.push(...cycle(17, [[2, 340], [3, 125], [1, 480], [4, 215], [2, 555], [5, 130], [3, 370], [1, 645], [4, 490], [2, 705], [5, 265], [3, 810], [6, 145], [1, 930], [4, 385], [2, 260], [6, 415]], FEED_SKELETONS, 0, feedEmit));
   // Band 1 fillers: pour together / drink away (<= 20 L).
   const POUR_SKELETONS = [
-    (nm, a, b) => `${nm} empties a ${a} L pail and a ${b} L pail into the paddling pool. How many litres went in?`,
-    (nm, a, b) => `Two watering cans, ${a} L and ${b} L, both go onto ${nm}'s garden. How many litres of water is that?`,
+    (nm, a, b) => `${nm} empties a ${a} L pail and a ${b} L pail into the paddling pool. How many liters went in?`,
+    (nm, a, b) => `Two watering cans, ${a} L and ${b} L, both go onto ${nm}'s garden. How many liters of water is that?`,
   ];
   const pourEmit = ([a, b], sk, nm) =>
     mk("massVolumeConvert", "storyPourIn", B1, {
@@ -197,8 +197,8 @@ export function buildStoryItems() {
     });
   items.push(...cycle(17, [[7, 6], [8, 9], [5, 12], [6, 11], [9, 4], [12, 7], [3, 14], [8, 5], [11, 6], [4, 13], [7, 9], [15, 3], [6, 8], [9, 8], [12, 5], [2, 16], [10, 7]], POUR_SKELETONS, 1, pourEmit));
   const DRINK_SKELETONS = [
-    (nm, start, out) => `A ${start} L water cooler loses ${out} L on sports day. How many litres are left for ${nm}'s team?`,
-    (nm, start, out) => `${nm}'s fish tank held ${start} L before ${out} L splashed out. How many litres remain?`,
+    (nm, start, out) => `A ${start} L water cooler loses ${out} L on sports day. How many liters are left for ${nm}'s team?`,
+    (nm, start, out) => `${nm}'s fish tank held ${start} L before ${out} L splashed out. How many liters remain?`,
   ];
   const drinkEmit = ([start, out], sk, nm) =>
     mk("massVolumeConvert", "storyPourOut", B1, {
@@ -211,8 +211,8 @@ export function buildStoryItems() {
   /* ---------------- benchmarkEstimate stories ---------------- */
 
   const GUESS_CHECK_SKELETONS = [
-    (nm, obj, guess, real) => `${nm} guessed ${obj} at ${guess} cm; the ruler says ${real} cm. By how many centimetres was the guess off?`,
-    (nm, obj, guess, real) => `Before measuring ${obj}, ${nm} guessed ${guess} cm. It is really ${real} cm. How many centimetres off was the guess?`,
+    (nm, obj, guess, real) => `${nm} guessed ${obj} at ${guess} cm; the ruler says ${real} cm. By how many centimeters was the guess off?`,
+    (nm, obj, guess, real) => `Before measuring ${obj}, ${nm} guessed ${guess} cm. It is really ${real} cm. How many centimeters off was the guess?`,
   ];
   const guessCheckEmit = (band) => ([obj, guess, real], sk, nm) =>
     mk("benchmarkEstimate", `storyGuessOff_${band}`, band, {
@@ -246,8 +246,8 @@ export function buildStoryItems() {
   ];
   items.push(...cycle(17, SENSIBLE_B1, SENSIBLE_SKELETONS, 1, sensibleEmit(B1, "storySensibleLabel")));
   const ROUND_TRIP_SKELETONS = [
-    (nm, n) => `${nm} walks ${n} m to school. Rounded to the nearest ten, how many metres is the walk?`,
-    (nm, n) => `The path ${nm} bikes measures ${n} m. How many metres is that, to the nearest ten?`,
+    (nm, n) => `${nm} walks ${n} m to school. Rounded to the nearest ten, how many meters is the walk?`,
+    (nm, n) => `The path ${nm} bikes measures ${n} m. How many meters is that, to the nearest ten?`,
   ];
   const roundTripEmit = ([n], sk, nm) =>
     mk("benchmarkEstimate", "storyRoundWalk", B2, {
@@ -257,8 +257,8 @@ export function buildStoryItems() {
     });
   items.push(...cycle(17, [[123], [148], [267], [382], [235], [471], [356], [194], [312], [439], [265], [178], [341], [456], [227], [389], [163]], ROUND_TRIP_SKELETONS, 0, roundTripEmit));
   const CITY_SKELETONS = [
-    (nm, n) => `The river walk in ${nm}'s town runs ${n} m. Rounded to the nearest hundred, how many metres is it?`,
-    (nm, n) => `${nm} reads that the pier is ${n} m long. How many metres is that, to the nearest hundred?`,
+    (nm, n) => `The river walk in ${nm}'s town runs ${n} m. Rounded to the nearest hundred, how many meters is it?`,
+    (nm, n) => `${nm} reads that the pier is ${n} m long. How many meters is that, to the nearest hundred?`,
   ];
   const cityEmit = ([n], sk, nm) =>
     mk("benchmarkEstimate", "storyRoundPier", B3, {
@@ -268,8 +268,8 @@ export function buildStoryItems() {
     });
   items.push(...cycle(17, [[534], [781], [672], [828], [351], [219], [764], [947], [128], [493], [655], [882], [273], [536], [915], [442], [187]], CITY_SKELETONS, 1, cityEmit));
   const OFF_BY_SKELETONS = [
-    (nm, guess, real) => `${nm} estimated the gym at ${guess} m; it measures ${real} m. How many metres off was ${nm}'s estimate?`,
-    (nm, guess, real) => `The banner hall is really ${real} m long, but ${nm} guessed ${guess} m. By how many metres did the guess miss?`,
+    (nm, guess, real) => `${nm} estimated the gym at ${guess} m; it measures ${real} m. How many meters off was ${nm}'s estimate?`,
+    (nm, guess, real) => `The banner hall is really ${real} m long, but ${nm} guessed ${guess} m. By how many meters did the guess miss?`,
   ];
   const offByEmit = ([guess, real], sk, nm) =>
     mk("benchmarkEstimate", "storyEstimateOff", B3, {
@@ -318,8 +318,8 @@ export function buildStoryItems() {
   items.push(...cycle(17, [["2 kg", 2000, "1800 g", 1800, "2100 g", 2100], ["3 kg", 3000, "3200 g", 3200, "2900 g", 2900], ["1 kg", 1000, "900 g", 900, "1100 g", 1100], ["4 kg", 4000, "4300 g", 4300, "3800 g", 3800], ["5 kg", 5000, "4800 g", 4800, "5100 g", 5100], ["2 kg", 2000, "2200 g", 2200, "1900 g", 1900], ["6 kg", 6000, "5900 g", 5900, "6100 g", 6100], ["3 kg", 3000, "2800 g", 2800, "3100 g", 3100], ["7 kg", 7000, "7200 g", 7200, "6800 g", 6800], ["4 kg", 4000, "3900 g", 3900, "4100 g", 4100], ["8 kg", 8000, "7800 g", 7800, "8300 g", 8300], ["5 kg", 5000, "5200 g", 5200, "4900 g", 4900], ["9 kg", 9000, "9100 g", 9100, "8800 g", 8800], ["6 kg", 6000, "6200 g", 6200, "5800 g", 5800], ["1 kg", 1000, "1200 g", 1200, "800 g", 800], ["7 kg", 7000, "6900 g", 6900, "7100 g", 7100], ["8 kg", 8000, "8100 g", 8100, "7900 g", 7900]], PARCEL_SKELETONS, 0, parcelEmit));
   // Band 1: shorter-by stories; Band 2: cross-unit rope compare; Band 3: difference after converting.
   const TOWER_SKELETONS = [
-    (nm, a, b) => `${nm}'s block tower is ${a} cm tall; a friend's is ${b} cm. How many centimetres taller is the taller tower?`,
-    (nm, a, b) => `Two sandcastles: ${nm}'s at ${a} cm and a friend's at ${b} cm. What is the difference in centimetres?`,
+    (nm, a, b) => `${nm}'s block tower is ${a} cm tall; a friend's is ${b} cm. How many centimeters taller is the taller tower?`,
+    (nm, a, b) => `Two sandcastles: ${nm}'s at ${a} cm and a friend's at ${b} cm. What is the difference in centimeters?`,
   ];
   const towerEmit = ([a, b], sk, nm) =>
     mk("compareOrder", "storyTowerDiff", B1, {
@@ -340,8 +340,8 @@ export function buildStoryItems() {
     });
   items.push(...cycle(17, [["2 m", 200, "170 cm", 170], ["260 cm", 260, "2 m", 200], ["3 m", 300, "330 cm", 330], ["280 cm", 280, "3 m", 300], ["4 m", 400, "360 cm", 360], ["440 cm", 440, "4 m", 400], ["5 m", 500, "530 cm", 530], ["470 cm", 470, "5 m", 500], ["6 m", 600, "560 cm", 560], ["640 cm", 640, "6 m", 600], ["7 m", 700, "730 cm", 730], ["670 cm", 670, "7 m", 700], ["8 m", 800, "760 cm", 760], ["840 cm", 840, "8 m", 800], ["9 m", 900, "930 cm", 930], ["870 cm", 870, "9 m", 900], ["1 m", 100, "90 cm", 90]], ROPE_SKELETONS, 0, ropeEmit));
   const GAP_AFTER_SKELETONS = [
-    (nm, big, smallCm) => `${nm}'s kite string is ${big} m; a friend's is ${smallCm} cm. How many centimetres longer is ${nm}'s string?`,
-    (nm, big, smallCm) => `${nm} unrolls ${big} m of streamer next to a ${smallCm} cm one. What is the difference in centimetres?`,
+    (nm, big, smallCm) => `${nm}'s kite string is ${big} m; a friend's is ${smallCm} cm. How many centimeters longer is ${nm}'s string?`,
+    (nm, big, smallCm) => `${nm} unrolls ${big} m of streamer next to a ${smallCm} cm one. What is the difference in centimeters?`,
   ];
   const gapAfterEmit = ([big, smallCm], sk, nm) =>
     mk("compareOrder", "storyGapAfterConvert", B3, {
@@ -354,7 +354,7 @@ export function buildStoryItems() {
   /* ---------------- multiStepMeasure stories ---------------- */
 
   const FENCE_SKELETONS = [
-    (nm, a, b, c) => `${nm} builds a garden edge from strips of ${a} cm, ${b} cm, and ${c} cm. How long is the edge in centimetres?`,
+    (nm, a, b, c) => `${nm} builds a garden edge from strips of ${a} cm, ${b} cm, and ${c} cm. How long is the edge in centimeters?`,
     (nm, a, b, c) => `Three sticks — ${a} cm, ${b} cm, ${c} cm — line up along ${nm}'s flower bed. What total length is that?`,
   ];
   const fenceEmit = (band) => ([a, b, c], sk, nm) =>
@@ -367,8 +367,8 @@ export function buildStoryItems() {
   items.push(...cycle(17, [[34, 27, 19], [45, 38, 12], [52, 29, 16], [63, 18, 14], [27, 46, 21], [38, 55, 15], [49, 24, 18], [56, 37, 25], [23, 68, 13], [64, 19, 22], [35, 48, 11], [47, 26, 24], [58, 33, 17], [29, 54, 20], [66, 25, 23], [37, 44, 26], [48, 35, 28]], FENCE_SKELETONS, 1, fenceEmit(B2)));
 
   const RECIPE_SKELETONS = [
-    (nm, need, have) => `A recipe of ${nm}'s needs ${need} mL of water, and the measuring cup already holds ${have} mL. How many more millilitres must ${nm} add?`,
-    (nm, need, have) => `${nm} needs ${need} mL of broth but has poured only ${have} mL. How many millilitres are still needed?`,
+    (nm, need, have) => `A recipe of ${nm}'s needs ${need} mL of water, and the measuring cup already holds ${have} mL. How many more milliliters must ${nm} add?`,
+    (nm, need, have) => `${nm} needs ${need} mL of broth but has poured only ${have} mL. How many milliliters are still needed?`,
   ];
   const recipeEmit = (band) => ([need, have], sk, nm) =>
     mk("multiStepMeasure", `storyRecipeMore_${band}`, band, {
@@ -378,7 +378,7 @@ export function buildStoryItems() {
     });
   items.push(...cycle(17, [[500, 320], [400, 185], [600, 437], [750, 519], [350, 168], [800, 642], [450, 273], [900, 756], [550, 384], [700, 465], [650, 528], [850, 691], [300, 142], [950, 807], [250, 116], [875, 733], [625, 449]], RECIPE_SKELETONS, 0, recipeEmit(B3)));
   const TRIM_SKELETONS = [
-    (nm, a, b, cut) => `${nm} ties a ${a} cm cord to a ${b} cm cord, then trims ${cut} cm off the end. How long is the cord now in centimetres?`,
+    (nm, a, b, cut) => `${nm} ties a ${a} cm cord to a ${b} cm cord, then trims ${cut} cm off the end. How long is the cord now in centimeters?`,
     (nm, a, b, cut) => `After joining ${a} cm and ${b} cm of wire, ${nm} clips away ${cut} cm. What length of wire remains?`,
   ];
   const trimEmit = (band) => ([a, b, cut], sk, nm) =>
@@ -401,8 +401,8 @@ export function buildStoryItems() {
   items.push(...cycle(17, [[1, 300, 450], [2, 250, 380], [1, 550, 270], [3, 150, 490], [2, 450, 360], [1, 650, 180], [3, 350, 520], [2, 50, 670], [1, 750, 410], [4, 250, 330], [2, 650, 240], [3, 550, 160], [1, 850, 290], [4, 450, 120], [2, 850, 430], [3, 50, 780], [1, 950, 220]], PACK_SKELETONS, 0, packEmit));
   // Band 1 filler: two-hop walks.
   const WALK_SKELETONS = [
-    (nm, a, b) => `${nm} hops ${a} m to the swing, then ${b} m to the slide. How many metres did ${nm} hop in all?`,
-    (nm, a, b) => `First ${a} m to the sandbox, then ${b} m to the bench — how many metres does ${nm} travel?`,
+    (nm, a, b) => `${nm} hops ${a} m to the swing, then ${b} m to the slide. How many meters did ${nm} hop in all?`,
+    (nm, a, b) => `First ${a} m to the sandbox, then ${b} m to the bench — how many meters does ${nm} travel?`,
   ];
   const walkEmit = ([a, b], sk, nm) =>
     mk("multiStepMeasure", "storyTwoHops", B1, {
@@ -412,8 +412,8 @@ export function buildStoryItems() {
     });
   items.push(...cycle(17, [[6, 7], [9, 8], [4, 12], [11, 5], [8, 6], [13, 7], [5, 14], [10, 9], [3, 15], [12, 6], [7, 8], [14, 4], [9, 10], [6, 13], [15, 5], [8, 11], [4, 16]], WALK_SKELETONS, 1, walkEmit));
   const LEFT_SKELETONS = [
-    (nm, whole, p1, p2) => `${nm} pours a ${whole} L jug into two bowls: ${p1} L and ${p2} L. How many litres stay in the jug?`,
-    (nm, whole, p1, p2) => `Out of ${whole} L of lemonade, ${nm} serves ${p1} L and then ${p2} L. How many litres are left?`,
+    (nm, whole, p1, p2) => `${nm} pours a ${whole} L jug into two bowls: ${p1} L and ${p2} L. How many liters stay in the jug?`,
+    (nm, whole, p1, p2) => `Out of ${whole} L of lemonade, ${nm} serves ${p1} L and then ${p2} L. How many liters are left?`,
   ];
   const leftEmit = ([whole, p1, p2], sk, nm) =>
     mk("multiStepMeasure", "storyPourTwice", B1, {
@@ -462,8 +462,8 @@ export function buildStoryItems() {
 
   // multiStepMeasure stories: one more pattern at bands 2 and 3.
   const QUILT_SKELETONS = [
-    (nm, a, b, c) => `${nm} sews quilt strips of ${a} cm, ${b} cm, and ${c} cm into one row. How many centimetres long is the row?`,
-    (nm, a, b, c) => `Three patches — ${a} cm, ${b} cm, and ${c} cm wide — join side by side on ${nm}'s quilt. How wide is the row in centimetres?`,
+    (nm, a, b, c) => `${nm} sews quilt strips of ${a} cm, ${b} cm, and ${c} cm into one row. How many centimeters long is the row?`,
+    (nm, a, b, c) => `Three patches — ${a} cm, ${b} cm, and ${c} cm wide — join side by side on ${nm}'s quilt. How wide is the row in centimeters?`,
   ];
   const quiltEmit = ([a, b, c], sk, nm) =>
     mk("multiStepMeasure", "storyQuiltRow", B2, {
@@ -473,8 +473,8 @@ export function buildStoryItems() {
     });
   items.push(...cycle(17, [[24, 31, 18], [35, 22, 27], [42, 19, 33], [28, 36, 21], [45, 17, 29], [31, 40, 15], [26, 38, 23], [49, 21, 16], [33, 25, 37], [18, 44, 26], [39, 28, 20], [22, 35, 32], [47, 16, 24], [29, 41, 19], [36, 23, 30], [43, 27, 14], [25, 39, 31]], QUILT_SKELETONS, 1, quiltEmit));
   const TANK_SKELETONS = [
-    (nm, L, mL) => `${nm} tops up an aquarium with ${L} L and then ${mL} mL of water. How many millilitres went in altogether?`,
-    (nm, L, mL) => `The camp cooler gets ${L} L of water plus ${mL} mL more from ${nm}. How many millilitres is that in total?`,
+    (nm, L, mL) => `${nm} tops up an aquarium with ${L} L and then ${mL} mL of water. How many milliliters went in altogether?`,
+    (nm, L, mL) => `The camp cooler gets ${L} L of water plus ${mL} mL more from ${nm}. How many milliliters is that in total?`,
   ];
   const tankEmit = ([L, mL], sk, nm) =>
     mk("multiStepMeasure", "storyTankFill", B3, {
@@ -497,7 +497,7 @@ export function buildStoryItems() {
       choices: shuffled([good, bad], i + 17),
       display: { measure: { kind: "pickLabel" }, promptText: sk(nm, task, good, bad) },
     });
-  items.push(...cycle(17, [["the classroom floor", "metres", "millimetres"], ["a beetle's back", "millimetres", "metres"], ["the walk to school", "kilometres", "centimetres"], ["a lunchbox", "centimetres", "kilometres"], ["a full watering can", "litres", "millilitres"], ["a spoon of syrup", "millilitres", "litres"], ["a sack of potatoes", "kilograms", "grams"], ["one raisin", "grams", "kilograms"], ["the school hallway", "metres", "millimetres"], ["an eyelash", "millimetres", "kilometres"], ["a bike trail", "kilometres", "centimetres"], ["a postcard", "centimetres", "metres"], ["a bathtub of water", "litres", "millilitres"], ["a single tear drop", "millilitres", "litres"], ["a pet turtle", "grams", "kilograms"], ["a filled backpack", "kilograms", "grams"], ["a jump rope", "metres", "kilometres"]], TOOL_SKELETONS, 0, toolEmit));
+  items.push(...cycle(17, [["the classroom floor", "meters", "millimeters"], ["a beetle's back", "millimeters", "meters"], ["the walk to school", "kilometers", "centimeters"], ["a lunchbox", "centimeters", "kilometers"], ["a full watering can", "liters", "milliliters"], ["a spoon of syrup", "milliliters", "liters"], ["a sack of potatoes", "kilograms", "grams"], ["one raisin", "grams", "kilograms"], ["the school hallway", "meters", "millimeters"], ["an eyelash", "millimeters", "kilometers"], ["a bike trail", "kilometers", "centimeters"], ["a postcard", "centimeters", "meters"], ["a bathtub of water", "liters", "milliliters"], ["a single tear drop", "milliliters", "liters"], ["a pet turtle", "grams", "kilograms"], ["a filled backpack", "kilograms", "grams"], ["a jump rope", "meters", "kilometers"]], TOOL_SKELETONS, 0, toolEmit));
   const FLAG_SKELETONS = [
     (nm, obj, guess, ok) => `Before measuring, ${nm} guesses the ${obj} at ${guess}. Is that a sensible guess?`,
     (nm, obj, guess, ok) => `${nm} eyeballs the ${obj} and says "${guess}". Does the guess make sense?`,
@@ -547,8 +547,8 @@ export function buildStoryItems() {
 
   // lengthConvert app band 3: ribbon left after use.
   const RIBBON_LEFT_SKELETONS = [
-    (nm, m, cm, used) => `${nm} starts with ${m} m ${cm} cm of ribbon and uses ${used} cm on a bow. How many centimetres of ribbon remain?`,
-    (nm, m, cm, used) => `From a spool of ${m} m ${cm} cm, ${nm} cuts ${used} cm for a wreath. What length in centimetres is left?`,
+    (nm, m, cm, used) => `${nm} starts with ${m} m ${cm} cm of ribbon and uses ${used} cm on a bow. How many centimeters of ribbon remain?`,
+    (nm, m, cm, used) => `From a spool of ${m} m ${cm} cm, ${nm} cuts ${used} cm for a wreath. What length in centimeters is left?`,
   ];
   const ribbonLeftEmit = ([m, cm, used], sk, nm) =>
     mk("lengthConvert", "storyRibbonLeft", B3, {

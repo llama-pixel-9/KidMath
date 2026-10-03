@@ -661,15 +661,15 @@ export function multiStepConceptual() {
     );
   }
   const whichStepPhr = rotor([
-    (nm, m, cm) => `${nm} wants ${m} m ${cm} cm in centimetres. Which step comes FIRST?`,
-    (nm, m, cm) => `To write ${m} m ${cm} cm as centimetres, what does ${nm} do first?`,
+    (nm, m, cm) => `${nm} wants ${m} m ${cm} cm in centimeters. Which step comes FIRST?`,
+    (nm, m, cm) => `To write ${m} m ${cm} cm as centimeters, what does ${nm} do first?`,
   ]);
   [[1, 30], [2, 25], [1, 55], [3, 15], [2, 45], [1, 65], [3, 35], [2, 5], [1, 75], [4, 25], [2, 65], [3, 55], [1, 85], [4, 45], [2, 85], [3, 5], [1, 95], [4, 65]].forEach(([m, cm], i) => {
-    const good = `change ${m} m into centimetres`;
+    const good = `change ${m} m into centimeters`;
     items.push(
       item("multiStepMeasure", "conceptual", "firstStepPickMid", "band2", {
         answer: good,
-        choices: shuffled([good, `add ${m} and ${cm}`, `change ${cm} cm into metres`], (seed += 1)),
+        choices: shuffled([good, `add ${m} and ${cm}`, `change ${cm} cm into meters`], (seed += 1)),
         display: { measure: { kind: "pickLabel" }, promptText: whichStepPhr()(nameAt(i * 3 + 6), m, cm) },
       })
     );
@@ -678,7 +678,7 @@ export function multiStepConceptual() {
   // Band 3 — judged mixed-unit sums (the add-the-numbers slip).
   const mixedJudgePhr = rotor([
     (nm, m, cm, said) => `${nm} converts ${m} m ${cm} cm and writes ${said} cm. Is ${nm} right?`,
-    (nm, m, cm, said) => `Turning ${m} m ${cm} cm into centimetres, ${nm} gets ${said}. Is that right?`,
+    (nm, m, cm, said) => `Turning ${m} m ${cm} cm into centimeters, ${nm} gets ${said}. Is that right?`,
   ]);
   [[2, 40, 240, true], [3, 25, 28, false], [1, 80, 180, true], [4, 15, 19, false], [2, 55, 255, true], [5, 30, 35, false], [3, 70, 370, true], [1, 45, 46, false], [4, 90, 490, true], [2, 35, 37, false], [5, 60, 560, true], [3, 5, 8, false], [1, 95, 195, true], [4, 50, 54, false], [2, 85, 285, true], [5, 10, 15, false], [3, 65, 365, true], [1, 25, 26, false]].forEach(([m, cm, said, ok], i) => {
     items.push(

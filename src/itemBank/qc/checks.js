@@ -20,7 +20,7 @@ import { objectMatchesInText, packFor, priceRangeFor } from "../../content/conte
 import { hintContainsAnswer } from "../../hints/hintSchema.js";
 import { workedStepFinding } from "./workedStep.js";
 import { sequenceCardFinding } from "./sequenceCard.js";
-import { questionNotLastFinding, teacherVoiceFinding } from "./kidVoice.js";
+import { britishSpellingFinding, questionNotLastFinding, teacherVoiceFinding } from "./kidVoice.js";
 
 const fail = (id, message) => ({ id, severity: "fail", message });
 const warn = (id, message) => ({ id, severity: "warn", message });
@@ -500,6 +500,16 @@ export const CHECKS = [
     run: (item) => {
       const hit = teacherVoiceFinding(item);
       return hit ? fail("teacherVoice", hit.message) : null;
+    },
+  },
+
+  {
+    // Every version (src/itemBank/qc/kidVoice.js): US spelling, "centimeter"
+    // and "liter", never "centimetre" or "litre" (Sai, 2026-10-03).
+    id: "britishSpelling",
+    run: (item) => {
+      const hit = britishSpellingFinding(item);
+      return hit ? fail("britishSpelling", hit.message) : null;
     },
   },
 

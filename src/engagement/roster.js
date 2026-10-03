@@ -291,7 +291,7 @@ export const SPECIES = [
     signature: { id: "dive", line: "Dives at the pond and comes up wet." },
     perchTypes: ["pondEdge", "lowBranch", "fencePost"],
     presetNames: ["Splash", "Halcyon", "Ripple", "Plunge", "Belt", "Azula"],
-    wow: "She digs a tunnel nest in a stream bank — sometimes two metres deep.",
+    wow: "She digs a tunnel nest in a stream bank — sometimes two meters deep.",
     facts: {
       howBig: "About as long as a school ruler, with a head too big for her body",
       eats: "Small fish, caught by diving headfirst from a hover",
@@ -502,7 +502,7 @@ export const SPECIES = [
     presetNames: ["Titan", "Canyon", "Sierra", "Glider", "Condorito", "Big Sur"],
     wow: "His wings stretch wider than a door — he can soar for an hour without a single flap.",
     facts: {
-      howBig: "Wings nearly three metres tip to tip — the widest in North America",
+      howBig: "Wings nearly three meters tip to tip — the widest in North America",
       eats: "He is nature's clean-up crew, tidying what other animals leave behind",
       lives: "Mountains and big-sky country in California, Arizona and Baja",
       doing: "Very rare — once just 22 were left; now more than 500, and most fly free again",

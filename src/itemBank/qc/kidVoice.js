@@ -12,6 +12,9 @@
  * - questionNotLast: a sentence after the question. The card shows the last
  *   sentence big, so "What is 9 + 9? Diego checks." puts "Diego checks." in
  *   the big line and the real question in the small one.
+ * - britishSpelling: "centimetre", "litre" and the rest. Larkit uses US
+ *   spelling (Sai, 2026-10-03); Measurement shipped about 1,000 British
+ *   spellings beside US ones in the same topic.
  */
 import { promptSentences } from "../../promptLayout.js";
 
@@ -70,4 +73,29 @@ export function questionNotLastFinding(item) {
     severity: "fail",
     message: `"${last}" comes after the question, so the card shows it as the big line; end on the question`,
   };
+}
+
+const BRITISH_UNIT = /\b(?:centi|milli|kilo)?metres?\b|\b(?:milli)?litres?\b/i;
+
+function kidStrings(value, out = []) {
+  if (typeof value === "string") out.push(value);
+  else if (Array.isArray(value)) value.forEach((v) => kidStrings(v, out));
+  else if (value && typeof value === "object") Object.values(value).forEach((v) => kidStrings(v, out));
+  return out;
+}
+
+// Every string the item carries (prompt, choices, answer, labels), not only
+// the prompt: a choice reading "3 metres" shows on the card too.
+export function britishSpellingFinding(item) {
+  for (const text of kidStrings(item?.question)) {
+    const m = text.match(BRITISH_UNIT);
+    if (m) {
+      return {
+        id: "britishSpelling",
+        severity: "fail",
+        message: `"${m[0]}" is British spelling; write ${m[0].toLowerCase().replace(/tre(s?)$/, "ter$1")}`,
+      };
+    }
+  }
+  return null;
 }

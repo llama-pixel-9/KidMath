@@ -47,6 +47,7 @@ export const NARRATIVE_RULES = [
   'Ask like a K-5 textbook, not a test-maker. No "compute", "determine", "evaluate", "find the value", "the value?", "certifies", "audit", "assert", "Is the work sound?", "Valid?" or "Clean audit?" — ask "What is 6 × 7?", "How many cards are left?", "Mia says 0.5 = 0.50. Is Mia right?".',
   'End on the question. The card shows the last sentence big, so nothing comes after the question: no "Pick it.", "Type it.", "Choose them." and no "Diego checks." Put a lead-in or a name before the question ("Diego checks the graph. Which bar is tallest?").',
   'A blank the kid fills is "__", never "?": "Fill the gap: 4, __, 8", "7 + __ = 12". A "?" only ends a question.',
+  'US spelling: meter, centimeter, kilometer, liter, milliliter. Never "metre" or "litre".',
   'Drills are drills. Sequence continuation is presented BARE, the way curricula run fluency (EngageNY "Happy Counting"): "Count by 4s: 16, 20, 24. What number comes next?" — never narrated ("A timer beeps every 4 seconds…"). A story is only justified when the question asks a real-world quantity, not the next term of a sequence.',
 ];
 

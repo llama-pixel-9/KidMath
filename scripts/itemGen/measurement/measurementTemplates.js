@@ -195,7 +195,7 @@ export function lengthConvertConceptual() {
     (nm, from, to) => `To change ${from} into ${to}, what does ${nm} multiply by?`,
     (nm, from, to) => `${nm} converts ${from} to ${to}. Which factor is right?`,
   ]);
-  [["metres", "centimetres", 100], ["kilometres", "metres", 1000], ["centimetres", "millimetres", 10], ["metres", "centimetres", 100], ["kilometres", "metres", 1000], ["centimetres", "millimetres", 10], ["metres", "centimetres", 100], ["kilometres", "metres", 1000], ["centimetres", "millimetres", 10], ["metres", "centimetres", 100], ["kilometres", "metres", 1000], ["centimetres", "millimetres", 10], ["metres", "centimetres", 100], ["kilometres", "metres", 1000], ["centimetres", "millimetres", 10]].forEach(([from, to, factor], i) => {
+  [["meters", "centimeters", 100], ["kilometers", "meters", 1000], ["centimeters", "millimeters", 10], ["meters", "centimeters", 100], ["kilometers", "meters", 1000], ["centimeters", "millimeters", 10], ["meters", "centimeters", 100], ["kilometers", "meters", 1000], ["centimeters", "millimeters", 10], ["meters", "centimeters", 100], ["kilometers", "meters", 1000], ["centimeters", "millimeters", 10], ["meters", "centimeters", 100], ["kilometers", "meters", 1000], ["centimeters", "millimeters", 10]].forEach(([from, to, factor], i) => {
     items.push(
       item("lengthConvert", "conceptual", "factorPickMid", "band2", {
         answer: factor,

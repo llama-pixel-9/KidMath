@@ -428,7 +428,7 @@ const VARIETIES = [
         answer: pool.filter((o) => o.mm > 1000).map((o) => o.label),
         answerType: "multiSelect",
         display: { options: pool.map((o) => o.label) },
-        promptText: "Select every measure that is longer than 1 metre.",
+        promptText: "Select every measure that is longer than 1 meter.",
         representation: "symbolic",
         cognitiveDemand: "DOK3",
         misconceptionTags: ["unitLabelIgnored", "wrongFactor"],
@@ -442,15 +442,15 @@ const VARIETIES = [
     subskills: ["multiStepMeasure"],
     build() {
       const actor = pick(ACTORS);
-      const metres = randInt(2, 5);
-      const centimetres = randInt(1, 9) * 10;
-      const total = metres * 100 + centimetres;
+      const meters = randInt(2, 5);
+      const centimeters = randInt(1, 9) * 10;
+      const total = meters * 100 + centimeters;
       // Never cut more rope than there is: the shortest rope is 2 m 10 cm.
       const cut = randInt(2, Math.min(9, Math.floor((total - 25) / 25))) * 25;
       return {
         answer: total - cut,
         answerType: "numberPad",
-        promptText: `${actor}'s rope is ${metres} m ${centimetres} cm long. ${actor} cuts off ${cut} cm. How many cm are left?`,
+        promptText: `${actor}'s rope is ${meters} m ${centimeters} cm long. ${actor} cuts off ${cut} cm. How many cm are left?`,
         representation: "verbalContext",
         cognitiveDemand: "DOK3",
         misconceptionTags: ["wrongFactor", "operationSwap"],
@@ -465,13 +465,13 @@ const VARIETIES = [
     subskills: ["multiStepMeasure"],
     build() {
       const actor = pick(ACTORS);
-      const litres = randInt(2, 5);
+      const liters = randInt(2, 5);
       const pourMl = pick([100, 150, 200, 250, 300]);
       const times = randInt(2, 3);
       return {
-        answer: litres * 1000 - pourMl * times,
+        answer: liters * 1000 - pourMl * times,
         answerType: "numberPad",
-        promptText: `A tank holds ${litres} L. ${actor} pours out ${pourMl} mL ${times} times. How many mL are left?`,
+        promptText: `A tank holds ${liters} L. ${actor} pours out ${pourMl} mL ${times} times. How many mL are left?`,
         representation: "verbalContext",
         cognitiveDemand: "DOK3",
         misconceptionTags: ["wrongFactor", "conversionInverted"],

@@ -105,6 +105,8 @@ Use the closest matching `structureType` when authoring an item:
   `questionNotLast`.
 - **Blanks are `__`.** A `?` inside the prompt splits the card into sentences
   and reads aloud as a question; use `__` for a missing number.
+- **US spelling** (Sai, 2026-10-03): meter, centimeter, kilometer, liter,
+  milliliter; never metre or litre. Enforced by `britishSpelling`.
 - Avoid culturally narrow contexts. Prefer school, garden, library, kitchen,
   sports, and library settings.
 - Numbers in the prompt must match the question payload (`a`, `b`, `answer`).
@@ -221,8 +223,8 @@ Phase 2 healthy threshold:
   - no duplicate `itemId` or `promptText`
 - `src/itemBank/qc/checks.js` (the gate in `bank:qc` and the Review queue) adds
   `nounlessQuestion`, `decorativeContext`, `selfAnswering`, `teacherJargon`,
-  `figurelessQuantity`, `workedStepGiveaway`, `teacherVoice`, `questionNotLast`
-  and `sequenceCardMismatch` as `fail` findings — approval is blocked on any of
+  `figurelessQuantity`, `workedStepGiveaway`, `teacherVoice`, `questionNotLast`,
+  `sequenceCardMismatch` and `britishSpelling` as `fail` findings — approval is blocked on any of
   them, and `src/__tests__/bankQcGate.spec.js` fails CI if any shipped item has one.
 - The draft pipeline (`scripts/itemGen/validateDrafts.js`) adds:
   - license allowlist check against the exemplar source,

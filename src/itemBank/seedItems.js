@@ -28174,7 +28174,7 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 12
     },
-    "promptText": "Sam's bean plant was 7 cm on Monday and 12 cm on Friday. How many centimetres did it grow?"
+    "promptText": "Sam's bean plant was 7 cm on Monday and 12 cm on Friday. How many centimeters did it grow?"
    },
    "answerType": "numberPad"
   }
@@ -28228,7 +28228,7 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 9
     },
-    "promptText": "Sam guessed a leaf at 6 cm; the ruler says 9 cm. By how many centimetres was the guess off?"
+    "promptText": "Sam guessed a leaf at 6 cm; the ruler says 9 cm. By how many centimeters was the guess off?"
    },
    "answerType": "numberPad"
   }
@@ -28289,7 +28289,7 @@ export const SEED_ITEMS = [
       4
      ]
     },
-    "promptText": "Sam builds a garden edge from strips of 5 cm, 7 cm, and 4 cm. How long is the edge in centimetres?"
+    "promptText": "Sam builds a garden edge from strips of 5 cm, 7 cm, and 4 cm. How long is the edge in centimeters?"
    },
    "answerType": "numberPad"
   }
@@ -28318,7 +28318,7 @@ export const SEED_ITEMS = [
       6
      ]
     },
-    "promptText": "Zoe glues an 11 cm strip of ribbon to a 6 cm strip for a card. How many centimetres of ribbon is that?"
+    "promptText": "Zoe glues an 11 cm strip of ribbon to a 6 cm strip for a card. How many centimeters of ribbon is that?"
    },
    "answerType": "numberPad"
   }
@@ -28347,7 +28347,7 @@ export const SEED_ITEMS = [
       6
      ]
     },
-    "promptText": "Two watering cans, 11 L and 6 L, both go onto June's garden. How many litres of water is that?"
+    "promptText": "Two watering cans, 11 L and 6 L, both go onto June's garden. How many liters of water is that?"
    },
    "answerType": "numberPad"
   }
@@ -28402,7 +28402,7 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 62
     },
-    "promptText": "The sunflower by Mina's window rose from 27 cm to 62 cm. How many centimetres taller is that?"
+    "promptText": "The sunflower by Mina's window rose from 27 cm to 62 cm. How many centimeters taller is that?"
    },
    "answerType": "numberPad"
   }
@@ -28429,7 +28429,7 @@ export const SEED_ITEMS = [
      "pair": "L>mL",
      "amount": 2
     },
-    "promptText": "A lemonade cooler of 2 L stands at Mina's stall. How many millilitres is that?"
+    "promptText": "A lemonade cooler of 2 L stands at Mina's stall. How many milliliters is that?"
    },
    "answerType": "numberPad"
   }
@@ -28456,7 +28456,7 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 92
     },
-    "promptText": "Before measuring a scooter, Mina guessed 70 cm. It is really 92 cm. How many centimetres off was the guess?"
+    "promptText": "Before measuring a scooter, Mina guessed 70 cm. It is really 92 cm. How many centimeters off was the guess?"
    },
    "answerType": "numberPad"
   }
@@ -28543,7 +28543,7 @@ export const SEED_ITEMS = [
      "pair": "km>m",
      "amount": 1
     },
-    "promptText": "The forest loop near June's camp is 1 km around. What is that in metres?"
+    "promptText": "The forest loop near June's camp is 1 km around. What is that in meters?"
    },
    "answerType": "numberPad"
   }
@@ -28596,7 +28596,7 @@ export const SEED_ITEMS = [
      "n": 312,
      "kind": "roundTen"
     },
-    "promptText": "Omar walks 312 m to school. Rounded to the nearest ten, how many metres is the walk?"
+    "promptText": "Omar walks 312 m to school. Rounded to the nearest ten, how many meters is the walk?"
    },
    "answerType": "numberPad"
   }
@@ -28625,7 +28625,7 @@ export const SEED_ITEMS = [
       34
      ]
     },
-    "promptText": "Sam sews a banner 2 m 34 cm long. The shop measures in centimetres. How many centimetres long is it?"
+    "promptText": "Sam sews a banner 2 m 34 cm long. The shop measures in centimeters. How many centimeters long is it?"
    },
    "answerType": "numberPad"
   }
@@ -28654,7 +28654,7 @@ export const SEED_ITEMS = [
       380
      ]
     },
-    "promptText": "Into the punch bowl Mina pours 250 mL and then 380 mL. What volume in millilitres is in the bowl?"
+    "promptText": "Into the punch bowl Mina pours 250 mL and then 380 mL. What volume in milliliters is in the bowl?"
    },
    "answerType": "numberPad"
   }
@@ -28680,7 +28680,7 @@ export const SEED_ITEMS = [
      "n": 534,
      "kind": "roundHundred"
     },
-    "promptText": "Mina reads that the pier is 534 m long. How many metres is that, to the nearest hundred?"
+    "promptText": "Mina reads that the pier is 534 m long. How many meters is that, to the nearest hundred?"
    },
    "answerType": "numberPad"
   }
@@ -28741,7 +28741,7 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 500
     },
-    "promptText": "A recipe of Sam's needs 500 mL of water, and the measuring cup already holds 320 mL. How many more millilitres must Sam add?"
+    "promptText": "A recipe of Sam's needs 500 mL of water, and the measuring cup already holds 320 mL. How many more milliliters must Sam add?"
    },
    "answerType": "numberPad"
   }
@@ -28768,7 +28768,7 @@ export const SEED_ITEMS = [
      "pair": "km>m",
      "total": 1000
     },
-    "promptText": "The charity walk June joins is 1000 m long. How many kilometres is that?"
+    "promptText": "The charity walk June joins is 1000 m long. How many kilometers is that?"
    },
    "answerType": "numberPad"
   }
@@ -28824,7 +28824,7 @@ export const SEED_ITEMS = [
      "kind": "gap",
      "target": 243
     },
-    "promptText": "Omar estimated the path around the pond at 175 m; it measures 243 m. How many metres off was Omar's estimate?"
+    "promptText": "Omar estimated the path around the pond at 175 m; it measures 243 m. How many meters off was Omar's estimate?"
    },
    "answerType": "numberPad"
   }
@@ -29500,7 +29500,7 @@ export const SEED_ITEMS = [
      "pair": "km>m",
      "total": 3000
     },
-    "promptText": "3000 m is the same as how many kilometres?"
+    "promptText": "3000 m is the same as how many kilometers?"
    }
   }
  },
@@ -29704,7 +29704,7 @@ export const SEED_ITEMS = [
       6
      ]
     },
-    "promptText": "A 7 cm strip and a 6 cm strip are taped end to end. How many centimetres long are the two strips together?"
+    "promptText": "A 7 cm strip and a 6 cm strip are taped end to end. How many centimeters long are the two strips together?"
    },
    "answerType": "numberPad"
   }
@@ -29735,7 +29735,7 @@ export const SEED_ITEMS = [
       3
      ]
     },
-    "promptText": "4 paperclips, each 3 cm long, are laid end to end. How many centimetres long is the row of paperclips?"
+    "promptText": "4 paperclips, each 3 cm long, are laid end to end. How many centimeters long is the row of paperclips?"
    },
    "answerType": "numberPad"
   }
@@ -29764,7 +29764,7 @@ export const SEED_ITEMS = [
       7
      ]
     },
-    "promptText": "Pour 8 L of water and 7 L of water into one tub. How many litres of water are in the tub?"
+    "promptText": "Pour 8 L of water and 7 L of water into one tub. How many liters of water are in the tub?"
    },
    "answerType": "numberPad"
   }
@@ -29875,7 +29875,7 @@ export const SEED_ITEMS = [
      "after": 5,
      "before": 3
     },
-    "promptText": "A rope is longer than 3 m but shorter than 5 m. Its length is a whole number of metres. How many metres long is the rope?"
+    "promptText": "A rope is longer than 3 m but shorter than 5 m. Its length is a whole number of meters. How many meters long is the rope?"
    },
    "answerType": "numberPad"
   }
@@ -29934,7 +29934,7 @@ export const SEED_ITEMS = [
       27
      ]
     },
-    "promptText": "A 34 cm board and a 27 cm board are joined end to end. How many centimetres long are the two boards together?"
+    "promptText": "A 34 cm board and a 27 cm board are joined end to end. How many centimeters long are the two boards together?"
    },
    "answerType": "numberPad"
   }
@@ -30018,7 +30018,7 @@ export const SEED_ITEMS = [
      "n": 23,
      "kind": "roundTen"
     },
-    "promptText": "A stick is 23 cm long. How long is the stick to the nearest ten centimetres?"
+    "promptText": "A stick is 23 cm long. How long is the stick to the nearest ten centimeters?"
    },
    "answerType": "numberPad"
   }
@@ -30098,7 +30098,7 @@ export const SEED_ITEMS = [
      "n": 234,
      "kind": "roundHundred"
     },
-    "promptText": "A trail is 234 m long. How long is the trail to the nearest hundred metres?"
+    "promptText": "A trail is 234 m long. How long is the trail to the nearest hundred meters?"
    },
    "answerType": "numberPad"
   }
@@ -30162,7 +30162,7 @@ export const SEED_ITEMS = [
       45
      ]
     },
-    "promptText": "A rope is 1 m 30 cm long. Then 45 cm more rope is tied on. How many centimetres long is the rope now?"
+    "promptText": "A rope is 1 m 30 cm long. Then 45 cm more rope is tied on. How many centimeters long is the rope now?"
    },
    "answerType": "numberPad"
   }
@@ -30247,7 +30247,7 @@ export const SEED_ITEMS = [
      "after": 210,
      "before": 190
     },
-    "promptText": "A path is between 190 m and 210 m long. For a good estimate, use the length halfway between. How many metres is that?"
+    "promptText": "A path is between 190 m and 210 m long. For a good estimate, use the length halfway between. How many meters is that?"
    },
    "answerType": "numberPad"
   }

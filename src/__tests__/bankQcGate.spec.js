@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { runChecks } from "../itemBank/qc/checks.js";
 import { workedStepFinding } from "../itemBank/qc/workedStep.js";
 import { sequenceCardFinding, sequenceNextTerm } from "../itemBank/qc/sequenceCard.js";
-import { questionNotLastFinding, teacherVoiceFinding } from "../itemBank/qc/kidVoice.js";
+import { britishSpellingFinding, questionNotLastFinding, teacherVoiceFinding } from "../itemBank/qc/kidVoice.js";
 import { modeRegistry } from "../modes/index.js";
 import { FULL_ITEMS } from "../itemBank/fullBank.js";
 
@@ -125,6 +125,13 @@ describe("kid voice", () => {
     expect(teacherVoiceFinding(item(prompt, 1))).toBeNull();
   });
 
+  it("fails British spelling anywhere on the card", () => {
+    expect(britishSpellingFinding(item("How many centimetres longer is the rope?", 4))?.id).toBe("britishSpelling");
+    expect(britishSpellingFinding({ question: { answer: "2 litres", choices: ["2 litres", "20 mL"], display: { promptText: "Which holds more?" } } })?.id).toBe("britishSpelling");
+    expect(britishSpellingFinding(item("A tank holds 3 L. How many milliliters is that?", 3000))).toBeNull();
+    expect(britishSpellingFinding(item("How many meters of fence does Ana need?", 20))).toBeNull();
+  });
+
   it("fails a sentence after the question", () => {
     expect(questionNotLastFinding(item("What is 9 + 9? Diego checks.", 18))?.id).toBe("questionNotLast");
     expect(questionNotLastFinding(item("Which two pairs both make 11? Choose them.", 1))?.id).toBe("questionNotLast");
@@ -146,8 +153,8 @@ describe("kid voice", () => {
 // like numberBonds' split drill, only appear when a skill session targets
 // their subskill).
 describe("generators speak kid voice", () => {
-  const CHECKS = [teacherVoiceFinding, questionNotLastFinding, workedStepFinding];
-  it.each(Object.keys(modeRegistry))("%s draws no teacherVoice / questionNotLast / workedStepGiveaway prompt", (modeId) => {
+  const CHECKS = [teacherVoiceFinding, questionNotLastFinding, workedStepFinding, britishSpellingFinding];
+  it.each(Object.keys(modeRegistry))("%s draws no teacherVoice / questionNotLast / workedStepGiveaway / britishSpelling prompt", (modeId) => {
     const mode = modeRegistry[modeId];
     const contexts = [
       [{}, 150],

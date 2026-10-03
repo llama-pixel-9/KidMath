@@ -8,6 +8,7 @@ Everything below is verified against the code on `main`; run commands from the r
 
 Paths:
 - Harness: `npm run models:harness -- <models.json> [--seeds N] [--samples N] [--items out.json --per N] [--quiet] [--mode ID --code CODE --prefix P]` (`scripts/itemModels/harness.mjs`; the per-model rules are in `scripts/itemModels/harnessRules.js`)
+- Textbook test: `npm run models:textbook -- <models.json> [--measures-only] [--sql out.sql]` (`scripts/itemModels/textbookTest.mjs`; design and calibration in `docs/textbook-test.md`). It measures the model over 40 fills, then three readers judge ten of them against Sai's bar and must quote what fails.
 - Eligible objects with prices: `src/content/contextTable.json` (the objects whose `skills` include the skill, with their unit price range; the harness's `contextObjectKnown` and `priceInRange` checks read the same table)
 - Loader: `npm run models:load -- <models.json> --dryRun` validates the file the way the loader will; without `--dryRun` it upserts the models as drafts for review at `/admin/models`
 - Your output: one JSON array of models per cell, written outside `src/` (a scratch folder); the pilot file above is the shape to match

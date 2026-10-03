@@ -30,6 +30,11 @@ npm run bank:export      # approved v1 cloud rows → shipped bundle (src/itemBa
 npm run bank:seed        # timestamped Supabase seed migration
 npm run bank:gen         # generateDrafts.js
 npm run worksheets:audit # every bank cell as a worksheet author sees it (--mode X, --md)
+
+# item models (v2)
+npm run models:harness   # validate + sample a models file
+npm run models:textbook  # the textbook test: counts + 3 readers x 2 runs (--measures-only = no model calls)
+npm run models:load      # upsert models as drafts for /admin/models
 ```
 
 - **`npm run test` is a hand-maintained file list, not a glob.** Adding a spec file
@@ -132,7 +137,9 @@ for the full ladder: guide → structure templates → generator prompts → QC 
 **The textbook bar.** An item or model is ready only when it would look at home
 in Math in Focus or another premier K-5 textbook (Sai, 2026-10-03). Passing QC
 is the floor, not the bar. It is a bar for quality, never a source: wording
-stays original.
+stays original. `npm run models:textbook` tests new item models against it
+(`docs/textbook-test.md`). Made-up prices pass. A place that doesn't fit what
+happens there fails.
 
 Two wording rules currently enforced as `fail` checks:
 - `nounlessQuestion` — the question must restate the counted noun. "How many toy
@@ -316,6 +323,7 @@ Product IDs: `io.larkit.app.premium.{monthly,annual}`.
 | Source licensing / attribution | `bank-sources.md`, `resources/README.md` |
 | Item bank v2 groundwork: migration, switch + preview, hints, checks, item models, kid state, CI | `item-bank-v2-groundwork.md` |
 | Standards codes per framework, blueprint rows, coverage view + admin Standards tab, the code gate | `standards-coverage.md` |
+| The textbook test for item models: design, vote rule, calibration on Sai's decisions | `textbook-test.md` |
 
 ## Skills
 

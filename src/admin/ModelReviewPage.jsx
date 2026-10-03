@@ -200,7 +200,7 @@ function fmtWhen(value) {
  * rest as JSON rather than hiding it.
  */
 function VerdictCard({ name, verdict }) {
-  const label = { blindSolve: "Blind solve", kidSafe: "Kid-safe", schoolPrintable: "School-printable" }[name] || name;
+  const label = { blindSolve: "Blind solve", kidSafe: "Kid-safe", schoolPrintable: "School-printable", textbook: "Textbook test" }[name] || name;
   // A stored AI review that left notes ("3 reviewer notes") is advice, not a
   // failed check: it showed red as "fail" until 2026-10-03, which read as a
   // failed gate on models whose notes had already been fixed. Only a verdict
@@ -220,7 +220,7 @@ function VerdictCard({ name, verdict }) {
         {label}: {ok === true ? "pass" : ok === false ? "fail" : text || "recorded"}
         {when && <span className="ml-2 font-normal opacity-70">{fmtWhen(when)}</span>}
       </p>
-      {reason && <p className="mt-1">{reason}</p>}
+      {reason && <p className="mt-1 whitespace-pre-line">{reason}</p>}
       {!reason && verdict && typeof verdict === "object" && (
         <pre className="mt-1 whitespace-pre-wrap font-mono text-[10px] opacity-80">{JSON.stringify(verdict, null, 1)}</pre>
       )}

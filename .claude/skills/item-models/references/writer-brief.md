@@ -76,6 +76,10 @@ repetitive. Read them once more as that textbook's editor would: an item that
 would look out of place on its page is not done. Count, in 40 fills: the different objects (a story should show
 many), the different keys (a choice key that never changes is not a
 question), and whether each distractor is a mistake a kid really makes.
+Then run the textbook test's counting layer:
+`npm run models:textbook -- $G/<group>.json --measures-only --out $G`. It
+must report 0 fail; its notes are worth a fix too. (The readers run after you,
+outside this brief.)
 Rerun until clean.
 
 ## Report (your final message)

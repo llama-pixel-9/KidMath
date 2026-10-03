@@ -226,13 +226,29 @@ lines are the exceptions. Leave them out of every writer excerpt.
      list under "Rules learned from the Grade 2 add/subtract review" in the
      kit (object variety, a key that changes, real mistakes, names on
      pictures, pictures the kid can use).
-   - **The textbook test** (The bar, above): read ten fills of each model as
-     if they were printed on a practice page of Math in Focus or another
-     premier K-5 textbook. Anything that would look out of place there is a
-     fix, not a note.
-   - Then at most **one AI review per subskill**: one reviewer reads that
-     subskill's models against their rows and puts the textbook test to each.
-     No checker swarms.
+   - **The textbook test** (The bar, above):
+     `npm run models:textbook -- <group>.json --sql <group>.textbook.sql`
+     from the repo root (needs the `claude` CLI; design and calibration in
+     `docs/textbook-test.md`).
+     - Code counts what can be counted over 40 fills: things to count in a
+       story, answers that never change, test-engine words, lettered
+       pictures in a story. Then three readers (editor, teacher, child), each
+       run twice, answer seven yes/no lines on ten fills, and every "no"
+       quotes a question.
+     - **fail** (a counted flag, or 4+ of 6 readers on one line): fix the
+       model and rerun. It does not go to Sai.
+     - **review** (2 or 3 readers on a line): load it. The quotes go to Sai
+       beside the model.
+     - **pass**: load it.
+     - Read `<group>.textbook.md` as well. Variety notes, and anything a
+       reader saw that you agree with, are fixes too.
+     - Made-up prices are fine and never fail (Sai, 2026-10-03). A place
+       that doesn't sell or do the thing still fails.
+     - `--measures-only` runs the counting layer alone, with no model calls.
+   - Then at most **one AI review per subskill**. One reviewer reads that
+     subskill's models together against their rows, and reads a page that
+     mixes them for variety, the page-level read the textbook test doesn't do
+     yet. No checker swarms.
 5. **Load drafts.**
    - Run `set -a && source .env.local && set +a && npm run models:load -- f.json --dryRun`, then the same without `--dryRun`.
      - The script loads neither env file itself.
@@ -246,6 +262,11 @@ lines are the exceptions. Leave them out of every writer excerpt.
      `execute_sql` tool, in order. Then check the counts by mode and status,
      that no loaded model has a null `blueprint_id`, and run
      `select public.sync_item_model_standards(null);`.
+   - Then run `<group>.textbook.sql` (from the textbook test). It writes each
+     draft's verdict to `spec.checks.textbook`, which the review screen shows
+     as a card: green on pass, amber with the readers' quotes on review. It
+     only touches drafts. Hash checks on loaded specs compare
+     `spec - 'checks'`.
    - Sai reviews at `/admin/models`.
    - Commit the loaded files under `src/itemModels/` in a PR, branched from a
      fresh `origin/main`: money is `money/grade<N>.json`; Grade 2 add/subtract

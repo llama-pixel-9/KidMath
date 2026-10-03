@@ -984,6 +984,220 @@
     }
   },
   {
+    "id": "wp-g2-take-from-result-acrosszero-2",
+    "blueprintId": "wp-g2-take-from-result",
+    "modeId": "wordProblems",
+    "subskill": "changeStories",
+    "family": "application",
+    "structureType": "takeFromResultUnknown",
+    "grade": "2",
+    "levelRange": [
+      5,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.OA.A.1"
+      ],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [
+        "MA.2.AR.1.1"
+      ],
+      "va": [
+        "2.CE.1c"
+      ],
+      "ga": [
+        "2.NR.2.3"
+      ]
+    },
+    "difficulty": "moderate",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} had {start} {object_plural} and {act} {taken} of them {tail}. How many {object_plural} does {name} have left?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "pal": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "subtraction",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "school-art"
+        ]
+      },
+      "tensStart": {
+        "kind": "int",
+        "min": 3,
+        "max": 9
+      },
+      "start": {
+        "kind": "expr",
+        "expr": "tensStart * 10",
+        "format": "int"
+      },
+      "taken": {
+        "kind": "int",
+        "min": 11,
+        "max": 49
+      },
+      "act": {
+        "kind": "expr",
+        "expr": "object.id == 'bead' ? 'used' : object.id == 'loom-band' ? 'used' : object.id == 'sticker' ? 'put' : object.id == 'pom-pom' ? 'glued' : object.id == 'trading-card' ? 'gave' : object.id == 'marble' ? 'gave' : object.id == 'toy-car' ? 'gave' : object.id == 'crayon' ? 'gave' : 'traded'",
+        "format": "text"
+      },
+      "tail": {
+        "kind": "expr",
+        "expr": "object.id == 'bead' ? 'to make a bracelet' : object.id == 'loom-band' ? 'to make bracelets' : object.id == 'sticker' ? 'on thank-you cards' : object.id == 'pom-pom' ? 'onto a poster' : object.id == 'trading-card' ? 'to ' + pal : object.id == 'marble' ? 'to ' + pal : object.id == 'toy-car' ? 'to ' + pal : object.id == 'crayon' ? 'to ' + pal : 'for a prize'",
+        "format": "text"
+      },
+      "st": {
+        "kind": "expr",
+        "expr": "tens(start) / 10",
+        "format": "int"
+      },
+      "so": {
+        "kind": "expr",
+        "expr": "ones(start)",
+        "format": "int"
+      },
+      "tt": {
+        "kind": "expr",
+        "expr": "tens(taken) / 10",
+        "format": "int"
+      },
+      "to": {
+        "kind": "expr",
+        "expr": "ones(taken)",
+        "format": "int"
+      },
+      "stW": {
+        "kind": "expr",
+        "expr": "(st) == 1 ? '1 ten' : (st) + ' tens'",
+        "format": "text"
+      },
+      "soW": {
+        "kind": "expr",
+        "expr": "(so) == 1 ? '1 one' : (so) + ' ones'",
+        "format": "text"
+      },
+      "ttW": {
+        "kind": "expr",
+        "expr": "(tt) == 1 ? '1 ten' : (tt) + ' tens'",
+        "format": "text"
+      },
+      "toW": {
+        "kind": "expr",
+        "expr": "(to) == 1 ? '1 one' : (to) + ' ones'",
+        "format": "text"
+      },
+      "stM1": {
+        "kind": "expr",
+        "expr": "st - 1",
+        "format": "int"
+      },
+      "stM1W": {
+        "kind": "expr",
+        "expr": "(st - 1) == 1 ? '1 ten' : (st - 1) + ' tens'",
+        "format": "text"
+      },
+      "soP10": {
+        "kind": "expr",
+        "expr": "so + 10",
+        "format": "int"
+      },
+      "lo": {
+        "kind": "expr",
+        "expr": "so + 10 - to",
+        "format": "int"
+      },
+      "lt": {
+        "kind": "expr",
+        "expr": "st - 1 - tt",
+        "format": "int"
+      },
+      "left": {
+        "kind": "expr",
+        "expr": "start - taken",
+        "format": "int"
+      }
+    },
+    "constraints": [
+      "(object.id == 'bead' || object.id == 'loom-band' || object.id == 'sticker' || object.id == 'pom-pom' || object.id == 'trading-card' || object.id == 'marble' || object.id == 'toy-car' || object.id == 'crayon' || object.id == 'arcade-ticket') && sum(drop(object.count_one_kid, 1)) >= start",
+      "start - taken >= 5",
+      "ones(taken) != 0",
+      "ones(taken) != 5",
+      "start - taken >= 10 || (start - taken != st && start - taken != so && start - taken != tt && start - taken != to)"
+    ],
+    "operation": {
+      "a": "start",
+      "b": "taken",
+      "op": "-"
+    },
+    "answer": {
+      "expr": "start - taken",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "tens(start) - tens(taken) + ones(taken)",
+        "mistake": "smallerFromLarger"
+      },
+      {
+        "expr": "start - taken + 10",
+        "mistake": "offByTen"
+      },
+      {
+        "expr": "start + taken",
+        "mistake": "addedInsteadOfSubtracted"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many {object_plural} {name} has left. {name} {act} some {tail}, so take them away.",
+      "steps": [
+        "{start} is {stW} and no ones.",
+        "To take away {toW}, trade one ten for ten ones first.",
+        "Then take away {toW} and {ttW}."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "smallerFromLarger": "That takes zero from {to} in the ones place. You have to take {toW} away from zero ones, so trade one ten for ten ones first.",
+        "offByTen": "That is ten too many. After you trade a ten for ten ones, there is one fewer ten.",
+        "addedInsteadOfSubtracted": "That adds the two numbers. The question asks how many are left, so take {taken} away from {start}."
+      },
+      "solution": {
+        "steps": [
+          "Trade one ten for ten ones: {start} is {stM1W} and 10 ones.",
+          "Ones: 10 − {to} = {lo}. Tens: {stM1} − {tt} = {lt}.",
+          "{start} − {taken} = {left}. {name} has {left} {object_plural} left."
+        ],
+        "answer": "start - taken"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.OA.A.1 (Table 1: add to, take from)",
+        "TEKS 2.4C, 2.7C",
+        "FL B.E.S.T. MA.2.AR.1.1",
+        "VA SOL 2023 2.CE.1c",
+        "GA K-12 2021 2.NR.2.3"
+      ]
+    }
+  },
+  {
     "id": "wp-g2-add-to-change",
     "blueprintId": "wp-g2-add-to-change",
     "modeId": "wordProblems",

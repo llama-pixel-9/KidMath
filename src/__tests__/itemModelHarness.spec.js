@@ -191,12 +191,13 @@ describe("the disc mat in a prompt's identity", () => {
 
 describe("the committed Grade 2 add and subtract models", () => {
   // The 77 drafts in Sai's queue (2026-10-03) plus the 17 "-2" fixes from
-  // Sai's first review (7 rejected, 10 approved with a fault); each row in
-  // item_models is one of these objects as committed.
+  // Sai's first review (7 rejected, 10 approved with a fault) and 1 from the
+  // live step's QC (take-from-result-acrosszero: "have now" read two ways);
+  // each row in item_models is one of these objects as committed.
   const G2 = [G2_CALC_STRATEGIES, G2_CALC_TRADES, G2_CALC_EQUAL, G2_WP_EQUATIONS, G2_WP_CHANGE, G2_WP_COMPARE, G2_WP_TWO_STEP].flat();
 
   it("are valid, point at their blueprint row and follow its rules", () => {
-    expect(G2).toHaveLength(94);
+    expect(G2).toHaveLength(95);
     expect(new Set(G2.map((m) => m.id)).size).toBe(G2.length);
     for (const m of G2) {
       expect(validateModel(m).errors, m.id).toEqual([]);

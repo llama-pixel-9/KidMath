@@ -8,6 +8,7 @@ import { generateQuestion } from "../mathEngine.js";
 import { startingLevelFor } from "../gradeSeed.js";
 import { gradeForModeLevel, playSkills } from "../skills/play.js";
 import { resolveTopic } from "../skills/topicState.js";
+import { kidView } from "../../scripts/itemGen/qc/kidView.js";
 
 // Fact fluency plan, Part A: every basic fact, in exactly one plan row, asked
 // in the formats of B2, and every generated row passing the bank's gates.
@@ -187,5 +188,20 @@ describe("a kid's first Math Facts session", () => {
       expect(resolveTopic("mathFacts", { level, totalSessions: 0 }, { profileGrade: profile }).grade, profile).toBe(grade);
     }
     expect(startingLevelFor("mathFacts", "5th")).toBe(startingLevelFor("mathFacts", "4th"));
+  });
+});
+
+// The blind solve and the kid-safe review read the picture as words
+// (scripts/itemGen/qc/kidView.js). Before 2026-10-03 they were told "7 red
+// counters" with no word of the 3 crossed out, and nothing at all of the
+// times-table dots, so 55 take-away facts looked unanswerable to the solver.
+describe("the QC readers see the Math Facts pictures", () => {
+  const view = (id) => kidView(ITEMS.find((i) => i.itemId === id));
+  it("says which take-away counters are crossed out", () => {
+    expect(view("mathFacts-v2-sub-7-3-takeAway").figure).toBe("1 ten frame with 7 red counters; the last 3 of those counters are crossed out with an X.");
+    expect(view("mathFacts-v2-sub-5-1-takeAway").figure).toBe("1 ten frame with 5 red counters; the last 1 of those counters is crossed out with an X.");
+  });
+  it("describes a times-table array", () => {
+    expect(view("mathFacts-v2-mul-3-4-array").figure).toBe("An array of dots: 3 rows of 4 dots each.");
   });
 });

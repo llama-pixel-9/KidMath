@@ -17,6 +17,7 @@
 import { readFileSync } from "node:fs";
 import { levelToGradeBand } from "../../../src/bands.js";
 import { areaFigureSpec } from "../../../src/figures/areaFigureSpec.js";
+import { placeName, startMat } from "../../../src/components/discMatBuild.js";
 import { normalizeBankRow } from "../../../src/itemBank/normalize.js";
 import { buildBankQuestion, questionAnswerType } from "../../../src/mathEngine.js";
 import { skillForModeLevel } from "../../../src/skills/index.js";
@@ -225,6 +226,10 @@ export function answerFormat(q) {
       return "tap a bar on the graph; answer with that bar's value as a number";
     case "coinTray":
       return d.coinMode === "build" ? "tap coins to build the amount; answer with the total in cents" : "answer with the amount in cents as a whole number";
+    case "placeValueDiscs":
+      // Build mode: the mat is changed, then checked — the answer is what it
+      // shows, and Check stays off while any place holds 10 or more.
+      return d.mode === "build" ? "the number your finished mat shows (each place 9 discs or fewer), as a whole number" : "type a whole number (digits only, no units)";
     default:
       return "type a whole number (digits only, no units)";
   }
@@ -247,6 +252,14 @@ function clockText(hour, minute) {
 function discsText(cols) {
   if (!Array.isArray(cols) || !cols.length) return null;
   return `Place-value discs: ${cols.map((c) => `${plural(c.count, "disc")} worth ${c.place}`).join(", ")}.`;
+}
+
+// The tappable mat (placeValueDiscs build mode) starts from `cols`, read the
+// way the widget reads them (discMatBuild.startMat), in the column's words.
+function buildMatText(cols) {
+  const mat = startMat(cols);
+  const discs = mat.map((c) => `${c.count} ${placeName(c.place, 1)} disc${c.count === 1 ? "" : "s"}`).join(", ");
+  return `A disc mat you can change: ${discs}. You can add or take away discs and trade 10 of a place for 1 of the next.`;
 }
 
 function areaText(q) {
@@ -313,6 +326,9 @@ export function describeFigure(q) {
     if (line) parts.push(line);
   }
 
+  // A price list or menu under the story (QuestionDisplay's PriceList).
+  if (Array.isArray(d.priceList?.rows) && d.priceList.rows.length) parts.push(priceListText(d.priceList));
+
   // The figure the card draws with the question (figureRegistry).
   const mode = q.mode || q.metadata?.modeId;
   const figure = d.figure || (mode === "areaPerimeter" && areaFigureSpec(q) ? "areaFigure" : null);
@@ -343,6 +359,10 @@ export function describeFigure(q) {
     case "cubeGrid":
       parts.push(`A solid built from unit cubes, ${d.cube?.l} long, ${d.cube?.w} wide and ${d.cube?.h} high (no numbers shown).`);
       break;
+    case "array":
+      // Math Facts times tables draw rows of dots with the fact.
+      parts.push(`An array of dots: ${plural(d.array?.rows ?? 0, "row")} of ${d.array?.cols ?? 0} dots each.`);
+      break;
     case "coordGrid":
       parts.push(`A coordinate grid from 0 to ${d.coord?.max} on both axes with points ${(d.coord?.points || []).map((p) => `${p.label ?? ""} at (${p.x}, ${p.y})`.trim()).join(", ")}.`);
       break;
@@ -365,10 +385,12 @@ export function describeFigure(q) {
       parts.push(`A set of fraction pieces: ${JSON.stringify(d.set)}.`);
       break;
     case "placeValueDiscs":
-      parts.push(discsText(d.cols));
+      parts.push(d.mode === "build" ? buildMatText(d.cols) : discsText(d.cols));
       break;
     case "barModel":
       if (d.whole != null) parts.push(`A bar model: the whole bar is labeled ${d.whole}; one part is labeled ${d.part}, the other part is blank.`);
+      else if (d.a != null && (d.labelA || d.labelB))
+        parts.push(`A comparison bar model: the bar named ${d.labelA || "A"} is labeled ${d.a}; the longer bar named ${d.labelB || "B"} is labeled ${d.a} plus a segment labeled ${d.diff}, and its total is blank.`);
       else if (d.a != null) parts.push(`A comparison bar model: one bar labeled ${d.a}, a longer bar labeled ${d.a} plus a segment labeled ${d.diff}.`);
       break;
     case "numberBond":
@@ -387,7 +409,10 @@ export function describeFigure(q) {
       parts.push(`A tray of coins: ${list(d.coins || [])}.`);
       break;
     case "tenFrame":
-      parts.push(`${plural(d.frames ?? 1, "ten frame")} with ${plural(d.filled ?? 0, "red counter")}${d.filledB ? ` and ${plural(d.filledB, "blue counter")}` : ""}.`);
+      // A take-away frame crosses out the last `takeAway` counters (Math
+      // Facts, 2026-10-01). Without this line the blind solver saw "7 red
+      // counters" under "How many are left?" and could not know 3 were gone.
+      parts.push(`${plural(d.frames ?? 1, "ten frame")} with ${plural(d.filled ?? 0, "red counter")}${d.filledB ? ` and ${plural(d.filledB, "blue counter")}` : ""}${d.takeAway ? `; the last ${d.takeAway} of those counters ${d.takeAway === 1 ? "is" : "are"} crossed out with an X` : ""}.`);
       break;
     default:
       break;
@@ -395,6 +420,13 @@ export function describeFigure(q) {
 
   const text = parts.filter(Boolean).join(" ");
   return text || null;
+}
+
+// Every row in one style, as QuestionDisplay's formatListPrice prints it.
+function priceListText(list) {
+  const dollars = list.style === "dollars" || list.rows.some((r) => Number(r.cents) >= 100);
+  const price = (cents) => (dollars ? `$${(Number(cents) / 100).toFixed(2)}` : `${cents}¢`);
+  return `A table${list.title ? ` titled "${list.title}"` : ""}: ${list.rows.map((r) => `${r.item} ${price(r.cents)}`).join("; ")}.`;
 }
 
 // BarChart shows the values only after the answer is judged; before that the

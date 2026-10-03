@@ -12,6 +12,7 @@ import { FIGURES, getFigure } from "../components/figureRegistry.js";
 import { WIDGETS } from "../components/widgetRegistry.js";
 import { DEFAULT_LIVE_VERSION } from "../itemBank/versionRules.js";
 import { BLUEPRINT_ROWS } from "../blueprints/index.js";
+import { runChecks } from "../itemBank/qc/checks.js";
 
 /**
  * The generalized "show the visual, don't describe it" gate — the one question
@@ -154,15 +155,19 @@ describe("contract <-> registry parity", () => {
 // one with a words-only row, so the row id is the class (byRowThenStructure).
 // ---------------------------------------------------------------------------
 
-// The row's `picture` field, in the lists' own words, to the satisfier.
+// The row's `picture` field, in the lists' own words, to its satisfiers. One
+// disc mat may be the question's figure or the mat the kid answers through
+// (the placeValueDiscs widget, read or build); two mats are only a figure.
 const PICTURE_SATISFIERS = [
-  [/^none\b/, "none"],
-  [/disc mats?\b/, "figure:discMat"],
-  [/^four tape diagrams to choose from$/, "any-figure"],
-  [/tape diagram|compare bars/, "widget:barModel"],
-  [/number line/, "widget:numberLine"],
+  [/^none\b/, ["none"]],
+  [/\btwo place-value disc mats\b/, ["figure:discMat"]],
+  [/disc mats?\b/, ["figure:discMat", "widget:placeValueDiscs"]],
+  [/^four tape diagrams to choose from$/, ["any-figure"]],
+  [/tape diagram|compare bars/, ["widget:barModel"]],
+  [/number line/, ["widget:numberLine"]],
 ];
-const satisfierForPicture = (picture) => PICTURE_SATISFIERS.find(([rx]) => rx.test(picture))?.[1] ?? null;
+const satisfiersForPicture = (picture) => PICTURE_SATISFIERS.find(([rx]) => rx.test(picture))?.[1] ?? null;
+const isVerbalPicture = (picture) => satisfiersForPicture(picture)?.[0] === "none";
 
 const ROW_MODES = ["wordProblems", "multiDigit"];
 
@@ -174,9 +179,9 @@ describe("blueprint rows <-> contract lines", () => {
     it(`${modeId}: declares every row by id, with the visual its picture names`, () => {
       expect(rows.length).toBeGreaterThan(0);
       for (const row of rows) {
-        const want = satisfierForPicture(row.picture);
+        const want = satisfiersForPicture(row.picture);
         expect(want, `${row.id}: no satisfier for picture "${row.picture}"`).not.toBeNull();
-        expect(contract.classes[row.id]?.satisfiedBy, row.id).toEqual([want]);
+        expect(contract.classes[row.id]?.satisfiedBy, row.id).toEqual(want);
       }
     });
 
@@ -187,7 +192,7 @@ describe("blueprint rows <-> contract lines", () => {
     });
 
     it(`${modeId}: a row's id wins over its shared structureType`, () => {
-      const pictureRows = rows.filter((r) => satisfierForPicture(r.picture) !== "none");
+      const pictureRows = rows.filter((r) => !isVerbalPicture(r.picture));
       expect(pictureRows.length).toBeGreaterThan(0);
       for (const row of pictureRows) {
         const bare = { display: { promptText: "words only" } };
@@ -199,7 +204,7 @@ describe("blueprint rows <-> contract lines", () => {
       }
       // A words-only row on the same structure stays verbal.
       const shared = rows.find(
-        (r) => satisfierForPicture(r.picture) === "none" &&
+        (r) => isVerbalPicture(r.picture) &&
           pictureRows.some((p) => p.spec.structureType === r.spec.structureType)
       );
       if (shared) {
@@ -212,6 +217,58 @@ describe("blueprint rows <-> contract lines", () => {
   it("a disc-mat picture row passes once it ships the mat", () => {
     const q = { display: { figure: "discMat", discMat: { cols: [{ place: "tens", count: 3 }, { place: "ones", count: 4 }] }, promptText: "x" } };
     expect(contractVerdict("wordProblems", q, { blueprintId: "wp-g2-picture-tens-ones", structureType: "addToResultUnknown" }).ok).toBe(true);
+  });
+
+  // The tappable mat (placeValueDiscs build mode): the start mat IS the
+  // row's picture, drawn by the widget the kid answers through.
+  const buildMat = (promptText) => ({
+    answer: 52,
+    answerType: "placeValueDiscs",
+    display: { mode: "build", cols: [{ place: 10, count: 3 }, { place: 1, count: 4 }], promptText },
+  });
+  const SINGLE_MAT_ROWS = [
+    ["wordProblems", "wp-g2-picture-tens-ones", "addToResultUnknown"],
+    ["wordProblems", "wp-g2-two-step-picture", "twoStepTakeAdd"],
+    ["multiDigit", "calc-g2-add-discs", "addWithDiscs"],
+    ["multiDigit", "calc-g2-across-zero-discs", "subtractWithDiscs"],
+    ["multiDigit", "calc-g2-ten-hundred-discs", "tenOrHundredOnMat"],
+  ];
+
+  it("a build-mode disc mat satisfies every single-mat row, by row id and by structure", () => {
+    for (const [modeId, row, structureType] of SINGLE_MAT_ROWS) {
+      const q = buildMat("Put 1 ten and 8 ones on the mat. What number does your mat show?");
+      expect(contractVerdict(modeId, q, { blueprintId: row, structureType }).ok, row).toBe(true);
+      expect(contractVerdict(modeId, q, { structureType }).ok, structureType).toBe(true);
+    }
+  });
+
+  it("a build-mode mat is not two mats: the equal-mats row still needs its figure", () => {
+    const v = contractVerdict("multiDigit", buildMat("x"), { blueprintId: "calc-g2-equal-mats", structureType: "sameValueTwoMats" });
+    expect(v.ok).toBe(false);
+    expect(v.reason).toBe("missing");
+  });
+
+  it("the QC gate passes a v2 build-mode item on a single-mat row (missingRequiredFigure)", () => {
+    for (const [modeId, row, structureType] of SINGLE_MAT_ROWS) {
+      const item = {
+        itemId: `${modeId}-v2-build-001`,
+        modeId,
+        itemFamily: "application",
+        subskill: "x",
+        structureType,
+        blueprintId: row,
+        levelRange: [2, 4],
+        reviewStatus: "draft",
+        version: 2,
+        question: buildMat("Put 1 ten and 8 ones on the mat. What number does your mat show?"),
+      };
+      const ids = runChecks(item).findings.map((f) => f.id);
+      expect(ids, row).not.toContain("missingRequiredFigure");
+      expect(ids, row).not.toContain("undeclaredFigureClass");
+      // and the gate is live on that row: the same item typed on a bare pad fails
+      const bare = { ...item, question: { ...item.question, answerType: "numberPad", display: { promptText: item.question.display.promptText } } };
+      expect(runChecks(bare).findings.map((f) => f.id), row).toContain("missingRequiredFigure");
+    }
   });
 });
 

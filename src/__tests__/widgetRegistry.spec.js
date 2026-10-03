@@ -68,7 +68,7 @@ describe("widget registry", () => {
     expect(WIDGETS.angle.props(q, ctx)).toEqual({ degrees: 45 });
     expect(WIDGETS.clock.props(q, ctx)).toEqual({ hour: 3, minute: 15 });
     expect(WIDGETS.fractionSet.props(q, ctx)).toEqual({ set: { num: 1, den: 2 } });
-    expect(WIDGETS.placeValueDiscs.props(q, ctx)).toEqual({ cols: [10, 1] });
+    expect(WIDGETS.placeValueDiscs.props(q, ctx)).toEqual({ cols: [10, 1], mode: "read" });
     expect(WIDGETS.numberBond.props(q, ctx)).toEqual({ whole: 8, part: 3 });
     expect(WIDGETS.barModel.props(q, ctx)).toEqual({ spec: q.display });
     expect(WIDGETS.decimal.props(q, ctx)).toEqual({ allowDecimal: true });

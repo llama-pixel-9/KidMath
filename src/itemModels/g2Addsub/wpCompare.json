@@ -458,6 +458,359 @@
     }
   },
   {
+    "id": "wp-g2-put-together-total-regroup-2",
+    "blueprintId": "wp-g2-put-together-total",
+    "modeId": "wordProblems",
+    "subskill": "partWholeStories",
+    "family": "application",
+    "structureType": "putTogetherTotalUnknown",
+    "grade": "2",
+    "standards": {
+      "ccss": [
+        "2.OA.A.1"
+      ],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [
+        "MA.2.AR.1.1"
+      ],
+      "va": [
+        "2.CE.1c"
+      ],
+      "ga": [
+        "2.NR.2.3"
+      ]
+    },
+    "difficulty": "moderate",
+    "levelRange": [
+      4,
+      6
+    ],
+    "format": "number",
+    "widget": null,
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name1} and {name2} {intro}. {name1} {vs} {a} {object_plural}. {name2} {vs} {b} {object_plural}. How many {object_plural} do they {vp} altogether?"
+    },
+    "slots": {
+      "name1": {
+        "kind": "name"
+      },
+      "name2": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "addition",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "collecting-nature",
+          "school-art",
+          "toys-games"
+        ],
+        "exclude": [
+          "action-figure",
+          "animal-eraser",
+          "arcade-prize",
+          "arcade-ticket",
+          "arcade-token",
+          "backpack",
+          "balloon",
+          "board-game",
+          "bottle-of-paint",
+          "bouncy-ball",
+          "bubble",
+          "capsule-toy",
+          "card-game",
+          "charm",
+          "checker",
+          "chess-piece",
+          "class-point",
+          "claw-machine",
+          "colored-pencil",
+          "coloring-page",
+          "counting-bear",
+          "doll",
+          "dollhouse",
+          "domino",
+          "dry-erase-marker",
+          "eraser",
+          "feather",
+          "flash-card",
+          "flower",
+          "flower-pot",
+          "flying-disc",
+          "foam-rocket",
+          "fossil",
+          "friendship-bracelet",
+          "fuse-bead",
+          "gel-pen",
+          "gemstone",
+          "geode",
+          "glow-stick",
+          "glue-stick",
+          "gold-star",
+          "googly-eye",
+          "graphic-novel",
+          "icicle",
+          "jump-rope",
+          "keychain",
+          "library-book",
+          "marker",
+          "notebook",
+          "paintbrush",
+          "paper-airplane",
+          "paper-clip",
+          "pattern-block",
+          "pencil",
+          "pencil-case",
+          "piece-of-play-food",
+          "piece-of-yarn",
+          "pinecone",
+          "pipe-cleaner",
+          "playing-card",
+          "pogo-stick",
+          "pool-noodle",
+          "pop-fidget-toy",
+          "postage-stamp",
+          "postcard",
+          "pressed-leaf",
+          "pressed-penny",
+          "pumpkin",
+          "pumpkin-seed",
+          "puzzle-piece",
+          "reward-ticket",
+          "roll-of-tape",
+          "rubber-duck",
+          "rubber-stamp",
+          "sand-dollar",
+          "sand-pail",
+          "sea-glass",
+          "seashell",
+          "seed",
+          "seed-packet",
+          "seedling",
+          "shark-tooth",
+          "sheet-of-construction-paper",
+          "sight-word",
+          "sketchbook",
+          "smooth-rock",
+          "snap-cube",
+          "snowflake",
+          "spelling-word",
+          "squishy-toy",
+          "stacking-cup",
+          "stick",
+          "stick-of-sidewalk-chalk",
+          "sticky-note",
+          "stuffed-animal",
+          "sunflower",
+          "tadpole",
+          "tally-mark",
+          "toy-dinosaur",
+          "trading-pin",
+          "train-track-piece",
+          "treasure-map",
+          "tub-of-clay",
+          "tub-of-slime",
+          "tube-of-glitter-glue",
+          "video-game",
+          "vote",
+          "water-balloon",
+          "watering-can"
+        ],
+        "constraints": [
+          "(object.id == 'leaf' || object.id == 'acorn' || object.id == 'maple-seed' || object.id == 'dandelion' || object.id == 'marble' || object.id == 'bead' || object.id == 'sticker' || object.id == 'trading-card' || object.id == 'building-brick' || object.id == 'crayon' || object.id == 'toy-car' || object.id == 'loom-band' || object.id == 'button' || object.id == 'pom-pom' || object.id == 'magnetic-tile' || object.id == 'wooden-block')"
+        ]
+      },
+      "setting": {
+        "kind": "setting",
+        "of": "object",
+        "words": [
+          "park",
+          "yard",
+          "backyard",
+          "playground",
+          "sidewalk",
+          "field",
+          "beach",
+          "garden",
+          "woods",
+          "lake",
+          "creek",
+          "jar",
+          "bin",
+          "binder",
+          "bag",
+          "case",
+          "tray",
+          "box"
+        ],
+        "fallback": [
+          "in a big box",
+          "in a shoebox"
+        ]
+      },
+      "spread1": {
+        "kind": "int",
+        "min": 0,
+        "max": 999
+      },
+      "spread2": {
+        "kind": "int",
+        "min": 0,
+        "max": 999
+      },
+      "cap": {
+        "kind": "expr",
+        "expr": "object.count_one_kid ? sum(drop(object.count_one_kid, 1)) : 0",
+        "format": "int"
+      },
+      "total": {
+        "kind": "expr",
+        "expr": "22 + floor(spread1 * (min(cap, 99) - 21) / 1000)",
+        "format": "int"
+      },
+      "a": {
+        "kind": "expr",
+        "expr": "11 + floor(spread2 * (total - 21) / 1000)",
+        "format": "int"
+      },
+      "b": {
+        "kind": "expr",
+        "expr": "total - a",
+        "format": "int"
+      },
+      "bigName": {
+        "kind": "expr",
+        "expr": "a > b ? name1 : name2",
+        "format": "text"
+      },
+      "smallName": {
+        "kind": "expr",
+        "expr": "a > b ? name2 : name1",
+        "format": "text"
+      },
+      "tensA": {
+        "kind": "expr",
+        "expr": "tens(a)",
+        "format": "int"
+      },
+      "tensB": {
+        "kind": "expr",
+        "expr": "tens(b)",
+        "format": "int"
+      },
+      "onesA": {
+        "kind": "expr",
+        "expr": "ones(a)",
+        "format": "int"
+      },
+      "onesB": {
+        "kind": "expr",
+        "expr": "ones(b)",
+        "format": "int"
+      },
+      "tensSum": {
+        "kind": "expr",
+        "expr": "tens(a) + tens(b)",
+        "format": "int"
+      },
+      "onesSum": {
+        "kind": "expr",
+        "expr": "ones(a) + ones(b)",
+        "format": "int"
+      },
+      "outdoor": {
+        "kind": "expr",
+        "expr": "object.category == 'collecting-nature' ? 1 : 0",
+        "format": "int"
+      },
+      "intro": {
+        "kind": "expr",
+        "expr": "outdoor == 1 ? 'collect ' + object.plural + ' ' + setting : 'put their ' + object.plural + ' together ' + setting",
+        "format": "text"
+      },
+      "vs": {
+        "kind": "expr",
+        "expr": "outdoor == 1 ? 'collects' : 'has'",
+        "format": "text"
+      },
+      "vp": {
+        "kind": "expr",
+        "expr": "outdoor == 1 ? 'collect' : 'have'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "cap >= 40",
+      "a <= 59",
+      "b <= 59",
+      "a != b",
+      "ones(a) + ones(b) >= 10"
+    ],
+    "operation": {
+      "a": "a",
+      "b": "b",
+      "op": "+"
+    },
+    "answer": {
+      "expr": "a + b",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "max(a, b) - min(a, b)",
+        "mistake": "subtractedInsteadOfAdded"
+      },
+      {
+        "expr": "max(a, b)",
+        "mistake": "answeredWithAGiven"
+      },
+      {
+        "expr": "a + b - 10",
+        "mistake": "forgotToCarry"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many {object_plural} {name1} and {name2} {vp} in all. Add the two amounts.",
+      "steps": [
+        "Add {a} + {b}.",
+        "Add the tens: {tensA} + {tensB}.",
+        "Add the ones: {onesA} + {onesB}. That is ten or more, so make a new ten and add it to the tens."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "subtractedInsteadOfAdded": "That takes one amount away from the other. The question asks how many they {vp} in all, so add {a} + {b}.",
+        "answeredWithAGiven": "That is only the {object_plural} {bigName} {vs}. Add the {object_plural} {smallName} {vs} too.",
+        "forgotToCarry": "The ones add up to ten or more. Make a new ten and add it to the tens before you finish."
+      },
+      "solution": {
+        "steps": [
+          "Tens: {tensA} + {tensB} = {tensSum}.",
+          "Ones: {onesA} + {onesB} = {onesSum}. That makes a new ten.",
+          "{tensSum} + {onesSum} = {total}. They {vp} {total} {object_plural} altogether."
+        ],
+        "answer": "a + b"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.OA.A.1",
+        "CCSS Table 1 (OA Progressions K-5)",
+        "TEKS 2.4C, 2.7C",
+        "FL B.E.S.T. MA.2.AR.1.1",
+        "VA SOL 2023 2.CE.1c",
+        "GA K-12 2021 2.NR.2.3"
+      ]
+    }
+  },
+  {
     "id": "wp-g2-take-apart-part",
     "blueprintId": "wp-g2-take-apart-part",
     "modeId": "wordProblems",
@@ -1457,6 +1810,340 @@
     }
   },
   {
+    "id": "wp-g2-compare-smaller-fewer-2",
+    "blueprintId": "wp-g2-compare-smaller-fewer",
+    "modeId": "wordProblems",
+    "subskill": "compareStories",
+    "family": "application",
+    "structureType": "compareSmallerFewer",
+    "grade": "2",
+    "standards": {
+      "ccss": [
+        "2.OA.A.1"
+      ],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [
+        "MA.2.AR.1.1"
+      ],
+      "va": [
+        "2.CE.1c"
+      ],
+      "ga": [
+        "2.NR.2.3"
+      ]
+    },
+    "difficulty": "moderate",
+    "levelRange": [
+      4,
+      6
+    ],
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name1} {vs} {big} {object_plural} {setting}. {name2} {vs} {diff} fewer {object_plural} than {name1}. How many {object_plural} does {name2} {vb}?"
+    },
+    "slots": {
+      "name1": {
+        "kind": "name"
+      },
+      "name2": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "addition",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "collecting-nature",
+          "school-art",
+          "toys-games"
+        ],
+        "exclude": [
+          "action-figure",
+          "animal-eraser",
+          "arcade-prize",
+          "arcade-ticket",
+          "arcade-token",
+          "backpack",
+          "balloon",
+          "board-game",
+          "bottle-of-paint",
+          "bouncy-ball",
+          "bubble",
+          "capsule-toy",
+          "card-game",
+          "charm",
+          "checker",
+          "chess-piece",
+          "class-point",
+          "claw-machine",
+          "colored-pencil",
+          "coloring-page",
+          "counting-bear",
+          "doll",
+          "dollhouse",
+          "domino",
+          "dry-erase-marker",
+          "eraser",
+          "feather",
+          "flash-card",
+          "flower",
+          "flower-pot",
+          "flying-disc",
+          "foam-rocket",
+          "fossil",
+          "friendship-bracelet",
+          "fuse-bead",
+          "gel-pen",
+          "gemstone",
+          "geode",
+          "glow-stick",
+          "glue-stick",
+          "gold-star",
+          "googly-eye",
+          "graphic-novel",
+          "icicle",
+          "jump-rope",
+          "keychain",
+          "library-book",
+          "marker",
+          "notebook",
+          "paintbrush",
+          "paper-airplane",
+          "paper-clip",
+          "pattern-block",
+          "pencil",
+          "pencil-case",
+          "piece-of-play-food",
+          "piece-of-yarn",
+          "pinecone",
+          "pipe-cleaner",
+          "playing-card",
+          "pogo-stick",
+          "pool-noodle",
+          "pop-fidget-toy",
+          "postage-stamp",
+          "postcard",
+          "pressed-leaf",
+          "pressed-penny",
+          "pumpkin",
+          "pumpkin-seed",
+          "puzzle-piece",
+          "reward-ticket",
+          "roll-of-tape",
+          "rubber-duck",
+          "rubber-stamp",
+          "sand-dollar",
+          "sand-pail",
+          "sea-glass",
+          "seashell",
+          "seed",
+          "seed-packet",
+          "seedling",
+          "shark-tooth",
+          "sheet-of-construction-paper",
+          "sight-word",
+          "sketchbook",
+          "smooth-rock",
+          "snap-cube",
+          "snowflake",
+          "spelling-word",
+          "squishy-toy",
+          "stacking-cup",
+          "stick",
+          "stick-of-sidewalk-chalk",
+          "sticky-note",
+          "stuffed-animal",
+          "sunflower",
+          "tadpole",
+          "tally-mark",
+          "toy-dinosaur",
+          "trading-pin",
+          "train-track-piece",
+          "treasure-map",
+          "tub-of-clay",
+          "tub-of-slime",
+          "tube-of-glitter-glue",
+          "video-game",
+          "vote",
+          "water-balloon",
+          "watering-can"
+        ],
+        "constraints": [
+          "(object.id == 'leaf' || object.id == 'acorn' || object.id == 'maple-seed' || object.id == 'dandelion' || object.id == 'marble' || object.id == 'bead' || object.id == 'sticker' || object.id == 'trading-card' || object.id == 'building-brick' || object.id == 'crayon' || object.id == 'toy-car' || object.id == 'loom-band' || object.id == 'button' || object.id == 'pom-pom' || object.id == 'magnetic-tile' || object.id == 'wooden-block')"
+        ]
+      },
+      "setting": {
+        "kind": "setting",
+        "of": "object",
+        "words": [
+          "park",
+          "yard",
+          "backyard",
+          "playground",
+          "sidewalk",
+          "field",
+          "beach",
+          "garden",
+          "woods",
+          "lake",
+          "creek",
+          "jar",
+          "bin",
+          "binder",
+          "bag",
+          "case",
+          "tray",
+          "box"
+        ],
+        "fallback": [
+          "in a big box",
+          "in a shoebox"
+        ]
+      },
+      "spread": {
+        "kind": "int",
+        "min": 0,
+        "max": 999
+      },
+      "diff": {
+        "kind": "int",
+        "min": 5,
+        "max": 29
+      },
+      "cap": {
+        "kind": "expr",
+        "expr": "object.count_one_kid ? sum(drop(object.count_one_kid, 1)) : 0",
+        "format": "int"
+      },
+      "big": {
+        "kind": "expr",
+        "expr": "30 + floor(spread * (min(cap, 99) - 29) / 1000)",
+        "format": "int"
+      },
+      "small": {
+        "kind": "expr",
+        "expr": "big - diff",
+        "format": "int"
+      },
+      "floorTenBig": {
+        "kind": "expr",
+        "expr": "floorTen(big)",
+        "format": "int"
+      },
+      "onesBig": {
+        "kind": "expr",
+        "expr": "ones(big)",
+        "format": "int"
+      },
+      "onesDiff": {
+        "kind": "expr",
+        "expr": "ones(diff)",
+        "format": "int"
+      },
+      "backStep": {
+        "kind": "expr",
+        "expr": "ones(big) > 0 && ones(big) < ones(diff) ? 'Count back to ' + floorTen(big) + ' first. Then count back the rest of the ' + diff + '.' : ones(diff) == 0 ? 'Count back ' + diff + ' by tens.' : diff >= 10 ? 'Count back ' + tens(diff) + ' by tens. Then count back ' + ones(diff) + ' more.' : 'Count back ' + diff + ' by ones.'",
+        "format": "text"
+      },
+      "solWork": {
+        "kind": "expr",
+        "expr": "ones(big) > 0 && ones(big) < ones(diff) ? big + ' − ' + ones(big) + ' = ' + floorTen(big) + '. ' + diff + ' is ' + ones(big) + ' and ' + (diff - ones(big)) + ', so ' + floorTen(big) + ' − ' + (diff - ones(big)) + ' = ' + (big - diff) + '.' : diff >= 10 && ones(diff) > 0 ? big + ' − ' + tens(diff) + ' = ' + (big - tens(diff)) + '. Then ' + (big - tens(diff)) + ' − ' + ones(diff) + ' = ' + (big - diff) + '.' : big + ' − ' + diff + ' = ' + (big - diff) + '.'",
+        "format": "text"
+      },
+      "outdoor": {
+        "kind": "expr",
+        "expr": "object.category == 'collecting-nature' ? 1 : 0",
+        "format": "int"
+      },
+      "vs": {
+        "kind": "expr",
+        "expr": "outdoor == 1 ? 'finds' : 'has'",
+        "format": "text"
+      },
+      "vb": {
+        "kind": "expr",
+        "expr": "outdoor == 1 ? 'find' : 'have'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "cap >= 31",
+      "big - diff >= 11",
+      "big - diff != diff",
+      "big - diff != tens(diff)",
+      "ones(big) >= ones(diff) || tens(big) - tens(diff) + ones(diff) - ones(big) != big"
+    ],
+    "operation": {
+      "a": "big",
+      "b": "diff",
+      "op": "-"
+    },
+    "answer": {
+      "expr": "big - diff",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "big + diff",
+        "mistake": "addedInsteadOfSubtracted"
+      },
+      {
+        "expr": "big",
+        "mistake": "answeredWithAGiven"
+      },
+      {
+        "expr": "tens(big) - tens(diff) + ones(diff) - ones(big)",
+        "mistake": "smallerFromLarger",
+        "when": "ones(big) < ones(diff)"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many {object_plural} {name2} {vs}. {name2} {vs} fewer than {name1}, so start at {big} and count back {diff}.",
+      "steps": [
+        "Start at {big}, the number {name1} {vs}.",
+        "{backStep}",
+        "The number you land on is how many {object_plural} {name2} {vs}."
+      ],
+      "picture": {
+        "kind": "numberLine",
+        "min": "max(0, floorTen(big) - 30)",
+        "max": "nextTen(big)",
+        "mark": "big",
+        "step": 10
+      },
+      "example": "auto",
+      "feedback": {
+        "addedInsteadOfSubtracted": "That adds {diff} more. {name2} {vs} fewer than {name1}, so count back {diff} from {big}.",
+        "answeredWithAGiven": "That is how many {object_plural} {name1} {vs}. {name2} {vs} {diff} fewer than that.",
+        "smallerFromLarger": "Look at the ones. It is {onesBig} take away {onesDiff}, not {onesDiff} take away {onesBig}. Trade one ten for ten ones first."
+      },
+      "solution": {
+        "steps": [
+          "{solWork}",
+          "{name2} {vs} {small} {object_plural}."
+        ],
+        "answer": "big - diff"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.OA.A.1",
+        "CCSS Table 1 (OA Progressions K-5)",
+        "TEKS 2.4C, 2.7C",
+        "FL B.E.S.T. MA.2.AR.1.1",
+        "VA SOL 2023 2.CE.1c",
+        "GA K-12 2021 2.NR.2.3"
+      ]
+    }
+  },
+  {
     "id": "wp-g2-compare-bigger-fewer",
     "blueprintId": "wp-g2-compare-bigger-fewer",
     "modeId": "wordProblems",
@@ -2222,6 +2909,354 @@
         "FL B.E.S.T. MA.2.AR.1.1",
         "VA SOL 2023 2.CE.1c",
         "GA K-12 2021 2.NR.2.3, 2.MDR.5.5"
+      ]
+    }
+  },
+  {
+    "id": "wp-g2-compare-difference-fewer-2",
+    "blueprintId": "wp-g2-compare-difference-fewer",
+    "modeId": "wordProblems",
+    "subskill": "compareStories",
+    "family": "application",
+    "structureType": "compareDifferenceFewer",
+    "grade": "2",
+    "standards": {
+      "ccss": [
+        "2.OA.A.1"
+      ],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [
+        "MA.2.AR.1.1"
+      ],
+      "va": [
+        "2.CE.1c"
+      ],
+      "ga": [
+        "2.NR.2.3"
+      ]
+    },
+    "difficulty": "moderate",
+    "levelRange": [
+      4,
+      6
+    ],
+    "format": "number",
+    "widget": null,
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name1} has {big} {object_plural}. {name2} has {small} {object_plural}. How many fewer {object_plural} does {name2} have than {name1}?"
+    },
+    "slots": {
+      "name1": {
+        "kind": "name"
+      },
+      "name2": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "addition",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "school-art"
+        ]
+      },
+      "small": {
+        "kind": "int",
+        "min": 11,
+        "max": 94
+      },
+      "diff": {
+        "kind": "int",
+        "min": 5,
+        "max": 49
+      },
+      "cap": {
+        "kind": "expr",
+        "expr": "object.count_one_kid ? sum(drop(object.count_one_kid, 1)) : 0",
+        "format": "int"
+      },
+      "big": {
+        "kind": "expr",
+        "expr": "small + diff",
+        "format": "int"
+      },
+      "tensBig": {
+        "kind": "expr",
+        "expr": "tens(small + diff)",
+        "format": "int"
+      },
+      "nextTenS": {
+        "kind": "expr",
+        "expr": "nextTen(small)",
+        "format": "int"
+      },
+      "hop1": {
+        "kind": "expr",
+        "expr": "nextTen(small) - small",
+        "format": "int"
+      },
+      "hop2": {
+        "kind": "expr",
+        "expr": "small + diff - nextTen(small)",
+        "format": "int"
+      },
+      "onesBig": {
+        "kind": "expr",
+        "expr": "ones(small + diff)",
+        "format": "int"
+      },
+      "onesSmall": {
+        "kind": "expr",
+        "expr": "ones(small)",
+        "format": "int"
+      },
+      "howHop": {
+        "kind": "expr",
+        "expr": "small + diff - nextTen(small) >= 10 ? (ones(small + diff) > 0 ? ', tens first and then ones' : ' by tens') : ' by ones'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "(object.id == 'marble' || object.id == 'bead' || object.id == 'button' || object.id == 'pom-pom' || object.id == 'loom-band' || object.id == 'crayon' || object.id == 'building-brick' || object.id == 'toy-car' || object.id == 'magnetic-tile' || object.id == 'trading-card' || object.id == 'sticker' || object.id == 'snap-cube' || object.id == 'wooden-block' || object.id == 'train-track-piece')",
+      "small + diff <= 99",
+      "small + diff <= cap",
+      "ones(small) > 0",
+      "nextTen(small) < small + diff",
+      "diff != small",
+      "diff != nextTen(small)",
+      "ones(small + diff) >= ones(small) || (diff != ones(small) && diff != ones(small + diff) && diff + 2 * (ones(small) - ones(small + diff)) != small)",
+      "ones(small + diff) < ones(small) || diff + 10 != small"
+    ],
+    "operation": {
+      "a": "big",
+      "b": "small",
+      "op": "-"
+    },
+    "answer": {
+      "expr": "big - small",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "big + small",
+        "mistake": "addedInsteadOfSubtracted"
+      },
+      {
+        "expr": "small",
+        "mistake": "answeredWithAGiven"
+      },
+      {
+        "expr": "tens(big) - tens(small) + ones(small) - ones(big)",
+        "mistake": "smallerFromLarger",
+        "when": "ones(big) < ones(small)",
+        "otherwise": {
+          "expr": "big - small + 10",
+          "mistake": "offByTen"
+        }
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many fewer {object_plural} {name2} has than {name1}. Find how far apart {small} and {big} are.",
+      "steps": [
+        "Think: {small} plus what number makes {big}.",
+        "Count up from {small} to {nextTenS}.",
+        "Then count up from {nextTenS} to {big}{howHop}. Add up the jumps."
+      ],
+      "picture": {
+        "kind": "numberLine",
+        "min": "floorTen(small)",
+        "max": "nextTen(big)",
+        "mark": "small",
+        "step": 10
+      },
+      "example": "auto",
+      "feedback": {
+        "addedInsteadOfSubtracted": "That adds the two amounts together. \"How many fewer\" asks how far apart {small} and {big} are, so count up from {small} to {big}.",
+        "answeredWithAGiven": "That is how many {object_plural} {name2} has. The question asks how many fewer {name2} has than {name1}.",
+        "offByTen": "That is one ten too many. Count up from {small} to {big} again and check how many tens you jump.",
+        "smallerFromLarger": "Look at the ones. It is {onesBig} take away {onesSmall}, not {onesSmall} take away {onesBig}. Trade one ten for ten ones first, or count up from {small} to {big}."
+      },
+      "solution": {
+        "steps": [
+          "From {small} up to {nextTenS} is {hop1}.",
+          "From {nextTenS} up to {big} is {hop2}.",
+          "{hop1} + {hop2} = {diff}. {name2} has {diff} fewer {object_plural} than {name1}."
+        ],
+        "answer": "big - small"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.OA.A.1",
+        "CCSS Table 1 (OA Progressions K-5)",
+        "TEKS 2.4C, 2.7C",
+        "FL B.E.S.T. MA.2.AR.1.1",
+        "VA SOL 2023 2.CE.1c",
+        "GA K-12 2021 2.NR.2.3"
+      ]
+    }
+  },
+  {
+    "id": "wp-g2-tape-compare-bigger-fewer-2",
+    "blueprintId": "wp-g2-tape-compare-bigger-fewer",
+    "modeId": "wordProblems",
+    "subskill": "compareStories",
+    "family": "application",
+    "structureType": "compareBiggerFewer",
+    "grade": "2",
+    "standards": {
+      "ccss": [
+        "2.OA.A.1"
+      ],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [
+        "MA.2.AR.1.1"
+      ],
+      "va": [
+        "2.CE.1c"
+      ],
+      "ga": [
+        "2.NR.2.3"
+      ]
+    },
+    "difficulty": "hard",
+    "levelRange": [
+      4,
+      6
+    ],
+    "format": "number",
+    "widget": "barModel",
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name1} has {small} {object_plural}. {name1} has {diff} fewer {object_plural} than {name2}. How many {object_plural} does {name2} have?"
+    },
+    "slots": {
+      "name1": {
+        "kind": "name"
+      },
+      "name2": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "addition",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "school-art"
+        ]
+      },
+      "small": {
+        "kind": "int",
+        "min": 11,
+        "max": 69
+      },
+      "diff": {
+        "kind": "int",
+        "min": 5,
+        "max": 29
+      },
+      "cap": {
+        "kind": "expr",
+        "expr": "object.count_one_kid ? sum(drop(object.count_one_kid, 1)) : 0",
+        "format": "int"
+      },
+      "big": {
+        "kind": "expr",
+        "expr": "small + diff",
+        "format": "int"
+      },
+      "countStep": {
+        "kind": "expr",
+        "expr": "ones(small) + ones(diff) >= 10 ? 'Hop ' + (nextTen(small) - small) + ' to get to ' + nextTen(small) + '. Then count on the rest of the ' + diff + '.' : ones(diff) == 0 ? 'Count on ' + diff + ' by tens.' : diff >= 10 ? 'Count on ' + tens(diff) + ' by tens. Then count on ' + ones(diff) + ' more.' : 'Count on ' + diff + ' by ones.'",
+        "format": "text"
+      },
+      "solWork": {
+        "kind": "expr",
+        "expr": "ones(small) + ones(diff) >= 10 ? small + ' + ' + (nextTen(small) - small) + ' = ' + nextTen(small) + '. ' + diff + ' is ' + (nextTen(small) - small) + ' and ' + (small + diff - nextTen(small)) + ', so ' + nextTen(small) + ' + ' + (small + diff - nextTen(small)) + ' = ' + (small + diff) + '.' : diff >= 10 && ones(diff) > 0 ? small + ' + ' + tens(diff) + ' = ' + (small + tens(diff)) + '. Then ' + (small + tens(diff)) + ' + ' + ones(diff) + ' = ' + (small + diff) + '.' : small + ' + ' + diff + ' = ' + (small + diff) + '.'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "(object.id == 'marble' || object.id == 'bead' || object.id == 'button' || object.id == 'pom-pom' || object.id == 'loom-band' || object.id == 'crayon' || object.id == 'building-brick' || object.id == 'toy-car' || object.id == 'magnetic-tile' || object.id == 'trading-card' || object.id == 'sticker' || object.id == 'snap-cube' || object.id == 'wooden-block' || object.id == 'train-track-piece')",
+      "small + diff <= cap",
+      "small + diff != nextTen(small)",
+      "small > diff",
+      "ones(small) + ones(diff) >= 10 || (ones(small) > 0 && ones(diff) > 0)"
+    ],
+    "operation": {
+      "a": "small",
+      "b": "diff",
+      "op": "+"
+    },
+    "display": {
+      "type": "'barCompare'",
+      "a": "small",
+      "diff": "diff",
+      "labelA": "name1",
+      "labelB": "name2"
+    },
+    "answer": {
+      "expr": "small + diff",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "small - diff",
+        "mistake": "keywordTrap"
+      },
+      {
+        "expr": "small",
+        "mistake": "answeredWithAGiven"
+      },
+      {
+        "expr": "small + diff - 10",
+        "mistake": "forgotToCarry",
+        "when": "ones(small) + ones(diff) >= 10"
+      }
+    ],
+    "hint": {
+      "nudge": "{name2}'s bar is the same {small} as {name1}'s bar and {diff} more.",
+      "steps": [
+        "{name1} has fewer, so {name2} has more. {name2}'s bar is the longer bar.",
+        "{name2}'s bar is {small} and {diff} put together. Add {small} + {diff}.",
+        "Start at {small}. {countStep}"
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "keywordTrap": "The word \"fewer\" tells who has fewer: {name1}. {name2}'s bar is longer, so add {diff} to {small}.",
+        "answeredWithAGiven": "That is {name1}'s bar, the {object_plural} {name1} has. {name2}'s bar is {diff} more than that.",
+        "forgotToCarry": "The ones add up to ten or more. Make a new ten and add it to the tens before you finish."
+      },
+      "solution": {
+        "steps": [
+          "{solWork}",
+          "{name2}'s bar is {big}. {name2} has {big} {object_plural}."
+        ],
+        "answer": "small + diff"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.OA.A.1",
+        "CCSS Table 1 (OA Progressions K-5)",
+        "TEKS 2.4C, 2.7C",
+        "FL B.E.S.T. MA.2.AR.1.1",
+        "VA SOL 2023 2.CE.1c",
+        "GA K-12 2021 2.NR.2.3"
       ]
     }
   }

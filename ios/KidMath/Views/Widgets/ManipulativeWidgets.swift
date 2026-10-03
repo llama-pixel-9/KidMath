@@ -264,10 +264,22 @@ struct FractionSetWidget: View {
 
 // MARK: - Place-value discs (columns of 1000/100/10/1 discs; type the number)
 
+/// Two modes, like the coin tray (mirror of PlaceValueDiscs.jsx):
+///
+///   read  — (no `display.mode`, or "read") the mat is a picture; the child
+///           reads it and types the number on the digit pad. The v1 bank.
+///   build — (`display.mode == "build"`) the tappable mat in DiscMatBuild.swift:
+///           the child adds, takes away and trades discs, then Checks the
+///           number the mat shows.
 struct PlaceValueDiscsWidget: View {
     @Environment(\.theme) private var theme
     let display: [String: Any]
     let disabled: Bool
+    /// Session feedback (true correct, false wrong, nil answering). Only the
+    /// build mat reads it, for its "The mat shows 921." line and ring.
+    var feedback: Bool? = nil
+    /// The app's calm mode — with Reduce Motion it stills the build mat.
+    var calmMode = false
     let submit: (Any) -> Void
 
     @State private var entry = ""
@@ -279,7 +291,26 @@ struct PlaceValueDiscsWidget: View {
         1: Theme.sunLight,
     ]
 
+    private var isBuild: Bool { (display["mode"] as? String) == "build" }
+
+    @ViewBuilder
     var body: some View {
+        if isBuild {
+            DiscMatBuildView(
+                cols: display["cols"] as? [[String: Any]] ?? [],
+                disabled: disabled,
+                feedback: feedback,
+                calmMode: calmMode,
+                submit: submit
+            )
+        } else {
+            readMat
+        }
+    }
+
+    /// Read mode, unchanged: the mat as a picture plus the digit pad.
+    @ViewBuilder
+    private var readMat: some View {
         let cols = (display["cols"] as? [[String: Any]] ?? []).map { col in
             (place: (col["place"] as? NSNumber)?.intValue ?? 1,
              count: (col["count"] as? NSNumber)?.intValue ?? 0)
@@ -349,32 +380,40 @@ struct BarModelWidget: View {
 
     private var unknownText: String { entry.isEmpty ? "?" : entry }
 
+    // A story's bars carry its people's names, the way textbooks label a
+    // comparison (Sai, 2026-10-03); bare drills keep A and B. Mirrors BarModel.jsx.
+    private var labelA: String? { (display["labelA"] as? String).flatMap { $0.isEmpty ? nil : $0 } }
+    private var labelB: String? { (display["labelB"] as? String).flatMap { $0.isEmpty ? nil : $0 } }
+    private var named: Bool { labelA != nil || labelB != nil }
+    private var labelWidth: CGFloat { named ? 48 : 22 }
+
     private var compareDiagram: some View {
         let a = (display["a"] as? NSNumber)?.doubleValue ?? 1
         let diff = (display["diff"] as? NSNumber)?.doubleValue ?? 0
         let total = max(a + diff, 1)
+        let reserved = labelWidth + 8
         return VStack(spacing: 8) {
             GeometryReader { proxy in
                 HStack(spacing: 8) {
-                    rowLabel("A")
-                    segment("\(Int(a))", color: skyBar, width: (proxy.size.width - 30) * a / total)
+                    rowLabel(labelA ?? "A")
+                    segment("\(Int(a))", color: skyBar, width: (proxy.size.width - reserved) * a / total)
                     Spacer(minLength: 0)
                 }
             }
             .frame(height: 48)
             GeometryReader { proxy in
                 HStack(spacing: 8) {
-                    rowLabel("B")
+                    rowLabel(labelB ?? "B")
                     HStack(spacing: 0) {
-                        segment("\(Int(a))", color: skyBar, width: (proxy.size.width - 30) * a / total)
-                        segment("\(Int(diff))", color: amberBar, width: (proxy.size.width - 30) * diff / total)
+                        segment("\(Int(a))", color: skyBar, width: (proxy.size.width - reserved) * a / total)
+                        segment("\(Int(diff))", color: amberBar, width: (proxy.size.width - reserved) * diff / total)
                     }
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                     Spacer(minLength: 0)
                 }
             }
             .frame(height: 48)
-            Text("B = \(unknownText)")
+            Text(named ? "\(labelB ?? "B"): \(unknownText)" : "B = \(unknownText)")
                 .font(.footnote.weight(.bold))
                 .foregroundStyle(theme.textSecondary)
         }
@@ -402,7 +441,9 @@ struct BarModelWidget: View {
         Text(text)
             .font(.footnote.weight(.bold))
             .foregroundStyle(theme.textSecondary)
-            .frame(width: 22)
+            .lineLimit(1)
+            .minimumScaleFactor(0.7)
+            .frame(width: labelWidth, alignment: named ? .trailing : .center)
     }
 
     private func segment(_ label: String, color: Color, width: CGFloat) -> some View {

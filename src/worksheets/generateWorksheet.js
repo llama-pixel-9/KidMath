@@ -37,6 +37,19 @@ export function paperFigureKey(q) {
   return mode === "areaPerimeter" && areaFigureSpec(q) ? "areaFigure" : null;
 }
 
+/**
+ * The tappable disc mat (placeValueDiscs build mode) on paper: its start mat
+ * prints as the question's disc mat — the same figure, paper design and
+ * figure layout as any disc-mat item — and the kid writes the number on the
+ * answer line. Every other question comes back as it was.
+ */
+export function paperBuildMat(q) {
+  const d = q?.display;
+  if (q?.answerType !== "placeValueDiscs" || d?.mode !== "build" || d.figure) return q;
+  if (!Array.isArray(d.cols) || !d.cols.length) return q;
+  return { ...q, display: { ...d, figure: "discMat", discMat: { cols: d.cols } } };
+}
+
 // "Looking at this chart…" with no chart on the page cannot be answered with a
 // pencil: on screen the answer widget drew it; paper has no widget.
 const POINTS_AT_A_PICTURE = /\bthis (clock|chart|graph|mat|grid|picture|pictograph|tally)\b|\b(shown|pictured)\b/i;
@@ -54,7 +67,7 @@ function printableFromBank(item, skill, { story = false } = {}) {
   // finalizeQuestion keeps the generator scaffold's family; the bank row's is
   // the true one.
   q.metadata.itemFamily = item.itemFamily;
-  q = printableWording({ ...q, op: asciiOp(q.op) });
+  q = paperBuildMat(printableWording({ ...q, op: asciiOp(q.op) }));
   if (!isPrintablePrompt(q)) return null;
   const drawn = Boolean(paperFigureKey(q));
   // One sheet, one kind of practice item: a page budget cannot hold for a mix

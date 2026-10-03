@@ -201,14 +201,23 @@ function fmtWhen(value) {
  */
 function VerdictCard({ name, verdict }) {
   const label = { blindSolve: "Blind solve", kidSafe: "Kid-safe", schoolPrintable: "School-printable" }[name] || name;
-  const ok = verdict?.ok ?? verdict?.pass ?? (typeof verdict?.verdict === "string" ? /^(pass|ok|safe)/i.test(verdict.verdict) : null);
+  // A stored AI review that left notes ("3 reviewer notes") is advice, not a
+  // failed check: it showed red as "fail" until 2026-10-03, which read as a
+  // failed gate on models whose notes had already been fixed. Only a verdict
+  // that says it failed is red; a model that fails a real check can't be
+  // approved anyway (canApprove).
+  const text = typeof verdict?.verdict === "string" ? verdict.verdict : null;
+  const notes = text != null && /\bnotes?\b/i.test(text);
+  const ok =
+    verdict?.ok ?? verdict?.pass ?? (text == null || notes ? null : /^(pass|ok|safe|reviewed)/i.test(text) ? true : /^(fail|unsafe|block)/i.test(text) ? false : null);
   const reason = verdict?.reason || verdict?.note || verdict?.message || null;
   const when = verdict?.checked_at || verdict?.checkedAt || null;
-  const tone = ok === true ? "bg-emerald-50 text-emerald-800" : ok === false ? "bg-red-50 text-red-800" : "bg-slate-50 text-slate-700";
+  const tone =
+    ok === true ? "bg-emerald-50 text-emerald-800" : ok === false ? "bg-red-50 text-red-800" : notes ? "bg-amber-50 text-amber-900" : "bg-slate-50 text-slate-700";
   return (
     <div className={`rounded-xl p-3 text-xs ${tone}`}>
       <p className="font-bold">
-        {label}: {ok === true ? "pass" : ok === false ? "fail" : verdict?.verdict || "recorded"}
+        {label}: {ok === true ? "pass" : ok === false ? "fail" : text || "recorded"}
         {when && <span className="ml-2 font-normal opacity-70">{fmtWhen(when)}</span>}
       </p>
       {reason && <p className="mt-1">{reason}</p>}
@@ -581,7 +590,7 @@ function ModelReviewInner() {
   // that an effect keeps current, and is registered once.
   const handlers = useRef({});
   useEffect(() => {
-    handlers.current = { decide, toggleEdit, rollAll, toggleReject, saveEdit };
+    handlers.current = { decide, toggleEdit, rollAll, toggleReject, saveEdit, canApprove };
   });
   useEffect(() => {
     function onKey(e) {
@@ -593,7 +602,8 @@ function ModelReviewInner() {
       switch (e.key) {
         case "a":
         case "A":
-          h.decide("approved");
+          // Same rule as the Approve button: a failing check or fill error blocks it.
+          if (h.canApprove) h.decide("approved");
           break;
         case "e":
         case "E":

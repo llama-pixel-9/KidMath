@@ -14,10 +14,11 @@ Code fills each model 40 times with fixed seeds. These counts are the same on ev
 
 | Fails the model | Note for Sai (fails nothing) |
 |---|---|
-| A story model has 4 or fewer different things to count in 40 questions | 3 or fewer different answers in 40 (coin trades and estimates have few answers by nature) |
-| The answer is the same in all 40 | A question repeats an earlier one word for word (choice order aside) |
+| A story model has 4 or fewer different things to count in 40 questions | 3 or fewer different number answers in 40 (coin trades and estimates have few answers by nature) |
+| The answer is the same in all 40 | A fixed choice set (coins, yes/no) where some choice is never the key in 40 |
+| | One of the 10 questions the readers see repeats an earlier one word for word (choice order aside) |
 | Test-engine words: "compute", "determine", "evaluate", "the value of the expression", "solve for" … | A sentence longer than 20 words (Grades K-2) or 25 words |
-| A story's picture names its parts with letters (Bar A, Mat B); a bare drill only gets a note | A bare drill's lettered mats |
+| A story's picture or text names its parts with a capital letter (Bar A, Mat B); a bare drill only gets a note | A bare drill's lettered mats |
 | A fill fails to build | |
 
 The "4 or fewer things" line was set from Sai's own calls. Every model rejected or fixed for sameness had 4 or fewer; every model approved as varied had 5 or more. It fits that set by construction, so check it again on the next skill.
@@ -46,9 +47,9 @@ A "no" must quote the question number and say how to fix it. A dislike that can'
 |---|---|
 | 4 or more of 6 | The line fails. Fix the model before loading it. |
 | 2 or 3 | Load it. Sai sees the quotes on the model's review card. |
-| 1 | Dropped as one reader's taste. |
+| 1 | Dropped as one reader's taste. It is in neither report. |
 
-The verdict is **fail** on any counted flag or failed line, **review** on any 2-3 line, and **pass** otherwise.
+The verdict is **fail** on any counted flag or failed line, **review** on any 2-3 line, and **pass** otherwise. A model is **incomplete** when fewer than 6 replies came back even after the CLI asks again for the missing ones (a reader can leave a model out of its answer, or a call can fail). A fail stands on the votes it has; anything else needs all 6. Rerun incomplete models; nothing is stored for them.
 
 ## Calibration (2026-10-03)
 
@@ -81,7 +82,9 @@ npm run models:textbook -- <group>.json --sql <group>.textbook.sql   # counts + 
 npm run models:textbook -- <group>.json --measures-only              # counts only; no model calls
 ```
 
-- **Reports.** It writes `textbook.report.md` (what to fix, then what Sai will see) and `textbook.report.json` next to the input, or under `--out`. It exits 1 when any model fails.
-- **`--sql`.** Writes each pass or review verdict into `item_models.spec.checks.textbook`, for drafts only. The review screen shows it as the **Textbook test** card: green on pass, amber with the quotes on review. Hash checks on loaded specs compare `spec - 'checks'`.
+- **Reports.** It writes `<group>.textbook.md` (what to fix, what is incomplete, then what Sai will see, with up to three quotes per line and the readers' variety notes) and `<group>.textbook.json` (every vote), named after the first input, next to it or under `--out`. It exits 1 when any model fails or is incomplete.
+- **`--sql`.** Writes each verdict except incomplete into `item_models.spec.checks.textbook`, for drafts only. The review screen shows it as the **Textbook test** card: green on pass, amber with the quotes on review, red on fail. Fails are written too, so a rerun on a loaded draft replaces its old card. Hash checks on loaded specs compare `spec - 'checks'`.
+- **`--measures-only`** never takes `--sql`: a counts-only pass is not a textbook-test pass.
+- **`--runs`** stays at 2, the 6 votes the rule is set for. Only `--calibrate` takes more, to compare independent panels; the verdict is panel 1's.
 - **Readers.** They see each question as the kid does (`scripts/itemGen/qc/kidView.js`). The session shuffles choices, so choice order varies between runs. The words, numbers and pictures don't.
 - **Cost.** 3 roles × 2 runs × one call per 4 models: about 1.5 reader calls per model.

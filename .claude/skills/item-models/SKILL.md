@@ -240,8 +240,10 @@ lines are the exceptions. Leave them out of every writer excerpt.
      - **review** (2 or 3 readers on a line): load it. The quotes go to Sai
        beside the model.
      - **pass**: load it.
-     - Read `<group>.textbook.md` as well. Variety notes, and anything a
-       reader saw that you agree with, are fixes too.
+     - **incomplete** (a reader reply never came back): rerun those models.
+     - Read `<group>.textbook.md` as well (written next to the input). The
+       counted notes, the readers' variety notes, and any quote you agree
+       with are fixes too.
      - Made-up prices are fine and never fail (Sai, 2026-10-03). A place
        that doesn't sell or do the thing still fails.
      - `--measures-only` runs the counting layer alone, with no model calls.
@@ -264,8 +266,10 @@ lines are the exceptions. Leave them out of every writer excerpt.
      `select public.sync_item_model_standards(null);`.
    - Then run `<group>.textbook.sql` (from the textbook test). It writes each
      draft's verdict to `spec.checks.textbook`, which the review screen shows
-     as a card: green on pass, amber with the readers' quotes on review. It
-     only touches drafts. Hash checks on loaded specs compare
+     as a card: green on pass, amber with the readers' quotes on review, red
+     on fail (a fail is written too, so rerunning the test on a loaded draft
+     replaces its old card). It only touches drafts, and never comes from a
+     `--measures-only` run. Hash checks on loaded specs compare
      `spec - 'checks'`.
    - Sai reviews at `/admin/models`.
    - Commit the loaded files under `src/itemModels/` in a PR, branched from a

@@ -2,7 +2,10 @@ import { describe, it, expect } from "vitest";
 import {
   measureModel,
   scoreModel,
+  scorePanel,
   checkEntry,
+  checkSql,
+  hasLetterLabel,
   systemFor,
   modelBlock,
   readsOf,
@@ -14,7 +17,9 @@ import {
   REVIEW_VOTES,
   DEFAULT_RUNS,
 } from "../../scripts/itemModels/textbookTest.js";
+import { spawnSync } from "node:child_process";
 import G2_WP_COMPARE from "../itemModels/g2Addsub/wpCompare.json";
+import G2_MONEY from "../itemModels/pilot/grade2Money.json";
 
 /**
  * The textbook test (Sai's bar, 2026-10-03; design in
@@ -47,6 +52,20 @@ describe("the counting layer", () => {
     expect(before.flags).toContain("a picture part is named with a letter (bar A, mat B) instead of a name from the problem");
     const after = measureModel(model("wp-g2-tape-compare-bigger-fewer-2"));
     expect(after.flags.some((f) => /named with a letter/.test(f))).toBe(false);
+  });
+
+  it("reads a capital letter after a picture word as a label, and story words as words", () => {
+    expect(hasLetterLabel("Bar A shows Mia's stickers.")).toBe(true);
+    expect(hasLetterLabel("Put 3 tens on Mat B.")).toBe(true);
+    expect(hasLetterLabel("Ana wants to set a goal of 40 laps.")).toBe(false);
+    expect(hasLetterLabel("Leo can tape a note to the box a friend made.")).toBe(false);
+  });
+
+  it("notes a coin choice that is never the key", () => {
+    const money = Array.isArray(G2_MONEY) ? G2_MONEY : G2_MONEY.models || Object.values(G2_MONEY);
+    const m = measureModel(money.find((x) => x.id === "money-g2-equivWhichCoinWorth-easy"));
+    expect(m.flags).toEqual([]);
+    expect(m.notes.some((n) => /^the key is only ever .+ in 40 questions$/.test(n))).toBe(true);
   });
 
   it("gives the same answer every run", () => {
@@ -101,6 +120,18 @@ describe("the vote rule", () => {
   it("fails on a counted flag whatever the readers say", () => {
     expect(scoreModel({ flags: ["only 1 different thing to count in 40 questions"], notes: [] }, sixReplies("real", 0)).verdict).toBe("fail");
   });
+
+  it("calls a model incomplete when a reply is missing, unless it already fails", () => {
+    expect(scorePanel(clean, sixReplies("real", 0)).verdict).toBe("pass");
+    const five = scorePanel(clean, sixReplies("real", 0).slice(1));
+    expect(five.verdict).toBe("incomplete");
+    expect(five.notes).toContain("only 5 of 6 reader replies came back");
+    expect(scorePanel(clean, []).verdict).toBe("incomplete");
+    // Two notes out of five is still not a full read.
+    expect(scorePanel(clean, sixReplies("real", 2).slice(0, 5)).verdict).toBe("incomplete");
+    // Four no votes fail the line whatever the sixth reader would say.
+    expect(scorePanel(clean, sixReplies("real", 4).slice(0, 5)).verdict).toBe("fail");
+  });
 });
 
 describe("what the readers are asked", () => {
@@ -140,5 +171,31 @@ describe("the card on the review screen", () => {
 
     const fail = checkEntry(scoreModel({ flags: ["the answer is the same in all 40 questions"], notes: [] }, []));
     expect(fail).toMatchObject({ verdict: "fail", ok: false, reason: "Counted: the answer is the same in all 40 questions." });
+  });
+
+  it("is stored on drafts only, next to the model's other checks", () => {
+    const lit = (x) => `'${String(x).replaceAll("'", "''")}'`;
+    const sql = checkSql("wp-g2-x", { verdict: "pass", ok: true }, lit);
+    expect(sql).toMatch(/^update public\.item_models set spec = jsonb_set\(spec, '\{checks\}', /);
+    // A checks value that is not an object (null, an array) is replaced, not appended to.
+    expect(sql).toContain("case when jsonb_typeof(spec->'checks') = 'object' then spec->'checks' else '{}'::jsonb end || jsonb_build_object('textbook', '{\"verdict\":\"pass\",\"ok\":true}'::jsonb)");
+    expect(sql).toMatch(/ where id = 'wp-g2-x' and review_status = 'draft';$/);
+  });
+});
+
+describe("the command line", () => {
+  const cli = (...args) =>
+    spawnSync(process.execPath, ["--import", "./scripts/lib/registerResolve.js", "scripts/itemModels/textbookTest.mjs", ...args], { encoding: "utf8" });
+
+  it("refuses to store a counts-only run as a pass", () => {
+    const r = cli("models.json", "--measures-only", "--sql", "out.sql");
+    expect(r.status).toBe(2);
+    expect(r.stderr).toMatch(/--sql needs the readers/);
+  });
+
+  it("refuses run, batch and concurrency settings the vote rule can't use", () => {
+    expect(cli("models.json", "--runs", "4").status).toBe(2);
+    expect(cli("models.json", "--batch", "0").status).toBe(2);
+    expect(cli("models.json", "--concurrency", "x").status).toBe(2);
   });
 });

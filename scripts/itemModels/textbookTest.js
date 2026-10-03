@@ -43,8 +43,12 @@ const STIFF = [
   /\bcompute\b/i, /\bdetermine\b/i, /\bevaluate\b/i, /\bcalculate the value\b/i, /\bthe value of the expression\b/i,
   /\bthe following\b/i, /\buse (compensation|the strategy)\b/i, /\bsolve for\b/i, /\bunknown quantity\b/i,
 ];
-const LETTER_LABEL = /\b(bar|mat|box|set|group|pile|line|strip|tape) [A-D]\b/i;
+// The letter is a capital, so story text like "set a goal" is not a label.
+const LETTER_LABEL = /\b(?:[Bb]ar|[Mm]at|[Bb]ox|[Ss]et|[Gg]roup|[Pp]ile|[Ll]ine|[Ss]trip|[Tt]ape) [A-D]\b/;
+/** "Bar A", "Mat B": a picture part named with a letter. */
+export const hasLetterLabel = (text) => LETTER_LABEL.test(String(text || ""));
 const words = (s) => s.match(/[A-Za-z']+/g) || [];
+const orList = (xs) => (xs.length < 2 ? xs.join("") : `${xs.slice(0, -1).join(", ")} or ${xs[xs.length - 1]}`);
 
 /** What the kid sees for one filled item, plus the key and the fill's tags. */
 export function viewOf(item) {
@@ -84,8 +88,14 @@ export function measureModel(model, { seeds = MEASURE_SEEDS } = {}) {
   const answers = fills.map((f) => JSON.stringify(f.answer));
   const distinctAnswers = new Set(answers).size;
   const numeric = fills.length > 0 && fills.every((f) => typeof f.answer === "number");
+  // A choice set that never changes (coins, yes/no) where some choice is
+  // never the key: the kid can learn which ones to skip.
+  const choiceSet = new Set(fills.flatMap((f) => (f.choices || []).map(String)));
+  const fixedChoices = fills.length > 0 && fills.every((f) => f.choices && f.choices.every((c) => choiceSet.has(String(c)))) && choiceSet.size <= 6;
+  const keys = new Set(fills.map((f) => String(f.answer)));
+  const unusedChoice = fixedChoices && [...choiceSet].some((c) => !keys.has(c));
   const stiff = [...new Set(fills.flatMap((f) => STIFF.filter((re) => re.test(f.prompt || "")).map(String)))];
-  const letterLabels = fills.some((f) => LETTER_LABEL.test(f.prompt || "") || LETTER_LABEL.test(f.figure || ""));
+  const letterLabels = fills.some((f) => hasLetterLabel(f.prompt) || hasLetterLabel(f.figure));
   const sentences = fills.flatMap((f) => (f.prompt || "").split(/[.?!]+/).map((s) => s.trim()).filter(Boolean));
   const longest = Math.max(0, ...sentences.map((s) => words(s).length));
   // The session shuffles choices each time (as kidView does), so order is
@@ -108,6 +118,7 @@ export function measureModel(model, { seeds = MEASURE_SEEDS } = {}) {
   if (fills.length >= 20 && distinctAnswers === 1) flags.push(`the answer is the same in all ${fills.length} questions`);
   // Coin trades and estimates have few answers by nature: a note, not a fail.
   else if (fills.length >= 20 && numeric && distinctAnswers <= 3) notes.push(`only ${distinctAnswers} different answers in ${fills.length} questions`);
+  else if (fills.length >= 20 && unusedChoice && distinctAnswers <= 3) notes.push(`the key is only ever ${orList([...keys])} in ${fills.length} questions`);
   if (stiff.length) flags.push(`test-engine wording: ${stiff.join(", ")}`);
   // In a story the parts have names to use (Sai, 2026-10-03); a bare
   // "Mat A and Mat B" drill has none, so there it is only a note.
@@ -244,6 +255,19 @@ export function scoreModel(measures, replies, { failVotes = FAIL_VOTES, reviewVo
 }
 
 /**
+ * Score one panel of reader runs as the CLI does. A fail stands on the votes
+ * it has; any other verdict needs every expected reply, else the model is
+ * "incomplete" (rerun it; nothing is stored).
+ */
+export function scorePanel(measures, replies, { expected = ROLES.length * DEFAULT_RUNS } = {}) {
+  const s = scoreModel(measures, replies);
+  if (s.readers < expected && s.verdict !== "fail") {
+    return { ...s, verdict: "incomplete", notes: [...s.notes, `only ${s.readers} of ${expected} reader replies came back`] };
+  }
+  return s;
+}
+
+/**
  * The stored verdict for item_models.spec.checks.textbook, which the review
  * screen shows as a card (green pass, amber notes, red fail).
  */
@@ -261,4 +285,14 @@ export function checkEntry(score, { checkedAt } = {}) {
   if (parts.length) entry.reason = parts.join("\n");
   if (checkedAt) entry.checked_at = checkedAt;
   return entry;
+}
+
+/**
+ * SQL that stores one checkEntry in a DRAFT model's spec.checks.textbook,
+ * keeping its other checks (and replacing a checks value that is not an
+ * object). sqlLiteral quotes a string for Postgres.
+ */
+export function checkSql(id, entry, sqlLiteral) {
+  const checks = `case when jsonb_typeof(spec->'checks') = 'object' then spec->'checks' else '{}'::jsonb end`;
+  return `update public.item_models set spec = jsonb_set(spec, '{checks}', ${checks} || jsonb_build_object('textbook', ${sqlLiteral(JSON.stringify(entry))}::jsonb)) where id = ${sqlLiteral(id)} and review_status = 'draft';`;
 }

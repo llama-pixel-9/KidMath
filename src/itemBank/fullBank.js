@@ -12,6 +12,7 @@ import { APPLICATION_ITEM_BANK } from "./applicationItems.js";
 import { CONCEPTUAL_ITEM_BANK } from "./conceptualItems.js";
 import { PROCEDURAL_ITEM_BANK } from "./proceduralItems.js";
 import { factBankItems } from "../facts/factItems.js";
+import { modelBankItems } from "./v2/modelRows.js";
 
 // Math Facts rows are built from the fact lists rather than stored: the
 // database gets the same rows from the same function
@@ -19,11 +20,17 @@ import { factBankItems } from "../facts/factItems.js";
 // `bank:export` (which rewrites items/ from version-1 rows) cannot drop them.
 export const FACT_ITEMS = factBankItems();
 
+// Version-2 rows the live step wrote, refilled from the committed manifests
+// (src/itemBank/v2/manifests/) the same way: the database got the same rows
+// from the same models and seeds. No manifest, no rows.
+export const MODEL_ITEMS = modelBankItems();
+
 export const FULL_ITEMS = [
   ...APPLICATION_ITEM_BANK,
   ...CONCEPTUAL_ITEM_BANK,
   ...PROCEDURAL_ITEM_BANK,
   ...FACT_ITEMS,
+  ...MODEL_ITEMS,
 ];
 
 export { APPLICATION_ITEM_BANK, CONCEPTUAL_ITEM_BANK, PROCEDURAL_ITEM_BANK };

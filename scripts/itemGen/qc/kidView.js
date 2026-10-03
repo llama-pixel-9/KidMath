@@ -221,10 +221,15 @@ export function answerFormat(q) {
     case "numberLine":
       // Jump mode draws one hop; the kid types its length on the keypad.
       return d.lineMode === "jump" ? "type the length of the drawn hop on the keypad under the line (a whole number)" : "tap a number on the number line; answer with that number";
+    // DataGraph is a digit pad under the chart, not a bar tap: the kid types
+    // any number read or worked out from the graph (a sum, a difference, …).
     case "barGraph":
-      return "tap a bar on the graph; answer with that bar's value as a number";
+      return "type a whole number read or worked out from the graph (digits only)";
     case "coinTray":
       return d.coinMode === "build" ? "tap coins to build the amount; answer with the total in cents" : "answer with the amount in cents as a whole number";
+    case "shapeFigure":
+      if (d.shapeMode === "select") return "tap one shape; answer with its answer number";
+      return "type a whole number (digits only, no units)";
     default:
       return "type a whole number (digits only, no units)";
   }
@@ -234,6 +239,12 @@ const list = (xs) => xs.map(String).join(", ");
 const plural = (n, word) => `${n} ${word}${n === 1 ? "" : "s"}`;
 // Shape keys read noun-then-qualifier ("triangleRight"); a kid hears "right triangle".
 const shapeName = (key) => String(key).replace(/([a-z])([A-Z])/g, "$1 $2").toLowerCase().split(" ").reverse().join(" ");
+// What the drawing shows, where the name alone leaves it open: the app's
+// trapezoid (src/components/kit/shapeData.js) has equal slanted sides.
+const shapeDrawn = (key) => {
+  const name = key === "trapezoid" ? "trapezoid whose two slanted sides are the same length" : shapeName(key);
+  return `${/^[aeiou]/.test(name) ? "an" : "a"} ${name}`;
+};
 
 function clockText(hour, minute) {
   const h = (Number(hour) || 12) % 12 || 12;
@@ -381,7 +392,13 @@ export function describeFigure(q) {
       break;
     }
     case "shapeFigure":
-      parts.push(`A drawing of a ${shapeName(d.shape)}${d.rotate ? `, turned ${d.rotate} degrees` : ""}${d.showSymmetry ? ", with its line of symmetry drawn" : ""}.`);
+      // Select mode draws a row of shapes to tap and no single shape, which
+      // read as "A drawing of a undefined" until 2026-10-03.
+      if (d.shapeMode === "select" && Array.isArray(d.options)) {
+        parts.push(`A row of shapes to tap, each with its answer number: ${d.options.map((o) => `${o.value} = ${shapeDrawn(o.shape)}${o.rotate ? ` turned ${o.rotate} degrees` : ""}`).join("; ")}.`);
+      } else {
+        parts.push(`A drawing of ${shapeDrawn(d.shape)}${d.rotate ? `, turned ${d.rotate} degrees` : ""}${d.showSymmetry ? ", with its line of symmetry drawn" : ""}.`);
+      }
       break;
     case "coinTray":
       parts.push(`A tray of coins: ${list(d.coins || [])}.`);
